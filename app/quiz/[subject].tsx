@@ -10,6 +10,7 @@ import {
 import { useLocalSearchParams, useRouter } from 'expo-router';
 import { questionsBySubject, subjectInfo, SubjectKey } from '../../data/questions';
 import QuizCard from '../../components/QuizCard';
+import ListenMode from '../../components/ListenMode';
 import { saveProgress } from '../../store/progress';
 
 type Difficulty = 'basic' | 'standard' | 'advanced';
@@ -52,6 +53,7 @@ export default function QuizScreen() {
   const [revealed, setRevealed] = useState(false);
   const [finished, setFinished] = useState(false);
   const [savedProgress, setSavedProgress] = useState(false);
+  const [listenVisible, setListenVisible] = useState(false);
 
   const currentQuestion = questions[currentIndex];
   const total = questions.length;
@@ -207,6 +209,13 @@ export default function QuizScreen() {
           <Text style={styles.questionIndicator}>
             {currentIndex + 1}/{total}問
           </Text>
+          <TouchableOpacity
+            style={styles.listenBtn}
+            onPress={() => setListenVisible(true)}
+            activeOpacity={0.75}
+          >
+            <Text style={styles.listenBtnText}>🎧</Text>
+          </TouchableOpacity>
         </View>
       </View>
 
@@ -276,64 +285,311 @@ export default function QuizScreen() {
           </View>
         )}
       </ScrollView>
+
+      <ListenMode
+        visible={listenVisible}
+        questions={questions}
+        subjectName={info.name}
+        subjectEmoji={info.emoji}
+        subjectColor={info.color}
+        onClose={() => setListenVisible(false)}
+      />
     </SafeAreaView>
   );
 }
 
 const styles = StyleSheet.create({
-  safeArea: { flex: 1, backgroundColor: '#F5F7FA' },
-  header: { flexDirection: 'row', alignItems: 'center', paddingHorizontal: 16, paddingVertical: 14 },
-  backBtn: { paddingVertical: 6, paddingHorizontal: 4, minWidth: 60 },
-  backBtnText: { fontSize: 15, color: '#FFFFFF', fontWeight: '700' },
-  headerCenter: { flex: 1, flexDirection: 'row', alignItems: 'center', justifyContent: 'center', gap: 6 },
-  headerEmoji: { fontSize: 20 },
-  headerTitle: { fontSize: 18, fontWeight: '800', color: '#FFFFFF', letterSpacing: 1 },
-  headerDiff: { fontSize: 16 },
-  headerRight: { minWidth: 60, alignItems: 'flex-end' },
-  questionIndicator: { fontSize: 14, color: 'rgba(255,255,255,0.9)', fontWeight: '700' },
-  progressTrack: { height: 4, backgroundColor: 'rgba(0,0,0,0.1)' },
-  progressFill: { height: '100%', borderRadius: 2 },
+  safeArea: {
+    flex: 1,
+    backgroundColor: '#F5F7FA',
+  },
+  header: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    paddingHorizontal: 16,
+    paddingVertical: 14,
+  },
+  backBtn: {
+    paddingVertical: 6,
+    paddingHorizontal: 4,
+    minWidth: 60,
+  },
+  backBtnText: {
+    fontSize: 15,
+    color: '#FFFFFF',
+    fontWeight: '700',
+  },
+  headerCenter: {
+    flex: 1,
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'center',
+    gap: 6,
+  },
+  headerEmoji: {
+    fontSize: 20,
+  },
+  headerTitle: {
+    fontSize: 18,
+    fontWeight: '800',
+    color: '#FFFFFF',
+    letterSpacing: 1,
+  },
+  headerDiff: {
+    fontSize: 16,
+  },
+  headerRight: {
+    minWidth: 60,
+    alignItems: 'flex-end',
+    gap: 4,
+  },
+  questionIndicator: {
+    fontSize: 14,
+    color: 'rgba(255,255,255,0.9)',
+    fontWeight: '700',
+  },
+  listenBtn: {
+    backgroundColor: 'rgba(255,255,255,0.2)',
+    borderRadius: 10,
+    paddingHorizontal: 8,
+    paddingVertical: 3,
+  },
+  listenBtnText: {
+    fontSize: 16,
+  },
+  progressTrack: {
+    height: 4,
+    backgroundColor: 'rgba(0,0,0,0.1)',
+  },
+  progressFill: {
+    height: '100%',
+    borderRadius: 2,
+  },
   scroll: { flex: 1 },
-  scrollContent: { paddingTop: 20, paddingBottom: 40 },
-  scoreRow: { flexDirection: 'row', justifyContent: 'center', gap: 8, marginBottom: 16, paddingHorizontal: 16, flexWrap: 'wrap' },
-  scoreBadge: { backgroundColor: '#E8F8EE', paddingHorizontal: 14, paddingVertical: 6, borderRadius: 20, borderWidth: 1, borderColor: '#B8E6C8' },
-  scoreBadgeText: { fontSize: 13, color: '#00A651', fontWeight: '700' },
-  diffFilterBadge: { backgroundColor: '#FAFAFA', paddingHorizontal: 12, paddingVertical: 6, borderRadius: 20, borderWidth: 1.5 },
-  diffFilterText: { fontSize: 13, fontWeight: '700' },
-  remainBadge: { backgroundColor: '#EEF4FF', paddingHorizontal: 14, paddingVertical: 6, borderRadius: 20, borderWidth: 1, borderColor: '#C5D8F8' },
-  remainBadgeText: { fontSize: 13, color: '#1E5FBE', fontWeight: '700' },
-  answerButtons: { flexDirection: 'row', gap: 14, paddingHorizontal: 16, marginTop: 20 },
-  correctButton: { flex: 1, backgroundColor: '#00A651', borderRadius: 16, paddingVertical: 18, alignItems: 'center', shadowColor: '#00A651', shadowOffset: { width: 0, height: 4 }, shadowOpacity: 0.3, shadowRadius: 8, elevation: 5 },
-  correctButtonText: { fontSize: 18, fontWeight: '900', color: '#FFFFFF', letterSpacing: 1 },
-  wrongButton: { flex: 1, backgroundColor: '#E74C3C', borderRadius: 16, paddingVertical: 18, alignItems: 'center', shadowColor: '#E74C3C', shadowOffset: { width: 0, height: 4 }, shadowOpacity: 0.3, shadowRadius: 8, elevation: 5 },
-  wrongButtonText: { fontSize: 18, fontWeight: '900', color: '#FFFFFF', letterSpacing: 1 },
-  revealHint: { marginTop: 20, alignItems: 'center' },
-  revealHintText: { fontSize: 14, color: '#AAA', fontWeight: '500' },
-  emptyContainer: { flex: 1, alignItems: 'center', justifyContent: 'center', gap: 14 },
+  scrollContent: {
+    paddingTop: 20,
+    paddingBottom: 40,
+  },
+  scoreRow: {
+    flexDirection: 'row',
+    justifyContent: 'center',
+    gap: 8,
+    marginBottom: 16,
+    paddingHorizontal: 16,
+    flexWrap: 'wrap',
+  },
+  scoreBadge: {
+    backgroundColor: '#E8F8EE',
+    paddingHorizontal: 14,
+    paddingVertical: 6,
+    borderRadius: 20,
+    borderWidth: 1,
+    borderColor: '#B8E6C8',
+  },
+  scoreBadgeText: {
+    fontSize: 13,
+    color: '#00A651',
+    fontWeight: '700',
+  },
+  diffFilterBadge: {
+    backgroundColor: '#FAFAFA',
+    paddingHorizontal: 12,
+    paddingVertical: 6,
+    borderRadius: 20,
+    borderWidth: 1.5,
+  },
+  diffFilterText: {
+    fontSize: 13,
+    fontWeight: '700',
+  },
+  remainBadge: {
+    backgroundColor: '#EEF4FF',
+    paddingHorizontal: 14,
+    paddingVertical: 6,
+    borderRadius: 20,
+    borderWidth: 1,
+    borderColor: '#C5D8F8',
+  },
+  remainBadgeText: {
+    fontSize: 13,
+    color: '#1E5FBE',
+    fontWeight: '700',
+  },
+  answerButtons: {
+    flexDirection: 'row',
+    gap: 14,
+    paddingHorizontal: 16,
+    marginTop: 20,
+  },
+  correctButton: {
+    flex: 1,
+    backgroundColor: '#00A651',
+    borderRadius: 16,
+    paddingVertical: 18,
+    alignItems: 'center',
+    shadowColor: '#00A651',
+    shadowOffset: { width: 0, height: 4 },
+    shadowOpacity: 0.3,
+    shadowRadius: 8,
+    elevation: 5,
+  },
+  correctButtonText: {
+    fontSize: 18,
+    fontWeight: '900',
+    color: '#FFFFFF',
+    letterSpacing: 1,
+  },
+  wrongButton: {
+    flex: 1,
+    backgroundColor: '#E74C3C',
+    borderRadius: 16,
+    paddingVertical: 18,
+    alignItems: 'center',
+    shadowColor: '#E74C3C',
+    shadowOffset: { width: 0, height: 4 },
+    shadowOpacity: 0.3,
+    shadowRadius: 8,
+    elevation: 5,
+  },
+  wrongButtonText: {
+    fontSize: 18,
+    fontWeight: '900',
+    color: '#FFFFFF',
+    letterSpacing: 1,
+  },
+  revealHint: {
+    marginTop: 20,
+    alignItems: 'center',
+  },
+  revealHintText: {
+    fontSize: 14,
+    color: '#AAA',
+    fontWeight: '500',
+  },
+  emptyContainer: {
+    flex: 1,
+    alignItems: 'center',
+    justifyContent: 'center',
+    gap: 14,
+  },
   emptyEmoji: { fontSize: 60 },
-  emptyText: { fontSize: 16, color: '#555', fontWeight: '600', textAlign: 'center' },
-  emptyBackBtn: { backgroundColor: '#1E5FBE', paddingHorizontal: 28, paddingVertical: 14, borderRadius: 14 },
-  emptyBackText: { fontSize: 15, fontWeight: '700', color: '#FFFFFF' },
+  emptyText: {
+    fontSize: 16,
+    color: '#555',
+    fontWeight: '600',
+    textAlign: 'center',
+  },
+  emptyBackBtn: {
+    backgroundColor: '#1E5FBE',
+    paddingHorizontal: 28,
+    paddingVertical: 14,
+    borderRadius: 14,
+  },
+  emptyBackText: {
+    fontSize: 15,
+    fontWeight: '700',
+    color: '#FFFFFF',
+  },
   resultsContainer: { flex: 1 },
-  resultsHeader: { paddingTop: 28, paddingBottom: 28, alignItems: 'center' },
-  resultsHeaderEmoji: { fontSize: 48, marginBottom: 8 },
-  resultsHeaderTitle: { fontSize: 22, fontWeight: '900', color: '#FFFFFF', letterSpacing: 1 },
-  diffBadge: { backgroundColor: 'rgba(255,255,255,0.25)', paddingHorizontal: 14, paddingVertical: 5, borderRadius: 12, marginTop: 8 },
-  diffBadgeText: { fontSize: 14, fontWeight: '700', color: '#FFFFFF' },
-  resultsContent: { paddingHorizontal: 20, paddingTop: 24, paddingBottom: 40 },
-  resultCard: { backgroundColor: '#FFFFFF', borderRadius: 20, padding: 28, alignItems: 'center', shadowColor: '#000', shadowOffset: { width: 0, height: 4 }, shadowOpacity: 0.1, shadowRadius: 12, elevation: 6, marginBottom: 20 },
+  resultsHeader: {
+    paddingTop: 28,
+    paddingBottom: 28,
+    alignItems: 'center',
+  },
+  resultsHeaderEmoji: {
+    fontSize: 48,
+    marginBottom: 8,
+  },
+  resultsHeaderTitle: {
+    fontSize: 22,
+    fontWeight: '900',
+    color: '#FFFFFF',
+    letterSpacing: 1,
+  },
+  diffBadge: {
+    backgroundColor: 'rgba(255,255,255,0.25)',
+    paddingHorizontal: 14,
+    paddingVertical: 5,
+    borderRadius: 12,
+    marginTop: 8,
+  },
+  diffBadgeText: {
+    fontSize: 14,
+    fontWeight: '700',
+    color: '#FFFFFF',
+  },
+  resultsContent: {
+    paddingHorizontal: 20,
+    paddingTop: 24,
+    paddingBottom: 40,
+  },
+  resultCard: {
+    backgroundColor: '#FFFFFF',
+    borderRadius: 20,
+    padding: 28,
+    alignItems: 'center',
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 4 },
+    shadowOpacity: 0.1,
+    shadowRadius: 12,
+    elevation: 6,
+    marginBottom: 20,
+  },
   resultEmoji: { fontSize: 60, marginBottom: 12 },
-  resultMessage: { fontSize: 20, fontWeight: '800', color: '#1A1A2E', marginBottom: 16 },
-  resultScoreRow: { flexDirection: 'row', alignItems: 'baseline', marginBottom: 8 },
+  resultMessage: {
+    fontSize: 20,
+    fontWeight: '800',
+    color: '#1A1A2E',
+    marginBottom: 16,
+  },
+  resultScoreRow: {
+    flexDirection: 'row',
+    alignItems: 'baseline',
+    marginBottom: 8,
+  },
   resultScore: { fontSize: 44, fontWeight: '900', color: '#1A1A2E' },
   resultScoreSep: { fontSize: 28, color: '#888', fontWeight: '400' },
   resultScoreTotal: { fontSize: 28, color: '#888', fontWeight: '700' },
   resultScoreLabel: { fontSize: 18, color: '#555', fontWeight: '600' },
   resultPct: { fontSize: 32, fontWeight: '900', marginBottom: 16 },
-  resultBarTrack: { width: '100%', height: 12, backgroundColor: '#F0F0F0', borderRadius: 6, overflow: 'hidden' },
-  resultBarFill: { height: '100%', borderRadius: 6, minWidth: 8 },
-  restartButton: { borderRadius: 16, paddingVertical: 18, alignItems: 'center', marginBottom: 14, shadowColor: '#000', shadowOffset: { width: 0, height: 4 }, shadowOpacity: 0.15, shadowRadius: 8, elevation: 5 },
-  restartButtonText: { fontSize: 17, fontWeight: '800', color: '#FFFFFF', letterSpacing: 0.5 },
-  backButton: { backgroundColor: '#F0F0F0', borderRadius: 16, paddingVertical: 16, alignItems: 'center' },
-  backButtonText: { fontSize: 16, fontWeight: '700', color: '#555' },
+  resultBarTrack: {
+    width: '100%',
+    height: 12,
+    backgroundColor: '#F0F0F0',
+    borderRadius: 6,
+    overflow: 'hidden',
+  },
+  resultBarFill: {
+    height: '100%',
+    borderRadius: 6,
+    minWidth: 8,
+  },
+  restartButton: {
+    borderRadius: 16,
+    paddingVertical: 18,
+    alignItems: 'center',
+    marginBottom: 14,
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 4 },
+    shadowOpacity: 0.15,
+    shadowRadius: 8,
+    elevation: 5,
+  },
+  restartButtonText: {
+    fontSize: 17,
+    fontWeight: '800',
+    color: '#FFFFFF',
+    letterSpacing: 0.5,
+  },
+  backButton: {
+    backgroundColor: '#F0F0F0',
+    borderRadius: 16,
+    paddingVertical: 16,
+    alignItems: 'center',
+  },
+  backButtonText: {
+    fontSize: 16,
+    fontWeight: '700',
+    color: '#555',
+  },
 });
