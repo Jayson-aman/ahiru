@@ -1,6 +1,6 @@
 export type Question = {
   id: string;
-  subject: 'sansu' | 'kokugo' | 'rika' | 'shakai';
+  subject: 'sansu' | 'kokugo' | 'rika' | 'shakai' | 'eigo';
   question: string;
   answer: string;
   hint?: string;
@@ -9,7 +9,7 @@ export type Question = {
   answerReading?: string;
 };
 
-export type SubjectKey = 'sansu' | 'kokugo' | 'rika' | 'shakai';
+export type SubjectKey = 'sansu' | 'kokugo' | 'rika' | 'shakai' | 'eigo';
 
 export const questions: Question[] = [
   // ============================================================
@@ -1519,6 +1519,366 @@ export const questions: Question[] = [
     answer: '比較優位: 絶対的に生産性が低い国でも、相対的に得意な財に特化して貿易すれば双方が利益を得られる。例: ポルトガルが両財で優位でも、ワインに特化しイギリスが布に特化すれば総生産量が増える。自由貿易の利点: 各国が比較優位品目に特化することで世界全体の効率が上がる',
     difficulty: 'advanced',
   },
+
+  // ============================================================
+  // 英語 (eigo) - 50問
+  // ============================================================
+
+  // --- basic (20問) ---
+  {
+    id: 'eigo_01',
+    subject: 'eigo',
+    question: '「apple」「dog」「school」「book」「water」の日本語は？',
+    answer: 'apple=りんご、dog=犬、school=学校、book=本、water=水',
+    difficulty: 'basic',
+  },
+  {
+    id: 'eigo_02',
+    subject: 'eigo',
+    question: '英語で1から10まで数えると？',
+    answer: 'one, two, three, four, five, six, seven, eight, nine, ten',
+    difficulty: 'basic',
+  },
+  {
+    id: 'eigo_03',
+    subject: 'eigo',
+    question: '「おはようございます」「こんにちは」「こんばんは」「おやすみなさい」を英語で言うと？',
+    answer: 'Good morning. / Good afternoon. / Good evening. / Good night.',
+    difficulty: 'basic',
+  },
+  {
+    id: 'eigo_04',
+    subject: 'eigo',
+    question: '「ありがとう」「どういたしまして」「ごめんなさい」を英語で言うと？',
+    answer: 'Thank you. / You\'re welcome. / I\'m sorry.',
+    difficulty: 'basic',
+  },
+  {
+    id: 'eigo_05',
+    subject: 'eigo',
+    question: '色：red・blue・green・yellow・white・black・pink・orange をそれぞれ日本語で言うと？',
+    answer: '赤・青・緑・黄色・白・黒・ピンク・オレンジ',
+    difficulty: 'basic',
+  },
+  {
+    id: 'eigo_06',
+    subject: 'eigo',
+    question: '曜日を英語で月曜日から日曜日まで言うと？',
+    answer: 'Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday',
+    difficulty: 'basic',
+  },
+  {
+    id: 'eigo_07',
+    subject: 'eigo',
+    question: '月を英語で1月から12月まで言うと？',
+    answer: 'January, February, March, April, May, June, July, August, September, October, November, December',
+    difficulty: 'basic',
+  },
+  {
+    id: 'eigo_08',
+    subject: 'eigo',
+    question: '「I」「you」「he」「she」「we」「they」「it」を日本語で言うと？',
+    answer: '私・あなた・彼・彼女・私たち・彼ら（彼女ら）・それ（物や動物）',
+    difficulty: 'basic',
+  },
+  {
+    id: 'eigo_09',
+    subject: 'eigo',
+    question: '「What is your name?」の意味と答え方は？',
+    answer: '「お名前は何ですか？」My name is ○○. または I am ○○. と答える',
+    difficulty: 'basic',
+  },
+  {
+    id: 'eigo_10',
+    subject: 'eigo',
+    question: '「How are you?」の意味と一般的な答えは？',
+    answer: '「お元気ですか？」I\'m fine, thank you. / I\'m good. などと答える',
+    difficulty: 'basic',
+  },
+  {
+    id: 'eigo_11',
+    subject: 'eigo',
+    question: '家族を表す英語：「父・母・兄弟・姉妹・祖父・祖母」は？',
+    answer: 'father / mother / brother / sister / grandfather / grandmother',
+    difficulty: 'basic',
+  },
+  {
+    id: 'eigo_12',
+    subject: 'eigo',
+    question: '動物の英語：「猫・馬・象・うさぎ・牛・羊」は？',
+    answer: 'cat / horse / elephant / rabbit / cow / sheep',
+    difficulty: 'basic',
+  },
+  {
+    id: 'eigo_13',
+    subject: 'eigo',
+    question: '「Where are you from?」の意味と「日本出身です」という答えは？',
+    answer: '「どこの出身ですか？」I am from Japan. と答える',
+    difficulty: 'basic',
+  },
+  {
+    id: 'eigo_14',
+    subject: 'eigo',
+    question: '季節を英語で言うと（春・夏・秋・冬）？',
+    answer: 'spring（春）・summer（夏）・autumn / fall（秋）・winter（冬）',
+    difficulty: 'basic',
+  },
+  {
+    id: 'eigo_15',
+    subject: 'eigo',
+    question: '「big」「small」「fast」「slow」「hot」「cold」「new」「old」の日本語は？',
+    answer: '大きい・小さい・速い・遅い・熱い/暑い・冷たい/寒い・新しい・古い/年老いた',
+    difficulty: 'basic',
+  },
+  {
+    id: 'eigo_16',
+    subject: 'eigo',
+    question: '英語で11〜20を言うと？',
+    answer: 'eleven, twelve, thirteen, fourteen, fifteen, sixteen, seventeen, eighteen, nineteen, twenty',
+    difficulty: 'basic',
+  },
+  {
+    id: 'eigo_17',
+    subject: 'eigo',
+    question: '「right」「left」「up」「down」「in」「out」の意味は？',
+    answer: '右・左・上・下・中に/の中で・外に/の外で',
+    difficulty: 'basic',
+  },
+  {
+    id: 'eigo_18',
+    subject: 'eigo',
+    question: '「Please」「Sorry」「Excuse me」「Yes」「No」「OK」の意味は？',
+    answer: 'お願い/どうぞ・ごめんなさい・すみません（呼びかけ）・はい・いいえ・大丈夫/了解',
+    difficulty: 'basic',
+  },
+  {
+    id: 'eigo_19',
+    subject: 'eigo',
+    question: '「私は学生です」「彼は先生です」「彼女は日本人です」を英語で言うと？',
+    answer: 'I am a student. / He is a teacher. / She is Japanese.',
+    difficulty: 'basic',
+  },
+  {
+    id: 'eigo_20',
+    subject: 'eigo',
+    question: '体の部位：「頭・目・鼻・口・耳・手・足」を英語で言うと？',
+    answer: 'head / eye / nose / mouth / ear / hand / foot (leg)',
+    difficulty: 'basic',
+  },
+
+  // --- standard (20問) ---
+  {
+    id: 'eigo_21',
+    subject: 'eigo',
+    question: '「I play soccer every day.」を日本語に訳すと？',
+    answer: '私は毎日サッカーをします。',
+    difficulty: 'standard',
+  },
+  {
+    id: 'eigo_22',
+    subject: 'eigo',
+    question: '「Does she like music?」に Yes で答えると？また No の場合は？',
+    answer: 'Yes, she does. / No, she doesn\'t.',
+    difficulty: 'standard',
+  },
+  {
+    id: 'eigo_23',
+    subject: 'eigo',
+    question: '「I don\'t have a pen.」を日本語に訳すと？また肯定文に直すと？',
+    answer: '私はペンを持っていません。肯定文: I have a pen.',
+    difficulty: 'standard',
+  },
+  {
+    id: 'eigo_24',
+    subject: 'eigo',
+    question: '「a」と「an」の使い分けのルールは？例を2つずつ挙げよ。',
+    answer: '次の語の発音が母音（a/e/i/o/u の音）で始まるとき「an」。例: an apple, an egg / a cat, a book',
+    difficulty: 'standard',
+  },
+  {
+    id: 'eigo_25',
+    subject: 'eigo',
+    question: '「apple」「child」「man」「woman」「tooth」「foot」の複数形は？',
+    answer: 'apples / children / men / women / teeth / feet',
+    difficulty: 'standard',
+  },
+  {
+    id: 'eigo_26',
+    subject: 'eigo',
+    question: '「She is taller than her sister.」を日本語に訳すと？また「the tallest」を使った文に直すと？',
+    answer: '彼女は姉（妹）より背が高い。She is the tallest in her family. など',
+    difficulty: 'standard',
+  },
+  {
+    id: 'eigo_27',
+    subject: 'eigo',
+    question: '「I went to Tokyo yesterday.」の went の原形は？また「明日行く」という文に直すと？',
+    answer: '原形は go。I will go to Tokyo tomorrow.',
+    difficulty: 'standard',
+  },
+  {
+    id: 'eigo_28',
+    subject: 'eigo',
+    question: '「Can you swim?」に Yes/No で答えると？また Can を使った文の意味は？',
+    answer: 'Yes, I can. / No, I can\'t.（cannot）。Can ～ ? は「～できますか？」という能力・許可を尋ねる',
+    difficulty: 'standard',
+  },
+  {
+    id: 'eigo_29',
+    subject: 'eigo',
+    question: '現在進行形（～しています）の作り方は？「She sings a song.」を現在進行形に変えると？',
+    answer: 'be動詞（am/is/are）＋動詞のing形。She is singing a song.',
+    difficulty: 'standard',
+  },
+  {
+    id: 'eigo_30',
+    subject: 'eigo',
+    question: '「There are many students in the classroom.」を日本語に訳すと？また「There is」との使い分けは？',
+    answer: '教室にはたくさんの生徒がいます。There is は単数、There are は複数のときに使う',
+    difficulty: 'standard',
+  },
+  {
+    id: 'eigo_31',
+    subject: 'eigo',
+    question: '「What time is it?」に「3時15分」と答えると？',
+    answer: 'It\'s three fifteen. / It\'s a quarter past three.',
+    difficulty: 'standard',
+  },
+  {
+    id: 'eigo_32',
+    subject: 'eigo',
+    question: '「How many」と「How much」の使い分けは？例文を1つずつ書け。',
+    answer: 'How many: 数えられる名詞（複数形）。How many books do you have? / How much: 数えられない名詞・値段。How much is this bag?',
+    difficulty: 'standard',
+  },
+  {
+    id: 'eigo_33',
+    subject: 'eigo',
+    question: '「I like cats better than dogs.」を日本語に訳すと？また「最も好きな動物」を表す文に直すと？',
+    answer: '私は犬より猫の方が好きです。I like cats the best of all animals.',
+    difficulty: 'standard',
+  },
+  {
+    id: 'eigo_34',
+    subject: 'eigo',
+    question: '序数詞（順序数）：1st〜5th をフルスペルで言うと？',
+    answer: 'first, second, third, fourth, fifth',
+    difficulty: 'standard',
+  },
+  {
+    id: 'eigo_35',
+    subject: 'eigo',
+    question: '「It is raining now.」を日本語に訳すと？また「昨日雨が降っていた」は？',
+    answer: '今、雨が降っています。It was raining yesterday.',
+    difficulty: 'standard',
+  },
+  {
+    id: 'eigo_36',
+    subject: 'eigo',
+    question: '「I have been to Kyoto.」を日本語に訳すと？（現在完了形の用法も答えよ）',
+    answer: '私は京都に行ったことがあります。（現在完了形の「経験」用法: have/has + 過去分詞）',
+    difficulty: 'standard',
+  },
+  {
+    id: 'eigo_37',
+    subject: 'eigo',
+    question: '「She doesn\'t know the answer.」と「Does she know the answer?」の語順のルールを説明せよ。',
+    answer: '否定文: does not（doesn\'t）を主語の後・動詞の前に置き、動詞は原形。疑問文: Does を文頭に、主語・動詞の原形の順に並べる',
+    difficulty: 'standard',
+  },
+  {
+    id: 'eigo_38',
+    subject: 'eigo',
+    question: '前置詞：「on（〜の上に）」「in（〜の中に）」「under（〜の下に）」「near（〜の近くに）」「between（〜の間に）」を使った例文を1つずつ書け。',
+    answer: 'The book is on the desk. / The cat is in the box. / The ball is under the chair. / The park is near my house. / The bank is between the post office and the school.',
+    difficulty: 'standard',
+  },
+  {
+    id: 'eigo_39',
+    subject: 'eigo',
+    question: '「go - went - gone」「eat - ate - eaten」「see - saw - seen」「write - wrote - written」の形の名前と意味は？',
+    answer: '不規則動詞の「原形 - 過去形 - 過去分詞形」。行く/食べる/見る/書く',
+    difficulty: 'standard',
+  },
+  {
+    id: 'eigo_40',
+    subject: 'eigo',
+    question: '「He goes to school by bus.」を日本語に訳すと？また「彼女は自転車で学校に行く」は？',
+    answer: '彼はバスで学校に行きます。She goes to school by bike.',
+    difficulty: 'standard',
+  },
+
+  // --- advanced (10問) ---
+  {
+    id: 'eigo_41',
+    subject: 'eigo',
+    question: '次の英文を読み、質問に答えよ。「Tom gets up at seven every morning. He eats breakfast and then walks to school. He studies hard and plays soccer after school.」Tomはどのような1日を過ごしているか日本語で説明せよ。',
+    answer: 'トムは毎朝7時に起きて朝食を食べ、歩いて学校に行きます。一生懸命勉強し、放課後はサッカーをしています。',
+    difficulty: 'advanced',
+  },
+  {
+    id: 'eigo_42',
+    subject: 'eigo',
+    question: '受動態（受け身）の作り方を説明し、「Ken wrote this letter.」を受動態に変えよ。',
+    answer: '受動態: be動詞＋過去分詞（by ～ で行為者を示す）。This letter was written by Ken.',
+    difficulty: 'advanced',
+  },
+  {
+    id: 'eigo_43',
+    subject: 'eigo',
+    question: '不定詞（to + 動詞の原形）の3用法（名詞的・副詞的・形容詞的）を説明し、例文を1つずつ挙げよ。',
+    answer: '名詞的（〜すること）: I want to play soccer. / 副詞的（〜するために）: I study to pass the exam. / 形容詞的（〜するための）: I have a lot of homework to do.',
+    difficulty: 'advanced',
+  },
+  {
+    id: 'eigo_44',
+    subject: 'eigo',
+    question: '次の3文を日本語に訳せ。①「I think that she is kind.」②「It is important to study English.」③「When I was young, I lived in Osaka.」',
+    answer: '①私は彼女が優しいと思います。②英語を勉強することは大切です。③若い頃、私は大阪に住んでいました。',
+    difficulty: 'advanced',
+  },
+  {
+    id: 'eigo_45',
+    subject: 'eigo',
+    question: '関係代名詞 who, which, that の使い分けを説明し、それぞれ例文を書け。',
+    answer: 'who: 先行詞が人。The girl who lives next door is kind. / which: 先行詞が物・動物。I have a dog which is very cute. / that: 人・物どちらにも使える。The book that I read was interesting.',
+    difficulty: 'advanced',
+  },
+  {
+    id: 'eigo_46',
+    subject: 'eigo',
+    question: '次の英文の誤りを見つけて正しく直せ。①「She don\'t like coffee.」②「He goed to the park yesterday.」③「I have saw this movie before.」',
+    answer: '①She doesn\'t like coffee.（三人称単数現在: does not）②He went to the park yesterday.（go の不規則過去形）③I have seen this movie before.（see の過去分詞は seen）',
+    difficulty: 'advanced',
+  },
+  {
+    id: 'eigo_47',
+    subject: 'eigo',
+    question: '比較変化の不規則形：good / bad / many（much）/ little の比較級・最上級を答えよ。',
+    answer: 'good → better → best / bad → worse → worst / many(much) → more → most / little → less → least',
+    difficulty: 'advanced',
+  },
+  {
+    id: 'eigo_48',
+    subject: 'eigo',
+    question: '「What do you want to be in the future?」（将来何になりたいですか）に対し、英語3文以上で答えよ。（解答例）',
+    answer: '（例）I want to be a doctor. I want to help sick people and make them healthy. I will study hard every day to achieve my dream.',
+    difficulty: 'advanced',
+  },
+  {
+    id: 'eigo_49',
+    subject: 'eigo',
+    question: '仮定法過去（If ＋ 過去形、would ＋ 動詞の原形）を説明し、「もし私が鳥だったら、空を飛べるのに」を英語で言え。',
+    answer: '仮定法過去: 現実とは違う仮定を表す。If I were a bird, I could fly in the sky.（were は仮定法では主語にかかわらず were を使う）',
+    difficulty: 'advanced',
+  },
+  {
+    id: 'eigo_50',
+    subject: 'eigo',
+    question: '次の会話文の空欄を埋めよ。A: "Excuse me, could you tell me ( ) to get to the station?" B: "Sure! Go straight and ( ) left at the traffic light. It\'s ( ) your right."',
+    answer: 'how / turn / on（Excuse me, could you tell me how to get to the station? / Go straight and turn left at the traffic light. It\'s on your right.）',
+    difficulty: 'advanced',
+  },
 ];
 
 export const questionsBySubject: Record<SubjectKey, Question[]> = {
@@ -1526,6 +1886,7 @@ export const questionsBySubject: Record<SubjectKey, Question[]> = {
   kokugo: questions.filter((q) => q.subject === 'kokugo'),
   rika: questions.filter((q) => q.subject === 'rika'),
   shakai: questions.filter((q) => q.subject === 'shakai'),
+  eigo: questions.filter((q) => q.subject === 'eigo'),
 };
 
 export const subjectInfo: Record<
@@ -1536,6 +1897,7 @@ export const subjectInfo: Record<
   kokugo: { name: '国語', emoji: '📖', color: '#E74C3C' },
   rika: { name: '理科', emoji: '🔬', color: '#27AE60' },
   shakai: { name: '社会', emoji: '🌍', color: '#F39C12' },
+  eigo: { name: '英語', emoji: '🔤', color: '#9B59B6' },
 };
 
 export const questionsByDifficulty: Record<string, Question[]> = {
