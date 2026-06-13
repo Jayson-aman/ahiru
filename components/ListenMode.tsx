@@ -32,6 +32,55 @@ const SPEEDS = [
 const PAUSE_Q_MS = 2200;
 const PAUSE_A_MS = 3000;
 
+function toSpeechText(text: string): string {
+  return text
+    // Units
+    .replace(/㎠/g, '平方センチメートル')
+    .replace(/㎤/g, '立方センチメートル')
+    .replace(/cm³/g, '立方センチメートル')
+    .replace(/cm²/g, '平方センチメートル')
+    .replace(/m²/g, '平方メートル')
+    // Chemical formulas — specific compounds first
+    .replace(/NaHCO₃/g, '炭酸水素ナトリウム')
+    .replace(/Na₂CO₃/g, '炭酸ナトリウム')
+    .replace(/CuCl₂/g, '塩化銅')
+    .replace(/NH₃/g, 'アンモニア')
+    .replace(/NaCl/g, '塩化ナトリウム')
+    .replace(/CO₂/g, '二酸化炭素')
+    .replace(/H₂O/g, '水')
+    .replace(/Cl₂/g, '塩素')
+    // Math
+    .replace(/√(\d+)/g, 'ルート$1')
+    .replace(/(\w)⁵/g, '$1の5乗')
+    .replace(/(\w)⁴/g, '$1の4乗')
+    .replace(/(\w)³/g, '$1の3乗')
+    .replace(/(\w)²/g, '$1の2乗')
+    // Combination / permutation notation
+    .replace(/₅C₃/g, '5コンビネーション3')
+    .replace(/₅C₂/g, '5コンビネーション2')
+    .replace(/₃C₂/g, '3コンビネーション2')
+    // Greek / special letters
+    .replace(/π/g, 'パイ')
+    .replace(/Ω/g, 'オーム')
+    // Operators
+    .replace(/×/g, 'かける')
+    .replace(/÷/g, 'わる')
+    .replace(/→/g, 'から')
+    .replace(/≈/g, 'およそ')
+    .replace(/≦/g, 'いか')
+    .replace(/≧/g, 'いじょう')
+    // Fractions: 3/4 → 4分の3
+    .replace(/(\d+)\/(\d+)/g, '$2分の$1')
+    // Remaining subscript digits
+    .replace(/₁/g, '1').replace(/₂/g, '2').replace(/₃/g, '3')
+    .replace(/₄/g, '4').replace(/₅/g, '5').replace(/₆/g, '6')
+    // Ancient kana
+    .replace(/やうやう/g, 'ようよう')
+    .replace(/いづれ/g, 'いずれ')
+    .replace(/ゐ/g, 'い')
+    .replace(/ゑ/g, 'え');
+}
+
 export default function ListenMode({
   visible,
   questions,
@@ -79,7 +128,9 @@ export default function ListenMode({
         setIndex(i);
         indexRef.current = i;
         setPhase('reading_q');
-        Speech.speak(`問題${i + 1}。${questions[i].question}`, {
+        const q = questions[i];
+        const qText = q.questionReading ?? toSpeechText(q.question);
+        Speech.speak(`問題${i + 1}。${qText}`, {
           language: 'ja-JP',
           rate: speedRef.current,
           onDone: () => {
@@ -96,10 +147,10 @@ export default function ListenMode({
       const readA = (i: number) => {
         if (!playingRef.current) return;
         setPhase('reading_a');
-        const answerText = questions[i].hint
-          ? `${questions[i].answer}。ヒント。${questions[i].hint}`
-          : questions[i].answer;
-        Speech.speak(`答え。${answerText}`, {
+        const q = questions[i];
+        const baseAnswer = q.answerReading ?? toSpeechText(q.answer);
+        const hintPart = q.hint ? `。ヒント。${toSpeechText(q.hint)}` : '';
+        Speech.speak(`答え。${baseAnswer}${hintPart}`, {
           language: 'ja-JP',
           rate: speedRef.current,
           onDone: () => {
@@ -129,11 +180,7 @@ export default function ListenMode({
       setPlaying(false);
       playingRef.current = false;
       stopAll();
-      if (phase === 'done') {
-        setPhase('done');
-      } else {
-        setPhase('idle');
-      }
+      if (phase !== 'done') setPhase('idle');
     } else {
       const startIdx = phase === 'done' ? 0 : indexRef.current;
       if (phase === 'done') {
@@ -238,9 +285,7 @@ export default function ListenMode({
           <View
             style={[
               styles.card,
-              showAnswer
-                ? styles.answerCardActive
-                : styles.answerCardHidden,
+              showAnswer ? styles.answerCardActive : styles.answerCardHidden,
             ]}
           >
             <Text style={[styles.cardLabel, { color: '#00A651' }]}>答え</Text>

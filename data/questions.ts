@@ -5,6 +5,8 @@ export type Question = {
   answer: string;
   hint?: string;
   difficulty: 'basic' | 'standard' | 'advanced';
+  questionReading?: string;
+  answerReading?: string;
 };
 
 export type SubjectKey = 'sansu' | 'kokugo' | 'rika' | 'shakai';
@@ -232,6 +234,7 @@ export const questions: Question[] = [
     answer: '10通り',
     hint: '₅C₃ = 5×4×3 ÷ (3×2×1) = 10',
     difficulty: 'standard',
+    answerReading: '10通り。5コンビネーション3は、5かける4かける3を、3かける2かける1で割って10通り',
   },
   {
     id: 'sansu_29',
@@ -288,6 +291,7 @@ export const questions: Question[] = [
     answer: '3/10',
     hint: '₅C₂ = 10通り、赤2個の選び方 ₃C₂ = 3通り',
     difficulty: 'standard',
+    answerReading: '10分の3。5コンビネーション2は10通り、赤2個の選び方は3コンビネーション2の3通りなので、10分の3になる',
   },
   {
     id: 'sansu_36',
@@ -593,6 +597,8 @@ export const questions: Question[] = [
     question: '「春はあけぼの。やうやう白くなりゆく山ぎは、少し明かりて…」は誰の作品か？',
     answer: '清少納言（枕草子）',
     difficulty: 'standard',
+    questionReading: '春はあけぼの。ようよう白くなりゆく山ぎわ、少し明かりて、は誰の作品か？',
+    answerReading: '清少納言。まくらのそうし',
   },
   {
     id: 'kokugo_26',
@@ -600,6 +606,8 @@ export const questions: Question[] = [
     question: '「いづれの御時にか、女御・更衣あまた侍ひ給ひける中に…」は何という作品の冒頭か？',
     answer: '源氏物語（紫式部）',
     difficulty: 'standard',
+    questionReading: 'いずれの御時にか、女御・更衣あまた仕えたてまつりたまいける中に、は何という作品の冒頭か？',
+    answerReading: 'げんじものがたり。むらさきしきぶ',
   },
   {
     id: 'kokugo_27',
@@ -650,6 +658,7 @@ export const questions: Question[] = [
     question: '「奥山に　もみぢ踏みわけ　鳴く鹿の　声きく時ぞ　秋は悲しき」の作者は？',
     answer: '猿丸大夫（百人一首第5番）',
     difficulty: 'standard',
+    answerReading: '猿丸大夫（さるまるだゆう）、百人一首第5番',
   },
   {
     id: 'kokugo_34',
@@ -709,6 +718,8 @@ export const questions: Question[] = [
     question: '「春の海　終日（ひねもす）のたり　のたりかな」の作者と、この俳句が表す情景を説明せよ。',
     answer: '与謝蕪村。春の穏やかな一日、波が静かにゆったりとうねり続けている海の情景',
     difficulty: 'advanced',
+    questionReading: '春の海、ひねもすのたり、のたりかな、の作者と、この俳句が表す情景を説明せよ。',
+    answerReading: '与謝蕪村（よさぶそん）。春の穏やかな一日、波が静かにゆったりとうねり続けている海の情景',
   },
   {
     id: 'kokugo_42',
@@ -730,6 +741,7 @@ export const questions: Question[] = [
     question: '「東海道中膝栗毛」の作者と、主人公の名前2人を答えよ。',
     answer: '十返舎一九。弥次郎兵衛（やじろべえ）と北八（きたはち）',
     difficulty: 'advanced',
+    answerReading: '十返舎一九（じっぺんしゃいっく）。弥次郎兵衛（やじろべえ）と北八（きたはち）',
   },
   {
     id: 'kokugo_45',
@@ -737,6 +749,7 @@ export const questions: Question[] = [
     question: '「夏草や　兵どもが　夢の跡」の作者と、詠まれた場所はどこか？',
     answer: '松尾芭蕉。平泉（岩手県）の衣川・高館（奥州藤原氏の栄華の跡地）',
     difficulty: 'advanced',
+    answerReading: '松尾芭蕉（まつおばしょう）。平泉（ひらいずみ）、岩手県の衣川と高館、奥州藤原氏の栄華の跡地',
   },
   {
     id: 'kokugo_46',
@@ -1073,6 +1086,7 @@ export const questions: Question[] = [
     question: '炭酸水素ナトリウム（重曹）を加熱すると何が生成するか？化学反応式で答えよ。',
     answer: '2NaHCO₃ → Na₂CO₃ + H₂O + CO₂（炭酸ナトリウム・水・二酸化炭素）',
     difficulty: 'advanced',
+    answerReading: '炭酸水素ナトリウム2つから、炭酸ナトリウムと水と二酸化炭素が生成する',
   },
   {
     id: 'rika_42',
@@ -1081,6 +1095,7 @@ export const questions: Question[] = [
     answer: '3:1',
     hint: 'F1はすべて丸（Aa）。F2はAA:Aa:aa = 1:2:1、表現型は丸:しわ = 3:1',
     difficulty: 'advanced',
+    answerReading: '3対1。F1はすべて丸、F2の表現型は丸対しわが3対1になる',
   },
   {
     id: 'rika_43',
@@ -1118,6 +1133,7 @@ export const questions: Question[] = [
     question: '血液循環：肺循環と体循環の経路をそれぞれ答えよ。動脈血・静脈血はどこを流れるか？',
     answer: '肺循環: 右心室→肺動脈→肺→肺静脈→左心房（肺動脈に静脈血、肺静脈に動脈血）。体循環: 左心室→大動脈→全身→大静脈→右心房',
     difficulty: 'advanced',
+    answerReading: '肺循環: 右心室から肺動脈を通って肺へ、肺静脈を通って左心房へ。肺動脈には静脈血、肺静脈には動脈血が流れる。体循環: 左心室から大動脈で全身へ、大静脈で右心房へ戻る',
   },
   {
     id: 'rika_48',
@@ -1125,6 +1141,8 @@ export const questions: Question[] = [
     question: '電気分解：塩化銅水溶液（CuCl₂）を電気分解すると、陽極と陰極に何が生成するか？',
     answer: '陽極: 塩素（Cl₂）が発生。陰極: 銅（Cu）が析出する',
     difficulty: 'advanced',
+    questionReading: '電気分解: 塩化銅水溶液を電気分解すると、陽極と陰極に何が生成するか？',
+    answerReading: '陽極: 塩素が発生。陰極: 銅が析出する',
   },
   {
     id: 'rika_49',
