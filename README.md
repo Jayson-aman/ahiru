@@ -1,2 +1,2 @@
-# ahiru
+# Entrance Exam
 duck
