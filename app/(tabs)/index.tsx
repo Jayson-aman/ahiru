@@ -1,10 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 import {
   View,
   Text,
   ScrollView,
   StyleSheet,
   SafeAreaView,
+  TouchableOpacity,
 } from 'react-native';
 import { useRouter } from 'expo-router';
 import { LinearGradient } from 'expo-linear-gradient';
@@ -13,12 +14,31 @@ import { questionsBySubject, SubjectKey } from '../../data/questions';
 
 const SUBJECTS: SubjectKey[] = ['sansu', 'kokugo', 'rika', 'shakai'];
 
+type Difficulty = 'all' | 'basic' | 'standard' | 'advanced';
+
+const DIFFICULTY_OPTIONS: { key: Difficulty; label: string; icon: string; color: string; desc: string }[] = [
+  { key: 'all',      label: 'すべて', icon: '📚', color: '#1E5FBE', desc: '全問題' },
+  { key: 'basic',    label: '基礎',   icon: '🌱', color: '#27AE60', desc: '基礎レベル' },
+  { key: 'standard', label: '標準',   icon: '⭐', color: '#F39C12', desc: '開成・甲陽レベル' },
+  { key: 'advanced', label: '発展',   icon: '🔥', color: '#E74C3C', desc: '灘・東大寺レベル' },
+];
+
+function getQuestionCount(subject: SubjectKey, difficulty: Difficulty): number {
+  const qs = questionsBySubject[subject];
+  if (difficulty === 'all') return qs.length;
+  return qs.filter((q) => q.difficulty === difficulty).length;
+}
+
 export default function HomeScreen() {
   const router = useRouter();
+  const [difficulty, setDifficulty] = useState<Difficulty>('all');
 
   function handleSubject(subject: SubjectKey) {
-    router.push(`/quiz/${subject}`);
+    const params = difficulty !== 'all' ? `?difficulty=${difficulty}` : '';
+    router.push(`/quiz/${subject}${params}`);
   }
+
+  const selectedDiff = DIFFICULTY_OPTIONS.find((d) => d.key === difficulty)!;
 
   return (
     <SafeAreaView style={styles.container}>
@@ -38,13 +58,41 @@ export default function HomeScreen() {
         contentContainerStyle={styles.content}
         showsVerticalScrollIndicator={false}
       >
-        <Text style={styles.sectionTitle}>科目を選んでスタート！</Text>
+        <Text style={styles.sectionTitle}>難易度を選ぶ</Text>
+        <View style={styles.difficultyRow}>
+          {DIFFICULTY_OPTIONS.map((opt) => {
+            const active = difficulty === opt.key;
+            return (
+              <TouchableOpacity
+                key={opt.key}
+                style={[styles.diffBtn, active && { backgroundColor: opt.color }]}
+                onPress={() => setDifficulty(opt.key)}
+                activeOpacity={0.8}
+              >
+                <Text style={styles.diffBtnIcon}>{opt.icon}</Text>
+                <Text style={[styles.diffBtnLabel, active && styles.diffBtnLabelActive]}>
+                  {opt.label}
+                </Text>
+              </TouchableOpacity>
+            );
+          })}
+        </View>
+
+        {difficulty !== 'all' && (
+          <View style={[styles.diffInfoBanner, { borderColor: selectedDiff.color }]}>
+            <Text style={[styles.diffInfoText, { color: selectedDiff.color }]}>
+              {selectedDiff.icon} {selectedDiff.desc}の問題のみ表示
+            </Text>
+          </View>
+        )}
+
+        <Text style={[styles.sectionTitle, { marginTop: 16 }]}>科目を選んでスタート！</Text>
         <View style={styles.grid}>
           {SUBJECTS.map((subject) => (
             <SubjectCard
               key={subject}
               subject={subject}
-              questionCount={questionsBySubject[subject].length}
+              questionCount={getQuestionCount(subject, difficulty)}
               onPress={() => handleSubject(subject)}
             />
           ))}
@@ -52,10 +100,26 @@ export default function HomeScreen() {
 
         <View style={styles.infoCard}>
           <Text style={styles.infoTitle}>📖 使い方</Text>
-          <Text style={styles.infoText}>① 科目をタップ</Text>
-          <Text style={styles.infoText}>② 問題カードをタップして答えを確認</Text>
+          <Text style={styles.infoText}>① 難易度と科目をタップ</Text>
+          <Text style={styles.infoText}>② カードをタップして答えを確認</Text>
           <Text style={styles.infoText}>③ ✓正解 / ✗不正解 を記録</Text>
           <Text style={styles.infoText}>④ 進捗タブで成績を確認</Text>
+        </View>
+
+        <View style={styles.schoolGuideCard}>
+          <Text style={styles.schoolGuideTitle}>🏫 難易度の目安</Text>
+          <View style={styles.schoolGuideRow}>
+            <Text style={[styles.schoolGuideLevel, { color: '#27AE60' }]}>🌱 基礎</Text>
+            <Text style={styles.schoolGuideSchools}>一般的な中学受験対策</Text>
+          </View>
+          <View style={styles.schoolGuideRow}>
+            <Text style={[styles.schoolGuideLevel, { color: '#F39C12' }]}>⭐ 標準</Text>
+            <Text style={styles.schoolGuideSchools}>開成・麻布・桜蔭・甲陽・西大和</Text>
+          </View>
+          <View style={styles.schoolGuideRow}>
+            <Text style={[styles.schoolGuideLevel, { color: '#E74C3C' }]}>🔥 発展</Text>
+            <Text style={styles.schoolGuideSchools}>灘・東大寺・聖光・筑波大附属駒場</Text>
+          </View>
         </View>
 
         <View style={styles.inspirationCard}>
@@ -105,9 +169,7 @@ const styles = StyleSheet.create({
     color: '#FFFFFF',
     fontWeight: '700',
   },
-  scroll: {
-    flex: 1,
-  },
+  scroll: { flex: 1 },
   content: {
     paddingHorizontal: 16,
     paddingTop: 20,
@@ -117,8 +179,49 @@ const styles = StyleSheet.create({
     fontSize: 17,
     fontWeight: '800',
     color: '#1A1A2E',
-    marginBottom: 14,
+    marginBottom: 12,
     letterSpacing: 0.5,
+  },
+  difficultyRow: {
+    flexDirection: 'row',
+    gap: 8,
+    marginBottom: 8,
+  },
+  diffBtn: {
+    flex: 1,
+    backgroundColor: '#FFFFFF',
+    borderRadius: 14,
+    paddingVertical: 10,
+    alignItems: 'center',
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.06,
+    shadowRadius: 6,
+    elevation: 2,
+  },
+  diffBtnIcon: {
+    fontSize: 18,
+    marginBottom: 3,
+  },
+  diffBtnLabel: {
+    fontSize: 12,
+    fontWeight: '700',
+    color: '#555',
+  },
+  diffBtnLabelActive: {
+    color: '#FFFFFF',
+  },
+  diffInfoBanner: {
+    borderWidth: 1.5,
+    borderRadius: 10,
+    paddingVertical: 8,
+    paddingHorizontal: 14,
+    marginBottom: 4,
+    backgroundColor: '#FAFAFA',
+  },
+  diffInfoText: {
+    fontSize: 13,
+    fontWeight: '700',
   },
   grid: {
     flexDirection: 'row',
@@ -148,6 +251,40 @@ const styles = StyleSheet.create({
     color: '#444',
     lineHeight: 24,
     fontWeight: '500',
+  },
+  schoolGuideCard: {
+    backgroundColor: '#FFFFFF',
+    borderRadius: 16,
+    padding: 18,
+    marginBottom: 14,
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.06,
+    shadowRadius: 8,
+    elevation: 3,
+  },
+  schoolGuideTitle: {
+    fontSize: 15,
+    fontWeight: '800',
+    color: '#1A1A2E',
+    marginBottom: 12,
+  },
+  schoolGuideRow: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    marginBottom: 8,
+    gap: 10,
+  },
+  schoolGuideLevel: {
+    fontSize: 14,
+    fontWeight: '800',
+    width: 60,
+  },
+  schoolGuideSchools: {
+    fontSize: 13,
+    color: '#555',
+    fontWeight: '500',
+    flex: 1,
   },
   inspirationCard: {
     backgroundColor: '#1E5FBE',

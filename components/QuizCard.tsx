@@ -13,11 +13,18 @@ type Props = {
   onReveal?: () => void;
 };
 
+const DIFF_STYLES: Record<string, { icon: string; color: string; bg: string }> = {
+  basic:    { icon: '🌱', color: '#27AE60', bg: '#F0FFF4' },
+  standard: { icon: '⭐', color: '#F39C12', bg: '#FFFBEB' },
+  advanced: { icon: '🔥', color: '#E74C3C', bg: '#FFF5F5' },
+};
+
 const { width } = Dimensions.get('window');
 
 export default function QuizCard({ question, onReveal }: Props) {
   const [revealed, setRevealed] = useState(false);
   const info = subjectInfo[question.subject];
+  const diffStyle = DIFF_STYLES[question.difficulty ?? 'basic'];
 
   function handlePress() {
     if (!revealed) {
@@ -34,7 +41,14 @@ export default function QuizCard({ question, onReveal }: Props) {
     >
       {!revealed ? (
         <View style={styles.questionSide}>
-          <Text style={styles.subjectEmoji}>{info.emoji}</Text>
+          <View style={styles.cardTopRow}>
+            <Text style={styles.subjectEmoji}>{info.emoji}</Text>
+            <View style={[styles.diffTag, { backgroundColor: diffStyle.bg, borderColor: diffStyle.color }]}>
+              <Text style={[styles.diffTagText, { color: diffStyle.color }]}>
+                {diffStyle.icon}
+              </Text>
+            </View>
+          </View>
           <Text style={styles.questionLabel}>問題</Text>
           <Text style={styles.questionText}>{question.question}</Text>
           <View style={styles.tapHint}>
@@ -79,9 +93,27 @@ const styles = StyleSheet.create({
   questionSide: {
     alignItems: 'center',
   },
+  cardTopRow: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'center',
+    gap: 10,
+    marginBottom: 12,
+  },
   subjectEmoji: {
     fontSize: 52,
-    marginBottom: 12,
+  },
+  diffTag: {
+    borderWidth: 1.5,
+    borderRadius: 10,
+    paddingHorizontal: 8,
+    paddingVertical: 4,
+    alignSelf: 'flex-start',
+    marginTop: 6,
+  },
+  diffTagText: {
+    fontSize: 16,
+    fontWeight: '700',
   },
   questionLabel: {
     fontSize: 13,
