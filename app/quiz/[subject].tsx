@@ -11,12 +11,14 @@ import { useLocalSearchParams, useRouter } from 'expo-router';
 import { questionsBySubject, subjectInfo, SubjectKey } from '../../data/questions';
 import QuizCard from '../../components/QuizCard';
 import ListenMode from '../../components/ListenMode';
+import Paywall from '../../components/Paywall';
+import { useSubscription } from '../../hooks/useSubscription';
 import { saveProgress } from '../../store/progress';
 
 type Difficulty = 'basic' | 'standard' | 'advanced';
 
 function isSubjectKey(value: string): value is SubjectKey {
-  return ['sansu', 'kokugo', 'rika', 'shakai'].includes(value);
+  return ['sansu', 'kokugo', 'rika', 'shakai', 'eigo'].includes(value);
 }
 
 function isDifficulty(value: string): value is Difficulty {
@@ -54,6 +56,8 @@ export default function QuizScreen() {
   const [finished, setFinished] = useState(false);
   const [savedProgress, setSavedProgress] = useState(false);
   const [listenVisible, setListenVisible] = useState(false);
+  const [paywallVisible, setPaywallVisible] = useState(false);
+  const { isPro, loading: subLoading } = useSubscription();
 
   const currentQuestion = questions[currentIndex];
   const total = questions.length;
@@ -206,16 +210,21 @@ export default function QuizScreen() {
           )}
         </View>
         <View style={styles.headerRight}>
+          <TouchableOpacity
+            onPress={() =>
+              isPro ? setListenVisible(true) : setPaywallVisible(true)
+            }
+            activeOpacity={0.75}
+            style={styles.listenBtn}
+          >
+            <Text style={styles.listenBtnIcon}>🎧</Text>
+            {!isPro && !subLoading && (
+              <Text style={styles.proBadge}>PRO</Text>
+            )}
+          </TouchableOpacity>
           <Text style={styles.questionIndicator}>
             {currentIndex + 1}/{total}問
           </Text>
-          <TouchableOpacity
-            style={styles.listenBtn}
-            onPress={() => setListenVisible(true)}
-            activeOpacity={0.75}
-          >
-            <Text style={styles.listenBtnText}>🎧</Text>
-          </TouchableOpacity>
         </View>
       </View>
 
@@ -294,6 +303,14 @@ export default function QuizScreen() {
         subjectColor={info.color}
         onClose={() => setListenVisible(false)}
       />
+      <Paywall
+        visible={paywallVisible}
+        onClose={() => setPaywallVisible(false)}
+        onPurchased={() => {
+          setPaywallVisible(false);
+          setListenVisible(true);
+        }}
+      />
     </SafeAreaView>
   );
 }
@@ -343,19 +360,22 @@ const styles = StyleSheet.create({
     alignItems: 'flex-end',
     gap: 4,
   },
+  listenBtn: {
+    alignItems: 'center',
+  },
+  listenBtnIcon: {
+    fontSize: 22,
+  },
+  proBadge: {
+    fontSize: 8,
+    fontWeight: '900',
+    color: '#FFD700',
+    letterSpacing: 0.5,
+  },
   questionIndicator: {
     fontSize: 14,
     color: 'rgba(255,255,255,0.9)',
     fontWeight: '700',
-  },
-  listenBtn: {
-    backgroundColor: 'rgba(255,255,255,0.2)',
-    borderRadius: 10,
-    paddingHorizontal: 8,
-    paddingVertical: 3,
-  },
-  listenBtnText: {
-    fontSize: 16,
   },
   progressTrack: {
     height: 4,

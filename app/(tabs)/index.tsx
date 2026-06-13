@@ -12,7 +12,7 @@ import { LinearGradient } from 'expo-linear-gradient';
 import SubjectCard from '../../components/SubjectCard';
 import { questionsBySubject, SubjectKey } from '../../data/questions';
 
-const SUBJECTS: SubjectKey[] = ['sansu', 'kokugo', 'rika', 'shakai'];
+const SUBJECTS: SubjectKey[] = ['sansu', 'kokugo', 'rika', 'shakai', 'eigo'];
 
 type Difficulty = 'all' | 'basic' | 'standard' | 'advanced';
 
@@ -58,6 +58,7 @@ export default function HomeScreen() {
         contentContainerStyle={styles.content}
         showsVerticalScrollIndicator={false}
       >
+        {/* Difficulty filter */}
         <Text style={styles.sectionTitle}>難易度を選ぶ</Text>
         <View style={styles.difficultyRow}>
           {DIFFICULTY_OPTIONS.map((opt) => {
@@ -86,6 +87,7 @@ export default function HomeScreen() {
           </View>
         )}
 
+        {/* Subject grid */}
         <Text style={[styles.sectionTitle, { marginTop: 16 }]}>科目を選んでスタート！</Text>
         <View style={styles.grid}>
           {SUBJECTS.map((subject) => (
@@ -98,6 +100,7 @@ export default function HomeScreen() {
           ))}
         </View>
 
+        {/* How to use */}
         <View style={styles.infoCard}>
           <Text style={styles.infoTitle}>📖 使い方</Text>
           <Text style={styles.infoText}>① 難易度と科目をタップ</Text>
@@ -106,6 +109,7 @@ export default function HomeScreen() {
           <Text style={styles.infoText}>④ 進捗タブで成績を確認</Text>
         </View>
 
+        {/* School level guide */}
         <View style={styles.schoolGuideCard}>
           <Text style={styles.schoolGuideTitle}>🏫 難易度の目安</Text>
           <View style={styles.schoolGuideRow}>
@@ -120,6 +124,16 @@ export default function HomeScreen() {
             <Text style={[styles.schoolGuideLevel, { color: '#E74C3C' }]}>🔥 発展</Text>
             <Text style={styles.schoolGuideSchools}>灘・東大寺・聖光・筑波大附属駒場</Text>
           </View>
+        </View>
+
+        <View style={styles.proCard}>
+          <View style={styles.proCardHeader}>
+            <Text style={styles.proBadge}>PRO</Text>
+            <Text style={styles.proCardTitle}>🎧 聞き流しモード</Text>
+          </View>
+          <Text style={styles.proCardText}>
+            ながら勉強に最適！問題と解答を自動で読み上げます。各科目ページの 🎧 ボタンからアクセスできます。
+          </Text>
         </View>
 
         <View style={styles.inspirationCard}>
@@ -285,6 +299,39 @@ const styles = StyleSheet.create({
     color: '#555',
     fontWeight: '500',
     flex: 1,
+  },
+  proCard: {
+    backgroundColor: '#2D1B69',
+    borderRadius: 16,
+    padding: 18,
+    marginBottom: 14,
+  },
+  proCardHeader: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 10,
+    marginBottom: 10,
+  },
+  proBadge: {
+    backgroundColor: '#FFD700',
+    color: '#1A1A2E',
+    fontSize: 11,
+    fontWeight: '900',
+    paddingHorizontal: 8,
+    paddingVertical: 3,
+    borderRadius: 6,
+    overflow: 'hidden',
+  },
+  proCardTitle: {
+    fontSize: 16,
+    fontWeight: '800',
+    color: '#FFFFFF',
+  },
+  proCardText: {
+    fontSize: 13,
+    color: 'rgba(255,255,255,0.8)',
+    lineHeight: 20,
+    fontWeight: '500',
   },
   inspirationCard: {
     backgroundColor: '#1E5FBE',
