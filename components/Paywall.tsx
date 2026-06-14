@@ -56,7 +56,7 @@ function findPkg(
   return offering.availablePackages.find(
     (p) =>
       p.identifier.toLowerCase().includes(planId) ||
-      p.storeProduct.productIdentifier.toLowerCase().includes(planId),
+      p.product.identifier.toLowerCase().includes(planId),
   );
 }
 
@@ -125,7 +125,7 @@ export default function Paywall({ visible, onClose, onPurchased }: Props) {
           ) : (
             PLANS.map((plan) => {
               const pkg = offering ? findPkg(offering, plan.id) : undefined;
-              const priceStr = pkg?.storeProduct.priceString ?? plan.fallbackPrice;
+              const priceStr = pkg?.product.priceString ?? plan.fallbackPrice;
 
               return (
                 <View key={plan.id} style={[styles.card, { borderColor: plan.color }]}>

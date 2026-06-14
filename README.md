@@ -28,10 +28,35 @@
 
 ```bash
 npm install
-npm run ios      # iOS
-npm run android  # Android
-npm run web      # Web
+cp .env.example .env   # RevenueCat の API キーを設定
+npm run ios      # iOS シミュレータ
+npm run android  # Android エミュレータ
+npm run web      # Web（開発用）
 ```
+
+## ストア公開（EAS Build）
+
+1. [Expo](https://expo.dev) アカウント作成 → `npm install -g eas-cli` → `eas login`
+2. プロジェクト作成: `eas init`（初回のみ）
+3. `.env` に RevenueCat の iOS/Android 公開 API キーを設定
+4. [RevenueCat](https://app.revenuecat.com) で `pro` / `max` エンタイトルメントと App Store / Google Play 商品を紐付け
+5. ビルド:
+   ```bash
+   eas build --platform ios --profile production
+   eas build --platform android --profile production
+   ```
+6. ストア申請:
+   ```bash
+   eas submit --platform ios
+   eas submit --platform android
+   ```
+
+`app.json` の `bundleIdentifier` / `package` は `com.jaysonaman.entranceexam` です。App Store Connect / Google Play Console で同じ ID を登録してください。
+
+## Pull Request
+
+- **PR #1**: `claude/app-identification-k8js9v` → `main`（アプリ本体・250問・RevenueCat・聞き流しモード）
+- マージ前に RevenueCat キーとストア商品 ID の設定が必要です。
 
 ## 技術スタック
 

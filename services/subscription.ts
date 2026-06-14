@@ -6,9 +6,11 @@ import Purchases, {
 } from 'react-native-purchases';
 import { Platform } from 'react-native';
 
-// ⚠️ Replace with your actual RevenueCat API keys from https://app.revenuecat.com
-const RC_API_KEY_IOS = 'appl_XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX';
-const RC_API_KEY_ANDROID = 'goog_XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX';
+// Keys from .env (EXPO_PUBLIC_*) — see .env.example
+const RC_API_KEY_IOS =
+  process.env.EXPO_PUBLIC_RC_API_KEY_IOS ?? 'appl_XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX';
+const RC_API_KEY_ANDROID =
+  process.env.EXPO_PUBLIC_RC_API_KEY_ANDROID ?? 'goog_XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX';
 
 export type SubscriptionTier = 'free' | 'pro' | 'max';
 

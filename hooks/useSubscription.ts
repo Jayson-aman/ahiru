@@ -32,9 +32,8 @@ export function useSubscription(): SubscriptionState {
         if (mounted.current) setLoading(false);
       });
 
-    let listener: { remove(): void } | null = null;
     try {
-      listener = Purchases.addCustomerInfoUpdateListener((info: CustomerInfo) => {
+      Purchases.addCustomerInfoUpdateListener((info: CustomerInfo) => {
         if (mounted.current) setTier(tierFromCustomerInfo(info));
       });
     } catch {
@@ -43,7 +42,6 @@ export function useSubscription(): SubscriptionState {
 
     return () => {
       mounted.current = false;
-      listener?.remove();
     };
   }, []);
 
