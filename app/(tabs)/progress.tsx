@@ -12,7 +12,7 @@ import { useFocusEffect } from 'expo-router';
 import { loadProgress, resetProgress, ProgressData } from '../../store/progress';
 import { subjectInfo, SubjectKey } from '../../data/questions';
 
-const SUBJECTS: SubjectKey[] = ['sansu', 'kokugo', 'rika', 'shakai'];
+const SUBJECTS: SubjectKey[] = ['sansu', 'kokugo', 'rika', 'shakai', 'eigo'];
 
 export default function ProgressScreen() {
   const [progressData, setProgressData] = useState<ProgressData>({});

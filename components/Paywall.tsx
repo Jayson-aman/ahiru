@@ -16,6 +16,7 @@ import {
   purchasePackage,
   restorePurchases,
 } from '../services/subscription';
+import { PRO_FEATURES } from '../constants/proAccess';
 
 interface Props {
   visible: boolean;
@@ -29,23 +30,14 @@ const PLANS = [
     name: 'Pro',
     fallbackPrice: '¥480/月',
     color: '#9B59B6',
-    features: [
-      '🎧 聞き流しモード',
-      '⚡ 速度調節（0.8x〜1.6x）',
-      '📚 全250問 × 5科目',
-    ],
+    features: [...PRO_FEATURES],
   },
   {
     id: 'max',
     name: 'Max',
     fallbackPrice: '¥980/月',
     color: '#E74C3C',
-    features: [
-      '🎧 聞き流しモード',
-      '⚡ 速度調節',
-      '🔊 高音質AI音声（近日公開）',
-      '⭐ Proの全機能',
-    ],
+    features: [...PRO_FEATURES, '🔊 高音質AI音声（近日公開）'],
   },
 ] as const;
 
@@ -56,7 +48,7 @@ function findPkg(
   return offering.availablePackages.find(
     (p) =>
       p.identifier.toLowerCase().includes(planId) ||
-      p.storeProduct.productIdentifier.toLowerCase().includes(planId),
+      p.product.identifier.toLowerCase().includes(planId),
   );
 }
 
@@ -69,7 +61,7 @@ export default function Paywall({ visible, onClose, onPurchased }: Props) {
     if (!visible) return;
     setLoadingOff(true);
     fetchCurrentOffering()
-      .then(setOffering)
+      .then((o) => setOffering(o as PurchasesOffering | null))
       .catch(() => setOffering(null))
       .finally(() => setLoadingOff(false));
   }, [visible]);
@@ -125,7 +117,7 @@ export default function Paywall({ visible, onClose, onPurchased }: Props) {
           ) : (
             PLANS.map((plan) => {
               const pkg = offering ? findPkg(offering, plan.id) : undefined;
-              const priceStr = pkg?.storeProduct.priceString ?? plan.fallbackPrice;
+              const priceStr = pkg?.product.priceString ?? plan.fallbackPrice;
 
               return (
                 <View key={plan.id} style={[styles.card, { borderColor: plan.color }]}>

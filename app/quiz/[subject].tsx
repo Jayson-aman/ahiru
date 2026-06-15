@@ -1,4 +1,4 @@
-import React, { useState, useCallback } from 'react';
+import React, { useState, useMemo } from 'react';
 import {
   View,
   Text,
@@ -10,19 +10,43 @@ import {
 import { useLocalSearchParams, useRouter } from 'expo-router';
 import { questionsBySubject, subjectInfo, SubjectKey } from '../../data/questions';
 import QuizCard from '../../components/QuizCard';
+import AnimatedMascot from '../../components/AnimatedMascot';
+import { getResultMascot } from '../../data/images';
 import { saveProgress } from '../../store/progress';
 
 function isSubjectKey(value: string): value is SubjectKey {
-  return ['sansu', 'kokugo', 'rika', 'shakai'].includes(value);
+  return ['sansu', 'kokugo', 'rika', 'shakai', 'eigo'].includes(value);
 }
 
+type Difficulty = 'basic' | 'standard' | 'advanced';
+
+function isDifficulty(value: string): value is Difficulty {
+  return ['basic', 'standard', 'advanced'].includes(value);
+}
+
+const DIFF_LABELS: Record<Difficulty, { label: string; icon: string; color: string }> = {
+  basic: { label: '基礎', icon: '🌱', color: '#27AE60' },
+  standard: { label: '標準', icon: '⭐', color: '#F39C12' },
+  advanced: { label: '発展', icon: '🔥', color: '#E74C3C' },
+};
+
 export default function QuizScreen() {
-  const { subject } = useLocalSearchParams<{ subject: string }>();
+  const { subject, difficulty: diffParam } = useLocalSearchParams<{
+    subject: string;
+    difficulty?: string;
+  }>();
   const router = useRouter();
 
   const subjectKey: SubjectKey = isSubjectKey(subject ?? '') ? (subject as SubjectKey) : 'sansu';
+  const difficultyFilter: Difficulty | null =
+    diffParam && isDifficulty(diffParam) ? diffParam : null;
   const info = subjectInfo[subjectKey];
-  const questions = questionsBySubject[subjectKey];
+
+  const questions = useMemo(() => {
+    const all = questionsBySubject[subjectKey];
+    if (difficultyFilter == null) return all;
+    return all.filter((q) => q.difficulty === difficultyFilter);
+  }, [subjectKey, difficultyFilter]);
 
   const [currentIndex, setCurrentIndex] = useState(0);
   const [score, setScore] = useState(0);
@@ -32,6 +56,7 @@ export default function QuizScreen() {
 
   const currentQuestion = questions[currentIndex];
   const total = questions.length;
+  const diffInfo = difficultyFilter ? DIFF_LABELS[difficultyFilter] : null;
 
   function handleReveal() {
     setRevealed(true);
@@ -61,6 +86,28 @@ export default function QuizScreen() {
     setRevealed(false);
     setFinished(false);
     setSavedProgress(false);
+  }
+
+  if (questions.length === 0) {
+    return (
+      <SafeAreaView style={styles.safeArea}>
+        <View style={[styles.header, { backgroundColor: info.color }]}>
+          <TouchableOpacity onPress={() => router.back()} style={styles.backBtn}>
+            <Text style={styles.backBtnText}>← 戻る</Text>
+          </TouchableOpacity>
+          <View style={styles.headerCenter}>
+            <Text style={styles.headerEmoji}>{info.emoji}</Text>
+            <Text style={styles.headerTitle}>{info.name}</Text>
+          </View>
+        </View>
+        <View style={styles.emptyWrap}>
+          <Text style={styles.emptyText}>この難易度の問題はありません</Text>
+          <TouchableOpacity style={styles.backButton} onPress={() => router.back()}>
+            <Text style={styles.backButtonText}>← 戻る</Text>
+          </TouchableOpacity>
+        </View>
+      </SafeAreaView>
+    );
   }
 
   if (finished) {
@@ -94,6 +141,13 @@ export default function QuizScreen() {
 
           <ScrollView contentContainerStyle={styles.resultsContent}>
             <View style={styles.resultCard}>
+              <AnimatedMascot
+                source={getResultMascot(pct)}
+                style={styles.resultAnime}
+                fallbackEmoji={emoji}
+                animation="bounce"
+                accessibilityLabel="結果イラスト"
+              />
               <Text style={styles.resultEmoji}>{emoji}</Text>
               <Text style={styles.resultMessage}>{message}</Text>
               <View style={styles.resultScoreRow}>
@@ -146,6 +200,11 @@ export default function QuizScreen() {
         <View style={styles.headerCenter}>
           <Text style={styles.headerEmoji}>{info.emoji}</Text>
           <Text style={styles.headerTitle}>{info.name}</Text>
+          {diffInfo && (
+            <Text style={styles.headerDiff}>
+              {diffInfo.icon} {diffInfo.label}
+            </Text>
+          )}
         </View>
         <View style={styles.headerRight}>
           <Text style={styles.questionIndicator}>
@@ -186,6 +245,7 @@ export default function QuizScreen() {
         <QuizCard
           key={currentIndex}
           question={currentQuestion}
+          questionIndex={currentIndex}
           onReveal={handleReveal}
         />
 
@@ -257,6 +317,24 @@ const styles = StyleSheet.create({
     fontWeight: '800',
     color: '#FFFFFF',
     letterSpacing: 1,
+  },
+  headerDiff: {
+    fontSize: 12,
+    fontWeight: '700',
+    color: 'rgba(255,255,255,0.9)',
+    marginTop: 2,
+  },
+  emptyWrap: {
+    flex: 1,
+    alignItems: 'center',
+    justifyContent: 'center',
+    padding: 24,
+  },
+  emptyText: {
+    fontSize: 16,
+    fontWeight: '700',
+    color: '#555',
+    marginBottom: 20,
   },
   headerRight: {
     minWidth: 60,
@@ -402,6 +480,13 @@ const styles = StyleSheet.create({
     shadowRadius: 12,
     elevation: 6,
     marginBottom: 20,
+  },
+  resultAnime: {
+    width: 120,
+    height: 120,
+    borderRadius: 60,
+    marginBottom: 8,
+    backgroundColor: '#EEF4FF',
   },
   resultEmoji: {
     fontSize: 60,

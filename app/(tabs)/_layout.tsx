@@ -30,6 +30,15 @@ export default function TabLayout() {
         }}
       />
       <Tabs.Screen
+        name="geography"
+        options={{
+          title: '地理',
+          tabBarIcon: ({ focused }) => (
+            <TabIcon emoji="🗾" focused={focused} />
+          ),
+        }}
+      />
+      <Tabs.Screen
         name="progress"
         options={{
           title: '進捗',

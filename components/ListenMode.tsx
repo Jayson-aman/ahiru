@@ -8,10 +8,29 @@ import {
   SafeAreaView,
   ScrollView,
 } from 'react-native';
-import * as Speech from 'expo-speech';
 import { Question } from '../data/questions';
+import {
+  speak,
+  stopSpeech,
+  pauseSpeech,
+  resumeSpeech,
+  toSpeechText,
+} from '../utils/speech';
+import AnimatedMascot from './AnimatedMascot';
+import {
+  listenMascot,
+  getQuestionIllustration,
+  getHistoryThemeLabel,
+} from '../data/images';
 
-type Phase = 'idle' | 'reading_q' | 'pause_q' | 'reading_a' | 'pause_a' | 'done';
+type Phase =
+  | 'idle'
+  | 'reading_q'
+  | 'pause_q'
+  | 'reading_a_prefix'
+  | 'reading_a'
+  | 'pause_a'
+  | 'done';
 
 type Props = {
   visible: boolean;
@@ -19,67 +38,11 @@ type Props = {
   subjectName: string;
   subjectEmoji: string;
   subjectColor: string;
+  autoStart?: boolean;
   onClose: () => void;
 };
 
-const SPEEDS = [
-  { label: '0.8x', value: 0.8 },
-  { label: '1x',   value: 1.0 },
-  { label: '1.3x', value: 1.3 },
-  { label: '1.6x', value: 1.6 },
-];
-
-const PAUSE_Q_MS = 2200;
-const PAUSE_A_MS = 3000;
-
-function toSpeechText(text: string): string {
-  return text
-    // Units
-    .replace(/㎠/g, '平方センチメートル')
-    .replace(/㎤/g, '立方センチメートル')
-    .replace(/cm³/g, '立方センチメートル')
-    .replace(/cm²/g, '平方センチメートル')
-    .replace(/m²/g, '平方メートル')
-    // Chemical formulas — specific compounds first
-    .replace(/NaHCO₃/g, '炭酸水素ナトリウム')
-    .replace(/Na₂CO₃/g, '炭酸ナトリウム')
-    .replace(/CuCl₂/g, '塩化銅')
-    .replace(/NH₃/g, 'アンモニア')
-    .replace(/NaCl/g, '塩化ナトリウム')
-    .replace(/CO₂/g, '二酸化炭素')
-    .replace(/H₂O/g, '水')
-    .replace(/Cl₂/g, '塩素')
-    // Math
-    .replace(/√(\d+)/g, 'ルート$1')
-    .replace(/(\w)⁵/g, '$1の5乗')
-    .replace(/(\w)⁴/g, '$1の4乗')
-    .replace(/(\w)³/g, '$1の3乗')
-    .replace(/(\w)²/g, '$1の2乗')
-    // Combination / permutation notation
-    .replace(/₅C₃/g, '5コンビネーション3')
-    .replace(/₅C₂/g, '5コンビネーション2')
-    .replace(/₃C₂/g, '3コンビネーション2')
-    // Greek / special letters
-    .replace(/π/g, 'パイ')
-    .replace(/Ω/g, 'オーム')
-    // Operators
-    .replace(/×/g, 'かける')
-    .replace(/÷/g, 'わる')
-    .replace(/→/g, 'から')
-    .replace(/≈/g, 'およそ')
-    .replace(/≦/g, 'いか')
-    .replace(/≧/g, 'いじょう')
-    // Fractions: 3/4 → 4分の3
-    .replace(/(\d+)\/(\d+)/g, '$2分の$1')
-    // Remaining subscript digits
-    .replace(/₁/g, '1').replace(/₂/g, '2').replace(/₃/g, '3')
-    .replace(/₄/g, '4').replace(/₅/g, '5').replace(/₆/g, '6')
-    // Ancient kana
-    .replace(/やうやう/g, 'ようよう')
-    .replace(/いづれ/g, 'いずれ')
-    .replace(/ゐ/g, 'い')
-    .replace(/ゑ/g, 'え');
-}
+const PAUSE_MS = 2000;
 
 export default function ListenMode({
   visible,
@@ -87,174 +50,213 @@ export default function ListenMode({
   subjectName,
   subjectEmoji,
   subjectColor,
+  autoStart = true,
   onClose,
 }: Props) {
   const [index, setIndex] = useState(0);
-  const [playing, setPlaying] = useState(false);
   const [phase, setPhase] = useState<Phase>('idle');
-  const [speedIdx, setSpeedIdx] = useState(1);
+  const [paused, setPaused] = useState(false);
+  const [active, setActive] = useState(false);
 
-  const playingRef = useRef(false);
+  const activeRef = useRef(false);
+  const pausedRef = useRef(false);
   const indexRef = useRef(0);
-  const speedRef = useRef(SPEEDS[1].value);
+  const phaseRef = useRef<Phase>('idle');
   const timerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const runIdRef = useRef(0);
+  const autoStartedRef = useRef(false);
 
-  useEffect(() => { playingRef.current = playing; }, [playing]);
-  useEffect(() => { indexRef.current = index; }, [index]);
+  useEffect(() => {
+    activeRef.current = active;
+  }, [active]);
+  useEffect(() => {
+    pausedRef.current = paused;
+  }, [paused]);
+  useEffect(() => {
+    indexRef.current = index;
+  }, [index]);
+  useEffect(() => {
+    phaseRef.current = phase;
+  }, [phase]);
 
-  const stopAll = useCallback(() => {
+  const clearTimer = useCallback(() => {
     if (timerRef.current != null) {
       clearTimeout(timerRef.current);
       timerRef.current = null;
     }
-    Speech.stop();
   }, []);
+
+  const stopAll = useCallback(() => {
+    clearTimer();
+    stopSpeech();
+    runIdRef.current += 1;
+  }, [clearTimer]);
+
+  const wait = useCallback((ms: number, runId: number) => {
+    const startedAt = Date.now();
+    let pausedAt: number | null = null;
+    let pausedTotal = 0;
+
+    return new Promise<void>((resolve) => {
+      const tick = () => {
+        if (runId !== runIdRef.current || !activeRef.current) {
+          timerRef.current = null;
+          resolve();
+          return;
+        }
+
+        if (pausedRef.current) {
+          if (pausedAt == null) pausedAt = Date.now();
+          timerRef.current = setTimeout(tick, 200);
+          return;
+        }
+
+        if (pausedAt != null) {
+          pausedTotal += Date.now() - pausedAt;
+          pausedAt = null;
+        }
+
+        const elapsed = Date.now() - startedAt - pausedTotal;
+        if (elapsed >= ms) {
+          timerRef.current = null;
+          resolve();
+          return;
+        }
+
+        timerRef.current = setTimeout(tick, ms - elapsed);
+      };
+
+      timerRef.current = setTimeout(tick, ms);
+    });
+  }, []);
+
+  const runFrom = useCallback(
+    async (startIdx: number) => {
+      const runId = runIdRef.current;
+
+      for (let i = startIdx; i < questions.length; i += 1) {
+        if (runId !== runIdRef.current || !activeRef.current) return;
+
+        setIndex(i);
+        indexRef.current = i;
+
+        setPhase('reading_q');
+        await speak(`問題${i + 1}番`);
+        if (runId !== runIdRef.current || !activeRef.current) return;
+        await speak(toSpeechText(questions[i].question));
+        if (runId !== runIdRef.current || !activeRef.current) return;
+
+        setPhase('pause_q');
+        await wait(PAUSE_MS, runId);
+        if (runId !== runIdRef.current || !activeRef.current) return;
+
+        setPhase('reading_a_prefix');
+        await speak('答えは');
+        if (runId !== runIdRef.current || !activeRef.current) return;
+
+        setPhase('reading_a');
+        await speak(toSpeechText(questions[i].answer));
+        if (runId !== runIdRef.current || !activeRef.current) return;
+
+        setPhase('pause_a');
+        await wait(PAUSE_MS, runId);
+        if (runId !== runIdRef.current || !activeRef.current) return;
+      }
+
+      if (runId !== runIdRef.current || !activeRef.current) return;
+      setPhase('done');
+      setActive(false);
+      activeRef.current = false;
+    },
+    [questions, wait],
+  );
+
+  const startSession = useCallback(() => {
+    stopAll();
+    const startIdx = phaseRef.current === 'done' ? 0 : indexRef.current;
+    if (phaseRef.current === 'done') {
+      setIndex(0);
+      indexRef.current = 0;
+    }
+    setPaused(false);
+    pausedRef.current = false;
+    setActive(true);
+    activeRef.current = true;
+    runFrom(startIdx);
+  }, [runFrom, stopAll]);
 
   useEffect(() => {
     if (!visible) {
+      autoStartedRef.current = false;
       stopAll();
-      setPlaying(false);
+      setActive(false);
+      activeRef.current = false;
+      setPaused(false);
+      pausedRef.current = false;
       setPhase('idle');
       setIndex(0);
       indexRef.current = 0;
-      playingRef.current = false;
+      return;
     }
-  }, [visible, stopAll]);
 
-  const beginReading = useCallback(
-    (startIdx: number) => {
-      const readQ = (i: number) => {
-        if (!playingRef.current) return;
-        setIndex(i);
-        indexRef.current = i;
-        setPhase('reading_q');
-        const q = questions[i];
-        const qText = q.questionReading ?? toSpeechText(q.question);
-        Speech.speak(`問題${i + 1}。${qText}`, {
-          language: 'ja-JP',
-          rate: speedRef.current,
-          onDone: () => {
-            if (!playingRef.current) return;
-            setPhase('pause_q');
-            timerRef.current = setTimeout(() => {
-              if (!playingRef.current) return;
-              readA(i);
-            }, PAUSE_Q_MS);
-          },
-        });
-      };
-
-      const readA = (i: number) => {
-        if (!playingRef.current) return;
-        setPhase('reading_a');
-        const q = questions[i];
-        const baseAnswer = q.answerReading ?? toSpeechText(q.answer);
-        const hintPart = q.hint ? `。ヒント。${toSpeechText(q.hint)}` : '';
-        Speech.speak(`答え。${baseAnswer}${hintPart}`, {
-          language: 'ja-JP',
-          rate: speedRef.current,
-          onDone: () => {
-            if (!playingRef.current) return;
-            setPhase('pause_a');
-            timerRef.current = setTimeout(() => {
-              if (!playingRef.current) return;
-              if (i + 1 >= questions.length) {
-                setPhase('done');
-                setPlaying(false);
-                playingRef.current = false;
-              } else {
-                readQ(i + 1);
-              }
-            }, PAUSE_A_MS);
-          },
-        });
-      };
-
-      readQ(startIdx);
-    },
-    [questions],
-  );
-
-  function handlePlayPause() {
-    if (playing) {
-      setPlaying(false);
-      playingRef.current = false;
-      stopAll();
-      if (phase !== 'done') setPhase('idle');
-    } else {
-      const startIdx = phase === 'done' ? 0 : indexRef.current;
-      if (phase === 'done') {
-        setIndex(0);
-        indexRef.current = 0;
-      }
-      setPlaying(true);
-      playingRef.current = true;
-      beginReading(startIdx);
+    if (autoStart && !autoStartedRef.current) {
+      autoStartedRef.current = true;
+      startSession();
     }
+  }, [visible, autoStart, startSession, stopAll]);
+
+  function handlePauseToggle() {
+    if (!active && phase !== 'done') return;
+
+    if (paused) {
+      setPaused(false);
+      pausedRef.current = false;
+      resumeSpeech();
+      return;
+    }
+
+    setPaused(true);
+    pausedRef.current = true;
+    pauseSpeech();
   }
 
-  function handlePrev() {
+  function handleStop() {
     stopAll();
-    const newIdx = Math.max(0, indexRef.current - 1);
-    setIndex(newIdx);
-    indexRef.current = newIdx;
+    setActive(false);
+    activeRef.current = false;
+    setPaused(false);
+    pausedRef.current = false;
     setPhase('idle');
-    if (playing) {
-      setTimeout(() => {
-        if (playingRef.current) beginReading(newIdx);
-      }, 100);
-    }
+    onClose();
   }
 
-  function handleNext() {
-    stopAll();
-    const newIdx = Math.min(questions.length - 1, indexRef.current + 1);
-    setIndex(newIdx);
-    indexRef.current = newIdx;
-    setPhase('idle');
-    if (playing) {
-      setTimeout(() => {
-        if (playingRef.current) beginReading(newIdx);
-      }, 100);
-    }
-  }
-
-  function handleSpeedChange(si: number) {
-    setSpeedIdx(si);
-    speedRef.current = SPEEDS[si].value;
-    if (playing) {
-      stopAll();
-      setTimeout(() => {
-        if (playingRef.current) beginReading(indexRef.current);
-      }, 150);
-    }
-  }
-
-  const q = questions[index];
+  const q = questions[index] ?? questions[0];
   const total = questions.length;
-  const showAnswer = phase === 'reading_a' || phase === 'pause_a';
 
   const phaseLabel =
-    phase === 'reading_q' ? '問題を読んでいます...' :
-    phase === 'pause_q'   ? '少しお待ちください...' :
-    phase === 'reading_a' ? '答えを読んでいます...' :
-    phase === 'pause_a'   ? '次の問題へ...' :
-    phase === 'done'      ? '🎉 全問終了！' :
-    playing               ? '準備中...' :
-                            '▶ 再生ボタンでスタート';
+    phase === 'reading_q' ? '問題を読んでいます…' :
+    phase === 'pause_q' ? '考える時間…' :
+    phase === 'reading_a_prefix' || phase === 'reading_a' ? '答えを読んでいます…' :
+    phase === 'pause_a' ? '次の問題へ…' :
+    phase === 'done' ? '全問終了！' :
+    active ? '準備中…' :
+    '停止中';
+
+  const historyLabel = getHistoryThemeLabel(q.id);
 
   return (
     <Modal visible={visible} animationType="slide" statusBarTranslucent>
       <SafeAreaView style={styles.root}>
         <View style={[styles.header, { backgroundColor: subjectColor }]}>
-          <Text style={styles.headerTitle}>{subjectEmoji} 聞き流しモード</Text>
-          <TouchableOpacity style={styles.closeBtn} onPress={onClose}>
-            <Text style={styles.closeBtnText}>✕</Text>
-          </TouchableOpacity>
+          <Text style={styles.headerTitle}>
+            {subjectEmoji} {subjectName} 聞き流し
+          </Text>
         </View>
 
         <View style={styles.progressRow}>
-          <Text style={styles.progressText}>{index + 1} / {total}問</Text>
+          <Text style={styles.progressText}>
+            問題 {index + 1} / {total}
+          </Text>
         </View>
         <View style={styles.progressTrack}>
           <View
@@ -269,86 +271,70 @@ export default function ListenMode({
           contentContainerStyle={styles.content}
           showsVerticalScrollIndicator={false}
         >
-          <View
-            style={[
-              styles.card,
-              (phase === 'reading_q' || phase === 'pause_q') && {
-                borderWidth: 2,
-                borderColor: subjectColor,
-              },
-            ]}
-          >
-            <Text style={styles.cardLabel}>問題</Text>
-            <Text style={styles.questionText}>{q.question}</Text>
+          <View style={styles.animeRow}>
+            <AnimatedMascot
+              source={getQuestionIllustration(q.subject, q.id)}
+              style={styles.sceneImage}
+              fallbackEmoji={subjectEmoji}
+              animation="float"
+              accessibilityLabel="問題シーン"
+            />
+            <AnimatedMascot
+              source={listenMascot}
+              style={styles.mascotImage}
+              fallbackEmoji="🎧"
+              resizeMode="contain"
+              animation={active && !paused ? 'pulse' : 'float'}
+              accessibilityLabel="聞き流しキャラクター"
+            />
           </View>
+          {historyLabel != null && (
+            <Text style={styles.historyBanner}>🏛 {historyLabel}の問題</Text>
+          )}
 
-          <View
-            style={[
-              styles.card,
-              showAnswer ? styles.answerCardActive : styles.answerCardHidden,
-            ]}
-          >
-            <Text style={[styles.cardLabel, { color: '#00A651' }]}>答え</Text>
-            <Text style={styles.answerText}>
-              {showAnswer ? q.answer : '？？？'}
-            </Text>
+          <View style={[styles.card, { borderColor: subjectColor }]}>
+            <Text style={styles.questionText}>{q.question}</Text>
           </View>
 
           <View style={styles.statusRow}>
             <View
               style={[
                 styles.statusDot,
-                { backgroundColor: playing ? '#00A651' : '#CCC' },
+                { backgroundColor: active && !paused ? '#00A651' : '#CCC' },
               ]}
             />
-            <Text style={[styles.statusText, { color: playing ? '#00A651' : '#999' }]}>
-              {phaseLabel}
+            <Text
+              style={[
+                styles.statusText,
+                { color: active && !paused ? '#00A651' : '#999' },
+              ]}
+            >
+              {paused ? '一時停止中' : phaseLabel}
             </Text>
           </View>
 
-          <Text style={styles.speedLabel}>再生速度</Text>
-          <View style={styles.speedRow}>
-            {SPEEDS.map((s, si) => (
-              <TouchableOpacity
-                key={s.label}
-                style={[
-                  styles.speedBtn,
-                  speedIdx === si && { backgroundColor: subjectColor, borderColor: subjectColor },
-                ]}
-                onPress={() => handleSpeedChange(si)}
-              >
-                <Text
-                  style={[
-                    styles.speedBtnText,
-                    speedIdx === si && styles.speedBtnTextActive,
-                  ]}
-                >
-                  {s.label}
-                </Text>
-              </TouchableOpacity>
-            ))}
-          </View>
-
           <View style={styles.controls}>
-            <TouchableOpacity style={styles.controlBtn} onPress={handlePrev}>
-              <Text style={styles.controlBtnText}>⏮</Text>
-            </TouchableOpacity>
             <TouchableOpacity
-              style={[styles.playBtn, { backgroundColor: subjectColor }]}
-              onPress={handlePlayPause}
+              style={[styles.controlBtn, styles.pauseBtn]}
+              onPress={handlePauseToggle}
+              disabled={!active || phase === 'done'}
               activeOpacity={0.85}
             >
-              <Text style={styles.playBtnText}>{playing ? '⏸' : '▶'}</Text>
+              <Text style={styles.controlBtnText}>{paused ? '▶ 再開' : '⏸ 一時停止'}</Text>
             </TouchableOpacity>
-            <TouchableOpacity style={styles.controlBtn} onPress={handleNext}>
-              <Text style={styles.controlBtnText}>⏭</Text>
+            <TouchableOpacity
+              style={[styles.controlBtn, styles.stopBtn]}
+              onPress={handleStop}
+              activeOpacity={0.85}
+            >
+              <Text style={styles.stopBtnText}>⏹ 停止</Text>
             </TouchableOpacity>
           </View>
 
           <View style={styles.tipBox}>
             <Text style={styles.tipText}>
-              🎧 イヤホンをつけて電車・車の中で聞き流そう！{'\n'}
-              問題 → 間 → 答え の順に自動で読み上げます
+              問題番号 → 問題文 → 2秒 → 「答えは」→ 答え → 2秒 → 次の問題{'\n'}
+              イヤホンをつけて聞き流そう 🎧
             </Text>
           </View>
         </ScrollView>
@@ -360,9 +346,7 @@ export default function ListenMode({
 const styles = StyleSheet.create({
   root: { flex: 1, backgroundColor: '#F5F7FA' },
   header: {
-    flexDirection: 'row',
     alignItems: 'center',
-    justifyContent: 'space-between',
     paddingHorizontal: 20,
     paddingVertical: 16,
   },
@@ -372,67 +356,66 @@ const styles = StyleSheet.create({
     color: '#FFFFFF',
     letterSpacing: 1,
   },
-  closeBtn: {
-    width: 32,
-    height: 32,
-    backgroundColor: 'rgba(255,255,255,0.25)',
-    borderRadius: 16,
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  closeBtnText: { fontSize: 16, color: '#FFFFFF', fontWeight: '700' },
   progressRow: { alignItems: 'center', paddingVertical: 8 },
-  progressText: { fontSize: 14, fontWeight: '700', color: '#555' },
+  progressText: { fontSize: 16, fontWeight: '800', color: '#1A1A2E' },
   progressTrack: { height: 4, backgroundColor: 'rgba(0,0,0,0.1)' },
   progressFill: { height: '100%', borderRadius: 2 },
   content: { padding: 20, paddingBottom: 40 },
+  animeRow: {
+    flexDirection: 'row',
+    gap: 10,
+    marginBottom: 16,
+    height: 110,
+  },
+  sceneImage: {
+    flex: 1,
+    height: '100%',
+    borderRadius: 14,
+    backgroundColor: '#EEF4FF',
+  },
+  mascotImage: {
+    width: 88,
+    height: '100%',
+    borderRadius: 14,
+    backgroundColor: '#FFFFFF',
+    borderWidth: 2,
+    borderColor: '#E0E8F5',
+  },
+  historyBanner: {
+    textAlign: 'center',
+    fontSize: 13,
+    fontWeight: '800',
+    color: '#78350F',
+    backgroundColor: '#FFFBEB',
+    paddingVertical: 8,
+    paddingHorizontal: 14,
+    borderRadius: 12,
+    marginBottom: 12,
+    overflow: 'hidden',
+  },
   card: {
     backgroundColor: '#FFFFFF',
     borderRadius: 16,
-    padding: 20,
-    marginBottom: 14,
+    padding: 24,
+    marginBottom: 20,
+    borderWidth: 2,
     shadowColor: '#000',
     shadowOffset: { width: 0, height: 2 },
     shadowOpacity: 0.08,
     shadowRadius: 8,
     elevation: 3,
   },
-  cardLabel: {
-    fontSize: 11,
-    fontWeight: '800',
-    color: '#888',
-    letterSpacing: 2,
-    marginBottom: 8,
-    textTransform: 'uppercase',
-  },
   questionText: {
-    fontSize: 17,
+    fontSize: 20,
     fontWeight: '700',
     color: '#1A1A2E',
-    lineHeight: 26,
-  },
-  answerCardActive: {
-    backgroundColor: '#F0FFF4',
-    borderWidth: 2,
-    borderColor: '#00A651',
-    borderRadius: 16,
-    padding: 20,
-    marginBottom: 14,
-  },
-  answerCardHidden: {
-    opacity: 0.45,
-  },
-  answerText: {
-    fontSize: 17,
-    fontWeight: '700',
-    color: '#1A1A2E',
-    lineHeight: 26,
+    lineHeight: 32,
   },
   statusRow: {
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'center',
-    marginBottom: 20,
+    marginBottom: 24,
   },
   statusDot: {
     width: 8,
@@ -441,41 +424,17 @@ const styles = StyleSheet.create({
     marginRight: 8,
   },
   statusText: { fontSize: 14, fontWeight: '600' },
-  speedLabel: {
-    fontSize: 13,
-    fontWeight: '700',
-    color: '#555',
-    textAlign: 'center',
-    marginBottom: 10,
-  },
-  speedRow: {
-    flexDirection: 'row',
-    justifyContent: 'center',
-    gap: 8,
-    marginBottom: 24,
-  },
-  speedBtn: {
-    paddingHorizontal: 16,
-    paddingVertical: 9,
-    borderRadius: 12,
-    backgroundColor: '#FFFFFF',
-    borderWidth: 1.5,
-    borderColor: '#DDD',
-  },
-  speedBtnText: { fontSize: 13, fontWeight: '700', color: '#555' },
-  speedBtnTextActive: { color: '#FFFFFF' },
   controls: {
     flexDirection: 'row',
-    alignItems: 'center',
     justifyContent: 'center',
-    gap: 24,
+    gap: 12,
     marginBottom: 24,
   },
   controlBtn: {
-    width: 56,
-    height: 56,
-    backgroundColor: '#FFFFFF',
-    borderRadius: 28,
+    flex: 1,
+    maxWidth: 160,
+    paddingVertical: 16,
+    borderRadius: 14,
     alignItems: 'center',
     justifyContent: 'center',
     shadowColor: '#000',
@@ -484,20 +443,24 @@ const styles = StyleSheet.create({
     shadowRadius: 6,
     elevation: 3,
   },
-  controlBtnText: { fontSize: 24 },
-  playBtn: {
-    width: 72,
-    height: 72,
-    borderRadius: 36,
-    alignItems: 'center',
-    justifyContent: 'center',
-    shadowColor: '#000',
-    shadowOffset: { width: 0, height: 4 },
-    shadowOpacity: 0.2,
-    shadowRadius: 8,
-    elevation: 5,
+  pauseBtn: {
+    backgroundColor: '#FFFFFF',
+    borderWidth: 2,
+    borderColor: '#1E5FBE',
   },
-  playBtnText: { fontSize: 30, color: '#FFFFFF' },
+  stopBtn: {
+    backgroundColor: '#E74C3C',
+  },
+  controlBtnText: {
+    fontSize: 16,
+    fontWeight: '800',
+    color: '#1E5FBE',
+  },
+  stopBtnText: {
+    fontSize: 16,
+    fontWeight: '800',
+    color: '#FFFFFF',
+  },
   tipBox: {
     backgroundColor: '#EEF4FF',
     borderRadius: 12,
@@ -507,7 +470,7 @@ const styles = StyleSheet.create({
     fontSize: 13,
     color: '#1E5FBE',
     fontWeight: '600',
-    lineHeight: 20,
+    lineHeight: 22,
     textAlign: 'center',
   },
 });

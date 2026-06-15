@@ -35,10 +35,10 @@ export function useSubscription(): SubscriptionState {
       (async () => {
         try {
           const Purchases = (await import('react-native-purchases')).default;
-          const listener = Purchases.addCustomerInfoUpdateListener((info: any) => {
+          const removeListener = Purchases.addCustomerInfoUpdateListener((info) => {
             if (mounted.current) setTier(tierFromCustomerInfo(info));
-          });
-          cleanup = () => listener?.remove();
+          }) as (() => void) | undefined;
+          cleanup = () => removeListener?.();
         } catch {}
       })();
     }
