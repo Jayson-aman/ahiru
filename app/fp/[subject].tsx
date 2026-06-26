@@ -17,6 +17,12 @@ import { fpEstateQuestions2 } from '../../data/fp_questions_estate2';
 import { fpEstateQuestions3 } from '../../data/fp_questions_estate3';
 import { fpInhQuestions2 } from '../../data/fp_questions_inh2';
 import { fpInhQuestions3 } from '../../data/fp_questions_inh3';
+import { fpInhQuestions4 } from '../../data/fp_questions_inh4';
+import { fpLifeQuestions4 } from '../../data/fp_questions_life4';
+import { fpRiskQuestions4 } from '../../data/fp_questions_risk4';
+import { fpAssetQuestions4 } from '../../data/fp_questions_asset4';
+import { fpTaxQuestions4 } from '../../data/fp_questions_tax4';
+import { fpEstateQuestions4 } from '../../data/fp_questions_estate4';
 import { FREE_QUESTION_LIMIT, PRICING } from '../../services/subscription';
 
 const allFpQuestions = [
@@ -24,16 +30,22 @@ const allFpQuestions = [
   ...fpExpandedQuestions,
   ...fpLifeQuestions2,
   ...fpLifeQuestions3,
+  ...fpLifeQuestions4,
   ...fpRiskQuestions2,
   ...fpRiskQuestions3,
+  ...fpRiskQuestions4,
   ...fpAssetQuestions2,
   ...fpAssetQuestions3,
+  ...fpAssetQuestions4,
   ...fpTaxQuestions2,
   ...fpTaxQuestions3,
+  ...fpTaxQuestions4,
   ...fpEstateQuestions2,
   ...fpEstateQuestions3,
+  ...fpEstateQuestions4,
   ...fpInhQuestions2,
   ...fpInhQuestions3,
+  ...fpInhQuestions4,
 ];
 
 const SUBJECT_INFO: Record<string, { name: string; emoji: string; color: string; totalExpected: number }> = {
