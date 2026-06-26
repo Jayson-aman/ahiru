@@ -370,7 +370,7 @@ export const denken3Kikai: Denken3Question[] = [
     ],
     correctKey: 'A',
     explanation: '全日効率は1日24時間を基準とする。鉄損は変圧器に電圧が加わっている限り常時発生（24時間）し、銅損は実際に電流が流れるT時間のみ発生。ηd = Wo/(Wo + 24Pi + PcT) × 100 [%]。',
-    difficulty: 'standard',
+    difficulty: 'advanced',
     examYear: '令和3年',
   },
   // --- パワーエレクトロニクス ---
