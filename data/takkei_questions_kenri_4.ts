@@ -401,7 +401,6 @@ export const takkeiKenri4: TakkeiQuestion[] = [
     difficulty: 'basic' as const,
     examYear: 'R4',
   },
-  },
   {
     id: 'tk-kenri-176',
     subject: 'kenri' as const,

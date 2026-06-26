@@ -19,6 +19,12 @@ import { fpInhQuestions2 } from '../../data/fp_questions_inh2';
 import { fpInhQuestions3 } from '../../data/fp_questions_inh3';
 import { fpInhQuestions4 } from '../../data/fp_questions_inh4';
 import { fpLifeQuestions4 } from '../../data/fp_questions_life4';
+import { fpLifeQuestions5 } from '../../data/fp_questions_life5';
+import { fpRiskQuestions5 } from '../../data/fp_questions_risk5';
+import { fpAssetQuestions5 } from '../../data/fp_questions_asset5';
+import { fpTaxQuestions5 } from '../../data/fp_questions_tax5';
+import { fpEstateQuestions5 } from '../../data/fp_questions_estate5';
+import { fpInhQuestions5 } from '../../data/fp_questions_inh5';
 import { fpRiskQuestions4 } from '../../data/fp_questions_risk4';
 import { fpAssetQuestions4 } from '../../data/fp_questions_asset4';
 import { fpTaxQuestions4 } from '../../data/fp_questions_tax4';
@@ -46,6 +52,12 @@ const allFpQuestions = [
   ...fpInhQuestions2,
   ...fpInhQuestions3,
   ...fpInhQuestions4,
+  ...fpLifeQuestions5,
+  ...fpRiskQuestions5,
+  ...fpAssetQuestions5,
+  ...fpTaxQuestions5,
+  ...fpEstateQuestions5,
+  ...fpInhQuestions5,
 ];
 
 const SUBJECT_INFO: Record<string, { name: string; emoji: string; color: string; totalExpected: number }> = {

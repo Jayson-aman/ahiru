@@ -16,11 +16,15 @@ import { mansionKiyaku } from './mansion_questions_kiyaku';
 import { mansionMinpo } from './mansion_questions_minpo';
 import { mansionSetsubi } from './mansion_questions_setsubi';
 import { mansionUnei } from './mansion_questions_unei';
+import { mansionKiyaku2 } from './mansion_questions_kiyaku2';
+import { mansionKubunsho2 } from './mansion_questions_kubunsho2';
 
 export const mansionQuestions: MansionQuestion[] = [
   ...mansionKubunsho,
+  ...mansionKubunsho2,
   ...mansionTekiseika,
   ...mansionKiyaku,
+  ...mansionKiyaku2,
   ...mansionMinpo,
   ...mansionSetsubi,
   ...mansionUnei,
