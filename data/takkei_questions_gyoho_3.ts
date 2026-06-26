@@ -800,7 +800,6 @@ export const takkeiGyoho3: TakkeiQuestion[] = [
     difficulty: 'advanced' as const,
     examYear: 'R3',
   },
-  },
   {
     id: 'tk-gyoho-126',
     subject: 'gyoho' as const,
