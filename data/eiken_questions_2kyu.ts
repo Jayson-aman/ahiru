@@ -16,7 +16,7 @@ export const eikenQuestions2kyu: EikenQuestion[] = [
     ],
     correctKey: 'A',
     explanation:
-      '"defer a decision" は「より信頼できる情報や権威が整うまで先送りにする」というニュアンスで、データを待つ文脈に最も適切。delay・postpone も「遅らせる」意味だが deferほど「判断を委ねる」含意がない。suspend は「活動・特権などを一時停止する」場合に使い、通常 decision には使わない。',
+      '"defer a decision" は「より信頼できる情報や権威が整うまで先送りにする」というニュアンスで、データを待つ文脈に最も適切。delay・postpone も「遅らせる」意味だが defer ほど「判断を委ねる」含意がない。suspend は「活動・特権などを一時停止する」場合に使い、通常 decision には使わない。',
     difficulty: 'advanced',
   },
   {
@@ -43,12 +43,12 @@ export const eikenQuestions2kyu: EikenQuestion[] = [
     question:
       'The new medication proved ( ) in clinical trials, reducing symptoms in over 90 percent of participants.',
     choices: [
-      { key: 'A', text: 'potent' },
-      { key: 'B', text: 'effective' },
+      { key: 'A', text: 'effective' },
+      { key: 'B', text: 'potent' },
       { key: 'C', text: 'efficient' },
       { key: 'D', text: 'capable' },
     ],
-    correctKey: 'B',
+    correctKey: 'A',
     explanation:
       '"effective" は「（薬・方法が）意図した効果を上げる」意。症状軽減という結果を強調する文脈に最適。potent は「（薬・物質が）強力な作用を持つ」で効能の強さに焦点があり、症状軽減率には直接つながりにくい。efficient は「効率的な」でプロセスに着目。capable は人や機械の「能力がある」に使う。',
     difficulty: 'standard',
@@ -60,12 +60,12 @@ export const eikenQuestions2kyu: EikenQuestion[] = [
     question:
       'Rising sea levels ( ) a serious threat to coastal communities around the world, potentially displacing millions of people.',
     choices: [
-      { key: 'A', text: 'pose' },
-      { key: 'B', text: 'raise' },
-      { key: 'C', text: 'present' },
+      { key: 'A', text: 'raise' },
+      { key: 'B', text: 'present' },
+      { key: 'C', text: 'pose' },
       { key: 'D', text: 'provide' },
     ],
-    correctKey: 'A',
+    correctKey: 'C',
     explanation:
       '"pose a threat" は英語の固定コロケーションで「脅威をもたらす」の意。present a threat も文法的には成立するが、pose の方がより慣用的で自然。raise a threat という表現は一般的でなく、provide a threat は意味的に不自然。',
     difficulty: 'standard',
@@ -75,14 +75,14 @@ export const eikenQuestions2kyu: EikenQuestion[] = [
     level: '2kyu',
     category: 'vocabulary',
     question:
-      'The professor\'s lecture was highly ( ); she drew connections between ancient philosophy and contemporary neuroscience that no one had considered before.',
+      "The professor's lecture was highly ( ); she drew connections between ancient philosophy and contemporary neuroscience that no one had considered before.",
     choices: [
       { key: 'A', text: 'innovative' },
-      { key: 'B', text: 'stimulating' },
-      { key: 'C', text: 'provocative' },
-      { key: 'D', text: 'enlightening' },
+      { key: 'B', text: 'enlightening' },
+      { key: 'C', text: 'stimulating' },
+      { key: 'D', text: 'provocative' },
     ],
-    correctKey: 'D',
+    correctKey: 'B',
     explanation:
       '"enlightening" は「新たな知識や視点をもたらす」意で、誰も考えなかった視点を示した講義の説明として最適。stimulating は「知的好奇心を刺激する」、innovative は「革新的な」でどちらも惜しいが、enlightening は「無知から理解へ導く」ニュアンスがある。provocative は「物議を醸す、挑発的な」で否定的含意もある。',
     difficulty: 'advanced',
@@ -96,10 +96,10 @@ export const eikenQuestions2kyu: EikenQuestion[] = [
     choices: [
       { key: 'A', text: 'entirely' },
       { key: 'B', text: 'largely' },
-      { key: 'C', text: 'solely' },
-      { key: 'D', text: 'heavily' },
+      { key: 'C', text: 'heavily' },
+      { key: 'D', text: 'solely' },
     ],
-    correctKey: 'C',
+    correctKey: 'D',
     explanation:
       '"relies solely on" は「ただ一つの源だけに頼る」という排他的な依存を表し、"no government funding whatsoever" という後半と論理的に一致する。entirely や wholly も類似するが、"relies entirely on" は稀な表現。largely・heavily は部分的依存を示し "no government funding" と矛盾する。',
     difficulty: 'standard',
@@ -109,14 +109,14 @@ export const eikenQuestions2kyu: EikenQuestion[] = [
     level: '2kyu',
     category: 'vocabulary',
     question:
-      'The mayor\'s proposal to build a new stadium was met with ( ) from local residents, who argued that schools and hospitals were more urgently needed.',
+      "The mayor's proposal to build a new stadium was met with ( ) from local residents, who argued that schools and hospitals were more urgently needed.",
     choices: [
-      { key: 'A', text: 'opposition' },
-      { key: 'B', text: 'resistance' },
-      { key: 'C', text: 'objection' },
+      { key: 'A', text: 'objection' },
+      { key: 'B', text: 'opposition' },
+      { key: 'C', text: 'resistance' },
       { key: 'D', text: 'criticism' },
     ],
-    correctKey: 'C',
+    correctKey: 'A',
     explanation:
       '"met with objection" は「異議・反対意見を受ける」という慣用表現。"raise an objection" とも言う。opposition は「反対勢力・組織的抵抗」、resistance は「物理的・継続的な抵抗」、criticism は「批判」でいずれも正しくはあるが、"met with" というコロケーションでは objection が最も自然。',
     difficulty: 'advanced',
@@ -179,12 +179,12 @@ export const eikenQuestions2kyu: EikenQuestion[] = [
     question:
       'The new traffic regulations were ( ) on all drivers regardless of the type of vehicle they operated.',
     choices: [
-      { key: 'A', text: 'binding' },
-      { key: 'B', text: 'compelling' },
-      { key: 'C', text: 'obligatory' },
-      { key: 'D', text: 'mandatory' },
+      { key: 'A', text: 'compelling' },
+      { key: 'B', text: 'obligatory' },
+      { key: 'C', text: 'mandatory' },
+      { key: 'D', text: 'binding' },
     ],
-    correctKey: 'A',
+    correctKey: 'D',
     explanation:
       '"binding on" は「（規則・契約が）〜に対して法的拘束力を持つ」という法律用語的な表現で、"on all drivers" との相性が最も良い。mandatory・obligatory はいずれも「義務的な」を意味するが、"mandatory/obligatory on" という構文は一般的でない。compelling は「説得力のある」という別義が主で、法的義務の文脈には不適切。',
     difficulty: 'advanced',
@@ -197,11 +197,11 @@ export const eikenQuestions2kyu: EikenQuestion[] = [
       'Scientists warn that the current rate of deforestation is ( ) the natural carbon cycle, making climate targets increasingly difficult to meet.',
     choices: [
       { key: 'A', text: 'disturbing' },
-      { key: 'B', text: 'disrupting' },
-      { key: 'C', text: 'interrupting' },
+      { key: 'B', text: 'interrupting' },
+      { key: 'C', text: 'disrupting' },
       { key: 'D', text: 'interfering' },
     ],
-    correctKey: 'B',
+    correctKey: 'C',
     explanation:
       '"disrupting" は「（システム・プロセスを）大規模に乱す、機能不全にする」意で、炭素循環という複雑なシステムへの影響に最適。disturbing は「不安にさせる」という心理的影響が主。interrupting は「短期的・一時的な中断」。interfering は "interfering with" の形を取り他動詞として目的語を直接取れない。',
     difficulty: 'standard',
@@ -211,7 +211,7 @@ export const eikenQuestions2kyu: EikenQuestion[] = [
     level: '2kyu',
     category: 'vocabulary',
     question:
-      'The architect\'s design was both aesthetically pleasing and highly ( ), making excellent use of space without wasting any materials.',
+      "The architect's design was both aesthetically pleasing and highly ( ), making excellent use of space without wasting any materials.",
     choices: [
       { key: 'A', text: 'effective' },
       { key: 'B', text: 'functional' },
@@ -228,7 +228,7 @@ export const eikenQuestions2kyu: EikenQuestion[] = [
     level: '2kyu',
     category: 'vocabulary',
     question:
-      'The government\'s economic policy was heavily ( ) toward supporting large corporations, leaving small businesses with little assistance.',
+      "The government's economic policy was heavily ( ) toward supporting large corporations, leaving small businesses with little assistance.",
     choices: [
       { key: 'A', text: 'inclined' },
       { key: 'B', text: 'biased' },
@@ -245,14 +245,14 @@ export const eikenQuestions2kyu: EikenQuestion[] = [
     level: '2kyu',
     category: 'vocabulary',
     question:
-      'The athlete\'s recovery was ( ) by a strict rehabilitation program that combined physical therapy with nutritional support.',
+      "The athlete's recovery was ( ) by a strict rehabilitation program that combined physical therapy with nutritional support.",
     choices: [
       { key: 'A', text: 'facilitated' },
-      { key: 'B', text: 'accelerated' },
-      { key: 'C', text: 'promoted' },
-      { key: 'D', text: 'enhanced' },
+      { key: 'B', text: 'promoted' },
+      { key: 'C', text: 'enhanced' },
+      { key: 'D', text: 'accelerated' },
     ],
-    correctKey: 'B',
+    correctKey: 'D',
     explanation:
       '"accelerated" は「（回復などの）速度を速める」で、リハビリプログラムの直接的な効果として最も明確。facilitated は「容易にする・促進する」、promoted は「推進する」、enhanced は「質を高める」でいずれも成立しうるが、回復という時間的プロセスの速度向上を表す語は accelerated。',
     difficulty: 'advanced',
@@ -296,7 +296,7 @@ export const eikenQuestions2kyu: EikenQuestion[] = [
     level: '2kyu',
     category: 'vocabulary',
     question:
-      'The CEO\'s resignation came as a complete surprise; until then, her leadership had appeared ( ) and her position secure.',
+      "The CEO's resignation came as a complete surprise; until then, her leadership had appeared ( ) and her position secure.",
     choices: [
       { key: 'A', text: 'unshakeable' },
       { key: 'B', text: 'steadfast' },
@@ -316,13 +316,13 @@ export const eikenQuestions2kyu: EikenQuestion[] = [
       'The report ( ) the need for immediate investment in renewable energy, warning that delays would make the transition far more costly.',
     choices: [
       { key: 'A', text: 'stressed' },
-      { key: 'B', text: 'underlined' },
-      { key: 'C', text: 'reinforced' },
-      { key: 'D', text: 'accentuated' },
+      { key: 'B', text: 'reinforced' },
+      { key: 'C', text: 'accentuated' },
+      { key: 'D', text: 'underlined' },
     ],
-    correctKey: 'B',
+    correctKey: 'D',
     explanation:
-      '"underlined the need" は「必要性を強調した」という慣用表現。stressed も同義だが、"underlined" の方が書面・報告書の文脈で格式的。reinforced は「（既にある認識を）補強した」、accentuated は「際立たせた」でニュアンスが異なる。',
+      '"underlined the need" は「必要性を強調した」という慣用表現。"raise an objection" とも言う。stressed も同義だが、"underlined" の方が書面・報告書の文脈で格式的。reinforced は「（既にある認識を）補強した」、accentuated は「際立たせた」でニュアンスが異なる。',
     difficulty: 'standard',
   },
   {
@@ -330,7 +330,7 @@ export const eikenQuestions2kyu: EikenQuestion[] = [
     level: '2kyu',
     category: 'vocabulary',
     question:
-      'The country\'s economic growth has been ( ) by decades of political instability, keeping it among the least developed nations in the region.',
+      "The country's economic growth has been ( ) by decades of political instability, keeping it among the least developed nations in the region.",
     choices: [
       { key: 'A', text: 'constrained' },
       { key: 'B', text: 'impeded' },
@@ -352,11 +352,11 @@ export const eikenQuestions2kyu: EikenQuestion[] = [
       'Not until the final results were announced ( ) the team realized they had won the championship.',
     choices: [
       { key: 'A', text: 'that' },
-      { key: 'B', text: 'did' },
-      { key: 'C', text: 'had' },
-      { key: 'D', text: 'was' },
+      { key: 'B', text: 'had' },
+      { key: 'C', text: 'was' },
+      { key: 'D', text: 'did' },
     ],
-    correctKey: 'B',
+    correctKey: 'D',
     explanation:
       '"Not until ..." で始まる否定の副詞節が文頭に置かれると、主節に倒置が生じる（否定倒置）。"Not until ... did + 主語 + 動詞原形" が正しい構造。主語 the team に対して did を使い、"did the team realize" となる。',
     difficulty: 'advanced',
@@ -386,11 +386,11 @@ export const eikenQuestions2kyu: EikenQuestion[] = [
       'The proposal requires that every participant ( ) a signed consent form before the study begins.',
     choices: [
       { key: 'A', text: 'submits' },
-      { key: 'B', text: 'submit' },
-      { key: 'C', text: 'submitted' },
+      { key: 'B', text: 'submitted' },
+      { key: 'C', text: 'submit' },
       { key: 'D', text: 'will submit' },
     ],
-    correctKey: 'B',
+    correctKey: 'C',
     explanation:
       '"require that + 主語 + 動詞" の構文では、動詞は仮定法現在（原形）を使う。"every participant submit" と三単現の -s をつけないのが正しい。これは "It is essential/necessary that ..." 構文と同様の用法で、アメリカ英語で特に一般的。',
     difficulty: 'advanced',
@@ -402,12 +402,12 @@ export const eikenQuestions2kyu: EikenQuestion[] = [
     question:
       'Only after conducting extensive surveys ( ) the researchers able to draw any firm conclusions.',
     choices: [
-      { key: 'A', text: 'were' },
-      { key: 'B', text: 'are' },
-      { key: 'C', text: 'did' },
-      { key: 'D', text: 'have' },
+      { key: 'A', text: 'are' },
+      { key: 'B', text: 'did' },
+      { key: 'C', text: 'have' },
+      { key: 'D', text: 'were' },
     ],
-    correctKey: 'A',
+    correctKey: 'D',
     explanation:
       '"Only after ..." が文頭に来ると主節で倒置が起きる。主語が "the researchers"、述語が be動詞 "were able to" なので、倒置後は "were the researchers able to" となる。"did" は一般動詞の倒置に使うが、"be able to" には were を使う。',
     difficulty: 'advanced',
@@ -417,14 +417,14 @@ export const eikenQuestions2kyu: EikenQuestion[] = [
     level: '2kyu',
     category: 'grammar',
     question:
-      'The museum\'s new exhibit, ( ) is scheduled to open next month, will feature artifacts from ancient civilizations.',
+      "The museum's new exhibit, ( ) is scheduled to open next month, will feature artifacts from ancient civilizations.",
     choices: [
-      { key: 'A', text: 'which' },
-      { key: 'B', text: 'that' },
-      { key: 'C', text: 'what' },
+      { key: 'A', text: 'that' },
+      { key: 'B', text: 'what' },
+      { key: 'C', text: 'which' },
       { key: 'D', text: 'where' },
     ],
-    correctKey: 'A',
+    correctKey: 'C',
     explanation:
       'コンマで囲まれた非制限的（非限定）関係節では which を使う。that は制限的関係節にのみ使われ、コンマとともに非制限的関係節で使うことはできない。what は「〜すること・もの」で名詞節を導く。where は場所を表す関係副詞で不適。',
     difficulty: 'standard',
@@ -437,11 +437,11 @@ export const eikenQuestions2kyu: EikenQuestion[] = [
       'The children were made ( ) their rooms before they were allowed to go outside and play.',
     choices: [
       { key: 'A', text: 'clean' },
-      { key: 'B', text: 'to clean' },
-      { key: 'C', text: 'cleaning' },
-      { key: 'D', text: 'cleaned' },
+      { key: 'B', text: 'cleaning' },
+      { key: 'C', text: 'cleaned' },
+      { key: 'D', text: 'to clean' },
     ],
-    correctKey: 'B',
+    correctKey: 'D',
     explanation:
       '使役動詞 make の受動態 "be made to do" では、不定詞の to が必要となる。能動態 "make + 目的語 + 動詞原形" では to を省略するが、受動態に変換すると to が復活する（"The children were made to clean ..."）。',
     difficulty: 'standard',
@@ -487,12 +487,12 @@ export const eikenQuestions2kyu: EikenQuestion[] = [
     question:
       'The policy change, ( ) many experts had predicted, led to a sharp rise in youth unemployment rates.',
     choices: [
-      { key: 'A', text: 'as' },
-      { key: 'B', text: 'what' },
-      { key: 'C', text: 'which' },
+      { key: 'A', text: 'what' },
+      { key: 'B', text: 'which' },
+      { key: 'C', text: 'as' },
       { key: 'D', text: 'that' },
     ],
-    correctKey: 'A',
+    correctKey: 'C',
     explanation:
       '"as many experts had predicted" の as は「専門家が予測したとおり」という様態の接続詞。この as は前の文全体または節を先行詞として受ける関係詞的用法でもある。"which many experts had predicted" も文法的だが、which は先行詞として特定の名詞句（the policy change）を指す非制限的関係節になる。ここでは「予測した（こと＝その結果）」という節全体を受けるので as が適切。',
     difficulty: 'advanced',
@@ -505,11 +505,11 @@ export const eikenQuestions2kyu: EikenQuestion[] = [
       'The survey results indicate that the majority of consumers prefer ( ) contacted by email rather than by telephone.',
     choices: [
       { key: 'A', text: 'to be' },
-      { key: 'B', text: 'being' },
-      { key: 'C', text: 'to have been' },
-      { key: 'D', text: 'having been' },
+      { key: 'B', text: 'to have been' },
+      { key: 'C', text: 'having been' },
+      { key: 'D', text: 'being' },
     ],
-    correctKey: 'B',
+    correctKey: 'D',
     explanation:
       '"prefer + 動名詞" と "prefer + to不定詞" はどちらも正しいが、"prefer + being done" は「〜されることを好む」という受動態の動名詞。"prefer to be contacted" も文法的だが、prefer に続く動名詞形の受動態 "prefer being contacted" の方が実際には口語・書き言葉ともに一般的。',
     difficulty: 'standard',
@@ -862,7 +862,7 @@ Which of the following conclusions can be most reasonably drawn from the passage
       },
       {
         key: 'D',
-        text: 'The European Union\'s ban on antibiotic use in farming has resolved the resistance problem in that region.',
+        text: "The European Union's ban on antibiotic use in farming has resolved the resistance problem in that region.",
       },
     ],
     correctKey: 'B',
@@ -884,11 +884,11 @@ What function of the glymphatic system is described in the passage?`,
     choices: [
       {
         key: 'A',
-        text: 'It regulates melatonin production to control the sleep-wake cycle.',
+        text: 'It consolidates daily memories and transfers them to long-term storage.',
       },
       {
         key: 'B',
-        text: 'It consolidates daily memories and transfers them to long-term storage.',
+        text: 'It reduces the risk of cardiovascular disease by regulating blood pressure.',
       },
       {
         key: 'C',
@@ -896,12 +896,12 @@ What function of the glymphatic system is described in the passage?`,
       },
       {
         key: 'D',
-        text: 'It reduces the risk of cardiovascular disease by regulating blood pressure.',
+        text: 'It regulates melatonin production to control the sleep-wake cycle.',
       },
     ],
     correctKey: 'C',
     explanation:
-      'パッセージに "the brain\'s glymphatic system becomes highly active, flushing out metabolic waste products including beta-amyloid" と明記されており、深い睡眠中に老廃物を排出する機能が説明されている。Bはhippocampusの機能、Aはメラトニンに関する記述で別のシステム。Dはパッセージに記載されていない。',
+      'パッセージに "the brain\'s glymphatic system becomes highly active, flushing out metabolic waste products including beta-amyloid" と明記されており、深い睡眠中に老廃物を排出する機能が説明されている。Aはhippocampusの機能、Dはメラトニンに関する記述で別のシステム。Bはパッセージに記載されていない。',
     difficulty: 'standard',
   },
   {
@@ -914,8 +914,11 @@ Sleep, once dismissed by many as mere biological downtime, is now understood to 
 
 In the passage, "circadian rhythm" refers to:`,
     choices: [
-      { key: 'A', text: 'the brain\'s process of consolidating memories overnight' },
-      { key: 'B', text: 'the body\'s natural internal clock regulating sleep and wakefulness' },
+      { key: 'A', text: "the brain's process of consolidating memories overnight" },
+      {
+        key: 'B',
+        text: "the body's natural internal clock regulating sleep and wakefulness",
+      },
       { key: 'C', text: 'the pattern of melatonin release caused by screen exposure' },
       { key: 'D', text: 'the cycle of deep sleep and light sleep within a single night' },
     ],
@@ -970,7 +973,7 @@ According to the passage, why do gig economy companies prefer to classify worker
     choices: [
       {
         key: 'A',
-        text: 'Independent contractors are required to pay higher taxes, which benefits the companies.',
+        text: 'Governments require digital platforms to use this classification for legal reasons.',
       },
       {
         key: 'B',
@@ -978,11 +981,11 @@ According to the passage, why do gig economy companies prefer to classify worker
       },
       {
         key: 'C',
-        text: 'It allows workers to receive better pay than they would as full employees.',
+        text: 'Independent contractors are required to pay higher taxes, which benefits the companies.',
       },
       {
         key: 'D',
-        text: 'Governments require digital platforms to use this classification for legal reasons.',
+        text: 'It allows workers to receive better pay than they would as full employees.',
       },
     ],
     correctKey: 'B',
@@ -1026,20 +1029,20 @@ What argument do platform companies make against mandatory reclassification of g
       },
       {
         key: 'B',
-        text: 'They argue that reclassification would make their services too expensive to be viable.',
-      },
-      {
-        key: 'C',
         text: 'They insist that current labor laws already provide sufficient protection for gig workers.',
       },
       {
-        key: 'D',
+        key: 'C',
         text: 'They suggest that reclassification would eliminate the need for digital platforms entirely.',
       },
+      {
+        key: 'D',
+        text: 'They argue that reclassification would make their services too expensive to be viable.',
+      },
     ],
-    correctKey: 'B',
+    correctKey: 'D',
     explanation:
-      'パッセージに "mandatory reclassification would undermine the business model that makes affordable services possible" とあり、再分類によってサービスの低価格維持が困難になるというのが企業側の主張。Bの「サービスが高コストになりすぎて成立しなくなる」がこれに最も対応する。Aはパッセージで言及されていない。',
+      'パッセージに "mandatory reclassification would undermine the business model that makes affordable services possible" とあり、再分類によってサービスの低価格維持が困難になるというのが企業側の主張。Dの「サービスが高コストになりすぎて成立しなくなる」がこれに最も対応する。Aはパッセージで言及されていない。',
     difficulty: 'advanced',
   },
 ];
