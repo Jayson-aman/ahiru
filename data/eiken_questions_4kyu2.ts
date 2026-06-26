@@ -120,7 +120,7 @@ export const eikenQuestions4kyu2: EikenQuestion[] = [
     ],
     correctKey: 'A',
     explanation: '「テストを受ける」はtake a testと言います。make、do、haveと組み合わせるのは不自然です。',
-    difficulty: 'standard',
+    difficulty: 'advanced',
   },
   {
     id: 'eiken_4kyu_059',
@@ -165,7 +165,7 @@ export const eikenQuestions4kyu2: EikenQuestion[] = [
     ],
     correctKey: 'B',
     explanation: 'ケーキを作るときはbake（オーブンで焼く）を使います。cook（料理する）、fry（油で揚げる）、boil（ゆでる）はケーキには使いません。',
-    difficulty: 'standard',
+    difficulty: 'advanced',
   },
   {
     id: 'eiken_4kyu_062',
@@ -634,7 +634,7 @@ export const eikenQuestions4kyu2: EikenQuestion[] = [
     ],
     correctKey: 'A',
     explanation: '「一緒に買い物に行きましょう」と誘われている文脈なので、「予定がない」= I have no plans.と答えるのが自然です。',
-    difficulty: 'advanced',
+    difficulty: 'standard',
   },
 
   // ── READING (8 questions: 093–100) ────────────────────────────────────────
