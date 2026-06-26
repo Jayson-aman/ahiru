@@ -1,4 +1,7 @@
-  {
+import type { KenchikuQuestion } from './types';
+
+export const kuchoQuestionsPart3a: KenchikuQuestion[] = [
+{
     id: 'kucho-135',
     subject: 'kucho' as const,
     subjectName: '空調・換気設備',
@@ -382,3 +385,4 @@
     difficulty: 'standard' as const,
     examYear: 'R2',
   },
+];
