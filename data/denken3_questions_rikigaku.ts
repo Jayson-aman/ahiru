@@ -801,7 +801,7 @@ export const denken3Rikigaku: Denken3Question[] = [
     correctKey: 'C',
     explanation:
       '結合係数 k = M/√(L₁L₂) = 3/√(2×8) = 3/√16 = 3/4 = 0.75。k = 1 が理想的な完全結合であり、0 ≤ k ≤ 1 の範囲をとる。k が大きいほど2つのコイルの磁気的結合が密であることを示す。',
-    difficulty: 'standard',
+    difficulty: 'advanced',
     examYear: '令和4年',
   },
   {
