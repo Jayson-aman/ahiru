@@ -405,8 +405,6 @@ export const takkeiHorei3: TakkeiQuestion[] = [
     difficulty: 'advanced' as const,
     examYear: 'R5',
   },
-  // questions 116-140 to be appended
-  },
   {
     id: 'tk-horei-116',
     subject: 'horei' as const,
@@ -806,4 +804,5 @@ export const takkeiHorei3: TakkeiQuestion[] = [
     explanation: '本問は、農地法・国土利用計画法・建築基準法という三つの法律が絡む複合的な問題である。市街化調整区域内の農地（5,000㎡以上）の売買については、①農地法第3条の許可（農地を農地として権利移動する場合）又は農地法第5条の許可（農地を転用目的で取得する場合）と、②国土利用計画法の事後届出（5,000㎡以上の場合）の両方の手続きが必要となる。さらに農地を転用して建築物を建築する場合は建築基準法の確認申請も別途必要であり、各法律の手続きは独立している。複数の法規制の適用場面を正確に把握することが重要である。',
     difficulty: 'advanced' as const,
     examYear: 'R5',
+  },
 ];
