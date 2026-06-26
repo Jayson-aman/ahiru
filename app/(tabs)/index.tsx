@@ -9,7 +9,7 @@ export default function HomeScreen() {
   return (
     <SafeAreaView style={styles.container}>
       <LinearGradient colors={['#1B2A5C', '#0D3D8A']} style={styles.header}>
-        <Text style={styles.appTitle}>ZAIBASE 資格・受験</Text>
+        <Text style={styles.appTitle}>ZAIBASE 資格対策</Text>
         <Text style={styles.appSubtitle}>一問一答トレーニング</Text>
       </LinearGradient>
 
@@ -25,20 +25,6 @@ export default function HomeScreen() {
               <Text style={styles.cardTitle}>英検対策</Text>
               <Text style={styles.cardSubtitle}>2級・3級・4級 ネイティブ品質問題</Text>
               <Text style={styles.cardMeta}>語彙・文法・読解・対話 ／ 各50問以上</Text>
-            </View>
-            <Text style={styles.cardArrow}>›</Text>
-          </LinearGradient>
-        </TouchableOpacity>
-
-        {/* 受験対策 */}
-        <Text style={[styles.sectionLabel, { marginTop: 12 }]}>📚 受験対策</Text>
-        <TouchableOpacity style={styles.card} onPress={() => router.push('/juken')} activeOpacity={0.85}>
-          <LinearGradient colors={['#1E5FBE', '#0D3D8A']} style={styles.cardGradient}>
-            <Text style={styles.cardEmoji}>📚</Text>
-            <View style={styles.cardBody}>
-              <Text style={styles.cardTitle}>受験対策</Text>
-              <Text style={styles.cardSubtitle}>中学受験・高校受験</Text>
-              <Text style={styles.cardMeta}>算数・国語・理科・社会・英語 ／ 250問以上</Text>
             </View>
             <Text style={styles.cardArrow}>›</Text>
           </LinearGradient>
