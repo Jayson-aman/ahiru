@@ -327,10 +327,10 @@ export const eikenQuestions2kyu2: EikenQuestion[] = [
     choices: [
       { key: 'A', text: 'That' },
       { key: 'B', text: 'Which' },
-      { key: 'C', text: 'What' },
-      { key: 'D', text: 'It' },
+      { key: 'C', text: 'It' },
+      { key: 'D', text: 'What' },
     ],
-    correctKey: 'C',
+    correctKey: 'D',
     explanation: '"What I need is ..."は名詞節を主語とする分裂文（pseudo-cleft）で、「私が必要なのは…だ」と焦点を当てる構文。WhatはI needの目的語を先行詞なしで受ける関係代名詞として機能する。That、Which、Itでは不適切。',
     difficulty: 'standard',
   },
