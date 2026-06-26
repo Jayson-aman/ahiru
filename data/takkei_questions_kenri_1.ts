@@ -541,7 +541,7 @@ export const takkeiKenri1: TakkeiQuestion[] = [
     ],
     correctKey: 'B' as const,
     explanation: '改正民法（令和2年施行）における売主の契約不適合責任（民法562条以下）。買主は、契約不適合を知った時から1年以内にその旨を売主に通知しなければ、追完請求・代金減額請求・損害賠償・解除権を失う（民法566条本文）。ただし、売主が引渡し時に知っていたか重大な過失で知らなかった場合はこの制限が適用されない（同条但書）。買主の請求権は重複行使も可能。',
-    difficulty: 'standard' as const,
+    difficulty: 'advanced' as const,
     examYear: 'R5',
   },
   {
@@ -605,7 +605,7 @@ export const takkeiKenri1: TakkeiQuestion[] = [
     ],
     correctKey: 'B' as const,
     explanation: '借地借家法32条は建物賃料の増減額請求権を定める。協議不調の場合、増額請求については賃借人は相当と認める額を支払い（不足分に年1割の利息を付して精算）、減額請求については賃貸人は相当と認める額を受領できる（超過分に年1割の利息付で精算）（同条2項・3項）。一定期間賃料を増額しない旨の特約は有効（同条1項但書）だが、減額しない旨の特約は無効。',
-    difficulty: 'standard' as const,
+    difficulty: 'advanced' as const,
     examYear: 'R4',
   },
   {
