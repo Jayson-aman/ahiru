@@ -10,6 +10,25 @@ import {
 import { useRouter } from 'expo-router';
 import { LinearGradient } from 'expo-linear-gradient';
 
+const EXAM_MODES = [
+  {
+    key: 'mogi',
+    label: '模擬試験',
+    desc: '本番形式 50問・120分・合否判定',
+    emoji: '📝',
+    color: '#C62828',
+    route: '/takkei/mogi',
+  },
+  {
+    key: 'honshiken',
+    label: '本試験問題',
+    desc: '令和3〜5年 実際の過去問に挑戦',
+    emoji: '📜',
+    color: '#1A237E',
+    route: '/takkei/honshiken',
+  },
+];
+
 export type TakkeiSubjectKey = 'kenri' | 'gyoho' | 'horei' | 'zei';
 
 const TAKKEI_SUBJECTS: {
@@ -76,7 +95,25 @@ export default function TakkeiScreen() {
       </LinearGradient>
 
       <ScrollView style={styles.scroll} contentContainerStyle={styles.content} showsVerticalScrollIndicator={false}>
-        <Text style={styles.sectionTitle}>科目を選んでスタート！</Text>
+
+        {/* Exam modes */}
+        <Text style={styles.sectionTitle}>試験モード</Text>
+        <View style={styles.modeRow}>
+          {EXAM_MODES.map(mode => (
+            <TouchableOpacity
+              key={mode.key}
+              style={[styles.modeCard, { borderColor: mode.color }]}
+              onPress={() => router.push(mode.route as any)}
+              activeOpacity={0.8}
+            >
+              <Text style={styles.modeEmoji}>{mode.emoji}</Text>
+              <Text style={[styles.modeLabel, { color: mode.color }]}>{mode.label}</Text>
+              <Text style={styles.modeDesc}>{mode.desc}</Text>
+            </TouchableOpacity>
+          ))}
+        </View>
+
+        <Text style={[styles.sectionTitle, { marginTop: 8 }]}>科目別練習</Text>
 
         {TAKKEI_SUBJECTS.map((subject) => (
           <TouchableOpacity
@@ -129,6 +166,16 @@ const styles = StyleSheet.create({
   scroll: { flex: 1 },
   content: { paddingHorizontal: 16, paddingTop: 20, paddingBottom: 40 },
   sectionTitle: { fontSize: 15, fontWeight: '800', color: '#1A1A2E', marginBottom: 16 },
+  modeRow: { flexDirection: 'row', gap: 12, marginBottom: 24 },
+  modeCard: {
+    flex: 1, backgroundColor: '#FFF', borderRadius: 16, padding: 14, alignItems: 'center',
+    borderWidth: 2,
+    shadowColor: '#000', shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.08, shadowRadius: 6, elevation: 3,
+  },
+  modeEmoji: { fontSize: 30, marginBottom: 8 },
+  modeLabel: { fontSize: 15, fontWeight: '900', marginBottom: 4 },
+  modeDesc: { fontSize: 10, color: '#888', fontWeight: '600', textAlign: 'center', lineHeight: 14 },
   subjectCard: {
     flexDirection: 'row',
     alignItems: 'center',
