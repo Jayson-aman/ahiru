@@ -75,7 +75,7 @@ export const eikenQuestions4kyu2: EikenQuestion[] = [
     ],
     correctKey: 'A',
     explanation: '川で魚を「釣る・捕まえる」はcatch fishです。grow（育てる）、sell（売る）、paint（描く）は川での行為として不自然です。',
-    difficulty: 'basic',
+    difficulty: 'standard',
   },
   {
     id: 'eiken_4kyu_056',
@@ -135,7 +135,7 @@ export const eikenQuestions4kyu2: EikenQuestion[] = [
     ],
     correctKey: 'B',
     explanation: '「写真を撮る」はtake picturesです。draw（描く）、make（作る）、write（書く）はpicturesと組み合わせて使わないことが多いです。',
-    difficulty: 'standard',
+    difficulty: 'advanced',
   },
   {
     id: 'eiken_4kyu_060',
@@ -180,7 +180,7 @@ export const eikenQuestions4kyu2: EikenQuestion[] = [
     ],
     correctKey: 'A',
     explanation: '電車が「出発する」はleaveです。「遅れないで」という文脈から、電車が出発することを表すleaving が適切です。',
-    difficulty: 'basic',
+    difficulty: 'standard',
   },
   {
     id: 'eiken_4kyu_063',

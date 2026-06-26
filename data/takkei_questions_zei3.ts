@@ -29,7 +29,7 @@ export const takkeiZei3: TakkeiQuestion[] = [
     ],
     correctKey: 'C' as const,
     explanation: '宗教法人が専らその本来の用途に供する不動産（境内地、礼拝施設等）の取得は不動産取得税が非課税。共有物分割は持分超過部分が課税対象となる。',
-    difficulty: 'standard' as const,
+    difficulty: 'basic' as const,
     examYear: 'R4',
   },
   {
@@ -61,7 +61,7 @@ export const takkeiZei3: TakkeiQuestion[] = [
     ],
     correctKey: 'A' as const,
     explanation: '固定資産の評価・価格決定は市町村長（特別区は都知事）が行い、固定資産課税台帳に登録する。評価替えは3年ごと。価格への不服は固定資産評価審査委員会に申出する。',
-    difficulty: 'standard' as const,
+    difficulty: 'basic' as const,
     examYear: 'R2',
   },
   {
@@ -77,7 +77,7 @@ export const takkeiZei3: TakkeiQuestion[] = [
     ],
     correctKey: 'C' as const,
     explanation: '固定資産税の償却資産は土地・家屋以外の事業用有形固定資産だが、自動車税（種別割）の課税対象となる自動車は償却資産から除かれる（二重課税排除）。',
-    difficulty: 'standard' as const,
+    difficulty: 'basic' as const,
     examYear: 'R4',
   },
   {
@@ -253,7 +253,7 @@ export const takkeiZei3: TakkeiQuestion[] = [
     ],
     correctKey: 'B' as const,
     explanation: '都道府県が実施する地価調査（基準地価）は地価公示の公示価格と均衡を保つよう努めることとされている。公示価格は一般の土地取引の指標であり、公共事業では規準として算定する。',
-    difficulty: 'basic' as const,
+    difficulty: 'standard' as const,
     examYear: 'R3',
   },
   {
