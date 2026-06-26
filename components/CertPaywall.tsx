@@ -25,6 +25,12 @@ type Props = {
   children: React.ReactNode;
   /** If provided, only this many questions are shown in free tier instead of the default */
   freeLimit?: number;
+  /** Override Pro plan price labels */
+  proMonthlyLabel?: string;
+  proYearlyLabel?: string;
+  proYearlySavingsLabel?: string;
+  /** Override Pro plan features list */
+  proFeatures?: string[];
 };
 
 /**
@@ -37,6 +43,7 @@ type Props = {
  */
 export default function CertPaywall({
   certKey, certName, certEmoji, accentColor, totalQuestions, children, freeLimit,
+  proMonthlyLabel, proYearlyLabel, proYearlySavingsLabel, proFeatures,
 }: Props) {
   const [info, setInfo] = useState<CustomerInfo | null>(null);
   const [loading, setLoading] = useState(true);
@@ -146,10 +153,10 @@ export default function CertPaywall({
         <ScrollView horizontal showsHorizontalScrollIndicator={false} style={styles.plans} contentContainerStyle={styles.plansContent}>
           <PlanCard
             title={`${certEmoji} ${certName} Pro`}
-            price={PRICING.proMonthly}
-            yearPrice={PRICING.proYearly}
-            yearSavings={PRICING.proYearlySavings}
-            features={['全問題アンロック（1,000問以上）', '全選択肢の詳細解説付き', '学習進捗・弱点分析', '聞き流しモード（移動中に学習）']}
+            price={proMonthlyLabel ?? PRICING.proMonthly}
+            yearPrice={proYearlyLabel ?? PRICING.proYearly}
+            yearSavings={proYearlySavingsLabel ?? PRICING.proYearlySavings}
+            features={proFeatures ?? ['全問題アンロック（1,000問以上）', '全選択肢の詳細解説付き', '学習進捗・弱点分析', '聞き流しモード（移動中に学習）']}
             color={accentColor}
             onPress={handlePurchase}
             loading={purchasing}

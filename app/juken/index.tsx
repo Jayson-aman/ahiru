@@ -10,7 +10,9 @@ import {
 import { useRouter } from 'expo-router';
 import { LinearGradient } from 'expo-linear-gradient';
 import SubjectCard from '../../components/SubjectCard';
+import CertPaywall from '../../components/CertPaywall';
 import { questionsBySubject, SubjectKey } from '../../data/questions';
+import { PRICING, FREE_QUESTION_LIMIT } from '../../services/subscription';
 
 type ExamType = 'chugaku' | 'kouko';
 type Difficulty = 'all' | 'basic' | 'standard' | 'advanced';
@@ -38,6 +40,8 @@ function getQuestionCount(subject: SubjectKey, difficulty: Difficulty): number {
   return qs.filter((q) => q.difficulty === difficulty).length;
 }
 
+const TOTAL_JUKEN_QUESTIONS = Object.values(questionsBySubject).reduce((s, q) => s + q.length, 0);
+
 export default function JukenScreen() {
   const router = useRouter();
   const [examType, setExamType] = useState<ExamType>('chugaku');
@@ -50,6 +54,18 @@ export default function JukenScreen() {
 
   return (
     <SafeAreaView style={styles.container}>
+      <CertPaywall
+        certKey="juken"
+        certName="受験対策"
+        certEmoji="📚"
+        accentColor="#1E5FBE"
+        totalQuestions={TOTAL_JUKEN_QUESTIONS}
+        freeLimit={FREE_QUESTION_LIMIT}
+        proMonthlyLabel={PRICING.jukenMonthly}
+        proYearlyLabel={PRICING.jukenYearly}
+        proYearlySavingsLabel={PRICING.jukenYearlySavings}
+        proFeatures={['中学受験 全問題アンロック', '高校受験 全問題アンロック（近日公開）', '全選択肢の詳細解説付き', '難易度別・科目別フィルター']}
+      >
       <LinearGradient colors={['#1E5FBE', '#0D3D8A']} style={styles.header}>
         <TouchableOpacity onPress={() => router.back()} style={styles.backBtn}>
           <Text style={styles.backBtnText}>← 戻る</Text>
@@ -139,6 +155,7 @@ export default function JukenScreen() {
           </>
         )}
       </ScrollView>
+      </CertPaywall>
     </SafeAreaView>
   );
 }

@@ -15,7 +15,7 @@ const RC_API_KEY_ANDROID =
 export type SubscriptionTier = 'free' | 'pro' | 'max';
 
 // Certification keys — used as entitlement IDs in RevenueCat dashboard
-export type CertKey = 'takkei' | 'fp' | 'mansion' | 'kenchiku' | 'denken3' | 'kisho';
+export type CertKey = 'takkei' | 'fp' | 'mansion' | 'kenchiku' | 'denken3' | 'kisho' | 'juken';
 
 // RevenueCat entitlement identifiers (must match dashboard exactly)
 export const ENTITLEMENTS: Record<CertKey, string> = {
@@ -25,12 +25,13 @@ export const ENTITLEMENTS: Record<CertKey, string> = {
   kenchiku: 'pro_kenchiku',
   denken3:  'pro_denken3',
   kisho:    'pro_kisho',
+  juken:    'pro_juken',
 };
 
 // Pricing constants (display only — real prices are set in RevenueCat/App Store)
 // App Store Japan pricing tiers are ¥1,000 increments
 export const PRICING = {
-  /** Per-certification Pro plan */
+  /** Per-certification Pro plan (資格試験) */
   proMonthly: '¥2,000/月',
   proYearly:  '¥20,000/年',
   proYearlySavings: '17%OFF',
@@ -38,6 +39,10 @@ export const PRICING = {
   maxMonthly: '¥5,000/月',
   maxYearly:  '¥40,000/年',
   maxYearlySavings: '33%OFF',
+  /** 受験対策プラン（中学・高校受験） */
+  jukenMonthly: '¥500/月',
+  jukenYearly:  '¥5,000/年',
+  jukenYearlySavings: '17%OFF',
 } as const;
 export const ENTITLEMENT_MAX = 'max';
 
