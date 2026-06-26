@@ -22,6 +22,10 @@ export default function RootLayout() {
         }}
       >
         <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
+        <Stack.Screen name="juken/index" options={{ headerShown: false, presentation: 'card' }} />
+        <Stack.Screen name="kouko/index" options={{ headerShown: false, presentation: 'card' }} />
+        <Stack.Screen name="takkei/index" options={{ headerShown: false, presentation: 'card' }} />
+        <Stack.Screen name="takkei/[subject]" options={{ headerShown: false, presentation: 'card' }} />
         <Stack.Screen
           name="quiz/[subject]"
           options={{

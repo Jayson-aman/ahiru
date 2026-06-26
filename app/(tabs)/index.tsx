@@ -1,144 +1,88 @@
-import React, { useState } from 'react';
+import React from 'react';
 import {
   View,
   Text,
-  ScrollView,
   StyleSheet,
   SafeAreaView,
   TouchableOpacity,
+  ScrollView,
 } from 'react-native';
 import { useRouter } from 'expo-router';
 import { LinearGradient } from 'expo-linear-gradient';
-import SubjectCard from '../../components/SubjectCard';
-import { questionsBySubject, SubjectKey } from '../../data/questions';
 
-const SUBJECTS: SubjectKey[] = ['sansu', 'kokugo', 'rika', 'shakai', 'eigo'];
-
-type Difficulty = 'all' | 'basic' | 'standard' | 'advanced';
-
-const DIFFICULTY_OPTIONS: { key: Difficulty; label: string; icon: string; color: string; desc: string }[] = [
-  { key: 'all',      label: 'すべて', icon: '📚', color: '#1E5FBE', desc: '全問題' },
-  { key: 'basic',    label: '基礎',   icon: '🌱', color: '#27AE60', desc: '基礎レベル' },
-  { key: 'standard', label: '標準',   icon: '⭐', color: '#F39C12', desc: '開成・甲陽レベル' },
-  { key: 'advanced', label: '発展',   icon: '🔥', color: '#E74C3C', desc: '灘・東大寺レベル' },
+const CATEGORIES = [
+  {
+    key: 'juken',
+    title: '中学受験',
+    subtitle: '算数・国語・理科・社会・英語',
+    meta: '250問以上 ／ 難易度3段階',
+    emoji: '📚',
+    colors: ['#1E5FBE', '#0D3D8A'] as [string, string],
+    route: '/juken',
+    badge: '灘・開成・甲陽',
+  },
+  {
+    key: 'kouko',
+    title: '高校受験',
+    subtitle: '5教科・公立〜難関校対策',
+    meta: '準備中 ／ 近日公開',
+    emoji: '🎓',
+    colors: ['#5B4B8A', '#3A2E6A'] as [string, string],
+    route: '/kouko',
+    badge: '公立・私立対応',
+  },
+  {
+    key: 'takkei',
+    title: '宅建試験',
+    subtitle: '権利関係・宅建業法・法令制限・税',
+    meta: '国家資格 ／ 本試験50問対応',
+    emoji: '🏠',
+    colors: ['#6B3210', '#4A2208'] as [string, string],
+    route: '/takkei',
+    badge: '合格率15〜17%',
+  },
 ];
-
-function getQuestionCount(subject: SubjectKey, difficulty: Difficulty): number {
-  const qs = questionsBySubject[subject];
-  if (difficulty === 'all') return qs.length;
-  return qs.filter((q) => q.difficulty === difficulty).length;
-}
 
 export default function HomeScreen() {
   const router = useRouter();
-  const [difficulty, setDifficulty] = useState<Difficulty>('all');
-
-  function handleSubject(subject: SubjectKey) {
-    const params = difficulty !== 'all' ? `?difficulty=${difficulty}` : '';
-    router.push(`/quiz/${subject}${params}`);
-  }
-
-  const selectedDiff = DIFFICULTY_OPTIONS.find((d) => d.key === difficulty)!;
 
   return (
     <SafeAreaView style={styles.container}>
-      <LinearGradient colors={['#1E5FBE', '#0D3D8A']} style={styles.header}>
-        <Text style={styles.appTitle}>📚 中学受験対策</Text>
+      <LinearGradient colors={['#1B2A5C', '#0D3D8A']} style={styles.header}>
+        <Text style={styles.appTitle}>ZAIBASE 資格・受験</Text>
         <Text style={styles.appSubtitle}>一問一答トレーニング</Text>
-        <View style={styles.schoolBadges}>
-          <Text style={styles.schoolBadge}>灘 🏅</Text>
-          <Text style={styles.schoolBadge}>開成 🏅</Text>
-          <Text style={styles.schoolBadge}>甲陽 🏅</Text>
-          <Text style={styles.schoolBadge}>麻布 🏅</Text>
-        </View>
       </LinearGradient>
 
-      <ScrollView
-        style={styles.scroll}
-        contentContainerStyle={styles.content}
-        showsVerticalScrollIndicator={false}
-      >
-        {/* Difficulty filter */}
-        <Text style={styles.sectionTitle}>難易度を選ぶ</Text>
-        <View style={styles.difficultyRow}>
-          {DIFFICULTY_OPTIONS.map((opt) => {
-            const active = difficulty === opt.key;
-            return (
-              <TouchableOpacity
-                key={opt.key}
-                style={[styles.diffBtn, active && { backgroundColor: opt.color }]}
-                onPress={() => setDifficulty(opt.key)}
-                activeOpacity={0.8}
-              >
-                <Text style={styles.diffBtnIcon}>{opt.icon}</Text>
-                <Text style={[styles.diffBtnLabel, active && styles.diffBtnLabelActive]}>
-                  {opt.label}
-                </Text>
-              </TouchableOpacity>
-            );
-          })}
-        </View>
+      <ScrollView style={styles.scroll} contentContainerStyle={styles.content} showsVerticalScrollIndicator={false}>
+        <Text style={styles.sectionLabel}>カテゴリーを選んでください</Text>
 
-        {difficulty !== 'all' && (
-          <View style={[styles.diffInfoBanner, { borderColor: selectedDiff.color }]}>
-            <Text style={[styles.diffInfoText, { color: selectedDiff.color }]}>
-              {selectedDiff.icon} {selectedDiff.desc}の問題のみ表示
-            </Text>
-          </View>
-        )}
+        {CATEGORIES.map((cat) => (
+          <TouchableOpacity
+            key={cat.key}
+            style={styles.card}
+            onPress={() => router.push(cat.route as any)}
+            activeOpacity={0.85}
+          >
+            <LinearGradient colors={cat.colors} style={styles.cardGradient}>
+              <Text style={styles.cardEmoji}>{cat.emoji}</Text>
+              <View style={styles.cardBody}>
+                <View style={styles.cardTitleRow}>
+                  <Text style={styles.cardTitle}>{cat.title}</Text>
+                  <View style={styles.cardBadge}>
+                    <Text style={styles.cardBadgeText}>{cat.badge}</Text>
+                  </View>
+                </View>
+                <Text style={styles.cardSubtitle}>{cat.subtitle}</Text>
+                <Text style={styles.cardMeta}>{cat.meta}</Text>
+              </View>
+              <Text style={styles.cardArrow}>›</Text>
+            </LinearGradient>
+          </TouchableOpacity>
+        ))}
 
-        {/* Subject grid */}
-        <Text style={[styles.sectionTitle, { marginTop: 16 }]}>科目を選んでスタート！</Text>
-        <View style={styles.grid}>
-          {SUBJECTS.map((subject) => (
-            <SubjectCard
-              key={subject}
-              subject={subject}
-              questionCount={getQuestionCount(subject, difficulty)}
-              onPress={() => handleSubject(subject)}
-            />
-          ))}
-        </View>
-
-        {/* How to use */}
-        <View style={styles.infoCard}>
-          <Text style={styles.infoTitle}>📖 使い方</Text>
-          <Text style={styles.infoText}>① 難易度と科目をタップ</Text>
-          <Text style={styles.infoText}>② カードをタップして答えを確認</Text>
-          <Text style={styles.infoText}>③ ✓正解 / ✗不正解 を記録</Text>
-          <Text style={styles.infoText}>④ 進捗タブで成績を確認</Text>
-        </View>
-
-        {/* School level guide */}
-        <View style={styles.schoolGuideCard}>
-          <Text style={styles.schoolGuideTitle}>🏫 難易度の目安</Text>
-          <View style={styles.schoolGuideRow}>
-            <Text style={[styles.schoolGuideLevel, { color: '#27AE60' }]}>🌱 基礎</Text>
-            <Text style={styles.schoolGuideSchools}>一般的な中学受験対策</Text>
-          </View>
-          <View style={styles.schoolGuideRow}>
-            <Text style={[styles.schoolGuideLevel, { color: '#F39C12' }]}>⭐ 標準</Text>
-            <Text style={styles.schoolGuideSchools}>開成・麻布・桜蔭・甲陽・西大和</Text>
-          </View>
-          <View style={styles.schoolGuideRow}>
-            <Text style={[styles.schoolGuideLevel, { color: '#E74C3C' }]}>🔥 発展</Text>
-            <Text style={styles.schoolGuideSchools}>灘・東大寺・聖光・筑波大附属駒場</Text>
-          </View>
-        </View>
-
-        <View style={styles.proCard}>
-          <View style={styles.proCardHeader}>
-            <Text style={styles.proBadge}>PRO</Text>
-            <Text style={styles.proCardTitle}>🎧 聞き流しモード</Text>
-          </View>
-          <Text style={styles.proCardText}>
-            ながら勉強に最適！問題と解答を自動で読み上げます。各科目ページの 🎧 ボタンからアクセスできます。
-          </Text>
-        </View>
-
-        <View style={styles.inspirationCard}>
-          <Text style={styles.inspirationText}>
-            「継続は力なり」毎日少しずつ積み重ねよう！ 💪
+        <View style={styles.footerNote}>
+          <Text style={styles.footerNoteText}>
+            🎧 聞き流しモードは各科目ページの 🎧 ボタンから利用できます（Pro機能）
           </Text>
         </View>
       </ScrollView>
@@ -147,203 +91,89 @@ export default function HomeScreen() {
 }
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#F5F7FA',
-  },
+  container: { flex: 1, backgroundColor: '#F5F7FA' },
   header: {
-    paddingHorizontal: 20,
-    paddingTop: 20,
-    paddingBottom: 28,
+    paddingHorizontal: 24,
+    paddingTop: 24,
+    paddingBottom: 32,
     alignItems: 'center',
   },
   appTitle: {
-    fontSize: 26,
+    fontSize: 22,
     fontWeight: '900',
     color: '#FFFFFF',
     letterSpacing: 1,
     marginBottom: 4,
   },
   appSubtitle: {
-    fontSize: 14,
-    color: 'rgba(255,255,255,0.8)',
+    fontSize: 13,
+    color: 'rgba(255,255,255,0.75)',
     fontWeight: '600',
-    marginBottom: 14,
-  },
-  schoolBadges: {
-    flexDirection: 'row',
-    gap: 8,
-  },
-  schoolBadge: {
-    backgroundColor: 'rgba(255,255,255,0.2)',
-    paddingHorizontal: 10,
-    paddingVertical: 4,
-    borderRadius: 12,
-    fontSize: 12,
-    color: '#FFFFFF',
-    fontWeight: '700',
   },
   scroll: { flex: 1 },
-  content: {
-    paddingHorizontal: 16,
-    paddingTop: 20,
-    paddingBottom: 40,
+  content: { paddingHorizontal: 20, paddingTop: 28, paddingBottom: 40 },
+  sectionLabel: {
+    fontSize: 13,
+    fontWeight: '700',
+    color: '#888',
+    textAlign: 'center',
+    marginBottom: 20,
+    letterSpacing: 1,
   },
-  sectionTitle: {
-    fontSize: 17,
-    fontWeight: '800',
-    color: '#1A1A2E',
-    marginBottom: 12,
-    letterSpacing: 0.5,
-  },
-  difficultyRow: {
-    flexDirection: 'row',
-    gap: 8,
-    marginBottom: 8,
-  },
-  diffBtn: {
-    flex: 1,
-    backgroundColor: '#FFFFFF',
-    borderRadius: 14,
-    paddingVertical: 10,
-    alignItems: 'center',
+  card: {
+    borderRadius: 20,
+    marginBottom: 14,
     shadowColor: '#000',
-    shadowOffset: { width: 0, height: 2 },
-    shadowOpacity: 0.06,
-    shadowRadius: 6,
-    elevation: 2,
+    shadowOffset: { width: 0, height: 6 },
+    shadowOpacity: 0.18,
+    shadowRadius: 12,
+    elevation: 6,
   },
-  diffBtnIcon: {
-    fontSize: 18,
+  cardGradient: {
+    borderRadius: 20,
+    padding: 20,
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 14,
+  },
+  cardEmoji: { fontSize: 38 },
+  cardBody: { flex: 1 },
+  cardTitleRow: { flexDirection: 'row', alignItems: 'center', gap: 8, marginBottom: 4 },
+  cardTitle: { fontSize: 20, fontWeight: '900', color: '#FFFFFF' },
+  cardBadge: {
+    backgroundColor: 'rgba(255,255,255,0.2)',
+    paddingHorizontal: 8,
+    paddingVertical: 2,
+    borderRadius: 8,
+  },
+  cardBadgeText: { fontSize: 10, color: '#FFFFFF', fontWeight: '700' },
+  cardSubtitle: {
+    fontSize: 12,
+    color: 'rgba(255,255,255,0.85)',
+    fontWeight: '600',
     marginBottom: 3,
   },
-  diffBtnLabel: {
-    fontSize: 12,
-    fontWeight: '700',
-    color: '#555',
-  },
-  diffBtnLabelActive: {
-    color: '#FFFFFF',
-  },
-  diffInfoBanner: {
-    borderWidth: 1.5,
-    borderRadius: 10,
-    paddingVertical: 8,
-    paddingHorizontal: 14,
-    marginBottom: 4,
-    backgroundColor: '#FAFAFA',
-  },
-  diffInfoText: {
-    fontSize: 13,
-    fontWeight: '700',
-  },
-  grid: {
-    flexDirection: 'row',
-    flexWrap: 'wrap',
-    justifyContent: 'space-between',
-    marginBottom: 20,
-  },
-  infoCard: {
-    backgroundColor: '#FFFFFF',
-    borderRadius: 16,
-    padding: 18,
-    marginBottom: 14,
-    shadowColor: '#000',
-    shadowOffset: { width: 0, height: 2 },
-    shadowOpacity: 0.06,
-    shadowRadius: 8,
-    elevation: 3,
-  },
-  infoTitle: {
-    fontSize: 15,
-    fontWeight: '800',
-    color: '#1A1A2E',
-    marginBottom: 10,
-  },
-  infoText: {
-    fontSize: 14,
-    color: '#444',
-    lineHeight: 24,
-    fontWeight: '500',
-  },
-  schoolGuideCard: {
-    backgroundColor: '#FFFFFF',
-    borderRadius: 16,
-    padding: 18,
-    marginBottom: 14,
-    shadowColor: '#000',
-    shadowOffset: { width: 0, height: 2 },
-    shadowOpacity: 0.06,
-    shadowRadius: 8,
-    elevation: 3,
-  },
-  schoolGuideTitle: {
-    fontSize: 15,
-    fontWeight: '800',
-    color: '#1A1A2E',
-    marginBottom: 12,
-  },
-  schoolGuideRow: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    marginBottom: 8,
-    gap: 10,
-  },
-  schoolGuideLevel: {
-    fontSize: 14,
-    fontWeight: '800',
-    width: 60,
-  },
-  schoolGuideSchools: {
-    fontSize: 13,
-    color: '#555',
-    fontWeight: '500',
-    flex: 1,
-  },
-  proCard: {
-    backgroundColor: '#2D1B69',
-    borderRadius: 16,
-    padding: 18,
-    marginBottom: 14,
-  },
-  proCardHeader: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    gap: 10,
-    marginBottom: 10,
-  },
-  proBadge: {
-    backgroundColor: '#FFD700',
-    color: '#1A1A2E',
+  cardMeta: {
     fontSize: 11,
-    fontWeight: '900',
-    paddingHorizontal: 8,
-    paddingVertical: 3,
-    borderRadius: 6,
-    overflow: 'hidden',
-  },
-  proCardTitle: {
-    fontSize: 16,
-    fontWeight: '800',
-    color: '#FFFFFF',
-  },
-  proCardText: {
-    fontSize: 13,
-    color: 'rgba(255,255,255,0.8)',
-    lineHeight: 20,
+    color: 'rgba(255,255,255,0.6)',
     fontWeight: '500',
   },
-  inspirationCard: {
-    backgroundColor: '#1E5FBE',
-    borderRadius: 16,
-    padding: 18,
-    alignItems: 'center',
+  cardArrow: {
+    fontSize: 32,
+    color: 'rgba(255,255,255,0.4)',
+    fontWeight: '300',
   },
-  inspirationText: {
-    fontSize: 15,
-    fontWeight: '700',
-    color: '#FFFFFF',
+  footerNote: {
+    backgroundColor: '#EEF4FF',
+    borderRadius: 12,
+    padding: 14,
+    marginTop: 8,
+  },
+  footerNoteText: {
+    fontSize: 12,
+    color: '#1E5FBE',
+    fontWeight: '600',
+    lineHeight: 18,
     textAlign: 'center',
-    lineHeight: 24,
   },
 });
