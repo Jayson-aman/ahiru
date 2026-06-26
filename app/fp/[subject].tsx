@@ -2,23 +2,55 @@ import React from 'react';
 import { View, Text, StyleSheet, SafeAreaView, TouchableOpacity } from 'react-native';
 import { useLocalSearchParams, useRouter } from 'expo-router';
 import MCQQuiz from '../../components/MCQQuiz';
+import CertPaywall from '../../components/CertPaywall';
 import { fpQuestions } from '../../data/fp_questions';
+import { fpExpandedQuestions } from '../../data/fp_questions_expanded';
+import { fpLifeQuestions2 } from '../../data/fp_questions_life2';
+import { fpLifeQuestions3 } from '../../data/fp_questions_life3';
+import { fpRiskQuestions2 } from '../../data/fp_questions_risk2';
+import { fpRiskQuestions3 } from '../../data/fp_questions_risk3';
+import { fpAssetQuestions2 } from '../../data/fp_questions_asset2';
+import { fpAssetQuestions3 } from '../../data/fp_questions_asset3';
+import { fpTaxQuestions2 } from '../../data/fp_questions_tax2';
+import { fpTaxQuestions3 } from '../../data/fp_questions_tax3';
+import { fpEstateQuestions2 } from '../../data/fp_questions_estate2';
+import { fpEstateQuestions3 } from '../../data/fp_questions_estate3';
+import { fpInhQuestions2 } from '../../data/fp_questions_inh2';
+import { fpInhQuestions3 } from '../../data/fp_questions_inh3';
+import { FREE_QUESTION_LIMIT, PRICING } from '../../services/subscription';
 
-const SUBJECT_INFO: Record<string, { name: string; emoji: string; color: string }> = {
-  life:        { name: 'ライフプランニングと資金計画', emoji: '👨‍👩‍👧', color: '#0D7C3D' },
-  risk:        { name: 'リスク管理',                 emoji: '🛡️', color: '#1565C0' },
-  asset:       { name: '金融資産運用',               emoji: '📈', color: '#6A1B9A' },
-  tax:         { name: 'タックスプランニング',        emoji: '📊', color: '#E65100' },
-  realestate:  { name: '不動産',                    emoji: '🏘️', color: '#4E342E' },
-  inheritance: { name: '相続・事業承継',             emoji: '📜', color: '#880E4F' },
+const allFpQuestions = [
+  ...fpQuestions,
+  ...fpExpandedQuestions,
+  ...fpLifeQuestions2,
+  ...fpLifeQuestions3,
+  ...fpRiskQuestions2,
+  ...fpRiskQuestions3,
+  ...fpAssetQuestions2,
+  ...fpAssetQuestions3,
+  ...fpTaxQuestions2,
+  ...fpTaxQuestions3,
+  ...fpEstateQuestions2,
+  ...fpEstateQuestions3,
+  ...fpInhQuestions2,
+  ...fpInhQuestions3,
+];
+
+const SUBJECT_INFO: Record<string, { name: string; emoji: string; color: string; totalExpected: number }> = {
+  life:        { name: 'ライフプランニングと資金計画', emoji: '👨‍👩‍👧', color: '#0D7C3D', totalExpected: 100 },
+  risk:        { name: 'リスク管理',                 emoji: '🛡️', color: '#1565C0', totalExpected: 100 },
+  asset:       { name: '金融資産運用',               emoji: '📈', color: '#6A1B9A', totalExpected: 100 },
+  tax:         { name: 'タックスプランニング',        emoji: '📊', color: '#E65100', totalExpected: 100 },
+  realestate:  { name: '不動産',                    emoji: '🏘️', color: '#4E342E', totalExpected: 100 },
+  inheritance: { name: '相続・事業承継',             emoji: '📜', color: '#880E4F', totalExpected: 100 },
 };
 
 export default function FPQuizScreen() {
   const { subject } = useLocalSearchParams<{ subject: string }>();
   const router = useRouter();
-  const info = SUBJECT_INFO[subject ?? ''] ?? { name: subject, emoji: '📖', color: '#0D7C3D' };
+  const info = SUBJECT_INFO[subject ?? ''] ?? { name: subject, emoji: '📖', color: '#0D7C3D', totalExpected: 100 };
 
-  const questions = fpQuestions
+  const allQuestions = allFpQuestions
     .filter(q => q.subject === subject)
     .map(q => ({
       id: q.id,
@@ -29,7 +61,7 @@ export default function FPQuizScreen() {
       difficulty: q.difficulty,
     }));
 
-  if (questions.length === 0) {
+  if (allQuestions.length === 0) {
     return (
       <SafeAreaView style={styles.safeArea}>
         <View style={[styles.header, { backgroundColor: info.color }]}>
@@ -52,14 +84,26 @@ export default function FPQuizScreen() {
 
   return (
     <SafeAreaView style={styles.safeArea}>
-      <View style={[styles.header, { backgroundColor: info.color }]}>
-        <TouchableOpacity onPress={() => router.back()} style={styles.backBtn}>
-          <Text style={styles.backBtnText}>← 戻る</Text>
-        </TouchableOpacity>
-        <Text style={styles.headerTitle}>{info.emoji} {info.name}</Text>
-        <Text style={styles.headerSub}>{questions.length}問収録</Text>
-      </View>
-      <MCQQuiz questions={questions} accentColor={info.color} />
+      <CertPaywall
+        certKey="fp"
+        certName={`FP ${info.name}`}
+        certEmoji={info.emoji}
+        accentColor={info.color}
+        totalQuestions={info.totalExpected}
+        freeLimit={FREE_QUESTION_LIMIT}
+        proMonthlyLabel={PRICING.proMonthly}
+        proYearlyLabel={PRICING.proYearly}
+        proYearlySavingsLabel={PRICING.proYearlySavings}
+      >
+        <View style={[styles.header, { backgroundColor: info.color }]}>
+          <TouchableOpacity onPress={() => router.back()} style={styles.backBtn}>
+            <Text style={styles.backBtnText}>← 戻る</Text>
+          </TouchableOpacity>
+          <Text style={styles.headerTitle}>{info.emoji} {info.name}</Text>
+          <Text style={styles.headerSub}>{allQuestions.length}問収録</Text>
+        </View>
+        <MCQQuiz questions={allQuestions} accentColor={info.color} />
+      </CertPaywall>
     </SafeAreaView>
   );
 }
