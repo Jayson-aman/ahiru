@@ -7,6 +7,7 @@ import { Platform } from 'react-native';
 import {
   CertKey,
   FREE_QUESTION_LIMIT,
+  PRICING,
   fetchCurrentOffering,
   getCustomerInfo,
   hasCertAccess,
@@ -124,9 +125,9 @@ export default function CertPaywall({
         <LinearGradient colors={[accentColor, accentColor + 'CC']} style={styles.banner}>
           <Text style={styles.bannerLock}>🔒</Text>
           <View style={styles.bannerBody}>
-            <Text style={styles.bannerTitle}>無料体験中 — {limit}問まで</Text>
+            <Text style={styles.bannerTitle}>無料体験中 — {limit}問まで無料</Text>
             <Text style={styles.bannerSub}>
-              {certEmoji} {certName} 全{totalQuestions}問＋詳しい解説をアンロック
+              {certEmoji} {certName} 全{totalQuestions}問＋詳細解説を{PRICING.proYearly}でアンロック
             </Text>
           </View>
           <TouchableOpacity
@@ -145,18 +146,20 @@ export default function CertPaywall({
         <ScrollView horizontal showsHorizontalScrollIndicator={false} style={styles.plans} contentContainerStyle={styles.plansContent}>
           <PlanCard
             title={`${certEmoji} ${certName} Pro`}
-            price="¥980/月"
-            yearPrice="¥7,800/年"
-            features={['全問題アンロック', '詳細解説付き', '学習履歴', '聞き流しモード']}
+            price={PRICING.proMonthly}
+            yearPrice={PRICING.proYearly}
+            yearSavings={PRICING.proYearlySavings}
+            features={['全問題アンロック（1,000問以上）', '全選択肢の詳細解説付き', '学習進捗・弱点分析', '聞き流しモード（移動中に学習）']}
             color={accentColor}
             onPress={handlePurchase}
             loading={purchasing}
           />
           <PlanCard
-            title="すべて解放 Max"
-            price="¥2,480/月"
-            yearPrice="¥19,800/年"
-            features={['全資格アンロック', '宅建・FP・マンション・建築設備士・電験三種・気象予報士', 'すべての機能']}
+            title="全資格 Max"
+            price={PRICING.maxMonthly}
+            yearPrice={PRICING.maxYearly}
+            yearSavings={PRICING.maxYearlySavings}
+            features={['6資格すべてアンロック', '宅建・FP・マンション管理士', '建築設備士・電験三種・気象予報士', 'すべての機能 ＋ 優先サポート']}
             color="#1B2A5C"
             onPress={handlePurchase}
             loading={purchasing}
@@ -171,15 +174,15 @@ export default function CertPaywall({
   );
 }
 
-function PlanCard({ title, price, yearPrice, features, color, onPress, loading }: {
-  title: string; price: string; yearPrice: string; features: string[];
+function PlanCard({ title, price, yearPrice, yearSavings, features, color, onPress, loading }: {
+  title: string; price: string; yearPrice: string; yearSavings: string; features: string[];
   color: string; onPress: () => void; loading: boolean;
 }) {
   return (
     <View style={planStyles.card}>
       <Text style={[planStyles.title, { color }]}>{title}</Text>
       <Text style={planStyles.price}>{price}</Text>
-      <Text style={planStyles.yearPrice}>{yearPrice}（33%OFF）</Text>
+      <Text style={planStyles.yearPrice}>{yearPrice}（{yearSavings}）</Text>
       {features.map((f, i) => (
         <Text key={i} style={planStyles.feature}>✓ {f}</Text>
       ))}
