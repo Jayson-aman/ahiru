@@ -317,7 +317,7 @@ export const fpAssetQuestions4: FPQuestion[] = [
     ],
     correctKey: 'D' as const,
     explanation: '金融商品取引法上の特定投資家（いわゆるプロ投資家）は、①適格機関投資家（証券会社・銀行・保険会社等）、②国・地方公共団体、③上場会社・資本金5億円以上の法人などが該当する。個人投資家は資産規模にかかわらず原則「一般投資家」であり、特定投資家として扱われるには金融機関に移行の申出をして認められる必要がある（かつ一定要件充足が必要）。',
-    difficulty: 'standard' as const,
+    difficulty: 'basic' as const,
     level: '2級' as const,
   },
   {
