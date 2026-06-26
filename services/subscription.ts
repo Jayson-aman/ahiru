@@ -55,6 +55,7 @@ export const ENTITLEMENT_MAX = 'max';
 export const FREE_QUESTION_LIMIT = 10;
 
 export function initRevenueCat(): void {
+  if (Platform.OS === 'web') return;
   if (__DEV__) Purchases.setLogLevel(LOG_LEVEL.DEBUG);
   const apiKey =
     Platform.select({ ios: RC_API_KEY_IOS, android: RC_API_KEY_ANDROID }) ??
@@ -80,19 +81,23 @@ export function hasCertAccess(info: CustomerInfo | null, cert: CertKey): boolean
 }
 
 export function getCustomerInfo(): Promise<CustomerInfo> {
+  if (Platform.OS === 'web') return Promise.reject(new Error('web'));
   return Purchases.getCustomerInfo();
 }
 
 export async function fetchCurrentOffering(): Promise<PurchasesOffering | null> {
+  if (Platform.OS === 'web') return null;
   const offerings = await Purchases.getOfferings();
   return offerings.current;
 }
 
 export async function purchasePackage(pkg: PurchasesPackage): Promise<CustomerInfo> {
+  if (Platform.OS === 'web') return Promise.reject(new Error('web'));
   const { customerInfo } = await Purchases.purchasePackage(pkg);
   return customerInfo;
 }
 
 export function restorePurchases(): Promise<CustomerInfo> {
+  if (Platform.OS === 'web') return Promise.reject(new Error('web'));
   return Purchases.restorePurchases();
 }

@@ -61,12 +61,12 @@ const allFpQuestions = [
 ];
 
 const SUBJECT_INFO: Record<string, { name: string; emoji: string; color: string; totalExpected: number }> = {
-  life:        { name: 'ライフプランニングと資金計画', emoji: '👨‍👩‍👧', color: '#0D7C3D', totalExpected: 100 },
-  risk:        { name: 'リスク管理',                 emoji: '🛡️', color: '#1565C0', totalExpected: 100 },
-  asset:       { name: '金融資産運用',               emoji: '📈', color: '#6A1B9A', totalExpected: 100 },
-  tax:         { name: 'タックスプランニング',        emoji: '📊', color: '#E65100', totalExpected: 100 },
-  realestate:  { name: '不動産',                    emoji: '🏘️', color: '#4E342E', totalExpected: 100 },
-  inheritance: { name: '相続・事業承継',             emoji: '📜', color: '#880E4F', totalExpected: 100 },
+  life:        { name: 'ライフプランニングと資金計画', emoji: '👨‍👩‍👧', color: '#0D7C3D', totalExpected: 167 },
+  risk:        { name: 'リスク管理',                 emoji: '🛡️', color: '#1565C0', totalExpected: 167 },
+  asset:       { name: '金融資産運用',               emoji: '📈', color: '#6A1B9A', totalExpected: 167 },
+  tax:         { name: 'タックスプランニング',        emoji: '📊', color: '#E65100', totalExpected: 167 },
+  realestate:  { name: '不動産',                    emoji: '🏘️', color: '#4E342E', totalExpected: 167 },
+  inheritance: { name: '相続・事業承継',             emoji: '📜', color: '#880E4F', totalExpected: 165 },
 };
 
 export default function FPQuizScreen() {

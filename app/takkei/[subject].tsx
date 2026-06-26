@@ -8,9 +8,9 @@ import { FREE_QUESTION_LIMIT, PRICING } from '../../services/subscription';
 
 const SUBJECT_INFO: Record<string, { name: string; emoji: string; color: string; totalExpected: number }> = {
   kenri: { name: '権利関係',      emoji: '⚖️', color: '#5B4B8A', totalExpected: 250 },
-  gyoho: { name: '宅建業法',      emoji: '🏢', color: '#1E5799', totalExpected: 300 },
-  horei: { name: '法令上の制限',  emoji: '📋', color: '#27AE60', totalExpected: 200 },
-  zei:   { name: '税・その他',    emoji: '💴', color: '#E67E22', totalExpected: 150 },
+  gyoho: { name: '宅建業法',      emoji: '🏢', color: '#1E5799', totalExpected: 250 },
+  horei: { name: '法令上の制限',  emoji: '📋', color: '#27AE60', totalExpected: 250 },
+  zei:   { name: '税・その他',    emoji: '💴', color: '#E67E22', totalExpected: 250 },
 };
 
 export default function TakkeiQuizScreen() {
