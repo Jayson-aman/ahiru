@@ -237,7 +237,7 @@ export const takkeiKenri3: TakkeiQuestion[] = [
     ],
     correctKey: 'B' as const,
     explanation: '令和2年民法改正により、連帯債務の絶対的効力事由は①弁済等の免責行為（436条）②更改（438条）③相殺（439条）④混同（440条）に限定され、その他は相対的効力となった。免除・時効完成・請求等はすべて相対的効力であり、他の連帯債務者には影響しない。',
-    difficulty: 'standard' as const,
+    difficulty: 'advanced' as const,
     examYear: 'R4',
   },
   {
@@ -445,7 +445,7 @@ export const takkeiKenri3: TakkeiQuestion[] = [
     ],
     correctKey: 'C' as const,
     explanation: '区分所有法における主要な決議要件：①普通決議（過半数）：管理行為、②特別決議（3/4以上）：規約変更・共用部分の重大変更・建替え以外の特別事項、③建替え決議（4/5以上）（62条）。共用部分の変更（著しい変更）は区分所有者数・議決権各3/4以上が必要であり、過半数では不足する。',
-    difficulty: 'standard' as const,
+    difficulty: 'advanced' as const,
     examYear: 'R3',
   },
   {
@@ -573,7 +573,7 @@ export const takkeiKenri3: TakkeiQuestion[] = [
     ],
     correctKey: 'D' as const,
     explanation: '令和2年民法改正で時効障害事由が「中断・停止」から「更新・完成猶予」に整理された。完成猶予：催告（150条）・仮差押え仮処分（149条）・協議合意（151条）・権利行使困難事由（158条〜161条）等。更新：裁判上の請求での判決確定等（147条）・強制執行終了（148条）・承認（152条）等。催告は完成猶予にすぎず、更新ではない。',
-    difficulty: 'standard' as const,
+    difficulty: 'advanced' as const,
     examYear: 'R5',
   },
   {

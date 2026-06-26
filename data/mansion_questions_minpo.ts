@@ -286,7 +286,7 @@ export const mansionMinpo: MansionQuestion[] = [
     ],
     correctKey: 'B',
     explanation: '民法109条（代理権授与の表示による表見代理）は、本人が第三者に対して他人に代理権を授与した旨を表示した場合、実際には代理権がなくても、その他人が行った行為の効果が本人に帰属することを規定している。相手方の善意無過失が要件となる。',
-    difficulty: 'standard',
+    difficulty: 'basic',
     examYear: '令和2年',
   },
   {
@@ -446,7 +446,7 @@ export const mansionMinpo: MansionQuestion[] = [
     ],
     correctKey: 'B',
     explanation: '民法375条は抵当権の被担保債権の範囲を規定しており、利息その他の定期金及び損害賠償については、後順位抵当権者等の利益保護のため最後の2年分に限定されている。これはマンション管理士試験の頻出事項である。',
-    difficulty: 'standard',
+    difficulty: 'basic',
     examYear: '令和3年',
   },
   {
