@@ -2,36 +2,42 @@ import type { EikenQuestion } from './eiken_questions';
 export const eikenQuestions4kyu3: EikenQuestion[] = [
 
   // ===== VOCABULARY (15 questions: 001-015) =====
+
+  // 001 correctKey: A
   {
     id: 'eiken_4kyu3_001',
     level: '4kyu' as const,
     category: 'vocabulary' as const,
     question: 'Choose the best word to complete the sentence.\n\nMy mother bought a new ( ) at the department store yesterday.',
     choices: [
-      { key: 'A', text: 'cloud' },
-      { key: 'B', text: 'dress' },
+      { key: 'A', text: 'dress' },
+      { key: 'B', text: 'cloud' },
       { key: 'C', text: 'season' },
       { key: 'D', text: 'corner' },
     ],
-    correctKey: 'B' as const,
+    correctKey: 'A' as const,
     explanation: 'デパートで買うものとして最も自然なのは「ドレス・服」= dressです。cloud（雲）、season（季節）、corner（角）はデパートで購入するものではありません。',
     difficulty: 'basic' as const,
   },
+
+  // 002 correctKey: B
   {
     id: 'eiken_4kyu3_002',
     level: '4kyu' as const,
     category: 'vocabulary' as const,
     question: 'Choose the best word to complete the sentence.\n\nThe hotel was very ( ). All the rooms were full.',
     choices: [
-      { key: 'A', text: 'popular' },
-      { key: 'B', text: 'empty' },
+      { key: 'A', text: 'empty' },
+      { key: 'B', text: 'popular' },
       { key: 'C', text: 'boring' },
       { key: 'D', text: 'narrow' },
     ],
-    correctKey: 'A' as const,
+    correctKey: 'B' as const,
     explanation: '「すべての部屋が満室だった」という文脈から、ホテルが「人気だった」= popularが正解です。empty（空っぽ）は逆の意味です。',
     difficulty: 'standard' as const,
   },
+
+  // 003 correctKey: C
   {
     id: 'eiken_4kyu3_003',
     level: '4kyu' as const,
@@ -47,6 +53,8 @@ export const eikenQuestions4kyu3: EikenQuestion[] = [
     explanation: '食事の前に手を「洗う」= wash your handsが正しい表現です。brushは歯を磨くときに使い、shake/waveは手を振るという意味です。',
     difficulty: 'basic' as const,
   },
+
+  // 004 correctKey: D
   {
     id: 'eiken_4kyu3_004',
     level: '4kyu' as const,
@@ -62,21 +70,25 @@ export const eikenQuestions4kyu3: EikenQuestion[] = [
     explanation: '宿題がないと聞いて「驚いた」= surprisedが最も自然な反応です。worried（心配）、angry（怒り）、bored（退屈）はよい知らせに対する反応として不自然です。',
     difficulty: 'standard' as const,
   },
+
+  // 005 correctKey: A
   {
     id: 'eiken_4kyu3_005',
     level: '4kyu' as const,
     category: 'vocabulary' as const,
     question: 'Choose the best word to complete the sentence.\n\nHe ( ) his wallet on the train and had no money.',
     choices: [
-      { key: 'A', text: 'found' },
-      { key: 'B', text: 'left' },
+      { key: 'A', text: 'left' },
+      { key: 'B', text: 'found' },
       { key: 'C', text: 'took' },
       { key: 'D', text: 'opened' },
     ],
-    correctKey: 'B' as const,
+    correctKey: 'A' as const,
     explanation: '「財布を電車に置き忘れる」はleft his walletと言います。「お金がなかった」という結果からも、置き忘れたことがわかります。foundは「見つけた」で逆の意味です。',
     difficulty: 'advanced' as const,
   },
+
+  // 006 correctKey: B
   {
     id: 'eiken_4kyu3_006',
     level: '4kyu' as const,
@@ -84,14 +96,16 @@ export const eikenQuestions4kyu3: EikenQuestion[] = [
     question: 'Choose the best word to complete the sentence.\n\nShe speaks English very ( ). Everyone can understand her.',
     choices: [
       { key: 'A', text: 'loud' },
-      { key: 'B', text: 'slowly' },
-      { key: 'C', text: 'clearly' },
+      { key: 'B', text: 'clearly' },
+      { key: 'C', text: 'slowly' },
       { key: 'D', text: 'late' },
     ],
-    correctKey: 'C' as const,
+    correctKey: 'B' as const,
     explanation: '「みんなが理解できる」という結果から、「明瞭に・はっきりと」= clearlyが正解です。loudly（大声で）も考えられますが、clearlyの方が理解できる理由として自然です。',
     difficulty: 'standard' as const,
   },
+
+  // 007 correctKey: C
   {
     id: 'eiken_4kyu3_007',
     level: '4kyu' as const,
@@ -99,44 +113,50 @@ export const eikenQuestions4kyu3: EikenQuestion[] = [
     question: 'Choose the best word to complete the sentence.\n\nWe always ( ) our shoes at the door when we enter a Japanese house.',
     choices: [
       { key: 'A', text: 'put on' },
-      { key: 'B', text: 'take off' },
-      { key: 'C', text: 'give up' },
-      { key: 'D', text: 'pick up' },
+      { key: 'B', text: 'pick up' },
+      { key: 'C', text: 'take off' },
+      { key: 'D', text: 'give up' },
     ],
-    correctKey: 'B' as const,
+    correctKey: 'C' as const,
     explanation: '日本の家に入るときは靴を「脱ぐ」= take offします。put on（履く）は逆の意味で、give up（諦める）、pick up（拾う）は文脈に合いません。',
     difficulty: 'advanced' as const,
   },
+
+  // 008 correctKey: A
   {
     id: 'eiken_4kyu3_008',
     level: '4kyu' as const,
     category: 'vocabulary' as const,
     question: 'Choose the best word to complete the sentence.\n\nThe mountain path was very ( ), so we had to walk carefully.',
     choices: [
-      { key: 'A', text: 'wide' },
-      { key: 'B', text: 'narrow' },
+      { key: 'A', text: 'narrow' },
+      { key: 'B', text: 'wide' },
       { key: 'C', text: 'straight' },
       { key: 'D', text: 'clean' },
     ],
-    correctKey: 'B' as const,
+    correctKey: 'A' as const,
     explanation: '「注意して歩かなければならなかった」という文脈から、山道が「狭かった」= narrowが正解です。wide（広い）は逆の意味で、straight（まっすぐ）やclean（清潔）では危険な理由になりません。',
     difficulty: 'standard' as const,
   },
+
+  // 009 correctKey: D
   {
     id: 'eiken_4kyu3_009',
     level: '4kyu' as const,
     category: 'vocabulary' as const,
     question: 'Choose the best word to complete the sentence.\n\nThe café ( ) at 7 a.m. and closes at 10 p.m.',
     choices: [
-      { key: 'A', text: 'opens' },
-      { key: 'B', text: 'starts' },
-      { key: 'C', text: 'leaves' },
-      { key: 'D', text: 'wakes' },
+      { key: 'A', text: 'starts' },
+      { key: 'B', text: 'leaves' },
+      { key: 'C', text: 'wakes' },
+      { key: 'D', text: 'opens' },
     ],
-    correctKey: 'A' as const,
+    correctKey: 'D' as const,
     explanation: '「〜時に開店する」はopensを使います。closes（閉店する）の対になる動詞はopensです。starts（始める）はやや不自然で、leaves（去る）、wakes（起きる）は意味が合いません。',
     difficulty: 'basic' as const,
   },
+
+  // 010 correctKey: B
   {
     id: 'eiken_4kyu3_010',
     level: '4kyu' as const,
@@ -152,21 +172,25 @@ export const eikenQuestions4kyu3: EikenQuestion[] = [
     explanation: '「音がとても怖い」という文脈から、大きな音がするもの「雷」= thunderが正解です。sunshine（太陽の光）、breeze（そよ風）、rainbow（虹）は音と関係がありません。',
     difficulty: 'advanced' as const,
   },
+
+  // 011 correctKey: A
   {
     id: 'eiken_4kyu3_011',
     level: '4kyu' as const,
     category: 'vocabulary' as const,
     question: 'Choose the best word to complete the sentence.\n\nDad ( ) the newspaper every morning over coffee.',
     choices: [
-      { key: 'A', text: 'watches' },
-      { key: 'B', text: 'hears' },
-      { key: 'C', text: 'sees' },
-      { key: 'D', text: 'reads' },
+      { key: 'A', text: 'reads' },
+      { key: 'B', text: 'watches' },
+      { key: 'C', text: 'hears' },
+      { key: 'D', text: 'sees' },
     ],
-    correctKey: 'D' as const,
+    correctKey: 'A' as const,
     explanation: '新聞を「読む」はread a newspaperです。watches（テレビを見る）、hears（聞こえる）、sees（目に入る）は新聞に対して不自然な動詞です。',
     difficulty: 'basic' as const,
   },
+
+  // 012 correctKey: D
   {
     id: 'eiken_4kyu3_012',
     level: '4kyu' as const,
@@ -175,60 +199,68 @@ export const eikenQuestions4kyu3: EikenQuestion[] = [
     choices: [
       { key: 'A', text: 'cups' },
       { key: 'B', text: 'pieces' },
-      { key: 'C', text: 'glasses' },
-      { key: 'D', text: 'bowls' },
+      { key: 'C', text: 'bowls' },
+      { key: 'D', text: 'glasses' },
     ],
-    correctKey: 'C' as const,
+    correctKey: 'D' as const,
     explanation: '水を飲む容器として最も一般的なのは「コップ・グラス」= glassesです。cupsはコーヒーや紅茶に使います。piecesはパンや紙など、bowlsはスープなどに使います。',
     difficulty: 'standard' as const,
   },
+
+  // 013 correctKey: C
   {
     id: 'eiken_4kyu3_013',
     level: '4kyu' as const,
     category: 'vocabulary' as const,
     question: 'Choose the best word to complete the sentence.\n\nMy grandmother always ( ) me a birthday card every year.',
     choices: [
-      { key: 'A', text: 'sends' },
-      { key: 'B', text: 'speaks' },
-      { key: 'C', text: 'carries' },
+      { key: 'A', text: 'speaks' },
+      { key: 'B', text: 'carries' },
+      { key: 'C', text: 'sends' },
       { key: 'D', text: 'shows' },
     ],
-    correctKey: 'A' as const,
+    correctKey: 'C' as const,
     explanation: 'カードを「送る」= send a cardが正しい表現です。speaks（話す）、carries（運ぶ）、shows（見せる）はカードと自然に組み合わさりません。',
     difficulty: 'basic' as const,
   },
+
+  // 014 correctKey: A
   {
     id: 'eiken_4kyu3_014',
     level: '4kyu' as const,
     category: 'vocabulary' as const,
     question: 'Choose the best word to complete the sentence.\n\nThe stadium was ( ) with fans cheering for their teams.',
     choices: [
-      { key: 'A', text: 'silent' },
-      { key: 'B', text: 'empty' },
-      { key: 'C', text: 'packed' },
+      { key: 'A', text: 'packed' },
+      { key: 'B', text: 'silent' },
+      { key: 'C', text: 'empty' },
       { key: 'D', text: 'closed' },
     ],
-    correctKey: 'C' as const,
+    correctKey: 'A' as const,
     explanation: 'ファンが応援しているという文脈から、スタジアムが「満員だった・人でいっぱいだった」= packedが正解です。silent（静か）、empty（空）、closed（閉まっている）は逆の状況を表します。',
     difficulty: 'advanced' as const,
   },
+
+  // 015 correctKey: B
   {
     id: 'eiken_4kyu3_015',
     level: '4kyu' as const,
     category: 'vocabulary' as const,
     question: 'Choose the best word to complete the sentence.\n\nI need to ( ) my shoes before the race starts.',
     choices: [
-      { key: 'A', text: 'tie' },
-      { key: 'B', text: 'fix' },
+      { key: 'A', text: 'fix' },
+      { key: 'B', text: 'tie' },
       { key: 'C', text: 'pull' },
       { key: 'D', text: 'lock' },
     ],
-    correctKey: 'A' as const,
+    correctKey: 'B' as const,
     explanation: 'レースの前に靴ひもを「結ぶ」= tie my shoesが正しい表現です。fix（修理する）、pull（引っ張る）、lock（鍵をかける）は靴と組み合わせて自然ではありません。',
     difficulty: 'standard' as const,
   },
 
   // ===== GRAMMAR (15 questions: 016-030) =====
+
+  // 016 correctKey: D
   {
     id: 'eiken_4kyu3_016',
     level: '4kyu' as const,
@@ -237,28 +269,32 @@ export const eikenQuestions4kyu3: EikenQuestion[] = [
     choices: [
       { key: 'A', text: 'am' },
       { key: 'B', text: 'was' },
-      { key: 'C', text: 'have' },
-      { key: 'D', text: 'had' },
+      { key: 'C', text: 'had' },
+      { key: 'D', text: 'have' },
     ],
-    correctKey: 'C' as const,
+    correctKey: 'D' as const,
     explanation: '"have never been to ～"で「〜に行ったことがない」という現在完了の経験を表します。主語がIなのでhaveを使います。hadを使うと過去完了になり文脈が変わります。',
     difficulty: 'advanced' as const,
   },
+
+  // 017 correctKey: A
   {
     id: 'eiken_4kyu3_017',
     level: '4kyu' as const,
     category: 'grammar' as const,
     question: 'Choose the best word to complete the sentence.\n\nMy parents ( ) at a restaurant when I called them.',
     choices: [
-      { key: 'A', text: 'eat' },
-      { key: 'B', text: 'are eating' },
-      { key: 'C', text: 'were eating' },
+      { key: 'A', text: 'were eating' },
+      { key: 'B', text: 'eat' },
+      { key: 'C', text: 'are eating' },
       { key: 'D', text: 'ate' },
     ],
-    correctKey: 'C' as const,
+    correctKey: 'A' as const,
     explanation: '「私が電話したとき」という過去の時点で進行中だった動作には過去進行形"were eating"を使います。ate（過去形）は動作が完了したことを表し、文脈に合いません。',
     difficulty: 'advanced' as const,
   },
+
+  // 018 correctKey: C
   {
     id: 'eiken_4kyu3_018',
     level: '4kyu' as const,
@@ -266,14 +302,16 @@ export const eikenQuestions4kyu3: EikenQuestion[] = [
     question: 'Choose the best word to complete the sentence.\n\nThis is ( ) orange. I bought it at the market.',
     choices: [
       { key: 'A', text: 'a' },
-      { key: 'B', text: 'an' },
-      { key: 'C', text: 'the' },
+      { key: 'B', text: 'the' },
+      { key: 'C', text: 'an' },
       { key: 'D', text: 'some' },
     ],
-    correctKey: 'B' as const,
+    correctKey: 'C' as const,
     explanation: '"orange"は母音（o）で始まるので不定冠詞は"an"を使います。"a"は子音で始まる語の前に使います。"the"は特定のものを指す場合に使います。',
     difficulty: 'basic' as const,
   },
+
+  // 019 correctKey: B
   {
     id: 'eiken_4kyu3_019',
     level: '4kyu' as const,
@@ -281,14 +319,16 @@ export const eikenQuestions4kyu3: EikenQuestion[] = [
     question: 'Choose the best word to complete the sentence.\n\nAre those books ( )?',
     choices: [
       { key: 'A', text: 'you' },
-      { key: 'B', text: 'your' },
-      { key: 'C', text: 'yours' },
+      { key: 'B', text: 'yours' },
+      { key: 'C', text: 'your' },
       { key: 'D', text: 'yourself' },
     ],
-    correctKey: 'C' as const,
+    correctKey: 'B' as const,
     explanation: '文末に単独で使う所有代名詞は"yours"（あなたのもの）です。"your"は名詞の前に置く形、"you"は主語や目的語、"yourself"は再帰代名詞です。',
     difficulty: 'standard' as const,
   },
+
+  // 020 correctKey: D
   {
     id: 'eiken_4kyu3_020',
     level: '4kyu' as const,
@@ -297,28 +337,32 @@ export const eikenQuestions4kyu3: EikenQuestion[] = [
     choices: [
       { key: 'A', text: 'since' },
       { key: 'B', text: 'ago' },
-      { key: 'C', text: 'for' },
-      { key: 'D', text: 'during' },
+      { key: 'C', text: 'during' },
+      { key: 'D', text: 'for' },
     ],
-    correctKey: 'C' as const,
+    correctKey: 'D' as const,
     explanation: '期間（ten years）の前には"for"を使います。"since"は時点（since 2010など）の前に使います。"ago"は過去形と使い、"during"は「〜の間中」で期間の名詞の前に使います。',
     difficulty: 'advanced' as const,
   },
+
+  // 021 correctKey: A
   {
     id: 'eiken_4kyu3_021',
     level: '4kyu' as const,
     category: 'grammar' as const,
     question: 'Choose the best word to complete the sentence.\n\nHe ( ) his lunch by the time I arrived.',
     choices: [
-      { key: 'A', text: 'finishes' },
-      { key: 'B', text: 'finished' },
-      { key: 'C', text: 'has finished' },
-      { key: 'D', text: 'had finished' },
+      { key: 'A', text: 'had finished' },
+      { key: 'B', text: 'finishes' },
+      { key: 'C', text: 'finished' },
+      { key: 'D', text: 'has finished' },
     ],
-    correctKey: 'D' as const,
+    correctKey: 'A' as const,
     explanation: '"by the time I arrived"（私が着いたときまでに）という過去の時点より前に完了していた動作には過去完了"had finished"を使います。',
     difficulty: 'advanced' as const,
   },
+
+  // 022 correctKey: C
   {
     id: 'eiken_4kyu3_022',
     level: '4kyu' as const,
@@ -334,6 +378,8 @@ export const eikenQuestions4kyu3: EikenQuestion[] = [
     explanation: '"in the family"（家族の中で）があるので最上級が必要です。"tall"の最上級は"the tallest"です。"taller"は比較級で"than"と使います。"most tall"は不正解です。',
     difficulty: 'standard' as const,
   },
+
+  // 023 correctKey: B
   {
     id: 'eiken_4kyu3_023',
     level: '4kyu' as const,
@@ -341,14 +387,16 @@ export const eikenQuestions4kyu3: EikenQuestion[] = [
     question: 'Choose the best word to complete the sentence.\n\nYou should ( ) an umbrella. It looks like rain.',
     choices: [
       { key: 'A', text: 'taking' },
-      { key: 'B', text: 'took' },
-      { key: 'C', text: 'take' },
+      { key: 'B', text: 'take' },
+      { key: 'C', text: 'took' },
       { key: 'D', text: 'takes' },
     ],
-    correctKey: 'C' as const,
+    correctKey: 'B' as const,
     explanation: '"should"などの助動詞の後には動詞の原形が来ます。"should take"が正しい形です。taking（ing形）、took（過去形）、takes（三単現）は助動詞の後に来ません。',
     difficulty: 'basic' as const,
   },
+
+  // 024 correctKey: D
   {
     id: 'eiken_4kyu3_024',
     level: '4kyu' as const,
@@ -357,28 +405,32 @@ export const eikenQuestions4kyu3: EikenQuestion[] = [
     choices: [
       { key: 'A', text: 'at' },
       { key: 'B', text: 'on' },
-      { key: 'C', text: 'in' },
-      { key: 'D', text: 'by' },
+      { key: 'C', text: 'by' },
+      { key: 'D', text: 'in' },
     ],
-    correctKey: 'C' as const,
+    correctKey: 'D' as const,
     explanation: '季節の前には前置詞"in"を使います。"in winter"（冬に）が正しい表現です。"on"は曜日・日付の前、"at"は時刻の前に使います。',
     difficulty: 'basic' as const,
   },
+
+  // 025 correctKey: A
   {
     id: 'eiken_4kyu3_025',
     level: '4kyu' as const,
     category: 'grammar' as const,
     question: 'Choose the best word to complete the sentence.\n\nLook at ( ) clouds! I think it\'s going to rain soon.',
     choices: [
-      { key: 'A', text: 'a' },
-      { key: 'B', text: 'an' },
-      { key: 'C', text: 'those' },
+      { key: 'A', text: 'those' },
+      { key: 'B', text: 'a' },
+      { key: 'C', text: 'an' },
       { key: 'D', text: 'this' },
     ],
-    correctKey: 'C' as const,
+    correctKey: 'A' as const,
     explanation: '"clouds"（複数形）を指示するので複数形の指示代名詞"those"を使います。"a"/"an"は単数、"this"は単数で手元のものを指します。空の雲は遠くにあるので"those"が適切です。',
     difficulty: 'standard' as const,
   },
+
+  // 026 correctKey: C
   {
     id: 'eiken_4kyu3_026',
     level: '4kyu' as const,
@@ -387,13 +439,15 @@ export const eikenQuestions4kyu3: EikenQuestion[] = [
     choices: [
       { key: 'A', text: 'listen' },
       { key: 'B', text: 'to listen' },
-      { key: 'C', text: 'listened' },
-      { key: 'D', text: 'listening' },
+      { key: 'C', text: 'listening' },
+      { key: 'D', text: 'listened' },
     ],
-    correctKey: 'D' as const,
+    correctKey: 'C' as const,
     explanation: '"enjoy"の後には動名詞（-ing形）が来ます。"enjoy listening"が正しい形です。"enjoy to listen"は誤りで、enjoy+不定詞は使いません。',
     difficulty: 'standard' as const,
   },
+
+  // 027 correctKey: D
   {
     id: 'eiken_4kyu3_027',
     level: '4kyu' as const,
@@ -401,14 +455,16 @@ export const eikenQuestions4kyu3: EikenQuestion[] = [
     question: 'Choose the best word to complete the sentence.\n\n( ) your sister like spicy food?',
     choices: [
       { key: 'A', text: 'Do' },
-      { key: 'B', text: 'Does' },
-      { key: 'C', text: 'Is' },
-      { key: 'D', text: 'Has' },
+      { key: 'B', text: 'Is' },
+      { key: 'C', text: 'Has' },
+      { key: 'D', text: 'Does' },
     ],
-    correctKey: 'B' as const,
+    correctKey: 'D' as const,
     explanation: '"your sister"は三人称単数なので、一般動詞"like"の疑問文には"Does"を使います。"Do"は一・二人称と複数の場合、"Is"はbe動詞の疑問文です。',
     difficulty: 'basic' as const,
   },
+
+  // 028 correctKey: B
   {
     id: 'eiken_4kyu3_028',
     level: '4kyu' as const,
@@ -416,29 +472,33 @@ export const eikenQuestions4kyu3: EikenQuestion[] = [
     question: 'Choose the best word to complete the sentence.\n\nHow ( ) does it take to get to the station?',
     choices: [
       { key: 'A', text: 'far' },
-      { key: 'B', text: 'many' },
-      { key: 'C', text: 'long' },
+      { key: 'B', text: 'long' },
+      { key: 'C', text: 'many' },
       { key: 'D', text: 'much' },
     ],
-    correctKey: 'C' as const,
+    correctKey: 'B' as const,
     explanation: '時間の長さを尋ねるには"How long"を使います。「駅まで（時間が）どのくらいかかりますか」という質問です。"How far"は距離、"How many"は数、"How much"は値段を尋ねます。',
     difficulty: 'standard' as const,
   },
+
+  // 029 correctKey: A
   {
     id: 'eiken_4kyu3_029',
     level: '4kyu' as const,
     category: 'grammar' as const,
     question: 'Choose the best word to complete the sentence.\n\nThe apples ( ) fresh. They are from a farm nearby.',
     choices: [
-      { key: 'A', text: 'is' },
-      { key: 'B', text: 'am' },
-      { key: 'C', text: 'look' },
-      { key: 'D', text: 'looks' },
+      { key: 'A', text: 'look' },
+      { key: 'B', text: 'looks' },
+      { key: 'C', text: 'is' },
+      { key: 'D', text: 'am' },
     ],
-    correctKey: 'C' as const,
+    correctKey: 'A' as const,
     explanation: '"The apples"は複数形なので、動詞も複数形に対応する形にします。"look"は主語が複数の場合、"looks"は三人称単数の場合に使います。「〜に見える」= look + 形容詞。',
     difficulty: 'standard' as const,
   },
+
+  // 030 correctKey: C
   {
     id: 'eiken_4kyu3_030',
     level: '4kyu' as const,
@@ -456,6 +516,8 @@ export const eikenQuestions4kyu3: EikenQuestion[] = [
   },
 
   // ===== DIALOGUE (10 questions: 031-040) =====
+
+  // 031 correctKey: D
   {
     id: 'eiken_4kyu3_031',
     level: '4kyu' as const,
@@ -463,29 +525,33 @@ export const eikenQuestions4kyu3: EikenQuestion[] = [
     question: 'Choose the best response to complete the conversation.\n\nA: "May I take your order?"\nB: "( )"',
     choices: [
       { key: 'A', text: 'Yes, I ordered it.' },
-      { key: 'B', text: 'I\'ll have the pasta, please.' },
+      { key: 'B', text: 'The pasta is delicious.' },
       { key: 'C', text: 'No, I don\'t have an order.' },
-      { key: 'D', text: 'The pasta is delicious.' },
+      { key: 'D', text: 'I\'ll have the pasta, please.' },
     ],
-    correctKey: 'B' as const,
+    correctKey: 'D' as const,
     explanation: 'レストランでの注文を聞かれたとき、「〜をください」= I\'ll have ～, please.が最も自然な返答です。「注文してもいいですか」に対してYes, I ordered it.は時制が合いません。',
     difficulty: 'basic' as const,
   },
+
+  // 032 correctKey: A
   {
     id: 'eiken_4kyu3_032',
     level: '4kyu' as const,
     category: 'dialogue' as const,
     question: 'Choose the best response to complete the conversation.\n\nA: "What\'s your favorite season?"\nB: "( ) I love building snowmen."',
     choices: [
-      { key: 'A', text: 'It\'s summer.' },
-      { key: 'B', text: 'It\'s spring.' },
-      { key: 'C', text: 'It\'s winter.' },
+      { key: 'A', text: 'It\'s winter.' },
+      { key: 'B', text: 'It\'s summer.' },
+      { key: 'C', text: 'It\'s spring.' },
       { key: 'D', text: 'It\'s autumn.' },
     ],
-    correctKey: 'C' as const,
+    correctKey: 'A' as const,
     explanation: '「雪だるまを作るのが大好き」という後の文から、雪がある「冬」= winterが好きだとわかります。',
     difficulty: 'basic' as const,
   },
+
+  // 033 correctKey: B
   {
     id: 'eiken_4kyu3_033',
     level: '4kyu' as const,
@@ -493,14 +559,16 @@ export const eikenQuestions4kyu3: EikenQuestion[] = [
     question: 'Choose the best response to complete the conversation.\n\nA: "Can you help me with this box? It\'s very heavy."\nB: "( )"',
     choices: [
       { key: 'A', text: 'No, I can\'t lift boxes.' },
-      { key: 'B', text: 'Yes, it\'s a big box.' },
-      { key: 'C', text: 'Sure! I\'ll help you.' },
+      { key: 'B', text: 'Sure! I\'ll help you.' },
+      { key: 'C', text: 'Yes, it\'s a big box.' },
       { key: 'D', text: 'Sorry, I don\'t have a box.' },
     ],
-    correctKey: 'C' as const,
+    correctKey: 'B' as const,
     explanation: '助けを求められたとき、"Sure! I\'ll help you."（もちろん、手伝います）が最も自然で親切な返答です。No, I can\'t lift boxes.（箱を持てない）は理由として不自然です。',
     difficulty: 'basic' as const,
   },
+
+  // 034 correctKey: C
   {
     id: 'eiken_4kyu3_034',
     level: '4kyu' as const,
@@ -508,29 +576,33 @@ export const eikenQuestions4kyu3: EikenQuestion[] = [
     question: 'Choose the best response to complete the conversation.\n\nA: "Have you ever eaten sushi?"\nB: "( ) I eat it with my family every month."',
     choices: [
       { key: 'A', text: 'No, I haven\'t.' },
-      { key: 'B', text: 'Yes, of course!' },
-      { key: 'C', text: 'No, I don\'t like fish.' },
+      { key: 'B', text: 'No, I don\'t like fish.' },
+      { key: 'C', text: 'Yes, of course!' },
       { key: 'D', text: 'Yes, I ate tomorrow.' },
     ],
-    correctKey: 'B' as const,
+    correctKey: 'C' as const,
     explanation: '「毎月家族と食べる」という後の文から、寿司を食べたことがあるのは明らかです。"Yes, of course!"が自然な返答です。"Yes, I ate tomorrow."は文法的に間違いです。',
     difficulty: 'standard' as const,
   },
+
+  // 035 correctKey: A
   {
     id: 'eiken_4kyu3_035',
     level: '4kyu' as const,
     category: 'dialogue' as const,
     question: 'Choose the best response to complete the conversation.\n\nA: "Is this seat taken?"\nB: "( )"',
     choices: [
-      { key: 'A', text: 'Yes, I take the seat.' },
-      { key: 'B', text: 'No, please sit down.' },
+      { key: 'A', text: 'No, please sit down.' },
+      { key: 'B', text: 'Yes, I take the seat.' },
       { key: 'C', text: 'Yes, I like this seat.' },
       { key: 'D', text: 'No, the seat is heavy.' },
     ],
-    correctKey: 'B' as const,
+    correctKey: 'A' as const,
     explanation: '「この席は空いていますか」という質問に「いいえ、どうぞ座ってください」= No, please sit down.が最も自然な返答です。「空席です（誰も使っていない）」という意味のNoです。',
     difficulty: 'standard' as const,
   },
+
+  // 036 correctKey: D
   {
     id: 'eiken_4kyu3_036',
     level: '4kyu' as const,
@@ -546,6 +618,8 @@ export const eikenQuestions4kyu3: EikenQuestion[] = [
     explanation: '「あなたは素晴らしい泳ぎ手だ！」という後の文から、水泳部に入ることを勧めているとわかります。"That sounds like a great idea!"（それは素晴らしいアイデアだね）が正解です。',
     difficulty: 'standard' as const,
   },
+
+  // 037 correctKey: B
   {
     id: 'eiken_4kyu3_037',
     level: '4kyu' as const,
@@ -553,14 +627,16 @@ export const eikenQuestions4kyu3: EikenQuestion[] = [
     question: 'Choose the best response to complete the conversation.\n\nA: "Sorry I\'m late. The bus was delayed."\nB: "( ) Come in and sit down."',
     choices: [
       { key: 'A', text: 'That\'s not OK at all.' },
-      { key: 'B', text: 'I don\'t believe you.' },
-      { key: 'C', text: 'That\'s all right.' },
+      { key: 'B', text: 'That\'s all right.' },
+      { key: 'C', text: 'I don\'t believe you.' },
       { key: 'D', text: 'You should take a taxi.' },
     ],
-    correctKey: 'C' as const,
+    correctKey: 'B' as const,
     explanation: '遅刻を謝る相手に「入ってください・座ってください」と続く文脈から、許可・許す表現"That\'s all right."（大丈夫ですよ）が正解です。',
     difficulty: 'standard' as const,
   },
+
+  // 038 correctKey: C
   {
     id: 'eiken_4kyu3_038',
     level: '4kyu' as const,
@@ -568,29 +644,33 @@ export const eikenQuestions4kyu3: EikenQuestion[] = [
     question: 'Choose the best response to complete the conversation.\n\nA: "What are you going to do this weekend?"\nB: "( )"',
     choices: [
       { key: 'A', text: 'I did it last Sunday.' },
-      { key: 'B', text: 'I\'m going to visit my grandparents.' },
-      { key: 'C', text: 'I like weekends very much.' },
+      { key: 'B', text: 'I like weekends very much.' },
+      { key: 'C', text: 'I\'m going to visit my grandparents.' },
       { key: 'D', text: 'The weekend was fun.' },
     ],
-    correctKey: 'B' as const,
+    correctKey: 'C' as const,
     explanation: '"What are you going to do this weekend?"（この週末は何をするつもりですか）という未来の計画を聞く質問に、未来形"I\'m going to visit..."で答えるのが正しい形です。',
     difficulty: 'standard' as const,
   },
+
+  // 039 correctKey: A
   {
     id: 'eiken_4kyu3_039',
     level: '4kyu' as const,
     category: 'dialogue' as const,
     question: 'Choose the best response to complete the conversation.\n\nA: "I failed my math test again."\nB: "( ) Would you like me to help you study?"',
     choices: [
-      { key: 'A', text: 'That\'s great news!' },
-      { key: 'B', text: 'I\'m sorry to hear that.' },
+      { key: 'A', text: 'I\'m sorry to hear that.' },
+      { key: 'B', text: 'That\'s great news!' },
       { key: 'C', text: 'Good for you!' },
       { key: 'D', text: 'Congratulations!' },
     ],
-    correctKey: 'B' as const,
+    correctKey: 'A' as const,
     explanation: 'テストに落ちたという悪いニュースに対して「それは残念でした」= I\'m sorry to hear that.が適切な共感の表現です。続いて勉強を手伝うと申し出ている文脈と一致します。',
     difficulty: 'basic' as const,
   },
+
+  // 040 correctKey: D
   {
     id: 'eiken_4kyu3_040',
     level: '4kyu' as const,
@@ -599,15 +679,17 @@ export const eikenQuestions4kyu3: EikenQuestion[] = [
     choices: [
       { key: 'A', text: 'I want the red one.' },
       { key: 'B', text: 'Both of them, please.' },
-      { key: 'C', text: 'I\'ll take the blue one.' },
-      { key: 'D', text: 'I don\'t want a bag.' },
+      { key: 'C', text: 'I don\'t want a bag.' },
+      { key: 'D', text: 'I\'ll take the blue one.' },
     ],
-    correctKey: 'C' as const,
+    correctKey: 'D' as const,
     explanation: '「青が好きな色だ」という後の文から、青いバッグを選んでいるとわかります。"I\'ll take the blue one."（青いものにします）が正解です。',
     difficulty: 'basic' as const,
   },
 
   // ===== READING (10 questions: 041-050) =====
+
+  // 041 correctKey: B
   {
     id: 'eiken_4kyu3_041',
     level: '4kyu' as const,
@@ -615,14 +697,16 @@ export const eikenQuestions4kyu3: EikenQuestion[] = [
     question: 'Read the passage and answer the question.\n\n"Keita plays the trumpet in his school\'s brass band. He practices every Tuesday and Friday after school. Last month, the band performed at a city concert hall for the first time."\n\nHow often does Keita practice with the brass band?',
     choices: [
       { key: 'A', text: 'Every day after school.' },
-      { key: 'B', text: 'Once a week.' },
-      { key: 'C', text: 'Three times a week.' },
-      { key: 'D', text: 'Twice a week.' },
+      { key: 'B', text: 'Twice a week.' },
+      { key: 'C', text: 'Once a week.' },
+      { key: 'D', text: 'Three times a week.' },
     ],
-    correctKey: 'D' as const,
+    correctKey: 'B' as const,
     explanation: '本文に"every Tuesday and Friday"（毎週火曜日と金曜日）とあります。週に2回練習するので"twice a week"が正解です。',
     difficulty: 'basic' as const,
   },
+
+  // 042 correctKey: C
   {
     id: 'eiken_4kyu3_042',
     level: '4kyu' as const,
@@ -638,21 +722,25 @@ export const eikenQuestions4kyu3: EikenQuestion[] = [
     explanation: '本文に"the band performed at a city concert hall for the first time"とあります。先月、ブラスバンドが市のコンサートホールで演奏しました。',
     difficulty: 'basic' as const,
   },
+
+  // 043 correctKey: A
   {
     id: 'eiken_4kyu3_043',
     level: '4kyu' as const,
     category: 'reading' as const,
     question: 'Read the passage and answer the question.\n\n"Emma has a part-time job at a flower shop on weekends. She arranges flowers and helps customers choose bouquets. She saves her earnings to buy a new camera."\n\nWhy does Emma save her money?',
     choices: [
-      { key: 'A', text: 'To buy more flowers.' },
-      { key: 'B', text: 'To help her family.' },
-      { key: 'C', text: 'To travel abroad.' },
-      { key: 'D', text: 'To buy a new camera.' },
+      { key: 'A', text: 'To buy a new camera.' },
+      { key: 'B', text: 'To buy more flowers.' },
+      { key: 'C', text: 'To help her family.' },
+      { key: 'D', text: 'To travel abroad.' },
     ],
-    correctKey: 'D' as const,
+    correctKey: 'A' as const,
     explanation: '本文の最後に"She saves her earnings to buy a new camera."とあります。エマは新しいカメラを買うためにお金を貯めています。',
     difficulty: 'basic' as const,
   },
+
+  // 044 correctKey: D
   {
     id: 'eiken_4kyu3_044',
     level: '4kyu' as const,
@@ -660,14 +748,16 @@ export const eikenQuestions4kyu3: EikenQuestion[] = [
     question: 'Read the passage and answer the question.\n\n"Emma has a part-time job at a flower shop on weekends. She arranges flowers and helps customers choose bouquets. She saves her earnings to buy a new camera."\n\nWhat does Emma do at the flower shop?',
     choices: [
       { key: 'A', text: 'She only sells cameras.' },
-      { key: 'B', text: 'She arranges flowers and helps customers.' },
-      { key: 'C', text: 'She delivers flowers to homes.' },
-      { key: 'D', text: 'She grows flowers in a garden.' },
+      { key: 'B', text: 'She delivers flowers to homes.' },
+      { key: 'C', text: 'She grows flowers in a garden.' },
+      { key: 'D', text: 'She arranges flowers and helps customers.' },
     ],
-    correctKey: 'B' as const,
+    correctKey: 'D' as const,
     explanation: '本文に"She arranges flowers and helps customers choose bouquets."とあります。エマは花を飾り、お客さんが花束を選ぶのを手伝います。',
     difficulty: 'basic' as const,
   },
+
+  // 045 correctKey: B
   {
     id: 'eiken_4kyu3_045',
     level: '4kyu' as const,
@@ -675,14 +765,16 @@ export const eikenQuestions4kyu3: EikenQuestion[] = [
     question: 'Read the passage and answer the question.\n\n"Hiroshi likes cooking very much. He usually helps his mother prepare dinner on weekdays. On Sundays, he makes breakfast for his whole family by himself. His dream is to open his own restaurant someday."\n\nWhat does Hiroshi do on Sundays?',
     choices: [
       { key: 'A', text: 'He helps his mother cook dinner.' },
-      { key: 'B', text: 'He goes to a restaurant with his family.' },
-      { key: 'C', text: 'He makes breakfast for his whole family alone.' },
+      { key: 'B', text: 'He makes breakfast for his whole family alone.' },
+      { key: 'C', text: 'He goes to a restaurant with his family.' },
       { key: 'D', text: 'He learns cooking at school.' },
     ],
-    correctKey: 'C' as const,
+    correctKey: 'B' as const,
     explanation: '本文に"On Sundays, he makes breakfast for his whole family by himself."とあります。日曜日には一人で家族全員の朝食を作ります。"by himself"は「一人で」という意味です。',
     difficulty: 'standard' as const,
   },
+
+  // 046 correctKey: C
   {
     id: 'eiken_4kyu3_046',
     level: '4kyu' as const,
@@ -690,29 +782,33 @@ export const eikenQuestions4kyu3: EikenQuestion[] = [
     question: 'Read the passage and answer the question.\n\n"Hiroshi likes cooking very much. He usually helps his mother prepare dinner on weekdays. On Sundays, he makes breakfast for his whole family by himself. His dream is to open his own restaurant someday."\n\nWhat is Hiroshi\'s dream?',
     choices: [
       { key: 'A', text: 'To become a famous chef on TV.' },
-      { key: 'B', text: 'To open his own restaurant.' },
-      { key: 'C', text: 'To travel around the world.' },
+      { key: 'B', text: 'To travel around the world.' },
+      { key: 'C', text: 'To open his own restaurant.' },
       { key: 'D', text: 'To teach cooking at school.' },
     ],
-    correctKey: 'B' as const,
+    correctKey: 'C' as const,
     explanation: '本文の最後に"His dream is to open his own restaurant someday."とあります。ヒロシの夢は自分のレストランを開くことです。',
     difficulty: 'basic' as const,
   },
+
+  // 047 correctKey: A
   {
     id: 'eiken_4kyu3_047',
     level: '4kyu' as const,
     category: 'reading' as const,
     question: 'Read the passage and answer the question.\n\n"Sofia moved from Brazil to Japan two years ago. She could not speak Japanese at first, but she studied very hard. Now she can speak both Japanese and Portuguese, and she also learns English at school. Her friends admire her for speaking so many languages."\n\nHow many languages can Sofia speak now?',
     choices: [
-      { key: 'A', text: 'One.' },
-      { key: 'B', text: 'Two.' },
-      { key: 'C', text: 'Three.' },
+      { key: 'A', text: 'Three.' },
+      { key: 'B', text: 'One.' },
+      { key: 'C', text: 'Two.' },
       { key: 'D', text: 'Four.' },
     ],
-    correctKey: 'C' as const,
-    explanation: '本文には「日本語とポルトガル語を話せる」そして「学校で英語も学んでいる」とあります。3つの言語（日本語・ポルトガル語・英語）が確認できるので、正解はCです。',
+    correctKey: 'A' as const,
+    explanation: '本文には「日本語とポルトガル語を話せる」そして「学校で英語も学んでいる」とあります。3つの言語（日本語・ポルトガル語・英語）が確認できるので、正解はAです。',
     difficulty: 'advanced' as const,
   },
+
+  // 048 correctKey: D
   {
     id: 'eiken_4kyu3_048',
     level: '4kyu' as const,
@@ -721,13 +817,15 @@ export const eikenQuestions4kyu3: EikenQuestion[] = [
     choices: [
       { key: 'A', text: 'Because she moved from Brazil.' },
       { key: 'B', text: 'Because she studied very hard at first.' },
-      { key: 'C', text: 'Because she can speak so many languages.' },
-      { key: 'D', text: 'Because she has many friends at school.' },
+      { key: 'C', text: 'Because she has many friends at school.' },
+      { key: 'D', text: 'Because she can speak so many languages.' },
     ],
-    correctKey: 'C' as const,
+    correctKey: 'D' as const,
     explanation: '本文の最後に"Her friends admire her for speaking so many languages."とあります。友人たちが彼女を尊敬する理由は「多くの言語を話せること」です。',
     difficulty: 'standard' as const,
   },
+
+  // 049 correctKey: B
   {
     id: 'eiken_4kyu3_049',
     level: '4kyu' as const,
@@ -743,6 +841,8 @@ export const eikenQuestions4kyu3: EikenQuestion[] = [
     explanation: 'ライアンは8歳からバスケを始め、現在14歳です。14 - 8 = 6なので、6年間プレーしていることになります。本文に直接書かれていないため計算が必要です。',
     difficulty: 'advanced' as const,
   },
+
+  // 050 correctKey: C
   {
     id: 'eiken_4kyu3_050',
     level: '4kyu' as const,
@@ -751,10 +851,10 @@ export const eikenQuestions4kyu3: EikenQuestion[] = [
     choices: [
       { key: 'A', text: 'He needs to practice more.' },
       { key: 'B', text: 'He should change his sport.' },
-      { key: 'C', text: 'He works too hard and should rest.' },
-      { key: 'D', text: 'He has the talent to become a professional player.' },
+      { key: 'C', text: 'He has the talent to become a professional player.' },
+      { key: 'D', text: 'He works too hard and should rest.' },
     ],
-    correctKey: 'D' as const,
+    correctKey: 'C' as const,
     explanation: '本文の最後に"His coach says he has the talent to play professionally."とあります。コーチはライアンにプロとしてプレーする才能があると言っています。',
     difficulty: 'standard' as const,
   },

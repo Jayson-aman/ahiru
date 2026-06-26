@@ -1,754 +1,1045 @@
 import type { EikenQuestion } from './eiken_questions';
 
 export const eikenQuestions2kyu: EikenQuestion[] = [
+  // ── VOCABULARY 1–20 ──────────────────────────────────────────────
   {
     id: 'eiken_2kyu_001',
     level: '2kyu',
     category: 'vocabulary',
-    question: 'The government decided to (    ) a new policy to reduce carbon emissions in the transportation sector.',
+    question:
+      'The committee decided to ( ) the decision until more data was available, hoping for a clearer picture before committing to any course of action.',
     choices: [
-      { key: 'A', text: 'implement' },
-      { key: 'B', text: 'neglect' },
-      { key: 'C', text: 'discard' },
-      { key: 'D', text: 'overlook' },
+      { key: 'A', text: 'defer' },
+      { key: 'B', text: 'delay' },
+      { key: 'C', text: 'postpone' },
+      { key: 'D', text: 'suspend' },
     ],
     correctKey: 'A',
-    explanation: 'implement は「（政策などを）実施する・導入する」という意味。policy と共に使う典型的なコロケーション。neglect（怠る）、discard（捨てる）、overlook（見落とす）はいずれも文脈に合わない。',
-    difficulty: 'basic',
+    explanation:
+      '"defer a decision" は「より信頼できる情報や権威が整うまで先送りにする」というニュアンスで、データを待つ文脈に最も適切。delay・postpone も「遅らせる」意味だが deferほど「判断を委ねる」含意がない。suspend は「活動・特権などを一時停止する」場合に使い、通常 decision には使わない。',
+    difficulty: 'advanced',
   },
   {
     id: 'eiken_2kyu_002',
     level: '2kyu',
     category: 'vocabulary',
-    question: "The scientist's research made a significant (    ) to our understanding of how climate change affects marine ecosystems.",
+    question:
+      'His remarks were so ( ) that different members of the audience interpreted them in completely opposite ways.',
     choices: [
-      { key: 'A', text: 'contribution' },
-      { key: 'B', text: 'limitation' },
-      { key: 'C', text: 'distraction' },
-      { key: 'D', text: 'interference' },
+      { key: 'A', text: 'ambiguous' },
+      { key: 'B', text: 'ambivalent' },
+      { key: 'C', text: 'obscure' },
+      { key: 'D', text: 'vague' },
     ],
     correctKey: 'A',
-    explanation: 'make a contribution to は「～に貢献する」という頻出表現。limitation（限界）、distraction（気を散らすもの）、interference（干渉）はこの文脈では不自然。',
-    difficulty: 'standard',
+    explanation:
+      'ambiguous は「（発言・意味が）複数の解釈を許す、曖昧な」で、異なる人が反対の解釈をしたという文脈に最適。ambivalent は「心情が両面にある、矛盾した気持ちを持つ」で主に感情に使う。obscure は「（知識・作品が）無名・難解な」、vague は「漠然とした」で曖昧さは表すが「複数の解釈」のニュアンスは薄い。',
+    difficulty: 'advanced',
   },
   {
     id: 'eiken_2kyu_003',
     level: '2kyu',
     category: 'vocabulary',
-    question: 'Many companies are now trying to (    ) their carbon footprint by switching to renewable energy sources.',
+    question:
+      'The new medication proved ( ) in clinical trials, reducing symptoms in over 90 percent of participants.',
     choices: [
-      { key: 'A', text: 'reduce' },
-      { key: 'B', text: 'expand' },
-      { key: 'C', text: 'maintain' },
-      { key: 'D', text: 'duplicate' },
+      { key: 'A', text: 'potent' },
+      { key: 'B', text: 'effective' },
+      { key: 'C', text: 'efficient' },
+      { key: 'D', text: 'capable' },
     ],
-    correctKey: 'A',
-    explanation: "reduce one's carbon footprint は「炭素排出量を削減する」という環境関連の重要表現。expand（拡大）、maintain（維持）、duplicate（複製）は文意に反する。",
+    correctKey: 'B',
+    explanation:
+      '"effective" は「（薬・方法が）意図した効果を上げる」意。症状軽減という結果を強調する文脈に最適。potent は「（薬・物質が）強力な作用を持つ」で効能の強さに焦点があり、症状軽減率には直接つながりにくい。efficient は「効率的な」でプロセスに着目。capable は人や機械の「能力がある」に使う。',
     difficulty: 'standard',
   },
   {
     id: 'eiken_2kyu_004',
     level: '2kyu',
     category: 'vocabulary',
-    question: "The new urban development plan aims to (    ) green spaces throughout the city to improve residents' quality of life.",
+    question:
+      'Rising sea levels ( ) a serious threat to coastal communities around the world, potentially displacing millions of people.',
     choices: [
-      { key: 'A', text: 'preserve' },
-      { key: 'B', text: 'eliminate' },
-      { key: 'C', text: 'contaminate' },
-      { key: 'D', text: 'commercialize' },
+      { key: 'A', text: 'pose' },
+      { key: 'B', text: 'raise' },
+      { key: 'C', text: 'present' },
+      { key: 'D', text: 'provide' },
     ],
     correctKey: 'A',
-    explanation: 'preserve は「保全する・守る」。aim to preserve green spaces は都市計画の文脈で自然な表現。eliminate（排除）、contaminate（汚染）、commercialize（商業化）はいずれも文意に合わない。',
+    explanation:
+      '"pose a threat" は英語の固定コロケーションで「脅威をもたらす」の意。present a threat も文法的には成立するが、pose の方がより慣用的で自然。raise a threat という表現は一般的でなく、provide a threat は意味的に不自然。',
     difficulty: 'standard',
   },
   {
     id: 'eiken_2kyu_005',
     level: '2kyu',
     category: 'vocabulary',
-    question: 'The aging population presents a serious (    ) to the sustainability of the national pension system.',
+    question:
+      'The professor\'s lecture was highly ( ); she drew connections between ancient philosophy and contemporary neuroscience that no one had considered before.',
     choices: [
-      { key: 'A', text: 'threat' },
-      { key: 'B', text: 'benefit' },
-      { key: 'C', text: 'solution' },
-      { key: 'D', text: 'relief' },
+      { key: 'A', text: 'innovative' },
+      { key: 'B', text: 'stimulating' },
+      { key: 'C', text: 'provocative' },
+      { key: 'D', text: 'enlightening' },
     ],
-    correctKey: 'A',
-    explanation: 'present a threat to は「～に脅威をもたらす」。高齢化社会と年金制度の持続可能性を結ぶ文脈に適切。benefit（恩恵）、solution（解決策）、relief（安堵）は意味が逆方向。',
-    difficulty: 'standard',
+    correctKey: 'D',
+    explanation:
+      '"enlightening" は「新たな知識や視点をもたらす」意で、誰も考えなかった視点を示した講義の説明として最適。stimulating は「知的好奇心を刺激する」、innovative は「革新的な」でどちらも惜しいが、enlightening は「無知から理解へ導く」ニュアンスがある。provocative は「物議を醸す、挑発的な」で否定的含意もある。',
+    difficulty: 'advanced',
   },
   {
     id: 'eiken_2kyu_006',
     level: '2kyu',
     category: 'vocabulary',
-    question: 'Social media platforms have been criticized for (    ) the spread of misinformation among young people.',
+    question:
+      'The charity relies ( ) on donations from the public, as it receives no government funding whatsoever.',
     choices: [
-      { key: 'A', text: 'facilitating' },
-      { key: 'B', text: 'preventing' },
-      { key: 'C', text: 'detecting' },
-      { key: 'D', text: 'correcting' },
+      { key: 'A', text: 'entirely' },
+      { key: 'B', text: 'largely' },
+      { key: 'C', text: 'solely' },
+      { key: 'D', text: 'heavily' },
     ],
-    correctKey: 'A',
-    explanation: 'facilitate は「促進する・助長する」。misinformation（誤情報）の拡散を促進するという批判的な文脈に合う。preventing（防ぐ）、detecting（検出）、correcting（訂正）は逆の意味。',
-    difficulty: 'basic',
+    correctKey: 'C',
+    explanation:
+      '"relies solely on" は「ただ一つの源だけに頼る」という排他的な依存を表し、"no government funding whatsoever" という後半と論理的に一致する。entirely や wholly も類似するが、"relies entirely on" は稀な表現。largely・heavily は部分的依存を示し "no government funding" と矛盾する。',
+    difficulty: 'standard',
   },
   {
     id: 'eiken_2kyu_007',
     level: '2kyu',
     category: 'vocabulary',
-    question: 'The researcher emphasized that her findings were still (    ) and that more studies were needed before drawing firm conclusions.',
+    question:
+      'The mayor\'s proposal to build a new stadium was met with ( ) from local residents, who argued that schools and hospitals were more urgently needed.',
     choices: [
-      { key: 'A', text: 'preliminary' },
-      { key: 'B', text: 'definitive' },
-      { key: 'C', text: 'conclusive' },
-      { key: 'D', text: 'exhaustive' },
+      { key: 'A', text: 'opposition' },
+      { key: 'B', text: 'resistance' },
+      { key: 'C', text: 'objection' },
+      { key: 'D', text: 'criticism' },
     ],
-    correctKey: 'A',
-    explanation: 'preliminary は「予備的な・暫定的な」。「まだ確定的ではない」という文脈に合う。definitive・conclusive（決定的な）、exhaustive（網羅的な）はmore studies neededと矛盾する。',
-    difficulty: 'standard',
+    correctKey: 'C',
+    explanation:
+      '"met with objection" は「異議・反対意見を受ける」という慣用表現。"raise an objection" とも言う。opposition は「反対勢力・組織的抵抗」、resistance は「物理的・継続的な抵抗」、criticism は「批判」でいずれも正しくはあるが、"met with" というコロケーションでは objection が最も自然。',
+    difficulty: 'advanced',
   },
   {
     id: 'eiken_2kyu_008',
     level: '2kyu',
     category: 'vocabulary',
-    question: 'The documentary filmmaker sought to (    ) the harsh realities faced by migrant workers in urban areas.',
+    question:
+      'After years of ( ) research, the team finally published their findings on the genetic causes of the rare disorder.',
     choices: [
-      { key: 'A', text: 'portray' },
-      { key: 'B', text: 'conceal' },
-      { key: 'C', text: 'dismiss' },
-      { key: 'D', text: 'romanticize' },
+      { key: 'A', text: 'relentless' },
+      { key: 'B', text: 'thorough' },
+      { key: 'C', text: 'meticulous' },
+      { key: 'D', text: 'rigorous' },
     ],
     correctKey: 'A',
-    explanation: 'portray は「描写する・表現する」。ドキュメンタリー映画が厳しい現実を「描写する」のは自然。conceal（隠す）、dismiss（無視する）、romanticize（美化する）は批判的なドキュメンタリーの文脈に合わない。',
+    explanation:
+      '"relentless research" は「何年もやめることなく続けた研究」という粘り強さを表し、"years of" という時間的長さと最もよく対応する。meticulous は「細部に注意を払った」、rigorous は「厳密な手順に従った」、thorough は「徹底的な」でいずれも研究の質には合うが、長年継続したという粘り強さを最も強く表すのは relentless。',
     difficulty: 'advanced',
   },
   {
     id: 'eiken_2kyu_009',
     level: '2kyu',
     category: 'vocabulary',
-    question: 'The economic crisis forced many small businesses to (    ) their operations, laying off dozens of workers.',
+    question:
+      'The documentary ( ) the devastating impact of plastic pollution on marine wildlife, prompting many viewers to change their daily habits.',
     choices: [
-      { key: 'A', text: 'scale back' },
-      { key: 'B', text: 'scale up' },
-      { key: 'C', text: 'take on' },
-      { key: 'D', text: 'branch out' },
+      { key: 'A', text: 'depicted' },
+      { key: 'B', text: 'portrayed' },
+      { key: 'C', text: 'illustrated' },
+      { key: 'D', text: 'exposed' },
     ],
-    correctKey: 'A',
-    explanation: 'scale back は「縮小する」というフレーザル動詞。経済危機による事業縮小を表す。scale up（拡大）、take on（引き受ける）、branch out（事業を広げる）は文脈と逆方向。',
+    correctKey: 'D',
+    explanation:
+      '"exposed" は「（隠れていた問題を）明らかにする・暴く」で、視聴者の行動変容を促したという結果と自然につながる。depicted・portrayed は「描写した」、illustrated は「例示・図示した」でいずれも中立的な描写。exposed には「社会的問題を告発する」強い含意がある。',
     difficulty: 'advanced',
   },
   {
     id: 'eiken_2kyu_010',
     level: '2kyu',
     category: 'vocabulary',
-    question: "The professor's lecture was so (    ) that even students without a background in economics could follow the argument easily.",
+    question:
+      'The two countries signed a trade agreement designed to ( ) tariffs on agricultural products over the next five years.',
     choices: [
-      { key: 'A', text: 'accessible' },
-      { key: 'B', text: 'obscure' },
-      { key: 'C', text: 'technical' },
-      { key: 'D', text: 'abstract' },
+      { key: 'A', text: 'abolish' },
+      { key: 'B', text: 'reduce' },
+      { key: 'C', text: 'phase out' },
+      { key: 'D', text: 'eliminate' },
     ],
-    correctKey: 'A',
-    explanation: 'accessible は「わかりやすい・理解しやすい」。専門知識がなくても理解できるという内容に適切。obscure（難解な）、technical（専門的な）、abstract（抽象的な）は理解困難を示すため不適切。',
-    difficulty: 'advanced',
+    correctKey: 'C',
+    explanation:
+      '"phase out" は「段階的に廃止する」意で、"over the next five years" という時間的段階を示す表現と最も適合する。abolish・eliminate は即時・完全な廃止を示唆し、段階的ニュアンスが薄い。reduce は「削減する」で廃止ではなく量の減少にとどまる。',
+    difficulty: 'standard',
   },
   {
     id: 'eiken_2kyu_011',
     level: '2kyu',
     category: 'vocabulary',
-    question: 'Governments worldwide are under pressure to (    ) stricter regulations on the use of single-use plastics.',
+    question:
+      'The new traffic regulations were ( ) on all drivers regardless of the type of vehicle they operated.',
     choices: [
-      { key: 'A', text: 'enforce' },
-      { key: 'B', text: 'ignore' },
-      { key: 'C', text: 'postpone' },
-      { key: 'D', text: 'repeal' },
+      { key: 'A', text: 'binding' },
+      { key: 'B', text: 'compelling' },
+      { key: 'C', text: 'obligatory' },
+      { key: 'D', text: 'mandatory' },
     ],
     correctKey: 'A',
-    explanation: 'enforce regulations は「規制を施行する・強制する」という重要な行政用語のコロケーション。ignore（無視）、postpone（延期）、repeal（廃止）はプラスチック規制強化の文脈に反する。',
-    difficulty: 'standard',
+    explanation:
+      '"binding on" は「（規則・契約が）〜に対して法的拘束力を持つ」という法律用語的な表現で、"on all drivers" との相性が最も良い。mandatory・obligatory はいずれも「義務的な」を意味するが、"mandatory/obligatory on" という構文は一般的でない。compelling は「説得力のある」という別義が主で、法的義務の文脈には不適切。',
+    difficulty: 'advanced',
   },
   {
     id: 'eiken_2kyu_012',
     level: '2kyu',
     category: 'vocabulary',
-    question: "The committee's decision to (    ) the controversial proposal came as a surprise to many observers who had expected it to pass.",
+    question:
+      'Scientists warn that the current rate of deforestation is ( ) the natural carbon cycle, making climate targets increasingly difficult to meet.',
     choices: [
-      { key: 'A', text: 'reject' },
-      { key: 'B', text: 'endorse' },
-      { key: 'C', text: 'amend' },
-      { key: 'D', text: 'table' },
+      { key: 'A', text: 'disturbing' },
+      { key: 'B', text: 'disrupting' },
+      { key: 'C', text: 'interrupting' },
+      { key: 'D', text: 'interfering' },
     ],
-    correctKey: 'A',
-    explanation: 'reject は「否決する・拒否する」。surprise observers who expected it to pass（可決を期待していた）という文脈から「否決」が正解。endorse（支持）、amend（修正）、table（保留）は文意に合わない。',
-    difficulty: 'advanced',
+    correctKey: 'B',
+    explanation:
+      '"disrupting" は「（システム・プロセスを）大規模に乱す、機能不全にする」意で、炭素循環という複雑なシステムへの影響に最適。disturbing は「不安にさせる」という心理的影響が主。interrupting は「短期的・一時的な中断」。interfering は "interfering with" の形を取り他動詞として目的語を直接取れない。',
+    difficulty: 'standard',
   },
   {
     id: 'eiken_2kyu_013',
     level: '2kyu',
     category: 'vocabulary',
-    question: 'The charity organization relies heavily on (    ) from the public to fund its overseas aid programs.',
+    question:
+      'The architect\'s design was both aesthetically pleasing and highly ( ), making excellent use of space without wasting any materials.',
     choices: [
-      { key: 'A', text: 'donations' },
-      { key: 'B', text: 'investments' },
-      { key: 'C', text: 'payments' },
-      { key: 'D', text: 'subsidies' },
+      { key: 'A', text: 'effective' },
+      { key: 'B', text: 'functional' },
+      { key: 'C', text: 'efficient' },
+      { key: 'D', text: 'practical' },
     ],
-    correctKey: 'A',
-    explanation: 'donations は「寄付・寄贈」。rely on donations from the public（一般市民からの寄付に頼る）は慈善団体の資金調達の典型的な表現。investments（投資）、payments（支払い）、subsidies（補助金）は慈善活動の文脈に合わない。',
-    difficulty: 'basic',
+    correctKey: 'C',
+    explanation:
+      '"efficient" は「投入資源（素材・スペース）に対して最大の成果を上げる」意。"without wasting any materials" という表現と正確に対応する。functional は「機能する・実用的」、practical は「現実的・実際的」でいずれも近いが、資源の無駄なし、というニュアンスは efficient が最も強く表す。effective は「効果を上げる」で、資源節約ではなく結果に焦点がある。',
+    difficulty: 'standard',
   },
   {
     id: 'eiken_2kyu_014',
     level: '2kyu',
     category: 'vocabulary',
-    question: 'Biodiversity loss has been (    ) by scientists as one of the most pressing environmental challenges of our time.',
+    question:
+      'The government\'s economic policy was heavily ( ) toward supporting large corporations, leaving small businesses with little assistance.',
     choices: [
-      { key: 'A', text: 'identified' },
-      { key: 'B', text: 'dismissed' },
-      { key: 'C', text: 'exaggerated' },
-      { key: 'D', text: 'celebrated' },
+      { key: 'A', text: 'inclined' },
+      { key: 'B', text: 'biased' },
+      { key: 'C', text: 'oriented' },
+      { key: 'D', text: 'skewed' },
     ],
-    correctKey: 'A',
-    explanation: 'identify A as B は「AをBとして特定する・見なす」。科学者が生物多様性の損失を重大な環境課題として「特定している」という文脈に適切。dismissed（退ける）、exaggerated（誇張）、celebrated（祝う）は不適切。',
-    difficulty: 'standard',
+    correctKey: 'D',
+    explanation:
+      '"skewed toward" は「（分配・政策などが）特定の方向に歪んでいる」意で、不公平な偏りを示す最も強い表現。biased は近い意味だが "biased toward" より "biased against" の方が一般的。oriented は「〜向けの」で中立的な方向性のみ示す。inclined は「傾向がある」で個人の意見や感情に使うことが多い。',
+    difficulty: 'advanced',
   },
   {
     id: 'eiken_2kyu_015',
     level: '2kyu',
     category: 'vocabulary',
-    question: 'The new mental health initiative aims to (    ) the stigma associated with seeking professional help for psychological issues.',
+    question:
+      'The athlete\'s recovery was ( ) by a strict rehabilitation program that combined physical therapy with nutritional support.',
     choices: [
-      { key: 'A', text: 'reduce' },
-      { key: 'B', text: 'reinforce' },
-      { key: 'C', text: 'justify' },
-      { key: 'D', text: 'measure' },
+      { key: 'A', text: 'facilitated' },
+      { key: 'B', text: 'accelerated' },
+      { key: 'C', text: 'promoted' },
+      { key: 'D', text: 'enhanced' },
     ],
-    correctKey: 'A',
-    explanation: 'reduce stigma は「偏見・スティグマを減らす」。メンタルヘルス支援を求めることへの偏見を減らすという文脈に合う。reinforce（強化）、justify（正当化）、measure（測定）はメンタルヘルス啓発の目的に反する。',
+    correctKey: 'B',
+    explanation:
+      '"accelerated" は「（回復などの）速度を速める」で、リハビリプログラムの直接的な効果として最も明確。facilitated は「容易にする・促進する」、promoted は「推進する」、enhanced は「質を高める」でいずれも成立しうるが、回復という時間的プロセスの速度向上を表す語は accelerated。',
     difficulty: 'advanced',
   },
   {
     id: 'eiken_2kyu_016',
     level: '2kyu',
-    category: 'grammar',
-    question: '(    ) the sharp rise in global temperatures, scientists warn that we may be approaching a point of no return.',
+    category: 'vocabulary',
+    question:
+      'The historian argued that the treaty, far from resolving tensions, actually ( ) them by leaving key territorial disputes unaddressed.',
     choices: [
-      { key: 'A', text: 'Given' },
-      { key: 'B', text: 'Giving' },
-      { key: 'C', text: 'Having given' },
-      { key: 'D', text: 'To give' },
+      { key: 'A', text: 'aggravated' },
+      { key: 'B', text: 'intensified' },
+      { key: 'C', text: 'escalated' },
+      { key: 'D', text: 'compounded' },
     ],
-    correctKey: 'A',
-    explanation: 'Given は「～を考慮すると」という前置詞的用法の分詞構文。独立分詞構文の一種で、「気温上昇を考慮すると」という意味になる。Giving（与える）、Having given（与えた後）、To give（与えるために）はいずれも文意に合わない。',
-    difficulty: 'basic',
+    correctKey: 'D',
+    explanation:
+      '"compounded" は「（既存の問題に）さらに問題を重ねて悪化させる」意で、「解決したはずが未解決問題を残した」という構造と最も合う。aggravated は「（状況を）悪化させた」、intensified は「強度を増した」、escalated は「（対立が）段階的に拡大した」でいずれも成立するが、問題の積み重なりを示す compound が文意に最も忠実。',
+    difficulty: 'advanced',
   },
   {
     id: 'eiken_2kyu_017',
     level: '2kyu',
-    category: 'grammar',
-    question: 'Not until the late twentieth century (    ) that artificial intelligence could truly replicate complex human reasoning.',
+    category: 'vocabulary',
+    question:
+      'It is essential that companies ( ) their supply chains to ensure they are not sourcing materials from regions with poor environmental records.',
     choices: [
-      { key: 'A', text: 'did scientists believe' },
-      { key: 'B', text: 'scientists believed' },
-      { key: 'C', text: 'scientists did believe' },
-      { key: 'D', text: 'believed scientists' },
+      { key: 'A', text: 'investigate' },
+      { key: 'B', text: 'audit' },
+      { key: 'C', text: 'examine' },
+      { key: 'D', text: 'inspect' },
     ],
-    correctKey: 'A',
-    explanation: 'Not until ～ で始まる倒置構文。否定副詞句が文頭に来ると主語と助動詞が倒置される。正解はdid scientists believe。B（倒置なし）、C（語順誤り）、D（主語後置のみ）はいずれも文法的に不正確。',
+    correctKey: 'B',
+    explanation:
+      '"audit" は「（組織・プロセスを）公式・体系的に点検・評価する」意で、特にビジネス・コンプライアンス文脈でのサプライチェーン評価に使う専門的な表現。investigate は「問題があるときに調査する」、examine は「詳しく調べる」（医療や学術でも使う）、inspect は「物理的な検査」が主。',
     difficulty: 'standard',
   },
   {
     id: 'eiken_2kyu_018',
     level: '2kyu',
-    category: 'grammar',
-    question: 'The policy reform, (    ) widely praised by economists, faced strong opposition from the manufacturing sector.',
+    category: 'vocabulary',
+    question:
+      'The CEO\'s resignation came as a complete surprise; until then, her leadership had appeared ( ) and her position secure.',
     choices: [
-      { key: 'A', text: 'while being' },
-      { key: 'B', text: 'while was' },
-      { key: 'C', text: 'while it being' },
-      { key: 'D', text: 'while is' },
+      { key: 'A', text: 'unshakeable' },
+      { key: 'B', text: 'steadfast' },
+      { key: 'C', text: 'resolute' },
+      { key: 'D', text: 'unwavering' },
     ],
     correctKey: 'A',
-    explanation: 'while being は「～である一方で」という分詞構文。主節の主語（policy reform）が分詞の意味上の主語になる。while was・while is（be動詞のみ不可）、while it being（代名詞it不要）は文法的に誤り。',
-    difficulty: 'standard',
+    explanation:
+      '"unshakeable" は「（地位・信念などが）揺るぎない」で、辞任直前まで地位が安泰に見えた、という文脈に最も合う形容詞。steadfast・resolute・unwavering はいずれも「意志の固い」という個人の態度を表すが、leadership（指導力・リーダーシップ）という抽象概念への修飾には unshakeable が最も自然。',
+    difficulty: 'advanced',
   },
   {
     id: 'eiken_2kyu_019',
     level: '2kyu',
-    category: 'grammar',
-    question: 'It is essential that every student (    ) a copy of the research ethics guidelines before beginning their project.',
+    category: 'vocabulary',
+    question:
+      'The report ( ) the need for immediate investment in renewable energy, warning that delays would make the transition far more costly.',
     choices: [
-      { key: 'A', text: 'receive' },
-      { key: 'B', text: 'receives' },
-      { key: 'C', text: 'will receive' },
-      { key: 'D', text: 'has received' },
+      { key: 'A', text: 'stressed' },
+      { key: 'B', text: 'underlined' },
+      { key: 'C', text: 'reinforced' },
+      { key: 'D', text: 'accentuated' },
     ],
-    correctKey: 'A',
-    explanation: 'It is essential that ～ の後は仮定法現在（原形動詞）を使う。should receive も可だが選択肢にはない。receives（直説法）、will receive（未来形）、has received（完了形）はいずれも仮定法現在の用法に反する。',
+    correctKey: 'B',
+    explanation:
+      '"underlined the need" は「必要性を強調した」という慣用表現。stressed も同義だが、"underlined" の方が書面・報告書の文脈で格式的。reinforced は「（既にある認識を）補強した」、accentuated は「際立たせた」でニュアンスが異なる。',
     difficulty: 'standard',
   },
   {
     id: 'eiken_2kyu_020',
     level: '2kyu',
-    category: 'grammar',
-    question: 'Had the government acted sooner, the economic recession (    ) far less severe.',
+    category: 'vocabulary',
+    question:
+      'The country\'s economic growth has been ( ) by decades of political instability, keeping it among the least developed nations in the region.',
     choices: [
-      { key: 'A', text: 'would have been' },
-      { key: 'B', text: 'would be' },
-      { key: 'C', text: 'had been' },
-      { key: 'D', text: 'was' },
+      { key: 'A', text: 'constrained' },
+      { key: 'B', text: 'impeded' },
+      { key: 'C', text: 'hampered' },
+      { key: 'D', text: 'hindered' },
     ],
-    correctKey: 'A',
-    explanation: '仮定法過去完了の帰結節。Had ～ acted（if the government had acted の倒置形）に対応する帰結節はwould have been。would be（仮定法過去の帰結）、had been（条件節形）、was（直説法）は構造が合わない。',
+    correctKey: 'C',
+    explanation:
+      '"hampered by" は「（外的障害によって）妨げられる」の意で、長期的な政治的不安定という外的要因による成長阻害に最も適切なコロケーション。impeded・hindered もほぼ同義だが、"hampered by" は経済・努力・計画などとの相性が特に良い慣用表現。constrained は「制約される」で制度・規則的な制限に使いやすい。',
     difficulty: 'advanced',
   },
+
+  // ── GRAMMAR 21–35 ────────────────────────────────────────────────
   {
     id: 'eiken_2kyu_021',
     level: '2kyu',
     category: 'grammar',
-    question: 'What surprised the researchers most (    ) the speed at which the polar ice caps were melting.',
+    question:
+      'Not until the final results were announced ( ) the team realized they had won the championship.',
     choices: [
-      { key: 'A', text: 'was' },
-      { key: 'B', text: 'were' },
-      { key: 'C', text: 'had been' },
-      { key: 'D', text: 'have been' },
+      { key: 'A', text: 'that' },
+      { key: 'B', text: 'did' },
+      { key: 'C', text: 'had' },
+      { key: 'D', text: 'was' },
     ],
-    correctKey: 'A',
-    explanation: '分裂文（cleft sentence）。What節が主語の場合、動詞は補語に一致する。the speed（単数）に合わせてwasが正解。were（複数）、had been・have been（完了形で文脈に合わない）は不適切。',
+    correctKey: 'B',
+    explanation:
+      '"Not until ..." で始まる否定の副詞節が文頭に置かれると、主節に倒置が生じる（否定倒置）。"Not until ... did + 主語 + 動詞原形" が正しい構造。主語 the team に対して did を使い、"did the team realize" となる。',
     difficulty: 'advanced',
   },
   {
     id: 'eiken_2kyu_022',
     level: '2kyu',
     category: 'grammar',
-    question: 'The new regulations require that all imported food products (    ) thoroughly inspected before being allowed into the country.',
+    question:
+      'Had the engineers identified the flaw earlier, the bridge ( ) collapsed.',
     choices: [
-      { key: 'A', text: 'be' },
-      { key: 'B', text: 'are' },
-      { key: 'C', text: 'will be' },
-      { key: 'D', text: 'were' },
+      { key: 'A', text: 'would not have' },
+      { key: 'B', text: 'would not' },
+      { key: 'C', text: 'had not' },
+      { key: 'D', text: 'will not have' },
     ],
     correctKey: 'A',
-    explanation: 'require that ～ の後は仮定法現在（原形）またはshould + 原形。be（原形）が正解。are（直説法）、will be（未来形）、were（仮定法過去・過去形）はいずれも要求を表す動詞の後の節に適切でない。',
-    difficulty: 'standard',
+    explanation:
+      '"Had + 主語 + 過去分詞..." は if を省略した仮定法過去完了の条件節。過去の事実に反する仮定を表すため、帰結節は "would not have + 過去分詞" となる。"would not" は仮定法過去（現在の仮定）の帰結節形式で不適切。',
+    difficulty: 'advanced',
   },
   {
     id: 'eiken_2kyu_023',
     level: '2kyu',
     category: 'grammar',
-    question: '(    ) a more effective early warning system been in place, the damage from the earthquake could have been significantly reduced.',
+    question:
+      'The proposal requires that every participant ( ) a signed consent form before the study begins.',
     choices: [
-      { key: 'A', text: 'Had' },
-      { key: 'B', text: 'If' },
-      { key: 'C', text: 'Were' },
-      { key: 'D', text: 'Should' },
+      { key: 'A', text: 'submits' },
+      { key: 'B', text: 'submit' },
+      { key: 'C', text: 'submitted' },
+      { key: 'D', text: 'will submit' },
     ],
-    correctKey: 'A',
-    explanation: '仮定法過去完了の条件節の倒置形。Had ～ been in place = If ～ had been in place。Ifは倒置と併用不可、Were（仮定法過去の倒置）は過去完了と不一致、Shouldは現在・未来の仮定に使用。',
+    correctKey: 'B',
+    explanation:
+      '"require that + 主語 + 動詞" の構文では、動詞は仮定法現在（原形）を使う。"every participant submit" と三単現の -s をつけないのが正しい。これは "It is essential/necessary that ..." 構文と同様の用法で、アメリカ英語で特に一般的。',
     difficulty: 'advanced',
   },
   {
     id: 'eiken_2kyu_024',
     level: '2kyu',
     category: 'grammar',
-    question: "The charity's fundraising event, (    ) attracted over five hundred participants, raised enough money to build two new schools.",
+    question:
+      'Only after conducting extensive surveys ( ) the researchers able to draw any firm conclusions.',
     choices: [
-      { key: 'A', text: 'which' },
-      { key: 'B', text: 'that' },
-      { key: 'C', text: 'what' },
-      { key: 'D', text: 'it' },
+      { key: 'A', text: 'were' },
+      { key: 'B', text: 'are' },
+      { key: 'C', text: 'did' },
+      { key: 'D', text: 'have' },
     ],
     correctKey: 'A',
-    explanation: '非制限用法の関係代名詞はwhichを使う。コンマの後に続く関係節なので、thatは使えない。whatは先行詞を含む関係代名詞で用法が異なり、itは接続詞にならない。',
-    difficulty: 'basic',
+    explanation:
+      '"Only after ..." が文頭に来ると主節で倒置が起きる。主語が "the researchers"、述語が be動詞 "were able to" なので、倒置後は "were the researchers able to" となる。"did" は一般動詞の倒置に使うが、"be able to" には were を使う。',
+    difficulty: 'advanced',
   },
   {
     id: 'eiken_2kyu_025',
     level: '2kyu',
     category: 'grammar',
-    question: 'Only after extensive research into the long-term effects of microplastics (    ) the full extent of the environmental damage.',
+    question:
+      'The museum\'s new exhibit, ( ) is scheduled to open next month, will feature artifacts from ancient civilizations.',
     choices: [
-      { key: 'A', text: 'did scientists understand' },
-      { key: 'B', text: 'scientists understood' },
-      { key: 'C', text: 'scientists did understand' },
-      { key: 'D', text: 'understood scientists' },
+      { key: 'A', text: 'which' },
+      { key: 'B', text: 'that' },
+      { key: 'C', text: 'what' },
+      { key: 'D', text: 'where' },
     ],
     correctKey: 'A',
-    explanation: 'Only after ～ という否定的副詞表現が文頭に来ると主語・助動詞が倒置される。did scientists understandが正解の語順。B（倒置なし）、C（語順誤り）、D（主語後置のみ不完全）はいずれも倒置の規則に反する。',
+    explanation:
+      'コンマで囲まれた非制限的（非限定）関係節では which を使う。that は制限的関係節にのみ使われ、コンマとともに非制限的関係節で使うことはできない。what は「〜すること・もの」で名詞節を導く。where は場所を表す関係副詞で不適。',
     difficulty: 'standard',
   },
   {
     id: 'eiken_2kyu_026',
     level: '2kyu',
-    category: 'dialogue',
-    question: "A: \"I've been feeling really overwhelmed with work lately. I can't seem to switch off even at home.\"\nB: \"I know exactly what you mean. (    )\"",
+    category: 'grammar',
+    question:
+      'The children were made ( ) their rooms before they were allowed to go outside and play.',
     choices: [
-      { key: 'A', text: 'Setting clear boundaries between work and personal time can make a real difference.' },
-      { key: 'B', text: "You should probably just quit your job if it's that stressful." },
-      { key: 'C', text: 'Have you tried working even longer hours to get everything done?' },
-      { key: 'D', text: 'Maybe you just need to stop complaining and push through it.' },
+      { key: 'A', text: 'clean' },
+      { key: 'B', text: 'to clean' },
+      { key: 'C', text: 'cleaning' },
+      { key: 'D', text: 'cleaned' },
     ],
-    correctKey: 'A',
-    explanation: '共感を示した後の自然な助言として、ワークライフバランスの改善を提案するAが最適。Bは極端で非現実的、Cは問題を悪化させる逆効果な提案、Dは否定的で無礼な発言であり会話の流れに合わない。',
-    difficulty: 'basic',
+    correctKey: 'B',
+    explanation:
+      '使役動詞 make の受動態 "be made to do" では、不定詞の to が必要となる。能動態 "make + 目的語 + 動詞原形" では to を省略するが、受動態に変換すると to が復活する（"The children were made to clean ..."）。',
+    difficulty: 'standard',
   },
   {
     id: 'eiken_2kyu_027',
     level: '2kyu',
-    category: 'dialogue',
-    question: 'A: "Have you seen the latest report on renewable energy adoption rates? The numbers are quite encouraging."\nB: "Yes, I have. (    ) The transition still has a long way to go."',
+    category: 'grammar',
+    question:
+      'It was the mayor herself ( ) announced the decision to close the factory, surprising many local residents.',
     choices: [
-      { key: 'A', text: 'Though I think we need to be cautious about reading too much into short-term trends.' },
-      { key: 'B', text: "I completely disagree — the numbers are totally misleading." },
-      { key: 'C', text: "You're right, there's really nothing more to discuss on the matter." },
-      { key: 'D', text: "I suppose it doesn't really matter one way or the other." },
+      { key: 'A', text: 'which' },
+      { key: 'B', text: 'who' },
+      { key: 'C', text: 'that' },
+      { key: 'D', text: 'whom' },
     ],
-    correctKey: 'A',
-    explanation: '前向きな数字に同意しつつも慎重な見方を示すAは、続くThe transition still has a long way to goという発言と自然につながる。B（完全否定）、C（議論終了）、D（無関心）はいずれも知的な議論の継続として不自然。',
-    difficulty: 'standard',
+    correctKey: 'C',
+    explanation:
+      '"It is/was ... that ..." は強調構文（cleft sentence）。強調する要素が人であっても who または that が使える。ただし herself という再帰代名詞が既に強調を担っているこの文では、強調構文の標識として that が最も自然。who も可だが、whom は目的格なので主語位置には使えない。',
+    difficulty: 'advanced',
   },
   {
     id: 'eiken_2kyu_028',
     level: '2kyu',
-    category: 'dialogue',
-    question: "A: \"Do you think the city should invest more in public transportation rather than road expansion?\"\nB: \"(    ) But I understand the argument for roads in areas where public transit isn't viable.\"",
+    category: 'grammar',
+    question:
+      'Rarely ( ) such a dramatic shift in public opinion occur within such a short period of time.',
     choices: [
-      { key: 'A', text: "Personally, I lean toward public transit — it's more sustainable in the long run." },
-      { key: 'B', text: 'I think roads are clearly the only sensible option.' },
-      { key: 'C', text: "It's impossible to say anything meaningful about urban planning." },
-      { key: 'D', text: "Both options are equally good, so it really doesn't matter." },
+      { key: 'A', text: 'does' },
+      { key: 'B', text: 'do' },
+      { key: 'C', text: 'has' },
+      { key: 'D', text: 'had' },
     ],
     correctKey: 'A',
-    explanation: '「公共交通を支持しつつ道路整備の議論も理解する」というバランスの取れた続き方に、Aのlean toward public transitが最も自然につながる。B（一方的断言）、C（議論の放棄）、D（どちらでも良いという投げやり）は続く発言と矛盾する。',
-    difficulty: 'standard',
+    explanation:
+      '"Rarely" が文頭に置かれると主節で倒置が生じる。主語 "such a dramatic shift"（単数）＋一般動詞 occur に対して助動詞 does を使い、"Rarely does such a shift occur" となる。do は複数主語用、has は現在完了の倒置、had は過去完了の倒置で不適。',
+    difficulty: 'advanced',
   },
   {
     id: 'eiken_2kyu_029',
     level: '2kyu',
-    category: 'dialogue',
-    question: "A: \"I'm not sure I agree with the professor's stance on standardized testing. What do you think?\"\nB: \"(    ) Some students simply don't perform well under exam conditions, regardless of their actual knowledge.\"",
+    category: 'grammar',
+    question:
+      'The policy change, ( ) many experts had predicted, led to a sharp rise in youth unemployment rates.',
     choices: [
-      { key: 'A', text: "I have my reservations too. Tests don't always capture the full picture of a student's abilities." },
-      { key: 'B', text: 'I think the professor is absolutely right — tests are the only fair way to evaluate students.' },
-      { key: 'C', text: "Testing is irrelevant to modern education, so we shouldn't even be discussing it." },
-      { key: 'D', text: 'Students who fail tests probably just need to study harder.' },
+      { key: 'A', text: 'as' },
+      { key: 'B', text: 'what' },
+      { key: 'C', text: 'which' },
+      { key: 'D', text: 'that' },
     ],
     correctKey: 'A',
-    explanation: '続く「試験条件下でのパフォーマンス」への言及と自然につながるのはA。テストが全てを測れないという懸念を共有する発言。B（全面同意で矛盾）、C（議論を否定）、D（短絡的な批判）は文脈に合わない。',
-    difficulty: 'basic',
+    explanation:
+      '"as many experts had predicted" の as は「専門家が予測したとおり」という様態の接続詞。この as は前の文全体または節を先行詞として受ける関係詞的用法でもある。"which many experts had predicted" も文法的だが、which は先行詞として特定の名詞句（the policy change）を指す非制限的関係節になる。ここでは「予測した（こと＝その結果）」という節全体を受けるので as が適切。',
+    difficulty: 'advanced',
   },
   {
     id: 'eiken_2kyu_030',
     level: '2kyu',
-    category: 'dialogue',
-    question: 'A: "The company is considering implementing a four-day workweek. Have you heard?"\nB: "Yes, I think it\'s worth exploring. (    )"',
+    category: 'grammar',
+    question:
+      'The survey results indicate that the majority of consumers prefer ( ) contacted by email rather than by telephone.',
     choices: [
-      { key: 'A', text: "Research suggests that productivity doesn't necessarily decline — in fact, some studies show it improves." },
-      { key: 'B', text: "Nobody wants to work less, so I doubt it will be popular." },
-      { key: 'C', text: "A four-day week would obviously destroy the company's output." },
-      { key: 'D', text: "These kinds of trendy ideas never work in practice." },
+      { key: 'A', text: 'to be' },
+      { key: 'B', text: 'being' },
+      { key: 'C', text: 'to have been' },
+      { key: 'D', text: 'having been' },
     ],
-    correctKey: 'A',
-    explanation: '「探る価値がある」という肯定的見解に続く発言として、生産性研究を根拠に示すAが最も知的で自然。B（人気がないと誤判断）、C（根拠なく否定）、D（偏見による却下）は知識ある職場会話として不自然。',
+    correctKey: 'B',
+    explanation:
+      '"prefer + 動名詞" と "prefer + to不定詞" はどちらも正しいが、"prefer + being done" は「〜されることを好む」という受動態の動名詞。"prefer to be contacted" も文法的だが、prefer に続く動名詞形の受動態 "prefer being contacted" の方が実際には口語・書き言葉ともに一般的。',
     difficulty: 'standard',
   },
   {
     id: 'eiken_2kyu_031',
     level: '2kyu',
-    category: 'dialogue',
-    question: "A: \"I'm worried about the long-term implications of AI systems making decisions in healthcare without sufficient human oversight.\"\nB: \"(    ) The potential for misdiagnosis or algorithmic bias could have serious consequences for patients.\"",
+    category: 'grammar',
+    question:
+      'No sooner ( ) the announcement been made than protesters gathered outside the government building.',
     choices: [
-      { key: 'A', text: "That's a legitimate concern. We need robust regulatory frameworks to ensure accountability." },
-      { key: 'B', text: "I wouldn't worry about it — AI is always more accurate than human doctors." },
-      { key: 'C', text: 'Healthcare professionals should simply trust whatever AI recommends.' },
-      { key: 'D', text: "Technology always solves its own problems eventually, so regulation isn't necessary." },
+      { key: 'A', text: 'did' },
+      { key: 'B', text: 'had' },
+      { key: 'C', text: 'has' },
+      { key: 'D', text: 'was' },
     ],
-    correctKey: 'A',
-    explanation: 'AIの医療への懸念に続く「規制の枠組みが必要」という主張はBの「誤診やバイアスの深刻な影響」と論理的につながる。B（AI絶対視）、C（人間の判断を排除）、D（規制不要論）はいずれも責任あるAI活用の議論として不適切。',
+    correctKey: 'B',
+    explanation:
+      '"No sooner ... than ..." は「〜するやいなや」を表す慣用表現で、had を使った倒置構文になる。"No sooner had + 主語 + 過去分詞 + than + 主語 + 過去形動詞" が正しい構造。過去完了の had が倒置されて文頭直後に来る。',
     difficulty: 'advanced',
   },
   {
     id: 'eiken_2kyu_032',
     level: '2kyu',
-    category: 'dialogue',
-    question: 'A: "Do you think social media platforms should be held legally responsible for harmful content posted by their users?"\nB: "It\'s a complicated issue. (    ) But holding platforms liable for every post would stifle free expression."',
+    category: 'grammar',
+    question:
+      'The students found the examination far more ( ) than they had anticipated based on the sample questions.',
     choices: [
-      { key: 'A', text: "There's clearly a need for greater transparency and more effective moderation policies." },
-      { key: 'B', text: 'Platforms should never be regulated under any circumstances.' },
-      { key: 'C', text: 'Users are entirely to blame, so platforms bear no responsibility at all.' },
-      { key: 'D', text: 'The government should control all online content to prevent harm.' },
+      { key: 'A', text: 'challenging' },
+      { key: 'B', text: 'challenged' },
+      { key: 'C', text: 'challenge' },
+      { key: 'D', text: 'to challenge' },
     ],
     correctKey: 'A',
-    explanation: '「複雑な問題」と認めた上でBの後半「表現の自由」に言及する流れに、Aの「透明性・モデレーション強化」という中間的な立場が最も自然につながる。B（規制一切反対）、C（プラットフォーム免責）、D（政府による全面管理）はいずれもバランスを欠く。',
-    difficulty: 'advanced',
+    explanation:
+      '"find + 目的語 + 形容詞" の構文で、目的語（the examination）を説明する補語には形容詞が来る。"challenging"（困難な・やりがいのある）は形容詞として機能する。"challenged" は受動の意味（困難に直面させられた）で使われる場合があるが、試験自体を形容するには challenging が正しい。',
+    difficulty: 'standard',
   },
   {
     id: 'eiken_2kyu_033',
     level: '2kyu',
-    category: 'dialogue',
-    question: "A: \"I've been thinking about volunteering abroad for a year. Any thoughts?\"\nB: \"(    ) Just make sure you research the organization carefully to ensure your contribution will be genuinely beneficial.\"",
+    category: 'grammar',
+    question:
+      'Were the company ( ) declare bankruptcy, thousands of employees would lose their jobs and retirement savings.',
     choices: [
-      { key: 'A', text: "It sounds like a wonderful opportunity for personal growth and making a real difference." },
-      { key: 'B', text: "That's a terrible idea — you'd just be wasting a year of your career." },
-      { key: 'C', text: "Volunteering abroad is never as meaningful as it sounds in brochures." },
-      { key: 'D', text: 'You should focus entirely on your career instead of doing something like that.' },
+      { key: 'A', text: 'to' },
+      { key: 'B', text: 'would' },
+      { key: 'C', text: 'should' },
+      { key: 'D', text: 'might' },
     ],
     correctKey: 'A',
-    explanation: '続く「組織をよく調べて」という建設的なアドバイスに自然につながるのはA（前向きな共感と励まし）。B（否定的）、C（懐疑的で否定的）、D（個人の価値観を否定）はアドバイスの前置きとして不自然。',
-    difficulty: 'standard',
+    explanation:
+      '"Were + 主語 + to不定詞 ..." は if を省略した仮定法の倒置形で、「もし〜するとしたら」という意味。"Were the company to declare ..." = "If the company were to declare ..." となる。特に書き言葉・フォーマルな文脈で使われる仮定法の格式表現。',
+    difficulty: 'advanced',
   },
   {
     id: 'eiken_2kyu_034',
     level: '2kyu',
-    category: 'dialogue',
-    question: 'A: "The latest data shows that income inequality has widened significantly over the past decade."\nB: "(    ) Without targeted policy interventions, the gap between the wealthy and the rest is likely to keep growing."',
+    category: 'grammar',
+    question:
+      'The research paper, along with its supplementary data, ( ) to be reviewed by a panel of international experts.',
     choices: [
-      { key: 'A', text: 'The trend is deeply troubling, particularly its impact on social mobility and educational opportunity.' },
-      { key: 'B', text: "Income inequality is a natural part of any economy, so there's no reason to be concerned." },
-      { key: 'C', text: 'The wealthy deserve their advantages because they work harder.' },
-      { key: 'D', text: "Redistribution of wealth always destroys economic incentives, so we shouldn't interfere." },
+      { key: 'A', text: 'are' },
+      { key: 'B', text: 'were' },
+      { key: 'C', text: 'is' },
+      { key: 'D', text: 'have' },
     ],
-    correctKey: 'A',
-    explanation: 'Bの「政策介入なければ格差は拡大」という懸念と論理的につながるのはA（格差の影響への懸念表明）。B（問題視しない）、C（能力主義による正当化）、D（介入否定）はいずれも続く政策論議の前置きとして矛盾する。',
-    difficulty: 'advanced',
+    correctKey: 'C',
+    explanation:
+      '"along with ..." は主語に付加された情報であり、主語の数には影響しない。主語は "The research paper"（単数）なので動詞は is が正しい。"along with" は "as well as" "together with" と同様に、後続の句を主語に含めない点に注意。',
+    difficulty: 'standard',
   },
   {
     id: 'eiken_2kyu_035',
     level: '2kyu',
-    category: 'dialogue',
-    question: 'A: "I read that many countries are struggling to attract young people to careers in nursing and elder care."\nB: "That\'s true. (    ) Unless the sector addresses issues like pay and working conditions, the shortage will only get worse."',
+    category: 'grammar',
+    question:
+      'The government does ( ) take the issue of food security seriously, but its current policies are simply not sufficient to address the scale of the problem.',
     choices: [
-      { key: 'A', text: "The work is incredibly demanding, and the compensation often doesn't reflect the level of dedication required." },
-      { key: 'B', text: 'Young people today are simply too lazy to work in demanding fields.' },
-      { key: 'C', text: 'The government should force people to become nurses whether they want to or not.' },
-      { key: 'D', text: "Elderly care is not an important part of society, so the shortage doesn't really matter." },
+      { key: 'A', text: 'so' },
+      { key: 'B', text: 'indeed' },
+      { key: 'C', text: 'really' },
+      { key: 'D', text: 'even' },
     ],
-    correctKey: 'A',
-    explanation: '続く「給与・労働条件の改善が必要」という主張の前置きとして、Aの「要求が高いのに給与が見合わない」は論理的につながる。B（若者を批判）、C（強制的手段）、D（介護の重要性否定）はいずれも現実的な政策議論として不適切。',
-    difficulty: 'basic',
+    correctKey: 'B',
+    explanation:
+      '"does indeed + 動詞原形" は emphatic do（強調の do）を使った表現で、「確かに〜する」という肯定の強調を表す。but で逆説が続く前に主張の誠意を示す際に使う。"does so take" は文法的に不自然。really・even は副詞として機能するが、"does really/even take" という語順は emphatic do の強調構文として成立しない。',
+    difficulty: 'advanced',
   },
+
+  // ── READING 36–50 ────────────────────────────────────────────────
+  // Passage 1 (Q36–38): Microplastics in drinking water
   {
     id: 'eiken_2kyu_036',
     level: '2kyu',
     category: 'reading',
-    question: 'Read the following passage and answer the question.\n\nIn recent years, the concept of "food security" has moved to the forefront of global policy discussions. Food security refers to the condition in which all people, at all times, have physical, social, and economic access to sufficient, safe, and nutritious food that meets their dietary needs. Despite significant advances in agricultural technology, approximately 690 million people worldwide still experience chronic hunger, according to the United Nations Food and Agriculture Organization. This persistent problem is driven by a complex web of factors, including political instability, climate change, economic inequality, and disruptions to food supply chains. Addressing food security requires coordinated international efforts, investment in sustainable agriculture, and policies that target the root causes of poverty and hunger rather than merely providing short-term relief.\n\nAccording to the passage, which of the following best describes the nature of the food security problem?',
+    question: `Read the following passage and answer the question below.
+
+Microplastics — particles smaller than five millimeters — have been detected in virtually every environment on Earth, from the deepest ocean trenches to the peaks of remote mountain ranges. More alarmingly, recent studies have confirmed their presence in municipal tap water, bottled water, and even human blood. Although researchers have not yet established a definitive causal link between microplastic ingestion and specific health conditions in humans, animal studies suggest that chronic exposure may disrupt hormonal function and trigger inflammatory responses. One major source of microplastic contamination in water supplies is the degradation of synthetic textiles during washing: a single load of laundry can release hundreds of thousands of synthetic fibers into wastewater systems. While many water treatment plants successfully filter out larger particles, a significant proportion of microplastics are too small to be captured by conventional filtration methods. Governments in several countries have begun to mandate that new washing machines be equipped with fine-mesh filters, but critics argue that the regulation falls short of addressing the problem at its source — the overproduction of single-use plastics.
+
+According to the passage, which of the following statements about microplastics is TRUE?`,
     choices: [
-      { key: 'A', text: 'It is a multifaceted issue caused by interrelated social, political, economic, and environmental factors.' },
-      { key: 'B', text: 'It is primarily a technological problem that can be solved through better farming equipment.' },
-      { key: 'C', text: 'It is mainly caused by overpopulation in developing countries.' },
-      { key: 'D', text: 'It is a regional issue limited to countries with particularly harsh climates.' },
+      {
+        key: 'A',
+        text: 'Scientists have proven that microplastics directly cause hormonal diseases in humans.',
+      },
+      {
+        key: 'B',
+        text: 'Current water treatment methods are entirely unable to remove microplastics from tap water.',
+      },
+      {
+        key: 'C',
+        text: 'Synthetic textiles are one confirmed source of microplastic contamination in water supplies.',
+      },
+      {
+        key: 'D',
+        text: 'All countries now require washing machines to include fine-mesh filters by law.',
+      },
     ],
-    correctKey: 'A',
-    explanation: '本文は「政治的不安定、気候変動、経済的不平等、サプライチェーンの混乱など複合的な要因」と明示している。B（技術問題）、C（人口過多が主因）、D（地域限定）はいずれも本文の記述と一致しない。',
-    difficulty: 'basic',
+    correctKey: 'C',
+    explanation:
+      'パッセージに "One major source of microplastic contamination in water supplies is the degradation of synthetic textiles during washing" と明記されており、合成繊維が汚染源の一つであることは事実として述べられている。Aは "not yet established a definitive causal link" とあり誤り。Bは "many plants successfully filter out larger particles" とあり全く除去できないとは書かれていない。Dは "several countries" であり全国義務化ではない。',
+    difficulty: 'standard',
   },
   {
     id: 'eiken_2kyu_037',
     level: '2kyu',
     category: 'reading',
-    question: 'Read the following passage and answer the question.\n\nThe rise of artificial intelligence has sparked intense debate among educators about the future of learning. Traditional education systems, which have long emphasized rote memorization and standardized testing, are increasingly being questioned in an era when AI can perform many of these tasks far more efficiently than humans. Proponents of AI-integrated education argue that technology can personalize learning experiences, allowing students to progress at their own pace and receive immediate feedback on their performance. Critics, however, warn that an overreliance on technology may undermine the development of critical thinking skills, creativity, and social intelligence — qualities that remain uniquely human. The challenge for educational institutions is to strike a balance: leveraging the efficiency of AI tools while preserving the human elements of teaching and learning that technology cannot replicate.\n\nWhat is the main challenge facing educational institutions according to the passage?',
+    question: `Read the following passage and answer the question below.
+
+Microplastics — particles smaller than five millimeters — have been detected in virtually every environment on Earth, from the deepest ocean trenches to the peaks of remote mountain ranges. More alarmingly, recent studies have confirmed their presence in municipal tap water, bottled water, and even human blood. Although researchers have not yet established a definitive causal link between microplastic ingestion and specific health conditions in humans, animal studies suggest that chronic exposure may disrupt hormonal function and trigger inflammatory responses. One major source of microplastic contamination in water supplies is the degradation of synthetic textiles during washing: a single load of laundry can release hundreds of thousands of synthetic fibers into wastewater systems. While many water treatment plants successfully filter out larger particles, a significant proportion of microplastics are too small to be captured by conventional filtration methods. Governments in several countries have begun to mandate that new washing machines be equipped with fine-mesh filters, but critics argue that the regulation falls short of addressing the problem at its source — the overproduction of single-use plastics.
+
+In the passage, the phrase "falls short of" most closely means:`,
     choices: [
-      { key: 'A', text: 'Finding the right balance between AI efficiency and the irreplaceable human dimensions of education.' },
-      { key: 'B', text: 'Replacing all teachers with AI systems as quickly as possible.' },
-      { key: 'C', text: 'Convincing students to abandon traditional learning methods entirely.' },
-      { key: 'D', text: 'Reducing the cost of education by eliminating human teachers.' },
+      { key: 'A', text: 'fails to fully achieve' },
+      { key: 'B', text: 'completely ignores' },
+      { key: 'C', text: 'successfully prevents' },
+      { key: 'D', text: 'exceeds the scope of' },
     ],
     correctKey: 'A',
-    explanation: '最終文「AIの効率性を活用しつつ、テクノロジーが代替できない教育の人間的側面を守るバランスを取ること」が正解の根拠。B・C・D はいずれも本文が述べていない極端な立場であり、本文の論旨と異なる。',
+    explanation:
+      '"falls short of" は「〜に達しない、〜を十分に果たしていない」という意味の慣用表現。批評家たちは規制が根本的な解決（過剰なプラスチック生産の抑制）に「及んでいない」と主張しているので、A「完全には達成できていない」が正しい。「完全に無視している」（B）は言い過ぎ。',
     difficulty: 'standard',
   },
   {
     id: 'eiken_2kyu_038',
     level: '2kyu',
     category: 'reading',
-    question: 'Read the following passage and answer the question.\n\nUrban green spaces — including parks, community gardens, and tree-lined streets — have long been recognized for their aesthetic value. Increasingly, however, city planners and public health researchers are documenting their significant impact on mental health. Studies conducted in several major cities have found that residents living within walking distance of green spaces report lower levels of stress, anxiety, and depression compared to those who live in predominantly concrete environments. The benefits appear to extend beyond individual well-being: neighborhoods with abundant green space also tend to have stronger community ties, lower crime rates, and greater civic engagement. Despite this evidence, rapid urbanization continues to reduce the availability of green space in many cities, particularly in lower-income neighborhoods where land is often prioritized for commercial or residential development.\n\nWhat does the passage suggest about the distribution of green spaces in cities?',
+    question: `Read the following passage and answer the question below.
+
+Microplastics — particles smaller than five millimeters — have been detected in virtually every environment on Earth, from the deepest ocean trenches to the peaks of remote mountain ranges. More alarmingly, recent studies have confirmed their presence in municipal tap water, bottled water, and even human blood. Although researchers have not yet established a definitive causal link between microplastic ingestion and specific health conditions in humans, animal studies suggest that chronic exposure may disrupt hormonal function and trigger inflammatory responses. One major source of microplastic contamination in water supplies is the degradation of synthetic textiles during washing: a single load of laundry can release hundreds of thousands of synthetic fibers into wastewater systems. While many water treatment plants successfully filter out larger particles, a significant proportion of microplastics are too small to be captured by conventional filtration methods. Governments in several countries have begun to mandate that new washing machines be equipped with fine-mesh filters, but critics argue that the regulation falls short of addressing the problem at its source — the overproduction of single-use plastics.
+
+What is the main point the author makes about government responses to microplastic pollution?`,
     choices: [
-      { key: 'A', text: 'Green spaces are often less accessible to lower-income residents due to competing development priorities.' },
-      { key: 'B', text: 'Urban green spaces are equally distributed among all income groups in modern cities.' },
-      { key: 'C', text: 'The benefits of green spaces are limited to wealthy residents who have the time to use them.' },
-      { key: 'D', text: 'City planners have successfully protected green spaces in all major urban areas.' },
+      {
+        key: 'A',
+        text: 'Governments have acted decisively by completely banning single-use plastics.',
+      },
+      {
+        key: 'B',
+        text: 'Existing regulations address the symptoms rather than the underlying cause of the problem.',
+      },
+      {
+        key: 'C',
+        text: 'Water treatment technology will soon be advanced enough to eliminate microplastics entirely.',
+      },
+      {
+        key: 'D',
+        text: 'The regulation of washing machines is the most effective strategy for reducing microplastic pollution.',
+      },
     ],
-    correctKey: 'A',
-    explanation: '本文末尾「特に低所得地域では土地が商業・住宅開発に優先される」という記述がAの根拠。B（均等配分）、C（富裕層限定の効果）、D（保護に成功）はいずれも本文の内容と矛盾する。',
-    difficulty: 'standard',
+    correctKey: 'B',
+    explanation:
+      'パッセージの最後で批評家が「規制は洗濯機フィルターにとどまり、根本原因（使い捨てプラスチックの過剰生産）に取り組んでいない」と指摘しており、著者はこの批判的見解を肯定的に紹介している。Bが「症状への対処であり根本原因への対処でない」という内容と一致する。',
+    difficulty: 'advanced',
   },
+
+  // Passage 2 (Q39–41): Remote work and urban economics
   {
     id: 'eiken_2kyu_039',
     level: '2kyu',
     category: 'reading',
-    question: "Read the following passage and answer the question.\n\nSpace exploration has undergone a dramatic transformation in the twenty-first century. What was once the exclusive domain of government agencies such as NASA and the European Space Agency has now become a growing arena for private companies. Entrepreneurs like Elon Musk and Jeff Bezos have invested billions of dollars in ventures aimed at commercializing space travel, establishing permanent bases on the Moon, and eventually colonizing Mars. Supporters argue that private investment will accelerate innovation and reduce costs, making space more accessible than ever before. Skeptics, however, question whether the commercialization of space serves the broader interests of humanity or simply the ambitions of a small number of extremely wealthy individuals. They also raise concerns about space debris, the militarization of orbit, and the lack of comprehensive international regulations governing commercial space activities.\n\nWhich of the following best describes the skeptics' position as presented in the passage?",
+    question: `Read the following passage and answer the question below.
+
+The widespread adoption of remote work following the global pandemic has had profound and lasting effects on urban economies. As office vacancies climbed in major city centers, commercial real estate values fell sharply, reducing the property tax revenues that many municipalities depend upon to fund public services. At the same time, residential property prices in suburban and rural areas surged as urban residents, no longer tied to daily commutes, sought larger homes and lower costs of living. This demographic shift has placed new pressure on regions that previously lacked the infrastructure — broadband connectivity, healthcare facilities, and schools — to accommodate rapid population growth. Proponents of remote work argue that it democratizes opportunity by enabling workers in less affluent areas to access high-paying jobs without relocating. Critics, however, contend that the benefits are unevenly distributed: those who can work remotely tend to be in higher-income, knowledge-based industries, while lower-wage service workers remain tied to physical locations and receive little benefit from the trend.
+
+What economic consequence of remote work does the passage describe for major city centers?`,
     choices: [
-      { key: 'A', text: 'They question whether private space ventures truly benefit humanity and raise concerns about safety and regulation.' },
-      { key: 'B', text: 'They believe private companies are more capable than government agencies in managing space exploration.' },
-      { key: 'C', text: 'They oppose all forms of space exploration on environmental and ethical grounds.' },
-      { key: 'D', text: 'They argue that space colonization should begin immediately to relieve overpopulation on Earth.' },
+      {
+        key: 'A',
+        text: 'Rising residential property prices have increased local tax revenues.',
+      },
+      {
+        key: 'B',
+        text: 'Higher office vacancy rates have led to reduced property tax income for cities.',
+      },
+      {
+        key: 'C',
+        text: 'Suburban infrastructure has improved significantly due to city investment.',
+      },
+      {
+        key: 'D',
+        text: 'Lower-wage service workers have relocated to rural areas for better pay.',
+      },
     ],
-    correctKey: 'A',
-    explanation: '本文の懐疑派の主張：「商業化が人類全体の利益になるか疑問」「宇宙ゴミ・軌道の軍事化・規制不足への懸念」がAの根拠。B（民間優位論）、C（全面反対）、D（植民地化の即時推進）は本文に記述がない。',
+    correctKey: 'B',
+    explanation:
+      'パッセージに "office vacancies climbed in major city centers, commercial real estate values fell sharply, reducing the property tax revenues" と明記されており、都市部の空室率上昇→商業不動産価値下落→固定資産税収入の減少という因果関係が示されている。Bがこの内容と一致する。',
     difficulty: 'standard',
   },
   {
     id: 'eiken_2kyu_040',
     level: '2kyu',
     category: 'reading',
-    question: 'Read the following passage and answer the question.\n\nThe concept of "brain drain" — the emigration of highly educated and skilled workers from developing nations to wealthier countries — poses a significant challenge to global development efforts. When doctors, engineers, and scientists leave their home countries in search of better opportunities abroad, the nations they leave behind lose not only their expertise but also the substantial investment made in their education. Countries such as India, Nigeria, and the Philippines lose thousands of trained healthcare professionals each year to wealthier nations, straining already underfunded health systems. Defenders of labor mobility argue that remittances sent home by emigrants provide a crucial economic lifeline for developing countries. Critics counter, however, that remittances, while valuable, cannot compensate for the loss of human capital that is essential for long-term national development. Some economists propose that destination countries should contribute financially to the training of workers they recruit, effectively sharing the costs of global talent development more equitably.\n\nWhat solution do some economists propose to address the challenges described in the passage?',
+    question: `Read the following passage and answer the question below.
+
+The widespread adoption of remote work following the global pandemic has had profound and lasting effects on urban economies. As office vacancies climbed in major city centers, commercial real estate values fell sharply, reducing the property tax revenues that many municipalities depend upon to fund public services. At the same time, residential property prices in suburban and rural areas surged as urban residents, no longer tied to daily commutes, sought larger homes and lower costs of living. This demographic shift has placed new pressure on regions that previously lacked the infrastructure — broadband connectivity, healthcare facilities, and schools — to accommodate rapid population growth. Proponents of remote work argue that it democratizes opportunity by enabling workers in less affluent areas to access high-paying jobs without relocating. Critics, however, contend that the benefits are unevenly distributed: those who can work remotely tend to be in higher-income, knowledge-based industries, while lower-wage service workers remain tied to physical locations and receive little benefit from the trend.
+
+In the passage, the word "democratizes" most nearly means:`,
     choices: [
-      { key: 'A', text: 'Wealthy destination countries should help fund the training of professionals they recruit from developing nations.' },
-      { key: 'B', text: 'Developing countries should prevent skilled workers from emigrating under any circumstances.' },
-      { key: 'C', text: 'International organizations should stop encouraging labor mobility between countries.' },
-      { key: 'D', text: 'Remittances alone are sufficient to compensate developing nations for the loss of skilled workers.' },
+      { key: 'A', text: 'makes something available to a wider range of people' },
+      { key: 'B', text: 'allows citizens to vote on important decisions' },
+      { key: 'C', text: 'reduces the overall number of people seeking employment' },
+      { key: 'D', text: 'transfers power from governments to private companies' },
     ],
     correctKey: 'A',
-    explanation: '本文末尾「受け入れ国が採用した労働者の訓練費用に財政的に貢献すべき」という経済学者の提案がAの根拠。B（移民禁止）、C（労働移動の抑制）、D（送金で十分）はいずれも本文の記述と異なる。',
-    difficulty: 'advanced',
+    explanation:
+      'パッセージでは "democratizes opportunity by enabling workers in less affluent areas to access high-paying jobs" とあり、「機会を民主化する」は「高収入の仕事へのアクセスをより多くの地域の人々に開放する」という意味で使われている。選択肢Aの「より広い範囲の人々が利用できるようにする」がこの意味に最も近い。',
+    difficulty: 'standard',
   },
   {
     id: 'eiken_2kyu_041',
     level: '2kyu',
     category: 'reading',
-    question: 'Read the following passage and answer the question.\n\nMental health has emerged as one of the most pressing public health concerns of the twenty-first century. The World Health Organization estimates that depression and anxiety disorders affect hundreds of millions of people globally, resulting in lost productivity, strained healthcare systems, and immeasurable human suffering. Despite the scale of the problem, mental health services remain chronically underfunded in most countries, and deeply entrenched stigma continues to discourage many individuals from seeking the help they need. Recent years have seen growing awareness campaigns aimed at normalizing conversations about mental health, particularly among younger generations who have grown up sharing their experiences on social media. Critics of these campaigns, however, argue that awareness alone is insufficient without a corresponding increase in accessible, affordable, and evidence-based treatment options. The gap between recognizing the problem and actually providing effective care remains alarmingly wide.\n\nWhat critical point do opponents of awareness campaigns make, according to the passage?',
+    question: `Read the following passage and answer the question below.
+
+The widespread adoption of remote work following the global pandemic has had profound and lasting effects on urban economies. As office vacancies climbed in major city centers, commercial real estate values fell sharply, reducing the property tax revenues that many municipalities depend upon to fund public services. At the same time, residential property prices in suburban and rural areas surged as urban residents, no longer tied to daily commutes, sought larger homes and lower costs of living. This demographic shift has placed new pressure on regions that previously lacked the infrastructure — broadband connectivity, healthcare facilities, and schools — to accommodate rapid population growth. Proponents of remote work argue that it democratizes opportunity by enabling workers in less affluent areas to access high-paying jobs without relocating. Critics, however, contend that the benefits are unevenly distributed: those who can work remotely tend to be in higher-income, knowledge-based industries, while lower-wage service workers remain tied to physical locations and receive little benefit from the trend.
+
+Which of the following best describes the author's overall approach to the topic of remote work?`,
     choices: [
-      { key: 'A', text: 'Raising awareness is not enough if affordable and effective treatment options are not made widely available.' },
-      { key: 'B', text: 'Mental health problems are exaggerated by social media and do not require significant policy attention.' },
-      { key: 'C', text: 'Younger generations are less affected by mental health issues than previous generations.' },
-      { key: 'D', text: 'Government funding for mental health should be reduced to focus on more serious physical illnesses.' },
+      {
+        key: 'A',
+        text: 'The author strongly advocates for remote work as the best solution to urban economic problems.',
+      },
+      {
+        key: 'B',
+        text: 'The author presents both potential benefits and limitations of remote work without taking a clear position.',
+      },
+      {
+        key: 'C',
+        text: 'The author argues that remote work has been entirely negative for the economy.',
+      },
+      {
+        key: 'D',
+        text: 'The author focuses primarily on the positive effects of remote work on rural communities.',
+      },
     ],
-    correctKey: 'A',
-    explanation: '本文「啓発だけでは不十分で、利用しやすく証拠に基づいた治療の拡充が必要」という批判者の主張がAの根拠。B（問題の過大評価）、C（若者は影響少ない）、D（予算削減）はいずれも本文の記述に反する。',
+    correctKey: 'B',
+    explanation:
+      'パッセージは "Proponents argue ..." と "Critics, however, contend ..." という両論を公平に提示しており、著者自身は特定の立場を明確にしていない。これは balanced/neutral な論説文の典型的なアプローチで、Bの「明確な立場を取らずに利点と限界の両方を提示している」が最も適切。',
     difficulty: 'advanced',
   },
+
+  // Passage 3 (Q42–44): Antibiotic resistance
   {
     id: 'eiken_2kyu_042',
     level: '2kyu',
     category: 'reading',
-    question: 'Read the following passage and answer the question.\n\nCultural diversity has long been celebrated as a source of social enrichment, creativity, and innovation. When people from different backgrounds collaborate, they bring a variety of perspectives, experiences, and problem-solving approaches that can lead to more effective outcomes than homogeneous groups. Research in organizational psychology has consistently shown that diverse teams outperform uniform ones on complex tasks requiring creativity and adaptability. However, the benefits of diversity are not automatic. Studies also show that without deliberate efforts to foster an inclusive environment — one where all voices are heard and respected — diversity can lead to misunderstanding, conflict, and inefficiency. Organizations that invest in diversity training, mentorship programs, and equitable policies tend to harness the full potential of their diverse workforce, while those that treat diversity as a mere compliance exercise often fail to realize meaningful benefits.\n\nWhat does the passage suggest is necessary to fully realize the benefits of cultural diversity in organizations?',
+    question: `Read the following passage and answer the question below.
+
+Antibiotic resistance has emerged as one of the most pressing public health threats of the twenty-first century. When bacteria are repeatedly exposed to antibiotics, those that carry genetic mutations allowing them to survive the drug gradually outcompete non-resistant strains, a process driven by natural selection. The overuse of antibiotics in both human medicine and livestock farming has dramatically accelerated this process. In some regions, farmers administer antibiotics not only to treat disease but also as a growth promoter, a practice now banned in the European Union but still widespread elsewhere. Scientists warn that if resistance continues to spread at the current rate, routine medical procedures such as surgery and chemotherapy — which rely on effective antibiotics to prevent infection — could become life-threatening. Despite international agreements calling for reduced antibiotic use, implementation remains inconsistent, and the development of new antibiotic drugs has slowed considerably, partly because pharmaceutical companies find the research economically unattractive compared to treatments for chronic diseases.
+
+According to the passage, what drives the spread of antibiotic resistance?`,
     choices: [
-      { key: 'A', text: 'Deliberate efforts to create inclusive environments where different perspectives are genuinely valued.' },
-      { key: 'B', text: 'Hiring as many employees from different countries as possible regardless of their qualifications.' },
-      { key: 'C', text: 'Eliminating all competition within teams to prevent conflict among diverse members.' },
-      { key: 'D', text: 'Ensuring that all employees share the same cultural values and communication styles.' },
+      {
+        key: 'A',
+        text: 'Genetic mutations in humans that are triggered by long-term antibiotic use',
+      },
+      {
+        key: 'B',
+        text: 'Natural selection favoring bacteria that can survive antibiotic treatment',
+      },
+      {
+        key: 'C',
+        text: 'The complete ban on antibiotic use in livestock farming worldwide',
+      },
+      {
+        key: 'D',
+        text: 'A deliberate reduction in antibiotic production by pharmaceutical companies',
+      },
     ],
-    correctKey: 'A',
-    explanation: '本文「意図的なインクルーシブな環境の構築なしには、多様性は誤解や非効率につながる」という主張がAの根拠。B（資格より数）、C（競争排除）、D（文化的均一化）はいずれも本文の趣旨と逆方向。',
+    correctKey: 'B',
+    explanation:
+      'パッセージに "those that carry genetic mutations allowing them to survive the drug gradually outcompete non-resistant strains, a process driven by natural selection" と明記されており、自然選択によって耐性菌が広がることが説明されている。Aは「人間の遺伝子変異」で誤り（菌の変異）。Cは「一部の地域でのみ禁止」であり全世界的禁止は誤り。Dは「経済的に魅力がない」ためであって意図的削減ではない。',
     difficulty: 'standard',
   },
   {
     id: 'eiken_2kyu_043',
     level: '2kyu',
     category: 'reading',
-    question: "Read the following passage and answer the question.\n\nThe global transition to renewable energy is widely regarded as essential to preventing catastrophic climate change. Solar and wind power have experienced dramatic cost reductions over the past decade, making them increasingly competitive with fossil fuels in many markets. However, the transition is far from straightforward. Renewable energy sources are intermittent — the sun does not always shine, and the wind does not always blow — creating challenges for grid stability and energy storage. Large-scale battery storage and smart grid technology are seen as key solutions, but their deployment requires significant upfront investment. Furthermore, the transition poses difficult social and economic questions: communities that have historically depended on coal mining and fossil fuel extraction face potential job losses and economic disruption. A just transition — one that addresses these social dimensions alongside environmental goals — is essential if the shift to clean energy is to enjoy broad public support.\n\nAccording to the passage, what is one major obstacle to the global transition to renewable energy?",
+    question: `Read the following passage and answer the question below.
+
+Antibiotic resistance has emerged as one of the most pressing public health threats of the twenty-first century. When bacteria are repeatedly exposed to antibiotics, those that carry genetic mutations allowing them to survive the drug gradually outcompete non-resistant strains, a process driven by natural selection. The overuse of antibiotics in both human medicine and livestock farming has dramatically accelerated this process. In some regions, farmers administer antibiotics not only to treat disease but also as a growth promoter, a practice now banned in the European Union but still widespread elsewhere. Scientists warn that if resistance continues to spread at the current rate, routine medical procedures such as surgery and chemotherapy — which rely on effective antibiotics to prevent infection — could become life-threatening. Despite international agreements calling for reduced antibiotic use, implementation remains inconsistent, and the development of new antibiotic drugs has slowed considerably, partly because pharmaceutical companies find the research economically unattractive compared to treatments for chronic diseases.
+
+In the passage, what does "implementation remains inconsistent" suggest about international agreements on antibiotic use?`,
     choices: [
-      { key: 'A', text: 'The intermittent nature of solar and wind power creates difficulties for maintaining a stable energy supply.' },
-      { key: 'B', text: 'Renewable energy technologies are still far too expensive to compete with fossil fuels in any market.' },
-      { key: 'C', text: 'Most governments are actively opposed to developing renewable energy infrastructure.' },
-      { key: 'D', text: 'Public opinion worldwide is strongly against any transition away from fossil fuels.' },
+      {
+        key: 'A',
+        text: 'Countries have not agreed on a common definition of antibiotic resistance.',
+      },
+      {
+        key: 'B',
+        text: 'Countries have signed agreements but do not uniformly follow through on them.',
+      },
+      {
+        key: 'C',
+        text: 'International agreements are regularly updated to match new scientific findings.',
+      },
+      {
+        key: 'D',
+        text: 'Most nations have exceeded the targets set by international organizations.',
+      },
     ],
-    correctKey: 'A',
-    explanation: '本文「再生可能エネルギーは断続的で、電力網の安定性とエネルギー貯蔵に課題をもたらす」という記述がAの根拠。B（コスト競争力なし）は本文と逆、C（政府が反対）・D（世論が反対）は本文に記述がない。',
+    correctKey: 'B',
+    explanation:
+      '"implementation remains inconsistent" は「実施状況にばらつきがある（=一部の国は守っているが他は守っていない）」という意味。"Despite international agreements calling for reduced antibiotic use" との組み合わせから、合意はあるが国によって実施状況が異なることが読み取れる。Bが最も適切。',
     difficulty: 'advanced',
   },
   {
     id: 'eiken_2kyu_044',
     level: '2kyu',
     category: 'reading',
-    question: "Read the following passage and answer the question.\n\nThe rapid aging of populations in many industrialized nations presents both a serious economic challenge and an opportunity for social innovation. As the proportion of elderly people grows relative to the working-age population, pressure mounts on pension systems, healthcare services, and long-term care facilities. In Japan, for example, nearly one in three residents is aged sixty-five or older, and the country is pioneering a range of policy responses, including incentives for older workers to remain in the workforce, robot-assisted care in nursing homes, and immigration reforms designed to attract younger workers from abroad. Other countries facing similar demographic shifts are watching Japan's experiments closely, hoping to draw lessons about what works and what does not. While no single solution has proven universally effective, there is growing consensus that addressing population aging requires a combination of economic policy, healthcare innovation, and social attitudes that embrace the contributions of older citizens.\n\nWhy is Japan mentioned in the passage?",
+    question: `Read the following passage and answer the question below.
+
+Antibiotic resistance has emerged as one of the most pressing public health threats of the twenty-first century. When bacteria are repeatedly exposed to antibiotics, those that carry genetic mutations allowing them to survive the drug gradually outcompete non-resistant strains, a process driven by natural selection. The overuse of antibiotics in both human medicine and livestock farming has dramatically accelerated this process. In some regions, farmers administer antibiotics not only to treat disease but also as a growth promoter, a practice now banned in the European Union but still widespread elsewhere. Scientists warn that if resistance continues to spread at the current rate, routine medical procedures such as surgery and chemotherapy — which rely on effective antibiotics to prevent infection — could become life-threatening. Despite international agreements calling for reduced antibiotic use, implementation remains inconsistent, and the development of new antibiotic drugs has slowed considerably, partly because pharmaceutical companies find the research economically unattractive compared to treatments for chronic diseases.
+
+Which of the following conclusions can be most reasonably drawn from the passage?`,
     choices: [
-      { key: 'A', text: 'As an example of a country actively experimenting with various policy approaches to population aging.' },
-      { key: 'B', text: 'As a country that has fully solved the economic problems associated with an aging population.' },
-      { key: 'C', text: 'As a warning example of a country that has failed to address its demographic challenges.' },
-      { key: 'D', text: 'As a model specifically for immigration policy that other countries should adopt immediately.' },
+      {
+        key: 'A',
+        text: 'Pharmaceutical companies are primarily responsible for the global rise in antibiotic resistance.',
+      },
+      {
+        key: 'B',
+        text: 'Antibiotic resistance is likely to worsen unless both policy and industry approaches change.',
+      },
+      {
+        key: 'C',
+        text: 'Livestock farming contributes more to antibiotic resistance than human medicine does.',
+      },
+      {
+        key: 'D',
+        text: 'The European Union\'s ban on antibiotic use in farming has resolved the resistance problem in that region.',
+      },
     ],
-    correctKey: 'A',
-    explanation: '本文は日本を「様々な政策実験を行っている事例」として紹介している。B（問題解決済み）、C（失敗事例）、D（移民政策の模範）はいずれも本文の日本の描かれ方と一致しない。',
-    difficulty: 'standard',
+    correctKey: 'B',
+    explanation:
+      'パッセージ全体を通じて、抗生物質の過剰使用・国際合意の不徹底・新薬開発の停滞という複数の問題が示されており、解決には政策面と産業面の両方での変化が必要だと示唆している。Aは「主な責任が製薬会社にある」という誇張。Cは比較論だがパッセージは明示していない。DはEUの禁止が解決策として機能したとは書かれていない。',
+    difficulty: 'advanced',
   },
+
+  // Passage 4 (Q45–47): Sleep science
   {
     id: 'eiken_2kyu_045',
     level: '2kyu',
     category: 'reading',
-    question: "Read the following passage and answer the question.\n\nEconomic globalization has brought undeniable benefits to many parts of the world, lifting millions out of poverty through trade, investment, and the spread of technology. Yet its distributional effects have been deeply uneven. While consumers in wealthy nations have benefited from lower prices for manufactured goods, workers in traditional industries have often seen their jobs relocated to countries with lower labor costs. The result has been a widening of economic inequality within many developed nations, contributing to political discontent and the rise of populist movements that promise to restore the living standards of those left behind. Critics of globalization argue that trade agreements have prioritized corporate interests over workers' rights and environmental protections. Proponents counter that protectionism — the attempt to shield domestic industries from foreign competition through tariffs and trade barriers — ultimately raises prices for consumers and reduces overall economic efficiency. The debate over how to manage globalization's costs and benefits remains one of the most contentious in contemporary economic policy.\n\nWhat does the passage suggest is a major social consequence of economic globalization in developed countries?",
+    question: `Read the following passage and answer the question below.
+
+Sleep, once dismissed by many as mere biological downtime, is now understood to be a period of intense neurological activity essential for physical and cognitive health. During deep sleep, the brain's glymphatic system — a network of channels surrounding blood vessels — becomes highly active, flushing out metabolic waste products including beta-amyloid, a protein associated with Alzheimer's disease. Simultaneously, the hippocampus, the brain region central to memory formation, replays and consolidates experiences from the day, transferring information to long-term storage in the cortex. Chronic sleep deprivation, defined as consistently obtaining fewer than six hours per night, has been linked to a significantly elevated risk of cardiovascular disease, type 2 diabetes, and impaired immune function. Despite this evidence, surveys consistently show that a large proportion of adults in industrialized nations fail to achieve the recommended seven to nine hours. Researchers point to artificial light exposure from screens as a major disruptor of the body's circadian rhythm, suppressing melatonin production and delaying the onset of sleep.
+
+What function of the glymphatic system is described in the passage?`,
     choices: [
-      { key: 'A', text: 'Growing economic inequality and political discontent among workers who have lost out from trade-driven changes.' },
-      { key: 'B', text: 'A universal improvement in living standards for all citizens of developed nations.' },
-      { key: 'C', text: 'The elimination of poverty in both developed and developing countries.' },
-      { key: 'D', text: 'A reduction in political polarization as citizens come to accept the benefits of free trade.' },
+      {
+        key: 'A',
+        text: 'It regulates melatonin production to control the sleep-wake cycle.',
+      },
+      {
+        key: 'B',
+        text: 'It consolidates daily memories and transfers them to long-term storage.',
+      },
+      {
+        key: 'C',
+        text: 'It removes harmful waste products from the brain during deep sleep.',
+      },
+      {
+        key: 'D',
+        text: 'It reduces the risk of cardiovascular disease by regulating blood pressure.',
+      },
     ],
-    correctKey: 'A',
-    explanation: '本文「先進国内での経済的不平等の拡大、生活水準改善を約束するポピュリスト運動の台頭」という記述がAの根拠。B（全員の生活向上）、C（貧困撲滅）、D（政治的分極化の解消）はいずれも本文の内容と矛盾する。',
-    difficulty: 'advanced',
+    correctKey: 'C',
+    explanation:
+      'パッセージに "the brain\'s glymphatic system becomes highly active, flushing out metabolic waste products including beta-amyloid" と明記されており、深い睡眠中に老廃物を排出する機能が説明されている。Bはhippocampusの機能、Aはメラトニンに関する記述で別のシステム。Dはパッセージに記載されていない。',
+    difficulty: 'standard',
   },
   {
     id: 'eiken_2kyu_046',
     level: '2kyu',
     category: 'reading',
-    question: "Read the following passage and answer the question.\n\nBiodiversity — the variety of life on Earth — underpins virtually every aspect of human well-being, from the food we eat to the medicines we use and the clean air and water we depend on. Despite its importance, biodiversity is declining at an unprecedented rate. Scientists estimate that species are disappearing at a rate hundreds of times higher than the natural background rate, driven primarily by habitat destruction, pollution, overexploitation of natural resources, climate change, and the introduction of invasive species. The consequences of this loss extend far beyond nature: the collapse of pollinator populations, for example, threatens global food production, while the loss of forest cover reduces the planet's capacity to absorb carbon dioxide. Conservation efforts, though increasing in scope, remain inadequate given the scale of the challenge. Many experts argue that truly protecting biodiversity requires not just the designation of protected areas, but a fundamental rethinking of how societies produce food, generate energy, and manage natural resources.\n\nAccording to the passage, why does biodiversity loss matter for humans?",
+    question: `Read the following passage and answer the question below.
+
+Sleep, once dismissed by many as mere biological downtime, is now understood to be a period of intense neurological activity essential for physical and cognitive health. During deep sleep, the brain's glymphatic system — a network of channels surrounding blood vessels — becomes highly active, flushing out metabolic waste products including beta-amyloid, a protein associated with Alzheimer's disease. Simultaneously, the hippocampus, the brain region central to memory formation, replays and consolidates experiences from the day, transferring information to long-term storage in the cortex. Chronic sleep deprivation, defined as consistently obtaining fewer than six hours per night, has been linked to a significantly elevated risk of cardiovascular disease, type 2 diabetes, and impaired immune function. Despite this evidence, surveys consistently show that a large proportion of adults in industrialized nations fail to achieve the recommended seven to nine hours. Researchers point to artificial light exposure from screens as a major disruptor of the body's circadian rhythm, suppressing melatonin production and delaying the onset of sleep.
+
+In the passage, "circadian rhythm" refers to:`,
     choices: [
-      { key: 'A', text: 'Because biodiversity supports essential services such as food production, medicine, and environmental regulation.' },
-      { key: 'B', text: 'Because the loss of certain animal species makes ecosystems more stable and efficient.' },
-      { key: 'C', text: 'Because humans have a moral duty to protect nature even if it offers no practical benefits.' },
-      { key: 'D', text: 'Because biodiversity is primarily important for the tourism and recreation industries.' },
+      { key: 'A', text: 'the brain\'s process of consolidating memories overnight' },
+      { key: 'B', text: 'the body\'s natural internal clock regulating sleep and wakefulness' },
+      { key: 'C', text: 'the pattern of melatonin release caused by screen exposure' },
+      { key: 'D', text: 'the cycle of deep sleep and light sleep within a single night' },
     ],
-    correctKey: 'A',
-    explanation: '本文「食料・医薬品・清潔な空気と水など人間の幸福のほぼすべての側面を支える」という記述がAの根拠。B（種の喪失が安定化）は本文と逆、C（実利なき道義的義務）・D（観光・レクリエーション）は本文の主張と異なる。',
+    correctKey: 'B',
+    explanation:
+      '"circadian rhythm" は「概日リズム（約24時間周期の体内時計）」で、睡眠と覚醒のサイクルを調節する生体メカニズム。パッセージでは人工光がこのリズムを乱すと述べており、Bの「睡眠と覚醒を調節する体内時計」が最も正確。Dは睡眠サイクル内の段階を指し、circadian rhythmとは異なる概念。',
     difficulty: 'standard',
   },
   {
     id: 'eiken_2kyu_047',
     level: '2kyu',
     category: 'reading',
-    question: "Read the following passage and answer the question.\n\nThe debate over the appropriate role of social media in modern democratic societies has intensified in recent years. Advocates argue that platforms like Twitter, Facebook, and Instagram have democratized information, giving ordinary citizens a voice in public debate and enabling grassroots political movements to organize and mobilize with unprecedented speed. Critics, however, point to a darker side: the algorithmic amplification of outrage and sensationalism, the creation of \"echo chambers\" in which users are exposed only to views that reinforce their existing beliefs, and the deliberate spread of disinformation by political actors seeking to manipulate public opinion. Some researchers argue that social media has contributed to the erosion of shared facts and common ground necessary for democratic deliberation. Policymakers are grappling with the question of how to regulate these platforms in ways that preserve the benefits of open communication while minimizing harm to democratic norms and institutions.\n\nWhat concern do some researchers raise about social media's impact on democracy?",
+    question: `Read the following passage and answer the question below.
+
+Sleep, once dismissed by many as mere biological downtime, is now understood to be a period of intense neurological activity essential for physical and cognitive health. During deep sleep, the brain's glymphatic system — a network of channels surrounding blood vessels — becomes highly active, flushing out metabolic waste products including beta-amyloid, a protein associated with Alzheimer's disease. Simultaneously, the hippocampus, the brain region central to memory formation, replays and consolidates experiences from the day, transferring information to long-term storage in the cortex. Chronic sleep deprivation, defined as consistently obtaining fewer than six hours per night, has been linked to a significantly elevated risk of cardiovascular disease, type 2 diabetes, and impaired immune function. Despite this evidence, surveys consistently show that a large proportion of adults in industrialized nations fail to achieve the recommended seven to nine hours. Researchers point to artificial light exposure from screens as a major disruptor of the body's circadian rhythm, suppressing melatonin production and delaying the onset of sleep.
+
+What can be inferred from the passage about sleep habits in industrialized countries?`,
     choices: [
-      { key: 'A', text: 'That it may be undermining the shared factual foundation necessary for healthy democratic discussion.' },
-      { key: 'B', text: 'That social media companies are directly controlling the outcomes of elections in most countries.' },
-      { key: 'C', text: 'That social media has made it impossible for citizens to express any political opinions freely.' },
-      { key: 'D', text: 'That only young people use social media, limiting its influence on broader democratic processes.' },
+      {
+        key: 'A',
+        text: 'Most adults are aware of sleep guidelines and choose to ignore them.',
+      },
+      {
+        key: 'B',
+        text: 'Screen use is the only factor preventing adults from getting adequate sleep.',
+      },
+      {
+        key: 'C',
+        text: 'Many adults sleep less than the amount recommended for good health.',
+      },
+      {
+        key: 'D',
+        text: 'Sleep deprivation is more severe in industrialized nations than in developing countries.',
+      },
     ],
-    correctKey: 'A',
-    explanation: '本文「共有された事実と民主的審議に必要な共通基盤の侵食に寄与している」という研究者の懸念がAの根拠。B（選挙結果を直接制御）、C（政治的意見の表現が不可能）、D（若者のみが使用）はいずれも本文の記述に存在しない。',
+    correctKey: 'C',
+    explanation:
+      'パッセージに "a large proportion of adults in industrialized nations fail to achieve the recommended seven to nine hours" と明記されており、推奨睡眠時間を下回る成人が多いことが述べられている。Cがこれに対応する。Aは「意識的に無視している」とは書かれていない。Bはスクリーン以外の要因が排除されておらず誇張。Dは途上国との比較はパッセージにない。',
     difficulty: 'standard',
   },
+
+  // Passage 5 (Q48–50): Gig economy and labor rights
   {
     id: 'eiken_2kyu_048',
     level: '2kyu',
     category: 'reading',
-    question: 'Read the following passage and answer the question.\n\nPublic health experts have long recognized that individual health outcomes are shaped not only by personal behaviors and genetics but by a wide range of social and economic factors often referred to as the "social determinants of health." These include income and wealth, educational attainment, employment conditions, housing quality, access to nutritious food, and exposure to environmental hazards. Research consistently shows that people living in poverty or in disadvantaged communities face significantly higher risks of chronic disease, mental illness, and premature death compared to their more affluent counterparts. Addressing these disparities requires interventions that go far beyond the healthcare system — including policies that tackle income inequality, improve access to education, upgrade housing, and clean up polluted environments. Critics of this approach argue that it overly "medicalizes" social problems and deflects responsibility from individuals. Proponents counter that ignoring structural factors is both scientifically unjustifiable and ethically indefensible, given the strong evidence linking social conditions to health outcomes.\n\nWhat is the main argument made by proponents of addressing social determinants of health?',
+    question: `Read the following passage and answer the question below.
+
+The rise of the gig economy — in which workers are hired on a short-term, task-by-task basis through digital platforms — has fundamentally altered traditional employment relationships. Companies such as food delivery services and ride-hailing platforms typically classify their workers as independent contractors rather than employees, a distinction that has significant legal and financial consequences. Independent contractors are generally not entitled to minimum wage protections, paid leave, or employer contributions to pension schemes. Proponents of the gig model argue that it offers workers flexibility and autonomy that traditional employment cannot match, allowing individuals to set their own hours and work for multiple platforms simultaneously. Opponents counter that this flexibility is largely illusory: platform algorithms closely monitor worker performance and can deactivate accounts — effectively terminating employment — without any of the procedural safeguards that apply in conventional workplaces. Several jurisdictions have moved to reclassify gig workers as employees, but these efforts have faced intense legal challenges from platform companies, which argue that mandatory reclassification would undermine the business model that makes affordable services possible.
+
+According to the passage, why do gig economy companies prefer to classify workers as independent contractors?`,
     choices: [
-      { key: 'A', text: 'That structural social and economic conditions have a scientifically documented influence on health that cannot ethically be ignored.' },
-      { key: 'B', text: "That personal behavior and individual choices are the primary factors determining a person's health outcomes." },
-      { key: 'C', text: 'That the healthcare system alone is fully capable of eliminating health disparities between rich and poor.' },
-      { key: 'D', text: 'That social media is the most important determinant of health in contemporary societies.' },
+      {
+        key: 'A',
+        text: 'Independent contractors are required to pay higher taxes, which benefits the companies.',
+      },
+      {
+        key: 'B',
+        text: 'The classification relieves companies of obligations such as minimum wage and pension contributions.',
+      },
+      {
+        key: 'C',
+        text: 'It allows workers to receive better pay than they would as full employees.',
+      },
+      {
+        key: 'D',
+        text: 'Governments require digital platforms to use this classification for legal reasons.',
+      },
     ],
-    correctKey: 'A',
-    explanation: '本文「構造的要因を無視することは科学的に正当化できず、倫理的にも擁護できない」という支持者の主張がAの根拠。B（個人の行動が主因）は批判者の立場に近く、C（医療システムのみで解決）・D（ソーシャルメディアが最重要）は本文に記述がない。',
-    difficulty: 'advanced',
+    correctKey: 'B',
+    explanation:
+      'パッセージに "Independent contractors are generally not entitled to minimum wage protections, paid leave, or employer contributions to pension schemes" とあり、この分類によって企業が最低賃金保護・有給休暇・年金拠出などの義務を免れることが示されている。Bがこれに対応する。他の選択肢はパッセージに根拠がない。',
+    difficulty: 'standard',
   },
   {
     id: 'eiken_2kyu_049',
     level: '2kyu',
     category: 'reading',
-    question: 'Read the following passage and answer the question.\n\nThe relationship between economic growth and environmental sustainability has been a subject of intense scholarly and policy debate. For much of the twentieth century, growth was pursued with little regard for its environmental consequences, leading to widespread pollution, resource depletion, and ecosystem degradation. The dominant view today holds that economic growth and environmental protection need not be mutually exclusive — that technological innovation, efficiency improvements, and the development of cleaner production methods can allow economies to grow while reducing their environmental impact, a concept often described as "decoupling." Empirical evidence on decoupling, however, is mixed. While some countries have achieved relative decoupling — growing their economies while reducing the intensity of resource use per unit of output — absolute decoupling, in which total resource consumption and emissions actually decline as economies grow, has proved far more elusive. Critics argue that without absolute decoupling, continued economic growth will inevitably conflict with planetary boundaries, and that more radical changes to consumption patterns and economic systems may be necessary.\n\nWhat distinction does the passage make regarding the concept of "decoupling"?',
+    question: `Read the following passage and answer the question below.
+
+The rise of the gig economy — in which workers are hired on a short-term, task-by-task basis through digital platforms — has fundamentally altered traditional employment relationships. Companies such as food delivery services and ride-hailing platforms typically classify their workers as independent contractors rather than employees, a distinction that has significant legal and financial consequences. Independent contractors are generally not entitled to minimum wage protections, paid leave, or employer contributions to pension schemes. Proponents of the gig model argue that it offers workers flexibility and autonomy that traditional employment cannot match, allowing individuals to set their own hours and work for multiple platforms simultaneously. Opponents counter that this flexibility is largely illusory: platform algorithms closely monitor worker performance and can deactivate accounts — effectively terminating employment — without any of the procedural safeguards that apply in conventional workplaces. Several jurisdictions have moved to reclassify gig workers as employees, but these efforts have faced intense legal challenges from platform companies, which argue that mandatory reclassification would undermine the business model that makes affordable services possible.
+
+In the passage, the word "illusory" most nearly means:`,
     choices: [
-      { key: 'A', text: 'A difference between relative decoupling (using fewer resources per unit of output) and absolute decoupling (total resource use actually declining).' },
-      { key: 'B', text: 'A difference between decoupling in developed countries and decoupling in developing nations.' },
-      { key: 'C', text: 'A distinction between economic decoupling and social decoupling from environmental responsibilities.' },
-      { key: 'D', text: 'The difference between short-term and long-term decoupling strategies adopted by governments.' },
+      { key: 'A', text: 'desirable but difficult to achieve' },
+      { key: 'B', text: 'not as real or genuine as it appears' },
+      { key: 'C', text: 'causing confusion or misunderstanding' },
+      { key: 'D', text: 'legally prohibited under current regulations' },
     ],
-    correctKey: 'A',
-    explanation: '本文「相対的デカップリング（産出単位あたりの資源使用強度の低下）と絶対的デカップリング（総資源消費量の実際の減少）の区別」が明確に述べられており、Aが正解。B・C・Dはいずれも本文中に言及されていない区別。',
+    correctKey: 'B',
+    explanation:
+      '"illusory" は「幻想的な・見かけ上のものに過ぎない」という意味。パッセージでは「柔軟性は表面上のものに過ぎず、アルゴリズムによる監視とアカウント停止という現実がある」という文脈で使われており、Bの「見かけほど実質的・真実ではない」が最も正確。',
     difficulty: 'advanced',
   },
   {
     id: 'eiken_2kyu_050',
     level: '2kyu',
     category: 'reading',
-    question: "Read the following passage and answer the question.\n\nThe emergence of large language models and other forms of generative artificial intelligence has raised profound questions about the future of knowledge work. Tasks that once required years of professional training — drafting legal contracts, generating code, writing research summaries, or producing financial analyses — can now be accomplished in seconds by AI systems. This has led to widespread anxiety among professionals in fields ranging from law and medicine to journalism and software development. Economists disagree about the likely net effect on employment. Optimists argue, as they have in previous technological transitions, that new jobs will emerge to replace those displaced, and that productivity gains will raise overall living standards. Pessimists contend that this time may be different: that AI's cognitive capabilities are sufficiently broad and rapidly improving that many displaced workers will struggle to transition to new roles fast enough to avoid lasting economic hardship. The policy challenge is to prepare education and training systems, social safety nets, and labor market institutions for a future that remains deeply uncertain.\n\nWhat concern do pessimists raise about AI's impact on employment, according to the passage?",
+    question: `Read the following passage and answer the question below.
+
+The rise of the gig economy — in which workers are hired on a short-term, task-by-task basis through digital platforms — has fundamentally altered traditional employment relationships. Companies such as food delivery services and ride-hailing platforms typically classify their workers as independent contractors rather than employees, a distinction that has significant legal and financial consequences. Independent contractors are generally not entitled to minimum wage protections, paid leave, or employer contributions to pension schemes. Proponents of the gig model argue that it offers workers flexibility and autonomy that traditional employment cannot match, allowing individuals to set their own hours and work for multiple platforms simultaneously. Opponents counter that this flexibility is largely illusory: platform algorithms closely monitor worker performance and can deactivate accounts — effectively terminating employment — without any of the procedural safeguards that apply in conventional workplaces. Several jurisdictions have moved to reclassify gig workers as employees, but these efforts have faced intense legal challenges from platform companies, which argue that mandatory reclassification would undermine the business model that makes affordable services possible.
+
+What argument do platform companies make against mandatory reclassification of gig workers as employees?`,
     choices: [
-      { key: 'A', text: "That AI's wide-ranging cognitive abilities may displace workers faster than they can transition to new roles, causing lasting hardship." },
-      { key: 'B', text: 'That AI systems will completely eliminate the need for any form of human work within the next decade.' },
-      { key: 'C', text: 'That AI will primarily benefit workers in developing countries at the expense of those in wealthy nations.' },
-      { key: 'D', text: "That governments are planning to use AI to monitor and control workers' behavior in the workplace." },
+      {
+        key: 'A',
+        text: 'They claim that most gig workers prefer to remain independent contractors.',
+      },
+      {
+        key: 'B',
+        text: 'They argue that reclassification would make their services too expensive to be viable.',
+      },
+      {
+        key: 'C',
+        text: 'They insist that current labor laws already provide sufficient protection for gig workers.',
+      },
+      {
+        key: 'D',
+        text: 'They suggest that reclassification would eliminate the need for digital platforms entirely.',
+      },
     ],
-    correctKey: 'A',
-    explanation: '本文「AIの認知能力が広範かつ急速に向上しており、多くの代替された労働者が新たな役割に移行するのに十分な速さで対応できず、長期的な経済的困難を避けられない可能性がある」という悲観論者の主張がAの根拠。B（人間の仕事を完全排除）、C（先進国から途上国へ恩恵移転）、D（職場監視）はいずれも本文に記述がない。',
+    correctKey: 'B',
+    explanation:
+      'パッセージに "mandatory reclassification would undermine the business model that makes affordable services possible" とあり、再分類によってサービスの低価格維持が困難になるというのが企業側の主張。Bの「サービスが高コストになりすぎて成立しなくなる」がこれに最も対応する。Aはパッセージで言及されていない。',
     difficulty: 'advanced',
   },
 ];
