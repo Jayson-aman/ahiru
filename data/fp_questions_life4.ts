@@ -339,7 +339,7 @@ export const fpLifeQuestions4: FPQuestion[] = [
     ],
     correctKey: 'D' as const,
     explanation: '資本回収係数は「元本×資本回収係数＝毎年の受取額」として使う。老後に一定の元本を運用しながら毎年一定額を取り崩す場合の年間受取額を計算するために使用する。6つの係数：①終価係数②現価係数③年金終価係数④減債基金係数⑤年金現価係数⑥資本回収係数。',
-    difficulty: 'standard' as const,
+    difficulty: 'basic' as const,
     level: '3級' as const,
   },
   // ===================== 住宅ローン詳細（繰上返済・借換え計算） =====================
@@ -534,7 +534,7 @@ export const fpLifeQuestions4: FPQuestion[] = [
     ],
     correctKey: 'D' as const,
     explanation: '住宅取得等資金の贈与税非課税制度は、直系尊属（父母・祖父母等）からの住宅取得資金贈与について一定額が非課税になる制度。要件：①受贈者が18歳以上②受贈者の合計所得金額が2,000万円以下（床面積40㎡以上50㎡未満の場合は1,000万円以下）③贈与を受けた年の翌年3月15日までに住宅に居住等。省エネ住宅等要件を満たす場合に非課税限度額が高い。',
-    difficulty: 'standard' as const,
+    difficulty: 'advanced' as const,
     level: '2級' as const,
   },
   {
