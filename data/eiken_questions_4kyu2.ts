@@ -195,7 +195,7 @@ export const eikenQuestions4kyu2: EikenQuestion[] = [
     ],
     correctKey: 'C',
     explanation: '放課後に教室を「掃除する」はcleanです。日本の学校では生徒が掃除をする習慣があります。buildは「建てる」、breakは「壊す」です。',
-    difficulty: 'basic',
+    difficulty: 'standard',
   },
   {
     id: 'eiken_4kyu_064',
@@ -604,7 +604,7 @@ export const eikenQuestions4kyu2: EikenQuestion[] = [
     ],
     correctKey: 'A',
     explanation: 'Which do you prefer, A or B?（AとBどちらが好きですか？）にはI prefer A because ...（〜だから好きです）と答えます。',
-    difficulty: 'standard',
+    difficulty: 'advanced',
   },
   {
     id: 'eiken_4kyu_091',
