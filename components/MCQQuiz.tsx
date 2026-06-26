@@ -50,7 +50,7 @@ export default function MCQQuiz({ questions, accentColor = '#37474F', onComplete
   const handleNext = useCallback(() => {
     if (index + 1 >= questions.length) {
       setFinished(true);
-      onComplete?.(correctCount + (selected === q.correctKey ? 0 : 0), questions.length);
+      onComplete?.(correctCount, questions.length);
     } else {
       setIndex(i => i + 1);
       setSelected(null);
