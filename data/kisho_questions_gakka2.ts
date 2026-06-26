@@ -127,7 +127,7 @@ export const kishoGakka2: KishoQuestion[] = [
     ],
     correctKey: 'B',
     explanation: '赤外画像は放射輝度温度を可視化し、低温（雲頂高度が高い）ほど白く表示される。水蒸気画像（6〜7μm帯）は対流圏上・中層の水蒸気を反映し、雲のない領域でも水蒸気分布が把握できる。可視画像は夜間使用不可であるが赤外画像は昼夜問わず利用できる。',
-    difficulty: 'basic',
+    difficulty: 'standard',
     examYear: '令和3年',
   },
   {
@@ -191,7 +191,7 @@ export const kishoGakka2: KishoQuestion[] = [
     ],
     correctKey: 'B',
     explanation: 'ブライトバンドは融解層（0℃層付近）において融けかけの雪片が水膜に覆われ、大きな誘電率と粒径を持つことで高い反射強度を示す帯域である。層状性降水で顕著に現れ、Z-R関係による降水推定に過大誤差をもたらすため補正が必要である。',
-    difficulty: 'standard',
+    difficulty: 'advanced',
     examYear: '令和5年',
   },
 
@@ -645,7 +645,7 @@ export const kishoGakka2: KishoQuestion[] = [
     ],
     correctKey: 'B',
     explanation: '「顕著な大雨に関する気象情報」は2021年に気象庁が運用開始した情報で、線状降水帯による大雨がすでに顕著になっている実況を伝えるものである。大雨特別警報とは独立した情報であり、発表時は命を守る即時行動を呼びかける。',
-    difficulty: 'standard',
+    difficulty: 'advanced',
     examYear: '令和5年',
   },
 
@@ -839,7 +839,7 @@ export const kishoGakka2: KishoQuestion[] = [
     ],
     correctKey: 'B',
     explanation: '台風は海面からの潜熱供給をエネルギー源とするため、陸上に移動すると水蒸気供給が途絶えて衰弱する。温帯低気圧化は必ずしも勢力の低下を意味せず、再発達する場合もある。温帯低気圧化後も暴風雨が継続する場合があり、防災上の警戒継続が必要である。',
-    difficulty: 'standard',
+    difficulty: 'advanced',
     examYear: '令和5年',
   },
 
