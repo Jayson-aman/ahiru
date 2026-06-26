@@ -453,7 +453,6 @@ export const mansionUnei: MansionQuestion[] = [
     examYear: '令和3年',
   },
   {
-    id: 'mansion_unui_029',
     id: 'mansion_unei_029',
     subject: 'unei',
     subjectName: '管理組合の運営',

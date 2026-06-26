@@ -347,7 +347,7 @@ export const eikenQuestions4kyu2: EikenQuestion[] = [
     ],
     correctKey: 'A',
     explanation: 'school（学校）は三人称単数なのでdoesを使います。What time does ...?で「何時に〜しますか」と聞く疑問文です。',
-    difficulty: 'standard',
+    difficulty: 'advanced',
   },
   {
     id: 'eiken_4kyu_074',

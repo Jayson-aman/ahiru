@@ -676,10 +676,10 @@ export const eikenQuestions3kyu2: EikenQuestion[] = [
     choices: [
       { key: 'A', text: 'The school principal' },
       { key: 'B', text: 'The students themselves' },
-      { key: 'C', text: 'Nutrition experts' },
-      { key: 'D', text: 'Parents of the students' },
+      { key: 'C', text: 'Parents of the students' },
+      { key: 'D', text: 'Nutrition experts' },
     ],
-    correctKey: 'C',
+    correctKey: 'D',
     explanation: 'パッセージの3文目に「The meals are designed by nutritionists（食事は栄養士によって設計されている）」と書かれている。nutritionistsをNutrition expertsと言い換えている。校長・生徒・保護者が計画するとは書かれていない。',
     difficulty: 'standard',
   },
