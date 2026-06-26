@@ -1,4 +1,4 @@
-import React, { useState, useCallback } from 'react';
+import React, { useState, useCallback, useMemo } from 'react';
 import {
   View,
   Text,
@@ -28,14 +28,24 @@ type Props = {
 const CHOICE_KEYS: Array<'A' | 'B' | 'C' | 'D'> = ['A', 'B', 'C', 'D'];
 const CHOICE_COLORS = { A: '#1E5FBE', B: '#2E7D32', C: '#C62828', D: '#7B1FA2' };
 
+function shuffle<T>(arr: T[]): T[] {
+  const a = [...arr];
+  for (let i = a.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [a[i], a[j]] = [a[j], a[i]];
+  }
+  return a;
+}
+
 export default function MCQQuiz({ questions, accentColor = '#37474F', onComplete }: Props) {
+  const shuffled = useMemo(() => shuffle(questions), [questions]);
   const [index, setIndex] = useState(0);
   const [selected, setSelected] = useState<'A' | 'B' | 'C' | 'D' | null>(null);
   const [correctCount, setCorrectCount] = useState(0);
   const [finished, setFinished] = useState(false);
   const [wrongIds, setWrongIds] = useState<Set<string>>(new Set());
 
-  const q = questions[index];
+  const q = shuffled[index];
 
   const handleSelect = useCallback((key: 'A' | 'B' | 'C' | 'D') => {
     if (selected !== null) return;
@@ -48,14 +58,14 @@ export default function MCQQuiz({ questions, accentColor = '#37474F', onComplete
   }, [selected, q]);
 
   const handleNext = useCallback(() => {
-    if (index + 1 >= questions.length) {
+    if (index + 1 >= shuffled.length) {
       setFinished(true);
-      onComplete?.(correctCount, questions.length);
+      onComplete?.(correctCount, shuffled.length);
     } else {
       setIndex(i => i + 1);
       setSelected(null);
     }
-  }, [index, questions.length, correctCount, selected, q, onComplete]);
+  }, [index, shuffled.length, correctCount, selected, q, onComplete]);
 
   const restart = useCallback(() => {
     setIndex(0);
@@ -66,12 +76,12 @@ export default function MCQQuiz({ questions, accentColor = '#37474F', onComplete
   }, []);
 
   if (finished) {
-    const pct = Math.round((correctCount / questions.length) * 100);
+    const pct = Math.round((correctCount / shuffled.length) * 100);
     return (
       <ScrollView contentContainerStyle={styles.resultBox}>
         <Text style={styles.resultEmoji}>{pct >= 80 ? '🎉' : pct >= 60 ? '📚' : '💪'}</Text>
         <Text style={styles.resultTitle}>結果発表</Text>
-        <Text style={[styles.resultScore, { color: accentColor }]}>{correctCount} / {questions.length}問正解</Text>
+        <Text style={[styles.resultScore, { color: accentColor }]}>{correctCount} / {shuffled.length}問正解</Text>
         <Text style={styles.resultPct}>{pct}%</Text>
         <Text style={styles.resultMsg}>
           {pct >= 80 ? '素晴らしい！合格ラインを突破しています。' : pct >= 60 ? 'もう一息！苦手分野を復習しましょう。' : '基礎からしっかり復習しましょう。'}
@@ -89,7 +99,7 @@ export default function MCQQuiz({ questions, accentColor = '#37474F', onComplete
     <ScrollView style={styles.container} contentContainerStyle={styles.content}>
       {/* Progress */}
       <View style={styles.progressRow}>
-        <Text style={styles.progressText}>{index + 1} / {questions.length}</Text>
+        <Text style={styles.progressText}>{index + 1} / {shuffled.length}</Text>
         {q.difficulty && (
           <View style={[styles.diffBadge, { backgroundColor: q.difficulty === 'basic' ? '#2E7D32' : q.difficulty === 'standard' ? '#E65100' : '#C62828' }]}>
             <Text style={styles.diffText}>{q.difficulty === 'basic' ? '基礎' : q.difficulty === 'standard' ? '標準' : '応用'}</Text>
@@ -100,7 +110,7 @@ export default function MCQQuiz({ questions, accentColor = '#37474F', onComplete
 
       {/* Progress bar */}
       <View style={styles.progressBar}>
-        <View style={[styles.progressFill, { width: `${((index + 1) / questions.length) * 100}%`, backgroundColor: accentColor }]} />
+        <View style={[styles.progressFill, { width: `${((index + 1) / shuffled.length) * 100}%`, backgroundColor: accentColor }]} />
       </View>
 
       {/* Question */}
@@ -168,7 +178,7 @@ export default function MCQQuiz({ questions, accentColor = '#37474F', onComplete
       {/* Next button */}
       {answered && (
         <TouchableOpacity style={[styles.nextBtn, { backgroundColor: accentColor }]} onPress={handleNext}>
-          <Text style={styles.nextBtnText}>{index + 1 >= questions.length ? '結果を見る' : '次の問題 →'}</Text>
+          <Text style={styles.nextBtnText}>{index + 1 >= shuffled.length ? '結果を見る' : '次の問題 →'}</Text>
         </TouchableOpacity>
       )}
     </ScrollView>
