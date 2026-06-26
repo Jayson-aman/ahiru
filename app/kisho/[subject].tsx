@@ -1,0 +1,48 @@
+import React from 'react';
+import { View, Text, StyleSheet, SafeAreaView, TouchableOpacity } from 'react-native';
+import { useLocalSearchParams, useRouter } from 'expo-router';
+
+const INFO: Record<string, { name: string; emoji: string; color: string }> = {
+  gakka1:   { name: '予報業務に関する一般知識', emoji: '🌡️', color: '#1565C0' },
+  gakka2:   { name: '予報業務に関する専門知識', emoji: '🌀', color: '#0097A7' },
+  jitsumu:  { name: '実技試験',               emoji: '🗺️', color: '#2E7D32' },
+};
+
+export default function KishoSubjectScreen() {
+  const { subject } = useLocalSearchParams<{ subject: string }>();
+  const router = useRouter();
+  const info = INFO[subject ?? ''] ?? { name: subject, emoji: '🌤️', color: '#1565C0' };
+
+  return (
+    <SafeAreaView style={styles.safe}>
+      <View style={[styles.header, { backgroundColor: info.color }]}>
+        <TouchableOpacity onPress={() => router.back()} style={styles.back}>
+          <Text style={styles.backText}>← 戻る</Text>
+        </TouchableOpacity>
+        <Text style={styles.title}>{info.emoji} {info.name}</Text>
+      </View>
+      <View style={styles.body}>
+        <Text style={styles.emoji}>🚧</Text>
+        <Text style={styles.h}>問題データ作成中</Text>
+        <Text style={styles.t}>気象予報士 {info.name}の問題は{'\n'}現在作成中です。近日公開予定。</Text>
+        <TouchableOpacity style={[styles.btn, { backgroundColor: info.color }]} onPress={() => router.back()}>
+          <Text style={styles.btnText}>← 科目一覧に戻る</Text>
+        </TouchableOpacity>
+      </View>
+    </SafeAreaView>
+  );
+}
+
+const styles = StyleSheet.create({
+  safe: { flex: 1, backgroundColor: '#F5F7FA' },
+  header: { paddingHorizontal: 20, paddingVertical: 16 },
+  back: { marginBottom: 8 },
+  backText: { color: 'rgba(255,255,255,0.85)', fontSize: 14, fontWeight: '700' },
+  title: { fontSize: 18, fontWeight: '900', color: '#FFF' },
+  body: { flex: 1, alignItems: 'center', justifyContent: 'center', paddingHorizontal: 32 },
+  emoji: { fontSize: 64, marginBottom: 16 },
+  h: { fontSize: 20, fontWeight: '900', color: '#1A1A2E', marginBottom: 12 },
+  t: { fontSize: 14, color: '#666', textAlign: 'center', lineHeight: 22, marginBottom: 32 },
+  btn: { borderRadius: 14, paddingVertical: 14, paddingHorizontal: 32 },
+  btnText: { fontSize: 15, fontWeight: '800', color: '#FFF' },
+});

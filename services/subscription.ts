@@ -6,17 +6,29 @@ import Purchases, {
 } from 'react-native-purchases';
 import { Platform } from 'react-native';
 
-// Keys from .env (EXPO_PUBLIC_*) — see .env.example
 const RC_API_KEY_IOS =
   process.env.EXPO_PUBLIC_RC_API_KEY_IOS ?? 'appl_XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX';
 const RC_API_KEY_ANDROID =
   process.env.EXPO_PUBLIC_RC_API_KEY_ANDROID ?? 'goog_XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX';
 
+// SubscriptionTier: free shows 10 questions/subject; per-cert Pro unlocks full cert; max unlocks all
 export type SubscriptionTier = 'free' | 'pro' | 'max';
 
-// Must match entitlement identifiers set in the RevenueCat dashboard
-export const ENTITLEMENT_PRO = 'pro';
+// Certification keys — used as entitlement IDs in RevenueCat dashboard
+export type CertKey = 'takkei' | 'fp' | 'mansion' | 'kenchiku' | 'denken3';
+
+// RevenueCat entitlement identifiers (must match dashboard exactly)
+export const ENTITLEMENTS: Record<CertKey, string> = {
+  takkei:   'pro_takkei',
+  fp:       'pro_fp',
+  mansion:  'pro_mansion',
+  kenchiku: 'pro_kenchiku',
+  denken3:  'pro_denken3',
+};
 export const ENTITLEMENT_MAX = 'max';
+
+// Free-tier question limit per subject
+export const FREE_QUESTION_LIMIT = 10;
 
 export function initRevenueCat(): void {
   if (__DEV__) Purchases.setLogLevel(LOG_LEVEL.DEBUG);
@@ -29,8 +41,18 @@ export function initRevenueCat(): void {
 export function tierFromCustomerInfo(info: CustomerInfo): SubscriptionTier {
   const active = info.entitlements.active;
   if (ENTITLEMENT_MAX in active) return 'max';
-  if (ENTITLEMENT_PRO in active) return 'pro';
+  // If any per-cert entitlement is active, the user is at least 'pro'
+  for (const id of Object.values(ENTITLEMENTS)) {
+    if (id in active) return 'pro';
+  }
   return 'free';
+}
+
+/** Returns true if the user has full access to the given certification */
+export function hasCertAccess(info: CustomerInfo | null, cert: CertKey): boolean {
+  if (!info) return false;
+  const active = info.entitlements.active;
+  return ENTITLEMENT_MAX in active || ENTITLEMENTS[cert] in active;
 }
 
 export function getCustomerInfo(): Promise<CustomerInfo> {
