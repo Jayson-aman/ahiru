@@ -469,7 +469,7 @@ export const eikenQuestions4kyu: EikenQuestion[] = [
     ],
     correctKey: 'C',
     explanation: 'Would you like ～?（〜はいかがですか？）に対してYes, please.（はい、ください）が自然な返答です。No, I don\'t.やNo, it\'s not.は文法的にも不自然です。',
-    difficulty: 'basic',
+    difficulty: 'standard',
   },
   {
     id: 'eiken_4kyu_032',
@@ -484,7 +484,7 @@ export const eikenQuestions4kyu: EikenQuestion[] = [
     ],
     correctKey: 'D',
     explanation: 'What time ～?（何時に〜？）には時刻で答えます。It starts at seven.（7時に始まります）が正解です。映画の感想や場所を答えても質問に答えたことになりません。',
-    difficulty: 'basic',
+    difficulty: 'standard',
   },
   {
     id: 'eiken_4kyu_033',
@@ -499,7 +499,7 @@ export const eikenQuestions4kyu: EikenQuestion[] = [
     ],
     correctKey: 'B',
     explanation: 'How old are you?（何歳ですか？）には年齢で答えます。I\'m thirteen years old.が正解です。I\'m fine（体調）やMy birthday is in June（誕生月）は質問に答えていません。',
-    difficulty: 'basic',
+    difficulty: 'standard',
   },
   {
     id: 'eiken_4kyu_034',
@@ -514,7 +514,7 @@ export const eikenQuestions4kyu: EikenQuestion[] = [
     ],
     correctKey: 'B',
     explanation: 'Can I use ～?（〜を使っていいですか？）に対してSure, go ahead.（どうぞ）が自然な許可の返答です。I\'m a studentやYes, I use itは文脈に合いません。',
-    difficulty: 'basic',
+    difficulty: 'standard',
   },
   {
     id: 'eiken_4kyu_035',
@@ -529,7 +529,7 @@ export const eikenQuestions4kyu: EikenQuestion[] = [
     ],
     correctKey: 'C',
     explanation: 'How do you come to school?（どうやって学校に来ますか？）には交通手段を答えます。by bicycleで「自転車で」が正解です。毎日来るとか学校が楽しいは手段ではありません。',
-    difficulty: 'basic',
+    difficulty: 'standard',
   },
   {
     id: 'eiken_4kyu_036',
@@ -544,7 +544,7 @@ export const eikenQuestions4kyu: EikenQuestion[] = [
     ],
     correctKey: 'D',
     explanation: '兄弟姉妹がいないときはI\'m an only child.（一人っ子です）と言います。Yes, they are tall.は兄弟の説明としておかしく、I have a pet dogは質問に答えていません。',
-    difficulty: 'standard',
+    difficulty: 'advanced',
   },
   {
     id: 'eiken_4kyu_037',
@@ -559,7 +559,7 @@ export const eikenQuestions4kyu: EikenQuestion[] = [
     ],
     correctKey: 'B',
     explanation: 'What\'s the matter?（どうしたの？）という心配の言葉に、悲しそうな理由を答えるのが自然です。「お気に入りの消しゴムをなくした」が正解。楽しいや天気の話は文脈に合いません。',
-    difficulty: 'standard',
+    difficulty: 'advanced',
   },
   {
     id: 'eiken_4kyu_038',
@@ -574,7 +574,7 @@ export const eikenQuestions4kyu: EikenQuestion[] = [
     ],
     correctKey: 'D',
     explanation: 'Where did you go last weekend?（先週末どこへ行きましたか？）には過去形で場所を答えます。I went to the park with my family.が正解です。I go（現在形）は誤りです。',
-    difficulty: 'standard',
+    difficulty: 'advanced',
   },
   {
     id: 'eiken_4kyu_039',
@@ -589,7 +589,7 @@ export const eikenQuestions4kyu: EikenQuestion[] = [
     ],
     correctKey: 'C',
     explanation: 'Let\'s ～（〜しよう）という誘いにはThat sounds great!（いいね！）が自然な肯定の返答です。過去形のI went shoppingや現在進行形のI am shoppingは文脈に合いません。',
-    difficulty: 'standard',
+    difficulty: 'advanced',
   },
   {
     id: 'eiken_4kyu_040',
