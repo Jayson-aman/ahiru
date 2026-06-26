@@ -10,39 +10,6 @@ import {
 import { useRouter } from 'expo-router';
 import { LinearGradient } from 'expo-linear-gradient';
 
-const CATEGORIES = [
-  {
-    key: 'juken',
-    title: '中学受験',
-    subtitle: '算数・国語・理科・社会・英語',
-    meta: '250問以上 ／ 難易度3段階',
-    emoji: '📚',
-    colors: ['#1E5FBE', '#0D3D8A'] as [string, string],
-    route: '/juken',
-    badge: '灘・開成・甲陽',
-  },
-  {
-    key: 'kouko',
-    title: '高校受験',
-    subtitle: '5教科・公立〜難関校対策',
-    meta: '準備中 ／ 近日公開',
-    emoji: '🎓',
-    colors: ['#5B4B8A', '#3A2E6A'] as [string, string],
-    route: '/kouko',
-    badge: '公立・私立対応',
-  },
-  {
-    key: 'takkei',
-    title: '宅建試験',
-    subtitle: '権利関係・宅建業法・法令制限・税',
-    meta: '国家資格 ／ 本試験50問対応',
-    emoji: '🏠',
-    colors: ['#6B3210', '#4A2208'] as [string, string],
-    route: '/takkei',
-    badge: '合格率15〜17%',
-  },
-];
-
 export default function HomeScreen() {
   const router = useRouter();
 
@@ -54,31 +21,74 @@ export default function HomeScreen() {
       </LinearGradient>
 
       <ScrollView style={styles.scroll} contentContainerStyle={styles.content} showsVerticalScrollIndicator={false}>
-        <Text style={styles.sectionLabel}>カテゴリーを選んでください</Text>
+        {/* 受験対策 */}
+        <Text style={styles.sectionLabel}>📚 受験対策</Text>
+        <TouchableOpacity
+          style={styles.card}
+          onPress={() => router.push('/juken')}
+          activeOpacity={0.85}
+        >
+          <LinearGradient colors={['#1E5FBE', '#0D3D8A']} style={styles.cardGradient}>
+            <Text style={styles.cardEmoji}>📚</Text>
+            <View style={styles.cardBody}>
+              <Text style={styles.cardTitle}>受験対策</Text>
+              <Text style={styles.cardSubtitle}>中学受験・高校受験</Text>
+              <Text style={styles.cardMeta}>算数・国語・理科・社会・英語 ／ 250問以上</Text>
+            </View>
+            <Text style={styles.cardArrow}>›</Text>
+          </LinearGradient>
+        </TouchableOpacity>
 
-        {CATEGORIES.map((cat) => (
-          <TouchableOpacity
-            key={cat.key}
-            style={styles.card}
-            onPress={() => router.push(cat.route as any)}
-            activeOpacity={0.85}
-          >
-            <LinearGradient colors={cat.colors} style={styles.cardGradient}>
-              <Text style={styles.cardEmoji}>{cat.emoji}</Text>
-              <View style={styles.cardBody}>
-                <View style={styles.cardTitleRow}>
-                  <Text style={styles.cardTitle}>{cat.title}</Text>
-                  <View style={styles.cardBadge}>
-                    <Text style={styles.cardBadgeText}>{cat.badge}</Text>
-                  </View>
-                </View>
-                <Text style={styles.cardSubtitle}>{cat.subtitle}</Text>
-                <Text style={styles.cardMeta}>{cat.meta}</Text>
-              </View>
-              <Text style={styles.cardArrow}>›</Text>
-            </LinearGradient>
-          </TouchableOpacity>
-        ))}
+        {/* 資格試験 */}
+        <Text style={[styles.sectionLabel, { marginTop: 24 }]}>🎓 資格試験</Text>
+
+        <TouchableOpacity
+          style={styles.card}
+          onPress={() => router.push('/takkei')}
+          activeOpacity={0.85}
+        >
+          <LinearGradient colors={['#6B3210', '#4A2208']} style={styles.cardGradient}>
+            <Text style={styles.cardEmoji}>🏠</Text>
+            <View style={styles.cardBody}>
+              <Text style={styles.cardTitle}>宅建試験</Text>
+              <Text style={styles.cardSubtitle}>権利関係・宅建業法・法令制限・税</Text>
+              <Text style={styles.cardMeta}>国家資格 ／ 本試験50問対応</Text>
+            </View>
+            <Text style={styles.cardArrow}>›</Text>
+          </LinearGradient>
+        </TouchableOpacity>
+
+        <TouchableOpacity
+          style={styles.card}
+          onPress={() => router.push('/fp')}
+          activeOpacity={0.85}
+        >
+          <LinearGradient colors={['#0D7C3D', '#085C2D']} style={styles.cardGradient}>
+            <Text style={styles.cardEmoji}>💴</Text>
+            <View style={styles.cardBody}>
+              <Text style={styles.cardTitle}>FP試験</Text>
+              <Text style={styles.cardSubtitle}>ファイナンシャルプランナー 2・3級</Text>
+              <Text style={styles.cardMeta}>国家資格 ／ 1000問対応予定</Text>
+            </View>
+            <Text style={styles.cardArrow}>›</Text>
+          </LinearGradient>
+        </TouchableOpacity>
+
+        <TouchableOpacity
+          style={styles.card}
+          onPress={() => router.push('/mansion')}
+          activeOpacity={0.85}
+        >
+          <LinearGradient colors={['#7B1FA2', '#4A0072']} style={styles.cardGradient}>
+            <Text style={styles.cardEmoji}>🏢</Text>
+            <View style={styles.cardBody}>
+              <Text style={styles.cardTitle}>マンション管理士</Text>
+              <Text style={styles.cardSubtitle}>管理組合・区分所有法・設備管理</Text>
+              <Text style={styles.cardMeta}>国家資格 ／ 1000問対応予定</Text>
+            </View>
+            <Text style={styles.cardArrow}>›</Text>
+          </LinearGradient>
+        </TouchableOpacity>
 
         <View style={styles.footerNote}>
           <Text style={styles.footerNoteText}>
@@ -98,82 +108,39 @@ const styles = StyleSheet.create({
     paddingBottom: 32,
     alignItems: 'center',
   },
-  appTitle: {
-    fontSize: 22,
-    fontWeight: '900',
-    color: '#FFFFFF',
-    letterSpacing: 1,
-    marginBottom: 4,
-  },
-  appSubtitle: {
-    fontSize: 13,
-    color: 'rgba(255,255,255,0.75)',
-    fontWeight: '600',
-  },
+  appTitle: { fontSize: 22, fontWeight: '900', color: '#FFFFFF', letterSpacing: 1, marginBottom: 4 },
+  appSubtitle: { fontSize: 13, color: 'rgba(255,255,255,0.75)', fontWeight: '600' },
   scroll: { flex: 1 },
-  content: { paddingHorizontal: 20, paddingTop: 28, paddingBottom: 40 },
+  content: { paddingHorizontal: 20, paddingTop: 24, paddingBottom: 40 },
   sectionLabel: {
-    fontSize: 13,
-    fontWeight: '700',
-    color: '#888',
-    textAlign: 'center',
-    marginBottom: 20,
-    letterSpacing: 1,
+    fontSize: 14,
+    fontWeight: '800',
+    color: '#1B2A5C',
+    marginBottom: 12,
+    letterSpacing: 0.5,
   },
   card: {
-    borderRadius: 20,
-    marginBottom: 14,
+    borderRadius: 18,
+    marginBottom: 12,
     shadowColor: '#000',
-    shadowOffset: { width: 0, height: 6 },
-    shadowOpacity: 0.18,
-    shadowRadius: 12,
-    elevation: 6,
+    shadowOffset: { width: 0, height: 4 },
+    shadowOpacity: 0.15,
+    shadowRadius: 10,
+    elevation: 5,
   },
   cardGradient: {
-    borderRadius: 20,
-    padding: 20,
+    borderRadius: 18,
+    padding: 18,
     flexDirection: 'row',
     alignItems: 'center',
     gap: 14,
   },
-  cardEmoji: { fontSize: 38 },
+  cardEmoji: { fontSize: 36 },
   cardBody: { flex: 1 },
-  cardTitleRow: { flexDirection: 'row', alignItems: 'center', gap: 8, marginBottom: 4 },
-  cardTitle: { fontSize: 20, fontWeight: '900', color: '#FFFFFF' },
-  cardBadge: {
-    backgroundColor: 'rgba(255,255,255,0.2)',
-    paddingHorizontal: 8,
-    paddingVertical: 2,
-    borderRadius: 8,
-  },
-  cardBadgeText: { fontSize: 10, color: '#FFFFFF', fontWeight: '700' },
-  cardSubtitle: {
-    fontSize: 12,
-    color: 'rgba(255,255,255,0.85)',
-    fontWeight: '600',
-    marginBottom: 3,
-  },
-  cardMeta: {
-    fontSize: 11,
-    color: 'rgba(255,255,255,0.6)',
-    fontWeight: '500',
-  },
-  cardArrow: {
-    fontSize: 32,
-    color: 'rgba(255,255,255,0.4)',
-    fontWeight: '300',
-  },
-  footerNote: {
-    backgroundColor: '#EEF4FF',
-    borderRadius: 12,
-    padding: 14,
-    marginTop: 8,
-  },
-  footerNoteText: {
-    fontSize: 12,
-    color: '#1E5FBE',
-    fontWeight: '600',
-    lineHeight: 18,
-    textAlign: 'center',
-  },
+  cardTitle: { fontSize: 18, fontWeight: '900', color: '#FFFFFF', marginBottom: 3 },
+  cardSubtitle: { fontSize: 12, color: 'rgba(255,255,255,0.85)', fontWeight: '600', marginBottom: 2 },
+  cardMeta: { fontSize: 11, color: 'rgba(255,255,255,0.6)', fontWeight: '500' },
+  cardArrow: { fontSize: 28, color: 'rgba(255,255,255,0.4)' },
+  footerNote: { backgroundColor: '#EEF4FF', borderRadius: 12, padding: 14, marginTop: 12 },
+  footerNoteText: { fontSize: 12, color: '#1E5FBE', fontWeight: '600', lineHeight: 18, textAlign: 'center' },
 });
