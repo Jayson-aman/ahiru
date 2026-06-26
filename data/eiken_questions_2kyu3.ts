@@ -738,16 +738,16 @@ export const eikenQuestions2kyu3: EikenQuestion[] = [
   {
     id: 'eiken_2kyu_150',
     level: '2kyu' as const,
-    category: 'grammar' as const,
-    question: 'By the time the guests arrived, she ( ) preparing dinner for two hours.',
+    category: 'dialogue' as const,
+    question: "A: I've been reading about the new environmental regulations. Do you think they'll actually make a difference? B: ( ) Without strong enforcement, even the best policies can fail.",
     choices: [
-      { key: 'A', text: 'had been' },
-      { key: 'B', text: 'has been' },
-      { key: 'C', text: 'was' },
-      { key: 'D', text: 'would be' },
+      { key: 'A', text: "It depends on how strictly they're enforced." },
+      { key: 'B', text: "I haven't read anything about the regulations." },
+      { key: 'C', text: 'Regulations are always very effective.' },
+      { key: 'D', text: "I don't think the environment matters much." },
     ],
     correctKey: 'A' as const,
-    explanation: '"By the time + 過去形" の文では、それより前から続いていた動作を表すために過去完了進行形 "had been + 動詞-ing" を使います。「ゲストが到着した時点まで2時間夕食の準備をし続けていた」という意味です。"has been" は現在完了進行形なので過去の文に使えません。',
+    explanation: 'Bの後半「強制力なしには最善の政策も失敗しうる」という内容から、前半は施行の厳格さ次第だという条件付きの見解を示しているはずです。"It depends on how strictly they\'re enforced."（どれだけ厳格に施行されるかによる）が最も自然につながります。',
     difficulty: 'advanced' as const,
   },
 ];
