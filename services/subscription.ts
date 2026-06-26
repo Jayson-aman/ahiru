@@ -28,14 +28,15 @@ export const ENTITLEMENTS: Record<CertKey, string> = {
 };
 
 // Pricing constants (display only — real prices are set in RevenueCat/App Store)
+// App Store Japan pricing tiers are ¥1,000 increments
 export const PRICING = {
   /** Per-certification Pro plan */
-  proMonthly: '¥1,980/月',
-  proYearly:  '¥19,800/年',
+  proMonthly: '¥2,000/月',
+  proYearly:  '¥20,000/年',
   proYearlySavings: '17%OFF',
   /** All-certs Max plan */
-  maxMonthly: '¥4,980/月',
-  maxYearly:  '¥39,800/年',
+  maxMonthly: '¥5,000/月',
+  maxYearly:  '¥40,000/年',
   maxYearlySavings: '33%OFF',
 } as const;
 export const ENTITLEMENT_MAX = 'max';
