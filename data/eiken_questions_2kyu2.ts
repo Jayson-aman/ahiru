@@ -749,11 +749,11 @@ export const eikenQuestions2kyu2: EikenQuestion[] = [
     choices: [
       { key: 'A', text: 'It is causing widespread extinction of marine species in tropical ocean regions.' },
       { key: 'B', text: 'It is leading to the collapse of Arctic ecosystems that supply food to the world.' },
-      { key: 'C', text: 'It may be contributing to more frequent and severe weather events at lower latitudes.' },
-      { key: 'D', text: 'It is accelerating the melting of glaciers in Antarctica at an equal rate.' },
+      { key: 'C', text: 'It is accelerating the melting of glaciers in Antarctica at an equal rate.' },
+      { key: 'D', text: 'It may be contributing to more frequent and severe weather events at lower latitudes.' },
     ],
-    correctKey: 'C',
-    explanation: '本文に"Shifts in Arctic conditions are also altering atmospheric circulation patterns, which some scientists link to more frequent and severe weather events at lower latitudes, including prolonged droughts, intense cold spells, and heavy flooding"とあり、低緯度地域での異常気象の増加という世界的影響をCが正確に反映している。A・B・Dは本文に記載されていない。',
+    correctKey: 'D',
+    explanation: '本文に"Shifts in Arctic conditions are also altering atmospheric circulation patterns, which some scientists link to more frequent and severe weather events at lower latitudes, including prolonged droughts, intense cold spells, and heavy flooding"とあり、低緯度地域での異常気象の増加という世界的影響をDが正確に反映している。A・B・Cは本文に記載されていない。',
     difficulty: 'advanced',
   },
 ];
