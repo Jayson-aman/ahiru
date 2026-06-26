@@ -320,3 +320,4 @@ export const takkeiKenri4: TakkeiQuestion[] = [
     difficulty: 'advanced' as const,
     examYear: 'H29',
   },
+];
