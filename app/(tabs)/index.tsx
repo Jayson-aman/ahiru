@@ -15,8 +15,23 @@ export default function HomeScreen() {
 
       <ScrollView style={styles.scroll} contentContainerStyle={styles.content} showsVerticalScrollIndicator={false}>
 
+        {/* 語学 */}
+        <Text style={styles.sectionLabel}>🇬🇧 語学・英語</Text>
+
+        <TouchableOpacity style={styles.card} onPress={() => router.push('/eiken')} activeOpacity={0.85}>
+          <LinearGradient colors={['#7B1FA2', '#4A0072']} style={styles.cardGradient}>
+            <Text style={styles.cardEmoji}>🇬🇧</Text>
+            <View style={styles.cardBody}>
+              <Text style={styles.cardTitle}>英検対策</Text>
+              <Text style={styles.cardSubtitle}>2級・3級・4級 ネイティブ品質問題</Text>
+              <Text style={styles.cardMeta}>語彙・文法・読解・対話 ／ 各50問以上</Text>
+            </View>
+            <Text style={styles.cardArrow}>›</Text>
+          </LinearGradient>
+        </TouchableOpacity>
+
         {/* 受験対策 */}
-        <Text style={styles.sectionLabel}>📚 受験対策</Text>
+        <Text style={[styles.sectionLabel, { marginTop: 12 }]}>📚 受験対策</Text>
         <TouchableOpacity style={styles.card} onPress={() => router.push('/juken')} activeOpacity={0.85}>
           <LinearGradient colors={['#1E5FBE', '#0D3D8A']} style={styles.cardGradient}>
             <Text style={styles.cardEmoji}>📚</Text>
