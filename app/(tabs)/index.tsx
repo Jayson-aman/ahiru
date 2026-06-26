@@ -24,7 +24,7 @@ export default function HomeScreen() {
             <View style={styles.cardBody}>
               <Text style={styles.cardTitle}>英検対策</Text>
               <Text style={styles.cardSubtitle}>2級・3級・4級 ネイティブ品質問題</Text>
-              <Text style={styles.cardMeta}>語彙・文法・読解・対話 ／ 各50問以上</Text>
+              <Text style={styles.cardMeta}>語彙・文法・読解・対話 ／ 各150問収録</Text>
             </View>
             <Text style={styles.cardArrow}>›</Text>
           </LinearGradient>
