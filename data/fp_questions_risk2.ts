@@ -269,7 +269,7 @@ export const fpRiskQuestions2: FPQuestion[] = [
     ],
     correctKey: 'B' as const,
     explanation: '2017年1月1日以降、地震保険の損害認定区分は「全損（保険金額の100%）」「大半損（60%）」「小半損（30%）」「一部損（5%）」の4段階。それ以前は全損・半損・一部損の3区分だった。',
-    difficulty: 'standard' as const,
+    difficulty: 'basic' as const,
     level: '3級' as const,
   },
   {
