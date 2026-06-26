@@ -520,13 +520,13 @@ export const eikenQuestions2kyu2: EikenQuestion[] = [
     category: 'grammar',
     question: 'Choose the best answer to complete the sentence.\n\nThe new safety regulations will make all employees ( ) a mandatory training course before operating heavy equipment.',
     choices: [
-      { key: 'A', text: 'to complete' },
+      { key: 'A', text: 'complete' },
       { key: 'B', text: 'completing' },
-      { key: 'C', text: 'complete' },
+      { key: 'C', text: 'to complete' },
       { key: 'D', text: 'completed' },
     ],
-    correctKey: 'C',
-    explanation: '"make + 目的語 + 動詞の原形"は使役構文で「（強制的に）～させる」の意味。makeの後の目的語には原形不定詞（to なし）が続く。「全従業員に研修を受けさせる」という意味でcompleteが正解。to complete（toが不要）、completing（分詞）、completed（過去分詞）は不適切。',
+    correctKey: 'A',
+    explanation: '"make + 目的語 + 動詞の原形"は使役構文で「（強制的に）～させる」の意味。makeの後の目的語には原形不定詞（to なし）が続く。「全従業員に研修を受けさせる」という意味でcompleteが正解。completing（分詞）、to complete（toが不要）、completed（過去分詞）は不適切。',
     difficulty: 'standard',
   },
 
