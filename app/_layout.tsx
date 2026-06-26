@@ -28,6 +28,9 @@ export default function RootLayout() {
         <Stack.Screen name="fp/[subject]" options={{ headerShown: false, presentation: 'card' }} />
         <Stack.Screen name="mansion/index" options={{ headerShown: false, presentation: 'card' }} />
         <Stack.Screen name="mansion/[subject]" options={{ headerShown: false, presentation: 'card' }} />
+        <Stack.Screen name="kenchiku/index" options={{ headerShown: false, presentation: 'card' }} />
+        <Stack.Screen name="kenchiku/quiz/[subject]" options={{ headerShown: false, presentation: 'card' }} />
+        <Stack.Screen name="kenchiku/text/[subject]" options={{ headerShown: false, presentation: 'card' }} />
         <Stack.Screen name="takkei/index" options={{ headerShown: false, presentation: 'card' }} />
         <Stack.Screen name="takkei/[subject]" options={{ headerShown: false, presentation: 'card' }} />
         <Stack.Screen

@@ -90,6 +90,22 @@ export default function HomeScreen() {
           </LinearGradient>
         </TouchableOpacity>
 
+        <TouchableOpacity
+          style={styles.card}
+          onPress={() => router.push('/kenchiku')}
+          activeOpacity={0.85}
+        >
+          <LinearGradient colors={['#37474F', '#1C2B33']} style={styles.cardGradient}>
+            <Text style={styles.cardEmoji}>🏛️</Text>
+            <View style={styles.cardBody}>
+              <Text style={styles.cardTitle}>建築設備士</Text>
+              <Text style={styles.cardSubtitle}>空調・給排水・電気・法規・構造</Text>
+              <Text style={styles.cardMeta}>国家資格 ／ 1200問＋テキスト収録予定</Text>
+            </View>
+            <Text style={styles.cardArrow}>›</Text>
+          </LinearGradient>
+        </TouchableOpacity>
+
         <View style={styles.footerNote}>
           <Text style={styles.footerNoteText}>
             🎧 聞き流しモードは各科目ページの 🎧 ボタンから利用できます（Pro機能）
