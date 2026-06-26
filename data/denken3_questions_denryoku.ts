@@ -510,7 +510,7 @@ export const denken3Denryoku: Denken3Question[] = [
     ],
     correctKey: 'B',
     explanation: '高調波フィルタには、LC共振回路を用いたパッシブフィルタ（受動型）と、PWMインバータを用いたアクティブフィルタ（能動型）がある。パッシブフィルタは特定次数に同調して高調波を吸収し、アクティブフィルタは検出した高調波と逆位相の電流を注入して打ち消す。現代の高調波主発生源はパワーエレクトロニクス機器（インバータエアコン、UPS、電気炉など）。',
-    difficulty: 'standard',
+    difficulty: 'advanced',
     examYear: '令和3年',
   },
   {
