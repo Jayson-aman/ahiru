@@ -2,12 +2,14 @@ import type { SekokanQuestion } from './types';
 export type { SekokanQuestion };
 
 import { sekokanKisoQuestions } from './kiso-questions';
+import { sekokanKiso2Questions } from './kiso2-questions';
 import { sekokanOuyouQuestions } from './ouyou-questions';
 import { sekokanMogiPart1 } from './mogi-part1';
 import { sekokanMogiPart2 } from './mogi-part2';
 
 export const sekokanQuestions: SekokanQuestion[] = [
   ...sekokanKisoQuestions,
+  ...sekokanKiso2Questions,
   ...sekokanOuyouQuestions,
 ];
 
