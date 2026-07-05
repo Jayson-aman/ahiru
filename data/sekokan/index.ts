@@ -5,6 +5,7 @@ import { sekokanKisoQuestions } from './kiso-questions';
 import { sekokanKiso2Questions } from './kiso2-questions';
 import { sekokanOuyouQuestions } from './ouyou-questions';
 import { sekokanOuyou2Questions } from './ouyou2-questions';
+import { sekokanKoshuQuestions } from './koshu-questions';
 import { sekokanMogiPart1 } from './mogi-part1';
 import { sekokanMogiPart2 } from './mogi-part2';
 
@@ -13,6 +14,7 @@ export const sekokanQuestions: SekokanQuestion[] = [
   ...sekokanKiso2Questions,
   ...sekokanOuyouQuestions,
   ...sekokanOuyou2Questions,
+  ...sekokanKoshuQuestions,
 ];
 
 // 模擬試験（本試験形式50問）
