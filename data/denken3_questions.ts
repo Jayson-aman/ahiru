@@ -17,6 +17,7 @@ import { denken3Denryoku2 } from './denken3_questions_denryoku2';
 import { denken3Kikai } from './denken3_questions_kikai';
 import { denken3Kikai2 } from './denken3_questions_kikai2';
 import { denken3Houki } from './denken3_questions_houki';
+import { denken3Houki2 } from './denken3_questions_houki2';
 
 export const denken3Questions: Denken3Question[] = [
   ...denken3Rikigaku,
@@ -26,4 +27,5 @@ export const denken3Questions: Denken3Question[] = [
   ...denken3Kikai,
   ...denken3Kikai2,
   ...denken3Houki,
+  ...denken3Houki2,
 ];
