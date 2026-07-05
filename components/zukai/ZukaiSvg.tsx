@@ -8,13 +8,13 @@ export const C = {
   gray: '#607D8B', dark: '#1A2A44', light: '#90A4AE',
 };
 
-const box = { width: '100%' as const, aspectRatio: undefined as number | undefined };
+const box = { width: '100%' as const, height: '100%' as const };
 
 function Wrap({ children, ratio = 1.8, title }: { children: React.ReactNode; ratio?: number; title?: string }) {
   return (
     <View style={s.wrap}>
       {title ? <Text style={s.title}>📐 {title}</Text> : null}
-      <View style={{ width: '100%', aspectRatio: ratio }}>{children}</View>
+      <View style={{ width: '100%', maxWidth: 420, alignSelf: 'center', aspectRatio: ratio }}>{children}</View>
     </View>
   );
 }
