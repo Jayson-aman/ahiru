@@ -53,6 +53,22 @@ export default function MansionScreen() {
           <Text style={[styles.subjectArrow, { color: 'rgba(255,255,255,0.7)' }]}>›</Text>
         </TouchableOpacity>
 
+        <TouchableOpacity
+          style={styles.textCard}
+          onPress={() => router.push('/mansion/text' as any)}
+          activeOpacity={0.85}
+        >
+          <View style={[styles.subjectIcon, { backgroundColor: '#4A0072' }]}>
+            <Text style={styles.subjectEmoji}>📖</Text>
+          </View>
+          <View style={styles.subjectBody}>
+            <Text style={styles.subjectName}>テキスト（要点整理）</Text>
+            <Text style={styles.subjectDesc}>決議要件・数値基準を図解と比較表で整理</Text>
+            <Text style={[styles.subjectMeta, { color: '#7B1FA2' }]}>全12章収録</Text>
+          </View>
+          <Text style={styles.subjectArrow}>›</Text>
+        </TouchableOpacity>
+
         <Text style={styles.sectionTitle}>科目を選んでスタート！</Text>
 
         {MANSION_SUBJECTS.map((subject) => (
@@ -116,6 +132,22 @@ const styles = StyleSheet.create({
     gap: 14,
   },
   subjectIcon: { width: 56, height: 56, borderRadius: 16, alignItems: 'center', justifyContent: 'center' },
+  textCard: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    backgroundColor: '#FFFFFF',
+    borderRadius: 16,
+    padding: 16,
+    marginBottom: 20,
+    borderWidth: 2,
+    borderColor: '#7B1FA2',
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.08,
+    shadowRadius: 8,
+    elevation: 3,
+    gap: 14,
+  },
   honshikenCard: {
     flexDirection: 'row',
     alignItems: 'center',
