@@ -22,10 +22,18 @@ const EXAM_MODES = [
   {
     key: 'honshiken',
     label: '本試験問題',
-    desc: '令和3〜5年 実際の過去問に挑戦',
+    desc: '令和元〜5年 過去問5年分に挑戦',
     emoji: '📜',
     color: '#1A237E',
     route: '/takkei/honshiken',
+  },
+  {
+    key: 'text',
+    label: 'テキスト',
+    desc: '4科目の要点整理・図解付き',
+    emoji: '📖',
+    color: '#2E7D32',
+    route: '/takkei/text',
   },
 ];
 
