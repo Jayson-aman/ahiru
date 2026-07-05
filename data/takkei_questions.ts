@@ -11,6 +11,7 @@ export type TakkeiQuestion = {
 };
 
 import { takkeiKenri1 } from './takkei_questions_kenri_1';
+import { takkeiKosuToukei } from './takkei_questions_kosu_toukei';
 import { takkeiKenri2 } from './takkei_questions_kenri_2';
 import { takkeiKenri3 } from './takkei_questions_kenri_3';
 import { takkeiKenri4 } from './takkei_questions_kenri_4';
@@ -34,6 +35,7 @@ import { takkeiZei5 } from './takkei_questions_zei5';
 import { takkeiZei6 } from './takkei_questions_zei6';
 
 export const takkeiQuestions: TakkeiQuestion[] = [
+  ...takkeiKosuToukei,
   ...takkeiKenri1,
   ...takkeiKenri2,
   ...takkeiKenri3,
