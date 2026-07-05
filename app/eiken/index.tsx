@@ -18,7 +18,7 @@ const LEVELS = [
     cefr: 'CEFR B1–B2',
     target: '高校卒業レベル',
     topics: ['社会問題・環境・科学・文化', '長文読解・エッセイ', '高度な語彙・文法'],
-    questionCount: 150,
+    questionCount: 160,
   },
   {
     key: '3kyu',
@@ -30,7 +30,7 @@ const LEVELS = [
     cefr: 'CEFR A2',
     target: '中学卒業レベル',
     topics: ['日常会話・対話文', '短文読解・Eメール', '基礎文法・語彙'],
-    questionCount: 150,
+    questionCount: 160,
   },
   {
     key: '4kyu',
@@ -42,7 +42,7 @@ const LEVELS = [
     cefr: 'CEFR A1',
     target: '中学中間レベル',
     topics: ['基礎語彙・短い対話', '簡単な文法', '身近なトピック'],
-    questionCount: 150,
+    questionCount: 160,
   },
 ];
 
@@ -75,6 +75,19 @@ export default function EikenScreen() {
 
         <ScrollView style={styles.scroll} contentContainerStyle={styles.content} showsVerticalScrollIndicator={false}>
           <Text style={styles.sectionTitle}>級を選んでスタート！</Text>
+
+          <TouchableOpacity
+            style={{ backgroundColor: '#4A0072', borderRadius: 16, padding: 16, marginBottom: 16, flexDirection: 'row', alignItems: 'center', gap: 12 }}
+            onPress={() => router.push('/eiken/taisaku' as any)}
+            activeOpacity={0.85}
+          >
+            <Text style={{ fontSize: 26 }}>🎯</Text>
+            <View style={{ flex: 1 }}>
+              <Text style={{ fontSize: 15, fontWeight: '800', color: '#FFF', marginBottom: 2 }}>二次試験・ライティング対策</Text>
+              <Text style={{ fontSize: 11, color: 'rgba(255,255,255,0.75)', fontWeight: '500' }}>面接の流れと解答の型・英作文テンプレ・級別重要文法</Text>
+            </View>
+            <Text style={{ fontSize: 24, color: 'rgba(255,255,255,0.6)' }}>›</Text>
+          </TouchableOpacity>
 
           {LEVELS.map(level => (
             <TouchableOpacity
