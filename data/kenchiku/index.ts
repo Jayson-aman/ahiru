@@ -14,10 +14,17 @@ import { kyuhaisuiQuestionsPart3a } from './kyuhaisui-questions-part3a';
 import { kyuhaisuiQuestionsPart3b } from './kyuhaisui-questions-part3b';
 import { denkiQuestionsPart1 } from './denki-questions-part1';
 import { denkiQuestionsPart2 } from './denki-questions-part2';
+import { bousaiQuestions } from './bousai-questions';
+
+const SUBJECT_ALIASES: Record<string, string> = {
+  '給排水衛生設備': 'kyuhaisui',
+  '消火・ガス設備': 'bousai',
+  '電気設備': 'denki',
+};
 
 const normalize = (q: KenchikuQuestion): KenchikuQuestion => ({
   ...q,
-  subject: q.subject === '給排水衛生設備' ? 'kyuhaisui' : q.subject,
+  subject: SUBJECT_ALIASES[q.subject] ?? q.subject,
 });
 
 export const kenchikuQuestions: KenchikuQuestion[] = [
@@ -34,4 +41,5 @@ export const kenchikuQuestions: KenchikuQuestion[] = [
   ...kyuhaisuiQuestionsPart3b,
   ...denkiQuestionsPart1,
   ...denkiQuestionsPart2,
+  ...bousaiQuestions,
 ].map(normalize);

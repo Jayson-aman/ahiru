@@ -10,7 +10,7 @@ import {
 import { useRouter } from 'expo-router';
 import { LinearGradient } from 'expo-linear-gradient';
 
-type Mode = 'mondai' | 'text';
+type Mode = 'kiso' | 'ouyou' | 'text';
 
 const SUBJECTS = [
   {
@@ -71,7 +71,7 @@ const SUBJECTS = [
 
 export default function KenchikuScreen() {
   const router = useRouter();
-  const [mode, setMode] = React.useState<Mode>('mondai');
+  const [mode, setMode] = React.useState<Mode>('kiso');
 
   const totalQuestions = SUBJECTS.reduce((sum, s) => sum + s.examCount, 0);
 
@@ -92,11 +92,19 @@ export default function KenchikuScreen() {
         {/* モード切替 */}
         <View style={styles.modeRow}>
           <TouchableOpacity
-            style={[styles.modeBtn, mode === 'mondai' && styles.modeBtnActive]}
-            onPress={() => setMode('mondai')}
+            style={[styles.modeBtn, mode === 'kiso' && styles.modeBtnActive]}
+            onPress={() => setMode('kiso')}
           >
-            <Text style={[styles.modeBtnText, mode === 'mondai' && styles.modeBtnTextActive]}>
-              📝 問題演習
+            <Text style={[styles.modeBtnText, mode === 'kiso' && styles.modeBtnTextActive]}>
+              📝 基礎問題
+            </Text>
+          </TouchableOpacity>
+          <TouchableOpacity
+            style={[styles.modeBtn, mode === 'ouyou' && styles.modeBtnActive]}
+            onPress={() => setMode('ouyou')}
+          >
+            <Text style={[styles.modeBtnText, mode === 'ouyou' && styles.modeBtnTextActive]}>
+              🔥 応用問題
             </Text>
           </TouchableOpacity>
           <TouchableOpacity
@@ -111,8 +119,35 @@ export default function KenchikuScreen() {
       </LinearGradient>
 
       <ScrollView style={styles.scroll} contentContainerStyle={styles.content} showsVerticalScrollIndicator={false}>
+        {/* 試験対策メニュー */}
+        <TouchableOpacity
+          style={styles.mogiCard}
+          onPress={() => router.push('/kenchiku/mogi' as any)}
+          activeOpacity={0.85}
+        >
+          <View style={styles.mogiIcon}><Text style={styles.subjectEmoji}>🎯</Text></View>
+          <View style={styles.subjectBody}>
+            <Text style={styles.mogiTitle}>模擬試験（本試験形式）</Text>
+            <Text style={styles.mogiDesc}>全50問・タイマー付き・全科目横断</Text>
+          </View>
+          <Text style={[styles.subjectArrow, { color: 'rgba(255,255,255,0.7)' }]}>›</Text>
+        </TouchableOpacity>
+
+        <TouchableOpacity
+          style={styles.seizuCard}
+          onPress={() => router.push('/kenchiku/seizu' as any)}
+          activeOpacity={0.85}
+        >
+          <View style={styles.seizuIcon}><Text style={styles.subjectEmoji}>📐</Text></View>
+          <View style={styles.subjectBody}>
+            <Text style={styles.mogiTitle}>第二次試験（設計製図）対策ガイド</Text>
+            <Text style={styles.mogiDesc}>試験内容・必要な道具・勉強法を解説</Text>
+          </View>
+          <Text style={[styles.subjectArrow, { color: 'rgba(255,255,255,0.7)' }]}>›</Text>
+        </TouchableOpacity>
+
         <Text style={styles.sectionTitle}>
-          {mode === 'mondai' ? '科目を選んで演習スタート' : '科目を選んでテキストを読む'}
+          {mode === 'text' ? '科目を選んでテキストを読む' : mode === 'kiso' ? '科目を選んで基礎問題スタート' : '科目を選んで応用問題スタート'}
         </Text>
 
         {SUBJECTS.map((subject) => (
@@ -121,9 +156,9 @@ export default function KenchikuScreen() {
             style={styles.subjectCard}
             onPress={() =>
               router.push(
-                mode === 'mondai'
-                  ? (`/kenchiku/quiz/${subject.key}` as any)
-                  : (`/kenchiku/text/${subject.key}` as any)
+                mode === 'text'
+                  ? (`/kenchiku/text/${subject.key}` as any)
+                  : (`/kenchiku/quiz/${subject.key}?level=${mode}` as any)
               )
             }
             activeOpacity={0.85}
@@ -134,13 +169,13 @@ export default function KenchikuScreen() {
             <View style={styles.subjectBody}>
               <Text style={styles.subjectName}>{subject.name}</Text>
               <Text style={styles.subjectDesc}>{subject.desc}</Text>
-              {mode === 'mondai' ? (
+              {mode === 'text' ? (
                 <Text style={[styles.subjectMeta, { color: subject.color }]}>
-                  本試験 {subject.examCount}問 ／ 収録問題 準備中
+                  {subject.textSections.length}セクション収録
                 </Text>
               ) : (
                 <Text style={[styles.subjectMeta, { color: subject.color }]}>
-                  {subject.textSections.length}セクション収録
+                  本試験 {subject.examCount}問出題 ／ {mode === 'kiso' ? '基礎レベル' : '本試験レベル'}
                 </Text>
               )}
             </View>
@@ -187,6 +222,28 @@ const styles = StyleSheet.create({
   },
   subjectIcon: { width: 56, height: 56, borderRadius: 16, alignItems: 'center', justifyContent: 'center' },
   subjectEmoji: { fontSize: 26 },
+  mogiCard: {
+    flexDirection: 'row', alignItems: 'center', backgroundColor: '#1C2B33',
+    borderRadius: 16, padding: 16, marginBottom: 12,
+    shadowColor: '#000', shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.15, shadowRadius: 8, elevation: 3, gap: 14,
+  },
+  mogiIcon: {
+    width: 56, height: 56, borderRadius: 16, alignItems: 'center', justifyContent: 'center',
+    backgroundColor: 'rgba(255,255,255,0.15)',
+  },
+  seizuCard: {
+    flexDirection: 'row', alignItems: 'center', backgroundColor: '#455A64',
+    borderRadius: 16, padding: 16, marginBottom: 20,
+    shadowColor: '#000', shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.15, shadowRadius: 8, elevation: 3, gap: 14,
+  },
+  seizuIcon: {
+    width: 56, height: 56, borderRadius: 16, alignItems: 'center', justifyContent: 'center',
+    backgroundColor: 'rgba(255,255,255,0.15)',
+  },
+  mogiTitle: { fontSize: 15, fontWeight: '800', color: '#FFFFFF', marginBottom: 3 },
+  mogiDesc: { fontSize: 11, color: 'rgba(255,255,255,0.75)', fontWeight: '500' },
   subjectBody: { flex: 1 },
   subjectName: { fontSize: 15, fontWeight: '800', color: '#1A1A2E', marginBottom: 3 },
   subjectDesc: { fontSize: 11, color: '#888', fontWeight: '500', marginBottom: 4 },

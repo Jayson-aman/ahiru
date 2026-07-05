@@ -16,12 +16,18 @@ const INFO: Record<string, { name: string; emoji: string; color: string; totalEx
 };
 
 export default function KenchikuQuizScreen() {
-  const { subject } = useLocalSearchParams<{ subject: string }>();
+  const { subject, level } = useLocalSearchParams<{ subject: string; level?: string }>();
   const router = useRouter();
   const info = INFO[subject ?? ''] ?? { name: subject, emoji: '📖', color: '#37474F', totalExpected: 150 };
+  const levelLabel = level === 'kiso' ? '基礎問題' : level === 'ouyou' ? '応用問題' : '問題演習';
 
   const allQuestions = kenchikuQuestions
     .filter(q => q.subject === subject)
+    .filter(q => {
+      if (level === 'kiso') return q.difficulty === 'basic' || q.difficulty === 'standard';
+      if (level === 'ouyou') return q.difficulty === 'advanced';
+      return true;
+    })
     .map(q => ({
       id: q.id,
       question: q.question,
@@ -69,7 +75,7 @@ export default function KenchikuQuizScreen() {
           <TouchableOpacity onPress={() => router.back()} style={styles.backBtn}>
             <Text style={styles.backBtnText}>← 戻る</Text>
           </TouchableOpacity>
-          <Text style={styles.headerTitle}>{info.emoji} {info.name}</Text>
+          <Text style={styles.headerTitle}>{info.emoji} {info.name}（{levelLabel}）</Text>
           <Text style={styles.headerSub}>{allQuestions.length}問収録</Text>
         </View>
         <MCQQuiz questions={allQuestions} accentColor={info.color} />
