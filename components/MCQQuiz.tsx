@@ -8,6 +8,7 @@ import {
   Animated,
 } from 'react-native';
 import * as Speech from 'expo-speech';
+import ExplanationText from './ExplanationText';
 
 export type MCQChoice = { key: 'A' | 'B' | 'C' | 'D'; text: string; explanation?: string };
 export type MCQQuestion = {
@@ -204,7 +205,7 @@ export default function MCQQuiz({ questions, accentColor = '#37474F', onComplete
               <Text style={styles.scriptText}>{q.audioScript}</Text>
             </View>
           )}
-          <Text style={styles.explanationMain}>{q.explanation}</Text>
+          <ExplanationText text={q.explanation} style={styles.explanationMain} />
           {q.choices.some(c => c.explanation) && (
             <>
               <Text style={styles.explanationSub}>各選択肢の解説：</Text>

@@ -31,16 +31,25 @@ export const ENTITLEMENTS: Record<CertKey, string> = {
 };
 
 // Pricing constants (display only — real prices are set in RevenueCat/App Store)
-// App Store Japan pricing tiers are ¥1,000 increments
+//
+// 価格戦略：資格学校（日建学院・総合資格等）の年間費用は40〜50万円。
+// 「学校の半額（20〜25万）なら払える」「1/4（10〜12万）に収めたい」層が
+// ボリュームゾーンであり、一方で安すぎる価格は品質への期待を損なう。
+// そこで per-cert Pro は学校の約1/4（年12.8万）、全資格 Max は約半額弱
+// （年19.8万）に設定し、「本気の受験対策への投資」として信頼される
+// 価格帯と、学校より圧倒的に安いという実利の両立を狙う。
 export const PRICING = {
-  /** Per-certification Pro plan (資格試験) */
-  proMonthly: '¥2,000/月',
-  proYearly:  '¥20,000/年',
-  proYearlySavings: '17%OFF',
-  /** All-certs Max plan */
-  maxMonthly: '¥5,000/月',
-  maxYearly:  '¥40,000/年',
-  maxYearlySavings: '33%OFF',
+  /** Per-certification Pro plan (資格試験) — 資格学校の約1/4 */
+  proMonthly: '¥12,800/月',
+  proYearly:  '¥128,000/年',
+  proYearlySavings: '2か月分お得',
+  /** All-certs Max plan — 全資格見放題で資格学校の約半額 */
+  maxMonthly: '¥19,800/月',
+  maxYearly:  '¥198,000/年',
+  maxYearlySavings: '2か月分お得',
+  /** 資格学校との比較訴求用 */
+  schoolComparison: '資格学校（年40〜50万円）の約1/4',
+  maxSchoolComparison: '全資格対応で資格学校1講座の約半額',
   /** 受験対策プラン（中学・高校受験） */
   jukenMonthly: '¥500/月',
   jukenYearly:  '¥5,000/年',

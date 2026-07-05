@@ -156,7 +156,7 @@ export default function CertPaywall({
             price={proMonthlyLabel ?? PRICING.proMonthly}
             yearPrice={proYearlyLabel ?? PRICING.proYearly}
             yearSavings={proYearlySavingsLabel ?? PRICING.proYearlySavings}
-            features={proFeatures ?? ['全問題アンロック（1,000問以上）', '全選択肢の詳細解説付き', '学習進捗・弱点分析', '聞き流しモード（移動中に学習）']}
+            features={proFeatures ?? ['全問題アンロック・図解入り詳細解説', 'テキスト・模擬試験・二次試験対策', '資格学校（年40〜50万円）の約1/4', 'iPhone・iPad・Webでいつでも学習']}
             color={accentColor}
             onPress={handlePurchase}
             loading={purchasing}
@@ -166,7 +166,7 @@ export default function CertPaywall({
             price={PRICING.maxMonthly}
             yearPrice={PRICING.maxYearly}
             yearSavings={PRICING.maxYearlySavings}
-            features={['6資格すべてアンロック', '宅建・FP・マンション管理士', '建築設備士・電験三種・気象予報士', 'すべての機能 ＋ 優先サポート']}
+            features={['全資格すべてアンロック', '宅建・マン管・FP・建築設備士', '施工管理技士・電験三種・気象予報士', '資格学校1講座の約半額で全資格見放題']}
             color="#1B2A5C"
             onPress={handlePurchase}
             loading={purchasing}
