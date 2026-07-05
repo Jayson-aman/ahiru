@@ -1,4 +1,4 @@
-import React, { useState, useCallback, useMemo } from 'react';
+import React, { useState, useCallback, useMemo, useEffect } from 'react';
 import {
   View,
   Text,
@@ -7,8 +7,9 @@ import {
   ScrollView,
   Animated,
 } from 'react-native';
+import * as Speech from 'expo-speech';
 
-export type MCQChoice = { key: 'A' | 'B' | 'C' | 'D'; text: string; explanation: string };
+export type MCQChoice = { key: 'A' | 'B' | 'C' | 'D'; text: string; explanation?: string };
 export type MCQQuestion = {
   id: string;
   question: string;
@@ -17,6 +18,7 @@ export type MCQQuestion = {
   explanation: string;
   difficulty?: 'basic' | 'standard' | 'advanced';
   category?: string;
+  audioScript?: string;
 };
 
 type Props = {
@@ -44,8 +46,33 @@ export default function MCQQuiz({ questions, accentColor = '#37474F', onComplete
   const [correctCount, setCorrectCount] = useState(0);
   const [finished, setFinished] = useState(false);
   const [wrongIds, setWrongIds] = useState<Set<string>>(new Set());
+  const [speaking, setSpeaking] = useState(false);
 
   const q = shuffled[index];
+
+  useEffect(() => {
+    Speech.stop();
+    setSpeaking(false);
+  }, [index]);
+
+  useEffect(() => () => { Speech.stop(); }, []);
+
+  const handlePlayAudio = useCallback(() => {
+    if (!q.audioScript) return;
+    if (speaking) {
+      Speech.stop();
+      setSpeaking(false);
+      return;
+    }
+    setSpeaking(true);
+    Speech.speak(q.audioScript, {
+      language: 'en-US',
+      rate: 0.95,
+      onDone: () => setSpeaking(false),
+      onStopped: () => setSpeaking(false),
+      onError: () => setSpeaking(false),
+    });
+  }, [q, speaking]);
 
   const handleSelect = useCallback((key: 'A' | 'B' | 'C' | 'D') => {
     if (selected !== null) return;
@@ -115,6 +142,15 @@ export default function MCQQuiz({ questions, accentColor = '#37474F', onComplete
 
       {/* Question */}
       <View style={styles.questionBox}>
+        {q.audioScript && (
+          <TouchableOpacity
+            style={[styles.playAudioBtn, { backgroundColor: speaking ? '#C62828' : accentColor }]}
+            onPress={handlePlayAudio}
+            activeOpacity={0.8}
+          >
+            <Text style={styles.playAudioBtnText}>{speaking ? '⏹ 停止' : '🔊 音声を再生'}</Text>
+          </TouchableOpacity>
+        )}
         <Text style={styles.questionText}>{q.question}</Text>
       </View>
 
@@ -162,16 +198,26 @@ export default function MCQQuiz({ questions, accentColor = '#37474F', onComplete
           <Text style={[styles.explanationLabel, { color: selected === q.correctKey ? '#2E7D32' : '#C62828' }]}>
             {selected === q.correctKey ? '✓ 正解！' : `✗ 不正解（正解：${q.correctKey}）`}
           </Text>
-          <Text style={styles.explanationMain}>{q.explanation}</Text>
-          <Text style={styles.explanationSub}>各選択肢の解説：</Text>
-          {q.choices.map(c => (
-            <View key={c.key} style={styles.choiceExplRow}>
-              <View style={[styles.choiceKeySmall, { backgroundColor: CHOICE_COLORS[c.key] }]}>
-                <Text style={styles.choiceKeySmallText}>{c.key}</Text>
-              </View>
-              <Text style={[styles.choiceExplText, c.key === q.correctKey && styles.choiceExplCorrect]}>{c.explanation}</Text>
+          {q.audioScript && (
+            <View style={styles.scriptBox}>
+              <Text style={styles.scriptLabel}>🎧 スクリプト</Text>
+              <Text style={styles.scriptText}>{q.audioScript}</Text>
             </View>
-          ))}
+          )}
+          <Text style={styles.explanationMain}>{q.explanation}</Text>
+          {q.choices.some(c => c.explanation) && (
+            <>
+              <Text style={styles.explanationSub}>各選択肢の解説：</Text>
+              {q.choices.filter(c => c.explanation).map(c => (
+                <View key={c.key} style={styles.choiceExplRow}>
+                  <View style={[styles.choiceKeySmall, { backgroundColor: CHOICE_COLORS[c.key] }]}>
+                    <Text style={styles.choiceKeySmallText}>{c.key}</Text>
+                  </View>
+                  <Text style={[styles.choiceExplText, c.key === q.correctKey && styles.choiceExplCorrect]}>{c.explanation}</Text>
+                </View>
+              ))}
+            </>
+          )}
         </View>
       )}
 
@@ -197,6 +243,11 @@ const styles = StyleSheet.create({
   progressFill: { height: 4, borderRadius: 2 },
   questionBox: { backgroundColor: '#FFFFFF', borderRadius: 16, padding: 18, marginBottom: 16, shadowColor: '#000', shadowOffset: { width: 0, height: 2 }, shadowOpacity: 0.08, shadowRadius: 8, elevation: 3 },
   questionText: { fontSize: 16, fontWeight: '700', color: '#1A1A2E', lineHeight: 26 },
+  playAudioBtn: { alignSelf: 'flex-start', borderRadius: 12, paddingVertical: 10, paddingHorizontal: 18, marginBottom: 14 },
+  playAudioBtnText: { fontSize: 14, fontWeight: '800', color: '#FFFFFF' },
+  scriptBox: { backgroundColor: '#F5F7FA', borderRadius: 12, padding: 14, marginBottom: 12 },
+  scriptLabel: { fontSize: 12, fontWeight: '800', color: '#888', marginBottom: 6 },
+  scriptText: { fontSize: 14, color: '#333', lineHeight: 22, fontStyle: 'italic' },
   choicesBox: { gap: 10, marginBottom: 16 },
   choice: { flexDirection: 'row', alignItems: 'center', borderRadius: 14, padding: 14, borderWidth: 2, gap: 12 },
   choiceKey: { width: 32, height: 32, borderRadius: 8, alignItems: 'center', justifyContent: 'center' },

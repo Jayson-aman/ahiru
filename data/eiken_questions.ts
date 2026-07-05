@@ -5,17 +5,20 @@ export type EikenCategory =
   | 'grammar'
   | 'dialogue'
   | 'reading'
-  | 'usage';
+  | 'usage'
+  | 'listening';
 
 export type EikenQuestion = {
   id: string;
   level: EikenLevel;
   category: EikenCategory;
   question: string;
-  choices: { key: 'A' | 'B' | 'C' | 'D'; text: string }[];
+  choices: { key: 'A' | 'B' | 'C' | 'D'; text: string; explanation?: string }[];
   correctKey: 'A' | 'B' | 'C' | 'D';
   explanation: string;
   difficulty: 'basic' | 'standard' | 'advanced';
+  /** English audio script read aloud via TTS for listening questions (not shown until after answering). */
+  audioScript?: string;
 };
 
 import { eikenQuestions4kyu } from './eiken_questions_4kyu';
@@ -27,6 +30,7 @@ import { eikenQuestions2kyu2 } from './eiken_questions_2kyu2';
 import { eikenQuestions4kyu3 } from './eiken_questions_4kyu3';
 import { eikenQuestions3kyu3 } from './eiken_questions_3kyu3';
 import { eikenQuestions2kyu3 } from './eiken_questions_2kyu3';
+import { eikenQuestionsListening } from './eiken_questions_listening';
 
 export const eikenQuestions: EikenQuestion[] = [
   ...eikenQuestions4kyu,
@@ -38,4 +42,5 @@ export const eikenQuestions: EikenQuestion[] = [
   ...eikenQuestions2kyu,
   ...eikenQuestions2kyu2,
   ...eikenQuestions2kyu3,
+  ...eikenQuestionsListening,
 ];

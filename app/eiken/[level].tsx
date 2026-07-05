@@ -17,6 +17,15 @@ export default function EikenLevelScreen() {
   const router = useRouter();
   const info = LEVEL_INFO[level ?? ''] ?? { name: level, nameEn: '', emoji: '📖', color: '#7B1FA2', cefr: '', totalExpected: 150 };
 
+  const CATEGORY_LABELS: Record<string, string> = {
+    vocabulary: '語彙',
+    grammar: '文法',
+    dialogue: '会話',
+    reading: '読解',
+    usage: '語法',
+    listening: 'リスニング',
+  };
+
   const allQuestions = eikenQuestions
     .filter(q => q.level === level)
     .map(q => ({
@@ -26,6 +35,8 @@ export default function EikenLevelScreen() {
       correctKey: q.correctKey,
       explanation: q.explanation,
       difficulty: q.difficulty,
+      category: CATEGORY_LABELS[q.category] ?? q.category,
+      audioScript: q.audioScript,
     }));
 
   if (allQuestions.length === 0) {
