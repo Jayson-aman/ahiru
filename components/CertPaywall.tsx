@@ -4,6 +4,7 @@ import {
 } from 'react-native';
 import { LinearGradient } from 'expo-linear-gradient';
 import { Platform } from 'react-native';
+import { useRouter } from 'expo-router';
 import {
   CertKey,
   FREE_QUESTION_LIMIT,
@@ -45,6 +46,7 @@ export default function CertPaywall({
   certKey, certName, certEmoji, accentColor, totalQuestions, children, freeLimit,
   proMonthlyLabel, proYearlyLabel, proYearlySavingsLabel, proFeatures,
 }: Props) {
+  const router = useRouter();
   const [info, setInfo] = useState<CustomerInfo | null>(null);
   const [loading, setLoading] = useState(true);
   const [purchasing, setPurchasing] = useState(false);
@@ -176,6 +178,26 @@ export default function CertPaywall({
         <TouchableOpacity onPress={handleRestore} style={styles.restoreBtn} disabled={purchasing}>
           <Text style={styles.restoreBtnText}>購入を復元する</Text>
         </TouchableOpacity>
+
+        {/* サブスクリプションに関する説明（ストア審査必須項目） */}
+        <Text style={styles.legalNote}>
+          サブスクリプションは自動更新されます。期間終了の24時間前までに解約しない限り自動的に更新され、
+          ご利用のApple ID / Googleアカウントに料金が請求されます。解約は各ストアのアカウント設定
+          （サブスクリプション管理）からいつでも行えます。価格は税込表示です。
+        </Text>
+        <View style={styles.legalLinks}>
+          <TouchableOpacity onPress={() => router.push('/legal/terms' as any)}>
+            <Text style={styles.legalLinkText}>利用規約</Text>
+          </TouchableOpacity>
+          <Text style={styles.legalLinkSep}>｜</Text>
+          <TouchableOpacity onPress={() => router.push('/legal/privacy' as any)}>
+            <Text style={styles.legalLinkText}>プライバシーポリシー</Text>
+          </TouchableOpacity>
+          <Text style={styles.legalLinkSep}>｜</Text>
+          <TouchableOpacity onPress={() => router.push('/legal/tokushoho' as any)}>
+            <Text style={styles.legalLinkText}>特定商取引法に基づく表記</Text>
+          </TouchableOpacity>
+        </View>
       </View>
     </View>
   );
@@ -218,6 +240,16 @@ const styles = StyleSheet.create({
   plansContent: { paddingHorizontal: 16, gap: 12 },
   restoreBtn: { alignSelf: 'center', marginTop: 12, paddingVertical: 8 },
   restoreBtnText: { fontSize: 13, color: '#999', fontWeight: '600' },
+  legalNote: {
+    fontSize: 10, color: '#999', lineHeight: 15, fontWeight: '500',
+    paddingHorizontal: 20, marginTop: 4, textAlign: 'center',
+  },
+  legalLinks: {
+    flexDirection: 'row', alignItems: 'center', justifyContent: 'center',
+    flexWrap: 'wrap', marginTop: 8, paddingHorizontal: 16,
+  },
+  legalLinkText: { fontSize: 11, color: '#1E5FBE', fontWeight: '600', paddingVertical: 4 },
+  legalLinkSep: { fontSize: 11, color: '#CCC' },
 });
 
 const planStyles = StyleSheet.create({

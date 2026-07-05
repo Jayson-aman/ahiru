@@ -21,8 +21,8 @@ const EXAM_MODES = [
   },
   {
     key: 'honshiken',
-    label: '本試験問題',
-    desc: '令和元〜5年 過去問5年分に挑戦',
+    label: '本試験形式問題',
+    desc: '令和元〜5年度の出題傾向を再現した模試×5回分',
     emoji: '📜',
     color: '#1A237E',
     route: '/takkei/honshiken',

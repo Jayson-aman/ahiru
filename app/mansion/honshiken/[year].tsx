@@ -6,8 +6,8 @@ import { mansionHonshikenR07 } from '../../../data/mansion_honshiken_r07';
 import { mansionHonshikenR06 } from '../../../data/mansion_honshiken_r06';
 
 const YEAR_MAP: Record<string, { label: string; passingScore: number; getData: () => any[] }> = {
-  r07: { label: '令和7年度マンション管理士試験', passingScore: 38, getData: () => mansionHonshikenR07 },
-  r06: { label: '令和6年度マンション管理士試験', passingScore: 38, getData: () => mansionHonshikenR06 },
+  r07: { label: '令和7年度形式 本試験レベル模試', passingScore: 38, getData: () => mansionHonshikenR07 },
+  r06: { label: '令和6年度形式 本試験レベル模試', passingScore: 38, getData: () => mansionHonshikenR06 },
 };
 
 export default function MansionHonshikenYearScreen() {

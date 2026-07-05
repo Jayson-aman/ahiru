@@ -47,8 +47,8 @@ export default function MansionScreen() {
             <Text style={styles.subjectEmoji}>📝</Text>
           </View>
           <View style={styles.subjectBody}>
-            <Text style={styles.honshikenTitle}>本試験問題</Text>
-            <Text style={styles.honshikenDesc}>令和6年度・令和7年度／全50問・120分本番形式</Text>
+            <Text style={styles.honshikenTitle}>本試験形式問題</Text>
+            <Text style={styles.honshikenDesc}>令和6・7年度形式の再現模試／全50問・120分</Text>
           </View>
           <Text style={[styles.subjectArrow, { color: 'rgba(255,255,255,0.7)' }]}>›</Text>
         </TouchableOpacity>

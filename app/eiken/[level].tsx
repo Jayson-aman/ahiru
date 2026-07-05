@@ -67,7 +67,7 @@ export default function EikenLevelScreen() {
         certName={info.name}
         certEmoji={info.emoji}
         accentColor={info.color}
-        totalQuestions={info.totalExpected}
+        totalQuestions={allQuestions.length}
         freeLimit={FREE_QUESTION_LIMIT}
         proMonthlyLabel={PRICING.eikenMonthly}
         proYearlyLabel={PRICING.eikenYearly}

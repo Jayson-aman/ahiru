@@ -5,8 +5,8 @@ import {
 import { useRouter } from 'expo-router';
 
 const YEARS = [
-  { key: 'r07', label: '令和7年度（2025年）', badge: '50問', available: true },
-  { key: 'r06', label: '令和6年度（2024年）', badge: '50問', available: true },
+  { key: 'r07', label: '令和7年度（2025年）形式', badge: '50問', available: true },
+  { key: 'r06', label: '令和6年度（2024年）形式', badge: '50問', available: true },
 ];
 
 export default function MansionHonshikenIndexScreen() {
@@ -17,13 +17,13 @@ export default function MansionHonshikenIndexScreen() {
         <TouchableOpacity onPress={() => router.back()} style={styles.backBtn}>
           <Text style={styles.backBtnText}>← 戻る</Text>
         </TouchableOpacity>
-        <Text style={styles.headerTitle}>📝 本試験問題</Text>
+        <Text style={styles.headerTitle}>📝 本試験形式問題</Text>
         <Text style={styles.headerSub}>年度別・全50問・本番形式で挑戦</Text>
       </View>
 
       <ScrollView contentContainerStyle={styles.content}>
         <Text style={styles.sectionNote}>
-          実際のマンション管理士試験と同じ出題形式で収録。解説は各選択肢ごとに丁寧でわかりやすく掲載しています。
+          各年度のマンション管理士試験の出題傾向・難易度・科目構成を分析して作成した、本試験形式のオリジナル再現問題です（実際の試験問題の転載ではありません）。解説は各選択肢ごとに丁寧に掲載しています。
         </Text>
         {YEARS.map(y => (
           <TouchableOpacity
@@ -45,7 +45,7 @@ export default function MansionHonshikenIndexScreen() {
         ))}
 
         <View style={styles.infoBox}>
-          <Text style={styles.infoTitle}>💡 本試験問題の使い方</Text>
+          <Text style={styles.infoTitle}>💡 本試験形式問題の使い方</Text>
           <Text style={styles.infoText}>・本番同様に120分タイマーで取り組む</Text>
           <Text style={styles.infoText}>・提出後に選択肢ごとの詳細解説を確認</Text>
           <Text style={styles.infoText}>・37〜38点前後が合格ライン（年度により変動）</Text>

@@ -39,7 +39,7 @@ export default function HomeScreen() {
             <View style={styles.cardBody}>
               <Text style={styles.cardTitle}>宅建試験</Text>
               <Text style={styles.cardSubtitle}>権利関係・宅建業法・法令制限・税</Text>
-              <Text style={styles.cardMeta}>国家資格 ／ 本試験50問対応</Text>
+              <Text style={styles.cardMeta}>国家資格 ／ 本試験形式模試5回分収録</Text>
             </View>
             <Text style={styles.cardArrow}>›</Text>
           </LinearGradient>
@@ -51,7 +51,7 @@ export default function HomeScreen() {
             <View style={styles.cardBody}>
               <Text style={styles.cardTitle}>マンション管理士</Text>
               <Text style={styles.cardSubtitle}>管理組合・区分所有法・設備管理</Text>
-              <Text style={styles.cardMeta}>国家資格 ／ 分野別問題・本試験問題（2年分）収録</Text>
+              <Text style={styles.cardMeta}>国家資格 ／ 分野別問題・本試験形式模試（2年分）収録</Text>
             </View>
             <Text style={styles.cardArrow}>›</Text>
           </LinearGradient>
@@ -131,6 +131,27 @@ export default function HomeScreen() {
             🎧 聞き流しモードは各科目ページの 🎧 ボタンから利用できます（Pro機能）
           </Text>
         </View>
+
+        <View style={styles.disclaimerBox}>
+          <Text style={styles.disclaimerText}>
+            収録している「本試験形式問題」は、各試験の出題傾向・難易度を分析して作成したオリジナルの再現問題です。
+            実際の試験問題の転載ではありません。受験の際は各試験実施団体の最新の試験案内をご確認ください。
+          </Text>
+        </View>
+
+        <View style={styles.legalLinks}>
+          <TouchableOpacity onPress={() => router.push('/legal/terms' as any)}>
+            <Text style={styles.legalLinkText}>利用規約</Text>
+          </TouchableOpacity>
+          <Text style={styles.legalLinkSep}>｜</Text>
+          <TouchableOpacity onPress={() => router.push('/legal/privacy' as any)}>
+            <Text style={styles.legalLinkText}>プライバシーポリシー</Text>
+          </TouchableOpacity>
+          <Text style={styles.legalLinkSep}>｜</Text>
+          <TouchableOpacity onPress={() => router.push('/legal/tokushoho' as any)}>
+            <Text style={styles.legalLinkText}>特定商取引法に基づく表記</Text>
+          </TouchableOpacity>
+        </View>
       </ScrollView>
     </SafeAreaView>
   );
@@ -154,4 +175,12 @@ const styles = StyleSheet.create({
   cardArrow: { fontSize: 28, color: 'rgba(255,255,255,0.4)' },
   footerNote: { backgroundColor: '#EEF4FF', borderRadius: 12, padding: 14, marginTop: 12 },
   footerNoteText: { fontSize: 12, color: '#1E5FBE', fontWeight: '600', lineHeight: 18, textAlign: 'center' },
+  disclaimerBox: { backgroundColor: '#F0F0F0', borderRadius: 12, padding: 14, marginTop: 12 },
+  disclaimerText: { fontSize: 10, color: '#888', fontWeight: '500', lineHeight: 16, textAlign: 'center' },
+  legalLinks: {
+    flexDirection: 'row', alignItems: 'center', justifyContent: 'center',
+    flexWrap: 'wrap', marginTop: 16,
+  },
+  legalLinkText: { fontSize: 11, color: '#1E5FBE', fontWeight: '600', paddingVertical: 4 },
+  legalLinkSep: { fontSize: 11, color: '#CCC' },
 });

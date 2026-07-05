@@ -59,7 +59,7 @@ export default function MansionQuizScreen() {
         certName={`マンション管理士 ${info.name}`}
         certEmoji={info.emoji}
         accentColor={info.color}
-        totalQuestions={info.totalExpected}
+        totalQuestions={allQuestions.length}
         freeLimit={FREE_QUESTION_LIMIT}
         proMonthlyLabel={PRICING.proMonthly}
         proYearlyLabel={PRICING.proYearly}

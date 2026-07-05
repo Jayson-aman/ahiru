@@ -1,18 +1,21 @@
 {
   "expo": {
-    "name": "Entrance Exam",
-    "slug": "entrance-exam",
-    "scheme": "entrance-exam",
+    "name": "ZAIBASE 資格対策",
+    "slug": "zaibase-shikaku",
+    "scheme": "zaibase",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.jaysonaman.entranceexam"
+      "bundleIdentifier": "com.jaysonaman.zaibase",
+      "infoPlist": {
+        "CFBundleDisplayName": "ZAIBASE資格対策"
+      }
     },
     "android": {
-      "package": "com.jaysonaman.entranceexam",
+      "package": "com.jaysonaman.zaibase",
       "adaptiveIcon": {
         "backgroundColor": "#E6F4FE",
         "foregroundImage": "./assets/android-icon-foreground.png",

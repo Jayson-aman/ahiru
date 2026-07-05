@@ -5,11 +5,11 @@ import {
 import { useRouter } from 'expo-router';
 
 const YEARS = [
-  { key: 'r05', label: '令和5年（2023年）', badge: '50問', available: true },
-  { key: 'r04', label: '令和4年（2022年）', badge: '50問', available: true },
-  { key: 'r03', label: '令和3年（2021年）', badge: '50問', available: true },
-  { key: 'r02', label: '令和2年（2020年）', badge: '50問', available: true },
-  { key: 'r01', label: '令和元年（2019年）', badge: '50問', available: true },
+  { key: 'r05', label: '令和5年度（2023年）形式', badge: '50問', available: true },
+  { key: 'r04', label: '令和4年度（2022年）形式', badge: '50問', available: true },
+  { key: 'r03', label: '令和3年度（2021年）形式', badge: '50問', available: true },
+  { key: 'r02', label: '令和2年度（2020年）形式', badge: '50問', available: true },
+  { key: 'r01', label: '令和元年度（2019年）形式', badge: '50問', available: true },
 ];
 
 export default function HonshikenIndexScreen() {
@@ -20,13 +20,13 @@ export default function HonshikenIndexScreen() {
         <TouchableOpacity onPress={() => router.back()} style={styles.backBtn}>
           <Text style={styles.backBtnText}>← 戻る</Text>
         </TouchableOpacity>
-        <Text style={styles.headerTitle}>📝 本試験問題</Text>
+        <Text style={styles.headerTitle}>📝 本試験形式問題</Text>
         <Text style={styles.headerSub}>年度別・全50問・本番形式で挑戦</Text>
       </View>
 
       <ScrollView contentContainerStyle={styles.content}>
         <Text style={styles.sectionNote}>
-          実際の宅建試験と同じ出題形式で収録。解説は各選択肢ごとに詳しく掲載しています。
+          各年度の宅建試験の出題傾向・難易度・科目構成を分析して作成した、本試験形式のオリジナル再現問題です（実際の試験問題の転載ではありません）。解説は各選択肢ごとに詳しく掲載しています。
         </Text>
         {YEARS.map(y => (
           <TouchableOpacity
@@ -48,7 +48,7 @@ export default function HonshikenIndexScreen() {
         ))}
 
         <View style={styles.infoBox}>
-          <Text style={styles.infoTitle}>💡 本試験問題の使い方</Text>
+          <Text style={styles.infoTitle}>💡 本試験形式問題の使い方</Text>
           <Text style={styles.infoText}>・本番同様に120分タイマーで取り組む</Text>
           <Text style={styles.infoText}>・提出後に選択肢ごとの詳細解説を確認</Text>
           <Text style={styles.infoText}>・36点以上が合格ライン（年度により変動）</Text>
