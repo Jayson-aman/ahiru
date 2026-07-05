@@ -11,12 +11,14 @@ export type Denken3Question = {
 };
 
 import { denken3Rikigaku } from './denken3_questions_rikigaku';
+import { denken3Rikigaku2 } from './denken3_questions_rikigaku2';
 import { denken3Denryoku } from './denken3_questions_denryoku';
 import { denken3Kikai } from './denken3_questions_kikai';
 import { denken3Houki } from './denken3_questions_houki';
 
 export const denken3Questions: Denken3Question[] = [
   ...denken3Rikigaku,
+  ...denken3Rikigaku2,
   ...denken3Denryoku,
   ...denken3Kikai,
   ...denken3Houki,
