@@ -9,7 +9,7 @@ const YEARS = [
   { key: 'r04', label: '令和4年（2022年）', badge: '50問', available: true },
   { key: 'r03', label: '令和3年（2021年）', badge: '50問', available: true },
   { key: 'r02', label: '令和2年（2020年）', badge: '50問', available: true },
-  { key: 'r01', label: '令和元年（2019年）', badge: '50問', available: false },
+  { key: 'r01', label: '令和元年（2019年）', badge: '50問', available: true },
 ];
 
 export default function HonshikenIndexScreen() {
