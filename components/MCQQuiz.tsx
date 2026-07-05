@@ -9,6 +9,7 @@ import {
 } from 'react-native';
 import * as Speech from 'expo-speech';
 import ExplanationText from './ExplanationText';
+import { getDiagram } from './zukai/diagramRegistry';
 
 export type MCQChoice = { key: 'A' | 'B' | 'C' | 'D'; text: string; explanation?: string };
 export type MCQQuestion = {
@@ -206,6 +207,7 @@ export default function MCQQuiz({ questions, accentColor = '#37474F', onComplete
             </View>
           )}
           <ExplanationText text={q.explanation} style={styles.explanationMain} />
+          {getDiagram(q.id)}
           {q.choices.some(c => c.explanation) && (
             <>
               <Text style={styles.explanationSub}>各選択肢の解説：</Text>

@@ -3,6 +3,7 @@ import {
   View, Text, StyleSheet, TouchableOpacity, ScrollView, SafeAreaView, Alert,
 } from 'react-native';
 import ExplanationText from './ExplanationText';
+import { getDiagram } from './zukai/diagramRegistry';
 
 export type MogiQuestion = {
   id: string;
@@ -231,6 +232,7 @@ export default function MogiExam({
         <View style={styles.explanationBox}>
           <Text style={styles.explanationLabel}>解説</Text>
           <ExplanationText text={q.explanation} style={styles.explanationText} />
+          {getDiagram(q.id)}
         </View>
 
         <View style={styles.navRow}>
