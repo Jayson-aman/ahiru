@@ -271,6 +271,213 @@ const REGISTRY: Record<string, () => React.ReactNode> = {
       '最長の経路A＝21日がCP（＝工期）✓ 経路Bの余裕TF=3日',
     ]} />
   ),
+
+  // ===== 電験・理論 追加分（41〜63） =====
+  dk3_rikigaku_041: () => (
+    <View>
+      <SeriesCircuit items={[{ type: 'C', label: '10μF' }, { type: 'C', label: '20μF' }]} source="30V" title="コンデンサ直列の分圧" />
+      <Steps steps={[
+        '合成C＝積/和＝10×20/30＝20/3 μF',
+        '共通電荷Q＝CV＝(20/3)×30＝200 μC',
+        'V₁₀＝Q/C＝200/10＝20V ✓（小さい容量に大きい電圧）',
+      ]} />
+    </View>
+  ),
+  dk3_rikigaku_042: () => (
+    <Steps title="電荷保存則（TAC H26型）" steps={[
+      '孤立部分（b点）の電荷合計＝0（初期電荷0）',
+      'ΣC(V相手−Vb)＝0 を立てる',
+      '10(20−Vb)＋20(0−Vb)＋10(−10−Vb)＝0',
+      '200−100＝40Vb → Vb＝2.5V ✓',
+    ]} />
+  ),
+  dk3_rikigaku_044: () => (
+    <PeakCurve xLabel="外部抵抗R" yLabel="供給電力P" peakX={0.35} peakLabel="R=r" note="整合条件R=rでPmax=E²/4r" title="最大電力供給の定理" />
+  ),
+  dk3_rikigaku_045: () => <PointChargeField positive title="直線電流の磁界 H=I/(2πr)（同心円状）" />,
+  dk3_rikigaku_046: () => <ParallelConductors same title="電磁力 F=BIL（フレミング左手）" />,
+  dk3_rikigaku_048: () => (
+    <Steps title="環状鉄心のインダクタンス" steps={[
+      'L＝μN²A/ℓ（N²に注意！）',
+      'μ＝μrμ₀＝500×4π×10⁻⁷≈6.28×10⁻⁴',
+      'N²A/ℓ＝200²×4×10⁻⁴/0.2＝80',
+      'L≈6.28×10⁻⁴×80≈0.050H＝50mH ✓',
+    ]} />
+  ),
+  dk3_rikigaku_051: () => (
+    <View>
+      <SeriesCircuit items={[{ type: 'R', label: 'R=30Ω' }, { type: 'L', label: 'XL=80Ω' }, { type: 'C', label: 'XC=40Ω' }]} title="RLC直列回路" />
+      <TriangleDiagram base="R＝30Ω" height="X＝XL−XC＝40Ω" hyp="Z＝50Ω" title="正味リアクタンスで三角形（3:4:5）" />
+    </View>
+  ),
+  dk3_rikigaku_056: () => (
+    <Steps title="分流器の倍率" steps={[
+      '倍率n＝1＋r/Rs＝1＋9/1＝10倍',
+      '最大測定電流＝10mA×10＝100mA ✓',
+      '検算：電流計10mA×9Ω＝分流器90mA×1Ω（同電圧）',
+    ]} />
+  ),
+  dk3_rikigaku_058: () => (
+    <View>
+      <TriangleDiagram base="P＝500W" height="Q＝866var" hyp="S＝1000VA" angle="60°" title="位相差60°の電力三角形" />
+      <Steps steps={[
+        '実効値：V＝141/√2＝100V、I＝14.1/√2＝10A',
+        '位相差φ＝π/3＝60°→cosφ＝0.5',
+        'P＝VIcosφ＝100×10×0.5＝500W ✓',
+      ]} />
+    </View>
+  ),
+  dk3_rikigaku_060: () => <RectifiedWave full title="全波整流（平均値0.9V）" />,
+  // ===== 電験・電力 追加分 =====
+  dk3_denryoku_041: () => (
+    <Steps title="発電機出力の計算" steps={[
+      '理論出力＝9.8QH＝9.8×20×100＝19,600kW',
+      '×水車効率0.88→17,248kW',
+      '×発電機効率0.96→16,558kW≈16.6MW ✓',
+    ]} />
+  ),
+  dk3_denryoku_043: () => (
+    <Steps title="%Zの基準容量換算" steps={[
+      '%Zは基準容量に比例する',
+      '%Z(100MVA)＝7.5×(100/20)＝37.5% ✓',
+      '合成時は全機器を同一基準に揃えてから直並列計算',
+    ]} />
+  ),
+  dk3_denryoku_044: () => (
+    <Steps title="たるみ（弛度）の計算" steps={[
+      'D＝wS²/(8T)',
+      '＝20×200²/(8×20,000)',
+      '＝800,000/160,000＝5.0m ✓',
+    ]} />
+  ),
+  dk3_denryoku_047: () => (
+    <Steps title="三相配電線の損失計算" steps={[
+      'I＝P/(√3VLcosφ)＝30,000/(1.732×200×0.8)≈108.3A',
+      'PL＝3I²R＝3×108.3²×0.5≈17.6kW ✓',
+      '損失率59%!→低圧大電流の配電が不利な理由',
+    ]} />
+  ),
+  dk3_denryoku_051: () => (
+    <Steps title="合成最大需要電力" steps={[
+      'Σ各最大需要＝設備×需要率＝500×0.6＝300kW',
+      '合成最大＝Σ最大÷不等率＝300/1.25＝240kW ✓',
+      '（不等率≥1：ピークがずれる分だけ小さくなる）',
+    ]} />
+  ),
+  dk3_denryoku_062: () => (
+    <Steps title="揚水電動機入力（効率で割る！）" steps={[
+      '理論動力＝9.8QH＝9.8×30×200＝58,800kW',
+      '÷ポンプη0.85÷電動機η0.95',
+      '＝58,800/0.8075≈72.8MW ✓',
+      '発電＝効率を掛ける／揚水＝効率で割る★',
+    ]} />
+  ),
+  // ===== 電験・機械 追加分 =====
+  dk3_kikai_041: () => (
+    <Steps title="誘導電動機の回転速度" steps={[
+      'Ns＝120f/P＝120×60/4＝1,800min⁻¹',
+      'N＝Ns(1−s)＝1,800×0.96＝1,728min⁻¹ ✓',
+    ]} />
+  ),
+  dk3_kikai_042: () => (
+    <Steps title="二次銅損（1:s:(1−s)）" steps={[
+      'P₂:銅損:機械出力＝1:s:(1−s)',
+      '銅損＝sP₂＝0.03×50＝1.5kW ✓',
+      '機械出力＝(1−s)P₂＝48.5kW',
+    ]} />
+  ),
+  dk3_kikai_043: () => (
+    <Steps title="電動機の線電流" steps={[
+      '入力＝出力/効率＝15,000/0.9≈16,667W',
+      'I＝入力/(√3Vcosφ)',
+      '＝16,667/(1.732×200×0.85)≈57A ✓',
+    ]} />
+  ),
+  dk3_kikai_044: () => (
+    <Steps title="インピーダンスのa²換算" steps={[
+      'V₁＝aV₂、I₁＝I₂/a',
+      'Z₁＝V₁/I₁＝a²Z₂',
+      '＝20²×8＝3,200Ω＝3.2kΩ ✓',
+    ]} />
+  ),
+  dk3_kikai_052: () => (
+    <Steps title="変圧器の効率" steps={[
+      '出力＝50,000W（力率1）',
+      '損失＝鉄損400＋銅損900＝1,300W',
+      'η＝50,000/51,300≈97.5% ✓',
+    ]} />
+  ),
+  dk3_kikai_053: () => (
+    <PeakCurve xLabel="すべり s" yLabel="トルク T" peakX={0.35} peakLabel="Tmax∝V²" note="電圧10%低下→Tmax19%低下・滑り増・電流増" title="電圧低下と誘導機" />
+  ),
+  dk3_kikai_062: () => (
+    <Steps title="巻上機の所要出力" steps={[
+      'v＝30m/min÷60＝0.5m/s',
+      '理論動力＝Wv＝9.8×0.5＝4.9kW',
+      '÷効率0.8→6.125kW ✓（効率で割る）',
+    ]} />
+  ),
+  // ===== 電験・法規 追加分 =====
+  dk3_houki_042: () => (
+    <Steps title="幹線許容電流の計算" steps={[
+      'IM(40)＞IH(30)かつIM≦50A→係数1.25',
+      'Ia≧1.25×40＋30＝80A ✓',
+      '（IM>50Aなら1.1倍／IM≦IHなら割増なし）',
+    ]} />
+  ),
+  dk3_houki_047: () => (
+    <Steps title="調整池の必要貯水量" steps={[
+      '発電中の不足＝25−10＝15m³/s',
+      '8時間分＝15×3,600×8＝432,000m³＝43.2万m³ ✓',
+      '検算：停止16hの貯水57.6万m³≧43.2万m³で成立',
+    ]} />
+  ),
+  dk3_houki_049: () => (
+    <View>
+      <TriangleDiagram base="P＝200kW" height="Q₁=150→Q₂=66kvar" hyp="S" title="力率改善0.8→0.95" />
+      <Steps steps={[
+        'Q₁＝P·tanφ₁＝200×0.75＝150kvar',
+        'Q₂＝P·tanφ₂＝200×0.329≈66kvar',
+        'Qc＝Q₁−Q₂≈84kvar ✓',
+      ]} />
+    </View>
+  ),
+  dk3_houki_052: () => (
+    <Steps title="日負荷率の計算" steps={[
+      '平均電力＝4,800kWh÷24h＝200kW',
+      '負荷率＝平均/最大＝200/250＝80% ✓',
+      '（分母は最大需要電力。契約電力ではない★）',
+    ]} />
+  ),
+  dk3_houki_054: () => (
+    <Steps title="B種接地の計算（1.2秒遮断）" steps={[
+      '遮断1秒超2秒以内→式は300/Ig',
+      '300/5＝60Ω以下 ✓',
+      '（なし150/Ig・1秒以内600/Igと使い分け）',
+    ]} />
+  ),
+  dk3_houki_056: () => (
+    <Steps title="変圧器の皮相容量" steps={[
+      'S＝P/cosφ＝80/0.8＝100kV·A',
+      '→100kV·A変圧器はちょうど100%使用 ✓',
+      '力率0.95に改善→S=84.2kV·Aで余裕が生まれる',
+    ]} />
+  ),
+  // ===== 施工管理 追加分 =====
+  'souyou-021': () => (
+    <Steps title="単純梁の最大曲げモーメント" steps={[
+      'Mmax＝wL²/8（中央）',
+      '＝8×6²/8＝36kN・m ✓',
+      '反力R＝wL/2＝24kN（両支点）',
+    ]} />
+  ),
+  'souyou-031': () => (
+    <Steps title="フリーフロートの計算" steps={[
+      '作業AのEFT＝EST＋所要＝10＋5＝15日',
+      'FF＝後続のEST−EFT＝18−15＝3日 ✓',
+      '（FF≦TF。FFは後続に影響しない余裕）',
+    ]} />
+  ),
 };
 
 export function getDiagram(questionId: string): React.ReactNode | null {
