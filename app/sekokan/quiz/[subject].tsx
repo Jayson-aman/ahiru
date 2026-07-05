@@ -3,30 +3,27 @@ import { View, Text, StyleSheet, SafeAreaView, TouchableOpacity } from 'react-na
 import { useLocalSearchParams, useRouter } from 'expo-router';
 import MCQQuiz from '../../../components/MCQQuiz';
 import CertPaywall from '../../../components/CertPaywall';
-import { kenchikuQuestions } from '../../../data/kenchiku/index';
+import { sekokanQuestions } from '../../../data/sekokan';
 import { FREE_QUESTION_LIMIT, PRICING } from '../../../services/subscription';
 
 const INFO: Record<string, { name: string; emoji: string; color: string }> = {
-  ippan:     { name: '建築一般知識',   emoji: '🏗️', color: '#1565C0' },
-  hoki:      { name: '建築法規',       emoji: '📋', color: '#2E7D32' },
-  kucho:     { name: '空調・換気設備', emoji: '❄️', color: '#0097A7' },
-  kyuhaisui: { name: '給排水衛生設備', emoji: '🚿', color: '#1976D2' },
-  denki:     { name: '電気設備',       emoji: '⚡', color: '#F57F17' },
-  bousai:    { name: '防災設備',       emoji: '🚒', color: '#C62828' },
+  kenchikugaku: { name: '建築学等', emoji: '📐', color: '#1565C0' },
+  sekou: { name: '躯体・仕上施工', emoji: '🏗️', color: '#E65100' },
+  kanri: { name: '施工管理法', emoji: '📋', color: '#2E7D32' },
+  hoki: { name: '法規', emoji: '⚖️', color: '#7B1FA2' },
 };
 
-export default function KenchikuQuizScreen() {
+export default function SekokanQuizScreen() {
   const { subject, level } = useLocalSearchParams<{ subject: string; level?: string }>();
   const router = useRouter();
-  const info = INFO[subject ?? ''] ?? { name: subject, emoji: '📖', color: '#37474F' };
-  const levelLabel = level === 'kiso' ? '基礎問題' : level === 'ouyou' ? '応用問題' : '問題演習';
+  const info = INFO[subject ?? ''] ?? { name: subject, emoji: '📖', color: '#BF360C' };
+  const levelLabel = level === 'ouyou' ? '応用問題' : '基礎問題';
 
-  const allQuestions = kenchikuQuestions
+  const allQuestions = sekokanQuestions
     .filter(q => q.subject === subject)
     .filter(q => {
-      if (level === 'kiso') return q.difficulty === 'basic' || q.difficulty === 'standard';
       if (level === 'ouyou') return q.difficulty === 'advanced';
-      return true;
+      return q.difficulty === 'basic' || q.difficulty === 'standard';
     })
     .map(q => ({
       id: q.id,
@@ -49,7 +46,7 @@ export default function KenchikuQuizScreen() {
         <View style={styles.body}>
           <Text style={styles.emoji}>🚧</Text>
           <Text style={styles.title}>問題を準備中</Text>
-          <Text style={styles.text}>{info.name}の問題は{'\n'}現在作成中です。近日公開予定。</Text>
+          <Text style={styles.text}>{info.name}の{levelLabel}は{'\n'}現在作成中です。近日公開予定。</Text>
           <TouchableOpacity style={[styles.btn, { backgroundColor: info.color }]} onPress={() => router.back()}>
             <Text style={styles.btnText}>← 科目一覧に戻る</Text>
           </TouchableOpacity>
@@ -61,8 +58,8 @@ export default function KenchikuQuizScreen() {
   return (
     <SafeAreaView style={styles.safeArea}>
       <CertPaywall
-        certKey="kenchiku"
-        certName={`建築設備士 ${info.name}`}
+        certKey="sekokan"
+        certName={`一級建築施工管理技士 ${info.name}`}
         certEmoji={info.emoji}
         accentColor={info.color}
         totalQuestions={allQuestions.length}
@@ -76,7 +73,7 @@ export default function KenchikuQuizScreen() {
             <Text style={styles.backBtnText}>← 戻る</Text>
           </TouchableOpacity>
           <Text style={styles.headerTitle}>{info.emoji} {info.name}（{levelLabel}）</Text>
-          <Text style={styles.headerSub}>{allQuestions.length}問収録</Text>
+          <Text style={styles.headerSub}>{allQuestions.length}問収録 ／ 図解入り詳細解説</Text>
         </View>
         <MCQQuiz questions={allQuestions} accentColor={info.color} />
       </CertPaywall>
@@ -96,5 +93,5 @@ const styles = StyleSheet.create({
   title: { fontSize: 22, fontWeight: '900', color: '#1A1A2E', marginBottom: 12 },
   text: { fontSize: 14, color: '#666', textAlign: 'center', lineHeight: 22, marginBottom: 32 },
   btn: { borderRadius: 14, paddingVertical: 14, paddingHorizontal: 32 },
-  btnText: { fontSize: 15, fontWeight: '800', color: '#FFFFFF' },
+  btnText: { fontSize: 15, fontWeight: '800', color: '#FFF' },
 });

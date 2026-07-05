@@ -1,157 +1,121 @@
 import React from 'react';
 import {
-  View,
-  Text,
-  ScrollView,
-  StyleSheet,
-  SafeAreaView,
-  TouchableOpacity,
+  View, Text, ScrollView, StyleSheet, SafeAreaView, TouchableOpacity,
 } from 'react-native';
 import { useRouter } from 'expo-router';
 import { LinearGradient } from 'expo-linear-gradient';
-import { kenchikuQuestions } from '../../data/kenchiku/index';
-import { kenchikuMogi } from '../../data/kenchiku/mogi';
+import { sekokanQuestions, sekokanMogi } from '../../data/sekokan';
 
 type Mode = 'kiso' | 'ouyou' | 'text';
 
 const SUBJECTS = [
   {
-    key: 'ippan',
-    name: '建築一般知識',
-    emoji: '🏗️',
+    key: 'kenchikugaku',
+    name: '建築学等',
+    emoji: '📐',
     color: '#1565C0',
-    examCount: 20,
-    desc: '構造力学・材料・施工・建築計画',
-    textSections: ['構造力学の基礎', '建築材料', '施工管理', '建築計画'],
+    desc: '環境工学・構造力学・建築材料・共通（設備・契約）',
+    textSections: 4,
+  },
+  {
+    key: 'sekou',
+    name: '躯体・仕上施工',
+    emoji: '🏗️',
+    color: '#E65100',
+    desc: '土工事・鉄筋・型枠・コンクリート・鉄骨・防水・内装',
+    textSections: 4,
+  },
+  {
+    key: 'kanri',
+    name: '施工管理法',
+    emoji: '📋',
+    color: '#2E7D32',
+    desc: '施工計画・工程管理・品質管理・安全管理',
+    textSections: 4,
   },
   {
     key: 'hoki',
-    name: '建築法規',
-    emoji: '📋',
-    color: '#2E7D32',
-    examCount: 20,
-    desc: '建築基準法・消防法・省エネ法・バリアフリー法',
-    textSections: ['建築基準法総則', '単体規定', '集団規定', '消防法・その他'],
-  },
-  {
-    key: 'kucho',
-    name: '空調・換気設備',
-    emoji: '❄️',
-    color: '#0097A7',
-    examCount: 20,
-    desc: '熱負荷計算・空調方式・換気設計・省エネ',
-    textSections: ['熱環境・熱負荷', '空調方式の種類', '換気設計', '省エネ・設備計画'],
-  },
-  {
-    key: 'kyuhaisui',
-    name: '給排水衛生設備',
-    emoji: '🚿',
-    color: '#1976D2',
-    examCount: 20,
-    desc: '給水・排水・衛生器具・ガス設備',
-    textSections: ['給水設備', '排水・通気設備', '衛生器具・消火設備', 'ガス・その他'],
-  },
-  {
-    key: 'denki',
-    name: '電気設備',
-    emoji: '⚡',
-    color: '#F57F17',
-    examCount: 15,
-    desc: '受変電・幹線・照明・弱電・自家発電',
-    textSections: ['受変電設備', '幹線・動力設備', '照明・コンセント設備', '弱電・防災設備'],
-  },
-  {
-    key: 'bousai',
-    name: '防災設備',
-    emoji: '🚒',
-    color: '#C62828',
-    examCount: 5,
-    desc: 'スプリンクラー・自動火災報知・排煙設備',
-    textSections: ['消火設備', '自動火災報知設備', '排煙設備', '避難設備'],
+    name: '法規',
+    emoji: '⚖️',
+    color: '#7B1FA2',
+    desc: '建設業法・建築基準法・労働安全衛生法・環境関連法',
+    textSections: 4,
   },
 ];
 
-export default function KenchikuScreen() {
+export default function SekokanScreen() {
   const router = useRouter();
   const [mode, setMode] = React.useState<Mode>('kiso');
 
-  const countFor = (subjectKey: string): number =>
-    kenchikuQuestions.filter(q =>
-      q.subject === subjectKey &&
+  const countFor = (subject: string): number =>
+    sekokanQuestions.filter(q =>
+      q.subject === subject &&
       (mode === 'kiso'
         ? q.difficulty === 'basic' || q.difficulty === 'standard'
         : q.difficulty === 'advanced')
     ).length;
 
-  const totalCollected = kenchikuQuestions.length + kenchikuMogi.length;
+  const totalCount = sekokanQuestions.length + sekokanMogi.length;
 
   return (
     <SafeAreaView style={styles.container}>
-      <LinearGradient colors={['#37474F', '#1C2B33']} style={styles.header}>
+      <LinearGradient colors={['#BF360C', '#7F2408']} style={styles.header}>
         <TouchableOpacity onPress={() => router.back()} style={styles.backBtn}>
           <Text style={styles.backBtnText}>← 戻る</Text>
         </TouchableOpacity>
-        <Text style={styles.headerTitle}>🏛️ 建築設備士</Text>
-        <Text style={styles.headerSub}>国家資格 ／ 建築設備の最高峰</Text>
+        <Text style={styles.headerTitle}>🏗️ 一級建築施工管理技士</Text>
+        <Text style={styles.headerSub}>国家資格 ／ 建築工事の施工管理のスペシャリスト</Text>
         <View style={styles.examInfoRow}>
-          <View style={styles.examInfoBadge}><Text style={styles.examInfoText}>1次学科 105問</Text></View>
-          <View style={styles.examInfoBadge}><Text style={styles.examInfoText}>収録{totalCollected}問</Text></View>
-          <View style={styles.examInfoBadge}><Text style={styles.examInfoText}>年1回（1次は6月）</Text></View>
+          <View style={styles.examInfoBadge}><Text style={styles.examInfoText}>一次検定 72問中60問解答</Text></View>
+          <View style={styles.examInfoBadge}><Text style={styles.examInfoText}>収録{totalCount}問</Text></View>
+          <View style={styles.examInfoBadge}><Text style={styles.examInfoText}>年2回（前期・後期）</Text></View>
         </View>
 
-        {/* モード切替 */}
         <View style={styles.modeRow}>
           <TouchableOpacity
             style={[styles.modeBtn, mode === 'kiso' && styles.modeBtnActive]}
             onPress={() => setMode('kiso')}
           >
-            <Text style={[styles.modeBtnText, mode === 'kiso' && styles.modeBtnTextActive]}>
-              📝 基礎問題
-            </Text>
+            <Text style={[styles.modeBtnText, mode === 'kiso' && styles.modeBtnTextActive]}>📝 基礎問題</Text>
           </TouchableOpacity>
           <TouchableOpacity
             style={[styles.modeBtn, mode === 'ouyou' && styles.modeBtnActive]}
             onPress={() => setMode('ouyou')}
           >
-            <Text style={[styles.modeBtnText, mode === 'ouyou' && styles.modeBtnTextActive]}>
-              🔥 応用問題
-            </Text>
+            <Text style={[styles.modeBtnText, mode === 'ouyou' && styles.modeBtnTextActive]}>🔥 応用問題</Text>
           </TouchableOpacity>
           <TouchableOpacity
             style={[styles.modeBtn, mode === 'text' && styles.modeBtnActive]}
             onPress={() => setMode('text')}
           >
-            <Text style={[styles.modeBtnText, mode === 'text' && styles.modeBtnTextActive]}>
-              📖 テキスト
-            </Text>
+            <Text style={[styles.modeBtnText, mode === 'text' && styles.modeBtnTextActive]}>📖 テキスト</Text>
           </TouchableOpacity>
         </View>
       </LinearGradient>
 
       <ScrollView style={styles.scroll} contentContainerStyle={styles.content} showsVerticalScrollIndicator={false}>
-        {/* 試験対策メニュー */}
         <TouchableOpacity
           style={styles.mogiCard}
-          onPress={() => router.push('/kenchiku/mogi' as any)}
+          onPress={() => router.push('/sekokan/mogi' as any)}
           activeOpacity={0.85}
         >
           <View style={styles.mogiIcon}><Text style={styles.subjectEmoji}>🎯</Text></View>
           <View style={styles.subjectBody}>
             <Text style={styles.mogiTitle}>模擬試験（本試験形式）</Text>
-            <Text style={styles.mogiDesc}>全50問・タイマー付き・全科目横断</Text>
+            <Text style={styles.mogiDesc}>全{sekokanMogi.length}問・タイマー付き・図解入り詳細解説</Text>
           </View>
           <Text style={[styles.subjectArrow, { color: 'rgba(255,255,255,0.7)' }]}>›</Text>
         </TouchableOpacity>
 
         <TouchableOpacity
-          style={styles.seizuCard}
-          onPress={() => router.push('/kenchiku/seizu' as any)}
+          style={styles.nijiCard}
+          onPress={() => router.push('/sekokan/niji' as any)}
           activeOpacity={0.85}
         >
-          <View style={styles.seizuIcon}><Text style={styles.subjectEmoji}>📐</Text></View>
+          <View style={styles.mogiIcon}><Text style={styles.subjectEmoji}>✍️</Text></View>
           <View style={styles.subjectBody}>
-            <Text style={styles.mogiTitle}>第二次試験（設計製図）対策ガイド</Text>
-            <Text style={styles.mogiDesc}>試験内容・必要な道具・勉強法を解説</Text>
+            <Text style={styles.mogiTitle}>第二次検定 対策ガイド</Text>
+            <Text style={styles.mogiDesc}>経験記述に何が必要か・出題構成・勉強法を解説</Text>
           </View>
           <Text style={[styles.subjectArrow, { color: 'rgba(255,255,255,0.7)' }]}>›</Text>
         </TouchableOpacity>
@@ -167,8 +131,8 @@ export default function KenchikuScreen() {
             onPress={() =>
               router.push(
                 mode === 'text'
-                  ? (`/kenchiku/text/${subject.key}` as any)
-                  : (`/kenchiku/quiz/${subject.key}?level=${mode}` as any)
+                  ? (`/sekokan/text/${subject.key}` as any)
+                  : (`/sekokan/quiz/${subject.key}?level=${mode}` as any)
               )
             }
             activeOpacity={0.85}
@@ -181,7 +145,7 @@ export default function KenchikuScreen() {
               <Text style={styles.subjectDesc}>{subject.desc}</Text>
               {mode === 'text' ? (
                 <Text style={[styles.subjectMeta, { color: subject.color }]}>
-                  {subject.textSections.length}セクション収録
+                  {subject.textSections}セクション収録
                 </Text>
               ) : (
                 <Text style={[styles.subjectMeta, { color: subject.color }]}>
@@ -194,12 +158,12 @@ export default function KenchikuScreen() {
         ))}
 
         <View style={styles.infoCard}>
-          <Text style={styles.infoTitle}>📖 建築設備士試験について</Text>
-          <Text style={styles.infoText}>・1次試験（学科）：建築一般知識・建築法規・建築設備 計100問</Text>
-          <Text style={styles.infoText}>・2次試験（設計製図）：空調・給排水・電気いずれか1科目</Text>
-          <Text style={styles.infoText}>・試験日：1次8月中旬、2次11月</Text>
-          <Text style={styles.infoText}>・合格率：1次約30%、2次約60%</Text>
-          <Text style={styles.infoText}>・受験資格：実務経験2年以上（学歴による）</Text>
+          <Text style={styles.infoTitle}>📖 一級建築施工管理技士について</Text>
+          <Text style={styles.infoText}>・一次検定：四肢一択等 72問中60問解答（マークシート）</Text>
+          <Text style={styles.infoText}>・二次検定：経験記述＋記述式問題</Text>
+          <Text style={styles.infoText}>・一次合格で「一級建築施工管理技士補」の資格が得られる</Text>
+          <Text style={styles.infoText}>・監理技術者（建築一式等）になれる国家資格</Text>
+          <Text style={styles.infoText}>・合格基準：一次は総得点の60%程度（施工管理法の足切りあり）</Text>
         </View>
       </ScrollView>
     </SafeAreaView>
@@ -220,7 +184,7 @@ const styles = StyleSheet.create({
   modeBtn: { flex: 1, backgroundColor: 'rgba(255,255,255,0.15)', borderRadius: 12, paddingVertical: 10, alignItems: 'center' },
   modeBtnActive: { backgroundColor: '#FFFFFF' },
   modeBtnText: { fontSize: 13, fontWeight: '700', color: 'rgba(255,255,255,0.8)' },
-  modeBtnTextActive: { color: '#37474F' },
+  modeBtnTextActive: { color: '#BF360C' },
   scroll: { flex: 1 },
   content: { paddingHorizontal: 16, paddingTop: 20, paddingBottom: 40 },
   sectionTitle: { fontSize: 15, fontWeight: '800', color: '#1A1A2E', marginBottom: 16 },
@@ -232,9 +196,20 @@ const styles = StyleSheet.create({
   },
   subjectIcon: { width: 56, height: 56, borderRadius: 16, alignItems: 'center', justifyContent: 'center' },
   subjectEmoji: { fontSize: 26 },
+  subjectBody: { flex: 1 },
+  subjectName: { fontSize: 15, fontWeight: '800', color: '#1A1A2E', marginBottom: 3 },
+  subjectDesc: { fontSize: 11, color: '#888', fontWeight: '500', marginBottom: 4 },
+  subjectMeta: { fontSize: 12, fontWeight: '700' },
+  subjectArrow: { fontSize: 26, color: '#CCC' },
   mogiCard: {
-    flexDirection: 'row', alignItems: 'center', backgroundColor: '#1C2B33',
+    flexDirection: 'row', alignItems: 'center', backgroundColor: '#7F2408',
     borderRadius: 16, padding: 16, marginBottom: 12,
+    shadowColor: '#000', shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.15, shadowRadius: 8, elevation: 3, gap: 14,
+  },
+  nijiCard: {
+    flexDirection: 'row', alignItems: 'center', backgroundColor: '#A0522D',
+    borderRadius: 16, padding: 16, marginBottom: 20,
     shadowColor: '#000', shadowOffset: { width: 0, height: 2 },
     shadowOpacity: 0.15, shadowRadius: 8, elevation: 3, gap: 14,
   },
@@ -242,27 +217,12 @@ const styles = StyleSheet.create({
     width: 56, height: 56, borderRadius: 16, alignItems: 'center', justifyContent: 'center',
     backgroundColor: 'rgba(255,255,255,0.15)',
   },
-  seizuCard: {
-    flexDirection: 'row', alignItems: 'center', backgroundColor: '#455A64',
-    borderRadius: 16, padding: 16, marginBottom: 20,
-    shadowColor: '#000', shadowOffset: { width: 0, height: 2 },
-    shadowOpacity: 0.15, shadowRadius: 8, elevation: 3, gap: 14,
-  },
-  seizuIcon: {
-    width: 56, height: 56, borderRadius: 16, alignItems: 'center', justifyContent: 'center',
-    backgroundColor: 'rgba(255,255,255,0.15)',
-  },
   mogiTitle: { fontSize: 15, fontWeight: '800', color: '#FFFFFF', marginBottom: 3 },
   mogiDesc: { fontSize: 11, color: 'rgba(255,255,255,0.75)', fontWeight: '500' },
-  subjectBody: { flex: 1 },
-  subjectName: { fontSize: 15, fontWeight: '800', color: '#1A1A2E', marginBottom: 3 },
-  subjectDesc: { fontSize: 11, color: '#888', fontWeight: '500', marginBottom: 4 },
-  subjectMeta: { fontSize: 12, fontWeight: '700' },
-  subjectArrow: { fontSize: 26, color: '#CCC' },
   infoCard: {
-    backgroundColor: '#ECEFF1', borderRadius: 16, padding: 18,
-    borderLeftWidth: 4, borderLeftColor: '#37474F', marginTop: 8,
+    backgroundColor: '#FBE9E7', borderRadius: 16, padding: 18,
+    borderLeftWidth: 4, borderLeftColor: '#BF360C', marginTop: 8,
   },
-  infoTitle: { fontSize: 14, fontWeight: '800', color: '#37474F', marginBottom: 10 },
+  infoTitle: { fontSize: 14, fontWeight: '800', color: '#BF360C', marginBottom: 10 },
   infoText: { fontSize: 13, color: '#555', lineHeight: 24, fontWeight: '500' },
 });

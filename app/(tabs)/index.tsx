@@ -24,7 +24,7 @@ export default function HomeScreen() {
             <View style={styles.cardBody}>
               <Text style={styles.cardTitle}>英検対策</Text>
               <Text style={styles.cardSubtitle}>2級・3級・4級 ネイティブ品質問題</Text>
-              <Text style={styles.cardMeta}>語彙・文法・読解・対話 ／ 各150問収録</Text>
+              <Text style={styles.cardMeta}>語彙・文法・読解・対話・リスニング ／ 各160問収録</Text>
             </View>
             <Text style={styles.cardArrow}>›</Text>
           </LinearGradient>
@@ -51,7 +51,7 @@ export default function HomeScreen() {
             <View style={styles.cardBody}>
               <Text style={styles.cardTitle}>マンション管理士</Text>
               <Text style={styles.cardSubtitle}>管理組合・区分所有法・設備管理</Text>
-              <Text style={styles.cardMeta}>国家資格 ／ 1000問収録予定</Text>
+              <Text style={styles.cardMeta}>国家資格 ／ 分野別問題・本試験問題（2年分）収録</Text>
             </View>
             <Text style={styles.cardArrow}>›</Text>
           </LinearGradient>
@@ -66,7 +66,7 @@ export default function HomeScreen() {
             <View style={styles.cardBody}>
               <Text style={styles.cardTitle}>FP試験</Text>
               <Text style={styles.cardSubtitle}>ファイナンシャルプランナー 2・3級</Text>
-              <Text style={styles.cardMeta}>国家資格 ／ 1000問収録予定</Text>
+              <Text style={styles.cardMeta}>国家資格 ／ 6分野・詳細解説付き</Text>
             </View>
             <Text style={styles.cardArrow}>›</Text>
           </LinearGradient>
@@ -81,7 +81,19 @@ export default function HomeScreen() {
             <View style={styles.cardBody}>
               <Text style={styles.cardTitle}>建築設備士</Text>
               <Text style={styles.cardSubtitle}>空調・給排水・電気・法規・構造</Text>
-              <Text style={styles.cardMeta}>国家資格 ／ 1200問＋テキスト収録予定</Text>
+              <Text style={styles.cardMeta}>国家資格 ／ テキスト・基礎/応用・模擬試験・製図ガイド</Text>
+            </View>
+            <Text style={styles.cardArrow}>›</Text>
+          </LinearGradient>
+        </TouchableOpacity>
+
+        <TouchableOpacity style={styles.card} onPress={() => router.push('/sekokan')} activeOpacity={0.85}>
+          <LinearGradient colors={['#BF360C', '#7F2408']} style={styles.cardGradient}>
+            <Text style={styles.cardEmoji}>🏗️</Text>
+            <View style={styles.cardBody}>
+              <Text style={styles.cardTitle}>一級建築施工管理技士</Text>
+              <Text style={styles.cardSubtitle}>建築学・施工・施工管理法・法規</Text>
+              <Text style={styles.cardMeta}>国家資格 ／ テキスト・基礎/応用・模擬試験・二次対策</Text>
             </View>
             <Text style={styles.cardArrow}>›</Text>
           </LinearGradient>
@@ -96,7 +108,7 @@ export default function HomeScreen() {
             <View style={styles.cardBody}>
               <Text style={styles.cardTitle}>電験三種</Text>
               <Text style={styles.cardSubtitle}>理論・電力・機械・法規</Text>
-              <Text style={styles.cardMeta}>国家資格 ／ 1000問収録予定</Text>
+              <Text style={styles.cardMeta}>国家資格 ／ 4科目・詳細解説付き</Text>
             </View>
             <Text style={styles.cardArrow}>›</Text>
           </LinearGradient>
@@ -108,7 +120,7 @@ export default function HomeScreen() {
             <View style={styles.cardBody}>
               <Text style={styles.cardTitle}>気象予報士</Text>
               <Text style={styles.cardSubtitle}>一般知識・専門知識・実技</Text>
-              <Text style={styles.cardMeta}>国家資格 ／ 1000問収録予定</Text>
+              <Text style={styles.cardMeta}>国家資格 ／ テキスト＋問題・詳細解説付き</Text>
             </View>
             <Text style={styles.cardArrow}>›</Text>
           </LinearGradient>
