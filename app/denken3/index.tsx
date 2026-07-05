@@ -32,6 +32,21 @@ export default function Denken3Screen() {
       <ScrollView style={styles.scroll} contentContainerStyle={styles.content} showsVerticalScrollIndicator={false}>
         <Text style={styles.sectionTitle}>科目を選んで演習スタート</Text>
 
+        {/* テキストへの導線 */}
+        <View style={{ flexDirection: 'row', gap: 8, marginBottom: 16 }}>
+          {SUBJECTS.map(sub => (
+            <TouchableOpacity
+              key={`text-${sub.key}`}
+              style={{ flex: 1, backgroundColor: sub.color, borderRadius: 12, paddingVertical: 10, alignItems: 'center' }}
+              onPress={() => router.push(`/denken3/text/${sub.key}` as any)}
+              activeOpacity={0.85}
+            >
+              <Text style={{ fontSize: 11, fontWeight: '800', color: '#FFF' }}>📖 {sub.name}</Text>
+              <Text style={{ fontSize: 9, fontWeight: '600', color: 'rgba(255,255,255,0.8)' }}>テキスト</Text>
+            </TouchableOpacity>
+          ))}
+        </View>
+
         {SUBJECTS.map(s => (
           <TouchableOpacity
             key={s.key}
