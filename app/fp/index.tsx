@@ -38,6 +38,22 @@ export default function FPScreen() {
       </LinearGradient>
 
       <ScrollView style={styles.scroll} contentContainerStyle={styles.content} showsVerticalScrollIndicator={false}>
+        <TouchableOpacity
+          style={styles.textCard}
+          onPress={() => router.push('/fp/text' as any)}
+          activeOpacity={0.85}
+        >
+          <View style={[styles.subjectIcon, { backgroundColor: '#085C2D' }]}>
+            <Text style={styles.subjectEmoji}>📖</Text>
+          </View>
+          <View style={styles.subjectBody}>
+            <Text style={styles.subjectName}>テキスト（要点整理）</Text>
+            <Text style={styles.subjectDesc}>6分野の計算公式・数値基準を図解つきで整理</Text>
+            <Text style={[styles.subjectMeta, { color: '#085C2D' }]}>全12章収録</Text>
+          </View>
+          <Text style={styles.subjectArrow}>›</Text>
+        </TouchableOpacity>
+
         <Text style={styles.sectionTitle}>科目を選んでスタート！</Text>
 
         {FP_SUBJECTS.map((subject) => (
@@ -86,6 +102,22 @@ const styles = StyleSheet.create({
   scroll: { flex: 1 },
   content: { paddingHorizontal: 16, paddingTop: 20, paddingBottom: 40 },
   sectionTitle: { fontSize: 15, fontWeight: '800', color: '#1A1A2E', marginBottom: 16 },
+  textCard: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    backgroundColor: '#FFFFFF',
+    borderRadius: 16,
+    padding: 16,
+    marginBottom: 20,
+    borderWidth: 2,
+    borderColor: '#0D7C3D',
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.08,
+    shadowRadius: 8,
+    elevation: 3,
+    gap: 14,
+  },
   subjectCard: {
     flexDirection: 'row',
     alignItems: 'center',
