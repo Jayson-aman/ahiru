@@ -38,6 +38,21 @@ export default function MansionScreen() {
       </LinearGradient>
 
       <ScrollView style={styles.scroll} contentContainerStyle={styles.content} showsVerticalScrollIndicator={false}>
+        <TouchableOpacity
+          style={styles.honshikenCard}
+          onPress={() => router.push('/mansion/honshiken')}
+          activeOpacity={0.85}
+        >
+          <View style={styles.honshikenIcon}>
+            <Text style={styles.subjectEmoji}>📝</Text>
+          </View>
+          <View style={styles.subjectBody}>
+            <Text style={styles.honshikenTitle}>本試験問題</Text>
+            <Text style={styles.honshikenDesc}>令和6年度・令和7年度／全50問・120分本番形式</Text>
+          </View>
+          <Text style={[styles.subjectArrow, { color: 'rgba(255,255,255,0.7)' }]}>›</Text>
+        </TouchableOpacity>
+
         <Text style={styles.sectionTitle}>科目を選んでスタート！</Text>
 
         {MANSION_SUBJECTS.map((subject) => (
@@ -101,6 +116,26 @@ const styles = StyleSheet.create({
     gap: 14,
   },
   subjectIcon: { width: 56, height: 56, borderRadius: 16, alignItems: 'center', justifyContent: 'center' },
+  honshikenCard: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    backgroundColor: '#4A0072',
+    borderRadius: 16,
+    padding: 16,
+    marginBottom: 20,
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.15,
+    shadowRadius: 8,
+    elevation: 3,
+    gap: 14,
+  },
+  honshikenIcon: {
+    width: 56, height: 56, borderRadius: 16, alignItems: 'center', justifyContent: 'center',
+    backgroundColor: 'rgba(255,255,255,0.15)',
+  },
+  honshikenTitle: { fontSize: 15, fontWeight: '800', color: '#FFFFFF', marginBottom: 3 },
+  honshikenDesc: { fontSize: 11, color: 'rgba(255,255,255,0.75)', fontWeight: '500' },
   subjectEmoji: { fontSize: 26 },
   subjectBody: { flex: 1 },
   subjectName: { fontSize: 15, fontWeight: '800', color: '#1A1A2E', marginBottom: 3 },
