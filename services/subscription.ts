@@ -39,17 +39,17 @@ export const ENTITLEMENTS: Record<CertKey, string> = {
 // （年19.8万）に設定し、「本気の受験対策への投資」として信頼される
 // 価格帯と、学校より圧倒的に安いという実利の両立を狙う。
 export const PRICING = {
-  /** Per-certification Pro plan (資格試験) — 資格学校の約1/4 */
-  proMonthly: '¥12,800/月',
-  proYearly:  '¥128,000/年',
+  /** Per-certification Pro plan (資格試験) — アプリ型学習の最上位帯 */
+  proMonthly: '¥4,980/月',
+  proYearly:  '¥49,800/年',
   proYearlySavings: '2か月分お得',
-  /** All-certs Max plan — 全資格見放題で資格学校の約半額 */
-  maxMonthly: '¥19,800/月',
-  maxYearly:  '¥198,000/年',
+  /** All-certs Max plan — 全資格見放題 */
+  maxMonthly: '¥7,980/月',
+  maxYearly:  '¥79,800/年',
   maxYearlySavings: '2か月分お得',
   /** 資格学校との比較訴求用 */
-  schoolComparison: '資格学校（年40〜50万円）の約1/4',
-  maxSchoolComparison: '全資格対応で資格学校1講座の約半額',
+  schoolComparison: '資格学校（年40〜50万円）の約1/8',
+  maxSchoolComparison: '全資格見放題で資格学校1講座の約1/5',
   /** 受験対策プラン（中学・高校受験） */
   jukenMonthly: '¥500/月',
   jukenYearly:  '¥5,000/年',
