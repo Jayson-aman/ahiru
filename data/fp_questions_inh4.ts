@@ -45,7 +45,7 @@ export const fpInhQuestions4: FPQuestion[] = [
     ],
     correctKey: 'D' as const,
     explanation: '秘密証書遺言は、遺言の内容を秘密にしたまま遺言書の存在のみを公証する制度である。遺言者は遺言書に署名・押印後に封印し、公証人1人・証人2人以上の前に提出する。本文は自書でなくても（パソコン・代筆）よいが、署名は自書が必要。相続開始後は家庭裁判所で検認を受ける必要がある。内容の有効性は保証されないため、実務ではあまり利用されない。',
-    difficulty: 'intermediate' as const,
+    difficulty: 'standard' as const,
     level: '2級' as const,
   },
   {
@@ -61,7 +61,7 @@ export const fpInhQuestions4: FPQuestion[] = [
     ],
     correctKey: 'B' as const,
     explanation: '遺留分は一定の相続人に保証された最低限の相続割合で、兄弟姉妹には認められない。遺留分の割合は、直系尊属のみが相続人の場合は遺産の3分の1、それ以外（配偶者・子等が含まれる場合）は遺産の2分の1となる。2019年の民法改正により、遺留分侵害への対抗手段は「遺留分減殺請求（現物返還）」から「遺留分侵害額請求（金銭請求）」に変更された。相続開始前の遺留分放棄は家庭裁判所の許可が必要。',
-    difficulty: 'intermediate' as const,
+    difficulty: 'standard' as const,
     level: '2級' as const,
   },
   {
@@ -77,7 +77,7 @@ export const fpInhQuestions4: FPQuestion[] = [
     ],
     correctKey: 'C' as const,
     explanation: '遺留分侵害額請求権（民法1048条）の消滅時効は、相続の開始および遺留分を侵害する贈与・遺贈があったことを知った時から1年間、または相続開始の時から10年間のいずれか早い方で消滅する。知った時から1年という短期消滅時効が実務上重要で、気づいてから速やかに請求する必要がある。',
-    difficulty: 'intermediate' as const,
+    difficulty: 'standard' as const,
     level: '2級' as const,
   },
   {
@@ -141,7 +141,7 @@ export const fpInhQuestions4: FPQuestion[] = [
     ],
     correctKey: 'D' as const,
     explanation: '小規模宅地等の特例のうち特定居住用宅地等は、被相続人の居住用宅地330㎡まで評価額を80%減額できる。配偶者が取得する場合は居住継続・所有継続の要件が不要で自動的に適用される。同居の親族が取得する場合は申告期限まで居住継続・所有継続が必要。配偶者も同居親族もいない場合の別居親族（家なき子）は、相続前3年以内に自己・配偶者・3親等内親族等所有の家屋に居住していないことなどの要件を満たす必要がある。',
-    difficulty: 'intermediate' as const,
+    difficulty: 'standard' as const,
     level: '2級' as const,
   },
   {
@@ -157,7 +157,7 @@ export const fpInhQuestions4: FPQuestion[] = [
     ],
     correctKey: 'B' as const,
     explanation: '特定事業用宅地等の特例は、被相続人が事業に使用していた宅地を相続した親族が、申告期限（相続開始から10ヶ月）まで事業を継続し、かつ宅地を保有し続ける場合に、400㎡まで評価額を80%減額できる制度。特定居住用宅地等（330㎡・80%減）との完全併用が可能で、両方適用すると最大730㎡まで対象となる。なお相続開始前3年以内に新たに事業の用に供された宅地は原則除外。',
-    difficulty: 'intermediate' as const,
+    difficulty: 'standard' as const,
     level: '2級' as const,
   },
   {
@@ -173,7 +173,7 @@ export const fpInhQuestions4: FPQuestion[] = [
     ],
     correctKey: 'B' as const,
     explanation: '直系尊属からの住宅取得等資金贈与の非課税特例は、暦年課税・相続時精算課税のどちらと組み合わせても適用できる。受贈者の要件として、贈与年の1月1日時点で18歳以上（2022年4月以降）、贈与年の合計所得金額2,000万円以下（床面積40㎡以上50㎡未満の場合は1,000万円以下）であること。住宅の床面積は40㎡以上240㎡以下。贈与資金は原則として贈与年翌年3月15日までに住宅取得に充て居住することが要件。',
-    difficulty: 'intermediate' as const,
+    difficulty: 'standard' as const,
     level: '2級' as const,
   },
   {
@@ -205,7 +205,7 @@ export const fpInhQuestions4: FPQuestion[] = [
     ],
     correctKey: 'A' as const,
     explanation: '相続税の2割加算（相続税法18条）は、配偶者・子（代襲相続人含む）・父母以外の者が相続または遺贈により財産を取得した場合に、算出相続税額に2割を加算する制度。兄弟姉妹・甥姪・孫（代襲相続人を除く）・養子（1親等の養子でない場合等）が対象。孫養子は被相続人の子の代を飛ばして財産を受け取るため2割加算とする趣旨。',
-    difficulty: 'intermediate' as const,
+    difficulty: 'standard' as const,
     level: '2級' as const,
   },
   {
@@ -221,7 +221,7 @@ export const fpInhQuestions4: FPQuestion[] = [
     ],
     correctKey: 'A' as const,
     explanation: '未成年者控除は、相続人が未成年の場合に相続税額から控除できる制度。2022年3月以前は「10万円×（20歳になるまでの年数）」、2022年4月以降は「10万円×（18歳になるまでの年数）」。年数計算では1年未満の端数は切り上げ。控除額が本人の税額を超える場合は、扶養義務者の相続税額から超過分を控除できる。過去に適用を受けた場合は残額のみ次回使用可能。',
-    difficulty: 'intermediate' as const,
+    difficulty: 'standard' as const,
     level: '2級' as const,
   },
   {
@@ -253,7 +253,7 @@ export const fpInhQuestions4: FPQuestion[] = [
     ],
     correctKey: 'C' as const,
     explanation: '生命保険金の相続税非課税枠（500万円×法定相続人の数）は、相続人が受け取った死亡保険金に対してのみ適用される。受取人が相続人以外（内縁の妻・友人等）の場合、その保険金は全額みなし相続財産として相続税の課税対象となり、非課税枠は使えない。生命保険の相続対策としては、非課税枠の活用・納税資金の確保・特定の人への確実な財産移転などの効果があるが、受取人の設定が重要。',
-    difficulty: 'intermediate' as const,
+    difficulty: 'standard' as const,
     level: '2級' as const,
   },
   {
@@ -317,7 +317,7 @@ export const fpInhQuestions4: FPQuestion[] = [
     ],
     correctKey: 'B' as const,
     explanation: '家族信託（民事信託）は、委託者（主に高齢の親）が信頼できる家族（子など）を受託者として財産管理を委ねる仕組み。最大のメリットは、委託者が認知症等で判断能力を失っても、受託者が信託契約に従い財産の管理・処分を継続できる点（成年後見制度より柔軟な財産管理が可能）。委託者と受益者は同一でも異なっても有効（自益信託・他益信託）。受託者は個人（家族）でも可能で、信託業法の適用を受けない。',
-    difficulty: 'intermediate' as const,
+    difficulty: 'standard' as const,
     level: '2級' as const,
   },
   {
@@ -333,7 +333,7 @@ export const fpInhQuestions4: FPQuestion[] = [
     ],
     correctKey: 'D' as const,
     explanation: '遺言代用信託は、委託者（被相続人になる者）が生前に信託会社等と信託契約を締結し、委託者の死亡後に指定した受益者（相続人等）に信託財産を交付する仕組み。遺言なしに特定の人への財産承継を確実に行える。遺産分割協議の対象外のため、相続争いを避けられる。ただし相続税は回避できない（みなし相続財産等として課税）。生前は委託者が受益者変更等の見直しが可能な柔軟性もある。',
-    difficulty: 'intermediate' as const,
+    difficulty: 'standard' as const,
     level: '2級' as const,
   },
   {
@@ -365,7 +365,7 @@ export const fpInhQuestions4: FPQuestion[] = [
     ],
     correctKey: 'B' as const,
     explanation: '代償分割は遺産分割協議によるものであり、代償金を受け取った相続人には所得税も贈与税も課されない。代償金はあくまでも遺産分割の対価（相続財産の取得に代わるもの）として扱われる。ただし代償金を支払う側の相続人が不動産等（現物財産）で代償した場合は、その資産の時価による譲渡として譲渡所得税が課税される場合がある点は注意が必要。',
-    difficulty: 'intermediate' as const,
+    difficulty: 'standard' as const,
     level: '2級' as const,
   },
   {
@@ -397,7 +397,7 @@ export const fpInhQuestions4: FPQuestion[] = [
     ],
     correctKey: 'C' as const,
     explanation: '相続税の延納は金銭一括納付が困難な場合に分割納付する制度で、延納期間中は利子税が課される（利子税率は財産の種類・延納期間等による）。延納の要件は「納付税額10万円超」「金銭一括納付困難」「担保提供（原則）」等。物納は延納によっても困難な場合に相続財産で納付する制度で、物納できるのは相続財産のみ（相続財産以外は不可）。物納申請は原則として申告期限までに行う。',
-    difficulty: 'intermediate' as const,
+    difficulty: 'standard' as const,
     level: '2級' as const,
   },
   {
@@ -413,7 +413,7 @@ export const fpInhQuestions4: FPQuestion[] = [
     ],
     correctKey: 'D' as const,
     explanation: '上場株式の相続税評価は、①課税時期（相続開始日）の最終価格②課税時期の属する月の毎日の最終価格の平均額③課税時期の属する月の前月の毎日の最終価格の平均額④課税時期の属する月の前々月の毎日の最終価格の平均額の4つのうち最も低い価額で評価する（財産評価基本通達）。相続人に最も有利な評価を採用できる。なお証券取引所が異なる場合は各取引所の価格を比較する。',
-    difficulty: 'intermediate' as const,
+    difficulty: 'standard' as const,
     level: '2級' as const,
   },
   {
@@ -461,7 +461,7 @@ export const fpInhQuestions4: FPQuestion[] = [
     ],
     correctKey: 'A' as const,
     explanation: '限定承認は、相続財産（プラスの財産）の範囲内でのみ被相続人の債務（マイナスの財産）を引き継ぐ方法で、相続人全員が共同して家庭裁判所に申述する必要がある。熟慮期間は相続放棄と同じく相続開始を知った日から3ヶ月以内。債務超過の可能性がある場合に有効だが、手続きが煩雑なため実務では相続放棄が選択されることが多い。なお限定承認時は相続財産を被相続人から相続した時点で時価で取得したものとして譲渡所得税が課される。',
-    difficulty: 'intermediate' as const,
+    difficulty: 'standard' as const,
     level: '2級' as const,
   },
   {
@@ -477,7 +477,7 @@ export const fpInhQuestions4: FPQuestion[] = [
     ],
     correctKey: 'C' as const,
     explanation: '遺贈には①包括遺贈（遺産全体の分数的割合を指定）と②特定遺贈（特定財産を指定）がある。包括受遺者は相続人と同一の権利義務を有するため、プラスの財産とともにマイナスの財産（債務）も指定割合で引き継ぐ。相続人でない者への遺贈（包括・特定とも）で配偶者・一親等の血族以外の場合は相続税の2割加算が適用される。特定遺贈は遺言者死亡後いつでも放棄可能。',
-    difficulty: 'intermediate' as const,
+    difficulty: 'standard' as const,
     level: '2級' as const,
   },
   {
@@ -493,7 +493,7 @@ export const fpInhQuestions4: FPQuestion[] = [
     ],
     correctKey: 'B' as const,
     explanation: '死因贈与（民法554条）は贈与者の死亡によって効力が生じる贈与契約であり、贈与者と受贈者の双方の合意（契約）が必要。これに対し遺贈は遺言者の単独行為（遺言書）で成立し、受遺者の同意は不要（ただし放棄は可能）。課税関係はどちらも相続税（みなし相続財産）の対象となる（贈与税ではない）。死因贈与は書面がなくても有効だが証明困難のため実務では書面化が推奨される。',
-    difficulty: 'intermediate' as const,
+    difficulty: 'standard' as const,
     level: '2級' as const,
   },
   {
@@ -509,7 +509,7 @@ export const fpInhQuestions4: FPQuestion[] = [
     ],
     correctKey: 'A' as const,
     explanation: '相続税の債務控除（相続税法13条）では、被相続人の債務のうち確実と認められるものを遺産総額から控除できる。公租公課（所得税・住民税・固定資産税等の未払い分）は債務控除の対象。ただし墓地・仏壇等の非課税財産に係る未払い購入代金は対象外。保証債務は主債務者が弁済不能な部分のみ控除可能。相続放棄者は財産を取得しないため債務控除・葬儀費用控除とも適用されない。',
-    difficulty: 'intermediate' as const,
+    difficulty: 'standard' as const,
     level: '2級' as const,
   },
   {

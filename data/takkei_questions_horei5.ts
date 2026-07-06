@@ -109,7 +109,7 @@ export const takkeiHorei5: TakkeiQuestion[] = [
     ],
     correctKey: 'D' as const,
     explanation: '防火地域内で耐火建築物を建築する場合、建蔽率が10分の1緩和される（建築基準法第53条第3項）。準防火地域内でも耐火建築物・準耐火建築物に対して建蔽率緩和の規定はあるが、「防火地域と同様に」という点が誤りで、準防火地域内の準耐火建築物等への緩和規定の適用条件は防火地域とは異なる。',
-    difficulty: 'hard' as const,
+    difficulty: 'advanced' as const,
     examYear: 'R3',
   },
   {
@@ -157,7 +157,7 @@ export const takkeiHorei5: TakkeiQuestion[] = [
     ],
     correctKey: 'A' as const,
     explanation: '農地法第4条第1項および第5条第1項には許可不要の例外規定がある。土地収用法による収用の場合がその代表例である。国・都道府県による転用は許可不要の場合があるが協議が必要であり、農業用施設への転用も2a未満の場合に限り許可不要。一時転用は原則として許可が必要。',
-    difficulty: 'hard' as const,
+    difficulty: 'advanced' as const,
     examYear: 'R3',
   },
   {
@@ -173,7 +173,7 @@ export const takkeiHorei5: TakkeiQuestion[] = [
     ],
     correctKey: 'A' as const,
     explanation: '保安林の指定権者は原則として農林水産大臣であるが（森林法第25条）、都道府県知事が指定できる場合もある（同法第25条の2）。保安林内での立木伐採は禁止されるが許可があれば可能。地域森林計画対象の民有林での開発行為には都道府県知事の許可が必要（0.1haを超える場合等）。',
-    difficulty: 'hard' as const,
+    difficulty: 'advanced' as const,
     examYear: 'R1',
   },
   {
@@ -189,7 +189,7 @@ export const takkeiHorei5: TakkeiQuestion[] = [
     ],
     correctKey: 'B' as const,
     explanation: '砂防法第2条により、砂防指定地の指定は国土交通大臣が行う。砂防指定地内での土地の形状変更・工作物設置等には都道府県知事の許可が必要（砂防法第4条）。砂防指定地内でも許可を受ければ一定の行為は可能である。',
-    difficulty: 'hard' as const,
+    difficulty: 'advanced' as const,
     examYear: 'H30',
   },
   {
@@ -301,7 +301,7 @@ export const takkeiHorei5: TakkeiQuestion[] = [
     ],
     correctKey: 'B' as const,
     explanation: '既存不適格建築物に増築を行う場合、原則として建築物全体が現行の建築基準法の規定に適合しなければならない。ただし建築基準法第86条の7・政令の規定により、一定条件を満たす場合は既存部分への遡及適用が緩和される（既存部分は現行規定の適用を受けない）。増築部分のみを適合させれば足りるという表現は誤り。',
-    difficulty: 'hard' as const,
+    difficulty: 'advanced' as const,
     examYear: 'H30',
   },
   {
@@ -381,7 +381,7 @@ export const takkeiHorei5: TakkeiQuestion[] = [
     ],
     correctKey: 'B' as const,
     explanation: '保安林の指定は公益上の必要から行われるものであり、所有者の同意は必要要件とされていない（森林法第25条）。保安林内での立木伐採・土地形質変更等には都道府県知事の許可が必要。保安林指定を受けた土地であっても所有権の処分（売買等）は可能。',
-    difficulty: 'hard' as const,
+    difficulty: 'advanced' as const,
     examYear: 'H29',
   },
   {

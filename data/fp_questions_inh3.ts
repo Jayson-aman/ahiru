@@ -29,7 +29,7 @@ export const fpInhQuestions3: FPQuestion[] = [
     ],
     correctKey: 'A' as const,
     explanation: '相続時精算課税制度は、60歳以上の父母・祖父母から18歳以上の子・孫への贈与に適用できる制度で、累計2,500万円までの贈与について贈与税が非課税（2,500万円超の部分は一律20%課税）となる。贈与者が死亡した際の相続税の計算では、贈与財産を相続財産に加算して精算する。一度選択すると同一贈与者からの贈与について暦年課税に戻ることはできない。',
-    difficulty: 'intermediate' as const,
+    difficulty: 'standard' as const,
     level: '2級' as const,
   },
   {
@@ -61,7 +61,7 @@ export const fpInhQuestions3: FPQuestion[] = [
     ],
     correctKey: 'A' as const,
     explanation: '直系尊属から住宅取得等資金の贈与を受けた場合の贈与税非課税制度では、受贈者は贈与を受けた年の1月1日において18歳以上であること、合計所得金額が2,000万円以下であることが主な受贈者要件である。贈与者は父母・祖父母等の直系尊属であれば対象となる。非課税限度額は省エネ等住宅か否かで異なり、省エネ等住宅が1,000万円、それ以外が500万円が目安となっている。',
-    difficulty: 'intermediate' as const,
+    difficulty: 'standard' as const,
     level: '2級' as const,
   },
   {
@@ -93,7 +93,7 @@ export const fpInhQuestions3: FPQuestion[] = [
     ],
     correctKey: 'A' as const,
     explanation: '教育資金の一括贈与に係る贈与税非課税制度では、直系尊属（父母・祖父母等）から30歳未満の子・孫への教育資金について、受贈者1人につき最大1,500万円まで非課税となる。ただし学校等以外（塾・習い事等）への支払いは500万円が上限。金融機関に専用口座を開設し、領収書等で使途を証明する必要がある。贈与者死亡時の残額については一定の条件下で相続財産に加算される。',
-    difficulty: 'intermediate' as const,
+    difficulty: 'standard' as const,
     level: '2級' as const,
   },
   {
@@ -109,7 +109,7 @@ export const fpInhQuestions3: FPQuestion[] = [
     ],
     correctKey: 'C' as const,
     explanation: '結婚・子育て資金の一括贈与に係る贈与税非課税制度は、直系尊属（父母・祖父母等）から18歳以上50歳未満の子・孫への贈与に適用される制度である。非課税限度額は1,000万円（うち結婚関連費用は300万円まで）。教育資金の一括贈与と同様に、贈与者は直系尊属に限られており、叔父叔母や第三者からの贈与は対象外となる。',
-    difficulty: 'intermediate' as const,
+    difficulty: 'standard' as const,
     level: '2級' as const,
   },
   {
@@ -125,7 +125,7 @@ export const fpInhQuestions3: FPQuestion[] = [
     ],
     correctKey: 'A' as const,
     explanation: '相続税の総額計算は、①課税遺産総額（遺産総額－基礎控除額）を各法定相続人が法定相続分どおりに取得したと仮定し、②各人の仮取得額に速算表の税率（10%～55%）を適用した税額を計算し、③それらを合計したものが相続税の総額となる。その後、相続税総額を実際の取得割合に応じて各人に按分し、各種加算・控除を行って各人の納付税額を確定する。',
-    difficulty: 'intermediate' as const,
+    difficulty: 'standard' as const,
     level: '2級' as const,
   },
   {
@@ -173,7 +173,7 @@ export const fpInhQuestions3: FPQuestion[] = [
     ],
     correctKey: 'A' as const,
     explanation: '配偶者に対する相続税額の軽減規定では、配偶者が相続等で取得した財産の課税価格が①1億6,000万円、②配偶者の法定相続分相当額、のいずれか大きい金額以下であれば相続税はゼロとなる。この特例の適用には申告期限（相続開始を知った日の翌日から10か月以内）までに遺産分割が確定していることが必要で、法律婚の配偶者のみが対象となる。',
-    difficulty: 'intermediate' as const,
+    difficulty: 'standard' as const,
     level: '2級' as const,
   },
   {
@@ -189,7 +189,7 @@ export const fpInhQuestions3: FPQuestion[] = [
     ],
     correctKey: 'A' as const,
     explanation: '相続税の2割加算は、被相続人の一親等の血族（子・父母）および配偶者以外の者が相続・遺贈により財産を取得した場合に、算出税額の2割相当額が加算される制度である。孫が代襲相続する場合は2割加算の対象外だが、孫養子は一親等の血族であっても代襲相続人ではないため2割加算の対象となる。兄弟姉妹・甥・姪・第三者への遺贈なども2割加算の対象となる。',
-    difficulty: 'intermediate' as const,
+    difficulty: 'standard' as const,
     level: '2級' as const,
   },
   {
@@ -205,7 +205,7 @@ export const fpInhQuestions3: FPQuestion[] = [
     ],
     correctKey: 'A' as const,
     explanation: '路線価方式による自用地の相続税評価額は「路線価×各種画地補正率×地積」で計算する。本問では、路線価300千円/㎡×奥行価格補正率0.97×地積200㎡＝58,200千円（5,820万円）となる。路線価は千円単位で表示されることが多く、計算の際は単位に注意が必要。奥行価格補正率は奥行距離に応じて国税庁が定めており、標準的な奥行より長い・短い場合に補正が行われる。',
-    difficulty: 'intermediate' as const,
+    difficulty: 'standard' as const,
     level: '2級' as const,
   },
   {
@@ -237,7 +237,7 @@ export const fpInhQuestions3: FPQuestion[] = [
     ],
     correctKey: 'A' as const,
     explanation: '土地の相続税評価における各評価式の整理：①自用地＝路線価×補正率×地積、②借地権＝自用地評価額×借地権割合、③貸宅地（底地）＝自用地評価額×（1－借地権割合）、④貸家建付地＝自用地評価額×（1－借地権割合×借家権割合×賃貸割合）。借地権割合はAからGまで地域別に設定されており（30%～90%）、高い地域ほど底地の価値は低くなる。',
-    difficulty: 'intermediate' as const,
+    difficulty: 'standard' as const,
     level: '2級' as const,
   },
   {
@@ -285,7 +285,7 @@ export const fpInhQuestions3: FPQuestion[] = [
     ],
     correctKey: 'A' as const,
     explanation: '上場株式の相続税評価額は、以下の4つの価額のうち最も低い価額で評価する。①相続開始日（課税時期）の最終価格（終値）、②相続開始日の属する月の毎日の最終価格の月平均額、③前月の月平均額、④前々月の月平均額。取引所が複数ある場合はそれぞれの価額を比較する。相続開始日が取引所の休業日の場合は前後の取引日の終値の平均額等を使用する。',
-    difficulty: 'intermediate' as const,
+    difficulty: 'standard' as const,
     level: '2級' as const,
   },
   {
@@ -333,7 +333,7 @@ export const fpInhQuestions3: FPQuestion[] = [
     ],
     correctKey: 'A' as const,
     explanation: '生命保険の死亡保険金に係る税務判定のポイント：①契約者（保険料負担者）＝被保険者の場合→受取人が相続税（みなし相続財産）、②契約者＝受取人≠被保険者の場合→受取人が所得税（一時所得）、③契約者・被保険者・受取人が三者異なる場合→受取人が贈与税。本問は①に該当し、死亡保険金は相続税の課税対象となる。法定相続人が受け取る場合は「500万円×法定相続人数」の非課税枠が適用される。',
-    difficulty: 'intermediate' as const,
+    difficulty: 'standard' as const,
     level: '2級' as const,
   },
   {
@@ -349,7 +349,7 @@ export const fpInhQuestions3: FPQuestion[] = [
     ],
     correctKey: 'A' as const,
     explanation: '相続税法上の生命保険金非課税枠は「500万円×法定相続人の数」で計算される。ここでの法定相続人の数は、相続放棄をした人も含めてカウントし、養子については実子がいる場合は1人まで、実子がいない場合は2人まで算入できる。非課税枠は相続人が受け取った保険金合計額に適用され、各相続人の受取額に比例して按分される。相続放棄した人が受け取った保険金は全額課税対象となる。',
-    difficulty: 'intermediate' as const,
+    difficulty: 'standard' as const,
     level: '2級' as const,
   },
   {
@@ -445,7 +445,7 @@ export const fpInhQuestions3: FPQuestion[] = [
     ],
     correctKey: 'A' as const,
     explanation: '円滑な事業承継のためには「ヒト（経営の承継）」「モノ（事業用資産の承継）」「カネ（資金面の整備）」の3つが重要だが、特にヒトの承継が核心とされる。後継者育成では、①現場での業務経験の積み重ね、②マネジメントスキルの向上、③経営理念・ビジョンの共有、④社内外の信頼関係の構築、⑤必要に応じた外部での研修・修行、などを計画的に行う必要があり、一般的に10年以上の準備期間が必要とされる。',
-    difficulty: 'intermediate' as const,
+    difficulty: 'standard' as const,
     level: '2級' as const,
   },
   {
@@ -509,7 +509,7 @@ export const fpInhQuestions3: FPQuestion[] = [
     ],
     correctKey: 'A' as const,
     explanation: '小規模宅地等の特例の主要区分：①特定居住用宅地等：限度330㎡・減額80%（被相続人の自宅、一定の配偶者・同居親族等が取得）、②特定事業用宅地等：限度400㎡・減額80%（被相続人の事業用宅地、事業を引き継ぐ相続人が取得）、③貸付事業用宅地等：限度200㎡・減額50%（アパート等の貸付事業用）。特定居住用と特定事業用は最大730㎡まで完全併用可能だが、貸付事業用と他の区分を併用する場合は面積調整が必要となる。',
-    difficulty: 'intermediate' as const,
+    difficulty: 'standard' as const,
     level: '2級' as const,
   },
   {
@@ -541,7 +541,7 @@ export const fpInhQuestions3: FPQuestion[] = [
     ],
     correctKey: 'A' as const,
     explanation: '遺留分は一定の法定相続人に対して民法が保障する最低限の相続分で、遺留分権利者は配偶者・子・直系尊属（父母等）に限られ、兄弟姉妹は遺留分権利者ではない。遺留分の割合は相続財産全体に対して2分の1（直系尊属のみが相続人の場合は3分の1）であり、この割合を各自の法定相続分で按分した額が各人の遺留分となる。遺留分侵害額請求権は知った時から1年・相続開始から10年で消滅時効となる。',
-    difficulty: 'intermediate' as const,
+    difficulty: 'standard' as const,
     level: '2級' as const,
   },
   {
@@ -557,7 +557,7 @@ export const fpInhQuestions3: FPQuestion[] = [
     ],
     correctKey: 'A' as const,
     explanation: '主な遺言の種類と特徴：①自筆証書遺言：全文・日付・氏名の自書と押印が必要（財産目録はパソコン可・各ページ署名押印要）。保管は自己管理または法務局。②公正証書遺言：公証人が作成し、証人2人以上の立会いが必要。原本は公証役場保管で紛失・変造リスクなし。③秘密証書遺言：遺言内容を秘密にしたまま公証人・証人2人の前で存在を証明。自筆証書・秘密証書遺言は相続開始後に家庭裁判所の検認が必要（法務局保管の自筆証書は除く）。',
-    difficulty: 'intermediate' as const,
+    difficulty: 'standard' as const,
     level: '2級' as const,
   },
   {
@@ -573,7 +573,7 @@ export const fpInhQuestions3: FPQuestion[] = [
     ],
     correctKey: 'A' as const,
     explanation: '相続放棄は相続の開始を知った時から3か月の熟慮期間内に、家庭裁判所への申述によって行う。放棄すると最初から相続人でなかったものとみなされるが、代襲相続は生じない（代襲相続は相続人の死亡・欠格・廃除の場合のみ）。各相続人が単独で行えるため全員一致は不要。限定承認（プラスの財産の範囲でマイナスの財産を引き継ぐ制度）は相続人全員で申述が必要であり、放棄とは異なる。',
-    difficulty: 'intermediate' as const,
+    difficulty: 'standard' as const,
     level: '2級' as const,
   },
   {
@@ -589,7 +589,7 @@ export const fpInhQuestions3: FPQuestion[] = [
     ],
     correctKey: 'A' as const,
     explanation: '贈与税の配偶者控除（通称「おしどり贈与」）は、婚姻期間20年以上の配偶者への居住用不動産・取得資金の贈与に適用できる特例で、基礎控除110万円に加えて最高2,000万円が控除される（合計最大2,110万円が非課税）。同一配偶者への適用は一生に1回限り。また、この控除の適用を受けた財産は暦年課税の相続前加算（7年以内加算）の対象から除外される点が重要なメリットとなる。',
-    difficulty: 'intermediate' as const,
+    difficulty: 'standard' as const,
     level: '2級' as const,
   },
   {
@@ -605,7 +605,7 @@ export const fpInhQuestions3: FPQuestion[] = [
     ],
     correctKey: 'A' as const,
     explanation: '相続税の課税価格から控除できる債務・費用：①債務（借入金・未払い公租公課〈所得税・固定資産税等〉・未払い医療費・買掛金等の確定債務）、②葬式費用（通夜・告別式・火葬・納骨等の費用、ただし香典返し・初七日法要・墓地購入費用等は控除不可）。墓地・仏具の購入代金は非課税財産の対価であるため債務控除不可。相続放棄した者は課税価格がゼロとなるため債務控除の適用もない。',
-    difficulty: 'intermediate' as const,
+    difficulty: 'standard' as const,
     level: '2級' as const,
   },
   {
@@ -621,7 +621,7 @@ export const fpInhQuestions3: FPQuestion[] = [
     ],
     correctKey: 'A' as const,
     explanation: 'みなし相続財産とは、民法上は相続財産ではないが相続税法上は相続財産とみなして課税対象となるものである。主なみなし相続財産：①死亡保険金（契約者＝被保険者、受取人が相続人）、②死亡退職金・弔慰金（一定額超）、③定期金に関する権利、④生命保険契約に関する権利（被相続人が保険料を負担し被保険者が生存中の保険契約）。死亡保険金・退職金には「500万円×法定相続人数」の非課税枠がそれぞれある。',
-    difficulty: 'intermediate' as const,
+    difficulty: 'standard' as const,
     level: '2級' as const,
   },
   {
@@ -637,7 +637,7 @@ export const fpInhQuestions3: FPQuestion[] = [
     ],
     correctKey: 'A' as const,
     explanation: '事業承継計画（事業承継ロードマップ）は、円滑な事業承継を実現するための中長期計画であり、一般に5年から10年程度のスパンで策定する。計画内容：①現状分析（財務・組織・後継者候補等）、②承継時期と後継者の決定、③後継者育成計画、④株式・財産の承継方法と税務対策、⑤必要資金の調達計画、⑥対外関係（取引先・金融機関等）への対応方針。中小企業庁では「事業承継診断」や「事業承継支援センター」等を通じて経営者への早期支援を推進している。',
-    difficulty: 'intermediate' as const,
+    difficulty: 'standard' as const,
     level: '2級' as const,
   },
 ];
