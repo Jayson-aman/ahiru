@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text, StyleSheet, SafeAreaView, TouchableOpacity, ScrollView } from 'react-native';
+import { View, Text, Image, StyleSheet, SafeAreaView, TouchableOpacity, ScrollView } from 'react-native';
 import { useRouter } from 'expo-router';
 import { LinearGradient } from 'expo-linear-gradient';
 
@@ -9,8 +9,11 @@ export default function HomeScreen() {
   return (
     <SafeAreaView style={styles.container}>
       <LinearGradient colors={['#1B2A5C', '#0D3D8A']} style={styles.header}>
-        <Text style={styles.appTitle}>QualiZ</Text>
-        <Text style={styles.appSubtitle}>国家資格・検定の合格ナビ</Text>
+        <Image source={require('../../assets/icon.png')} style={styles.appLogo} />
+        <View>
+          <Text style={styles.appTitle}>QualiZ</Text>
+          <Text style={styles.appSubtitle}>国家資格・検定の合格ナビ</Text>
+        </View>
       </LinearGradient>
 
       <ScrollView style={styles.scroll} contentContainerStyle={styles.content} showsVerticalScrollIndicator={false}>
@@ -198,8 +201,12 @@ export default function HomeScreen() {
 
 const styles = StyleSheet.create({
   container: { flex: 1, backgroundColor: '#F5F7FA' },
-  header: { paddingHorizontal: 24, paddingTop: 24, paddingBottom: 32, alignItems: 'center' },
-  appTitle: { fontSize: 22, fontWeight: '900', color: '#FFFFFF', letterSpacing: 1, marginBottom: 4 },
+  header: {
+    paddingHorizontal: 24, paddingTop: 20, paddingBottom: 26,
+    flexDirection: 'row', alignItems: 'center', justifyContent: 'center', gap: 16,
+  },
+  appLogo: { width: 64, height: 64, borderRadius: 15 },
+  appTitle: { fontSize: 24, fontWeight: '900', color: '#FFFFFF', letterSpacing: 1.5, marginBottom: 3 },
   appSubtitle: { fontSize: 13, color: 'rgba(255,255,255,0.75)', fontWeight: '600' },
   scroll: { flex: 1 },
   content: { paddingHorizontal: 20, paddingTop: 24, paddingBottom: 40 },
