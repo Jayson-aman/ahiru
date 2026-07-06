@@ -87,6 +87,9 @@ export default function HomeScreen() {
           </LinearGradient>
         </TouchableOpacity>
 
+        {/* 施工管理系 */}
+        <Text style={[styles.sectionLabel, { marginTop: 24 }]}>🏗️ 施工管理系</Text>
+
         <TouchableOpacity style={styles.card} onPress={() => router.push('/sekokan')} activeOpacity={0.85}>
           <LinearGradient colors={['#BF360C', '#7F2408']} style={styles.cardGradient}>
             <Text style={styles.cardEmoji}>🏗️</Text>
@@ -94,6 +97,42 @@ export default function HomeScreen() {
               <Text style={styles.cardTitle}>一級建築施工管理技士</Text>
               <Text style={styles.cardSubtitle}>建築学・施工・施工管理法・法規</Text>
               <Text style={styles.cardMeta}>国家資格 ／ テキスト・基礎/応用・模擬試験・二次対策</Text>
+            </View>
+            <Text style={styles.cardArrow}>›</Text>
+          </LinearGradient>
+        </TouchableOpacity>
+
+        <TouchableOpacity style={styles.card} onPress={() => router.push('/kankoji' as any)} activeOpacity={0.85}>
+          <LinearGradient colors={['#00695C', '#004D40']} style={styles.cardGradient}>
+            <Text style={styles.cardEmoji}>🚿</Text>
+            <View style={styles.cardBody}>
+              <Text style={styles.cardTitle}>一級管工事施工管理技士</Text>
+              <Text style={styles.cardSubtitle}>原論・空調・給排水衛生・施工管理・法規</Text>
+              <Text style={styles.cardMeta}>国家資格 ／ テキスト・科目別問題・全問図解つき解説</Text>
+            </View>
+            <Text style={styles.cardArrow}>›</Text>
+          </LinearGradient>
+        </TouchableOpacity>
+
+        <TouchableOpacity style={styles.card} onPress={() => router.push('/denkisekou' as any)} activeOpacity={0.85}>
+          <LinearGradient colors={['#EF6C00', '#B34700']} style={styles.cardGradient}>
+            <Text style={styles.cardEmoji}>💡</Text>
+            <View style={styles.cardBody}>
+              <Text style={styles.cardTitle}>一級電気工事施工管理技士</Text>
+              <Text style={styles.cardSubtitle}>電気工学・電気設備・施工管理・法規</Text>
+              <Text style={styles.cardMeta}>国家資格 ／ テキスト・科目別問題・全問図解つき解説</Text>
+            </View>
+            <Text style={styles.cardArrow}>›</Text>
+          </LinearGradient>
+        </TouchableOpacity>
+
+        <TouchableOpacity style={styles.card} onPress={() => router.push('/kikaisekou' as any)} activeOpacity={0.85}>
+          <LinearGradient colors={['#546E7A', '#263238']} style={styles.cardGradient}>
+            <Text style={styles.cardEmoji}>🚜</Text>
+            <View style={styles.cardBody}>
+              <Text style={styles.cardTitle}>一級建設機械施工管理技士</Text>
+              <Text style={styles.cardSubtitle}>土木工学・建設機械・施工管理・法規</Text>
+              <Text style={styles.cardMeta}>国家資格 ／ テキスト・科目別問題・全問図解つき解説</Text>
             </View>
             <Text style={styles.cardArrow}>›</Text>
           </LinearGradient>

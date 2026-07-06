@@ -88,6 +88,9 @@ App Store Connect → 「契約 / 税金 / 口座情報」→ **Paid Application
 | Pro 施工管理技士 | `zaibase_pro_sekokan_monthly` / `_yearly` | 同上 |
 | Pro 電験三種 | `zaibase_pro_denken3_monthly` / `_yearly` | 同上 |
 | Pro 気象予報士 | `zaibase_pro_kisho_monthly` / `_yearly` | 同上 |
+| Pro 管工事 | `zaibase_pro_kankoji_monthly` / `_yearly` | ¥4,980 / ¥49,800 |
+| Pro 電気工事 | `zaibase_pro_denkisekou_monthly` / `_yearly` | 同上 |
+| Pro 建設機械 | `zaibase_pro_kikaisekou_monthly` / `_yearly` | 同上 |
 | Pro 英検 | `zaibase_pro_eiken_monthly` / `_yearly` | ¥500 / ¥5,000 |
 | Pro 受験対策 | `zaibase_pro_juken_monthly` / `_yearly` | ¥500 / ¥5,000 |
 
@@ -127,7 +130,8 @@ RevenueCat は月間収益 $2,500 まで無料です。
 4. **Entitlements** を作成（アプリのコードと完全一致させること）:
    ```
    pro_takkei, pro_fp, pro_mansion, pro_kenchiku, pro_denken3,
-   pro_kisho, pro_juken, pro_eiken, pro_sekokan, max
+   pro_kisho, pro_juken, pro_eiken, pro_sekokan,
+   pro_kankoji, pro_denkisekou, pro_kikaisekou, max
    ```
    - 各資格の月額/年額商品 → その資格の `pro_◯◯` に紐付け
    - `zaibase_max_*` → **`max` と全ての `pro_◯◯` に紐付け**（Maxで全資格解放されるように）
