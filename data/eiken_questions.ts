@@ -6,6 +6,7 @@ export type EikenCategory =
   | 'dialogue'
   | 'reading'
   | 'usage'
+  | 'idiom'
   | 'listening';
 
 export type EikenQuestion = {
@@ -31,6 +32,9 @@ import { eikenQuestions4kyu3 } from './eiken_questions_4kyu3';
 import { eikenQuestions3kyu3 } from './eiken_questions_3kyu3';
 import { eikenQuestions2kyu3 } from './eiken_questions_2kyu3';
 import { eikenQuestionsListening } from './eiken_questions_listening';
+import { eikenQuestions4kyuIdiom } from './eiken_questions_4kyu_idiom';
+import { eikenQuestions3kyuIdiom } from './eiken_questions_3kyu_idiom';
+import { eikenQuestions2kyuIdiom } from './eiken_questions_2kyu_idiom';
 
 export const eikenQuestions: EikenQuestion[] = [
   ...eikenQuestions4kyu,
@@ -43,4 +47,7 @@ export const eikenQuestions: EikenQuestion[] = [
   ...eikenQuestions2kyu2,
   ...eikenQuestions2kyu3,
   ...eikenQuestionsListening,
+  ...eikenQuestions4kyuIdiom,
+  ...eikenQuestions3kyuIdiom,
+  ...eikenQuestions2kyuIdiom,
 ];

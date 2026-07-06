@@ -18,7 +18,7 @@ const LEVELS = [
     cefr: 'CEFR B1–B2',
     target: '高校卒業レベル',
     topics: ['社会問題・環境・科学・文化', '長文読解・エッセイ', '高度な語彙・文法'],
-    questionCount: 160,
+    questionCount: 185,
   },
   {
     key: '3kyu',
@@ -30,7 +30,7 @@ const LEVELS = [
     cefr: 'CEFR A2',
     target: '中学卒業レベル',
     topics: ['日常会話・対話文', '短文読解・Eメール', '基礎文法・語彙'],
-    questionCount: 160,
+    questionCount: 185,
   },
   {
     key: '4kyu',
@@ -42,7 +42,7 @@ const LEVELS = [
     cefr: 'CEFR A1',
     target: '中学中間レベル',
     topics: ['基礎語彙・短い対話', '簡単な文法', '身近なトピック'],
-    questionCount: 160,
+    questionCount: 185,
   },
 ];
 

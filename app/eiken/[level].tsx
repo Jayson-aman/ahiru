@@ -23,6 +23,7 @@ export default function EikenLevelScreen() {
     dialogue: '会話',
     reading: '読解',
     usage: '語法',
+    idiom: '熟語',
     listening: 'リスニング',
   };
 
@@ -72,7 +73,7 @@ export default function EikenLevelScreen() {
         proMonthlyLabel={PRICING.eikenMonthly}
         proYearlyLabel={PRICING.eikenYearly}
         proYearlySavingsLabel={PRICING.eikenYearlySavings}
-        proFeatures={['英検2・3・4級 全問題アンロック', '語彙・文法・読解 各カテゴリ対応', '全選択肢に日本語解説付き']}
+        proFeatures={['英検2・3・4級 全問題アンロック', '語彙・熟語・文法・読解 各カテゴリ対応', '全選択肢に日本語解説付き']}
       >
         <View style={[styles.header, { backgroundColor: info.color }]}>
           <TouchableOpacity onPress={() => router.back()} style={styles.backBtn}>
