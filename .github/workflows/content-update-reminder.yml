@@ -1,0 +1,55 @@
+name: コンテンツ定期更新リマインダー
+
+# 統計・法改正の公表時期に合わせてリマインダーIssueを自動作成する。
+# 詳細な更新手順は docs/CONTENT_UPDATE_GUIDE.md を参照。
+on:
+  schedule:
+    # UTC指定（JST-9時間）。JSTの午前9時台に起票される。
+    - cron: '3 0 27 1 *'   # 1月27日: 年金額改定・住宅着工統計（前年計）
+    - cron: '3 0 21 3 *'   # 3月21日: 地価公示
+    - cron: '3 0 8 4 *'    # 4月8日: 税制改正・法令施行チェック
+    - cron: '3 0 25 6 *'   # 6月25日: 土地白書
+    - cron: '3 0 8 10 *'   # 10月8日: 宅建業者数統計
+  workflow_dispatch: {}
+
+permissions:
+  issues: write
+
+jobs:
+  create-reminder:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Create reminder issue
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const month = new Date().getMonth() + 1;
+            const topics = {
+              1: '年金額改定（厚労省・1月下旬公表）と建築着工統計（前年計・1月末公表）',
+              3: '地価公示（国交省・3月中旬公表）',
+              4: '税制改正の施行内容・各種法令の4月施行分',
+              6: '土地白書（国交省・6月公表）',
+              10: '宅建業法施行状況調査（宅建業者数・10月頃公表）',
+            };
+            const topic = topics[month] ?? '定期チェック';
+            const body = [
+              `## 定期更新: ${topic}`,
+              '',
+              '公表時期になりました。Claude のセッションで次の依頼文を送って更新を実行してください。',
+              '',
+              '```',
+              'docs/CONTENT_UPDATE_GUIDE.md に従って、今月の定期更新を実行してください。',
+              '最新の公表値をWebで検証してから該当ファイルを修正し、コミット・プッシュしてください。',
+              '```',
+              '',
+              '- 対象ファイルと前回の反映値は [docs/CONTENT_UPDATE_GUIDE.md](../blob/main/docs/CONTENT_UPDATE_GUIDE.md) の表を参照',
+              '- 更新後はガイド末尾の「更新履歴」表の検証日も更新すること',
+              '- あわせて随時ウォッチ項目（マンション標準管理規約の改正・建設業法施行令の金額要件）も確認',
+            ].join('\n');
+            await github.rest.issues.create({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              title: `【定期更新】${topic}`,
+              body,
+              labels: ['content-update'],
+            });
