@@ -75,6 +75,8 @@ export default function EikenLevelScreen() {
         proYearlySavingsLabel={PRICING.eikenYearlySavings}
         proFeatures={['英検2・3・4級 全問題アンロック', '語彙・熟語・文法・読解 各カテゴリ対応', '全選択肢に日本語解説付き']}
       >
+        {(hasAccess: boolean) => (
+        <>
         <View style={[styles.header, { backgroundColor: info.color }]}>
           <TouchableOpacity onPress={() => router.back()} style={styles.backBtn}>
             <Text style={styles.backBtnText}>← 戻る</Text>
@@ -82,7 +84,9 @@ export default function EikenLevelScreen() {
           <Text style={styles.headerTitle}>{info.emoji} {info.name}</Text>
           <Text style={styles.headerSub}>{info.cefr}　{allQuestions.length}問収録</Text>
         </View>
-        <MCQQuiz questions={allQuestions} accentColor={info.color} />
+        <MCQQuiz questions={hasAccess ? allQuestions : allQuestions.slice(0, FREE_QUESTION_LIMIT)} accentColor={info.color} />
+        </>
+        )}
       </CertPaywall>
     </SafeAreaView>
   );

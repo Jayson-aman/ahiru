@@ -14,6 +14,7 @@ import ListenMode from '../../components/ListenMode';
 import Paywall from '../../components/Paywall';
 import { useSubscription } from '../../hooks/useSubscription';
 import { saveProgress } from '../../store/progress';
+import { FREE_QUESTION_LIMIT } from '../../services/subscription';
 
 type Difficulty = 'basic' | 'standard' | 'advanced';
 
@@ -43,12 +44,13 @@ export default function QuizScreen() {
     diffParam && isDifficulty(diffParam) ? diffParam : null;
 
   const info = subjectInfo[subjectKey];
+  const { isPro, loading: subLoading } = useSubscription();
 
   const questions = useMemo(() => {
     const all = questionsBySubject[subjectKey];
-    if (difficultyFilter == null) return all;
-    return all.filter((q) => q.difficulty === difficultyFilter);
-  }, [subjectKey, difficultyFilter]);
+    const filtered = difficultyFilter == null ? all : all.filter((q) => q.difficulty === difficultyFilter);
+    return isPro ? filtered : filtered.slice(0, FREE_QUESTION_LIMIT);
+  }, [subjectKey, difficultyFilter, isPro]);
 
   const [currentIndex, setCurrentIndex] = useState(0);
   const [score, setScore] = useState(0);
@@ -57,7 +59,6 @@ export default function QuizScreen() {
   const [savedProgress, setSavedProgress] = useState(false);
   const [listenVisible, setListenVisible] = useState(false);
   const [paywallVisible, setPaywallVisible] = useState(false);
-  const { isPro, loading: subLoading } = useSubscription();
 
   const currentQuestion = questions[currentIndex];
   const total = questions.length;

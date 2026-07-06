@@ -23,7 +23,13 @@ type Props = {
   certEmoji: string;
   accentColor: string;
   totalQuestions: number;
-  children: React.ReactNode;
+  /**
+   * Either static content, or a render function receiving `hasAccess` so the
+   * caller can actually slice questions to `freeLimit` when access is denied.
+   * Always use the function form for quiz screens — passing static children
+   * means the full question set renders regardless of subscription status.
+   */
+  children: React.ReactNode | ((hasAccess: boolean) => React.ReactNode);
   /** If provided, only this many questions are shown in free tier instead of the default */
   freeLimit?: number;
   /** Override Pro plan price labels */
@@ -36,11 +42,9 @@ type Props = {
 
 /**
  * Wraps content that requires a Pro subscription for a specific certification.
- * In free tier, children still render but the calling component should limit
- * questions to FREE_QUESTION_LIMIT using the `isFree` prop pattern.
- *
- * Use <CertPaywall> around the quiz header area; pass isFree down so MCQQuiz
- * can slice questions accordingly.
+ * Pass `children` as a function `(hasAccess) => ReactNode` and slice the
+ * question array yourself when `hasAccess` is false — CertPaywall does not
+ * slice anything on its own, it only renders the upgrade banner.
  */
 export default function CertPaywall({
   certKey, certName, certEmoji, accentColor, totalQuestions, children, freeLimit,
@@ -121,14 +125,16 @@ export default function CertPaywall({
     );
   }
 
+  const content = typeof children === 'function' ? children(hasAccess) : children;
+
   if (hasAccess) {
-    return <>{children}</>;
+    return <>{content}</>;
   }
 
-  // Free tier: show children (host component limits to freeLimit questions) + upgrade banner
+  // Free tier: render the host's free-tier content (already sliced to freeLimit) + upgrade banner
   return (
     <View style={styles.wrapper}>
-      {children}
+      {content}
       {/* Upgrade banner */}
       <View style={styles.bannerContainer}>
         <LinearGradient colors={[accentColor, accentColor + 'CC']} style={styles.banner}>

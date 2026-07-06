@@ -64,6 +64,8 @@ export default function KankojiQuizScreen() {
         proYearlyLabel={PRICING.proYearly}
         proYearlySavingsLabel={PRICING.proYearlySavings}
       >
+        {(hasAccess: boolean) => (
+        <>
         <View style={[styles.header, { backgroundColor: info.color }]}>
           <TouchableOpacity onPress={() => router.back()} style={styles.backBtn}>
             <Text style={styles.backBtnText}>← 戻る</Text>
@@ -71,7 +73,9 @@ export default function KankojiQuizScreen() {
           <Text style={styles.headerTitle}>{info.emoji} {info.name}</Text>
           <Text style={styles.headerSub}>{allQuestions.length}問収録</Text>
         </View>
-        <MCQQuiz questions={allQuestions} accentColor={info.color} />
+        <MCQQuiz questions={hasAccess ? allQuestions : allQuestions.slice(0, FREE_QUESTION_LIMIT)} accentColor={info.color} />
+        </>
+        )}
       </CertPaywall>
     </SafeAreaView>
   );
