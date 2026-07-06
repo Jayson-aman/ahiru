@@ -168,7 +168,7 @@ export default function CertPaywall({
             price={PRICING.maxMonthly}
             yearPrice={PRICING.maxYearly}
             yearSavings={PRICING.maxYearlySavings}
-            features={['全資格すべてアンロック', '宅建・マン管・FP・建築設備士', '施工管理技士・電験三種・気象予報士', '資格学校1講座の約1/5で全資格見放題']}
+            features={['全資格すべてアンロック', '宅建・マン管・FP・建築設備士', '施工管理4種・電験三種・気象予報士', '資格学校1講座の約1/5で全資格見放題']}
             color="#1B2A5C"
             onPress={handlePurchase}
             loading={purchasing}
