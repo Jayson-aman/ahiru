@@ -9,8 +9,8 @@ export default function HomeScreen() {
   return (
     <SafeAreaView style={styles.container}>
       <LinearGradient colors={['#1B2A5C', '#0D3D8A']} style={styles.header}>
-        <Text style={styles.appTitle}>ZAIBASE 資格対策</Text>
-        <Text style={styles.appSubtitle}>一問一答トレーニング</Text>
+        <Text style={styles.appTitle}>QualiZ</Text>
+        <Text style={styles.appSubtitle}>国家資格・検定の合格ナビ</Text>
       </LinearGradient>
 
       <ScrollView style={styles.scroll} contentContainerStyle={styles.content} showsVerticalScrollIndicator={false}>

@@ -1,21 +1,21 @@
 {
   "expo": {
-    "name": "ZAIBASE 資格対策",
-    "slug": "zaibase-shikaku",
-    "scheme": "zaibase",
+    "name": "QualiZ",
+    "slug": "qualiz",
+    "scheme": "qualiz",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.jaysonaman.zaibase",
+      "bundleIdentifier": "com.jaysonaman.qualiz",
       "infoPlist": {
-        "CFBundleDisplayName": "ZAIBASE資格対策"
+        "CFBundleDisplayName": "QualiZ"
       }
     },
     "android": {
-      "package": "com.jaysonaman.zaibase",
+      "package": "com.jaysonaman.qualiz",
       "adaptiveIcon": {
         "backgroundColor": "#101A38",
         "foregroundImage": "./assets/android-icon-foreground.png",
