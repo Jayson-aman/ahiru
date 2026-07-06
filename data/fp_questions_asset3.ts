@@ -500,7 +500,7 @@ export const fpAssetQuestions3: FPQuestion[] = [
     id: 'fp_asset_94',
     subject: 'asset' as const,
     subjectName: '金融資産運用',
-    question: '金融商品の税務に関する記述として正しいものはどれか（2024年度）。',
+    question: '金融商品の税務に関する記述として正しいものはどれか（現行制度）。',
     choices: [
       { key: 'A', text: '上場株式の譲渡所得は総合課税の対象となる', explanation: '上場株式等の譲渡所得は分離課税（税率20.315%）であり、総合課税の対象ではない' },
       { key: 'B', text: '上場株式の配当金は申告不要制度・総合課税・申告分離課税を選択できる', explanation: '上場株式の配当金は、申告不要・総合課税・申告分離課税の3方式から選択できる' },
