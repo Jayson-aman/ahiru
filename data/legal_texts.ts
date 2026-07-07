@@ -4,7 +4,7 @@
 // ・CONTACT_EMAIL / SELLER_NAME を実際の事業者情報に合わせて更新すること
 // ・特商法表記の事業者名は法律上の必須項目（個人の場合は氏名）
 
-export const CONTACT_EMAIL = 'masaya.happylife@gmail.com';
+export const CONTACT_EMAIL = 'info@zaibase.group';
 export const SELLER_NAME = 'Zaibase.group';
 export const LAST_UPDATED = '2026年7月5日';
 
