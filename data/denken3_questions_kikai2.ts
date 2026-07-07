@@ -129,7 +129,7 @@ export const denken3Kikai2: Denken3Question[] = [
       { key: 'D', text: '344 V', explanation: '誤り。速度比の2乗を掛けた値。起電力は速度の1乗に比例する。' },
     ],
     correctKey: 'C',
-    explanation: '直流機の起電力E＝KΦn（比例計算で解ける）。\n【図解】比例計算\n　E₁/E₂＝n₁/n₂（Φ一定）\n　E₂＝220×1500/1200＝275V ✓\n	 （Φも変わる場合はE∝Φn の積で比例配分）',
+    explanation: '直流機の起電力E＝KΦn（比例計算で解ける）。\n【図解】比例計算\n　E₁/E₂＝n₁/n₂（Φ一定）\n　E₂＝220×1500/1200＝275V ✓\n　 （Φも変わる場合はE∝Φn の積で比例配分）',
     difficulty: 'standard',
   },
   {
@@ -168,7 +168,7 @@ export const denken3Kikai2: Denken3Question[] = [
       { key: 'D', text: '電流が減少して省エネになる。', explanation: '誤り。同一出力なら電圧減→電流増（過負荷方向）。省エネにはならない。' },
     ],
     correctKey: 'C',
-    explanation: '電圧低下は誘導機の大敵。\n【図解】電圧10%低下の影響\n　Tmax∝V²→0.9²＝81%（19%減）★\n	 同期速度Ns：不変（fとPのみ）\n	 負荷一定→滑り↑→電流↑→温度↑⚠️\n　（電圧降下対策・タップ調整が重要な理由）',
+    explanation: '電圧低下は誘導機の大敵。\n【図解】電圧10%低下の影響\n　Tmax∝V²→0.9²＝81%（19%減）★\n　 同期速度Ns：不変（fとPのみ）\n　 負荷一定→滑り↑→電流↑→温度↑⚠️\n　（電圧降下対策・タップ調整が重要な理由）',
     difficulty: 'advanced',
   },
   {
@@ -246,7 +246,7 @@ export const denken3Kikai2: Denken3Question[] = [
       { key: 'D', text: '操作量が二値（ON/OFF）となりハンチングが激しくなる。', explanation: '誤り。二値になるのはON-OFF制御（二位置制御）。P動作は連続的な操作量を出す。' },
     ],
     correctKey: 'B',
-    explanation: 'PIDの役割分担を1行ずつ。\n【図解】PID動作の整理\n　P（比例）：即応する↔オフセットが残る★\n　I（積分）：オフセット解消↔応答遅れ・振動気味\n	 D（微分）：変化を先読みし安定化↔ノイズに敏感\n　→ PI で偏差ゼロ、PID で速く滑らかに',
+    explanation: 'PIDの役割分担を1行ずつ。\n【図解】PID動作の整理\n　P（比例）：即応する↔オフセットが残る★\n　I（積分）：オフセット解消↔応答遅れ・振動気味\n　 D（微分）：変化を先読みし安定化↔ノイズに敏感\n　→ PI で偏差ゼロ、PID で速く滑らかに',
     difficulty: 'standard',
   },
   {
@@ -272,7 +272,7 @@ export const denken3Kikai2: Denken3Question[] = [
       { key: 'D', text: 'Y＝A＋B', explanation: '誤り。ORへの変形の根拠がない。分配則でA(B+B̄)＝Aとなる。' },
     ],
     correctKey: 'A',
-    explanation: 'ブール代数の頻出パターン「くくって相補律」。\n【図解】簡単化の手順\n　Y＝A・B＋A・B̄\n　＝A・(B＋B̄)　←分配則で共通Aをくくる\n　＝A・1　　　　←相補律 B＋B̄＝1\n　＝A ✓\n	 覚える恒等式：X+X̄=1、X·X̄=0、X+XY=X（吸収）',
+    explanation: 'ブール代数の頻出パターン「くくって相補律」。\n【図解】簡単化の手順\n　Y＝A・B＋A・B̄\n　＝A・(B＋B̄)　←分配則で共通Aをくくる\n　＝A・1　　　　←相補律 B＋B̄＝1\n　＝A ✓\n　 覚える恒等式：X+X̄=1、X·X̄=0、X+XY=X（吸収）',
     difficulty: 'basic',
   },
   {
