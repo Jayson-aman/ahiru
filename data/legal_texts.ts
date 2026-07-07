@@ -5,7 +5,7 @@
 // ・特商法表記の事業者名は法律上の必須項目（個人の場合は氏名）
 
 export const CONTACT_EMAIL = 'masaya.happylife@gmail.com';
-export const SELLER_NAME = '【公開前に事業者名（個人の場合は氏名）を記入】';
+export const SELLER_NAME = 'Zaibase.group';
 export const LAST_UPDATED = '2026年7月5日';
 
 export type LegalSection = { title: string; body: string };
