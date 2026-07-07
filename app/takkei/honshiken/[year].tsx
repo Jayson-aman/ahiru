@@ -2,11 +2,13 @@ import React from 'react';
 import { SafeAreaView, View, Text, StyleSheet, TouchableOpacity } from 'react-native';
 import { useLocalSearchParams, useRouter } from 'expo-router';
 import MogiExam from '../../../components/MogiExam';
+import CertPaywall from '../../../components/CertPaywall';
 import { takkeiHonshikenR05 } from '../../../data/takkei_honshiken_r05';
 import { takkeiHonshikenR04 } from '../../../data/takkei_honshiken_r04';
 import { takkeiHonshikenR03 } from '../../../data/takkei_honshiken_r03';
 import { takkeiHonshikenR02 } from '../../../data/takkei_honshiken_r02';
 import { takkeiHonshikenR01 } from '../../../data/takkei_honshiken_r01';
+import { FREE_QUESTION_LIMIT, PRICING } from '../../../services/subscription';
 
 const YEAR_MAP: Record<string, { label: string; passingScore: number; getData: () => any[] }> = {
   r05: { label: '令和5年度形式 本試験レベル模試', passingScore: 36, getData: () => takkeiHonshikenR05 },
@@ -40,14 +42,28 @@ export default function HonshikenYearScreen() {
 
   return (
     <SafeAreaView style={styles.safe}>
-      <MogiExam
-        questions={questions}
-        timeLimitMinutes={120}
-        passingScore={meta.passingScore}
+      <CertPaywall
+        certKey="takkei"
+        certName={`宅建 ${meta.label}`}
+        certEmoji="📝"
         accentColor="#6B3210"
-        title={meta.label}
-        onBack={() => router.back()}
-      />
+        totalQuestions={questions.length}
+        freeLimit={FREE_QUESTION_LIMIT}
+        proMonthlyLabel={PRICING.proMonthly}
+        proYearlyLabel={PRICING.proYearly}
+        proYearlySavingsLabel={PRICING.proYearlySavings}
+      >
+        {(hasAccess: boolean) => (
+          <MogiExam
+            questions={hasAccess ? questions : questions.slice(0, FREE_QUESTION_LIMIT)}
+            timeLimitMinutes={120}
+            passingScore={meta.passingScore}
+            accentColor="#6B3210"
+            title={meta.label}
+            onBack={() => router.back()}
+          />
+        )}
+      </CertPaywall>
     </SafeAreaView>
   );
 }

@@ -2,7 +2,9 @@ import React, { useMemo } from 'react';
 import { SafeAreaView, StyleSheet } from 'react-native';
 import { useRouter } from 'expo-router';
 import MogiExam from '../../components/MogiExam';
+import CertPaywall from '../../components/CertPaywall';
 import { takkeiQuestions } from '../../data/takkei_questions';
+import { FREE_QUESTION_LIMIT, PRICING } from '../../services/subscription';
 
 const DISTRIBUTION: Record<string, number> = {
   kenri: 14,
@@ -46,14 +48,28 @@ export default function TakkeiMogiScreen() {
 
   return (
     <SafeAreaView style={styles.safe}>
-      <MogiExam
-        questions={questions}
-        timeLimitMinutes={120}
-        passingScore={36}
+      <CertPaywall
+        certKey="takkei"
+        certName="宅建 模擬試験"
+        certEmoji="📝"
         accentColor="#6B3210"
-        title="宅建 模擬試験"
-        onBack={() => router.back()}
-      />
+        totalQuestions={questions.length}
+        freeLimit={FREE_QUESTION_LIMIT}
+        proMonthlyLabel={PRICING.proMonthly}
+        proYearlyLabel={PRICING.proYearly}
+        proYearlySavingsLabel={PRICING.proYearlySavings}
+      >
+        {(hasAccess: boolean) => (
+          <MogiExam
+            questions={hasAccess ? questions : questions.slice(0, FREE_QUESTION_LIMIT)}
+            timeLimitMinutes={120}
+            passingScore={36}
+            accentColor="#6B3210"
+            title="宅建 模擬試験"
+            onBack={() => router.back()}
+          />
+        )}
+      </CertPaywall>
     </SafeAreaView>
   );
 }

@@ -2,8 +2,10 @@ import React from 'react';
 import { SafeAreaView, View, Text, StyleSheet, TouchableOpacity } from 'react-native';
 import { useLocalSearchParams, useRouter } from 'expo-router';
 import MogiExam from '../../../components/MogiExam';
+import CertPaywall from '../../../components/CertPaywall';
 import { mansionHonshikenR07 } from '../../../data/mansion_honshiken_r07';
 import { mansionHonshikenR06 } from '../../../data/mansion_honshiken_r06';
+import { FREE_QUESTION_LIMIT, PRICING } from '../../../services/subscription';
 
 const YEAR_MAP: Record<string, { label: string; passingScore: number; getData: () => any[] }> = {
   r07: { label: '令和7年度形式 本試験レベル模試', passingScore: 38, getData: () => mansionHonshikenR07 },
@@ -34,14 +36,28 @@ export default function MansionHonshikenYearScreen() {
 
   return (
     <SafeAreaView style={styles.safe}>
-      <MogiExam
-        questions={questions}
-        timeLimitMinutes={120}
-        passingScore={meta.passingScore}
+      <CertPaywall
+        certKey="mansion"
+        certName={`マンション管理士 ${meta.label}`}
+        certEmoji="📝"
         accentColor="#7B1FA2"
-        title={meta.label}
-        onBack={() => router.back()}
-      />
+        totalQuestions={questions.length}
+        freeLimit={FREE_QUESTION_LIMIT}
+        proMonthlyLabel={PRICING.proMonthly}
+        proYearlyLabel={PRICING.proYearly}
+        proYearlySavingsLabel={PRICING.proYearlySavings}
+      >
+        {(hasAccess: boolean) => (
+          <MogiExam
+            questions={hasAccess ? questions : questions.slice(0, FREE_QUESTION_LIMIT)}
+            timeLimitMinutes={120}
+            passingScore={meta.passingScore}
+            accentColor="#7B1FA2"
+            title={meta.label}
+            onBack={() => router.back()}
+          />
+        )}
+      </CertPaywall>
     </SafeAreaView>
   );
 }
