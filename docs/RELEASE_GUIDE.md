@@ -80,7 +80,7 @@ App Store Connect → 「契約 / 税金 / 口座情報」→ **Paid Application
 
 | グループ名 | 商品ID（提案） | 価格 |
 |---|---|---|
-| ZAIBASE Max | `qualiz_max_monthly` / `qualiz_max_yearly` | ¥7,980 / ¥79,800 |
+| ZAIBASE Max | `qualiz_max_monthly` / `qualiz_max_yearly` | ¥8,000 / ¥80,000 |
 | Pro 宅建 | `qualiz_pro_takkei_monthly` / `_yearly` | ¥4,980 / ¥49,800 |
 | Pro FP | `qualiz_pro_fp_monthly` / `_yearly` | ¥4,980 / ¥49,800 |
 | Pro マンション管理士 | `qualiz_pro_mansion_monthly` / `_yearly` | 同上 |

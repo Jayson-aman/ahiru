@@ -47,8 +47,8 @@ export const PRICING = {
   proYearly:  '¥49,800/年',
   proYearlySavings: '2か月分お得',
   /** All-certs Max plan — 全資格見放題 */
-  maxMonthly: '¥7,980/月',
-  maxYearly:  '¥79,800/年',
+  maxMonthly: '¥8,000/月',
+  maxYearly:  '¥80,000/年',
   maxYearlySavings: '2か月分お得',
   /** 資格学校との比較訴求用 */
   schoolComparison: '資格学校（年40〜50万円）の約1/8',
