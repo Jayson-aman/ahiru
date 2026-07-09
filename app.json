@@ -11,7 +11,8 @@
       "supportsTablet": true,
       "bundleIdentifier": "com.jaysonaman.qualiz",
       "infoPlist": {
-        "CFBundleDisplayName": "QualiZ"
+        "CFBundleDisplayName": "QualiZ",
+        "ITSAppUsesNonExemptEncryption": false
       }
     },
     "android": {
