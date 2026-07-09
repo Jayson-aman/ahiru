@@ -36,15 +36,15 @@ export const ENTITLEMENTS: Record<CertKey, string> = {
 // Pricing constants (display only — real prices are set in RevenueCat/App Store)
 //
 // 価格戦略：資格学校（日建学院・総合資格等）の年間費用は40〜50万円。
-// アプリ型プレミアム教材として、per-cert Pro は学校の約1/8（年4.98万）、
-// 全資格 Max は学校1講座の約1/5（年7.98万）に設定。
+// アプリ型プレミアム教材として、per-cert Pro は学校の約1/8（年5万）、
+// 全資格 Max は学校1講座の約1/5（年8万）に設定。
 // 低価格帯アプリより明確に上位の内容（図解・導出ステップ・本試験レベル）を
 // 備えつつ、学校より圧倒的に安い実利を訴求する。
 // 動画講義・質問対応を追加した段階で値上げ余地を残す。
 export const PRICING = {
   /** Per-certification Pro plan (資格試験) — アプリ型学習の最上位帯 */
-  proMonthly: '¥4,980/月',
-  proYearly:  '¥49,800/年',
+  proMonthly: '¥5,000/月',
+  proYearly:  '¥50,000/年',
   proYearlySavings: '2か月分お得',
   /** All-certs Max plan — 全資格見放題 */
   maxMonthly: '¥8,000/月',

@@ -81,14 +81,14 @@ App Store Connect → 「契約 / 税金 / 口座情報」→ **Paid Application
 | グループ名 | 商品ID（提案） | 価格 |
 |---|---|---|
 | ZAIBASE Max | `qualiz_max_monthly` / `qualiz_max_yearly` | ¥8,000 / ¥80,000 |
-| Pro 宅建 | `qualiz_pro_takkei_monthly` / `_yearly` | ¥4,980 / ¥49,800 |
-| Pro FP | `qualiz_pro_fp_monthly` / `_yearly` | ¥4,980 / ¥49,800 |
+| Pro 宅建 | `qualiz_pro_takkei_monthly` / `_yearly` | ¥5,000 / ¥50,000 |
+| Pro FP | `qualiz_pro_fp_monthly` / `_yearly` | ¥5,000 / ¥50,000 |
 | Pro マンション管理士 | `qualiz_pro_mansion_monthly` / `_yearly` | 同上 |
 | Pro 建築設備士 | `qualiz_pro_kenchiku_monthly` / `_yearly` | 同上 |
 | Pro 施工管理技士 | `qualiz_pro_sekokan_monthly` / `_yearly` | 同上 |
 | Pro 電験三種 | `qualiz_pro_denken3_monthly` / `_yearly` | 同上 |
 | Pro 気象予報士 | `qualiz_pro_kisho_monthly` / `_yearly` | 同上 |
-| Pro 管工事 | `qualiz_pro_kankoji_monthly` / `_yearly` | ¥4,980 / ¥49,800 |
+| Pro 管工事 | `qualiz_pro_kankoji_monthly` / `_yearly` | ¥5,000 / ¥50,000 |
 | Pro 電気工事 | `qualiz_pro_denkisekou_monthly` / `_yearly` | 同上 |
 | Pro 建設機械 | `qualiz_pro_kikaisekou_monthly` / `_yearly` | 同上 |
 | Pro 英検 | `qualiz_pro_eiken_monthly` / `_yearly` | ¥500 / ¥5,000 |
@@ -97,7 +97,7 @@ App Store Connect → 「契約 / 税金 / 口座情報」→ **Paid Application
 作成手順（1商品あたり2〜3分 × 20商品）:
 1. マイApp → 対象アプリ → 「収益化」→「サブスクリプション」→ グループ作成
 2. グループ内で「+」→ 参照名（管理用）と商品ID（上表）を入力
-3. 期間: 1か月 or 1年 / 価格: 日本 ¥4,980 など（他国は自動換算でOK）
+3. 期間: 1か月 or 1年 / 価格: 日本 ¥5,000 など（他国は自動換算でOK）
 4. **App Storeローカリゼーション（日本語）**: 表示名（例: 宅建Pro 月額）と説明を入力
 5. 審査用スクリーンショット: ペイウォール画面のスクショをアップ（後述のTestFlightビルドから撮影でも可）
 
