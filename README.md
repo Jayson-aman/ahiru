@@ -1,28 +1,30 @@
-# Entrance Exam
+# QualiZ（クオリズ）
 
-日本の中学受験対策アプリ（一問一答トレーニング）
+国家資格・検定試験の合格を目指すための本格学習アプリ（全問図解つき解説）
 
 ## 概要
 
-日能研・四谷大塚・四谷学院の学習スタイルを参考にした、中学受験対策の一問一答アプリです。
+各試験の出題傾向・難易度・科目構成を分析して作成したオリジナル問題を、全問「図解つきの丁寧な解説」とともに収録した資格試験対策アプリです。本試験形式の模試・要点テキストも搭載しています。
 
-## 対応科目
+## 対応資格・検定
 
-- 📐 算数（15問）
-- 📖 国語（15問）
-- 🔬 理科（15問）
-- 🌍 社会（15問）
-
-## 対象校
-
-**東京**: 開成・麻布・武蔵・桜蔭・女子学院  
-**関西**: 灘・甲陽学院・星光学院・洛南・西大和学園・東大寺学園
+- 宅地建物取引士（宅建）
+- ファイナンシャルプランナー（FP2級・3級）
+- マンション管理士
+- 一級建築施工管理技士
+- 一級管工事施工管理技士
+- 一級電気工事施工管理技士
+- 一級建設機械施工管理技士
+- 建築設備士
+- 電験三種（第三種電気主任技術者）
+- 気象予報士
+- 英検（2級・3級・4級）
 
 ## 対応プラットフォーム
 
 - iPhone / iPad
 - Android スマートフォン / タブレット
-- Web（将来対応予定）
+- Web
 
 ## 開発環境のセットアップ
 
@@ -39,7 +41,7 @@ npm run web      # Web（開発用）
 1. [Expo](https://expo.dev) アカウント作成 → `npm install -g eas-cli` → `eas login`
 2. プロジェクト作成: `eas init`（初回のみ）
 3. `.env` に RevenueCat の iOS/Android 公開 API キーを設定
-4. [RevenueCat](https://app.revenuecat.com) で `pro` / `max` エンタイトルメントと App Store / Google Play 商品を紐付け
+4. [RevenueCat](https://app.revenuecat.com) で各資格の `pro_◯◯` / `max` エンタイトルメントと App Store / Google Play 商品を紐付け
 5. ビルド:
    ```bash
    eas build --platform ios --profile production
@@ -51,17 +53,15 @@ npm run web      # Web（開発用）
    eas submit --platform android
    ```
 
-`app.json` の `bundleIdentifier` / `package` は `com.jaysonaman.entranceexam` です。App Store Connect / Google Play Console で同じ ID を登録してください。
-
-## Pull Request
-
-- **PR #1**: `claude/app-identification-k8js9v` → `main`（アプリ本体・250問・RevenueCat・聞き流しモード）
-- マージ前に RevenueCat キーとストア商品 ID の設定が必要です。
+詳細な公開手順は `docs/RELEASE_GUIDE.md` を参照してください。
+`app.json` の `bundleIdentifier` / `package` は `com.jaysonaman.qualiz` です。App Store Connect / Google Play Console で同じ ID を登録してください。
 
 ## 技術スタック
 
 - Expo (React Native)
 - TypeScript
 - expo-router
+- react-native-svg（図解エンジン）
 - AsyncStorage（進捗保存）
 - expo-linear-gradient（UI）
+- react-native-purchases / RevenueCat（サブスクリプション）
