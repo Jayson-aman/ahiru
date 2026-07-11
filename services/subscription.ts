@@ -69,10 +69,13 @@ export const FREE_QUESTION_LIMIT = 10;
 
 export function initRevenueCat(): void {
   if (Platform.OS === 'web') return;
-  if (__DEV__) Purchases.setLogLevel(LOG_LEVEL.DEBUG);
   const apiKey =
     Platform.select({ ios: RC_API_KEY_IOS, android: RC_API_KEY_ANDROID }) ??
     RC_API_KEY_IOS;
+  // プレースホルダーのキーのままだとネイティブSDKの初期化でクラッシュするため、
+  // 実際のキーが設定されるまでは初期化自体をスキップし、無料モードで動作させる。
+  if (apiKey.includes('XXXXXXXX')) return;
+  if (__DEV__) Purchases.setLogLevel(LOG_LEVEL.DEBUG);
   Purchases.configure({ apiKey });
 }
 
