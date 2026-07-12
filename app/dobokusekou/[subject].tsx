@@ -14,12 +14,18 @@ const SUBJECT_INFO: Record<string, { name: string; emoji: string; color: string 
 };
 
 export default function DobokusekouQuizScreen() {
-  const { subject } = useLocalSearchParams<{ subject: string }>();
+  const { subject, level } = useLocalSearchParams<{ subject: string; level?: string }>();
   const router = useRouter();
   const info = SUBJECT_INFO[subject ?? ''] ?? { name: subject, emoji: '📖', color: '#00695C' };
+  const levelLabel = level === 'ouyou' ? '応用問題' : level === 'kiso' ? '基礎問題' : null;
 
   const allQuestions = dobokusekouQuestions
     .filter(q => q.subject === subject)
+    .filter(q => {
+      if (level === 'ouyou') return q.difficulty === 'advanced';
+      if (level === 'kiso') return q.difficulty === 'basic' || q.difficulty === 'standard';
+      return true;
+    })
     .map(q => ({
       id: q.id,
       question: q.question,
@@ -41,7 +47,7 @@ export default function DobokusekouQuizScreen() {
         <View style={styles.body}>
           <Text style={styles.emoji}>🚧</Text>
           <Text style={styles.title}>問題を準備中</Text>
-          <Text style={styles.text}>{info.name}の問題は{'\n'}現在作成中です。近日公開予定。</Text>
+          <Text style={styles.text}>{info.name}の{levelLabel ?? ''}問題は{'\n'}現在作成中です。近日公開予定。</Text>
           <TouchableOpacity style={[styles.btn, { backgroundColor: info.color }]} onPress={() => router.back()}>
             <Text style={styles.btnText}>← 科目一覧に戻る</Text>
           </TouchableOpacity>
@@ -69,7 +75,7 @@ export default function DobokusekouQuizScreen() {
           <TouchableOpacity onPress={() => router.back()} style={styles.backBtn}>
             <Text style={styles.backBtnText}>← 戻る</Text>
           </TouchableOpacity>
-          <Text style={styles.headerTitle}>{info.emoji} {info.name}</Text>
+          <Text style={styles.headerTitle}>{info.emoji} {info.name}{levelLabel ? `（${levelLabel}）` : ''}</Text>
           <Text style={styles.headerSub}>{allQuestions.length}問収録</Text>
         </View>
         <MCQQuiz questions={hasAccess ? allQuestions : allQuestions.slice(0, FREE_QUESTION_LIMIT)} accentColor={info.color} />
