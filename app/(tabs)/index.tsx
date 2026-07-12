@@ -143,6 +143,18 @@ export default function HomeScreen() {
           </LinearGradient>
         </TouchableOpacity>
 
+        <TouchableOpacity style={styles.card} onPress={() => router.push('/dobokusekou' as any)} activeOpacity={0.85}>
+          <LinearGradient colors={['#00838F', '#005662']} style={styles.cardGradient}>
+            <Text style={styles.cardEmoji}>🌊</Text>
+            <View style={styles.cardBody}>
+              <Text style={styles.cardTitle}>一級土木施工管理技士</Text>
+              <Text style={styles.cardSubtitle}>土木一般・専門土木・施工管理法・法規</Text>
+              <Text style={styles.cardMeta}>国家資格 ／ テキスト・科目別問題・全問図解つき解説</Text>
+            </View>
+            <Text style={styles.cardArrow}>›</Text>
+          </LinearGradient>
+        </TouchableOpacity>
+
         {/* 資格試験：電気・理工系 */}
         <Text style={[styles.sectionLabel, { marginTop: 24 }]}>⚡ 電気・理工系</Text>
 
