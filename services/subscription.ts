@@ -62,6 +62,10 @@ export const PRICING = {
   eikenMonthly: '¥500/月',
   eikenYearly:  '¥5,000/年',
   eikenYearlySavings: '17%OFF',
+  /** 気象予報士プラン */
+  kishoMonthly: '¥2,000/月',
+  kishoYearly:  '¥20,000/年',
+  kishoYearlySavings: '2か月分お得',
 } as const;
 export const ENTITLEMENT_MAX = 'max';
 

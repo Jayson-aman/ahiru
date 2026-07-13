@@ -58,9 +58,9 @@ export default function KishoSubjectScreen() {
         accentColor={info.color}
         totalQuestions={allQuestions.length}
         freeLimit={FREE_QUESTION_LIMIT}
-        proMonthlyLabel={PRICING.proMonthly}
-        proYearlyLabel={PRICING.proYearly}
-        proYearlySavingsLabel={PRICING.proYearlySavings}
+        proMonthlyLabel={PRICING.kishoMonthly}
+        proYearlyLabel={PRICING.kishoYearly}
+        proYearlySavingsLabel={PRICING.kishoYearlySavings}
       >
         {(hasAccess: boolean) => (
         <>
