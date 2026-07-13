@@ -1045,4 +1045,1081 @@ What argument do platform companies make against mandatory reclassification of g
       'パッセージに "mandatory reclassification would undermine the business model that makes affordable services possible" とあり、再分類によってサービスの低価格維持が困難になるというのが企業側の主張。Dの「サービスが高コストになりすぎて成立しなくなる」がこれに最も対応する。Aはパッセージで言及されていない。',
     difficulty: 'advanced',
   },
+  // ── VOCABULARY 51–70 ─────────────────────────────────────────────
+  {
+    id: 'eiken_2kyu_051',
+    level: '2kyu',
+    category: 'vocabulary',
+    question:
+      'The lawyer presented ( ) evidence that left the jury with little doubt about the defendant\'s guilt.',
+    choices: [
+      { key: 'A', text: 'compelling' },
+      { key: 'B', text: 'convenient' },
+      { key: 'C', text: 'considerate' },
+      { key: 'D', text: 'consistent' },
+    ],
+    correctKey: 'A',
+    explanation:
+      '"compelling evidence" は「説得力があり、疑いの余地を残さない証拠」という意味の定番コロケーション。convenient（都合の良い）、considerate（思いやりのある）、consistent（一貫した）はいずれも証拠の説得力を表す語ではなく文脈に合わない。',
+    difficulty: 'advanced',
+  },
+  {
+    id: 'eiken_2kyu_052',
+    level: '2kyu',
+    category: 'vocabulary',
+    question:
+      'The new regulations aim to ( ) carbon emissions from factories by 30 percent within the next decade.',
+    choices: [
+      { key: 'A', text: 'curl' },
+      { key: 'B', text: 'curb' },
+      { key: 'C', text: 'curve' },
+      { key: 'D', text: 'cure' },
+    ],
+    correctKey: 'B',
+    explanation:
+      '"curb emissions" は「排出量を抑制する」という意味の固定表現で、環境政策の文脈で頻出する。curl（巻く）、curve（曲げる）、cure（治す）はいずれも綴りは似ているが意味が異なり不適切。',
+    difficulty: 'standard',
+  },
+  {
+    id: 'eiken_2kyu_053',
+    level: '2kyu',
+    category: 'vocabulary',
+    question:
+      'It is ( ) that all passengers fasten their seatbelts before the aircraft begins to taxi.',
+    choices: [
+      { key: 'A', text: 'imperative' },
+      { key: 'B', text: 'impressive' },
+      { key: 'C', text: 'impartial' },
+      { key: 'D', text: 'improbable' },
+    ],
+    correctKey: 'A',
+    explanation:
+      '"imperative" は「絶対に必要な、緊急の」という意味で、安全のために欠かせない指示を述べる文脈に最適。impressive（印象的な）、impartial（公平な）、improbable（ありそうもない）はいずれも文脈に合わない。',
+    difficulty: 'advanced',
+  },
+  {
+    id: 'eiken_2kyu_054',
+    level: '2kyu',
+    category: 'vocabulary',
+    question:
+      'Despite the global recession, the country\'s economy proved remarkably ( ), recovering faster than most analysts had predicted.',
+    choices: [
+      { key: 'A', text: 'resistant' },
+      { key: 'B', text: 'reliant' },
+      { key: 'C', text: 'reluctant' },
+      { key: 'D', text: 'resilient' },
+    ],
+    correctKey: 'D',
+    explanation:
+      '"resilient" は「（打撃を受けても）素早く立ち直る、回復力がある」という意味で、不況からの早い回復を表す文脈に最適。resistant（抵抗力がある）は外的圧力を跳ね返す意味合いが強く、reliant（依存した）・reluctant（気が進まない）は文脈に合わない。',
+    difficulty: 'advanced',
+  },
+  {
+    id: 'eiken_2kyu_055',
+    level: '2kyu',
+    category: 'vocabulary',
+    question:
+      'All employees are expected to ( ) the company\'s code of conduct at all times, both in and outside the office.',
+    choices: [
+      { key: 'A', text: 'adhere to' },
+      { key: 'B', text: 'adapt to' },
+      { key: 'C', text: 'attend to' },
+      { key: 'D', text: 'attribute to' },
+    ],
+    correctKey: 'A',
+    explanation:
+      '"adhere to a code of conduct" は「行動規範を遵守する」という意味の固定表現。adapt to（〜に適応する）、attend to（〜に対応する）、attribute to（〜に起因すると考える）はいずれも規則の遵守を表す組み合わせとして不適切。',
+    difficulty: 'advanced',
+  },
+  {
+    id: 'eiken_2kyu_056',
+    level: '2kyu',
+    category: 'vocabulary',
+    question:
+      'The new open-plan office was designed to ( ) collaboration among employees from different departments.',
+    choices: [
+      { key: 'A', text: 'forge' },
+      { key: 'B', text: 'foster' },
+      { key: 'C', text: 'forbid' },
+      { key: 'D', text: 'forecast' },
+    ],
+    correctKey: 'B',
+    explanation:
+      '"foster collaboration" は「協力関係を育む、促進する」という意味の定番コロケーション。forge（鍛造する、偽造する）、forbid（禁じる）、forecast（予測する）はいずれもcollaborationとの組み合わせとして不自然。',
+    difficulty: 'standard',
+  },
+  {
+    id: 'eiken_2kyu_057',
+    level: '2kyu',
+    category: 'vocabulary',
+    question:
+      'The city introduced several measures to ( ) traffic congestion during rush hour, including expanded bus lanes.',
+    choices: [
+      { key: 'A', text: 'mitigate' },
+      { key: 'B', text: 'migrate' },
+      { key: 'C', text: 'moderate' },
+      { key: 'D', text: 'mediate' },
+    ],
+    correctKey: 'A',
+    explanation:
+      '"mitigate congestion" は「渋滞を緩和する」という意味で、都市政策の文脈で頻出する表現。migrate（移住する）は無関係、moderate（穏やかにする）は感情や発言に使うことが多く、mediate（仲裁する）は対立の調停に使う語で不適切。',
+    difficulty: 'advanced',
+  },
+  {
+    id: 'eiken_2kyu_058',
+    level: '2kyu',
+    category: 'vocabulary',
+    question:
+      'A cure for the disease has remained ( ) despite decades of intensive research by scientists worldwide.',
+    choices: [
+      { key: 'A', text: 'elusive' },
+      { key: 'B', text: 'exclusive' },
+      { key: 'C', text: 'excessive' },
+      { key: 'D', text: 'exempt' },
+    ],
+    correctKey: 'A',
+    explanation:
+      '"remain elusive" は「（目標や答えが）なかなか手に入らない、捉えどころがない」という意味で、長年研究しても見つからない治療法を表す文脈に最適。exclusive（排他的な）、excessive（過剰な）、exempt（免除された）はいずれも不適切。',
+    difficulty: 'advanced',
+  },
+  {
+    id: 'eiken_2kyu_059',
+    level: '2kyu',
+    category: 'vocabulary',
+    question:
+      'The new employee proved to be remarkably ( ), handling everything from customer service to accounting with equal ease.',
+    choices: [
+      { key: 'A', text: 'versatile' },
+      { key: 'B', text: 'valuable' },
+      { key: 'C', text: 'vulnerable' },
+      { key: 'D', text: 'voluntary' },
+    ],
+    correctKey: 'A',
+    explanation:
+      '"versatile" は「多才な、様々な分野に対応できる」という意味で、複数の異なる業務をこなす能力を表す文脈に最適。valuable（貴重な）は能力の多様性を表さず、vulnerable（弱い）、voluntary（自発的な）はいずれも文脈に合わない。',
+    difficulty: 'standard',
+  },
+  {
+    id: 'eiken_2kyu_060',
+    level: '2kyu',
+    category: 'vocabulary',
+    question:
+      'The accountant was known for her ( ) attention to detail, rarely making even the smallest error in her reports.',
+    choices: [
+      { key: 'A', text: 'meticulous' },
+      { key: 'B', text: 'moderate' },
+      { key: 'C', text: 'modest' },
+      { key: 'D', text: 'momentary' },
+    ],
+    correctKey: 'A',
+    explanation:
+      '"meticulous attention to detail" は「細部への徹底したこだわり」を表す定番コロケーション。滅多に間違えないという記述と一致する。moderate（適度な）、modest（控えめな）、momentary（一瞬の）はいずれも文脈に合わない。',
+    difficulty: 'standard',
+  },
+  {
+    id: 'eiken_2kyu_061',
+    level: '2kyu',
+    category: 'vocabulary',
+    question:
+      'Although the witness\'s account sounded ( ), detectives later discovered several inconsistencies that raised doubts.',
+    choices: [
+      { key: 'A', text: 'plausible' },
+      { key: 'B', text: 'playful' },
+      { key: 'C', text: 'pleasant' },
+      { key: 'D', text: 'plentiful' },
+    ],
+    correctKey: 'A',
+    explanation:
+      '"plausible" は「もっともらしい、信じられそうな」という意味で、一見信用できそうに聞こえたが後に矛盾が見つかったという文脈に最適。playful（遊び心のある）、pleasant（心地よい）、plentiful（豊富な）はいずれも証言の信憑性とは無関係。',
+    difficulty: 'advanced',
+  },
+  {
+    id: 'eiken_2kyu_062',
+    level: '2kyu',
+    category: 'vocabulary',
+    question:
+      'The manager gave ( ) feedback on the proposal, pointing out both its strengths and its serious weaknesses without hesitation.',
+    choices: [
+      { key: 'A', text: 'candid' },
+      { key: 'B', text: 'cautious' },
+      { key: 'C', text: 'casual' },
+      { key: 'D', text: 'callous' },
+    ],
+    correctKey: 'A',
+    explanation:
+      '"candid feedback" は「率直で正直な意見」という意味で、長所も短所も遠慮なく述べたという文脈に最適。cautious（慎重な）、casual（気軽な）、callous（無情な）はいずれも率直さのニュアンスとは異なる。',
+    difficulty: 'advanced',
+  },
+  {
+    id: 'eiken_2kyu_063',
+    level: '2kyu',
+    category: 'vocabulary',
+    question:
+      'Given the current trends, a further rise in interest rates seems almost ( ), according to most economists.',
+    choices: [
+      { key: 'A', text: 'inevitable' },
+      { key: 'B', text: 'invaluable' },
+      { key: 'C', text: 'incidental' },
+      { key: 'D', text: 'infinite' },
+    ],
+    correctKey: 'A',
+    explanation:
+      '"inevitable" は「避けられない、必然の」という意味で、経済動向から見て金利上昇がほぼ確実だという文脈に最適。invaluable（非常に貴重な）、incidental（付随的な）、infinite（無限の）はいずれも文脈に合わない。',
+    difficulty: 'standard',
+  },
+  {
+    id: 'eiken_2kyu_064',
+    level: '2kyu',
+    category: 'vocabulary',
+    question:
+      'Rainfall in the region has become increasingly ( ), making it difficult for farmers to plan their planting schedules.',
+    choices: [
+      { key: 'A', text: 'sporadic' },
+      { key: 'B', text: 'spontaneous' },
+      { key: 'C', text: 'specific' },
+      { key: 'D', text: 'spacious' },
+    ],
+    correctKey: 'A',
+    explanation:
+      '"sporadic" は「不定期な、散発的な」という意味で、予測しにくい降雨パターンを表す文脈に最適。spontaneous（自発的な）、specific（特定の）、spacious（広々とした）はいずれも降雨の予測不可能性を表す語ではない。',
+    difficulty: 'advanced',
+  },
+  {
+    id: 'eiken_2kyu_065',
+    level: '2kyu',
+    category: 'vocabulary',
+    question:
+      'The connection between the two events turned out to be rather ( ), based more on coincidence than on any real cause.',
+    choices: [
+      { key: 'A', text: 'tedious' },
+      { key: 'B', text: 'tenuous' },
+      { key: 'C', text: 'tentative' },
+      { key: 'D', text: 'tangible' },
+    ],
+    correctKey: 'B',
+    explanation:
+      '"tenuous" は「（つながりや根拠が）薄弱な、こじつけの」という意味で、偶然によるものに過ぎないという文脈に最適。tedious（退屈な）、tentative（暫定的な）、tangible（有形の、明白な）はいずれも文脈に合わない。',
+    difficulty: 'advanced',
+  },
+  {
+    id: 'eiken_2kyu_066',
+    level: '2kyu',
+    category: 'vocabulary',
+    question:
+      'The company reported ( ) growth last quarter, far exceeding anything seen in its thirty-year history.',
+    choices: [
+      { key: 'A', text: 'unprecedented' },
+      { key: 'B', text: 'undisclosed' },
+      { key: 'C', text: 'undesirable' },
+      { key: 'D', text: 'unfounded' },
+    ],
+    correctKey: 'A',
+    explanation:
+      '"unprecedented growth" は「前例のない成長」という意味で、過去30年間で最大の成長を表す文脈に最適。undisclosed（未公開の）、undesirable（望ましくない）、unfounded（根拠のない）はいずれも文脈に合わない。',
+    difficulty: 'standard',
+  },
+  {
+    id: 'eiken_2kyu_067',
+    level: '2kyu',
+    category: 'vocabulary',
+    question:
+      'Engineers are exploring whether solar power is a ( ) alternative to fossil fuels for this remote region.',
+    choices: [
+      { key: 'A', text: 'viable' },
+      { key: 'B', text: 'valid' },
+      { key: 'C', text: 'vigorous' },
+      { key: 'D', text: 'vacant' },
+    ],
+    correctKey: 'A',
+    explanation:
+      '"viable alternative" は「実行可能な代替案」という意味の定番コロケーション。validは「（論理・書類などが）正当な」、vigorousは「活発な」、vacantは「空いている」でいずれも文脈に合わない。',
+    difficulty: 'standard',
+  },
+  {
+    id: 'eiken_2kyu_068',
+    level: '2kyu',
+    category: 'vocabulary',
+    question:
+      'Years of careful negotiation finally ( ) in a landmark peace agreement between the two nations.',
+    choices: [
+      { key: 'A', text: 'culminated' },
+      { key: 'B', text: 'cultivated' },
+      { key: 'C', text: 'circulated' },
+      { key: 'D', text: 'calculated' },
+    ],
+    correctKey: 'A',
+    explanation:
+      '"culminate in" は「最終的に〜という結果に至る」という意味で、長い交渉の末に達成された成果を表す文脈に最適。cultivate（育成する）、circulate（循環させる）、calculate（計算する）はいずれも文脈に合わない。',
+    difficulty: 'advanced',
+  },
+  {
+    id: 'eiken_2kyu_069',
+    level: '2kyu',
+    category: 'vocabulary',
+    question:
+      'Trained art experts can often ( ) subtle differences between an original painting and a skillful forgery.',
+    choices: [
+      { key: 'A', text: 'discern' },
+      { key: 'B', text: 'disclose' },
+      { key: 'C', text: 'discard' },
+      { key: 'D', text: 'discourage' },
+    ],
+    correctKey: 'A',
+    explanation:
+      '"discern subtle differences" は「微妙な違いを見分ける」という意味で、専門家の鋭い観察力を表す文脈に最適。disclose（暴露する）、discard（捨てる）、discourage（落胆させる）はいずれも文脈に合わない。',
+    difficulty: 'advanced',
+  },
+  {
+    id: 'eiken_2kyu_070',
+    level: '2kyu',
+    category: 'vocabulary',
+    question:
+      'Even under intense questioning, the spokesperson was able to ( ) the company\'s position clearly and confidently.',
+    choices: [
+      { key: 'A', text: 'articulate' },
+      { key: 'B', text: 'arbitrate' },
+      { key: 'C', text: 'accumulate' },
+      { key: 'D', text: 'appreciate' },
+    ],
+    correctKey: 'A',
+    explanation:
+      '"articulate a position" は「立場を明確に表現する」という意味で、厳しい質問の中でも明確に説明できたという文脈に最適。arbitrate（仲裁する）、accumulate（蓄積する）、appreciate（感謝する、理解する）はいずれも文脈に合わない。',
+    difficulty: 'standard',
+  },
+
+  // ── GRAMMAR 71–85 ────────────────────────────────────────────────
+  {
+    id: 'eiken_2kyu_071',
+    level: '2kyu',
+    category: 'grammar',
+    question:
+      'So exhausted ( ) the climbers that they decided to set up camp two hours earlier than planned.',
+    choices: [
+      { key: 'A', text: 'were' },
+      { key: 'B', text: 'did' },
+      { key: 'C', text: 'had' },
+      { key: 'D', text: 'have' },
+    ],
+    correctKey: 'A',
+    explanation:
+      '"So + 形容詞 + be動詞 + 主語 ... that ..." は倒置構文で、「非常に〜だったので…」という結果を強調する。主語 the climbers（複数）に対応するbe動詞 were が正しい。did・had・haveは形容詞 exhausted を補語として続ける倒置には使わない。',
+    difficulty: 'advanced',
+  },
+  {
+    id: 'eiken_2kyu_072',
+    level: '2kyu',
+    category: 'grammar',
+    question:
+      'The committee insists that the budget report ( ) revised before it is presented to shareholders.',
+    choices: [
+      { key: 'A', text: 'is' },
+      { key: 'B', text: 'be' },
+      { key: 'C', text: 'was' },
+      { key: 'D', text: 'will be' },
+    ],
+    correctKey: 'B',
+    explanation:
+      '"insist that + 主語 + 動詞原形" は仮定法現在の構文。受動態の原形は "be + 過去分詞" となるため be revised が正しい。is・was・will be はいずれも直説法の時制で、insistが要求する仮定法現在には合わない。',
+    difficulty: 'advanced',
+  },
+  {
+    id: 'eiken_2kyu_073',
+    level: '2kyu',
+    category: 'grammar',
+    question:
+      'Little ( ) that her presentation would later be cited in dozens of academic papers.',
+    choices: [
+      { key: 'A', text: 'she did know' },
+      { key: 'B', text: 'she knew' },
+      { key: 'C', text: 'did she know' },
+      { key: 'D', text: 'knew she' },
+    ],
+    correctKey: 'C',
+    explanation:
+      '"Little" が否定的な意味を持つ副詞として文頭に置かれると倒置が起こる。"Little did + 主語 + 動詞原形" で「〜とは全く知らなかった」という意味になる。she did know・she knew・knew she はいずれも正しい倒置の語順ではない。',
+    difficulty: 'advanced',
+  },
+  {
+    id: 'eiken_2kyu_074',
+    level: '2kyu',
+    category: 'grammar',
+    question:
+      'The novel, ( ) plot twists kept readers guessing until the final page, became an instant bestseller.',
+    choices: [
+      { key: 'A', text: 'who' },
+      { key: 'B', text: 'which' },
+      { key: 'C', text: 'whose' },
+      { key: 'D', text: 'that' },
+    ],
+    correctKey: 'C',
+    explanation:
+      '先行詞 the novel（物）に対して所有格の関係代名詞 whose を使い、"whose plot twists"（その小説の意外な展開）とする。who は人に使う所有格ではなく主格・目的格、which・that は名詞を直接所有する形にならない。',
+    difficulty: 'advanced',
+  },
+  {
+    id: 'eiken_2kyu_075',
+    level: '2kyu',
+    category: 'grammar',
+    question:
+      'By the time the final guests arrive tonight, the caterers ( ) preparing the banquet hall for over six hours.',
+    choices: [
+      { key: 'A', text: 'will have been' },
+      { key: 'B', text: 'have been' },
+      { key: 'C', text: 'had been' },
+      { key: 'D', text: 'were' },
+    ],
+    correctKey: 'A',
+    explanation:
+      '"By the time + 現在形" の節に対して、未来のある時点までの継続を表すには未来完了進行形 "will have been + 〜ing" を使う。「今夜ゲストが到着する頃には、6時間以上準備を続けていることになる」という未来の継続を示す。',
+    difficulty: 'advanced',
+  },
+  {
+    id: 'eiken_2kyu_076',
+    level: '2kyu',
+    category: 'grammar',
+    question:
+      'The board members were divided over the merger; some favored it enthusiastically, ( ) others remained firmly opposed.',
+    choices: [
+      { key: 'A', text: 'so' },
+      { key: 'B', text: 'while' },
+      { key: 'C', text: 'because' },
+      { key: 'D', text: 'unless' },
+    ],
+    correctKey: 'B',
+    explanation:
+      '"while" は「一方で」という対比を表す接続詞で、賛成派と反対派に分かれた状況を対照的に示す文脈に最適。so（だから）は因果関係、because（なぜなら）は理由、unless（〜しない限り）は条件を表し、いずれも対比のニュアンスを表せない。',
+    difficulty: 'standard',
+  },
+  {
+    id: 'eiken_2kyu_077',
+    level: '2kyu',
+    category: 'grammar',
+    question:
+      'The professor would rather the students ( ) their essays a week before the deadline to allow time for revisions.',
+    choices: [
+      { key: 'A', text: 'submit' },
+      { key: 'B', text: 'submitted' },
+      { key: 'C', text: 'will submit' },
+      { key: 'D', text: 'to submit' },
+    ],
+    correctKey: 'B',
+    explanation:
+      '"would rather + 主語 + 過去形" は「（他の誰かに）〜してほしいのだが」という仮定法過去の構文で、現在または未来の願望を表す。submitは原形（主語+would ratherの構文ではない場合）、will submit・to submitはこの構文に合わない。',
+    difficulty: 'advanced',
+  },
+  {
+    id: 'eiken_2kyu_078',
+    level: '2kyu',
+    category: 'grammar',
+    question:
+      'Such was the intensity of the storm ( ) several coastal towns had to be evacuated overnight.',
+    choices: [
+      { key: 'A', text: 'so' },
+      { key: 'B', text: 'as' },
+      { key: 'C', text: 'that' },
+      { key: 'D', text: 'which' },
+    ],
+    correctKey: 'C',
+    explanation:
+      '"Such + be動詞 + 主語 + that ..." は倒置構文で「〜は非常に…だったので」という結果を強調する。この構文では that が必須であり、so・as・which はこの特定の倒置パターンでは使えない。',
+    difficulty: 'advanced',
+  },
+  {
+    id: 'eiken_2kyu_079',
+    level: '2kyu',
+    category: 'grammar',
+    question:
+      'The contract stipulates that payment ( ) in full within thirty days of the invoice date.',
+    choices: [
+      { key: 'A', text: 'is made' },
+      { key: 'B', text: 'be made' },
+      { key: 'C', text: 'will be made' },
+      { key: 'D', text: 'was made' },
+    ],
+    correctKey: 'B',
+    explanation:
+      '"stipulate that + 主語 + 動詞原形" は法律・契約文書でよく使われる仮定法現在の構文。受動態の原形は "be + 過去分詞" となるため be made が正しい。is made・will be made・was madeはいずれも直説法で、stipulateが要求する仮定法現在の形にならない。',
+    difficulty: 'advanced',
+  },
+  {
+    id: 'eiken_2kyu_080',
+    level: '2kyu',
+    category: 'grammar',
+    question:
+      'Not only ( ) the deadline, but she also exceeded every expectation the client had set for the project.',
+    choices: [
+      { key: 'A', text: 'she met' },
+      { key: 'B', text: 'did she meet' },
+      { key: 'C', text: 'she did meet' },
+      { key: 'D', text: 'meet she did' },
+    ],
+    correctKey: 'B',
+    explanation:
+      '"Not only" が文頭に置かれると倒置が生じる。"Not only did + 主語 + 動詞原形 ..., but also ..." が正しい構造で、"did she meet" となる。she met・she did meet・meet she did はいずれも正しい倒置の語順ではない。',
+    difficulty: 'advanced',
+  },
+  {
+    id: 'eiken_2kyu_081',
+    level: '2kyu',
+    category: 'grammar',
+    question:
+      'The researchers acknowledged the limitations of their study, ( ) casting doubt on the broader conclusions they had drawn.',
+    choices: [
+      { key: 'A', text: 'thereby' },
+      { key: 'B', text: 'therefore' },
+      { key: 'C', text: 'nonetheless' },
+      { key: 'D', text: 'otherwise' },
+    ],
+    correctKey: 'A',
+    explanation:
+      '"thereby" は「それによって、その結果として」という意味で、分詞構文 casting doubt を導く副詞として機能する。therefore（それゆえ）は独立した文の接続に使うことが多く、この分詞構文の直前には不自然。nonetheless（それにもかかわらず）、otherwise（さもなければ）は文意に合わない。',
+    difficulty: 'advanced',
+  },
+  {
+    id: 'eiken_2kyu_082',
+    level: '2kyu',
+    category: 'grammar',
+    question:
+      'The new policy, ( ) beneficial in theory, has proven extremely difficult to implement in practice.',
+    choices: [
+      { key: 'A', text: 'despite' },
+      { key: 'B', text: 'while' },
+      { key: 'C', text: 'because of' },
+      { key: 'D', text: 'due to' },
+    ],
+    correctKey: 'B',
+    explanation:
+      '"while + 形容詞" は分詞構文的に「〜ではあるが」という譲歩を表す省略構文（while it is beneficial の it is が省略された形）。despite・because of・due to は前置詞句であり、直後に形容詞を単独で続けることはできない。',
+    difficulty: 'advanced',
+  },
+  {
+    id: 'eiken_2kyu_083',
+    level: '2kyu',
+    category: 'grammar',
+    question:
+      'It is high time the government ( ) concrete measures to address the housing crisis.',
+    choices: [
+      { key: 'A', text: 'takes' },
+      { key: 'B', text: 'will take' },
+      { key: 'C', text: 'took' },
+      { key: 'D', text: 'has taken' },
+    ],
+    correctKey: 'C',
+    explanation:
+      '"It is high time + 主語 + 過去形" は「もうとっくに〜すべき時だ」という仮定法過去を使う慣用構文で、現在の状況に対する強い不満や催促を表す。takes・will take・has taken はこの構文の後には使えない。',
+    difficulty: 'advanced',
+  },
+  {
+    id: 'eiken_2kyu_084',
+    level: '2kyu',
+    category: 'grammar',
+    question:
+      'The applicant was rejected, ( ) her impressive qualifications and years of relevant experience.',
+    choices: [
+      { key: 'A', text: 'despite' },
+      { key: 'B', text: 'although' },
+      { key: 'C', text: 'even though' },
+      { key: 'D', text: 'while' },
+    ],
+    correctKey: 'A',
+    explanation:
+      '"despite" は前置詞で、後に名詞句（her impressive qualifications）を直接続けることができる。although・even though・while は接続詞であり、後には主語と動詞を含む節が必要なため、名詞句だけを続けることはできない。',
+    difficulty: 'standard',
+  },
+  {
+    id: 'eiken_2kyu_085',
+    level: '2kyu',
+    category: 'grammar',
+    question:
+      'The evacuation plan, ( ) drafted years ago, was finally put to the test during last month\'s earthquake.',
+    choices: [
+      { key: 'A', text: 'first' },
+      { key: 'B', text: 'firstly' },
+      { key: 'C', text: 'at first' },
+      { key: 'D', text: 'firstborn' },
+    ],
+    correctKey: 'A',
+    explanation:
+      '"first drafted" は「最初に起草された」という意味で、過去分詞 drafted を修飾する副詞として first を使う。firstly は文全体を修飾する列挙の副詞（Firstly, ... Secondly, ...）で単独の分詞修飾には不自然。at first（最初のうちは）は対比を含意し文意に合わない。firstborn（第一子の）は形容詞・名詞で無関係。',
+    difficulty: 'advanced',
+  },
+
+  // ── READING 86–100 ───────────────────────────────────────────────
+  // Passage 6 (Q86–88): Urban heat islands
+  {
+    id: 'eiken_2kyu_086',
+    level: '2kyu',
+    category: 'reading',
+    question: `Read the following passage and answer the question below.
+
+Cities around the world are experiencing what scientists call the "urban heat island" effect, a phenomenon in which built-up areas become significantly warmer than their rural surroundings. This temperature difference arises primarily because concrete, asphalt, and other construction materials absorb and retain heat far more effectively than natural vegetation. During the day, these surfaces soak up solar radiation; at night, they slowly release it, preventing the air from cooling as it would in a forest or field. The consequences extend beyond simple discomfort: elevated urban temperatures increase electricity demand for air conditioning, worsen air quality by accelerating the formation of ground-level ozone, and disproportionately endanger elderly residents and those without access to cooling systems during heat waves. Urban planners have proposed several countermeasures, including the installation of reflective "cool roofs," the expansion of tree canopy coverage, and the use of lighter-colored pavement that reflects rather than absorbs sunlight. While these interventions have shown promise in pilot projects, implementing them citywide requires substantial investment that many municipal governments have been slow to allocate.
+
+According to the passage, what is the primary cause of the urban heat island effect?`,
+    choices: [
+      {
+        key: 'A',
+        text: 'Increased air conditioning use during summer months',
+      },
+      {
+        key: 'B',
+        text: 'The tendency of construction materials to absorb and retain heat',
+      },
+      {
+        key: 'C',
+        text: 'A general rise in global temperatures caused by climate change',
+      },
+      {
+        key: 'D',
+        text: 'The removal of reflective cool roofs from most buildings',
+      },
+    ],
+    correctKey: 'B',
+    explanation:
+      'パッセージに "This temperature difference arises primarily because concrete, asphalt, and other construction materials absorb and retain heat far more effectively than natural vegetation" と明記されている。Bがこれと一致する。Aは結果であって原因ではない。Cは一般論で本文の主旨と異なる。Dは対策として提案されているものであり、原因ではない。',
+    difficulty: 'standard',
+  },
+  {
+    id: 'eiken_2kyu_087',
+    level: '2kyu',
+    category: 'reading',
+    question: `Read the following passage and answer the question below.
+
+Cities around the world are experiencing what scientists call the "urban heat island" effect, a phenomenon in which built-up areas become significantly warmer than their rural surroundings. This temperature difference arises primarily because concrete, asphalt, and other construction materials absorb and retain heat far more effectively than natural vegetation. During the day, these surfaces soak up solar radiation; at night, they slowly release it, preventing the air from cooling as it would in a forest or field. The consequences extend beyond simple discomfort: elevated urban temperatures increase electricity demand for air conditioning, worsen air quality by accelerating the formation of ground-level ozone, and disproportionately endanger elderly residents and those without access to cooling systems during heat waves. Urban planners have proposed several countermeasures, including the installation of reflective "cool roofs," the expansion of tree canopy coverage, and the use of lighter-colored pavement that reflects rather than absorbs sunlight. While these interventions have shown promise in pilot projects, implementing them citywide requires substantial investment that many municipal governments have been slow to allocate.
+
+In the passage, the phrase "disproportionately endanger" most nearly means:`,
+    choices: [
+      { key: 'A', text: 'put at unusually high risk compared to others' },
+      { key: 'B', text: 'completely eliminate the risk for' },
+      { key: 'C', text: 'slightly reduce the danger faced by' },
+      { key: 'D', text: 'have no measurable effect on' },
+    ],
+    correctKey: 'A',
+    explanation:
+      '"disproportionately" は「不釣り合いに、他と比べて過度に」という意味で、高齢者や冷房を使えない人々が他の人々よりも大きな危険にさらされることを表す。Aの「他と比べて異常に高いリスクにさらす」が最も正確。B・C・Dは意味が逆または過度に単純化されている。',
+    difficulty: 'advanced',
+  },
+  {
+    id: 'eiken_2kyu_088',
+    level: '2kyu',
+    category: 'reading',
+    question: `Read the following passage and answer the question below.
+
+Cities around the world are experiencing what scientists call the "urban heat island" effect, a phenomenon in which built-up areas become significantly warmer than their rural surroundings. This temperature difference arises primarily because concrete, asphalt, and other construction materials absorb and retain heat far more effectively than natural vegetation. During the day, these surfaces soak up solar radiation; at night, they slowly release it, preventing the air from cooling as it would in a forest or field. The consequences extend beyond simple discomfort: elevated urban temperatures increase electricity demand for air conditioning, worsen air quality by accelerating the formation of ground-level ozone, and disproportionately endanger elderly residents and those without access to cooling systems during heat waves. Urban planners have proposed several countermeasures, including the installation of reflective "cool roofs," the expansion of tree canopy coverage, and the use of lighter-colored pavement that reflects rather than absorbs sunlight. While these interventions have shown promise in pilot projects, implementing them citywide requires substantial investment that many municipal governments have been slow to allocate.
+
+What obstacle to addressing the urban heat island effect does the passage identify?`,
+    choices: [
+      {
+        key: 'A',
+        text: 'Scientists have not yet identified any effective countermeasures.',
+      },
+      {
+        key: 'B',
+        text: 'Reflective roofs and lighter pavement have failed in every pilot project tested.',
+      },
+      {
+        key: 'C',
+        text: 'Citywide implementation demands funding that many local governments have been reluctant to provide.',
+      },
+      {
+        key: 'D',
+        text: 'Residents have widely opposed the installation of cool roofs in their neighborhoods.',
+      },
+    ],
+    correctKey: 'C',
+    explanation:
+      'パッセージ末尾に "implementing them citywide requires substantial investment that many municipal governments have been slow to allocate" とあり、資金投入の遅れが課題として挙げられている。Cがこれに一致する。Aは対策が提案されている点と矛盾。Bは「pilot projects have shown promise」と矛盾。Dはパッセージに記載がない。',
+    difficulty: 'advanced',
+  },
+
+  // Passage 7 (Q89–91): The economics of streaming services
+  {
+    id: 'eiken_2kyu_089',
+    level: '2kyu',
+    category: 'reading',
+    question: `Read the following passage and answer the question below.
+
+The rise of subscription-based streaming services has fundamentally reshaped how consumers access music, television, and film. Initially, these platforms attracted subscribers by offering vast libraries of content for a single, relatively low monthly fee, a proposition that seemed far more economical than purchasing individual albums, DVDs, or cable packages. However, as competition intensified, media companies increasingly withdrew their content from shared platforms to launch proprietary services of their own, fragmenting the market and forcing consumers to subscribe to multiple services to access the content they wanted. This fragmentation has gradually eroded the original cost advantage of streaming, with some households now spending more on a combination of subscriptions than they once paid for traditional cable television. Industry analysts note a related trend known as "subscription fatigue," in which consumers, overwhelmed by the number of services demanding monthly payments, begin canceling subscriptions or reverting to less convenient means of accessing content, including piracy. Streaming companies have responded by introducing tiered pricing models, bundling deals, and advertising-supported plans in an effort to retain price-sensitive customers.
+
+According to the passage, what has caused the fragmentation of the streaming market?`,
+    choices: [
+      {
+        key: 'A',
+        text: 'Media companies removing their content to create their own separate platforms',
+      },
+      {
+        key: 'B',
+        text: 'Government regulations requiring companies to limit the size of their content libraries',
+      },
+      {
+        key: 'C',
+        text: 'A sharp decline in the overall demand for streaming services',
+      },
+      {
+        key: 'D',
+        text: 'Consumers demanding that companies offer more advertising-supported plans',
+      },
+    ],
+    correctKey: 'A',
+    explanation:
+      'パッセージに "media companies increasingly withdrew their content from shared platforms to launch proprietary services of their own, fragmenting the market" とあり、コンテンツの引き上げと独自サービスの立ち上げが市場の分断を招いたと述べられている。Aがこれに一致する。B・C・Dはパッセージに記載がない。',
+    difficulty: 'standard',
+  },
+  {
+    id: 'eiken_2kyu_090',
+    level: '2kyu',
+    category: 'reading',
+    question: `Read the following passage and answer the question below.
+
+The rise of subscription-based streaming services has fundamentally reshaped how consumers access music, television, and film. Initially, these platforms attracted subscribers by offering vast libraries of content for a single, relatively low monthly fee, a proposition that seemed far more economical than purchasing individual albums, DVDs, or cable packages. However, as competition intensified, media companies increasingly withdrew their content from shared platforms to launch proprietary services of their own, fragmenting the market and forcing consumers to subscribe to multiple services to access the content they wanted. This fragmentation has gradually eroded the original cost advantage of streaming, with some households now spending more on a combination of subscriptions than they once paid for traditional cable television. Industry analysts note a related trend known as "subscription fatigue," in which consumers, overwhelmed by the number of services demanding monthly payments, begin canceling subscriptions or reverting to less convenient means of accessing content, including piracy. Streaming companies have responded by introducing tiered pricing models, bundling deals, and advertising-supported plans in an effort to retain price-sensitive customers.
+
+In the passage, "subscription fatigue" refers to:`,
+    choices: [
+      {
+        key: 'A',
+        text: 'a technical problem that prevents subscriptions from renewing automatically',
+      },
+      {
+        key: 'B',
+        text: 'the exhaustion consumers feel from being asked to pay for too many separate services',
+      },
+      {
+        key: 'C',
+        text: 'a marketing strategy used by companies to attract new subscribers',
+      },
+      {
+        key: 'D',
+        text: 'the declining quality of content offered on streaming platforms',
+      },
+    ],
+    correctKey: 'B',
+    explanation:
+      '"subscription fatigue" は「consumers, overwhelmed by the number of services demanding monthly payments」と説明されており、多数のサブスクリプション料金に消費者が疲弊する状態を指す。Bがこれに一致する。A・C・Dはパッセージの定義と異なる。',
+    difficulty: 'standard',
+  },
+  {
+    id: 'eiken_2kyu_091',
+    level: '2kyu',
+    category: 'reading',
+    question: `Read the following passage and answer the question below.
+
+The rise of subscription-based streaming services has fundamentally reshaped how consumers access music, television, and film. Initially, these platforms attracted subscribers by offering vast libraries of content for a single, relatively low monthly fee, a proposition that seemed far more economical than purchasing individual albums, DVDs, or cable packages. However, as competition intensified, media companies increasingly withdrew their content from shared platforms to launch proprietary services of their own, fragmenting the market and forcing consumers to subscribe to multiple services to access the content they wanted. This fragmentation has gradually eroded the original cost advantage of streaming, with some households now spending more on a combination of subscriptions than they once paid for traditional cable television. Industry analysts note a related trend known as "subscription fatigue," in which consumers, overwhelmed by the number of services demanding monthly payments, begin canceling subscriptions or reverting to less convenient means of accessing content, including piracy. Streaming companies have responded by introducing tiered pricing models, bundling deals, and advertising-supported plans in an effort to retain price-sensitive customers.
+
+How have streaming companies responded to the problem described in the passage?`,
+    choices: [
+      {
+        key: 'A',
+        text: 'By merging all of their services back into a single unified platform',
+      },
+      {
+        key: 'B',
+        text: 'By raising prices uniformly across all subscription tiers',
+      },
+      {
+        key: 'C',
+        text: 'By offering tiered pricing, bundles, and ad-supported options to keep budget-conscious customers',
+      },
+      {
+        key: 'D',
+        text: 'By removing all advertising from their platforms permanently',
+      },
+    ],
+    correctKey: 'C',
+    explanation:
+      'パッセージ末尾に "Streaming companies have responded by introducing tiered pricing models, bundling deals, and advertising-supported plans in an effort to retain price-sensitive customers" とあり、Cがこれに正確に一致する。A・B・Dはパッセージの内容と矛盾する。',
+    difficulty: 'standard',
+  },
+
+  // Passage 8 (Q92–94): Bilingualism and the brain
+  {
+    id: 'eiken_2kyu_092',
+    level: '2kyu',
+    category: 'reading',
+    question: `Read the following passage and answer the question below.
+
+For decades, researchers debated whether growing up speaking two languages conferred any cognitive advantage, or whether, as some early studies suggested, it merely caused confusion and delayed language development in children. More recent research employing sophisticated brain-imaging techniques has largely overturned this earlier skepticism. Bilingual individuals, it turns out, must constantly manage two active language systems, suppressing one while using the other — a mental exercise that appears to strengthen the brain's executive control network, the system responsible for tasks such as switching attention, ignoring distractions, and holding multiple pieces of information in mind simultaneously. Some studies have even suggested that lifelong bilingualism may delay the onset of dementia symptoms by several years, though researchers caution that this finding remains under active investigation and may be influenced by other lifestyle factors, such as education level and social engagement. Critics of the "bilingual advantage" hypothesis argue that many of the original studies suffered from small sample sizes and failed to control adequately for socioeconomic differences between bilingual and monolingual participants, and that more rigorous replication is still needed before firm conclusions can be drawn.
+
+According to the passage, what mental process is strengthened by managing two active language systems?`,
+    choices: [
+      {
+        key: 'A',
+        text: 'The brain\'s executive control network, involved in attention and multitasking',
+      },
+      {
+        key: 'B',
+        text: 'The region of the brain responsible for long-term memory storage',
+      },
+      {
+        key: 'C',
+        text: 'The part of the brain that processes visual information',
+      },
+      {
+        key: 'D',
+        text: 'The system that regulates emotional responses to stress',
+      },
+    ],
+    correctKey: 'A',
+    explanation:
+      'パッセージに "a mental exercise that appears to strengthen the brain\'s executive control network, the system responsible for tasks such as switching attention, ignoring distractions, and holding multiple pieces of information in mind simultaneously" とある。Aがこれに一致する。B・C・Dはパッセージに記載されていない。',
+    difficulty: 'standard',
+  },
+  {
+    id: 'eiken_2kyu_093',
+    level: '2kyu',
+    category: 'reading',
+    question: `Read the following passage and answer the question below.
+
+For decades, researchers debated whether growing up speaking two languages conferred any cognitive advantage, or whether, as some early studies suggested, it merely caused confusion and delayed language development in children. More recent research employing sophisticated brain-imaging techniques has largely overturned this earlier skepticism. Bilingual individuals, it turns out, must constantly manage two active language systems, suppressing one while using the other — a mental exercise that appears to strengthen the brain's executive control network, the system responsible for tasks such as switching attention, ignoring distractions, and holding multiple pieces of information in mind simultaneously. Some studies have even suggested that lifelong bilingualism may delay the onset of dementia symptoms by several years, though researchers caution that this finding remains under active investigation and may be influenced by other lifestyle factors, such as education level and social engagement. Critics of the "bilingual advantage" hypothesis argue that many of the original studies suffered from small sample sizes and failed to control adequately for socioeconomic differences between bilingual and monolingual participants, and that more rigorous replication is still needed before firm conclusions can be drawn.
+
+What criticism do skeptics raise about early studies on the "bilingual advantage"?`,
+    choices: [
+      {
+        key: 'A',
+        text: 'The studies were conducted entirely by researchers with no training in neuroscience.',
+      },
+      {
+        key: 'B',
+        text: 'The studies often had small samples and did not properly account for socioeconomic differences.',
+      },
+      {
+        key: 'C',
+        text: 'The studies focused exclusively on elderly participants, ignoring children entirely.',
+      },
+      {
+        key: 'D',
+        text: 'The studies were funded by companies that sell language-learning software.',
+      },
+    ],
+    correctKey: 'B',
+    explanation:
+      'パッセージに "many of the original studies suffered from small sample sizes and failed to control adequately for socioeconomic differences between bilingual and monolingual participants" とある。Bがこれに一致する。A・C・Dはパッセージに記載されていない。',
+    difficulty: 'advanced',
+  },
+  {
+    id: 'eiken_2kyu_094',
+    level: '2kyu',
+    category: 'reading',
+    question: `Read the following passage and answer the question below.
+
+For decades, researchers debated whether growing up speaking two languages conferred any cognitive advantage, or whether, as some early studies suggested, it merely caused confusion and delayed language development in children. More recent research employing sophisticated brain-imaging techniques has largely overturned this earlier skepticism. Bilingual individuals, it turns out, must constantly manage two active language systems, suppressing one while using the other — a mental exercise that appears to strengthen the brain's executive control network, the system responsible for tasks such as switching attention, ignoring distractions, and holding multiple pieces of information in mind simultaneously. Some studies have even suggested that lifelong bilingualism may delay the onset of dementia symptoms by several years, though researchers caution that this finding remains under active investigation and may be influenced by other lifestyle factors, such as education level and social engagement. Critics of the "bilingual advantage" hypothesis argue that many of the original studies suffered from small sample sizes and failed to control adequately for socioeconomic differences between bilingual and monolingual participants, and that more rigorous replication is still needed before firm conclusions can be drawn.
+
+Which of the following best summarizes the author's overall stance toward the "bilingual advantage" hypothesis?`,
+    choices: [
+      {
+        key: 'A',
+        text: 'The author is fully convinced that bilingualism provides guaranteed cognitive benefits to everyone.',
+      },
+      {
+        key: 'B',
+        text: 'The author dismisses the idea entirely as a myth with no scientific basis.',
+      },
+      {
+        key: 'C',
+        text: 'The author presents supporting evidence while also acknowledging valid scientific criticisms.',
+      },
+      {
+        key: 'D',
+        text: 'The author argues that only children, not adults, can benefit from bilingualism.',
+      },
+    ],
+    correctKey: 'C',
+    explanation:
+      'パッセージは初期研究への懐疑論を紹介した上で、より新しい研究による支持的な証拠を示し、さらに批判者の指摘も公平に取り上げている。Cが「支持する証拠と妥当な批判の両方を提示している」という著者の姿勢を最も正確に表す。A・B・Dはいずれも一方的すぎる。',
+    difficulty: 'advanced',
+  },
+
+  // Passage 9 (Q95–97): The economics of vertical farming
+  {
+    id: 'eiken_2kyu_095',
+    level: '2kyu',
+    category: 'reading',
+    question: `Read the following passage and answer the question below.
+
+Vertical farming — the practice of growing crops in stacked layers within climate-controlled indoor facilities — has been heralded by proponents as a solution to many of agriculture's most pressing challenges. By growing food indoors under artificial lighting and precisely regulated conditions, vertical farms can operate year-round regardless of external weather, use up to ninety percent less water than conventional farming through recirculating irrigation systems, and be located close to urban centers, dramatically reducing the distance food must travel before reaching consumers. Despite these advantages, the industry has struggled to achieve profitability at scale. The enormous energy costs associated with artificial lighting and climate control, combined with high labor and real estate expenses in urban areas, have pushed the production costs of vertically farmed produce well above those of traditionally grown crops. Several high-profile vertical farming startups that raised substantial venture capital have since filed for bankruptcy or significantly scaled back operations. Industry observers now suggest that vertical farming may prove economically viable only for high-value, fast-growing crops such as leafy greens and herbs, rather than as a wholesale replacement for traditional agriculture.
+
+According to the passage, what is one advantage of vertical farming over conventional agriculture?`,
+    choices: [
+      {
+        key: 'A',
+        text: 'It requires significantly less water due to recirculating irrigation systems.',
+      },
+      {
+        key: 'B',
+        text: 'It has proven far more profitable than traditional farming methods.',
+      },
+      {
+        key: 'C',
+        text: 'It eliminates the need for any artificial lighting or climate control.',
+      },
+      {
+        key: 'D',
+        text: 'It has completely replaced traditional agriculture in most major cities.',
+      },
+    ],
+    correctKey: 'A',
+    explanation:
+      'パッセージに "use up to ninety percent less water than conventional farming through recirculating irrigation systems" とある。Aがこれに一致する。Bは本文の「struggled to achieve profitability」と矛盾。Cは人工照明・気候制御が垂直農業の前提であり誤り。Dは誇張で本文に根拠がない。',
+    difficulty: 'basic',
+  },
+  {
+    id: 'eiken_2kyu_096',
+    level: '2kyu',
+    category: 'reading',
+    question: `Read the following passage and answer the question below.
+
+Vertical farming — the practice of growing crops in stacked layers within climate-controlled indoor facilities — has been heralded by proponents as a solution to many of agriculture's most pressing challenges. By growing food indoors under artificial lighting and precisely regulated conditions, vertical farms can operate year-round regardless of external weather, use up to ninety percent less water than conventional farming through recirculating irrigation systems, and be located close to urban centers, dramatically reducing the distance food must travel before reaching consumers. Despite these advantages, the industry has struggled to achieve profitability at scale. The enormous energy costs associated with artificial lighting and climate control, combined with high labor and real estate expenses in urban areas, have pushed the production costs of vertically farmed produce well above those of traditionally grown crops. Several high-profile vertical farming startups that raised substantial venture capital have since filed for bankruptcy or significantly scaled back operations. Industry observers now suggest that vertical farming may prove economically viable only for high-value, fast-growing crops such as leafy greens and herbs, rather than as a wholesale replacement for traditional agriculture.
+
+Why have several vertical farming startups gone bankrupt, according to the passage?`,
+    choices: [
+      {
+        key: 'A',
+        text: 'They were unable to secure any venture capital investment.',
+      },
+      {
+        key: 'B',
+        text: 'High energy, labor, and real estate costs made production too expensive.',
+      },
+      {
+        key: 'C',
+        text: 'Consumers refused to purchase vegetables grown indoors.',
+      },
+      {
+        key: 'D',
+        text: 'Government regulations banned indoor farming in most regions.',
+      },
+    ],
+    correctKey: 'B',
+    explanation:
+      'パッセージに "The enormous energy costs associated with artificial lighting and climate control, combined with high labor and real estate expenses in urban areas, have pushed the production costs of vertically farmed produce well above those of traditionally grown crops" とある。Bがこれに一致する。A・C・Dはパッセージに記載がない。',
+    difficulty: 'standard',
+  },
+  {
+    id: 'eiken_2kyu_097',
+    level: '2kyu',
+    category: 'reading',
+    question: `Read the following passage and answer the question below.
+
+Vertical farming — the practice of growing crops in stacked layers within climate-controlled indoor facilities — has been heralded by proponents as a solution to many of agriculture's most pressing challenges. By growing food indoors under artificial lighting and precisely regulated conditions, vertical farms can operate year-round regardless of external weather, use up to ninety percent less water than conventional farming through recirculating irrigation systems, and be located close to urban centers, dramatically reducing the distance food must travel before reaching consumers. Despite these advantages, the industry has struggled to achieve profitability at scale. The enormous energy costs associated with artificial lighting and climate control, combined with high labor and real estate expenses in urban areas, have pushed the production costs of vertically farmed produce well above those of traditionally grown crops. Several high-profile vertical farming startups that raised substantial venture capital have since filed for bankruptcy or significantly scaled back operations. Industry observers now suggest that vertical farming may prove economically viable only for high-value, fast-growing crops such as leafy greens and herbs, rather than as a wholesale replacement for traditional agriculture.
+
+What conclusion do industry observers draw about the future of vertical farming?`,
+    choices: [
+      {
+        key: 'A',
+        text: 'It will likely replace all traditional farming within the next decade.',
+      },
+      {
+        key: 'B',
+        text: 'It may only be economically practical for certain high-value, quick-growing crops.',
+      },
+      {
+        key: 'C',
+        text: 'It will be banned in most countries due to its high energy consumption.',
+      },
+      {
+        key: 'D',
+        text: 'It has already proven more profitable than any other form of agriculture.',
+      },
+    ],
+    correctKey: 'B',
+    explanation:
+      'パッセージ末尾に "vertical farming may prove economically viable only for high-value, fast-growing crops such as leafy greens and herbs, rather than as a wholesale replacement for traditional agriculture" とある。Bがこれに一致する。A・C・Dはパッセージの内容と矛盾または根拠がない。',
+    difficulty: 'advanced',
+  },
+
+  // Passage 10 (Q98–100): The psychology of procrastination
+  {
+    id: 'eiken_2kyu_098',
+    level: '2kyu',
+    category: 'reading',
+    question: `Read the following passage and answer the question below.
+
+Procrastination is often dismissed as a simple failure of time management or willpower, but psychological research suggests a more complex picture. Rather than being a purely rational miscalculation, chronic procrastination is increasingly understood as an emotion-regulation problem: people delay tasks not because they misjudge how long the task will take, but because the task itself triggers negative feelings — anxiety, boredom, self-doubt, or frustration — that they seek to avoid in the short term, even at the cost of greater stress later. This explains why procrastinators often report feeling temporary relief immediately after choosing to delay a task, followed by guilt and heightened anxiety as the deadline approaches. Effective interventions, researchers argue, should therefore focus less on time-management techniques such as scheduling and more on strategies that address the underlying emotional avoidance, such as breaking large tasks into smaller, less intimidating steps or practicing self-compassion rather than self-criticism when setbacks occur. Notably, studies have found that procrastinators who are harshest on themselves after delaying a task are, somewhat counterintuitively, more likely to procrastinate again in the future, suggesting that guilt and shame may perpetuate the very cycle they are meant to break.
+
+According to the passage, what is the primary cause of chronic procrastination?`,
+    choices: [
+      {
+        key: 'A',
+        text: 'A rational miscalculation of how much time a task will require',
+      },
+      {
+        key: 'B',
+        text: 'An inability to create effective daily schedules',
+      },
+      {
+        key: 'C',
+        text: 'A desire to avoid the negative emotions that a task provokes',
+      },
+      {
+        key: 'D',
+        text: 'A lack of interest in achieving long-term goals',
+      },
+    ],
+    correctKey: 'C',
+    explanation:
+      'パッセージに "people delay tasks not because they misjudge how long the task will take, but because the task itself triggers negative feelings ... that they seek to avoid in the short term" とある。Cがこれに一致する。Aは本文で明確に否定されている。B・Dはパッセージの主張と異なる。',
+    difficulty: 'standard',
+  },
+  {
+    id: 'eiken_2kyu_099',
+    level: '2kyu',
+    category: 'reading',
+    question: `Read the following passage and answer the question below.
+
+Procrastination is often dismissed as a simple failure of time management or willpower, but psychological research suggests a more complex picture. Rather than being a purely rational miscalculation, chronic procrastination is increasingly understood as an emotion-regulation problem: people delay tasks not because they misjudge how long the task will take, but because the task itself triggers negative feelings — anxiety, boredom, self-doubt, or frustration — that they seek to avoid in the short term, even at the cost of greater stress later. This explains why procrastinators often report feeling temporary relief immediately after choosing to delay a task, followed by guilt and heightened anxiety as the deadline approaches. Effective interventions, researchers argue, should therefore focus less on time-management techniques such as scheduling and more on strategies that address the underlying emotional avoidance, such as breaking large tasks into smaller, less intimidating steps or practicing self-compassion rather than self-criticism when setbacks occur. Notably, studies have found that procrastinators who are harshest on themselves after delaying a task are, somewhat counterintuitively, more likely to procrastinate again in the future, suggesting that guilt and shame may perpetuate the very cycle they are meant to break.
+
+What did researchers find about procrastinators who are especially self-critical after delaying a task?`,
+    choices: [
+      {
+        key: 'A',
+        text: 'They tend to complete future tasks more quickly out of guilt.',
+      },
+      {
+        key: 'B',
+        text: 'They are somewhat more likely to procrastinate again later.',
+      },
+      {
+        key: 'C',
+        text: 'They rarely experience any anxiety about approaching deadlines.',
+      },
+      {
+        key: 'D',
+        text: 'They benefit the most from strict scheduling techniques.',
+      },
+    ],
+    correctKey: 'B',
+    explanation:
+      'パッセージに "procrastinators who are harshest on themselves after delaying a task are, somewhat counterintuitively, more likely to procrastinate again in the future" とある。Bがこれに一致する。A・C・Dはパッセージの内容と矛盾する。',
+    difficulty: 'advanced',
+  },
+  {
+    id: 'eiken_2kyu_100',
+    level: '2kyu',
+    category: 'reading',
+    question: `Read the following passage and answer the question below.
+
+Procrastination is often dismissed as a simple failure of time management or willpower, but psychological research suggests a more complex picture. Rather than being a purely rational miscalculation, chronic procrastination is increasingly understood as an emotion-regulation problem: people delay tasks not because they misjudge how long the task will take, but because the task itself triggers negative feelings — anxiety, boredom, self-doubt, or frustration — that they seek to avoid in the short term, even at the cost of greater stress later. This explains why procrastinators often report feeling temporary relief immediately after choosing to delay a task, followed by guilt and heightened anxiety as the deadline approaches. Effective interventions, researchers argue, should therefore focus less on time-management techniques such as scheduling and more on strategies that address the underlying emotional avoidance, such as breaking large tasks into smaller, less intimidating steps or practicing self-compassion rather than self-criticism when setbacks occur. Notably, studies have found that procrastinators who are harshest on themselves after delaying a task are, somewhat counterintuitively, more likely to procrastinate again in the future, suggesting that guilt and shame may perpetuate the very cycle they are meant to break.
+
+What intervention strategy does the passage suggest is more effective than traditional time-management techniques?`,
+    choices: [
+      {
+        key: 'A',
+        text: 'Strictly enforcing daily schedules without exceptions',
+      },
+      {
+        key: 'B',
+        text: 'Addressing emotional avoidance through smaller steps and self-compassion',
+      },
+      {
+        key: 'C',
+        text: 'Increasing self-criticism to build stronger discipline',
+      },
+      {
+        key: 'D',
+        text: 'Avoiding all deadlines to reduce feelings of pressure',
+      },
+    ],
+    correctKey: 'B',
+    explanation:
+      'パッセージに "Effective interventions ... should therefore focus less on time-management techniques such as scheduling and more on strategies that address the underlying emotional avoidance, such as breaking large tasks into smaller, less intimidating steps or practicing self-compassion" とある。Bがこれに一致する。A・C・Dはパッセージの主張と矛盾する。',
+    difficulty: 'advanced',
+  },
 ];

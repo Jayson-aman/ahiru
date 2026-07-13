@@ -845,4 +845,838 @@ export const eikenQuestions2kyu3: EikenQuestion[] = [
     explanation: 'パッセージの最後の文「a task that may require decades of observation and technology that does not yet exist」から、数十年の観測と現在はまだ存在しない技術が必要かもしれないと述べられています。これは決定的な証拠の発見が非常に長い時間を要することを示唆しており、Cが正解です。選択肢Dは「次世代望遠鏡が決定的に答える」と断言していますが、パッセージはそのような確信を示していません。',
     difficulty: 'advanced' as const,
   },
+  // ===== VOCABULARY (051-070) =====
+
+  // 051 — pragmatic / dogmatic / skeptical / naive
+  {
+    id: 'eiken_2kyu3_051',
+    level: '2kyu' as const,
+    category: 'vocabulary' as const,
+    question: 'Rather than insisting on an ideal solution, the manager took a ( ) approach and focused on what could realistically be achieved with the limited budget.',
+    choices: [
+      { key: 'A', text: 'dogmatic' },
+      { key: 'B', text: 'pragmatic' },
+      { key: 'C', text: 'naive' },
+      { key: 'D', text: 'skeptical' },
+    ],
+    correctKey: 'B' as const,
+    explanation: '"pragmatic"は「実利的な、現実的な」という意味で、理想にこだわらず現実的に達成可能なことに焦点を当てる態度を表します。"dogmatic"は「独断的な」、"naive"は「世間知らずな」、"skeptical"は「懐疑的な」で文脈に合いません。',
+    difficulty: 'advanced' as const,
+  },
+
+  // 052 — deteriorate / accelerate / stabilize / fluctuate
+  {
+    id: 'eiken_2kyu3_052',
+    level: '2kyu' as const,
+    category: 'vocabulary' as const,
+    question: 'The patient\'s condition began to ( ) rapidly overnight, prompting doctors to move her to intensive care.',
+    choices: [
+      { key: 'A', text: 'stabilize' },
+      { key: 'B', text: 'fluctuate' },
+      { key: 'C', text: 'deteriorate' },
+      { key: 'D', text: 'accelerate' },
+    ],
+    correctKey: 'C' as const,
+    explanation: '"deteriorate"は「（健康状態などが）悪化する」という意味です。集中治療室に移されたという結果と一致します。"stabilize"は「安定する」で逆の意味、"fluctuate"は「変動する」、"accelerate"は「加速する」（通常は速度に使う）で文脈に合いません。',
+    difficulty: 'standard' as const,
+  },
+
+  // 053 — allocate / accumulate / eliminate / delegate
+  {
+    id: 'eiken_2kyu3_053',
+    level: '2kyu' as const,
+    category: 'vocabulary' as const,
+    question: 'The director decided to ( ) more of her responsibilities to junior staff so she could focus on long-term strategy.',
+    choices: [
+      { key: 'A', text: 'accumulate' },
+      { key: 'B', text: 'eliminate' },
+      { key: 'C', text: 'allocate' },
+      { key: 'D', text: 'delegate' },
+    ],
+    correctKey: 'D' as const,
+    explanation: '"delegate responsibilities"は「（権限や責任を）部下に委譲する」という意味の定型表現です。"accumulate"は「蓄積する」、"eliminate"は「排除する」、"allocate"は「（資源などを）割り当てる」で、responsibilities を人に委ねる文脈には delegate が最適です。',
+    difficulty: 'advanced' as const,
+  },
+
+  // 054 — vocabulary: subtle / blatant / vague / explicit
+  {
+    id: 'eiken_2kyu3_054',
+    level: '2kyu' as const,
+    category: 'vocabulary' as const,
+    question: 'The company\'s advertisement was criticized for making a ( ) attempt to mislead consumers about the product\'s health benefits.',
+    choices: [
+      { key: 'A', text: 'subtle' },
+      { key: 'B', text: 'blatant' },
+      { key: 'C', text: 'vague' },
+      { key: 'D', text: 'implicit' },
+    ],
+    correctKey: 'B' as const,
+    explanation: '"blatant"は「あからさまな、露骨な」という意味で、批判の対象になるほど明白な誤解を招く試みを表すのに適切です。"subtle"は「巧妙な、微妙な」で逆のニュアンス、"vague"は「曖昧な」、"implicit"は「暗黙の」で文脈に合いません。',
+    difficulty: 'advanced' as const,
+  },
+
+  // 055 — vocabulary: prudent / reckless / audacious / timid
+  {
+    id: 'eiken_2kyu3_055',
+    level: '2kyu' as const,
+    category: 'vocabulary' as const,
+    question: 'Given the uncertain economic outlook, financial advisors recommended a ( ) investment strategy that avoided unnecessary risk.',
+    choices: [
+      { key: 'A', text: 'reckless' },
+      { key: 'B', text: 'audacious' },
+      { key: 'C', text: 'prudent' },
+      { key: 'D', text: 'timid' },
+    ],
+    correctKey: 'C' as const,
+    explanation: '"prudent"は「思慮深い、慎重な」という意味で、不必要なリスクを避けるという文脈に最適です。"reckless"は「無謀な」で逆の意味、"audacious"は「大胆な」、"timid"は「臆病な」で投資戦略を形容する語としては不自然です。',
+    difficulty: 'standard' as const,
+  },
+
+  // 056 — vocabulary: verify / falsify / justify / clarify
+  {
+    id: 'eiken_2kyu3_056',
+    level: '2kyu' as const,
+    category: 'vocabulary' as const,
+    question: 'Before publishing the article, the editor asked the reporter to ( ) every fact with at least two independent sources.',
+    choices: [
+      { key: 'A', text: 'falsify' },
+      { key: 'B', text: 'justify' },
+      { key: 'C', text: 'clarify' },
+      { key: 'D', text: 'verify' },
+    ],
+    correctKey: 'D' as const,
+    explanation: '"verify"は「（事実を）検証する、確認する」という意味で、記事の掲載前に情報源で裏付けを取ることを表します。"falsify"は「偽造する」で逆の意味、"justify"は「正当化する」、"clarify"は「明確にする」で文脈に合いません。',
+    difficulty: 'standard' as const,
+  },
+
+  // 057 — vocabulary: dwindle / thrive / expand / stagnate
+  {
+    id: 'eiken_2kyu3_057',
+    level: '2kyu' as const,
+    category: 'vocabulary' as const,
+    question: 'The town\'s population has begun to ( ) as younger residents move away in search of better job opportunities in the city.',
+    choices: [
+      { key: 'A', text: 'thrive' },
+      { key: 'B', text: 'expand' },
+      { key: 'C', text: 'dwindle' },
+      { key: 'D', text: 'flourish' },
+    ],
+    correctKey: 'C' as const,
+    explanation: '"dwindle"は「（数量が）徐々に減少する」という意味で、若者が流出して人口が減っていく状況を表すのに適切です。"thrive"と"flourish"は「繁栄する」で逆の意味、"expand"は「拡大する」で文脈に合いません。',
+    difficulty: 'advanced' as const,
+  },
+
+  // 058 — vocabulary: notorious / renowned / obscure / anonymous
+  {
+    id: 'eiken_2kyu3_058',
+    level: '2kyu' as const,
+    category: 'vocabulary' as const,
+    question: 'The intersection has become ( ) among local drivers for its frequent accidents and confusing signals.',
+    choices: [
+      { key: 'A', text: 'renowned' },
+      { key: 'B', text: 'obscure' },
+      { key: 'C', text: 'anonymous' },
+      { key: 'D', text: 'notorious' },
+    ],
+    correctKey: 'D' as const,
+    explanation: '"notorious"は「（悪い意味で）悪名高い」という意味で、事故が多いことで知られる交差点を形容するのに最適です。"renowned"は「（良い意味で）著名な」で意味が逆、"obscure"は「無名の」、"anonymous"は「匿名の」で文脈に合いません。',
+    difficulty: 'advanced' as const,
+  },
+
+  // 059 — vocabulary: comprehensive / partial / superficial / fragmentary
+  {
+    id: 'eiken_2kyu3_059',
+    level: '2kyu' as const,
+    category: 'vocabulary' as const,
+    question: 'The consultant conducted a ( ) review of the company\'s operations, examining everything from staffing to supply chain logistics.',
+    choices: [
+      { key: 'A', text: 'partial' },
+      { key: 'B', text: 'fragmentary' },
+      { key: 'C', text: 'comprehensive' },
+      { key: 'D', text: 'superficial' },
+    ],
+    correctKey: 'C' as const,
+    explanation: '"comprehensive"は「包括的な、あらゆる面を網羅した」という意味で、人員配置からサプライチェーンまで幅広く調べたという文脈に最適です。"partial"は「部分的な」、"fragmentary"は「断片的な」、"superficial"は「表面的な」で、いずれも網羅性とは逆の意味を持ちます。',
+    difficulty: 'standard' as const,
+  },
+
+  // 060 — vocabulary: coincide / conflict / correspond / collide
+  {
+    id: 'eiken_2kyu3_060',
+    level: '2kyu' as const,
+    category: 'vocabulary' as const,
+    question: 'Unfortunately, the date of the conference happened to ( ) with a national holiday, which reduced attendance significantly.',
+    choices: [
+      { key: 'A', text: 'correspond' },
+      { key: 'B', text: 'conflict' },
+      { key: 'C', text: 'collide' },
+      { key: 'D', text: 'coincide' },
+    ],
+    correctKey: 'D' as const,
+    explanation: '"coincide with"は「（日時などが）〜と重なる、一致する」という意味です。会議の日程が祝日と重なってしまったという文脈に最適です。"correspond"は「対応する、一致する」（内容の一致に使うことが多い）、"conflict"は「対立する」、"collide"は「衝突する」（物理的な意味が強い）で不適切です。',
+    difficulty: 'advanced' as const,
+  },
+
+  // 061 — vocabulary: indispensable / redundant / trivial / optional
+  {
+    id: 'eiken_2kyu3_061',
+    level: '2kyu' as const,
+    category: 'vocabulary' as const,
+    question: 'Access to clean drinking water is ( ) for public health, yet millions of people around the world still lack it.',
+    choices: [
+      { key: 'A', text: 'redundant' },
+      { key: 'B', text: 'optional' },
+      { key: 'C', text: 'trivial' },
+      { key: 'D', text: 'indispensable' },
+    ],
+    correctKey: 'D' as const,
+    explanation: '"indispensable"は「不可欠な、なくてはならない」という意味で、公衆衛生にとって極めて重要な要素を表すのに最適です。"redundant"は「余分な」、"optional"は「任意の」、"trivial"は「些細な」でいずれも逆の意味合いを持ちます。',
+    difficulty: 'standard' as const,
+  },
+
+  // 062 — vocabulary: exacerbate / alleviate / eradicate / accommodate
+  {
+    id: 'eiken_2kyu3_062',
+    level: '2kyu' as const,
+    category: 'vocabulary' as const,
+    question: 'Cutting funding for public transportation would likely ( ) traffic congestion in the city rather than reduce it.',
+    choices: [
+      { key: 'A', text: 'alleviate' },
+      { key: 'B', text: 'eradicate' },
+      { key: 'C', text: 'exacerbate' },
+      { key: 'D', text: 'accommodate' },
+    ],
+    correctKey: 'C' as const,
+    explanation: '"exacerbate"は「（問題を）悪化させる」という意味で、公共交通への予算削減が渋滞を悪化させるという文脈に合います。"alleviate"は「緩和する」で逆の意味、"eradicate"は「根絶する」、"accommodate"は「収容する、対応する」で文脈に合いません。',
+    difficulty: 'advanced' as const,
+  },
+
+  // 063 — vocabulary: withstand / succumb / surrender / retreat
+  {
+    id: 'eiken_2kyu3_063',
+    level: '2kyu' as const,
+    category: 'vocabulary' as const,
+    question: 'The ancient fortress was built to ( ) even the most prolonged sieges, with walls several meters thick.',
+    choices: [
+      { key: 'A', text: 'succumb to' },
+      { key: 'B', text: 'surrender to' },
+      { key: 'C', text: 'retreat from' },
+      { key: 'D', text: 'withstand' },
+    ],
+    correctKey: 'D' as const,
+    explanation: '"withstand"は「（攻撃・圧力に）耐える」という意味で、厚い壁を持つ要塞が包囲に耐えられるよう設計されたという文脈に最適です。"succumb to"は「屈する」、"surrender to"は「降伏する」、"retreat from"は「撤退する」でいずれも意味が逆です。',
+    difficulty: 'advanced' as const,
+  },
+
+  // 064 — vocabulary: intricate / simplistic / straightforward / crude
+  {
+    id: 'eiken_2kyu3_064',
+    level: '2kyu' as const,
+    category: 'vocabulary' as const,
+    question: 'The watchmaker spent months assembling the ( ) mechanism, which contained hundreds of tiny interlocking parts.',
+    choices: [
+      { key: 'A', text: 'intricate' },
+      { key: 'B', text: 'simplistic' },
+      { key: 'C', text: 'straightforward' },
+      { key: 'D', text: 'crude' },
+    ],
+    correctKey: 'A' as const,
+    explanation: '"intricate"は「複雑に入り組んだ、精巧な」という意味で、何百もの小さな部品が組み合わさった機構を形容するのに最適です。"simplistic"は「単純化しすぎた」、"straightforward"は「単純明快な」、"crude"は「粗雑な」でいずれも文脈に合いません。',
+    difficulty: 'standard' as const,
+  },
+
+  // 065 — vocabulary: unanimous / divided / ambivalent / indifferent
+  {
+    id: 'eiken_2kyu3_065',
+    level: '2kyu' as const,
+    category: 'vocabulary' as const,
+    question: 'The jury reached a ( ) verdict after only two hours of deliberation, with all twelve members in complete agreement.',
+    choices: [
+      { key: 'A', text: 'divided' },
+      { key: 'B', text: 'ambivalent' },
+      { key: 'C', text: 'unanimous' },
+      { key: 'D', text: 'indifferent' },
+    ],
+    correctKey: 'C' as const,
+    explanation: '"unanimous"は「全員一致の」という意味で、12人全員が同じ結論に達したという文脈に最適です。"divided"は「意見が分かれた」で逆の意味、"ambivalent"は「相反する感情を持つ」、"indifferent"は「無関心な」で文脈に合いません。',
+    difficulty: 'standard' as const,
+  },
+
+  // 066 — vocabulary: dispel / instill / provoke / suppress
+  {
+    id: 'eiken_2kyu3_066',
+    level: '2kyu' as const,
+    category: 'vocabulary' as const,
+    question: 'The company held a press conference to ( ) rumors that it was planning to lay off a large portion of its workforce.',
+    choices: [
+      { key: 'A', text: 'instill' },
+      { key: 'B', text: 'provoke' },
+      { key: 'C', text: 'dispel' },
+      { key: 'D', text: 'suppress' },
+    ],
+    correctKey: 'C' as const,
+    explanation: '"dispel rumors"は「うわさを打ち消す、晴らす」という意味の定型表現です。記者会見を開いて誤解を解消しようとした文脈に最適です。"instill"は「（考えなどを）徐々に植え付ける」、"provoke"は「挑発する」、"suppress"は「抑圧する」でいずれも文脈に合いません。',
+    difficulty: 'advanced' as const,
+  },
+
+  // 067 — vocabulary: feasible / hypothetical / theoretical / fictional
+  {
+    id: 'eiken_2kyu3_067',
+    level: '2kyu' as const,
+    category: 'vocabulary' as const,
+    question: 'Engineers concluded that building a tunnel beneath the strait was technically ( ), though it would require enormous funding.',
+    choices: [
+      { key: 'A', text: 'hypothetical' },
+      { key: 'B', text: 'theoretical' },
+      { key: 'C', text: 'fictional' },
+      { key: 'D', text: 'feasible' },
+    ],
+    correctKey: 'D' as const,
+    explanation: '"feasible"は「実行可能な」という意味で、技術的に実現できると結論づけた文脈に最適です。"hypothetical"は「仮説的な」、"theoretical"は「理論上の」、"fictional"は「架空の」でいずれも「実際に実行できる」という意味を持ちません。',
+    difficulty: 'standard' as const,
+  },
+
+  // 068 — vocabulary: unwarranted / justified / deliberate / accidental
+  {
+    id: 'eiken_2kyu3_068',
+    level: '2kyu' as const,
+    category: 'vocabulary' as const,
+    question: 'Critics called the company\'s price increase entirely ( ), noting that production costs had actually fallen over the past year.',
+    choices: [
+      { key: 'A', text: 'justified' },
+      { key: 'B', text: 'deliberate' },
+      { key: 'C', text: 'unwarranted' },
+      { key: 'D', text: 'accidental' },
+    ],
+    correctKey: 'C' as const,
+    explanation: '"unwarranted"は「正当な理由のない、不当な」という意味で、生産コストが下がったのに値上げしたことへの批判に最適です。"justified"は「正当化された」で逆の意味、"deliberate"は「意図的な」、"accidental"は「偶発的な」で文脈に合いません。',
+    difficulty: 'advanced' as const,
+  },
+
+  // 069 — vocabulary: unravel / assemble / construct / consolidate
+  {
+    id: 'eiken_2kyu3_069',
+    level: '2kyu' as const,
+    category: 'vocabulary' as const,
+    question: 'Investigators slowly began to ( ) the complex web of financial transactions used to hide the missing funds.',
+    choices: [
+      { key: 'A', text: 'assemble' },
+      { key: 'B', text: 'construct' },
+      { key: 'C', text: 'consolidate' },
+      { key: 'D', text: 'unravel' },
+    ],
+    correctKey: 'D' as const,
+    explanation: '"unravel"は「（複雑な事情や謎を）解きほぐす、解明する」という意味で、複雑な金融取引の網を捜査官が解明していく文脈に最適です。"assemble"は「組み立てる」、"construct"は「構築する」、"consolidate"は「統合する」でいずれも「解明する」とは逆の方向性を持ちます。',
+    difficulty: 'advanced' as const,
+  },
+
+  // 070 — vocabulary: transparent / opaque / ambiguous / covert
+  {
+    id: 'eiken_2kyu3_070',
+    level: '2kyu' as const,
+    category: 'vocabulary' as const,
+    question: 'Voters demanded a more ( ) process for campaign financing, one in which every donation could be publicly traced.',
+    choices: [
+      { key: 'A', text: 'opaque' },
+      { key: 'B', text: 'covert' },
+      { key: 'C', text: 'transparent' },
+      { key: 'D', text: 'ambiguous' },
+    ],
+    correctKey: 'C' as const,
+    explanation: '"transparent"は「透明性のある、公開された」という意味で、寄付を公に追跡できる仕組みを求める文脈に最適です。"opaque"は「不透明な」で逆の意味、"covert"は「秘密の」、"ambiguous"は「曖昧な」で文脈に合いません。',
+    difficulty: 'standard' as const,
+  },
+
+  // ===== GRAMMAR (071-085) =====
+
+  // 071 — Emphatic inversion with Only when
+  {
+    id: 'eiken_2kyu3_071',
+    level: '2kyu' as const,
+    category: 'grammar' as const,
+    question: 'Only when the results were double-checked ( ) the extent of the calculation error.',
+    choices: [
+      { key: 'A', text: 'the scientists realized' },
+      { key: 'B', text: 'did the scientists realize' },
+      { key: 'C', text: 'the scientists did realize' },
+      { key: 'D', text: 'realized the scientists' },
+    ],
+    correctKey: 'B' as const,
+    explanation: '"Only when ..."が文頭に来ると主節で倒置が起こります。一般動詞realizeの倒置には助動詞didを使い、"did the scientists realize"となります。"the scientists realized"は倒置がなく、"realized the scientists"は語順が誤りです。',
+    difficulty: 'advanced' as const,
+  },
+
+  // 072 — Subjunctive with "It is vital that"
+  {
+    id: 'eiken_2kyu3_072',
+    level: '2kyu' as const,
+    category: 'grammar' as const,
+    question: 'It is vital that the emergency exits ( ) clear of obstacles at all times.',
+    choices: [
+      { key: 'A', text: 'remain' },
+      { key: 'B', text: 'remains' },
+      { key: 'C', text: 'remained' },
+      { key: 'D', text: 'will remain' },
+    ],
+    correctKey: 'A' as const,
+    explanation: '"It is vital that + 主語 + 動詞の原形"は仮定法現在の構文です。vital、essential、necessaryなどの形容詞に続くthat節では動詞は原形を使います。remainsは三単現、remainedは過去形、will remainは未来形でいずれも不適切です。',
+    difficulty: 'advanced' as const,
+  },
+
+  // 073 — Participle clause (reason)
+  {
+    id: 'eiken_2kyu3_073',
+    level: '2kyu' as const,
+    category: 'grammar' as const,
+    question: '( ) unfamiliar with the local customs, the new employee often felt awkward during business meetings.',
+    choices: [
+      { key: 'A', text: 'Being' },
+      { key: 'B', text: 'To be' },
+      { key: 'C', text: 'Been' },
+      { key: 'D', text: 'Have been' },
+    ],
+    correctKey: 'A' as const,
+    explanation: '現在分詞Beingで始まる分詞構文は理由を表します。"Being unfamiliar with ..." = "Because he was unfamiliar with ..."という意味になります。To be（不定詞）、Been（過去分詞単独）、Have been（時制が不完全）はこの位置の分詞構文として不適切です。',
+    difficulty: 'standard' as const,
+  },
+
+  // 074 — Comparative: no sooner
+  {
+    id: 'eiken_2kyu3_074',
+    level: '2kyu' as const,
+    category: 'grammar' as const,
+    question: 'The negotiations were ( ) more difficult than either side had anticipated at the outset.',
+    choices: [
+      { key: 'A', text: 'much' },
+      { key: 'B', text: 'very' },
+      { key: 'C', text: 'so' },
+      { key: 'D', text: 'too' },
+    ],
+    correctKey: 'A' as const,
+    explanation: '比較級を強調する副詞にはmuch、far、a lotなどを使います。"much more difficult"で「はるかに困難」という意味になります。veryは原級を強調する副詞で比較級には使えません。so・tooも比較級を直接強調する形では使いません。',
+    difficulty: 'standard' as const,
+  },
+
+  // 075 — Relative clause with preposition
+  {
+    id: 'eiken_2kyu3_075',
+    level: '2kyu' as const,
+    category: 'grammar' as const,
+    question: 'The hypothesis ( ) the entire experiment was based turned out to be fundamentally flawed.',
+    choices: [
+      { key: 'A', text: 'on which' },
+      { key: 'B', text: 'which on' },
+      { key: 'C', text: 'that' },
+      { key: 'D', text: 'where' },
+    ],
+    correctKey: 'A' as const,
+    explanation: '"be based on"という動詞句の前置詞onが関係代名詞の前に置かれる形が"on which"です。"the hypothesis on which the experiment was based"で「その仮説に基づいて実験が行われた」という意味になります。"which on"は語順が誤り、thatは前置詞を直前に置けず、whereは場所を表す関係副詞で不適切です。',
+    difficulty: 'advanced' as const,
+  },
+
+  // 076 — Causative: get + O + to do
+  {
+    id: 'eiken_2kyu3_076',
+    level: '2kyu' as const,
+    category: 'grammar' as const,
+    question: 'The manager finally managed to get the reluctant client ( ) the revised contract.',
+    choices: [
+      { key: 'A', text: 'sign' },
+      { key: 'B', text: 'signing' },
+      { key: 'C', text: 'to sign' },
+      { key: 'D', text: 'signed' },
+    ],
+    correctKey: 'C' as const,
+    explanation: '"get + 目的語 + to不定詞"は「（人を説得して）〜させる」という意味の使役的表現です。makeやletと異なり、getは不定詞にtoが必要です。sign（原形）、signing（現在分詞）はこの構文に合わず、signed（過去分詞）は受動の意味になり不適切です。',
+    difficulty: 'standard' as const,
+  },
+
+  // 077 — Conditional: unless
+  {
+    id: 'eiken_2kyu3_077',
+    level: '2kyu' as const,
+    category: 'grammar' as const,
+    question: 'Unless significant changes ( ) to the current policy, public support will likely continue to decline.',
+    choices: [
+      { key: 'A', text: 'will be made' },
+      { key: 'B', text: 'are made' },
+      { key: 'C', text: 'would be made' },
+      { key: 'D', text: 'were made' },
+    ],
+    correctKey: 'B' as const,
+    explanation: 'unless節（条件節に相当）では未来のことでも現在形を使います。"Unless significant changes are made"で「大きな変更がなされない限り」という意味です。will be made・would be made・were madeはif/unless節内で使う時制として不適切です。',
+    difficulty: 'standard' as const,
+  },
+
+  // 078 — Emphatic cleft: what
+  {
+    id: 'eiken_2kyu3_078',
+    level: '2kyu' as const,
+    category: 'grammar' as const,
+    question: '( ) the committee ultimately decided was to postpone the merger until further financial review could be completed.',
+    choices: [
+      { key: 'A', text: 'That' },
+      { key: 'B', text: 'It' },
+      { key: 'C', text: 'What' },
+      { key: 'D', text: 'Which' },
+    ],
+    correctKey: 'C' as const,
+    explanation: '"What + 主語 + 動詞 + is/was ..."は擬似分裂文（pseudo-cleft）で、「〜したことは…だった」と主題を強調する構文です。Whatは"the thing that"の意味で先行詞を含む関係代名詞として機能します。That・It・Whichはこの構文の主語として使えません。',
+    difficulty: 'advanced' as const,
+  },
+
+  // 079 — Passive causative
+  {
+    id: 'eiken_2kyu3_079',
+    level: '2kyu' as const,
+    category: 'grammar' as const,
+    question: 'The homeowners had their roof ( ) after the storm caused significant damage last month.',
+    choices: [
+      { key: 'A', text: 'repair' },
+      { key: 'B', text: 'repairing' },
+      { key: 'C', text: 'to repair' },
+      { key: 'D', text: 'repaired' },
+    ],
+    correctKey: 'D' as const,
+    explanation: '"have + 目的語 + 過去分詞"は使役構文で「（人に頼んで）〜させる、してもらう」という意味です。屋根が修理される（受動）関係なので過去分詞repairedが正解です。repair（原形）、repairing（現在分詞）、to repair（不定詞）は能動の意味になり不適切です。',
+    difficulty: 'standard' as const,
+  },
+
+  // 080 — Concession: much as
+  {
+    id: 'eiken_2kyu3_080',
+    level: '2kyu' as const,
+    category: 'grammar' as const,
+    question: '( ) she admired her colleague\'s ambition, she found his constant need for recognition exhausting.',
+    choices: [
+      { key: 'A', text: 'Much as' },
+      { key: 'B', text: 'As much' },
+      { key: 'C', text: 'So much' },
+      { key: 'D', text: 'Too much' },
+    ],
+    correctKey: 'A' as const,
+    explanation: '"Much as + 主語 + 動詞"は「〜ではあるが」という譲歩を表す文語的な構文で、althoughに近い意味です。"Much as she admired ..."で「彼女は同僚の野心を称賛していたが」という意味になります。As much、So much、Too muchはこの譲歩構文としては使えません。',
+    difficulty: 'advanced' as const,
+  },
+
+  // 081 — Reduced relative clause
+  {
+    id: 'eiken_2kyu3_081',
+    level: '2kyu' as const,
+    category: 'grammar' as const,
+    question: 'The documents ( ) to the committee last week are still under review.',
+    choices: [
+      { key: 'A', text: 'submitting' },
+      { key: 'B', text: 'submit' },
+      { key: 'C', text: 'submitted' },
+      { key: 'D', text: 'having submitted' },
+    ],
+    correctKey: 'C' as const,
+    explanation: '過去分詞submittedが後ろから名詞documentsを修飾する分詞句（省略された関係節）の用法です。「委員会に提出された書類」という受動の意味になるためsubmittedが正解です。submitting（能動・進行）はdocumentsが提出する側になり不自然、submit（原形）、having submitted（能動の完了）はいずれも不適切です。',
+    difficulty: 'standard' as const,
+  },
+
+  // 082 — Subjunctive: suggest
+  {
+    id: 'eiken_2kyu3_082',
+    level: '2kyu' as const,
+    category: 'grammar' as const,
+    question: 'The consultant suggested that the firm ( ) its marketing budget before launching the new campaign.',
+    choices: [
+      { key: 'A', text: 'reassesses' },
+      { key: 'B', text: 'reassessed' },
+      { key: 'C', text: 'reassess' },
+      { key: 'D', text: 'will reassess' },
+    ],
+    correctKey: 'C' as const,
+    explanation: '"suggest that + 主語 + 動詞の原形"は仮定法現在の構文です。suggest、recommend、proposeなどの提案動詞に続くthat節では動詞は原形を使います。reassesses（三単現）、reassessed（過去形）、will reassess（未来形）はいずれも不適切です。',
+    difficulty: 'advanced' as const,
+  },
+
+  // 083 — Inversion: In no way
+  {
+    id: 'eiken_2kyu3_083',
+    level: '2kyu' as const,
+    category: 'grammar' as const,
+    question: 'In no way ( ) responsible for the delay, since the shipment was held up by customs officials beyond anyone\'s control.',
+    choices: [
+      { key: 'A', text: 'the company was' },
+      { key: 'B', text: 'was the company' },
+      { key: 'C', text: 'the company did' },
+      { key: 'D', text: 'did the company' },
+    ],
+    correctKey: 'B' as const,
+    explanation: '"In no way"のような否定の意味を持つ副詞句が文頭に来ると倒置が起こります。be動詞wasの倒置は"was the company"となります。was the company respondibleという語順が正しく、did the companyはbe動詞の文には使いません。',
+    difficulty: 'advanced' as const,
+  },
+
+  // 084 — Gerund vs. infinitive: regret
+  {
+    id: 'eiken_2kyu3_084',
+    level: '2kyu' as const,
+    category: 'grammar' as const,
+    question: 'I regret ( ) you that your application has not been successful this time.',
+    choices: [
+      { key: 'A', text: 'informing' },
+      { key: 'B', text: 'to inform' },
+      { key: 'C', text: 'having informed' },
+      { key: 'D', text: 'inform' },
+    ],
+    correctKey: 'B' as const,
+    explanation: '"regret to do"は「残念ながら〜する」という意味で、これから伝える悪い知らせを述べる際に使うフォーマルな表現です。"regret doing"は「〜したことを後悔する」という過去の行為への後悔を表すため、これから知らせる場面には合いません。informing・having informed・informはこの文脈に不適切です。',
+    difficulty: 'advanced' as const,
+  },
+
+  // 085 — Comparative: the least
+  {
+    id: 'eiken_2kyu3_085',
+    level: '2kyu' as const,
+    category: 'grammar' as const,
+    question: 'Of all the candidates interviewed, she seemed by far ( ) qualified for the position, despite her impressive resume.',
+    choices: [
+      { key: 'A', text: 'the less' },
+      { key: 'B', text: 'less' },
+      { key: 'C', text: 'the least' },
+      { key: 'D', text: 'least' },
+    ],
+    correctKey: 'C' as const,
+    explanation: '三者以上を比較する最上級には"the + least + 形容詞"を使います。"by far the least qualified"で「（意外にも）群を抜いて最も不適格に見えた」という意味になります。the less・less・leastは比較級または冠詞の欠如により、この最上級の文脈には合いません。',
+    difficulty: 'advanced' as const,
+  },
+
+  // ===== READING (086-100) =====
+  // --- PASSAGE 6: Space debris — Q086-088 ---
+  {
+    id: 'eiken_2kyu3_086',
+    level: '2kyu' as const,
+    category: 'reading' as const,
+    question: 'Read the following passage and answer the question.\n\n"Since the launch of Sputnik in 1957, human activity in orbit has left behind an ever-growing cloud of debris—spent rocket stages, defunct satellites, and fragments from past collisions—now numbering in the hundreds of thousands of trackable objects. Even a paint fleck, traveling at orbital velocities of nearly 28,000 kilometers per hour, can puncture a spacecraft\'s hull. The greatest concern among scientists is a scenario known as the Kessler Syndrome, in which a single collision between two large objects generates thousands of smaller fragments, each capable of triggering further collisions in a cascading chain reaction that could eventually render certain orbital altitudes unusable for generations.\n\nSeveral companies and space agencies are now developing debris-removal technologies, including robotic arms, nets, and harpoons designed to capture defunct satellites and guide them toward controlled reentry into Earth\'s atmosphere, where they burn up. However, critics note that removal missions remain extraordinarily expensive relative to the small amount of debris each mission can address, and that international agreements governing responsibility for debris cleanup remain notably underdeveloped."\n\nWhat is the "Kessler Syndrome" as described in the passage?',
+    choices: [
+      { key: 'A', text: 'A medical condition affecting astronauts during long space missions.' },
+      { key: 'B', text: 'A chain reaction of collisions that could make parts of orbit unusable for a long time.' },
+      { key: 'C', text: 'A technology used to remove debris from Earth\'s orbit.' },
+      { key: 'D', text: 'An international treaty that regulates satellite launches.' },
+    ],
+    correctKey: 'B' as const,
+    explanation: 'パッセージでは「a single collision between two large objects generates thousands of smaller fragments... in a cascading chain reaction that could eventually render certain orbital altitudes unusable for generations」と説明されています。連鎖的な衝突により軌道が長期間使用不能になる可能性を指すBが正解です。',
+    difficulty: 'standard' as const,
+  },
+  {
+    id: 'eiken_2kyu3_087',
+    level: '2kyu' as const,
+    category: 'reading' as const,
+    question: 'Read the same passage about space debris and answer the question.\n\n"Since the launch of Sputnik in 1957, human activity in orbit has left behind an ever-growing cloud of debris—spent rocket stages, defunct satellites, and fragments from past collisions—now numbering in the hundreds of thousands of trackable objects. Even a paint fleck, traveling at orbital velocities of nearly 28,000 kilometers per hour, can puncture a spacecraft\'s hull. The greatest concern among scientists is a scenario known as the Kessler Syndrome, in which a single collision between two large objects generates thousands of smaller fragments, each capable of triggering further collisions in a cascading chain reaction that could eventually render certain orbital altitudes unusable for generations.\n\nSeveral companies and space agencies are now developing debris-removal technologies, including robotic arms, nets, and harpoons designed to capture defunct satellites and guide them toward controlled reentry into Earth\'s atmosphere, where they burn up. However, critics note that removal missions remain extraordinarily expensive relative to the small amount of debris each mission can address, and that international agreements governing responsibility for debris cleanup remain notably underdeveloped."\n\nWhy is even a small paint fleck dangerous in orbit, according to the passage?',
+    choices: [
+      { key: 'A', text: 'It can block sunlight from reaching solar panels on satellites.' },
+      { key: 'B', text: 'It travels at extremely high speed and can puncture a spacecraft.' },
+      { key: 'C', text: 'It interferes with radio communication between satellites.' },
+      { key: 'D', text: 'It gradually corrodes the metal surfaces of spacecraft over time.' },
+    ],
+    correctKey: 'B' as const,
+    explanation: '「Even a paint fleck, traveling at orbital velocities of nearly 28,000 kilometers per hour, can puncture a spacecraft\'s hull」という記述から、極めて高速で移動するため小さな破片でも宇宙船の外殻を貫通しうることがわかります。Bが正解です。',
+    difficulty: 'standard' as const,
+  },
+  {
+    id: 'eiken_2kyu3_088',
+    level: '2kyu' as const,
+    category: 'reading' as const,
+    question: 'Read the same passage about space debris and answer the question.\n\n"Since the launch of Sputnik in 1957, human activity in orbit has left behind an ever-growing cloud of debris—spent rocket stages, defunct satellites, and fragments from past collisions—now numbering in the hundreds of thousands of trackable objects. Even a paint fleck, traveling at orbital velocities of nearly 28,000 kilometers per hour, can puncture a spacecraft\'s hull. The greatest concern among scientists is a scenario known as the Kessler Syndrome, in which a single collision between two large objects generates thousands of smaller fragments, each capable of triggering further collisions in a cascading chain reaction that could eventually render certain orbital altitudes unusable for generations.\n\nSeveral companies and space agencies are now developing debris-removal technologies, including robotic arms, nets, and harpoons designed to capture defunct satellites and guide them toward controlled reentry into Earth\'s atmosphere, where they burn up. However, critics note that removal missions remain extraordinarily expensive relative to the small amount of debris each mission can address, and that international agreements governing responsibility for debris cleanup remain notably underdeveloped."\n\nWhat criticism do critics raise about current debris-removal efforts?',
+    choices: [
+      { key: 'A', text: 'The robotic arms and nets used have proven completely ineffective in tests.' },
+      { key: 'B', text: 'Missions are costly relative to the small amount of debris removed, and international rules are underdeveloped.' },
+      { key: 'C', text: 'Space agencies have refused to fund any debris-removal research.' },
+      { key: 'D', text: 'Removing debris causes more collisions than it prevents.' },
+    ],
+    correctKey: 'B' as const,
+    explanation: '「removal missions remain extraordinarily expensive relative to the small amount of debris each mission can address, and that international agreements governing responsibility for debris cleanup remain notably underdeveloped」という記述からBが正解とわかります。',
+    difficulty: 'advanced' as const,
+  },
+
+  // --- PASSAGE 7: Language extinction — Q089-091 ---
+  {
+    id: 'eiken_2kyu3_089',
+    level: '2kyu' as const,
+    category: 'reading' as const,
+    question: 'Read the following passage and answer the question.\n\n"Linguists estimate that of the roughly seven thousand languages spoken in the world today, nearly half may disappear by the end of this century. Language loss tends to accelerate once a community\'s younger generation stops acquiring the language from their parents, often because a dominant national or regional language offers greater economic and social advantages. Once this intergenerational transmission breaks, a language can vanish within two or three generations, even if it was spoken by millions of people at its peak.\n\nThe loss of a language represents more than the disappearance of a communication tool; each language encodes a unique way of categorizing the natural world, unique oral histories, and forms of knowledge—particularly regarding local ecosystems, medicinal plants, and agricultural techniques—that are often not recorded elsewhere. Linguists and community members have undertaken numerous revitalization projects, including immersion schools and digital archiving, though such efforts frequently struggle against the same economic pressures that caused the decline in the first place."\n\nAccording to the passage, what typically triggers the decline of a language?',
+    choices: [
+      { key: 'A', text: 'A sudden natural disaster that displaces the speaking community.' },
+      { key: 'B', text: 'Younger generations no longer learning the language from their parents.' },
+      { key: 'C', text: 'Government laws that explicitly ban the use of minority languages.' },
+      { key: 'D', text: 'A decrease in the overall population of the speaking community.' },
+    ],
+    correctKey: 'B' as const,
+    explanation: '「Language loss tends to accelerate once a community\'s younger generation stops acquiring the language from their parents」という記述からBが正解とわかります。他の選択肢はパッセージに記載されていません。',
+    difficulty: 'standard' as const,
+  },
+  {
+    id: 'eiken_2kyu3_090',
+    level: '2kyu' as const,
+    category: 'reading' as const,
+    question: 'Read the same passage about language extinction and answer the question.\n\n"Linguists estimate that of the roughly seven thousand languages spoken in the world today, nearly half may disappear by the end of this century. Language loss tends to accelerate once a community\'s younger generation stops acquiring the language from their parents, often because a dominant national or regional language offers greater economic and social advantages. Once this intergenerational transmission breaks, a language can vanish within two or three generations, even if it was spoken by millions of people at its peak.\n\nThe loss of a language represents more than the disappearance of a communication tool; each language encodes a unique way of categorizing the natural world, unique oral histories, and forms of knowledge—particularly regarding local ecosystems, medicinal plants, and agricultural techniques—that are often not recorded elsewhere. Linguists and community members have undertaken numerous revitalization projects, including immersion schools and digital archiving, though such efforts frequently struggle against the same economic pressures that caused the decline in the first place."\n\nWhy does the passage suggest that language loss is significant beyond communication itself?',
+    choices: [
+      { key: 'A', text: 'Because each language often contains unique knowledge about nature and local traditions.' },
+      { key: 'B', text: 'Because languages are the only way to preserve national identity.' },
+      { key: 'C', text: 'Because fewer languages make international trade more difficult.' },
+      { key: 'D', text: 'Because languages are required for government recognition of ethnic groups.' },
+    ],
+    correctKey: 'A' as const,
+    explanation: '「each language encodes a unique way of categorizing the natural world, unique oral histories, and forms of knowledge...that are often not recorded elsewhere」という記述からAが正解とわかります。',
+    difficulty: 'advanced' as const,
+  },
+  {
+    id: 'eiken_2kyu3_091',
+    level: '2kyu' as const,
+    category: 'reading' as const,
+    question: 'Read the same passage about language extinction and answer the question.\n\n"Linguists estimate that of the roughly seven thousand languages spoken in the world today, nearly half may disappear by the end of this century. Language loss tends to accelerate once a community\'s younger generation stops acquiring the language from their parents, often because a dominant national or regional language offers greater economic and social advantages. Once this intergenerational transmission breaks, a language can vanish within two or three generations, even if it was spoken by millions of people at its peak.\n\nThe loss of a language represents more than the disappearance of a communication tool; each language encodes a unique way of categorizing the natural world, unique oral histories, and forms of knowledge—particularly regarding local ecosystems, medicinal plants, and agricultural techniques—that are often not recorded elsewhere. Linguists and community members have undertaken numerous revitalization projects, including immersion schools and digital archiving, though such efforts frequently struggle against the same economic pressures that caused the decline in the first place."\n\nWhat challenge do language revitalization projects face, according to the passage?',
+    choices: [
+      { key: 'A', text: 'They are banned by international law in most countries.' },
+      { key: 'B', text: 'They often face the same economic pressures that caused the original decline.' },
+      { key: 'C', text: 'They have proven completely successful in every documented case.' },
+      { key: 'D', text: 'They require the invention of an entirely new alphabet for each language.' },
+    ],
+    correctKey: 'B' as const,
+    explanation: '「such efforts frequently struggle against the same economic pressures that caused the decline in the first place」という記述からBが正解とわかります。',
+    difficulty: 'standard' as const,
+  },
+
+  // --- PASSAGE 8: The history of the printing press — Q092-094 ---
+  {
+    id: 'eiken_2kyu3_092',
+    level: '2kyu' as const,
+    category: 'reading' as const,
+    question: 'Read the following passage and answer the question.\n\n"When Johannes Gutenberg introduced the movable-type printing press to Europe around 1440, he unleashed a transformation whose consequences extended far beyond the mechanical reproduction of text. Before Gutenberg, books were painstakingly copied by hand, a process so slow and costly that only wealthy institutions—churches, monasteries, and royal courts—could afford substantial libraries. Within decades of the press\'s introduction, the cost of producing a book fell dramatically, and literacy rates across Europe began a steady rise that would continue for centuries.\n\nHistorians argue that the printing press did more than simply make existing knowledge more accessible; it fundamentally altered the way ideas spread and were contested. Standardized printed texts allowed scholars in different cities to reference the exact same edition of a work, enabling more rigorous debate. The press also played an instrumental role in the Protestant Reformation, as Martin Luther\'s writings could be reproduced and distributed far faster than religious authorities could suppress them—a dynamic some historians compare to the way social media has accelerated the spread of ideas in the modern era."\n\nAccording to the passage, what was the situation regarding books before Gutenberg\'s invention?',
+    choices: [
+      { key: 'A', text: 'Books were mass-produced but of very low quality.' },
+      { key: 'B', text: 'Books were copied by hand, making them expensive and rare.' },
+      { key: 'C', text: 'Books were freely available to anyone who could read.' },
+      { key: 'D', text: 'Books were printed using an early, less efficient version of movable type.' },
+    ],
+    correctKey: 'B' as const,
+    explanation: '「books were painstakingly copied by hand, a process so slow and costly that only wealthy institutions...could afford substantial libraries」という記述からBが正解とわかります。',
+    difficulty: 'basic' as const,
+  },
+  {
+    id: 'eiken_2kyu3_093',
+    level: '2kyu' as const,
+    category: 'reading' as const,
+    question: 'Read the same passage about the printing press and answer the question.\n\n"When Johannes Gutenberg introduced the movable-type printing press to Europe around 1440, he unleashed a transformation whose consequences extended far beyond the mechanical reproduction of text. Before Gutenberg, books were painstakingly copied by hand, a process so slow and costly that only wealthy institutions—churches, monasteries, and royal courts—could afford substantial libraries. Within decades of the press\'s introduction, the cost of producing a book fell dramatically, and literacy rates across Europe began a steady rise that would continue for centuries.\n\nHistorians argue that the printing press did more than simply make existing knowledge more accessible; it fundamentally altered the way ideas spread and were contested. Standardized printed texts allowed scholars in different cities to reference the exact same edition of a work, enabling more rigorous debate. The press also played an instrumental role in the Protestant Reformation, as Martin Luther\'s writings could be reproduced and distributed far faster than religious authorities could suppress them—a dynamic some historians compare to the way social media has accelerated the spread of ideas in the modern era."\n\nHow did standardized printed texts change scholarly debate, according to the passage?',
+    choices: [
+      { key: 'A', text: 'They allowed scholars in different cities to refer to the identical edition of a work.' },
+      { key: 'B', text: 'They eliminated the need for scholars to communicate with one another at all.' },
+      { key: 'C', text: 'They made it illegal for scholars to disagree publicly about a text.' },
+      { key: 'D', text: 'They reduced the overall number of books available to scholars.' },
+    ],
+    correctKey: 'A' as const,
+    explanation: '「Standardized printed texts allowed scholars in different cities to reference the exact same edition of a work, enabling more rigorous debate」という記述からAが正解とわかります。',
+    difficulty: 'standard' as const,
+  },
+  {
+    id: 'eiken_2kyu3_094',
+    level: '2kyu' as const,
+    category: 'reading' as const,
+    question: 'Read the same passage about the printing press and answer the question.\n\n"When Johannes Gutenberg introduced the movable-type printing press to Europe around 1440, he unleashed a transformation whose consequences extended far beyond the mechanical reproduction of text. Before Gutenberg, books were painstakingly copied by hand, a process so slow and costly that only wealthy institutions—churches, monasteries, and royal courts—could afford substantial libraries. Within decades of the press\'s introduction, the cost of producing a book fell dramatically, and literacy rates across Europe began a steady rise that would continue for centuries.\n\nHistorians argue that the printing press did more than simply make existing knowledge more accessible; it fundamentally altered the way ideas spread and were contested. Standardized printed texts allowed scholars in different cities to reference the exact same edition of a work, enabling more rigorous debate. The press also played an instrumental role in the Protestant Reformation, as Martin Luther\'s writings could be reproduced and distributed far faster than religious authorities could suppress them—a dynamic some historians compare to the way social media has accelerated the spread of ideas in the modern era."\n\nWhat comparison do some historians draw regarding the printing press?',
+    choices: [
+      { key: 'A', text: 'They compare it to the invention of the telephone in the nineteenth century.' },
+      { key: 'B', text: 'They compare its role in spreading ideas quickly to how social media functions today.' },
+      { key: 'C', text: 'They compare its cost to that of modern digital publishing.' },
+      { key: 'D', text: 'They compare Gutenberg\'s achievements to those of Martin Luther as a religious leader.' },
+    ],
+    correctKey: 'B' as const,
+    explanation: '「a dynamic some historians compare to the way social media has accelerated the spread of ideas in the modern era」という記述からBが正解とわかります。',
+    difficulty: 'advanced' as const,
+  },
+
+  // --- PASSAGE 9: Circadian rhythms and shift work — Q095-097 ---
+  {
+    id: 'eiken_2kyu3_095',
+    level: '2kyu' as const,
+    category: 'reading' as const,
+    question: 'Read the following passage and answer the question.\n\n"Modern economies increasingly depend on workers—hospital staff, factory operators, transportation employees—who labor through the night to keep essential services running around the clock. Yet a growing body of research indicates that chronic night-shift work carries substantial health costs, largely because it forces the body\'s internal circadian clock into persistent conflict with its external environment. The circadian system evolved over millions of years to align hormone release, body temperature, and alertness with the natural cycle of daylight and darkness; night work requires employees to be alert precisely when their bodies are biologically primed for rest.\n\nStudies have linked long-term night-shift work to elevated rates of cardiovascular disease, metabolic disorders, and certain cancers, with the World Health Organization\'s cancer research agency classifying shift work involving circadian disruption as a probable carcinogen. Some employers have begun experimenting with scheduling strategies intended to minimize disruption, such as maintaining consistent shift patterns rather than frequently rotating employees between day and night shifts, since rotation appears to be particularly damaging to the body\'s ability to adapt."\n\nWhy does night-shift work create health risks, according to the passage?',
+    choices: [
+      { key: 'A', text: 'It requires employees to consume unhealthy food during breaks.' },
+      { key: 'B', text: 'It forces the body\'s internal clock into conflict with the external environment.' },
+      { key: 'C', text: 'It increases the amount of physical labor employees must perform.' },
+      { key: 'D', text: 'It reduces the total number of hours employees are allowed to sleep.' },
+    ],
+    correctKey: 'B' as const,
+    explanation: '「it forces the body\'s internal circadian clock into persistent conflict with its external environment」という記述からBが正解とわかります。',
+    difficulty: 'standard' as const,
+  },
+  {
+    id: 'eiken_2kyu3_096',
+    level: '2kyu' as const,
+    category: 'reading' as const,
+    question: 'Read the same passage about circadian rhythms and shift work and answer the question.\n\n"Modern economies increasingly depend on workers—hospital staff, factory operators, transportation employees—who labor through the night to keep essential services running around the clock. Yet a growing body of research indicates that chronic night-shift work carries substantial health costs, largely because it forces the body\'s internal circadian clock into persistent conflict with its external environment. The circadian system evolved over millions of years to align hormone release, body temperature, and alertness with the natural cycle of daylight and darkness; night work requires employees to be alert precisely when their bodies are biologically primed for rest.\n\nStudies have linked long-term night-shift work to elevated rates of cardiovascular disease, metabolic disorders, and certain cancers, with the World Health Organization\'s cancer research agency classifying shift work involving circadian disruption as a probable carcinogen. Some employers have begun experimenting with scheduling strategies intended to minimize disruption, such as maintaining consistent shift patterns rather than frequently rotating employees between day and night shifts, since rotation appears to be particularly damaging to the body\'s ability to adapt."\n\nWhat scheduling strategy is mentioned as a way to reduce the negative effects of shift work?',
+    choices: [
+      { key: 'A', text: 'Requiring all employees to work exclusively during daytime hours.' },
+      { key: 'B', text: 'Maintaining consistent shift patterns instead of frequently rotating shifts.' },
+      { key: 'C', text: 'Eliminating night shifts from all essential industries entirely.' },
+      { key: 'D', text: 'Increasing the total number of hours worked per shift.' },
+    ],
+    correctKey: 'B' as const,
+    explanation: '「maintaining consistent shift patterns rather than frequently rotating employees between day and night shifts, since rotation appears to be particularly damaging」という記述からBが正解とわかります。',
+    difficulty: 'standard' as const,
+  },
+  {
+    id: 'eiken_2kyu3_097',
+    level: '2kyu' as const,
+    category: 'reading' as const,
+    question: 'Read the same passage about circadian rhythms and shift work and answer the question.\n\n"Modern economies increasingly depend on workers—hospital staff, factory operators, transportation employees—who labor through the night to keep essential services running around the clock. Yet a growing body of research indicates that chronic night-shift work carries substantial health costs, largely because it forces the body\'s internal circadian clock into persistent conflict with its external environment. The circadian system evolved over millions of years to align hormone release, body temperature, and alertness with the natural cycle of daylight and darkness; night work requires employees to be alert precisely when their bodies are biologically primed for rest.\n\nStudies have linked long-term night-shift work to elevated rates of cardiovascular disease, metabolic disorders, and certain cancers, with the World Health Organization\'s cancer research agency classifying shift work involving circadian disruption as a probable carcinogen. Some employers have begun experimenting with scheduling strategies intended to minimize disruption, such as maintaining consistent shift patterns rather than frequently rotating employees between day and night shifts, since rotation appears to be particularly damaging to the body\'s ability to adapt."\n\nWhat health risks have been linked to long-term night-shift work, according to the passage?',
+    choices: [
+      { key: 'A', text: 'Cardiovascular disease, metabolic disorders, and certain cancers.' },
+      { key: 'B', text: 'Only minor issues such as occasional headaches and fatigue.' },
+      { key: 'C', text: 'Vision problems caused by working in poorly lit environments.' },
+      { key: 'D', text: 'Hearing loss caused by loud machinery used during night shifts.' },
+    ],
+    correctKey: 'A' as const,
+    explanation: '「Studies have linked long-term night-shift work to elevated rates of cardiovascular disease, metabolic disorders, and certain cancers」という記述からAが正解とわかります。',
+    difficulty: 'basic' as const,
+  },
+
+  // --- PASSAGE 10: The rise of citizen science — Q098-100 ---
+  {
+    id: 'eiken_2kyu3_098',
+    level: '2kyu' as const,
+    category: 'reading' as const,
+    question: 'Read the following passage and answer the question.\n\n"Citizen science, in which members of the public collaborate with professional researchers by collecting or analyzing data, has grown dramatically alongside the spread of smartphones and internet connectivity. Volunteers now contribute to projects ranging from cataloging bird migrations to classifying distant galaxies in astronomical images that would take professional researchers decades to review manually. Proponents argue that these projects generate valuable scientific data at a fraction of the cost of traditional research while simultaneously fostering public engagement with, and understanding of, the scientific process.\n\nSkeptics, however, raise concerns about data quality, noting that volunteers—however enthusiastic—typically lack the specialized training of professional scientists, which can introduce inconsistencies or errors into datasets. In response, many citizen science platforms have implemented safeguards, such as having multiple volunteers independently classify the same piece of data and using statistical methods to identify and flag ambiguous or contested results before they are incorporated into published research. Studies comparing citizen-generated data with data collected by trained experts have generally found accuracy levels high enough for many, though not all, scientific applications."\n\nWhat is "citizen science" as defined in the passage?',
+    choices: [
+      { key: 'A', text: 'A government program that funds only professional research institutions.' },
+      { key: 'B', text: 'A collaboration in which members of the public help collect or analyze scientific data.' },
+      { key: 'C', text: 'A university degree program focused on public policy.' },
+      { key: 'D', text: 'A type of software used exclusively by professional astronomers.' },
+    ],
+    correctKey: 'B' as const,
+    explanation: 'パッセージ冒頭で「members of the public collaborate with professional researchers by collecting or analyzing data」と定義されています。Bが正解です。',
+    difficulty: 'basic' as const,
+  },
+  {
+    id: 'eiken_2kyu3_099',
+    level: '2kyu' as const,
+    category: 'reading' as const,
+    question: 'Read the same passage about citizen science and answer the question.\n\n"Citizen science, in which members of the public collaborate with professional researchers by collecting or analyzing data, has grown dramatically alongside the spread of smartphones and internet connectivity. Volunteers now contribute to projects ranging from cataloging bird migrations to classifying distant galaxies in astronomical images that would take professional researchers decades to review manually. Proponents argue that these projects generate valuable scientific data at a fraction of the cost of traditional research while simultaneously fostering public engagement with, and understanding of, the scientific process.\n\nSkeptics, however, raise concerns about data quality, noting that volunteers—however enthusiastic—typically lack the specialized training of professional scientists, which can introduce inconsistencies or errors into datasets. In response, many citizen science platforms have implemented safeguards, such as having multiple volunteers independently classify the same piece of data and using statistical methods to identify and flag ambiguous or contested results before they are incorporated into published research. Studies comparing citizen-generated data with data collected by trained experts have generally found accuracy levels high enough for many, though not all, scientific applications."\n\nWhat concern do skeptics of citizen science raise?',
+    choices: [
+      { key: 'A', text: 'Volunteers often refuse to participate in scientific projects.' },
+      { key: 'B', text: 'The lack of specialized training among volunteers can introduce errors into data.' },
+      { key: 'C', text: 'Citizen science projects are far more expensive than traditional research.' },
+      { key: 'D', text: 'Government agencies have banned the use of citizen-collected data.' },
+    ],
+    correctKey: 'B' as const,
+    explanation: '「volunteers...typically lack the specialized training of professional scientists, which can introduce inconsistencies or errors into datasets」という記述からBが正解とわかります。',
+    difficulty: 'standard' as const,
+  },
+  {
+    id: 'eiken_2kyu3_100',
+    level: '2kyu' as const,
+    category: 'reading' as const,
+    question: 'Read the same passage about citizen science and answer the question.\n\n"Citizen science, in which members of the public collaborate with professional researchers by collecting or analyzing data, has grown dramatically alongside the spread of smartphones and internet connectivity. Volunteers now contribute to projects ranging from cataloging bird migrations to classifying distant galaxies in astronomical images that would take professional researchers decades to review manually. Proponents argue that these projects generate valuable scientific data at a fraction of the cost of traditional research while simultaneously fostering public engagement with, and understanding of, the scientific process.\n\nSkeptics, however, raise concerns about data quality, noting that volunteers—however enthusiastic—typically lack the specialized training of professional scientists, which can introduce inconsistencies or errors into datasets. In response, many citizen science platforms have implemented safeguards, such as having multiple volunteers independently classify the same piece of data and using statistical methods to identify and flag ambiguous or contested results before they are incorporated into published research. Studies comparing citizen-generated data with data collected by trained experts have generally found accuracy levels high enough for many, though not all, scientific applications."\n\nHow have citizen science platforms addressed concerns about data quality?',
+    choices: [
+      { key: 'A', text: 'By banning volunteers who make even a single mistake.' },
+      { key: 'B', text: 'By having multiple volunteers independently classify the same data and flagging uncertain results.' },
+      { key: 'C', text: 'By requiring all volunteers to obtain a university degree in science.' },
+      { key: 'D', text: 'By eliminating human involvement entirely and using only automated systems.' },
+    ],
+    correctKey: 'B' as const,
+    explanation: '「having multiple volunteers independently classify the same piece of data and using statistical methods to identify and flag ambiguous or contested results」という記述からBが正解とわかります。',
+    difficulty: 'advanced' as const,
+  },
 ];
