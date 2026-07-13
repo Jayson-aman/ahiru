@@ -17,6 +17,8 @@ import {
 } from '../services/subscription';
 import type { CustomerInfo, PurchasesPackage } from 'react-native-purchases';
 
+type BillingPeriod = 'monthly' | 'yearly';
+
 type Props = {
   certKey: CertKey;
   certName: string;
@@ -55,6 +57,7 @@ export default function CertPaywall({
   const [loading, setLoading] = useState(true);
   const [purchasing, setPurchasing] = useState(false);
   const [pkg, setPkg] = useState<PurchasesPackage | null>(null);
+  const [period, setPeriod] = useState<BillingPeriod>('yearly');
   const limit = freeLimit ?? FREE_QUESTION_LIMIT;
   const hasAccess = hasCertAccess(info, certKey);
 
@@ -157,6 +160,22 @@ export default function CertPaywall({
           </TouchableOpacity>
         </LinearGradient>
 
+        {/* 月払い／年払い切り替え */}
+        <View style={styles.periodToggle}>
+          <TouchableOpacity
+            style={[styles.periodBtn, period === 'monthly' && styles.periodBtnActive]}
+            onPress={() => setPeriod('monthly')}
+          >
+            <Text style={[styles.periodBtnText, period === 'monthly' && styles.periodBtnTextActive]}>月払い</Text>
+          </TouchableOpacity>
+          <TouchableOpacity
+            style={[styles.periodBtn, period === 'yearly' && styles.periodBtnActive]}
+            onPress={() => setPeriod('yearly')}
+          >
+            <Text style={[styles.periodBtnText, period === 'yearly' && styles.periodBtnTextActive]}>年払い（お得）</Text>
+          </TouchableOpacity>
+        </View>
+
         {/* Pricing cards */}
         <ScrollView horizontal showsHorizontalScrollIndicator={false} style={styles.plans} contentContainerStyle={styles.plansContent}>
           <PlanCard
@@ -168,6 +187,7 @@ export default function CertPaywall({
             color={accentColor}
             onPress={handlePurchase}
             loading={purchasing}
+            period={period}
           />
           <PlanCard
             title="全資格 Max"
@@ -178,6 +198,7 @@ export default function CertPaywall({
             color="#1B2A5C"
             onPress={handlePurchase}
             loading={purchasing}
+            period={period}
           />
         </ScrollView>
 
@@ -209,15 +230,38 @@ export default function CertPaywall({
   );
 }
 
-function PlanCard({ title, price, yearPrice, yearSavings, features, color, onPress, loading }: {
+/** Parses a "¥50,000/年" style label and returns a "¥4,167/月相当" style label */
+function monthlyEquivalentLabel(yearPriceLabel: string): string {
+  const num = parseInt(yearPriceLabel.replace(/[^\d]/g, ''), 10);
+  if (!num) return '';
+  const perMonth = Math.round(num / 12);
+  return `¥${perMonth.toLocaleString('ja-JP')}/月相当`;
+}
+
+function PlanCard({ title, price, yearPrice, yearSavings, features, color, onPress, loading, period }: {
   title: string; price: string; yearPrice: string; yearSavings: string; features: string[];
-  color: string; onPress: () => void; loading: boolean;
+  color: string; onPress: () => void; loading: boolean; period: BillingPeriod;
 }) {
+  const isYearly = period === 'yearly';
   return (
     <View style={planStyles.card}>
+      {isYearly && (
+        <View style={[planStyles.badge, { backgroundColor: color }]}>
+          <Text style={planStyles.badgeText}>{yearSavings}</Text>
+        </View>
+      )}
       <Text style={[planStyles.title, { color }]}>{title}</Text>
-      <Text style={planStyles.price}>{price}</Text>
-      <Text style={planStyles.yearPrice}>{yearPrice}（{yearSavings}）</Text>
+      {isYearly ? (
+        <>
+          <Text style={planStyles.price}>{yearPrice}</Text>
+          <Text style={planStyles.yearPrice}>{monthlyEquivalentLabel(yearPrice)}（{price}で月払いも選択可）</Text>
+        </>
+      ) : (
+        <>
+          <Text style={planStyles.price}>{price}</Text>
+          <Text style={planStyles.yearPrice}>年払いなら {yearPrice}（{yearSavings}）</Text>
+        </>
+      )}
       {features.map((f, i) => (
         <Text key={i} style={planStyles.feature}>✓ {f}</Text>
       ))}
@@ -238,6 +282,14 @@ const styles = StyleSheet.create({
   banner: { flexDirection: 'row', alignItems: 'center', padding: 16, gap: 12, marginHorizontal: 0 },
   bannerLock: { fontSize: 28 },
   bannerBody: { flex: 1 },
+  periodToggle: {
+    flexDirection: 'row', alignSelf: 'center', backgroundColor: '#E8EAF0',
+    borderRadius: 14, padding: 4, marginTop: 16, gap: 4,
+  },
+  periodBtn: { paddingVertical: 8, paddingHorizontal: 18, borderRadius: 11 },
+  periodBtnActive: { backgroundColor: '#FFFFFF', shadowColor: '#000', shadowOffset: { width: 0, height: 1 }, shadowOpacity: 0.1, shadowRadius: 3, elevation: 2 },
+  periodBtnText: { fontSize: 13, fontWeight: '700', color: '#888' },
+  periodBtnTextActive: { color: '#1A1A2E' },
   bannerTitle: { fontSize: 14, fontWeight: '900', color: '#FFF' },
   bannerSub: { fontSize: 12, color: 'rgba(255,255,255,0.85)', fontWeight: '500', marginTop: 2 },
   bannerBtn: { backgroundColor: 'rgba(255,255,255,0.25)', borderRadius: 12, paddingHorizontal: 16, paddingVertical: 8 },
@@ -260,6 +312,8 @@ const styles = StyleSheet.create({
 
 const planStyles = StyleSheet.create({
   card: { backgroundColor: '#FFF', borderRadius: 18, padding: 20, width: 260, shadowColor: '#000', shadowOffset: { width: 0, height: 4 }, shadowOpacity: 0.12, shadowRadius: 12, elevation: 5 },
+  badge: { alignSelf: 'flex-start', borderRadius: 8, paddingHorizontal: 8, paddingVertical: 3, marginBottom: 8 },
+  badgeText: { fontSize: 11, fontWeight: '800', color: '#FFF' },
   title: { fontSize: 14, fontWeight: '900', marginBottom: 8 },
   price: { fontSize: 28, fontWeight: '900', color: '#1A1A2E', marginBottom: 2 },
   yearPrice: { fontSize: 13, color: '#888', fontWeight: '600', marginBottom: 12 },
