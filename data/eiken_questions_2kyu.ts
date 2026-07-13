@@ -9,12 +9,12 @@ export const eikenQuestions2kyu: EikenQuestion[] = [
     question:
       'The committee decided to ( ) the decision until more data was available, hoping for a clearer picture before committing to any course of action.',
     choices: [
-      { key: 'A', text: 'defer' },
+      { key: 'A', text: 'suspend' },
       { key: 'B', text: 'delay' },
       { key: 'C', text: 'postpone' },
-      { key: 'D', text: 'suspend' },
+      { key: 'D', text: 'defer' },
     ],
-    correctKey: 'A',
+    correctKey: 'D',
     explanation:
       '"defer a decision" は「より信頼できる情報や権威が整うまで先送りにする」というニュアンスで、データを待つ文脈に最も適切。delay・postpone も「遅らせる」意味だが defer ほど「判断を委ねる」含意がない。suspend は「活動・特権などを一時停止する」場合に使い、通常 decision には使わない。',
     difficulty: 'advanced',
@@ -26,12 +26,12 @@ export const eikenQuestions2kyu: EikenQuestion[] = [
     question:
       'His remarks were so ( ) that different members of the audience interpreted them in completely opposite ways.',
     choices: [
-      { key: 'A', text: 'ambiguous' },
+      { key: 'A', text: 'vague' },
       { key: 'B', text: 'ambivalent' },
       { key: 'C', text: 'obscure' },
-      { key: 'D', text: 'vague' },
+      { key: 'D', text: 'ambiguous' },
     ],
-    correctKey: 'A',
+    correctKey: 'D',
     explanation:
       'ambiguous は「（発言・意味が）複数の解釈を許す、曖昧な」で、異なる人が反対の解釈をしたという文脈に最適。ambivalent は「心情が両面にある、矛盾した気持ちを持つ」で主に感情に使う。obscure は「（知識・作品が）無名・難解な」、vague は「漠然とした」で曖昧さは表すが「複数の解釈」のニュアンスは薄い。',
     difficulty: 'advanced',
@@ -43,12 +43,12 @@ export const eikenQuestions2kyu: EikenQuestion[] = [
     question:
       'The new medication proved ( ) in clinical trials, reducing symptoms in over 90 percent of participants.',
     choices: [
-      { key: 'A', text: 'effective' },
+      { key: 'A', text: 'capable' },
       { key: 'B', text: 'potent' },
       { key: 'C', text: 'efficient' },
-      { key: 'D', text: 'capable' },
+      { key: 'D', text: 'effective' },
     ],
-    correctKey: 'A',
+    correctKey: 'D',
     explanation:
       '"effective" は「（薬・方法が）意図した効果を上げる」意。症状軽減という結果を強調する文脈に最適。potent は「（薬・物質が）強力な作用を持つ」で効能の強さに焦点があり、症状軽減率には直接つながりにくい。efficient は「効率的な」でプロセスに着目。capable は人や機械の「能力がある」に使う。',
     difficulty: 'standard',
@@ -78,11 +78,11 @@ export const eikenQuestions2kyu: EikenQuestion[] = [
       "The professor's lecture was highly ( ); she drew connections between ancient philosophy and contemporary neuroscience that no one had considered before.",
     choices: [
       { key: 'A', text: 'innovative' },
-      { key: 'B', text: 'enlightening' },
+      { key: 'B', text: 'provocative' },
       { key: 'C', text: 'stimulating' },
-      { key: 'D', text: 'provocative' },
+      { key: 'D', text: 'enlightening' },
     ],
-    correctKey: 'B',
+    correctKey: 'D',
     explanation:
       '"enlightening" は「新たな知識や視点をもたらす」意で、誰も考えなかった視点を示した講義の説明として最適。stimulating は「知的好奇心を刺激する」、innovative は「革新的な」でどちらも惜しいが、enlightening は「無知から理解へ導く」ニュアンスがある。provocative は「物議を醸す、挑発的な」で否定的含意もある。',
     difficulty: 'advanced',
@@ -111,12 +111,12 @@ export const eikenQuestions2kyu: EikenQuestion[] = [
     question:
       "The mayor's proposal to build a new stadium was met with ( ) from local residents, who argued that schools and hospitals were more urgently needed.",
     choices: [
-      { key: 'A', text: 'objection' },
+      { key: 'A', text: 'criticism' },
       { key: 'B', text: 'opposition' },
       { key: 'C', text: 'resistance' },
-      { key: 'D', text: 'criticism' },
+      { key: 'D', text: 'objection' },
     ],
-    correctKey: 'A',
+    correctKey: 'D',
     explanation:
       '"met with objection" は「異議・反対意見を受ける」という慣用表現。"raise an objection" とも言う。opposition は「反対勢力・組織的抵抗」、resistance は「物理的・継続的な抵抗」、criticism は「批判」でいずれも正しくはあるが、"met with" というコロケーションでは objection が最も自然。',
     difficulty: 'advanced',
@@ -128,12 +128,12 @@ export const eikenQuestions2kyu: EikenQuestion[] = [
     question:
       'After years of ( ) research, the team finally published their findings on the genetic causes of the rare disorder.',
     choices: [
-      { key: 'A', text: 'relentless' },
+      { key: 'A', text: 'rigorous' },
       { key: 'B', text: 'thorough' },
       { key: 'C', text: 'meticulous' },
-      { key: 'D', text: 'rigorous' },
+      { key: 'D', text: 'relentless' },
     ],
-    correctKey: 'A',
+    correctKey: 'D',
     explanation:
       '"relentless research" は「何年もやめることなく続けた研究」という粘り強さを表し、"years of" という時間的長さと最もよく対応する。meticulous は「細部に注意を払った」、rigorous は「厳密な手順に従った」、thorough は「徹底的な」でいずれも研究の質には合うが、長年継続したという粘り強さを最も強く表すのは relentless。',
     difficulty: 'advanced',
@@ -282,11 +282,11 @@ export const eikenQuestions2kyu: EikenQuestion[] = [
       'It is essential that companies ( ) their supply chains to ensure they are not sourcing materials from regions with poor environmental records.',
     choices: [
       { key: 'A', text: 'investigate' },
-      { key: 'B', text: 'audit' },
+      { key: 'B', text: 'inspect' },
       { key: 'C', text: 'examine' },
-      { key: 'D', text: 'inspect' },
+      { key: 'D', text: 'audit' },
     ],
-    correctKey: 'B',
+    correctKey: 'D',
     explanation:
       '"audit" は「（組織・プロセスを）公式・体系的に点検・評価する」意で、特にビジネス・コンプライアンス文脈でのサプライチェーン評価に使う専門的な表現。investigate は「問題があるときに調査する」、examine は「詳しく調べる」（医療や学術でも使う）、inspect は「物理的な検査」が主。',
     difficulty: 'standard',
@@ -298,12 +298,12 @@ export const eikenQuestions2kyu: EikenQuestion[] = [
     question:
       "The CEO's resignation came as a complete surprise; until then, her leadership had appeared ( ) and her position secure.",
     choices: [
-      { key: 'A', text: 'unshakeable' },
+      { key: 'A', text: 'unwavering' },
       { key: 'B', text: 'steadfast' },
       { key: 'C', text: 'resolute' },
-      { key: 'D', text: 'unwavering' },
+      { key: 'D', text: 'unshakeable' },
     ],
-    correctKey: 'A',
+    correctKey: 'D',
     explanation:
       '"unshakeable" は「（地位・信念などが）揺るぎない」で、辞任直前まで地位が安泰に見えた、という文脈に最も合う形容詞。steadfast・resolute・unwavering はいずれも「意志の固い」という個人の態度を表すが、leadership（指導力・リーダーシップ）という抽象概念への修飾には unshakeable が最も自然。',
     difficulty: 'advanced',
@@ -368,12 +368,12 @@ export const eikenQuestions2kyu: EikenQuestion[] = [
     question:
       'Had the engineers identified the flaw earlier, the bridge ( ) collapsed.',
     choices: [
-      { key: 'A', text: 'would not have' },
+      { key: 'A', text: 'will not have' },
       { key: 'B', text: 'would not' },
       { key: 'C', text: 'had not' },
-      { key: 'D', text: 'will not have' },
+      { key: 'D', text: 'would not have' },
     ],
-    correctKey: 'A',
+    correctKey: 'D',
     explanation:
       '"Had + 主語 + 過去分詞..." は if を省略した仮定法過去完了の条件節。過去の事実に反する仮定を表すため、帰結節は "would not have + 過去分詞" となる。"would not" は仮定法過去（現在の仮定）の帰結節形式で不適切。',
     difficulty: 'advanced',
@@ -470,12 +470,12 @@ export const eikenQuestions2kyu: EikenQuestion[] = [
     question:
       'Rarely ( ) such a dramatic shift in public opinion occur within such a short period of time.',
     choices: [
-      { key: 'A', text: 'does' },
+      { key: 'A', text: 'had' },
       { key: 'B', text: 'do' },
       { key: 'C', text: 'has' },
-      { key: 'D', text: 'had' },
+      { key: 'D', text: 'does' },
     ],
-    correctKey: 'A',
+    correctKey: 'D',
     explanation:
       '"Rarely" が文頭に置かれると主節で倒置が生じる。主語 "such a dramatic shift"（単数）＋一般動詞 occur に対して助動詞 does を使い、"Rarely does such a shift occur" となる。do は複数主語用、has は現在完了の倒置、had は過去完了の倒置で不適。',
     difficulty: 'advanced',
@@ -522,11 +522,11 @@ export const eikenQuestions2kyu: EikenQuestion[] = [
       'No sooner ( ) the announcement been made than protesters gathered outside the government building.',
     choices: [
       { key: 'A', text: 'did' },
-      { key: 'B', text: 'had' },
+      { key: 'B', text: 'was' },
       { key: 'C', text: 'has' },
-      { key: 'D', text: 'was' },
+      { key: 'D', text: 'had' },
     ],
-    correctKey: 'B',
+    correctKey: 'D',
     explanation:
       '"No sooner ... than ..." は「〜するやいなや」を表す慣用表現で、had を使った倒置構文になる。"No sooner had + 主語 + 過去分詞 + than + 主語 + 過去形動詞" が正しい構造。過去完了の had が倒置されて文頭直後に来る。',
     difficulty: 'advanced',
@@ -538,12 +538,12 @@ export const eikenQuestions2kyu: EikenQuestion[] = [
     question:
       'The students found the examination far more ( ) than they had anticipated based on the sample questions.',
     choices: [
-      { key: 'A', text: 'challenging' },
+      { key: 'A', text: 'challenge' },
       { key: 'B', text: 'challenged' },
-      { key: 'C', text: 'challenge' },
+      { key: 'C', text: 'challenging' },
       { key: 'D', text: 'to challenge' },
     ],
-    correctKey: 'A',
+    correctKey: 'C',
     explanation:
       '"find + 目的語 + 形容詞" の構文で、目的語（the examination）を説明する補語には形容詞が来る。"challenging"（困難な・やりがいのある）は形容詞として機能する。"challenged" は受動の意味（困難に直面させられた）で使われる場合があるが、試験自体を形容するには challenging が正しい。',
     difficulty: 'standard',
@@ -555,12 +555,12 @@ export const eikenQuestions2kyu: EikenQuestion[] = [
     question:
       'Were the company ( ) declare bankruptcy, thousands of employees would lose their jobs and retirement savings.',
     choices: [
-      { key: 'A', text: 'to' },
+      { key: 'A', text: 'should' },
       { key: 'B', text: 'would' },
-      { key: 'C', text: 'should' },
+      { key: 'C', text: 'to' },
       { key: 'D', text: 'might' },
     ],
-    correctKey: 'A',
+    correctKey: 'C',
     explanation:
       '"Were + 主語 + to不定詞 ..." は if を省略した仮定法の倒置形で、「もし〜するとしたら」という意味。"Were the company to declare ..." = "If the company were to declare ..." となる。特に書き言葉・フォーマルな文脈で使われる仮定法の格式表現。',
     difficulty: 'advanced',
@@ -590,11 +590,11 @@ export const eikenQuestions2kyu: EikenQuestion[] = [
       'The government does ( ) take the issue of food security seriously, but its current policies are simply not sufficient to address the scale of the problem.',
     choices: [
       { key: 'A', text: 'so' },
-      { key: 'B', text: 'indeed' },
+      { key: 'B', text: 'even' },
       { key: 'C', text: 'really' },
-      { key: 'D', text: 'even' },
+      { key: 'D', text: 'indeed' },
     ],
-    correctKey: 'B',
+    correctKey: 'D',
     explanation:
       '"does indeed + 動詞原形" は emphatic do（強調の do）を使った表現で、「確かに〜する」という肯定の強調を表す。but で逆説が続く前に主張の誠意を示す際に使う。"does so take" は文法的に不自然。really・even は副詞として機能するが、"does really/even take" という語順は emphatic do の強調構文として成立しない。',
     difficulty: 'advanced',
@@ -644,12 +644,12 @@ Microplastics — particles smaller than five millimeters — have been detected
 
 In the passage, the phrase "falls short of" most closely means:`,
     choices: [
-      { key: 'A', text: 'fails to fully achieve' },
+      { key: 'A', text: 'successfully prevents' },
       { key: 'B', text: 'completely ignores' },
-      { key: 'C', text: 'successfully prevents' },
+      { key: 'C', text: 'fails to fully achieve' },
       { key: 'D', text: 'exceeds the scope of' },
     ],
-    correctKey: 'A',
+    correctKey: 'C',
     explanation:
       '"falls short of" は「〜に達しない、〜を十分に果たしていない」という意味の慣用表現。批評家たちは規制が根本的な解決（過剰なプラスチック生産の抑制）に「及んでいない」と主張しているので、A「完全には達成できていない」が正しい。「完全に無視している」（B）は言い過ぎ。',
     difficulty: 'standard',
@@ -730,14 +730,14 @@ The widespread adoption of remote work following the global pandemic has had pro
 
 In the passage, the word "democratizes" most nearly means:`,
     choices: [
-      { key: 'A', text: 'makes something available to a wider range of people' },
+      { key: 'A', text: 'reduces the overall number of people seeking employment' },
       { key: 'B', text: 'allows citizens to vote on important decisions' },
-      { key: 'C', text: 'reduces the overall number of people seeking employment' },
+      { key: 'C', text: 'makes something available to a wider range of people' },
       { key: 'D', text: 'transfers power from governments to private companies' },
     ],
-    correctKey: 'A',
+    correctKey: 'C',
     explanation:
-      'パッセージでは "democratizes opportunity by enabling workers in less affluent areas to access high-paying jobs" とあり、「機会を民主化する」は「高収入の仕事へのアクセスをより多くの地域の人々に開放する」という意味で使われている。選択肢Aの「より広い範囲の人々が利用できるようにする」がこの意味に最も近い。',
+      'パッセージでは "democratizes opportunity by enabling workers in less affluent areas to access high-paying jobs" とあり、「機会を民主化する」は「高収入の仕事へのアクセスをより多くの地域の人々に開放する」という意味で使われている。「より広い範囲の人々が利用できるようにする」という言い換えがこの意味に最も近い。',
     difficulty: 'standard',
   },
   {
