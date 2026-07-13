@@ -134,7 +134,7 @@ RevenueCat は月間収益 $2,500 まで無料です。
    ```
    pro_takkei, pro_fp, pro_mansion, pro_kenchiku, pro_denken3,
    pro_kisho, pro_juken, pro_eiken, pro_sekokan,
-   pro_kankoji, pro_denkisekou, pro_kikaisekou, max
+   pro_kankoji, pro_denkisekou, pro_kikaisekou, pro_dobokusekou, max
    ```
    - 各資格の月額/年額商品 → その資格の `pro_◯◯` に紐付け
    - `qualiz_max_*` → **`max` と全ての `pro_◯◯` に紐付け**（Maxで全資格解放されるように）
