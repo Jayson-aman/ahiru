@@ -136,8 +136,10 @@ RevenueCat は月間収益 $2,500 まで無料です。
    pro_kisho, pro_juken, pro_eiken, pro_sekokan,
    pro_kankoji, pro_denkisekou, pro_kikaisekou, pro_dobokusekou, max
    ```
-   - 各資格の月額/年額商品 → その資格の `pro_◯◯` に紐付け
-   - `qualiz_max_*` → **`max` と全ての `pro_◯◯` に紐付け**（Maxで全資格解放されるように）
+   - 各資格の月額/年額商品 → その資格の `pro_◯◯` だけに紐付け
+   - `qualiz_max_*` → **`max` だけに紐付け**（`services/subscription.ts`の`hasCertAccess`が
+     `ENTITLEMENT_MAX in active || ENTITLEMENTS[cert] in active` というOR条件になっているため、
+     `max`さえ有効なら全資格が自動的にアンロックされる。個別の`pro_◯◯`への紐付けは不要）
 5. **Offerings**: `default` オファリングに全パッケージを追加
    - パッケージ識別子に資格キーを含めてください（例: `takkei_yearly`）。
      アプリは `identifier.includes(certKey)` で該当資格のパッケージを探します
