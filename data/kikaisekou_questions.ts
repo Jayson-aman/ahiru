@@ -3406,7 +3406,7 @@ export const kikaisekouQuestions: KikaisekouQuestion[] = [
     ],
     correctKey: 'D',
     explanation: '道路占用許可（道路管理者）と道路使用許可（警察署長）は別個の許可制度。\n【図解】道路占用許可と道路使用許可の違い\n　道路占用許可：道路管理者★・工作物設置等の継続使用\n　⚠道路使用許可：警察署長★・工事等の一時使用（別制度）\n　→内容によっては両方の許可が必要な場合あり\n　○占用料は物件種類・面積・期間で算定\n　×「同一の許可制度」は不適当',
-    difficulty: 'standard',
+    difficulty: 'advanced',
   },
   {
     id: 'ks-hoki-037', subject: 'hoki', subjectName: '法規',
@@ -3510,7 +3510,7 @@ export const kikaisekouQuestions: KikaisekouQuestion[] = [
     ],
     correctKey: 'D',
     explanation: '抵当権設定機械の譲渡・処分は抵当権者の利益保護のため制限される。\n【図解】建設機械抵当権の要点\n　○抵当権を目的とした資金調達（担保活用）★\n　○債務不履行時：抵当権者による抵当権の実行★\n　○登記事項：機械の種類・型式等\n　⚠無断の譲渡・処分は制限される（自由な売却は不可）\n　×「同意なく自由に譲渡可」は不適当',
-    difficulty: 'standard',
+    difficulty: 'advanced',
   },
   {
     id: 'ks-hoki-045', subject: 'hoki', subjectName: '法規',
@@ -3692,7 +3692,7 @@ export const kikaisekouQuestions: KikaisekouQuestion[] = [
     ],
     correctKey: 'B',
     explanation: '港湾法は他法令の適用を一律に除外するものではない。労安法等は引き続き適用。\n【図解】港湾法と他法令の関係\n　○港湾区域内の工事：港湾管理者の許可等が必要な場合あり★\n　⚠道路運送車両法・労安法等の適用は一律除外されない\n　→機種・作業内容に応じ資格・検査等が引き続き必要\n　○作業船も安全管理の対象★\n　×「他法令の適用が一律除外」は不適当',
-    difficulty: 'standard',
+    difficulty: 'advanced',
   },
   {
     id: 'ks-hoki-059', subject: 'hoki', subjectName: '法規',
