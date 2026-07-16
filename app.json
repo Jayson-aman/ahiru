@@ -10,7 +10,6 @@
     "ios": {
       "supportsTablet": true,
       "bundleIdentifier": "com.jaysonaman.qualiz",
-      "jsEngine": "jsc",
       "infoPlist": {
         "CFBundleDisplayName": "QualiZ",
         "ITSAppUsesNonExemptEncryption": false
