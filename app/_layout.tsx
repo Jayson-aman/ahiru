@@ -1,7 +1,10 @@
 import { Stack } from 'expo-router';
 import { StatusBar } from 'expo-status-bar';
 import { useEffect } from 'react';
+import { Alert } from 'react-native';
+import AsyncStorage from '@react-native-async-storage/async-storage';
 import { initRevenueCat } from '../services/subscription';
+import { LAST_FATAL_ERROR_KEY } from '../services/crashCapture';
 
 export default function RootLayout() {
   useEffect(() => {
@@ -10,6 +13,16 @@ export default function RootLayout() {
     } catch {
       // RevenueCat init failed — app runs in free mode
     }
+  }, []);
+
+  useEffect(() => {
+    AsyncStorage.getItem(LAST_FATAL_ERROR_KEY)
+      .then((raw) => {
+        if (!raw) return;
+        AsyncStorage.removeItem(LAST_FATAL_ERROR_KEY).catch(() => {});
+        Alert.alert('前回のエラー内容', raw);
+      })
+      .catch(() => {});
   }, []);
 
   return (
