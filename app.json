@@ -30,6 +30,13 @@
     },
     "plugins": [
       "expo-router"
-    ]
+    ],
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "92fb2403-aebb-4e67-beaf-58bafbcf3179"
+      }
+    },
+    "owner": "masaya.nanjo"
   }
 }
