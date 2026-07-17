@@ -1,6 +1,6 @@
 import React, { useEffect, useState, useCallback } from 'react';
 import {
-  View, Text, StyleSheet, TouchableOpacity, ActivityIndicator, Alert, ScrollView,
+  View, Text, StyleSheet, TouchableOpacity, ActivityIndicator, Alert, ScrollView, Modal,
 } from 'react-native';
 import { LinearGradient } from 'expo-linear-gradient';
 import { Platform } from 'react-native';
@@ -58,6 +58,7 @@ export default function CertPaywall({
   const [purchasing, setPurchasing] = useState(false);
   const [pkg, setPkg] = useState<PurchasesPackage | null>(null);
   const [period, setPeriod] = useState<BillingPeriod>('yearly');
+  const [showPlans, setShowPlans] = useState(false);
   const limit = freeLimit ?? FREE_QUESTION_LIMIT;
   const hasAccess = hasCertAccess(info, certKey);
 
@@ -134,12 +135,14 @@ export default function CertPaywall({
     return <>{content}</>;
   }
 
-  // Free tier: render the host's free-tier content (already sliced to freeLimit) + upgrade banner
+  // Free tier: quiz fills the screen; a slim banner sits at the bottom and
+  // opens the full pricing details in a modal so the questions stay readable.
   return (
     <View style={styles.wrapper}>
-      {content}
-      {/* Upgrade banner */}
-      <View style={styles.bannerContainer}>
+      <View style={styles.contentArea}>{content}</View>
+
+      {/* Slim upgrade banner (does not cover the quiz) */}
+      <TouchableOpacity activeOpacity={0.9} onPress={() => setShowPlans(true)}>
         <LinearGradient colors={[accentColor, accentColor + 'CC']} style={styles.banner}>
           <Text style={styles.bannerLock}>🔒</Text>
           <View style={styles.bannerBody}>
@@ -148,84 +151,96 @@ export default function CertPaywall({
               {certEmoji} {certName} 全{totalQuestions}問＋詳細解説を{PRICING.proYearly}でアンロック
             </Text>
           </View>
-          <TouchableOpacity
-            style={styles.bannerBtn}
-            onPress={handlePurchase}
-            disabled={purchasing}
-          >
-            {purchasing
-              ? <ActivityIndicator color="#FFF" size="small" />
-              : <Text style={styles.bannerBtnText}>Pro</Text>
-            }
-          </TouchableOpacity>
+          <View style={styles.bannerBtn}>
+            <Text style={styles.bannerBtnText}>Proを見る</Text>
+          </View>
         </LinearGradient>
+      </TouchableOpacity>
 
-        {/* 月払い／年払い切り替え */}
-        <View style={styles.periodToggle}>
-          <TouchableOpacity
-            style={[styles.periodBtn, period === 'monthly' && styles.periodBtnActive]}
-            onPress={() => setPeriod('monthly')}
-          >
-            <Text style={[styles.periodBtnText, period === 'monthly' && styles.periodBtnTextActive]}>月払い</Text>
-          </TouchableOpacity>
-          <TouchableOpacity
-            style={[styles.periodBtn, period === 'yearly' && styles.periodBtnActive]}
-            onPress={() => setPeriod('yearly')}
-          >
-            <Text style={[styles.periodBtnText, period === 'yearly' && styles.periodBtnTextActive]}>年払い（お得）</Text>
-          </TouchableOpacity>
+      {/* Full pricing details (modal) */}
+      <Modal
+        visible={showPlans}
+        animationType="slide"
+        presentationStyle="pageSheet"
+        onRequestClose={() => setShowPlans(false)}
+      >
+        <View style={styles.modalRoot}>
+          <View style={styles.modalHeader}>
+            <Text style={styles.modalTitle}>プランを選ぶ</Text>
+            <TouchableOpacity onPress={() => setShowPlans(false)} style={styles.modalClose}>
+              <Text style={styles.modalCloseText}>✕</Text>
+            </TouchableOpacity>
+          </View>
+
+          <ScrollView contentContainerStyle={styles.modalScroll} showsVerticalScrollIndicator={false}>
+            {/* 月払い／年払い切り替え */}
+            <View style={styles.periodToggle}>
+              <TouchableOpacity
+                style={[styles.periodBtn, period === 'monthly' && styles.periodBtnActive]}
+                onPress={() => setPeriod('monthly')}
+              >
+                <Text style={[styles.periodBtnText, period === 'monthly' && styles.periodBtnTextActive]}>月払い</Text>
+              </TouchableOpacity>
+              <TouchableOpacity
+                style={[styles.periodBtn, period === 'yearly' && styles.periodBtnActive]}
+                onPress={() => setPeriod('yearly')}
+              >
+                <Text style={[styles.periodBtnText, period === 'yearly' && styles.periodBtnTextActive]}>年払い（お得）</Text>
+              </TouchableOpacity>
+            </View>
+
+            {/* Pricing cards（縦積み） */}
+            <View style={styles.plansStack}>
+              <PlanCard
+                title={`${certEmoji} ${certName} Pro`}
+                price={proMonthlyLabel ?? PRICING.proMonthly}
+                yearPrice={proYearlyLabel ?? PRICING.proYearly}
+                yearSavings={proYearlySavingsLabel ?? PRICING.proYearlySavings}
+                features={proFeatures ?? ['全問題アンロック・図解入り詳細解説', 'テキスト・模擬試験・二次試験対策', '資格学校（年40〜50万円）の約1/8', 'iPhone・iPad・Webでいつでも学習']}
+                color={accentColor}
+                onPress={handlePurchase}
+                loading={purchasing}
+                period={period}
+              />
+              <PlanCard
+                title="全資格 Max"
+                price={PRICING.maxMonthly}
+                yearPrice={PRICING.maxYearly}
+                yearSavings={PRICING.maxYearlySavings}
+                features={['全資格すべてアンロック', '宅建・マン管・FP・建築設備士', '施工管理4種・電験三種・気象予報士', '資格学校1講座の約1/5で全資格見放題']}
+                color="#1B2A5C"
+                onPress={handlePurchase}
+                loading={purchasing}
+                period={period}
+              />
+            </View>
+
+            <TouchableOpacity onPress={handleRestore} style={styles.restoreBtn} disabled={purchasing}>
+              <Text style={styles.restoreBtnText}>購入を復元する</Text>
+            </TouchableOpacity>
+
+            {/* サブスクリプションに関する説明（ストア審査必須項目） */}
+            <Text style={styles.legalNote}>
+              サブスクリプションは自動更新されます。期間終了の24時間前までに解約しない限り自動的に更新され、
+              ご利用のApple ID / Googleアカウントに料金が請求されます。解約は各ストアのアカウント設定
+              （サブスクリプション管理）からいつでも行えます。価格は税込表示です。
+            </Text>
+            <View style={styles.legalLinks}>
+              <TouchableOpacity onPress={() => { setShowPlans(false); router.push('/legal/terms' as any); }}>
+                <Text style={styles.legalLinkText}>利用規約</Text>
+              </TouchableOpacity>
+              <Text style={styles.legalLinkSep}>｜</Text>
+              <TouchableOpacity onPress={() => { setShowPlans(false); router.push('/legal/privacy' as any); }}>
+                <Text style={styles.legalLinkText}>プライバシーポリシー</Text>
+              </TouchableOpacity>
+              <Text style={styles.legalLinkSep}>｜</Text>
+              <TouchableOpacity onPress={() => { setShowPlans(false); router.push('/legal/tokushoho' as any); }}>
+                <Text style={styles.legalLinkText}>特定商取引法に基づく表記</Text>
+              </TouchableOpacity>
+            </View>
+          </ScrollView>
         </View>
-
-        {/* Pricing cards */}
-        <ScrollView horizontal showsHorizontalScrollIndicator={false} style={styles.plans} contentContainerStyle={styles.plansContent}>
-          <PlanCard
-            title={`${certEmoji} ${certName} Pro`}
-            price={proMonthlyLabel ?? PRICING.proMonthly}
-            yearPrice={proYearlyLabel ?? PRICING.proYearly}
-            yearSavings={proYearlySavingsLabel ?? PRICING.proYearlySavings}
-            features={proFeatures ?? ['全問題アンロック・図解入り詳細解説', 'テキスト・模擬試験・二次試験対策', '資格学校（年40〜50万円）の約1/8', 'iPhone・iPad・Webでいつでも学習']}
-            color={accentColor}
-            onPress={handlePurchase}
-            loading={purchasing}
-            period={period}
-          />
-          <PlanCard
-            title="全資格 Max"
-            price={PRICING.maxMonthly}
-            yearPrice={PRICING.maxYearly}
-            yearSavings={PRICING.maxYearlySavings}
-            features={['全資格すべてアンロック', '宅建・マン管・FP・建築設備士', '施工管理4種・電験三種・気象予報士', '資格学校1講座の約1/5で全資格見放題']}
-            color="#1B2A5C"
-            onPress={handlePurchase}
-            loading={purchasing}
-            period={period}
-          />
-        </ScrollView>
-
-        <TouchableOpacity onPress={handleRestore} style={styles.restoreBtn} disabled={purchasing}>
-          <Text style={styles.restoreBtnText}>購入を復元する</Text>
-        </TouchableOpacity>
-
-        {/* サブスクリプションに関する説明（ストア審査必須項目） */}
-        <Text style={styles.legalNote}>
-          サブスクリプションは自動更新されます。期間終了の24時間前までに解約しない限り自動的に更新され、
-          ご利用のApple ID / Googleアカウントに料金が請求されます。解約は各ストアのアカウント設定
-          （サブスクリプション管理）からいつでも行えます。価格は税込表示です。
-        </Text>
-        <View style={styles.legalLinks}>
-          <TouchableOpacity onPress={() => router.push('/legal/terms' as any)}>
-            <Text style={styles.legalLinkText}>利用規約</Text>
-          </TouchableOpacity>
-          <Text style={styles.legalLinkSep}>｜</Text>
-          <TouchableOpacity onPress={() => router.push('/legal/privacy' as any)}>
-            <Text style={styles.legalLinkText}>プライバシーポリシー</Text>
-          </TouchableOpacity>
-          <Text style={styles.legalLinkSep}>｜</Text>
-          <TouchableOpacity onPress={() => router.push('/legal/tokushoho' as any)}>
-            <Text style={styles.legalLinkText}>特定商取引法に基づく表記</Text>
-          </TouchableOpacity>
-        </View>
-      </View>
+      </Modal>
     </View>
   );
 }
@@ -278,9 +293,20 @@ function PlanCard({ title, price, yearPrice, yearSavings, features, color, onPre
 const styles = StyleSheet.create({
   center: { flex: 1, alignItems: 'center', justifyContent: 'center' },
   wrapper: { flex: 1 },
-  bannerContainer: { backgroundColor: '#F5F7FA', paddingBottom: 24 },
-  banner: { flexDirection: 'row', alignItems: 'center', padding: 16, gap: 12, marginHorizontal: 0 },
-  bannerLock: { fontSize: 28 },
+  contentArea: { flex: 1 },
+  banner: { flexDirection: 'row', alignItems: 'center', padding: 14, gap: 12 },
+  bannerLock: { fontSize: 26 },
+  modalRoot: { flex: 1, backgroundColor: '#F5F7FA' },
+  modalHeader: {
+    flexDirection: 'row', alignItems: 'center', justifyContent: 'center',
+    paddingVertical: 16, paddingHorizontal: 20, borderBottomWidth: 1, borderBottomColor: '#E6EAF0',
+    backgroundColor: '#FFFFFF',
+  },
+  modalTitle: { fontSize: 17, fontWeight: '900', color: '#1A1A2E' },
+  modalClose: { position: 'absolute', right: 16, top: 12, padding: 6 },
+  modalCloseText: { fontSize: 20, fontWeight: '700', color: '#888' },
+  modalScroll: { paddingTop: 20, paddingBottom: 40 },
+  plansStack: { paddingHorizontal: 20, gap: 16, marginTop: 16 },
   bannerBody: { flex: 1 },
   periodToggle: {
     flexDirection: 'row', alignSelf: 'center', backgroundColor: '#E8EAF0',
@@ -311,7 +337,7 @@ const styles = StyleSheet.create({
 });
 
 const planStyles = StyleSheet.create({
-  card: { backgroundColor: '#FFF', borderRadius: 18, padding: 20, width: 260, shadowColor: '#000', shadowOffset: { width: 0, height: 4 }, shadowOpacity: 0.12, shadowRadius: 12, elevation: 5 },
+  card: { backgroundColor: '#FFF', borderRadius: 18, padding: 20, alignSelf: 'stretch', shadowColor: '#000', shadowOffset: { width: 0, height: 4 }, shadowOpacity: 0.12, shadowRadius: 12, elevation: 5 },
   badge: { alignSelf: 'flex-start', borderRadius: 8, paddingHorizontal: 8, paddingVertical: 3, marginBottom: 8 },
   badgeText: { fontSize: 11, fontWeight: '800', color: '#FFF' },
   title: { fontSize: 14, fontWeight: '900', marginBottom: 8 },
