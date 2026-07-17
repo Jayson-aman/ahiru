@@ -8,10 +8,18 @@ import { LAST_FATAL_ERROR_KEY } from '../services/crashCapture';
 
 export default function RootLayout() {
   useEffect(() => {
-    try {
-      initRevenueCat();
-    } catch {
-      // RevenueCat init failed — app runs in free mode
+    // 【iOS 26クラッシュ切り分けのため一時的に無効化】
+    // RevenueCat公式の未解決バグ（Issue #1712: iOS 26 + New Architecture で
+    // TurboModule例外により起動時クラッシュ）が原因か確認するため、
+    // Purchases.configure() の呼び出しを一時停止して検証する。
+    // クラッシュが消えれば犯人確定。その後、安全な形で課金機能を組み直す。
+    const REVENUECAT_ENABLED = false;
+    if (REVENUECAT_ENABLED) {
+      try {
+        initRevenueCat();
+      } catch {
+        // RevenueCat init failed — app runs in free mode
+      }
     }
   }, []);
 
