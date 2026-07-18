@@ -152,7 +152,7 @@ export default function CertPaywall({
             </Text>
           </View>
           <View style={styles.bannerBtn}>
-            <Text style={styles.bannerBtnText}>Proを見る</Text>
+            <Text style={styles.bannerBtnText}>{Platform.OS === 'web' ? '詳細' : 'Proを見る'}</Text>
           </View>
         </LinearGradient>
       </TouchableOpacity>
@@ -173,6 +173,21 @@ export default function CertPaywall({
           </View>
 
           <ScrollView contentContainerStyle={styles.modalScroll} showsVerticalScrollIndicator={false}>
+            {Platform.OS === 'web' && (
+              // Web版では購入導線を出さない（二重払い防止・誤課金防止）。
+              // 購入はiOSアプリ内課金に一本化し、Webは案内のみ。
+              <View style={styles.webNotice}>
+                <Text style={styles.webNoticeTitle}>🍎 ご購入はiOSアプリから</Text>
+                <Text style={styles.webNoticeText}>
+                  プランのご購入は、iPhone/iPadの「QualiZ」アプリ内で行えます。
+                  すでにアプリでご購入済みの方は、同じ端末のアプリでそのままご利用いただけます。
+                  二重のお支払いを防ぐため、Web上でのご購入は現在ご用意していません。
+                </Text>
+              </View>
+            )}
+            {/* Web版は購入UI（切替・プランカード・復元）を出さない — 課金はiOSアプリに一本化 */}
+            {Platform.OS !== 'web' && (
+            <>
             {/* 月払い／年払い切り替え */}
             <View style={styles.periodToggle}>
               <TouchableOpacity
@@ -218,6 +233,8 @@ export default function CertPaywall({
             <TouchableOpacity onPress={handleRestore} style={styles.restoreBtn} disabled={purchasing}>
               <Text style={styles.restoreBtnText}>購入を復元する</Text>
             </TouchableOpacity>
+            </>
+            )}
 
             {/* サブスクリプションに関する説明（ストア審査必須項目） */}
             <Text style={styles.legalNote}>
@@ -307,6 +324,12 @@ const styles = StyleSheet.create({
   modalCloseText: { fontSize: 20, fontWeight: '700', color: '#888' },
   modalScroll: { paddingTop: 20, paddingBottom: 40 },
   plansStack: { paddingHorizontal: 20, gap: 16, marginTop: 16 },
+  webNotice: {
+    marginHorizontal: 20, marginBottom: 8, backgroundColor: '#FFFFFF',
+    borderRadius: 14, padding: 16, borderWidth: 1, borderColor: '#E0E8F0',
+  },
+  webNoticeTitle: { fontSize: 15, fontWeight: '900', color: '#1A1A2E', marginBottom: 6 },
+  webNoticeText: { fontSize: 13, color: '#555', lineHeight: 21, fontWeight: '500' },
   bannerBody: { flex: 1 },
   periodToggle: {
     flexDirection: 'row', alignSelf: 'center', backgroundColor: '#E8EAF0',
