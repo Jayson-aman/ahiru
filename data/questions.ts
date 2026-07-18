@@ -11,6 +11,9 @@ export type Question = {
 
 export type SubjectKey = 'sansu' | 'kokugo' | 'rika' | 'shakai' | 'eigo';
 
+// 中学入試本番レベルの追加問題（各科目100問・計500問）
+import { questionsPart2 } from './questions_part2';
+
 export const questions: Question[] = [
   // ============================================================
   // 算数 (sansu) - 100問
@@ -3709,6 +3712,9 @@ export const questions: Question[] = [
     difficulty: 'advanced',
   },
 ];
+
+// 既存の questions 配列に追記して取り込む（公開APIは不変）
+questions.push(...questionsPart2);
 
 export const questionsBySubject: Record<SubjectKey, Question[]> = {
   sansu: questions.filter((q) => q.subject === 'sansu'),
