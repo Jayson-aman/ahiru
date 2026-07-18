@@ -2,6 +2,7 @@ import React from 'react';
 import { View, Text, StyleSheet, SafeAreaView, TouchableOpacity, ScrollView } from 'react-native';
 import { useLocalSearchParams, useRouter } from 'expo-router';
 import { getTakkeiText } from '../../../data/takkei_text';
+import StudyText from '../../../components/StudyText';
 
 const INFO: Record<string, { name: string; emoji: string; color: string }> = {
   kenri: { name: '権利関係', emoji: '🤝', color: '#1565C0' },
@@ -60,7 +61,7 @@ export default function TakkeiTextScreen() {
               </TouchableOpacity>
               {open && (
                 <View style={styles.sectionBody}>
-                  <Text style={styles.bodyText}>{s.body}</Text>
+                  <StudyText text={s.body} accent={info.color} />
                 </View>
               )}
             </View>
