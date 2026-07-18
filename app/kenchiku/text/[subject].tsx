@@ -2,6 +2,7 @@ import React from 'react';
 import { View, Text, StyleSheet, SafeAreaView, TouchableOpacity, ScrollView } from 'react-native';
 import { useLocalSearchParams, useRouter } from 'expo-router';
 import { getKenchikuText } from '../../../data/kenchiku/text';
+import StudyText from '../../../components/StudyText';
 
 const INFO: Record<string, { name: string; emoji: string; color: string }> = {
   ippan: { name: '建築一般知識', emoji: '🏗️', color: '#1565C0' },
@@ -62,7 +63,7 @@ export default function KenchikuTextScreen() {
               </TouchableOpacity>
               {open && (
                 <View style={styles.sectionBody}>
-                  <Text style={styles.bodyText}>{s.body}</Text>
+                  <StudyText text={s.body} accent={info.color} />
                 </View>
               )}
             </View>

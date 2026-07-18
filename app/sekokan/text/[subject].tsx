@@ -2,6 +2,7 @@ import React from 'react';
 import { View, Text, StyleSheet, SafeAreaView, TouchableOpacity, ScrollView } from 'react-native';
 import { useLocalSearchParams, useRouter } from 'expo-router';
 import { getSekokanText } from '../../../data/sekokan/text';
+import StudyText from '../../../components/StudyText';
 
 const INFO: Record<string, { name: string; emoji: string; color: string }> = {
   kenchikugaku: { name: '建築学等', emoji: '📐', color: '#1565C0' },
@@ -60,7 +61,7 @@ export default function SekokanTextScreen() {
               </TouchableOpacity>
               {open && (
                 <View style={styles.sectionBody}>
-                  <Text style={styles.bodyText}>{s.body}</Text>
+                  <StudyText text={s.body} accent={info.color} />
                 </View>
               )}
             </View>

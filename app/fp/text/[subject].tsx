@@ -2,6 +2,7 @@ import React from 'react';
 import { View, Text, StyleSheet, SafeAreaView, TouchableOpacity, ScrollView } from 'react-native';
 import { useLocalSearchParams, useRouter } from 'expo-router';
 import { getFpText } from '../../../data/fp_text';
+import StudyText from '../../../components/StudyText';
 
 const INFO: Record<string, { name: string; emoji: string; color: string }> = {
   life: { name: 'ライフプランニングと資金計画', emoji: '👨‍👩‍👧', color: '#0D7C3D' },
@@ -62,7 +63,7 @@ export default function FpTextScreen() {
               </TouchableOpacity>
               {open && (
                 <View style={styles.sectionBody}>
-                  <Text style={styles.bodyText}>{s.body}</Text>
+                  <StudyText text={s.body} accent={info.color} />
                 </View>
               )}
             </View>

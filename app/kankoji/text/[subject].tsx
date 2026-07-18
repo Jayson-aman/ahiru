@@ -2,6 +2,7 @@ import React from 'react';
 import { View, Text, StyleSheet, SafeAreaView, TouchableOpacity, ScrollView } from 'react-native';
 import { useLocalSearchParams, useRouter } from 'expo-router';
 import { getKankojiText } from '../../../data/kankoji_text';
+import StudyText from '../../../components/StudyText';
 
 const INFO: Record<string, { name: string; emoji: string; color: string }> = {
   genron: { name: '原論・電気・建築', emoji: '🌡️', color: '#455A64' },
@@ -61,7 +62,7 @@ export default function KankojiTextScreen() {
               </TouchableOpacity>
               {open && (
                 <View style={styles.sectionBody}>
-                  <Text style={styles.bodyText}>{s.body}</Text>
+                  <StudyText text={s.body} accent={info.color} />
                 </View>
               )}
             </View>

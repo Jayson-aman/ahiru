@@ -1,5 +1,6 @@
-import React from 'react';
-import { View, Text, StyleSheet, Platform, TextStyle, StyleProp } from 'react-native';
+import React, { useEffect, useRef, useState } from 'react';
+import { View, Text, StyleSheet, Platform, TextStyle, StyleProp, TouchableOpacity, Animated } from 'react-native';
+import * as Speech from 'expo-speech';
 
 type Props = {
   text: string;
@@ -22,17 +23,53 @@ type Block =
 const SEP = /^[━─—\-=＝]{3,}$/;
 
 /**
- * 教科書本文（＝各資格の *_text.ts の body）を、色付きの図解つきで描画する共通レンダラー。
+ * 教科書本文（各資格の *_text.ts の body）を、色付き図解つきで描画する共通レンダラー。
  *  ・「🔑 見出し」 → アクセント色の見出しバー
- *  ・「【図解】…」ブロック → 枠付きカード＋行ごとに色分け（★⚠=橙 / ○◎=緑 / ×誤=赤 / →⇒=紫）
- *  ・「・」箇条書き → ドット付き、字下げにも対応
- *  ・「━━━」等の区切り線 → 見出しの装飾として吸収
- * これ一つで全13資格の教科書表示が一斉に見やすくなる。
+ *  ・「【図解】…」ブロック → 枠付きカード（表示時にふわっと動いて現れる）＋行ごとに色分け
+ *  ・「・」箇条書き → ドット付き
+ *  ・上部に「🔊 音声で聞く」＝ expo-speech で本文を読み上げ（動画説明の代わり／容量ゼロ）
+ * これ一つで全13資格の教科書が一斉に「見やすい・動く・聞ける」表示になる。
  */
 export default function StudyText({ text, accent = '#1565C0' }: Props) {
   const blocks = parse(text ?? '');
+  const [speaking, setSpeaking] = useState(false);
+  let figIndex = 0;
+
+  useEffect(() => {
+    // 画面を離れる／本文が変わったら読み上げを止める
+    return () => { Speech.stop(); };
+  }, [text]);
+
+  const toggleSpeak = () => {
+    if (speaking) {
+      Speech.stop();
+      setSpeaking(false);
+      return;
+    }
+    const spoken = toSpeech(text ?? '');
+    if (!spoken) return;
+    setSpeaking(true);
+    Speech.speak(spoken, {
+      language: 'ja-JP',
+      rate: Platform.OS === 'ios' ? 0.5 : 1.0,
+      onDone: () => setSpeaking(false),
+      onStopped: () => setSpeaking(false),
+      onError: () => setSpeaking(false),
+    });
+  };
+
   return (
     <View style={s.wrap}>
+      <TouchableOpacity
+        onPress={toggleSpeak}
+        activeOpacity={0.8}
+        style={[s.audioBtn, { borderColor: accent }, speaking && { backgroundColor: accent }]}
+      >
+        <Text style={[s.audioBtnText, { color: speaking ? '#fff' : accent }]}>
+          {speaking ? '⏹ 停止' : '🔊 音声で聞く'}
+        </Text>
+      </TouchableOpacity>
+
       {blocks.map((b, i) => {
         if (b.kind === 'header') {
           return (
@@ -43,21 +80,24 @@ export default function StudyText({ text, accent = '#1565C0' }: Props) {
           );
         }
         if (b.kind === 'diagram') {
+          const delay = Math.min(figIndex * 90, 450);
+          figIndex += 1;
           return (
-            <View key={i} style={s.figBox}>
-              <View style={s.figHead}>
-                <View style={[s.figChip, { backgroundColor: accent }]}>
-                  <Text style={s.figChipText}>図解</Text>
+            <AnimatedFig key={i} delay={delay}>
+              <View style={s.figBox}>
+                <View style={s.figHead}>
+                  <View style={[s.figChip, { backgroundColor: accent }]}>
+                    <Text style={s.figChipText}>図解</Text>
+                  </View>
+                  {b.title ? <Text style={[s.figTitle, { color: shade(accent) }]}>{b.title}</Text> : null}
                 </View>
-                {b.title ? <Text style={[s.figTitle, { color: shade(accent) }]}>{b.title}</Text> : null}
+                {b.lines.map((ln, j) => (
+                  <Text key={j} style={lineStyle(ln)}>{ln.length ? ln : ' '}</Text>
+                ))}
               </View>
-              {b.lines.map((ln, j) => (
-                <Text key={j} style={lineStyle(ln)}>{ln.length ? ln : ' '}</Text>
-              ))}
-            </View>
+            </AnimatedFig>
           );
         }
-        // paragraph
         return (
           <View key={i} style={s.para}>
             {b.lines.map((ln, j) => renderParaLine(ln, j))}
@@ -66,6 +106,19 @@ export default function StudyText({ text, accent = '#1565C0' }: Props) {
       })}
     </View>
   );
+}
+
+/** 表示時にふわっと現れる図解カード */
+function AnimatedFig({ children, delay }: { children: React.ReactNode; delay: number }) {
+  const o = useRef(new Animated.Value(0)).current;
+  const y = useRef(new Animated.Value(10)).current;
+  useEffect(() => {
+    Animated.parallel([
+      Animated.timing(o, { toValue: 1, duration: 340, delay, useNativeDriver: true }),
+      Animated.timing(y, { toValue: 0, duration: 340, delay, useNativeDriver: true }),
+    ]).start();
+  }, []);
+  return <Animated.View style={{ opacity: o, transform: [{ translateY: y }] }}>{children}</Animated.View>;
 }
 
 function parse(text: string): Block[] {
@@ -98,7 +151,6 @@ function parse(text: string): Block[] {
       i = j; continue;
     }
 
-    // paragraph
     const para: string[] = [];
     while (i < lines.length && !isBoundary(lines[i].trim())) {
       para.push(lines[i]);
@@ -107,6 +159,19 @@ function parse(text: string): Block[] {
     if (para.length) out.push({ kind: 'para', lines: para });
   }
   return out;
+}
+
+/** 読み上げ用にマークアップ記号を除去 */
+function toSpeech(text: string): string {
+  return text
+    .replace(/\r/g, '')
+    .split('\n')
+    .map((l) => l.trim())
+    .filter((l) => l && !SEP.test(l))
+    .map((l) => l.replace(/【図解】/g, '図解。').replace(/^🔑\s*/, '').replace(/[★⚠◎○×✕→⇒]/g, ' '))
+    .join('。')
+    .replace(/。+/g, '。')
+    .slice(0, 3800); // 長すぎる読み上げを防ぐ
 }
 
 function lineStyle(ln: string): StyleProp<TextStyle> {
@@ -123,7 +188,6 @@ function renderParaLine(ln: string, key: number) {
   const trimmed = t.trim();
   if (trimmed === '') return <View key={key} style={{ height: 6 }} />;
   const hot = trimmed.includes('★') || trimmed.includes('⚠');
-  // 箇条書き（・ や 全角スペース字下げ）
   const bulletMatch = trimmed.match(/^([・\-])\s?(.*)$/);
   if (bulletMatch) {
     return (
@@ -133,7 +197,6 @@ function renderParaLine(ln: string, key: number) {
       </View>
     );
   }
-  // 字下げ（先頭が全角/半角スペース）
   const indent = /^[ 　]+/.test(t) ? 14 : 0;
   return (
     <Text key={key} style={[s.body, hot && s.bodyHot, indent ? { paddingLeft: indent } : null]}>
@@ -142,7 +205,6 @@ function renderParaLine(ln: string, key: number) {
   );
 }
 
-/** アクセント色を少し濃く（見出しタイトル用） */
 function shade(hex: string): string {
   const m = hex.replace('#', '');
   if (m.length !== 6) return hex;
@@ -154,6 +216,11 @@ function shade(hex: string): string {
 
 const s = StyleSheet.create({
   wrap: { gap: 10, paddingTop: 12 },
+  audioBtn: {
+    alignSelf: 'flex-start', flexDirection: 'row', alignItems: 'center',
+    borderWidth: 1.5, borderRadius: 999, paddingHorizontal: 14, paddingVertical: 6, marginBottom: 2,
+  },
+  audioBtnText: { fontSize: 12.5, fontWeight: '800' },
   headerRow: { flexDirection: 'row', alignItems: 'center', gap: 9, marginTop: 6 },
   headerBar: { width: 4, alignSelf: 'stretch', minHeight: 18, borderRadius: 2 },
   headerText: { flex: 1, fontSize: 15.5, fontWeight: '900', letterSpacing: 0.2, lineHeight: 22 },
