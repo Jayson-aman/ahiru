@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text, StyleSheet, SafeAreaView, TouchableOpacity, ScrollView } from 'react-native';
+import { View, Text, StyleSheet, SafeAreaView, TouchableOpacity, ScrollView, Image } from 'react-native';
 import { useRouter } from 'expo-router';
 import { LinearGradient } from 'expo-linear-gradient';
 
@@ -9,9 +9,7 @@ export default function HomeScreen() {
   return (
     <SafeAreaView style={styles.container}>
       <LinearGradient colors={['#1B2A5C', '#0D3D8A']} style={styles.header}>
-        <View style={styles.appLogo}>
-          <Text style={styles.appLogoText}>QZ</Text>
-        </View>
+        <Image source={require('../../assets/icon.png')} style={styles.appLogo} />
         <View>
           <Text style={styles.appTitle}>QualiZ</Text>
           <Text style={styles.appSubtitle}>国家資格・検定の合格ナビ</Text>
@@ -219,8 +217,7 @@ const styles = StyleSheet.create({
     paddingHorizontal: 24, paddingTop: 20, paddingBottom: 26,
     flexDirection: 'row', alignItems: 'center', justifyContent: 'center', gap: 16,
   },
-  appLogo: { width: 64, height: 64, borderRadius: 15, backgroundColor: 'rgba(255,255,255,0.15)', alignItems: 'center', justifyContent: 'center' },
-  appLogoText: { color: '#FFFFFF', fontSize: 26, fontWeight: '900', letterSpacing: 1 },
+  appLogo: { width: 64, height: 64, borderRadius: 15 },
   appTitle: { fontSize: 24, fontWeight: '900', color: '#FFFFFF', letterSpacing: 1.5, marginBottom: 3 },
   appSubtitle: { fontSize: 13, color: 'rgba(255,255,255,0.75)', fontWeight: '600' },
   scroll: { flex: 1 },
