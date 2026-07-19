@@ -4,6 +4,8 @@ export type { KenchikuQuestion };
 import { ippanQuestions } from './ippan-questions';
 import { ippanQuestionsPart2 } from './ippan-questions-part2';
 import { allHokiQuestions } from './hoki-questions';
+import { hokiQuestionsPart2 } from './hoki-questions-part2';
+import { hokiQuestionsPart3 } from './hoki-questions-part3';
 import { kuchoQuestions_part1 } from './kucho-questions';
 import { kuchoQuestions_part2 } from './kucho-questions-part2';
 import { kuchoQuestionsPart3a } from './kucho-questions-part3a';
@@ -32,6 +34,8 @@ export const kenchikuQuestions: KenchikuQuestion[] = [
   ...ippanQuestions,
   ...ippanQuestionsPart2,
   ...allHokiQuestions,
+  ...hokiQuestionsPart2,
+  ...hokiQuestionsPart3,
   ...kuchoQuestions_part1,
   ...kuchoQuestions_part2,
   ...kuchoQuestionsPart3a,
