@@ -10,6 +10,19 @@ export type FPQuestion = {
   level: '3級' | '2級';
 };
 
+import { fpLifeQuestions6 } from './fp_questions_life6';
+import { fpLifeQuestions7 } from './fp_questions_life7';
+import { fpRiskQuestions6 } from './fp_questions_risk6';
+import { fpRiskQuestions7 } from './fp_questions_risk7';
+import { fpAssetQuestions6 } from './fp_questions_asset6';
+import { fpAssetQuestions7 } from './fp_questions_asset7';
+import { fpTaxQuestions6 } from './fp_questions_tax6';
+import { fpTaxQuestions7 } from './fp_questions_tax7';
+import { fpEstateQuestions6 } from './fp_questions_estate6';
+import { fpEstateQuestions7 } from './fp_questions_estate7';
+import { fpInhQuestions6 } from './fp_questions_inh6';
+import { fpInhQuestions7 } from './fp_questions_inh7';
+
 export const fpQuestions: FPQuestion[] = [
   // ===================== ライフプランニングと資金計画 =====================
   { id: 'fp_life_01', subject: 'life', subjectName: 'ライフプランニングと資金計画', question: '国民年金の受給資格期間に関する記述として正しいものはどれか。', choices: [{ key: 'A', text: '保険料の納付済期間のみが受給資格期間として算入され、免除期間は含まれない', explanation: '保険料免除期間（全額・一部）も受給資格期間に算入される' }, { key: 'B', text: '合算対象期間（カラ期間）は受給資格期間に算入されるが、年金額の計算には含まれない', explanation: '合算対象期間は受給資格期間にはカウントされるが年金額には反映されない。正しい説明である' }, { key: 'C', text: '受給資格期間が10年に満たない場合でも、65歳到達時点で自動的に老齢基礎年金が支給される', explanation: '受給資格期間が10年に満たない場合、老齢基礎年金は支給されない' }, { key: 'D', text: '第3号被保険者期間は受給資格期間に算入されるが、合算対象期間には含まれない', explanation: '第3号被保険者期間は受給資格期間に算入されるが、合算対象期間（カラ期間）は別の概念' }], correctKey: 'B', explanation: '合算対象期間（カラ期間）は、受給資格期間の10年には算入されるが、年金額の計算には反映されない。保険料免除期間は受給資格期間にも年金額計算にも算入される（一定割合）。', difficulty: 'standard', level: '3級' },
@@ -106,4 +119,17 @@ export const fpQuestions: FPQuestion[] = [
   { id: 'fp_inh_315', subject: 'inheritance', subjectName: '相続・事業承継', question: '遺留分を有する者（遺留分権利者）の範囲として正しいものはどれか。', choices: [{ key: 'A', text: '遺留分権利者には内縁の配偶者も含まれる', explanation: '誤り。内縁の配偶者は法定相続人ではないため、遺留分権利者にも該当しない' }, { key: 'B', text: '遺留分権利者には兄弟姉妹も含まれる', explanation: '誤り。兄弟姉妹には遺留分が認められていない' }, { key: 'C', text: '遺留分権利者は配偶者のみである', explanation: '誤り。配偶者だけでなく、子（代襲相続人を含む）・直系尊属にも遺留分が認められる' }, { key: 'D', text: '遺留分権利者は配偶者・子（またはその代襲相続人）・直系尊属であり、兄弟姉妹には遺留分が認められない', explanation: '正しい。民法1042条により、遺留分を有するのは兄弟姉妹以外の相続人、すなわち配偶者・子（代襲相続人を含む）・直系尊属である' }], correctKey: 'D', explanation: '遺留分権利者は★配偶者・子（代襲相続人を含む）・直系尊属であり、兄弟姉妹（およびその代襲相続人である甥姪）には遺留分が認められない。内縁の配偶者は法定相続人でないため遺留分も認められない。', difficulty: 'basic', level: '3級' },
   { id: 'fp_inh_316', subject: 'inheritance', subjectName: '相続・事業承継', question: '事業承継税制（非上場株式等に係る相続税・贈与税の納税猶予制度）の制度趣旨に関する記述として正しいものはどれか。', choices: [{ key: 'A', text: '事業承継税制は、中小企業の後継者が非上場株式等を相続・贈与により取得した場合の相続税・贈与税の納税を猶予・免除することで、税負担が事業承継の障害とならないようにする制度である', explanation: '正しい。事業承継税制は、非上場株式の評価額が高額になりやすく後継者の納税負担が事業承継の大きな障害となることを踏まえ、一定の要件のもとで相続税・贈与税の納税を猶予し、後継者がさらに次の世代へ承継する等の要件を満たせば猶予税額を免除する制度' }, { key: 'B', text: '事業承継税制は上場企業の株式を対象とする制度である', explanation: '誤り。事業承継税制は非上場株式等（中小企業の自社株式）を対象とする制度であり、上場株式は対象外' }, { key: 'C', text: '事業承継税制は納税を免除するだけであり猶予の仕組みはない', explanation: '誤り。事業承継税制はまず納税を「猶予」し、一定の要件（次の後継者への承継等）を満たせば猶予税額が「免除」される2段階の仕組みになっている' }, { key: 'D', text: '事業承継税制の適用に会社の規模要件はなく、大企業も対象となる', explanation: '誤り。事業承継税制は中小企業者（中小企業基本法上の中小企業者の定義に該当する会社）を対象とする制度であり、大企業は対象外' }], correctKey: 'A', explanation: '事業承継税制は、★中小企業の非上場株式等の評価額の高さが後継者の相続税・贈与税負担を通じて事業承継の障害となることを防ぐため、要件を満たす後継者への株式承継について相続税・贈与税の納税を猶予し、さらに次世代への承継等の要件を満たせば猶予税額を免除する制度。中小企業者を対象とし上場企業・大企業は対象外。', difficulty: 'standard', level: '2級' },
   { id: 'fp_inh_317', subject: 'inheritance', subjectName: '相続・事業承継', question: '死亡保険金の相続税における非課税枠の基本的な仕組みに関する記述として正しいものはどれか。', choices: [{ key: 'A', text: 'この非課税枠は死亡退職金の非課税枠と合算した金額が上限となる', explanation: '誤り。死亡保険金の非課税枠と死亡退職金の非課税枠は、それぞれ別個に「500万円×法定相続人の数」が適用される（合算した1つの上限ではない）' }, { key: 'B', text: 'この非課税枠は相続人以外の者が死亡保険金を受け取った場合にも適用される', explanation: '誤り。この非課税枠は相続人が受け取った死亡保険金にのみ適用され、相続人以外の者（内縁の配偶者、相続放棄をした者等）が受け取った場合は適用されない' }, { key: 'C', text: 'この非課税枠は死亡保険金の金額にかかわらず全額を非課税とするものである', explanation: '誤り。非課税となるのは「500万円×法定相続人の数」までの部分であり、これを超える部分は相続税の課税対象となる' }, { key: 'D', text: '契約者・被保険者が被相続人で受取人が相続人である死亡保険金は、「500万円×法定相続人の数」までの金額が相続税の非課税財産となる', explanation: '正しい。死亡保険金（みなし相続財産）のうち、相続人が受け取った部分については「500万円×法定相続人の数」の金額が相続税の非課税財産とされる（相続人以外が受け取った部分には非課税枠は適用されない）' }], correctKey: 'D', explanation: '相続人が受け取った死亡保険金（みなし相続財産）には★「500万円×法定相続人の数」の非課税枠が適用される。相続放棄をした者や相続人以外の者が受け取った保険金には非課税枠は適用されない。死亡退職金にも別途同様の非課税枠が設けられている。', difficulty: 'basic', level: '3級' },
+  // ===================== 追加問題バンク（6・7シリーズ） =====================
+  ...fpLifeQuestions6,
+  ...fpLifeQuestions7,
+  ...fpRiskQuestions6,
+  ...fpRiskQuestions7,
+  ...fpAssetQuestions6,
+  ...fpAssetQuestions7,
+  ...fpTaxQuestions6,
+  ...fpTaxQuestions7,
+  ...fpEstateQuestions6,
+  ...fpEstateQuestions7,
+  ...fpInhQuestions6,
+  ...fpInhQuestions7,
 ];
