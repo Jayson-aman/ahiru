@@ -12,20 +12,28 @@ export type Denken3Question = {
 
 import { denken3Rikigaku } from './denken3_questions_rikigaku';
 import { denken3Rikigaku2 } from './denken3_questions_rikigaku2';
+import { denken3Rikigaku3 } from './denken3_questions_rikigaku3';
 import { denken3Denryoku } from './denken3_questions_denryoku';
 import { denken3Denryoku2 } from './denken3_questions_denryoku2';
+import { denken3Denryoku3 } from './denken3_questions_denryoku3';
 import { denken3Kikai } from './denken3_questions_kikai';
 import { denken3Kikai2 } from './denken3_questions_kikai2';
+import { denken3Kikai3 } from './denken3_questions_kikai3';
 import { denken3Houki } from './denken3_questions_houki';
 import { denken3Houki2 } from './denken3_questions_houki2';
+import { denken3Houki3 } from './denken3_questions_houki3';
 
 export const denken3Questions: Denken3Question[] = [
   ...denken3Rikigaku,
   ...denken3Rikigaku2,
+  ...denken3Rikigaku3,
   ...denken3Denryoku,
   ...denken3Denryoku2,
+  ...denken3Denryoku3,
   ...denken3Kikai,
   ...denken3Kikai2,
+  ...denken3Kikai3,
   ...denken3Houki,
   ...denken3Houki2,
+  ...denken3Houki3,
 ];

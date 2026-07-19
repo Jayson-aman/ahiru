@@ -2,6 +2,7 @@ import type { KenchikuQuestion } from './types';
 export type { KenchikuQuestion };
 
 import { ippanQuestions } from './ippan-questions';
+import { ippanQuestionsPart2 } from './ippan-questions-part2';
 import { allHokiQuestions } from './hoki-questions';
 import { kuchoQuestions_part1 } from './kucho-questions';
 import { kuchoQuestions_part2 } from './kucho-questions-part2';
@@ -29,6 +30,7 @@ const normalize = (q: KenchikuQuestion): KenchikuQuestion => ({
 
 export const kenchikuQuestions: KenchikuQuestion[] = [
   ...ippanQuestions,
+  ...ippanQuestionsPart2,
   ...allHokiQuestions,
   ...kuchoQuestions_part1,
   ...kuchoQuestions_part2,
