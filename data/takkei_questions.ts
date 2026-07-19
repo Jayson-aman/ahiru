@@ -21,6 +21,11 @@ import { takkeiKenri7 } from './takkei_questions_kenri_7';
 import { takkeiKenri8 } from './takkei_questions_kenri_8';
 import { takkeiKenri9 } from './takkei_questions_kenri_9';
 import { takkeiKenri10 } from './takkei_questions_kenri_10';
+import { takkeiKenri11 } from './takkei_questions_kenri_11';
+import { takkeiKenri12 } from './takkei_questions_kenri_12';
+import { takkeiKenri13 } from './takkei_questions_kenri_13';
+import { takkeiKenri14 } from './takkei_questions_kenri_14';
+import { takkeiKenri15 } from './takkei_questions_kenri_15';
 import { takkeiGyoho1 } from './takkei_questions_gyoho_1';
 import { takkeiGyoho2 } from './takkei_questions_gyoho_2';
 import { takkeiGyoho3 } from './takkei_questions_gyoho_3';
@@ -51,6 +56,11 @@ export const takkeiQuestions: TakkeiQuestion[] = [
   ...takkeiKenri8,
   ...takkeiKenri9,
   ...takkeiKenri10,
+  ...takkeiKenri11,
+  ...takkeiKenri12,
+  ...takkeiKenri13,
+  ...takkeiKenri14,
+  ...takkeiKenri15,
   ...takkeiGyoho1,
   ...takkeiGyoho2,
   ...takkeiGyoho3,
