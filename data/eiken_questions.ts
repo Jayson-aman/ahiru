@@ -35,19 +35,45 @@ import { eikenQuestionsListening } from './eiken_questions_listening';
 import { eikenQuestions4kyuIdiom } from './eiken_questions_4kyu_idiom';
 import { eikenQuestions3kyuIdiom } from './eiken_questions_3kyu_idiom';
 import { eikenQuestions2kyuIdiom } from './eiken_questions_2kyu_idiom';
+import { eikenQuestions4kyu4 } from './eiken_questions_4kyu4';
+import { eikenQuestions4kyu5 } from './eiken_questions_4kyu5';
+import { eikenQuestions4kyu6 } from './eiken_questions_4kyu6';
+import { eikenQuestions3kyu4 } from './eiken_questions_3kyu4';
+import { eikenQuestions3kyu5 } from './eiken_questions_3kyu5';
+import { eikenQuestions3kyu6 } from './eiken_questions_3kyu6';
+import { eikenQuestions2kyu4 } from './eiken_questions_2kyu4';
+import { eikenQuestions2kyu5 } from './eiken_questions_2kyu5';
+import { eikenQuestions2kyu6 } from './eiken_questions_2kyu6';
+import { eikenQuestions4kyuIdiom2 } from './eiken_questions_4kyu_idiom2';
+import { eikenQuestions3kyuIdiom2 } from './eiken_questions_3kyu_idiom2';
+import { eikenQuestions2kyuIdiom2 } from './eiken_questions_2kyu_idiom2';
+import { eikenQuestionsListening2 } from './eiken_questions_listening2';
 
 export const eikenQuestions: EikenQuestion[] = [
   ...eikenQuestions4kyu,
   ...eikenQuestions4kyu2,
   ...eikenQuestions4kyu3,
+  ...eikenQuestions4kyu4,
+  ...eikenQuestions4kyu5,
+  ...eikenQuestions4kyu6,
   ...eikenQuestions3kyu,
   ...eikenQuestions3kyu2,
   ...eikenQuestions3kyu3,
+  ...eikenQuestions3kyu4,
+  ...eikenQuestions3kyu5,
+  ...eikenQuestions3kyu6,
   ...eikenQuestions2kyu,
   ...eikenQuestions2kyu2,
   ...eikenQuestions2kyu3,
+  ...eikenQuestions2kyu4,
+  ...eikenQuestions2kyu5,
+  ...eikenQuestions2kyu6,
   ...eikenQuestionsListening,
+  ...eikenQuestionsListening2,
   ...eikenQuestions4kyuIdiom,
+  ...eikenQuestions4kyuIdiom2,
   ...eikenQuestions3kyuIdiom,
+  ...eikenQuestions3kyuIdiom2,
   ...eikenQuestions2kyuIdiom,
+  ...eikenQuestions2kyuIdiom2,
 ];
