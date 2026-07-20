@@ -12,6 +12,7 @@ export type TakkeiQuestion = {
 
 import { takkeiKenri1 } from './takkei_questions_kenri_1';
 import { takkeiKosuToukei } from './takkei_questions_kosu_toukei';
+import { takkeiKosuToukei2 } from './takkei_questions_kosu_toukei2';
 import { takkeiKenri2 } from './takkei_questions_kenri_2';
 import { takkeiKenri3 } from './takkei_questions_kenri_3';
 import { takkeiKenri4 } from './takkei_questions_kenri_4';
@@ -47,15 +48,18 @@ import { takkeiHorei3 } from './takkei_questions_horei3';
 import { takkeiHorei4 } from './takkei_questions_horei4';
 import { takkeiHorei5 } from './takkei_questions_horei5';
 import { takkeiHorei6 } from './takkei_questions_horei6';
+import { takkeiHorei7 } from './takkei_questions_horei7';
 import { takkeiZei } from './takkei_questions_zei';
 import { takkeiQuestionsZei2 } from './takkei_questions_zei2';
 import { takkeiZei3 } from './takkei_questions_zei3';
 import { takkeiZei4 } from './takkei_questions_zei4';
 import { takkeiZei5 } from './takkei_questions_zei5';
 import { takkeiZei6 } from './takkei_questions_zei6';
+import { takkeiZei7 } from './takkei_questions_zei7';
 
 export const takkeiQuestions: TakkeiQuestion[] = [
   ...takkeiKosuToukei,
+  ...takkeiKosuToukei2,
   ...takkeiKenri1,
   ...takkeiKenri2,
   ...takkeiKenri3,
@@ -92,10 +96,12 @@ export const takkeiQuestions: TakkeiQuestion[] = [
   ...takkeiHorei4,
   ...takkeiHorei5,
   ...takkeiHorei6,
+  ...takkeiHorei7,
   ...takkeiZei,
   ...takkeiQuestionsZei2,
   ...takkeiZei3,
   ...takkeiZei4,
   ...takkeiZei5,
   ...takkeiZei6,
+  ...takkeiZei7,
 ];
