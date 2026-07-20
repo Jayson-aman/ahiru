@@ -17,6 +17,7 @@ import { dobokusekouSenmon5 } from './dobokusekou_questions_senmon5';
 import { dobokusekouKanri4 } from './dobokusekou_questions_kanri4';
 import { dobokusekouKanri5 } from './dobokusekou_questions_kanri5';
 import { dobokusekouHoki4 } from './dobokusekou_questions_hoki4';
+import { dobokusekouHoki5 } from './dobokusekou_questions_hoki5';
 
 export const dobokusekouQuestions: DobokusekouQuestion[] = [
   // ===== 土木一般（土工・コンクリート工・基礎工）7問 =====
@@ -4557,4 +4558,5 @@ export const dobokusekouQuestions: DobokusekouQuestion[] = [
   ...dobokusekouKanri4,
   ...dobokusekouKanri5,
   ...dobokusekouHoki4,
+  ...dobokusekouHoki5,
 ];
