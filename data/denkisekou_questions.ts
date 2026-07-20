@@ -10,6 +10,15 @@ export type DenkisekouQuestion = {
   difficulty: 'basic' | 'standard' | 'advanced';
 };
 
+import { denkisekouRiron2 } from './denkisekou_questions_riron2';
+import { denkisekouRiron3 } from './denkisekou_questions_riron3';
+import { denkisekouSetsubi2 } from './denkisekou_questions_setsubi2';
+import { denkisekouSetsubi3 } from './denkisekou_questions_setsubi3';
+import { denkisekouSekou2 } from './denkisekou_questions_sekou2';
+import { denkisekouSekou3 } from './denkisekou_questions_sekou3';
+import { denkisekouHoki2 } from './denkisekou_questions_hoki2';
+import { denkisekouHoki3 } from './denkisekou_questions_hoki3';
+
 export const denkisekouQuestions: DenkisekouQuestion[] = [
   // ===== 電気工学 75問 =====
   {
@@ -987,6 +996,8 @@ export const denkisekouQuestions: DenkisekouQuestion[] = [
     explanation: 'ホイートストンブリッジは中程度の抵抗値の精密測定に適する。絶縁抵抗のような超高抵抗の測定には絶縁抵抗計（メガー）等が用いられる。\n【図解】ホイートストンブリッジの原理\n　○検流計ゼロ（平衡）となるよう可変抵抗を調整★\n　○平衡時は電源電圧変動の影響を受けにくい\n　×主に絶縁抵抗（メグオーム）測定に用いられる（誤り）⚠\n　→ 接地抵抗の精密測定にはコロラウシュブリッジを応用★',
     difficulty: 'advanced',
   },
+  ...denkisekouRiron2,
+  ...denkisekouRiron3,
   // ===== 電気設備 75問 =====
   {
     id: 'ds-setsubi-001', subject: 'setsubi', subjectName: '電気設備',
@@ -1963,6 +1974,8 @@ export const denkisekouQuestions: DenkisekouQuestion[] = [
     explanation: 'BEMSは計測・見える化に加え、空調・照明等の自動制御機能を持つことが多い。「自動制御機能はない」は実際の機能を過小評価した誤り。\n【図解】BEMS（ビルエネルギー管理システム）\n　○デマンド監視と連携しピークカット制御に活用★\n　○省エネ法に基づくエネルギー管理の一環として位置づけ\n　×見える化のみで自動制御機能は持たない（誤り）⚠\n　→ 収集データに基づき空調・照明等を自動制御★',
     difficulty: 'advanced',
   },
+  ...denkisekouSetsubi2,
+  ...denkisekouSetsubi3,
   // ===== 施工管理法 75問 =====
   {
     id: 'ds-sekou-001', subject: 'sekou', subjectName: '施工管理法',
@@ -2939,6 +2952,8 @@ export const denkisekouQuestions: DenkisekouQuestion[] = [
     explanation: '電気工事の環境配慮は施工段階の廃棄物処理だけでなく、竣工後の運用段階の省エネ性能にも及ぶ。「運用段階には無関係」は誤り。\n【図解】電気工事施工の環境配慮\n　○高効率機器の採用は運用段階の省エネにも寄与★\n　○グリーン購入法に基づく環境負荷の少ない資機材選定\n　×環境配慮は施工段階の廃棄物処理のみに限られる（誤り）⚠\n　→ 廃棄物の減量化・リサイクルも重要な取組み★',
     difficulty: 'advanced',
   },
+  ...denkisekouSekou2,
+  ...denkisekouSekou3,
   // ===== 法規 75問 =====
   {
     id: 'ds-hoki-001', subject: 'hoki', subjectName: '法規',
@@ -3915,4 +3930,6 @@ export const denkisekouQuestions: DenkisekouQuestion[] = [
     explanation: '特定元方事業者の統括管理義務は現場の労働者数等の要件に応じて適用内容が異なり、あらゆる現場に常に一律ではない。\n【図解】特定元方事業者の統括管理\n　○建設業等の元方事業者が下請混在現場を統括管理★\n　○統括安全衛生責任者の選任・作業間の連絡調整等\n　×下請人数・作業内容にかかわらず常に一律適用（誤り）⚠\n　→ クレーンの合図統一・避難訓練の実施等も統括管理の対象★',
     difficulty: 'advanced',
   },
+  ...denkisekouHoki2,
+  ...denkisekouHoki3,
 ];
