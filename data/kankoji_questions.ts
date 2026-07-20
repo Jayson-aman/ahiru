@@ -10,6 +10,12 @@ export type KankojiQuestion = {
   difficulty: 'basic' | 'standard' | 'advanced';
 };
 
+import { kankojiGenron2 } from './kankoji_questions_genron2';
+import { kankojiKucho2 } from './kankoji_questions_kucho2';
+import { kankojiEisei2 } from './kankoji_questions_eisei2';
+import { kankojiSekou2 } from './kankoji_questions_sekou2';
+import { kankojiHoki2 } from './kankoji_questions_hoki2';
+
 export const kankojiQuestions: KankojiQuestion[] = [
   // ===== 原論・電気・建築学 60問 =====
   {
@@ -3916,4 +3922,9 @@ export const kankojiQuestions: KankojiQuestion[] = [
     explanation: '設備工事関連法令は国土交通省・厚生労働省・環境省など複数の省庁がそれぞれ所管している。\n【図解】主な関連法令と所管の考え方\n　建設業法：国土交通省★\n　労働安全衛生法：厚生労働省★\n　水道法：厚生労働省（水道整備・管理行政は移管の経緯あり）\n　廃棄物処理法・大気汚染防止法：環境省★\n　×「すべて国土交通省が単独所管」は誤り★（複数省庁が関与）\n○設備工事に関連する法令の所管は、法律ごとに異なる省庁にまたがっている\n→設備工事関連法令は国土交通省・厚生労働省・環境省など複数の省庁がそれぞれ所管して…',
     difficulty: 'advanced',
   },
+  ...kankojiGenron2,
+  ...kankojiKucho2,
+  ...kankojiEisei2,
+  ...kankojiSekou2,
+  ...kankojiHoki2,
 ];
