@@ -13,6 +13,7 @@ export type DobokusekouQuestion = {
 import { dobokusekouDoboku4 } from './dobokusekou_questions_doboku4';
 import { dobokusekouDoboku5 } from './dobokusekou_questions_doboku5';
 import { dobokusekouSenmon4 } from './dobokusekou_questions_senmon4';
+import { dobokusekouSenmon5 } from './dobokusekou_questions_senmon5';
 
 export const dobokusekouQuestions: DobokusekouQuestion[] = [
   // ===== 土木一般（土工・コンクリート工・基礎工）7問 =====
@@ -4549,4 +4550,5 @@ export const dobokusekouQuestions: DobokusekouQuestion[] = [
   ...dobokusekouDoboku4,
   ...dobokusekouDoboku5,
   ...dobokusekouSenmon4,
+  ...dobokusekouSenmon5,
 ];
