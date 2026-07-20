@@ -10,6 +10,10 @@ export type DobokusekouQuestion = {
   difficulty: 'basic' | 'standard' | 'advanced';
 };
 
+import { dobokusekouDoboku4 } from './dobokusekou_questions_doboku4';
+import { dobokusekouDoboku5 } from './dobokusekou_questions_doboku5';
+import { dobokusekouSenmon4 } from './dobokusekou_questions_senmon4';
+
 export const dobokusekouQuestions: DobokusekouQuestion[] = [
   // ===== 土木一般（土工・コンクリート工・基礎工）7問 =====
   {
@@ -4542,4 +4546,7 @@ export const dobokusekouQuestions: DobokusekouQuestion[] = [
     difficulty: 'advanced',
   },
 
+  ...dobokusekouDoboku4,
+  ...dobokusekouDoboku5,
+  ...dobokusekouSenmon4,
 ];

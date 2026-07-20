@@ -13,9 +13,15 @@ export type KishoQuestion = {
 import { kishoGakka1 } from './kisho_questions_gakka1';
 import { kishoGakka2 } from './kisho_questions_gakka2';
 import { kishoJitsumu } from './kisho_questions_jitsumu';
+import { kishoGakka1_2 } from './kisho_questions_gakka1_2';
+import { kishoGakka2_2 } from './kisho_questions_gakka2_2';
+import { kishoJitsumu_2 } from './kisho_questions_jitsumu_2';
 
 export const kishoQuestions: KishoQuestion[] = [
   ...kishoGakka1,
   ...kishoGakka2,
   ...kishoJitsumu,
+  ...kishoGakka1_2,
+  ...kishoGakka2_2,
+  ...kishoJitsumu_2,
 ];
