@@ -185,7 +185,7 @@ export const kikaisekouHokiQuestions2: KikaisekouQuestion[] = [
   },
   {
     id: 'ks-hoki-090', subject: 'hoki', subjectName: '法規',
-    question: '建設業法上の下請代金の支払に関する記述として、最も不適当なものはどれか。',
+    question: '特定建設業者を注文者とする下請契約における下請代金の支払期日に関する記述として、最も不適当なものはどれか。',
     choices: [
       { key: 'A', text: '元請負人は、下請負人からの工事目的物の完成通知を受けたときは、一定期間内に検査を完了することが求められている。', explanation: '適当。完成検査の期限に関する規定の趣旨である。' },
       { key: 'B', text: '元請負人は、下請代金の支払を、できる限り早期に行うよう配慮することが求められている。', explanation: '適当。早期支払への配慮に関する規定の趣旨である。' },
@@ -198,7 +198,7 @@ export const kikaisekouHokiQuestions2: KikaisekouQuestion[] = [
   },
   {
     id: 'ks-hoki-091', subject: 'hoki', subjectName: '法規',
-    question: '建設業法上の建設工事の請負契約書面の記載事項に関する記述として、最も不適当なものはどれか。',
+    question: '建設業法上、建設工事の請負契約における書面の交付義務に関する記述として、最も不適当なものはどれか。',
     choices: [
       { key: 'A', text: '請負契約の当事者は、工事内容、請負代金の額、工事着手・完成の時期等、法令に定める事項を書面に記載し、署名または記名押印して相互に交付することとされている。', explanation: '適当。建設業法における請負契約書面の記載事項・交付義務に関する規定の趣旨である。' },
       { key: 'B', text: '天災等による工期の変更や損害の負担に関する定めも、契約書面に記載すべき事項に含まれる。', explanation: '適当。不可抗力に関する取扱いも記載事項に含まれる。' },
@@ -211,7 +211,7 @@ export const kikaisekouHokiQuestions2: KikaisekouQuestion[] = [
   },
   {
     id: 'ks-hoki-092', subject: 'hoki', subjectName: '法規',
-    question: '施工体制台帳・発注者への提出等に関する記述として、最も不適当なものはどれか。',
+    question: '施工体制台帳の作成時期・備置きに関する記述として、最も不適当なものはどれか。',
     choices: [
       { key: 'A', text: '施工体制台帳は、下請負人の商号・名称や、請け負った建設工事の内容・工期等を記載した台帳である。', explanation: '適当。施工体制台帳の基本的な記載内容である。' },
       { key: 'B', text: '公共工事など一定の要件を満たす工事では、施工体制台帳の写しを発注者に提出することが求められる場合がある。', explanation: '適当。施工体制台帳の発注者提出義務に関する規定の趣旨である。' },
@@ -224,7 +224,7 @@ export const kikaisekouHokiQuestions2: KikaisekouQuestion[] = [
   },
   {
     id: 'ks-hoki-093', subject: 'hoki', subjectName: '法規',
-    question: '建設業法上の標識の掲示義務に関する記述として、最も不適当なものはどれか。',
+    question: '建設業法上、営業所（店舗）における標識の掲示義務に関する記述として、最も不適当なものはどれか。',
     choices: [
       { key: 'A', text: '建設業者は、その店舗及び建設工事の現場ごとに、公衆の見やすい場所に、商号・代表者名・許可年月日・許可番号等を記載した標識を掲げることとされている。', explanation: '適当。標識の掲示義務に関する規定の趣旨である。' },
       { key: 'B', text: '標識の掲示は、施工体制や許可業者であることを公衆に明らかにする趣旨がある。', explanation: '適当。標識掲示制度の趣旨である。' },
@@ -237,7 +237,7 @@ export const kikaisekouHokiQuestions2: KikaisekouQuestion[] = [
   },
   {
     id: 'ks-hoki-094', subject: 'hoki', subjectName: '法規',
-    question: '建設業法上の帳簿の備付け・保存義務に関する記述として、最も不適当なものはどれか。',
+    question: '建設業法上の帳簿及び添付書類の保存期間に関する記述として、最も不適当なものはどれか。',
     choices: [
       { key: 'A', text: '建設業者は、営業所ごとに帳簿を備え、請け負った建設工事に関する一定事項を記載することとされている。', explanation: '適当。帳簿の備付け義務に関する規定の趣旨である。' },
       { key: 'B', text: '帳簿には、注文者との契約内容や、下請負人との契約内容等に関する事項が記載される。', explanation: '適当。帳簿の記載事項の一例である。' },
@@ -263,7 +263,7 @@ export const kikaisekouHokiQuestions2: KikaisekouQuestion[] = [
   },
   {
     id: 'ks-hoki-096', subject: 'hoki', subjectName: '法規',
-    question: '道路法上の道路占用許可に関する記述として、最も不適当なものはどれか。',
+    question: '道路法上、道路の一時的な使用と占用許可の関係に関する記述として、最も不適当なものはどれか。',
     choices: [
       { key: 'A', text: '道路に工作物・物件等を設けて継続的に道路を使用しようとする場合、道路管理者の占用許可を受ける必要がある。', explanation: '適当。道路占用許可制度の基本的な内容である。' },
       { key: 'B', text: '工事用の足場や仮囲い等を道路上に設置する場合も、占用許可の対象となり得る。', explanation: '適当。工事関連の占用許可対象の一例である。' },
@@ -276,7 +276,7 @@ export const kikaisekouHokiQuestions2: KikaisekouQuestion[] = [
   },
   {
     id: 'ks-hoki-097', subject: 'hoki', subjectName: '法規',
-    question: '道路交通法上の道路使用許可に関する記述として、最も不適当なものはどれか。',
+    question: '道路占用許可（道路法）と道路使用許可（道路交通法）の関係に関する記述として、最も不適当なものはどれか。',
     choices: [
       { key: 'A', text: '道路において工事・作業を行う場合、所轄警察署長の道路使用許可が必要となることがある。', explanation: '適当。道路使用許可制度の基本的な内容である。' },
       { key: 'B', text: '道路使用許可は、道路における交通の安全と円滑を確保する観点から設けられている制度である。', explanation: '適当。道路使用許可制度の趣旨である。' },
@@ -289,7 +289,7 @@ export const kikaisekouHokiQuestions2: KikaisekouQuestion[] = [
   },
   {
     id: 'ks-hoki-098', subject: 'hoki', subjectName: '法規',
-    question: '道路交通法上の制限外積載許可等に関する記述として、最も不適当なものはどれか。',
+    question: '道路交通法上の制限外積載許可の要否に関する記述として、最も不適当なものはどれか。',
     choices: [
       { key: 'A', text: '自動車の積載物の大きさ・重量等が、道路交通法令に定める制限を超える場合、出発地を管轄する警察署長の許可（制限外積載許可）を受ける必要がある。', explanation: '適当。制限外積載許可制度の基本的な内容である。' },
       { key: 'B', text: '許可を受ける際には、必要に応じて、はみ出し部分への標識の取付け等の条件が付されることがある。', explanation: '適当。許可条件の一例についての正しい理解である。' },
@@ -315,7 +315,7 @@ export const kikaisekouHokiQuestions2: KikaisekouQuestion[] = [
   },
   {
     id: 'ks-hoki-100', subject: 'hoki', subjectName: '法規',
-    question: '車両制限令に基づく特殊車両通行許可の手続に関する記述として、最も不適当なものはどれか。',
+    question: '特殊車両通行許可の効力（許可の対象範囲）に関する記述として、最も不適当なものはどれか。',
     choices: [
       { key: 'A', text: '車両制限令に定める一般的制限値（幅・重量・高さ・長さ等）を超える車両で道路を通行しようとする場合、道路管理者の許可（特殊車両通行許可）を受ける必要がある。', explanation: '適当。特殊車両通行許可制度の基本的な内容である。' },
       { key: 'B', text: '許可の申請にあたっては、通行経路や車両の諸元（寸法・重量等）を明らかにする必要がある。', explanation: '適当。申請に必要な情報についての正しい理解である。' },
@@ -328,7 +328,7 @@ export const kikaisekouHokiQuestions2: KikaisekouQuestion[] = [
   },
   {
     id: 'ks-hoki-101', subject: 'hoki', subjectName: '法規',
-    question: '道路運送車両法上の自動車の種別に関する記述として、最も不適当なものはどれか。',
+    question: '道路運送車両法上の自動車の検査・登録と建設機械の関係に関する記述として、最も不適当なものはどれか。',
     choices: [
       { key: 'A', text: '道路運送車両法上、自動車は普通自動車・小型自動車・軽自動車・大型特殊自動車・小型特殊自動車等に区分されている。', explanation: '適当。道路運送車両法における自動車の種別区分である。' },
       { key: 'B', text: 'ブルドーザやショベル系建設機械等、大型の建設機械は「大型特殊自動車」に区分されることが多い。', explanation: '適当。大型建設機械の車両区分としての一般的な扱いである。' },
@@ -341,7 +341,7 @@ export const kikaisekouHokiQuestions2: KikaisekouQuestion[] = [
   },
   {
     id: 'ks-hoki-102', subject: 'hoki', subjectName: '法規',
-    question: '道路運送車両法上の保安基準に関する記述として、最も不適当なものはどれか。',
+    question: '道路運送車両法上の保安基準の適用対象に関する記述として、最も不適当なものはどれか。',
     choices: [
       { key: 'A', text: '保安基準は、自動車の構造・装置（制動装置、灯火装置等）が、道路運送の安全確保等の観点から満たすべき技術基準を定めたものである。', explanation: '適当。保安基準の基本的な位置付けである。' },
       { key: 'B', text: '公道を走行する自動車は、この保安基準に適合していることが求められる。', explanation: '適当。保安基準適合の必要性についての正しい理解である。' },
@@ -367,7 +367,7 @@ export const kikaisekouHokiQuestions2: KikaisekouQuestion[] = [
   },
   {
     id: 'ks-hoki-104', subject: 'hoki', subjectName: '法規',
-    question: '建設機械抵当法に関する記述として、最も不適当なものはどれか。',
+    question: '建設機械抵当法の対象となる建設機械の範囲に関する記述として、最も不適当なものはどれか。',
     choices: [
       { key: 'A', text: '建設機械抵当法は、建設業者が保有する一定の建設機械について、抵当権の目的とすることを可能とする制度を定めた法律である。', explanation: '適当。建設機械抵当法の基本的な目的である。' },
       { key: 'B', text: '抵当権の設定を受けるためには、対象となる建設機械についてあらかじめ所定の登記（打刻・登録）を行う必要がある。', explanation: '適当。建設機械抵当法における登記の必要性についての正しい理解である。' },
@@ -380,7 +380,7 @@ export const kikaisekouHokiQuestions2: KikaisekouQuestion[] = [
   },
   {
     id: 'ks-hoki-105', subject: 'hoki', subjectName: '法規',
-    question: '建設機械抵当法における抵当権の実行等に関する記述として、最も不適当なものはどれか。',
+    question: '建設機械抵当法に基づく抵当権設定後の建設機械の使用に関する記述として、最も不適当なものはどれか。',
     choices: [
       { key: 'A', text: '建設機械抵当法に基づき登記された建設機械に設定された抵当権は、当該機械の登記簿等に基づき第三者に対抗することができる。', explanation: '適当。抵当権の対抗要件についての正しい理解である。' },
       { key: 'B', text: '抵当権が設定された建設機械であっても、通常の事業活動においてはこれを使用し続けることができる。', explanation: '適当。抵当権設定後も機械の使用自体は可能であるという不動産抵当と同様の性質である。' },
@@ -419,7 +419,7 @@ export const kikaisekouHokiQuestions2: KikaisekouQuestion[] = [
   },
   {
     id: 'ks-hoki-108', subject: 'hoki', subjectName: '法規',
-    question: '大気汚染防止法上の特定粉じん排出等作業に関する記述として、最も不適当なものはどれか。',
+    question: '大気汚染防止法の規制対象の範囲に関する記述として、最も不適当なものはどれか。',
     choices: [
       { key: 'A', text: '大気汚染防止法は、工場・事業場等からのばい煙・粉じん・有害大気汚染物質等の排出を規制する法律である。', explanation: '適当。大気汚染防止法の基本的な目的である。' },
       { key: 'B', text: '建築物の解体等の作業のうち、石綿（アスベスト）を含む建材を取り扱う特定の作業（特定粉じん排出等作業）は、大気汚染防止法上の規制の対象となる。', explanation: '適当。石綿関連作業に対する大気汚染防止法上の規制の存在である。' },
@@ -432,7 +432,7 @@ export const kikaisekouHokiQuestions2: KikaisekouQuestion[] = [
   },
   {
     id: 'ks-hoki-109', subject: 'hoki', subjectName: '法規',
-    question: '水質汚濁防止法上の特定施設に関する記述として、最も不適当なものはどれか。',
+    question: '水質汚濁防止法における建設工事現場の特定施設該当性に関する記述として、最も不適当なものはどれか。',
     choices: [
       { key: 'A', text: '水質汚濁防止法は、公共用水域への排出水の規制等を通じて、水質汚濁の防止を図る法律である。', explanation: '適当。水質汚濁防止法の基本的な目的である。' },
       { key: 'B', text: '一定の施設（特定施設）を設置する工場・事業場は、都道府県知事等への届出等の手続が求められる場合がある。', explanation: '適当。特定施設の届出義務に関する規定の趣旨である。' },
@@ -445,7 +445,7 @@ export const kikaisekouHokiQuestions2: KikaisekouQuestion[] = [
   },
   {
     id: 'ks-hoki-110', subject: 'hoki', subjectName: '法規',
-    question: '産業廃棄物管理票（マニフェスト）制度に関する記述として、最も不適当なものはどれか。',
+    question: '産業廃棄物管理票（マニフェスト）交付後の排出事業者の責務に関する記述として、最も不適当なものはどれか。',
     choices: [
       { key: 'A', text: 'マニフェスト制度は、産業廃棄物の排出事業者が、収集運搬業者・処分業者に委託した廃棄物の流れを管理・確認するための制度である。', explanation: '適当。マニフェスト制度の基本的な目的である。' },
       { key: 'B', text: '排出事業者は、産業廃棄物の処理を委託する際、運搬・処分の受託者にマニフェストを交付することとされている。', explanation: '適当。マニフェストの交付義務に関する規定の趣旨である。' },
@@ -458,7 +458,7 @@ export const kikaisekouHokiQuestions2: KikaisekouQuestion[] = [
   },
   {
     id: 'ks-hoki-111', subject: 'hoki', subjectName: '法規',
-    question: '産業廃棄物処理業の許可に関する記述として、最も不適当なものはどれか。',
+    question: '産業廃棄物の自己処理（自社処理）と処理業許可の要否に関する記述として、最も不適当なものはどれか。',
     choices: [
       { key: 'A', text: '産業廃棄物の収集運搬・処分を業として行おうとする者は、原則として都道府県知事等の許可を受ける必要がある。', explanation: '適当。産業廃棄物処理業の許可制度の基本的な内容である。' },
       { key: 'B', text: '収集運搬業の許可と処分業の許可は、それぞれ別個の許可区分とされている。', explanation: '適当。収集運搬業・処分業の許可区分についての正しい理解である。' },
@@ -471,7 +471,7 @@ export const kikaisekouHokiQuestions2: KikaisekouQuestion[] = [
   },
   {
     id: 'ks-hoki-112', subject: 'hoki', subjectName: '法規',
-    question: '廃棄物処理法上の排出事業者責任に関する記述として、最も不適当なものはどれか。',
+    question: '産業廃棄物の処理委託後における排出事業者責任の存続に関する記述として、最も不適当なものはどれか。',
     choices: [
       { key: 'A', text: '廃棄物処理法上、産業廃棄物の処理責任は、原則としてその廃棄物を排出した事業者（排出事業者）が負うこととされている。', explanation: '適当。排出事業者責任の原則についての正しい理解である。' },
       { key: 'B', text: '排出事業者は、委託した産業廃棄物が適正に処理されるよう、処理業者の選定等について注意を払う必要がある。', explanation: '適当。排出事業者に求められる注意義務についての正しい理解である。' },
@@ -484,7 +484,7 @@ export const kikaisekouHokiQuestions2: KikaisekouQuestion[] = [
   },
   {
     id: 'ks-hoki-113', subject: 'hoki', subjectName: '法規',
-    question: '建設リサイクル法上の対象建設工事の規模基準に関する記述として、最も不適当なものはどれか。',
+    question: '建設リサイクル法上、対象建設工事の規模基準が工事の種類により異なる点に関する記述として、最も不適当なものはどれか。',
     choices: [
       { key: 'A', text: '建設リサイクル法は、一定規模以上の建築物等の解体工事・新築工事等を「対象建設工事」とし、分別解体・再資源化等を義務付けている。', explanation: '適当。建設リサイクル法の基本的な仕組みである。' },
       { key: 'B', text: '対象建設工事に該当するかどうかは、工事の種類（解体・新築・修繕等）ごとに定められた規模基準（床面積・請負代金額等）により判断される。', explanation: '適当。対象建設工事の判定基準についての正しい理解である。' },
@@ -497,7 +497,7 @@ export const kikaisekouHokiQuestions2: KikaisekouQuestion[] = [
   },
   {
     id: 'ks-hoki-114', subject: 'hoki', subjectName: '法規',
-    question: '建設リサイクル法上の分別解体等の実施義務に関する記述として、最も不適当なものはどれか。',
+    question: '建設リサイクル法上の分別解体等・再資源化等の義務が及ぶ範囲に関する記述として、最も不適当なものはどれか。',
     choices: [
       { key: 'A', text: '対象建設工事の受注者は、建築物等の構造・工法に応じた計画的な分別解体等を行うことが義務付けられている。', explanation: '適当。分別解体等の実施義務についての正しい理解である。' },
       { key: 'B', text: '分別解体等により生じた特定建設資材廃棄物（コンクリート塊、アスファルト・コンクリート塊、木材等）は、再資源化等を行うことが義務付けられている。', explanation: '適当。再資源化義務の対象となる特定建設資材の代表例である。' },
@@ -510,7 +510,7 @@ export const kikaisekouHokiQuestions2: KikaisekouQuestion[] = [
   },
   {
     id: 'ks-hoki-115', subject: 'hoki', subjectName: '法規',
-    question: '資源の有効な利用の促進に関する法律（資源有効利用促進法）に関する記述として、最も不適当なものはどれか。',
+    question: '資源の有効な利用の促進に関する法律と建設リサイクル法の関係に関する記述として、最も不適当なものはどれか。',
     choices: [
       { key: 'A', text: '資源有効利用促進法は、資源の有効利用の促進を図るため、リデュース（発生抑制）・リユース（再使用）・リサイクル（再生利用）の3Rの取組みを促進する法律である。', explanation: '適当。資源有効利用促進法の基本的な目的である。' },
       { key: 'B', text: '建設業を含む一定の業種・製品について、再生資源・再生部品の利用等に関する取組みが求められる場合がある。', explanation: '適当。建設業を含む対象業種についての正しい理解である。' },
