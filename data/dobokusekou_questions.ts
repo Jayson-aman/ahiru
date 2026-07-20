@@ -4556,4 +4556,5 @@ export const dobokusekouQuestions: DobokusekouQuestion[] = [
   ...dobokusekouSenmon5,
   ...dobokusekouKanri4,
   ...dobokusekouKanri5,
+  ...dobokusekouHoki4,
 ];
