@@ -10,6 +10,12 @@ export type KikaisekouQuestion = {
   difficulty: 'basic' | 'standard' | 'advanced';
 };
 
+import { kikaisekouDobokuQuestions2 } from './kikaisekou_questions_doboku2';
+import { kikaisekouKikaiQuestions2 } from './kikaisekou_questions_kikai2';
+import { kikaisekouKikaiQuestions3 } from './kikaisekou_questions_kikai3';
+import { kikaisekouSekouQuestions2 } from './kikaisekou_questions_sekou2';
+import { kikaisekouHokiQuestions2 } from './kikaisekou_questions_hoki2';
+
 export const kikaisekouQuestions: KikaisekouQuestion[] = [
   // ===== 土木工学 75問 =====
   {
@@ -3915,4 +3921,10 @@ export const kikaisekouQuestions: KikaisekouQuestion[] = [
     explanation: '建設リサイクル法違反は建設業法上の監督処分と連動する場合がある。一切なしは誤り。\n【図解】建設リサイクル法違反の措置\n　○実施義務違反：是正勧告・命令の対象★\n　○届出懈怠：罰則（過料等）の対象★\n　⚠建設業法上の監督処分（営業停止・許可取消し等）と連動し得る\n　→懲役刑・罰金刑・過料等が規定される\n　×「行政処分は一切行われない」は不適当',
     difficulty: 'advanced',
   },
+  // ===== 増補分（2026年追加）=====
+  ...kikaisekouDobokuQuestions2,
+  ...kikaisekouKikaiQuestions2,
+  ...kikaisekouKikaiQuestions3,
+  ...kikaisekouSekouQuestions2,
+  ...kikaisekouHokiQuestions2,
 ];
