@@ -14,7 +14,7 @@ export const sekokanOuyou3Questions: SekokanQuestion[] = [
     ],
     correctKey: 'A',
     explanation: '採光補正係数が負となる場合は0として扱うのが原則であり、負の値のまま採用することはできない。昼光率が比の値であるため天候によらずほぼ一定という性質と併せて理解する。\n【図解】採光補正係数の扱い\n　算定結果が正→そのまま使用\n　算定結果が負→0とみなす★（マイナス採用は不可）',
-    difficulty: 'advanced',
+    difficulty: 'standard',
   },
   {
     id: 'souyou-202', subject: 'kenchikugaku', subjectName: '建築学等', category: 'kankyo',
@@ -66,7 +66,7 @@ export const sekokanOuyou3Questions: SekokanQuestion[] = [
     ],
     correctKey: 'A',
     explanation: '断面二次半径はi＝√(I/A)で定義され、細長比λ＝Lk/iの算定に不可欠。長方形断面の各公式（I＝bh³/12、Z＝bh²/6）とhの3乗に比例する性質も併せて確認する。\n【図解】断面二次半径の定義\n　i＝√(I／A)★（平方根を取ることに注意）\n　細長比λ＝Lk／i',
-    difficulty: 'advanced',
+    difficulty: 'standard',
   },
   {
     id: 'souyou-206', subject: 'kenchikugaku', subjectName: '建築学等', category: 'kozo',
@@ -170,7 +170,7 @@ export const sekokanOuyou3Questions: SekokanQuestion[] = [
     ],
     correctKey: 'A',
     explanation: '仮設計画は工事の進捗段階に応じて柔軟に見直すべきものであり、固定して運用するものではない。クレーン配置・電力用水計画・仮囲い計画とあわせ、仮設計画の全体像を問う応用問題。\n【図解】仮設計画の性質\n　工事段階（山留め→躯体→仕上げ）に応じて\n　→動線・置場を随時見直す★（固定運用は不可）',
-    difficulty: 'advanced',
+    difficulty: 'standard',
   },
   {
     id: 'souyou-214', subject: 'kenchikugaku', subjectName: '建築学等', category: 'kyotsu',
@@ -261,7 +261,7 @@ export const sekokanOuyou3Questions: SekokanQuestion[] = [
     ],
     correctKey: 'D',
     explanation: '広域的な揚水は周辺地盤沈下・井戸枯れ等の環境影響を伴うため、観測井の設置や復水工法の検討が必要となる。ディープウェル・ウェルポイントの適用地盤の違い、盤ぶくれのメカニズムも併せて整理する。\n【図解】揚水工法の周辺影響\n　広域揚水→地下水位低下→周辺井戸枯れ・圧密沈下のおそれ★\n　対策：観測井による監視・復水（リチャージ）工法',
-    difficulty: 'advanced',
+    difficulty: 'standard',
   },
   {
     id: 'souyou-221', subject: 'kenchikugaku', subjectName: '建築学等', category: 'menshin',
@@ -313,7 +313,7 @@ export const sekokanOuyou3Questions: SekokanQuestion[] = [
     ],
     correctKey: 'D',
     explanation: '油圧式は低速・低揚程で低中層向け、ロープ式は高速・高揚程で高層向けという住み分けが基本。地震時管制運転装置の機能とあわせ、エレベーター方式の特性比較は応用問題の定番テーマ。\n【図解】エレベーター方式の比較\n　ロープ式：高速・高揚程→高層建物向け★\n　油圧式：低速・低揚程・機械室不要→低中層建物向け',
-    difficulty: 'advanced',
+    difficulty: 'standard',
   },
   {
     id: 'souyou-225', subject: 'kenchikugaku', subjectName: '建築学等', category: 'setsubi',
@@ -366,7 +366,7 @@ export const sekokanOuyou3Questions: SekokanQuestion[] = [
     ],
     correctKey: 'D',
     explanation: 'ALCパネルの取付け金物は地震時の層間変位にパネルが追従できるよう可動（ルーズホール）とするのが原則であり、完全固定は破損の原因となる。縦壁ロッキング・目地処理・吸水性への配慮とあわせ、ALC工事の基本を問う応用問題。\n【図解】ALCパネルの取付け\n　金物：可動（ルーズホール）で層間変位に追従★\n　完全固定→地震時にパネル破損のおそれ',
-    difficulty: 'advanced',
+    difficulty: 'standard',
   },
   {
     id: 'souyou-229', subject: 'sekou', subjectName: '躯体・仕上施工', category: 'bosui',
@@ -431,7 +431,7 @@ export const sekokanOuyou3Questions: SekokanQuestion[] = [
     ],
     correctKey: 'A',
     explanation: 'カーテンウォールのファスナーは層間変位・温度変化を吸収する可動構造とするのが原則であり、剛接合は損傷の原因となる。マリオン方式・SSG構法・面内変形試験と合わせ、カーテンウォールの追従性能に関する応用問題。\n【図解】ファスナーの役割\n　躯体の層間変位・温度変化を吸収（可動）★\n　剛接合は不可（変位拘束→損傷）',
-    difficulty: 'advanced',
+    difficulty: 'standard',
   },
   {
     id: 'souyou-234', subject: 'sekou', subjectName: '躯体・仕上施工', category: 'doko',
@@ -509,7 +509,7 @@ export const sekokanOuyou3Questions: SekokanQuestion[] = [
     ],
     correctKey: 'C',
     explanation: '合板せき板は使用回数に応じて品質が劣化するため、打放し仕上げ等では使用回数の管理が必要である。側圧に応じた支持間隔の設定、締付け金物の役割と合わせ、型枠工事の品質管理を問う応用問題。\n【図解】合板せき板の管理\n　繰返し使用→摩耗・反り→仕上り品質に影響★\n　用途に応じ使用回数の目安を設定',
-    difficulty: 'advanced',
+    difficulty: 'standard',
   },
   {
     id: 'souyou-240', subject: 'sekou', subjectName: '躯体・仕上施工', category: 'katawaku',
@@ -600,7 +600,7 @@ export const sekokanOuyou3Questions: SekokanQuestion[] = [
     ],
     correctKey: 'B',
     explanation: 'PCa部材の積み重ね保管は、下段部材への荷重集中を避けるため段数に制限を設けるのが原則である。脱型時期の強度確認、吊り金物の設計、支持点位置の一貫性と合わせ、PCa部材の製作・取扱い管理を問う応用問題。\n【図解】PCa部材の積み重ね保管\n　積み重ね段数：部材種別・強度に応じ制限を設定★\n　（無制限に積み重ねは不可）',
-    difficulty: 'advanced',
+    difficulty: 'standard',
   },
   {
     id: 'souyou-247', subject: 'sekou', subjectName: '躯体・仕上施工', category: 'shiage',
@@ -691,7 +691,7 @@ export const sekokanOuyou3Questions: SekokanQuestion[] = [
     ],
     correctKey: 'A',
     explanation: '接着剤張り工法を外壁に適用する場合は、下地条件や気象条件（低温時の制限等）に留意する必要があり、無条件・無制限に適用できるわけではない。くし目ごての塗布、オープンタイムの管理と合わせてタイル接着剤張りの要点を確認する。\n【図解】接着剤張りの外壁適用\n　下地条件・気象条件（低温時制限等）に留意★\n　（無条件・全面適用と断定するのは誤り）',
-    difficulty: 'advanced',
+    difficulty: 'standard',
   },
   {
     id: 'souyou-254', subject: 'sekou', subjectName: '躯体・仕上施工', category: 'yamadome',
@@ -718,7 +718,7 @@ export const sekokanOuyou3Questions: SekokanQuestion[] = [
     ],
     correctKey: 'C',
     explanation: '酸素欠乏危険作業には酸素欠乏危険作業主任者の選任が必須であり、個人の自己管理に委ねることはできない。酸素濃度の測定義務（18%未満で酸欠）、換気・呼吸用保護具の使用と合わせて理解する。\n【図解】酸素欠乏危険作業の管理体制\n　作業開始前：酸素濃度測定（18%未満で酸欠）\n　酸素欠乏危険作業主任者の選任が必須★',
-    difficulty: 'advanced',
+    difficulty: 'standard',
   },
   {
     id: 'souyou-256', subject: 'kanri', subjectName: '施工管理法', category: 'anzen',
@@ -796,7 +796,7 @@ export const sekokanOuyou3Questions: SekokanQuestion[] = [
     ],
     correctKey: 'A',
     explanation: 'ISO9001は品質そのものの基準ではなく、品質を継続的に確保・改善するための「組織の仕組み（マネジメントシステム）」を規定する規格である。PDCAサイクル、トップマネジメントの関与、内部監査の役割と合わせて理解する。\n【図解】ISO9001の性格\n　×製品・サービスの品質基準そのものを規定\n　○品質を継続的に確保する組織の仕組みを規定★',
-    difficulty: 'advanced',
+    difficulty: 'standard',
   },
   {
     id: 'souyou-262', subject: 'kanri', subjectName: '施工管理法', category: 'hinshitsu',
@@ -900,7 +900,7 @@ export const sekokanOuyou3Questions: SekokanQuestion[] = [
     ],
     correctKey: 'A',
     explanation: '施工体制台帳は下請負人の変更等があれば都度更新しなければならず、作成時のまま放置することは認められない。作成義務の要件、施工計画との整合、施工体系図の掲示と合わせ、施工体制管理の基本を確認する。\n【図解】施工体制台帳の更新\n　下請負人の変更等が生じた場合→遅滞なく更新★\n　（作成時のまま放置は不可）',
-    difficulty: 'advanced',
+    difficulty: 'standard',
   },
   {
     id: 'souyou-270', subject: 'kanri', subjectName: '施工管理法', category: 'kotei',
@@ -991,7 +991,7 @@ export const sekokanOuyou3Questions: SekokanQuestion[] = [
     ],
     correctKey: 'D',
     explanation: '全数検査は必ずしも経済的とは限らず、対象の重要度・工事規模等を踏まえ抜取検査との使い分けが原則である。ミルシートによる材料確認、圧接部の不合格発見時の対応、かぶり厚さ検査の重要性と合わせて理解する。\n【図解】全数検査と抜取検査\n　全数検査：確実だがコスト・時間大\n　抜取検査：効率的、対象や重要度に応じ選択★（一律に全数が原則ではない）',
-    difficulty: 'advanced',
+    difficulty: 'standard',
   },
   {
     id: 'souyou-277', subject: 'kanri', subjectName: '施工管理法', category: 'tekkin',
@@ -1070,7 +1070,7 @@ export const sekokanOuyou3Questions: SekokanQuestion[] = [
     ],
     correctKey: 'B',
     explanation: '特定元方事業者は統括安全衛生責任者を選任し、関係請負人への指導・是正要求を含む統括管理を行う義務を負う。作業間連絡調整、巡視義務、教育への協力と合わせ、混在作業現場における元方事業者の責任範囲を確認する。\n【図解】特定元方事業者の統括管理\n　作業間の連絡調整／毎作業日の巡視／教育への協力\n　関係請負人への指導・是正要求も職務に含まれる★',
-    difficulty: 'advanced',
+    difficulty: 'standard',
   },
   {
     id: 'souyou-283', subject: 'hoki', subjectName: '法規', category: 'anzenhou',
@@ -1148,7 +1148,7 @@ export const sekokanOuyou3Questions: SekokanQuestion[] = [
     ],
     correctKey: 'D',
     explanation: '特別管理産業廃棄物を排出する事業場には特別管理産業廃棄物管理責任者の設置が義務付けられており、通常の産業廃棄物と同一の体制では足りない。廃石綿等の飛散防止措置、マニフェストによる管理と合わせて理解する。\n【図解】特別管理産業廃棄物の管理体制\n　事業場ごとに特別管理産業廃棄物管理責任者を設置★（必須）\n　廃石綿等：飛散防止措置（湿潤化・二重梱包等）',
-    difficulty: 'advanced',
+    difficulty: 'standard',
   },
   {
     id: 'souyou-289', subject: 'hoki', subjectName: '法規', category: 'kankyoho',
@@ -1239,7 +1239,7 @@ export const sekokanOuyou3Questions: SekokanQuestion[] = [
     ],
     correctKey: 'C',
     explanation: '工事監理者は工事施工者から独立した立場で監理を行う必要があり、施工者自身を工事監理者とすることはできない。工事監理の定義、工事監理者選任の義務、報告義務と合わせて建築士法上の工事監理制度を理解する。\n【図解】工事監理者の独立性\n　工事監理者と工事施工者は兼務不可★\n　（施工者による自己監理は認められない）',
-    difficulty: 'advanced',
+    difficulty: 'standard',
   },
   {
     id: 'souyou-296', subject: 'hoki', subjectName: '法規', category: 'kensetsugyo',
@@ -1317,7 +1317,7 @@ export const sekokanOuyou3Questions: SekokanQuestion[] = [
     ],
     correctKey: 'A',
     explanation: '特別加入は労働局長の承認を得て初めて成立する制度であり、保険料納付のみで自動的に加入とみなされるものではない。中小事業主・一人親方の対象範囲、給付基礎日額の決定方法と合わせて特別加入制度の仕組みを確認する。\n【図解】特別加入の成立要件\n　団体を通じた申請→都道府県労働局長の承認★（必須）\n　保険料納付のみでは成立しない',
-    difficulty: 'advanced',
+    difficulty: 'standard',
   },
   {
     id: 'souyou-302', subject: 'hoki', subjectName: '法規', category: 'roukihou',
