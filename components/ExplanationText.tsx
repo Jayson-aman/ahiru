@@ -1,5 +1,5 @@
-import React from 'react';
-import { View, Text, StyleSheet, Platform, TextStyle, StyleProp } from 'react-native';
+import React, { useEffect, useRef } from 'react';
+import { View, Text, StyleSheet, Platform, TextStyle, StyleProp, Animated } from 'react-native';
 
 type Props = {
   text: string;
@@ -47,16 +47,35 @@ export default function ExplanationText({ text, style }: Props) {
   return (
     <View style={s.wrap}>
       {before.length > 0 && <Text style={style}>{before}</Text>}
-      <View style={s.diagramBox}>
-        <View style={s.headerRow}>
-          <View style={s.headerChip}><Text style={s.headerChipText}>図解</Text></View>
-          <Text style={s.headerTitle}>{titleLine}</Text>
+      <AnimatedDiagram>
+        <View style={s.diagramBox}>
+          <View style={s.headerRow}>
+            <View style={s.headerChip}><Text style={s.headerChipText}>図解</Text></View>
+            <Text style={s.headerTitle}>{titleLine}</Text>
+          </View>
+          {body.map((ln, i) => (
+            <Text key={i} style={lineStyle(ln)}>{ln.length ? ln : ' '}</Text>
+          ))}
         </View>
-        {body.map((ln, i) => (
-          <Text key={i} style={lineStyle(ln)}>{ln.length ? ln : ' '}</Text>
-        ))}
-      </View>
+      </AnimatedDiagram>
     </View>
+  );
+}
+
+/** 図解カードを、表示時にふわっと現れる「動く図解」にする */
+function AnimatedDiagram({ children }: { children: React.ReactNode }) {
+  const opacity = useRef(new Animated.Value(0)).current;
+  const translateY = useRef(new Animated.Value(12)).current;
+  useEffect(() => {
+    Animated.parallel([
+      Animated.timing(opacity, { toValue: 1, duration: 380, useNativeDriver: true }),
+      Animated.timing(translateY, { toValue: 0, duration: 380, useNativeDriver: true }),
+    ]).start();
+  }, []);
+  return (
+    <Animated.View style={{ opacity, transform: [{ translateY }] }}>
+      {children}
+    </Animated.View>
   );
 }
 
