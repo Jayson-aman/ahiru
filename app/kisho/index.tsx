@@ -28,6 +28,21 @@ export default function KishoScreen() {
       </LinearGradient>
 
       <ScrollView style={styles.scroll} contentContainerStyle={styles.content} showsVerticalScrollIndicator={false}>
+        <TouchableOpacity
+          style={styles.textCard}
+          onPress={() => router.push('/kisho/text' as any)}
+          activeOpacity={0.85}
+        >
+          <View style={[styles.icon, { backgroundColor: '#2E7D32' }]}>
+            <Text style={styles.iconEmoji}>📖</Text>
+          </View>
+          <View style={styles.body}>
+            <Text style={styles.cardTitle}>テキスト</Text>
+            <Text style={styles.cardDesc}>一般知識・専門知識の要点整理・図解＋音声読み上げつき</Text>
+          </View>
+          <Text style={styles.arrow}>›</Text>
+        </TouchableOpacity>
+
         <Text style={styles.sectionTitle}>科目を選んで演習スタート</Text>
 
         {SUBJECTS.map(s => (
@@ -78,6 +93,7 @@ const styles = StyleSheet.create({
   content: { paddingHorizontal: 16, paddingTop: 20, paddingBottom: 40 },
   sectionTitle: { fontSize: 15, fontWeight: '800', color: '#1A1A2E', marginBottom: 16 },
   card: { flexDirection: 'row', alignItems: 'center', backgroundColor: '#FFF', borderRadius: 16, padding: 16, marginBottom: 12, shadowColor: '#000', shadowOffset: { width: 0, height: 2 }, shadowOpacity: 0.08, shadowRadius: 8, elevation: 3, gap: 14 },
+  textCard: { flexDirection: 'row', alignItems: 'center', backgroundColor: '#FFF', borderRadius: 16, padding: 16, marginBottom: 20, borderWidth: 1.5, borderColor: '#2E7D32', gap: 14 },
   icon: { width: 56, height: 56, borderRadius: 16, alignItems: 'center', justifyContent: 'center' },
   iconEmoji: { fontSize: 26 },
   body: { flex: 1 },
