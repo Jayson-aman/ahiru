@@ -1190,7 +1190,7 @@ export const eikenQuestions3kyuListeningX2: EikenQuestion[] = [
       { key: 'C', text: "She wants to pay the bill." },
     ],
     correctKey: 'A',
-    explanation: '10分前に頼んだコーヒーがまだ来ないと伝えている。\n【図解】聞き取りのポイント\n★I ordered ... but it hasn't come yet\n○コーヒーが来ていない→A\n×熱すぎる・会計の話ではない\n→but の後の hasn't come（まだ来ない）が要点',
+    explanation: '10分前に頼んだコーヒーがまだ来ないと伝えている。\n【図解】聞き取りのポイント\n★I ordered ... but it hasn’t come yet\n○コーヒーが来ていない→A\n×熱すぎる・会計の話ではない\n→but の後の hasn’t come（まだ来ない）が要点',
     difficulty: 'standard',
   },
   {
