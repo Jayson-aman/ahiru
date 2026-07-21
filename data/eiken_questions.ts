@@ -48,6 +48,12 @@ import { eikenQuestions4kyuIdiom2 } from './eiken_questions_4kyu_idiom2';
 import { eikenQuestions3kyuIdiom2 } from './eiken_questions_3kyu_idiom2';
 import { eikenQuestions2kyuIdiom2 } from './eiken_questions_2kyu_idiom2';
 import { eikenQuestionsListening2 } from './eiken_questions_listening2';
+import { eikenQuestionsListening3 } from './eiken_questions_listening3';
+import { eikenQuestionsListening4 } from './eiken_questions_listening4';
+import { eikenQuestionsListening5 } from './eiken_questions_listening5';
+import { eikenQuestionsListening6 } from './eiken_questions_listening6';
+import { eikenQuestionsListening7 } from './eiken_questions_listening7';
+import { eikenQuestionsListening8 } from './eiken_questions_listening8';
 
 export const eikenQuestions: EikenQuestion[] = [
   ...eikenQuestions4kyu,
@@ -70,6 +76,12 @@ export const eikenQuestions: EikenQuestion[] = [
   ...eikenQuestions2kyu6,
   ...eikenQuestionsListening,
   ...eikenQuestionsListening2,
+  ...eikenQuestionsListening3,
+  ...eikenQuestionsListening4,
+  ...eikenQuestionsListening5,
+  ...eikenQuestionsListening6,
+  ...eikenQuestionsListening7,
+  ...eikenQuestionsListening8,
   ...eikenQuestions4kyuIdiom,
   ...eikenQuestions4kyuIdiom2,
   ...eikenQuestions3kyuIdiom,
