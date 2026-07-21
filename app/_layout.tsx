@@ -5,6 +5,7 @@ import { Alert } from 'react-native';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { initRevenueCat } from '../services/subscription';
 import { LAST_FATAL_ERROR_KEY } from '../services/crashCapture';
+import { configureAudioSession } from '../services/audioSession';
 
 export default function RootLayout() {
   useEffect(() => {
@@ -13,6 +14,8 @@ export default function RootLayout() {
     } catch {
       // RevenueCat init failed — app runs in free mode
     }
+    // マナーモードでも英検リスニング等の読み上げが鳴るようにする
+    configureAudioSession();
   }, []);
 
   useEffect(() => {
