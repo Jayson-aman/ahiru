@@ -168,6 +168,9 @@ export default function HomeScreen() {
           </LinearGradient>
         </TouchableOpacity>
 
+        {/* 資格試験：気象・防災系 */}
+        <Text style={[styles.sectionLabel, { marginTop: 24 }]}>🌤 気象・防災系</Text>
+
         <TouchableOpacity style={styles.card} onPress={() => router.push('/kisho')} activeOpacity={0.85}>
           <LinearGradient colors={['#1565C0', '#0D47A1']} style={styles.cardGradient}>
             <Text style={styles.cardEmoji}>🌤️</Text>

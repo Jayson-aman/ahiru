@@ -87,7 +87,7 @@ App Store Connect → 「契約 / 税金 / 口座情報」→ **Paid Application
 | Pro 建築設備士 | `qualiz_pro_kenchiku_monthly` / `_yearly` | 同上 |
 | Pro 一級建築施工管理技士 | `qualiz_pro_sekokan_monthly` / `_yearly` | 同上 |
 | Pro 電験三種 | `qualiz_pro_denken3_monthly` / `_yearly` | 同上 |
-| Pro 気象予報士 | `qualiz_pro_kisho_monthly` / `_yearly` | **¥2,000 / ¥20,000** |
+| Pro 気象予報士 | `qualiz_pro_kisho_monthly` / `_yearly` | ¥5,000 / ¥50,000 |
 | Pro 管工事施工管理技士 | `qualiz_pro_kankoji_monthly` / `_yearly` | ¥5,000 / ¥50,000 |
 | Pro 電気工事施工管理技士 | `qualiz_pro_denkisekou_monthly` / `_yearly` | 同上 |
 | Pro 建設機械施工管理技士 | `qualiz_pro_kikaisekou_monthly` / `_yearly` | 同上 |
