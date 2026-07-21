@@ -17,7 +17,7 @@ export const kyuhaisuiQuestions: KenchikuQuestion[] = [
   // ─── 給水設備 (kyusui) 13問 ───
   {
     id: 'kyusui-001',
-    subject: '給排水衛生設備',
+    subject: 'kyuhaisui',
     subjectName: '給水設備',
     category: 'kyusui',
     question: '高置水槽方式の給水システムに関する記述として、最も不適当なものはどれか。',
@@ -36,7 +36,7 @@ export const kyuhaisuiQuestions: KenchikuQuestion[] = [
   },
   {
     id: 'kyusui-002',
-    subject: '給排水衛生設備',
+    subject: 'kyuhaisui',
     subjectName: '給水設備',
     category: 'kyusui',
     question: 'ウォーターハンマー（水撃作用）の防止対策として、最も不適当なものはどれか。',
@@ -54,7 +54,7 @@ export const kyuhaisuiQuestions: KenchikuQuestion[] = [
   },
   {
     id: 'kyusui-003',
-    subject: '給排水衛生設備',
+    subject: 'kyuhaisui',
     subjectName: '給水設備',
     category: 'kyusui',
     question: 'クロスコネクション（逆サイフォン作用）に関する記述として、最も適当なものはどれか。',
@@ -72,7 +72,7 @@ export const kyuhaisuiQuestions: KenchikuQuestion[] = [
   },
   {
     id: 'kyusui-004',
-    subject: '給排水衛生設備',
+    subject: 'kyuhaisui',
     subjectName: '給水設備',
     category: 'kyusui',
     question: '給水器具の必要最低水圧に関する記述として、最も適当なものはどれか。',
@@ -90,7 +90,7 @@ export const kyuhaisuiQuestions: KenchikuQuestion[] = [
   },
   {
     id: 'kyusui-005',
-    subject: '給排水衛生設備',
+    subject: 'kyuhaisui',
     subjectName: '給水設備',
     category: 'kyusui',
     question: '給水管の管径選定に関する計算問題。引込み管から給水する最高所の水栓（床上2.5m）において必要水圧30kPaを確保するために、配水管の最低動水圧として必要な圧力はいくらか。ただし、引込み管の管内摩擦損失は15kPa、引込みバルブ等の局部損失は5kPaとする。',
@@ -108,7 +108,7 @@ export const kyuhaisuiQuestions: KenchikuQuestion[] = [
   },
   {
     id: 'kyusui-006',
-    subject: '給排水衛生設備',
+    subject: 'kyuhaisui',
     subjectName: '給水設備',
     category: 'kyusui',
     question: '受水槽の設置・維持管理に関する記述として、最も不適当なものはどれか。',
@@ -126,7 +126,7 @@ export const kyuhaisuiQuestions: KenchikuQuestion[] = [
   },
   {
     id: 'kyusui-007',
-    subject: '給排水衛生設備',
+    subject: 'kyuhaisui',
     subjectName: '給水設備',
     category: 'kyusui',
     question: '給水方式の選定に関する記述として、最も適当なものはどれか。',
@@ -145,7 +145,7 @@ export const kyuhaisuiQuestions: KenchikuQuestion[] = [
   },
   {
     id: 'kyusui-008',
-    subject: '給排水衛生設備',
+    subject: 'kyuhaisui',
     subjectName: '給水設備',
     category: 'kyusui',
     question: '給水管に使用する配管材料に関する記述として、最も不適当なものはどれか。',
@@ -163,7 +163,7 @@ export const kyuhaisuiQuestions: KenchikuQuestion[] = [
   },
   {
     id: 'kyusui-009',
-    subject: '給排水衛生設備',
+    subject: 'kyuhaisui',
     subjectName: '給水設備',
     category: 'kyusui',
     question: '給水設備の水質汚染防止に関する記述として、最も適当なものはどれか。',
@@ -181,7 +181,7 @@ export const kyuhaisuiQuestions: KenchikuQuestion[] = [
   },
   {
     id: 'kyusui-010',
-    subject: '給排水衛生設備',
+    subject: 'kyuhaisui',
     subjectName: '給水設備',
     category: 'kyusui',
     question: '給水量の算定に関する記述として、最も不適当なものはどれか。',
@@ -199,7 +199,7 @@ export const kyuhaisuiQuestions: KenchikuQuestion[] = [
   },
   {
     id: 'kyusui-011',
-    subject: '給排水衛生設備',
+    subject: 'kyuhaisui',
     subjectName: '給水設備',
     category: 'kyusui',
     question: '給湯設備に関する記述として、最も不適当なものはどれか。',
@@ -217,7 +217,7 @@ export const kyuhaisuiQuestions: KenchikuQuestion[] = [
   },
   {
     id: 'kyusui-012',
-    subject: '給排水衛生設備',
+    subject: 'kyuhaisui',
     subjectName: '給水設備',
     category: 'kyusui',
     question: '節水器具・節水対策に関する記述として、最も適当なものはどれか。',
@@ -235,7 +235,7 @@ export const kyuhaisuiQuestions: KenchikuQuestion[] = [
   },
   {
     id: 'kyusui-013',
-    subject: '給排水衛生設備',
+    subject: 'kyuhaisui',
     subjectName: '給水設備',
     category: 'kyusui',
     question: '揚水ポンプの選定に関する計算問題。実揚程20m、配管抵抗損失水頭5m、高置水槽内有効水頭3mとして必要全揚程を求め、ポンプ効率60%・電動機効率90%のとき、軸動力（kW）を求めよ。ただし揚水量は0.5m³/minとする。',
@@ -255,7 +255,7 @@ export const kyuhaisuiQuestions: KenchikuQuestion[] = [
   // ─── 排水・通気設備 (haisui) 13問 ───
   {
     id: 'haisui-001',
-    subject: '給排水衛生設備',
+    subject: 'kyuhaisui',
     subjectName: '排水・通気設備',
     category: 'haisui',
     question: '排水管の勾配に関する記述として、最も不適当なものはどれか。',
@@ -273,7 +273,7 @@ export const kyuhaisuiQuestions: KenchikuQuestion[] = [
   },
   {
     id: 'haisui-002',
-    subject: '給排水衛生設備',
+    subject: 'kyuhaisui',
     subjectName: '排水・通気設備',
     category: 'haisui',
     question: 'トラップの封水に関する記述として、最も適当なものはどれか。',
@@ -291,7 +291,7 @@ export const kyuhaisuiQuestions: KenchikuQuestion[] = [
   },
   {
     id: 'haisui-003',
-    subject: '給排水衛生設備',
+    subject: 'kyuhaisui',
     subjectName: '排水・通気設備',
     category: 'haisui',
     question: '通気設備の方式に関する記述として、最も不適当なものはどれか。',
@@ -310,7 +310,7 @@ export const kyuhaisuiQuestions: KenchikuQuestion[] = [
   },
   {
     id: 'haisui-004',
-    subject: '給排水衛生設備',
+    subject: 'kyuhaisui',
     subjectName: '排水・通気設備',
     category: 'haisui',
     question: '阻集器に関する記述として、最も適当なものはどれか。',
@@ -328,7 +328,7 @@ export const kyuhaisuiQuestions: KenchikuQuestion[] = [
   },
   {
     id: 'haisui-005',
-    subject: '給排水衛生設備',
+    subject: 'kyuhaisui',
     subjectName: '排水・通気設備',
     category: 'haisui',
     question: '排水槽（汚水槽・雑排水槽）に関する記述として、最も不適当なものはどれか。',
@@ -346,7 +346,7 @@ export const kyuhaisuiQuestions: KenchikuQuestion[] = [
   },
   {
     id: 'haisui-006',
-    subject: '給排水衛生設備',
+    subject: 'kyuhaisui',
     subjectName: '排水・通気設備',
     category: 'haisui',
     question: '排水立て管の最大許容流量に関する問題。内径100mmの排水立て管に許容流量以上の排水が流れた場合に生じる現象として、最も適当なものはどれか。',
@@ -365,7 +365,7 @@ export const kyuhaisuiQuestions: KenchikuQuestion[] = [
   },
   {
     id: 'haisui-007',
-    subject: '給排水衛生設備',
+    subject: 'kyuhaisui',
     subjectName: '排水・通気設備',
     category: 'haisui',
     question: '雨水排水設備に関する記述として、最も不適当なものはどれか。',
@@ -383,7 +383,7 @@ export const kyuhaisuiQuestions: KenchikuQuestion[] = [
   },
   {
     id: 'haisui-008',
-    subject: '給排水衛生設備',
+    subject: 'kyuhaisui',
     subjectName: '排水・通気設備',
     category: 'haisui',
     question: '排水管の材料に関する記述として、最も適当なものはどれか。',
@@ -401,7 +401,7 @@ export const kyuhaisuiQuestions: KenchikuQuestion[] = [
   },
   {
     id: 'haisui-009',
-    subject: '給排水衛生設備',
+    subject: 'kyuhaisui',
     subjectName: '排水・通気設備',
     category: 'haisui',
     question: '通気管の管径決定に関する記述として、最も適当なものはどれか。',
@@ -419,7 +419,7 @@ export const kyuhaisuiQuestions: KenchikuQuestion[] = [
   },
   {
     id: 'haisui-010',
-    subject: '給排水衛生設備',
+    subject: 'kyuhaisui',
     subjectName: '排水・通気設備',
     category: 'haisui',
     question: '浄化槽に関する記述として、最も不適当なものはどれか。',
@@ -437,7 +437,7 @@ export const kyuhaisuiQuestions: KenchikuQuestion[] = [
   },
   {
     id: 'haisui-011',
-    subject: '給排水衛生設備',
+    subject: 'kyuhaisui',
     subjectName: '排水・通気設備',
     category: 'haisui',
     question: '自己サイフォン現象に関する記述として、最も適当なものはどれか。',
@@ -455,7 +455,7 @@ export const kyuhaisuiQuestions: KenchikuQuestion[] = [
   },
   {
     id: 'haisui-012',
-    subject: '給排水衛生設備',
+    subject: 'kyuhaisui',
     subjectName: '排水・通気設備',
     category: 'haisui',
     question: '排水勾配と流速の計算に関する問題。管径100mmの排水横管で1/100の勾配を確保した場合、Manning式（粗さ係数n=0.010）から求められるおよその流速として最も適当なものはどれか。ただし径路水深を満流の2/3とする。',
@@ -473,7 +473,7 @@ export const kyuhaisuiQuestions: KenchikuQuestion[] = [
   },
   {
     id: 'haisui-013',
-    subject: '給排水衛生設備',
+    subject: 'kyuhaisui',
     subjectName: '排水・通気設備',
     category: 'haisui',
     question: '間接排水に関する記述として、最も適当なものはどれか。',
@@ -493,7 +493,7 @@ export const kyuhaisuiQuestions: KenchikuQuestion[] = [
   // ─── 消火・ガス設備 (shouka) 12問 ───
   {
     id: 'shouka-001',
-    subject: '消火・ガス設備',
+    subject: 'kyuhaisui',
     subjectName: 'スプリンクラー設備',
     category: 'shouka',
     question: 'スプリンクラー設備に関する記述として、最も不適当なものはどれか。',
@@ -511,7 +511,7 @@ export const kyuhaisuiQuestions: KenchikuQuestion[] = [
   },
   {
     id: 'shouka-002',
-    subject: '消火・ガス設備',
+    subject: 'kyuhaisui',
     subjectName: 'スプリンクラー設備',
     category: 'shouka',
     question: 'スプリンクラーヘッドの設置間隔に関する計算問題。耐火構造の事務所（標準型ヘッド使用）において、天井高さが3m以下の場合、1つのヘッドが防護できる最大床面積として正しいものはどれか。',
@@ -529,7 +529,7 @@ export const kyuhaisuiQuestions: KenchikuQuestion[] = [
   },
   {
     id: 'shouka-003',
-    subject: '消火・ガス設備',
+    subject: 'kyuhaisui',
     subjectName: '屋内消火栓設備',
     category: 'shouka',
     question: '屋内消火栓設備に関する記述として、最も適当なものはどれか。',
@@ -547,7 +547,7 @@ export const kyuhaisuiQuestions: KenchikuQuestion[] = [
   },
   {
     id: 'shouka-004',
-    subject: '消火・ガス設備',
+    subject: 'kyuhaisui',
     subjectName: '泡消火設備',
     category: 'shouka',
     question: '泡消火設備に関する記述として、最も不適当なものはどれか。',
@@ -565,7 +565,7 @@ export const kyuhaisuiQuestions: KenchikuQuestion[] = [
   },
   {
     id: 'shouka-005',
-    subject: '消火・ガス設備',
+    subject: 'kyuhaisui',
     subjectName: 'ガス設備',
     category: 'shouka',
     question: '都市ガス設備に関する記述として、最も不適当なものはどれか。',
@@ -583,7 +583,7 @@ export const kyuhaisuiQuestions: KenchikuQuestion[] = [
   },
   {
     id: 'shouka-006',
-    subject: '消火・ガス設備',
+    subject: 'kyuhaisui',
     subjectName: '消火設備',
     category: 'shouka',
     question: '二酸化炭素消火設備に関する記述として、最も適当なものはどれか。',
@@ -601,7 +601,7 @@ export const kyuhaisuiQuestions: KenchikuQuestion[] = [
   },
   {
     id: 'shouka-007',
-    subject: '消火・ガス設備',
+    subject: 'kyuhaisui',
     subjectName: '消火設備',
     category: 'shouka',
     question: '連結送水管設備に関する記述として、最も不適当なものはどれか。',
@@ -619,7 +619,7 @@ export const kyuhaisuiQuestions: KenchikuQuestion[] = [
   },
   {
     id: 'shouka-008',
-    subject: '消火・ガス設備',
+    subject: 'kyuhaisui',
     subjectName: '消火設備',
     category: 'shouka',
     question: '不活性ガス消火設備（IG-541等）に関する記述として、最も適当なものはどれか。',
@@ -637,7 +637,7 @@ export const kyuhaisuiQuestions: KenchikuQuestion[] = [
   },
   {
     id: 'shouka-009',
-    subject: '消火・ガス設備',
+    subject: 'kyuhaisui',
     subjectName: '消火設備',
     category: 'shouka',
     question: '自動火災報知設備の感知器に関する記述として、最も不適当なものはどれか。',
@@ -655,7 +655,7 @@ export const kyuhaisuiQuestions: KenchikuQuestion[] = [
   },
   {
     id: 'shouka-010',
-    subject: '消火・ガス設備',
+    subject: 'kyuhaisui',
     subjectName: 'ガス設備',
     category: 'shouka',
     question: 'LPG（液化石油ガス）設備に関する記述として、最も適当なものはどれか。',
@@ -673,7 +673,7 @@ export const kyuhaisuiQuestions: KenchikuQuestion[] = [
   },
   {
     id: 'shouka-011',
-    subject: '消火・ガス設備',
+    subject: 'kyuhaisui',
     subjectName: '消火設備',
     category: 'shouka',
     question: '避難設備・誘導灯に関する記述として、最も不適当なものはどれか。',
@@ -691,7 +691,7 @@ export const kyuhaisuiQuestions: KenchikuQuestion[] = [
   },
   {
     id: 'shouka-012',
-    subject: '消火・ガス設備',
+    subject: 'kyuhaisui',
     subjectName: 'スプリンクラー設備',
     category: 'shouka',
     question: 'スプリンクラー設備の水源水量算定に関する計算問題。閉鎖型スプリンクラーヘッド（標準型、耐火構造事務所）を設置した場合、消防法令上必要な水源水量として最も適当なものはどれか。ただし設置ヘッド数は100個とする。',
@@ -711,7 +711,7 @@ export const kyuhaisuiQuestions: KenchikuQuestion[] = [
   // ─── 電気設備 (denki) 12問 ───
   {
     id: 'denki-001',
-    subject: '電気設備',
+    subject: 'kyuhaisui',
     subjectName: '受変電設備',
     category: 'denki',
     question: '受変電設備に関する記述として、最も不適当なものはどれか。',
@@ -729,7 +729,7 @@ export const kyuhaisuiQuestions: KenchikuQuestion[] = [
   },
   {
     id: 'denki-002',
-    subject: '電気設備',
+    subject: 'kyuhaisui',
     subjectName: '照度計算',
     category: 'denki',
     question: '照度計算（光束法）に関する計算問題。床面積100m²の事務室に必要照度750lxを確保するため、光束3,500lmの蛍光灯器具を設置する場合の必要台数を求めよ。ただし照明率0.6、保守率0.8とする。',
@@ -747,7 +747,7 @@ export const kyuhaisuiQuestions: KenchikuQuestion[] = [
   },
   {
     id: 'denki-003',
-    subject: '電気設備',
+    subject: 'kyuhaisui',
     subjectName: '幹線設計',
     category: 'denki',
     question: '幹線（電力幹線）の設計に関する記述として、最も不適当なものはどれか。',
@@ -765,7 +765,7 @@ export const kyuhaisuiQuestions: KenchikuQuestion[] = [
   },
   {
     id: 'denki-004',
-    subject: '電気設備',
+    subject: 'kyuhaisui',
     subjectName: '自家発電設備',
     category: 'denki',
     question: '非常用自家発電設備に関する記述として、最も適当なものはどれか。',
@@ -783,7 +783,7 @@ export const kyuhaisuiQuestions: KenchikuQuestion[] = [
   },
   {
     id: 'denki-005',
-    subject: '電気設備',
+    subject: 'kyuhaisui',
     subjectName: '照明設備',
     category: 'denki',
     question: 'LED照明に関する記述として、最も不適当なものはどれか。',
@@ -801,7 +801,7 @@ export const kyuhaisuiQuestions: KenchikuQuestion[] = [
   },
   {
     id: 'denki-006',
-    subject: '電気設備',
+    subject: 'kyuhaisui',
     subjectName: '弱電設備',
     category: 'denki',
     question: '構内情報通信設備（LAN）に関する記述として、最も適当なものはどれか。',
@@ -819,7 +819,7 @@ export const kyuhaisuiQuestions: KenchikuQuestion[] = [
   },
   {
     id: 'denki-007',
-    subject: '電気設備',
+    subject: 'kyuhaisui',
     subjectName: '受変電設備',
     category: 'denki',
     question: '力率改善に関する記述として、最も適当なものはどれか。',
@@ -837,7 +837,7 @@ export const kyuhaisuiQuestions: KenchikuQuestion[] = [
   },
   {
     id: 'denki-008',
-    subject: '電気設備',
+    subject: 'kyuhaisui',
     subjectName: '幹線設計',
     category: 'denki',
     question: '電圧降下計算に関する問題。単相2線式200V回路で負荷電流30A、往復配線長さ50m、電線断面積8mm²（抵抗率2.2mΩ/m）の場合の電圧降下として最も近いものはどれか。',
@@ -855,7 +855,7 @@ export const kyuhaisuiQuestions: KenchikuQuestion[] = [
   },
   {
     id: 'denki-009',
-    subject: '電気設備',
+    subject: 'kyuhaisui',
     subjectName: '弱電設備',
     category: 'denki',
     question: '防犯設備（ITV・監視カメラ）に関する記述として、最も不適当なものはどれか。',
@@ -873,7 +873,7 @@ export const kyuhaisuiQuestions: KenchikuQuestion[] = [
   },
   {
     id: 'denki-010',
-    subject: '電気設備',
+    subject: 'kyuhaisui',
     subjectName: '受変電設備',
     category: 'denki',
     question: '接地工事に関する記述として、最も不適当なものはどれか。',
@@ -891,7 +891,7 @@ export const kyuhaisuiQuestions: KenchikuQuestion[] = [
   },
   {
     id: 'denki-011',
-    subject: '電気設備',
+    subject: 'kyuhaisui',
     subjectName: '自家発電設備',
     category: 'denki',
     question: '無停電電源装置（UPS）に関する記述として、最も適当なものはどれか。',
@@ -909,7 +909,7 @@ export const kyuhaisuiQuestions: KenchikuQuestion[] = [
   },
   {
     id: 'denki-012',
-    subject: '電気設備',
+    subject: 'kyuhaisui',
     subjectName: '照明設備',
     category: 'denki',
     question: '照明設備の設計に関する記述として、最も不適当なものはどれか。',
@@ -929,7 +929,7 @@ export const kyuhaisuiQuestions: KenchikuQuestion[] = [
   // ─── 給水設備 (kyusui) 追加13問 ───
   {
     id: 'kyusui-014',
-    subject: '給排水衛生設備',
+    subject: 'kyuhaisui',
     subjectName: '給水設備',
     category: 'kyusui',
     question: '吐水口空間（エアギャップ）の最小距離に関する記述として、最も適当なものはどれか。',
@@ -947,7 +947,7 @@ export const kyuhaisuiQuestions: KenchikuQuestion[] = [
   },
   {
     id: 'kyusui-015',
-    subject: '給排水衛生設備',
+    subject: 'kyuhaisui',
     subjectName: '給水設備',
     category: 'kyusui',
     question: '直結増圧方式に用いる減圧式逆流防止器に関する記述として、最も適当なものはどれか。',
@@ -965,7 +965,7 @@ export const kyuhaisuiQuestions: KenchikuQuestion[] = [
   },
   {
     id: 'kyusui-016',
-    subject: '給排水衛生設備',
+    subject: 'kyuhaisui',
     subjectName: '給水設備',
     category: 'kyusui',
     question: '簡易専用水道（受水槽有効容量10m³超）の維持管理に関する記述として、最も適当なものはどれか。',
@@ -983,7 +983,7 @@ export const kyuhaisuiQuestions: KenchikuQuestion[] = [
   },
   {
     id: 'kyusui-017',
-    subject: '給排水衛生設備',
+    subject: 'kyuhaisui',
     subjectName: '給水設備',
     category: 'kyusui',
     question: '給水配管の防露被覆に関する記述として、最も不適当なものはどれか。',
@@ -1001,7 +1001,7 @@ export const kyuhaisuiQuestions: KenchikuQuestion[] = [
   },
   {
     id: 'kyusui-018',
-    subject: '給排水衛生設備',
+    subject: 'kyuhaisui',
     subjectName: '給水設備',
     category: 'kyusui',
     question: '給水ポンプに生じるキャビテーションに関する記述として、最も適当なものはどれか。',
@@ -1019,7 +1019,7 @@ export const kyuhaisuiQuestions: KenchikuQuestion[] = [
   },
   {
     id: 'kyusui-019',
-    subject: '給排水衛生設備',
+    subject: 'kyuhaisui',
     subjectName: '給水設備',
     category: 'kyusui',
     question: 'さや管ヘッダー工法に関する記述として、最も適当なものはどれか。',
@@ -1038,7 +1038,7 @@ export const kyuhaisuiQuestions: KenchikuQuestion[] = [
   },
   {
     id: 'kyusui-020',
-    subject: '給排水衛生設備',
+    subject: 'kyuhaisui',
     subjectName: '給水設備',
     category: 'kyusui',
     question: '給水配管の温度変化による伸縮対策に関する記述として、最も不適当なものはどれか。',
@@ -1056,7 +1056,7 @@ export const kyuhaisuiQuestions: KenchikuQuestion[] = [
   },
   {
     id: 'kyusui-021',
-    subject: '給排水衛生設備',
+    subject: 'kyuhaisui',
     subjectName: '給水設備',
     category: 'kyusui',
     question: '高置水槽の設置高さと揚水ポンプの全揚程の関係に関する記述として、最も適当なものはどれか。',
@@ -1075,7 +1075,7 @@ export const kyuhaisuiQuestions: KenchikuQuestion[] = [
   },
   {
     id: 'kyusui-022',
-    subject: '給排水衛生設備',
+    subject: 'kyuhaisui',
     subjectName: '給水設備',
     category: 'kyusui',
     question: '太陽熱温水器（自然循環型）に関する記述として、最も適当なものはどれか。',
@@ -1093,7 +1093,7 @@ export const kyuhaisuiQuestions: KenchikuQuestion[] = [
   },
   {
     id: 'kyusui-023',
-    subject: '給排水衛生設備',
+    subject: 'kyuhaisui',
     subjectName: '給水設備',
     category: 'kyusui',
     question: '給水配管に用いる逆止弁の種類に関する記述として、最も不適当なものはどれか。',
@@ -1111,7 +1111,7 @@ export const kyuhaisuiQuestions: KenchikuQuestion[] = [
   },
   {
     id: 'kyusui-024',
-    subject: '給排水衛生設備',
+    subject: 'kyuhaisui',
     subjectName: '給水設備',
     category: 'kyusui',
     question: 'シャワー水栓の管径選定に関する計算問題。シャワー水栓の必要最低水圧70kPaを確保するため、配水管に必要な最低動水圧を求めよ。ただし、設置高さによる圧力損失（高低差換算）を10kPa、配管の摩擦損失を8kPa、局部損失を2kPaとする。',
@@ -1129,7 +1129,7 @@ export const kyuhaisuiQuestions: KenchikuQuestion[] = [
   },
   {
     id: 'kyusui-025',
-    subject: '給排水衛生設備',
+    subject: 'kyuhaisui',
     subjectName: '給水設備',
     category: 'kyusui',
     question: '給水配管における異種金属接触腐食（電食）に関する記述として、最も不適当なものはどれか。',
@@ -1147,7 +1147,7 @@ export const kyuhaisuiQuestions: KenchikuQuestion[] = [
   },
   {
     id: 'kyusui-026',
-    subject: '給排水衛生設備',
+    subject: 'kyuhaisui',
     subjectName: '給水設備',
     category: 'kyusui',
     question: '給水設備の維持管理に関する記述として、最も適当なものはどれか。',
@@ -1167,7 +1167,7 @@ export const kyuhaisuiQuestions: KenchikuQuestion[] = [
   // ─── 排水・通気設備 (haisui) 追加13問 ───
   {
     id: 'haisui-014',
-    subject: '給排水衛生設備',
+    subject: 'kyuhaisui',
     subjectName: '排水・通気設備',
     category: 'haisui',
     question: '寒冷地における排水・通気設備の凍結対策に関する記述として、最も適当なものはどれか。',
@@ -1185,7 +1185,7 @@ export const kyuhaisuiQuestions: KenchikuQuestion[] = [
   },
   {
     id: 'haisui-015',
-    subject: '給排水衛生設備',
+    subject: 'kyuhaisui',
     subjectName: '排水・通気設備',
     category: 'haisui',
     question: '排水横主管への排水横枝管の合流に関する記述として、最も不適当なものはどれか。',
@@ -1203,7 +1203,7 @@ export const kyuhaisuiQuestions: KenchikuQuestion[] = [
   },
   {
     id: 'haisui-016',
-    subject: '給排水衛生設備',
+    subject: 'kyuhaisui',
     subjectName: '排水・通気設備',
     category: 'haisui',
     question: '排水槽の悪臭防止対策に関する記述として、最も適当なものはどれか。',
@@ -1221,7 +1221,7 @@ export const kyuhaisuiQuestions: KenchikuQuestion[] = [
   },
   {
     id: 'haisui-017',
-    subject: '給排水衛生設備',
+    subject: 'kyuhaisui',
     subjectName: '排水・通気設備',
     category: 'haisui',
     question: '特殊継手排水システムに関する記述として、最も適当なものはどれか。',
@@ -1240,7 +1240,7 @@ export const kyuhaisuiQuestions: KenchikuQuestion[] = [
   },
   {
     id: 'haisui-018',
-    subject: '給排水衛生設備',
+    subject: 'kyuhaisui',
     subjectName: '排水・通気設備',
     category: 'haisui',
     question: '排水ポンプに用いる渦流ポンプ（ボルテックスポンプ）に関する記述として、最も適当なものはどれか。',
@@ -1258,7 +1258,7 @@ export const kyuhaisuiQuestions: KenchikuQuestion[] = [
   },
   {
     id: 'haisui-019',
-    subject: '給排水衛生設備',
+    subject: 'kyuhaisui',
     subjectName: '排水・通気設備',
     category: 'haisui',
     question: 'トラップの封水強度に関する記述として、最も不適当なものはどれか。',
@@ -1276,7 +1276,7 @@ export const kyuhaisuiQuestions: KenchikuQuestion[] = [
   },
   {
     id: 'haisui-020',
-    subject: '給排水衛生設備',
+    subject: 'kyuhaisui',
     subjectName: '排水・通気設備',
     category: 'haisui',
     question: '通気弁（エア・アドミッタンス・バルブ、AAV）の設置に関する記述として、最も適当なものはどれか。',
@@ -1294,7 +1294,7 @@ export const kyuhaisuiQuestions: KenchikuQuestion[] = [
   },
   {
     id: 'haisui-021',
-    subject: '給排水衛生設備',
+    subject: 'kyuhaisui',
     subjectName: '排水・通気設備',
     category: 'haisui',
     question: '排水立て管にオフセット（横引き部）を設ける場合の処理に関する記述として、最も適当なものはどれか。',
@@ -1313,7 +1313,7 @@ export const kyuhaisuiQuestions: KenchikuQuestion[] = [
   },
   {
     id: 'haisui-022',
-    subject: '給排水衛生設備',
+    subject: 'kyuhaisui',
     subjectName: '排水・通気設備',
     category: 'haisui',
     question: 'ある合併処理浄化槽において、流入水BOD濃度200mg/L、放流水BOD濃度18mg/Lであった場合のBOD除去率として、最も適当なものはどれか。',
@@ -1331,7 +1331,7 @@ export const kyuhaisuiQuestions: KenchikuQuestion[] = [
   },
   {
     id: 'haisui-023',
-    subject: '給排水衛生設備',
+    subject: 'kyuhaisui',
     subjectName: '排水・通気設備',
     category: 'haisui',
     question: '排水横枝管に接続する衛生器具の配列に関する記述として、最も適当なものはどれか。',
@@ -1349,7 +1349,7 @@ export const kyuhaisuiQuestions: KenchikuQuestion[] = [
   },
   {
     id: 'haisui-024',
-    subject: '給排水衛生設備',
+    subject: 'kyuhaisui',
     subjectName: '排水・通気設備',
     category: 'haisui',
     question: '排水ますの種類に関する記述として、最も不適当なものはどれか。',
@@ -1367,7 +1367,7 @@ export const kyuhaisuiQuestions: KenchikuQuestion[] = [
   },
   {
     id: 'haisui-025',
-    subject: '給排水衛生設備',
+    subject: 'kyuhaisui',
     subjectName: '排水・通気設備',
     category: 'haisui',
     question: '排水管の勾配計算に関する問題。延長15mで管底が150mm下がる排水横管の勾配（分数表示）として、最も適当なものはどれか。',
@@ -1385,7 +1385,7 @@ export const kyuhaisuiQuestions: KenchikuQuestion[] = [
   },
   {
     id: 'haisui-026',
-    subject: '給排水衛生設備',
+    subject: 'kyuhaisui',
     subjectName: '排水・通気設備',
     category: 'haisui',
     question: '排水・通気設備の設計に関する記述として、最も不適当なものはどれか。',
@@ -1405,7 +1405,7 @@ export const kyuhaisuiQuestions: KenchikuQuestion[] = [
   // ─── 消火・ガス設備 (shouka) 追加12問 ───
   {
     id: 'shouka-013',
-    subject: '消火・ガス設備',
+    subject: 'kyuhaisui',
     subjectName: '屋外消火栓設備',
     category: 'shouka',
     question: '屋外消火栓設備に関する記述として、最も適当なものはどれか。',
@@ -1423,7 +1423,7 @@ export const kyuhaisuiQuestions: KenchikuQuestion[] = [
   },
   {
     id: 'shouka-014',
-    subject: '消火・ガス設備',
+    subject: 'kyuhaisui',
     subjectName: '消火設備',
     category: 'shouka',
     question: '消防用水（防火水槽）に関する記述として、最も不適当なものはどれか。',
@@ -1441,7 +1441,7 @@ export const kyuhaisuiQuestions: KenchikuQuestion[] = [
   },
   {
     id: 'shouka-015',
-    subject: '消火・ガス設備',
+    subject: 'kyuhaisui',
     subjectName: '消火設備',
     category: 'shouka',
     question: '粉末消火設備に関する記述として、最も適当なものはどれか。',
@@ -1459,7 +1459,7 @@ export const kyuhaisuiQuestions: KenchikuQuestion[] = [
   },
   {
     id: 'shouka-016',
-    subject: '消火・ガス設備',
+    subject: 'kyuhaisui',
     subjectName: '消火設備',
     category: 'shouka',
     question: 'ハロゲン化物消火設備に関する記述として、最も適当なものはどれか。',
@@ -1477,7 +1477,7 @@ export const kyuhaisuiQuestions: KenchikuQuestion[] = [
   },
   {
     id: 'shouka-017',
-    subject: '消火・ガス設備',
+    subject: 'kyuhaisui',
     subjectName: '消火設備',
     category: 'shouka',
     question: '連結散水設備に関する記述として、最も適当なものはどれか。',
@@ -1495,7 +1495,7 @@ export const kyuhaisuiQuestions: KenchikuQuestion[] = [
   },
   {
     id: 'shouka-018',
-    subject: '消火・ガス設備',
+    subject: 'kyuhaisui',
     subjectName: '消火設備',
     category: 'shouka',
     question: '非常コンセント設備に関する記述として、最も適当なものはどれか。',
@@ -1513,7 +1513,7 @@ export const kyuhaisuiQuestions: KenchikuQuestion[] = [
   },
   {
     id: 'shouka-019',
-    subject: '消火・ガス設備',
+    subject: 'kyuhaisui',
     subjectName: '消火設備',
     category: 'shouka',
     question: '消火器の適応火災に関する記述として、最も不適当なものはどれか。',
@@ -1531,7 +1531,7 @@ export const kyuhaisuiQuestions: KenchikuQuestion[] = [
   },
   {
     id: 'shouka-020',
-    subject: '消火・ガス設備',
+    subject: 'kyuhaisui',
     subjectName: '泡消火設備',
     category: 'shouka',
     question: '泡消火薬剤の種類に関する記述として、最も適当なものはどれか。',
@@ -1549,7 +1549,7 @@ export const kyuhaisuiQuestions: KenchikuQuestion[] = [
   },
   {
     id: 'shouka-021',
-    subject: '消火・ガス設備',
+    subject: 'kyuhaisui',
     subjectName: 'ガス設備',
     category: 'shouka',
     question: 'ガス漏れ火災警報設備における検知器の設置基準に関する記述として、最も適当なものはどれか。',
@@ -1567,7 +1567,7 @@ export const kyuhaisuiQuestions: KenchikuQuestion[] = [
   },
   {
     id: 'shouka-022',
-    subject: '消火・ガス設備',
+    subject: 'kyuhaisui',
     subjectName: '消火設備',
     category: 'shouka',
     question: '動力消防ポンプ設備に関する記述として、最も不適当なものはどれか。',
@@ -1585,7 +1585,7 @@ export const kyuhaisuiQuestions: KenchikuQuestion[] = [
   },
   {
     id: 'shouka-023',
-    subject: '消火・ガス設備',
+    subject: 'kyuhaisui',
     subjectName: 'ガス設備',
     category: 'shouka',
     question: '都市ガス（13A）とLPGの特性比較に関する記述として、最も適当なものはどれか。',
@@ -1603,7 +1603,7 @@ export const kyuhaisuiQuestions: KenchikuQuestion[] = [
   },
   {
     id: 'shouka-024',
-    subject: '消火・ガス設備',
+    subject: 'kyuhaisui',
     subjectName: 'スプリンクラー設備',
     category: 'shouka',
     question: 'スプリンクラー設備の水源水量算定に関する計算問題。小区画型ヘッドを住戸内に設置する共同住宅にスプリンクラー設備を設置する場合の水源水量として、最も適当なものはどれか。ただし基準個数は4個、ヘッド1個当たりの放水量は60L/min、放水継続時間は20分とする。',
@@ -1623,7 +1623,7 @@ export const kyuhaisuiQuestions: KenchikuQuestion[] = [
   // ─── 電気設備 (denki) 追加12問 ───
   {
     id: 'denki-013',
-    subject: '電気設備',
+    subject: 'kyuhaisui',
     subjectName: '受変電設備',
     category: 'denki',
     question: '変圧器の並行運転条件に関する記述として、最も不適当なものはどれか。',
@@ -1641,7 +1641,7 @@ export const kyuhaisuiQuestions: KenchikuQuestion[] = [
   },
   {
     id: 'denki-014',
-    subject: '電気設備',
+    subject: 'kyuhaisui',
     subjectName: '幹線設備',
     category: 'denki',
     question: 'ケーブルの許容電流補正に関する記述として、最も適当なものはどれか。',
@@ -1659,7 +1659,7 @@ export const kyuhaisuiQuestions: KenchikuQuestion[] = [
   },
   {
     id: 'denki-015',
-    subject: '電気設備',
+    subject: 'kyuhaisui',
     subjectName: '幹線設備',
     category: 'denki',
     question: 'かご形誘導電動機のスターデルタ（Y-Δ）始動方式に関する記述として、最も不適当なものはどれか。',
@@ -1677,7 +1677,7 @@ export const kyuhaisuiQuestions: KenchikuQuestion[] = [
   },
   {
     id: 'denki-016',
-    subject: '電気設備',
+    subject: 'kyuhaisui',
     subjectName: '受変電設備',
     category: 'denki',
     question: '進相コンデンサの過補償に関する記述として、最も適当なものはどれか。',
@@ -1695,7 +1695,7 @@ export const kyuhaisuiQuestions: KenchikuQuestion[] = [
   },
   {
     id: 'denki-017',
-    subject: '電気設備',
+    subject: 'kyuhaisui',
     subjectName: '照明設備',
     category: 'denki',
     question: 'LED照明のちらつき（フリッカ）対策に関する記述として、最も適当なものはどれか。',
@@ -1713,7 +1713,7 @@ export const kyuhaisuiQuestions: KenchikuQuestion[] = [
   },
   {
     id: 'denki-018',
-    subject: '電気設備',
+    subject: 'kyuhaisui',
     subjectName: '弱電設備',
     category: 'denki',
     question: 'LANケーブルのシールド構造（STP/UTP）に関する記述として、最も不適当なものはどれか。',
@@ -1731,7 +1731,7 @@ export const kyuhaisuiQuestions: KenchikuQuestion[] = [
   },
   {
     id: 'denki-019',
-    subject: '電気設備',
+    subject: 'kyuhaisui',
     subjectName: '受変電設備',
     category: 'denki',
     question: '非常用エレベーターの電源に関する記述として、最も適当なものはどれか。',
@@ -1749,7 +1749,7 @@ export const kyuhaisuiQuestions: KenchikuQuestion[] = [
   },
   {
     id: 'denki-020',
-    subject: '電気設備',
+    subject: 'kyuhaisui',
     subjectName: '幹線設備',
     category: 'denki',
     question: '分電盤の幹線用遮断器の選定に関する記述として、最も不適当なものはどれか。',
@@ -1767,7 +1767,7 @@ export const kyuhaisuiQuestions: KenchikuQuestion[] = [
   },
   {
     id: 'denki-021',
-    subject: '電気設備',
+    subject: 'kyuhaisui',
     subjectName: '受変電設備',
     category: 'denki',
     question: '高調波対策に用いるアクティブフィルタに関する記述として、最も適当なものはどれか。',
@@ -1785,7 +1785,7 @@ export const kyuhaisuiQuestions: KenchikuQuestion[] = [
   },
   {
     id: 'denki-022',
-    subject: '電気設備',
+    subject: 'kyuhaisui',
     subjectName: '受変電設備',
     category: 'denki',
     question: '進相コンデンサに直列接続する直列リアクトルの役割に関する記述として、最も適当なものはどれか。',
@@ -1803,7 +1803,7 @@ export const kyuhaisuiQuestions: KenchikuQuestion[] = [
   },
   {
     id: 'denki-023',
-    subject: '電気設備',
+    subject: 'kyuhaisui',
     subjectName: '受変電設備',
     category: 'denki',
     question: '低圧電路の絶縁抵抗測定（メガー測定）に関する記述として、最も適当なものはどれか。',
@@ -1821,7 +1821,7 @@ export const kyuhaisuiQuestions: KenchikuQuestion[] = [
   },
   {
     id: 'denki-024',
-    subject: '電気設備',
+    subject: 'kyuhaisui',
     subjectName: '受変電設備',
     category: 'denki',
     question: '力率改善の計算問題。有効電力300kW、力率0.6（遅れ）の負荷の力率を0.9に改善するために必要な進相コンデンサ容量として、最も適当なものはどれか。',
