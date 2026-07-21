@@ -29,15 +29,6 @@ export default function TabLayout() {
           ),
         }}
       />
-      <Tabs.Screen
-        name="progress"
-        options={{
-          title: '進捗',
-          tabBarIcon: ({ focused }) => (
-            <TabIcon emoji="📊" focused={focused} />
-          ),
-        }}
-      />
     </Tabs>
   );
 }
