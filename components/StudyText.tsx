@@ -1,6 +1,5 @@
-import React, { useEffect, useRef, useState } from 'react';
-import { View, Text, StyleSheet, Platform, TextStyle, StyleProp, TouchableOpacity, Animated } from 'react-native';
-import * as Speech from 'expo-speech';
+import React, { useEffect, useRef } from 'react';
+import { View, Text, StyleSheet, Platform, TextStyle, StyleProp, Animated } from 'react-native';
 
 type Props = {
   text: string;
@@ -27,49 +26,14 @@ const SEP = /^[━─—\-=＝]{3,}$/;
  *  ・「🔑 見出し」 → アクセント色の見出しバー
  *  ・「【図解】…」ブロック → 枠付きカード（表示時にふわっと動いて現れる）＋行ごとに色分け
  *  ・「・」箇条書き → ドット付き
- *  ・上部に「🔊 音声で聞く」＝ expo-speech で本文を読み上げ（動画説明の代わり／容量ゼロ）
- * これ一つで全13資格の教科書が一斉に「見やすい・動く・聞ける」表示になる。
+ * これ一つで全13資格の教科書が一斉に「見やすい・動く」表示になる。
  */
 export default function StudyText({ text, accent = '#1565C0' }: Props) {
   const blocks = parse(text ?? '');
-  const [speaking, setSpeaking] = useState(false);
   let figIndex = 0;
-
-  useEffect(() => {
-    // 画面を離れる／本文が変わったら読み上げを止める
-    return () => { Speech.stop(); };
-  }, [text]);
-
-  const toggleSpeak = () => {
-    if (speaking) {
-      Speech.stop();
-      setSpeaking(false);
-      return;
-    }
-    const spoken = toSpeech(text ?? '');
-    if (!spoken) return;
-    setSpeaking(true);
-    Speech.speak(spoken, {
-      language: 'ja-JP',
-      rate: Platform.OS === 'ios' ? 0.5 : 1.0,
-      onDone: () => setSpeaking(false),
-      onStopped: () => setSpeaking(false),
-      onError: () => setSpeaking(false),
-    });
-  };
 
   return (
     <View style={s.wrap}>
-      <TouchableOpacity
-        onPress={toggleSpeak}
-        activeOpacity={0.8}
-        style={[s.audioBtn, { borderColor: accent }, speaking && { backgroundColor: accent }]}
-      >
-        <Text style={[s.audioBtnText, { color: speaking ? '#fff' : accent }]}>
-          {speaking ? '⏹ 停止' : '🔊 音声で聞く'}
-        </Text>
-      </TouchableOpacity>
-
       {blocks.map((b, i) => {
         if (b.kind === 'header') {
           return (
@@ -161,19 +125,6 @@ function parse(text: string): Block[] {
   return out;
 }
 
-/** 読み上げ用にマークアップ記号を除去 */
-function toSpeech(text: string): string {
-  return text
-    .replace(/\r/g, '')
-    .split('\n')
-    .map((l) => l.trim())
-    .filter((l) => l && !SEP.test(l))
-    .map((l) => l.replace(/【図解】/g, '図解。').replace(/^🔑\s*/, '').replace(/[★⚠◎○×✕→⇒]/g, ' '))
-    .join('。')
-    .replace(/。+/g, '。')
-    .slice(0, 3800); // 長すぎる読み上げを防ぐ
-}
-
 function lineStyle(ln: string): StyleProp<TextStyle> {
   const t = ln.trim();
   if (t.includes('★') || t.includes('⚠')) return [s.line, s.lineHot];
@@ -216,11 +167,6 @@ function shade(hex: string): string {
 
 const s = StyleSheet.create({
   wrap: { gap: 10, paddingTop: 12 },
-  audioBtn: {
-    alignSelf: 'flex-start', flexDirection: 'row', alignItems: 'center',
-    borderWidth: 1.5, borderRadius: 999, paddingHorizontal: 14, paddingVertical: 6, marginBottom: 2,
-  },
-  audioBtnText: { fontSize: 12.5, fontWeight: '800' },
   headerRow: { flexDirection: 'row', alignItems: 'center', gap: 9, marginTop: 6 },
   headerBar: { width: 4, alignSelf: 'stretch', minHeight: 18, borderRadius: 2 },
   headerText: { flex: 1, fontSize: 15.5, fontWeight: '900', letterSpacing: 0.2, lineHeight: 22 },
