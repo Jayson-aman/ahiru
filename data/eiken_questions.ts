@@ -74,8 +74,27 @@ import { eikenQuestions3kyuReadingX3 } from './eiken_questions_3kyu_reading_x3';
 import { eikenQuestions3kyuDialogueX2 } from './eiken_questions_3kyu_dialogue_x2';
 import { eikenQuestions3kyuDialogueX3 } from './eiken_questions_3kyu_dialogue_x3';
 import { eikenQuestions3kyuIdiomX3 } from './eiken_questions_3kyu_idiom_x3';
+// 2級 2倍化バッチ
+import { eikenQuestions2kyuVocabX2 } from './eiken_questions_2kyu_vocab_x2';
+import { eikenQuestions2kyuVocabX3 } from './eiken_questions_2kyu_vocab_x3';
+import { eikenQuestions2kyuVocabX4 } from './eiken_questions_2kyu_vocab_x4';
+import { eikenQuestions2kyuGrammarX2 } from './eiken_questions_2kyu_grammar_x2';
+import { eikenQuestions2kyuGrammarX3 } from './eiken_questions_2kyu_grammar_x3';
+import { eikenQuestions2kyuReadingX2 } from './eiken_questions_2kyu_reading_x2';
+import { eikenQuestions2kyuReadingX3 } from './eiken_questions_2kyu_reading_x3';
+import { eikenQuestions2kyuReadingX4 } from './eiken_questions_2kyu_reading_x4';
+import { eikenQuestions2kyuIdiomX3 } from './eiken_questions_2kyu_idiom_x3';
 
 export const eikenQuestions: EikenQuestion[] = [
+  ...eikenQuestions2kyuVocabX2,
+  ...eikenQuestions2kyuVocabX3,
+  ...eikenQuestions2kyuVocabX4,
+  ...eikenQuestions2kyuGrammarX2,
+  ...eikenQuestions2kyuGrammarX3,
+  ...eikenQuestions2kyuReadingX2,
+  ...eikenQuestions2kyuReadingX3,
+  ...eikenQuestions2kyuReadingX4,
+  ...eikenQuestions2kyuIdiomX3,
   ...eikenQuestions3kyuVocabX2,
   ...eikenQuestions3kyuVocabX3,
   ...eikenQuestions3kyuGrammarX2,
