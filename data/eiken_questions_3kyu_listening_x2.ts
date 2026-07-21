@@ -815,7 +815,7 @@ export const eikenQuestions3kyuListeningX2: EikenQuestion[] = [
       { key: 'C', text: "Stay home and read." },
     ],
     correctKey: 'C',
-    explanation: '少年は家で本を読む。スキーは少女の家族の予定。\n【図解】聞き取りのポイント\n★I'll just stay home and read books\n○少年＝家で読書→C\n×skiing は少女の予定、travel は「したかった」だけ\n→wanted to but 〜 は実際にはしない',
+    explanation: '少年は家で本を読む。スキーは少女の家族の予定。\n【図解】聞き取りのポイント\n★I’ll just stay home and read books\n○少年＝家で読書→C\n×skiing は少女の予定、travel は「したかった」だけ\n→wanted to but 〜 は実際にはしない',
     difficulty: 'standard',
   },
   {
@@ -830,7 +830,7 @@ export const eikenQuestions3kyuListeningX2: EikenQuestion[] = [
       { key: 'C', text: "Go home." },
     ],
     correctKey: 'B',
-    explanation: '20分待つ間、隣のコーヒーショップで待つことにした。\n【図解】聞き取りのポイント\n★Let's wait at the coffee shop next door\n○隣のカフェで待つ→B\n×別の店に行くとも帰るとも言っていない\n→最後の Let's 〜 で行動を確定',
+    explanation: '20分待つ間、隣のコーヒーショップで待つことにした。\n【図解】聞き取りのポイント\n★Let’s wait at the coffee shop next door\n○隣のカフェで待つ→B\n×別の店に行くとも帰るとも言っていない\n→最後の Let’s 〜 で行動を確定',
     difficulty: 'standard',
   },
   {
@@ -890,7 +890,7 @@ export const eikenQuestions3kyuListeningX2: EikenQuestion[] = [
       { key: 'C', text: "Two thousand yen." },
     ],
     correctKey: 'B',
-    explanation: '傘は1本500円、2本で1000円。\n【図解】聞き取りのポイント\n★five hundred yen each / I'll take two → one thousand yen\n○500×2＝1000円→B\n×500は1本分、2000は誤計算のひっかけ\n→単価×個数の計算を確認',
+    explanation: '傘は1本500円、2本で1000円。\n【図解】聞き取りのポイント\n★five hundred yen each / I’ll take two → one thousand yen\n○500×2＝1000円→B\n×500は1本分、2000は誤計算のひっかけ\n→単価×個数の計算を確認',
     difficulty: 'standard',
   },
   {
@@ -905,7 +905,7 @@ export const eikenQuestions3kyuListeningX2: EikenQuestion[] = [
       { key: 'C', text: "Take the bus again." },
     ],
     correctKey: 'B',
-    explanation: '定期券をバスに置き忘れ、これから遺失物取扱所へ行く。\n【図解】聞き取りのポイント\n★I'll go there(=lost and found) now\n○これから遺失物窓口へ→B\n×新しい定期購入やバス再乗車は言っていない\n→I'll 〜 now で直後の行動を取る',
+    explanation: '定期券をバスに置き忘れ、これから遺失物取扱所へ行く。\n【図解】聞き取りのポイント\n★I’ll go there(=lost and found) now\n○これから遺失物窓口へ→B\n×新しい定期購入やバス再乗車は言っていない\n→I’ll 〜 now で直後の行動を取る',
     difficulty: 'standard',
   },
   {
@@ -920,7 +920,7 @@ export const eikenQuestions3kyuListeningX2: EikenQuestion[] = [
       { key: 'C', text: "Some flowers." },
     ],
     correctKey: 'B',
-    explanation: '少女は手編みのマフラーを贈った。\n【図解】聞き取りのポイント\n★It's a scarf. I knitted it myself.\n○プレゼント＝マフラー→B\n×hat も flowers も出てこない\n→贈り物の中身を名詞で特定',
+    explanation: '少女は手編みのマフラーを贈った。\n【図解】聞き取りのポイント\n★It’s a scarf. I knitted it myself.\n○プレゼント＝マフラー→B\n×hat も flowers も出てこない\n→贈り物の中身を名詞で特定',
     difficulty: 'standard',
   },
   {
@@ -965,7 +965,7 @@ export const eikenQuestions3kyuListeningX2: EikenQuestion[] = [
       { key: 'C', text: "By Monday." },
     ],
     correctKey: 'A',
-    explanation: '少年は水曜までに終える予定。金曜は延長可能な期限。\n【図解】聞き取りのポイント\n★I'll try to finish it by Wednesday\n○本人の予定＝水曜→A\n×Friday は延長期限、Monday は出てこない\n→締切と本人の計画を区別',
+    explanation: '少年は水曜までに終える予定。金曜は延長可能な期限。\n【図解】聞き取りのポイント\n★I’ll try to finish it by Wednesday\n○本人の予定＝水曜→A\n×Friday は延長期限、Monday は出てこない\n→締切と本人の計画を区別',
     difficulty: 'standard',
   },
   {
