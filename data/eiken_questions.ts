@@ -84,8 +84,21 @@ import { eikenQuestions2kyuReadingX2 } from './eiken_questions_2kyu_reading_x2';
 import { eikenQuestions2kyuReadingX3 } from './eiken_questions_2kyu_reading_x3';
 import { eikenQuestions2kyuReadingX4 } from './eiken_questions_2kyu_reading_x4';
 import { eikenQuestions2kyuIdiomX3 } from './eiken_questions_2kyu_idiom_x3';
+import { eikenQuestions2kyuListeningX2 } from './eiken_questions_2kyu_listening_x2';
+// リスニング 2倍化バッチ（各級160問追加）
+import { eikenQuestions4kyuListeningX2 } from './eiken_questions_4kyu_listening_x2';
+import { eikenQuestions4kyuListeningX3 } from './eiken_questions_4kyu_listening_x3';
+import { eikenQuestions3kyuListeningX2 } from './eiken_questions_3kyu_listening_x2';
+import { eikenQuestions3kyuListeningX3 } from './eiken_questions_3kyu_listening_x3';
+import { eikenQuestions2kyuListeningX3 } from './eiken_questions_2kyu_listening_x3';
 
 export const eikenQuestions: EikenQuestion[] = [
+  ...eikenQuestions4kyuListeningX2,
+  ...eikenQuestions4kyuListeningX3,
+  ...eikenQuestions3kyuListeningX2,
+  ...eikenQuestions3kyuListeningX3,
+  ...eikenQuestions2kyuListeningX2,
+  ...eikenQuestions2kyuListeningX3,
   ...eikenQuestions2kyuVocabX2,
   ...eikenQuestions2kyuVocabX3,
   ...eikenQuestions2kyuVocabX4,
