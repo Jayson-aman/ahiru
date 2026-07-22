@@ -9,12 +9,17 @@ import {
 } from 'react-native';
 import { useRouter } from 'expo-router';
 import { LinearGradient } from 'expo-linear-gradient';
+import { kikaisekouQuestions } from '../../data/kikaisekou_questions';
+
+// 実際の問題データから科目別の問題数を集計（ハードコードせずズレを防ぐ）
+const COUNT: Record<string, number> = {};
+kikaisekouQuestions.forEach((q) => { COUNT[q.subject] = (COUNT[q.subject] ?? 0) + 1; });
 
 const SUBJECTS = [
-  { key: 'doboku', name: '土木工学', emoji: '⛰️', color: '#6D4C41', desc: '締固め・盛土・法面・舗装・コンクリート', count: 6 },
-  { key: 'kikai', name: '建設機械', emoji: '🚜', color: '#B26A00', desc: 'ブルドーザ・ショベル系・クレーン・原動機', count: 6 },
-  { key: 'sekou', name: '施工管理法', emoji: '🔧', color: '#2E7D32', desc: 'コーン指数・締固め管理・機械安全・環境', count: 6 },
-  { key: 'hoki', name: '法規', emoji: '⚖️', color: '#6A1B9A', desc: '労安法の資格・車両制限令・騒音規制法', count: 6 },
+  { key: 'doboku', name: '土木工学', emoji: '⛰️', color: '#6D4C41', desc: '締固め・盛土・法面・舗装・コンクリート' },
+  { key: 'kikai', name: '建設機械', emoji: '🚜', color: '#B26A00', desc: 'ブルドーザ・ショベル系・クレーン・原動機' },
+  { key: 'sekou', name: '施工管理法', emoji: '🔧', color: '#2E7D32', desc: 'コーン指数・締固め管理・機械安全・環境' },
+  { key: 'hoki', name: '法規', emoji: '⚖️', color: '#6A1B9A', desc: '労安法の資格・車両制限令・騒音規制法' },
 ];
 
 export default function KikaisekouScreen() {
@@ -68,7 +73,7 @@ export default function KikaisekouScreen() {
               <Text style={styles.subjectName}>{subject.name}</Text>
               <Text style={styles.subjectDesc}>{subject.desc}</Text>
               <Text style={[styles.subjectMeta, { color: subject.color }]}>
-                {subject.count}問収録・全問図解つき解説
+                {COUNT[subject.key] ?? 0}問収録・全問図解つき解説
               </Text>
             </View>
             <Text style={styles.subjectArrow}>›</Text>

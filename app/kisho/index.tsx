@@ -2,6 +2,10 @@ import React from 'react';
 import { View, Text, ScrollView, StyleSheet, SafeAreaView, TouchableOpacity } from 'react-native';
 import { useRouter } from 'expo-router';
 import { LinearGradient } from 'expo-linear-gradient';
+import { kishoQuestions } from '../../data/kisho_questions';
+
+// 実際の問題データから総数・科目別を集計（ハードコードせずズレを防ぐ）
+const KISHO_TOTAL = kishoQuestions.length;
 
 const SUBJECTS = [
   { key: 'gakka1', name: '予報業務に関する一般知識', emoji: '🌡️', color: '#1565C0', examCount: 15, desc: '大気・熱力学・流体力学・気象観測' },
@@ -22,7 +26,7 @@ export default function KishoScreen() {
         <Text style={styles.sub}>国家資格 ／ 気象予報の最高峰</Text>
         <View style={styles.badges}>
           <View style={styles.badge}><Text style={styles.badgeText}>学科2科目＋実技</Text></View>
-          <View style={styles.badge}><Text style={styles.badgeText}>1000問収録予定</Text></View>
+          <View style={styles.badge}><Text style={styles.badgeText}>{KISHO_TOTAL}問収録</Text></View>
           <View style={styles.badge}><Text style={styles.badgeText}>年2回（1月・8月）</Text></View>
         </View>
       </LinearGradient>

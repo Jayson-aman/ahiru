@@ -6,6 +6,11 @@ import { useRouter } from 'expo-router';
 import { LinearGradient } from 'expo-linear-gradient';
 import CertPaywall from '../../components/CertPaywall';
 import { PRICING, FREE_QUESTION_LIMIT } from '../../services/subscription';
+import { eikenQuestions } from '../../data/eiken_questions';
+
+// 実際の問題データから級別の問題数を集計（ハードコードせずズレを防ぐ）
+const LEVEL_COUNT: Record<string, number> = {};
+eikenQuestions.forEach((q) => { LEVEL_COUNT[q.level] = (LEVEL_COUNT[q.level] ?? 0) + 1; });
 
 const LEVELS = [
   {
@@ -18,7 +23,6 @@ const LEVELS = [
     cefr: 'CEFR B1–B2',
     target: '高校卒業レベル',
     topics: ['社会問題・環境・科学・文化', '長文読解・エッセイ', '高度な語彙・文法'],
-    questionCount: 185,
   },
   {
     key: '3kyu',
@@ -30,7 +34,6 @@ const LEVELS = [
     cefr: 'CEFR A2',
     target: '中学卒業レベル',
     topics: ['日常会話・対話文', '短文読解・Eメール', '基礎文法・語彙'],
-    questionCount: 185,
   },
   {
     key: '4kyu',
@@ -42,11 +45,10 @@ const LEVELS = [
     cefr: 'CEFR A1',
     target: '中学中間レベル',
     topics: ['基礎語彙・短い対話', '簡単な文法', '身近なトピック'],
-    questionCount: 185,
   },
 ];
 
-const TOTAL_EIKEN_QUESTIONS = LEVELS.reduce((s, l) => s + l.questionCount, 0);
+const TOTAL_EIKEN_QUESTIONS = Object.values(LEVEL_COUNT).reduce((s, n) => s + n, 0);
 
 export default function EikenScreen() {
   const router = useRouter();
@@ -109,7 +111,7 @@ export default function EikenScreen() {
                   {level.topics.map((t, i) => (
                     <Text key={i} style={styles.cardTopic}>• {t}</Text>
                   ))}
-                  <Text style={styles.cardMeta}>{level.questionCount}問収録</Text>
+                  <Text style={styles.cardMeta}>{LEVEL_COUNT[level.key] ?? 0}問収録</Text>
                 </View>
                 <Text style={styles.cardArrow}>›</Text>
               </LinearGradient>

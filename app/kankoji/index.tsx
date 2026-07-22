@@ -9,13 +9,18 @@ import {
 } from 'react-native';
 import { useRouter } from 'expo-router';
 import { LinearGradient } from 'expo-linear-gradient';
+import { kankojiQuestions } from '../../data/kankoji_questions';
+
+// 実際の問題データから科目別の問題数を集計（ハードコードせずズレを防ぐ）
+const COUNT: Record<string, number> = {};
+kankojiQuestions.forEach((q) => { COUNT[q.subject] = (COUNT[q.subject] ?? 0) + 1; });
 
 const SUBJECTS = [
-  { key: 'genron', name: '原論・電気・建築', emoji: '🌡️', color: '#455A64', desc: '流体・熱・湿り空気・電動機・梁貫通', count: 5 },
-  { key: 'kucho', name: '空調設備', emoji: '❄️', color: '#1565C0', desc: '熱負荷・空調方式・換気・排煙・熱源機器', count: 5 },
-  { key: 'eisei', name: '給排水衛生設備', emoji: '🚰', color: '#00838F', desc: '給水・給湯・排水通気・消火・ガス', count: 5 },
-  { key: 'sekou', name: '施工管理法', emoji: '🔧', color: '#E65100', desc: '機器据付・配管・ダクト・試験・工程', count: 5 },
-  { key: 'hoki', name: '法規', emoji: '⚖️', color: '#6A1B9A', desc: '労安法・建設業法・消防法・建基法・水道法', count: 5 },
+  { key: 'genron', name: '原論・電気・建築', emoji: '🌡️', color: '#455A64', desc: '流体・熱・湿り空気・電動機・梁貫通' },
+  { key: 'kucho', name: '空調設備', emoji: '❄️', color: '#1565C0', desc: '熱負荷・空調方式・換気・排煙・熱源機器' },
+  { key: 'eisei', name: '給排水衛生設備', emoji: '🚰', color: '#00838F', desc: '給水・給湯・排水通気・消火・ガス' },
+  { key: 'sekou', name: '施工管理法', emoji: '🔧', color: '#E65100', desc: '機器据付・配管・ダクト・試験・工程' },
+  { key: 'hoki', name: '法規', emoji: '⚖️', color: '#6A1B9A', desc: '労安法・建設業法・消防法・建基法・水道法' },
 ];
 
 export default function KankojiScreen() {
@@ -69,7 +74,7 @@ export default function KankojiScreen() {
               <Text style={styles.subjectName}>{subject.name}</Text>
               <Text style={styles.subjectDesc}>{subject.desc}</Text>
               <Text style={[styles.subjectMeta, { color: subject.color }]}>
-                {subject.count}問収録・全問図解つき解説
+                {COUNT[subject.key] ?? 0}問収録・全問図解つき解説
               </Text>
             </View>
             <Text style={styles.subjectArrow}>›</Text>

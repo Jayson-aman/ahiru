@@ -9,12 +9,17 @@ import {
 } from 'react-native';
 import { useRouter } from 'expo-router';
 import { LinearGradient } from 'expo-linear-gradient';
+import { denkisekouQuestions } from '../../data/denkisekou_questions';
+
+// 実際の問題データから科目別の問題数を集計（ハードコードせずズレを防ぐ）
+const COUNT: Record<string, number> = {};
+denkisekouQuestions.forEach((q) => { COUNT[q.subject] = (COUNT[q.subject] ?? 0) + 1; });
 
 const SUBJECTS = [
-  { key: 'riron', name: '電気工学', emoji: '⚡', color: '#EF6C00', desc: '力率改善・電動機・変圧器・照明・蓄電池', count: 6 },
-  { key: 'setsubi', name: '電気設備', emoji: '🏭', color: '#1565C0', desc: '受変電・幹線・接地・配線工事・非常電源', count: 6 },
-  { key: 'sekou', name: '施工管理法', emoji: '🔧', color: '#2E7D32', desc: '絶縁抵抗・竣工検査・停電作業・工程管理', count: 6 },
-  { key: 'hoki', name: '法規', emoji: '⚖️', color: '#6A1B9A', desc: '電気工事士法・電気事業法・建設業法・労安法', count: 6 },
+  { key: 'riron', name: '電気工学', emoji: '⚡', color: '#EF6C00', desc: '力率改善・電動機・変圧器・照明・蓄電池' },
+  { key: 'setsubi', name: '電気設備', emoji: '🏭', color: '#1565C0', desc: '受変電・幹線・接地・配線工事・非常電源' },
+  { key: 'sekou', name: '施工管理法', emoji: '🔧', color: '#2E7D32', desc: '絶縁抵抗・竣工検査・停電作業・工程管理' },
+  { key: 'hoki', name: '法規', emoji: '⚖️', color: '#6A1B9A', desc: '電気工事士法・電気事業法・建設業法・労安法' },
 ];
 
 export default function DenkisekouScreen() {
@@ -68,7 +73,7 @@ export default function DenkisekouScreen() {
               <Text style={styles.subjectName}>{subject.name}</Text>
               <Text style={styles.subjectDesc}>{subject.desc}</Text>
               <Text style={[styles.subjectMeta, { color: subject.color }]}>
-                {subject.count}問収録・全問図解つき解説
+                {COUNT[subject.key] ?? 0}問収録・全問図解つき解説
               </Text>
             </View>
             <Text style={styles.subjectArrow}>›</Text>
