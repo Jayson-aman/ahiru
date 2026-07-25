@@ -11,16 +11,20 @@ export type CostQuestion = {
 };
 
 import { costGairon1 } from './cost_questions_gairon_1';
+import { costGairon2 } from './cost_questions_gairon_2';
 import { costSekisan1 } from './cost_questions_sekisan_1';
 import { costSekisan2 } from './cost_questions_sekisan_2';
+import { costSekisan3 } from './cost_questions_sekisan_3';
 import { costKeiyaku1 } from './cost_questions_keiyaku_1';
 import { costKeiyaku2 } from './cost_questions_keiyaku_2';
 import { costKeizai1 } from './cost_questions_keizai_1';
 
 export const costQuestions: CostQuestion[] = [
   ...costGairon1,
+  ...costGairon2,
   ...costSekisan1,
   ...costSekisan2,
+  ...costSekisan3,
   ...costKeiyaku1,
   ...costKeiyaku2,
   ...costKeizai1,
