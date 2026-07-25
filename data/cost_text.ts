@@ -12,10 +12,12 @@ export type CostTextChapter = {
 
 import { costTextPart1 } from './cost_text_part1';
 import { costTextPart2 } from './cost_text_part2';
+import { costTextPart3 } from './cost_text_part3';
 
 export const costTextbook: CostTextChapter[] = [
   ...costTextPart1,
   ...costTextPart2,
+  ...costTextPart3,
 ];
 
 /**
