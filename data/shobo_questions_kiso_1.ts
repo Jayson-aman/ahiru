@@ -1197,4 +1197,514 @@ export const shoboKiso1: ShoboQuestion[] = [
       '自己誘導起電力は e＝L×(di／dt) で表される。e＝0.5 H×20 A/s＝10 V となる。インダクタンスが大きいほど、また電流の変化が急なほど大きな起電力が生じ、その向きは電流の変化を妨げる方向である。\n【図解】計算のしかた\n★式：e＝L×(di／dt)（自己誘導起電力）\n　代入：e＝0.5 H×20 A/s\n○答え：10 V\n×よくある誤り：L で割らない（掛ける）\n→ 単位で確認：H×A/s＝V になる',
     difficulty: 'standard' as const,
   },
+  {
+    id: 'sb-kisod-021',
+    subject: 'kiso_denki' as const,
+    subjectName: '基礎的知識（電気）',
+    question:
+      '自己インダクタンス 0.2 H のコイルに 10 A の電流が流れている。このコイルに蓄えられる電磁エネルギーとして正しいものはどれか。',
+    choices: [
+      { key: 'A', text: '1 J', explanation: '電流を2乗せずに ½LI と計算した誤答。' },
+      { key: 'B', text: '2 J', explanation: 'LI＝2 と計算した誤答。エネルギーは電流の2乗に比例する。' },
+      { key: 'C', text: '20 J', explanation: 'LI²＝20 と ½ を掛け忘れた誤答。' },
+      { key: 'D', text: '10 J', explanation: 'W＝½LI²＝0.5×0.2×10²＝10 J。正しい。' },
+    ],
+    correctKey: 'D' as const,
+    explanation:
+      'コイルに蓄えられる電磁エネルギーは W＝½LI² である。W＝0.5×0.2 H×(10 A)²＝0.5×0.2×100＝10 J となる。コンデンサの ½CV² と対になる式であり、いずれも「2乗に比例」する点が共通である。\n【図解】計算のしかた\n★式：W＝½LI²（コイル）／W＝½CV²（コンデンサ）\n　代入：W＝0.5×0.2×10²＝0.5×0.2×100\n○答え：10 J\n×よくある誤り：½ を忘れて20 Jとしない\n→ コイルは電流、コンデンサは電圧の2乗で蓄える',
+    difficulty: 'standard' as const,
+  },
+  {
+    id: 'sb-kisod-022',
+    subject: 'kiso_denki' as const,
+    subjectName: '基礎的知識（電気）',
+    question:
+      'フレミングの法則に関する記述として、正しいものはどれか。',
+    choices: [
+      { key: 'A', text: '左手の法則では、中指を電流、人差し指を磁界の向きに合わせると、親指が電磁力の向きを示す。', explanation: '正しい。電動機の原理を示す法則である。' },
+      { key: 'B', text: '左手の法則は発電機の原理を、右手の法則は電動機の原理を表す。', explanation: '誤り。左手が電動機、右手が発電機である。' },
+      { key: 'C', text: '右手の法則では、親指が磁界、人差し指が電流の向きを示す。', explanation: '誤り。右手の法則では親指が導体の運動、人差し指が磁界、中指が起電力である。' },
+      { key: 'D', text: 'いずれの法則も、電流と磁界が平行なときに最も大きな力が生じる。', explanation: '誤り。電流と磁界が直交するときに力は最大となる。' },
+    ],
+    correctKey: 'A' as const,
+    explanation:
+      'フレミングの左手の法則は電動機の原理を表し、親指が力（Force）、人差し指が磁界（Field）、中指が電流（Current）の向きを示す。右手の法則は発電機の原理を表し、親指が導体の運動、人差し指が磁界、中指が誘導起電力の向きを示す。力や起電力は電流（運動）と磁界が直交するときに最大となる。\n【図解】計算のしかた\n★式：左手＝電動機（親指:力、人差し指:磁界、中指:電流）\n　代入：右手＝発電機（親指:運動、人差し指:磁界、中指:起電力）\n○答え：左手は中指＝電流、人差し指＝磁界、親指＝力\n×よくある誤り：左手と右手の役割を逆に覚えない\n→ 「左（ひだり）＝電動（でんどう）」でど・ひの語呂、または F・B・I の順',
+    difficulty: 'standard' as const,
+  },
+  {
+    id: 'sb-kisod-023',
+    subject: 'kiso_denki' as const,
+    subjectName: '基礎的知識（電気）',
+    question:
+      '磁束密度 0.5 T の一様な磁界中に、磁界と直角に長さ 0.4 m の導体を置き、10 A の電流を流した。この導体に働く電磁力の大きさとして正しいものはどれか。',
+    choices: [
+      { key: 'A', text: '0.2 N', explanation: '桁を1つ落とした誤答。0.5×10×0.4＝2 である。' },
+      { key: 'B', text: '20 N', explanation: '桁を1つ多く取った誤答。単位を確認する。' },
+      { key: 'C', text: '2 N', explanation: 'F＝BIL＝0.5×10×0.4＝2 N。正しい。' },
+      { key: 'D', text: '5 N', explanation: '長さを 1 m として計算した誤答。導体長は 0.4 m である。' },
+    ],
+    correctKey: 'C' as const,
+    explanation:
+      '磁界中の電流に働く力は F＝BIL sin θ で表され、磁界と電流が直角（θ＝90°、sin θ＝1）のときに最大となる。F＝0.5 T×10 A×0.4 m＝2 N である。力の向きはフレミングの左手の法則で決まり、これが電動機の回転原理となる。\n【図解】計算のしかた\n★式：F＝BIL sinθ（直角なら F＝BIL）\n　代入：F＝0.5×10×0.4\n○答え：2 N（向きは左手の法則）\n×よくある誤り：磁界と電流が平行なら力は 0（sin0°＝0）\n→ 「BIL（ビル）」の語順で暗記する',
+    difficulty: 'standard' as const,
+  },
+  {
+    id: 'sb-kisod-024',
+    subject: 'kiso_denki' as const,
+    subjectName: '基礎的知識（電気）',
+    question:
+      '実効値 200 V の正弦波交流電圧の最大値として、最も近いものはどれか。',
+    choices: [
+      { key: 'A', text: '約 141.4 V', explanation: '200÷√2＝141.4 であり、割り算をした誤答。最大値は実効値の√2倍である。' },
+      { key: 'B', text: '約 282.8 V', explanation: 'Vm＝√2×V＝1.414×200＝282.8 V。正しい。' },
+      { key: 'C', text: '200 V', explanation: '実効値そのもの。正弦波では最大値と実効値は一致しない。' },
+      { key: 'D', text: '400 V', explanation: '2倍した誤答。倍率は√2（約1.41）である。' },
+    ],
+    correctKey: 'B' as const,
+    explanation:
+      '正弦波交流では、実効値 V と最大値 Vm の間に V＝Vm／√2 の関係がある。したがって Vm＝√2×V＝1.414×200＝282.8 V となる。一般に「100 V」と呼ばれる商用電源も実効値であり、最大値は約141 V である。\n【図解】計算のしかた\n★式：実効値＝最大値／√2、最大値＝√2×実効値\n　代入：Vm＝1.414×200＝282.8 V\n○答え：約282.8 V\n×よくある誤り：√2 で割ってしまわない（最大値は必ず実効値より大きい）\n→ 平均値＝(2／π)×最大値＝0.637Vm も併せて押さえる',
+    difficulty: 'standard' as const,
+  },
+  {
+    id: 'sb-kisod-025',
+    subject: 'kiso_denki' as const,
+    subjectName: '基礎的知識（電気）',
+    question:
+      '周波数 50 Hz の交流の周期として、正しいものはどれか。',
+    choices: [
+      { key: 'A', text: '0.02 s', explanation: 'T＝1／f＝1÷50＝0.02 s。正しい。' },
+      { key: 'B', text: '0.05 s', explanation: '50 を 1000 で割るなど換算を誤った誤答。1÷50＝0.02 である。' },
+      { key: 'C', text: '50 s', explanation: '周波数の値をそのまま答えた誤答。周期は逆数である。' },
+      { key: 'D', text: '0.2 s', explanation: '桁を1つ誤った答え。0.2 s は 5 Hz に相当する。' },
+    ],
+    correctKey: 'A' as const,
+    explanation:
+      '周期 T と周波数 f は互いに逆数の関係にあり、T＝1／f である。T＝1÷50＝0.02 s（＝20 ms）となる。西日本の 60 Hz なら T＝1÷60＝0.0167 s（約16.7 ms）である。\n【図解】計算のしかた\n★式：T＝1／f、f＝1／T（周期と周波数は逆数）\n　代入：T＝1÷50\n○答え：0.02 s（＝20 ms）\n×よくある誤り：周期と周波数の逆数関係を忘れない\n→ 60 Hz なら T＝1／60＝約0.0167 s も併せて確認',
+    difficulty: 'standard' as const,
+  },
+  {
+    id: 'sb-kisod-026',
+    subject: 'kiso_denki' as const,
+    subjectName: '基礎的知識（電気）',
+    question:
+      '周波数 60 Hz の交流における角周波数として、最も近いものはどれか。',
+    choices: [
+      { key: 'A', text: '60 rad/s', explanation: '周波数の値そのもの。角周波数は 2π 倍する。' },
+      { key: 'B', text: '120 rad/s', explanation: '2 倍しただけの誤答。π を掛ける必要がある。' },
+      { key: 'C', text: '188.5 rad/s', explanation: 'π×60＝188.5 であり、2 を掛け忘れた誤答。' },
+      { key: 'D', text: '377 rad/s', explanation: 'ω＝2πf＝2×3.14×60＝377 rad/s。正しい。' },
+    ],
+    correctKey: 'D' as const,
+    explanation:
+      '角周波数は ω＝2πf で求める。ω＝2×3.1416×60＝376.99 ≒ 377 rad/s となる。50 Hz なら ω＝314 rad/s である。リアクタンスの計算 XL＝ωL＝2πfL、XC＝1／ωC＝1／2πfC でも用いる基本量である。\n【図解】計算のしかた\n★式：ω＝2πf（角周波数）\n　代入：ω＝2×3.14×60＝376.8≒377\n○答え：約377 rad/s（50 Hzなら約314 rad/s）\n×よくある誤り：2 を掛け忘れて188.5としない\n→ 50 Hz→314、60 Hz→377 を数値として暗記すると速い',
+    difficulty: 'standard' as const,
+  },
+  {
+    id: 'sb-kisod-027',
+    subject: 'kiso_denki' as const,
+    subjectName: '基礎的知識（電気）',
+    question:
+      '抵抗 8 Ω と誘導リアクタンス 6 Ω を直列に接続した回路に、交流 100 V を加えた。回路に流れる電流として正しいものはどれか。',
+    choices: [
+      { key: 'A', text: '約 7.14 A', explanation: 'インピーダンスを 8＋6＝14 Ω と単純加算した誤答。ベクトル和で求める。' },
+      { key: 'B', text: '10 A', explanation: 'Z＝√(8²＋6²)＝10 Ω、I＝100÷10＝10 A。正しい。' },
+      { key: 'C', text: '12.5 A', explanation: '抵抗のみで 100÷8 とした誤答。リアクタンスも考慮する。' },
+      { key: 'D', text: '約 14 A', explanation: 'インピーダンスを 7 Ω 程度と誤った誤答。正しくは 10 Ω である。' },
+    ],
+    correctKey: 'B' as const,
+    explanation:
+      'RL直列回路のインピーダンスは Z＝√(R²＋XL²)＝√(8²＋6²)＝√(64＋36)＝√100＝10 Ω である。電流は I＝V／Z＝100÷10＝10 A となる。抵抗とリアクタンスは位相が90°異なるため、単純な算術和ではなくベクトル和（三平方の定理）で合成する。\n【図解】計算のしかた\n★式：Z＝√(R²＋X²)、I＝V／Z\n　代入：Z＝√(64＋36)＝√100＝10 Ω、I＝100÷10\n○答え：10 A\n×よくある誤り：R＋X＝14 Ωと算術和にしない（位相が90°違う）\n→ 3：4：5、6：8：10 の直角三角形が頻出パターン',
+    difficulty: 'standard' as const,
+  },
+  {
+    id: 'sb-kisod-028',
+    subject: 'kiso_denki' as const,
+    subjectName: '基礎的知識（電気）',
+    question:
+      '抵抗 8 Ω と誘導リアクタンス 6 Ω を直列に接続した交流回路の力率として、正しいものはどれか。',
+    choices: [
+      { key: 'A', text: '0.6', explanation: 'X／Z＝6／10＝0.6 であり、これは無効率（sin θ）である。' },
+      { key: 'B', text: '0.75', explanation: 'R／X＝8／6＝1.33 の逆数などを取った誤答。力率は R／Z である。' },
+      { key: 'C', text: '0.8', explanation: 'cos θ＝R／Z＝8／10＝0.8。正しい。' },
+      { key: 'D', text: '1.25', explanation: 'Z／R＝10／8 と逆にした誤答。力率は 1 を超えない。' },
+    ],
+    correctKey: 'C' as const,
+    explanation:
+      '力率は cos θ＝R／Z で求める。Z＝√(8²＋6²)＝10 Ω なので、cos θ＝8÷10＝0.8（80%）となる。力率は 0 から 1 の間の値をとり、1 を超えることはない。sin θ＝X／Z＝0.6 は無効率である。\n【図解】計算のしかた\n★式：cosθ＝R／Z（力率）、Z＝√(R²＋X²)\n　代入：Z＝10 Ω、cosθ＝8÷10\n○答え：0.8（80%）\n×よくある誤り：1 を超える値は力率としてあり得ない\n→ インピーダンス三角形：底辺R・高さX・斜辺Z、cosは底辺÷斜辺',
+    difficulty: 'standard' as const,
+  },
+  {
+    id: 'sb-kisod-029',
+    subject: 'kiso_denki' as const,
+    subjectName: '基礎的知識（電気）',
+    question:
+      '抵抗 30 Ω と容量リアクタンス 40 Ω を直列に接続した交流回路のインピーダンスとして、正しいものはどれか。',
+    choices: [
+      { key: 'A', text: '10 Ω', explanation: '差 40－30＝10 とした誤答。直列RC回路では差ではなくベクトル和である。' },
+      { key: 'B', text: '70 Ω', explanation: '算術和 30＋40 とした誤答。位相差90°を考慮していない。' },
+      { key: 'C', text: '50 Ω', explanation: 'Z＝√(30²＋40²)＝√2500＝50 Ω。正しい。' },
+      { key: 'D', text: '35 Ω', explanation: '平均値を取った誤答。インピーダンスは平均では求まらない。' },
+    ],
+    correctKey: 'C' as const,
+    explanation:
+      'RC直列回路のインピーダンスは Z＝√(R²＋XC²)＝√(30²＋40²)＝√(900＋1600)＝√2500＝50 Ω である。3：4：5 の直角三角形の関係になっている。なお電流は電圧より位相が進む（進み電流）。\n【図解】計算のしかた\n★式：Z＝√(R²＋Xc²)（RC直列）\n　代入：Z＝√(900＋1600)＝√2500\n○答え：50 Ω（力率は30／50＝0.6）\n×よくある誤り：算術和70 Ωとしない\n→ RCは電流が進み、RLは電流が遅れる',
+    difficulty: 'standard' as const,
+  },
+  {
+    id: 'sb-kisod-030',
+    subject: 'kiso_denki' as const,
+    subjectName: '基礎的知識（電気）',
+    question:
+      '抵抗 6 Ω、誘導リアクタンス 12 Ω、容量リアクタンス 4 Ω を直列に接続した交流回路のインピーダンスとして、正しいものはどれか。',
+    choices: [
+      { key: 'A', text: '22 Ω', explanation: '6＋12＋4 と単純加算した誤答。リアクタンスは差をとってから合成する。' },
+      { key: 'B', text: '10 Ω', explanation: 'X＝12－4＝8、Z＝√(6²＋8²)＝10 Ω。正しい。' },
+      { key: 'C', text: '14 Ω', explanation: 'XL と XC を足して 16 とし、そこから求めた誤答。リアクタンスは打ち消し合う。' },
+      { key: 'D', text: '6 Ω', explanation: 'リアクタンス分がすべて相殺すると考えた誤答。共振していないので残る。' },
+    ],
+    correctKey: 'B' as const,
+    explanation:
+      'RLC直列回路では、誘導リアクタンスと容量リアクタンスは互いに位相が180°異なるため差をとる。X＝XL－XC＝12－4＝8 Ω である。したがって Z＝√(R²＋X²)＝√(6²＋8²)＝√(36＋64)＝√100＝10 Ω となる。XL＞XC なので回路全体は誘導性である。\n【図解】計算のしかた\n★式：X＝XL－XC、Z＝√(R²＋X²)\n　代入：X＝12－4＝8、Z＝√(36＋64)＝√100\n○答え：10 Ω（XL＞XCなので誘導性）\n×よくある誤り：XL と XC を足さない（打ち消し合う）\n→ XL＝XC なら Z＝R となり直列共振',
+    difficulty: 'standard' as const,
+  },
+  {
+    id: 'sb-kisod-031',
+    subject: 'kiso_denki' as const,
+    subjectName: '基礎的知識（電気）',
+    question:
+      '自己インダクタンス 0.1 H のコイルを、周波数 50 Hz の交流回路に接続した。このコイルの誘導リアクタンスとして最も近いものはどれか。',
+    choices: [
+      { key: 'A', text: '約 31.4 Ω', explanation: 'XL＝2πfL＝2×3.14×50×0.1＝31.4 Ω。正しい。' },
+      { key: 'B', text: '約 3.14 Ω', explanation: '桁を1つ落とした誤答。2π×50＝314 である。' },
+      { key: 'C', text: '約 314 Ω', explanation: 'インダクタンスを 1 H として計算した誤答。0.1 H である。' },
+      { key: 'D', text: '約 0.0318 Ω', explanation: '容量リアクタンスの式 1／(2πfC) を用いた誤答。' },
+    ],
+    correctKey: 'A' as const,
+    explanation:
+      '誘導リアクタンスは XL＝2πfL＝ωL で求める。XL＝2×3.14×50×0.1＝314×0.1＝31.4 Ω となる。誘導リアクタンスは周波数とインダクタンスに比例するので、周波数が高いほどコイルは電流を通しにくくなる。\n【図解】計算のしかた\n★式：XL＝2πfL（＝ωL）\n　代入：XL＝2×3.14×50×0.1＝314×0.1\n○答え：約31.4 Ω\n×よくある誤り：容量リアクタンス 1／2πfC の式と取り違えない\n→ コイルは「周波数が高いほど通しにくい」（比例）',
+    difficulty: 'standard' as const,
+  },
+  {
+    id: 'sb-kisod-032',
+    subject: 'kiso_denki' as const,
+    subjectName: '基礎的知識（電気）',
+    question:
+      '静電容量 100 μF のコンデンサを、周波数 50 Hz の交流回路に接続した。このコンデンサの容量リアクタンスとして最も近いものはどれか。',
+    choices: [
+      { key: 'A', text: '約 3.18 Ω', explanation: '桁を1つ落とした誤答。1÷0.0314＝31.8 である。' },
+      { key: 'B', text: '約 314 Ω', explanation: 'ωの値そのもの、または逆数を取り忘れた誤答。' },
+      { key: 'C', text: '約 0.0314 Ω', explanation: 'ωC の値であり、逆数を取り忘れた誤答。' },
+      { key: 'D', text: '約 31.8 Ω', explanation: 'XC＝1／(2πfC)＝1÷(314×100×10⁻⁶)＝31.8 Ω。正しい。' },
+    ],
+    correctKey: 'D' as const,
+    explanation:
+      '容量リアクタンスは XC＝1／(2πfC)＝1／(ωC) で求める。ω＝2×3.14×50＝314 rad/s、ωC＝314×100×10⁻⁶＝0.0314 なので、XC＝1÷0.0314＝31.8 Ω となる。容量リアクタンスは周波数と静電容量に反比例し、周波数が高いほどコンデンサは電流を通しやすくなる。\n【図解】計算のしかた\n★式：XC＝1／(2πfC)（周波数・容量に反比例）\n　代入：ωC＝314×100×10⁻⁶＝0.0314、XC＝1÷0.0314\n○答え：約31.8 Ω\n×よくある誤り：逆数を取り忘れない、μF の換算を忘れない\n→ コンデンサは「周波数が高いほど通しやすい」（コイルと逆）',
+    difficulty: 'standard' as const,
+  },
+  {
+    id: 'sb-kisod-033',
+    subject: 'kiso_denki' as const,
+    subjectName: '基礎的知識（電気）',
+    question:
+      'RLC直列回路の直列共振に関する記述として、正しいものはどれか。',
+    choices: [
+      { key: 'A', text: '共振時はインピーダンスが最大となり、電流は最小となる。', explanation: '誤り。それは並列共振の特徴である。直列共振ではインピーダンスは最小になる。' },
+      { key: 'B', text: '共振時は XL＝XC となり、インピーダンスは R のみとなって電流が最大となる。', explanation: '正しい。リアクタンス分が打ち消し合う。' },
+      { key: 'C', text: '共振周波数は回路の抵抗値によって決まる。', explanation: '誤り。共振周波数は L と C だけで決まり、R には無関係である。' },
+      { key: 'D', text: '共振時の回路の力率は 0 となる。', explanation: '誤り。共振時はインピーダンスが R のみとなるため力率は 1 である。' },
+    ],
+    correctKey: 'B' as const,
+    explanation:
+      'RLC直列回路では XL＝2πfL、XC＝1／(2πfC) であり、両者が等しくなる周波数 f＝1／(2π√(LC)) で直列共振が起こる。このときリアクタンス分が打ち消し合ってインピーダンスは Z＝R と最小になり、電流は最大、力率は 1 となる。共振周波数は L と C のみで決まり、抵抗値には関係しない。\n【図解】計算のしかた\n★式：共振条件 XL＝XC → f＝1／(2π√(LC))\n　代入：共振時 Z＝R（最小）、I＝V／R（最大）、力率＝1\n○答え：XL＝XCでインピーダンス最小・電流最大\n×よくある誤り：並列共振（インピーダンス最大・電流最小）と逆に覚えない\n→ 直列は「電流が通りやすくなる共振」',
+    difficulty: 'standard' as const,
+  },
+  {
+    id: 'sb-kisod-034',
+    subject: 'kiso_denki' as const,
+    subjectName: '基礎的知識（電気）',
+    question:
+      '単相交流回路において、電圧 200 V、電流 10 A、力率 0.8 であった。この回路の有効電力として正しいものはどれか。',
+    choices: [
+      { key: 'A', text: '2000 W', explanation: '皮相電力 2000 VA の値である。力率を掛けていない。' },
+      { key: 'B', text: '1200 W', explanation: '無効電力 1200 var の値である。sin θ＝0.6 を掛けている。' },
+      { key: 'C', text: '1600 W', explanation: 'P＝VI cos θ＝200×10×0.8＝1600 W。正しい。' },
+      { key: 'D', text: '400 W', explanation: '計算過程を誤った値。200×10×0.8 は 1600 である。' },
+    ],
+    correctKey: 'C' as const,
+    explanation:
+      '単相交流の有効電力は P＝VI cos θ で求める。P＝200 V×10 A×0.8＝1600 W となる。皮相電力は S＝VI＝2000 VA、無効電力は Q＝VI sin θ＝2000×0.6＝1200 var であり、S²＝P²＋Q²（2000²＝1600²＋1200²）が成り立つ。\n【図解】計算のしかた\n★式：P＝VIcosθ（有効）、S＝VI（皮相）、Q＝VIsinθ（無効）\n　代入：P＝200×10×0.8＝1600 W、S＝2000 VA、Q＝1200 var\n○答え：1600 W\n×よくある誤り：単位 W・VA・var を混同しない\n→ 電力の三角形：S²＝P²＋Q²（2000²＝1600²＋1200²）で検算',
+    difficulty: 'standard' as const,
+  },
+  {
+    id: 'sb-kisod-035',
+    subject: 'kiso_denki' as const,
+    subjectName: '基礎的知識（電気）',
+    question:
+      '単相交流回路において、電圧 200 V、電流 10 A、力率 0.8（遅れ）であった。この回路の無効電力として正しいものはどれか。',
+    choices: [
+      { key: 'A', text: '1200 var', explanation: 'Q＝VI sin θ＝2000×0.6＝1200 var。正しい。' },
+      { key: 'B', text: '1600 var', explanation: '有効電力 1600 W の値である。cos θ を掛けている。' },
+      { key: 'C', text: '2000 var', explanation: '皮相電力 2000 VA の値である。sin θ を掛けていない。' },
+      { key: 'D', text: '800 var', explanation: 'sin θ を 0.4 として計算した誤答。cos θ＝0.8 なら sin θ＝0.6 である。' },
+    ],
+    correctKey: 'A' as const,
+    explanation:
+      '皮相電力は S＝VI＝200×10＝2000 VA である。力率 cos θ＝0.8 のとき sin θ＝√(1－0.8²)＝√0.36＝0.6 なので、無効電力は Q＝VI sin θ＝2000×0.6＝1200 var となる。有効電力 1600 W と合わせて 1600²＋1200²＝2000² が成り立つ。\n【図解】計算のしかた\n★式：Q＝VIsinθ、sinθ＝√(1－cos²θ)\n　代入：S＝2000 VA、sinθ＝√(1－0.64)＝0.6、Q＝2000×0.6\n○答え：1200 var\n×よくある誤り：cosθ＝0.8 のとき sinθ＝0.2 としない（0.6 である）\n→ 力率0.8の直角三角形は 6：8：10 の比',
+    difficulty: 'standard' as const,
+  },
+  {
+    id: 'sb-kisod-036',
+    subject: 'kiso_denki' as const,
+    subjectName: '基礎的知識（電気）',
+    question:
+      '三相交流のY（スター）結線において、相電圧が 200 V であるときの線間電圧として最も近いものはどれか。',
+    choices: [
+      { key: 'A', text: '200 V', explanation: 'Δ結線であれば線間電圧＝相電圧だが、Y結線では異なる。' },
+      { key: 'B', text: '約 115 V', explanation: '200÷√3＝115 であり、割り算をした誤答。線間電圧は√3倍である。' },
+      { key: 'C', text: '約 283 V', explanation: '√2 倍した誤答。三相の結線では√3（約1.73）倍である。' },
+      { key: 'D', text: '約 346 V', explanation: '√3×200＝1.732×200＝346 V。正しい。' },
+    ],
+    correctKey: 'D' as const,
+    explanation:
+      'Y結線では線間電圧が相電圧の√3倍となり、線電流と相電流は等しい。線間電圧＝√3×200＝1.732×200＝346 V である。逆にΔ結線では線間電圧＝相電圧で、線電流が相電流の√3倍となる。\n【図解】計算のしかた\n★式：Y結線 → 線間電圧＝√3×相電圧、線電流＝相電流\n　代入：V＝1.732×200＝346.4 V\n○答え：約346 V\n×よくある誤り：√2（1.41）倍としない、割り算にしない\n→ 「Y は電圧が√3倍、Δ は電流が√3倍」',
+    difficulty: 'standard' as const,
+  },
+  {
+    id: 'sb-kisod-037',
+    subject: 'kiso_denki' as const,
+    subjectName: '基礎的知識（電気）',
+    question:
+      '三相交流のΔ（デルタ）結線において、相電流が 10 A であるときの線電流として最も近いものはどれか。',
+    choices: [
+      { key: 'A', text: '約 17.3 A', explanation: '線電流＝√3×相電流＝1.732×10＝17.3 A。正しい。' },
+      { key: 'B', text: '10 A', explanation: 'Y結線であれば線電流＝相電流だが、Δ結線では異なる。' },
+      { key: 'C', text: '約 5.77 A', explanation: '10÷√3＝5.77 であり、割り算をした誤答。' },
+      { key: 'D', text: '30 A', explanation: '3 倍した誤答。倍率は√3（約1.73）である。' },
+    ],
+    correctKey: 'A' as const,
+    explanation:
+      'Δ結線では線間電圧が相電圧に等しく、線電流は相電流の√3倍となる。線電流＝√3×10＝1.732×10＝17.3 A である。Y結線とΔ結線で「√3倍になるのが電圧か電流か」を取り違えないことが重要である。\n【図解】計算のしかた\n★式：Δ結線 → 線間電圧＝相電圧、線電流＝√3×相電流\n　代入：I＝1.732×10＝17.32 A\n○答え：約17.3 A\n×よくある誤り：3倍（30 A）としない。√3＝1.732 である\n→ 「Δは電流が√3倍、Yは電圧が√3倍」で対にして覚える',
+    difficulty: 'standard' as const,
+  },
+  {
+    id: 'sb-kisod-038',
+    subject: 'kiso_denki' as const,
+    subjectName: '基礎的知識（電気）',
+    question:
+      '三相交流回路において、線間電圧 200 V、線電流 10 A、力率 0.8 であるときの三相電力として最も近いものはどれか。',
+    choices: [
+      { key: 'A', text: '約 1600 W', explanation: '単相の式 VIcos θ で計算した誤答。三相では√3 を掛ける。' },
+      { key: 'B', text: '約 4800 W', explanation: '3×VIcos θ＝4800 とした誤答。係数は 3 ではなく√3 である。' },
+      { key: 'C', text: '約 2771 W', explanation: 'P＝√3VIcos θ＝1.732×200×10×0.8＝2771 W。正しい。' },
+      { key: 'D', text: '約 3200 W', explanation: '2×VIcos θ とした誤答。√3＝1.732 を用いる。' },
+    ],
+    correctKey: 'C' as const,
+    explanation:
+      '三相電力は結線方式によらず P＝√3×V×I×cos θ（Vは線間電圧、Iは線電流）で求める。P＝1.732×200×10×0.8＝1.732×1600＝2771 W となる。三相皮相電力は S＝√3VI＝3464 VA である。\n【図解】計算のしかた\n★式：三相電力 P＝√3×(線間電圧)×(線電流)×cosθ\n　代入：P＝1.732×200×10×0.8＝1.732×1600\n○答え：約2771 W（皮相は約3464 VA）\n×よくある誤り：係数を 3 としない（√3＝1.732）\n→ 単相は VIcosθ、三相は√3 を掛けるだけ',
+    difficulty: 'standard' as const,
+  },
+  {
+    id: 'sb-kisod-039',
+    subject: 'kiso_denki' as const,
+    subjectName: '基礎的知識（電気）',
+    question:
+      '消費電力 500 W の機器を、6 時間連続して使用したときの電力量として正しいものはどれか。',
+    choices: [
+      { key: 'A', text: '0.3 kWh', explanation: '桁を誤った答え。0.5 kW×6 h＝3 kWh である。' },
+      { key: 'B', text: '30 kWh', explanation: '桁を1つ多く取った誤答。' },
+      { key: 'C', text: '3000 kWh', explanation: 'W を kW に換算し忘れた誤答。500 W＝0.5 kW である。' },
+      { key: 'D', text: '3 kWh', explanation: 'W＝0.5 kW×6 h＝3 kWh。正しい。' },
+    ],
+    correctKey: 'D' as const,
+    explanation:
+      '電力量は電力と時間の積である。500 W＝0.5 kW なので、0.5 kW×6 h＝3 kWh となる。ジュール単位では 500 W×21600 s＝1.08×10⁷ J＝10.8 MJ である。1 kWh＝3.6×10⁶ J＝3.6 MJ という関係も押さえておく。\n【図解】計算のしかた\n★式：電力量 W＝P×t（kWで計算するなら時間は h）\n　代入：W＝0.5 kW×6 h\n○答え：3 kWh（＝1.08×10⁷ J）\n×よくある誤り：W のまま時間を掛けて kWh と書かない\n→ 1 kWh＝3.6 MJ、換算はこの1つで足りる',
+    difficulty: 'standard' as const,
+  },
+  {
+    id: 'sb-kisod-040',
+    subject: 'kiso_denki' as const,
+    subjectName: '基礎的知識（電気）',
+    question:
+      '抵抗 4 Ω に 5 A の電流を 60 秒間流したとき、この抵抗に発生する熱量として正しいものはどれか。',
+    choices: [
+      { key: 'A', text: '1200 J', explanation: 'IRt＝5×4×60 と電流を2乗せずに計算した誤答。' },
+      { key: 'B', text: '6000 J', explanation: 'H＝I²Rt＝5²×4×60＝6000 J。正しい。' },
+      { key: 'C', text: '100 J', explanation: 'I²R＝100 で時間を掛け忘れた誤答。これは電力[W]の値である。' },
+      { key: 'D', text: '360000 J', explanation: '時間を 3600 秒として計算した誤答。条件は 60 秒である。' },
+    ],
+    correctKey: 'B' as const,
+    explanation:
+      'ジュールの法則より、発生する熱量は H＝I²Rt である。H＝5²×4×60＝25×4×60＝6000 J となる。なお I²R＝100 W はこの抵抗の消費電力であり、これに時間 60 s を掛けたものが熱量である。\n【図解】計算のしかた\n★式：H＝I²Rt（ジュールの法則）＝P×t\n　代入：H＝5²×4×60＝25×4×60＝100 W×60 s\n○答え：6000 J\n×よくある誤り：電流を2乗し忘れない、時間の単位は秒\n→ 電力P＝I²R を先に出してから時間を掛けると間違えにくい',
+    difficulty: 'standard' as const,
+  },
+  {
+    id: 'sb-kisod-041',
+    subject: 'kiso_denki' as const,
+    subjectName: '基礎的知識（電気）',
+    question:
+      '抵抗 20 Ω に直流 100 V を加えたときの消費電力として、正しいものはどれか。',
+    choices: [
+      { key: 'A', text: '5 W', explanation: '電流 5 A の値を電力としてしまった誤答。電力は VI で求める。' },
+      { key: 'B', text: '2000 W', explanation: 'V×R＝100×20 と掛けた誤答。電力は V²／R である。' },
+      { key: 'C', text: '500 W', explanation: 'P＝V²／R＝100²÷20＝10000÷20＝500 W。正しい。' },
+      { key: 'D', text: '50 W', explanation: '桁を1つ落とした誤答。10000÷20 は 500 である。' },
+    ],
+    correctKey: 'C' as const,
+    explanation:
+      '消費電力は P＝VI＝I²R＝V²／R のいずれでも求められる。P＝100²÷20＝10000÷20＝500 W となる。電流から求めても I＝100÷20＝5 A、P＝100×5＝500 W と一致する。\n【図解】計算のしかた\n★式：P＝VI＝I²R＝V²／R（3つの形を使い分ける）\n　代入：P＝100²÷20＝10000÷20（またはI＝5 A、P＝100×5）\n○答え：500 W\n×よくある誤り：V×R と掛けない（割る）\n→ 与えられた量に応じて3つの式を選ぶ。答えは必ず一致する',
+    difficulty: 'standard' as const,
+  },
+  {
+    id: 'sb-kisod-042',
+    subject: 'kiso_denki' as const,
+    subjectName: '基礎的知識（電気）',
+    question:
+      '可動コイル形計器に関する記述として、正しいものはどれか。',
+    choices: [
+      { key: 'A', text: '直流・交流のどちらにもそのまま使用でき、実効値を指示する。', explanation: '誤り。可動コイル形は直流専用であり、交流をそのまま加えると指示しない。' },
+      { key: 'B', text: '直流専用の計器で、目盛は平等目盛となる。', explanation: '正しい。駆動トルクが電流に比例するため目盛が等間隔になる。' },
+      { key: 'C', text: '指示は電流の2乗に比例するため、目盛は不平等目盛となる。', explanation: '誤り。これは可動鉄片形や電流力計形の特徴である。' },
+      { key: 'D', text: '交流専用の計器で、商用周波数以外では使用できない。', explanation: '誤り。可動コイル形は直流用である。' },
+    ],
+    correctKey: 'B' as const,
+    explanation:
+      '可動コイル形計器は、永久磁石の磁界中に置いたコイルに流れる電流によって生じるトルクで指針を振らせる。トルクが電流に比例するため目盛は平等目盛（等間隔）となり、感度が高く精度もよいが、直流専用である。交流を測るには整流器を組み合わせた整流形とする。\n【図解】計算のしかた\n★式：可動コイル形＝直流専用・平等目盛／可動鉄片形＝交流用・不平等目盛\n　代入：整流形＝可動コイル形＋整流器で交流測定（正弦波の実効値目盛）\n○答え：直流専用で平等目盛\n×よくある誤り：交流でも使えるとしない（整流器が必要）\n→ 「コイル＝直流、鉄片＝交流」で対にして覚える',
+    difficulty: 'standard' as const,
+  },
+  {
+    id: 'sb-kisod-043',
+    subject: 'kiso_denki' as const,
+    subjectName: '基礎的知識（電気）',
+    question:
+      '電気計器の種類と特徴に関する記述として、正しいものはどれか。',
+    choices: [
+      { key: 'A', text: '整流形計器は、直流専用であり交流には使用できない。', explanation: '誤り。整流形は交流を整流して測定する交流用の計器である。' },
+      { key: 'B', text: '電流力計形計器は直流専用で、電力測定には使用できない。', explanation: '誤り。電流力計形は交直両用で、電力計として広く用いられる。' },
+      { key: 'C', text: '熱電形計器は低周波専用で、高周波の測定には使用できない。', explanation: '誤り。熱電形は高周波の測定にも適する。' },
+      { key: 'D', text: '可動鉄片形計器は主に交流回路に用いられ、目盛は不平等目盛となる。', explanation: '正しい。指示が電流の2乗に近い形で決まるため目盛が不均等になる。' },
+    ],
+    correctKey: 'D' as const,
+    explanation:
+      '可動鉄片形は固定コイルの磁界で鉄片を動かす構造で、主に交流の電圧・電流測定に用いられ、指示が電流の2乗に近い形になるため目盛は不平等目盛になる。整流形は可動コイル形に整流器を組み合わせた交流用計器、電流力計形は交直両用で電力計に用いられ、熱電形は高周波測定に適する。\n【図解】計算のしかた\n★式：可動コイル形＝直流／可動鉄片形＝交流／整流形＝交流／電流力計形＝交直両用\n　代入：平等目盛＝可動コイル形、不平等目盛＝可動鉄片形・電流力計形\n○答え：可動鉄片形は交流用で不平等目盛\n×よくある誤り：整流形を直流用としない（交流用）\n→ 電力計といえば電流力計形（交直両用）',
+    difficulty: 'standard' as const,
+  },
+  {
+    id: 'sb-kisod-044',
+    subject: 'kiso_denki' as const,
+    subjectName: '基礎的知識（電気）',
+    question:
+      '内部抵抗 0.5 Ω の電流計の測定範囲を10倍に拡大したい。並列に接続する分流器の抵抗値として、最も近いものはどれか。',
+    choices: [
+      { key: 'A', text: '0.05 Ω', explanation: 'Ra／n＝0.5÷10 とした誤答。分母は n－1 である。' },
+      { key: 'B', text: '5 Ω', explanation: 'Ra×10 とした誤答。分流器の抵抗は電流計より小さくなる。' },
+      { key: 'C', text: '約 0.056 Ω', explanation: 'Rs＝Ra／(n－1)＝0.5÷9＝0.0556 Ω。正しい。' },
+      { key: 'D', text: '4.5 Ω', explanation: 'Ra×(n－1)＝0.5×9＝4.5 とした誤答。これは倍率器の式である。' },
+    ],
+    correctKey: 'C' as const,
+    explanation:
+      '分流器は電流計と並列に接続し、余分な電流をバイパスさせて測定範囲を拡大する。倍率を n とすると Rs＝Ra／(n－1) である。Rs＝0.5÷(10－1)＝0.5÷9＝0.0556 Ω となる。分流器の抵抗は電流計の内部抵抗より小さい値になる点が特徴である。\n【図解】計算のしかた\n★式：分流器 Rs＝Ra／(n－1)（電流計と並列）\n　代入：Rs＝0.5÷(10－1)＝0.5÷9\n○答え：約0.056 Ω（電流計の内部抵抗より小さい）\n×よくある誤り：n で割らない（n－1 で割る）、倍率器の式と混同しない\n→ 「分流器は並列で小さい抵抗、倍率器は直列で大きい抵抗」',
+    difficulty: 'standard' as const,
+  },
+  {
+    id: 'sb-kisod-045',
+    subject: 'kiso_denki' as const,
+    subjectName: '基礎的知識（電気）',
+    question:
+      '内部抵抗 2 kΩ の電圧計の測定範囲を5倍に拡大したい。直列に接続する倍率器の抵抗値として、正しいものはどれか。',
+    choices: [
+      { key: 'A', text: '8 kΩ', explanation: 'Rm＝Ra×(n－1)＝2×(5－1)＝8 kΩ。正しい。' },
+      { key: 'B', text: '10 kΩ', explanation: 'Ra×n＝2×5 とした誤答。n ではなく n－1 を掛ける。' },
+      { key: 'C', text: '0.5 kΩ', explanation: 'Ra／(n－1)＝2÷4 とした誤答。これは分流器の式である。' },
+      { key: 'D', text: '2 kΩ', explanation: '電圧計の内部抵抗そのもの。倍率が5倍なら 4 倍の抵抗が必要である。' },
+    ],
+    correctKey: 'A' as const,
+    explanation:
+      '倍率器は電圧計と直列に接続し、電圧を分圧して測定範囲を拡大する。倍率を n とすると Rm＝Ra×(n－1) である。Rm＝2 kΩ×(5－1)＝2×4＝8 kΩ となる。全体の抵抗は 2＋8＝10 kΩ となり、電圧計にはその 5分の1 の電圧しか掛からない。\n【図解】計算のしかた\n★式：倍率器 Rm＝Ra×(n－1)（電圧計と直列）\n　代入：Rm＝2 kΩ×(5－1)＝2×4\n○答え：8 kΩ（合計10 kΩで電圧計負担は1／5）\n×よくある誤り：n を掛けて10 kΩとしない\n→ 「倍率器は直列で大きい抵抗、分流器は並列で小さい抵抗」',
+    difficulty: 'standard' as const,
+  },
+  {
+    id: 'sb-kisod-046',
+    subject: 'kiso_denki' as const,
+    subjectName: '基礎的知識（電気）',
+    question:
+      '一次電圧 6600 V、二次電圧 210 V の単相変圧器がある。一次巻線の巻数が 2200 回であるとき、二次巻線の巻数として正しいものはどれか。',
+    choices: [
+      { key: 'A', text: '35 回', explanation: '巻数比を 2 倍誤った誤答。6600÷210＝31.4 で 2200÷31.4＝70 である。' },
+      { key: 'B', text: '70 回', explanation: 'N₂＝N₁×V₂／V₁＝2200×210÷6600＝70 回。正しい。' },
+      { key: 'C', text: '140 回', explanation: '比の計算を誤り 2 倍にした誤答。' },
+      { key: 'D', text: '220 回', explanation: '巻数比を 10 とした誤答。実際の巻数比は約31.4である。' },
+    ],
+    correctKey: 'B' as const,
+    explanation:
+      '変圧器では巻数比と電圧比が等しく、V₁／V₂＝N₁／N₂ が成り立つ。N₂＝N₁×V₂／V₁＝2200×210÷6600＝2200×(1／31.43)＝70 回となる。電流は逆に I₁／I₂＝N₂／N₁ となり、巻数が少ない側に大きな電流が流れる。\n【図解】計算のしかた\n★式：V₁／V₂＝N₁／N₂＝I₂／I₁（変圧器の関係）\n　代入：N₂＝2200×210÷6600＝462000÷6600\n○答え：70 回\n×よくある誤り：電圧比と電流比の向きを逆にしない\n→ 「電圧が下がる側は巻数が少なく、電流は増える」',
+    difficulty: 'standard' as const,
+  },
+  {
+    id: 'sb-kisod-047',
+    subject: 'kiso_denki' as const,
+    subjectName: '基礎的知識（電気）',
+    question:
+      '一次電圧 200 V、二次電圧 100 V の理想変圧器において、二次側に 20 A の電流が流れている。一次側に流れる電流として正しいものはどれか。',
+    choices: [
+      { key: 'A', text: '40 A', explanation: '電流比を逆にした誤答。電圧が高い側の電流は小さくなる。' },
+      { key: 'B', text: '20 A', explanation: '一次と二次で電流が等しいとした誤答。変圧比に応じて変わる。' },
+      { key: 'C', text: '5 A', explanation: '巻数比を 4 とした誤答。電圧比は 2 である。' },
+      { key: 'D', text: '10 A', explanation: 'I₁＝I₂×V₂／V₁＝20×100÷200＝10 A。正しい。' },
+    ],
+    correctKey: 'D' as const,
+    explanation:
+      '理想変圧器では損失がないので入力容量と出力容量が等しく、V₁I₁＝V₂I₂ が成り立つ。I₁＝I₂×V₂／V₁＝20×100÷200＝10 A となる。二次側の容量は 100×20＝2000 VA、一次側も 200×10＝2000 VA で一致する。\n【図解】計算のしかた\n★式：V₁I₁＝V₂I₂（容量一定）→ I₁＝I₂×V₂／V₁\n　代入：I₁＝20×100÷200＝10 A（容量はどちらも2000 VA）\n○答え：10 A\n×よくある誤り：電圧比と同じ向きに電流を増やさない（逆比）\n→ 「電圧を上げれば電流は下がる」＝容量[VA]は不変',
+    difficulty: 'standard' as const,
+  },
+  {
+    id: 'sb-kisod-048',
+    subject: 'kiso_denki' as const,
+    subjectName: '基礎的知識（電気）',
+    question:
+      '周波数 60 Hz の電源に接続された4極の三相誘導電動機がある。この電動機の同期速度として正しいものはどれか。',
+    choices: [
+      { key: 'A', text: '900 min⁻¹', explanation: '8極として計算した誤答。極数は 4 である。' },
+      { key: 'B', text: '1200 min⁻¹', explanation: '6極として計算した、または周波数を 40 Hz とした誤答。' },
+      { key: 'C', text: '1800 min⁻¹', explanation: 'Ns＝120f／P＝120×60÷4＝1800 min⁻¹。正しい。' },
+      { key: 'D', text: '3600 min⁻¹', explanation: '2極として計算した誤答。極数 4 なら半分になる。' },
+    ],
+    correctKey: 'C' as const,
+    explanation:
+      '三相誘導電動機の同期速度は Ns＝120f／P（f は周波数、P は極数）で求める。Ns＝120×60÷4＝7200÷4＝1800 min⁻¹ となる。実際の回転速度はすべりの分だけ同期速度より遅くなる。50 Hz・4極なら 1500 min⁻¹ である。\n【図解】計算のしかた\n★式：同期速度 Ns＝120f／P（Pは極数）\n　代入：Ns＝120×60÷4＝7200÷4\n○答え：1800 min⁻¹（50 Hz・4極なら1500）\n×よくある誤り：極数と極対数を混同しない（Pは極数）\n→ 極数が増えるほど回転は遅い（反比例）',
+    difficulty: 'standard' as const,
+  },
+  {
+    id: 'sb-kisod-049',
+    subject: 'kiso_denki' as const,
+    subjectName: '基礎的知識（電気）',
+    question:
+      '同期速度 1800 min⁻¹ の三相誘導電動機が、実際には 1710 min⁻¹ で回転している。このときのすべりとして正しいものはどれか。',
+    choices: [
+      { key: 'A', text: '5 %', explanation: 's＝(1800－1710)／1800＝90÷1800＝0.05＝5%。正しい。' },
+      { key: 'B', text: '0.5 %', explanation: '桁を1つ落とした誤答。90÷1800＝0.05 である。' },
+      { key: 'C', text: '95 %', explanation: '回転速度と同期速度の比 1710／1800 を答えた誤答。すべりは差の割合である。' },
+      { key: 'D', text: '9 %', explanation: '差の 90 をそのまま百分率にした誤答。同期速度で割る必要がある。' },
+    ],
+    correctKey: 'A' as const,
+    explanation:
+      'すべりは s＝(Ns－N)／Ns で求める。s＝(1800－1710)÷1800＝90÷1800＝0.05、すなわち 5% となる。全負荷時のすべりは一般に数%程度であり、始動時は s＝1、無負荷では 0 に近づく。\n【図解】計算のしかた\n★式：s＝(Ns－N)／Ns（すべり）、N＝Ns(1－s)\n　代入：s＝(1800－1710)÷1800＝90÷1800\n○答え：0.05＝5%\n×よくある誤り：N／Ns（＝95%）と混同しない\n→ 始動時 s＝1、同期速度で回れば s＝0。通常は数%',
+    difficulty: 'standard' as const,
+  },
+  {
+    id: 'sb-kisod-050',
+    subject: 'kiso_denki' as const,
+    subjectName: '基礎的知識（電気）',
+    question:
+      '低圧屋内電路の絶縁抵抗および接地に関する記述として、正しいものはどれか。',
+    choices: [
+      { key: 'A', text: '絶縁抵抗の測定には回路計（テスタ）の抵抗レンジを用いるのが原則である。', explanation: '誤り。絶縁抵抗計（メガー）を用いて所定の直流電圧を加えて測定する。' },
+      { key: 'B', text: '使用電圧が 300 V を超える低圧回路では、電路と大地との間の絶縁抵抗は 0.4 MΩ 以上でなければならない。', explanation: '正しい。300 V 超は 0.4 MΩ 以上と定められている。' },
+      { key: 'C', text: '接地抵抗は大きいほど地絡時の感電の危険が小さくなる。', explanation: '誤り。接地抵抗は小さいほど地絡電流が大地へ流れやすく安全である。' },
+      { key: 'D', text: '対地電圧 150 V 以下の回路の絶縁抵抗は 1.0 MΩ 以上と定められている。', explanation: '誤り。対地電圧150 V 以下は 0.1 MΩ 以上である。' },
+    ],
+    correctKey: 'B' as const,
+    explanation:
+      '低圧電路の絶縁抵抗値は、使用電圧 300 V 以下で対地電圧 150 V 以下の場合は 0.1 MΩ 以上、300 V 以下でそれ以外は 0.2 MΩ 以上、300 V を超えるものは 0.4 MΩ 以上と定められている。測定には絶縁抵抗計（メガー）を用いる。接地抵抗は接地抵抗計で測定し、値が小さいほど地絡電流を確実に大地へ逃がせるため安全性が高い。\n【図解】計算のしかた\n★式：対地電圧150 V以下＝0.1 MΩ／300 V以下その他＝0.2 MΩ／300 V超＝0.4 MΩ\n　代入：測定器は絶縁抵抗計（メガー）、接地は接地抵抗計\n○答え：300 V超は0.4 MΩ以上\n×よくある誤り：絶縁抵抗は「大きいほど良い」、接地抵抗は「小さいほど良い」\n→ 数値は 0.1／0.2／0.4 の3段階だけ覚える',
+    difficulty: 'standard' as const,
+  },
 ];
