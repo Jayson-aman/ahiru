@@ -16,6 +16,8 @@ import { costTextPart3 } from './cost_text_part3';
 import { costTextPart5 } from './cost_text_part5';
 import { costTextPart6 } from './cost_text_part6';
 import { costTextPart4 } from './cost_text_part4';
+import { costTextPart7 } from './cost_text_part7';
+import { costTextPart8 } from './cost_text_part8';
 
 export const costTextbook: CostTextChapter[] = [
   ...costTextPart1,
@@ -24,6 +26,8 @@ export const costTextbook: CostTextChapter[] = [
   ...costTextPart4,
   ...costTextPart5,
   ...costTextPart6,
+  ...costTextPart7,
+  ...costTextPart8,
 ];
 
 /**
