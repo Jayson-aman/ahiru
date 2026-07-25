@@ -16,9 +16,11 @@ export type ShoboTextChapter = {
 
 // 執筆完了ぶんから順に結線する。未収録の科目は画面側が「テキスト作成中」を表示する。
 import { shoboTextPart1 } from './shobo_text_part1';
+import { shoboTextPart2 } from './shobo_text_part2';
 
 export const shoboTextbook: ShoboTextChapter[] = [
   ...shoboTextPart1,
+  ...shoboTextPart2,
 ];
 
 /** 指定科目のセクションを返す（同じ科目の章が複数でも取りこぼさない） */
