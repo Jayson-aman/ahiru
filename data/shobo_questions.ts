@@ -22,6 +22,7 @@ import { shoboHoreir1 } from './shobo_questions_horeir_1';
 import { shoboKiso1 } from './shobo_questions_kiso_1';
 import { shoboKozok1 } from './shobo_questions_kozok_1';
 import { shoboKozod1 } from './shobo_questions_kozod_1';
+import { shoboKikaku1 } from './shobo_questions_kikaku_1';
 
 export const shoboQuestions: ShoboQuestion[] = [
   ...shoboHoreik1,
@@ -29,4 +30,5 @@ export const shoboQuestions: ShoboQuestion[] = [
   ...shoboKiso1,
   ...shoboKozok1,
   ...shoboKozod1,
+  ...shoboKikaku1,
 ];
