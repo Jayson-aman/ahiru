@@ -92,6 +92,7 @@ App Store Connect → 「契約 / 税金 / 口座情報」→ **Paid Application
 | Pro 電気工事施工管理技士 | `qualiz_pro_denkisekou_monthly` / `_yearly` | 同上 |
 | Pro 建設機械施工管理技士 | `qualiz_pro_kikaisekou_monthly` / `_yearly` | 同上 |
 | Pro 一級土木施工管理技士 | `qualiz_pro_dobokusekou_monthly` / `_yearly` | 同上 |
+| Pro 建設コスト管理士 | `qualiz_pro_cost_monthly` / `_yearly` | ¥5,000 / ¥50,000 |
 | Pro 英検 | `qualiz_pro_eiken_monthly` / `_yearly` | ¥500 / ¥5,000 |
 | Pro 受験対策 | `qualiz_pro_juken_monthly` / `_yearly` | ¥500 / ¥5,000 |
 
@@ -134,7 +135,8 @@ RevenueCat は月間収益 $2,500 まで無料です。
    ```
    pro_takkei, pro_fp, pro_mansion, pro_kenchiku, pro_denken3,
    pro_kisho, pro_juken, pro_eiken, pro_sekokan,
-   pro_kankoji, pro_denkisekou, pro_kikaisekou, pro_dobokusekou, max
+   pro_kankoji, pro_denkisekou, pro_kikaisekou, pro_dobokusekou,
+   pro_cost, max
    ```
    - 各資格の月額/年額商品 → その資格の `pro_◯◯` だけに紐付け
    - `qualiz_max_*` → **`max` だけに紐付け**（`services/subscription.ts`の`hasCertAccess`が
