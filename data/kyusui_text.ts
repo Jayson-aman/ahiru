@@ -14,10 +14,12 @@ export type KyusuiTextChapter = {
 // 「テキスト作成中」を表示するため、この状態でもアプリは正常に動作する。
 import { kyusuiTextPart1 } from './kyusui_text_part1';
 import { kyusuiTextPart2 } from './kyusui_text_part2';
+import { kyusuiTextPart3 } from './kyusui_text_part3';
 
 export const kyusuiTextbook: KyusuiTextChapter[] = [
   ...kyusuiTextPart1,
   ...kyusuiTextPart2,
+  ...kyusuiTextPart3,
 ];
 
 /**
