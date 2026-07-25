@@ -47,6 +47,13 @@ export default function RootLayout() {
         <Stack.Screen name="kenchiku/index" options={{ headerShown: false, presentation: 'card' }} />
         <Stack.Screen name="kenchiku/quiz/[subject]" options={{ headerShown: false, presentation: 'card' }} />
         <Stack.Screen name="kenchiku/text/[subject]" options={{ headerShown: false, presentation: 'card' }} />
+        {/* 積算・コスト管理系 */}
+        <Stack.Screen name="cost/index" options={{ headerShown: false, presentation: 'card' }} />
+        <Stack.Screen name="cost/[subject]" options={{ headerShown: false, presentation: 'card' }} />
+        <Stack.Screen name="cost/mogi" options={{ headerShown: false, presentation: 'card' }} />
+        <Stack.Screen name="cost/ronbun" options={{ headerShown: false, presentation: 'card' }} />
+        <Stack.Screen name="cost/text/index" options={{ headerShown: false, presentation: 'card' }} />
+        <Stack.Screen name="cost/text/[subject]" options={{ headerShown: false, presentation: 'card' }} />
         {/* 電気・理工系 */}
         <Stack.Screen name="denken3/index" options={{ headerShown: false, presentation: 'card' }} />
         <Stack.Screen name="denken3/[subject]" options={{ headerShown: false, presentation: 'card' }} />
