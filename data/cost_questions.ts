@@ -17,6 +17,7 @@ import { costSekisan2 } from './cost_questions_sekisan_2';
 import { costSekisan3 } from './cost_questions_sekisan_3';
 import { costKeiyaku1 } from './cost_questions_keiyaku_1';
 import { costKeiyaku2 } from './cost_questions_keiyaku_2';
+import { costKeiyaku3 } from './cost_questions_keiyaku_3';
 import { costKeizai1 } from './cost_questions_keizai_1';
 
 export const costQuestions: CostQuestion[] = [
@@ -27,5 +28,6 @@ export const costQuestions: CostQuestion[] = [
   ...costSekisan3,
   ...costKeiyaku1,
   ...costKeiyaku2,
+  ...costKeiyaku3,
   ...costKeizai1,
 ];
