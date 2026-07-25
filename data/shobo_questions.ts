@@ -20,9 +20,11 @@ export type ShoboQuestion = {
 import { shoboHoreik1 } from './shobo_questions_horeik_1';
 import { shoboHoreir1 } from './shobo_questions_horeir_1';
 import { shoboKiso1 } from './shobo_questions_kiso_1';
+import { shoboKozok1 } from './shobo_questions_kozok_1';
 
 export const shoboQuestions: ShoboQuestion[] = [
   ...shoboHoreik1,
   ...shoboHoreir1,
   ...shoboKiso1,
+  ...shoboKozok1,
 ];
