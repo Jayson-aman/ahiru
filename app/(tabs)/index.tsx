@@ -102,6 +102,18 @@ export default function HomeScreen() {
           </LinearGradient>
         </TouchableOpacity>
 
+        <TouchableOpacity style={styles.card} onPress={() => router.push('/shobo' as any)} activeOpacity={0.85}>
+          <LinearGradient colors={['#D32F2F', '#8E0000']} style={styles.cardGradient}>
+            <Text style={styles.cardEmoji}>🧯</Text>
+            <View style={styles.cardBody}>
+              <Text style={styles.cardTitle}>消防設備士 甲種</Text>
+              <Text style={styles.cardSubtitle}>消防法令・基礎的知識・構造機能・規格・実技</Text>
+              <Text style={styles.cardMeta}>国家資格 ／ テキスト・科目別問題・模擬試験・全問図解つき解説</Text>
+            </View>
+            <Text style={styles.cardArrow}>›</Text>
+          </LinearGradient>
+        </TouchableOpacity>
+
         {/* 施工管理系 */}
         <Text style={[styles.sectionLabel, { marginTop: 24 }]}>🏗️ 施工管理系</Text>
 
