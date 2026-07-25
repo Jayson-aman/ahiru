@@ -54,6 +54,12 @@ export default function RootLayout() {
         <Stack.Screen name="cost/ronbun" options={{ headerShown: false, presentation: 'card' }} />
         <Stack.Screen name="cost/text/index" options={{ headerShown: false, presentation: 'card' }} />
         <Stack.Screen name="cost/text/[subject]" options={{ headerShown: false, presentation: 'card' }} />
+        {/* 給水装置 */}
+        <Stack.Screen name="kyusui/index" options={{ headerShown: false, presentation: 'card' }} />
+        <Stack.Screen name="kyusui/[subject]" options={{ headerShown: false, presentation: 'card' }} />
+        <Stack.Screen name="kyusui/mogi" options={{ headerShown: false, presentation: 'card' }} />
+        <Stack.Screen name="kyusui/text/index" options={{ headerShown: false, presentation: 'card' }} />
+        <Stack.Screen name="kyusui/text/[subject]" options={{ headerShown: false, presentation: 'card' }} />
         {/* 電気・理工系 */}
         <Stack.Screen name="denken3/index" options={{ headerShown: false, presentation: 'card' }} />
         <Stack.Screen name="denken3/[subject]" options={{ headerShown: false, presentation: 'card' }} />

@@ -90,6 +90,18 @@ export default function HomeScreen() {
           </LinearGradient>
         </TouchableOpacity>
 
+        <TouchableOpacity style={styles.card} onPress={() => router.push('/kyusui' as any)} activeOpacity={0.85}>
+          <LinearGradient colors={['#0288D1', '#01579B']} style={styles.cardGradient}>
+            <Text style={styles.cardEmoji}>💧</Text>
+            <View style={styles.cardBody}>
+              <Text style={styles.cardTitle}>給水装置工事主任技術者</Text>
+              <Text style={styles.cardSubtitle}>水道行政・工事法・構造性能・計画論ほか8科目</Text>
+              <Text style={styles.cardMeta}>国家資格 ／ テキスト・科目別問題・模擬試験・全問図解つき解説</Text>
+            </View>
+            <Text style={styles.cardArrow}>›</Text>
+          </LinearGradient>
+        </TouchableOpacity>
+
         {/* 施工管理系 */}
         <Text style={[styles.sectionLabel, { marginTop: 24 }]}>🏗️ 施工管理系</Text>
 

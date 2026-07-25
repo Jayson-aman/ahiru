@@ -1,0 +1,24 @@
+export type KyusuiQuestion = {
+  id: string;
+  /** 本試験8科目（学科1: koshu/gyosei/koho/kozo/keikaku/jimu、学科2: gaiyo/sekokan） */
+  subject: 'koshu' | 'gyosei' | 'koho' | 'kozo' | 'keikaku' | 'jimu' | 'gaiyo' | 'sekokan';
+  subjectName: string;
+  question: string;
+  choices: { key: 'A' | 'B' | 'C' | 'D'; text: string; explanation: string }[];
+  correctKey: 'A' | 'B' | 'C' | 'D';
+  explanation: string;
+  difficulty: 'basic' | 'standard' | 'advanced';
+  examYear?: string;
+};
+
+// 執筆完了ぶんから順に結線する。未収録の科目は画面側が「準備中」を表示するため、
+// この状態でもアプリは正常に動作する。
+import { kyusuiKozo1 } from './kyusui_questions_kozo_1';
+import { kyusuiGyosei1 } from './kyusui_questions_gyosei_1';
+import { kyusuiSekokan1 } from './kyusui_questions_sekokan_1';
+
+export const kyusuiQuestions: KyusuiQuestion[] = [
+  ...kyusuiKozo1,
+  ...kyusuiGyosei1,
+  ...kyusuiSekokan1,
+];

@@ -15,7 +15,7 @@ const RC_API_KEY_ANDROID =
 export type SubscriptionTier = 'free' | 'pro' | 'max';
 
 // Certification keys — used as entitlement IDs in RevenueCat dashboard
-export type CertKey = 'takkei' | 'fp' | 'mansion' | 'kenchiku' | 'denken3' | 'kisho' | 'juken' | 'eiken' | 'sekokan' | 'kankoji' | 'denkisekou' | 'kikaisekou' | 'dobokusekou' | 'cost';
+export type CertKey = 'takkei' | 'fp' | 'mansion' | 'kenchiku' | 'denken3' | 'kisho' | 'juken' | 'eiken' | 'sekokan' | 'kankoji' | 'denkisekou' | 'kikaisekou' | 'dobokusekou' | 'cost' | 'kyusui';
 
 // RevenueCat entitlement identifiers (must match dashboard exactly)
 export const ENTITLEMENTS: Record<CertKey, string> = {
@@ -33,6 +33,7 @@ export const ENTITLEMENTS: Record<CertKey, string> = {
   kikaisekou: 'pro_kikaisekou',
   dobokusekou: 'pro_dobokusekou',
   cost:     'pro_cost',
+  kyusui:   'pro_kyusui',
 };
 
 // Pricing constants (display only — real prices are set in RevenueCat/App Store)
