@@ -12,7 +12,11 @@ export type KyusuiTextChapter = {
 
 // 執筆完了ぶんから順に結線する（part1〜3）。未収録の科目は画面側が
 // 「テキスト作成中」を表示するため、この状態でもアプリは正常に動作する。
-export const kyusuiTextbook: KyusuiTextChapter[] = [];
+import { kyusuiTextPart1 } from './kyusui_text_part1';
+
+export const kyusuiTextbook: KyusuiTextChapter[] = [
+  ...kyusuiTextPart1,
+];
 
 /**
  * 指定科目のセクションを返す。

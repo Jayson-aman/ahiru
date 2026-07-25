@@ -17,4 +17,10 @@ export type ShoboQuestion = {
 
 // 執筆完了ぶんから順に結線する。未収録の科目は画面側が「準備中」を表示するため、
 // この状態でもアプリは正常に動作する。
-export const shoboQuestions: ShoboQuestion[] = [];
+import { shoboHoreik1 } from './shobo_questions_horeik_1';
+import { shoboHoreir1 } from './shobo_questions_horeir_1';
+
+export const shoboQuestions: ShoboQuestion[] = [
+  ...shoboHoreik1,
+  ...shoboHoreir1,
+];

@@ -13,11 +13,15 @@ export type KyusuiQuestion = {
 
 // 執筆完了ぶんから順に結線する。未収録の科目は画面側が「準備中」を表示するため、
 // この状態でもアプリは正常に動作する。
+import { kyusuiKoho1 } from './kyusui_questions_koho_1';
+import { kyusuiKeikaku1 } from './kyusui_questions_keikaku_1';
 import { kyusuiKozo1 } from './kyusui_questions_kozo_1';
 import { kyusuiGyosei1 } from './kyusui_questions_gyosei_1';
 import { kyusuiSekokan1 } from './kyusui_questions_sekokan_1';
 
 export const kyusuiQuestions: KyusuiQuestion[] = [
+  ...kyusuiKoho1,
+  ...kyusuiKeikaku1,
   ...kyusuiKozo1,
   ...kyusuiGyosei1,
   ...kyusuiSekokan1,
