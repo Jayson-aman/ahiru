@@ -16,6 +16,7 @@ export type KyusuiQuestion = {
 import { kyusuiKoho1 } from './kyusui_questions_koho_1';
 import { kyusuiKeikaku1 } from './kyusui_questions_keikaku_1';
 import { kyusuiKozo1 } from './kyusui_questions_kozo_1';
+import { kyusuiGaiyo1 } from './kyusui_questions_gaiyo_1';
 import { kyusuiGyosei1 } from './kyusui_questions_gyosei_1';
 import { kyusuiSekokan1 } from './kyusui_questions_sekokan_1';
 
@@ -23,6 +24,7 @@ export const kyusuiQuestions: KyusuiQuestion[] = [
   ...kyusuiKoho1,
   ...kyusuiKeikaku1,
   ...kyusuiKozo1,
+  ...kyusuiGaiyo1,
   ...kyusuiGyosei1,
   ...kyusuiSekokan1,
 ];
