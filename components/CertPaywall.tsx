@@ -56,7 +56,8 @@ export default function CertPaywall({
   const [info, setInfo] = useState<CustomerInfo | null>(null);
   const [loading, setLoading] = useState(true);
   const [purchasing, setPurchasing] = useState(false);
-  const [pkg, setPkg] = useState<PurchasesPackage | null>(null);
+  /** オファリング内の全パッケージ。購入時に「資格キー×期間」で選び直す */
+  const [packages, setPackages] = useState<PurchasesPackage[]>([]);
   const [period, setPeriod] = useState<BillingPeriod>('yearly');
   const [showPlans, setShowPlans] = useState(false);
   const limit = freeLimit ?? FREE_QUESTION_LIMIT;
@@ -69,14 +70,7 @@ export default function CertPaywall({
         const [ci, offering] = await Promise.all([getCustomerInfo(), fetchCurrentOffering()]);
         if (!mounted) return;
         setInfo(ci);
-        if (offering) {
-          // Look for a per-cert package first, fall back to annual/monthly
-          const certPkg =
-            offering.availablePackages.find(p => p.identifier.includes(certKey)) ??
-            offering.availablePackages.find(p => p.packageType === 'ANNUAL') ??
-            offering.availablePackages[0] ?? null;
-          setPkg(certPkg);
-        }
+        if (offering) setPackages(offering.availablePackages);
       } catch {
         // No RevenueCat in dev/web — treat as free
       } finally {
@@ -86,14 +80,49 @@ export default function CertPaywall({
     return () => { mounted = false; };
   }, [certKey]);
 
-  const handlePurchase = useCallback(async () => {
-    if (!pkg) {
-      Alert.alert('購入できません', 'プランが見つかりません。後でお試しください。');
+  /**
+   * 「どの資格の」「どの期間の」商品かを厳密に選ぶ。
+   *
+   * 以前は該当商品が無いとき offering の先頭や任意のANNUALにフォールバックしていたため、
+   *  ・商品未登録の資格で購入すると【別の資格】が課金され、目的の資格は解放されない
+   *  ・「全資格Max」を押しても単一資格のProが課金される
+   *  ・月払い/年払いの切替が購入内容に反映されない
+   * という課金事故が起き得た。フォールバックは廃止し、一致しなければ購入させない。
+   *
+   * 照合はパッケージ識別子と商品ID（例 qualiz_pro_takkei_yearly）の両方で行う。
+   * RevenueCat既定の識別子（$rc_annual 等）でも商品ID側で確実に一致させるため。
+   */
+  const findPackage = useCallback((key: string, want: BillingPeriod): PurchasesPackage | null => {
+    const belongs = (p: PurchasesPackage) => {
+      const id = `${p.identifier} ${p.product?.identifier ?? ''}`.toLowerCase();
+      const k = key.toLowerCase();
+      // maxは他の資格キーを含む商品を拾わないよう、単語として判定する
+      return key === 'max' ? /(^|[^a-z])max([^a-z]|$)/.test(id) : id.includes(k);
+    };
+    const pool = packages.filter(belongs);
+    if (pool.length === 0) return null;
+    const wantType = want === 'yearly' ? 'ANNUAL' : 'MONTHLY';
+    return (
+      pool.find(p => p.packageType === wantType) ??
+      pool.find(p => (p.product?.identifier ?? '').toLowerCase().includes(want === 'yearly' ? 'year' : 'month')) ??
+      null
+    );
+  }, [packages]);
+
+  const certPkg = findPackage(certKey, period);
+  const maxPkg = findPackage('max', period);
+
+  const runPurchase = useCallback(async (target: PurchasesPackage | null, planName: string) => {
+    if (!target) {
+      Alert.alert(
+        'ただいま購入できません',
+        `${planName}のプランを取得できませんでした。時間をおいて再度お試しください。`
+      );
       return;
     }
     try {
       setPurchasing(true);
-      const ci = await purchasePackage(pkg);
+      const ci = await purchasePackage(target);
       setInfo(ci);
     } catch (e: any) {
       if (!e?.userCancelled) {
@@ -102,7 +131,7 @@ export default function CertPaywall({
     } finally {
       setPurchasing(false);
     }
-  }, [pkg]);
+  }, []);
 
   const handleRestore = useCallback(async () => {
     try {
@@ -213,9 +242,10 @@ export default function CertPaywall({
                 yearSavings={proYearlySavingsLabel ?? PRICING.proYearlySavings}
                 features={proFeatures ?? ['全問題アンロック・図解入り詳細解説', 'テキスト・模擬試験・二次試験対策', '動く図解＋音声解説で初心者もわかりやすい', 'iPhone・iPad・Webでいつでも学習']}
                 color={accentColor}
-                onPress={handlePurchase}
+                onPress={() => runPurchase(certPkg, `${certName} Pro`)}
                 loading={purchasing}
                 period={period}
+                unavailable={!certPkg}
               />
               <PlanCard
                 title="全資格 Max"
@@ -224,9 +254,10 @@ export default function CertPaywall({
                 yearSavings={PRICING.maxYearlySavings}
                 features={['全資格すべてアンロック', '宅建・マン管・FP・建築設備士', '施工管理4種・電験三種・気象予報士', '1つの登録で全資格を追加料金なしで学習']}
                 color="#1B2A5C"
-                onPress={handlePurchase}
+                onPress={() => runPurchase(maxPkg, '全資格 Max')}
                 loading={purchasing}
                 period={period}
+                unavailable={!maxPkg}
               />
             </View>
 
@@ -270,9 +301,11 @@ function monthlyEquivalentLabel(yearPriceLabel: string): string {
   return `¥${perMonth.toLocaleString('ja-JP')}/月相当`;
 }
 
-function PlanCard({ title, price, yearPrice, yearSavings, features, color, onPress, loading, period }: {
+function PlanCard({ title, price, yearPrice, yearSavings, features, color, onPress, loading, period, unavailable }: {
   title: string; price: string; yearPrice: string; yearSavings: string; features: string[];
   color: string; onPress: () => void; loading: boolean; period: BillingPeriod;
+  /** 対応する商品が取得できていない場合はボタンを無効化する（誤課金の防止） */
+  unavailable?: boolean;
 }) {
   const isYearly = period === 'yearly';
   return (
@@ -297,10 +330,14 @@ function PlanCard({ title, price, yearPrice, yearSavings, features, color, onPre
       {features.map((f, i) => (
         <Text key={i} style={planStyles.feature}>✓ {f}</Text>
       ))}
-      <TouchableOpacity style={[planStyles.btn, { backgroundColor: color }]} onPress={onPress} disabled={loading}>
+      <TouchableOpacity
+        style={[planStyles.btn, { backgroundColor: unavailable ? '#B0BEC5' : color }]}
+        onPress={onPress}
+        disabled={loading || unavailable}
+      >
         {loading
           ? <ActivityIndicator color="#FFF" size="small" />
-          : <Text style={planStyles.btnText}>このプランを始める</Text>
+          : <Text style={planStyles.btnText}>{unavailable ? 'ただいま購入できません' : 'このプランを始める'}</Text>
         }
       </TouchableOpacity>
     </View>
