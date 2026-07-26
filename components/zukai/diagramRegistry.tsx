@@ -4,6 +4,11 @@ import {
   TriangleDiagram, SeriesCircuit, ParallelConductors, PointChargeField,
   ExpCurve, PeakCurve, RectifiedWave, VCurve, VectorSum, YDeltaDiagram, Steps,
 } from './ZukaiSvg';
+import {
+  SimpleBeamUDL, SimpleBeamPoint, SimpleBeamLoads,
+  Cantilever, CantileverLoads, BeamQMDiagram, SupportTypes,
+  Steps as KozoSteps,
+} from './KozoSvg';
 
 /**
  * 問題ID → SVG図解＋導出ステップのレジストリ。
@@ -241,13 +246,6 @@ const REGISTRY: Record<string, () => React.ReactNode> = {
     ]} />
   ),
   // ===== 建築設備士・模試（代表的な計算/図解問題） =====
-  'kmogi-01': () => (
-    <Steps title="単純梁（等分布荷重）の最大曲げモーメント" steps={[
-      '公式：Mmax＝wL²/8（中央に生じる）',
-      '代入：M＝6×8²/8＝6×64/8',
-      '計算：＝6×8＝48 kN・m ✓',
-    ]} />
-  ),
   'kmogi-29': () => (
     <Steps title="CO₂濃度基準の必要換気量" steps={[
       '公式：Q＝M/(Ci−Co)（濃度は「差」を使う）',
@@ -257,12 +255,6 @@ const REGISTRY: Record<string, () => React.ReactNode> = {
     ]} />
   ),
   // ===== 一級建築施工管理技士・模試 =====
-  'smogi-05': () => (
-    <Steps title="単純梁（中央集中荷重）の最大曲げモーメント" steps={[
-      '支点反力：R＝P/2＝20 kN',
-      'Mmax＝R×L/2＝20×3＝60 kN・m ✓（公式PL/4でも同じ）',
-    ]} />
-  ),
   'smogi-30': () => (
     <Steps title="クリティカルパスの計算" steps={[
       '全経路を列挙する（並行経路は同時進行）',
@@ -464,19 +456,185 @@ const REGISTRY: Record<string, () => React.ReactNode> = {
     ]} />
   ),
   // ===== 施工管理 追加分 =====
-  'souyou-021': () => (
-    <Steps title="単純梁の最大曲げモーメント" steps={[
-      'Mmax＝wL²/8（中央）',
-      '＝8×6²/8＝36kN・m ✓',
-      '反力R＝wL/2＝24kN（両支点）',
-    ]} />
-  ),
   'souyou-031': () => (
     <Steps title="フリーフロートの計算" steps={[
       '作業AのEFT＝EST＋所要＝10＋5＝15日',
       'FF＝後続のEST−EFT＝18−15＝3日 ✓',
       '（FF≦TF。FFは後続に影響しない余裕）',
     ]} />
+  ),
+  // ===== 構造力学：単純梁・片持ち梁（SVGで実際の形を描く） =====
+  'souyou-021': () => (
+    <View>
+      <SimpleBeamUDL w="w＝8kN/m" L="L＝6m" title="単純梁＋等分布荷重" />
+      <BeamQMDiagram load="udl" />
+      <KozoSteps title="最大曲げモーメントの計算" steps={[
+        '公式：Mmax＝wL²/8（Q＝0となる中央で最大）',
+        '代入：8×6²/8',
+        '計算：8×36÷8＝36 kN・m ✓',
+        '反力：R＝wL/2＝8×6/2＝24kN（両支点とも）',
+      ]} />
+    </View>
+  ),
+  'skiso-081': () => (
+    <View>
+      <SimpleBeamUDL w="w＝16kN/m" L="L＝6m" title="単純梁＋等分布荷重（長期荷重）" />
+      <BeamQMDiagram load="udl" />
+      <KozoSteps title="最大曲げモーメントの計算" steps={[
+        '公式：Mmax＝wL²/8',
+        '代入：16×6²/8',
+        '計算：16×36÷8＝72 kN・m ✓',
+        '反力：R＝wL/2＝48kN',
+      ]} />
+    </View>
+  ),
+  'ip2-093': () => (
+    <View>
+      <SimpleBeamUDL w="w＝10kN/m" L="L＝8m" title="単純梁＋等分布荷重" />
+      <BeamQMDiagram load="udl" />
+      <KozoSteps title="最大曲げモーメントの計算" steps={[
+        '公式：Mmax＝wL²/8',
+        '代入：10×8²/8',
+        '計算：10×64÷8＝80 kN・m ✓',
+      ]} />
+    </View>
+  ),
+  'kmogi-01': () => (
+    <View>
+      <SimpleBeamUDL w="w＝6kN/m" L="L＝8m" title="単純梁＋等分布荷重" />
+      <BeamQMDiagram load="udl" />
+      <KozoSteps title="最大曲げモーメントの計算" steps={[
+        '公式：Mmax＝wL²/8',
+        '代入：6×8²/8',
+        '計算：6×64÷8＝48 kN・m ✓',
+      ]} />
+    </View>
+  ),
+  'kozo-001': () => (
+    <View>
+      <SimpleBeamPoint P="P" L="L" title="単純梁＋中央集中荷重" />
+      <BeamQMDiagram load="point" />
+      <KozoSteps title="公式の導き方" steps={[
+        '反力：対称なので R＝P/2（両支点）',
+        '中央の曲げモーメント：M＝R×(L/2)＝(P/2)×(L/2)',
+        'したがって Mmax＝PL/4 ✓（M図は中央が頂点の三角形）',
+      ]} />
+    </View>
+  ),
+  'smogi-05': () => (
+    <View>
+      <SimpleBeamPoint P="P＝40kN" L="L＝6m" title="単純梁＋中央集中荷重" />
+      <BeamQMDiagram load="point" />
+      <KozoSteps title="最大曲げモーメントの計算" steps={[
+        '公式：Mmax＝PL/4（中央）',
+        '代入：40×6/4',
+        '計算：240÷4＝60 kN・m ✓',
+      ]} />
+    </View>
+  ),
+  'ip2-009': () => (
+    <View>
+      <SimpleBeamPoint P="P＝40kN" L="L＝6m" title="単純梁＋中央集中荷重" />
+      <BeamQMDiagram load="point" />
+      <KozoSteps title="最大曲げモーメントの計算" steps={[
+        '公式：Mmax＝PL/4',
+        '代入：40×6/4＝60 kN・m ✓',
+      ]} />
+    </View>
+  ),
+  'skyoka-107': () => (
+    <View>
+      <SimpleBeamPoint P="P＝40kN" L="L＝8m" title="単純梁＋中央集中荷重" />
+      <BeamQMDiagram load="point" />
+      <KozoSteps title="最大曲げモーメントの計算" steps={[
+        '公式：Mmax＝PL/4',
+        '代入：40×8/4',
+        '計算：320÷4＝80 kN・m ✓',
+      ]} />
+    </View>
+  ),
+  'kozo-015': () => (
+    <View>
+      <SimpleBeamPoint P="P" L="L" title="単純梁＋中央集中荷重のたわみ" />
+      <KozoSteps title="たわみの公式" steps={[
+        '中央集中荷重：δ＝PL³/(48EI) ✓',
+        '（等分布荷重の場合は δ＝5wL⁴/(384EI)）',
+        'Lの3乗・4乗で効くので、スパンが伸びるとたわみは急増する★',
+        'EI（曲げ剛性）が大きいほどたわみは小さい',
+      ]} />
+    </View>
+  ),
+  'souyou-056': () => (
+    <View>
+      <SimpleBeamLoads
+        L="L＝10m"
+        RA="RA＝27kN"
+        RB="RB＝23kN"
+        loads={[
+          { label: 'P1＝30kN', pos: 0.3, at: 'A から3m' },
+          { label: 'P2＝20kN', pos: 0.7, at: 'A から7m' },
+        ]}
+        title="単純梁＋集中荷重2つ"
+        note="反力は「反対側の支点まわりのモーメントのつり合い」で求める。"
+      />
+      <KozoSteps title="支点反力RAの求め方" steps={[
+        'B点まわりのモーメントのつり合い ΣMB＝0 をとる',
+        'RA×10 ＝ P1×(10−3) ＋ P2×(10−7)',
+        '＝30×7 ＋ 20×3 ＝ 210＋60 ＝ 270',
+        'RA ＝ 270÷10 ＝ 27 kN ✓',
+        '検算：RB＝(30＋20)−27＝23 kN（鉛直のつり合い）',
+      ]} />
+    </View>
+  ),
+  'kozo-002': () => (
+    <View>
+      <Cantilever load="point" P="P" L="L" title="片持ち梁＋先端集中荷重" />
+      <KozoSteps title="固定端のせん断力" steps={[
+        'せん断力は「その断面より先にある荷重の合計」',
+        '片持ち梁の固定端より先にある荷重は P だけ',
+        'したがって Qmax＝P ✓（位置によらず一定）',
+        '一方、曲げモーメントは M＝PL で固定端が最大★',
+      ]} />
+    </View>
+  ),
+  'souyou-036': () => (
+    <View>
+      <Cantilever load="point" P="P＝6kN" L="L＝3m" title="片持ち梁＋先端集中荷重" />
+      <KozoSteps title="固定端モーメントの計算" steps={[
+        '公式：M＝P×L（荷重×固定端までの距離）',
+        '代入：6×3',
+        '計算：18 kN・m ✓',
+      ]} />
+    </View>
+  ),
+  'ip2-021': () => (
+    <View>
+      <Cantilever load="point" P="P＝15kN" L="L＝2m" title="片持ち梁＋先端集中荷重" />
+      <KozoSteps title="固定端モーメントの計算" steps={[
+        '公式：M＝P×L',
+        '代入：15×2＝30 kN・m ✓',
+      ]} />
+    </View>
+  ),
+  'souyou-071': () => (
+    <View>
+      <CantileverLoads
+        L="L＝6m"
+        M="M＝56kN・m"
+        loads={[
+          { label: 'P1＝8kN', pos: 0.667, at: '固定端から4m' },
+          { label: 'P2＝4kN', pos: 1.0, at: '自由端（6m）' },
+        ]}
+        title="片持ち梁＋集中荷重2つ"
+        note="各荷重について「荷重×固定端までの距離」を求め、合計する。"
+      />
+      <KozoSteps title="固定端モーメントの計算" steps={[
+        'P1の寄与：8kN×4m ＝ 32 kN・m',
+        'P2の寄与：4kN×6m ＝ 24 kN・m',
+        '合計：32＋24 ＝ 56 kN・m ✓',
+        '距離は「固定端から荷重までの長さ」で数える★',
+      ]} />
+    </View>
   ),
 };
 

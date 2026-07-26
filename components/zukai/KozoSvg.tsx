@@ -177,6 +177,99 @@ export function SimpleBeamPoint({
 }
 
 /* ══════════════════════════════════════════
+   単純梁 ＋ 集中荷重が複数
+   loads の pos は 0〜1（左支点からの位置の割合）
+   ══════════════════════════════════════════ */
+export function SimpleBeamLoads({
+  loads, L = 'L', RA, RB, title = '単純梁＋集中荷重', note,
+}: {
+  loads: { label: string; pos: number; at?: string }[];
+  L?: string; RA?: string; RB?: string; title?: string; note?: string;
+}) {
+  const x0 = 55, x1 = 325, yBeam = 84;
+  const px = (p: number) => x0 + (x1 - x0) * p;
+  return (
+    <Wrap ratio={2.0} title={title} note={note}>
+      <Svg viewBox="0 0 380 190" {...box}>
+        {loads.map((ld, i) => (
+          <G key={i}>
+            <DownArrow x={px(ld.pos)} y1={26} y2={yBeam - 4} color={C.red} w={2.6} />
+            <SvgText x={px(ld.pos)} y={20} fontSize={12.5} fill={C.red} fontWeight="bold" textAnchor="middle">
+              {ld.label}
+            </SvgText>
+            {/* 作用位置の補助線 */}
+            <Line x1={px(ld.pos)} y1={yBeam + 9} x2={px(ld.pos)} y2={yBeam + 60} stroke={C.light} strokeWidth={1} strokeDasharray="3,3" />
+            {ld.at ? (
+              <SvgText x={px(ld.pos)} y={yBeam + 74} fontSize={10.5} fill={C.gray} textAnchor="middle">{ld.at}</SvgText>
+            ) : null}
+          </G>
+        ))}
+        <Rect x={x0} y={yBeam} width={x1 - x0} height={9} fill="#CFD8DC" stroke={C.dark} strokeWidth={2} />
+        <PinSupport x={x0} y={yBeam + 9} />
+        <RollerSupport x={x1} y={yBeam + 9} />
+        <UpArrow x={x0} y1={yBeam + 54} y2={yBeam + 14} color={C.blue} />
+        <UpArrow x={x1} y1={yBeam + 54} y2={yBeam + 14} color={C.blue} />
+        <SvgText x={x0 - 2} y={yBeam + 66} fontSize={11.5} fill={C.blue} fontWeight="bold" textAnchor="middle">
+          {RA ?? 'RA'}
+        </SvgText>
+        <SvgText x={x1 + 2} y={yBeam + 66} fontSize={11.5} fill={C.blue} fontWeight="bold" textAnchor="middle">
+          {RB ?? 'RB'}
+        </SvgText>
+        <Line x1={x0} y1={yBeam + 88} x2={x1} y2={yBeam + 88} stroke={C.gray} strokeWidth={1.2} />
+        <Line x1={x0} y1={yBeam + 83} x2={x0} y2={yBeam + 93} stroke={C.gray} strokeWidth={1.2} />
+        <Line x1={x1} y1={yBeam + 83} x2={x1} y2={yBeam + 93} stroke={C.gray} strokeWidth={1.2} />
+        <SvgText x={(x0 + x1) / 2} y={yBeam + 100} fontSize={12} fill={C.gray} fontWeight="bold" textAnchor="middle">
+          スパン {L}
+        </SvgText>
+      </Svg>
+    </Wrap>
+  );
+}
+
+/* ══════════════════════════════════════════
+   片持ち梁 ＋ 集中荷重が複数
+   pos は 0〜1（固定端からの位置の割合）
+   ══════════════════════════════════════════ */
+export function CantileverLoads({
+  loads, L = 'L', M, title = '片持ち梁＋集中荷重', note,
+}: {
+  loads: { label: string; pos: number; at?: string }[];
+  L?: string; M?: string; title?: string; note?: string;
+}) {
+  const x0 = 62, x1 = 330, yBeam = 78;
+  const px = (p: number) => x0 + (x1 - x0) * p;
+  return (
+    <Wrap ratio={2.0} title={title} note={note}>
+      <Svg viewBox="0 0 380 190" {...box}>
+        {loads.map((ld, i) => (
+          <G key={i}>
+            <DownArrow x={px(ld.pos)} y1={26} y2={yBeam - 4} color={C.red} w={2.6} />
+            <SvgText x={px(ld.pos)} y={20} fontSize={12.5} fill={C.red} fontWeight="bold" textAnchor="middle">
+              {ld.label}
+            </SvgText>
+            <Line x1={px(ld.pos)} y1={yBeam + 9} x2={px(ld.pos)} y2={yBeam + 52} stroke={C.light} strokeWidth={1} strokeDasharray="3,3" />
+            {ld.at ? (
+              <SvgText x={px(ld.pos)} y={yBeam + 66} fontSize={10.5} fill={C.gray} textAnchor="middle">{ld.at}</SvgText>
+            ) : null}
+          </G>
+        ))}
+        <Rect x={x0} y={yBeam} width={x1 - x0} height={9} fill="#CFD8DC" stroke={C.dark} strokeWidth={2} />
+        <FixedSupport x={x0} y={yBeam + 4.5} />
+        <Path d={`M ${x0 + 14} ${yBeam + 32} A 17 17 0 1 1 ${x0 + 27} ${yBeam + 22}`} stroke={C.purple} strokeWidth={2} fill="none" />
+        <Polygon points={`${x0 + 27},${yBeam + 22} ${x0 + 21},${yBeam + 20} ${x0 + 26},${yBeam + 29}`} fill={C.purple} />
+        <SvgText x={x0 + 36} y={yBeam + 38} fontSize={11.5} fill={C.purple} fontWeight="bold">
+          {M ?? '固定端モーメント'}★
+        </SvgText>
+        <Line x1={x0} y1={yBeam + 84} x2={x1} y2={yBeam + 84} stroke={C.gray} strokeWidth={1.2} />
+        <Line x1={x0} y1={yBeam + 79} x2={x0} y2={yBeam + 89} stroke={C.gray} strokeWidth={1.2} />
+        <Line x1={x1} y1={yBeam + 79} x2={x1} y2={yBeam + 89} stroke={C.gray} strokeWidth={1.2} />
+        <SvgText x={(x0 + x1) / 2} y={yBeam + 96} fontSize={12} fill={C.gray} fontWeight="bold" textAnchor="middle">{L}</SvgText>
+      </Svg>
+    </Wrap>
+  );
+}
+
+/* ══════════════════════════════════════════
    片持ち梁
    ══════════════════════════════════════════ */
 export function Cantilever({
