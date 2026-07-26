@@ -57,8 +57,8 @@ export const PRICING = {
   jukenYearly:  '¥5,000/年',
   jukenYearlySavings: '17%OFF',
   /** 英検プラン */
-  eikenMonthly: '¥500/月',
-  eikenYearly:  '¥5,000/年',
+  eikenMonthly: '¥800/月',
+  eikenYearly:  '¥8,000/年',
   eikenYearlySavings: '17%OFF',
   /** 気象予報士プラン（他の専門国家資格と同格の価格に統一） */
   kishoMonthly: '¥1,800/月',
