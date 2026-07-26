@@ -74,7 +74,7 @@ export const ENTITLEMENT_MAX = 'max';
  * ペイウォールとホーム画面で「準備中」として扱う。
  * 商品を作成したらこの配列から外すこと。
  */
-export const CERTS_COMING_SOON: CertKey[] = ['cost', 'kyusui', 'shobo'];
+export const CERTS_COMING_SOON: CertKey[] = [];
 
 export function isComingSoon(cert: CertKey): boolean {
   return CERTS_COMING_SOON.includes(cert);
