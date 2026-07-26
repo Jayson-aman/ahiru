@@ -1,5 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import { View, Text, StyleSheet, Platform, TextStyle, StyleProp, Animated } from 'react-native';
+import DiagramBlock from './DiagramBlock';
 
 type Props = {
   text: string;
@@ -55,9 +56,7 @@ export default function StudyText({ text, accent = '#1565C0' }: Props) {
                   </View>
                   {b.title ? <Text style={[s.figTitle, { color: shade(accent) }]}>{b.title}</Text> : null}
                 </View>
-                {b.lines.map((ln, j) => (
-                  <Text key={j} style={lineStyle(ln)}>{ln.length ? ln : ' '}</Text>
-                ))}
+                <DiagramBlock lines={b.lines} accent={accent} />
               </View>
             </AnimatedFig>
           );
@@ -123,15 +122,6 @@ function parse(text: string): Block[] {
     if (para.length) out.push({ kind: 'para', lines: para });
   }
   return out;
-}
-
-function lineStyle(ln: string): StyleProp<TextStyle> {
-  const t = ln.trim();
-  if (t.includes('★') || t.includes('⚠')) return [s.line, s.lineHot];
-  if (/^[○◎✓]/.test(t) || t.includes('→ 有効') || t.includes(' OK')) return [s.line, s.lineGood];
-  if (/^[×✕]/.test(t) || t.startsWith('誤') || t.includes('禁止') || t.includes('不可')) return [s.line, s.lineBad];
-  if (t.startsWith('→') || t.startsWith('⇒')) return [s.line, s.lineArrow];
-  return s.line;
 }
 
 function renderParaLine(ln: string, key: number) {

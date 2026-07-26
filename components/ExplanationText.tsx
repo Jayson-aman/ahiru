@@ -1,5 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import { View, Text, StyleSheet, Platform, TextStyle, StyleProp, Animated } from 'react-native';
+import DiagramBlock from './DiagramBlock';
 
 type Props = {
   text: string;
@@ -53,9 +54,7 @@ export default function ExplanationText({ text, style }: Props) {
             <View style={s.headerChip}><Text style={s.headerChipText}>図解</Text></View>
             <Text style={s.headerTitle}>{titleLine}</Text>
           </View>
-          {body.map((ln, i) => (
-            <Text key={i} style={lineStyle(ln)}>{ln.length ? ln : ' '}</Text>
-          ))}
+          <DiagramBlock lines={body} accent="#1E5FBE" />
         </View>
       </AnimatedDiagram>
     </View>
