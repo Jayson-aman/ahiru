@@ -14,6 +14,7 @@ import {
   hasCertAccess,
   purchasePackage,
   restorePurchases,
+  isComingSoon,
 } from '../services/subscription';
 import type { CustomerInfo, PurchasesPackage } from 'react-native-purchases';
 
@@ -62,6 +63,7 @@ export default function CertPaywall({
   const [showPlans, setShowPlans] = useState(false);
   const limit = freeLimit ?? FREE_QUESTION_LIMIT;
   const hasAccess = hasCertAccess(info, certKey);
+  const comingSoon = isComingSoon(certKey);
 
   useEffect(() => {
     let mounted = true;
@@ -177,7 +179,9 @@ export default function CertPaywall({
           <View style={styles.bannerBody}>
             <Text style={styles.bannerTitle}>無料体験中 — {limit}問まで無料</Text>
             <Text style={styles.bannerSub}>
-              {certEmoji} {certName} 全{totalQuestions}問＋詳細解説を{PRICING.proYearly}でアンロック
+              {comingSoon
+                ? `${certEmoji} ${certName} は準備中です（全${totalQuestions}問を順次公開）`
+                : `${certEmoji} ${certName} 全${totalQuestions}問＋詳細解説を${PRICING.proYearly}でアンロック`}
             </Text>
           </View>
           <View style={styles.bannerBtn}>
@@ -214,8 +218,18 @@ export default function CertPaywall({
                 </Text>
               </View>
             )}
+            {comingSoon && (
+              // 課金商品が未登録の資格。買えないボタンを見せないよう購入UIごと隠す。
+              <View style={styles.webNotice}>
+                <Text style={styles.webNoticeTitle}>🚧 この資格は準備中です</Text>
+                <Text style={styles.webNoticeText}>
+                  {certName}の学習コンテンツは収録済みで、いまは無料で{limit}問までお試しいただけます。
+                  有料プランは準備が整いしだい公開します。公開までしばらくお待ちください。
+                </Text>
+              </View>
+            )}
             {/* Web版は購入UI（切替・プランカード・復元）を出さない — 課金はiOSアプリに一本化 */}
-            {Platform.OS !== 'web' && (
+            {Platform.OS !== 'web' && !comingSoon && (
             <>
             {/* 月払い／年払い切り替え */}
             <View style={styles.periodToggle}>
