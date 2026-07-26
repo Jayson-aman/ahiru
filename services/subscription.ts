@@ -45,12 +45,12 @@ export const ENTITLEMENTS: Record<CertKey, string> = {
 // 事実のみに限定する。
 export const PRICING = {
   /** Per-certification Pro plan (資格試験) — アプリ型学習の最上位帯 */
-  proMonthly: '¥5,000/月',
-  proYearly:  '¥50,000/年',
+  proMonthly: '¥1,800/月',
+  proYearly:  '¥18,000/年',
   proYearlySavings: '2か月分お得',
   /** All-certs Max plan — 全資格見放題 */
-  maxMonthly: '¥8,000/月',
-  maxYearly:  '¥80,000/年',
+  maxMonthly: '¥2,800/月',
+  maxYearly:  '¥28,000/年',
   maxYearlySavings: '2か月分お得',
   /** 受験対策プラン（中学・高校受験） */
   jukenMonthly: '¥500/月',
@@ -61,8 +61,8 @@ export const PRICING = {
   eikenYearly:  '¥5,000/年',
   eikenYearlySavings: '17%OFF',
   /** 気象予報士プラン（他の専門国家資格と同格の価格に統一） */
-  kishoMonthly: '¥5,000/月',
-  kishoYearly:  '¥50,000/年',
+  kishoMonthly: '¥1,800/月',
+  kishoYearly:  '¥18,000/年',
   kishoYearlySavings: '2か月分お得',
 } as const;
 export const ENTITLEMENT_MAX = 'max';
