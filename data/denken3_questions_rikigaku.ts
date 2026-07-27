@@ -1769,7 +1769,7 @@ export const denken3Rikigaku: Denken3Question[] = [
       { key: 'D', text: 'A、B が異なる値のときのみ Y = 1 となる。', explanation: '誤り。これはXOR（排他的論理和）ゲートの真理値表の説明である。' },
     ],
     correctKey: 'A',
-    explanation: '基本論理ゲート（AND・OR・NOT）の真理値表は電子回路分野の基礎知識。\n【図解】ANDゲートの真理値表\n　A B｜Y　　記号：A─┐\n　0 0｜0 　　　　　　&)─Y\n　0 1｜0 　　　　B─┘\n　1 0｜0　　全て1のときだけY=1★\n　1 1｜1　　（掛け算のイメージ：0が1つでもあれば0）',
+    explanation: '基本論理ゲート（AND・OR・NOT）の真理値表は電子回路分野の基礎知識。\n【図解】ANDゲートの真理値表\n　A｜B｜Y\n　0｜0｜0\n　0｜1｜0\n　1｜0｜0\n　1｜1｜1\n　記号は左側で入力A・Bを受け、論理積（&）を経て右側へ出力Yを出す形で描く\n　全て1のときだけY=1★\n　（掛け算のイメージ：0が1つでもあれば0）',
     difficulty: 'basic',
   },
   {
@@ -1782,7 +1782,7 @@ export const denken3Rikigaku: Denken3Question[] = [
       { key: 'D', text: 'A、B の両方が 0 のときのみ Y = 1 となる。', explanation: '誤り。これはNOR（否定論理和）ゲートの動作の説明である。' },
     ],
     correctKey: 'A',
-    explanation: 'ORゲートは「足し算」のイメージで理解すると分かりやすい。\n【図解】ORゲートの真理値表\n　A B｜Y　　記号：A─┐\n　0 0｜0 　　　　　　≥1)─Y\n　0 1｜1 　　　　B─┘\n　1 0｜1　　1つでも1があればY=1★\n　1 1｜1　　（NOT：入力1つを反転、AND：全部1で1）',
+    explanation: 'ORゲートは「足し算」のイメージで理解すると分かりやすい。\n【図解】ORゲートの真理値表\n　A｜B｜Y\n　0｜0｜0\n　0｜1｜1\n　1｜0｜1\n　1｜1｜1\n　記号は左側で入力A・Bを受け、論理和（≥1）を経て右側へ出力Yを出す形で描く\n　1つでも1があればY=1★\n　（NOT：入力1つを反転、AND：全部1で1）',
     difficulty: 'basic',
   },
   {
