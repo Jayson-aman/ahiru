@@ -518,7 +518,7 @@ export const denkisekouTextbook: DenkisekouTextChapter[] = [
 　複素電力 S＝P＋jQ（有効電力＋j×無効電力）★
 　→ 遅れ力率（誘導性負荷）はQが正、
 　　進み力率（容量性負荷）はQが負として扱う
-　力率角θ：cosθ＝P/|S| ★
+　力率角θ：cosθ＝P/∣S∣ ★
 
 ・複素電力表示を使うと、有効・無効電力の
 　合成や力率改善の計算を統一的に扱いやすい

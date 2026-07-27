@@ -12,6 +12,7 @@ BOX_CHARS = re.compile(r'[┌┐└┘├┤┬┴┼│┃║╔╗╚╝]')
 FRAME_DET = re.compile(r'[┌┐└┘│┃║╔╗╚╝]')       # isFrame の判定に使われる文字集合
 STRUCT    = re.compile(r'[├└┬┴┼┤]')             # 消えると構造が失われる文字
 PAD       = re.compile(r'\S　{2,}\S.*?\S　{2,}\S')  # 全角空白での桁揃え
+TS_CODE   = re.compile(r"(difficulty|examYear|correctKey|subject|subjectName|id|question|text|key):\s*'")  # 解説文字列の外
 
 
 def group(lines):
@@ -46,6 +47,12 @@ def group(lines):
 def audit_block(lines):
     """このブロックが壊れて描画されるか判定し、理由を返す"""
     problems = []
+    # CELL_SEP は半角 | も区切りとみなす。絶対値記号 |Z| などを書くと
+    # 数式がセルに分断され表として描画されてしまう。絶対値は ∣(U+2223) を使う。
+    for ln in lines:
+        if ln.count('|') >= 2:
+            problems.append('半角|が区切りと誤認され数式が表に分断される')
+            break
     for kind, payload in group(lines):
         if kind == 'table':
             widths = {len(r) for r in payload}
@@ -87,7 +94,13 @@ for f in sorted(glob.glob('data/**/*.ts', recursive=True)):
         sep = '\\n' if '\\n' in blk else '\n'
         raw_lines = blk.split(sep)
         title = raw_lines[0][:40]
-        body = raw_lines[1:]
+        # 解説文字列の外（TSのコード行）まで読み進めると、後続の問題文に
+        # 含まれる記号を図解の一部と誤認するので、そこで打ち切る
+        body = []
+        for ln in raw_lines[1:]:
+            if TS_CODE.search(ln) or ln.strip().startswith('},'):
+                break
+            body.append(ln)
         probs = audit_block(body)
         if probs:
             per_file[f] += 1
