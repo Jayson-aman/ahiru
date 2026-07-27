@@ -15,6 +15,7 @@ import { kikaisekouKikaiQuestions2 } from './kikaisekou_questions_kikai2';
 import { kikaisekouKikaiQuestions3 } from './kikaisekou_questions_kikai3';
 import { kikaisekouKikaiQuestions4 } from './kikaisekou_questions_kikai4';
 import { kikaisekouSekouQuestions2 } from './kikaisekou_questions_sekou2';
+import { kikaisekouSekouQuestions3 } from './kikaisekou_questions_sekou3';
 import { kikaisekouHokiQuestions2 } from './kikaisekou_questions_hoki2';
 import { kikaisekouHokiQuestions3 } from './kikaisekou_questions_hoki3';
 
@@ -3929,6 +3930,7 @@ export const kikaisekouQuestions: KikaisekouQuestion[] = [
   ...kikaisekouKikaiQuestions3,
   ...kikaisekouKikaiQuestions4,
   ...kikaisekouSekouQuestions2,
+  ...kikaisekouSekouQuestions3,
   ...kikaisekouHokiQuestions2,
   ...kikaisekouHokiQuestions3,
 ];
