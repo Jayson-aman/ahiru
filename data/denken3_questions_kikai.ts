@@ -532,7 +532,7 @@ export const denken3Kikai: Denken3Question[] = [
       { key: 'D', text: 'E = I sinθ / r²', explanation: 'cosθではなくsinθを使っており不正解。' },
     ],
     correctKey: 'A',
-    explanation: '点光源による照度は逆二乗の法則と余弦の法則に従う。E = I cosθ/r² [lx]。θ=0（垂直入射）のとき E = I/r² となる。\n【図解】点光源の照度（距離逆2乗＋余弦）\n　光源I[cd]\n　　＼θ（入射角）\n　　　＼r\n　　　　▼面\n　E＝(I/r²)cosθ\n　垂直入射(θ=0)：E＝I/r²',
+    explanation: '点光源による照度は逆二乗の法則と余弦の法則に従う。E = I cosθ/r² [lx]。θ=0（垂直入射）のとき E = I/r² となる。\n【図解】点光源の照度（距離逆2乗＋余弦）\n　光度I[cd]の点光源から面までの距離をr、面の法線と入射方向のなす角をθとする\n　E＝(I/r²)cosθ\n　垂直入射(θ=0)：E＝I/r²（cos0＝1で余弦の項が消える）\n　斜めに入射するほどcosθが小さくなり照度は下がる',
     difficulty: 'standard',
     examYear: '令和4年',
   },
