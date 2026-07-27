@@ -18,6 +18,7 @@ export type ShoboTextChapter = {
 import { shoboTextPart1 } from './shobo_text_part1';
 import { shoboTextPart2 } from './shobo_text_part2';
 import { shoboTextPart3 } from './shobo_text_part3';
+import { shoboTextPart1b } from './shobo_text_part1b';
 import { shoboTextPart2b } from './shobo_text_part2b';
 import { shoboTextPart3b } from './shobo_text_part3b';
 
@@ -25,6 +26,7 @@ export const shoboTextbook: ShoboTextChapter[] = [
   ...shoboTextPart1,
   ...shoboTextPart2,
   ...shoboTextPart3,
+  ...shoboTextPart1b,
   ...shoboTextPart2b,
   ...shoboTextPart3b,
 ];
