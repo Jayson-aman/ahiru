@@ -60,19 +60,19 @@ const allFpQuestions = [
   ...fpInhQuestions5,
 ];
 
-const SUBJECT_INFO: Record<string, { name: string; emoji: string; color: string; totalExpected: number }> = {
-  life:        { name: 'ライフプランニングと資金計画', emoji: '👨‍👩‍👧', color: '#0D7C3D', totalExpected: 167 },
-  risk:        { name: 'リスク管理',                 emoji: '🛡️', color: '#1565C0', totalExpected: 167 },
-  asset:       { name: '金融資産運用',               emoji: '📈', color: '#6A1B9A', totalExpected: 167 },
-  tax:         { name: 'タックスプランニング',        emoji: '📊', color: '#E65100', totalExpected: 167 },
-  realestate:  { name: '不動産',                    emoji: '🏘️', color: '#4E342E', totalExpected: 167 },
-  inheritance: { name: '相続・事業承継',             emoji: '📜', color: '#880E4F', totalExpected: 165 },
+const SUBJECT_INFO: Record<string, { name: string; emoji: string; color: string }> = {
+  life:        { name: 'ライフプランニングと資金計画', emoji: '👨‍👩‍👧', color: '#0D7C3D' },
+  risk:        { name: 'リスク管理',                 emoji: '🛡️', color: '#1565C0' },
+  asset:       { name: '金融資産運用',               emoji: '📈', color: '#6A1B9A' },
+  tax:         { name: 'タックスプランニング',        emoji: '📊', color: '#E65100' },
+  realestate:  { name: '不動産',                    emoji: '🏘️', color: '#4E342E' },
+  inheritance: { name: '相続・事業承継',             emoji: '📜', color: '#880E4F' },
 };
 
 export default function FPQuizScreen() {
   const { subject } = useLocalSearchParams<{ subject: string }>();
   const router = useRouter();
-  const info = SUBJECT_INFO[subject ?? ''] ?? { name: subject, emoji: '📖', color: '#0D7C3D', totalExpected: 100 };
+  const info = SUBJECT_INFO[subject ?? ''] ?? { name: subject, emoji: '📖', color: '#0D7C3D' };
 
   const allQuestions = allFpQuestions
     .filter(q => q.subject === subject)

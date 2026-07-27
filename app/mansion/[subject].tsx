@@ -6,19 +6,19 @@ import CertPaywall from '../../components/CertPaywall';
 import { mansionQuestions } from '../../data/mansion_questions';
 import { FREE_QUESTION_LIMIT, PRICING } from '../../services/subscription';
 
-const SUBJECT_INFO: Record<string, { name: string; emoji: string; color: string; totalExpected: number }> = {
-  kubunsho:  { name: '区分所有法',            emoji: '⚖️',  color: '#7B1FA2', totalExpected: 70 },
-  tekiseika: { name: 'マンション管理適正化法', emoji: '📋', color: '#1565C0', totalExpected: 40 },
-  kiyaku:    { name: '標準管理規約',           emoji: '📖', color: '#2E7D32', totalExpected: 70 },
-  minpo:     { name: '民法・その他法令',       emoji: '🏛️', color: '#E65100', totalExpected: 40 },
-  setsubi:   { name: '建物・設備',             emoji: '🔧', color: '#4E342E', totalExpected: 40 },
-  unei:      { name: '管理組合の運営',         emoji: '🏢', color: '#880E4F', totalExpected: 40 },
+const SUBJECT_INFO: Record<string, { name: string; emoji: string; color: string }> = {
+  kubunsho:  { name: '区分所有法',            emoji: '⚖️',  color: '#7B1FA2' },
+  tekiseika: { name: 'マンション管理適正化法', emoji: '📋', color: '#1565C0' },
+  kiyaku:    { name: '標準管理規約',           emoji: '📖', color: '#2E7D32' },
+  minpo:     { name: '民法・その他法令',       emoji: '🏛️', color: '#E65100' },
+  setsubi:   { name: '建物・設備',             emoji: '🔧', color: '#4E342E' },
+  unei:      { name: '管理組合の運営',         emoji: '🏢', color: '#880E4F' },
 };
 
 export default function MansionQuizScreen() {
   const { subject } = useLocalSearchParams<{ subject: string }>();
   const router = useRouter();
-  const info = SUBJECT_INFO[subject ?? ''] ?? { name: subject, emoji: '📖', color: '#7B1FA2', totalExpected: 150 };
+  const info = SUBJECT_INFO[subject ?? ''] ?? { name: subject, emoji: '📖', color: '#7B1FA2' };
 
   const allQuestions = mansionQuestions
     .filter(q => q.subject === subject)

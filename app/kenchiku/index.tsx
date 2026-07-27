@@ -11,8 +11,15 @@ import { useRouter } from 'expo-router';
 import { LinearGradient } from 'expo-linear-gradient';
 import { kenchikuQuestions } from '../../data/kenchiku/index';
 import { kenchikuMogi } from '../../data/kenchiku/mogi';
+import { kenchikuTextbook } from '../../data/kenchiku/text';
 
 type Mode = 'kiso' | 'ouyou' | 'text';
+
+// 実テキストデータから科目別のセクション数を集計（ハードコードせずズレを防ぐ）
+const TEXT_SECTION_COUNT: Record<string, number> = {};
+kenchikuTextbook.forEach((ch) => {
+  TEXT_SECTION_COUNT[ch.subject] = (TEXT_SECTION_COUNT[ch.subject] ?? 0) + ch.sections.length;
+});
 
 const SUBJECTS = [
   {
@@ -22,7 +29,6 @@ const SUBJECTS = [
     color: '#1565C0',
     examCount: 20,
     desc: '構造力学・材料・施工・建築計画',
-    textSections: ['構造力学の基礎', '建築材料', '施工管理', '建築計画'],
   },
   {
     key: 'hoki',
@@ -31,7 +37,6 @@ const SUBJECTS = [
     color: '#2E7D32',
     examCount: 20,
     desc: '建築基準法・消防法・省エネ法・バリアフリー法',
-    textSections: ['建築基準法総則', '単体規定', '集団規定', '消防法・その他'],
   },
   {
     key: 'kucho',
@@ -40,7 +45,6 @@ const SUBJECTS = [
     color: '#0097A7',
     examCount: 20,
     desc: '熱負荷計算・空調方式・換気設計・省エネ',
-    textSections: ['熱環境・熱負荷', '空調方式の種類', '換気設計', '省エネ・設備計画'],
   },
   {
     key: 'kyuhaisui',
@@ -49,7 +53,6 @@ const SUBJECTS = [
     color: '#1976D2',
     examCount: 20,
     desc: '給水・排水・衛生器具・ガス設備',
-    textSections: ['給水設備', '排水・通気設備', '衛生器具・消火設備', 'ガス・その他'],
   },
   {
     key: 'denki',
@@ -58,7 +61,6 @@ const SUBJECTS = [
     color: '#F57F17',
     examCount: 15,
     desc: '受変電・幹線・照明・弱電・自家発電',
-    textSections: ['受変電設備', '幹線・動力設備', '照明・コンセント設備', '弱電・防災設備'],
   },
   {
     key: 'bousai',
@@ -67,7 +69,6 @@ const SUBJECTS = [
     color: '#C62828',
     examCount: 5,
     desc: 'スプリンクラー・自動火災報知・排煙設備',
-    textSections: ['消火設備', '自動火災報知設備', '排煙設備', '避難設備'],
   },
 ];
 
@@ -181,7 +182,7 @@ export default function KenchikuScreen() {
               <Text style={styles.subjectDesc}>{subject.desc}</Text>
               {mode === 'text' ? (
                 <Text style={[styles.subjectMeta, { color: subject.color }]}>
-                  {subject.textSections.length}セクション収録
+                  {TEXT_SECTION_COUNT[subject.key] ?? 0}セクション収録
                 </Text>
               ) : (
                 <Text style={[styles.subjectMeta, { color: subject.color }]}>
@@ -195,7 +196,7 @@ export default function KenchikuScreen() {
 
         <View style={styles.infoCard}>
           <Text style={styles.infoTitle}>📖 建築設備士試験について</Text>
-          <Text style={styles.infoText}>・1次試験（学科）：建築一般知識・建築法規・建築設備 計100問</Text>
+          <Text style={styles.infoText}>・1次試験（学科）：建築一般知識・建築法規・建築設備 計105問</Text>
           <Text style={styles.infoText}>・2次試験（設計製図）：空調・給排水・電気いずれか1科目</Text>
           <Text style={styles.infoText}>・試験日：1次8月中旬、2次11月</Text>
           <Text style={styles.infoText}>・合格率：1次約30%、2次約60%</Text>

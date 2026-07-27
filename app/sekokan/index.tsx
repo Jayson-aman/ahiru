@@ -5,8 +5,15 @@ import {
 import { useRouter } from 'expo-router';
 import { LinearGradient } from 'expo-linear-gradient';
 import { sekokanQuestions, sekokanMogi } from '../../data/sekokan';
+import { sekokanTextbook } from '../../data/sekokan/text';
 
 type Mode = 'kiso' | 'ouyou' | 'text';
+
+// 実テキストデータから科目別のセクション数を集計（ハードコードせずズレを防ぐ）
+const TEXT_SECTION_COUNT: Record<string, number> = {};
+sekokanTextbook.forEach((ch) => {
+  TEXT_SECTION_COUNT[ch.subject] = (TEXT_SECTION_COUNT[ch.subject] ?? 0) + ch.sections.length;
+});
 
 const SUBJECTS = [
   {
@@ -15,7 +22,6 @@ const SUBJECTS = [
     emoji: '📐',
     color: '#1565C0',
     desc: '環境工学・構造力学・建築材料・共通（設備・契約）',
-    textSections: 4,
   },
   {
     key: 'sekou',
@@ -23,7 +29,6 @@ const SUBJECTS = [
     emoji: '🏗️',
     color: '#E65100',
     desc: '土工事・鉄筋・型枠・コンクリート・鉄骨・防水・内装',
-    textSections: 4,
   },
   {
     key: 'kanri',
@@ -31,7 +36,6 @@ const SUBJECTS = [
     emoji: '📋',
     color: '#2E7D32',
     desc: '施工計画・工程管理・品質管理・安全管理',
-    textSections: 4,
   },
   {
     key: 'hoki',
@@ -39,7 +43,6 @@ const SUBJECTS = [
     emoji: '⚖️',
     color: '#7B1FA2',
     desc: '建設業法・建築基準法・労働安全衛生法・環境関連法',
-    textSections: 4,
   },
 ];
 
@@ -145,7 +148,7 @@ export default function SekokanScreen() {
               <Text style={styles.subjectDesc}>{subject.desc}</Text>
               {mode === 'text' ? (
                 <Text style={[styles.subjectMeta, { color: subject.color }]}>
-                  {subject.textSections}セクション収録
+                  {TEXT_SECTION_COUNT[subject.key] ?? 0}セクション収録
                 </Text>
               ) : (
                 <Text style={[styles.subjectMeta, { color: subject.color }]}>

@@ -6,16 +6,16 @@ import CertPaywall from '../../components/CertPaywall';
 import { eikenQuestions } from '../../data/eiken_questions';
 import { FREE_QUESTION_LIMIT, PRICING } from '../../services/subscription';
 
-const LEVEL_INFO: Record<string, { name: string; nameEn: string; emoji: string; color: string; cefr: string; totalExpected: number }> = {
-  '2kyu': { name: '英検 2級', nameEn: 'Grade 2', emoji: '🥇', color: '#C62828', cefr: 'CEFR B1–B2', totalExpected: 150 },
-  '3kyu': { name: '英検 3級', nameEn: 'Grade 3', emoji: '🥈', color: '#1565C0', cefr: 'CEFR A2',    totalExpected: 150 },
-  '4kyu': { name: '英検 4級', nameEn: 'Grade 4', emoji: '🥉', color: '#2E7D32', cefr: 'CEFR A1',    totalExpected: 150 },
+const LEVEL_INFO: Record<string, { name: string; nameEn: string; emoji: string; color: string; cefr: string }> = {
+  '2kyu': { name: '英検 2級', nameEn: 'Grade 2', emoji: '🥇', color: '#C62828', cefr: 'CEFR B1–B2' },
+  '3kyu': { name: '英検 3級', nameEn: 'Grade 3', emoji: '🥈', color: '#1565C0', cefr: 'CEFR A2' },
+  '4kyu': { name: '英検 4級', nameEn: 'Grade 4', emoji: '🥉', color: '#2E7D32', cefr: 'CEFR A1' },
 };
 
 export default function EikenLevelScreen() {
   const { level } = useLocalSearchParams<{ level: string }>();
   const router = useRouter();
-  const info = LEVEL_INFO[level ?? ''] ?? { name: level, nameEn: '', emoji: '📖', color: '#7B1FA2', cefr: '', totalExpected: 150 };
+  const info = LEVEL_INFO[level ?? ''] ?? { name: level, nameEn: '', emoji: '📖', color: '#7B1FA2', cefr: '' };
 
   const CATEGORY_LABELS: Record<string, string> = {
     vocabulary: '語彙',

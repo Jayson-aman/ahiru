@@ -6,17 +6,17 @@ import CertPaywall from '../../components/CertPaywall';
 import { denken3Questions } from '../../data/denken3_questions';
 import { FREE_QUESTION_LIMIT, PRICING } from '../../services/subscription';
 
-const INFO: Record<string, { name: string; emoji: string; color: string; totalExpected: number }> = {
-  rikigaku: { name: '理論',  emoji: '⚡', color: '#E65100', totalExpected: 200 },
-  denryoku: { name: '電力',  emoji: '🔌', color: '#1565C0', totalExpected: 200 },
-  kikai:    { name: '機械',  emoji: '⚙️',  color: '#2E7D32', totalExpected: 200 },
-  houki:    { name: '法規',  emoji: '📋', color: '#7B1FA2', totalExpected: 150 },
+const INFO: Record<string, { name: string; emoji: string; color: string }> = {
+  rikigaku: { name: '理論',  emoji: '⚡', color: '#E65100' },
+  denryoku: { name: '電力',  emoji: '🔌', color: '#1565C0' },
+  kikai:    { name: '機械',  emoji: '⚙️',  color: '#2E7D32' },
+  houki:    { name: '法規',  emoji: '📋', color: '#7B1FA2' },
 };
 
 export default function Denken3SubjectScreen() {
   const { subject } = useLocalSearchParams<{ subject: string }>();
   const router = useRouter();
-  const info = INFO[subject ?? ''] ?? { name: subject, emoji: '⚡', color: '#E65100', totalExpected: 150 };
+  const info = INFO[subject ?? ''] ?? { name: subject, emoji: '⚡', color: '#E65100' };
 
   const allQuestions = denken3Questions
     .filter(q => q.subject === subject)

@@ -6,16 +6,16 @@ import CertPaywall from '../../components/CertPaywall';
 import { kishoQuestions } from '../../data/kisho_questions';
 import { FREE_QUESTION_LIMIT, PRICING } from '../../services/subscription';
 
-const INFO: Record<string, { name: string; emoji: string; color: string; totalExpected: number }> = {
-  gakka1:  { name: '予報業務に関する一般知識', emoji: '🌡️', color: '#1565C0', totalExpected: 150 },
-  gakka2:  { name: '予報業務に関する専門知識', emoji: '🌀', color: '#0097A7', totalExpected: 150 },
-  jitsumu: { name: '実技試験',               emoji: '🗺️', color: '#2E7D32', totalExpected: 150 },
+const INFO: Record<string, { name: string; emoji: string; color: string }> = {
+  gakka1:  { name: '予報業務に関する一般知識', emoji: '🌡️', color: '#1565C0' },
+  gakka2:  { name: '予報業務に関する専門知識', emoji: '🌀', color: '#0097A7' },
+  jitsumu: { name: '実技試験',               emoji: '🗺️', color: '#2E7D32' },
 };
 
 export default function KishoSubjectScreen() {
   const { subject } = useLocalSearchParams<{ subject: string }>();
   const router = useRouter();
-  const info = INFO[subject ?? ''] ?? { name: subject, emoji: '🌤️', color: '#1565C0', totalExpected: 150 };
+  const info = INFO[subject ?? ''] ?? { name: subject, emoji: '🌤️', color: '#1565C0' };
 
   const allQuestions = kishoQuestions
     .filter(q => q.subject === subject)

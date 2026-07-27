@@ -6,17 +6,17 @@ import CertPaywall from '../../components/CertPaywall';
 import { takkeiQuestions } from '../../data/takkei_questions';
 import { FREE_QUESTION_LIMIT, PRICING } from '../../services/subscription';
 
-const SUBJECT_INFO: Record<string, { name: string; emoji: string; color: string; totalExpected: number }> = {
-  kenri: { name: '権利関係',      emoji: '⚖️', color: '#5B4B8A', totalExpected: 250 },
-  gyoho: { name: '宅建業法',      emoji: '🏢', color: '#1E5799', totalExpected: 250 },
-  horei: { name: '法令上の制限',  emoji: '📋', color: '#27AE60', totalExpected: 250 },
-  zei:   { name: '税・その他',    emoji: '💴', color: '#E67E22', totalExpected: 250 },
+const SUBJECT_INFO: Record<string, { name: string; emoji: string; color: string }> = {
+  kenri: { name: '権利関係',      emoji: '⚖️', color: '#5B4B8A' },
+  gyoho: { name: '宅建業法',      emoji: '🏢', color: '#1E5799' },
+  horei: { name: '法令上の制限',  emoji: '📋', color: '#27AE60' },
+  zei:   { name: '税・その他',    emoji: '💴', color: '#E67E22' },
 };
 
 export default function TakkeiQuizScreen() {
   const { subject } = useLocalSearchParams<{ subject: string }>();
   const router = useRouter();
-  const info = SUBJECT_INFO[subject ?? ''] ?? { name: subject, emoji: '📖', color: '#6B3210', totalExpected: 100 };
+  const info = SUBJECT_INFO[subject ?? ''] ?? { name: subject, emoji: '📖', color: '#6B3210' };
 
   const allQuestions = takkeiQuestions
     .filter(q => q.subject === subject)
