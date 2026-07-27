@@ -17,6 +17,7 @@ import { kankojiSekou2 } from './kankoji_questions_sekou2';
 import { kankojiHoki2 } from './kankoji_questions_hoki2';
 import { kankojiHoki3 } from './kankoji_questions_hoki3';
 import { kankojiKucho3 } from './kankoji_questions_kucho3';
+import { kankojiSekou3 } from './kankoji_questions_sekou3';
 
 export const kankojiQuestions: KankojiQuestion[] = [
   // ===== 原論・電気・建築学 60問 =====
@@ -3931,4 +3932,5 @@ export const kankojiQuestions: KankojiQuestion[] = [
   ...kankojiHoki2,
   ...kankojiHoki3,
   ...kankojiKucho3,
+  ...kankojiSekou3,
 ];
