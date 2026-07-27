@@ -24,6 +24,7 @@ import { kyusuiKeikaku2 } from './kyusui_questions_keikaku_2';
 import { kyusuiGaiyo2 } from './kyusui_questions_gaiyo_2';
 import { kyusuiKozo2 } from './kyusui_questions_kozo_2';
 import { kyusuiGyosei2 } from './kyusui_questions_gyosei_2';
+import { kyusuiKoho2 } from './kyusui_questions_koho_2';
 
 export const kyusuiQuestions: KyusuiQuestion[] = [
   ...kyusuiKoho1,
@@ -37,4 +38,5 @@ export const kyusuiQuestions: KyusuiQuestion[] = [
   ...kyusuiGaiyo2,
   ...kyusuiKozo2,
   ...kyusuiGyosei2,
+  ...kyusuiKoho2,
 ];
