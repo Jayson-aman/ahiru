@@ -247,11 +247,8 @@ export const denkisekouTextbook: DenkisekouTextChapter[] = [
 　輝度(cd/m²)：目に感じるまぶしさ★（グレア評価）
 
 【図解】逆2乗の法則
-　光源I(cd)
-　　＼
-　　　＼ 距離r
-　　　　＼
-　　　　　●面　E＝I/r² ★
+・光源I(cd)から距離r だけ離れたところに面がある
+・その面の照度は E＝I/r² ★
 → 距離2倍で照度は1/4、3倍で1/9★
 ・斜め入射は E＝(I/r²)×cosθ（入射角の余弦則）
 
