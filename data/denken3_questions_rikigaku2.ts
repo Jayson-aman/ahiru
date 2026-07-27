@@ -12,7 +12,7 @@ export const denken3Rikigaku2: Denken3Question[] = [
       { key: 'D', text: '30 V', explanation: '誤り。全電圧が片方に加わることはない（他方が0Vになってしまい矛盾）。' },
     ],
     correctKey: 'C',
-    explanation: '直列コンデンサは「Q共通・電圧は容量に反比例」。\n【図解】直列分圧の計算\n　30V─┤10μF├─┤20μF├─\n　①合成C＝積/和＝200/30＝20/3μF\n　②共通電荷Q＝CV＝(20/3)×30＝200μC\n　③V₁₀＝Q/10＝20V★／V₂₀＝Q/20＝10V\n　検算：20+10＝30V ✓（小さい容量に大きい電圧）',
+    explanation: '直列コンデンサは「Q共通・電圧は容量に反比例」。\n【図解】直列分圧の計算\n　30Vの電源に10μFと20μFのコンデンサを直列接続する。\n　①合成C＝積/和＝200/30＝20/3μF\n　②共通電荷Q＝CV＝(20/3)×30＝200μC\n　③V₁₀＝Q/10＝20V★／V₂₀＝Q/20＝10V\n　検算：20+10＝30V ✓（小さい容量に大きい電圧）',
     difficulty: 'standard',
   },
   {
@@ -25,7 +25,7 @@ export const denken3Rikigaku2: Denken3Question[] = [
       { key: 'D', text: '0 V', explanation: '誤り。＋20V側の電荷供給が−10V側より大きいため、bの電位は正になる。' },
     ],
     correctKey: 'A',
-    explanation: 'TAC過去問頻出の「電荷保存則」型（H26類題）。\n【図解】b点の電荷保存\n　20V─10μF─●b─20μF─0V\n　　　　　　　└─10μF─(−10V)\n　孤立部分の電荷合計＝0（初期電荷0）★\n　ΣC(V相手−Vb)＝0\n　10(20−Vb)＋20(0−Vb)＋10(−10−Vb)＝0\n　→ 40Vb＝100 → Vb＝2.5V ✓',
+    explanation: 'TAC過去問頻出の「電荷保存則」型（H26類題）。\n【図解】b点の電荷保存\n　20Vと0Vの間を10μFと20μFのコンデンサで直列に接続し、その接続点bにさらに10μFのコンデンサを介して−10Vへ接続する構成。\n　孤立部分の電荷合計＝0（初期電荷0）★\n　ΣC(V相手−Vb)＝0\n　10(20−Vb)＋20(0−Vb)＋10(−10−Vb)＝0\n　→ 40Vb＝100 → Vb＝2.5V ✓',
     difficulty: 'advanced',
   },
   {
@@ -38,7 +38,7 @@ export const denken3Rikigaku2: Denken3Question[] = [
       { key: 'D', text: '11 Ω', explanation: '誤り。11Ωは直列合成（2+3+6）の値である。並列と直列を取り違えている。' },
     ],
     correctKey: 'A',
-    explanation: '並列は「逆数の和の逆数」。通分がきれいになる値が出題される。\n【図解】並列合成の計算\n　─┬─2Ω─┬─\n　　├─3Ω─┤\n　　└─6Ω─┘\n　1/R＝1/2＋1/3＋1/6＝(3+2+1)/6＝1\n　→ R＝1Ω ✓（必ず最小抵抗2Ωより小さい★）',
+    explanation: '並列は「逆数の和の逆数」。通分がきれいになる値が出題される。\n【図解】並列合成の計算\n　2Ω・3Ω・6Ωの3つの抵抗を並列に接続する。\n　1/R＝1/2＋1/3＋1/6＝(3+2+1)/6＝1\n　→ R＝1Ω ✓（必ず最小抵抗2Ωより小さい★）',
     difficulty: 'basic',
   },
   {
@@ -51,7 +51,7 @@ export const denken3Rikigaku2: Denken3Question[] = [
       { key: 'D', text: 'R→∞ のとき、Pmax＝E²/r', explanation: '誤り。R→∞では電流が0に近づき電力も0に向かう。開放状態では電力は取り出せない。' },
     ],
     correctKey: 'C',
-    explanation: '最大電力供給の定理（整合条件）。\n【図解】外部抵抗と供給電力\n　P┤　⛰←R=rで最大\n　　│╱　　＼＿＿\n　　└─r────→R\n　R=r：I＝E/2r、P＝I²R＝E²/(4r)★\n　（Rが小さすぎ→内部で消費／大きすぎ→電流減）',
+    explanation: '最大電力供給の定理（整合条件）。\n【図解】外部抵抗と供給電力\n　外部抵抗Rを横軸、供給電力Pを縦軸にとると、R=rのとき電力Pが山型のピーク（最大）になる。\n　R=r：I＝E/2r、P＝I²R＝E²/(4r)★\n　（Rが小さすぎ→内部で消費／大きすぎ→電流減）',
     difficulty: 'advanced',
   },
   {
@@ -194,7 +194,7 @@ export const denken3Rikigaku2: Denken3Question[] = [
       { key: 'D', text: '−0.1 倍', explanation: '誤り。R₁/Rfと逆に取った値。帰還抵抗Rfが分子である。' },
     ],
     correctKey: 'A',
-    explanation: 'オペアンプ2回路の公式を対で暗記。\n【図解】反転増幅回路\n　Vin─R₁─●─[−入力]\n　　　　　│　　　＼\n　　　　　Rf　　　＞─Vout\n　　　　　└──────┘\n　A＝−Rf/R₁＝−10 ✓（バーチャルショートでR₁の電流が全てRfへ）\n　非反転：A＝1＋Rf/R₁＝+11（混同注意★）',
+    explanation: 'オペアンプ2回路の公式を対で暗記。\n【図解】反転増幅回路\n　Vinに抵抗R₁を直列接続してオペアンプの−入力へ、−入力と出力Voutの間に帰還抵抗Rfを接続する反転増幅回路。\n　A＝−Rf/R₁＝−10 ✓（バーチャルショートでR₁の電流が全てRfへ）\n　非反転：A＝1＋Rf/R₁＝+11（混同注意★）',
     difficulty: 'standard',
   },
   {
@@ -207,7 +207,7 @@ export const denken3Rikigaku2: Denken3Question[] = [
       { key: 'D', text: '1000 mA', explanation: '誤り。倍率を100倍と誤った値。n＝1＋r/Rs＝10倍である。' },
     ],
     correctKey: 'B',
-    explanation: '倍率の式はn＝1＋r/Rs（Rs＝r/(n−1)の変形）。\n【図解】分流器の電流配分\n　　　　┌─電流計r=9Ω：10mA─┐\n　100mA→┤　　　　　　　　　　├→\n　　　　└─分流器Rs=1Ω：90mA┘\n　並列＝同電圧：10mA×9Ω＝90mA×1Ω ✓\n　n＝1＋9/1＝10倍→最大100mA',
+    explanation: '倍率の式はn＝1＋r/Rs（Rs＝r/(n−1)の変形）。\n【図解】分流器の電流配分\n　電流計（内部抵抗r=9Ω、10mA）と分流器（抵抗Rs=1Ω、90mA）を並列接続し、全体で100mAが流れ込む構成。\n　並列＝同電圧：10mA×9Ω＝90mA×1Ω ✓\n　n＝1＋9/1＝10倍→最大100mA',
     difficulty: 'standard',
   },
   {
@@ -298,7 +298,7 @@ export const denken3Rikigaku2: Denken3Question[] = [
       { key: 'D', text: '250 Ω', explanation: '誤り。250はP＋Q−R等の加減算による誤り。平衡条件は比（積）の関係である。' },
     ],
     correctKey: 'B',
-    explanation: '平衡条件は「はす向かいの積が等しい」。\n【図解】ブリッジの平衡\n　　┌─P=100─┬─Q=200─┐\n　電源　　　　G（電流0）　\n　　└─R=50──┴─X=?──┘\n　P/Q＝R/X → X＝QR/P＝200×50/100＝100Ω ✓\n　（Pの対辺はX：PX＝QR でも同じ結果）',
+    explanation: '平衡条件は「はす向かいの積が等しい」。\n【図解】ブリッジの平衡\n　電源にP=100とQ=200の直列枝、R=50とX（未知）の直列枝を並列に接続し、両中点間に検流計G（電流0）を接続したブリッジ回路。\n　P/Q＝R/X → X＝QR/P＝200×50/100＝100Ω ✓\n　（Pの対辺はX：PX＝QR でも同じ結果）',
     difficulty: 'standard',
   },
 
@@ -338,7 +338,7 @@ export const denken3Rikigaku2: Denken3Question[] = [
       { key: 'D', text: 'Z = 2 Ω であり、電流と電圧は同位相である。', explanation: '誤り。Zの計算がXC−Rの引き算になっており誤り。またリアクタンス成分がある限り電流と電圧は同位相にならない。' },
     ],
     correctKey: 'A',
-    explanation: '容量性回路では電流が電圧より位相が進む（進み電流）ことを確認する基本問題。\n【図解】RC直列回路のインピーダンス三角形\n　　R=8┐\n　　　　│XC=6（下向き＝容量性）\n　　　Z=10（斜辺）\n　φ＝tan⁻¹(XC/R)＝tan⁻¹(6/8)≈36.9°\n　容量性→電流が電圧より進む（ICE：Cが先にI）',
+    explanation: '容量性回路では電流が電圧より位相が進む（進み電流）ことを確認する基本問題。\n【図解】RC直列回路のインピーダンス三角形\n　R=8ΩとXC=6Ωを直角の2辺、Z=10Ωを斜辺とする直角三角形（インピーダンス三角形、容量性なのでXCは下向き）。\n　φ＝tan⁻¹(XC/R)＝tan⁻¹(6/8)≈36.9°\n　容量性→電流が電圧より進む（ICE：Cが先にI）',
     difficulty: 'standard',
   },
   {
@@ -390,7 +390,7 @@ export const denken3Rikigaku2: Denken3Question[] = [
       { key: 'D', text: 'Vout = Vin / RC', explanation: '誤り。時間微分の要素がなく、単なる比例配分の式になっている。' },
     ],
     correctKey: 'B',
-    explanation: '微分回路と積分回路は素子配置（RとCの位置）が入れ替わる関係にある。\n【図解】微分回路の構成\n　Vin─C─┬─[−入力]\n　　　　 R（帰還）\n　　　　 └──Vout\n　Vout＝−RC・dVin/dt★\n　入力が矩形波→出力は急峻なスパイク状（微分特性）',
+    explanation: '微分回路と積分回路は素子配置（RとCの位置）が入れ替わる関係にある。\n【図解】微分回路の構成\n　Vinにコンデンサ Cを直列接続してオペアンプの−入力へ、−入力と出力Voutの間には帰還素子として抵抗Rを接続する微分回路。\n　Vout＝−RC・dVin/dt★\n　入力が矩形波→出力は急峻なスパイク状（微分特性）',
     difficulty: 'advanced',
   },
   {
@@ -416,7 +416,7 @@ export const denken3Rikigaku2: Denken3Question[] = [
       { key: 'D', text: '約 51 mA', explanation: '正しい。IR＝(Vin−Vz)/R＝(15−9)/100＝0.06A＝60mA。IL＝Vz/RL＝9/1000＝0.009A＝9mA。IZ＝IR−IL＝60−9＝51mA。' },
     ],
     correctKey: 'D',
-    explanation: 'ツェナー電流は「直列抵抗の電流」から「負荷電流」を差し引いた値になる（キルヒホッフの電流則）。\n【図解】ツェナー定電圧回路の電流配分\n　Vin=15V─R=100Ω─┬─Vz=9V(ZD)\n　　　　　　　　　└─RL=1000Ω\n　IR＝(15−9)/100＝60mA（節点に流入）\n　IL＝9/1000＝9mA（負荷へ流出）\n　IZ＝IR−IL＝51mA★（ZDへ流出、ZDが余剰電流を吸収）',
+    explanation: 'ツェナー電流は「直列抵抗の電流」から「負荷電流」を差し引いた値になる（キルヒホッフの電流則）。\n【図解】ツェナー定電圧回路の電流配分\n　Vin=15Vに抵抗R=100Ωを直列接続し、その先でツェナーダイオード（Vz=9V）と負荷RL=1000Ωを並列接続する。\n　IR＝(15−9)/100＝60mA（節点に流入）\n　IL＝9/1000＝9mA（負荷へ流出）\n　IZ＝IR−IL＝51mA★（ZDへ流出、ZDが余剰電流を吸収）',
     difficulty: 'advanced',
   },
   {
@@ -481,7 +481,7 @@ export const denken3Rikigaku2: Denken3Question[] = [
       { key: 'D', text: '10000 VA', explanation: '正しい。S＝√(P²+Q²)＝√(6000²+8000²)＝√(36000000+64000000)＝√100000000＝10000VA（6:8:10＝3:4:5の直角三角形）。' },
     ],
     correctKey: 'D',
-    explanation: '有効電力・無効電力・皮相電力は複素電力（S＝P+jQ）の大きさの関係にある。\n【図解】電力の三角形（3:4:5の拡大）\n　　　　S=10000VA\n　　　╱│\n　　╱　│Q=8000var\n　╱φ　│\n　└───┘P=6000W\n　S＝√(P²+Q²)＝√(6²+8²)×1000＝10×1000＝10000VA ✓',
+    explanation: '有効電力・無効電力・皮相電力は複素電力（S＝P+jQ）の大きさの関係にある。\n【図解】電力の三角形（3:4:5の拡大）\n　P=6000WとQ=8000varを直角の2辺、S=10000VAを斜辺とする直角三角形（電力の三角形）で表せる。\n　S＝√(P²+Q²)＝√(6²+8²)×1000＝10×1000＝10000VA ✓',
     difficulty: 'standard',
   },
   {
@@ -494,7 +494,7 @@ export const denken3Rikigaku2: Denken3Question[] = [
       { key: 'D', text: '正弦波が出力される。', explanation: '誤り。入力が矩形波である限り、理想的な正弦波が出力されることはない。' },
     ],
     correctKey: 'C',
-    explanation: '微分回路は矩形波をスパイク列（トリガパルス生成等）に変換する用途で利用される。\n【図解】矩形波を微分回路に入力した場合\n　入力：┌──┐　　┌──┐（矩形波、平坦部でdV/dt=0）\n　　　　┘　　└────┘\n　出力：↑　　↓　　↑　　↓（急変時のみスパイク）★\n　　　　（立ち上がり:+スパイク／立下り:−スパイク）',
+    explanation: '微分回路は矩形波をスパイク列（トリガパルス生成等）に変換する用途で利用される。\n【図解】矩形波を微分回路に入力した場合\n　入力は矩形波（平坦部ではdV/dt=0）。\n　出力は入力の立ち上がり・立ち下がりの瞬間だけに正負のスパイクが現れる波形になる★\n　（立ち上がり:+スパイク／立下り:−スパイク）',
     difficulty: 'advanced',
   },
   {

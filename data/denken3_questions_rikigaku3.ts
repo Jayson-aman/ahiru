@@ -38,7 +38,7 @@ export const denken3Rikigaku3: Denken3Question[] = [
       { key: 'D', text: '800 pF', explanation: '正しい。C＝εrε₀A/d より、d→d/2で2倍、εr＝4で4倍。100×2×4＝800 pF。' },
     ],
     correctKey: 'D',
-    explanation: 'C＝εA/d：面積Aに比例、間隔dに反比例、比誘電率εrに比例。\n【図解】容量の変化\n　C₀=100pF ─┤　├─ d\n　①d→d/2：C＝2倍（近いほど大容量）\n　②εr=4：C＝4倍（誘電体は容量を増やす）\n　③C＝100×2×4＝800pF ✓\n　⚠片方の効果だけ考える見落としに注意★',
+    explanation: 'C＝εA/d：面積Aに比例、間隔dに反比例、比誘電率εrに比例。\n【図解】容量の変化\n　平行板コンデンサC₀=100pFの極板間隔をdとする。\n　①d→d/2：C＝2倍（近いほど大容量）\n　②εr=4：C＝4倍（誘電体は容量を増やす）\n　③C＝100×2×4＝800pF ✓\n　⚠片方の効果だけ考える見落としに注意★',
     difficulty: 'standard',
   },
   {
@@ -103,7 +103,7 @@ export const denken3Rikigaku3: Denken3Question[] = [
       { key: 'D', text: '8 Ω', explanation: '誤り。金属の抵抗は温度上昇で増加する。減少するのは半導体や電解液である。' },
     ],
     correctKey: 'C',
-    explanation: '金属の抵抗温度特性 R＝R₀{1＋α(t−t₀)}。\n【図解】温度と抵抗\n　R↑　　　╱ 金属：温度↑→抵抗↑（正の温度係数）\n 　　　╱\n　　└────→t\n　①温度差＝70−20＝50℃★\n　②R＝10×(1＋0.004×50)＝10×1.2＝12Ω ✓\n　○金属：正の係数／×半導体：負の係数（逆に減る）',
+    explanation: '金属の抵抗温度特性 R＝R₀{1＋α(t−t₀)}。\n【図解】温度と抵抗\n　金属の抵抗は温度上昇とともに増加する（正の温度係数）。\n　①温度差＝70−20＝50℃★\n　②R＝10×(1＋0.004×50)＝10×1.2＝12Ω ✓\n　○金属：正の係数／×半導体：負の係数（逆に減る）',
     difficulty: 'basic',
   },
   {
@@ -116,7 +116,7 @@ export const denken3Rikigaku3: Denken3Question[] = [
       { key: 'D', text: '18.2 Ω', explanation: '誤り。P/(Q+R)などの誤った式による値。平衡条件は積の等式である。' },
     ],
     correctKey: 'A',
-    explanation: 'ブリッジ平衡条件：向かい合う辺（対辺）の積が等しい。\n【図解】ブリッジ回路\n　　　P=100　　Q=10\n　●─┬────検流計G────┬─●\n　　　R=55　　X=?\n　平衡＝Gに電流が流れない→PX＝QR★\n　X＝10×55/100＝5.5Ω ✓\n　⚠どの辺同士が「対辺」かを図で確認するのがコツ',
+    explanation: 'ブリッジ平衡条件：向かい合う辺（対辺）の積が等しい。\n【図解】ブリッジ回路\n　P=100とQ=10の直列枝、R=55とX（未知）の直列枝を並列に接続し、両中点間に検流計Gを接続したブリッジ回路。\n　平衡＝Gに電流が流れない→PX＝QR★\n　X＝10×55/100＝5.5Ω ✓\n　⚠どの辺同士が「対辺」かを図で確認するのがコツ',
     difficulty: 'standard',
   },
   {
@@ -129,7 +129,7 @@ export const denken3Rikigaku3: Denken3Question[] = [
       { key: 'D', text: '3 A', explanation: '正しい。ミルマンの定理：V＝(6/1＋3/1)/(1/1＋1/1＋1/1)＝9/3＝3 V。I＝V/R＝3/1＝3 A。' },
     ],
     correctKey: 'D',
-    explanation: 'ミルマンの定理：並列電源の端子電圧 V＝Σ(E/r)/Σ(1/r)（負荷含む）。\n【図解】ミルマンの定理\n　6V┬1Ω┬　3V┬1Ω┬　負荷1Ω\n　　└──┴──●──┴──┘（全部並列）\n　V＝(6/1＋3/1＋0/1)/(1/1＋1/1＋1/1)\n　　＝9/3＝3V★\n　I負荷＝3/1＝3A ✓\n　→キルヒホッフ連立でも同じ答え（検算に有効）',
+    explanation: 'ミルマンの定理：並列電源の端子電圧 V＝Σ(E/r)/Σ(1/r)（負荷含む）。\n【図解】ミルマンの定理\n　6V＋1Ω、3V＋1Ωの2つの電源枝と負荷1Ωをすべて並列に接続する。\n　V＝(6/1＋3/1＋0/1)/(1/1＋1/1＋1/1)\n　　＝9/3＝3V★\n　I負荷＝3/1＝3A ✓\n　→キルヒホッフ連立でも同じ答え（検算に有効）',
     difficulty: 'advanced',
   },
   {
@@ -155,7 +155,7 @@ export const denken3Rikigaku3: Denken3Question[] = [
       { key: 'D', text: '1.5 A', explanation: '誤り。6×4/(2+4)＝4を自分側の抵抗比とした逆の計算等による値。' },
     ],
     correctKey: 'C',
-    explanation: '分流則：並列2抵抗の電流は「相手の抵抗/抵抗の和」の比で分かれる。\n【図解】分流の計算\n　6A→┬─2Ω─┬→　I₂＝6×4/6＝4A\n　　　└─4Ω─┘→　I₄＝6×2/6＝2A★\n　○分子は「相手側」の抵抗⚠（ここが最頻出ミス）\n　検算：4＋2＝6A ✓、電圧＝4×2＝2×4＝8V ✓',
+    explanation: '分流則：並列2抵抗の電流は「相手の抵抗/抵抗の和」の比で分かれる。\n【図解】分流の計算\n　全電流6Aが2Ωと4Ωの並列枝に分かれて流れる。\n　I₂＝6×4/6＝4A、I₄＝6×2/6＝2A★\n　○分子は「相手側」の抵抗⚠（ここが最頻出ミス）\n　検算：4＋2＝6A ✓、電圧＝4×2＝2×4＝8V ✓',
     difficulty: 'basic',
   },
   {
@@ -181,7 +181,7 @@ export const denken3Rikigaku3: Denken3Question[] = [
       { key: 'D', text: '30 Ω', explanation: '誤り。r×m/9等の混乱した計算。Rs＝r/(m−1)を確実に。' },
     ],
     correctKey: 'A',
-    explanation: '分流器（電流計に並列）：Rs＝r/(m−1)。\n【図解】分流器の原理\n　　　┌─電流計(5mA, 27Ω)─┐\n　50mA┤　　　　　　　　　├→\n　　　└─分流器Rs(45mA)──┘\n　①倍率m＝50/5＝10\n　②分流器に流れるのは50−5＝45mA＝(m−1)倍★\n　③同電圧：5m×27＝45m×Rs → Rs＝27/9＝3Ω ✓\n　○分流器＝並列・割る／倍率器＝直列・掛ける',
+    explanation: '分流器（電流計に並列）：Rs＝r/(m−1)。\n【図解】分流器の原理\n　電流計（5mA、内部抵抗27Ω）と分流器Rs（45mA）を並列接続し、全体で50mAが流れ込む構成。\n　①倍率m＝50/5＝10\n　②分流器に流れるのは50−5＝45mA＝(m−1)倍★\n　③同電圧：5m×27＝45m×Rs → Rs＝27/9＝3Ω ✓\n　○分流器＝並列・割る／倍率器＝直列・掛ける',
     difficulty: 'standard',
   },
   {
@@ -298,7 +298,7 @@ export const denken3Rikigaku3: Denken3Question[] = [
       { key: 'D', text: '2×10⁻³ N/m・反発力', explanation: '誤り。大きさ・向きとも誤り。係数2×10⁻⁷と距離の処理を確認。' },
     ],
     correctKey: 'A',
-    explanation: '平行電流間の力 F＝(2×10⁻⁷)I₁I₂/d [N/m]。同方向＝吸引、逆方向＝反発。\n【図解】力の向き\n　↑100A　　↑100A（同方向）\n　│←─吸引─→│　d=0.5m\n　F＝2×10⁻⁷×100×100/0.5＝4×10⁻³N/m★\n　○同方向→吸引（磁束が間で打ち消し弱まる）\n　×逆方向→反発⚠\n　この式はアンペアの定義（旧SI）の基礎',
+    explanation: '平行電流間の力 F＝(2×10⁻⁷)I₁I₂/d [N/m]。同方向＝吸引、逆方向＝反発。\n【図解】力の向き\n　間隔d=0.5mで平行に置かれた2本の導線に同方向へそれぞれ100Aの電流が流れており、互いに吸引し合う。\n　F＝2×10⁻⁷×100×100/0.5＝4×10⁻³N/m★\n　○同方向→吸引（磁束が間で打ち消し弱まる）\n　×逆方向→反発⚠\n　この式はアンペアの定義（旧SI）の基礎',
     difficulty: 'standard',
   },
   {
@@ -337,7 +337,7 @@ export const denken3Rikigaku3: Denken3Question[] = [
       { key: 'D', text: '200 V', explanation: '誤り。Δt＝0.01sとするなどの桁誤り。' },
     ],
     correctKey: 'A',
-    explanation: 'ファラデーの電磁誘導の法則 e＝N・ΔΦ/Δt。\n【図解】誘導起電力の計算\n　磁束Φ：0.02Wb変化／0.1s\n　　│＼　変化率ΔΦ/Δt＝0.2Wb/s\n　　│　＼＿＿\n　e＝N×ΔΦ/Δt＝100×0.2＝20V★✓\n　○向きはレンツの法則（変化を妨げる向き）\n　⚠巻数N倍を忘れるのが典型ミス',
+    explanation: 'ファラデーの電磁誘導の法則 e＝N・ΔΦ/Δt。\n【図解】誘導起電力の計算\n　磁束Φ：0.02Wb変化／0.1s\n　変化率ΔΦ/Δt＝0.2Wb/s\n　e＝N×ΔΦ/Δt＝100×0.2＝20V★✓\n　○向きはレンツの法則（変化を妨げる向き）\n　⚠巻数N倍を忘れるのが典型ミス',
     difficulty: 'basic',
   },
   {
@@ -415,7 +415,7 @@ export const denken3Rikigaku3: Denken3Question[] = [
       { key: 'D', text: '永久磁石には保磁力の小さい材料が適する', explanation: '誤った記述。永久磁石は外部磁界で減磁しないよう保磁力の「大きい」材料が適する。小さい材料は電磁石・鉄心用。' },
     ],
     correctKey: 'D',
-    explanation: 'ヒステリシスループの読み方と材料選択。\n【図解】ループと材料\n　B↑ ┌──残留磁気Br\n　　─┼──→H\n　保磁力Hc┘（ループ幅）\n　○永久磁石：Br大・Hc大（ループ太い）★\n　○鉄心材料：Hc小（ループ細い→損失小）\n　×永久磁石にHc小は逆⚠\n　ヒステリシス損Ph∝f・Bm^1.6〜2',
+    explanation: 'ヒステリシスループの読み方と材料選択。\n【図解】ループと材料\n　ヒステリシスループの縦軸（B）との交点が残留磁気Br、横軸（H）との交点が保磁力Hcを表す。\n　○永久磁石：Br大・Hc大（ループ太い）★\n　○鉄心材料：Hc小（ループ細い→損失小）\n　×永久磁石にHc小は逆⚠\n　ヒステリシス損Ph∝f・Bm^1.6〜2',
     difficulty: 'standard',
   },
   {
@@ -467,7 +467,7 @@ export const denken3Rikigaku3: Denken3Question[] = [
       { key: 'D', text: '25 A', explanation: '誤り。X＝4Ωのみで割った値。RとXを合成する。' },
     ],
     correctKey: 'B',
-    explanation: 'RL直列：Z＝√(R²＋XL²)（3:4:5の直角三角形が頻出）。\n【図解】インピーダンス三角形\n　　　╱| XL=4\n　Z=5╱ |\n　　└──┘R=3\n　Z＝√(9＋16)＝5Ω★ I＝100/5＝20A ✓\n　×R＋X＝7の算術和は誤り⚠（ベクトル和）\n　力率cosθ＝R/Z＝0.6（遅れ）',
+    explanation: 'RL直列：Z＝√(R²＋XL²)（3:4:5の直角三角形が頻出）。\n【図解】インピーダンス三角形\n　R=3ΩとXL=4Ωを直角の2辺、Z=5Ωを斜辺とする直角三角形（3:4:5）。\n　Z＝√(9＋16)＝5Ω★ I＝100/5＝20A ✓\n　×R＋X＝7の算術和は誤り⚠（ベクトル和）\n　力率cosθ＝R/Z＝0.6（遅れ）',
     difficulty: 'basic',
   },
   {
@@ -519,7 +519,7 @@ export const denken3Rikigaku3: Denken3Question[] = [
       { key: 'D', text: 'Q＝5', explanation: '誤り。Rの値をそのまま答えている。Q＝ω₀L/Rで計算する。' },
     ],
     correctKey: 'A',
-    explanation: 'Q値：共振の鋭さ。Q＝ω₀L/R＝1/(ω₀CR)。\n【図解】Qの意味\n　電流│　⛰←Qが大きいほど鋭い山\n　　　│ ╱ ＼\n　　　└──f₀──→f\n　Q＝ω₀L/R＝1000×0.1/5＝20★✓\n　○共振時、LやCの端子電圧は電源電圧のQ倍！\n　○帯域幅B＝f₀/Q（Q大→選択性良）\n　通信回路の同調の基本',
+    explanation: 'Q値：共振の鋭さ。Q＝ω₀L/R＝1/(ω₀CR)。\n【図解】Qの意味\n　周波数fに対する電流のグラフは共振周波数f₀を頂点とする山形になり、Qが大きいほどその山は鋭くなる。\n　Q＝ω₀L/R＝1000×0.1/5＝20★✓\n　○共振時、LやCの端子電圧は電源電圧のQ倍！\n　○帯域幅B＝f₀/Q（Q大→選択性良）\n　通信回路の同調の基本',
     difficulty: 'standard',
   },
   {
@@ -532,7 +532,7 @@ export const denken3Rikigaku3: Denken3Question[] = [
       { key: 'D', text: '1.0', explanation: '誤り。P＝Sのときのみ力率1。ここではP＜Sである。' },
     ],
     correctKey: 'B',
-    explanation: '力率 cosθ＝有効電力P/皮相電力S。\n【図解】電力の三角形\n　S=VI=2000VA（斜辺）\n　　╱|Q（無効電力）\n　　─┘P=1600W（底辺）\n　cosθ＝1600/2000＝0.8★✓\n　sinθ＝√(1−0.8²)＝0.6\n　Q＝S sinθ＝1200var\n　○P[W]：仕事をする電力／Q[var]：往復するだけの電力',
+    explanation: '力率 cosθ＝有効電力P/皮相電力S。\n【図解】電力の三角形\n　P=1600Wを底辺、Q（無効電力）を高さ、S=VI=2000VAを斜辺とする直角三角形（電力の三角形）で表せる。\n　cosθ＝1600/2000＝0.8★✓\n　sinθ＝√(1−0.8²)＝0.6\n　Q＝S sinθ＝1200var\n　○P[W]：仕事をする電力／Q[var]：往復するだけの電力',
     difficulty: 'basic',
   },
   {
@@ -545,7 +545,7 @@ export const denken3Rikigaku3: Denken3Question[] = [
       { key: 'D', text: '800 var', explanation: '誤り。S×0.4など誤った係数。sinθ＝0.8である。' },
     ],
     correctKey: 'C',
-    explanation: '無効電力 Q＝S sinθ。cosθ＝0.6ならsinθ＝0.8（3:4:5）。\n【図解】電力三角形（3:4:5型）\n　S=2000VA╱│Q=1600var★\n　　　　　─┘P=1200W\n　sinθ＝√(1−cos²θ)＝√(1−0.36)＝0.8\n　Q＝2000×0.8＝1600var ✓\n　検算：√(1200²＋1600²)＝2000 ✓\n　⚠cosθとsinθの取り違えが最頻出',
+    explanation: '無効電力 Q＝S sinθ。cosθ＝0.6ならsinθ＝0.8（3:4:5）。\n【図解】電力三角形（3:4:5型）\n　P=1200Wを底辺、Q=1600varを高さ、S=2000VAを斜辺とする直角三角形（3:4:5型）で表せる。\n　sinθ＝√(1−cos²θ)＝√(1−0.36)＝0.8\n　Q＝2000×0.8＝1600var ✓\n　検算：√(1200²＋1600²)＝2000 ✓\n　⚠cosθとsinθの取り違えが最頻出',
     difficulty: 'basic',
   },
   {
@@ -584,7 +584,7 @@ export const denken3Rikigaku3: Denken3Question[] = [
       { key: 'D', text: '約 16.7 kvar', explanation: '誤り。S＝P/cosθ＝16.7kVAと混同した値。必要なのは無効電力分のみ。' },
     ],
     correctKey: 'A',
-    explanation: '力率100%改善：負荷の無効電力Q＝P tanθを全て補償する。\n【図解】電力三角形で考える\n　S=16.7kVA╱│Q=13.3kvar←これを打ち消す★\n　　　　　　─┘P=10kW（不変）\n　tanθ＝sinθ/cosθ＝0.8/0.6＝4/3\n　Qc＝10×4/3≒13.3kvar ✓\n　→力率改善で電流減・損失減・設備容量に余裕\n　⚠PとSの取り違えに注意',
+    explanation: '力率100%改善：負荷の無効電力Q＝P tanθを全て補償する。\n【図解】電力三角形で考える\n　P=10kW（不変）を底辺、Q=13.3kvar（これを打ち消す）を高さ、S=16.7kVAを斜辺とする直角三角形で表せる。\n　tanθ＝sinθ/cosθ＝0.8/0.6＝4/3\n　Qc＝10×4/3≒13.3kvar ✓\n　→力率改善で電流減・損失減・設備容量に余裕\n　⚠PとSの取り違えに注意',
     difficulty: 'standard',
   },
   {
@@ -883,7 +883,7 @@ export const denken3Rikigaku3: Denken3Question[] = [
       { key: 'D', text: '20 A', explanation: '誤り。R/2で割った値。共振時のインピーダンスはRそのものである。' },
     ],
     correctKey: 'C',
-    explanation: '直列共振：Z＝R（最小）→電流最大。並列共振：Z最大→電流最小。\n【図解】直列共振の等価回路\n　100V─[R=10]─[jXL]─[−jXC]─\n　　　　　　　　└─打ち消し合う─┘\n 　→Z＝R＝10Ω、I＝10A★（最大）✓\n　○電圧と電流は同相（力率1）\n　○VL＝VC＝QV（大きいが逆位相で相殺）\n　⚠直列共振＝電流最大／並列共振＝電流最小',
+    explanation: '直列共振：Z＝R（最小）→電流最大。並列共振：Z最大→電流最小。\n【図解】直列共振の等価回路\n　100Vの電源にR=10Ω、jXL、−jXCを直列接続する（jXLと−jXCは互いに打ち消し合う）。\n　→Z＝R＝10Ω、I＝10A★（最大）✓\n　○電圧と電流は同相（力率1）\n　○VL＝VC＝QV（大きいが逆位相で相殺）\n　⚠直列共振＝電流最大／並列共振＝電流最小',
     difficulty: 'basic',
   },
   {
@@ -909,7 +909,7 @@ export const denken3Rikigaku3: Denken3Question[] = [
       { key: 'D', text: '200 VA・力率 0.8', explanation: '誤り。差をとった誤り。PとQは直角三角形の2辺である。' },
     ],
     correctKey: 'B',
-    explanation: '電力三角形：S＝√(P²＋Q²)、cosθ＝P/S。\n【図解】3:4:5の電力三角形\n　S=1000VA╱│Q=600var\n　　　　　─┘P=800W\n　S＝√(640000＋360000)＝1000VA★\n　cosθ＝800/1000＝0.8 ✓\n　⚠P/SとQ/S（sinθ）の取り違えが頻出\n　単位も区別：P[W]・Q[var]・S[VA]',
+    explanation: '電力三角形：S＝√(P²＋Q²)、cosθ＝P/S。\n【図解】3:4:5の電力三角形\n　P=800Wを底辺、Q=600varを高さ、S=1000VAを斜辺とする直角三角形（3:4:5）で表せる。\n　S＝√(640000＋360000)＝1000VA★\n　cosθ＝800/1000＝0.8 ✓\n　⚠P/SとQ/S（sinθ）の取り違えが頻出\n　単位も区別：P[W]・Q[var]・S[VA]',
     difficulty: 'basic',
   },
   {
@@ -935,7 +935,7 @@ export const denken3Rikigaku3: Denken3Question[] = [
       { key: 'D', text: '0.04 mA', explanation: '誤り。IBの2倍。エミッタ電流はICとIBの和である。' },
     ],
     correctKey: 'A',
-    explanation: 'トランジスタの電流関係：IE＝IC＋IB。\n【図解】電流の合流\n　IB=0.02mA→┐\n　　　　　　 ├→IE=2.02mA★\n　IC=2mA　→┘\n　IE＝2＋0.02＝2.02mA ✓\n　○hFE＝IC/IB＝100\n　○α＝IC/IE＝0.990（ベース接地電流増幅率）\n　関係式：hFE＝α/(1−α)',
+    explanation: 'トランジスタの電流関係：IE＝IC＋IB。\n【図解】電流の合流\n　ベース電流IB=0.02mAとコレクタ電流IC=2mAが合流してエミッタ電流IE=2.02mAとなる。\n　IE＝2＋0.02＝2.02mA ✓\n　○hFE＝IC/IB＝100\n　○α＝IC/IE＝0.990（ベース接地電流増幅率）\n　関係式：hFE＝α/(1−α)',
     difficulty: 'basic',
   },
   {
@@ -948,7 +948,7 @@ export const denken3Rikigaku3: Denken3Question[] = [
       { key: 'D', text: '＋5.5 V', explanation: '誤り。(1＋Rf/Rin)は非反転増幅回路の式。反転回路は−Rf/Rinである。' },
     ],
     correctKey: 'C',
-    explanation: '反転増幅回路：A＝−Rf/Rin（バーチャルショートで導出）。\n【図解】反転増幅回路\n　Vin─[Rin=10k]─●(仮想接地0V)─[Rf=100k]─Vout\n　　　　　　　　─┤−\n　　　　　　　　　├─out\n　　　　　　＋┤（接地）\n　A＝−100k/10k＝−10★\n　Vout＝−10×0.5＝−5V ✓\n　○非反転なら1＋Rf/R＝11倍⚠混同注意',
+    explanation: '反転増幅回路：A＝−Rf/Rin（バーチャルショートで導出）。\n【図解】反転増幅回路\n　Vinに入力抵抗Rin=10kΩを直列接続してオペアンプの−入力（仮想接地0V）へ、−入力と出力Voutの間に帰還抵抗Rf=100kΩを接続する反転増幅回路（＋入力は接地）。\n　A＝−100k/10k＝−10★\n　Vout＝−10×0.5＝−5V ✓\n　○非反転なら1＋Rf/R＝11倍⚠混同注意',
     difficulty: 'standard',
   },
   {
@@ -961,7 +961,7 @@ export const denken3Rikigaku3: Denken3Question[] = [
       { key: 'D', text: '11 V', explanation: '誤り。入力0.1Vに増幅度11を掛けると1.1V。桁に注意。' },
     ],
     correctKey: 'B',
-    explanation: '非反転増幅回路：A＝1＋Rf/R（正の増幅度）。\n【図解】非反転増幅回路\n　Vin──┤＋\n　　　　　├─Vout\n　┌───┤−\n　R=10k┴─[Rf=100k]─Vout側\n　A＝1＋100k/10k＝11★\n　Vout＝11×0.1＝1.1V ✓\n　○入力と同相・入力インピーダンス非常に高い\n　⚠反転（−Rf/R）との式の混同が最頻出',
+    explanation: '非反転増幅回路：A＝1＋Rf/R（正の増幅度）。\n【図解】非反転増幅回路\n　オペアンプの＋入力にVinを接続し、−入力は抵抗R=10kΩを介して接地、また−入力と出力Voutの間に帰還抵抗Rf=100kΩを接続する非反転増幅回路。\n　A＝1＋100k/10k＝11★\n　Vout＝11×0.1＝1.1V ✓\n　○入力と同相・入力インピーダンス非常に高い\n　⚠反転（−Rf/R）との式の混同が最頻出',
     difficulty: 'standard',
   },
   {
@@ -1091,7 +1091,7 @@ export const denken3Rikigaku3: Denken3Question[] = [
       { key: 'D', text: '約 10 kHz', explanation: '誤り。桁誤り。CR＝1.6×10⁻⁴sから計算する。' },
     ],
     correctKey: 'A',
-    explanation: 'RCフィルタの遮断周波数 fc＝1/(2πCR)（利得が−3dBになる周波数）。\n【図解】ローパスフィルタ\n　Vin─[R=1.6k]─●─Vout\n　　　　　　　　C=0.1μF┴\n　①CR＝1.6×10³×10⁻⁷＝1.6×10⁻⁴s\n　②fc＝1/(2π×1.6×10⁻⁴)≒995Hz≒1kHz★✓\n　○fcで出力は1/√2（−3dB）、位相45°遅れ\n　○高周波はCで接地へ逃げる→通さない',
+    explanation: 'RCフィルタの遮断周波数 fc＝1/(2πCR)（利得が−3dBになる周波数）。\n【図解】ローパスフィルタ\n　Vinに抵抗R=1.6kΩを直列接続し、その出力点とGNDの間にコンデンサC=0.1μFを接続する（出力Voutは抵抗とコンデンサの接続点から取り出す）ローパスフィルタ。\n　①CR＝1.6×10³×10⁻⁷＝1.6×10⁻⁴s\n　②fc＝1/(2π×1.6×10⁻⁴)≒995Hz≒1kHz★✓\n　○fcで出力は1/√2（−3dB）、位相45°遅れ\n　○高周波はCで接地へ逃げる→通さない',
     difficulty: 'standard',
   },
   {
@@ -1117,7 +1117,7 @@ export const denken3Rikigaku3: Denken3Question[] = [
       { key: 'D', text: '動作点はトランジスタの遮断領域に設定するのが標準である', explanation: '誤り。遮断領域では信号の負半分が切れて大きな歪みを生じる（B級・C級は特殊用途）。' },
     ],
     correctKey: 'A',
-    explanation: 'バイアス＝無信号時の直流動作点の設定。\n【図解】動作点と波形\n　IC│　　╱←負荷線\n　　│　●←動作点（活性領域の中央）★\n　　│╱＿＿＿→VCE\n　○適切：入力の全周期を歪みなく増幅（A級）\n　×遮断領域寄り：下側が切れる\n　×飽和領域寄り：上側が切れる⚠\n　固定バイアス・電流帰還バイアスなどの方式がある',
+    explanation: 'バイアス＝無信号時の直流動作点の設定。\n【図解】動作点と波形\n　IC-VCE平面上の負荷線と特性曲線の交点が動作点で、活性領域の中央に設定するのが適切（★）。\n　○適切：入力の全周期を歪みなく増幅（A級）\n　×遮断領域寄り：下側が切れる\n　×飽和領域寄り：上側が切れる⚠\n　固定バイアス・電流帰還バイアスなどの方式がある',
     difficulty: 'standard',
   },
   {
@@ -1195,7 +1195,7 @@ export const denken3Rikigaku3: Denken3Question[] = [
       { key: 'D', text: '2333 var', explanation: '誤り。S²/P−Pなど誤った式による値。三平方の定理を使う。' },
     ],
     correctKey: 'B',
-    explanation: '電力三角形：S²＝P²＋Q² → Q＝√(S²−P²)。\n【図解】3:4:5の電力三角形\n　S=2000╱│Q=?★\n　　　　─┘P=1200\n　Q＝√(2000²−1200²)＝√2560000＝1600var ✓\n　（1200:1600:2000＝3:4:5）\n　力率cosθ＝1200/2000＝0.6\n　⚠単純な引き算S−Pは誤り（直角三角形で考える）',
+    explanation: '電力三角形：S²＝P²＋Q² → Q＝√(S²−P²)。\n【図解】3:4:5の電力三角形\n　P=1200を底辺、Q（無効電力、未知）を高さ、S=2000を斜辺とする直角三角形で表せる。\n　Q＝√(2000²−1200²)＝√2560000＝1600var ✓\n　（1200:1600:2000＝3:4:5）\n　力率cosθ＝1200/2000＝0.6\n　⚠単純な引き算S−Pは誤り（直角三角形で考える）',
     difficulty: 'basic',
   },
   {
@@ -1208,7 +1208,7 @@ export const denken3Rikigaku3: Denken3Question[] = [
       { key: 'D', text: '8 A', explanation: '誤り。サセプタンス分の電流のみ。全電流はY×Vである。' },
     ],
     correctKey: 'C',
-    explanation: 'アドミタンス Y＝√(G²＋B²)、I＝YV。並列回路はYで解くと速い。\n【図解】アドミタンス三角形\n　Y=0.1S╱│B=0.08S（サセプタンス）\n　　　　─┘G=0.06S（コンダクタンス）\n　Y＝√(0.06²＋0.08²)＝0.1S★（3:4:5）\n　I＝0.1×100＝10A ✓\n　力率cosθ＝G/Y＝0.6\n　○並列はY（足せる）、直列はZ（足せる）が便利',
+    explanation: 'アドミタンス Y＝√(G²＋B²)、I＝YV。並列回路はYで解くと速い。\n【図解】アドミタンス三角形\n　G=0.06S（コンダクタンス）を底辺、B=0.08S（サセプタンス）を高さ、Y=0.1S（アドミタンス）を斜辺とする直角三角形（3:4:5）で表せる。\n　Y＝√(0.06²＋0.08²)＝0.1S★（3:4:5）\n　I＝0.1×100＝10A ✓\n　力率cosθ＝G/Y＝0.6\n　○並列はY（足せる）、直列はZ（足せる）が便利',
     difficulty: 'standard',
   },
   {
@@ -1247,7 +1247,7 @@ export const denken3Rikigaku3: Denken3Question[] = [
       { key: 'D', text: '等価電圧 6 V・等価抵抗 9 Ω', explanation: '誤り。等価抵抗は電源短絡時の並列合成6×3/9＝2Ωである。' },
     ],
     correctKey: 'A',
-    explanation: 'テブナンの定理：開放電圧Vthと内部から見た合成抵抗Rthで置き換える。\n【図解】等価回路の作り方\n　18V─[6Ω]─●a\n　　　　[3Ω]│　←ab間で切る\n　　　─────●b\n　①Vth＝ab開放電圧＝18×3/9＝6V★\n　②Rth＝電源短絡→6Ω//3Ω＝2Ω\n　→ab間に負荷4ΩをつなげばI＝6/(2＋4)＝1A✓\n　複雑回路の一部の電流を求める強力な武器',
+    explanation: 'テブナンの定理：開放電圧Vthと内部から見た合成抵抗Rthで置き換える。\n【図解】等価回路の作り方\n　起電力18Vに6Ωを直列接続した先を端子aとし、そこから3Ωを介して端子bへ至る回路で、ab間を切り離して考える。\n　①Vth＝ab開放電圧＝18×3/9＝6V★\n　②Rth＝電源短絡→6Ω//3Ω＝2Ω\n　→ab間に負荷4ΩをつなげばI＝6/(2＋4)＝1A✓\n　複雑回路の一部の電流を求める強力な武器',
     difficulty: 'advanced',
   },
   {
@@ -1403,7 +1403,7 @@ export const denken3Rikigaku3: Denken3Question[] = [
       { key: 'D', text: '100 V', explanation: '誤り。全電圧が片方に加わることはない。60V＋40V＝100Vに分圧される。' },
     ],
     correctKey: 'C',
-    explanation: '直列コンデンサ：電荷Q共通、電圧は容量に反比例。\n【図解】分圧の計算\n　100V─┤2μF├─┤3μF├─\n　①Q＝C合成×V＝1.2×100＝120μC★（共通）\n　②V(2μF)＝120/2＝60V ✓\n　③V(3μF)＝120/3＝40V\n　検算：60＋40＝100V ✓\n　○小さい容量ほど大きい電圧（反比例）⚠',
+    explanation: '直列コンデンサ：電荷Q共通、電圧は容量に反比例。\n【図解】分圧の計算\n　100Vの電源に2μFと3μFのコンデンサを直列接続する。\n　①Q＝C合成×V＝1.2×100＝120μC★（共通）\n　②V(2μF)＝120/2＝60V ✓\n　③V(3μF)＝120/3＝40V\n　検算：60＋40＝100V ✓\n　○小さい容量ほど大きい電圧（反比例）⚠',
     difficulty: 'standard',
   },
   {
@@ -1416,7 +1416,7 @@ export const denken3Rikigaku3: Denken3Question[] = [
       { key: 'D', text: '2000 ms', explanation: '誤り。L×R＝2を秒とした誤り。時定数は割り算L/Rである。' },
     ],
     correctKey: 'A',
-    explanation: 'RL直列回路の時定数 τ＝L/R。\n【図解】電流の立ち上がり\n　i│　　＿＿＿＿最終値10A\n　　│　╱←63.2%（t=τ）\n　　│╱\n　　└─τ=20ms──→t\n　τ＝L/R＝0.2/10＝20ms★✓\n　○τ後に最終値の63.2%、5τでほぼ100%\n　→(b)で最終電流と蓄積エネルギーを求める',
+    explanation: 'RL直列回路の時定数 τ＝L/R。\n【図解】電流の立ち上がり\n　電流iは0から時間とともに指数関数的に増加し、時定数τ=20msの時点で最終値10Aの63.2%に達し、その後最終値10Aへ漸近する。\n　τ＝L/R＝0.2/10＝20ms★✓\n　○τ後に最終値の63.2%、5τでほぼ100%\n　→(b)で最終電流と蓄積エネルギーを求める',
     difficulty: 'basic',
   },
   {
@@ -1481,7 +1481,7 @@ export const denken3Rikigaku3: Denken3Question[] = [
       { key: 'D', text: '中空導体の内部に電荷を置いても、外部に電界は生じない', explanation: '誤り。内部電荷の影響は外表面の誘導電荷を通じて外部に及ぶ。外部への遮へいには接地が必要である。' },
     ],
     correctKey: 'A',
-    explanation: '静電遮へい：接地導体で囲み外部電界を遮断。\n【図解】静電遮へいの仕組み\n　外部電界→→│導体（接地）│　内部E=0★\n　○導体内部の電界は常に0（静電状態）\n　○接地すると誘導電荷が大地へ逃げ、完全遮へい✓\n　×絶縁体では遮へいできない\n　×磁気遮へいは別原理（高透磁率材で磁束迂回）⚠\n　測定器や通信ケーブルのシールドに応用',
+    explanation: '静電遮へい：接地導体で囲み外部電界を遮断。\n【図解】静電遮へいの仕組み\n　外部電界がかかっても、接地された導体で囲まれた内部の電界は0になる（★）。\n　○導体内部の電界は常に0（静電状態）\n　○接地すると誘導電荷が大地へ逃げ、完全遮へい✓\n　×絶縁体では遮へいできない\n　×磁気遮へいは別原理（高透磁率材で磁束迂回）⚠\n　測定器や通信ケーブルのシールドに応用',
     difficulty: 'standard',
   },
   {
@@ -1676,7 +1676,7 @@ export const denken3Rikigaku3: Denken3Question[] = [
       { key: 'D', text: 'A＝0、B＝1', explanation: '誤り。AND出力0の否定で出力は1になる。' },
     ],
     correctKey: 'C',
-    explanation: 'NAND＝NOT＋AND：「両方1のときだけ0」。\n【図解】NAND真理値表\n　A B│AND│NAND\n　0 0│ 0 │ 1\n　0 1│ 0 │ 1\n　1 0│ 0 │ 1\n　1 1│ 1 │ 0★✓\n　○NANDだけで全ての論理回路が作れる（万能ゲート）\n　NOR（両方0のときだけ1）と対で覚える',
+    explanation: 'NAND＝NOT＋AND：「両方1のときだけ0」。\n【図解】NAND真理値表\n　A=0,B=0のときAND=0・NAND=1\n　A=0,B=1のときAND=0・NAND=1\n　A=1,B=0のときAND=0・NAND=1\n　A=1,B=1のときAND=1・NAND=0★✓\n　○NANDだけで全ての論理回路が作れる（万能ゲート）\n　NOR（両方0のときだけ1）と対で覚える',
     difficulty: 'basic',
   },
   {
