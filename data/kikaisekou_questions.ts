@@ -13,6 +13,7 @@ export type KikaisekouQuestion = {
 import { kikaisekouDobokuQuestions2 } from './kikaisekou_questions_doboku2';
 import { kikaisekouKikaiQuestions2 } from './kikaisekou_questions_kikai2';
 import { kikaisekouKikaiQuestions3 } from './kikaisekou_questions_kikai3';
+import { kikaisekouKikaiQuestions4 } from './kikaisekou_questions_kikai4';
 import { kikaisekouSekouQuestions2 } from './kikaisekou_questions_sekou2';
 import { kikaisekouHokiQuestions2 } from './kikaisekou_questions_hoki2';
 
@@ -3925,6 +3926,7 @@ export const kikaisekouQuestions: KikaisekouQuestion[] = [
   ...kikaisekouDobokuQuestions2,
   ...kikaisekouKikaiQuestions2,
   ...kikaisekouKikaiQuestions3,
+  ...kikaisekouKikaiQuestions4,
   ...kikaisekouSekouQuestions2,
   ...kikaisekouHokiQuestions2,
 ];
