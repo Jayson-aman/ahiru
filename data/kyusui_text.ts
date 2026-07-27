@@ -15,6 +15,7 @@ export type KyusuiTextChapter = {
 import { kyusuiTextPart1 } from './kyusui_text_part1';
 import { kyusuiTextPart2 } from './kyusui_text_part2';
 import { kyusuiTextPart3 } from './kyusui_text_part3';
+import { kyusuiTextPart1b } from './kyusui_text_part1b';
 import { kyusuiTextPart2b } from './kyusui_text_part2b';
 import { kyusuiTextPart3b } from './kyusui_text_part3b';
 
@@ -22,6 +23,7 @@ export const kyusuiTextbook: KyusuiTextChapter[] = [
   ...kyusuiTextPart1,
   ...kyusuiTextPart2,
   ...kyusuiTextPart3,
+  ...kyusuiTextPart1b,
   ...kyusuiTextPart2b,
   ...kyusuiTextPart3b,
 ];
