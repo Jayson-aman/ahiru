@@ -1000,7 +1000,7 @@ export const denken3Rikigaku3: Denken3Question[] = [
       { key: 'D', text: 'MOSFETにはエンハンスメント形とデプレション形がある', explanation: '正しい記述。ゲート電圧0でドレーン電流が流れないのがエンハンスメント形、流れるのがデプレション形。' },
     ],
     correctKey: 'C',
-    explanation: 'FET＝ユニポーラ・電圧制御、トランジスタ＝バイポーラ・電流制御。\n【図解】FETとバイポーラの対比\n　　　　　　FET　　　　バイポーラTr\n　制御　　電圧（VGS）★　電流（IB）\n　キャリヤ　1種類（ユニポーラ）　2種類（バイポーラ）\n　入力Z　　非常に高い　　比較的低い\n　電極　　G・D・S　　　B・C・E\n　×FETを両極性とするのが誤り⚠',
+    explanation: 'FET＝ユニポーラ・電圧制御、トランジスタ＝バイポーラ・電流制御。\n【図解】FETとバイポーラの対比\n　項目｜FET｜バイポーラTr\n　制御｜電圧（VGS）★｜電流（IB）\n　キャリヤ｜1種類（ユニポーラ）｜2種類（バイポーラ）\n　入力Z｜非常に高い｜比較的低い\n　電極｜G・D・S｜B・C・E\n　×FETを両極性とするのが誤り⚠',
     difficulty: 'standard',
   },
   {
