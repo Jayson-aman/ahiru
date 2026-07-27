@@ -1,6 +1,13 @@
 import React from 'react';
 import { View, Text, StyleSheet, SafeAreaView, TouchableOpacity, ScrollView } from 'react-native';
 import { useRouter } from 'expo-router';
+import { denkisekouTextbook } from '../../../data/denkisekou_text';
+
+// 実テキストデータから科目別のセクション数を集計（ハードコードせずズレを防ぐ）
+const SECTION_COUNT: Record<string, number> = {};
+denkisekouTextbook.forEach((ch) => {
+  SECTION_COUNT[ch.subject] = (SECTION_COUNT[ch.subject] ?? 0) + ch.sections.length;
+});
 
 const SUBJECTS = [
   { key: 'riron', name: '電気工学', emoji: '⚡', color: '#EF6C00', desc: '力率改善・電動機・変圧器・照明・蓄電池' },
@@ -32,7 +39,7 @@ export default function DenkisekouTextIndexScreen() {
             <View style={styles.body}>
               <Text style={styles.name}>{s.name}</Text>
               <Text style={styles.desc}>{s.desc}</Text>
-              <Text style={[styles.meta, { color: s.color }]}>2章収録</Text>
+              <Text style={[styles.meta, { color: s.color }]}>{SECTION_COUNT[s.key] ?? 0}セクション収録</Text>
             </View>
             <Text style={styles.arrow}>›</Text>
           </TouchableOpacity>

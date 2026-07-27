@@ -18,7 +18,7 @@
 | App Store Connect App ID | `6789186637` |
 | Apple Team | `ZS8968GRJ8`（MASAYA NANJO / Individual） |
 | 開発ブランチ | `claude/app-identification-k8js9v` |
-| 課金 | RevenueCat（`react-native-purchases` 10.x）+ App内課金28商品/14 Entitlement |
+| 課金 | RevenueCat（`react-native-purchases` 10.x）+ App内課金34商品/17 Entitlement |
 
 > ⚠️ 昔の別プロジェクト「entrance-exam / ZAIBASE」とは**完全に別物**です。EAS/App Store の宛先を間違えないこと（§2 参照）。
 
@@ -145,7 +145,7 @@ eas submit --platform ios --latest
 
 ## 6. コンテンツ（問題）の品質メモ
 
-- 全13資格・約9,700問。データは `data/*.ts`。ビルドや審査とは独立してGitで管理。
+- 全16資格・約29,000問。データは `data/*.ts`。ビルドや審査とは独立してGitで管理。
 - 解説の `【図解】` ブロックは `components/ExplanationText.tsx` が記号で自動色分け
   （★/⚠→橙、行頭○◎→緑、行頭×/誤→赤、→/⇒→紫）。
 - AI生成コンテンツのため、実試験問題での抜き取り検算を継続推奨。

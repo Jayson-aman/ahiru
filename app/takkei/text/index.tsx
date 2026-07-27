@@ -1,12 +1,19 @@
 import React from 'react';
 import { View, Text, StyleSheet, SafeAreaView, TouchableOpacity, ScrollView } from 'react-native';
 import { useRouter } from 'expo-router';
+import { takkeiTextbook } from '../../../data/takkei_text';
+
+// 実テキストデータから科目別のセクション数を集計（ハードコードせずズレを防ぐ）
+const SECTION_COUNT: Record<string, number> = {};
+takkeiTextbook.forEach((ch) => {
+  SECTION_COUNT[ch.subject] = (SECTION_COUNT[ch.subject] ?? 0) + ch.sections.length;
+});
 
 const SUBJECTS = [
-  { key: 'kenri', name: '権利関係', emoji: '🤝', color: '#1565C0', desc: '意思表示・物権変動・抵当権・借地借家・相続', sections: 3 },
-  { key: 'gyoho', name: '宅建業法', emoji: '📋', color: '#C62828', desc: '免許・宅建士・保証金・媒介・35/37条・8種制限・報酬', sections: 3 },
-  { key: 'horei', name: '法令上の制限', emoji: '🏙️', color: '#2E7D32', desc: '都市計画・開発許可・建築基準・国土法・農地法', sections: 3 },
-  { key: 'zei', name: '税・その他', emoji: '🧾', color: '#E65100', desc: '不動産取得税・固定資産税・譲渡所得・印紙税・地価公示', sections: 2 },
+  { key: 'kenri', name: '権利関係', emoji: '🤝', color: '#1565C0', desc: '意思表示・物権変動・抵当権・借地借家・相続' },
+  { key: 'gyoho', name: '宅建業法', emoji: '📋', color: '#C62828', desc: '免許・宅建士・保証金・媒介・35/37条・8種制限・報酬' },
+  { key: 'horei', name: '法令上の制限', emoji: '🏙️', color: '#2E7D32', desc: '都市計画・開発許可・建築基準・国土法・農地法' },
+  { key: 'zei', name: '税・その他', emoji: '🧾', color: '#E65100', desc: '不動産取得税・固定資産税・譲渡所得・印紙税・地価公示' },
 ];
 
 export default function TakkeiTextIndexScreen() {
@@ -32,7 +39,7 @@ export default function TakkeiTextIndexScreen() {
             <View style={styles.body}>
               <Text style={styles.name}>{s.name}</Text>
               <Text style={styles.desc}>{s.desc}</Text>
-              <Text style={[styles.meta, { color: s.color }]}>{s.sections}章収録</Text>
+              <Text style={[styles.meta, { color: s.color }]}>{SECTION_COUNT[s.key] ?? 0}セクション収録</Text>
             </View>
             <Text style={styles.arrow}>›</Text>
           </TouchableOpacity>

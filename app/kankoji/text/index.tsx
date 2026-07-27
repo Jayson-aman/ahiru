@@ -1,6 +1,13 @@
 import React from 'react';
 import { View, Text, StyleSheet, SafeAreaView, TouchableOpacity, ScrollView } from 'react-native';
 import { useRouter } from 'expo-router';
+import { kankojiTextbook } from '../../../data/kankoji_text';
+
+// 実テキストデータから科目別のセクション数を集計（ハードコードせずズレを防ぐ）
+const SECTION_COUNT: Record<string, number> = {};
+kankojiTextbook.forEach((ch) => {
+  SECTION_COUNT[ch.subject] = (SECTION_COUNT[ch.subject] ?? 0) + ch.sections.length;
+});
 
 const SUBJECTS = [
   { key: 'genron', name: '原論・電気・建築', emoji: '🌡️', color: '#455A64', desc: '流体・熱・湿り空気・電動機・梁貫通' },
@@ -33,7 +40,7 @@ export default function KankojiTextIndexScreen() {
             <View style={styles.body}>
               <Text style={styles.name}>{s.name}</Text>
               <Text style={styles.desc}>{s.desc}</Text>
-              <Text style={[styles.meta, { color: s.color }]}>2章収録</Text>
+              <Text style={[styles.meta, { color: s.color }]}>{SECTION_COUNT[s.key] ?? 0}セクション収録</Text>
             </View>
             <Text style={styles.arrow}>›</Text>
           </TouchableOpacity>

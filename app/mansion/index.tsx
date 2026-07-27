@@ -9,6 +9,10 @@ import {
 } from 'react-native';
 import { useRouter } from 'expo-router';
 import { LinearGradient } from 'expo-linear-gradient';
+import { mansionTextbook } from '../../data/mansion_text';
+
+// 実テキストデータから総セクション数を集計（ハードコードせずズレを防ぐ）
+const TEXT_SECTION_TOTAL = mansionTextbook.reduce((n, ch) => n + ch.sections.length, 0);
 
 const MANSION_SUBJECTS = [
   { key: 'kubunsho',  name: '区分所有法',            emoji: '⚖️', color: '#7B1FA2', examCount: 25, desc: '専有部分・共用部分・管理組合・集会決議' },
@@ -64,7 +68,7 @@ export default function MansionScreen() {
           <View style={styles.subjectBody}>
             <Text style={styles.subjectName}>テキスト（要点整理）</Text>
             <Text style={styles.subjectDesc}>決議要件・数値基準を図解と比較表で整理</Text>
-            <Text style={[styles.subjectMeta, { color: '#7B1FA2' }]}>全12章収録</Text>
+            <Text style={[styles.subjectMeta, { color: '#7B1FA2' }]}>全{TEXT_SECTION_TOTAL}セクション収録</Text>
           </View>
           <Text style={styles.subjectArrow}>›</Text>
         </TouchableOpacity>

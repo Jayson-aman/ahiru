@@ -10,10 +10,14 @@ import {
 import { useRouter } from 'expo-router';
 import { LinearGradient } from 'expo-linear-gradient';
 import { kikaisekouQuestions } from '../../data/kikaisekou_questions';
+import { kikaisekouTextbook } from '../../data/kikaisekou_text';
 
 // 実際の問題データから科目別の問題数を集計（ハードコードせずズレを防ぐ）
 const COUNT: Record<string, number> = {};
 kikaisekouQuestions.forEach((q) => { COUNT[q.subject] = (COUNT[q.subject] ?? 0) + 1; });
+
+// 実テキストデータから総セクション数を集計（ハードコードせずズレを防ぐ）
+const TEXT_SECTION_TOTAL = kikaisekouTextbook.reduce((n, ch) => n + ch.sections.length, 0);
 
 const SUBJECTS = [
   { key: 'doboku', name: '土木工学', emoji: '⛰️', color: '#6D4C41', desc: '締固め・盛土・法面・舗装・コンクリート' },
@@ -52,7 +56,7 @@ export default function KikaisekouScreen() {
           <View style={styles.subjectBody}>
             <Text style={styles.subjectName}>テキスト（要点整理）</Text>
             <Text style={styles.subjectDesc}>4科目の要点整理・図解と頻出数値つき</Text>
-            <Text style={[styles.subjectMeta, { color: '#546E7A' }]}>全8章収録</Text>
+            <Text style={[styles.subjectMeta, { color: '#546E7A' }]}>全{TEXT_SECTION_TOTAL}セクション収録</Text>
           </View>
           <Text style={styles.subjectArrow}>›</Text>
         </TouchableOpacity>

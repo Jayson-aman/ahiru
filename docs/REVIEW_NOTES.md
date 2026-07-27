@@ -12,16 +12,18 @@ Appleの審査担当は日本語話者とは限らないため、各サブスク
 App Store Connect → App Information → App Review Information の「Notes」欄に貼り付け：
 
 ```
-This app is a study/exam-prep app for 13 different Japanese professional and
+This app is a study/exam-prep app for 16 different Japanese professional and
 academic certification exams (real estate agent, financial planner, condo
 manager, building equipment engineer, 1st-class construction management
-engineers x5, electrical engineer grade 3, weather forecaster, English
-proficiency test (Eiken), and junior-high entrance exam prep).
+engineers x5, construction cost manager, water supply installation engineer,
+fire protection equipment officer, electrical engineer grade 3, weather
+forecaster, English proficiency test (Eiken), and junior-high entrance exam
+prep).
 
 Each subject shows the first 10 questions for free. Unlocking the full
 question bank for a specific certification requires either:
   - a per-certification "Pro" subscription (unlocks that one certification), or
-  - the "Max" subscription (unlocks all 13 certifications at once)
+  - the "Max" subscription (unlocks all 16 certifications at once)
 
 To verify the paywall: open any certification from the home screen → select
 any subject → answer past question 10, or scroll down on the subject screen,
@@ -45,19 +47,19 @@ on-device only.
 
 ### 全資格 Max（`max`）
 
-- 価格：月額 ¥8,000 ／ 年額 ¥80,000
-- 内容：13資格すべての全問題・全模擬試験をアンロック
+- 価格：月額 ¥2,800 ／ 年額 ¥28,000
+- 内容：16資格すべての全問題・全模擬試験をアンロック
 
 ```
 Unlocks the full question bank (all subjects, all difficulty levels, and all
-mock exams) for all 13 certification exams offered in this app at once. This
+mock exams) for all 16 certification exams offered in this app at once. This
 is the top-tier "all access" plan; equivalent to purchasing every
 per-certification Pro plan individually, at a discounted bundle price.
 ```
 
 ### 宅地建物取引士（`pro_takkei`）
 
-- 価格：月額 ¥5,000 ／ 年額 ¥50,000
+- 価格：月額 ¥1,800 ／ 年額 ¥18,000
 - 内容：権利関係・法令上の制限・税・宅建業法など全科目 ＋ 過去5年分の本試験問題（令和元〜5年）
 
 ```
@@ -70,19 +72,19 @@ explanations, not for redistribution).
 
 ### FP（`pro_fp`）
 
-- 価格：月額 ¥5,000 ／ 年額 ¥50,000
+- 価格：月額 ¥1,800 ／ 年額 ¥18,000
 - 内容：ライフプランニング・リスク管理・金融資産運用・タックスプランニング・不動産・相続 の全級
 
 ```
 Unlocks the full question bank for the Japanese Financial Planner (FP)
-certification across all levels (2nd/3rd/4th/5th) and all 6 subject areas:
+certification across all levels (2nd and 3rd grades) and all 6 subject areas:
 life planning, risk management, asset management, tax planning, real estate,
 and inheritance/gift planning.
 ```
 
 ### マンション管理士（`pro_mansion`）
 
-- 価格：月額 ¥5,000 ／ 年額 ¥50,000
+- 価格：月額 ¥1,800 ／ 年額 ¥18,000
 - 内容：民法・区分所有法・規約・管理組合運営・設備 全科目 ＋ 令和6・7年度本試験問題
 
 ```
@@ -94,7 +96,7 @@ equipment, plus 2 years of past official exam questions.
 
 ### 建築設備士（`pro_kenchiku`）
 
-- 価格：月額 ¥5,000 ／ 年額 ¥50,000
+- 価格：月額 ¥1,800 ／ 年額 ¥18,000
 - 内容：一般（学科I）・建築設備（学科II）全科目 ＋ 基礎/応用モード・模擬試験・製図試験対策ガイド
 
 ```
@@ -106,11 +108,11 @@ exam (製図試験).
 
 ### 一級建築施工管理技士（`pro_sekokan`）
 
-- 価格：月額 ¥5,000 ／ 年額 ¥50,000
-- 内容：建築学等・躯体施工・仕上施工・施工管理法・法規（全160問：学習110問＋模擬50問）＋ 第二次検定対策ガイド
+- 価格：月額 ¥1,800 ／ 年額 ¥18,000
+- 内容：建築学等・躯体施工・仕上施工・施工管理法・法規（全825問：学習775問＋模擬50問）＋ 第二次検定対策ガイド
 
 ```
-Unlocks the full question bank (110 practice questions + a 50-question full
+Unlocks the full question bank (775 practice questions + a 50-question full
 mock exam) for the Japanese 1st-Class Building Construction Management
 Engineer (1級建築施工管理技士) certification, covering building science,
 structural/finishing construction, construction management methods, and
@@ -119,11 +121,11 @@ construction-related law, plus a guide for the second-stage written exam.
 
 ### 電験三種（`pro_denken3`）
 
-- 価格：月額 ¥5,000 ／ 年額 ¥50,000
-- 内容：理論・電力・機械・法規 全科目（260問超）＋ 図解・導出ステップ付き解説
+- 価格：月額 ¥1,800 ／ 年額 ¥18,000
+- 内容：理論・電力・機械・法規 全科目（1,040問）＋ 図解・導出ステップ付き解説
 
 ```
-Unlocks the full question bank (260+ questions) for the Japanese 3rd-Class
+Unlocks the full question bank (1,040 questions) for the Japanese 3rd-Class
 Electrical Engineer (電験三種 / Denken San-shu) certification, covering
 circuit theory, power systems, electrical machinery, and electrical law and
 regulations, with diagram-based and step-by-step derivation explanations.
@@ -131,8 +133,8 @@ regulations, with diagram-based and step-by-step derivation explanations.
 
 ### 気象予報士（`pro_kisho`）
 
-- 価格：月額 ¥2,000 ／ 年額 ¥20,000
-- 内容：一般知識・専門知識・実技試験 全科目（144問）
+- 価格：月額 ¥1,800 ／ 年額 ¥18,000
+- 内容：一般知識・専門知識・実技試験 全科目（1,200問）
 
 ```
 Unlocks the full question bank for the Japanese Weather Forecaster
@@ -153,18 +155,18 @@ studies, and English, targeted at competitive private junior-high schools.
 
 ### 英検（`pro_eiken`）
 
-- 価格：月額 ¥500 ／ 年額 ¥5,000
-- 内容：2級・準2級・3級・4級 全問題（語彙・文法・長文・リスニング含む）
+- 価格：月額 ¥800 ／ 年額 ¥8,000
+- 内容：2級・3級・4級 全問題（5,160問／語彙・文法・長文・リスニング含む）
 
 ```
-Unlocks the full question bank for the EIKEN English proficiency test
-(英検), covering grades 2, pre-2, 3, and 4, including vocabulary, grammar,
-reading comprehension, and listening questions.
+Unlocks the full question bank (5,160 questions) for the EIKEN English
+proficiency test (英検), covering grades 2, 3, and 4, including vocabulary,
+grammar, reading comprehension, and listening questions.
 ```
 
 ### 管工事施工管理技士（`pro_kankoji`）
 
-- 価格：月額 ¥5,000 ／ 年額 ¥50,000
+- 価格：月額 ¥1,800 ／ 年額 ¥18,000
 - 内容：原論・専門土木・施工管理法・法規 全科目
 
 ```
@@ -174,7 +176,7 @@ Management Engineer (管工事施工管理技士) certification.
 
 ### 電気工事施工管理技士（`pro_denkisekou`）
 
-- 価格：月額 ¥5,000 ／ 年額 ¥50,000
+- 価格：月額 ¥1,800 ／ 年額 ¥18,000
 - 内容：電気理論・施工・施工管理法・法規 全科目
 
 ```
@@ -184,7 +186,7 @@ Management Engineer (電気工事施工管理技士) certification.
 
 ### 建設機械施工管理技士（`pro_kikaisekou`）
 
-- 価格：月額 ¥5,000 ／ 年額 ¥50,000
+- 価格：月額 ¥1,800 ／ 年額 ¥18,000
 - 内容：土木・機械・施工管理法・法規 全科目
 
 ```
@@ -194,11 +196,11 @@ Management Engineer (建設機械施工管理技士) certification.
 
 ### 一級土木施工管理技士（`pro_dobokusekou`）
 
-- 価格：月額 ¥5,000 ／ 年額 ¥50,000
-- 内容：土木一般・専門土木・施工管理法・土木法規（全144問：学習94問＋模擬50問）＋ 基礎/応用モード・第二次検定対策ガイド
+- 価格：月額 ¥1,800 ／ 年額 ¥18,000
+- 内容：土木一般・専門土木・施工管理法・土木法規（全760問：学習710問＋模擬50問）＋ 基礎/応用モード・第二次検定対策ガイド
 
 ```
-Unlocks the full question bank (94 practice questions + a 50-question full
+Unlocks the full question bank (710 practice questions + a 50-question full
 mock exam) for the Japanese 1st-Class Civil Engineering Construction
 Management Engineer (1級土木施工管理技士) certification, covering general
 civil engineering, specialized civil engineering, construction management
@@ -213,7 +215,7 @@ second-stage written exam.
 | 想定される質問 | 回答 |
 |---|---|
 | 「本試験問題」は著作権的に問題ないか | 本アプリの模擬試験・オリジナル問題はすべて出題傾向を分析して独自作成したものであり、実際の試験問題の転載ではない旨をReview Notesに明記済み。宅建・マンション管理士の「本試験問題」は過去問を教育目的で使用しているが、著作権法上の引用・学習目的の利用範囲内としている（心配な場合は該当ファイルの扱いを個別に確認可能）。 |
-| 13資格分の課金がなぜ別々に必要か | 各資格は独立した学習コンテンツであり、受験生は通常1〜2資格しか必要としないため、資格ごとの個別課金（Pro）と、複数資格を学ぶユーザー向けの全資格課金（Max）の2階建てにしている。 |
+| 16資格分の課金がなぜ別々に必要か | 各資格は独立した学習コンテンツであり、受験生は通常1〜2資格しか必要としないため、資格ごとの個別課金（Pro）と、複数資格を学ぶユーザー向けの全資格課金（Max）の2階建てにしている。 |
 | 無料で試せる範囲 | 各科目最初の10問は無料（`FREE_QUESTION_LIMIT`）。購入前に内容を確認できる。 |
 | サブスクリプションの復元 | 各Paywall画面に「購入を復元する」ボタンを実装済み。 |
 

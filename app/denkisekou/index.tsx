@@ -10,10 +10,14 @@ import {
 import { useRouter } from 'expo-router';
 import { LinearGradient } from 'expo-linear-gradient';
 import { denkisekouQuestions } from '../../data/denkisekou_questions';
+import { denkisekouTextbook } from '../../data/denkisekou_text';
 
 // 実際の問題データから科目別の問題数を集計（ハードコードせずズレを防ぐ）
 const COUNT: Record<string, number> = {};
 denkisekouQuestions.forEach((q) => { COUNT[q.subject] = (COUNT[q.subject] ?? 0) + 1; });
+
+// 実テキストデータから総セクション数を集計（ハードコードせずズレを防ぐ）
+const TEXT_SECTION_TOTAL = denkisekouTextbook.reduce((n, ch) => n + ch.sections.length, 0);
 
 const SUBJECTS = [
   { key: 'riron', name: '電気工学', emoji: '⚡', color: '#EF6C00', desc: '力率改善・電動機・変圧器・照明・蓄電池' },
@@ -52,7 +56,7 @@ export default function DenkisekouScreen() {
           <View style={styles.subjectBody}>
             <Text style={styles.subjectName}>テキスト（要点整理）</Text>
             <Text style={styles.subjectDesc}>4科目の要点整理・図解と頻出数値つき</Text>
-            <Text style={[styles.subjectMeta, { color: '#EF6C00' }]}>全8章収録</Text>
+            <Text style={[styles.subjectMeta, { color: '#EF6C00' }]}>全{TEXT_SECTION_TOTAL}セクション収録</Text>
           </View>
           <Text style={styles.subjectArrow}>›</Text>
         </TouchableOpacity>

@@ -1,14 +1,21 @@
 import React from 'react';
 import { View, Text, StyleSheet, SafeAreaView, TouchableOpacity, ScrollView } from 'react-native';
 import { useRouter } from 'expo-router';
+import { fpTextbook } from '../../../data/fp_text';
+
+// 実テキストデータから分野別のセクション数を集計（ハードコードせずズレを防ぐ）
+const SECTION_COUNT: Record<string, number> = {};
+fpTextbook.forEach((ch) => {
+  SECTION_COUNT[ch.subject] = (SECTION_COUNT[ch.subject] ?? 0) + ch.sections.length;
+});
 
 const SUBJECTS = [
-  { key: 'life', name: 'ライフプランニングと資金計画', emoji: '👨‍👩‍👧', color: '#0D7C3D', desc: '6つの係数・社会保険・住宅/教育資金・iDeCo', sections: 2 },
-  { key: 'risk', name: 'リスク管理', emoji: '🛡️', color: '#1565C0', desc: '生命保険の仕組み・税務・損害保険・地震保険', sections: 2 },
-  { key: 'asset', name: '金融資産運用', emoji: '📈', color: '#6A1B9A', desc: '債券利回り・PER/PBR/ROE・NISA・ポートフォリオ', sections: 2 },
-  { key: 'tax', name: 'タックスプランニング', emoji: '📊', color: '#E65100', desc: '10種類の所得・損益通算・所得控除・税額控除', sections: 2 },
-  { key: 'realestate', name: '不動産', emoji: '🏘️', color: '#4E342E', desc: '登記・4つの価格・借地借家・譲渡特例・利回り', sections: 2 },
-  { key: 'inheritance', name: '相続・事業承継', emoji: '📜', color: '#880E4F', desc: '法定相続分・相続税計算・贈与・宅地評価', sections: 2 },
+  { key: 'life', name: 'ライフプランニングと資金計画', emoji: '👨‍👩‍👧', color: '#0D7C3D', desc: '6つの係数・社会保険・住宅/教育資金・iDeCo' },
+  { key: 'risk', name: 'リスク管理', emoji: '🛡️', color: '#1565C0', desc: '生命保険の仕組み・税務・損害保険・地震保険' },
+  { key: 'asset', name: '金融資産運用', emoji: '📈', color: '#6A1B9A', desc: '債券利回り・PER/PBR/ROE・NISA・ポートフォリオ' },
+  { key: 'tax', name: 'タックスプランニング', emoji: '📊', color: '#E65100', desc: '10種類の所得・損益通算・所得控除・税額控除' },
+  { key: 'realestate', name: '不動産', emoji: '🏘️', color: '#4E342E', desc: '登記・4つの価格・借地借家・譲渡特例・利回り' },
+  { key: 'inheritance', name: '相続・事業承継', emoji: '📜', color: '#880E4F', desc: '法定相続分・相続税計算・贈与・宅地評価' },
 ];
 
 export default function FpTextIndexScreen() {
@@ -34,7 +41,7 @@ export default function FpTextIndexScreen() {
             <View style={styles.body}>
               <Text style={styles.name}>{s.name}</Text>
               <Text style={styles.desc}>{s.desc}</Text>
-              <Text style={[styles.meta, { color: s.color }]}>{s.sections}章収録</Text>
+              <Text style={[styles.meta, { color: s.color }]}>{SECTION_COUNT[s.key] ?? 0}セクション収録</Text>
             </View>
             <Text style={styles.arrow}>›</Text>
           </TouchableOpacity>

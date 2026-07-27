@@ -9,6 +9,10 @@ import {
 } from 'react-native';
 import { useRouter } from 'expo-router';
 import { LinearGradient } from 'expo-linear-gradient';
+import { fpTextbook } from '../../data/fp_text';
+
+// 実テキストデータから総セクション数を集計（ハードコードせずズレを防ぐ）
+const TEXT_SECTION_TOTAL = fpTextbook.reduce((n, ch) => n + ch.sections.length, 0);
 
 const FP_SUBJECTS = [
   { key: 'life',        name: 'ライフプランニング\nと資金計画', emoji: '👨‍👩‍👧', color: '#0D7C3D', examCount: 20, desc: '社会保険・ローン・教育資金・老後設計' },
@@ -49,7 +53,7 @@ export default function FPScreen() {
           <View style={styles.subjectBody}>
             <Text style={styles.subjectName}>テキスト（要点整理）</Text>
             <Text style={styles.subjectDesc}>6分野の計算公式・数値基準を図解つきで整理</Text>
-            <Text style={[styles.subjectMeta, { color: '#085C2D' }]}>全12章収録</Text>
+            <Text style={[styles.subjectMeta, { color: '#085C2D' }]}>全{TEXT_SECTION_TOTAL}セクション収録</Text>
           </View>
           <Text style={styles.subjectArrow}>›</Text>
         </TouchableOpacity>

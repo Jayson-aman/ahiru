@@ -1,6 +1,13 @@
 import React from 'react';
 import { View, Text, StyleSheet, SafeAreaView, TouchableOpacity, ScrollView } from 'react-native';
 import { useRouter } from 'expo-router';
+import { dobokusekouTextbook } from '../../../data/dobokusekou_text';
+
+// 実テキストデータから科目別のセクション数を集計（ハードコードせずズレを防ぐ）
+const SECTION_COUNT: Record<string, number> = {};
+dobokusekouTextbook.forEach((ch) => {
+  SECTION_COUNT[ch.subject] = (SECTION_COUNT[ch.subject] ?? 0) + ch.sections.length;
+});
 
 const SUBJECTS = [
   { key: 'doboku', name: '土木一般', emoji: '⛰️', color: '#6D4C41', desc: '土工・締固め・コンクリート・基礎工' },
@@ -32,7 +39,7 @@ export default function DobokusekouTextIndexScreen() {
             <View style={styles.body}>
               <Text style={styles.name}>{s.name}</Text>
               <Text style={styles.desc}>{s.desc}</Text>
-              <Text style={[styles.meta, { color: s.color }]}>2章収録</Text>
+              <Text style={[styles.meta, { color: s.color }]}>{SECTION_COUNT[s.key] ?? 0}セクション収録</Text>
             </View>
             <Text style={styles.arrow}>›</Text>
           </TouchableOpacity>

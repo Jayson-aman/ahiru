@@ -80,34 +80,34 @@ App Store Connect → 「契約 / 税金 / 口座情報」→ **Paid Application
 
 | グループ名 | 商品ID（提案） | 価格 |
 |---|---|---|
-| ZAIBASE Max | `qualiz_max_monthly` / `qualiz_max_yearly` | ¥8,000 / ¥80,000 |
-| Pro 宅建 | `qualiz_pro_takkei_monthly` / `_yearly` | ¥5,000 / ¥50,000 |
-| Pro FP | `qualiz_pro_fp_monthly` / `_yearly` | ¥5,000 / ¥50,000 |
+| QualiZ Max | `qualiz_max_monthly` / `qualiz_max_yearly` | ¥2,800 / ¥28,000 |
+| Pro 宅建 | `qualiz_pro_takkei_monthly` / `_yearly` | ¥1,800 / ¥18,000 |
+| Pro FP | `qualiz_pro_fp_monthly` / `_yearly` | ¥1,800 / ¥18,000 |
 | Pro マンション管理士 | `qualiz_pro_mansion_monthly` / `_yearly` | 同上 |
 | Pro 建築設備士 | `qualiz_pro_kenchiku_monthly` / `_yearly` | 同上 |
 | Pro 一級建築施工管理技士 | `qualiz_pro_sekokan_monthly` / `_yearly` | 同上 |
 | Pro 電験三種 | `qualiz_pro_denken3_monthly` / `_yearly` | 同上 |
-| Pro 気象予報士 | `qualiz_pro_kisho_monthly` / `_yearly` | ¥5,000 / ¥50,000 |
-| Pro 管工事施工管理技士 | `qualiz_pro_kankoji_monthly` / `_yearly` | ¥5,000 / ¥50,000 |
+| Pro 気象予報士 | `qualiz_pro_kisho_monthly` / `_yearly` | ¥1,800 / ¥18,000 |
+| Pro 管工事施工管理技士 | `qualiz_pro_kankoji_monthly` / `_yearly` | ¥1,800 / ¥18,000 |
 | Pro 電気工事施工管理技士 | `qualiz_pro_denkisekou_monthly` / `_yearly` | 同上 |
 | Pro 建設機械施工管理技士 | `qualiz_pro_kikaisekou_monthly` / `_yearly` | 同上 |
 | Pro 一級土木施工管理技士 | `qualiz_pro_dobokusekou_monthly` / `_yearly` | 同上 |
-| Pro 建設コスト管理士 | `qualiz_pro_cost_monthly` / `_yearly` | ¥5,000 / ¥50,000 |
-| Pro 給水装置工事主任技術者 | `qualiz_pro_kyusui_monthly` / `_yearly` | ¥5,000 / ¥50,000 |
-| Pro 消防設備士甲種 | `qualiz_pro_shobo_monthly` / `_yearly` | ¥5,000 / ¥50,000 |
-| Pro 英検 | `qualiz_pro_eiken_monthly` / `_yearly` | ¥500 / ¥5,000 |
+| Pro 建設コスト管理士 | `qualiz_pro_cost_monthly` / `_yearly` | ¥1,800 / ¥18,000 |
+| Pro 給水装置工事主任技術者 | `qualiz_pro_kyusui_monthly` / `_yearly` | ¥1,800 / ¥18,000 |
+| Pro 消防設備士甲種 | `qualiz_pro_shobo_monthly` / `_yearly` | ¥1,800 / ¥18,000 |
+| Pro 英検 | `qualiz_pro_eiken_monthly` / `_yearly` | ¥800 / ¥8,000 |
 | Pro 受験対策 | `qualiz_pro_juken_monthly` / `_yearly` | ¥500 / ¥5,000 |
 
-作成手順（1商品あたり2〜3分 × 28商品＝14グループ×月額/年額）:
+作成手順（1商品あたり2〜3分 × 34商品＝17グループ×月額/年額）:
 1. マイApp → 対象アプリ → 「収益化」→「サブスクリプション」→ グループ作成
 2. グループ内で「+」→ 参照名（管理用）と商品ID（上表）を入力
-3. 期間: 1か月 or 1年 / 価格: 日本 ¥5,000 など（他国は自動換算でOK）
+3. 期間: 1か月 or 1年 / 価格: 日本 ¥1,800 など（他国は自動換算でOK）
 4. **App Storeローカリゼーション（日本語）**: 表示名（例: 宅建Pro 月額）と説明を入力
 5. **Review Notes**: `docs/REVIEW_NOTES.md` に資格ごとの英文Review Notesをまとめてあるので、該当箇所をコピペ
 6. 審査用スクリーンショット: ペイウォール画面のスクショをアップ（後述のTestFlightビルドから撮影でも可。
    `docs/REVIEW_NOTES.md`作成と同時に生成したiPhone(1284×2778)/iPad(2064×2752)のPaywallスクショが使える）
 
-> 💡 28商品の作成が大変なら、**最初は「Max 月/年」と主力2〜3資格（宅建・施工管理など）だけ**で公開し、
+> 💡 34商品の作成が大変なら、**最初は「Max 月/年」と主力2〜3資格（宅建・施工管理など）だけ**で公開し、
 > 後から追加する方法もあります。アプリ側は entitlement が無い資格は無料枠(10問)のまま動くので壊れません。
 
 ### 2-3. アプリのメタデータ

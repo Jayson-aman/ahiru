@@ -11,14 +11,21 @@ import { useRouter } from 'expo-router';
 import { LinearGradient } from 'expo-linear-gradient';
 import { dobokusekouQuestions } from '../../data/dobokusekou_questions';
 import { dobokusekouMogi } from '../../data/dobokusekou_mogi';
+import { dobokusekouTextbook } from '../../data/dobokusekou_text';
 
 type Mode = 'kiso' | 'ouyou' | 'text';
 
+// 実テキストデータから科目別のセクション数を集計（ハードコードせずズレを防ぐ）
+const TEXT_SECTION_COUNT: Record<string, number> = {};
+dobokusekouTextbook.forEach((ch) => {
+  TEXT_SECTION_COUNT[ch.subject] = (TEXT_SECTION_COUNT[ch.subject] ?? 0) + ch.sections.length;
+});
+
 const SUBJECTS = [
-  { key: 'doboku', name: '土木一般', emoji: '⛰️', color: '#6D4C41', desc: '土工・締固め・コンクリート・基礎工', textSections: 2 },
-  { key: 'senmon', name: '専門土木', emoji: '🌊', color: '#00695C', desc: '河川・道路舗装・トンネル・鋼構造物・鉄道', textSections: 2 },
-  { key: 'kanri', name: '施工管理法', emoji: '📅', color: '#2E7D32', desc: '工程管理・品質管理・安全管理・環境保全', textSections: 2 },
-  { key: 'hoki', name: '土木法規', emoji: '⚖️', color: '#6A1B9A', desc: '建設業法・労働基準法・道路法・河川法', textSections: 2 },
+  { key: 'doboku', name: '土木一般', emoji: '⛰️', color: '#6D4C41', desc: '土工・締固め・コンクリート・基礎工' },
+  { key: 'senmon', name: '専門土木', emoji: '🌊', color: '#00695C', desc: '河川・道路舗装・トンネル・鋼構造物・鉄道' },
+  { key: 'kanri', name: '施工管理法', emoji: '📅', color: '#2E7D32', desc: '工程管理・品質管理・安全管理・環境保全' },
+  { key: 'hoki', name: '土木法規', emoji: '⚖️', color: '#6A1B9A', desc: '建設業法・労働基準法・道路法・河川法' },
 ];
 
 export default function DobokusekouScreen() {
@@ -123,7 +130,7 @@ export default function DobokusekouScreen() {
               <Text style={styles.subjectDesc}>{subject.desc}</Text>
               {mode === 'text' ? (
                 <Text style={[styles.subjectMeta, { color: subject.color }]}>
-                  {subject.textSections}章収録
+                  {TEXT_SECTION_COUNT[subject.key] ?? 0}セクション収録
                 </Text>
               ) : (
                 <Text style={[styles.subjectMeta, { color: subject.color }]}>

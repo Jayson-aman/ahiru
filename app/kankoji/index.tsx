@@ -10,10 +10,14 @@ import {
 import { useRouter } from 'expo-router';
 import { LinearGradient } from 'expo-linear-gradient';
 import { kankojiQuestions } from '../../data/kankoji_questions';
+import { kankojiTextbook } from '../../data/kankoji_text';
 
 // 実際の問題データから科目別の問題数を集計（ハードコードせずズレを防ぐ）
 const COUNT: Record<string, number> = {};
 kankojiQuestions.forEach((q) => { COUNT[q.subject] = (COUNT[q.subject] ?? 0) + 1; });
+
+// 実テキストデータから総セクション数を集計（ハードコードせずズレを防ぐ）
+const TEXT_SECTION_TOTAL = kankojiTextbook.reduce((n, ch) => n + ch.sections.length, 0);
 
 const SUBJECTS = [
   { key: 'genron', name: '原論・電気・建築', emoji: '🌡️', color: '#455A64', desc: '流体・熱・湿り空気・電動機・梁貫通' },
@@ -53,7 +57,7 @@ export default function KankojiScreen() {
           <View style={styles.subjectBody}>
             <Text style={styles.subjectName}>テキスト（要点整理）</Text>
             <Text style={styles.subjectDesc}>5科目の要点整理・図解と頻出数値つき</Text>
-            <Text style={[styles.subjectMeta, { color: '#00695C' }]}>全10章収録</Text>
+            <Text style={[styles.subjectMeta, { color: '#00695C' }]}>全{TEXT_SECTION_TOTAL}セクション収録</Text>
           </View>
           <Text style={styles.subjectArrow}>›</Text>
         </TouchableOpacity>
