@@ -20,6 +20,8 @@ import { denkisekouSekou4 } from './denkisekou_questions_sekou4';
 import { denkisekouHoki2 } from './denkisekou_questions_hoki2';
 import { denkisekouHoki3 } from './denkisekou_questions_hoki3';
 import { denkisekouHoki4 } from './denkisekou_questions_hoki4';
+import { denkisekouRiron4 } from './denkisekou_questions_riron4';
+import { denkisekouSetsubi4 } from './denkisekou_questions_setsubi4';
 
 export const denkisekouQuestions: DenkisekouQuestion[] = [
   // ===== 電気工学 75問 =====
@@ -3936,4 +3938,6 @@ export const denkisekouQuestions: DenkisekouQuestion[] = [
   ...denkisekouHoki2,
   ...denkisekouHoki3,
   ...denkisekouHoki4,
+  ...denkisekouRiron4,
+  ...denkisekouSetsubi4,
 ];
