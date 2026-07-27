@@ -96,9 +96,14 @@ App Store Connect → 「契約 / 税金 / 口座情報」→ **Paid Application
 | Pro 給水装置工事主任技術者 | `qualiz_pro_kyusui_monthly` / `_yearly` | ¥1,800 / ¥18,000 |
 | Pro 消防設備士甲種 | `qualiz_pro_shobo_monthly` / `_yearly` | ¥1,800 / ¥18,000 |
 | Pro 英検 | `qualiz_pro_eiken_monthly` / `_yearly` | ¥800 / ¥8,000 |
-| Pro 受験対策 | `qualiz_pro_juken_monthly` / `_yearly` | ¥500 / ¥5,000 |
+| ~~Pro 受験対策~~ | ~~`qualiz_pro_juken_monthly` / `_yearly`~~ | **現在は提供なし** |
 
-作成手順（1商品あたり2〜3分 × 34商品＝17グループ×月額/年額）:
+> **受験対策（中学受験）は現在販売していません。** ホーム画面の導線が無く
+> （「資格のみ」方針）、特定商取引法に基づく表記からもプランを削除済みです。
+> App Store Connect に `qualiz_pro_juken_*` を作成する必要はありません。
+> 問題データ（1,000問）は将来の公開に備えてリポジトリに残置しています。
+
+作成手順（1商品あたり2〜3分 × 32商品＝16グループ×月額/年額）:
 1. マイApp → 対象アプリ → 「収益化」→「サブスクリプション」→ グループ作成
 2. グループ内で「+」→ 参照名（管理用）と商品ID（上表）を入力
 3. 期間: 1か月 or 1年 / 価格: 日本 ¥1,800 など（他国は自動換算でOK）

@@ -12,18 +12,17 @@ Appleの審査担当は日本語話者とは限らないため、各サブスク
 App Store Connect → App Information → App Review Information の「Notes」欄に貼り付け：
 
 ```
-This app is a study/exam-prep app for 16 different Japanese professional and
-academic certification exams (real estate agent, financial planner, condo
-manager, building equipment engineer, 1st-class construction management
-engineers x5, construction cost manager, water supply installation engineer,
-fire protection equipment officer, electrical engineer grade 3, weather
-forecaster, English proficiency test (Eiken), and junior-high entrance exam
-prep).
+This app is a study/exam-prep app for 15 different Japanese professional
+certification exams (real estate agent, financial planner, condo manager,
+building equipment engineer, 1st-class construction management engineers x5,
+construction cost manager, water supply installation engineer, fire protection
+equipment officer, electrical engineer grade 3, weather forecaster, and the
+English proficiency test (Eiken)).
 
 Each subject shows the first 10 questions for free. Unlocking the full
 question bank for a specific certification requires either:
   - a per-certification "Pro" subscription (unlocks that one certification), or
-  - the "Max" subscription (unlocks all 16 certifications at once)
+  - the "Max" subscription (unlocks all 15 certifications at once)
 
 To verify the paywall: open any certification from the home screen → select
 any subject → answer past question 10, or scroll down on the subject screen,
@@ -48,11 +47,11 @@ on-device only.
 ### 全資格 Max（`max`）
 
 - 価格：月額 ¥2,800 ／ 年額 ¥28,000
-- 内容：16資格すべての全問題・全模擬試験をアンロック
+- 内容：15資格すべての全問題・全模擬試験をアンロック
 
 ```
 Unlocks the full question bank (all subjects, all difficulty levels, and all
-mock exams) for all 16 certification exams offered in this app at once. This
+mock exams) for all 15 certification exams offered in this app at once. This
 is the top-tier "all access" plan; equivalent to purchasing every
 per-certification Pro plan individually, at a discounted bundle price.
 ```
@@ -142,9 +141,51 @@ Unlocks the full question bank for the Japanese Weather Forecaster
 specialized knowledge, and practical forecasting skills.
 ```
 
-### 中学受験対策（`pro_juken`）
+### 建設コスト管理士（`pro_cost`）
 
-- 価格：月額 ¥500 ／ 年額 ¥5,000
+- 価格：月額 ¥1,800 ／ 年額 ¥18,000
+- 内容：概論・積算・契約・経済 全科目（1,220問）＋ 模擬試験・論文対策
+
+```
+Unlocks the full question bank (1,220 questions) for the Japanese Construction
+Cost Manager (建設コスト管理士) certification, covering cost management
+principles, quantity surveying and estimating, construction contracts, and
+construction economics, together with a mock exam and essay-writing guidance.
+```
+
+### 給水装置工事主任技術者（`pro_kyusui`）
+
+- 価格：月額 ¥1,800 ／ 年額 ¥18,000
+- 内容：公衆衛生・水道行政・工事法・構造性能・計画論・事務論・概要・施工管理 全科目（1,200問）＋ 模擬試験
+
+```
+Unlocks the full question bank (1,200 questions) for the Japanese Water Supply
+Installation Chief Engineer (給水装置工事主任技術者) certification, covering
+public health, waterworks administration, installation methods, structure and
+performance standards, planning, administrative practice, equipment overview,
+and construction management, together with a mock exam.
+```
+
+### 消防設備士 甲種（`pro_shobo`）
+
+- 価格：月額 ¥1,800 ／ 年額 ¥18,000
+- 内容：消防関係法令（共通・類別）・基礎的知識・構造機能・規格・実技 全科目（1,200問）＋ 模擬試験
+
+```
+Unlocks the full question bank (1,200 questions) for the Japanese Fire
+Protection Equipment Officer (消防設備士 甲種, Class A) certification, covering
+fire service law (common and category-specific), fundamental mechanical and
+electrical knowledge, equipment structure and function, technical standards,
+and the practical drawing/identification section, together with a mock exam.
+```
+
+### ~~中学受験対策（`pro_juken`）~~ ※現在は提供なし
+
+> **審査提出時はこの節を含めないこと。** 受験対策（中学受験）はホーム画面から
+> 外しており（「資格のみ」方針）、特定商取引法に基づく表記からもプランを削除済み、
+> App Store Connect にも商品を作成していません。将来公開する場合に備えて記載のみ残します。
+
+- 価格：月額 ¥500 ／ 年額 ¥5,000（**未提供**）
 - 内容：算数・国語・理科・社会・英語 全科目（難関校対応）
 
 ```
@@ -215,7 +256,7 @@ second-stage written exam.
 | 想定される質問 | 回答 |
 |---|---|
 | 「本試験問題」は著作権的に問題ないか | 本アプリの模擬試験・オリジナル問題はすべて出題傾向を分析して独自作成したものであり、実際の試験問題の転載ではない旨をReview Notesに明記済み。宅建・マンション管理士の「本試験問題」は過去問を教育目的で使用しているが、著作権法上の引用・学習目的の利用範囲内としている（心配な場合は該当ファイルの扱いを個別に確認可能）。 |
-| 16資格分の課金がなぜ別々に必要か | 各資格は独立した学習コンテンツであり、受験生は通常1〜2資格しか必要としないため、資格ごとの個別課金（Pro）と、複数資格を学ぶユーザー向けの全資格課金（Max）の2階建てにしている。 |
+| 15資格分の課金がなぜ別々に必要か | 各資格は独立した学習コンテンツであり、受験生は通常1〜2資格しか必要としないため、資格ごとの個別課金（Pro）と、複数資格を学ぶユーザー向けの全資格課金（Max）の2階建てにしている。 |
 | 無料で試せる範囲 | 各科目最初の10問は無料（`FREE_QUESTION_LIMIT`）。購入前に内容を確認できる。 |
 | サブスクリプションの復元 | 各Paywall画面に「購入を復元する」ボタンを実装済み。 |
 
