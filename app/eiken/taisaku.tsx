@@ -1,6 +1,10 @@
 import React from 'react';
 import { View, Text, StyleSheet, SafeAreaView, TouchableOpacity, ScrollView } from 'react-native';
 import { useRouter } from 'expo-router';
+import CertPaywall from '../../components/CertPaywall';
+import { FREE_TEXT_LIMIT } from '../../services/subscription';
+
+const ACCENT = '#4A0072';
 
 type GuideSection = { id: string; emoji: string; title: string; body: string };
 
@@ -184,30 +188,46 @@ export default function EikenTaisakuScreen() {
 
   return (
     <SafeAreaView style={styles.safe}>
-      <View style={styles.header}>
-        <TouchableOpacity onPress={() => router.back()}><Text style={styles.back}>← 戻る</Text></TouchableOpacity>
-        <Text style={styles.title}>🎯 英検 二次・ライティング対策</Text>
-        <Text style={styles.sub}>面接の流れ・解答の型・級別重要文法</Text>
-      </View>
-      <ScrollView contentContainerStyle={styles.content}>
-        {SECTIONS.map((s, i) => {
-          const open = openId === s.id;
+      <CertPaywall
+        certKey="eiken"
+        certName="英検対策ガイド"
+        certEmoji="🎯"
+        accentColor={ACCENT}
+        totalQuestions={SECTIONS.length}
+        freeLimit={FREE_TEXT_LIMIT}
+      >
+        {(hasAccess: boolean) => {
+          const visibleSections = hasAccess ? SECTIONS : SECTIONS.slice(0, FREE_TEXT_LIMIT);
           return (
-            <View key={s.id} style={styles.card}>
-              <TouchableOpacity style={styles.cardHeader} onPress={() => setOpenId(open ? null : s.id)} activeOpacity={0.8}>
-                <View style={styles.num}><Text style={styles.numText}>{i + 1}</Text></View>
-                <Text style={styles.cardTitle}>{s.emoji} {s.title}</Text>
-                <Text style={styles.chevron}>{open ? '▾' : '▸'}</Text>
-              </TouchableOpacity>
-              {open && (
-                <View style={styles.cardBody}>
-                  <Text style={styles.bodyText}>{s.body}</Text>
-                </View>
-              )}
-            </View>
+            <>
+              <View style={styles.header}>
+                <TouchableOpacity onPress={() => router.back()}><Text style={styles.back}>← 戻る</Text></TouchableOpacity>
+                <Text style={styles.title}>🎯 英検 二次・ライティング対策</Text>
+                <Text style={styles.sub}>面接の流れ・解答の型・級別重要文法</Text>
+              </View>
+              <ScrollView contentContainerStyle={styles.content}>
+                {visibleSections.map((s, i) => {
+                  const open = openId === s.id;
+                  return (
+                    <View key={s.id} style={styles.card}>
+                      <TouchableOpacity style={styles.cardHeader} onPress={() => setOpenId(open ? null : s.id)} activeOpacity={0.8}>
+                        <View style={styles.num}><Text style={styles.numText}>{i + 1}</Text></View>
+                        <Text style={styles.cardTitle}>{s.emoji} {s.title}</Text>
+                        <Text style={styles.chevron}>{open ? '▾' : '▸'}</Text>
+                      </TouchableOpacity>
+                      {open && (
+                        <View style={styles.cardBody}>
+                          <Text style={styles.bodyText}>{s.body}</Text>
+                        </View>
+                      )}
+                    </View>
+                  );
+                })}
+              </ScrollView>
+            </>
           );
-        })}
-      </ScrollView>
+        }}
+      </CertPaywall>
     </SafeAreaView>
   );
 }

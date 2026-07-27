@@ -83,6 +83,9 @@ export function isComingSoon(cert: CertKey): boolean {
 // Free-tier question limit per subject
 export const FREE_QUESTION_LIMIT = 10;
 
+// Free-tier section limit for textbook / bonus guide screens (per subject or per screen)
+export const FREE_TEXT_LIMIT = 2;
+
 export function initRevenueCat(): void {
   if (Platform.OS === 'web') return;
   const apiKey =

@@ -2,6 +2,8 @@ import React from 'react';
 import { View, Text, StyleSheet, SafeAreaView, TouchableOpacity, ScrollView } from 'react-native';
 import { useRouter } from 'expo-router';
 import StudyText from '../../components/StudyText';
+import CertPaywall from '../../components/CertPaywall';
+import { FREE_TEXT_LIMIT } from '../../services/subscription';
 
 type GuideSection = { id: string; emoji: string; title: string; body: string };
 
@@ -380,54 +382,70 @@ export default function CostRonbunScreen() {
 
   return (
     <SafeAreaView style={styles.safeArea}>
-      <View style={styles.header}>
-        <TouchableOpacity onPress={() => router.back()}>
-          <Text style={styles.back}>← 戻る</Text>
-        </TouchableOpacity>
-        <Text style={styles.title}>✍️ 論文（記述式）対策</Text>
-        <Text style={styles.subTitle}>建設コスト管理士 ／ 頻出4テーマの骨格と答案作成術</Text>
-      </View>
-
-      <ScrollView contentContainerStyle={styles.content}>
-        <View style={styles.noticeBox}>
-          <Text style={styles.noticeText}>
-            出題形式（問題数・字数・試験時間）は年度により変わることがあります。
-            受験前に実施団体の最新の試験案内を必ずご確認ください。
-          </Text>
-        </View>
-
-        {SECTIONS.map((s, i) => {
-          const open = openId === s.id;
+      <CertPaywall
+        certKey="cost"
+        certName="建設コスト管理士 論文対策"
+        certEmoji="✍️"
+        accentColor={ACCENT}
+        totalQuestions={SECTIONS.length}
+        freeLimit={FREE_TEXT_LIMIT}
+      >
+        {(hasAccess: boolean) => {
+          const visibleSections = hasAccess ? SECTIONS : SECTIONS.slice(0, FREE_TEXT_LIMIT);
           return (
-            <View key={s.id} style={styles.sectionCard}>
-              <TouchableOpacity
-                style={styles.sectionHeader}
-                onPress={() => setOpenId(open ? null : s.id)}
-                activeOpacity={0.8}
-              >
-                <View style={styles.sectionNum}>
-                  <Text style={styles.sectionNumText}>{i + 1}</Text>
-                </View>
-                <Text style={styles.sectionTitle}>{s.emoji} {s.title}</Text>
-                <Text style={styles.chevron}>{open ? '▾' : '▸'}</Text>
-              </TouchableOpacity>
-              {open && (
-                <View style={styles.sectionBody}>
-                  <StudyText text={s.body} accent={ACCENT} />
-                </View>
-              )}
-            </View>
-          );
-        })}
+            <>
+              <View style={styles.header}>
+                <TouchableOpacity onPress={() => router.back()}>
+                  <Text style={styles.back}>← 戻る</Text>
+                </TouchableOpacity>
+                <Text style={styles.title}>✍️ 論文（記述式）対策</Text>
+                <Text style={styles.subTitle}>建設コスト管理士 ／ 頻出4テーマの骨格と答案作成術</Text>
+              </View>
 
-        <View style={styles.tipBox}>
-          <Text style={styles.tipTitle}>📌 論文対策のすすめ方</Text>
-          <Text style={styles.tipText}>
-            まず「基本構成」で型を覚え、頻出4テーマの骨格を4行メモで再現できるまで反復してください。
-            択一の知識（VE・LCC・スライド条項・EVM）がそのまま論文の材料になります。
-          </Text>
-        </View>
-      </ScrollView>
+              <ScrollView contentContainerStyle={styles.content}>
+                <View style={styles.noticeBox}>
+                  <Text style={styles.noticeText}>
+                    出題形式（問題数・字数・試験時間）は年度により変わることがあります。
+                    受験前に実施団体の最新の試験案内を必ずご確認ください。
+                  </Text>
+                </View>
+
+                {visibleSections.map((s, i) => {
+                  const open = openId === s.id;
+                  return (
+                    <View key={s.id} style={styles.sectionCard}>
+                      <TouchableOpacity
+                        style={styles.sectionHeader}
+                        onPress={() => setOpenId(open ? null : s.id)}
+                        activeOpacity={0.8}
+                      >
+                        <View style={styles.sectionNum}>
+                          <Text style={styles.sectionNumText}>{i + 1}</Text>
+                        </View>
+                        <Text style={styles.sectionTitle}>{s.emoji} {s.title}</Text>
+                        <Text style={styles.chevron}>{open ? '▾' : '▸'}</Text>
+                      </TouchableOpacity>
+                      {open && (
+                        <View style={styles.sectionBody}>
+                          <StudyText text={s.body} accent={ACCENT} />
+                        </View>
+                      )}
+                    </View>
+                  );
+                })}
+
+                <View style={styles.tipBox}>
+                  <Text style={styles.tipTitle}>📌 論文対策のすすめ方</Text>
+                  <Text style={styles.tipText}>
+                    まず「基本構成」で型を覚え、頻出4テーマの骨格を4行メモで再現できるまで反復してください。
+                    択一の知識（VE・LCC・スライド条項・EVM）がそのまま論文の材料になります。
+                  </Text>
+                </View>
+              </ScrollView>
+            </>
+          );
+        }}
+      </CertPaywall>
     </SafeAreaView>
   );
 }

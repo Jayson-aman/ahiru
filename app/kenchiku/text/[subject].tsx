@@ -3,6 +3,8 @@ import { View, Text, StyleSheet, SafeAreaView, TouchableOpacity, ScrollView } fr
 import { useLocalSearchParams, useRouter } from 'expo-router';
 import { getKenchikuText } from '../../../data/kenchiku/text';
 import StudyText from '../../../components/StudyText';
+import CertPaywall from '../../../components/CertPaywall';
+import { FREE_TEXT_LIMIT } from '../../../services/subscription';
 
 const INFO: Record<string, { name: string; emoji: string; color: string }> = {
   ippan: { name: '建築一般知識', emoji: '🏗️', color: '#1565C0' },
@@ -40,42 +42,58 @@ export default function KenchikuTextScreen() {
 
   return (
     <SafeAreaView style={styles.safeArea}>
-      <View style={[styles.header, { backgroundColor: info.color }]}>
-        <TouchableOpacity onPress={() => router.back()}><Text style={styles.back}>← 戻る</Text></TouchableOpacity>
-        <Text style={styles.title}>{info.emoji} {info.name} テキスト</Text>
-        <Text style={styles.subTitle}>本試験レベル ／ {sections.length}セクション収録</Text>
-      </View>
-      <ScrollView contentContainerStyle={styles.content}>
-        {sections.map((s, i) => {
-          const open = openId === s.id;
+      <CertPaywall
+        certKey="kenchiku"
+        certName={`建築設備士 ${info.name}`}
+        certEmoji={info.emoji}
+        accentColor={info.color}
+        totalQuestions={sections.length}
+        freeLimit={FREE_TEXT_LIMIT}
+      >
+        {(hasAccess: boolean) => {
+          const visibleSections = hasAccess ? sections : sections.slice(0, FREE_TEXT_LIMIT);
           return (
-            <View key={s.id} style={styles.sectionCard}>
-              <TouchableOpacity
-                style={styles.sectionHeader}
-                onPress={() => setOpenId(open ? null : s.id)}
-                activeOpacity={0.8}
-              >
-                <View style={[styles.sectionNum, { backgroundColor: info.color }]}>
-                  <Text style={styles.sectionNumText}>{i + 1}</Text>
+          <>
+          <View style={[styles.header, { backgroundColor: info.color }]}>
+            <TouchableOpacity onPress={() => router.back()}><Text style={styles.back}>← 戻る</Text></TouchableOpacity>
+            <Text style={styles.title}>{info.emoji} {info.name} テキスト</Text>
+            <Text style={styles.subTitle}>本試験レベル ／ {sections.length}セクション収録</Text>
+          </View>
+          <ScrollView contentContainerStyle={styles.content}>
+            {visibleSections.map((s, i) => {
+              const open = openId === s.id;
+              return (
+                <View key={s.id} style={styles.sectionCard}>
+                  <TouchableOpacity
+                    style={styles.sectionHeader}
+                    onPress={() => setOpenId(open ? null : s.id)}
+                    activeOpacity={0.8}
+                  >
+                    <View style={[styles.sectionNum, { backgroundColor: info.color }]}>
+                      <Text style={styles.sectionNumText}>{i + 1}</Text>
+                    </View>
+                    <Text style={styles.sectionTitle}>{s.emoji} {s.title}</Text>
+                    <Text style={styles.chevron}>{open ? '▾' : '▸'}</Text>
+                  </TouchableOpacity>
+                  {open && (
+                    <View style={styles.sectionBody}>
+                      <StudyText text={s.body} accent={info.color} />
+                    </View>
+                  )}
                 </View>
-                <Text style={styles.sectionTitle}>{s.emoji} {s.title}</Text>
-                <Text style={styles.chevron}>{open ? '▾' : '▸'}</Text>
-              </TouchableOpacity>
-              {open && (
-                <View style={styles.sectionBody}>
-                  <StudyText text={s.body} accent={info.color} />
-                </View>
-              )}
+              );
+            })}
+            <View style={[styles.tipBox, { borderLeftColor: info.color }]}>
+              <Text style={[styles.tipTitle, { color: info.color }]}>📌 学習のすすめ方</Text>
+              <Text style={styles.tipText}>
+                テキストを一読したら、同じ科目の「基礎問題」で知識を定着させ、「応用問題」で本試験レベルの出題に対応できるか確認しましょう。仕上げに「模擬試験」で時間配分の感覚をつかむのが効果的です。
+              </Text>
             </View>
+          </ScrollView>
+          </>
           );
-        })}
-        <View style={[styles.tipBox, { borderLeftColor: info.color }]}>
-          <Text style={[styles.tipTitle, { color: info.color }]}>📌 学習のすすめ方</Text>
-          <Text style={styles.tipText}>
-            テキストを一読したら、同じ科目の「基礎問題」で知識を定着させ、「応用問題」で本試験レベルの出題に対応できるか確認しましょう。仕上げに「模擬試験」で時間配分の感覚をつかむのが効果的です。
-          </Text>
-        </View>
-      </ScrollView>
+        }}
+      </CertPaywall>
     </SafeAreaView>
   );
 }
