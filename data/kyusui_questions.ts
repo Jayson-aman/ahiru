@@ -19,6 +19,10 @@ import { kyusuiKozo1 } from './kyusui_questions_kozo_1';
 import { kyusuiGaiyo1 } from './kyusui_questions_gaiyo_1';
 import { kyusuiGyosei1 } from './kyusui_questions_gyosei_1';
 import { kyusuiSekokan1 } from './kyusui_questions_sekokan_1';
+import { kyusuiSekokan2 } from './kyusui_questions_sekokan_2';
+import { kyusuiKeikaku2 } from './kyusui_questions_keikaku_2';
+import { kyusuiGaiyo2 } from './kyusui_questions_gaiyo_2';
+import { kyusuiKozo2 } from './kyusui_questions_kozo_2';
 
 export const kyusuiQuestions: KyusuiQuestion[] = [
   ...kyusuiKoho1,
@@ -27,4 +31,8 @@ export const kyusuiQuestions: KyusuiQuestion[] = [
   ...kyusuiGaiyo1,
   ...kyusuiGyosei1,
   ...kyusuiSekokan1,
+  ...kyusuiSekokan2,
+  ...kyusuiKeikaku2,
+  ...kyusuiGaiyo2,
+  ...kyusuiKozo2,
 ];
