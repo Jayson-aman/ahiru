@@ -27,7 +27,6 @@ const SUBJECTS = [
     name: '建築一般知識',
     emoji: '🏗️',
     color: '#1565C0',
-    examCount: 20,
     desc: '構造力学・材料・施工・建築計画',
   },
   {
@@ -35,7 +34,6 @@ const SUBJECTS = [
     name: '建築法規',
     emoji: '📋',
     color: '#2E7D32',
-    examCount: 20,
     desc: '建築基準法・消防法・省エネ法・バリアフリー法',
   },
   {
@@ -43,7 +41,6 @@ const SUBJECTS = [
     name: '空調・換気設備',
     emoji: '❄️',
     color: '#0097A7',
-    examCount: 20,
     desc: '熱負荷計算・空調方式・換気設計・省エネ',
   },
   {
@@ -51,7 +48,6 @@ const SUBJECTS = [
     name: '給排水衛生設備',
     emoji: '🚿',
     color: '#1976D2',
-    examCount: 20,
     desc: '給水・排水・衛生器具・ガス設備',
   },
   {
@@ -59,7 +55,6 @@ const SUBJECTS = [
     name: '電気設備',
     emoji: '⚡',
     color: '#F57F17',
-    examCount: 15,
     desc: '受変電・幹線・照明・弱電・自家発電',
   },
   {
@@ -67,7 +62,6 @@ const SUBJECTS = [
     name: '防災設備',
     emoji: '🚒',
     color: '#C62828',
-    examCount: 5,
     desc: 'スプリンクラー・自動火災報知・排煙設備',
   },
 ];
