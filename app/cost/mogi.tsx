@@ -26,26 +26,36 @@ function pickRandom<T>(arr: T[], n: number): T[] {
   return shuffled.slice(0, Math.min(n, shuffled.length));
 }
 
+/** 無料プレビュー用。毎回まったく同じ問題を返す */
+function pickHead<T>(arr: T[], n: number): T[] {
+  return arr.slice(0, Math.min(n, arr.length));
+}
+
+function buildExam(pick: <T>(arr: T[], n: number) => T[]) {
+  const result: typeof costQuestions = [];
+  for (const [subj, count] of Object.entries(DISTRIBUTION)) {
+    const pool = costQuestions.filter(q => q.subject === subj);
+    result.push(...pick(pool, count));
+  }
+  return result.map(q => ({
+    id: q.id,
+    subject: q.subject,
+    subjectName: SUBJECT_NAMES[q.subject] ?? q.subjectName,
+    question: q.question,
+    choices: q.choices,
+    correctKey: q.correctKey,
+    explanation: q.explanation,
+    examYear: q.examYear,
+  }));
+}
+
 export default function CostMogiScreen() {
   const router = useRouter();
 
-  const questions = useMemo(() => {
-    const result: typeof costQuestions = [];
-    for (const [subj, count] of Object.entries(DISTRIBUTION)) {
-      const pool = costQuestions.filter(q => q.subject === subj);
-      result.push(...pickRandom(pool, count));
-    }
-    return result.map(q => ({
-      id: q.id,
-      subject: q.subject,
-      subjectName: SUBJECT_NAMES[q.subject] ?? q.subjectName,
-      question: q.question,
-      choices: q.choices,
-      correctKey: q.correctKey,
-      explanation: q.explanation,
-      examYear: q.examYear,
-    }));
-  }, []);
+  const questions = useMemo(() => buildExam(pickRandom), []);
+  // 無料枠はランダムにしない。ランダムのままだと画面を出入りするたびに
+  // 別の10問が解説つきで見え、無課金で問題バンク全体を読めてしまう。
+  const freeQuestions = useMemo(() => buildExam(pickHead).slice(0, FREE_QUESTION_LIMIT), []);
 
   return (
     <SafeAreaView style={styles.safe}>
@@ -62,7 +72,7 @@ export default function CostMogiScreen() {
       >
         {(hasAccess: boolean) => (
           <MogiExam
-            questions={hasAccess ? questions : questions.slice(0, FREE_QUESTION_LIMIT)}
+            questions={hasAccess ? questions : freeQuestions}
             timeLimitMinutes={120}
             passingScore={24}
             accentColor="#4527A0"

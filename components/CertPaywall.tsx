@@ -35,6 +35,11 @@ type Props = {
   children: React.ReactNode | ((hasAccess: boolean) => React.ReactNode);
   /** If provided, only this many questions are shown in free tier instead of the default */
   freeLimit?: number;
+  /**
+   * Counter unit shown in the banner. Quiz screens count questions（既定の「問」）,
+   * textbook/guide screens count sections, so they pass 「セクション」.
+   */
+  unitLabel?: string;
   /** Override Pro plan price labels */
   proMonthlyLabel?: string;
   proYearlyLabel?: string;
@@ -50,9 +55,10 @@ type Props = {
  * slice anything on its own, it only renders the upgrade banner.
  */
 export default function CertPaywall({
-  certKey, certName, certEmoji, accentColor, totalQuestions, children, freeLimit,
+  certKey, certName, certEmoji, accentColor, totalQuestions, children, freeLimit, unitLabel,
   proMonthlyLabel, proYearlyLabel, proYearlySavingsLabel, proFeatures,
 }: Props) {
+  const unit = unitLabel ?? '問';
   const router = useRouter();
   const [info, setInfo] = useState<CustomerInfo | null>(null);
   const [loading, setLoading] = useState(true);
@@ -68,16 +74,17 @@ export default function CertPaywall({
   useEffect(() => {
     let mounted = true;
     (async () => {
-      try {
-        const [ci, offering] = await Promise.all([getCustomerInfo(), fetchCurrentOffering()]);
-        if (!mounted) return;
-        setInfo(ci);
-        if (offering) setPackages(offering.availablePackages);
-      } catch {
-        // No RevenueCat in dev/web — treat as free
-      } finally {
-        if (mounted) setLoading(false);
+      // 権限判定(getCustomerInfo)と商品一覧(fetchCurrentOffering)は独立して扱う。
+      // Promise.allだとオフライン等でofferings取得が失敗した瞬間に全体がrejectし、
+      // キャッシュから取れているはずの購入情報まで捨てて課金済みユーザーが
+      // 無料枠に落ちてしまうため、allSettledで個別に反映する。
+      const [ciRes, offRes] = await Promise.allSettled([getCustomerInfo(), fetchCurrentOffering()]);
+      if (!mounted) return;
+      if (ciRes.status === 'fulfilled') setInfo(ciRes.value);
+      if (offRes.status === 'fulfilled' && offRes.value) {
+        setPackages(offRes.value.availablePackages);
       }
+      setLoading(false);
     })();
     return () => { mounted = false; };
   }, [certKey]);
@@ -177,11 +184,11 @@ export default function CertPaywall({
         <LinearGradient colors={[accentColor, accentColor + 'CC']} style={styles.banner}>
           <Text style={styles.bannerLock}>🔒</Text>
           <View style={styles.bannerBody}>
-            <Text style={styles.bannerTitle}>無料体験中 — {limit}問まで無料</Text>
+            <Text style={styles.bannerTitle}>無料体験中 — {limit}{unit}まで無料</Text>
             <Text style={styles.bannerSub}>
               {comingSoon
                 ? `${certEmoji} ${certName} は準備中です（全${totalQuestions}問を順次公開）`
-                : `${certEmoji} ${certName} 全${totalQuestions}問＋詳細解説を${PRICING.proYearly}でアンロック`}
+                : `${certEmoji} ${certName} 全${totalQuestions}${unit}＋詳細解説を${proYearlyLabel ?? PRICING.proYearly}でアンロック`}
             </Text>
           </View>
           <View style={styles.bannerBtn}>

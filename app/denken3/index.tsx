@@ -2,6 +2,14 @@ import React from 'react';
 import { View, Text, ScrollView, StyleSheet, SafeAreaView, TouchableOpacity } from 'react-native';
 import { useRouter } from 'expo-router';
 import { LinearGradient } from 'expo-linear-gradient';
+import { denken3Questions } from '../../data/denken3_questions';
+
+// 収録数は実データから集計する（ハードコードすると増量のたびにズレる）
+const COUNT: Record<string, number> = denken3Questions.reduce((acc, q) => {
+  acc[q.subject] = (acc[q.subject] ?? 0) + 1;
+  return acc;
+}, {} as Record<string, number>);
+const DENKEN3_TOTAL = denken3Questions.length;
 
 const SUBJECTS = [
   { key: 'rikigaku', name: '理論', emoji: '⚡', color: '#E65100', examCount: 15, desc: '電気回路・電磁気・電気計測' },
@@ -24,7 +32,7 @@ export default function Denken3Screen() {
         <Text style={styles.sub}>第三種電気主任技術者試験</Text>
         <View style={styles.badges}>
           <View style={styles.badge}><Text style={styles.badgeText}>4科目 {total}問</Text></View>
-          <View style={styles.badge}><Text style={styles.badgeText}>1000問収録予定</Text></View>
+          <View style={styles.badge}><Text style={styles.badgeText}>{DENKEN3_TOTAL}問収録</Text></View>
           <View style={styles.badge}><Text style={styles.badgeText}>年2回（上期・下期）</Text></View>
         </View>
       </LinearGradient>
@@ -60,7 +68,7 @@ export default function Denken3Screen() {
             <View style={styles.body}>
               <Text style={styles.cardTitle}>{s.name}</Text>
               <Text style={styles.cardDesc}>{s.desc}</Text>
-              <Text style={[styles.cardMeta, { color: s.color }]}>本試験 {s.examCount}問 ／ 収録問題 準備中</Text>
+              <Text style={[styles.cardMeta, { color: s.color }]}>本試験 {s.examCount}問 ／ 収録 {COUNT[s.key] ?? 0}問</Text>
             </View>
             <Text style={styles.arrow}>›</Text>
           </TouchableOpacity>

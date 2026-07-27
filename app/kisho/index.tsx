@@ -6,6 +6,10 @@ import { kishoQuestions } from '../../data/kisho_questions';
 
 // 実際の問題データから総数・科目別を集計（ハードコードせずズレを防ぐ）
 const KISHO_TOTAL = kishoQuestions.length;
+const COUNT: Record<string, number> = kishoQuestions.reduce((acc, q) => {
+  acc[q.subject] = (acc[q.subject] ?? 0) + 1;
+  return acc;
+}, {} as Record<string, number>);
 
 const SUBJECTS = [
   { key: 'gakka1', name: '予報業務に関する一般知識', emoji: '🌡️', color: '#1565C0', examCount: 15, desc: '大気・熱力学・流体力学・気象観測' },
@@ -63,7 +67,9 @@ export default function KishoScreen() {
               <Text style={styles.cardTitle}>{s.name}</Text>
               <Text style={styles.cardDesc}>{s.desc}</Text>
               <Text style={[styles.cardMeta, { color: s.color }]}>
-                {s.examCount > 0 ? `本試験 ${s.examCount}問 ／ 収録問題 準備中` : '記述式 ／ 解説準備中'}
+                {s.examCount > 0
+                  ? `本試験 ${s.examCount}問 ／ 収録 ${COUNT[s.key] ?? 0}問`
+                  : `記述式 ／ 収録 ${COUNT[s.key] ?? 0}問`}
               </Text>
             </View>
             <Text style={styles.arrow}>›</Text>

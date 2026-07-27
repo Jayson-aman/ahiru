@@ -2,7 +2,7 @@ import React from 'react';
 import { View, Text, StyleSheet, SafeAreaView, TouchableOpacity, ScrollView } from 'react-native';
 import { useRouter } from 'expo-router';
 import CertPaywall from '../../components/CertPaywall';
-import { FREE_TEXT_LIMIT } from '../../services/subscription';
+import { FREE_TEXT_LIMIT, PRICING } from '../../services/subscription';
 
 const ACCENT = '#4A0072';
 
@@ -195,6 +195,10 @@ export default function EikenTaisakuScreen() {
         accentColor={ACCENT}
         totalQuestions={SECTIONS.length}
         freeLimit={FREE_TEXT_LIMIT}
+        unitLabel="セクション"
+        proMonthlyLabel={PRICING.eikenMonthly}
+        proYearlyLabel={PRICING.eikenYearly}
+        proYearlySavingsLabel={PRICING.eikenYearlySavings}
       >
         {(hasAccess: boolean) => {
           const visibleSections = hasAccess ? SECTIONS : SECTIONS.slice(0, FREE_TEXT_LIMIT);
