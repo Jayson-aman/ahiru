@@ -74,8 +74,6 @@ export default function RootLayout() {
         <Stack.Screen name="kisho/[subject]" options={{ headerShown: false, presentation: 'card' }} />
         <Stack.Screen name="kisho/text/index" options={{ headerShown: false, presentation: 'card' }} />
         <Stack.Screen name="kisho/text/[subject]" options={{ headerShown: false, presentation: 'card' }} />
-        {/* 汎用クイズ */}
-        <Stack.Screen name="quiz/[subject]" options={{ headerShown: false, presentation: 'card' }} />
       </Stack>
     </>
   );
