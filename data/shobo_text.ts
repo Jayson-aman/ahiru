@@ -18,11 +18,15 @@ export type ShoboTextChapter = {
 import { shoboTextPart1 } from './shobo_text_part1';
 import { shoboTextPart2 } from './shobo_text_part2';
 import { shoboTextPart3 } from './shobo_text_part3';
+import { shoboTextPart2b } from './shobo_text_part2b';
+import { shoboTextPart3b } from './shobo_text_part3b';
 
 export const shoboTextbook: ShoboTextChapter[] = [
   ...shoboTextPart1,
   ...shoboTextPart2,
   ...shoboTextPart3,
+  ...shoboTextPart2b,
+  ...shoboTextPart3b,
 ];
 
 /** 指定科目のセクションを返す（同じ科目の章が複数でも取りこぼさない） */
