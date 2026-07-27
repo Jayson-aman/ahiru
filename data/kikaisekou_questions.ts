@@ -16,6 +16,7 @@ import { kikaisekouKikaiQuestions3 } from './kikaisekou_questions_kikai3';
 import { kikaisekouKikaiQuestions4 } from './kikaisekou_questions_kikai4';
 import { kikaisekouSekouQuestions2 } from './kikaisekou_questions_sekou2';
 import { kikaisekouHokiQuestions2 } from './kikaisekou_questions_hoki2';
+import { kikaisekouHokiQuestions3 } from './kikaisekou_questions_hoki3';
 
 export const kikaisekouQuestions: KikaisekouQuestion[] = [
   // ===== 土木工学 75問 =====
@@ -3929,4 +3930,5 @@ export const kikaisekouQuestions: KikaisekouQuestion[] = [
   ...kikaisekouKikaiQuestions4,
   ...kikaisekouSekouQuestions2,
   ...kikaisekouHokiQuestions2,
+  ...kikaisekouHokiQuestions3,
 ];
