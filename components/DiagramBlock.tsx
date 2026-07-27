@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text, StyleSheet, Platform, TextStyle, StyleProp } from 'react-native';
+import { View, Text, StyleSheet, Platform, ScrollView, TextStyle, StyleProp } from 'react-native';
 
 /**
  * 【図解】ブロックの本文を描画する共通レンダラー。
@@ -85,12 +85,30 @@ function cellColor(text: string): StyleProp<TextStyle> {
   return null;
 }
 
+/**
+ * 5列以上になると1セルの幅が3〜4文字分しか取れず、「1,000千円」のような
+ * 語が数行に折り返して読めなくなる（iPhone SEで7列だと1セル2.6文字）。
+ * そこで列数が多い表は幅を内容に合わせて確保し、横スクロールで見せる。
+ */
+const WIDE_COLS = 5;
+const CHAR_W = 11.5;      // 全角1文字ぶんの目安（fontSize と同じ）
+const CELL_PAD = 14;      // paddingHorizontal:7 × 2
+const MIN_COL_W = 58;
+const MAX_COL_W = 150;
+
 function TableView({ rows, accent }: { rows: string[][]; accent: string }) {
   const cols = Math.max(...rows.map(r => r.length));
   // 1列目は項目名なので少し広めに
   const flexOf = (i: number) => (cols > 2 && i === 0 ? 1.25 : 1);
+  const wide = cols >= WIDE_COLS;
 
-  return (
+  // 横スクロール時は列ごとに「中身が収まる幅」を割り当てる
+  const widthOf = (ci: number) => {
+    const longest = rows.reduce((m, r) => Math.max(m, (r[ci] ?? '').length), 0);
+    return Math.min(MAX_COL_W, Math.max(MIN_COL_W, longest * CHAR_W + CELL_PAD));
+  };
+
+  const table = (
     <View style={s.table}>
       {rows.map((row, ri) => {
         const header = ri === 0;
@@ -106,7 +124,10 @@ function TableView({ rows, accent }: { rows: string[][]; accent: string }) {
             {Array.from({ length: cols }).map((_, ci) => {
               const txt = row[ci] ?? '';
               return (
-                <View key={ci} style={[s.td, { flex: flexOf(ci) }, ci > 0 && s.tdBorder]}>
+                <View
+                  key={ci}
+                  style={[s.td, wide ? { width: widthOf(ci) } : { flex: flexOf(ci) }, ci > 0 && s.tdBorder]}
+                >
                   <Text style={[s.cell, header ? s.cellHead : cellColor(txt)]}>{txt}</Text>
                 </View>
               );
@@ -115,6 +136,13 @@ function TableView({ rows, accent }: { rows: string[][]; accent: string }) {
         );
       })}
     </View>
+  );
+
+  if (!wide) return table;
+  return (
+    <ScrollView horizontal showsHorizontalScrollIndicator contentContainerStyle={s.wideScroll}>
+      {table}
+    </ScrollView>
   );
 }
 
@@ -170,6 +198,8 @@ const s = StyleSheet.create({
     borderWidth: 1, borderColor: '#C9DCF5', borderRadius: 8,
     overflow: 'hidden', marginVertical: 8,
   },
+  // 列数が多い表を横スクロールで見せるときの外枠
+  wideScroll: { paddingRight: 2 },
   tr: { flexDirection: 'row', borderBottomWidth: 1, borderBottomColor: '#E3ECF8' },
   trAlt: { backgroundColor: '#F4F8FF' },
   td: { paddingHorizontal: 7, paddingVertical: 6, justifyContent: 'center' },
