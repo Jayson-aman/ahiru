@@ -70,7 +70,7 @@ export const sekokanMogiPart1: SekokanQuestion[] = [
       { key: 'D', text: '240 kN・m', explanation: '誤り。240kN・mはPLをそのまま計算した値。これは片持ち梁先端集中荷重の固定端モーメントの形である。' },
     ],
     correctKey: 'B',
-    explanation: '公式の導出過程で覚える。\n【図解】単純梁・中央集中荷重P\n　　　　P=40kN\n　　　　↓\n　△────┼────△　L=6m\n　R=20kN　　　R=20kN\n　M図：中央が頂点の三角形\n　Mmax＝R×L/2＝20×3＝60kN・m（=PL/4）\n等分布荷重ならwL²/8、片持ち先端集中ならPL。',
+    explanation: '公式の導出過程で覚える。\n【図解】単純梁・中央集中荷重P\n　スパンL=6mの単純梁。両端が支点、中央にP=40kNが下向きに作用\n　両端の反力はそれぞれR=20kN\n　M図：中央が頂点の三角形\n　Mmax＝R×L/2＝20×3＝60kN・m（=PL/4）\n等分布荷重ならwL²/8、片持ち先端集中ならPL。',
     difficulty: 'standard',
   },
   {
@@ -182,7 +182,7 @@ export const sekokanMogiPart1: SekokanQuestion[] = [
       { key: 'D', text: '水道直結増圧方式は、増圧給水設備を用いて中規模建物まで直結給水する方式である。', explanation: '適当。受水槽が不要で衛生的・省スペース。逆流防止器の設置が必須である。' },
     ],
     correctKey: 'A',
-    explanation: '飲料水系統は「切り離す」が大原則。\n【図解】受水槽回りの間接排水\n　受水槽─オーバーフロー管─┐\n　　　　　　　　　　　空間150mm以上←ここで縁切り\n　　　　　　　　　　　▽ 排水ホッパー→排水管\n　直接接続＝クロスコネクション的汚染リスク→絶対禁止\n封水深50〜100mm・通気管の役割も基本セット。',
+    explanation: '飲料水系統は「切り離す」が大原則。\n【図解】受水槽回りの間接排水\n　①受水槽 → ②オーバーフロー管 → ③空間150mm以上（ここで縁切り）\n　→ ④排水ホッパー → ⑤排水管\n　直接接続＝クロスコネクション的汚染リスク→絶対禁止\n封水深50〜100mm・通気管の役割も基本セット。',
     difficulty: 'standard',
   },
   {

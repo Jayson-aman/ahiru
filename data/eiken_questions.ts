@@ -91,8 +91,9 @@ import { eikenQuestions4kyuListeningX3 } from './eiken_questions_4kyu_listening_
 import { eikenQuestions3kyuListeningX2 } from './eiken_questions_3kyu_listening_x2';
 import { eikenQuestions3kyuListeningX3 } from './eiken_questions_3kyu_listening_x3';
 import { eikenQuestions2kyuListeningX3 } from './eiken_questions_2kyu_listening_x3';
+import { balanceAnswerKeys } from './_balance';
 
-export const eikenQuestions: EikenQuestion[] = [
+const rawEikenQuestions: EikenQuestion[] = [
   ...eikenQuestions4kyuListeningX2,
   ...eikenQuestions4kyuListeningX3,
   ...eikenQuestions3kyuListeningX2,
@@ -159,3 +160,6 @@ export const eikenQuestions: EikenQuestion[] = [
   ...eikenQuestions2kyuIdiom,
   ...eikenQuestions2kyuIdiom2,
 ];
+
+/** 正解キーの偏りをならしてから公開する（中身は不変・並びのみ回転） */
+export const eikenQuestions: EikenQuestion[] = balanceAnswerKeys(rawEikenQuestions);

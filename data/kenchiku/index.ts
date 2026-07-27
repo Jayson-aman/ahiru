@@ -26,6 +26,7 @@ import { denkiQuestionsPart2 } from './denki-questions-part2';
 import { denkiQuestionsPart3 } from './denki-questions-part3';
 import { bousaiQuestions } from './bousai-questions';
 import { bousaiQuestionsPart2 } from './bousai-questions-part2';
+import { balanceAnswerKeys } from '../_balance';
 
 const SUBJECT_ALIASES: Record<string, string> = {
   '給排水衛生設備': 'kyuhaisui',
@@ -38,7 +39,7 @@ const normalize = (q: KenchikuQuestion): KenchikuQuestion => ({
   subject: SUBJECT_ALIASES[q.subject] ?? q.subject,
 });
 
-export const kenchikuQuestions: KenchikuQuestion[] = [
+const rawKenchikuQuestions: KenchikuQuestion[] = [
   ...ippanQuestions,
   ...ippanQuestionsPart2,
   ...ippanQuestionsPart3Sekou,
@@ -65,3 +66,6 @@ export const kenchikuQuestions: KenchikuQuestion[] = [
   ...bousaiQuestions,
   ...bousaiQuestionsPart2,
 ].map(normalize);
+
+/** 正解キーの偏りをならしてから公開する（中身は不変・並びのみ回転） */
+export const kenchikuQuestions: KenchikuQuestion[] = balanceAnswerKeys(rawKenchikuQuestions);

@@ -22,8 +22,9 @@ import { denken3Kikai3 } from './denken3_questions_kikai3';
 import { denken3Houki } from './denken3_questions_houki';
 import { denken3Houki2 } from './denken3_questions_houki2';
 import { denken3Houki3 } from './denken3_questions_houki3';
+import { balanceAnswerKeys } from './_balance';
 
-export const denken3Questions: Denken3Question[] = [
+const rawDenken3Questions: Denken3Question[] = [
   ...denken3Rikigaku,
   ...denken3Rikigaku2,
   ...denken3Rikigaku3,
@@ -37,3 +38,6 @@ export const denken3Questions: Denken3Question[] = [
   ...denken3Houki2,
   ...denken3Houki3,
 ];
+
+/** 正解キーの偏りをならしてから公開する（中身は不変・並びのみ回転） */
+export const denken3Questions: Denken3Question[] = balanceAnswerKeys(rawDenken3Questions);

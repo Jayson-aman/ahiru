@@ -29,8 +29,9 @@ import { shoboKozok2 } from './shobo_questions_kozok_2';
 import { shoboKiso2 } from './shobo_questions_kiso_2';
 import { shoboKozod2 } from './shobo_questions_kozod_2';
 import { shoboHoreir2 } from './shobo_questions_horeir_2';
+import { balanceAnswerKeys } from './_balance';
 
-export const shoboQuestions: ShoboQuestion[] = [
+const rawShoboQuestions: ShoboQuestion[] = [
   ...shoboHoreik1,
   ...shoboHoreir1,
   ...shoboKiso1,
@@ -44,3 +45,6 @@ export const shoboQuestions: ShoboQuestion[] = [
   ...shoboKozod2,
   ...shoboHoreir2,
 ];
+
+/** 正解キーの偏りをならしてから公開する（中身は不変・並びのみ回転） */
+export const shoboQuestions: ShoboQuestion[] = balanceAnswerKeys(rawShoboQuestions);

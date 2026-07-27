@@ -25,8 +25,9 @@ import { kyusuiGaiyo2 } from './kyusui_questions_gaiyo_2';
 import { kyusuiKozo2 } from './kyusui_questions_kozo_2';
 import { kyusuiGyosei2 } from './kyusui_questions_gyosei_2';
 import { kyusuiKoho2 } from './kyusui_questions_koho_2';
+import { balanceAnswerKeys } from './_balance';
 
-export const kyusuiQuestions: KyusuiQuestion[] = [
+const rawKyusuiQuestions: KyusuiQuestion[] = [
   ...kyusuiKoho1,
   ...kyusuiKeikaku1,
   ...kyusuiKozo1,
@@ -40,3 +41,6 @@ export const kyusuiQuestions: KyusuiQuestion[] = [
   ...kyusuiGyosei2,
   ...kyusuiKoho2,
 ];
+
+/** 正解キーの偏りをならしてから公開する（中身は不変・並びのみ回転） */
+export const kyusuiQuestions: KyusuiQuestion[] = balanceAnswerKeys(rawKyusuiQuestions);

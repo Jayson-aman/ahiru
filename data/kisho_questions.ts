@@ -19,8 +19,9 @@ import { kishoJitsumu_2 } from './kisho_questions_jitsumu_2';
 import { kishoGakka1_3 } from './kisho_questions_gakka1_3';
 import { kishoGakka2_3 } from './kisho_questions_gakka2_3';
 import { kishoJitsumu_3 } from './kisho_questions_jitsumu_3';
+import { balanceAnswerKeys } from './_balance';
 
-export const kishoQuestions: KishoQuestion[] = [
+const rawKishoQuestions: KishoQuestion[] = [
   ...kishoGakka1,
   ...kishoGakka2,
   ...kishoJitsumu,
@@ -31,3 +32,6 @@ export const kishoQuestions: KishoQuestion[] = [
   ...kishoGakka2_3,
   ...kishoJitsumu_3,
 ];
+
+/** 正解キーの偏りをならしてから公開する（中身は不変・並びのみ回転） */
+export const kishoQuestions: KishoQuestion[] = balanceAnswerKeys(rawKishoQuestions);

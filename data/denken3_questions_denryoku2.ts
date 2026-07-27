@@ -207,7 +207,7 @@ export const denken3Denryoku2: Denken3Question[] = [
       { key: 'D', text: '5 A', explanation: '誤り。平衡負荷では差はゼロ。5Aとなる根拠はない。' },
     ],
     correctKey: 'A',
-    explanation: '中性線電流＝両側負荷電流の差。\n【図解】平衡時の電流分布\n　外線a→10A→[1kW]─┐\n　中性線→ 0A ★　　├（差が流れる）\n　外線b←10A←[1kW]─┘\n　平衡：10−10＝0A ✓\n　不平衡だと中性線に差電流→欠相時は過電圧の危険',
+    explanation: '中性線電流＝両側負荷電流の差。\n【図解】平衡時の電流分布\n　外線a → 10A → [1kW負荷]\n　外線b ← 10A ← [1kW負荷]\n　中性線には両者の差が流れる → 0A ★\n　平衡：10−10＝0A ✓\n　不平衡だと中性線に差電流→欠相時は過電圧の危険',
     difficulty: 'standard',
   },
   {

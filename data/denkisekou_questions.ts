@@ -22,8 +22,9 @@ import { denkisekouHoki3 } from './denkisekou_questions_hoki3';
 import { denkisekouHoki4 } from './denkisekou_questions_hoki4';
 import { denkisekouRiron4 } from './denkisekou_questions_riron4';
 import { denkisekouSetsubi4 } from './denkisekou_questions_setsubi4';
+import { balanceAnswerKeys } from './_balance';
 
-export const denkisekouQuestions: DenkisekouQuestion[] = [
+const rawDenkisekouQuestions: DenkisekouQuestion[] = [
   // ===== 電気工学 75問 =====
   {
     id: 'ds-riron-001', subject: 'riron', subjectName: '電気工学',
@@ -3941,3 +3942,6 @@ export const denkisekouQuestions: DenkisekouQuestion[] = [
   ...denkisekouRiron4,
   ...denkisekouSetsubi4,
 ];
+
+/** 正解キーの偏りをならしてから公開する（中身は不変・並びのみ回転） */
+export const denkisekouQuestions: DenkisekouQuestion[] = balanceAnswerKeys(rawDenkisekouQuestions);

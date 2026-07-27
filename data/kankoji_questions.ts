@@ -20,8 +20,9 @@ import { kankojiKucho3 } from './kankoji_questions_kucho3';
 import { kankojiSekou3 } from './kankoji_questions_sekou3';
 import { kankojiEisei3 } from './kankoji_questions_eisei3';
 import { kankojiGenron3 } from './kankoji_questions_genron3';
+import { balanceAnswerKeys } from './_balance';
 
-export const kankojiQuestions: KankojiQuestion[] = [
+const rawKankojiQuestions: KankojiQuestion[] = [
   // ===== 原論・電気・建築学 60問 =====
   {
     id: 'kj-genron-001', subject: 'genron', subjectName: '原論・電気・建築',
@@ -905,7 +906,7 @@ export const kankojiQuestions: KankojiQuestion[] = [
       { key: 'D', text: '全熱交換器は、給気と排気の経路を完全に混合させることで熱交換を行う方式である。', explanation: '不適当。全熱交換器は給気と排気を混合させるのではなく、透湿性のある伝熱素子（ロータや積層エレメント）を介して熱と水分のみを交換し、両気流は基本的に混合しない。' },
     ],
     correctKey: 'D',
-    explanation: '全熱交換器は伝熱素子を介して熱・水分を交換し、気流は混合しない。\n【図解】全熱交換器の仕組み\n　給気（外気）→┐\n　　　　　　　　├─伝熱素子（ロータ等）─┐★\n　排気（室内）→┘　（熱・水分のみ交換）　└→\n　全熱交換器：顕熱＋潜熱を交換★\n　顕熱交換器：顕熱のみ交換\n　→ 外気負荷低減・省エネルギー',
+    explanation: '全熱交換器は伝熱素子を介して熱・水分を交換し、気流は混合しない。\n【図解】全熱交換器の仕組み\n　給気（外気）と排気（室内）の2つの気流が、伝熱素子（ロータ等）★を挟んですれ違う\n　両者は混じり合わず、熱・水分のみが素子を介して受け渡される\n　全熱交換器：顕熱＋潜熱を交換★\n　顕熱交換器：顕熱のみ交換\n　→ 外気負荷低減・省エネルギー',
     difficulty: 'basic',
   },
   {
@@ -3938,3 +3939,6 @@ export const kankojiQuestions: KankojiQuestion[] = [
   ...kankojiEisei3,
   ...kankojiGenron3,
 ];
+
+/** 正解キーの偏りをならしてから公開する（中身は不変・並びのみ回転） */
+export const kankojiQuestions: KankojiQuestion[] = balanceAnswerKeys(rawKankojiQuestions);

@@ -19,8 +19,9 @@ import { kikaisekouSekouQuestions3 } from './kikaisekou_questions_sekou3';
 import { kikaisekouHokiQuestions2 } from './kikaisekou_questions_hoki2';
 import { kikaisekouHokiQuestions3 } from './kikaisekou_questions_hoki3';
 import { kikaisekouDobokuQuestions3 } from './kikaisekou_questions_doboku3';
+import { balanceAnswerKeys } from './_balance';
 
-export const kikaisekouQuestions: KikaisekouQuestion[] = [
+const rawKikaisekouQuestions: KikaisekouQuestion[] = [
   // ===== 土木工学 75問 =====
   {
     id: 'ks-doboku-001', subject: 'doboku', subjectName: '土木工学',
@@ -45,7 +46,7 @@ export const kikaisekouQuestions: KikaisekouQuestion[] = [
       { key: 'D', text: '高含水比の粘性土は、ばっ気乾燥や安定材の添加により含水比を低下させてから用いる。', explanation: '適当。トラフィカビリティ・締固め特性を改善する含水比調整。石灰・セメント系安定材が用いられる。' },
     ],
     correctKey: 'B',
-    explanation: '敷均し厚：路体35〜45cm（仕上り30cm）・路床25〜30cm（仕上り20cm）。\n【図解】盛土の層厚管理\n　┌─────────┐ ←一層仕上り\n　│ 路床：仕上り20cm以下★（敷均し25〜30cm）\n　├─────────┤\n　│ 路体：仕上り30cm以下★（敷均し35〜45cm）\n　└─────────┘\n　傾斜地盤 → 段切り（すべり防止）★\n　裏込め → 小型機械で薄層施工★\n　高含水比粘性土 → ばっ気乾燥・安定処理',
+    explanation: '敷均し厚：路体35〜45cm（仕上り30cm）・路床25〜30cm（仕上り20cm）。\n【図解】盛土の層厚管理\n　一層仕上りの厚さを、上下の層で分けて管理する\n　・上側の路床：仕上り20cm以下★（敷均し25〜30cm）\n　・下側の路体：仕上り30cm以下★（敷均し35〜45cm）\n　傾斜地盤 → 段切り（すべり防止）★\n　裏込め → 小型機械で薄層施工★\n　高含水比粘性土 → ばっ気乾燥・安定処理',
     difficulty: 'standard',
   },
   {
@@ -3936,3 +3937,6 @@ export const kikaisekouQuestions: KikaisekouQuestion[] = [
   ...kikaisekouHokiQuestions3,
   ...kikaisekouDobokuQuestions3,
 ];
+
+/** 正解キーの偏りをならしてから公開する（中身は不変・並びのみ回転） */
+export const kikaisekouQuestions: KikaisekouQuestion[] = balanceAnswerKeys(rawKikaisekouQuestions);
