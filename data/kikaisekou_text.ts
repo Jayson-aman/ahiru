@@ -11,9 +11,25 @@ export type KikaisekouTextChapter = {
 };
 
 import { kikaisekouTextPart1 } from './kikaisekou_text_part1';
+import { kikaisekouTextDobokuA } from './kikaisekou_text_doboku_a';
+import { kikaisekouTextDobokuB } from './kikaisekou_text_doboku_b';
+import { kikaisekouTextKikaiA } from './kikaisekou_text_kikai_a';
+import { kikaisekouTextKikaiB } from './kikaisekou_text_kikai_b';
+import { kikaisekouTextSekouA } from './kikaisekou_text_sekou_a';
+import { kikaisekouTextSekouB } from './kikaisekou_text_sekou_b';
+import { kikaisekouTextHokiA } from './kikaisekou_text_hoki_a';
+import { kikaisekouTextHokiB } from './kikaisekou_text_hoki_b';
 
 export const kikaisekouTextbook: KikaisekouTextChapter[] = [
   ...kikaisekouTextPart1,
+  ...kikaisekouTextDobokuA,
+  ...kikaisekouTextDobokuB,
+  ...kikaisekouTextKikaiA,
+  ...kikaisekouTextKikaiB,
+  ...kikaisekouTextSekouA,
+  ...kikaisekouTextSekouB,
+  ...kikaisekouTextHokiA,
+  ...kikaisekouTextHokiB,
 ];
 
 export function getKikaisekouText(subject: string): KikaisekouTextSection[] {
