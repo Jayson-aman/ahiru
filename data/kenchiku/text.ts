@@ -8065,5 +8065,9 @@ C火災（電気火災）：不活性ガス・粉末○ ×泡・棒状の水は�
 ];
 
 export function getKenchikuText(subject: string): KenchikuTextSection[] {
-  return kenchikuTextbook.find(c => c.subject === subject)?.sections ?? [];
+  // 同じ科目の章が複数ファイルに分かれるため、find ではなく filter で
+  // 全章を連結する（増補分の取りこぼしを防ぐ）
+  return kenchikuTextbook
+    .filter(c => c.subject === subject)
+    .flatMap(c => c.sections);
 }

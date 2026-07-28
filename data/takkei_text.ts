@@ -5206,5 +5206,9 @@ ze-01〜ze-14で扱ってきた主要税目以外にも、不動産に関連す�
 ];
 
 export function getTakkeiText(subject: string): TakkeiTextSection[] {
-  return takkeiTextbook.find(c => c.subject === subject)?.sections ?? [];
+  // 同じ科目の章が複数ファイルに分かれるため、find ではなく filter で
+  // 全章を連結する（増補分の取りこぼしを防ぐ）
+  return takkeiTextbook
+    .filter(c => c.subject === subject)
+    .flatMap(c => c.sections);
 }

@@ -6439,5 +6439,9 @@ D種｜300V以下の低圧機器｜100Ω以下｜0.5秒遮断で500Ω
 ];
 
 export function getDenken3Text(subject: string): Denken3TextSection[] {
-  return denken3Textbook.find(c => c.subject === subject)?.sections ?? [];
+  // 同じ科目の章が複数ファイルに分かれるため、find ではなく filter で
+  // 全章を連結する（増補分の取りこぼしを防ぐ）
+  return denken3Textbook
+    .filter(c => c.subject === subject)
+    .flatMap(c => c.sections);
 }

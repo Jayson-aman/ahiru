@@ -8707,5 +8707,9 @@ kanri-17で学んだ実務知識を、法制度の側面から整理します。
 ];
 
 export function getSekokanText(subject: string): SekokanTextSection[] {
-  return sekokanTextbook.find(c => c.subject === subject)?.sections ?? [];
+  // 同じ科目の章が複数ファイルに分かれるため、find ではなく filter で
+  // 全章を連結する（増補分の取りこぼしを防ぐ）
+  return sekokanTextbook
+    .filter(c => c.subject === subject)
+    .flatMap(c => c.sections);
 }

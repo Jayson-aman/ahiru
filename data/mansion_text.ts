@@ -8060,5 +8060,9 @@ IT活用と、運営実務は現代的な論点が増えている。
 ];
 
 export function getMansionText(subject: string): MansionTextSection[] {
-  return mansionTextbook.find(c => c.subject === subject)?.sections ?? [];
+  // 同じ科目の章が複数ファイルに分かれるため、find ではなく filter で
+  // 全章を連結する（増補分の取りこぼしを防ぐ）
+  return mansionTextbook
+    .filter(c => c.subject === subject)
+    .flatMap(c => c.sections);
 }
