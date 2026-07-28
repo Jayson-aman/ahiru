@@ -11,9 +11,25 @@ export type DenkisekouTextChapter = {
 };
 
 import { denkisekouTextPart1 } from './denkisekou_text_part1';
+import { denkisekouTextRironA } from './denkisekou_text_riron_a';
+import { denkisekouTextRironB } from './denkisekou_text_riron_b';
+import { denkisekouTextSetsubiA } from './denkisekou_text_setsubi_a';
+import { denkisekouTextSetsubiB } from './denkisekou_text_setsubi_b';
+import { denkisekouTextSekouA } from './denkisekou_text_sekou_a';
+import { denkisekouTextSekouB } from './denkisekou_text_sekou_b';
+import { denkisekouTextHokiA } from './denkisekou_text_hoki_a';
+import { denkisekouTextHokiB } from './denkisekou_text_hoki_b';
 
 export const denkisekouTextbook: DenkisekouTextChapter[] = [
   ...denkisekouTextPart1,
+  ...denkisekouTextRironA,
+  ...denkisekouTextRironB,
+  ...denkisekouTextSetsubiA,
+  ...denkisekouTextSetsubiB,
+  ...denkisekouTextSekouA,
+  ...denkisekouTextSekouB,
+  ...denkisekouTextHokiA,
+  ...denkisekouTextHokiB,
 ];
 
 /**
