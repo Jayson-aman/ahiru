@@ -11,9 +11,21 @@ export type FpTextChapter = {
 };
 
 import { fpTextPart1 } from './fp_text_part1';
+import { fpTextLife } from './fp_text_life';
+import { fpTextRisk } from './fp_text_risk';
+import { fpTextAsset } from './fp_text_asset';
+import { fpTextTax } from './fp_text_tax';
+import { fpTextRealestate } from './fp_text_realestate';
+import { fpTextInheritance } from './fp_text_inheritance';
 
 export const fpTextbook: FpTextChapter[] = [
   ...fpTextPart1,
+  ...fpTextLife,
+  ...fpTextRisk,
+  ...fpTextAsset,
+  ...fpTextTax,
+  ...fpTextRealestate,
+  ...fpTextInheritance,
 ];
 
 export function getFpText(subject: string): FpTextSection[] {
