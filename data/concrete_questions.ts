@@ -13,9 +13,14 @@ export type ConcreteQuestion = {
 
 import { balanceAnswerKeys } from './_balance';
 
-// 執筆完了ぶんから順に結線する。未収録の科目は画面側が「準備中」を表示するため、
-// この状態でもアプリは正常に動作する。
+import { concreteZairyoHaigo } from './concrete_questions_zairyo_haigo';
+import { concreteSeizoSekou } from './concrete_questions_seizo_sekou';
+import { concreteKakushuShindan } from './concrete_questions_kakushu_shindan';
+
 const rawConcreteQuestions: ConcreteQuestion[] = [
+  ...concreteZairyoHaigo,
+  ...concreteSeizoSekou,
+  ...concreteKakushuShindan,
 ];
 
 // 正解キーが偏ると「Dを選ぶだけ」で点が取れてしまうため、決定的に分散させる
