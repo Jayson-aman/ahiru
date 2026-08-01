@@ -83,6 +83,20 @@ App Store Connect → 「契約 / 税金 / 口座情報」→ **Paid Application
 | QualiZ Max | `qualiz_max_monthly` / `qualiz_max_yearly` | ¥2,800 / ¥28,000 |
 | Pro 宅建 | `qualiz_pro_takkei_m2` / `qualiz_pro_takkei_y2` | ¥1,800 / ¥18,000 |
 
+> **v1.2.0で宅建を売るための作業順序**（順番を守らないと詰まります）
+> 1. App Store Connect で新グループ「Pro 宅建」を作り、`qualiz_pro_takkei_m2` / `_y2` を作成
+>    （日本語ローカリゼーション・Review Notes・審査用スクショまで入れて「提出準備完了」にする）
+> 2. RevenueCat の Products に2件を追加 → エンタイトルメント `pro_takkei` にアタッチ
+>    → 現在の Offering に Monthly / Annual パッケージとして追加
+> 3. v1.2.0 をビルドして TestFlight に上げる
+> 4. TestFlight のアプリで宅建のペイウォールを開き、**その画面のスクショをIAPの審査用画像として登録**
+>    （ペイウォールは iOS でしか出ないので、Web版やシミュレータ以外では撮れません）
+> 5. v1.2.0 の提出画面で「App内課金」に新2件をチェックし、**削除済みの3件のチェックは外す**
+>
+> **手順1〜2を飛ばしてビルドすると、宅建のプランをタップしたとき「ただいま購入できません」**
+> **というエラーになり、In-App Purchaseが機能しないとしてリジェクトされます。**
+> （`CERTS_COMING_SOON` が空なので購入ボタン自体は表示されるため）
+
 > **宅建の商品IDが他と異なる理由**: 旧ID `qualiz_pro_takkei_monthly` / `_yearly` は
 > App Store Connect 上で削除済みです。**削除したサブスクリプションの商品IDは再利用できない**ため、
 > 末尾を変えた新IDで作り直しています。

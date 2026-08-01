@@ -58,15 +58,20 @@ per-certification Pro plan individually, at a discounted bundle price.
 
 ### 宅地建物取引士（`pro_takkei`）
 
+- 商品ID：`qualiz_pro_takkei_m2` / `qualiz_pro_takkei_y2`
+  （旧ID `qualiz_pro_takkei_monthly` / `_yearly` は削除済みで再利用不可）
 - 価格：月額 ¥1,800 ／ 年額 ¥18,000
-- 内容：権利関係・法令上の制限・税・宅建業法など全科目 ＋ 過去5年分の本試験問題（令和元〜5年）
+- 内容：権利関係・法令上の制限・税・宅建業法など全科目 3,590問 ＋ 過去5年分の本試験問題（令和元〜5年）
+  ＋ 要点テキスト300セクション（66.2万字）
 
 ```
-Unlocks the full question bank for the Japanese real estate transaction
-specialist exam (宅地建物取引士 / Takkenshi), covering civil law, land-use
-regulation, tax law, and the Real Estate Brokerage Act, plus 5 years of past
-official exam questions (transcribed for study purposes with detailed
-explanations, not for redistribution).
+Unlocks the full question bank (3,590 questions) for the Japanese real estate
+transaction specialist exam (宅地建物取引士 / Takkenshi), covering civil law,
+land-use regulation, tax law, and the Real Estate Brokerage Act, plus 5 years
+of past official exam questions (transcribed for study purposes with detailed
+explanations, not for redistribution). Also unlocks the full study text of 300
+sections across the four subject areas, with diagrams, comparison tables and
+frequently-tested figures.
 ```
 
 ### FP（`pro_fp`）
