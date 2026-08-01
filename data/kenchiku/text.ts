@@ -11,9 +11,21 @@ export type KenchikuTextChapter = {
 };
 
 import { kenchikuTextPart1 } from './text_part1';
+import { kenchikuTextIppan } from './text_ippan';
+import { kenchikuTextHoki } from './text_hoki';
+import { kenchikuTextKucho } from './text_kucho';
+import { kenchikuTextKyuhaisui } from './text_kyuhaisui';
+import { kenchikuTextDenki } from './text_denki';
+import { kenchikuTextBousai } from './text_bousai';
 
 export const kenchikuTextbook: KenchikuTextChapter[] = [
   ...kenchikuTextPart1,
+  ...kenchikuTextIppan,
+  ...kenchikuTextHoki,
+  ...kenchikuTextKucho,
+  ...kenchikuTextKyuhaisui,
+  ...kenchikuTextDenki,
+  ...kenchikuTextBousai,
 ];
 
 export function getKenchikuText(subject: string): KenchikuTextSection[] {
