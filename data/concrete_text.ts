@@ -19,9 +19,20 @@ export type ConcreteTextChapter = {
   sections: ConcreteTextSection[];
 };
 
-// 執筆完了ぶんから順に結線する。未収録の科目は画面側が「テキスト作成中」を
-// 表示するため、この状態でもアプリは正常に動作する。
+import { concreteTextZairyo } from './concrete_text_zairyo';
+import { concreteTextHaigo } from './concrete_text_haigo';
+import { concreteTextSeizo } from './concrete_text_seizo';
+import { concreteTextSekou } from './concrete_text_sekou';
+import { concreteTextKakushu } from './concrete_text_kakushu';
+import { concreteTextShindan } from './concrete_text_shindan';
+
 export const concreteTextbook: ConcreteTextChapter[] = [
+  ...concreteTextZairyo,
+  ...concreteTextHaigo,
+  ...concreteTextSeizo,
+  ...concreteTextSekou,
+  ...concreteTextKakushu,
+  ...concreteTextShindan,
 ];
 
 export function getConcreteText(subject: string): ConcreteTextSection[] {
