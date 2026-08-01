@@ -13,9 +13,16 @@ export type KikenbutsuQuestion = {
 
 import { balanceAnswerKeys } from './_balance';
 
-// 執筆完了ぶんから順に結線する。未収録の科目は画面側が「準備中」を表示するため、
-// この状態でもアプリは正常に動作する。
+import { kikenbutsuHorei1 } from './kikenbutsu_questions_horei_1';
+import { kikenbutsuHorei2 } from './kikenbutsu_questions_horei_2';
+import { kikenbutsuButsuri } from './kikenbutsu_questions_butsuri';
+import { kikenbutsuSeishitsu } from './kikenbutsu_questions_seishitsu';
+
 const rawKikenbutsuQuestions: KikenbutsuQuestion[] = [
+  ...kikenbutsuHorei1,
+  ...kikenbutsuHorei2,
+  ...kikenbutsuButsuri,
+  ...kikenbutsuSeishitsu,
 ];
 
 // 正解キーが偏ると「Dを選ぶだけ」で点が取れてしまうため、決定的に分散させる
