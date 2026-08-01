@@ -10,7 +10,7 @@ const BASE = 'http://127.0.0.1:8899';
 
 // 資格トップ・科目別問題・教科書・模試を横断的に踏む
 const ROUTES = [
-  '/', '/eiken', '/eiken/2', '/juken', '/kouko',
+  '/', '/eiken', '/eiken/2kyu', '/eiken/3kyu', '/eiken/4kyu', '/eiken/taisaku',
   '/takkei', '/takkei/kenri', '/takkei/text', '/takkei/text/kenri', '/takkei/mogi',
   '/mansion', '/mansion/kubunsho', '/mansion/text', '/mansion/text/kubunsho',
   '/fp', '/fp/tax', '/fp/text', '/fp/text/tax',
@@ -26,6 +26,8 @@ const ROUTES = [
   '/shobo', '/shobo/horei_kyotsu', '/shobo/text', '/shobo/text/horei_kyotsu', '/shobo/mogi',
   '/cost', '/cost/gairon', '/cost/text', '/cost/text/gairon', '/cost/mogi', '/cost/ronbun',
   '/legal/tokushoho', '/legal/privacy', '/legal/terms',
+  // /juken（中学受験）と /kouko（高校受験）はホームから意図的にリンクしていない
+  // 未公開画面なので、到達不能であることが正しい。ここでは踏まない。
   '/this-route-does-not-exist',   // 404フォールバックが出るか
 ];
 
@@ -62,7 +64,7 @@ const ROUTES = [
     if (bad.length) { console.log('  [NG] ' + r + ' : ' + bad[0]); ng++; }
     else if (isEmpty) { console.log('  [NG] ' + r + ' : 画面が空（' + text.length + '文字）'); ng++; }
     else if (isBuilding) { console.log('  [NG] ' + r + ' : 「準備中／作成中」が表示されている'); ng++; }
-    else console.log('  [ok] ' + r.padEnd(34) + text.split('\n')[1] ? '' : '');
+    else console.log('  [ok] ' + r.padEnd(34) + ' ' + text.split('\n').filter(l => l.trim())[1]?.slice(0, 30));
   }
 
   await browser.close();
