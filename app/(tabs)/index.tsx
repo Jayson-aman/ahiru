@@ -246,6 +246,18 @@ export default function HomeScreen() {
         {/* 資格試験：電気・理工系 */}
         <Text style={[styles.sectionLabel, { marginTop: 24 }]}>⚡ 電気・理工系</Text>
 
+        <TouchableOpacity style={styles.card} onPress={() => router.push('/denki2' as any)} activeOpacity={0.85}>
+          <LinearGradient colors={['#E65100', '#9E3800']} style={styles.cardGradient}>
+            <Text style={styles.cardEmoji}>⚡</Text>
+            <View style={styles.cardBody}>
+              <Text style={styles.cardTitle}>第二種電気工事士</Text>
+              <Text style={styles.cardSubtitle}>基礎理論・配線設計・機器材料・法令複線図</Text>
+              <Text style={styles.cardMeta}>国家資格 ／ テキスト・科目別問題・学科模試・複線図の描き方</Text>
+            </View>
+            <Text style={styles.cardArrow}>›</Text>
+          </LinearGradient>
+        </TouchableOpacity>
+
         <TouchableOpacity style={styles.card} onPress={() => router.push('/denken3')} activeOpacity={0.85}>
           <LinearGradient colors={['#E65100', '#BF360C']} style={styles.cardGradient}>
             <Text style={styles.cardEmoji}>⚡</Text>

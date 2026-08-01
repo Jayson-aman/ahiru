@@ -91,6 +91,12 @@ export default function RootLayout() {
         <Stack.Screen name="nikkyu/seizu" options={{ headerShown: false, presentation: 'card' }} />
         <Stack.Screen name="nikkyu/text/index" options={{ headerShown: false, presentation: 'card' }} />
         <Stack.Screen name="nikkyu/text/[subject]" options={{ headerShown: false, presentation: 'card' }} />
+        {/* 第二種電気工事士 */}
+        <Stack.Screen name="denki2/index" options={{ headerShown: false, presentation: 'card' }} />
+        <Stack.Screen name="denki2/[subject]" options={{ headerShown: false, presentation: 'card' }} />
+        <Stack.Screen name="denki2/mogi" options={{ headerShown: false, presentation: 'card' }} />
+        <Stack.Screen name="denki2/text/index" options={{ headerShown: false, presentation: 'card' }} />
+        <Stack.Screen name="denki2/text/[subject]" options={{ headerShown: false, presentation: 'card' }} />
         {/* 電気・理工系 */}
         <Stack.Screen name="denken3/index" options={{ headerShown: false, presentation: 'card' }} />
         <Stack.Screen name="denken3/[subject]" options={{ headerShown: false, presentation: 'card' }} />
