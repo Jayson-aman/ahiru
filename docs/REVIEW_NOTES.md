@@ -184,6 +184,25 @@ electrical knowledge, equipment structure and function, technical standards,
 and the practical drawing/identification section, together with a mock exam.
 ```
 
+### 危険物取扱者 乙種第4類（`pro_kikenbutsu`）
+
+- 商品ID：`qualiz_pro_kikenbutsu_monthly` / `_yearly`
+- 価格：月額 ¥1,800 ／ 年額 ¥18,000
+- 内容：法令・物理化学・性質と消火の全3科目（600問）＋ 模擬試験
+  ＋ 要点テキスト300セクション（65.4万字）
+
+```
+Unlocks the full question bank (600 questions) for the Japanese Hazardous
+Materials Engineer certification, Class B Type 4 (危険物取扱者 乙種第4類),
+which authorises the handling of flammable liquids such as gasoline, kerosene
+and diesel. Covers all three examination subjects: fire service law on
+hazardous materials, basic physics and chemistry including combustion and
+extinguishing theory, and the properties, fire prevention and extinguishing
+methods for Class 4 substances. Also unlocks a mock exam reproducing the real
+35-question format and a study text of 300 sections with diagrams and
+comparison tables.
+```
+
 ### ~~中学受験対策（`pro_juken`）~~ ※現在は提供なし
 
 > **審査提出時はこの節を含めないこと。** 受験対策（中学受験）はホーム画面から
