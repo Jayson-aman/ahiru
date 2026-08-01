@@ -118,6 +118,7 @@ App Store Connect → 「契約 / 税金 / 口座情報」→ **Paid Application
 | Pro 給水装置工事主任技術者 | `qualiz_pro_kyusui_monthly` / `_yearly` | ¥1,800 / ¥18,000 |
 | Pro 消防設備士甲種 | `qualiz_pro_shobo_monthly` / `_yearly` | ¥1,800 / ¥18,000 |
 | Pro 危険物取扱者乙4 | `qualiz_pro_kikenbutsu_monthly` / `_yearly` | ¥1,800 / ¥18,000 |
+| Pro コンクリート技士・診断士 | `qualiz_pro_concrete_monthly` / `_yearly` | ¥1,800 / ¥18,000 |
 | Pro 英検 | `qualiz_pro_eiken_monthly` / `_yearly` | ¥800 / ¥8,000 |
 | ~~Pro 受験対策~~ | ~~`qualiz_pro_juken_monthly` / `_yearly`~~ | **現在は提供なし** |
 
@@ -166,7 +167,7 @@ RevenueCat は月間収益 $2,500 まで無料です。
    pro_takkei, pro_fp, pro_mansion, pro_kenchiku, pro_denken3,
    pro_kisho, pro_juken, pro_eiken, pro_sekokan,
    pro_kankoji, pro_denkisekou, pro_kikaisekou, pro_dobokusekou,
-   pro_cost, pro_kyusui, pro_shobo, pro_kikenbutsu, max
+   pro_cost, pro_kyusui, pro_shobo, pro_kikenbutsu, pro_concrete, max
    ```
    - 各資格の月額/年額商品 → その資格の `pro_◯◯` だけに紐付け
    - `qualiz_max_*` → **`max` だけに紐付け**（`services/subscription.ts`の`hasCertAccess`が

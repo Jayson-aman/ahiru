@@ -203,6 +203,24 @@ methods for Class 4 substances. Also unlocks a mock exam reproducing the real
 comparison tables.
 ```
 
+### コンクリート技士・診断士（`pro_concrete`）
+
+- 商品ID：`qualiz_pro_concrete_monthly` / `_yearly`
+- 価格：月額 ¥1,800 ／ 年額 ¥18,000
+- 内容：材料・配合・製造・施工・各種・劣化診断の全6科目（600問）＋ 模擬試験
+  ＋ 要点テキスト300セクション（69.2万字）
+
+```
+Unlocks the full question bank (600 questions) for the Japanese Concrete
+Engineer and Concrete Diagnosis Engineer certifications (コンクリート技士・
+コンクリート診断士), administered by the Japan Concrete Institute. Covers
+concrete materials, mix design and properties, manufacturing and quality
+control, construction practice, special concretes, and deterioration
+diagnosis, repair and strengthening. Also unlocks a 40-question mock exam and
+a study text of 300 sections with diagrams, JIS reference values and worked
+calculation examples.
+```
+
 ### ~~中学受験対策（`pro_juken`）~~ ※現在は提供なし
 
 > **審査提出時はこの節を含めないこと。** 受験対策（中学受験）はホーム画面から
