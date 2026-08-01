@@ -24,7 +24,8 @@ export const tsushinKogakuSetsubi: TsushinQuestion[] = [
 【図解】接続方法と合成のしかた
 ｜接続｜計算方法｜値の傾向｜
 ｜直列｜単純に加算｜必ず大きくなる｜
-｜並列｜和分の積｜最小値より小さい｜`,
+｜並列｜和分の積｜最小値より小さい｜
+`,
     difficulty: 'basic',
   },
   {
@@ -50,7 +51,8 @@ export const tsushinKogakuSetsubi: TsushinQuestion[] = [
 ｜求める量｜式｜本問の値｜
 ｜電流I｜V÷R｜100÷25＝4A｜
 ｜電圧V｜I×R｜4×25＝100V｜
-｜抵抗R｜V÷I｜100÷4＝25Ω｜`,
+｜抵抗R｜V÷I｜100÷4＝25Ω｜
+`,
     difficulty: 'basic',
   },
   {
@@ -77,7 +79,8 @@ export const tsushinKogakuSetsubi: TsushinQuestion[] = [
 ｜与えられた量｜使う式｜本問での値｜
 ｜VとI｜P＝V×I｜100×2＝200W｜
 ｜VとR｜P＝V×V÷R｜10000÷50＝200W｜
-｜IとR｜P＝I×I×R｜4×50＝200W｜`,
+｜IとR｜P＝I×I×R｜4×50＝200W｜
+`,
     difficulty: 'basic',
   },
   {
@@ -103,7 +106,8 @@ export const tsushinKogakuSetsubi: TsushinQuestion[] = [
 ｜抵抗｜比率｜分担電圧｜
 ｜R1(2kΩ)｜1/3｜4V｜
 ｜R2(4kΩ)｜2/3｜8V｜
-｜合計｜1｜12V｜`,
+｜合計｜1｜12V｜
+`,
     difficulty: 'standard',
   },
   {
@@ -207,7 +211,8 @@ export const tsushinKogakuSetsubi: TsushinQuestion[] = [
 ｜要素｜変化｜抵抗への影響｜
 ｜長さL｜2倍｜2倍(比例)｜
 ｜断面積S｜1/2｜2倍(反比例)｜
-｜抵抗率ρ｜材質で決まる｜比例｜`,
+｜抵抗率ρ｜材質で決まる｜比例｜
+`,
     difficulty: 'standard',
   },
   {
@@ -234,7 +239,8 @@ export const tsushinKogakuSetsubi: TsushinQuestion[] = [
 ｜場所｜抵抗｜消費電力｜
 ｜負荷側｜2Ω｜18W｜
 ｜電源内部｜2Ω｜18W｜
-｜合計｜4Ω｜36W(効率50%)｜`,
+｜合計｜4Ω｜36W(効率50%)｜
+`,
     difficulty: 'advanced',
   },
   {
@@ -259,7 +265,8 @@ export const tsushinKogakuSetsubi: TsushinQuestion[] = [
 【図解】抵抗とコンデンサの合成規則
 ｜接続｜抵抗｜コンデンサ｜
 ｜直列｜単純加算｜和分の積｜
-｜並列｜和分の積｜単純加算｜`,
+｜並列｜和分の積｜単純加算｜
+`,
     difficulty: 'advanced',
   },
   {
@@ -285,7 +292,8 @@ export const tsushinKogakuSetsubi: TsushinQuestion[] = [
 ｜値の種類｜最大値との関係｜本問の値｜
 ｜最大値｜基準｜141V｜
 ｜実効値｜最大値÷√2｜100V｜
-｜平均値｜最大値×2÷π｜約90V｜`,
+｜平均値｜最大値×2÷π｜約90V｜
+`,
     difficulty: 'basic',
   },
   {
@@ -312,7 +320,8 @@ export const tsushinKogakuSetsubi: TsushinQuestion[] = [
 ｜周期T｜周波数f｜例｜
 ｜20ms｜50Hz｜商用電源(東日本)｜
 ｜1ms｜1kHz｜可聴音｜
-｜1μs｜1MHz｜中波ラジオ帯｜`,
+｜1μs｜1MHz｜中波ラジオ帯｜
+`,
     difficulty: 'basic',
   },
   {
@@ -390,7 +399,8 @@ export const tsushinKogakuSetsubi: TsushinQuestion[] = [
 ｜R｜X｜Z｜
 ｜3｜4｜5｜
 ｜30｜40｜50｜
-｜60｜80｜100｜`,
+｜60｜80｜100｜
+`,
     difficulty: 'standard',
   },
   {
@@ -417,7 +427,8 @@ export const tsushinKogakuSetsubi: TsushinQuestion[] = [
 ｜量｜対応する成分｜本問の比率｜
 ｜有効電力｜R成分｜0.8｜
 ｜無効電力｜X成分｜0.6｜
-｜皮相電力｜Z(斜辺)｜1.0｜`,
+｜皮相電力｜Z(斜辺)｜1.0｜
+`,
     difficulty: 'standard',
   },
   {
@@ -470,7 +481,8 @@ export const tsushinKogakuSetsubi: TsushinQuestion[] = [
 ｜Lの変化｜Cの変化｜f0の変化｜
 ｜4倍｜そのまま｜1/2倍｜
 ｜そのまま｜4倍｜1/2倍｜
-｜4倍｜4倍｜1/4倍｜`,
+｜4倍｜4倍｜1/4倍｜
+`,
     difficulty: 'standard',
   },
   {
@@ -523,7 +535,8 @@ export const tsushinKogakuSetsubi: TsushinQuestion[] = [
 ｜記号｜読み｜大きさ｜
 ｜μ｜マイクロ｜10のマイナス6乗｜
 ｜n｜ナノ｜10のマイナス9乗｜
-｜p｜ピコ｜10のマイナス12乗｜`,
+｜p｜ピコ｜10のマイナス12乗｜
+`,
     difficulty: 'advanced',
   },
   {
@@ -549,7 +562,8 @@ export const tsushinKogakuSetsubi: TsushinQuestion[] = [
 ｜量｜巻数との関係｜20対1のとき｜
 ｜電圧｜巻数に比例｜1/20に降圧｜
 ｜電流｜巻数に反比例｜20倍に増加｜
-｜電力｜不変(理想)｜一次＝二次｜`,
+｜電力｜不変(理想)｜一次＝二次｜
+`,
     difficulty: 'basic',
   },
   {
@@ -600,7 +614,8 @@ export const tsushinKogakuSetsubi: TsushinQuestion[] = [
 ｜部位｜工夫｜目的｜
 ｜鉄心構造｜成層鉄心｜渦電流損の低減｜
 ｜鉄心材料｜けい素鋼板｜ヒステリシス損の低減｜
-｜巻線間｜絶縁｜一次二次の電気的分離｜`,
+｜巻線間｜絶縁｜一次二次の電気的分離｜
+`,
     difficulty: 'basic',
   },
   {
@@ -626,7 +641,8 @@ export const tsushinKogakuSetsubi: TsushinQuestion[] = [
 ｜量｜変換｜n＝10の例｜
 ｜電圧｜n倍｜10倍｜
 ｜電流｜1/n倍｜1/10倍｜
-｜インピーダンス｜nの2乗倍｜100倍｜`,
+｜インピーダンス｜nの2乗倍｜100倍｜
+`,
     difficulty: 'standard',
   },
   {
@@ -652,7 +668,8 @@ export const tsushinKogakuSetsubi: TsushinQuestion[] = [
 【図解】変圧器の損失の分類
 ｜損失｜別名｜性質｜
 ｜鉄損｜無負荷損｜負荷によらずほぼ一定｜
-｜銅損｜負荷損｜負荷電流の2乗に比例｜`,
+｜銅損｜負荷損｜負荷電流の2乗に比例｜
+`,
     difficulty: 'standard',
   },
   {
@@ -857,7 +874,8 @@ export const tsushinKogakuSetsubi: TsushinQuestion[] = [
 ｜2倍｜3dB｜半分は−3dB｜
 ｜10倍｜10dB｜1/10は−10dB｜
 ｜100倍｜20dB｜10の2乗｜
-｜1000倍｜30dB｜10の3乗｜`,
+｜1000倍｜30dB｜10の3乗｜
+`,
     difficulty: 'basic',
   },
   {
@@ -883,7 +901,8 @@ export const tsushinKogakuSetsubi: TsushinQuestion[] = [
 ｜電圧比｜dB値｜対応する電力比｜
 ｜2倍｜6dB｜4倍｜
 ｜10倍｜20dB｜100倍｜
-｜100倍｜40dB｜10000倍｜`,
+｜100倍｜40dB｜10000倍｜
+`,
     difficulty: 'standard',
   },
   {
@@ -909,7 +928,8 @@ export const tsushinKogakuSetsubi: TsushinQuestion[] = [
 ｜区間｜利得/損失｜累積レベル｜
 ｜増幅器1｜＋30dB｜＋30dB｜
 ｜ケーブル｜−6dB｜＋24dB｜
-｜増幅器2｜＋10dB｜＋34dB｜`,
+｜増幅器2｜＋10dB｜＋34dB｜
+`,
     difficulty: 'standard',
   },
   {
@@ -936,7 +956,8 @@ export const tsushinKogakuSetsubi: TsushinQuestion[] = [
 ｜0dBm｜1mW｜基準｜
 ｜20dBm｜100mW｜本問｜
 ｜30dBm｜1W｜1000倍｜
-｜−30dBm｜1μW｜1/1000｜`,
+｜−30dBm｜1μW｜1/1000｜
+`,
     difficulty: 'standard',
   },
   {
@@ -963,7 +984,8 @@ export const tsushinKogakuSetsubi: TsushinQuestion[] = [
 ｜dB値｜分解｜倍率｜
 ｜13dB｜10＋3｜20倍｜
 ｜16dB｜10＋3＋3｜40倍｜
-｜26dB｜20＋3＋3｜400倍｜`,
+｜26dB｜20＋3＋3｜400倍｜
+`,
     difficulty: 'standard',
   },
   {
@@ -1015,7 +1037,8 @@ export const tsushinKogakuSetsubi: TsushinQuestion[] = [
 【図解】反転と非反転の式の対比
 ｜回路｜増幅度｜位相｜
 ｜反転増幅｜Rf÷Rin｜逆相｜
-｜非反転増幅｜1＋Rf÷Rs｜同相｜`,
+｜非反転増幅｜1＋Rf÷Rs｜同相｜
+`,
     difficulty: 'advanced',
   },
   {
@@ -1091,7 +1114,8 @@ export const tsushinKogakuSetsubi: TsushinQuestion[] = [
 ｜ステップ｜内容｜
 ｜1｜入力端子を同電位とおく｜
 ｜2｜入力端子に電流が流れないとする｜
-｜3｜キルヒホッフ則で利得を導出｜`,
+｜3｜キルヒホッフ則で利得を導出｜
+`,
     difficulty: 'basic',
   },
   {
@@ -1221,7 +1245,8 @@ export const tsushinKogakuSetsubi: TsushinQuestion[] = [
 ｜公式｜名称｜
 ｜A＋A・B＝A｜吸収則｜
 ｜A＋NOT(A)・B＝A＋B｜簡単化公式｜
-｜A・A＝A、A＋A＝A｜同一則｜`,
+｜A・A＝A、A＋A＝A｜同一則｜
+`,
     difficulty: 'standard',
   },
   {
@@ -1300,7 +1325,8 @@ export const tsushinKogakuSetsubi: TsushinQuestion[] = [
 ｜法則｜内容｜
 ｜分配則｜共通因数をくくり出す｜
 ｜相補則｜X＋NOT(X)＝1｜
-｜単位元｜A・1＝A｜`,
+｜単位元｜A・1＝A｜
+`,
     difficulty: 'advanced',
   },
   {
@@ -1328,7 +1354,8 @@ export const tsushinKogakuSetsubi: TsushinQuestion[] = [
 ｜1｜16｜16｜
 ｜0｜8｜0｜
 ｜1｜4｜4｜
-｜1と0｜2と1｜2と0｜`,
+｜1と0｜2と1｜2と0｜
+`,
     difficulty: 'basic',
   },
   {
@@ -1355,7 +1382,8 @@ export const tsushinKogakuSetsubi: TsushinQuestion[] = [
 ｜10進｜16進｜10進｜16進｜
 ｜10｜A｜13｜D｜
 ｜11｜B｜14｜E｜
-｜12｜C｜15｜F｜`,
+｜12｜C｜15｜F｜
+`,
     difficulty: 'basic',
   },
   {
@@ -1382,7 +1410,8 @@ export const tsushinKogakuSetsubi: TsushinQuestion[] = [
 ｜16進｜2進｜10進｜
 ｜2｜0010｜2｜
 ｜F｜1111｜15｜
-｜2F｜00101111｜47｜`,
+｜2F｜00101111｜47｜
+`,
     difficulty: 'basic',
   },
   {
@@ -1409,7 +1438,8 @@ export const tsushinKogakuSetsubi: TsushinQuestion[] = [
 ｜計算｜結果｜桁上げ｜
 ｜0＋0｜0｜なし｜
 ｜0＋1｜1｜なし｜
-｜1＋1｜0｜あり(上位へ1)｜`,
+｜1＋1｜0｜あり(上位へ1)｜
+`,
     difficulty: 'standard',
   },
   {
@@ -1437,7 +1467,8 @@ export const tsushinKogakuSetsubi: TsushinQuestion[] = [
 ｜4｜16｜15｜
 ｜8｜256｜255｜
 ｜10｜1024｜1023｜
-｜16｜65536｜65535｜`,
+｜16｜65536｜65535｜
+`,
     difficulty: 'standard',
   },
   {
@@ -1463,7 +1494,8 @@ export const tsushinKogakuSetsubi: TsushinQuestion[] = [
 【図解】変換の確認
 ｜2進4ビット｜10進｜16進｜
 ｜1101｜13｜D｜
-｜1011｜11｜B｜`,
+｜1011｜11｜B｜
+`,
     difficulty: 'standard',
   },
   {
@@ -1515,7 +1547,8 @@ export const tsushinKogakuSetsubi: TsushinQuestion[] = [
 ｜ビット数｜SN比の目安｜
 ｜8ビット｜約50dB｜
 ｜10ビット｜約62dB｜
-｜16ビット｜約98dB｜`,
+｜16ビット｜約98dB｜
+`,
     difficulty: 'standard',
   },
   {
@@ -1542,7 +1575,8 @@ export const tsushinKogakuSetsubi: TsushinQuestion[] = [
 ｜ビット数｜レベル数｜分解能｜
 ｜8｜256｜約19.5mV｜
 ｜10｜1024｜約4.9mV｜
-｜12｜4096｜約1.2mV｜`,
+｜12｜4096｜約1.2mV｜
+`,
     difficulty: 'advanced',
   },
   {
@@ -1593,7 +1627,8 @@ export const tsushinKogakuSetsubi: TsushinQuestion[] = [
 【図解】具体例
 ｜信号｜最高周波数｜標本化周波数｜
 ｜電話音声｜約4kHz｜8kHz｜
-｜音楽CD｜約20kHz｜44.1kHz｜`,
+｜音楽CD｜約20kHz｜44.1kHz｜
+`,
     difficulty: 'basic',
   },
   {
@@ -1645,7 +1680,8 @@ export const tsushinKogakuSetsubi: TsushinQuestion[] = [
 【図解】雑音の区別
 ｜雑音｜発生原因｜対策｜
 ｜折返し雑音｜帯域制限不足の標本化｜事前のLPF｜
-｜量子化雑音｜振幅の丸め誤差｜ビット数増加｜`,
+｜量子化雑音｜振幅の丸め誤差｜ビット数増加｜
+`,
     difficulty: 'basic',
   },
   {
@@ -1671,7 +1707,8 @@ export const tsushinKogakuSetsubi: TsushinQuestion[] = [
 ｜用途｜最高周波数｜標本化周波数｜
 ｜電話音声｜約4kHz｜8kHz｜
 ｜音楽CD｜約20kHz｜44.1kHz｜
-｜ハイレゾ音源｜より高域｜96kHzなど｜`,
+｜ハイレゾ音源｜より高域｜96kHzなど｜
+`,
     difficulty: 'standard',
   },
   {
@@ -1697,7 +1734,8 @@ export const tsushinKogakuSetsubi: TsushinQuestion[] = [
 ｜項目｜値｜根拠｜
 ｜標本化周波数｜8kHz｜音声4kHzの2倍｜
 ｜量子化ビット数｜8ビット｜約50dBのSN比｜
-｜伝送速度｜64kbit/s｜8k×8｜`,
+｜伝送速度｜64kbit/s｜8k×8｜
+`,
     difficulty: 'standard',
   },
   {
@@ -1748,7 +1786,8 @@ export const tsushinKogakuSetsubi: TsushinQuestion[] = [
 【図解】1次群多重の比較
 ｜方式｜音声チャネル数｜総速度｜
 ｜北米・日本系｜24｜1544kbit/s｜
-｜欧州系(E1)｜30｜2048kbit/s｜`,
+｜欧州系(E1)｜30｜2048kbit/s｜
+`,
     difficulty: 'standard',
   },
   {
@@ -1799,7 +1838,8 @@ export const tsushinKogakuSetsubi: TsushinQuestion[] = [
 【図解】圧縮則の種類
 ｜名称｜採用地域｜
 ｜μ則(μ-law)｜日本・北米｜
-｜A則(A-law)｜欧州など｜`,
+｜A則(A-law)｜欧州など｜
+`,
     difficulty: 'advanced',
   },
   {
@@ -1824,7 +1864,8 @@ export const tsushinKogakuSetsubi: TsushinQuestion[] = [
 ｜項目｜E1(欧州系)｜T1/J1(北米日本系)｜
 ｜音声チャネル｜30｜24｜
 ｜総速度｜2048kbit/s｜1544kbit/s｜
-｜制御の方法｜専用スロット2個｜フレームビット付加｜`,
+｜制御の方法｜専用スロット2個｜フレームビット付加｜
+`,
     difficulty: 'advanced',
   },
   {
@@ -1903,7 +1944,8 @@ export const tsushinKogakuSetsubi: TsushinQuestion[] = [
 ｜変調度｜状態｜
 ｜0〜1未満｜正常な変調｜
 ｜1(100%)｜最大の正常変調｜
-｜1超｜過変調(ひずみ発生)｜`,
+｜1超｜過変調(ひずみ発生)｜
+`,
     difficulty: 'basic',
   },
   {
@@ -1981,7 +2023,8 @@ export const tsushinKogakuSetsubi: TsushinQuestion[] = [
 ｜記号｜意味｜本問の値｜
 ｜Δf｜最大周波数偏移｜75kHz｜
 ｜fm｜信号波の最高周波数｜15kHz｜
-｜B｜占有周波数帯域幅｜180kHz｜`,
+｜B｜占有周波数帯域幅｜180kHz｜
+`,
     difficulty: 'standard',
   },
   {
@@ -2035,7 +2078,8 @@ export const tsushinKogakuSetsubi: TsushinQuestion[] = [
 ｜QPSK｜4｜2｜
 ｜16QAM｜16｜4｜
 ｜64QAM｜64｜6｜
-｜256QAM｜256｜8｜`,
+｜256QAM｜256｜8｜
+`,
     difficulty: 'standard',
   },
   {
@@ -2062,7 +2106,8 @@ export const tsushinKogakuSetsubi: TsushinQuestion[] = [
 ｜変調方式｜ビット/シンボル｜必要シンボルレート｜
 ｜QPSK｜2｜15Msymbol/s｜
 ｜16QAM｜4｜7.5Msymbol/s｜
-｜64QAM｜6｜5Msymbol/s｜`,
+｜64QAM｜6｜5Msymbol/s｜
+`,
     difficulty: 'advanced',
   },
   {
@@ -2141,7 +2186,8 @@ export const tsushinKogakuSetsubi: TsushinQuestion[] = [
 【図解】WDMの種類
 ｜種類｜波長間隔｜主な用途｜
 ｜DWDM｜狭い(高密度)｜長距離基幹網｜
-｜CWDM｜広い(低コスト)｜メトロ・アクセス系｜`,
+｜CWDM｜広い(低コスト)｜メトロ・アクセス系｜
+`,
     difficulty: 'basic',
   },
   {
@@ -2167,7 +2213,8 @@ export const tsushinKogakuSetsubi: TsushinQuestion[] = [
 ｜項目｜FDM｜TDM｜
 ｜分割軸｜周波数｜時間｜
 ｜伝送タイミング｜同時｜順番(スロット)｜
-｜適した信号｜アナログ｜デジタル｜`,
+｜適した信号｜アナログ｜デジタル｜
+`,
     difficulty: 'basic',
   },
   {
@@ -2193,7 +2240,8 @@ export const tsushinKogakuSetsubi: TsushinQuestion[] = [
 ｜特徴｜理由｜
 ｜マルチパスに強い｜シンボル時間が長い＋GI｜
 ｜周波数利用効率が高い｜直交サブキャリアを密に配置｜
-｜採用例｜地デジ・無線LAN・LTE｜`,
+｜採用例｜地デジ・無線LAN・LTE｜
+`,
     difficulty: 'standard',
   },
   {
@@ -2220,7 +2268,8 @@ export const tsushinKogakuSetsubi: TsushinQuestion[] = [
 ｜電力比｜dB｜
 ｜10倍｜10dB｜
 ｜100倍｜20dB｜
-｜1000倍｜30dB｜`,
+｜1000倍｜30dB｜
+`,
     difficulty: 'standard',
   },
   {
@@ -2320,7 +2369,8 @@ export const tsushinKogakuSetsubi: TsushinQuestion[] = [
 【図解】受信系設計の定石
 ｜位置｜置くべき回路｜理由｜
 ｜初段(アンテナ直下)｜低雑音増幅器｜全体のNFを決める｜
-｜後段｜通常の増幅器｜NFへの影響が小さい｜`,
+｜後段｜通常の増幅器｜NFへの影響が小さい｜
+`,
     difficulty: 'advanced',
   },
   {
@@ -2347,7 +2397,8 @@ export const tsushinKogakuSetsubi: TsushinQuestion[] = [
 ｜要素｜変化｜雑音電力｜
 ｜帯域幅B｜2倍｜2倍(＋3dB)｜
 ｜温度T｜低下｜減少｜
-｜周波数分布｜一様｜白色雑音｜`,
+｜周波数分布｜一様｜白色雑音｜
+`,
     difficulty: 'advanced',
   },
   {
@@ -2373,7 +2424,8 @@ export const tsushinKogakuSetsubi: TsushinQuestion[] = [
 ｜誤りの種類｜検出可否｜
 ｜1ビット誤り｜検出できる｜
 ｜2ビット(偶数個)誤り｜検出できない｜
-｜誤りの訂正｜できない｜`,
+｜誤りの訂正｜できない｜
+`,
     difficulty: 'basic',
   },
   {
@@ -2399,7 +2451,8 @@ export const tsushinKogakuSetsubi: TsushinQuestion[] = [
 ｜項目｜パリティ｜CRC｜
 ｜検査方法｜1の個数の偶奇｜多項式除算の余り｜
 ｜バースト誤り｜弱い｜強い｜
-｜主な用途｜簡易な検査｜LAN・データリンク｜`,
+｜主な用途｜簡易な検査｜LAN・データリンク｜
+`,
     difficulty: 'basic',
   },
   {
@@ -2425,7 +2478,8 @@ export const tsushinKogakuSetsubi: TsushinQuestion[] = [
 ｜方式｜検出｜訂正｜
 ｜パリティ｜1ビット｜不可｜
 ｜CRC｜バースト誤りに強い｜原則不可｜
-｜ハミング符号｜可能｜1ビット訂正可｜`,
+｜ハミング符号｜可能｜1ビット訂正可｜
+`,
     difficulty: 'basic',
   },
   {
@@ -2477,7 +2531,8 @@ export const tsushinKogakuSetsubi: TsushinQuestion[] = [
 ｜BER｜意味合い｜
 ｜10のマイナス3乗｜1000ビットに1誤り(劣悪)｜
 ｜10のマイナス6乗｜100万ビットに1誤り｜
-｜10のマイナス9乗｜光伝送の一般的な目標水準｜`,
+｜10のマイナス9乗｜光伝送の一般的な目標水準｜
+`,
     difficulty: 'standard',
   },
   {
@@ -2504,7 +2559,8 @@ export const tsushinKogakuSetsubi: TsushinQuestion[] = [
 ｜量｜慣用単位｜注意点｜
 ｜ファイル容量｜バイト(B)｜1B＝8bit｜
 ｜回線速度｜bit/s｜ビット単位｜
-｜換算｜×8｜忘れると8倍の誤差｜`,
+｜換算｜×8｜忘れると8倍の誤差｜
+`,
     difficulty: 'standard',
   },
   {
@@ -2531,7 +2587,8 @@ export const tsushinKogakuSetsubi: TsushinQuestion[] = [
 ｜条件｜式｜本問の値｜
 ｜シンボルレート上限｜2W｜8ksymbol/s｜
 ｜2値伝送｜2W×1｜8kbit/s｜
-｜多値伝送(M値)｜2W×log2(M)｜値数に応じ増加｜`,
+｜多値伝送(M値)｜2W×log2(M)｜値数に応じ増加｜
+`,
     difficulty: 'standard',
   },
   {
@@ -2558,7 +2615,8 @@ export const tsushinKogakuSetsubi: TsushinQuestion[] = [
 ｜多値数M｜ビット/シンボル｜最大速度｜
 ｜2｜1｜8kbit/s｜
 ｜4｜2｜16kbit/s｜
-｜16｜4｜32kbit/s｜`,
+｜16｜4｜32kbit/s｜
+`,
     difficulty: 'standard',
   },
   {
@@ -2610,7 +2668,8 @@ export const tsushinKogakuSetsubi: TsushinQuestion[] = [
 【図解】容量を増やす2つの方法
 ｜方法｜式の中の対応｜
 ｜帯域幅を広げる｜Bを大きくする(比例)｜
-｜SN比を改善する｜対数項を大きくする(緩やか)｜`,
+｜SN比を改善する｜対数項を大きくする(緩やか)｜
+`,
     difficulty: 'advanced',
   },
   {
@@ -2661,7 +2720,8 @@ export const tsushinKogakuSetsubi: TsushinQuestion[] = [
 ｜要素｜働き｜
 ｜撚り(ツイスト)｜誘導起電力の相殺｜
 ｜平衡伝送｜同相雑音を受信側で相殺｜
-｜対ごとの撚りピッチ差｜対間漏話の低減｜`,
+｜対ごとの撚りピッチ差｜対間漏話の低減｜
+`,
     difficulty: 'basic',
   },
   {
@@ -2686,7 +2746,8 @@ export const tsushinKogakuSetsubi: TsushinQuestion[] = [
 【図解】紛らわしい用語の整理
 ｜用語｜対象｜大きいほど｜
 ｜伝送損失｜自回線の信号｜悪い(信号が減る)｜
-｜漏話減衰量｜他回線への漏れ｜良い(漏れが減る)｜`,
+｜漏話減衰量｜他回線への漏れ｜良い(漏れが減る)｜
+`,
     difficulty: 'basic',
   },
   {
@@ -2763,7 +2824,8 @@ export const tsushinKogakuSetsubi: TsushinQuestion[] = [
 ｜項目｜同軸｜平衡対｜
 ｜伝送形式｜不平衡｜平衡｜
 ｜遮へい｜外部導体あり｜なし(UTP)｜
-｜使用周波数｜高い周波数まで可｜相対的に低い｜`,
+｜使用周波数｜高い周波数まで可｜相対的に低い｜
+`,
     difficulty: 'standard',
   },
   {
@@ -2815,7 +2877,8 @@ export const tsushinKogakuSetsubi: TsushinQuestion[] = [
 ｜3dB｜約1/2｜
 ｜10dB｜1/10｜
 ｜20dB｜1/100｜
-｜30dB｜1/1000｜`,
+｜30dB｜1/1000｜
+`,
     difficulty: 'standard',
   },
   {
@@ -2842,7 +2905,8 @@ export const tsushinKogakuSetsubi: TsushinQuestion[] = [
 ｜負荷の状態｜反射係数の大きさ｜
 ｜整合(ZL＝Z0)｜0(無反射)｜
 ｜開放・短絡｜1(全反射)｜
-｜本問(75Ωを50Ω系へ)｜0.2｜`,
+｜本問(75Ωを50Ω系へ)｜0.2｜
+`,
     difficulty: 'advanced',
   },
   {
@@ -2867,7 +2931,8 @@ export const tsushinKogakuSetsubi: TsushinQuestion[] = [
 ｜状態｜反射係数｜VSWR｜
 ｜完全整合｜0｜1｜
 ｜部分反射｜0〜1の間｜1より大｜
-｜全反射｜1｜無限大｜`,
+｜全反射｜1｜無限大｜
+`,
     difficulty: 'advanced',
   },
   {
@@ -2944,7 +3009,8 @@ export const tsushinKogakuSetsubi: TsushinQuestion[] = [
 ｜波長帯｜特徴｜
 ｜0.85μm｜初期・短距離用｜
 ｜1.31μm｜零分散波長｜
-｜1.55μm｜損失最小(約0.2dB/km)｜`,
+｜1.55μm｜損失最小(約0.2dB/km)｜
+`,
     difficulty: 'basic',
   },
   {
@@ -2996,7 +3062,8 @@ export const tsushinKogakuSetsubi: TsushinQuestion[] = [
 ｜項目｜内容｜
 ｜発生場所｜マルチモードファイバ｜
 ｜影響｜パルス広がり→符号間干渉｜
-｜結果｜速度×距離の積が制限される｜`,
+｜結果｜速度×距離の積が制限される｜
+`,
     difficulty: 'standard',
   },
   {
@@ -3072,7 +3139,8 @@ export const tsushinKogakuSetsubi: TsushinQuestion[] = [
 ｜項目｜SMF｜MMF｜
 ｜モード数｜1｜多数｜
 ｜モード分散｜なし｜あり｜
-｜伝送帯域｜非常に広い｜制限される｜`,
+｜伝送帯域｜非常に広い｜制限される｜
+`,
     difficulty: 'standard',
   },
   {
@@ -3227,7 +3295,8 @@ export const tsushinKogakuSetsubi: TsushinQuestion[] = [
 ｜項目｜内容｜
 ｜増幅帯域｜1.55μm帯｜
 ｜方式｜光のまま直接増幅｜
-｜WDM対応｜多波長一括増幅が可能｜`,
+｜WDM対応｜多波長一括増幅が可能｜
+`,
     difficulty: 'standard',
   },
   {
@@ -3255,7 +3324,8 @@ export const tsushinKogakuSetsubi: TsushinQuestion[] = [
 ｜許容損失(送信−受信感度)｜25dB｜
 ｜ファイバ損失｜16dB｜
 ｜コネクタ＋融着｜3dB｜
-｜マージン｜6dB｜`,
+｜マージン｜6dB｜
+`,
     difficulty: 'standard',
   },
   {
@@ -3282,7 +3352,8 @@ export const tsushinKogakuSetsubi: TsushinQuestion[] = [
 ｜項目｜配分｜
 ｜固定損失(コネクタ等)｜2dB｜
 ｜設計マージン｜3dB｜
-｜ファイバ損失に使える分｜20dB｜`,
+｜ファイバ損失に使える分｜20dB｜
+`,
     difficulty: 'standard',
   },
   {
@@ -3310,7 +3381,8 @@ export const tsushinKogakuSetsubi: TsushinQuestion[] = [
 ｜2｜約3dB｜
 ｜4｜約6dB｜
 ｜8｜約9dB｜
-｜32｜約15dB｜`,
+｜32｜約15dB｜
+`,
     difficulty: 'standard',
   },
   {
@@ -3336,7 +3408,8 @@ export const tsushinKogakuSetsubi: TsushinQuestion[] = [
 【図解】受信レベルの許容範囲
 ｜限界｜意味｜対応｜
 ｜受信感度(下限)｜これ未満は受信不可｜損失を抑える｜
-｜過大入力(上限)｜これ超は正常動作不可｜減衰器を挿入｜`,
+｜過大入力(上限)｜これ超は正常動作不可｜減衰器を挿入｜
+`,
     difficulty: 'standard',
   },
   {
@@ -3388,7 +3461,8 @@ export const tsushinKogakuSetsubi: TsushinQuestion[] = [
 ｜周波数｜波長｜
 ｜300MHz｜1m｜
 ｜3GHz｜10cm｜
-｜30GHz｜1cm｜`,
+｜30GHz｜1cm｜
+`,
     difficulty: 'advanced',
   },
   {
@@ -3468,7 +3542,8 @@ export const tsushinKogakuSetsubi: TsushinQuestion[] = [
 ｜素子｜給電｜長さ｜役割｜
 ｜反射器｜なし｜長い｜後方への放射を抑える｜
 ｜放射器｜あり｜基準｜電波を放射する｜
-｜導波器｜なし｜短い｜前方へ放射を集める｜`,
+｜導波器｜なし｜短い｜前方へ放射を集める｜
+`,
     difficulty: 'basic',
   },
   {
@@ -3495,7 +3570,8 @@ export const tsushinKogakuSetsubi: TsushinQuestion[] = [
 ｜変更｜面積/波長の変化｜利得変化｜
 ｜直径2倍｜面積4倍｜＋6dB｜
 ｜周波数2倍｜波長1/2｜＋6dB｜
-｜直径2倍かつ周波数2倍｜両方｜＋12dB｜`,
+｜直径2倍かつ周波数2倍｜両方｜＋12dB｜
+`,
     difficulty: 'standard',
   },
   {
@@ -3521,7 +3597,8 @@ export const tsushinKogakuSetsubi: TsushinQuestion[] = [
 ｜アンテナ｜長さ｜本問での値｜
 ｜半波長ダイポール｜λ/2｜1m｜
 ｜1/4波長モノポール｜λ/4｜0.5m｜
-｜1波長ループ(周長)｜λ｜2m｜`,
+｜1波長ループ(周長)｜λ｜2m｜
+`,
     difficulty: 'standard',
   },
   {
@@ -3573,7 +3650,8 @@ export const tsushinKogakuSetsubi: TsushinQuestion[] = [
 ｜確認事項｜内容｜
 ｜見通し｜送受信点間に遮蔽がないこと｜
 ｜クリアランス｜第1ゾーンの6割程度以上を確保｜
-｜対策｜アンテナ高の変更・経路変更｜`,
+｜対策｜アンテナ高の変更・経路変更｜
+`,
     difficulty: 'standard',
   },
   {
@@ -3809,7 +3887,8 @@ export const tsushinKogakuSetsubi: TsushinQuestion[] = [
 ｜/24｜8ビット｜254台｜
 ｜/25｜7ビット｜126台｜
 ｜/26｜6ビット｜62台｜
-｜/27｜5ビット｜30台｜`,
+｜/27｜5ビット｜30台｜
+`,
     difficulty: 'standard',
   },
   {
@@ -3836,7 +3915,8 @@ export const tsushinKogakuSetsubi: TsushinQuestion[] = [
 ｜項目｜値｜
 ｜ネットワークアドレス｜192.168.10.128｜
 ｜ホスト範囲｜129〜190｜
-｜ブロードキャスト｜192.168.10.191｜`,
+｜ブロードキャスト｜192.168.10.191｜
+`,
     difficulty: 'standard',
   },
   {
@@ -3938,7 +4018,8 @@ export const tsushinKogakuSetsubi: TsushinQuestion[] = [
 ｜装置｜設置場所｜役割｜
 ｜OLT｜通信局舎｜局側の終端・帯域制御｜
 ｜光スプリッタ｜局内・架空・ビル内など｜光の分岐｜
-｜ONU｜加入者宅｜宅側の光終端｜`,
+｜ONU｜加入者宅｜宅側の光終端｜
+`,
     difficulty: 'basic',
   },
   {
@@ -3964,7 +4045,8 @@ export const tsushinKogakuSetsubi: TsushinQuestion[] = [
 ｜装置｜性質｜設置場所｜
 ｜OLT｜能動(親局)｜局舎｜
 ｜ONU｜能動(子局)｜加入者宅｜
-｜スプリッタ｜受動｜中間分岐点｜`,
+｜スプリッタ｜受動｜中間分岐点｜
+`,
     difficulty: 'basic',
   },
   {
@@ -4042,7 +4124,8 @@ export const tsushinKogakuSetsubi: TsushinQuestion[] = [
 【図解】上りと下りの方式の対比
 ｜方向｜方式｜
 ｜下り｜同報(全ONUへ)＋LLID選別｜
-｜上り｜TDMA(時分割多元接続)｜`,
+｜上り｜TDMA(時分割多元接続)｜
+`,
     difficulty: 'standard',
   },
   {
@@ -4174,7 +4257,8 @@ export const tsushinKogakuSetsubi: TsushinQuestion[] = [
 ｜スプリッタ(1:32)｜17dB｜
 ｜ファイバ・接続｜6dB｜
 ｜合計｜23dB｜
-｜マージン｜3dB｜`,
+｜マージン｜3dB｜
+`,
     difficulty: 'advanced',
   },
   {
@@ -4201,7 +4285,8 @@ export const tsushinKogakuSetsubi: TsushinQuestion[] = [
 ｜特徴｜効果｜
 ｜テープ心線収納｜多心・高密度化｜
 ｜一括融着対応｜接続工事の効率化｜
-｜テンションメンバ｜張力からファイバを保護｜`,
+｜テンションメンバ｜張力からファイバを保護｜
+`,
     difficulty: 'basic',
   },
   {
@@ -4252,7 +4337,8 @@ export const tsushinKogakuSetsubi: TsushinQuestion[] = [
 ｜場所｜理由｜
 ｜雷多発地域｜誘導雷サージ対策｜
 ｜電力線併架・並行区間｜電磁誘導対策｜
-｜変電所・電気鉄道沿線｜強電界環境対策｜`,
+｜変電所・電気鉄道沿線｜強電界環境対策｜
+`,
     difficulty: 'basic',
   },
   {
@@ -4304,7 +4390,8 @@ export const tsushinKogakuSetsubi: TsushinQuestion[] = [
 ｜項目｜管理内容｜
 ｜けん引張力｜許容張力以下｜
 ｜曲げ半径｜布設時は外径の20倍以上｜
-｜側圧｜金車径の適正化で低減｜`,
+｜側圧｜金車径の適正化で低減｜
+`,
     difficulty: 'standard',
   },
   {
@@ -4331,7 +4418,8 @@ export const tsushinKogakuSetsubi: TsushinQuestion[] = [
 ｜方法｜損失の目安｜着脱｜
 ｜融着接続｜0.1dB以下程度｜不可(永久)｜
 ｜メカニカルスプライス｜0.2dB程度｜原則固定｜
-｜コネクタ接続｜0.5dB程度｜可能｜`,
+｜コネクタ接続｜0.5dB程度｜可能｜
+`,
     difficulty: 'standard',
   },
   {
@@ -4357,7 +4445,8 @@ export const tsushinKogakuSetsubi: TsushinQuestion[] = [
 ｜観点｜メカニカル｜融着｜
 ｜工具・電源｜簡便・電源不要｜接続機・電源必要｜
 ｜損失｜やや大きい｜最小｜
-｜適する場面｜宅内・応急復旧｜幹線の恒久接続｜`,
+｜適する場面｜宅内・応急復旧｜幹線の恒久接続｜
+`,
     difficulty: 'standard',
   },
   {
@@ -4410,7 +4499,8 @@ export const tsushinKogakuSetsubi: TsushinQuestion[] = [
 ｜項目｜注意点｜
 ｜曲げ半径｜許容値以上のループにする｜
 ｜張力｜余長に張力をかけない｜
-｜防水｜クロージャの密閉・防水確認｜`,
+｜防水｜クロージャの密閉・防水確認｜
+`,
     difficulty: 'advanced',
   },
   {
@@ -4463,7 +4553,8 @@ export const tsushinKogakuSetsubi: TsushinQuestion[] = [
 ｜項目｜内容｜
 ｜損失分布測定｜距離ごとの損失状況｜
 ｜接続損失測定｜融着・コネクタの損失｜
-｜障害点探索｜破断位置の特定｜`,
+｜障害点探索｜破断位置の特定｜
+`,
     difficulty: 'basic',
   },
   {
@@ -4567,7 +4658,8 @@ export const tsushinKogakuSetsubi: TsushinQuestion[] = [
 ｜環境｜適するケーブル｜
 ｜一般オフィス｜UTP｜
 ｜工場など雑音環境｜STP(接地必須)｜
-｜EMI規制が厳しい環境｜STP(全体設計)｜`,
+｜EMI規制が厳しい環境｜STP(全体設計)｜
+`,
     difficulty: 'standard',
   },
   {
@@ -4592,7 +4684,8 @@ export const tsushinKogakuSetsubi: TsushinQuestion[] = [
 ｜区間｜最大長｜
 ｜パーマネントリンク｜90m｜
 ｜コード類の合計｜10m｜
-｜チャネル全体｜100m｜`,
+｜チャネル全体｜100m｜
+`,
     difficulty: 'standard',
   },
   {
@@ -4644,7 +4737,8 @@ export const tsushinKogakuSetsubi: TsushinQuestion[] = [
 【図解】用語の整理
 ｜略称｜意味｜例｜
 ｜PSE｜給電側装置｜PoE対応スイッチ｜
-｜PD｜受電側装置｜カメラ・AP・IP電話機｜`,
+｜PD｜受電側装置｜カメラ・AP・IP電話機｜
+`,
     difficulty: 'standard',
   },
   {
@@ -4670,7 +4764,8 @@ export const tsushinKogakuSetsubi: TsushinQuestion[] = [
 ｜規格｜給電側｜受電側保証｜
 ｜802.3af｜15.4W｜12.95W｜
 ｜802.3at｜30W｜25.5W｜
-｜802.3bt(タイプ3)｜60W｜51W｜`,
+｜802.3bt(タイプ3)｜60W｜51W｜
+`,
     difficulty: 'advanced',
   },
   {
@@ -4697,7 +4792,8 @@ export const tsushinKogakuSetsubi: TsushinQuestion[] = [
 ｜要因｜対策｜
 ｜給電電流による発熱｜束ね条数の制限｜
 ｜高温環境｜ルート変更・換気｜
-｜大電力PoE(bt)｜より厳しい管理が必要｜`,
+｜大電力PoE(bt)｜より厳しい管理が必要｜
+`,
     difficulty: 'advanced',
   },
   {
@@ -4723,7 +4819,8 @@ export const tsushinKogakuSetsubi: TsushinQuestion[] = [
 ｜機器｜衝突ドメイン｜ブロードキャストドメイン｜
 ｜リピータハブ｜分割しない｜分割しない｜
 ｜L2スイッチ｜分割する｜分割しない｜
-｜ルータ｜分割する｜分割する｜`,
+｜ルータ｜分割する｜分割する｜
+`,
     difficulty: 'basic',
   },
   {
@@ -4749,7 +4846,8 @@ export const tsushinKogakuSetsubi: TsushinQuestion[] = [
 ｜機能｜内容｜
 ｜経路選択｜経路表に基づく転送｜
 ｜ドメイン分割｜ブロードキャストを止める｜
-｜付加機能｜NAT・フィルタリング等｜`,
+｜付加機能｜NAT・フィルタリング等｜
+`,
     difficulty: 'basic',
   },
   {
@@ -4775,7 +4873,8 @@ export const tsushinKogakuSetsubi: TsushinQuestion[] = [
 ｜項目｜L3スイッチ｜ルータ｜
 ｜処理方式｜ハードウェア中心｜ソフトウェア中心｜
 ｜ポート数｜多い(LAN向け)｜少なめ｜
-｜主な用途｜構内VLAN間中継｜WAN接続・多機能中継｜`,
+｜主な用途｜構内VLAN間中継｜WAN接続・多機能中継｜
+`,
     difficulty: 'basic',
   },
   {
@@ -4826,7 +4925,8 @@ export const tsushinKogakuSetsubi: TsushinQuestion[] = [
 ｜VLAN｜用途｜
 ｜VLAN10｜事務系端末｜
 ｜VLAN20｜監視カメラ系｜
-｜VLAN30｜IP電話系｜`,
+｜VLAN30｜IP電話系｜
+`,
     difficulty: 'standard',
   },
   {
@@ -4851,7 +4951,8 @@ export const tsushinKogakuSetsubi: TsushinQuestion[] = [
 【図解】ポートの種類
 ｜ポート｜タグ｜用途｜
 ｜アクセスポート｜なし｜端末の接続｜
-｜トランクポート｜あり｜スイッチ間の多重伝送｜`,
+｜トランクポート｜あり｜スイッチ間の多重伝送｜
+`,
     difficulty: 'standard',
   },
   {
@@ -4876,7 +4977,8 @@ export const tsushinKogakuSetsubi: TsushinQuestion[] = [
 ｜項目｜ポートVLAN｜タグVLAN｜
 ｜割当て単位｜物理ポート｜フレームのタグ｜
 ｜1リンクのVLAN数｜1つ｜複数｜
-｜主な用途｜端末収容｜スイッチ間トランク｜`,
+｜主な用途｜端末収容｜スイッチ間トランク｜
+`,
     difficulty: 'standard',
   },
   {
@@ -4901,7 +5003,8 @@ export const tsushinKogakuSetsubi: TsushinQuestion[] = [
 ｜ポイント｜内容｜
 ｜IP設計｜VLANごとに別サブネット｜
 ｜中継装置｜ルータまたはL3スイッチ｜
-｜セキュリティ｜中継点でアクセス制御を適用｜`,
+｜セキュリティ｜中継点でアクセス制御を適用｜
+`,
     difficulty: 'standard',
   },
   {
@@ -4928,7 +5031,8 @@ export const tsushinKogakuSetsubi: TsushinQuestion[] = [
 ｜現象｜影響｜
 ｜ブロードキャストストーム｜帯域を埋め尽くす｜
 ｜MACテーブルの不安定化｜転送先が定まらない｜
-｜結果｜ネットワーク全体の停止｜`,
+｜結果｜ネットワーク全体の停止｜
+`,
     difficulty: 'advanced',
   },
   {
@@ -5007,7 +5111,8 @@ export const tsushinKogakuSetsubi: TsushinQuestion[] = [
 ｜規格｜2.4GHz｜5GHz｜
 ｜11n｜対応｜対応｜
 ｜11ac｜非対応｜対応(専用)｜
-｜11ax｜対応｜対応｜`,
+｜11ax｜対応｜対応｜
+`,
     difficulty: 'basic',
   },
   {
@@ -5059,7 +5164,8 @@ export const tsushinKogakuSetsubi: TsushinQuestion[] = [
 ｜使用チャネル｜関係｜
 ｜1ch・6ch・11ch｜互いに重ならない｜
 ｜隣接AP同士｜異なるチャネルを割当て｜
-｜面的配置｜3チャネルの繰返しパターン｜`,
+｜面的配置｜3チャネルの繰返しパターン｜
+`,
     difficulty: 'standard',
   },
   {
@@ -5139,7 +5245,8 @@ export const tsushinKogakuSetsubi: TsushinQuestion[] = [
 ｜項目｜内容｜
 ｜電波強度｜エリア全域の受信レベル｜
 ｜干渉｜既設AP・他システムの電波｜
-｜収容性｜端末数・所要スループット｜`,
+｜収容性｜端末数・所要スループット｜
+`,
     difficulty: 'standard',
   },
   {
@@ -5218,7 +5325,8 @@ export const tsushinKogakuSetsubi: TsushinQuestion[] = [
 ｜項目｜PSK(Personal)｜802.1X(Enterprise)｜
 ｜鍵・認証情報｜全員共通｜利用者ごとに個別｜
 ｜退職者対応｜鍵の全体変更が必要｜アカウント停止のみ｜
-｜適用規模｜家庭・小規模｜企業・大規模｜`,
+｜適用規模｜家庭・小規模｜企業・大規模｜
+`,
     difficulty: 'advanced',
   },
   {
@@ -5478,7 +5586,8 @@ export const tsushinKogakuSetsubi: TsushinQuestion[] = [
 【図解】自動設定方式の比較
 ｜方式｜サーバ｜管理性｜
 ｜SLAAC｜不要｜簡便・分散的｜
-｜DHCPv6｜必要｜集中管理向き｜`,
+｜DHCPv6｜必要｜集中管理向き｜
+`,
     difficulty: 'advanced',
   },
   {
@@ -5583,7 +5692,8 @@ export const tsushinKogakuSetsubi: TsushinQuestion[] = [
 ｜概念｜内容｜
 ｜5GC｜仮想化されたコア網｜
 ｜MEC｜エッジへのサーバ配置｜
-｜スライシング｜用途別の仮想網分割｜`,
+｜スライシング｜用途別の仮想網分割｜
+`,
     difficulty: 'standard',
   },
   {
@@ -5610,7 +5720,8 @@ export const tsushinKogakuSetsubi: TsushinQuestion[] = [
 ｜項目｜効果｜
 ｜RRHをアンテナ直下へ｜給電線損失の最小化｜
 ｜BBUの集約｜保守・増設が容易｜
-｜光ファイバ接続｜長距離・低損失の伝送｜`,
+｜光ファイバ接続｜長距離・低損失の伝送｜
+`,
     difficulty: 'standard',
   },
   {
@@ -5688,7 +5799,8 @@ export const tsushinKogakuSetsubi: TsushinQuestion[] = [
 ｜項目｜設計の考え方｜
 ｜セルの重なり｜切替余裕のため適切に重ねる｜
 ｜セルの大きさ｜需要密度に応じ大小を使い分け｜
-｜スモールセル｜容量増強・不感地対策｜`,
+｜スモールセル｜容量増強・不感地対策｜
+`,
     difficulty: 'standard',
   },
   {
@@ -5714,7 +5826,8 @@ export const tsushinKogakuSetsubi: TsushinQuestion[] = [
 ｜項目｜内容｜
 ｜方位角・チルト角｜設計値との照合・実測｜
 ｜コネクタ処理｜規定トルク・防水処理｜
-｜給電系確認｜VSWR測定で反射確認｜`,
+｜給電系確認｜VSWR測定で反射確認｜
+`,
     difficulty: 'advanced',
   },
   {
@@ -5767,7 +5880,8 @@ export const tsushinKogakuSetsubi: TsushinQuestion[] = [
 ｜場面｜理由｜
 ｜山岳・離島への回線｜ケーブル布設が困難｜
 ｜災害対策回線｜地上経路に依存しない｜
-｜放送・事業用中継｜広帯域・高品質｜`,
+｜放送・事業用中継｜広帯域・高品質｜
+`,
     difficulty: 'basic',
   },
   {
@@ -5820,7 +5934,8 @@ export const tsushinKogakuSetsubi: TsushinQuestion[] = [
 ｜要因｜影響｜
 ｜樹木の成長・建物新設｜クリアランス減少｜
 ｜大気の屈折変動｜実効的な見通しの変化｜
-｜降雨(高周波数)｜受信レベル低下｜`,
+｜降雨(高周波数)｜受信レベル低下｜
+`,
     difficulty: 'basic',
   },
   {
@@ -5847,7 +5962,8 @@ export const tsushinKogakuSetsubi: TsushinQuestion[] = [
 ｜送信出力｜＋30dBm｜
 ｜アンテナ利得(両端)｜＋80dB｜
 ｜自由空間損失｜−130dB｜
-｜給電線損失｜−4dB｜`,
+｜給電線損失｜−4dB｜
+`,
     difficulty: 'standard',
   },
   {
@@ -5873,7 +5989,8 @@ export const tsushinKogakuSetsubi: TsushinQuestion[] = [
 ｜対策｜内容｜
 ｜降雨マージン｜レベル設計に余裕を確保｜
 ｜区間短縮｜中継間隔を短くする｜
-｜適応変調｜降雨時は頑健な変調へ切替｜`,
+｜適応変調｜降雨時は頑健な変調へ切替｜
+`,
     difficulty: 'standard',
   },
   {
@@ -5927,7 +6044,8 @@ export const tsushinKogakuSetsubi: TsushinQuestion[] = [
 ｜場面｜影響・対応｜
 ｜音声通話｜応答の間延び・エコー対策｜
 ｜データ通信｜ウィンドウサイズの最適化｜
-｜リアルタイム制御｜静止衛星は不向き｜`,
+｜リアルタイム制御｜静止衛星は不向き｜
+`,
     difficulty: 'standard',
   },
   {
@@ -5980,7 +6098,8 @@ export const tsushinKogakuSetsubi: TsushinQuestion[] = [
 ｜用途｜例｜
 ｜遠隔地の回線｜離島・山間部の拠点｜
 ｜観測・監視｜河川・気象データ収集｜
-｜災害対策｜臨時回線・可搬局｜`,
+｜災害対策｜臨時回線・可搬局｜
+`,
     difficulty: 'advanced',
   },
   {
@@ -6007,7 +6126,8 @@ export const tsushinKogakuSetsubi: TsushinQuestion[] = [
 ｜反射係数Γ｜VSWR｜状態｜
 ｜0｜1.0｜完全整合｜
 ｜0.2｜1.5｜良好の目安｜
-｜1｜無限大｜全反射｜`,
+｜1｜無限大｜全反射｜
+`,
     difficulty: 'advanced',
   },
   {
@@ -6061,7 +6181,8 @@ export const tsushinKogakuSetsubi: TsushinQuestion[] = [
 ｜VSWR｜反射係数｜反射電力｜
 ｜1.0｜0｜0%｜
 ｜1.5｜0.2｜4%｜
-｜2.0｜0.33｜約11%｜`,
+｜2.0｜0.33｜約11%｜
+`,
     difficulty: 'basic',
   },
   {
@@ -6088,7 +6209,8 @@ export const tsushinKogakuSetsubi: TsushinQuestion[] = [
 ｜不良｜起こる障害｜
 ｜防水不良｜浸水→損失増・VSWR悪化｜
 ｜急な曲げ｜特性劣化・断線｜
-｜固定不足｜振動疲労・コネクタ緩み｜`,
+｜固定不足｜振動疲労・コネクタ緩み｜
+`,
     difficulty: 'basic',
   },
   {
@@ -6115,7 +6237,8 @@ export const tsushinKogakuSetsubi: TsushinQuestion[] = [
 ｜項目｜内容｜
 ｜強度計算｜設計風速に基づく風圧検討｜
 ｜支線｜3方向以上にバランスよく｜
-｜屋上基礎｜防水層を傷めない工法｜`,
+｜屋上基礎｜防水層を傷めない工法｜
+`,
     difficulty: 'standard',
   },
   {
@@ -6141,7 +6264,8 @@ export const tsushinKogakuSetsubi: TsushinQuestion[] = [
 ｜項目｜考え方｜
 ｜下限｜最遠端子でも規定レベル確保｜
 ｜上限｜最寄り端子で過大にしない｜
-｜損失要素｜ケーブル・分岐・分配の損失を積算｜`,
+｜損失要素｜ケーブル・分岐・分配の損失を積算｜
+`,
     difficulty: 'standard',
   },
   {
@@ -6168,7 +6292,8 @@ export const tsushinKogakuSetsubi: TsushinQuestion[] = [
 ｜アンテナ出力｜70dBμV｜
 ｜増幅器出力｜100dBμV｜
 ｜ケーブル通過後｜80dBμV｜
-｜分配後(端子)｜72dBμV｜`,
+｜分配後(端子)｜72dBμV｜
+`,
     difficulty: 'standard',
   },
   {
@@ -6246,7 +6371,8 @@ export const tsushinKogakuSetsubi: TsushinQuestion[] = [
 ｜項目｜内容｜
 ｜最遠端子｜下限レベル(目標値)の確保｜
 ｜最寄り端子｜上限レベルの超過なし｜
-｜増幅器｜定格出力・ひずみ規格内か｜`,
+｜増幅器｜定格出力・ひずみ規格内か｜
+`,
     difficulty: 'advanced',
   },
   {
@@ -6272,7 +6398,8 @@ export const tsushinKogakuSetsubi: TsushinQuestion[] = [
 ｜対策｜内容｜
 ｜不良箇所改修｜接続不良・シールド不良の解消｜
 ｜フィルタ｜未使用宅の上り帯域を遮断｜
-｜系統分割・光化｜合流する末端数を削減｜`,
+｜系統分割・光化｜合流する末端数を削減｜
+`,
     difficulty: 'advanced',
   },
   {
@@ -6326,7 +6453,8 @@ export const tsushinKogakuSetsubi: TsushinQuestion[] = [
 ｜項目｜内容｜
 ｜コンバータ給電｜同軸経由で受信機側から供給｜
 ｜混合配線｜UHFとIFを混合器でまとめる｜
-｜対応機材｜IF帯域対応のブースタ・分配器を使用｜`,
+｜対応機材｜IF帯域対応のブースタ・分配器を使用｜
+`,
     difficulty: 'basic',
   },
   {
@@ -6378,7 +6506,8 @@ export const tsushinKogakuSetsubi: TsushinQuestion[] = [
 ｜原因｜内容｜
 ｜方向ずれ｜わずかなずれでレベル急落｜
 ｜遮蔽物｜樹木の成長・新築建物｜
-｜気象｜降雨・降雪による減衰｜`,
+｜気象｜降雨・降雪による減衰｜
+`,
     difficulty: 'standard',
   },
   {
@@ -6405,7 +6534,8 @@ export const tsushinKogakuSetsubi: TsushinQuestion[] = [
 ｜項目｜内容｜
 ｜帯域｜台数×ビットレートの合計｜
 ｜給電｜PoE給電容量の確認｜
-｜録画｜保存日数と容量の設計｜`,
+｜録画｜保存日数と容量の設計｜
+`,
     difficulty: 'standard',
   },
   {
@@ -6457,7 +6587,8 @@ export const tsushinKogakuSetsubi: TsushinQuestion[] = [
 ｜装置｜対象｜特徴｜
 ｜DVR｜アナログカメラ｜同軸接続・装置内で符号化｜
 ｜NVR｜IPカメラ｜LAN接続・ネットワーク録画｜
-｜VMS｜大規模システム｜サーバで統合管理｜`,
+｜VMS｜大規模システム｜サーバで統合管理｜
+`,
     difficulty: 'standard',
   },
   {
@@ -6483,7 +6614,8 @@ export const tsushinKogakuSetsubi: TsushinQuestion[] = [
 ｜項目｜内容｜
 ｜集約点｜NVR向けリンクに全帯域が集中｜
 ｜余裕｜ピーク変動・閲覧分・増設分を加味｜
-｜結論｜アップリンクはGbE以上を選定｜`,
+｜結論｜アップリンクはGbE以上を選定｜
+`,
     difficulty: 'standard',
   },
   {
@@ -6510,7 +6642,8 @@ export const tsushinKogakuSetsubi: TsushinQuestion[] = [
 ｜項目｜内容｜
 ｜配線統合｜電話とデータをLANに一本化｜
 ｜拠点統合｜WAN経由で内線を全社統合｜
-｜柔軟性｜移設・増設が容易｜`,
+｜柔軟性｜移設・増設が容易｜
+`,
     difficulty: 'advanced',
   },
   {
@@ -6590,7 +6723,8 @@ export const tsushinKogakuSetsubi: TsushinQuestion[] = [
 ｜項目｜内容｜
 ｜非常電源｜蓄電池による停電時動作｜
 ｜配線｜耐熱電線等で機能維持｜
-｜優先制御｜一般放送の自動遮断｜`,
+｜優先制御｜一般放送の自動遮断｜
+`,
     difficulty: 'basic',
   },
   {
@@ -6641,7 +6775,8 @@ export const tsushinKogakuSetsubi: TsushinQuestion[] = [
 【図解】電気錠の停電時動作
 ｜方式｜停電時｜適する扉｜
 ｜通電時施錠型｜解錠する｜避難経路上の扉｜
-｜通電時解錠型｜施錠を保持｜重要区画(避難と別動線)｜`,
+｜通電時解錠型｜施錠を保持｜重要区画(避難と別動線)｜
+`,
     difficulty: 'standard',
   },
   {
@@ -6694,7 +6829,8 @@ export const tsushinKogakuSetsubi: TsushinQuestion[] = [
 ｜項目｜内容｜
 ｜スピーカ選定｜種類・出力・指向性｜
 ｜配置｜住宅分布と音達範囲の整合｜
-｜重なり｜隣接子局とのエコー対策｜`,
+｜重なり｜隣接子局とのエコー対策｜
+`,
     difficulty: 'standard',
   },
   {
@@ -6720,7 +6856,8 @@ export const tsushinKogakuSetsubi: TsushinQuestion[] = [
 ｜項目｜対策｜
 ｜停電｜蓄電池・太陽電池による電源確保｜
 ｜雷害｜避雷器・接地・絶縁化｜
-｜回線障害｜経路の冗長化・代替回線｜`,
+｜回線障害｜経路の冗長化・代替回線｜
+`,
     difficulty: 'standard',
   },
   {
@@ -6747,7 +6884,8 @@ export const tsushinKogakuSetsubi: TsushinQuestion[] = [
 ｜項目｜対策｜
 ｜風雨・粉塵｜防水防塵ハウジング｜
 ｜雷｜避雷器・接地｜
-｜視認性｜設置高さ・画角・逆光対策｜`,
+｜視認性｜設置高さ・画角・逆光対策｜
+`,
     difficulty: 'standard',
   },
   {
@@ -6799,7 +6937,8 @@ export const tsushinKogakuSetsubi: TsushinQuestion[] = [
 ｜構成｜内容｜
 ｜2ルート光｜別経路の光ファイバで二重化｜
 ｜有線＋無線｜光回線と多重無線の組合せ｜
-｜リング構成｜障害時に逆回りで自己復旧｜`,
+｜リング構成｜障害時に逆回りで自己復旧｜
+`,
     difficulty: 'advanced',
   },
   {
@@ -6825,7 +6964,8 @@ export const tsushinKogakuSetsubi: TsushinQuestion[] = [
 ｜項目｜内容｜
 ｜無瞬断性｜切替動作が不要｜
 ｜構成｜蓄電池直結で単純・高信頼｜
-｜保守｜浮動充電で蓄電池を常時満充電維持｜`,
+｜保守｜浮動充電で蓄電池を常時満充電維持｜
+`,
     difficulty: 'basic',
   },
   {
@@ -6851,7 +6991,8 @@ export const tsushinKogakuSetsubi: TsushinQuestion[] = [
 ｜用語｜内容｜
 ｜浮動充電｜常時並列で満充電維持｜
 ｜均等充電｜セル間のばらつき補正充電｜
-｜回復充電｜放電後の再充電｜`,
+｜回復充電｜放電後の再充電｜
+`,
     difficulty: 'basic',
   },
   {
@@ -6904,7 +7045,8 @@ export const tsushinKogakuSetsubi: TsushinQuestion[] = [
 ｜要素｜意味｜
 ｜I×T｜停電中に取り出す電気量｜
 ｜保守率で割る｜寿命末期の容量低下を補償｜
-｜結果｜必要容量は素の計算より大きくなる｜`,
+｜結果｜必要容量は素の計算より大きくなる｜
+`,
     difficulty: 'standard',
   },
   {
@@ -6983,7 +7125,8 @@ export const tsushinKogakuSetsubi: TsushinQuestion[] = [
 ｜項目｜内容｜
 ｜蓄電池管理｜劣化点検・計画交換｜
 ｜動作確認｜定期的な切替試験｜
-｜環境管理｜温度(電池寿命に直結)｜`,
+｜環境管理｜温度(電池寿命に直結)｜
+`,
     difficulty: 'standard',
   },
   {
@@ -7009,7 +7152,8 @@ export const tsushinKogakuSetsubi: TsushinQuestion[] = [
 ｜量｜単位｜関係｜
 ｜有効電力P｜kW｜P＝S×cosθ｜
 ｜皮相電力S｜kVA｜S＝P÷cosθ｜
-｜検算｜—｜S(10)≧P(8)で妥当｜`,
+｜検算｜—｜S(10)≧P(8)で妥当｜
+`,
     difficulty: 'standard',
   },
   {
@@ -7035,7 +7179,8 @@ export const tsushinKogakuSetsubi: TsushinQuestion[] = [
 ｜要因｜影響｜
 ｜放電レート特性｜大電流放電で実効容量減｜
 ｜経年劣化｜容量の低下(保守率)｜
-｜変換効率｜インバータ損失分の増加｜`,
+｜変換効率｜インバータ損失分の増加｜
+`,
     difficulty: 'advanced',
   },
   {
@@ -7062,7 +7207,8 @@ export const tsushinKogakuSetsubi: TsushinQuestion[] = [
 ｜項目｜検討内容｜
 ｜UPS時間｜発電機始動時間＋余裕｜
 ｜発電機容量｜全負荷＋UPS充電分｜
-｜燃料｜想定停電時間分の備蓄｜`,
+｜燃料｜想定停電時間分の備蓄｜
+`,
     difficulty: 'advanced',
   },
   {
@@ -7140,7 +7286,8 @@ export const tsushinKogakuSetsubi: TsushinQuestion[] = [
 ｜項目｜内容｜
 ｜接地｜低い接地抵抗・短く太い接地線｜
 ｜選定｜電源用・通信用など用途別に選定｜
-｜保守｜劣化表示の確認・交換｜`,
+｜保守｜劣化表示の確認・交換｜
+`,
     difficulty: 'basic',
   },
   {
@@ -7166,7 +7313,8 @@ export const tsushinKogakuSetsubi: TsushinQuestion[] = [
 ｜対象｜接続方法｜
 ｜鉄骨・金属配管｜直接ボンディング｜
 ｜各接地系統｜ボンディングバーで連接｜
-｜電源線・通信線｜SPDを介して等電位化｜`,
+｜電源線・通信線｜SPDを介して等電位化｜
+`,
     difficulty: 'standard',
   },
   {
@@ -7218,7 +7366,8 @@ export const tsushinKogakuSetsubi: TsushinQuestion[] = [
 ｜要因｜影響｜
 ｜接地線が長い｜サージ時の電位上昇増大｜
 ｜接地抵抗が高い｜サージを流しにくい｜
-｜設置位置が奥｜サージが屋内配線に侵入｜`,
+｜設置位置が奥｜サージが屋内配線に侵入｜
+`,
     difficulty: 'standard',
   },
   {
@@ -7245,7 +7394,8 @@ export const tsushinKogakuSetsubi: TsushinQuestion[] = [
 ｜項目｜内容｜
 ｜極の間隔｜近すぎると並列効果が減少｜
 ｜土壌条件｜湿潤な場所ほど有利｜
-｜測定確認｜施工後に接地抵抗を実測｜`,
+｜測定確認｜施工後に接地抵抗を実測｜
+`,
     difficulty: 'standard',
   },
   {
@@ -7271,7 +7421,8 @@ export const tsushinKogakuSetsubi: TsushinQuestion[] = [
 ｜項目｜内容｜
 ｜補助極の距離｜抵抗区域が重ならない間隔｜
 ｜測定器｜専用の接地抵抗計を使用｜
-｜管理｜定期測定と記録(季節変動あり)｜`,
+｜管理｜定期測定と記録(季節変動あり)｜
+`,
     difficulty: 'standard',
   },
   {
@@ -7324,7 +7475,8 @@ export const tsushinKogakuSetsubi: TsushinQuestion[] = [
 ｜項目｜内容｜
 ｜受風面積｜追加アンテナ分の風圧増｜
 ｜重量・偏心｜部材応力への影響｜
-｜結論｜構造計算による強度照査が必須｜`,
+｜結論｜構造計算による強度照査が必須｜
+`,
     difficulty: 'advanced',
   },
   {
@@ -7351,7 +7503,8 @@ export const tsushinKogakuSetsubi: TsushinQuestion[] = [
 ｜方法｜効果｜
 ｜滑材の使用｜摩擦係数の低減｜
 ｜けん引方向の選定｜屈曲部を有利に配置｜
-｜中間けん引｜長区間の張力分散｜`,
+｜中間けん引｜長区間の張力分散｜
+`,
     difficulty: 'basic',
   },
   {
@@ -7378,7 +7531,8 @@ export const tsushinKogakuSetsubi: TsushinQuestion[] = [
 ｜項目｜内容｜
 ｜防火｜貫通部閉塞・延焼防止処理｜
 ｜環境｜換気・酸素濃度確認｜
-｜避難｜照明・避難経路の確保｜`,
+｜避難｜照明・避難経路の確保｜
+`,
     difficulty: 'basic',
   },
   {
@@ -7405,7 +7559,8 @@ export const tsushinKogakuSetsubi: TsushinQuestion[] = [
 ｜場所｜要点｜
 ｜道路横断部｜路面上5m以上が基本｜
 ｜歩道上等｜区分に応じた規定高さ｜
-｜電力線共架｜電力線の下方に離隔をとる｜`,
+｜電力線共架｜電力線の下方に離隔をとる｜
+`,
     difficulty: 'basic',
   },
   {
@@ -7432,7 +7587,8 @@ export const tsushinKogakuSetsubi: TsushinQuestion[] = [
 ｜項目｜内容｜
 ｜埋設物調査｜図面照会と試掘での確認｜
 ｜関係者協議｜道路管理者・他企業者と調整｜
-｜施工計画｜掘削・埋戻し・転圧の方法｜`,
+｜施工計画｜掘削・埋戻し・転圧の方法｜
+`,
     difficulty: 'standard',
   },
   {
@@ -7459,7 +7615,8 @@ export const tsushinKogakuSetsubi: TsushinQuestion[] = [
 ｜項目｜内容｜
 ｜防水｜クロージャの密閉・気密確認｜
 ｜曲げ半径｜本体・余長とも許容値以上｜
-｜識別｜表示札による誤切断防止｜`,
+｜識別｜表示札による誤切断防止｜
+`,
     difficulty: 'standard',
   },
   {
@@ -7486,7 +7643,8 @@ export const tsushinKogakuSetsubi: TsushinQuestion[] = [
 ｜項目｜内容｜
 ｜撚れ防止｜8の字状に置くことで撚れを相殺｜
 ｜中継ぎ｜長区間を分割して布設可能に｜
-｜注意｜曲げ半径と置き場の確保｜`,
+｜注意｜曲げ半径と置き場の確保｜
+`,
     difficulty: 'standard',
   },
   {
@@ -7513,7 +7671,8 @@ export const tsushinKogakuSetsubi: TsushinQuestion[] = [
 ｜項目｜内容｜
 ｜支持間隔｜ケーブル仕様の規定値以内｜
 ｜累積張力｜自重合計が許容張力以内｜
-｜固定方法｜緩衝材併用・適正締付け｜`,
+｜固定方法｜緩衝材併用・適正締付け｜
+`,
     difficulty: 'standard',
   },
   {
@@ -7539,7 +7698,8 @@ export const tsushinKogakuSetsubi: TsushinQuestion[] = [
 ｜項目｜効果｜
 ｜防災｜電柱倒壊・断線の防止｜
 ｜景観・歩行空間｜電柱・架空線の解消｜
-｜運用｜占用者間の調整が必要｜`,
+｜運用｜占用者間の調整が必要｜
+`,
     difficulty: 'standard',
   },
   {
@@ -7593,7 +7753,8 @@ export const tsushinKogakuSetsubi: TsushinQuestion[] = [
 ｜職務｜内容｜
 ｜作業指揮｜作業方法の決定・直接指揮｜
 ｜測定｜酸素・硫化水素濃度の確認｜
-｜点検・監視｜換気装置・保護具の使用状況｜`,
+｜点検・監視｜換気装置・保護具の使用状況｜
+`,
     difficulty: 'advanced',
   },
   {
@@ -7619,7 +7780,8 @@ export const tsushinKogakuSetsubi: TsushinQuestion[] = [
 ｜課題｜対策｜
 ｜橋の伸縮｜伸縮部に余長・可とう管｜
 ｜振動｜確実な固定・緩み止め｜
-｜日射・風雨｜保護管・耐候性材料｜`,
+｜日射・風雨｜保護管・耐候性材料｜
+`,
     difficulty: 'basic',
   },
   {
@@ -7646,7 +7808,8 @@ export const tsushinKogakuSetsubi: TsushinQuestion[] = [
 ｜項目｜内容｜
 ｜点検性｜点検路から確認できる位置｜
 ｜更新性｜予備管・余長の確保｜
-｜記録｜添架位置・条数の台帳管理｜`,
+｜記録｜添架位置・条数の台帳管理｜
+`,
     difficulty: 'basic',
   },
   {
@@ -7672,7 +7835,8 @@ export const tsushinKogakuSetsubi: TsushinQuestion[] = [
 ｜要因｜影響｜
 ｜並行距離が長い｜誘導電圧が増加｜
 ｜離隔が小さい｜結合が強まる｜
-｜電力線電流が大きい｜特に地絡事故時に危険｜`,
+｜電力線電流が大きい｜特に地絡事故時に危険｜
+`,
     difficulty: 'basic',
   },
   {
@@ -7750,7 +7914,8 @@ export const tsushinKogakuSetsubi: TsushinQuestion[] = [
 ｜側｜対策｜
 ｜通信側｜離隔・遮へい・光ケーブル化｜
 ｜鉄道側｜BTき電・ATき電による誘導軽減｜
-｜機器側｜保安器・耐雷トランス｜`,
+｜機器側｜保安器・耐雷トランス｜
+`,
     difficulty: 'standard',
   },
   {
@@ -7777,7 +7942,8 @@ export const tsushinKogakuSetsubi: TsushinQuestion[] = [
 ｜項目｜内容｜
 ｜特定｜心線対照器による活線確認｜
 ｜記録｜対照結果・心線番号の記録｜
-｜実施｜手順書と複数人確認で切替｜`,
+｜実施｜手順書と複数人確認で切替｜
+`,
     difficulty: 'standard',
   },
   {
@@ -7803,7 +7969,8 @@ export const tsushinKogakuSetsubi: TsushinQuestion[] = [
 ｜要因｜結果｜
 ｜撚りの乱れ・撚り戻し過大｜対称性の崩れ｜
 ｜対地容量の不均衡｜同相→差動への変換｜
-｜結果｜誘導雑音・漏話の増加｜`,
+｜結果｜誘導雑音・漏話の増加｜
+`,
     difficulty: 'standard',
   },
   {
@@ -7831,7 +7998,8 @@ export const tsushinKogakuSetsubi: TsushinQuestion[] = [
 ｜屋外｜電力線との離隔・弛度・固定｜
 ｜貫通部｜防水処理｜
 ｜宅内｜曲げ半径遵守・整理配線｜
-｜試験｜光受信レベル・リンク確認｜`,
+｜試験｜光受信レベル・リンク確認｜
+`,
     difficulty: 'advanced',
   },
   {
@@ -7858,7 +8026,8 @@ export const tsushinKogakuSetsubi: TsushinQuestion[] = [
 ｜項目｜内容｜
 ｜判定｜設計値(ロスバジェット)以内｜
 ｜波長｜使用波長で測定(1.31/1.55μm)｜
-｜記録｜心線ごとに保存し保守の基準に｜`,
+｜記録｜心線ごとに保存し保守の基準に｜
+`,
     difficulty: 'advanced',
   },
 ];
