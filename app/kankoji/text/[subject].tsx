@@ -48,6 +48,7 @@ export default function KankojiTextScreen() {
         accentColor={info.color}
         totalQuestions={sections.length}
         freeLimit={FREE_TEXT_LIMIT}
+        unitLabel="セクション"
       >
         {(hasAccess: boolean) => {
           const visibleSections = hasAccess ? sections : sections.slice(0, FREE_TEXT_LIMIT);

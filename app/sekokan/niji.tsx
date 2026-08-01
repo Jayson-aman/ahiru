@@ -189,6 +189,7 @@ export default function SekokanNijiScreen() {
         accentColor={ACCENT}
         totalQuestions={SECTIONS.length}
         freeLimit={FREE_TEXT_LIMIT}
+        unitLabel="セクション"
       >
         {(hasAccess: boolean) => {
           const visibleSections = hasAccess ? SECTIONS : SECTIONS.slice(0, FREE_TEXT_LIMIT);
