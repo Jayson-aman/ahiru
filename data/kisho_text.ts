@@ -14,7 +14,11 @@ export type KishoChapter = {
 };
 
 import { kishoTextPart1 } from './kisho_text_part1';
+import { kishoTextGakka1 } from './kisho_text_gakka1';
+import { kishoTextGakka2 } from './kisho_text_gakka2';
 
 export const kishoTextbook: KishoChapter[] = [
   ...kishoTextPart1,
+  ...kishoTextGakka1,
+  ...kishoTextGakka2,
 ];
