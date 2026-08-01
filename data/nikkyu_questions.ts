@@ -13,9 +13,12 @@ export type NikkyuQuestion = {
 
 import { balanceAnswerKeys } from './_balance';
 
-// 執筆完了ぶんから順に結線する。未収録の科目は画面側が「準備中」を表示するため、
-// この状態でもアプリは正常に動作する。
+import { nikkyuKeikakuHoki } from './nikkyu_questions_keikaku_hoki';
+import { nikkyuKozoSekou } from './nikkyu_questions_kozo_sekou';
+
 const rawNikkyuQuestions: NikkyuQuestion[] = [
+  ...nikkyuKeikakuHoki,
+  ...nikkyuKozoSekou,
 ];
 
 // 正解キーが偏ると「Dを選ぶだけ」で点が取れてしまうため、決定的に分散させる

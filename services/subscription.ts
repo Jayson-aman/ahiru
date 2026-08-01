@@ -82,6 +82,8 @@ export const ENTITLEMENT_MAX = 'max';
  *   外し忘れると、商品があるのに永久に「準備中」のまま売れなくなる。
  */
 export const CERTS_COMING_SOON: CertKey[] = ['kikenbutsu', 'concrete', 'tsushin', 'nikkyu', 'denki2'];
+// ★ App Store Connect と RevenueCat に商品を登録した資格から、順にこの配列を空に近づける。
+//   全部登録し終えたら [] にする。手順は docs/NEW_CERTS_SETUP.md を参照。
 
 export function isComingSoon(cert: CertKey): boolean {
   return CERTS_COMING_SOON.includes(cert);
