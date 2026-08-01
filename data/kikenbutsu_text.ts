@@ -16,9 +16,20 @@ export type KikenbutsuTextChapter = {
   sections: KikenbutsuTextSection[];
 };
 
-// 執筆完了ぶんから順に結線する。未収録の科目は画面側が「テキスト作成中」を
-// 表示するため、この状態でもアプリは正常に動作する。
+import { kikenbutsuTextHoreiA } from './kikenbutsu_text_horei_a';
+import { kikenbutsuTextHoreiB } from './kikenbutsu_text_horei_b';
+import { kikenbutsuTextButsuriA } from './kikenbutsu_text_butsuri_a';
+import { kikenbutsuTextButsuriB } from './kikenbutsu_text_butsuri_b';
+import { kikenbutsuTextSeishitsuA } from './kikenbutsu_text_seishitsu_a';
+import { kikenbutsuTextSeishitsuB } from './kikenbutsu_text_seishitsu_b';
+
 export const kikenbutsuTextbook: KikenbutsuTextChapter[] = [
+  ...kikenbutsuTextHoreiA,
+  ...kikenbutsuTextHoreiB,
+  ...kikenbutsuTextButsuriA,
+  ...kikenbutsuTextButsuriB,
+  ...kikenbutsuTextSeishitsuA,
+  ...kikenbutsuTextSeishitsuB,
 ];
 
 export function getKikenbutsuText(subject: string): KikenbutsuTextSection[] {
