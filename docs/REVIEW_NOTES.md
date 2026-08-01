@@ -235,6 +235,25 @@ a study text of 300 sections with diagrams, JIS reference values and worked
 calculation examples.
 ```
 
+### 1級電気通信工事施工管理技士（`pro_tsushin`）
+
+- 商品ID：`qualiz_pro_tsushin_monthly` / `_yearly`
+- 価格：月額 ¥1,800 ／ 年額 ¥18,000
+- 内容：電気通信工学・電気通信設備・施工管理法・法規の全4科目（600問）＋ 模擬試験
+  ＋ 要点テキスト300セクション（63.4万字）
+
+```
+Unlocks the full question bank (600 questions) for the Japanese 1st-Class
+Telecommunications Construction Management Engineer (1級電気通信工事施工管理技士)
+certification, established in 2019. Covers telecommunications engineering
+(circuit theory, transmission theory, optical fibre and radio propagation,
+networking), telecommunications facilities (FTTH, LAN, wireless, broadcasting
+and disaster-prevention systems), construction management methods, and
+related law including the Construction Business Act, the Telecommunications
+Business Act and the Radio Act. Also unlocks a 60-question mock exam and a
+study text of 300 sections with diagrams and worked calculation examples.
+```
+
 ### ~~中学受験対策（`pro_juken`）~~ ※現在は提供なし
 
 > **審査提出時はこの節を含めないこと。** 受験対策（中学受験）はホーム画面から
