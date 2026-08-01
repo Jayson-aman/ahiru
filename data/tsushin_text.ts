@@ -17,9 +17,16 @@ export type TsushinTextChapter = {
   sections: TsushinTextSection[];
 };
 
-// 執筆完了ぶんから順に結線する。未収録の科目は画面側が「テキスト作成中」を
-// 表示するため、この状態でもアプリは正常に動作する。
+import { tsushinTextKogaku } from './tsushin_text_kogaku';
+import { tsushinTextSetsubi } from './tsushin_text_setsubi';
+import { tsushinTextKanri } from './tsushin_text_kanri';
+import { tsushinTextHoki } from './tsushin_text_hoki';
+
 export const tsushinTextbook: TsushinTextChapter[] = [
+  ...tsushinTextKogaku,
+  ...tsushinTextSetsubi,
+  ...tsushinTextKanri,
+  ...tsushinTextHoki,
 ];
 
 export function getTsushinText(subject: string): TsushinTextSection[] {
