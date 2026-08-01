@@ -13,9 +13,12 @@ export type Denki2Question = {
 
 import { balanceAnswerKeys } from './_balance';
 
-// 執筆完了ぶんから順に結線する。未収録の科目は画面側が「準備中」を表示するため、
-// この状態でもアプリは正常に動作する。
+import { denki2RironHaisen } from './denki2_questions_riron_haisen';
+import { denki2KikiHoki } from './denki2_questions_kiki_hoki';
+
 const rawDenki2Questions: Denki2Question[] = [
+  ...denki2RironHaisen,
+  ...denki2KikiHoki,
 ];
 
 // 正解キーが偏ると「Dを選ぶだけ」で点が取れてしまうため、決定的に分散させる
