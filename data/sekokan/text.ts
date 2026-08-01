@@ -11,9 +11,17 @@ export type SekokanTextChapter = {
 };
 
 import { sekokanTextPart1 } from './text_part1';
+import { sekokanTextKenchikugaku } from './text_kenchikugaku';
+import { sekokanTextSekou } from './text_sekou';
+import { sekokanTextKanri } from './text_kanri';
+import { sekokanTextHoki } from './text_hoki';
 
 export const sekokanTextbook: SekokanTextChapter[] = [
   ...sekokanTextPart1,
+  ...sekokanTextKenchikugaku,
+  ...sekokanTextSekou,
+  ...sekokanTextKanri,
+  ...sekokanTextHoki,
 ];
 
 export function getSekokanText(subject: string): SekokanTextSection[] {
