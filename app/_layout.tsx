@@ -84,6 +84,13 @@ export default function RootLayout() {
         <Stack.Screen name="tsushin/mogi" options={{ headerShown: false, presentation: 'card' }} />
         <Stack.Screen name="tsushin/text/index" options={{ headerShown: false, presentation: 'card' }} />
         <Stack.Screen name="tsushin/text/[subject]" options={{ headerShown: false, presentation: 'card' }} />
+        {/* 二級建築士 */}
+        <Stack.Screen name="nikkyu/index" options={{ headerShown: false, presentation: 'card' }} />
+        <Stack.Screen name="nikkyu/[subject]" options={{ headerShown: false, presentation: 'card' }} />
+        <Stack.Screen name="nikkyu/mogi" options={{ headerShown: false, presentation: 'card' }} />
+        <Stack.Screen name="nikkyu/seizu" options={{ headerShown: false, presentation: 'card' }} />
+        <Stack.Screen name="nikkyu/text/index" options={{ headerShown: false, presentation: 'card' }} />
+        <Stack.Screen name="nikkyu/text/[subject]" options={{ headerShown: false, presentation: 'card' }} />
         {/* 電気・理工系 */}
         <Stack.Screen name="denken3/index" options={{ headerShown: false, presentation: 'card' }} />
         <Stack.Screen name="denken3/[subject]" options={{ headerShown: false, presentation: 'card' }} />

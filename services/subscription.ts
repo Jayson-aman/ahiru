@@ -15,7 +15,7 @@ const RC_API_KEY_ANDROID =
 export type SubscriptionTier = 'free' | 'pro' | 'max';
 
 // Certification keys — used as entitlement IDs in RevenueCat dashboard
-export type CertKey = 'takkei' | 'fp' | 'mansion' | 'kenchiku' | 'denken3' | 'kisho' | 'juken' | 'eiken' | 'sekokan' | 'kankoji' | 'denkisekou' | 'kikaisekou' | 'dobokusekou' | 'cost' | 'kyusui' | 'shobo' | 'kikenbutsu' | 'concrete' | 'tsushin';
+export type CertKey = 'takkei' | 'fp' | 'mansion' | 'kenchiku' | 'denken3' | 'kisho' | 'juken' | 'eiken' | 'sekokan' | 'kankoji' | 'denkisekou' | 'kikaisekou' | 'dobokusekou' | 'cost' | 'kyusui' | 'shobo' | 'kikenbutsu' | 'concrete' | 'tsushin' | 'nikkyu';
 
 // RevenueCat entitlement identifiers (must match dashboard exactly)
 export const ENTITLEMENTS: Record<CertKey, string> = {
@@ -38,6 +38,7 @@ export const ENTITLEMENTS: Record<CertKey, string> = {
   kikenbutsu: 'pro_kikenbutsu',
   concrete: 'pro_concrete',
   tsushin:  'pro_tsushin',
+  nikkyu:   'pro_nikkyu',
 };
 
 // Pricing constants (display only — real prices are set in RevenueCat/App Store)
@@ -79,7 +80,7 @@ export const ENTITLEMENT_MAX = 'max';
  * ★商品を登録して Offering に入れたら、必ずこの配列から外すこと。
  *   外し忘れると、商品があるのに永久に「準備中」のまま売れなくなる。
  */
-export const CERTS_COMING_SOON: CertKey[] = ['kikenbutsu', 'concrete', 'tsushin'];
+export const CERTS_COMING_SOON: CertKey[] = ['kikenbutsu', 'concrete', 'tsushin', 'nikkyu'];
 
 export function isComingSoon(cert: CertKey): boolean {
   return CERTS_COMING_SOON.includes(cert);

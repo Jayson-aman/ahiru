@@ -78,6 +78,18 @@ export default function HomeScreen() {
         {/* 資格試験：建築・設備系 */}
         <Text style={[styles.sectionLabel, { marginTop: 24 }]}>🏛️ 建築・設備系</Text>
 
+        <TouchableOpacity style={styles.card} onPress={() => router.push('/nikkyu' as any)} activeOpacity={0.85}>
+          <LinearGradient colors={['#00695C', '#003D33']} style={styles.cardGradient}>
+            <Text style={styles.cardEmoji}>📐</Text>
+            <View style={styles.cardBody}>
+              <Text style={styles.cardTitle}>二級建築士</Text>
+              <Text style={styles.cardSubtitle}>建築計画・法規・構造・施工</Text>
+              <Text style={styles.cardMeta}>国家資格 ／ テキスト・科目別問題・学科模試・製図対策</Text>
+            </View>
+            <Text style={styles.cardArrow}>›</Text>
+          </LinearGradient>
+        </TouchableOpacity>
+
         <TouchableOpacity style={styles.card} onPress={() => router.push('/kenchiku')} activeOpacity={0.85}>
           <LinearGradient colors={['#37474F', '#1C2B33']} style={styles.cardGradient}>
             <Text style={styles.cardEmoji}>🏛️</Text>
