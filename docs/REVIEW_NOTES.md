@@ -35,7 +35,21 @@ past exam questions.
 
 There is no account/sign-in system; all learning progress is stored locally
 on-device only.
+
+Terms of Use (EULA) and Privacy Policy are available both inside the app (on
+the paywall screen) and at the following public URLs, which are also listed in
+the App Description:
+  Terms of Use (EULA): https://jayson-aman.github.io/ahiru/legal/terms.html
+  Privacy Policy:      https://jayson-aman.github.io/ahiru/legal/privacy.html
 ```
+
+> **⚠️ この Review Notes を編集するときの注意**
+> 資格を追加したら、冒頭の「15 different Japanese professional certification exams」の
+> 数字と、「unlocks all 15 certifications at once」の数字を必ず更新すること。
+> 実際の資格数は `grep -c "cardTitle}>" "app/(tabs)/index.tsx"` で数えられる。
+>
+> また、末尾の利用規約・プライバシーポリシーのURLは**削除しないこと**。
+> App説明文側のURLと合わせて、ガイドライン3.1.2の要件を満たすための記載。
 
 ---
 
