@@ -17,9 +17,16 @@ export type NikkyuTextChapter = {
   sections: NikkyuTextSection[];
 };
 
-// 執筆完了ぶんから順に結線する。未収録の科目は画面側が「テキスト作成中」を
-// 表示するため、この状態でもアプリは正常に動作する。
+import { nikkyuTextKeikaku } from './nikkyu_text_keikaku';
+import { nikkyuTextHoki } from './nikkyu_text_hoki';
+import { nikkyuTextKozo } from './nikkyu_text_kozo';
+import { nikkyuTextSekou } from './nikkyu_text_sekou';
+
 export const nikkyuTextbook: NikkyuTextChapter[] = [
+  ...nikkyuTextKeikaku,
+  ...nikkyuTextHoki,
+  ...nikkyuTextKozo,
+  ...nikkyuTextSekou,
 ];
 
 export function getNikkyuText(subject: string): NikkyuTextSection[] {
