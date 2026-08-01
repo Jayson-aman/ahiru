@@ -81,7 +81,15 @@ App Store Connect → 「契約 / 税金 / 口座情報」→ **Paid Application
 | グループ名 | 商品ID（提案） | 価格 |
 |---|---|---|
 | QualiZ Max | `qualiz_max_monthly` / `qualiz_max_yearly` | ¥2,800 / ¥28,000 |
-| Pro 宅建 | `qualiz_pro_takkei_monthly` / `_yearly` | ¥1,800 / ¥18,000 |
+| Pro 宅建 | `qualiz_pro_takkei_m2` / `qualiz_pro_takkei_y2` | ¥1,800 / ¥18,000 |
+
+> **宅建の商品IDが他と異なる理由**: 旧ID `qualiz_pro_takkei_monthly` / `_yearly` は
+> App Store Connect 上で削除済みです。**削除したサブスクリプションの商品IDは再利用できない**ため、
+> 末尾を変えた新IDで作り直しています。
+> アプリ側は商品IDに資格キー（`takkei`）が含まれるかで判定しているため
+> （`components/CertPaywall.tsx` の `findPackage`）、`takkei` を残せばコード変更もリビルドも不要です。
+> エンタイトルメント識別子は `pro_takkei` のまま変更しないでください。
+
 | Pro FP | `qualiz_pro_fp_monthly` / `_yearly` | ¥1,800 / ¥18,000 |
 | Pro マンション管理士 | `qualiz_pro_mansion_monthly` / `_yearly` | 同上 |
 | Pro 建築設備士 | `qualiz_pro_kenchiku_monthly` / `_yearly` | 同上 |
