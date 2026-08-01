@@ -204,6 +204,18 @@ export default function HomeScreen() {
           </LinearGradient>
         </TouchableOpacity>
 
+        <TouchableOpacity style={styles.card} onPress={() => router.push('/tsushin' as any)} activeOpacity={0.85}>
+          <LinearGradient colors={['#1565C0', '#0A3D91']} style={styles.cardGradient}>
+            <Text style={styles.cardEmoji}>📡</Text>
+            <View style={styles.cardBody}>
+              <Text style={styles.cardTitle}>一級電気通信工事施工管理技士</Text>
+              <Text style={styles.cardSubtitle}>電気通信工学・設備・施工管理・法規</Text>
+              <Text style={styles.cardMeta}>国家資格 ／ テキスト・科目別問題・模擬試験・全問図解つき解説</Text>
+            </View>
+            <Text style={styles.cardArrow}>›</Text>
+          </LinearGradient>
+        </TouchableOpacity>
+
         {/* 資格試験：積算・コスト管理系 */}
         <Text style={[styles.sectionLabel, { marginTop: 24 }]}>💰 積算・コスト管理系</Text>
 
