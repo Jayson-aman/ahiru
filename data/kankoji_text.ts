@@ -11,9 +11,19 @@ export type KankojiTextChapter = {
 };
 
 import { kankojiTextPart1 } from './kankoji_text_part1';
+import { kankojiTextGenron } from './kankoji_text_genron';
+import { kankojiTextKucho } from './kankoji_text_kucho';
+import { kankojiTextEisei } from './kankoji_text_eisei';
+import { kankojiTextSekou } from './kankoji_text_sekou';
+import { kankojiTextHoki } from './kankoji_text_hoki';
 
 export const kankojiTextbook: KankojiTextChapter[] = [
   ...kankojiTextPart1,
+  ...kankojiTextGenron,
+  ...kankojiTextKucho,
+  ...kankojiTextEisei,
+  ...kankojiTextSekou,
+  ...kankojiTextHoki,
 ];
 
 export function getKankojiText(subject: string): KankojiTextSection[] {
