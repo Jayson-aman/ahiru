@@ -17,9 +17,16 @@ export type Denki2TextChapter = {
   sections: Denki2TextSection[];
 };
 
-// 執筆完了ぶんから順に結線する。未収録の科目は画面側が「テキスト作成中」を
-// 表示するため、この状態でもアプリは正常に動作する。
+import { denki2TextRiron } from './denki2_text_riron';
+import { denki2TextHaisen } from './denki2_text_haisen';
+import { denki2TextKiki } from './denki2_text_kiki';
+import { denki2TextHoki } from './denki2_text_hoki';
+
 export const denki2Textbook: Denki2TextChapter[] = [
+  ...denki2TextRiron,
+  ...denki2TextHaisen,
+  ...denki2TextKiki,
+  ...denki2TextHoki,
 ];
 
 export function getDenki2Text(subject: string): Denki2TextSection[] {
