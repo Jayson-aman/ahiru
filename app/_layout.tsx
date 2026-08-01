@@ -72,6 +72,12 @@ export default function RootLayout() {
         <Stack.Screen name="kikenbutsu/mogi" options={{ headerShown: false, presentation: 'card' }} />
         <Stack.Screen name="kikenbutsu/text/index" options={{ headerShown: false, presentation: 'card' }} />
         <Stack.Screen name="kikenbutsu/text/[subject]" options={{ headerShown: false, presentation: 'card' }} />
+        {/* コンクリート技士・診断士 */}
+        <Stack.Screen name="concrete/index" options={{ headerShown: false, presentation: 'card' }} />
+        <Stack.Screen name="concrete/[subject]" options={{ headerShown: false, presentation: 'card' }} />
+        <Stack.Screen name="concrete/mogi" options={{ headerShown: false, presentation: 'card' }} />
+        <Stack.Screen name="concrete/text/index" options={{ headerShown: false, presentation: 'card' }} />
+        <Stack.Screen name="concrete/text/[subject]" options={{ headerShown: false, presentation: 'card' }} />
         {/* 電気・理工系 */}
         <Stack.Screen name="denken3/index" options={{ headerShown: false, presentation: 'card' }} />
         <Stack.Screen name="denken3/[subject]" options={{ headerShown: false, presentation: 'card' }} />

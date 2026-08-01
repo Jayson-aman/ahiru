@@ -15,7 +15,7 @@ const RC_API_KEY_ANDROID =
 export type SubscriptionTier = 'free' | 'pro' | 'max';
 
 // Certification keys — used as entitlement IDs in RevenueCat dashboard
-export type CertKey = 'takkei' | 'fp' | 'mansion' | 'kenchiku' | 'denken3' | 'kisho' | 'juken' | 'eiken' | 'sekokan' | 'kankoji' | 'denkisekou' | 'kikaisekou' | 'dobokusekou' | 'cost' | 'kyusui' | 'shobo' | 'kikenbutsu';
+export type CertKey = 'takkei' | 'fp' | 'mansion' | 'kenchiku' | 'denken3' | 'kisho' | 'juken' | 'eiken' | 'sekokan' | 'kankoji' | 'denkisekou' | 'kikaisekou' | 'dobokusekou' | 'cost' | 'kyusui' | 'shobo' | 'kikenbutsu' | 'concrete';
 
 // RevenueCat entitlement identifiers (must match dashboard exactly)
 export const ENTITLEMENTS: Record<CertKey, string> = {
@@ -36,6 +36,7 @@ export const ENTITLEMENTS: Record<CertKey, string> = {
   kyusui:   'pro_kyusui',
   shobo:    'pro_shobo',
   kikenbutsu: 'pro_kikenbutsu',
+  concrete: 'pro_concrete',
 };
 
 // Pricing constants (display only — real prices are set in RevenueCat/App Store)
@@ -69,21 +70,15 @@ export const PRICING = {
 export const ENTITLEMENT_MAX = 'max';
 
 /**
- * App Store Connect にまだ課金商品を作っていない資格。
- * 学習コンテンツは収録済みなので無料枠（10問）では利用できるが、
- * 購入導線を出すと「買えないボタン」を見せることになるため、
- * ペイウォールとホーム画面で「準備中」として扱う。
- * 商品を作成したらこの配列から外すこと。
- */
-/**
  * まだ App Store Connect / RevenueCat に課金商品を登録していない資格。
+ * 学習コンテンツは収録済みなので無料枠（10問）では利用できる。
  * ここに入れておくと購入UIごと隠れるので、審査担当者が買えないボタンを
  * 押して「In-App Purchaseが機能しない」と判断されるのを防げる。
  *
  * ★商品を登録して Offering に入れたら、必ずこの配列から外すこと。
  *   外し忘れると、商品があるのに永久に「準備中」のまま売れなくなる。
  */
-export const CERTS_COMING_SOON: CertKey[] = ['kikenbutsu'];
+export const CERTS_COMING_SOON: CertKey[] = ['kikenbutsu', 'concrete'];
 
 export function isComingSoon(cert: CertKey): boolean {
   return CERTS_COMING_SOON.includes(cert);
