@@ -3,7 +3,7 @@ import type { DobokusekouQuestion } from './dobokusekou_questions';
 // 土木法規 追加分5（建設業法・道路法・河川法・関連法令）53問
 export const dobokusekouHoki5: DobokusekouQuestion[] = [
   {
-    id: 'ds-hoki-124',
+    id: 'dbk-hoki-124',
     subject: 'hoki',
     subjectName: '土木法規',
     question: '建設業法における建設業の許可に関する記述のうち、適当なものはどれか。',
@@ -18,7 +18,7 @@ export const dobokusekouHoki5: DobokusekouQuestion[] = [
     difficulty: 'basic',
   },
   {
-    id: 'ds-hoki-125',
+    id: 'dbk-hoki-125',
     subject: 'hoki',
     subjectName: '土木法規',
     question: '建設業法における特定建設業許可に関する記述のうち、不適当なものはどれか。',
@@ -33,7 +33,7 @@ export const dobokusekouHoki5: DobokusekouQuestion[] = [
     difficulty: 'advanced',
   },
   {
-    id: 'ds-hoki-126',
+    id: 'dbk-hoki-126',
     subject: 'hoki',
     subjectName: '土木法規',
     question: '建設業法における主任技術者・監理技術者の配置に関する記述のうち、不適当なものはどれか。',
@@ -48,7 +48,7 @@ export const dobokusekouHoki5: DobokusekouQuestion[] = [
     difficulty: 'advanced',
   },
   {
-    id: 'ds-hoki-127',
+    id: 'dbk-hoki-127',
     subject: 'hoki',
     subjectName: '土木法規',
     question: '建設業法における下請契約に関する記述のうち、不適当なものはどれか。',
@@ -63,7 +63,7 @@ export const dobokusekouHoki5: DobokusekouQuestion[] = [
     difficulty: 'advanced',
   },
   {
-    id: 'ds-hoki-128',
+    id: 'dbk-hoki-128',
     subject: 'hoki',
     subjectName: '土木法規',
     question: '建設業法における建設業者の技術者制度（専任技術者）に関する記述のうち、適当なものはどれか。',
@@ -78,7 +78,7 @@ export const dobokusekouHoki5: DobokusekouQuestion[] = [
     difficulty: 'standard',
   },
   {
-    id: 'ds-hoki-129',
+    id: 'dbk-hoki-129',
     subject: 'hoki',
     subjectName: '土木法規',
     question: '建設業法における経営業務の管理責任者等（常勤役員等）に関する記述のうち、不適当なものはどれか。',
@@ -93,7 +93,7 @@ export const dobokusekouHoki5: DobokusekouQuestion[] = [
     difficulty: 'advanced',
   },
   {
-    id: 'ds-hoki-130',
+    id: 'dbk-hoki-130',
     subject: 'hoki',
     subjectName: '土木法規',
     question: '建設業法における施工体制台帳・施工体系図に関する記述のうち、適当なものはどれか。',
@@ -108,7 +108,7 @@ export const dobokusekouHoki5: DobokusekouQuestion[] = [
     difficulty: 'advanced',
   },
   {
-    id: 'ds-hoki-131',
+    id: 'dbk-hoki-131',
     subject: 'hoki',
     subjectName: '土木法規',
     question: '建設業法における一括下請負（丸投げ）の禁止に関する記述のうち、不適当なものはどれか。',
@@ -123,7 +123,7 @@ export const dobokusekouHoki5: DobokusekouQuestion[] = [
     difficulty: 'advanced',
   },
   {
-    id: 'ds-hoki-132',
+    id: 'dbk-hoki-132',
     subject: 'hoki',
     subjectName: '土木法規',
     question: '道路法における道路の管理に関する記述のうち、適当なものはどれか。',
@@ -138,7 +138,7 @@ export const dobokusekouHoki5: DobokusekouQuestion[] = [
     difficulty: 'standard',
   },
   {
-    id: 'ds-hoki-133',
+    id: 'dbk-hoki-133',
     subject: 'hoki',
     subjectName: '土木法規',
     question: '道路法における道路占用許可に関する記述のうち、不適当なものはどれか。',
@@ -153,7 +153,7 @@ export const dobokusekouHoki5: DobokusekouQuestion[] = [
     difficulty: 'standard',
   },
   {
-    id: 'ds-hoki-134',
+    id: 'dbk-hoki-134',
     subject: 'hoki',
     subjectName: '土木法規',
     question: '道路法に基づく車両制限令における一般的制限値に関する記述のうち、適当なものはどれか。',
@@ -168,7 +168,7 @@ export const dobokusekouHoki5: DobokusekouQuestion[] = [
     difficulty: 'advanced',
   },
   {
-    id: 'ds-hoki-135',
+    id: 'dbk-hoki-135',
     subject: 'hoki',
     subjectName: '土木法規',
     question: '道路法における道路の掘削・工事の実施に関する記述のうち、不適当なものはどれか。',
@@ -183,7 +183,7 @@ export const dobokusekouHoki5: DobokusekouQuestion[] = [
     difficulty: 'standard',
   },
   {
-    id: 'ds-hoki-136',
+    id: 'dbk-hoki-136',
     subject: 'hoki',
     subjectName: '土木法規',
     question: '河川法における河川管理者に関する記述のうち、適当なものはどれか。',
@@ -198,7 +198,7 @@ export const dobokusekouHoki5: DobokusekouQuestion[] = [
     difficulty: 'standard',
   },
   {
-    id: 'ds-hoki-137',
+    id: 'dbk-hoki-137',
     subject: 'hoki',
     subjectName: '土木法規',
     question: '河川法における河川区域内の行為制限に関する記述のうち、不適当なものはどれか。',
@@ -213,7 +213,7 @@ export const dobokusekouHoki5: DobokusekouQuestion[] = [
     difficulty: 'advanced',
   },
   {
-    id: 'ds-hoki-138',
+    id: 'dbk-hoki-138',
     subject: 'hoki',
     subjectName: '土木法規',
     question: '河川法における河川保全区域に関する記述のうち、適当なものはどれか。',
@@ -228,7 +228,7 @@ export const dobokusekouHoki5: DobokusekouQuestion[] = [
     difficulty: 'advanced',
   },
   {
-    id: 'ds-hoki-139',
+    id: 'dbk-hoki-139',
     subject: 'hoki',
     subjectName: '土木法規',
     question: '河川法における河川管理施設等の維持管理に関する記述のうち、不適当なものはどれか。',
@@ -243,7 +243,7 @@ export const dobokusekouHoki5: DobokusekouQuestion[] = [
     difficulty: 'standard',
   },
   {
-    id: 'ds-hoki-140',
+    id: 'dbk-hoki-140',
     subject: 'hoki',
     subjectName: '土木法規',
     question: '火薬類取締法における火薬類の取扱いに関する記述のうち、適当なものはどれか。',
@@ -258,7 +258,7 @@ export const dobokusekouHoki5: DobokusekouQuestion[] = [
     difficulty: 'standard',
   },
   {
-    id: 'ds-hoki-141',
+    id: 'dbk-hoki-141',
     subject: 'hoki',
     subjectName: '土木法規',
     question: '騒音規制法における規制地域・規制基準に関する記述のうち、不適当なものはどれか。',
@@ -273,7 +273,7 @@ export const dobokusekouHoki5: DobokusekouQuestion[] = [
     difficulty: 'advanced',
   },
   {
-    id: 'ds-hoki-142',
+    id: 'dbk-hoki-142',
     subject: 'hoki',
     subjectName: '土木法規',
     question: '振動規制法における特定建設作業の届出に関する記述のうち、適当なものはどれか。',
@@ -288,7 +288,7 @@ export const dobokusekouHoki5: DobokusekouQuestion[] = [
     difficulty: 'advanced',
   },
   {
-    id: 'ds-hoki-143',
+    id: 'dbk-hoki-143',
     subject: 'hoki',
     subjectName: '土木法規',
     question: '建設リサイクル法における対象建設工事に関する記述のうち、不適当なものはどれか。',
@@ -303,7 +303,7 @@ export const dobokusekouHoki5: DobokusekouQuestion[] = [
     difficulty: 'advanced',
   },
   {
-    id: 'ds-hoki-144',
+    id: 'dbk-hoki-144',
     subject: 'hoki',
     subjectName: '土木法規',
     question: '廃棄物の処理及び清掃に関する法律（廃棄物処理法）における産業廃棄物に関する記述のうち、適当なものはどれか。',
@@ -318,7 +318,7 @@ export const dobokusekouHoki5: DobokusekouQuestion[] = [
     difficulty: 'standard',
   },
   {
-    id: 'ds-hoki-145',
+    id: 'dbk-hoki-145',
     subject: 'hoki',
     subjectName: '土木法規',
     question: '廃棄物処理法における建設発生土の取扱いに関する記述のうち、不適当なものはどれか。',
@@ -333,7 +333,7 @@ export const dobokusekouHoki5: DobokusekouQuestion[] = [
     difficulty: 'advanced',
   },
   {
-    id: 'ds-hoki-146',
+    id: 'dbk-hoki-146',
     subject: 'hoki',
     subjectName: '土木法規',
     question: '道路交通法における道路使用許可・制限外積載許可に関する記述のうち、適当なものはどれか。',
@@ -348,7 +348,7 @@ export const dobokusekouHoki5: DobokusekouQuestion[] = [
     difficulty: 'standard',
   },
   {
-    id: 'ds-hoki-147',
+    id: 'dbk-hoki-147',
     subject: 'hoki',
     subjectName: '土木法規',
     question: '大気汚染防止法における建設工事に関連する規制に関する記述のうち、不適当なものはどれか。',
@@ -363,7 +363,7 @@ export const dobokusekouHoki5: DobokusekouQuestion[] = [
     difficulty: 'advanced',
   },
   {
-    id: 'ds-hoki-148',
+    id: 'dbk-hoki-148',
     subject: 'hoki',
     subjectName: '土木法規',
     question: '水質汚濁防止法における特定施設に関する記述のうち、適当なものはどれか。',
@@ -378,7 +378,7 @@ export const dobokusekouHoki5: DobokusekouQuestion[] = [
     difficulty: 'advanced',
   },
   {
-    id: 'ds-hoki-149',
+    id: 'dbk-hoki-149',
     subject: 'hoki',
     subjectName: '土木法規',
     question: '建設業法における請負契約の原則に関する記述のうち、不適当なものはどれか。',
@@ -393,7 +393,7 @@ export const dobokusekouHoki5: DobokusekouQuestion[] = [
     difficulty: 'advanced',
   },
   {
-    id: 'ds-hoki-150',
+    id: 'dbk-hoki-150',
     subject: 'hoki',
     subjectName: '土木法規',
     question: '建設業法における建設業者の標識の掲示に関する記述のうち、適当なものはどれか。',
@@ -408,7 +408,7 @@ export const dobokusekouHoki5: DobokusekouQuestion[] = [
     difficulty: 'basic',
   },
   {
-    id: 'ds-hoki-151',
+    id: 'dbk-hoki-151',
     subject: 'hoki',
     subjectName: '土木法規',
     question: '建設業法における技術検定（施工管理技士）制度に関する記述のうち、不適当なものはどれか。',
@@ -423,7 +423,7 @@ export const dobokusekouHoki5: DobokusekouQuestion[] = [
     difficulty: 'advanced',
   },
   {
-    id: 'ds-hoki-152',
+    id: 'dbk-hoki-152',
     subject: 'hoki',
     subjectName: '土木法規',
     question: '建設業法における建設業者に対する監督処分に関する記述のうち、適当なものはどれか。',
@@ -438,7 +438,7 @@ export const dobokusekouHoki5: DobokusekouQuestion[] = [
     difficulty: 'advanced',
   },
   {
-    id: 'ds-hoki-153',
+    id: 'dbk-hoki-153',
     subject: 'hoki',
     subjectName: '土木法規',
     question: '公共工事の入札契約に関する法律（入契法）に関する記述のうち、不適当なものはどれか。',
@@ -453,7 +453,7 @@ export const dobokusekouHoki5: DobokusekouQuestion[] = [
     difficulty: 'advanced',
   },
   {
-    id: 'ds-hoki-154',
+    id: 'dbk-hoki-154',
     subject: 'hoki',
     subjectName: '土木法規',
     question: '河川法における水利使用（河川流水の占用）に関する記述のうち、適当なものはどれか。',
@@ -468,7 +468,7 @@ export const dobokusekouHoki5: DobokusekouQuestion[] = [
     difficulty: 'advanced',
   },
   {
-    id: 'ds-hoki-155',
+    id: 'dbk-hoki-155',
     subject: 'hoki',
     subjectName: '土木法規',
     question: '砂防法における砂防指定地に関する記述のうち、不適当なものはどれか。',
@@ -483,7 +483,7 @@ export const dobokusekouHoki5: DobokusekouQuestion[] = [
     difficulty: 'advanced',
   },
   {
-    id: 'ds-hoki-156',
+    id: 'dbk-hoki-156',
     subject: 'hoki',
     subjectName: '土木法規',
     question: '地すべり等防止法における地すべり防止区域に関する記述のうち、適当なものはどれか。',
@@ -498,7 +498,7 @@ export const dobokusekouHoki5: DobokusekouQuestion[] = [
     difficulty: 'advanced',
   },
   {
-    id: 'ds-hoki-157',
+    id: 'dbk-hoki-157',
     subject: 'hoki',
     subjectName: '土木法規',
     question: '急傾斜地の崩壊による災害の防止に関する法律（急傾斜地法）に関する記述のうち、不適当なものはどれか。',
@@ -513,7 +513,7 @@ export const dobokusekouHoki5: DobokusekouQuestion[] = [
     difficulty: 'advanced',
   },
   {
-    id: 'ds-hoki-158',
+    id: 'dbk-hoki-158',
     subject: 'hoki',
     subjectName: '土木法規',
     question: '土壌汚染対策法における建設工事に関連する規制に関する記述のうち、適当なものはどれか。',
@@ -528,7 +528,7 @@ export const dobokusekouHoki5: DobokusekouQuestion[] = [
     difficulty: 'advanced',
   },
   {
-    id: 'ds-hoki-159',
+    id: 'dbk-hoki-159',
     subject: 'hoki',
     subjectName: '土木法規',
     question: '文化財保護法における埋蔵文化財の取扱いに関する記述のうち、不適当なものはどれか。',
@@ -543,7 +543,7 @@ export const dobokusekouHoki5: DobokusekouQuestion[] = [
     difficulty: 'advanced',
   },
   {
-    id: 'ds-hoki-160',
+    id: 'dbk-hoki-160',
     subject: 'hoki',
     subjectName: '土木法規',
     question: '都市計画法における開発行為の規制に関する記述のうち、適当なものはどれか。',
@@ -558,7 +558,7 @@ export const dobokusekouHoki5: DobokusekouQuestion[] = [
     difficulty: 'advanced',
   },
   {
-    id: 'ds-hoki-161',
+    id: 'dbk-hoki-161',
     subject: 'hoki',
     subjectName: '土木法規',
     question: '労働者派遣法における建設業務への労働者派遣の禁止に関する記述のうち、不適当なものはどれか。',
@@ -573,7 +573,7 @@ export const dobokusekouHoki5: DobokusekouQuestion[] = [
     difficulty: 'advanced',
   },
   {
-    id: 'ds-hoki-162',
+    id: 'dbk-hoki-162',
     subject: 'hoki',
     subjectName: '土木法規',
     question: '独占禁止法における建設業に関連する規制（入札談合の禁止）に関する記述のうち、適当なものはどれか。',
@@ -588,7 +588,7 @@ export const dobokusekouHoki5: DobokusekouQuestion[] = [
     difficulty: 'advanced',
   },
   {
-    id: 'ds-hoki-163',
+    id: 'dbk-hoki-163',
     subject: 'hoki',
     subjectName: '土木法規',
     question: '河川法における河川整備計画に関する記述のうち、不適当なものはどれか。',
@@ -603,7 +603,7 @@ export const dobokusekouHoki5: DobokusekouQuestion[] = [
     difficulty: 'advanced',
   },
   {
-    id: 'ds-hoki-164',
+    id: 'dbk-hoki-164',
     subject: 'hoki',
     subjectName: '土木法規',
     question: '建設業法における下請代金の支払い（支払保留の禁止等）に関する記述のうち、適当なものはどれか。',
@@ -618,7 +618,7 @@ export const dobokusekouHoki5: DobokusekouQuestion[] = [
     difficulty: 'advanced',
   },
   {
-    id: 'ds-hoki-165',
+    id: 'dbk-hoki-165',
     subject: 'hoki',
     subjectName: '土木法規',
     question: '河川法における許可工作物の維持管理に関する記述のうち、不適当なものはどれか。',
@@ -633,7 +633,7 @@ export const dobokusekouHoki5: DobokusekouQuestion[] = [
     difficulty: 'advanced',
   },
   {
-    id: 'ds-hoki-166',
+    id: 'dbk-hoki-166',
     subject: 'hoki',
     subjectName: '土木法規',
     question: '建設業法における建設工事の種類（29業種）に関する記述のうち、適当なものはどれか。',
@@ -648,7 +648,7 @@ export const dobokusekouHoki5: DobokusekouQuestion[] = [
     difficulty: 'standard',
   },
   {
-    id: 'ds-hoki-167',
+    id: 'dbk-hoki-167',
     subject: 'hoki',
     subjectName: '土木法規',
     question: '河川法における河川に関する情報の公表・周知に関する記述のうち、不適当なものはどれか。',
@@ -663,7 +663,7 @@ export const dobokusekouHoki5: DobokusekouQuestion[] = [
     difficulty: 'advanced',
   },
   {
-    id: 'ds-hoki-168',
+    id: 'dbk-hoki-168',
     subject: 'hoki',
     subjectName: '土木法規',
     question: '建設業法における紛争処理（建設工事紛争審査会）に関する記述のうち、適当なものはどれか。',
@@ -678,7 +678,7 @@ export const dobokusekouHoki5: DobokusekouQuestion[] = [
     difficulty: 'advanced',
   },
   {
-    id: 'ds-hoki-169',
+    id: 'dbk-hoki-169',
     subject: 'hoki',
     subjectName: '土木法規',
     question: '道路法における占用物件の維持管理・原状回復義務に関する記述のうち、不適当なものはどれか。',
@@ -693,7 +693,7 @@ export const dobokusekouHoki5: DobokusekouQuestion[] = [
     difficulty: 'standard',
   },
   {
-    id: 'ds-hoki-170',
+    id: 'dbk-hoki-170',
     subject: 'hoki',
     subjectName: '土木法規',
     question: '建設業法における契約書面の記載事項に関する記述のうち、適当なものはどれか。',
@@ -708,7 +708,7 @@ export const dobokusekouHoki5: DobokusekouQuestion[] = [
     difficulty: 'standard',
   },
   {
-    id: 'ds-hoki-171',
+    id: 'dbk-hoki-171',
     subject: 'hoki',
     subjectName: '土木法規',
     question: '河川法における河川台帳に関する記述のうち、不適当なものはどれか。',
@@ -723,7 +723,7 @@ export const dobokusekouHoki5: DobokusekouQuestion[] = [
     difficulty: 'advanced',
   },
   {
-    id: 'ds-hoki-172',
+    id: 'dbk-hoki-172',
     subject: 'hoki',
     subjectName: '土木法規',
     question: '道路法における道路の新設・改築（道路の区域決定）に関する記述のうち、適当なものはどれか。',
@@ -738,7 +738,7 @@ export const dobokusekouHoki5: DobokusekouQuestion[] = [
     difficulty: 'advanced',
   },
   {
-    id: 'ds-hoki-173',
+    id: 'dbk-hoki-173',
     subject: 'hoki',
     subjectName: '土木法規',
     question: '建設業法における建設業者団体・技術者の資質向上に関する記述のうち、不適当なものはどれか。',
@@ -753,7 +753,7 @@ export const dobokusekouHoki5: DobokusekouQuestion[] = [
     difficulty: 'standard',
   },
   {
-    id: 'ds-hoki-174',
+    id: 'dbk-hoki-174',
     subject: 'hoki',
     subjectName: '土木法規',
     question: '河川法における水防警報・洪水予報に関する記述のうち、適当なものはどれか。',
@@ -768,7 +768,7 @@ export const dobokusekouHoki5: DobokusekouQuestion[] = [
     difficulty: 'advanced',
   },
   {
-    id: 'ds-hoki-175',
+    id: 'dbk-hoki-175',
     subject: 'hoki',
     subjectName: '土木法規',
     question: '建設業法における主任技術者の職務に関する記述のうち、不適当なものはどれか。',
@@ -783,7 +783,7 @@ export const dobokusekouHoki5: DobokusekouQuestion[] = [
     difficulty: 'standard',
   },
   {
-    id: 'ds-hoki-176',
+    id: 'dbk-hoki-176',
     subject: 'hoki',
     subjectName: '土木法規',
     question: '建設業法における建設業許可の取消し・失効事由に関する記述のうち、適当なものはどれか。',

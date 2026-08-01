@@ -3,7 +3,7 @@ import type { DobokusekouQuestion } from './dobokusekou_questions';
 // 土木法規 追加分4（労働基準法・労働安全衛生法）53問
 export const dobokusekouHoki4: DobokusekouQuestion[] = [
   {
-    id: 'ds-hoki-71',
+    id: 'dbk-hoki-71',
     subject: 'hoki',
     subjectName: '土木法規',
     question: '労働基準法における労働契約に関する記述のうち、適当なものはどれか。',
@@ -18,7 +18,7 @@ export const dobokusekouHoki4: DobokusekouQuestion[] = [
     difficulty: 'standard',
   },
   {
-    id: 'ds-hoki-72',
+    id: 'dbk-hoki-72',
     subject: 'hoki',
     subjectName: '土木法規',
     question: '労働基準法における賃金の支払いに関する記述のうち、不適当なものはどれか。',
@@ -33,7 +33,7 @@ export const dobokusekouHoki4: DobokusekouQuestion[] = [
     difficulty: 'standard',
   },
   {
-    id: 'ds-hoki-73',
+    id: 'dbk-hoki-73',
     subject: 'hoki',
     subjectName: '土木法規',
     question: '労働基準法における労働時間・休憩・休日に関する記述のうち、適当なものはどれか。',
@@ -48,7 +48,7 @@ export const dobokusekouHoki4: DobokusekouQuestion[] = [
     difficulty: 'standard',
   },
   {
-    id: 'ds-hoki-74',
+    id: 'dbk-hoki-74',
     subject: 'hoki',
     subjectName: '土木法規',
     question: '労働基準法における年次有給休暇に関する記述のうち、不適当なものはどれか。',
@@ -63,7 +63,7 @@ export const dobokusekouHoki4: DobokusekouQuestion[] = [
     difficulty: 'advanced',
   },
   {
-    id: 'ds-hoki-75',
+    id: 'dbk-hoki-75',
     subject: 'hoki',
     subjectName: '土木法規',
     question: '労働基準法における年少者の保護に関する記述のうち、適当なものはどれか。',
@@ -78,7 +78,7 @@ export const dobokusekouHoki4: DobokusekouQuestion[] = [
     difficulty: 'standard',
   },
   {
-    id: 'ds-hoki-76',
+    id: 'dbk-hoki-76',
     subject: 'hoki',
     subjectName: '土木法規',
     question: '労働基準法における解雇に関する記述のうち、不適当なものはどれか。',
@@ -93,7 +93,7 @@ export const dobokusekouHoki4: DobokusekouQuestion[] = [
     difficulty: 'advanced',
   },
   {
-    id: 'ds-hoki-77',
+    id: 'dbk-hoki-77',
     subject: 'hoki',
     subjectName: '土木法規',
     question: '労働基準法における就業規則に関する記述のうち、適当なものはどれか。',
@@ -108,7 +108,7 @@ export const dobokusekouHoki4: DobokusekouQuestion[] = [
     difficulty: 'standard',
   },
   {
-    id: 'ds-hoki-78',
+    id: 'dbk-hoki-78',
     subject: 'hoki',
     subjectName: '土木法規',
     question: '労働基準法における災害補償に関する記述のうち、不適当なものはどれか。',
@@ -123,7 +123,7 @@ export const dobokusekouHoki4: DobokusekouQuestion[] = [
     difficulty: 'advanced',
   },
   {
-    id: 'ds-hoki-79',
+    id: 'dbk-hoki-79',
     subject: 'hoki',
     subjectName: '土木法規',
     question: '労働安全衛生法の目的に関する記述のうち、適当なものはどれか。',
@@ -138,7 +138,7 @@ export const dobokusekouHoki4: DobokusekouQuestion[] = [
     difficulty: 'basic',
   },
   {
-    id: 'ds-hoki-80',
+    id: 'dbk-hoki-80',
     subject: 'hoki',
     subjectName: '土木法規',
     question: '労働安全衛生法における総括安全衛生管理者に関する記述のうち、不適当なものはどれか。',
@@ -153,7 +153,7 @@ export const dobokusekouHoki4: DobokusekouQuestion[] = [
     difficulty: 'advanced',
   },
   {
-    id: 'ds-hoki-81',
+    id: 'dbk-hoki-81',
     subject: 'hoki',
     subjectName: '土木法規',
     question: '労働安全衛生法における安全管理者・衛生管理者に関する記述のうち、適当なものはどれか。',
@@ -168,7 +168,7 @@ export const dobokusekouHoki4: DobokusekouQuestion[] = [
     difficulty: 'standard',
   },
   {
-    id: 'ds-hoki-82',
+    id: 'dbk-hoki-82',
     subject: 'hoki',
     subjectName: '土木法規',
     question: '労働安全衛生法における産業医に関する記述のうち、不適当なものはどれか。',
@@ -183,7 +183,7 @@ export const dobokusekouHoki4: DobokusekouQuestion[] = [
     difficulty: 'advanced',
   },
   {
-    id: 'ds-hoki-83',
+    id: 'dbk-hoki-83',
     subject: 'hoki',
     subjectName: '土木法規',
     question: '労働安全衛生法における安全委員会・衛生委員会に関する記述のうち、適当なものはどれか。',
@@ -198,7 +198,7 @@ export const dobokusekouHoki4: DobokusekouQuestion[] = [
     difficulty: 'standard',
   },
   {
-    id: 'ds-hoki-84',
+    id: 'dbk-hoki-84',
     subject: 'hoki',
     subjectName: '土木法規',
     question: '労働安全衛生法における特定元方事業者の講ずべき措置に関する記述のうち、不適当なものはどれか。',
@@ -213,7 +213,7 @@ export const dobokusekouHoki4: DobokusekouQuestion[] = [
     difficulty: 'advanced',
   },
   {
-    id: 'ds-hoki-85',
+    id: 'dbk-hoki-85',
     subject: 'hoki',
     subjectName: '土木法規',
     question: '労働安全衛生法における特別教育に関する記述のうち、適当なものはどれか。',
@@ -228,7 +228,7 @@ export const dobokusekouHoki4: DobokusekouQuestion[] = [
     difficulty: 'standard',
   },
   {
-    id: 'ds-hoki-86',
+    id: 'dbk-hoki-86',
     subject: 'hoki',
     subjectName: '土木法規',
     question: '労働安全衛生法における技能講習・免許に関する記述のうち、不適当なものはどれか。',
@@ -243,7 +243,7 @@ export const dobokusekouHoki4: DobokusekouQuestion[] = [
     difficulty: 'standard',
   },
   {
-    id: 'ds-hoki-87',
+    id: 'dbk-hoki-87',
     subject: 'hoki',
     subjectName: '土木法規',
     question: '労働安全衛生法における労働者死傷病報告に関する記述のうち、適当なものはどれか。',
@@ -258,7 +258,7 @@ export const dobokusekouHoki4: DobokusekouQuestion[] = [
     difficulty: 'advanced',
   },
   {
-    id: 'ds-hoki-88',
+    id: 'dbk-hoki-88',
     subject: 'hoki',
     subjectName: '土木法規',
     question: '労働安全衛生法における事業者の安全配慮義務・措置義務に関する記述のうち、不適当なものはどれか。',
@@ -273,7 +273,7 @@ export const dobokusekouHoki4: DobokusekouQuestion[] = [
     difficulty: 'standard',
   },
   {
-    id: 'ds-hoki-89',
+    id: 'dbk-hoki-89',
     subject: 'hoki',
     subjectName: '土木法規',
     question: '労働安全衛生法における健康診断に関する記述のうち、適当なものはどれか。',
@@ -288,7 +288,7 @@ export const dobokusekouHoki4: DobokusekouQuestion[] = [
     difficulty: 'standard',
   },
   {
-    id: 'ds-hoki-90',
+    id: 'dbk-hoki-90',
     subject: 'hoki',
     subjectName: '土木法規',
     question: '労働安全衛生法における就業制限業務（一定の資格を要する業務）に関する記述のうち、不適当なものはどれか。',
@@ -303,7 +303,7 @@ export const dobokusekouHoki4: DobokusekouQuestion[] = [
     difficulty: 'advanced',
   },
   {
-    id: 'ds-hoki-91',
+    id: 'dbk-hoki-91',
     subject: 'hoki',
     subjectName: '土木法規',
     question: '労働安全衛生法における元方事業者の講ずべき措置に関する記述のうち、適当なものはどれか。',
@@ -318,7 +318,7 @@ export const dobokusekouHoki4: DobokusekouQuestion[] = [
     difficulty: 'advanced',
   },
   {
-    id: 'ds-hoki-92',
+    id: 'dbk-hoki-92',
     subject: 'hoki',
     subjectName: '土木法規',
     question: '労働安全衛生規則における足場の点検に関する記述のうち、不適当なものはどれか。',
@@ -333,7 +333,7 @@ export const dobokusekouHoki4: DobokusekouQuestion[] = [
     difficulty: 'standard',
   },
   {
-    id: 'ds-hoki-93',
+    id: 'dbk-hoki-93',
     subject: 'hoki',
     subjectName: '土木法規',
     question: '労働安全衛生法におけるクレーン等の定期自主検査に関する記述のうち、適当なものはどれか。',
@@ -348,7 +348,7 @@ export const dobokusekouHoki4: DobokusekouQuestion[] = [
     difficulty: 'advanced',
   },
   {
-    id: 'ds-hoki-94',
+    id: 'dbk-hoki-94',
     subject: 'hoki',
     subjectName: '土木法規',
     question: '労働基準法における労働者派遣・請負関係における労働時間管理に関する記述のうち、不適当なものはどれか。',
@@ -363,7 +363,7 @@ export const dobokusekouHoki4: DobokusekouQuestion[] = [
     difficulty: 'advanced',
   },
   {
-    id: 'ds-hoki-95',
+    id: 'dbk-hoki-95',
     subject: 'hoki',
     subjectName: '土木法規',
     question: '労働安全衛生法における墜落・転落災害の防止措置に関する記述のうち、適当なものはどれか。',
@@ -378,7 +378,7 @@ export const dobokusekouHoki4: DobokusekouQuestion[] = [
     difficulty: 'standard',
   },
   {
-    id: 'ds-hoki-96',
+    id: 'dbk-hoki-96',
     subject: 'hoki',
     subjectName: '土木法規',
     question: '労働安全衛生法における元方事業者による安全衛生教育の指導・援助に関する記述のうち、不適当なものはどれか。',
@@ -393,7 +393,7 @@ export const dobokusekouHoki4: DobokusekouQuestion[] = [
     difficulty: 'standard',
   },
   {
-    id: 'ds-hoki-97',
+    id: 'dbk-hoki-97',
     subject: 'hoki',
     subjectName: '土木法規',
     question: '労働基準法における労働時間の適用除外・変形労働時間制に関する記述のうち、適当なものはどれか。',
@@ -408,7 +408,7 @@ export const dobokusekouHoki4: DobokusekouQuestion[] = [
     difficulty: 'advanced',
   },
   {
-    id: 'ds-hoki-98',
+    id: 'dbk-hoki-98',
     subject: 'hoki',
     subjectName: '土木法規',
     question: '労働安全衛生法における酸素欠乏症等防止規則以外の特別規則（有機溶剤中毒予防規則等）に関する記述のうち、不適当なものはどれか。',
@@ -423,7 +423,7 @@ export const dobokusekouHoki4: DobokusekouQuestion[] = [
     difficulty: 'standard',
   },
   {
-    id: 'ds-hoki-99',
+    id: 'dbk-hoki-99',
     subject: 'hoki',
     subjectName: '土木法規',
     question: '労働安全衛生法における事業者の一般的な責務（快適な職場環境の形成）に関する記述のうち、適当なものはどれか。',
@@ -438,7 +438,7 @@ export const dobokusekouHoki4: DobokusekouQuestion[] = [
     difficulty: 'standard',
   },
   {
-    id: 'ds-hoki-100',
+    id: 'dbk-hoki-100',
     subject: 'hoki',
     subjectName: '土木法規',
     question: '労働基準法における妊産婦等の保護規定に関する記述のうち、不適当なものはどれか。',
@@ -453,7 +453,7 @@ export const dobokusekouHoki4: DobokusekouQuestion[] = [
     difficulty: 'advanced',
   },
   {
-    id: 'ds-hoki-101',
+    id: 'dbk-hoki-101',
     subject: 'hoki',
     subjectName: '土木法規',
     question: '労働安全衛生法における作業環境測定に関する記述のうち、適当なものはどれか。',
@@ -468,7 +468,7 @@ export const dobokusekouHoki4: DobokusekouQuestion[] = [
     difficulty: 'advanced',
   },
   {
-    id: 'ds-hoki-102',
+    id: 'dbk-hoki-102',
     subject: 'hoki',
     subjectName: '土木法規',
     question: '労働安全衛生法における建設物・機械等の設置に係る計画の届出に関する記述のうち、不適当なものはどれか。',
@@ -483,7 +483,7 @@ export const dobokusekouHoki4: DobokusekouQuestion[] = [
     difficulty: 'advanced',
   },
   {
-    id: 'ds-hoki-103',
+    id: 'dbk-hoki-103',
     subject: 'hoki',
     subjectName: '土木法規',
     question: '労働基準法における平均賃金の算定に関する記述のうち、適当なものはどれか。',
@@ -498,7 +498,7 @@ export const dobokusekouHoki4: DobokusekouQuestion[] = [
     difficulty: 'advanced',
   },
   {
-    id: 'ds-hoki-104',
+    id: 'dbk-hoki-104',
     subject: 'hoki',
     subjectName: '土木法規',
     question: '労働安全衛生法における店社安全衛生管理者に関する記述のうち、不適当なものはどれか。',
@@ -513,7 +513,7 @@ export const dobokusekouHoki4: DobokusekouQuestion[] = [
     difficulty: 'advanced',
   },
   {
-    id: 'ds-hoki-105',
+    id: 'dbk-hoki-105',
     subject: 'hoki',
     subjectName: '土木法規',
     question: '労働基準法における労働条件の原則に関する記述のうち、適当なものはどれか。',
@@ -528,7 +528,7 @@ export const dobokusekouHoki4: DobokusekouQuestion[] = [
     difficulty: 'basic',
   },
   {
-    id: 'ds-hoki-106',
+    id: 'dbk-hoki-106',
     subject: 'hoki',
     subjectName: '土木法規',
     question: '労働安全衛生法における事業者の講ずる措置（危険性又は有害性等の調査：リスクアセスメント）に関する記述のうち、不適当なものはどれか。',
@@ -543,7 +543,7 @@ export const dobokusekouHoki4: DobokusekouQuestion[] = [
     difficulty: 'advanced',
   },
   {
-    id: 'ds-hoki-107',
+    id: 'dbk-hoki-107',
     subject: 'hoki',
     subjectName: '土木法規',
     question: '労働基準法における労働者代表（過半数代表者）に関する記述のうち、適当なものはどれか。',
@@ -558,7 +558,7 @@ export const dobokusekouHoki4: DobokusekouQuestion[] = [
     difficulty: 'advanced',
   },
   {
-    id: 'ds-hoki-108',
+    id: 'dbk-hoki-108',
     subject: 'hoki',
     subjectName: '土木法規',
     question: '労働安全衛生法における特定化学物質等に係る規制に関する記述のうち、不適当なものはどれか。',
@@ -573,7 +573,7 @@ export const dobokusekouHoki4: DobokusekouQuestion[] = [
     difficulty: 'advanced',
   },
   {
-    id: 'ds-hoki-109',
+    id: 'dbk-hoki-109',
     subject: 'hoki',
     subjectName: '土木法規',
     question: '労働基準法における賃金台帳・労働者名簿に関する記述のうち、適当なものはどれか。',
@@ -588,7 +588,7 @@ export const dobokusekouHoki4: DobokusekouQuestion[] = [
     difficulty: 'advanced',
   },
   {
-    id: 'ds-hoki-110',
+    id: 'dbk-hoki-110',
     subject: 'hoki',
     subjectName: '土木法規',
     question: '労働安全衛生法における墜落制止用器具（安全帯）の規格・使用に関する記述のうち、不適当なものはどれか。',
@@ -603,7 +603,7 @@ export const dobokusekouHoki4: DobokusekouQuestion[] = [
     difficulty: 'advanced',
   },
   {
-    id: 'ds-hoki-111',
+    id: 'dbk-hoki-111',
     subject: 'hoki',
     subjectName: '土木法規',
     question: '労働基準法における休業手当に関する記述のうち、適当なものはどれか。',
@@ -618,7 +618,7 @@ export const dobokusekouHoki4: DobokusekouQuestion[] = [
     difficulty: 'advanced',
   },
   {
-    id: 'ds-hoki-112',
+    id: 'dbk-hoki-112',
     subject: 'hoki',
     subjectName: '土木法規',
     question: '労働安全衛生法における免許の取消し等に関する記述のうち、不適当なものはどれか。',
@@ -633,7 +633,7 @@ export const dobokusekouHoki4: DobokusekouQuestion[] = [
     difficulty: 'advanced',
   },
   {
-    id: 'ds-hoki-113',
+    id: 'dbk-hoki-113',
     subject: 'hoki',
     subjectName: '土木法規',
     question: '労働基準法における労働基準監督機関に関する記述のうち、適当なものはどれか。',
@@ -648,7 +648,7 @@ export const dobokusekouHoki4: DobokusekouQuestion[] = [
     difficulty: 'advanced',
   },
   {
-    id: 'ds-hoki-114',
+    id: 'dbk-hoki-114',
     subject: 'hoki',
     subjectName: '土木法規',
     question: '労働安全衛生法におけるゴンドラを使用する作業の安全対策に関する記述のうち、不適当なものはどれか。',
@@ -663,7 +663,7 @@ export const dobokusekouHoki4: DobokusekouQuestion[] = [
     difficulty: 'advanced',
   },
   {
-    id: 'ds-hoki-115',
+    id: 'dbk-hoki-115',
     subject: 'hoki',
     subjectName: '土木法規',
     question: '労働基準法における労働契約の解除・退職に関する記述のうち、適当なものはどれか。',
@@ -678,7 +678,7 @@ export const dobokusekouHoki4: DobokusekouQuestion[] = [
     difficulty: 'standard',
   },
   {
-    id: 'ds-hoki-116',
+    id: 'dbk-hoki-116',
     subject: 'hoki',
     subjectName: '土木法規',
     question: '労働安全衛生法における局所排気装置等の定期自主検査に関する記述のうち、不適当なものはどれか。',
@@ -693,7 +693,7 @@ export const dobokusekouHoki4: DobokusekouQuestion[] = [
     difficulty: 'advanced',
   },
   {
-    id: 'ds-hoki-117',
+    id: 'dbk-hoki-117',
     subject: 'hoki',
     subjectName: '土木法規',
     question: '労働基準法における労働時間の通算（複数の事業場での就労）に関する記述のうち、適当なものはどれか。',
@@ -708,7 +708,7 @@ export const dobokusekouHoki4: DobokusekouQuestion[] = [
     difficulty: 'advanced',
   },
   {
-    id: 'ds-hoki-118',
+    id: 'dbk-hoki-118',
     subject: 'hoki',
     subjectName: '土木法規',
     question: '労働安全衛生法における架設通路・作業構台に関する記述のうち、不適当なものはどれか。',
@@ -723,7 +723,7 @@ export const dobokusekouHoki4: DobokusekouQuestion[] = [
     difficulty: 'standard',
   },
   {
-    id: 'ds-hoki-119',
+    id: 'dbk-hoki-119',
     subject: 'hoki',
     subjectName: '土木法規',
     question: '労働基準法における年少者の証明書に関する記述のうち、適当なものはどれか。',
@@ -738,7 +738,7 @@ export const dobokusekouHoki4: DobokusekouQuestion[] = [
     difficulty: 'standard',
   },
   {
-    id: 'ds-hoki-120',
+    id: 'dbk-hoki-120',
     subject: 'hoki',
     subjectName: '土木法規',
     question: '労働安全衛生法におけるずい道等（トンネル）建設工事の安全対策に関する記述のうち、不適当なものはどれか。',
@@ -753,7 +753,7 @@ export const dobokusekouHoki4: DobokusekouQuestion[] = [
     difficulty: 'advanced',
   },
   {
-    id: 'ds-hoki-121',
+    id: 'dbk-hoki-121',
     subject: 'hoki',
     subjectName: '土木法規',
     question: '労働基準法における労使協定（36協定）に関する記述のうち、適当なものはどれか。',
@@ -768,7 +768,7 @@ export const dobokusekouHoki4: DobokusekouQuestion[] = [
     difficulty: 'advanced',
   },
   {
-    id: 'ds-hoki-122',
+    id: 'dbk-hoki-122',
     subject: 'hoki',
     subjectName: '土木法規',
     question: '労働安全衛生法における発破作業の安全管理に関する記述のうち、不適当なものはどれか。',
@@ -783,7 +783,7 @@ export const dobokusekouHoki4: DobokusekouQuestion[] = [
     difficulty: 'advanced',
   },
   {
-    id: 'ds-hoki-123',
+    id: 'dbk-hoki-123',
     subject: 'hoki',
     subjectName: '土木法規',
     question: '労働基準法における労働契約の締結時の労働条件明示に関する記述のうち、適当なものはどれか。',

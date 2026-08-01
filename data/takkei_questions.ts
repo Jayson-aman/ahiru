@@ -10,6 +10,7 @@ export type TakkeiQuestion = {
   examYear?: string;
 };
 
+import { balanceAnswerKeys } from './_balance';
 import { takkeiKenri1 } from './takkei_questions_kenri_1';
 import { takkeiKosuToukei } from './takkei_questions_kosu_toukei';
 import { takkeiKosuToukei2 } from './takkei_questions_kosu_toukei2';
@@ -57,7 +58,7 @@ import { takkeiZei5 } from './takkei_questions_zei5';
 import { takkeiZei6 } from './takkei_questions_zei6';
 import { takkeiZei7 } from './takkei_questions_zei7';
 
-export const takkeiQuestions: TakkeiQuestion[] = [
+const rawTakkeiQuestions: TakkeiQuestion[] = [
   ...takkeiKosuToukei,
   ...takkeiKosuToukei2,
   ...takkeiKenri1,
@@ -105,3 +106,7 @@ export const takkeiQuestions: TakkeiQuestion[] = [
   ...takkeiZei6,
   ...takkeiZei7,
 ];
+
+// 正解キーがB寄りだったため、他資格と同じく決定的に分散させる
+export const takkeiQuestions: TakkeiQuestion[] = balanceAnswerKeys(rawTakkeiQuestions);
+
