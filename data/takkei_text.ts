@@ -11,9 +11,17 @@ export type TakkeiTextChapter = {
 };
 
 import { takkeiTextPart1 } from './takkei_text_part1';
+import { takkeiTextKenri } from './takkei_text_kenri';
+import { takkeiTextGyoho } from './takkei_text_gyoho';
+import { takkeiTextHorei } from './takkei_text_horei';
+import { takkeiTextZei } from './takkei_text_zei';
 
 export const takkeiTextbook: TakkeiTextChapter[] = [
   ...takkeiTextPart1,
+  ...takkeiTextKenri,
+  ...takkeiTextGyoho,
+  ...takkeiTextHorei,
+  ...takkeiTextZei,
 ];
 
 export function getTakkeiText(subject: string): TakkeiTextSection[] {
