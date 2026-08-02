@@ -15,7 +15,7 @@ export const eikenQuestions3kyu: EikenQuestion[] = [
       { key: 'D', text: 'cut down on' },
     ],
     correctKey: 'D',
-    explanation: '「cut down on salt」は「塩分を減らす」という医師が患者に使う典型的な口語表現。reduceとdecreaseは正しい英語だが「salt in her diet」の文脈では "cut down on salt" がより自然な慣用句。limitも使えるが "cut down on salt" が定着した表現として最も適切。',
+    explanation: '「cut down on salt」は「塩分を減らす」という医師が患者に使う典型的な口語表現。reduceとdecreaseは正しい英語だが「salt in her diet」の文脈では "cut down on salt" がより自然な慣用句。limitも使えるが "cut down on salt" が定着した表現として最も適切。\n\n【図解】「減らす」の使い分け\n　表現｜意味｜使う場面\n　cut down on｜量を控える｜塩分, 甘い物, 喫煙\n　reduce｜削減する｜数値, コスト\n　limit｜上限を設ける｜人数, 時間\n　⇒ 食生活で塩分を控えるなら cut down on\n　⚠ cut down on の on を落とさない。対象を示すには前置詞が必要になる。',
     difficulty: 'advanced',
   },
   {
@@ -30,7 +30,7 @@ export const eikenQuestions3kyu: EikenQuestion[] = [
       { key: 'D', text: 'achieved' },
     ],
     correctKey: 'D',
-    explanation: '「achieve a dream（夢を叶える）」は最も自然なコロケーション。reachは「reach a goal/destination」のように目的地に用い、dreamsとは通常組み合わせない。obtainは書類や許可などの具体的なものを「入手する」場合に使う。gainも意味は近いが「achieve a dream」が慣用表現として定着している。',
+    explanation: '「achieve a dream（夢を叶える）」は最も自然なコロケーション。reachは「reach a goal/destination」のように目的地に用い、dreamsとは通常組み合わせない。obtainは書類や許可などの具体的なものを「入手する」場合に使う。gainも意味は近いが「achieve a dream」が慣用表現として定着している。\n\n【図解】achieve と結びつく名詞\n　動詞｜典型的な目的語｜意味\n　achieve｜dream, goal, success｜努力の末に達成する\n　reach｜goal, destination｜到達する\n　obtain｜permission, license｜入手する\n　⇒ 夢をかなえるなら achieve a dream\n　⚠ reach a dream とは言わない。動詞と名詞の相性で選び分ける。',
     difficulty: 'standard',
   },
   {
@@ -45,7 +45,7 @@ export const eikenQuestions3kyu: EikenQuestion[] = [
       { key: 'D', text: 'closed' },
     ],
     correctKey: 'D',
-    explanation: '「closed（閉館・閉店している）」は施設が営業していない状態を表す定番表現。lockedは「鍵がかかっている」という物理的な状態で、清掃・メンテナンスの理由とは不釣り合い。hiddenは「隠れた」、blockedは「塞がれた」という意味で文脈に合わない。',
+    explanation: '「closed（閉館・閉店している）」は施設が営業していない状態を表す定番表現。lockedは「鍵がかかっている」という物理的な状態で、清掃・メンテナンスの理由とは不釣り合い。hiddenは「隠れた」、blockedは「塞がれた」という意味で文脈に合わない。\n\nclosed は「（施設が）閉まっている」という状態を表す形容詞で、be closed for cleaning のように理由を for で示す。掲示や案内文でよく使われる基本表現である。反対は open。\n\n【図解】閉まっている状態の表し方\n　語｜意味｜対象\n　closed｜営業していない｜店, 博物館\n　locked｜鍵がかかっている｜ドア, 金庫\n　blocked｜ふさがれている｜道, 通路\n　⇒ 清掃のため休館なら closed\n　⚠ locked は物理的に施錠された状態。休館日の案内には closed を使う。',
     difficulty: 'basic',
   },
   {
@@ -60,7 +60,7 @@ export const eikenQuestions3kyu: EikenQuestion[] = [
       { key: 'D', text: 'fill out' },
     ],
     correctKey: 'D',
-    explanation: '「fill out a form（書類に記入する）」は書類・フォームへの記入を表す定番のフレーズ。fill upは「（容器を）いっぱいにする」、fill overという表現は存在しない、fill in withは英語として不自然な表現。英語では「fill out the form」または「fill in the form」が正しい。',
+    explanation: '「fill out a form（書類に記入する）」は書類・フォームへの記入を表す定番のフレーズ。fill upは「（容器を）いっぱいにする」、fill overという表現は存在しない、fill in withは英語として不自然な表現。英語では「fill out the form」または「fill in the form」が正しい。\n\n【図解】fill の句動詞\n　表現｜意味｜対象\n　fill out｜記入する｜form, application\n　fill in｜記入する, 埋める｜blank, form\n　fill up｜満たす｜tank, glass\n　⇒ 書類に記入するなら fill out\n　⚠ fill over という表現は存在しない。前置詞や副詞の組み合わせを確認する。',
     difficulty: 'standard',
   },
   {
@@ -75,7 +75,7 @@ export const eikenQuestions3kyu: EikenQuestion[] = [
       { key: 'D', text: 'picking up' },
     ],
     correctKey: 'D',
-    explanation: '「pick up litter（ゴミを拾う）」は清掃活動を表す正確な表現。take upは「（趣味などを）始める」、put upは「掲示する・建てる」、give upは「諦める」という意味でいずれもゴミ拾いの文脈に合わない。',
+    explanation: '「pick up litter（ゴミを拾う）」は清掃活動を表す正確な表現。take upは「（趣味などを）始める」、put upは「掲示する・建てる」、give upは「諦める」という意味でいずれもゴミ拾いの文脈に合わない。\n\npick up は「拾い上げる」で、litter や trash を目的語にとると清掃活動を表す。up には「下から上へ」という方向のイメージがあり、落ちている物を手に取る動作にぴったり合う。\n\n【図解】up を使う句動詞\n　表現｜意味｜対象\n　pick up｜拾う, 迎えに行く｜litter, 人\n　put up｜掲げる, 建てる｜poster, tent\n　give up｜あきらめる｜dream, smoking\n　⇒ 公園のごみを拾うなら pick up\n　⚠ take up は「（趣味を）始める」。同じ up でも組み合わせる動詞で意味が変わる。',
     difficulty: 'standard',
   },
   {
@@ -90,7 +90,7 @@ export const eikenQuestions3kyu: EikenQuestion[] = [
       { key: 'D', text: 'delayed' },
     ],
     correctKey: 'D',
-    explanation: '「delay a flight（フライトを遅らせる）」は悪天候のために出発が遅れることを表す。「3時間待った」という記述と矛盾しないのはdelayed（遅延）。canceledは「取り消した」で、そうなら通常別のフライトを手配するため3時間待つとは言いにくい。missedは乗客が乗り遅れる場合、removedは文脈に合わない。',
+    explanation: '「delay a flight（フライトを遅らせる）」は悪天候のために出発が遅れることを表す。「3時間待った」という記述と矛盾しないのはdelayed（遅延）。canceledは「取り消した」で、そうなら通常別のフライトを手配するため3時間待つとは言いにくい。missedは乗客が乗り遅れる場合、removedは文脈に合わない。\n\n【図解】飛行機に関する動詞\n　語｜意味｜結果\n　delay｜遅らせる｜後で出発する\n　cancel｜取り消す｜出発しない\n　miss｜乗り遅れる｜主語は乗客\n　⇒ 3時間待ったなら delayed\n　⚠ cancel なら別便を手配する話になる。後半の結果と合う語を選ぶ。',
     difficulty: 'advanced',
   },
   {
@@ -105,7 +105,7 @@ export const eikenQuestions3kyu: EikenQuestion[] = [
       { key: 'D', text: 'does' },
     ],
     correctKey: 'C',
-    explanation: '「take care of（〜の世話をする）」は固定表現（コロケーション）。makeはmake a plan、giveはgive adviceのように使い、careとは組み合わせない。doesは通常doが使われる表現が限られる。care ofと組み合わせる動詞はtakeのみが正しい。',
+    explanation: '「take care of（〜の世話をする）」は固定表現（コロケーション）。makeはmake a plan、giveはgive adviceのように使い、careとは組み合わせない。doesは通常doが使われる表現が限られる。care ofと組み合わせる動詞はtakeのみが正しい。\n\ntake care of 〜 は「〜の世話をする」で、care と結びつく動詞は take に固定されている。look after 〜 も同じ意味で使える言い換え表現である。\n\n【図解】care を使う表現\n　表現｜意味｜使う場面\n　take care of｜世話をする｜子ども, ペット\n　take care｜気をつけて｜別れのあいさつ\n　care about｜気にかける｜関心\n　⇒ 弟の面倒を見るなら take care of\n　⚠ make care of や do care of とは言わない。動詞は take で固定される。',
     difficulty: 'basic',
   },
   {
@@ -120,7 +120,7 @@ export const eikenQuestions3kyu: EikenQuestion[] = [
       { key: 'D', text: 'construct' },
     ],
     correctKey: 'D',
-    explanation: '「construct a bridge（橋を建設する）」は公共事業の文脈で適切。combineは「組み合わせる」、connectは「つなぐ」（橋は川を越えてつなぐが、この動詞の目的語は橋そのものではなく場所）、containは「含む・収容する」。橋を「建設する」にはconstructが正しい。',
+    explanation: '「construct a bridge（橋を建設する）」は公共事業の文脈で適切。combineは「組み合わせる」、connectは「つなぐ」（橋は川を越えてつなぐが、この動詞の目的語は橋そのものではなく場所）、containは「含む・収容する」。橋を「建設する」にはconstructが正しい。\n\nconstruct は「（大きな建造物を）建設する」で、bridge、building、railway を目的語にとる。build よりも硬い語で、公共事業の説明に使われる。名詞形は construction。\n\n【図解】con で始まる動詞\n　語｜意味｜典型目的語\n　construct｜建設する｜bridge, building\n　connect｜つなぐ｜cities, cables\n　contain｜含む｜sugar, information\n　⇒ 新しい橋を架けるなら construct\n　⚠ connect は場所どうしをつなぐ動詞。橋そのものを目的語にはとらない。',
     difficulty: 'standard',
   },
   {
@@ -135,7 +135,7 @@ export const eikenQuestions3kyu: EikenQuestion[] = [
       { key: 'D', text: 'escape' },
     ],
     correctKey: 'C',
-    explanation: '「postpone the game（試合を延期する）」は日程を後日に変更すること。cancelは「完全に取り消す」、abandonは「途中で試合を中断・放棄する」（試合開始後の状況）、escapeは「逃げる」。複数の選手が怪我をした場合、試合を別の日程に「延期する」のが自然。',
+    explanation: '「postpone the game（試合を延期する）」は日程を後日に変更すること。cancelは「完全に取り消す」、abandonは「途中で試合を中断・放棄する」（試合開始後の状況）、escapeは「逃げる」。複数の選手が怪我をした場合、試合を別の日程に「延期する」のが自然。\n\npostpone は「日程を後ろにずらす」で、中止する cancel とは異なり後日実施することが前提になる。選手のけがで試合を別日に回すという文脈に合う。put off が口語の言い換え。\n\n【図解】試合への対応\n　語｜意味｜後日実施\n　postpone｜延期する｜する\n　cancel｜中止する｜しない\n　abandon｜途中で放棄する｜開始後に中断\n　⇒ 別日に行うなら postpone\n　⚠ cancel を選ぶと試合そのものがなくなる。実施の有無で語を選び分ける。',
     difficulty: 'advanced',
   },
   {
@@ -150,7 +150,7 @@ export const eikenQuestions3kyu: EikenQuestion[] = [
       { key: 'D', text: 'satisfied' },
     ],
     correctKey: 'D',
-    explanation: '「be satisfied with（〜に満足する）」はサービスへの肯定的な評価を表す定番表現。「スタッフが親切だった」という理由と一致する。surprisedは「驚いた」（理由が不十分）、interestedは「興味を持った」（評価の文脈ではやや弱い）、worriedは「心配した」（否定的な感情で文脈と逆）。',
+    explanation: '「be satisfied with（〜に満足する）」はサービスへの肯定的な評価を表す定番表現。「スタッフが親切だった」という理由と一致する。surprisedは「驚いた」（理由が不十分）、interestedは「興味を持った」（評価の文脈ではやや弱い）、worriedは「心配した」（否定的な感情で文脈と逆）。\n\n【図解】感情形容詞と前置詞\n　表現｜意味｜前置詞\n　be satisfied with｜満足している｜with\n　be surprised at｜驚いている｜at\n　be interested in｜興味がある｜in\n　⇒ サービスへの満足なら satisfied with\n　⚠ 形容詞ごとに前置詞が決まっている。satisfied to や satisfied in とはしない。',
     difficulty: 'standard',
   },
   {
@@ -165,7 +165,7 @@ export const eikenQuestions3kyu: EikenQuestion[] = [
       { key: 'D', text: 'open' },
     ],
     correctKey: 'D',
-    explanation: '店舗・施設が「開店・開業する」には自動詞のopenが最も自然。startとbeginは「始まる」という意味で使えるが、ショッピングセンターの開業には通常openを使う。launchは新製品・サービス・ウェブサイトを「立ち上げる」場合に使い、実店舗の開業には通常使わない。',
+    explanation: '店舗・施設が「開店・開業する」には自動詞のopenが最も自然。startとbeginは「始まる」という意味で使えるが、ショッピングセンターの開業には通常openを使う。launchは新製品・サービス・ウェブサイトを「立ち上げる」場合に使い、実店舗の開業には通常使わない。\n\nopen は自動詞で「開店する、開業する」の意味を持ち、施設が営業を始めることを表す。The store opens at nine のように時刻とも組み合わせる。他動詞では「開ける」の意味になる。\n\n【図解】開始を表す動詞\n　語｜主語｜使う場面\n　open｜店, 施設｜開業, 開店\n　launch｜企業, 開発者｜新製品, サービス\n　start｜行事, 活動｜開始一般\n　⇒ 商業施設の開業なら open\n　⚠ launch は製品やサービスの立ち上げ。実店舗の開業には open を使う。',
     difficulty: 'standard',
   },
   {
@@ -180,7 +180,7 @@ export const eikenQuestions3kyu: EikenQuestion[] = [
       { key: 'D', text: 'converted' },
     ],
     correctKey: 'D',
-    explanation: '「convert A into B（AをBに転換する）」は建物の用途変更を表す最も正確な表現。changedは一般的すぎてこの文脈では不自然。turnedは「turned into」の形で使えるが、建物の改修・用途変更にはconvertが専門的で適切。translateは言語の「翻訳」に使う表現。',
+    explanation: '「convert A into B（AをBに転換する）」は建物の用途変更を表す最も正確な表現。changedは一般的すぎてこの文脈では不自然。turnedは「turned into」の形で使えるが、建物の改修・用途変更にはconvertが専門的で適切。translateは言語の「翻訳」に使う表現。\n\n【図解】convert の使い方\n　形｜意味｜例\n　convert A into B｜AをBに転換する｜building into apartments\n　turn A into B｜AをBに変える｜口語的な言い換え\n　translate｜翻訳する｜言語\n　⇒ 建物を集合住宅に改装するなら converted into\n　⚠ 前置詞は into。to では用途変更の意味にならない。',
     difficulty: 'advanced',
   },
   {
@@ -195,7 +195,7 @@ export const eikenQuestions3kyu: EikenQuestion[] = [
       { key: 'D', text: 'describe' },
     ],
     correctKey: 'C',
-    explanation: '「summarize（要約する）」は物語の主要なアイデアを自分の言葉でまとめることを表す最も適切な表現。explainは「説明する」（理由や仕組みを詳しく述べる）、expressは「表現する」（感情や考え）、describeは「描写する」（詳細に説明する）。「main idea」を「in your own words」でまとめるにはsummarizeが正しい。',
+    explanation: '「summarize（要約する）」は物語の主要なアイデアを自分の言葉でまとめることを表す最も適切な表現。explainは「説明する」（理由や仕組みを詳しく述べる）、expressは「表現する」（感情や考え）、describeは「描写する」（詳細に説明する）。「main idea」を「in your own words」でまとめるにはsummarizeが正しい。\n\n【図解】説明に関する動詞\n　語｜意味｜内容\n　summarize｜要約する｜要点を短くまとめる\n　describe｜描写する｜詳しく述べる\n　explain｜説明する｜理由や仕組みを述べる\n　⇒ 要点を自分の言葉でまとめるなら summarize\n　⚠ describe は詳しく述べる方向で、要約とは逆。情報量が増えるか減るかで選ぶ。',
     difficulty: 'standard',
   },
   {
@@ -210,7 +210,7 @@ export const eikenQuestions3kyu: EikenQuestion[] = [
       { key: 'D', text: 'increase' },
     ],
     correctKey: 'C',
-    explanation: '「raise your voice（声を大きくする）」は他動詞raiseを使う固定表現。riseは自動詞で「上がる」（目的語が取れない）。liftは「持ち上げる」という物理的な動作で声には使わない。increaseは音量には「increase the volume」のように使えるが、「raise one\'s voice」が慣用表現として確立している。',
+    explanation: '「raise your voice（声を大きくする）」は他動詞raiseを使う固定表現。riseは自動詞で「上がる」（目的語が取れない）。liftは「持ち上げる」という物理的な動作で声には使わない。increaseは音量には「increase the volume」のように使えるが、「raise one\'s voice」が慣用表現として確立している。\n\n【図解】raise と rise\n　語｜自動詞か他動詞か｜例\n　raise｜他動詞｜raise your voice\n　rise｜自動詞｜The sun rises\n　lift｜他動詞｜lift a box\n　⇒ voice という目的語があるので raise\n　⚠ rise は目的語をとらない。空所の後ろに名詞があるかで判断する。',
     difficulty: 'advanced',
   },
   {
@@ -225,7 +225,7 @@ export const eikenQuestions3kyu: EikenQuestion[] = [
       { key: 'D', text: 'overflowed' },
     ],
     correctKey: 'D',
-    explanation: '「overflow（氾濫する・あふれる）」は川や容器が限界を超えてあふれる状態を表す。overfillは「満杯を超えて入れる」（他動詞的に使うことが多い）、overcrowdは「（人が）混雑する」、overloadは「過負荷にする」という意味でいずれも川の文脈には合わない。',
+    explanation: '「overflow（氾濫する・あふれる）」は川や容器が限界を超えてあふれる状態を表す。overfillは「満杯を超えて入れる」（他動詞的に使うことが多い）、overcrowdは「（人が）混雑する」、overloadは「過負荷にする」という意味でいずれも川の文脈には合わない。\n\noverflow は「（川や容器が）あふれる」で、大雨のあとに川が氾濫する場面で使う。over（越えて）＋ flow（流れる）という成り立ちから意味を推測できる。\n\n【図解】over で始まる動詞\n　語｜意味｜主語\n　overflow｜あふれる, 氾濫する｜川, 容器\n　overload｜過剰に積む｜トラック, 回路\n　overcrowd｜混雑させる｜場所\n　⇒ 川が氾濫して道路が冠水したなら overflowed\n　⚠ 接頭辞 over は共通でも後半の語で意味が決まる。flow は流れの意味。',
     difficulty: 'standard',
   },
 
@@ -243,7 +243,7 @@ export const eikenQuestions3kyu: EikenQuestion[] = [
       { key: 'D', text: 'was finishing' },
     ],
     correctKey: 'C',
-    explanation: '「母が呼んだ」より前に宿題が完了していたことを示すには過去完了（had + 過去分詞）を使う。単純過去のfinishedでは時間の前後関係が不明確。現在完了のhave finishedは過去の特定時点（called）と組み合わせられない。was finishingは宿題が「進行中」だったことを意味し、完了していたという意味にならない。',
+    explanation: '「母が呼んだ」より前に宿題が完了していたことを示すには過去完了（had + 過去分詞）を使う。単純過去のfinishedでは時間の前後関係が不明確。現在完了のhave finishedは過去の特定時点（called）と組み合わせられない。was finishingは宿題が「進行中」だったことを意味し、完了していたという意味にならない。\n\n【図解】過去完了を使う場面\n　形｜表す時｜例\n　had 過去分詞｜過去のある時点より前｜had finished\n　過去形｜過去の出来事｜called\n　過去進行形｜その時点で進行中｜was finishing\n　⇒ 呼ばれる前に終えていたなら had finished\n　⚠ 現在完了は過去の一時点を表す語句と併用しない。before の前後関係を確認する。',
     difficulty: 'advanced',
   },
   {
@@ -258,7 +258,7 @@ export const eikenQuestions3kyu: EikenQuestion[] = [
       { key: 'D', text: 'was' },
     ],
     correctKey: 'D',
-    explanation: '受動態の過去形は「was/were + 過去分詞」。last yearという過去を示す表現があるのでwasが正しい。isは現在形の受動態、has beenは現在完了の受動態（last yearとは使えない）、had beenは過去完了の受動態（さらに以前のことを指すときに使う）。',
+    explanation: '受動態の過去形は「was/were + 過去分詞」。last yearという過去を示す表現があるのでwasが正しい。isは現在形の受動態、has beenは現在完了の受動態（last yearとは使えない）、had beenは過去完了の受動態（さらに以前のことを指すときに使う）。\n\n受動態は be 動詞 ＋ 過去分詞 で作り、be 動詞の時制が文全体の時制を決める。last year という過去を示す語句があるので was を選ぶ。体育館は建てられる側なので受動態になる。\n\n【図解】受動態の時制\n　形｜時制｜目印の語句\n　was または were 過去分詞｜過去｜last year, in 2020\n　is または are 過去分詞｜現在｜usually, every day\n　has been 過去分詞｜現在完了｜since, already\n　⇒ last year があるので was built\n　⚠ has been は過去の一時点を示す語句と併用しない。時を表す語句で時制を決める。',
     difficulty: 'standard',
   },
   {
@@ -273,7 +273,7 @@ export const eikenQuestions3kyu: EikenQuestion[] = [
       { key: 'D', text: 'going' },
     ],
     correctKey: 'D',
-    explanation: '「suggest + 動名詞（〜ing）」はsuggestの後には動名詞が続くというルール。suggest to goは誤り（suggest + to不定詞の形はとらない）。wentは過去形で動詞の形として不適切。goは原形で、動名詞や不定詞のように目的語にはなれない。',
+    explanation: '「suggest + 動名詞（〜ing）」はsuggestの後には動名詞が続くというルール。suggest to goは誤り（suggest + to不定詞の形はとらない）。wentは過去形で動詞の形として不適切。goは原形で、動名詞や不定詞のように目的語にはなれない。\n\nsuggest は目的語に動名詞をとる動詞で、suggest going のように ing 形が続く。to 不定詞は続かない点が最重要のポイント。suggest that 節 の形なら節内の動詞は原形になる。\n\n【図解】suggest の後ろの形\n　形｜例｜可否\n　suggest ＋ 動名詞｜suggest going｜正しい\n　suggest that 主語 原形｜suggest that we go｜正しい\n　suggest ＋ to 不定詞｜suggest to go｜誤り\n　⇒ 動名詞 going を選ぶ\n　⚠ 日本語の「〜することを提案する」につられて to 不定詞にしない。',
     difficulty: 'standard',
   },
   {
@@ -288,7 +288,7 @@ export const eikenQuestions3kyu: EikenQuestion[] = [
       { key: 'D', text: 'study' },
     ],
     correctKey: 'D',
-    explanation: '仮定法現在（第1条件文）では、if節の中は現在形を使い、主節は「will + 動詞原形」になる。「もし勉強すれば、試験に合格するだろう」はIf you study...you will pass。studiedは仮定法過去（現実と反する仮定）でwould passと組み合わせる。will study / would studyはif節の中では使えない。',
+    explanation: '仮定法現在（第1条件文）では、if節の中は現在形を使い、主節は「will + 動詞原形」になる。「もし勉強すれば、試験に合格するだろう」はIf you study...you will pass。studiedは仮定法過去（現実と反する仮定）でwould passと組み合わせる。will study / would studyはif節の中では使えない。\n\n【図解】条件文の時制\n　種類｜if 節｜主節\n　現実的な条件｜現在形｜will ＋ 原形\n　現在の仮定｜過去形｜would ＋ 原形\n　過去の仮定｜had 過去分詞｜would have ＋ 過去分詞\n　⇒ 主節が will pass なので study\n　⚠ if 節の中で will は使わない。条件を表す副詞節では未来も現在形で表す。',
     difficulty: 'standard',
   },
   {
@@ -303,7 +303,7 @@ export const eikenQuestions3kyu: EikenQuestion[] = [
       { key: 'D', text: 'been living' },
     ],
     correctKey: 'D',
-    explanation: '「has been living（現在完了進行形）」は過去から現在まで継続している動作を強調する。「2年前から今もずっと東京に住んでいる」という継続を表すにはhas been livingが最も自然。has livedも文法的に正しいが、現在完了進行形の方が「今も続いている」ことをより強調する。liveは原形、livesは三単現。',
+    explanation: '「has been living（現在完了進行形）」は過去から現在まで継続している動作を強調する。「2年前から今もずっと東京に住んでいる」という継続を表すにはhas been livingが最も自然。has livedも文法的に正しいが、現在完了進行形の方が「今も続いている」ことをより強調する。liveは原形、livesは三単現。\n\n【図解】現在完了と現在完了進行形\n　形｜強調する点｜例\n　has been doing｜今も続いている動作｜has been living\n　has done｜完了や経験｜has lived\n　現在形｜習慣や事実｜lives\n　⇒ since 節があり継続を強めるなら has been living\n　⚠ 現在形や原形は since と組み合わない。継続には完了形を使う。',
     difficulty: 'advanced',
   },
   {
@@ -318,7 +318,7 @@ export const eikenQuestions3kyu: EikenQuestion[] = [
       { key: 'D', text: 'is going to' },
     ],
     correctKey: 'D',
-    explanation: '「be going to（〜しそうだ）」は目に見える証拠（dark clouds）に基づいた近い将来の予測を表す。willは話し手の意志や証拠のない一般的な未来予測に使う。wouldは過去の習慣や仮定、shallはフォーマルな申し出・提案に使う。証拠がある予測にはis going toが適切。',
+    explanation: '「be going to（〜しそうだ）」は目に見える証拠（dark clouds）に基づいた近い将来の予測を表す。willは話し手の意志や証拠のない一般的な未来予測に使う。wouldは過去の習慣や仮定、shallはフォーマルな申し出・提案に使う。証拠がある予測にはis going toが適切。\n\nbe going to は目の前の根拠にもとづく予測を表す。dark clouds という証拠が示されているため、この形が最も自然になる。will は根拠のない予測やその場で決めた意志に使う。\n\n【図解】未来表現の使い分け\n　形｜根拠｜例\n　be going to｜目に見える証拠がある｜黒い雲を見て\n　will｜その場の判断や意志｜I will help you\n　be doing｜すでに決まった予定｜I am meeting him\n　⇒ 雲を見ての予測なら is going to\n　⚠ will も未来を表すが証拠にもとづく予測には be going to が自然。',
     difficulty: 'standard',
   },
   {
@@ -333,7 +333,7 @@ export const eikenQuestions3kyu: EikenQuestion[] = [
       { key: 'D', text: 'listening' },
     ],
     correctKey: 'D',
-    explanation: '「enjoy + 動名詞（〜ing）」はenjoyの後には動名詞が続くというルール。enjoy to listenは誤りで、英語ではenjoy + 動名詞のみが正しい。listenedは過去形、listenは原形で動詞の目的語にはなれない。「音楽を聴くことを楽しむ」はenjoying listening to musicが正しい形。',
+    explanation: '「enjoy + 動名詞（〜ing）」はenjoyの後には動名詞が続くというルール。enjoy to listenは誤りで、英語ではenjoy + 動名詞のみが正しい。listenedは過去形、listenは原形で動詞の目的語にはなれない。「音楽を聴くことを楽しむ」はenjoying listening to musicが正しい形。\n\n【図解】動名詞をとる動詞\n　動詞｜意味｜例\n　enjoy｜楽しむ｜enjoy listening\n　finish｜終える｜finish reading\n　mind｜気にする｜mind waiting\n　⇒ enjoy の後ろは listening\n　⚠ enjoy to do とはしない。to 不定詞をとる want や decide と区別する。',
     difficulty: 'basic',
   },
   {
@@ -348,7 +348,7 @@ export const eikenQuestions3kyu: EikenQuestion[] = [
       { key: 'D', text: 'played' },
     ],
     correctKey: 'C',
-    explanation: '「playing（現在分詞）」が後ろから名詞dogを修飾する分詞句の用法。「公園で子どもたちと遊んでいる犬」はThe dog playing with the children。playとplaysは動詞形で名詞の修飾には使えない。playedは過去形か過去分詞で、「遊ばれた犬」という受動の意味になり不自然。',
+    explanation: '「playing（現在分詞）」が後ろから名詞dogを修飾する分詞句の用法。「公園で子どもたちと遊んでいる犬」はThe dog playing with the children。playとplaysは動詞形で名詞の修飾には使えない。playedは過去形か過去分詞で、「遊ばれた犬」という受動の意味になり不自然。\n\n【図解】名詞を修飾する分詞\n　形｜意味｜例\n　現在分詞 doing｜〜している｜the dog playing\n　過去分詞 done｜〜される｜the letter written\n　関係詞節｜どちらも可｜which is playing\n　⇒ 犬が遊んでいる側なので playing\n　⚠ 文の動詞は is。述語動詞を入れると動詞が2つになる点に注意する。',
     difficulty: 'standard',
   },
   {
@@ -363,7 +363,7 @@ export const eikenQuestions3kyu: EikenQuestion[] = [
       { key: 'D', text: 'ate' },
     ],
     correctKey: 'C',
-    explanation: '現在完了形は「has/have + 過去分詞」。neverを伴う現在完了の経験用法では過去分詞のeatenが必要。eatは原形、ateは過去形（現在完了には使えない）、eatingは現在分詞または動名詞で現在完了には使えない。「一度も寿司を食べたことがない」はhas never eatenが正しい。',
+    explanation: '現在完了形は「has/have + 過去分詞」。neverを伴う現在完了の経験用法では過去分詞のeatenが必要。eatは原形、ateは過去形（現在完了には使えない）、eatingは現在分詞または動名詞で現在完了には使えない。「一度も寿司を食べたことがない」はhas never eatenが正しい。\n\n【図解】現在完了の形\n　要素｜形｜例\n　助動詞｜have または has｜has\n　動詞｜過去分詞｜eaten\n　経験の副詞｜never, ever, once｜has never eaten\n　⇒ 過去分詞 eaten を選ぶ\n　⚠ eat - ate - eaten の変化を正確に覚える。過去形 ate を使わない。',
     difficulty: 'basic',
   },
   {
@@ -378,7 +378,7 @@ export const eikenQuestions3kyu: EikenQuestion[] = [
       { key: 'D', text: 'where' },
     ],
     correctKey: 'D',
-    explanation: '場所（the restaurant）を先行詞とし、その場所で何かが行われたことを説明するには関係副詞whereを使う。「私たちが夕食を食べた場所」という副詞的役割が必要なためwhereが正しい。whichは関係代名詞で目的語・主語の役割（the restaurant which we visited など）、whoは人を指す、whatは先行詞を含む関係代名詞。',
+    explanation: '場所（the restaurant）を先行詞とし、その場所で何かが行われたことを説明するには関係副詞whereを使う。「私たちが夕食を食べた場所」という副詞的役割が必要なためwhereが正しい。whichは関係代名詞で目的語・主語の役割（the restaurant which we visited など）、whoは人を指す、whatは先行詞を含む関係代名詞。\n\n【図解】関係詞の選び方\n　後ろの文｜使う関係詞｜例\n　完全な文｜where, when｜where we had dinner\n　不完全な文｜which, that｜which we visited\n　先行詞なし｜what｜what I need\n　⇒ 後ろが完全な文なので where\n　⚠ which を使うなら前置詞 at が必要。後ろの文に欠けがあるかで判断する。',
     difficulty: 'standard',
   },
   {
@@ -393,7 +393,7 @@ export const eikenQuestions3kyu: EikenQuestion[] = [
       { key: 'D', text: 'must not' },
     ],
     correctKey: 'C',
-    explanation: '「don\'t have to（〜しなくてよい）」は不必要を表す。「一生懸命勉強したから心配する必要がない」という文脈に合う。mustは強い義務、shouldは軽い義務・アドバイス、must notは強い禁止（「心配してはいけない」は少し不自然）。「必要がない」のはdon\'t have toが正確。',
+    explanation: '「don\'t have to（〜しなくてよい）」は不必要を表す。「一生懸命勉強したから心配する必要がない」という文脈に合う。mustは強い義務、shouldは軽い義務・アドバイス、must notは強い禁止（「心配してはいけない」は少し不自然）。「必要がない」のはdon\'t have toが正確。\n\n【図解】義務と不必要の表現\n　表現｜意味｜強さ\n　do not have to｜〜しなくてよい｜不必要\n　must not｜〜してはいけない｜強い禁止\n　should｜〜したほうがよい｜助言\n　⇒ 心配する必要がないなら do not have to\n　⚠ must not と do not have to は意味がまったく違う。禁止と不必要を混同しない。',
     difficulty: 'advanced',
   },
   {
@@ -408,7 +408,7 @@ export const eikenQuestions3kyu: EikenQuestion[] = [
       { key: 'D', text: 'which' },
     ],
     correctKey: 'C',
-    explanation: '「〜かどうか」という意味の間接疑問文を導くにはifまたはwhetherを使う。「鍵をどこかで見たかどうか」と尋ねる文なのでifが正しい。thatは「〜ということ」という内容を表す接続詞（yes/noの疑問を導けない）、whatは「何を〜したか」という内容を尋ねる、whichは「どちら」という選択を表す。',
+    explanation: '「〜かどうか」という意味の間接疑問文を導くにはifまたはwhetherを使う。「鍵をどこかで見たかどうか」と尋ねる文なのでifが正しい。thatは「〜ということ」という内容を表す接続詞（yes/noの疑問を導けない）、whatは「何を〜したか」という内容を尋ねる、whichは「どちら」という選択を表す。\n\n【図解】名詞節を導く語\n　語｜意味｜導く内容\n　if, whether｜〜かどうか｜yes か no で答える内容\n　that｜〜ということ｜事実の内容\n　what｜何を〜か｜疑問詞の内容\n　⇒ 見たかどうかを尋ねるなら if\n　⚠ that では疑問の意味にならない。答えが yes か no かで見分ける。',
     difficulty: 'standard',
   },
   {
@@ -423,7 +423,7 @@ export const eikenQuestions3kyu: EikenQuestion[] = [
       { key: 'D', text: 'took' },
     ],
     correctKey: 'D',
-    explanation: '「take time（時間がかかる）」は時間・努力が必要であることを表す構文で、主語が「もの（プロジェクト）」の場合に使う。spendは「人が時間を費やす」場合（The students spent a lot of time...）、useは「使う」（時間には使えない）、passは「時間が過ぎる」。「プロジェクトが時間がかかった」はtookが正しい。',
+    explanation: '「take time（時間がかかる）」は時間・努力が必要であることを表す構文で、主語が「もの（プロジェクト）」の場合に使う。spendは「人が時間を費やす」場合（The students spent a lot of time...）、useは「使う」（時間には使えない）、passは「時間が過ぎる」。「プロジェクトが時間がかかった」はtookが正しい。\n\n【図解】時間を表す構文\n　構文｜主語｜例\n　It takes ＋ 時間｜物事や It｜The project took time\n　人 spend ＋ 時間｜人｜Students spent time\n　It costs ＋ お金｜It｜It costs 100 dollars\n　⇒ 主語が project なので took\n　⚠ spend は人を主語にとる。主語が人か物かで動詞を選び分ける。',
     difficulty: 'advanced',
   },
   {
@@ -438,7 +438,7 @@ export const eikenQuestions3kyu: EikenQuestion[] = [
       { key: 'D', text: 'studied' },
     ],
     correctKey: 'C',
-    explanation: '「want + 人 + to不定詞（人に〜してほしい）」はwantの後に目的語と不定詞が続く構文。「両親は私に医学を学んでほしい」はwant me to study。want + 人 + 動名詞は誤りで、studyingは不可。wantの後のto不定詞が正しい構文。',
+    explanation: '「want + 人 + to不定詞（人に〜してほしい）」はwantの後に目的語と不定詞が続く構文。「両親は私に医学を学んでほしい」はwant me to study。want + 人 + 動名詞は誤りで、studyingは不可。wantの後のto不定詞が正しい構文。\n\nwant は want ＋ 人 ＋ to do の形で「人に〜してほしい」を表す。目的語の後ろには必ず to 不定詞が来る。同じ形をとる動詞に tell、ask、advise がある。\n\n【図解】人 ＋ to do をとる動詞\n　動詞｜意味｜例\n　want｜〜してほしい｜want me to study\n　tell｜〜するように言う｜tell him to wait\n　ask｜〜するよう頼む｜ask her to come\n　⇒ want の後ろは to study\n　⚠ 使役動詞 make や let は原形をとる。動詞ごとに続く形が異なる。',
     difficulty: 'standard',
   },
   {
@@ -453,7 +453,7 @@ export const eikenQuestions3kyu: EikenQuestion[] = [
       { key: 'D', text: 'made' },
     ],
     correctKey: 'C',
-    explanation: '「had better + 動詞原形（〜した方がよい）」はhad betterの後には必ず動詞の原形が続く。to makeはhad better + to不定詞の形はとらない、makingは動名詞で不可、madeは過去形で不可。「予約した方がよい」はhad better makeが正しい。',
+    explanation: '「had better + 動詞原形（〜した方がよい）」はhad betterの後には必ず動詞の原形が続く。to makeはhad better + to不定詞の形はとらない、makingは動名詞で不可、madeは過去形で不可。「予約した方がよい」はhad better makeが正しい。\n\nhad better ＋ 動詞の原形 は「〜したほうがよい」という忠告を表す慣用表現。had という過去形を含むが内容は現在や未来のことを指す。否定形は had better not do。\n\n【図解】had better の形\n　形｜意味｜後ろの形\n　had better do｜〜したほうがよい｜原形\n　had better not do｜〜しないほうがよい｜not ＋ 原形\n　should do｜〜すべきだ｜原形\n　⇒ had better の後ろは make\n　⚠ to make や making は続かない。助動詞のあとと同じく原形が来る。',
     difficulty: 'standard',
   },
 
@@ -471,7 +471,7 @@ export const eikenQuestions3kyu: EikenQuestion[] = [
       { key: 'D', text: 'miss' },
     ],
     correctKey: 'C',
-    explanation: '「make an appointment（予約を取る）」は歯科や医療機関への電話予約の定番表現。cancelは「キャンセルする」（初回電話でキャンセルは不自然）、confirmは「確認する」（まだ予約が存在しない）、missは「逃す」で文脈に合わない。初めて電話して予約を「取る」にはmakeが正しい。',
+    explanation: '「make an appointment（予約を取る）」は歯科や医療機関への電話予約の定番表現。cancelは「キャンセルする」（初回電話でキャンセルは不自然）、confirmは「確認する」（まだ予約が存在しない）、missは「逃す」で文脈に合わない。初めて電話して予約を「取る」にはmakeが正しい。\n\n【図解】appointment と結びつく動詞\n　表現｜意味｜場面\n　make an appointment｜予約を取る｜初回の申し込み\n　confirm an appointment｜予約を確認する｜予約後\n　cancel an appointment｜予約を取り消す｜変更時\n　⇒ 新たに予約を取るなら make\n　⚠ 会話の段階で予約はまだ存在しない。confirm や cancel は前提が成り立たない。',
     difficulty: 'basic',
   },
   {
@@ -486,7 +486,7 @@ export const eikenQuestions3kyu: EikenQuestion[] = [
       { key: 'D', text: 'You should try another store.' },
     ],
     correctKey: 'C',
-    explanation: '「Sure!」と言った後に「ついてきてください」と案内するのは、場所を知っているからできる行動。「2階にあります」（It\'s on the second floor）という具体的な情報の後に「ご案内します」という流れが最も自然。A「わからない」ではSure!と矛盾、B・Dは本がないまたは別の店を勧める返答でFollow me!が不自然。',
+    explanation: '「Sure!」と言った後に「ついてきてください」と案内するのは、場所を知っているからできる行動。「2階にあります」（It\'s on the second floor）という具体的な情報の後に「ご案内します」という流れが最も自然。A「わからない」ではSure!と矛盾、B・Dは本がないまたは別の店を勧める返答でFollow me!が不自然。\n\n【図解】道案内の会話の流れ\n　順序｜発話｜内容\n　1｜Could you help me｜依頼\n　2｜Sure ＋ 場所の情報｜承諾と回答\n　3｜Follow me｜案内の申し出\n　⇒ Sure の後には場所を教える発言が入る\n　⚠ 「分かりません」では Sure と矛盾する。前後のつながりで選択肢を絞る。',
     difficulty: 'basic',
   },
   {
@@ -501,7 +501,7 @@ export const eikenQuestions3kyu: EikenQuestion[] = [
       { key: 'D', text: "It's my favorite event of the year." },
     ],
     correctKey: 'A',
-    explanation: '「行きたいけどまだわからない」と言い、相手が「決まったら教えて」と返すことから、不確かな理由が入る必要がある。「その日アルバイトかもしれない」（I might have to work）が自然な理由。A/C/Dはすでに状況が決まっており「まだわからない」と矛盾する。',
+    explanation: '「行きたいけどまだわからない」と言い、相手が「決まったら教えて」と返すことから、不確かな理由が入る必要がある。「その日アルバイトかもしれない」（I might have to work）が自然な理由。A/C/Dはすでに状況が決まっており「まだわからない」と矛盾する。\n\n空所の前で「行きたいがまだ分からない」と述べ、後で相手が「決まったら教えて」と応じている。したがって空所には予定が確定しない理由が入る。might という控えめな可能性を表す助動詞が手がかりになる。\n\n【図解】会話の流れと選択肢\n　位置｜発話の役割｜内容\n　前｜I am not sure yet｜未定を表明\n　空所｜理由を述べる｜might have to work\n　後｜Let me know when you decide｜決定待ち\n　⇒ 未定の理由を述べる選択肢が入る\n　⚠ すでに決まっている内容の選択肢は矛盾する。未定という前提を確認する。',
     difficulty: 'standard',
   },
   {
@@ -516,7 +516,7 @@ export const eikenQuestions3kyu: EikenQuestion[] = [
       { key: 'D', text: "What a bargain!" },
     ],
     correctKey: 'D',
-    explanation: 'セール20%オフという情報を聞いてすぐに「買います」と言う流れから、お得だと感じた表現が入る。「なんてお買い得！」（What a bargain!）が最も自然。A「まだ高い」なら買わない、C「考えます」なら即決しない、D「大きいサイズがあるか」を聞いた後に即決するには情報が足りない。',
+    explanation: 'セール20%オフという情報を聞いてすぐに「買います」と言う流れから、お得だと感じた表現が入る。「なんてお買い得！」（What a bargain!）が最も自然。A「まだ高い」なら買わない、C「考えます」なら即決しない、D「大きいサイズがあるか」を聞いた後に即決するには情報が足りない。\n\nセールで2割引と聞いた直後に「買います」と言っているので、空所には得だと感じた反応が入る。What a bargain は「なんてお買い得なんだ」という定型の感嘆表現である。\n\n【図解】買い物の会話表現\n　表現｜意味｜場面\n　What a bargain｜なんてお得な｜値引きを知って\n　I will take it｜これをください｜購入を決める\n　Could I try it on｜試着してもよいですか｜試着\n　⇒ 割引を知って即決するなら What a bargain\n　⚠ 「高すぎる」と言った直後に買うのは不自然。前後の行動と矛盾しない選択肢を選ぶ。',
     difficulty: 'standard',
   },
   {
@@ -531,7 +531,7 @@ export const eikenQuestions3kyu: EikenQuestion[] = [
       { key: 'D', text: 'have' },
     ],
     correctKey: 'D',
-    explanation: '「have a conversation（会話をする）」は会話を表す定番コロケーション。makeはmake a speech/make a call のように使うが、conversationとは通常組み合わせない。doはdo a conversation という表現は存在しない。takeはtake a test のように使い、conversationとは合わない。',
+    explanation: '「have a conversation（会話をする）」は会話を表す定番コロケーション。makeはmake a speech/make a call のように使うが、conversationとは通常組み合わせない。doはdo a conversation という表現は存在しない。takeはtake a test のように使い、conversationとは合わない。\n\n【図解】have を使うコロケーション\n　表現｜意味｜場面\n　have a conversation｜会話をする｜対話\n　have a good time｜楽しく過ごす｜行事\n　have a headache｜頭が痛い｜体調\n　⇒ 会話をするなら have\n　⚠ make a conversation とは言わない。名詞ごとに結ぶ動詞が決まっている。',
     difficulty: 'standard',
   },
   {
@@ -546,7 +546,7 @@ export const eikenQuestions3kyu: EikenQuestion[] = [
       { key: 'D', text: "can't" },
     ],
     correctKey: 'D',
-    explanation: '「can\'t find it（見つからない）」は探し続けているにもかかわらず見つけられない状態を表す。「あちこち探した」という文脈からcan\'tが適切。canは「見つけることができる」で逆の意味、couldは過去の能力、mightは可能性（might findとなれば「見つかるかもしれない」）でいずれも文脈に合わない。',
+    explanation: '「can\'t find it（見つからない）」は探し続けているにもかかわらず見つけられない状態を表す。「あちこち探した」という文脈からcan\'tが適切。canは「見つけることができる」で逆の意味、couldは過去の能力、mightは可能性（might findとなれば「見つかるかもしれない」）でいずれも文脈に合わない。\n\n【図解】助動詞の意味\n　形｜意味｜文脈\n　cannot find｜見つけられない｜探したが不明\n　might find｜見つかるかもしれない｜可能性\n　could find｜見つけられた｜過去の能力\n　⇒ 探しても見つからないなら cannot\n　⚠ can では「見つけられる」と逆の意味になる。否定形かどうかを確認する。',
     difficulty: 'basic',
   },
   {
@@ -561,7 +561,7 @@ export const eikenQuestions3kyu: EikenQuestion[] = [
       { key: 'D', text: "I'd prefer outside." },
     ],
     correctKey: 'C',
-    explanation: '「少し寒い」という理由から、窓側（外気が入りやすい）を避けて「入口の近く」を選ぶのが自然。Near the entrance, pleaseの後の「少し寒い」という説明が自然な流れ。窓側を選んでから「寒い」と言うのは矛盾。It doesn\'t matter / 外がいいはそれぞれ文脈と合わない。',
+    explanation: '「少し寒い」という理由から、窓側（外気が入りやすい）を避けて「入口の近く」を選ぶのが自然。Near the entrance, pleaseの後の「少し寒い」という説明が自然な流れ。窓側を選んでから「寒い」と言うのは矛盾。It doesn\'t matter / 外がいいはそれぞれ文脈と合わない。\n\n【図解】席の希望を伝える会話\n　発話｜内容｜理由\n　Near the entrance｜入口の近くを希望｜寒さを避ける\n　By the window｜窓側を希望｜景色を楽しむ\n　It does not matter｜どこでもよい｜こだわりなし\n　⇒ 少し寒いという理由なら入口の近く\n　⚠ 窓側は外気が入りやすい。理由と希望が矛盾しない選択肢を選ぶ。',
     difficulty: 'advanced',
   },
   {
@@ -576,7 +576,7 @@ export const eikenQuestions3kyu: EikenQuestion[] = [
       { key: 'D', text: 'act' },
     ],
     correctKey: 'C',
-    explanation: '「do well（うまくやる）」はスピーチやパフォーマンスの成功を表す自然な表現。make wellは英語として存在しない。go wellは「物事がうまくいく」という意味で使えるが、主語が人（you）の場合はdo wellが適切。act wellは演技の文脈で使い、スピーチには自然でない。',
+    explanation: '「do well（うまくやる）」はスピーチやパフォーマンスの成功を表す自然な表現。make wellは英語として存在しない。go wellは「物事がうまくいく」という意味で使えるが、主語が人（you）の場合はdo wellが適切。act wellは演技の文脈で使い、スピーチには自然でない。\n\n【図解】well と結びつく動詞\n　表現｜意味｜主語\n　do well｜うまくやる｜人\n　go well｜うまくいく｜物事\n　act well｜演技がうまい｜俳優\n　⇒ 主語が人でスピーチの成功なら do well\n　⚠ make well という表現はない。主語が人か物事かで動詞を選び分ける。',
     difficulty: 'basic',
   },
   {
@@ -591,7 +591,7 @@ export const eikenQuestions3kyu: EikenQuestion[] = [
       { key: 'D', text: "I'm afraid you have the wrong number." },
     ],
     correctKey: 'B',
-    explanation: '「お名前をお伺いしてよろしいですか？」という質問が自然に続くのは、電話をつなごうとしている状況。「少々お待ちください」（Please hold on）の後に「どちら様でしょうか？」と確認するのは電話応対の標準的な流れ。A/Cはすでに不在なら名前を聞く必要がない、Dは番号が違う場合で文脈が異なる。',
+    explanation: '「お名前をお伺いしてよろしいですか？」という質問が自然に続くのは、電話をつなごうとしている状況。「少々お待ちください」（Please hold on）の後に「どちら様でしょうか？」と確認するのは電話応対の標準的な流れ。A/Cはすでに不在なら名前を聞く必要がない、Dは番号が違う場合で文脈が異なる。\n\n【図解】電話応対の流れ\n　順序｜発話｜内容\n　1｜May I speak to 〜｜取り次ぎ依頼\n　2｜Please hold on｜少々お待ちください\n　3｜Can I ask who is calling｜名前の確認\n　⇒ 名前を尋ねる前には保留の返答が入る\n　⚠ 不在を伝えた後に名前を聞くのは不自然。会話の順序で選択肢を絞る。',
     difficulty: 'standard',
   },
   {
@@ -606,7 +606,7 @@ export const eikenQuestions3kyu: EikenQuestion[] = [
       { key: 'D', text: 'torn' },
     ],
     correctKey: 'D',
-    explanation: '「torn between A and B（AとBの間で迷っている）」は二つの選択肢で決断できないことを表すイディオム。「That\'s a tough choice（難しい選択ですね）」という返答と自然につながる。worriedは心配、boredは退屈、confusedは混乱しているという意味で、二択で迷うというニュアンスはtornが最も正確。',
+    explanation: '「torn between A and B（AとBの間で迷っている）」は二つの選択肢で決断できないことを表すイディオム。「That\'s a tough choice（難しい選択ですね）」という返答と自然につながる。worriedは心配、boredは退屈、confusedは混乱しているという意味で、二択で迷うというニュアンスはtornが最も正確。\n\n【図解】迷いを表す表現\n　表現｜意味｜場面\n　be torn between A and B｜AとBで迷う｜二者択一\n　be confused｜混乱している｜理解できない\n　be worried about｜心配している｜不安\n　⇒ 二択で決めかねているなら torn\n　⚠ confused は理解できない状態。選択に迷う意味では torn を使う。',
     difficulty: 'advanced',
   },
 
@@ -624,7 +624,7 @@ export const eikenQuestions3kyu: EikenQuestion[] = [
       { key: 'D', text: '9:00 p.m.' },
     ],
     correctKey: 'C',
-    explanation: 'お知らせに「On all other days, the pool is open from 7:00 a.m.（それ以外の日は午前7時から）」と書かれている。月曜日は清掃のため8時から12時まで閉館。火曜日は「それ以外の日」に当たるため7:00 a.m.が正しい。8:00 a.m.は月曜の清掃後に開館する時刻。',
+    explanation: 'お知らせに「On all other days, the pool is open from 7:00 a.m.（それ以外の日は午前7時から）」と書かれている。月曜日は清掃のため8時から12時まで閉館。火曜日は「それ以外の日」に当たるため7:00 a.m.が正しい。8:00 a.m.は月曜の清掃後に開館する時刻。\n\n【図解】開館時間の読み取り\n　曜日｜開館時間｜理由\n　月曜｜午前8時から｜午前中は清掃\n　火曜を含む他の日｜午前7時から｜通常営業\n　閉館時刻｜午後9時｜共通\n　⇒ 火曜は on all other days に含まれる\n　⚠ 月曜の時刻と混同しない。例外の曜日がどれかを先に確認する。',
     difficulty: 'standard',
   },
   {
@@ -639,7 +639,7 @@ export const eikenQuestions3kyu: EikenQuestion[] = [
       { key: 'D', text: 'Come with a person who is older.' },
     ],
     correctKey: 'D',
-    explanation: 'お知らせに「Children under the age of 12 must be accompanied by an adult（12歳未満の子どもは大人の同伴が必要）」と書かれている。10歳は12歳未満なので大人と一緒に来る必要がある。入場料・受付登録・ロッカーキー持参については子ども限定の条件として書かれていない。',
+    explanation: 'お知らせに「Children under the age of 12 must be accompanied by an adult（12歳未満の子どもは大人の同伴が必要）」と書かれている。10歳は12歳未満なので大人と一緒に来る必要がある。入場料・受付登録・ロッカーキー持参については子ども限定の条件として書かれていない。\n\n【図解】利用条件の確認\n　条件｜対象｜内容\n　大人の同伴｜12歳未満｜必須\n　年齢｜10歳｜12歳未満に該当\n　その他の条件｜記載なし｜入場料, 登録など\n　⇒ 10歳は同伴が必要\n　⚠ 掲示にない条件を推測で選ばない。年齢の境界を正確に読む。',
     difficulty: 'basic',
   },
   {
@@ -654,7 +654,7 @@ export const eikenQuestions3kyu: EikenQuestion[] = [
       { key: 'D', text: 'Thirty minutes' },
     ],
     correctKey: 'B',
-    explanation: 'メールに「from 6:00 p.m. to 7:30 p.m.」と記載されている。6時から7時30分は1時間30分、つまり「one and a half hours（1時間半）」が正しい。1時間でも2時間でも30分でもない。時刻の計算（7:30 - 6:00 = 1:30）が正確にできるかを問う問題。',
+    explanation: 'メールに「from 6:00 p.m. to 7:30 p.m.」と記載されている。6時から7時30分は1時間30分、つまり「one and a half hours（1時間半）」が正しい。1時間でも2時間でも30分でもない。時刻の計算（7:30 - 6:00 = 1:30）が正確にできるかを問う問題。\n\n【図解】時間の計算\n　項目｜内容｜計算\n　開始｜午後6時｜基準\n　終了｜午後7時30分｜1時間30分後\n　答え｜one and a half hours｜1時間半\n　⇒ 6時から7時30分は1時間半\n　⚠ 開始と終了の時刻を取り違えない。分単位まで正確に計算する。',
     difficulty: 'basic',
   },
   {
@@ -669,7 +669,7 @@ export const eikenQuestions3kyu: EikenQuestion[] = [
       { key: 'D', text: 'A form he needs to fill out' },
     ],
     correctKey: 'B',
-    explanation: 'メールに「Please bring a notebook and a pen（ノートとペンを持参してください）」と書かれている。「a pen（ペン）」は「something to write with（書くもの）」と同じ意味。教科書と辞書・支払い・記入用紙については記載がない。',
+    explanation: 'メールに「Please bring a notebook and a pen（ノートとペンを持参してください）」と書かれている。「a pen（ペン）」は「something to write with（書くもの）」と同じ意味。教科書と辞書・支払い・記入用紙については記載がない。\n\n設問は初回の授業に何を持参するよう求められているかを問う。メールには a notebook and a pen と書かれており、a pen は something to write with（筆記用具）と同じ内容を指す言い換えになっている。\n\n【図解】言い換えの対応\n　メールの表現｜選択肢の表現｜関係\n　a notebook｜a notebook｜同一\n　a pen｜something to write with｜言い換え\n　教科書, 辞書｜記載なし｜対象外\n　⇒ ノートと筆記用具が正解\n　⚠ 本文にない持ち物を選ばない。言い換え表現に気づけるかが鍵。',
     difficulty: 'basic',
   },
   {
@@ -684,7 +684,7 @@ export const eikenQuestions3kyu: EikenQuestion[] = [
       { key: 'D', text: 'To allow them to travel to disaster areas' },
     ],
     correctKey: 'C',
-    explanation: 'パッセージに「giving them paid days off for this purpose（この目的のために有給休暇を与える）」と書かれており、「this purpose」はvolunteer workに参加することを指す。休暇・研修・旅行のための有給休暇という記述はない。「for this purpose」の指示内容を正確に追う読解力が問われる。',
+    explanation: 'パッセージに「giving them paid days off for this purpose（この目的のために有給休暇を与える）」と書かれており、「this purpose」はvolunteer workに参加することを指す。休暇・研修・旅行のための有給休暇という記述はない。「for this purpose」の指示内容を正確に追う読解力が問われる。\n\n【図解】this purpose が指す内容\n　語句｜指す内容｜根拠\n　this purpose｜ボランティア活動への参加｜直前の記述\n　制度｜paid days off｜有給休暇\n　目的｜社員の活動を支援する｜企業の方針\n　⇒ ボランティア活動の支援が目的\n　⚠ 休養や研修のための休暇ではない。指示語が何を指すかを直前で確認する。',
     difficulty: 'standard',
   },
   {
@@ -699,7 +699,7 @@ export const eikenQuestions3kyu: EikenQuestion[] = [
       { key: 'D', text: 'It helps people find better jobs.' },
     ],
     correctKey: 'C',
-    explanation: 'パッセージの最後の文に「improves volunteers\' mental health（ボランティアの精神的健康を改善する）」と書かれている。「mental health（精神的健康）」は「mental well-being（精神的な幸福）」と同じ意味。給与・清潔な街・就職活動への効果については言及されていない。',
+    explanation: 'パッセージの最後の文に「improves volunteers\' mental health（ボランティアの精神的健康を改善する）」と書かれている。「mental health（精神的健康）」は「mental well-being（精神的な幸福）」と同じ意味。給与・清潔な街・就職活動への効果については言及されていない。\n\n【図解】本文が挙げる効果\n　効果｜本文の表現｜言い換え\n　精神的健康の改善｜mental health｜mental well-being\n　地域への貢献｜記載あり｜活動の目的\n　給与や就職｜記載なし｜対象外\n　⇒ 精神面への良い効果が答え\n　⚠ health と well-being の言い換えに気づく。本文にない効果を補わない。',
     difficulty: 'standard',
   },
   {
@@ -714,7 +714,7 @@ export const eikenQuestions3kyu: EikenQuestion[] = [
       { key: 'D', text: 'Cities do not allow farming in empty lots.' },
     ],
     correctKey: 'B',
-    explanation: 'パッセージに「setting up an urban farm can be expensive（都市農場の設立には費用がかかる場合がある）」と書かれている。「expensive（高価・費用がかかる）」は「costs a lot of money（多くのお金がかかる）」と同じ意味。労働者・野菜の新鮮さ・法的制限については言及されていない。',
+    explanation: 'パッセージに「setting up an urban farm can be expensive（都市農場の設立には費用がかかる場合がある）」と書かれている。「expensive（高価・費用がかかる）」は「costs a lot of money（多くのお金がかかる）」と同じ意味。労働者・野菜の新鮮さ・法的制限については言及されていない。\n\n【図解】都市農業の課題\n　項目｜本文の表現｜言い換え\n　設立費用｜can be expensive｜costs a lot of money\n　人手｜記載なし｜対象外\n　法規制｜記載なし｜対象外\n　⇒ 初期費用の高さが課題\n　⚠ expensive を「高価な商品」と読み替えない。何が高いのかを確認する。',
     difficulty: 'standard',
   },
   {
@@ -729,7 +729,7 @@ export const eikenQuestions3kyu: EikenQuestion[] = [
       { key: 'D', text: 'It makes food cheaper for everyone to buy.' },
     ],
     correctKey: 'B',
-    explanation: 'パッセージに「reducing the distance food travels from farm to table（農場から食卓までの食品の移動距離を縮める）」と書かれている。「reduces how far food needs to be transported（食品の輸送距離を減らす）」はこれを言い換えたもの。雇用創出・輸出・価格への影響については記載されていない。',
+    explanation: 'パッセージに「reducing the distance food travels from farm to table（農場から食卓までの食品の移動距離を縮める）」と書かれている。「reduces how far food needs to be transported（食品の輸送距離を減らす）」はこれを言い換えたもの。雇用創出・輸出・価格への影響については記載されていない。\n\n【図解】都市農業の利点\n　利点｜本文の表現｜内容\n　輸送距離の短縮｜reducing the distance food travels｜農場から食卓まで\n　新鮮さ｜距離が短い結果｜間接的な効果\n　雇用や輸出｜記載なし｜対象外\n　⇒ 食品の輸送距離が短くなる点が利点\n　⚠ 価格や雇用への影響は本文にない。書かれている利点だけを選ぶ。',
     difficulty: 'advanced',
   },
   {
@@ -744,7 +744,7 @@ export const eikenQuestions3kyu: EikenQuestion[] = [
       { key: 'D', text: 'Because sign language is easier than spoken Japanese' },
     ],
     correctKey: 'C',
-    explanation: 'パッセージに「so that hearing students can communicate with deaf classmates（聴者の生徒が聴覚障害のあるクラスメートとコミュニケーションできるように）」と書かれている。政府の義務・プロ通訳者の育成・言語の難易度については言及されていない。「so that」の目的に注目することが重要。',
+    explanation: 'パッセージに「so that hearing students can communicate with deaf classmates（聴者の生徒が聴覚障害のあるクラスメートとコミュニケーションできるように）」と書かれている。政府の義務・プロ通訳者の育成・言語の難易度については言及されていない。「so that」の目的に注目することが重要。\n\n【図解】手話を学ぶ目的\n　要素｜本文の表現｜内容\n　目的を示す語｜so that｜〜できるように\n　対象｜deaf classmates｜聴覚障害のある同級生\n　行為｜communicate｜意思疎通\n　⇒ 同級生と話すためが目的\n　⚠ 政府の義務や職業訓練ではない。so that の後ろが目的を示す。',
     difficulty: 'standard',
   },
   {
@@ -759,7 +759,7 @@ export const eikenQuestions3kyu: EikenQuestion[] = [
       { key: 'D', text: 'It uses the face and body, as well as the hands.' },
     ],
     correctKey: 'D',
-    explanation: 'パッセージに「uses hand movements, facial expressions, and body posture（手の動き、表情、体の姿勢を使う）」と書かれている。手だけでなく顔と体も使う。「only uses hand movements（手だけ）」は不正しい。日本で発明されたという記述も、主にテレビで使われるという記述もない。',
+    explanation: 'パッセージに「uses hand movements, facial expressions, and body posture（手の動き、表情、体の姿勢を使う）」と書かれている。手だけでなく顔と体も使う。「only uses hand movements（手だけ）」は不正しい。日本で発明されたという記述も、主にテレビで使われるという記述もない。\n\n【図解】手話で使う要素\n　要素｜本文の表現｜含まれるか\n　手の動き｜hand movements｜含まれる\n　表情｜facial expressions｜含まれる\n　体の姿勢｜body posture｜含まれる\n　⇒ 手だけでなく顔と体も使う\n　⚠ only を含む選択肢は範囲を狭めすぎ。列挙された要素をすべて確認する。',
     difficulty: 'advanced',
   },
   // vocabulary (15) - IDs 051-065
@@ -775,7 +775,7 @@ export const eikenQuestions3kyu: EikenQuestion[] = [
       { key: 'D', text: 'push' },
     ],
     correctKey: 'C',
-    explanation: '「raise one\'s hand（手を挙げる）」は授業中の定番表現。liftは物理的に持ち上げる動作全般に使うが、教室で答えを知っているときに手を挙げる場合はraiseが自然。hold（持つ）、push（押す）は文脈に合わない。',
+    explanation: '「raise one\'s hand（手を挙げる）」は授業中の定番表現。liftは物理的に持ち上げる動作全般に使うが、教室で答えを知っているときに手を挙げる場合はraiseが自然。hold（持つ）、push（押す）は文脈に合わない。\n\nraise は「（物を）上げる」という他動詞で、必ず目的語をとる。raise one’s hand は授業で発言を求めるときの決まった言い方である。自動詞の rise（上がる）とは形も使い方も異なる。\n\n【図解】上げる動作の動詞\n　語｜他動詞か自動詞か｜例\n　raise｜他動詞｜raise your hand\n　rise｜自動詞｜The sun rises\n　lift｜他動詞｜lift a heavy box\n　⇒ hands という目的語があるので raise\n　⚠ lift は重い物を持ち上げる動作。挙手には raise を使う。',
     difficulty: 'basic',
   },
   {
@@ -790,7 +790,7 @@ export const eikenQuestions3kyu: EikenQuestion[] = [
       { key: 'D', text: 'hardly' },
     ],
     correctKey: 'C',
-    explanation: '「sell out quickly（すぐに売り切れる）」は人気商品の説明として自然。famousな店で人気があるという文脈にはquicklyが適切。slowly（ゆっくり）、rarely（めったに〜ない）、hardly（ほとんど〜ない）は人気を表す文脈と矛盾する。',
+    explanation: '「sell out quickly（すぐに売り切れる）」は人気商品の説明として自然。famousな店で人気があるという文脈にはquicklyが適切。slowly（ゆっくり）、rarely（めったに〜ない）、hardly（ほとんど〜ない）は人気を表す文脈と矛盾する。\n\nquickly は「すばやく」で、sell out quickly は人気商品がすぐ売り切れることを表す。famous for its fresh bread という前半が、需要の高さを示す手がかりになっている。\n\n【図解】頻度と速さの副詞\n　語｜意味｜文の性質\n　quickly｜すばやく｜肯定的な速さ\n　slowly｜ゆっくり｜遅さ\n　hardly｜ほとんど〜ない｜否定\n　⇒ 人気で早く売り切れるなら quickly\n　⚠ hardly と rarely は否定の副詞。人気を述べる文脈とは矛盾する。',
     difficulty: 'basic',
   },
   {
@@ -805,7 +805,7 @@ export const eikenQuestions3kyu: EikenQuestion[] = [
       { key: 'D', text: 'grow' },
     ],
     correctKey: 'B',
-    explanation: '「stay still（じっとしている）」は動かずにいることを指示する定番表現。remainも文法的には可能だがstillとの組み合わせではstayがより一般的で自然。become（〜になる）、grow（成長する・徐々に〜になる）は不適切。',
+    explanation: '「stay still（じっとしている）」は動かずにいることを指示する定番表現。remainも文法的には可能だがstillとの組み合わせではstayがより一般的で自然。become（〜になる）、grow（成長する・徐々に〜になる）は不適切。\n\nstay still は「じっとしている」で、stay は「ある状態のままでいる」を表す。血圧を測る間は動かないでという指示に合う。still は形容詞で「静止した」の意味になる。\n\n【図解】状態を表す動詞\n　語｜意味｜後ろに来る語\n　stay｜〜のままでいる｜形容詞\n　become｜〜になる｜形容詞, 名詞\n　grow｜次第に〜になる｜形容詞\n　⇒ 動かずにいるなら stay still\n　⚠ become は変化を表す動詞。状態の維持には stay を使う。',
     difficulty: 'standard',
   },
   {
@@ -820,7 +820,7 @@ export const eikenQuestions3kyu: EikenQuestion[] = [
       { key: 'D', text: 'defeat' },
     ],
     correctKey: 'A',
-    explanation: '「disturb（邪魔する、妨げる）」は勉強している人の集中を妨げないようにという文脈に適切。destroy（破壊する）、damage（損傷を与える）、defeat（打ち負かす）はいずれも人の集中を妨げるという意味には使わない。',
+    explanation: '「disturb（邪魔する、妨げる）」は勉強している人の集中を妨げないようにという文脈に適切。destroy（破壊する）、damage（損傷を与える）、defeat（打ち負かす）はいずれも人の集中を妨げるという意味には使わない。\n\ndisturb は「（人の集中や静けさを）妨げる」で、勉強している人の邪魔をしないようにという文脈に合う。Do not disturb（起こさないでください）はホテルの札でもおなじみの表現である。\n\n【図解】d で始まる動詞\n　語｜意味｜対象\n　disturb｜妨げる, 邪魔する｜集中, 睡眠\n　damage｜損傷を与える｜物, 評判\n　destroy｜破壊する｜建物, 環境\n　⇒ 勉強の邪魔をしないなら disturb\n　⚠ damage と destroy は物に対する動詞。人の集中には disturb を使う。',
     difficulty: 'standard',
   },
   {
@@ -835,7 +835,7 @@ export const eikenQuestions3kyu: EikenQuestion[] = [
       { key: 'D', text: 'have' },
     ],
     correctKey: 'A',
-    explanation: '「get enough sleep（十分な睡眠を取る）」は健康に関する定番表現。takeやhaveも文法的には使われることがあるが、この文脈ではgetが最も自然で一般的。doはsleepと組み合わせない。',
+    explanation: '「get enough sleep（十分な睡眠を取る）」は健康に関する定番表現。takeやhaveも文法的には使われることがあるが、この文脈ではgetが最も自然で一般的。doはsleepと組み合わせない。\n\nget enough sleep は「十分な睡眠をとる」で、健康について語るときの定番表現。sleep は不可算名詞なので enough が直接つく。動詞は get が最も一般的で、have や take も文脈により使われる。\n\n【図解】sleep を使う表現\n　表現｜意味｜使う場面\n　get enough sleep｜十分に眠る｜健康の話題\n　go to sleep｜寝入る｜就寝\n　fall asleep｜眠りに落ちる｜無意識に\n　⇒ 健康のために眠るなら get enough sleep\n　⚠ do sleep という言い方はしない。名詞ごとに結ぶ動詞が決まっている。',
     difficulty: 'basic',
   },
   {
@@ -850,7 +850,7 @@ export const eikenQuestions3kyu: EikenQuestion[] = [
       { key: 'D', text: 'income' },
     ],
     correctKey: 'A',
-    explanation: '「discount（割引）」は買い物袋を持参した客への値引きという文脈に適切。increase（増加）、expense（出費）、income（収入）はいずれも不適切。',
+    explanation: '「discount（割引）」は買い物袋を持参した客への値引きという文脈に適切。increase（増加）、expense（出費）、income（収入）はいずれも不適切。\n\ndiscount は「割引」で、a discount of 10 percent の形で割引率を示す。買い物袋の持参に対する値引きという文脈に合う。get a discount、offer a discount が定番の言い方である。\n\n【図解】お金に関する名詞\n　語｜意味｜方向\n　discount｜割引｜支払いが減る\n　expense｜出費｜支払い\n　income｜収入｜受け取り\n　⇒ 値引きを提供するなら discount\n　⚠ increase は「増加」で逆方向。客にとって得か損かで判断する。',
     difficulty: 'basic',
   },
   {
@@ -865,7 +865,7 @@ export const eikenQuestions3kyu: EikenQuestion[] = [
       { key: 'D', text: 'enthusiastic' },
     ],
     correctKey: 'A',
-    explanation: '「exhausted（疲れ果てた）」は長時間のハイキングの後すぐに眠ってしまった理由として適切。excited（わくわくした）、embarrassed（恥ずかしい）、enthusiastic（熱心な）はいずれも文脈に合わない。',
+    explanation: '「exhausted（疲れ果てた）」は長時間のハイキングの後すぐに眠ってしまった理由として適切。excited（わくわくした）、embarrassed（恥ずかしい）、enthusiastic（熱心な）はいずれも文脈に合わない。\n\nexhausted は「疲れ果てた」で、tired よりも強い疲労を表す。長いハイキングの後で夕食後すぐ眠ってしまったという結果が、この語の強さを裏づけている。\n\n【図解】ex で始まる形容詞\n　語｜意味｜感情の方向\n　exhausted｜疲れ果てた｜否定的\n　excited｜わくわくした｜肯定的\n　embarrassed｜恥ずかしい｜否定的\n　⇒ すぐ眠ってしまうほど疲れたなら exhausted\n　⚠ excited は元気な状態。so 〜 that の結果と論理が合うかを確認する。',
     difficulty: 'basic',
   },
   {
@@ -880,7 +880,7 @@ export const eikenQuestions3kyu: EikenQuestion[] = [
       { key: 'D', text: 'gain' },
     ],
     correctKey: 'A',
-    explanation: '「raise the price（価格を引き上げる）」は他動詞raiseを使う定番表現。riseは自動詞で目的語を取れない（The price rose のように使う）。grow（成長する）、gain（得る）は文脈に合わない。',
+    explanation: '「raise the price（価格を引き上げる）」は他動詞raiseを使う定番表現。riseは自動詞で目的語を取れない（The price rose のように使う）。grow（成長する）、gain（得る）は文脈に合わない。\n\nraise は他動詞で「（値段や水準を）上げる」を表し、price を目的語にとる。原材料費の上昇を受けて価格を引き上げたという文脈に合う。自動詞の rise は The price rose のように使う。\n\n【図解】raise と rise の使い分け\n　語｜構文｜例\n　raise ＋ 目的語｜他動詞｜raise the price\n　rise（目的語なし）｜自動詞｜The price rose\n　変化｜rise - rose - risen｜不規則変化\n　⇒ the price という目的語があるので raise\n　⚠ rise を他動詞として使わない。目的語の有無で動詞を選び分ける。',
     difficulty: 'standard',
   },
   {
@@ -895,7 +895,7 @@ export const eikenQuestions3kyu: EikenQuestion[] = [
       { key: 'D', text: 'come along with' },
     ],
     correctKey: 'A',
-    explanation: '「come up with（〜を思いつく、考え出す）」は計画やアイデアを生み出す場面の定番表現。come out with、come over with、come along withはこの意味では使わない不自然な組み合わせ。',
+    explanation: '「come up with（〜を思いつく、考え出す）」は計画やアイデアを生み出す場面の定番表現。come out with、come over with、come along withはこの意味では使わない不自然な組み合わせ。\n\ncome up with 〜 は「（考えや計画を）思いつく」で、idea、plan、solution を目的語にとる。生徒たちが協力して文化祭の計画を練ったという文脈に合う3語の句動詞である。\n\n【図解】come の句動詞\n　表現｜意味｜典型目的語\n　come up with｜思いつく｜idea, plan\n　come across｜偶然出会う｜人, 物\n　come along｜一緒に来る, 進展する｜（自動詞）\n　⇒ 計画を考え出すなら come up with\n　⚠ come out with や come over with という熟語はない。前置詞の組み合わせを確認する。',
     difficulty: 'standard',
   },
   {
@@ -910,7 +910,7 @@ export const eikenQuestions3kyu: EikenQuestion[] = [
       { key: 'D', text: 'set' },
     ],
     correctKey: 'A',
-    explanation: '「turn off the lights（電気を消す）」は日常でよく使う定番表現。put off は「延期する」、take off は「脱ぐ・離陸する」、set off は「出発する」でいずれも電気を消す意味にはならない。',
+    explanation: '「turn off the lights（電気を消す）」は日常でよく使う定番表現。put off は「延期する」、take off は「脱ぐ・離陸する」、set off は「出発する」でいずれも電気を消す意味にはならない。\n\nturn off は「（電気や機器の）スイッチを切る」で、lights、TV、water を目的語にとる。反対は turn on。教室を出る前に消灯するという日常的な指示に合う。\n\n【図解】off を使う句動詞\n　表現｜意味｜目的語\n　turn off｜スイッチを切る｜lights, TV\n　put off｜延期する｜meeting\n　take off｜脱ぐ, 離陸する｜coat, plane\n　⇒ 電気を消すなら turn off\n　⚠ 同じ off でも動詞が違えば意味が変わる。組み合わせ全体で覚える。',
     difficulty: 'basic',
   },
   {
@@ -925,7 +925,7 @@ export const eikenQuestions3kyu: EikenQuestion[] = [
       { key: 'D', text: 'rain' },
     ],
     correctKey: 'A',
-    explanation: '天気を表す形容詞rainy（雨模様の）がbe動詞の補語として正しい。rainedは過去分詞、rainingは進行形になり文法的に不完全、rainは名詞・動詞で形容詞的補語として不適切。',
+    explanation: '天気を表す形容詞rainy（雨模様の）がbe動詞の補語として正しい。rainedは過去分詞、rainingは進行形になり文法的に不完全、rainは名詞・動詞で形容詞的補語として不適切。\n\nrainy は「雨の」を表す形容詞で、be 動詞の補語になる。天気を述べるときは It will be rainy や It will rain のどちらも使えるが、be 動詞の後ろには形容詞を置く。\n\n【図解】天気の表し方\n　形｜品詞｜例\n　It will be rainy｜形容詞｜be 動詞の補語\n　It will rain｜動詞｜be 動詞は不要\n　It is raining｜進行形｜今降っている\n　⇒ be 動詞の後ろなので rainy\n　⚠ will be rain とはしない。be 動詞の後ろに動詞の原形は置けない。',
     difficulty: 'basic',
   },
   {
@@ -940,7 +940,7 @@ export const eikenQuestions3kyu: EikenQuestion[] = [
       { key: 'D', text: 'suggestion' },
     ],
     correctKey: 'A',
-    explanation: '「advice（助言）」は不可算名詞なので複数形にならない。「some useful advice」は文法的に正しい表現。advicesは誤り（不可算名詞に -s は付けない）。suggestは動詞、suggestionは可算名詞で単数形では冠詞や数詞が必要になる。',
+    explanation: '「advice（助言）」は不可算名詞なので複数形にならない。「some useful advice」は文法的に正しい表現。advicesは誤り（不可算名詞に -s は付けない）。suggestは動詞、suggestionは可算名詞で単数形では冠詞や数詞が必要になる。\n\nadvice は不可算名詞で、複数形にも a をつけた形にもならない。数えるときは a piece of advice とする。動詞は advise、名詞は advice とつづりが異なる点も要注意である。\n\n【図解】advice の使い方\n　項目｜内容｜例\n　可算性｜不可算｜some advice\n　数え方｜a piece of advice｜1つの助言\n　動詞形｜advise｜つづりが異なる\n　⇒ some useful advice が正しい形\n　⚠ advices とはしない。suggestion は可算名詞という違いも押さえる。',
     difficulty: 'standard',
   },
   {
@@ -955,7 +955,7 @@ export const eikenQuestions3kyu: EikenQuestion[] = [
       { key: 'D', text: 'unique' },
     ],
     correctKey: 'A',
-    explanation: '「look alike（似ている）」は外見が似ていることを表す表現で、間違えられるという文脈に合う。different（異なる）、separate（別々の）、unique（独特な）はいずれも似ているという意味とは逆または不適切。',
+    explanation: '「look alike（似ている）」は外見が似ていることを表す表現で、間違えられるという文脈に合う。different（異なる）、separate（別々の）、unique（独特な）はいずれも似ているという意味とは逆または不適切。\n\nalike は「似ている」を表す形容詞で、look alike の形で「そっくりだ」を表す。名詞の前には置けず、補語としてのみ使う点が特徴である。mistake one for the other という結果が似ていることを裏づけている。\n\n【図解】似ているの表し方\n　表現｜使い方｜例\n　look alike｜補語のみ｜They look alike\n　be similar to｜前置詞 to が必要｜similar to each other\n　look like ＋ 名詞｜名詞が続く｜look like his father\n　⇒ 二人がそっくりなら look alike\n　⚠ an alike brother とは言えない。alike は名詞の前に置けない形容詞である。',
     difficulty: 'basic',
   },
   {
@@ -970,7 +970,7 @@ export const eikenQuestions3kyu: EikenQuestion[] = [
       { key: 'D', text: 'shut' },
     ],
     correctKey: 'A',
-    explanation: '「open a new office（新しいオフィスを開設する）」は事業拡大の定番表現。wide（広い、形容詞）は文法的に不適切。close・shutは「閉める」で逆の意味。',
+    explanation: '「open a new office（新しいオフィスを開設する）」は事業拡大の定番表現。wide（広い、形容詞）は文法的に不適切。close・shutは「閉める」で逆の意味。\n\nopen は他動詞で「（店や事務所を）開設する」の意味を持ち、office、shop、branch を目的語にとる。大阪に新しい事務所を開くという事業拡大の文脈に合う。\n\n【図解】open の使い方\n　用法｜意味｜例\n　他動詞｜開設する, 開ける｜open a new office\n　自動詞｜開店する｜The store opens at nine\n　形容詞｜開いている｜The door is open\n　⇒ 事務所を新設するなら open\n　⚠ wide は形容詞で動詞にならない。空所に動詞が必要かをまず確認する。',
     difficulty: 'basic',
   },
   {
@@ -985,7 +985,7 @@ export const eikenQuestions3kyu: EikenQuestion[] = [
       { key: 'D', text: 'careful' },
     ],
     correctKey: 'A',
-    explanation: '「curious（好奇心のある、興味津々の）」は初めて訪れる街への好奇心を表す文脈に適切。careless（不注意な）、confident（自信のある）、careful（注意深い）はいずれも文脈に合わない。',
+    explanation: '「curious（好奇心のある、興味津々の）」は初めて訪れる街への好奇心を表す文脈に適切。careless（不注意な）、confident（自信のある）、careful（注意深い）はいずれも文脈に合わない。\n\ncurious は「知りたがっている、興味津々の」で、be curious about 〜 の形をとる。初めて訪れる街への期待と好奇心を表す文脈に合う。名詞形は curiosity。\n\n【図解】c で始まる形容詞\n　語｜意味｜前置詞\n　curious｜好奇心がある｜about\n　careful｜注意深い｜about, with\n　confident｜自信がある｜of, about\n　⇒ 初めての街への関心なら curious\n　⚠ careless は「不注意な」で意味が正反対。語形の似た形容詞を意味で区別する。',
     difficulty: 'basic',
   },
 
@@ -1002,7 +1002,7 @@ export const eikenQuestions3kyu: EikenQuestion[] = [
       { key: 'D', text: 'leaves' },
     ],
     correctKey: 'C',
-    explanation: '「駅に着いたときには」より前に電車が出発していたことを示すには過去完了形（had + 過去分詞）を使う。単純過去のleftでは前後関係が不明確。has leftは現在完了で過去の特定時点とは使えない。leavesは現在形で不適切。',
+    explanation: '「駅に着いたときには」より前に電車が出発していたことを示すには過去完了形（had + 過去分詞）を使う。単純過去のleftでは前後関係が不明確。has leftは現在完了で過去の特定時点とは使えない。leavesは現在形で不適切。\n\n【図解】過去完了を使う場面\n　形｜表す時｜目印\n　had 過去分詞｜過去のある時点より前｜by the time 過去形\n　過去形｜過去の出来事｜arrived\n　現在完了｜現在までの継続や経験｜since, already\n　⇒ 到着より前に出発していたなら had left\n　⚠ 現在完了は過去の一時点を示す語句と併用しない。基準時を先に確認する。',
     difficulty: 'advanced',
   },
   {
@@ -1017,7 +1017,7 @@ export const eikenQuestions3kyu: EikenQuestion[] = [
       { key: 'D', text: 'is raining' },
     ],
     correctKey: 'A',
-    explanation: '条件を表すif節では未来のことでも現在形を使う。「もし明日雨が降れば」はif it rains tomorrow。will rainはif節では使えない。ratedは仮定法過去（現実と異なる仮定）で今回の文脈に合わない。is rainingは進行形で不自然。',
+    explanation: '条件を表すif節では未来のことでも現在形を使う。「もし明日雨が降れば」はif it rains tomorrow。will rainはif節では使えない。ratedは仮定法過去（現実と異なる仮定）で今回の文脈に合わない。is rainingは進行形で不自然。\n\n【図解】条件を表す if 節\n　節の種類｜未来の内容｜使う時制\n　条件の副詞節｜未来でも｜現在形\n　主節｜未来｜will ＋ 原形\n　名詞節の if｜〜かどうか｜will も可\n　⇒ 条件の副詞節なので rains\n　⚠ if 節の中で will を使わない。副詞節か名詞節かで扱いが変わる。',
     difficulty: 'standard',
   },
   {
@@ -1032,7 +1032,7 @@ export const eikenQuestions3kyu: EikenQuestion[] = [
       { key: 'D', text: 'where' },
     ],
     correctKey: 'B',
-    explanation: '先行詞the book（物）を指す関係代名詞whichが正しい。whoは人を指す、whoseは所有格、whereは場所を表す関係副詞でいずれも不適切。「先週話した本」はthe book which I told you aboutとなる。',
+    explanation: '先行詞the book（物）を指す関係代名詞whichが正しい。whoは人を指す、whoseは所有格、whereは場所を表す関係副詞でいずれも不適切。「先週話した本」はthe book which I told you aboutとなる。\n\n【図解】関係代名詞の選び方\n　先行詞｜主格｜目的格\n　人｜who, that｜whom, that\n　物｜which, that｜which, that\n　所有｜whose｜whose\n　⇒ 先行詞が book なので which\n　⚠ where は場所を表す関係副詞。後ろの文に欠けがあるかで見分ける。',
     difficulty: 'basic',
   },
   {
@@ -1047,7 +1047,7 @@ export const eikenQuestions3kyu: EikenQuestion[] = [
       { key: 'D', text: 'to get' },
     ],
     correctKey: 'B',
-    explanation: '「be used to + 動名詞」は「〜することに慣れている」という意味。toの後には動名詞が続く点に注意（"used to + 動詞原形（かつて〜した）" との混同に注意）。get（原形）、got（過去形）、to get（不定詞）はいずれも不適切。',
+    explanation: '「be used to + 動名詞」は「〜することに慣れている」という意味。toの後には動名詞が続く点に注意（"used to + 動詞原形（かつて〜した）" との混同に注意）。get（原形）、got（過去形）、to get（不定詞）はいずれも不適切。\n\n【図解】to の後ろの形\n　表現｜to の品詞｜後ろの形\n　be used to｜前置詞｜動名詞\n　used to｜助動詞相当｜動詞の原形\n　look forward to｜前置詞｜動名詞\n　⇒ is used to があるので getting\n　⚠ be の有無で to の性質が変わる。文頭から構造を確認してから形を決める。',
     difficulty: 'advanced',
   },
   {
@@ -1062,7 +1062,7 @@ export const eikenQuestions3kyu: EikenQuestion[] = [
       { key: 'D', text: 'are' },
     ],
     correctKey: 'A',
-    explanation: '主語The movie（単数）に対応するbe動詞の過去形wasが正しい。「we watched last night」は関係代名詞thatが省略された修飾節で、主語には影響しない。wereは複数、is・areは現在形で「last night」という過去の表現と合わない。',
+    explanation: '主語The movie（単数）に対応するbe動詞の過去形wasが正しい。「we watched last night」は関係代名詞thatが省略された修飾節で、主語には影響しない。wereは複数、is・areは現在形で「last night」という過去の表現と合わない。\n\n【図解】主語と動詞の一致\n　主語｜動詞｜例\n　単数の名詞｜was, is｜The movie was\n　複数の名詞｜were, are｜The movies were\n　修飾節｜数に影響しない｜we watched last night\n　⇒ 主語は The movie なので was\n　⚠ 主語の後ろの修飾節に引きずられない。主語の核を見極める。',
     difficulty: 'basic',
   },
   {
@@ -1077,7 +1077,7 @@ export const eikenQuestions3kyu: EikenQuestion[] = [
       { key: 'D', text: 'have been' },
     ],
     correctKey: 'A',
-    explanation: '「neither of + 複数名詞」は文法上単数扱いになるため、be動詞は単数形wasを使う。wereやareは複数扱いになり不適切。have beenは現在完了で時制が合わない。',
+    explanation: '「neither of + 複数名詞」は文法上単数扱いになるため、be動詞は単数形wasを使う。wereやareは複数扱いになり不適切。have beenは現在完了で時制が合わない。\n\nneither of ＋ 複数名詞 は文法上は単数扱いで、動詞は was や is を使う。二つのうちどちらも正しくなかったという意味を表す。口語では複数扱いされることもあるが、試験では単数が原則。\n\n【図解】単数扱いになる主語\n　主語の形｜数の扱い｜例\n　neither of ＋ 複数名詞｜単数｜Neither of them was\n　each of ＋ 複数名詞｜単数｜Each of us has\n　both of ＋ 複数名詞｜複数｜Both of them were\n　⇒ neither of なので was\n　⚠ of の後ろの複数名詞に引きずられない。主語の核は neither である。',
     difficulty: 'advanced',
   },
   {
@@ -1092,7 +1092,7 @@ export const eikenQuestions3kyu: EikenQuestion[] = [
       { key: 'D', text: 'while' },
     ],
     correctKey: 'B',
-    explanation: '「for + 期間（30分間）」は継続する時間の長さを表す。sinceは「〜以来」という特定の起点を表す前置詞で期間には使わない。duringは特定の期間の「〜の間に」、whileは接続詞で名詞を直接続けられない。',
+    explanation: '「for + 期間（30分間）」は継続する時間の長さを表す。sinceは「〜以来」という特定の起点を表す前置詞で期間には使わない。duringは特定の期間の「〜の間に」、whileは接続詞で名詞を直接続けられない。\n\n【図解】期間を表す前置詞\n　語｜後ろに来るもの｜例\n　for｜期間の長さ｜for thirty minutes\n　since｜起点となる時点｜since noon\n　during｜特定の期間｜during the class\n　⇒ 30分間という長さなら for\n　⚠ while は接続詞で名詞を直接続けられない。品詞で選択肢を絞る。',
     difficulty: 'basic',
   },
   {
@@ -1107,7 +1107,7 @@ export const eikenQuestions3kyu: EikenQuestion[] = [
       { key: 'D', text: 'don\'t make' },
     ],
     correctKey: 'B',
-    explanation: '「tell + 人 + not to + 動詞原形」は「〜しないように言う」という否定命令の間接話法。notは不定詞の直前に置く。not making（動名詞の否定）、to not making（誤った混合形）、don\'t make（命令形で不定詞構文に合わない）はいずれも不適切。',
+    explanation: '「tell + 人 + not to + 動詞原形」は「〜しないように言う」という否定命令の間接話法。notは不定詞の直前に置く。not making（動名詞の否定）、to not making（誤った混合形）、don\'t make（命令形で不定詞構文に合わない）はいずれも不適切。\n\n【図解】不定詞の否定形\n　形｜意味｜not の位置\n　tell 人 not to do｜〜しないよう言う｜to の直前\n　tell 人 to do｜〜するよう言う｜（否定なし）\n　ask 人 not to do｜〜しないよう頼む｜to の直前\n　⇒ not to make が正しい形\n　⚠ to not make の語順は避ける。not は to の前に置くのが原則。',
     difficulty: 'standard',
   },
   {
@@ -1122,7 +1122,7 @@ export const eikenQuestions3kyu: EikenQuestion[] = [
       { key: 'D', text: 'by' },
     ],
     correctKey: 'A',
-    explanation: '「in one\'s class（クラスの中で）」はグループの中での比較を表す定番表現。「any other student in his class」で「クラスの他のどの生徒よりも」という意味になる。at・on・byはこの文脈で使う前置詞として不自然。',
+    explanation: '「in one\'s class（クラスの中で）」はグループの中での比較を表す定番表現。「any other student in his class」で「クラスの他のどの生徒よりも」という意味になる。at・on・byはこの文脈で使う前置詞として不自然。\n\n【図解】比較の範囲を示す前置詞\n　範囲｜前置詞｜例\n　クラス, 集団｜in｜in his class\n　場所（地点）｜at｜at the station\n　日付｜on｜on Monday\n　⇒ クラスの中での比較なら in\n　⚠ any other student は単数形。比較級との組み合わせで最上級の意味になる。',
     difficulty: 'standard',
   },
   {
@@ -1137,7 +1137,7 @@ export const eikenQuestions3kyu: EikenQuestion[] = [
       { key: 'D', text: 'to buy' },
     ],
     correctKey: 'C',
-    explanation: '過去分詞boughtが後ろから名詞carを修飾する分詞句の用法。「父が去年買った車」という受動の意味になるためboughtが正しい。buy（原形）、buying（能動・進行）、to buy（不定詞）はいずれも文脈に合わない。',
+    explanation: '過去分詞boughtが後ろから名詞carを修飾する分詞句の用法。「父が去年買った車」という受動の意味になるためboughtが正しい。buy（原形）、buying（能動・進行）、to buy（不定詞）はいずれも文脈に合わない。\n\n【図解】名詞を修飾する分詞\n　形｜意味｜例\n　過去分詞｜〜される｜the car bought\n　現在分詞｜〜している｜the man buying\n　to 不定詞｜これから〜する｜the car to buy\n　⇒ 車は買われる側なので bought\n　⚠ 文の動詞は is。述語動詞を入れると動詞が2つになる点に注意する。',
     difficulty: 'standard',
   },
   {
@@ -1152,7 +1152,7 @@ export const eikenQuestions3kyu: EikenQuestion[] = [
       { key: 'D', text: 'when' },
     ],
     correctKey: 'B',
-    explanation: '「if + 主語 + 動詞 ... or not」は「〜かどうか」という意味の間接疑問文。「彼女がパーティーに来るかどうか」という文脈にifが正しい。thatは「〜ということ」、whatは「何を」、whenは「いつ」で、いずれもor notと組み合わせるには不自然。',
+    explanation: '「if + 主語 + 動詞 ... or not」は「〜かどうか」という意味の間接疑問文。「彼女がパーティーに来るかどうか」という文脈にifが正しい。thatは「〜ということ」、whatは「何を」、whenは「いつ」で、いずれもor notと組み合わせるには不自然。\n\n【図解】名詞節を導く語\n　語｜意味｜or not との相性\n　if｜〜かどうか｜文末なら可\n　whether｜〜かどうか｜直後にも可\n　that｜〜ということ｜不可\n　⇒ or not と呼応するので if\n　⚠ that では疑問の意味にならない。答えが yes か no かで見分ける。',
     difficulty: 'standard',
   },
   {
@@ -1167,7 +1167,7 @@ export const eikenQuestions3kyu: EikenQuestion[] = [
       { key: 'D', text: 'the most difficult' },
     ],
     correctKey: 'B',
-    explanation: '比較級を強調する副詞muchの後には比較級（more difficult）が続く。two-syllable以上の形容詞difficultはmoreをつけて比較級を作る。difficult（原級）、most difficult・the most difficult（最上級）はmuchと組み合わせて使わない。',
+    explanation: '比較級を強調する副詞muchの後には比較級（more difficult）が続く。two-syllable以上の形容詞difficultはmoreをつけて比較級を作る。difficult（原級）、most difficult・the most difficult（最上級）はmuchと組み合わせて使わない。\n\n【図解】比較級を強める副詞\n　副詞｜修飾する形｜例\n　much, far, a lot｜比較級｜much more difficult\n　very｜原級｜very difficult\n　by far｜最上級｜by far the best\n　⇒ much の後ろは比較級 more difficult\n　⚠ very は原級専用。比較級を very で強めることはできない。',
     difficulty: 'basic',
   },
   {
@@ -1182,7 +1182,7 @@ export const eikenQuestions3kyu: EikenQuestion[] = [
       { key: 'D', text: 'visited' },
     ],
     correctKey: 'C',
-    explanation: '「excited + to不定詞」は「〜することにわくわくしている」という感情の原因を表す構文。「初めて遊園地を訪れることにわくわくしていた」という意味でto visitが正しい。visit（原形）、visiting（動名詞）、visited（過去分詞）はこの構文に合わない。',
+    explanation: '「excited + to不定詞」は「〜することにわくわくしている」という感情の原因を表す構文。「初めて遊園地を訪れることにわくわくしていた」という意味でto visitが正しい。visit（原形）、visiting（動名詞）、visited（過去分詞）はこの構文に合わない。\n\n【図解】感情の原因を表す不定詞\n　形容詞｜構文｜例\n　excited｜be excited to do｜excited to visit\n　glad｜be glad to do｜glad to hear\n　surprised｜be surprised to do｜surprised to see\n　⇒ 感情の理由なら to visit\n　⚠ 動名詞は続かない。感情形容詞の後ろは to 不定詞が原則。',
     difficulty: 'standard',
   },
   {
@@ -1197,7 +1197,7 @@ export const eikenQuestions3kyu: EikenQuestion[] = [
       { key: 'D', text: 'has' },
     ],
     correctKey: 'B',
-    explanation: '「There + be動詞 + 名詞」の構文ではbe動詞は後続の名詞（a lot of people、複数扱い）と一致する。peopleは複数名詞として扱うのでwereが正しい。wasは単数、is・hasは現在形で「last night」という過去の表現と合わない。',
+    explanation: '「There + be動詞 + 名詞」の構文ではbe動詞は後続の名詞（a lot of people、複数扱い）と一致する。peopleは複数名詞として扱うのでwereが正しい。wasは単数、is・hasは現在形で「last night」という過去の表現と合わない。\n\n【図解】There is と There are\n　後ろの名詞｜be 動詞｜例\n　単数｜is, was｜There was a book\n　複数｜are, were｜There were many people\n　不可算｜is, was｜There was some water\n　⇒ people は複数なので were\n　⚠ be 動詞は後ろの名詞に一致させる。There 自体は主語ではない。',
     difficulty: 'basic',
   },
   {
@@ -1212,7 +1212,7 @@ export const eikenQuestions3kyu: EikenQuestion[] = [
       { key: 'D', text: 'do' },
     ],
     correctKey: 'C',
-    explanation: '付加疑問文は肯定文にはshouldn\'t、否定文にはshouldを使う。この文は肯定文（You should apologize）なので、否定形の付加疑問shouldn\'t youが正しい。don\'t・doは一般動詞用でshouldとは組み合わせない。',
+    explanation: '付加疑問文は肯定文にはshouldn\'t、否定文にはshouldを使う。この文は肯定文（You should apologize）なので、否定形の付加疑問shouldn\'t youが正しい。don\'t・doは一般動詞用でshouldとは組み合わせない。\n\n【図解】付加疑問の作り方\n　主節｜付加疑問｜例\n　should の肯定文｜shouldn’t ＋ 主語｜shouldn’t you\n　一般動詞の肯定文｜don’t ＋ 主語｜don’t you\n　be 動詞の肯定文｜isn’t ＋ 主語｜isn’t it\n　⇒ should の肯定文なので shouldn’t you\n　⚠ 主節の助動詞をそのまま使う。should の文に don’t は使えない。',
     difficulty: 'standard',
   },
 
@@ -1229,7 +1229,7 @@ export const eikenQuestions3kyu: EikenQuestion[] = [
       { key: 'D', text: 'It\'s over there.' },
     ],
     correctKey: 'A',
-    explanation: '「Please, go ahead（どうぞ座ってください）」という返答から、席は空いていることがわかる。「No, it isn\'t（いいえ、空いています）」が自然な流れ。Yes, it isだと席が塞がっていることになり矛盾する。',
+    explanation: '「Please, go ahead（どうぞ座ってください）」という返答から、席は空いていることがわかる。「No, it isn\'t（いいえ、空いています）」が自然な流れ。Yes, it isだと席が塞がっていることになり矛盾する。\n\n【図解】席が空いているかの応答\n　質問｜応答｜意味\n　Is this seat taken｜No, it isn’t｜空いている\n　Is this seat taken｜Yes, it is｜ふさがっている\n　続く発話｜Please go ahead｜どうぞ\n　⇒ どうぞと促すなら No, it isn’t\n　⚠ taken は「取られている」。No が「空いている」を意味する点に注意する。',
     difficulty: 'basic',
   },
   {
@@ -1244,7 +1244,7 @@ export const eikenQuestions3kyu: EikenQuestion[] = [
       { key: 'D', text: 'I live nearby.' },
     ],
     correctKey: 'B',
-    explanation: '「Let me see（ええと、考えさせて）」の後に質問を続けるのは飲み物を選んでいる自然な流れ。Nothing, thanksだと後に「Do you have any hot tea?」と尋ねるのは矛盾する。I already ate、I live nearbyは文脈と無関係。',
+    explanation: '「Let me see（ええと、考えさせて）」の後に質問を続けるのは飲み物を選んでいる自然な流れ。Nothing, thanksだと後に「Do you have any hot tea?」と尋ねるのは矛盾する。I already ate、I live nearbyは文脈と無関係。\n\n【図解】注文時の会話表現\n　表現｜意味｜場面\n　Let me see｜ええと｜考える間\n　Nothing, thanks｜結構です｜断る\n　I will have 〜｜〜をお願いします｜注文\n　⇒ この後に質問を続けるなら Let me see\n　⚠ 断ったあとに注文を尋ねるのは不自然。前後のつながりで選ぶ。',
     difficulty: 'basic',
   },
   {
@@ -1259,7 +1259,7 @@ export const eikenQuestions3kyu: EikenQuestion[] = [
       { key: 'D', text: 'You should buy a raincoat.' },
     ],
     correctKey: 'A',
-    explanation: '「Did you check by the entrance?（玄関のそばを確認した？）」の後に「玄関の近くで見た気がする」と続くのが自然な流れ。sunny（晴れ）、新しい傘を買った、レインコートを買うべきという返答はいずれも「玄関のそばで見た」につながらない。',
+    explanation: '「Did you check by the entrance?（玄関のそばを確認した？）」の後に「玄関の近くで見た気がする」と続くのが自然な流れ。sunny（晴れ）、新しい傘を買った、レインコートを買うべきという返答はいずれも「玄関のそばで見た」につながらない。\n\n【図解】会話の流れ\n　順序｜発話｜内容\n　1｜傘が見つからない｜困りごと\n　2｜玄関のそばは確認した｜提案\n　3｜そこで見た気がする｜補足\n　⇒ 場所を確認する提案が入る\n　⚠ 天気や買い物の話は流れに合わない。直後の発話とつながるかを確認する。',
     difficulty: 'standard',
   },
   {
@@ -1274,7 +1274,7 @@ export const eikenQuestions3kyu: EikenQuestion[] = [
       { key: 'D', text: 'It\'s open.' },
     ],
     correctKey: 'A',
-    explanation: '「Would you mind 〜ing?」への肯定的な返答は「Not at all（もちろん構いません）」。承諾する場合はNoで答えるのが英語の決まり。Yes, I mind は「嫌です」という拒否の意味になり、後の感謝の言葉と矛盾する。',
+    explanation: '「Would you mind 〜ing?」への肯定的な返答は「Not at all（もちろん構いません）」。承諾する場合はNoで答えるのが英語の決まり。Yes, I mind は「嫌です」という拒否の意味になり、後の感謝の言葉と矛盾する。\n\n【図解】Would you mind への応答\n　応答｜意味｜承諾か拒否か\n　Not at all｜構いません｜承諾\n　Of course not｜もちろん構いません｜承諾\n　Yes, I mind｜嫌です｜拒否\n　⇒ 承諾するなら Not at all\n　⚠ mind は「嫌がる」。日本語の感覚と yes と no が逆になる点に注意する。',
     difficulty: 'advanced',
   },
   {
@@ -1289,7 +1289,7 @@ export const eikenQuestions3kyu: EikenQuestion[] = [
       { key: 'D', text: 'It\'s very far from here.' },
     ],
     correctKey: 'A',
-    explanation: '「I went there for a ski trip two years ago（2年前にスキー旅行で行った）」と経験を語っているので、直前の返答はYes, I haveが自然。No, I haven\'tだと矛盾する。他の選択肢も直後の具体的な経験の説明とかみ合わない。',
+    explanation: '「I went there for a ski trip two years ago（2年前にスキー旅行で行った）」と経験を語っているので、直前の返答はYes, I haveが自然。No, I haven\'tだと矛盾する。他の選択肢も直後の具体的な経験の説明とかみ合わない。\n\n【図解】経験を尋ねる応答\n　質問｜応答｜続く内容\n　Have you ever been to 〜｜Yes, I have｜具体的な経験\n　Have you ever been to 〜｜No, I haven’t｜行きたい気持ちなど\n　時期の表現｜two years ago｜過去の一時点\n　⇒ 経験を語るので Yes, I have\n　⚠ 現在完了の質問には have で答える。did で答えない点も確認する。',
     difficulty: 'basic',
   },
   {
@@ -1304,7 +1304,7 @@ export const eikenQuestions3kyu: EikenQuestion[] = [
       { key: 'D', text: 'You should ask the teacher tomorrow.' },
     ],
     correctKey: 'A',
-    explanation: '「I\'m good at math（数学は得意です）」の前に、助けを申し出る「Let me help you with it（手伝わせて）」が続くのが自然。Aは「本当に？ありがとう！」という感謝の返答とも一致する。他の選択肢は文脈が合わない。',
+    explanation: '「I\'m good at math（数学は得意です）」の前に、助けを申し出る「Let me help you with it（手伝わせて）」が続くのが自然。Aは「本当に？ありがとう！」という感謝の返答とも一致する。他の選択肢は文脈が合わない。\n\n【図解】申し出の表現\n　表現｜意味｜応答\n　Let me help you｜手伝わせて｜Thank you\n　Shall I help you｜手伝いましょうか｜Yes, please\n　You should ask 〜｜〜に聞くべきだ｜助言\n　⇒ お礼が続くので手伝いの申し出\n　⚠ 助言だけでは Thank you so much と強く感謝する流れになりにくい。',
     difficulty: 'standard',
   },
   {
@@ -1319,7 +1319,7 @@ export const eikenQuestions3kyu: EikenQuestion[] = [
       { key: 'D', text: 'Where did you buy your racket?' },
     ],
     correctKey: 'B',
-    explanation: 'Aの返答「Every Monday and Wednesday after school（毎週月曜と水曜の放課後）」は練習日を答えている。この返答が自然につながるのは練習日を尋ねるB「いつ練習するの？」。費用・コーチ・ラケットに関する質問には合わない。',
+    explanation: 'Aの返答「Every Monday and Wednesday after school（毎週月曜と水曜の放課後）」は練習日を答えている。この返答が自然につながるのは練習日を尋ねるB「いつ練習するの？」。費用・コーチ・ラケットに関する質問には合わない。\n\n【図解】応答から質問を推測する\n　応答｜答えている内容｜対応する質問\n　Every Monday and Wednesday｜曜日｜When do they practice\n　金額｜費用｜How much\n　人名｜人物｜Who\n　⇒ 曜日を答えているので練習日を尋ねる質問\n　⚠ 応答の情報の種類で質問を特定する。空所の直後を必ず確認する。',
     difficulty: 'standard',
   },
   {
@@ -1334,7 +1334,7 @@ export const eikenQuestions3kyu: EikenQuestion[] = [
       { key: 'D', text: 'The library closes at six.' },
     ],
     correctKey: 'B',
-    explanation: '「No problem, I can look up your account with your name（大丈夫です、お名前で確認できます）」という返答から、図書館カードを持っていない状況だとわかる。「Actually, I forgot it at home（実は家に忘れました）」が最も自然につながる。',
+    explanation: '「No problem, I can look up your account with your name（大丈夫です、お名前で確認できます）」という返答から、図書館カードを持っていない状況だとわかる。「Actually, I forgot it at home（実は家に忘れました）」が最も自然につながる。\n\n【図解】会話の因果関係\n　発話｜内容｜含意\n　カードはお持ちですか｜確認｜必要な手続き\n　家に忘れました｜否定の回答｜代替手段が必要\n　お名前で確認できます｜代替案｜カードがない前提\n　⇒ カードを持っていないと分かる応答が入る\n　⚠ 「はい、どうぞ」では代替案の提示が不自然になる。後続の発話から逆算する。',
     difficulty: 'standard',
   },
   {
@@ -1349,7 +1349,7 @@ export const eikenQuestions3kyu: EikenQuestion[] = [
       { key: 'D', text: 'Nothing much.' },
     ],
     correctKey: 'B',
-    explanation: '「I got accepted into my first-choice university!（第一志望の大学に合格した！）」といううれしい報告が続くことから、直前の返答は肯定的なActually, yes!が自然。Not really、Nothing muchは否定的で矛盾する。',
+    explanation: '「I got accepted into my first-choice university!（第一志望の大学に合格した！）」といううれしい報告が続くことから、直前の返答は肯定的なActually, yes!が自然。Not really、Nothing muchは否定的で矛盾する。\n\n【図解】あいづちの表現\n　表現｜意味｜方向\n　Actually, yes｜実はそうなんです｜肯定\n　Not really｜そうでもない｜否定\n　Nothing much｜特に何も｜否定\n　⇒ 合格の報告が続くので肯定の応答\n　⚠ 否定のあいづちの後にうれしい報告は続かない。感情の方向をそろえる。',
     difficulty: 'basic',
   },
   {
@@ -1364,7 +1364,7 @@ export const eikenQuestions3kyu: EikenQuestion[] = [
       { key: 'D', text: 'It was built ten years ago.' },
     ],
     correctKey: 'A',
-    explanation: '道順を尋ねられているので、具体的な行き方を説明するAが自然。「まっすぐ行って2つ目の信号を左に曲がってください。右手に見えます」という道案内の流れに合う。閉店時間や建物の歴史、行ったことがないという返答は道案内として不適切。',
+    explanation: '道順を尋ねられているので、具体的な行き方を説明するAが自然。「まっすぐ行って2つ目の信号を左に曲がってください。右手に見えます」という道案内の流れに合う。閉店時間や建物の歴史、行ったことがないという返答は道案内として不適切。\n\n【図解】道案内の表現\n　表現｜意味｜場面\n　Go straight｜まっすぐ行く｜道順\n　Turn left at 〜｜〜を左に曲がる｜道順\n　on your right｜右手に｜位置\n　⇒ 行き方を尋ねられたら道順を答える\n　⚠ 閉店時間や建物の歴史は道案内にならない。質問の内容に対応する応答を選ぶ。',
     difficulty: 'basic',
   },
 
@@ -1381,7 +1381,7 @@ export const eikenQuestions3kyu: EikenQuestion[] = [
       { key: 'D', text: 'The study room will be removed.' },
     ],
     correctKey: 'B',
-    explanation: 'お知らせに「the library will extend its opening hours on weekdays（平日の開館時間を延長する）」とある。Bが正しい。週末は「remain unchanged（変更なし）」、祝日は「closed（休館）」、勉強室は新設されるのであり削除されるわけではない。',
+    explanation: 'お知らせに「the library will extend its opening hours on weekdays（平日の開館時間を延長する）」とある。Bが正しい。週末は「remain unchanged（変更なし）」、祝日は「closed（休館）」、勉強室は新設されるのであり削除されるわけではない。\n\n【図解】お知らせの変更点\n　項目｜変更｜内容\n　平日の開館時間｜延長される｜extend\n　週末｜変更なし｜remain unchanged\n　祝日｜休館｜closed\n　⇒ 平日の開館時間が長くなる\n　⚠ 変更されない項目を答えにしない。曜日ごとの扱いを整理して読む。',
     difficulty: 'basic',
   },
   {
@@ -1396,7 +1396,7 @@ export const eikenQuestions3kyu: EikenQuestion[] = [
       { key: 'D', text: 'Reservations are not allowed.' },
     ],
     correctKey: 'B',
-    explanation: 'お知らせに「available for reservation up to one week in advance（1週間前まで予約可能）」と明記されている。Bが正解。予約自体は可能であり、期間は1日でも1か月でもない。',
+    explanation: 'お知らせに「available for reservation up to one week in advance（1週間前まで予約可能）」と明記されている。Bが正解。予約自体は可能であり、期間は1日でも1か月でもない。\n\n【図解】予約の条件\n　項目｜内容｜根拠\n　予約の可否｜可能｜available for reservation\n　受付期間｜1週間前まで｜up to one week in advance\n　対象｜新しい学習室｜study room\n　⇒ 1週間前から予約できる\n　⚠ in advance は「前もって」。期間の数値を正確に読み取る。',
     difficulty: 'basic',
   },
   {
@@ -1411,7 +1411,7 @@ export const eikenQuestions3kyu: EikenQuestion[] = [
       { key: 'D', text: 'Payment for the class' },
     ],
     correctKey: 'B',
-    explanation: 'メールに「Please bring an apron and a notebook（エプロンとノートを持参してください）」とある。Bが正解。材料と器具については「All other ingredients and equipment will be provided（提供される）」と書かれている。',
+    explanation: 'メールに「Please bring an apron and a notebook（エプロンとノートを持参してください）」とある。Bが正解。材料と器具については「All other ingredients and equipment will be provided（提供される）」と書かれている。\n\n【図解】持ち物の確認\n　項目｜扱い｜根拠\n　エプロンとノート｜持参する｜Please bring\n　材料｜提供される｜will be provided\n　器具｜提供される｜will be provided\n　⇒ 持参するのはエプロンとノート\n　⚠ 提供される物と持参する物を取り違えない。動詞で見分ける。',
     difficulty: 'basic',
   },
   {
@@ -1426,7 +1426,7 @@ export const eikenQuestions3kyu: EikenQuestion[] = [
       { key: 'D', text: 'Ask another student to attend instead.' },
     ],
     correctKey: 'A',
-    explanation: 'メールに「please let us know at least 24 hours in advance（少なくとも24時間前までにお知らせください）」とある。「24 hours in advance」は「at least a day before」と同じ意味。Aが正解。',
+    explanation: 'メールに「please let us know at least 24 hours in advance（少なくとも24時間前までにお知らせください）」とある。「24 hours in advance」は「at least a day before」と同じ意味。Aが正解。\n\n【図解】キャンセルの条件\n　項目｜内容｜言い換え\n　連絡の期限｜24時間前まで｜at least a day before\n　連絡先｜教室｜the studio\n　当日連絡｜認められない｜期限外\n　⇒ 少なくとも1日前までに連絡する\n　⚠ 24 hours と a day が同じ長さである点に気づく。言い換えを見抜く。',
     difficulty: 'standard',
   },
   {
@@ -1441,7 +1441,7 @@ export const eikenQuestions3kyu: EikenQuestion[] = [
       { key: 'D', text: 'They are not allowed to be used outside the classroom.' },
     ],
     correctKey: 'B',
-    explanation: 'パッセージに「some parents worry that students spend too much time looking at screens, which could affect their eyesight and sleep」とある。Bが正解。費用・採点の難しさ・使用場所の制限については記載がない。',
+    explanation: 'パッセージに「some parents worry that students spend too much time looking at screens, which could affect their eyesight and sleep」とある。Bが正解。費用・採点の難しさ・使用場所の制限については記載がない。\n\n【図解】保護者の懸念\n　項目｜本文の記述｜影響\n　画面を見る時間｜too much time｜長すぎる\n　視力｜affect their eyesight｜悪影響の可能性\n　睡眠｜affect their sleep｜悪影響の可能性\n　⇒ 視力と睡眠への影響が懸念されている\n　⚠ 費用や使用場所の制限は本文にない。懸念の内容を本文で確認する。',
     difficulty: 'standard',
   },
   {
@@ -1456,7 +1456,7 @@ export const eikenQuestions3kyu: EikenQuestion[] = [
       { key: 'D', text: 'An increase in the number of hours students use tablets' },
     ],
     correctKey: 'B',
-    explanation: 'パッセージ末尾に「Schools are now trying to find a balance between using technology and encouraging students to read books and spend time outdoors」とある。Bが正解。禁止・紙提出の義務化・使用時間の増加についてはいずれも記載がない。',
+    explanation: 'パッセージ末尾に「Schools are now trying to find a balance between using technology and encouraging students to read books and spend time outdoors」とある。Bが正解。禁止・紙提出の義務化・使用時間の増加についてはいずれも記載がない。\n\n【図解】学校が目指す方向\n　要素｜本文の記述｜内容\n　技術の利用｜using technology｜続ける\n　読書｜encouraging students to read｜促す\n　屋外活動｜spend time outdoors｜促す\n　⇒ 技術と他の活動の均衡を探る\n　⚠ 全面禁止や利用時間の増加は本文と異なる。balance という語が答えの鍵。',
     difficulty: 'standard',
   },
   {
@@ -1471,7 +1471,7 @@ export const eikenQuestions3kyu: EikenQuestion[] = [
       { key: 'D', text: 'It provides free housing for local residents.' },
     ],
     correctKey: 'A',
-    explanation: 'パッセージに「Many people say that gardening helps them relax and meet their neighbors」とある。Aが正解。収入・野菜の価格・住居についてはいずれも記載がない。',
+    explanation: 'パッセージに「Many people say that gardening helps them relax and meet their neighbors」とある。Aが正解。収入・野菜の価格・住居についてはいずれも記載がない。\n\n【図解】市民農園の効用\n　効用｜本文の記述｜内容\n　気分｜helps them relax｜くつろげる\n　交流｜meet their neighbors｜近所づきあい\n　収穫｜食料の一部｜副次的\n　⇒ 気分転換と近所づきあいが利点\n　⚠ 収入や住居の話は本文にない。書かれている効用だけを選ぶ。',
     difficulty: 'basic',
   },
   {
@@ -1486,7 +1486,7 @@ export const eikenQuestions3kyu: EikenQuestion[] = [
       { key: 'D', text: 'They export it to other countries.' },
     ],
     correctKey: 'B',
-    explanation: 'パッセージに「Some community gardens also donate part of their harvest to local food banks, helping families in need」とある。Bが正解。販売・動物園・輸出についてはいずれも記載がない。',
+    explanation: 'パッセージに「Some community gardens also donate part of their harvest to local food banks, helping families in need」とある。Bが正解。販売・動物園・輸出についてはいずれも記載がない。\n\n【図解】収穫物の使い道\n　用途｜本文の記述｜対象\n　寄付｜donate part of their harvest｜フードバンク\n　目的｜helping families in need｜困窮世帯\n　販売や輸出｜記載なし｜対象外\n　⇒ フードバンクへの寄付が答え\n　⚠ 販売や動物園への提供は本文にない。動詞 donate を根拠にする。',
     difficulty: 'basic',
   },
   {
@@ -1501,7 +1501,7 @@ export const eikenQuestions3kyu: EikenQuestion[] = [
       { key: 'D', text: 'To make it easier for elderly customers to shop' },
     ],
     correctKey: 'B',
-    explanation: 'パッセージに「Store managers say the machines help reduce waiting times during busy hours」とある。Bが正解。従業員削減の意図・価格上昇については記載がなく、高齢者にとっては逆に「confusing（分かりにくい）」とされている。',
+    explanation: 'パッセージに「Store managers say the machines help reduce waiting times during busy hours」とある。Bが正解。従業員削減の意図・価格上昇については記載がなく、高齢者にとっては逆に「confusing（分かりにくい）」とされている。\n\n【図解】セルフレジ導入の理由\n　項目｜本文の記述｜効果\n　狙い｜reduce waiting times｜待ち時間の短縮\n　時間帯｜during busy hours｜混雑時\n　従業員削減｜記載なし｜対象外\n　⇒ 混雑時の待ち時間を減らすため\n　⚠ 人員削減や値上げは本文にない。導入理由を本文の語句で確認する。',
     difficulty: 'standard',
   },
   {
@@ -1516,7 +1516,7 @@ export const eikenQuestions3kyu: EikenQuestion[] = [
       { key: 'D', text: 'Because traditional counters are faster than self-checkout machines' },
     ],
     correctKey: 'B',
-    explanation: 'パッセージに「some elderly customers find the machines confusing and prefer to be helped by a staff member」とあり、その対応として従来のレジを残していると読み取れる。Bが正解。費用・政府の規制・速度の比較についてはいずれも記載がない。',
+    explanation: 'パッセージに「some elderly customers find the machines confusing and prefer to be helped by a staff member」とあり、その対応として従来のレジを残していると読み取れる。Bが正解。費用・政府の規制・速度の比較についてはいずれも記載がない。\n\n【図解】従来のレジを残す理由\n　対象｜本文の記述｜結果\n　高齢の客｜find the machines confusing｜操作が分かりにくい\n　希望｜prefer to be helped by staff｜店員の対応を望む\n　対応｜従来のレジを残す｜選択肢を用意\n　⇒ 店員の対応を望む客がいるため\n　⚠ 費用や法規制は本文にない。理由を客側の事情に求める。',
     difficulty: 'standard',
   },
 ];

@@ -101,6 +101,17 @@ for (const [cert, mod] of Object.entries(MODS)) {
     if (e.includes('【図解】')) diagram++;
     if (e.length >= 100) rich++;
     sum += e.length;
+
+    // ソースに \\n と書いてしまうと、改行ではなく「\」「n」の2文字が本文に出る。
+    // 図解が1行に潰れて画面に \n が見えるが、check_diagrams.py は
+    // 複数行のブロックとして認識しないため素通りしてしまう。ここで捕まえる。
+    if (/\\n/.test(e)) {
+      errors.push(`${cert} ${q.id}: 解説に改行ではなく文字としての \\n が入っています（ソースの \\\\n を \\n に直す）`);
+    }
+    // 図解を名乗るのに1行しかない＝改行が入っていない
+    if (e.includes('【図解】') && !e.includes('\n')) {
+      errors.push(`${cert} ${q.id}: 【図解】があるのに改行が1つもありません`);
+    }
   }
 
   rows.push({ cert, n: arr.length, choiceExpl, diagram, rich, avg: Math.round(sum / arr.length) });
@@ -145,7 +156,7 @@ if (noChoice.length) {
 }
 
 if (errors.length) {
-  console.log('\n[NG] 読み込めなかった資格があります\n  ' + errors.join('\n  '));
+  console.log('\n[NG] ' + errors.length + '件の問題があります\n  ' + errors.slice(0, 30).join('\n  '));
   process.exit(1);
 }
 console.log('');

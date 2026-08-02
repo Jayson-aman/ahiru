@@ -14,7 +14,7 @@ export const eikenQuestions4kyu2: EikenQuestion[] = [
       { key: 'D', text: 'scared' },
     ],
     correctKey: 'D',
-    explanation: 'ベッドの上にクモを見て感じる感情は「恐怖・怖い」= scaredです。excited（興奮）、bored（退屈）、pleased（嬉しい）は文脈に合いません。',
+    explanation: 'ベッドの上にクモを見つけたときに感じる気持ちなので、scared（こわい・おびえた）が正解になる。excitedは楽しみなことに対するわくわく、boredは長い話などに対する退屈、pleasedはよい知らせに対する喜びを表す語で、いずれもクモを見た反応としては不自然である。感情を表す形容詞は、どんな出来事がきっかけになるかとセットで覚えると選びやすい。\n\n【図解】気持ちを表す形容詞\n　形容詞｜意味｜きっかけ\n　scared｜こわい｜クモや暗やみ\n　excited｜わくわくする｜楽しみな予定\n　bored｜たいくつな｜長い話\n　pleased｜うれしい｜よい知らせ\n　⇒ クモを見た反応に合うのはscared\n　⚠ scaredは人の気持ち、scaryは物の性質。a scary spiderとI was scaredを取りちがえないこと。',
     difficulty: 'basic',
   },
   {
@@ -29,7 +29,7 @@ export const eikenQuestions4kyu2: EikenQuestion[] = [
       { key: 'D', text: 'paint' },
     ],
     correctKey: 'C',
-    explanation: '「寒い」という理由から窓を「閉める」= closeが適切です。open（開ける）では逆に寒くなります。break（壊す）、paint（塗る）は文脈に合いません。',
+    explanation: '2文目のIt is very cold in here.（ここはとても寒い）が理由なので、窓を閉めてほしいという依頼になる。したがってcloseが正解である。openは「開ける」で意味が正反対になり、寒いという理由と矛盾してしまう。breakは「こわす」、paintは「ぬる」で、寒さへの対処にはならない。Could you 〜?は丁寧な依頼を表す表現である。\n\n【図解】窓に対する動作と理由\n　表現｜意味｜合う理由\n　close the window｜窓を閉める｜寒い\n　open the window｜窓を開ける｜暑い\n　break the window｜窓をこわす｜非常時\n　paint the window｜窓をぬる｜修理や模様がえ\n　⇒ 寒いという理由に合うのはclose\n　⚠ 理由の文を読まずに動詞だけを見るとopenも自然に見える。理由と結果の対応を必ず確認する。',
     difficulty: 'basic',
   },
   {
@@ -44,7 +44,7 @@ export const eikenQuestions4kyu2: EikenQuestion[] = [
       { key: 'D', text: 'opened' },
     ],
     correctKey: 'D',
-    explanation: 'バッグを「開けて」教科書を取り出した。open（開ける）が最も自然です。dropped（落とす）、lost（なくす）、filled（満たす）は文脈に合いません。',
+    explanation: '後半のtook out his textbook（教科書を取り出した）が手がかりで、その前にかばんを開けたという流れになる。したがってopenedが正解である。dropped（落とした）やlost（なくした）では教科書を取り出せず、filled（中身をつめた）は取り出す動作とは逆になる。andでつながれた2つの動作の順序を考えると、答えが決まる問題である。\n\n【図解】動作の順序と目的\n　表現｜意味｜次の動作との関係\n　open the bag｜かばんを開ける｜中から取り出せる\n　drop the bag｜落とす｜取り出せない\n　lose the bag｜なくす｜取り出せない\n　fill the bag｜中身をつめる｜取り出す前の作業\n　⇒ took outの前に必要な動作はopened\n　⚠ andでつながる2つの動作は順に起こる。後ろの動作から前の動作を逆算して選ぶのが解き方。',
     difficulty: 'basic',
   },
   {
@@ -59,7 +59,7 @@ export const eikenQuestions4kyu2: EikenQuestion[] = [
       { key: 'D', text: 'make' },
     ],
     correctKey: 'D',
-    explanation: '「予約をする」はmake a reservationと言います。makeはこのようなコロケーションで頻繁に使われます。do、get、takeはreservationとは組み合わせません。',
+    explanation: 'make a reservationは「予約をする」という決まった表現で、動詞はmakeを使う。「行く前にレストランの予約をする必要がある」という意味になる。do・get・takeをreservationと組み合わせてこの意味を表すことはできない。人と会う約束ならmake an appointmentとなり、こちらも動詞はmakeである。動詞と名詞の組み合わせは丸ごと覚える必要がある。\n\n【図解】決まった動詞と名詞の組み合わせ\n　表現｜意味｜使う動詞\n　make a reservation｜予約をする｜make\n　make an appointment｜会う約束をする｜make\n　take a picture｜写真をとる｜take\n　have a meal｜食事をする｜have\n　⇒ reservationと組む動詞はmake\n　⚠ do a reservationやtake a reservationとは言わない。名詞ごとに使う動詞が決まっている。',
     difficulty: 'advanced',
   },
   {
@@ -74,7 +74,7 @@ export const eikenQuestions4kyu2: EikenQuestion[] = [
       { key: 'D', text: 'windy' },
     ],
     correctKey: 'D',
-    explanation: 'ビーチに行かないことにしたのは天気が悪いからです。windy（風が強い）は海辺では危険なので行かない理由になります。beautiful・sunny・warmなら行くはずです。',
+    explanation: '後半のwe decided not to go to the beach（海に行かないことにした）が結果なので、前半には行くのをやめる理由になる悪い天気が入る。したがってwindy（風が強い）が正解である。warm・beautiful・sunnyはいずれも海に行きたくなる天気なので、行かないという結果と矛盾する。decide not to doは「〜しないことに決める」という形である。\n\n【図解】天気と行動の対応\n　天気を表す語｜意味｜海に行くか\n　windy｜風が強い｜行かない\n　sunny｜晴れた｜行く\n　warm｜暖かい｜行く\n　beautiful｜すばらしい｜行く\n　⇒ 行かない理由になるのは悪天候のwindy\n　⚠ decided not to goのnotを読み落とすと、行くことにしたと誤解して天気の良い語を選んでしまう。',
     difficulty: 'standard',
   },
   {
@@ -89,7 +89,7 @@ export const eikenQuestions4kyu2: EikenQuestion[] = [
       { key: 'D', text: 'writes' },
     ],
     correctKey: 'D',
-    explanation: '「日記を書く」はwrite a diaryです。read（読む）はread a diary（日記を読む）になってしまいます。draw（描く）、print（印刷する）は日記には使いません。',
+    explanation: 'write a diaryは「日記を書く・日記をつける」という意味の組み合わせで、寝る前にいつも日記を書くという文脈に合う。readを選ぶと「日記を読む」となり、自分で書いているという内容から離れてしまう。drawは絵をかく、printは印刷するという意味で、日記には使わない。keep a diaryも「日記をつける」という意味でよく使われる表現である。\n\n【図解】diary と結びつく動詞\n　表現｜意味｜行為の内容\n　write a diary｜日記を書く｜書く側\n　read a diary｜日記を読む｜読む側\n　keep a diary｜日記をつける｜習慣として続ける\n　draw a picture｜絵をかく｜絵の場合\n　⇒ 寝る前の習慣として自然なのはwrites\n　⚠ readを選ぶと自分で書いていないことになる。alwaysという語から日課としての行為だと読み取る。',
     difficulty: 'standard',
   },
   {
@@ -104,7 +104,7 @@ export const eikenQuestions4kyu2: EikenQuestion[] = [
       { key: 'D', text: 'touched' },
     ],
     correctKey: 'B',
-    explanation: '先生の質問に答えるために手を「挙げる」はraise your handです。drop（落とす）、shake（振る）、touch（触れる）は授業で手を挙げる行為には使いません。',
+    explanation: 'raise your handは「手を挙げる」という意味の表現で、授業中に発言するときの動作を表す。したがってraisedが正解である。droppedは「落とした」、shookは「ふった」、touchedは「さわった」で、いずれも先生の質問に答えるための動作にはならない。raiseは「〜を上げる」という他動詞で、自動詞のrise（上がる）とは形も使い方も異なる。\n\n【図解】手を使う動作の表現\n　表現｜意味｜使う場面\n　raise your hand｜手を挙げる｜発言するとき\n　shake hands｜握手する｜あいさつ\n　wave your hand｜手をふる｜別れのとき\n　hold hands｜手をつなぐ｜並んで歩く\n　⇒ 質問に答えるための動作はraised\n　⚠ raiseは他動詞で目的語が必要、riseは自動詞で目的語をとらない。つづりが似ているので区別する。',
     difficulty: 'standard',
   },
   {
@@ -119,7 +119,7 @@ export const eikenQuestions4kyu2: EikenQuestion[] = [
       { key: 'D', text: 'ruler' },
     ],
     correctKey: 'C',
-    explanation: '紙を「切る」道具はscissors（はさみ）です。spoon（スプーン）、brush（ブラシ）、ruler（定規）は紙を切るのに使いません。',
+    explanation: '紙を切るための道具はscissors（はさみ）なので、これが正解になる。spoon（スプーン）はすくう道具、brush（ブラシ）はみがく道具、ruler（定規）は線を引いたり長さをはかったりする道具で、いずれも紙を切ることはできない。scissorsは2枚の刃が対になっているため常に複数形で使い、数えるときはa pair of scissorsという形になる。\n\n【図解】道具と使い道\n　道具｜英語｜使い道\n　はさみ｜scissors｜紙を切る\n　定規｜ruler｜線を引く\n　ブラシ｜brush｜みがく\n　スプーン｜spoon｜すくう\n　⇒ 紙を切る道具はscissors\n　⚠ scissorsは常に複数形。数えるときはa pair of scissorsとし、a scissorという形は使わない。',
     difficulty: 'basic',
   },
   {
@@ -134,7 +134,7 @@ export const eikenQuestions4kyu2: EikenQuestion[] = [
       { key: 'D', text: 'brush' },
     ],
     correctKey: 'D',
-    explanation: '「歯を磨く」はbrush your teethです。wash（洗う）やclean（掃除する）は歯に対して一般的には使わず、cut（切る）も不適切です。',
+    explanation: 'brush your teethは「歯をみがく」という意味の決まった表現で、歯科医が毎食後に歯をみがくよう言ったという文脈に合う。washは水で洗い流す動作なので手や顔に使い、cleanは部屋などを広くきれいにする意味で使う。cutは「切る」で歯には使わない。体の部位ごとに使う動詞が決まっているので、組み合わせで覚えることが大切である。\n\n【図解】体の部位と動詞の組み合わせ\n　表現｜意味｜対象\n　brush your teeth｜歯をみがく｜歯\n　wash your hands｜手を洗う｜手\n　wash your face｜顔を洗う｜顔\n　comb your hair｜髪をとかす｜髪\n　⇒ 歯にはbrushを使う\n　⚠ 日本語の「みがく」からwashやcleanを選ぶのが定番の誤り。歯はbrushと組み合わせが決まっている。',
     difficulty: 'standard',
   },
   {
@@ -149,7 +149,7 @@ export const eikenQuestions4kyu2: EikenQuestion[] = [
       { key: 'D', text: 'excited' },
     ],
     correctKey: 'D',
-    explanation: 'チームが優勝したのだから「興奮・大喜び」= excitedが自然です。sad（悲しい）、worried（心配）は逆の感情です。surprised（驚いた）も多少合いますが、excitedの方が優勝の喜びをより正確に表します。',
+    explanation: 'because their team won the championship（チームが優勝したので）という理由があるので、喜びを表すexcitedが正解になる。sadは悲しい、worriedは心配しているという意味で、優勝という結果とは正反対である。surprisedは「おどろいた」で、予想外だったという含みが強く、優勝の喜びそのものを表す語としてはexcitedのほうが正確になる。\n\n【図解】気持ちを表す形容詞ときっかけ\n　形容詞｜意味｜きっかけ\n　excited｜大喜びしている｜優勝\n　sad｜悲しい｜敗退\n　worried｜心配している｜試合の前\n　surprised｜おどろいた｜予想外の出来事\n　⇒ 優勝という結果に合うのはexcited\n　⚠ surprisedは驚きだけを表す語。喜びを表したいときはexcitedやgladのほうが文脈に合う。',
     difficulty: 'basic',
   },
   {
@@ -164,7 +164,7 @@ export const eikenQuestions4kyu2: EikenQuestion[] = [
       { key: 'D', text: 'left' },
     ],
     correctKey: 'C',
-    explanation: '「バスに乗り遅れた」はmissed the busです。歩いて学校に行ったことから、バスに間に合わなかったとわかります。catch（乗る）は逆の意味、lost（なくした）、left（去った）は文脈に合いません。',
+    explanation: '後半のhad to walk to school（学校まで歩かなければならなかった）という結果から、バスに乗れなかったことがわかる。したがってmissed（乗り遅れた）が正解である。caughtは「間に合った」で意味が正反対になり、歩く必要がなくなる。lostは物をなくす、leftは去るという意味で、バスに乗れなかった状況を表さない。\n\n【図解】乗り物に関する動詞\n　表現｜意味｜その結果\n　miss the bus｜バスに乗り遅れる｜歩くことになる\n　catch the bus｜バスに間に合う｜乗って行ける\n　get on the bus｜バスに乗る｜乗車する\n　get off the bus｜バスを降りる｜下車する\n　⇒ 歩くことになったのでmissed\n　⚠ missは「逃す・乗り遅れる・恋しく思う」と意味が広い。結果の文から意味を判断するのが確実。',
     difficulty: 'advanced',
   },
   {
@@ -179,7 +179,7 @@ export const eikenQuestions4kyu2: EikenQuestion[] = [
       { key: 'D', text: 'tell' },
     ],
     correctKey: 'D',
-    explanation: '「〜に道を教える」はtell someone the wayです。tellは人に情報を伝えるときに使います。say（言う）、speak（話す）、talk（話す）は「道を教える」という意味では使いません。',
+    explanation: 'tell someone the wayは「人に道を教える」という意味の形で、tellは人を直接目的語にとれる動詞である。したがってtellが正解になる。sayはsay 〜 to 人という語順が必要で、speakとtalkはどちらも人を直接目的語にとれないため、speak to meやtalk to meの形にしなければならない。show me the wayも同じ意味で使える表現である。\n\n【図解】伝える動詞の語順\n　動詞｜語順｜例\n　tell 人 the way｜人 + 物｜tell me the way\n　show 人 the way｜人 + 物｜show me the way\n　say 〜 to 人｜物 + to 人｜say hello to him\n　speak to 人｜前置詞が必要｜speak to me\n　⇒ meを直後に置けるのはtell\n　⚠ sayやspeakは人を直接目的語にできない。say meやspeak meという形は誤りである。',
     difficulty: 'advanced',
   },
   {
@@ -194,7 +194,7 @@ export const eikenQuestions4kyu2: EikenQuestion[] = [
       { key: 'D', text: 'throw' },
     ],
     correctKey: 'B',
-    explanation: '重い箱を一人で「持ち上げる」= liftが文脈に合います。push（押す）、pull（引く）、throw（投げる）も動詞ですが、重くて一人ではできない動作として「持ち上げる」が最も自然です。',
+    explanation: 'This box is too heavy.（この箱は重すぎる）という前提があるので、一人では持ち上げられないという内容になる。したがってliftが正解である。pushは押す、pullは引く、throwは投げるという意味で、重さが問題になる動作としては持ち上げるliftが最も自然である。by myselfは「自分ひとりで」という意味の重要表現になる。\n\n【図解】力の向きを表す動詞\n　動詞｜意味｜力の向き\n　lift｜持ち上げる｜上へ\n　push｜押す｜前へ\n　pull｜引く｜手前へ\n　throw｜投げる｜遠くへ\n　⇒ 重さが問題になる動作はlift\n　⚠ too heavyという理由に対応する動作を選ぶ。押す引くは重さよりも動かす方向の問題になる。',
     difficulty: 'standard',
   },
   {
@@ -209,7 +209,7 @@ export const eikenQuestions4kyu2: EikenQuestion[] = [
       { key: 'D', text: 'took' },
     ],
     correctKey: 'D',
-    explanation: '「写真を撮る」はtake a pictureです。旅行中に富士山の写真を撮ったという文脈に合います。make、get、doはpictureと組み合わせて「撮る」の意味にはなりません。',
+    explanation: 'take a pictureは「写真をとる」という意味の決まった表現で、動詞はtakeを使う。旅行中に富士山の写真をとったという文脈に合う。make・get・doをpictureと組み合わせて撮影の意味を表すことはできない。日本語では「写真を撮る」と言うので、動詞をどれにするか迷いやすいが、英語ではtakeで固定されている。\n\n【図解】take を使う定番表現\n　表現｜意味｜使う場面\n　take a picture｜写真をとる｜観光地\n　take a trip｜旅行する｜休暇\n　take a bath｜ふろに入る｜帰宅後\n　take a walk｜散歩する｜天気のよい日\n　⇒ 写真の撮影を表すのでtook\n　⚠ 日本語の「撮る」からmakeやgetを選ぶのが定番の誤り。写真はtakeと組み合わせが決まっている。',
     difficulty: 'advanced',
   },
   {
@@ -224,7 +224,7 @@ export const eikenQuestions4kyu2: EikenQuestion[] = [
       { key: 'D', text: 'moves' },
     ],
     correctKey: 'C',
-    explanation: '犬がしっぽを「振る」動作はwag its tailです。wag はしっぽを左右に振る特有の表現です。wave（振る）は手などに使い、shake（振る）は一般的で尻尾専用ではなく、move（動かす）は漠然としています。',
+    explanation: '犬がしっぽを左右に振る動作を表す動詞はwagで、wag its tailという形で使う。waveは人が手をふるときに使う動詞、shakeは物をゆすったり握手したりするときに使う動詞で、しっぽ専用の表現ではない。moveは「動かす」という広い意味の語で、犬の喜びを表す動作としては具体性に欠ける。動物の動作には専用の動詞があることを覚えておきたい。\n\n【図解】ふる を表す動詞の使い分け\n　動詞｜意味｜動かすもの\n　wag｜（しっぽを）ふる｜犬のしっぽ\n　wave｜（手を）ふる｜人の手\n　shake｜ゆする｜体や物\n　nod｜うなずく｜頭\n　⇒ しっぽをふる動作を表すのはwags\n　⚠ 日本語ではどれも「ふる」だが、英語では対象ごとに動詞が変わる。しっぽ専用の語はwagである。',
     difficulty: 'advanced',
   },
 
@@ -241,7 +241,7 @@ export const eikenQuestions4kyu2: EikenQuestion[] = [
       { key: 'D', text: 'during' },
     ],
     correctKey: 'B',
-    explanation: '期間（five years = 5年間）を表すにはforを使います。sinceは「〜以来」で具体的な時点に使います。agoは「〜前に」、duringは「〜の間に」で使い方が異なります。',
+    explanation: 'five years（5年間）は期間の長さを表すので、前置詞はforを使う。現在完了のhave livedとともに「5年間ずっとこの街に住んでいる」という継続の意味になる。sinceは起点となる時点を示す語なのでsince 2020のように使い、期間の長さには使えない。agoは過去形とともに使い、duringはduring the tripのように期間を表す名詞をとる。\n\n【図解】時を表す語と後ろの形\n　語｜後ろに来るもの｜例\n　for｜期間の長さ｜for five years\n　since｜起点となる時｜since 2020\n　ago｜過去形とともに｜five years ago\n　during｜期間を表す名詞｜during the trip\n　⇒ 期間の長さなのでforが正解\n　⚠ since five yearsという形は使わない。長さならfor、時点ならsinceと後ろの語で見分ける。',
     difficulty: 'standard',
   },
   {
@@ -256,7 +256,7 @@ export const eikenQuestions4kyu2: EikenQuestion[] = [
       { key: 'D', text: 'most' },
     ],
     correctKey: 'C',
-    explanation: '「今まで読んだ中で最も〜な」という最上級の文です。the mostが正しい最上級の形です。moreは比較級、veryは形容詞を強調しますが最上級ではありません。mostの前にはtheが必要です。',
+    explanation: 'I have ever read（今までに読んだ中で）という語句は最上級とセットで使われる表現なので、the most interestingという最上級が正解になる。interestingは長い形容詞なのでmostを付けて最上級をつくり、さらにtheが必要になる。moreは比較級でthanを伴い、veryは強調するだけで最上級にはならない。mostだけではtheが抜けている。\n\n【図解】形容詞の級と形\n　形｜級｜例\n　the most + 形容詞｜最上級｜the most interesting\n　more + 形容詞 + than｜比較級｜more interesting than\n　very + 形容詞｜強調｜very interesting\n　as + 形容詞 + as｜原級｜as interesting as\n　⇒ ever readがあるので最上級を選ぶ\n　⚠ 最上級にはtheが必要。mostだけを選ぶと冠詞が抜けるので、theとセットで覚えること。',
     difficulty: 'advanced',
   },
   {
@@ -271,7 +271,7 @@ export const eikenQuestions4kyu2: EikenQuestion[] = [
       { key: 'D', text: 'is studying' },
     ],
     correctKey: 'B',
-    explanation: '「お母さんが電話してきたとき、彼女は英語を勉強していた」という文です。過去のある時点で進行中だった動作は過去進行形（was studying）を使います。',
+    explanation: 'when her mother called（母が電話してきたとき）という過去の一時点に、進行中だった動作を表すので過去進行形was studyingが正解になる。「母が電話してきたとき、彼女は2時間英語を勉強していた」という意味である。studiesは現在形で習慣、studiedは単純な過去形で出来事、is studyingは現在進行形で今の動作を表すので、いずれも合わない。\n\n【図解】時制の形と表す内容\n　形｜表す内容｜例\n　過去進行形｜過去の一時点で進行中｜was studying\n　過去形｜過去の出来事｜called\n　現在形｜習慣や事実｜studies\n　現在進行形｜今の動作｜is studying\n　⇒ when節が過去形なので主節は過去進行形\n　⚠ 両方を過去形にすると、勉強と電話が順に起きた意味になる。同時性を表すには過去進行形を使う。',
     difficulty: 'advanced',
   },
   {
@@ -286,7 +286,7 @@ export const eikenQuestions4kyu2: EikenQuestion[] = [
       { key: 'D', text: 'If' },
     ],
     correctKey: 'D',
-    explanation: '「もし〜なら」という条件を表すにはIfを使います。「明日雨が降るかもしれない」という仮定の条件はIfが最適です。Whenは「〜するとき」、Whileは「〜している間」、Duringは前置詞です。',
+    explanation: '「もし明日雨が降ったら、ピクニックを中止します」という条件を表す文なので、Ifが正解になる。Ifは条件を表す接続詞で、後ろには主語と動詞のそろった文が続く。Whenは「〜するとき」と、起こることが決まっている場合に使う。Whileは「〜している間」で同時進行、Duringは前置詞なので後ろに名詞をとる点で形が異なる。\n\n【図解】接続詞と後ろの形\n　語｜意味｜後ろに来る形\n　If｜もし〜なら｜主語 + 動詞\n　When｜〜するとき｜主語 + 動詞\n　While｜〜する間｜主語 + 動詞\n　During｜〜の間じゅう｜名詞\n　⇒ 起こるかどうかわからない条件なのでIf\n　⚠ 条件を表す副詞節では、未来のことでも現在形を使う。If it will rainという形は誤りである。',
     difficulty: 'standard',
   },
   {
@@ -301,7 +301,7 @@ export const eikenQuestions4kyu2: EikenQuestion[] = [
       { key: 'D', text: 'wore' },
     ],
     correctKey: 'C',
-    explanation: '「赤い帽子をかぶっているあの背の高い男の子」という意味で、名詞boyを後ろから修飾する現在分詞wearingが正解です。これは分詞の形容詞的用法です。',
+    explanation: 'wearing a red hat（赤い帽子をかぶっている）という現在分詞のかたまりが、後ろから名詞boyを修飾する形である。したがってwearingが正解になる。この文の動詞はisなので、wearやwearsやworeを入れると1つの文に動詞が2つ並んでしまう。関係代名詞を使えばThat tall boy who is wearing a red hatと書きかえられる。\n\n【図解】名詞を後ろから修飾する形\n　形｜働き｜例\n　現在分詞｜〜している｜the boy wearing a hat\n　過去分詞｜〜された｜the book written by him\n　関係代名詞｜〜する｜the boy who wears a hat\n　述語動詞｜文の動詞になる｜The boy wears a hat\n　⇒ 文の動詞はisなので分詞wearingが入る\n　⚠ wearsを選ぶと文の動詞が2つになる。1つの文に主語と対になる動詞は1つだけである。',
     difficulty: 'advanced',
   },
   {
@@ -316,7 +316,7 @@ export const eikenQuestions4kyu2: EikenQuestion[] = [
       { key: 'D', text: 'just' },
     ],
     correctKey: 'B',
-    explanation: '疑問文でyetは「もう〜しましたか」という意味になります。alreadyは肯定文で「もう〜した」、stillは「まだ〜している」、justは「ちょうど〜したところ」です。',
+    explanation: '現在完了の疑問文で「もう〜しましたか」とたずねるときは、文末にyetを置く。したがってyetが正解である。alreadyは肯定文で「すでに〜した」と述べるときに使い、疑問文で使うと「もう終わったのですか」という驚きの意味になる。stillは「まだ続いている」、justは「ちょうど〜したところ」で、どちらも肯定文で使う語である。\n\n【図解】現在完了とともに使う副詞\n　語｜使う文｜意味\n　yet｜疑問文と否定文｜もう・まだ\n　already｜肯定文｜すでに\n　still｜肯定文｜まだ続いている\n　just｜肯定文｜ちょうど\n　⇒ 疑問文で完了をたずねるのでyet\n　⚠ alreadyを疑問文で使うと驚きの意味になる。中立にたずねるときはyetを文末に置く。',
     difficulty: 'standard',
   },
   {
@@ -331,7 +331,7 @@ export const eikenQuestions4kyu2: EikenQuestion[] = [
       { key: 'D', text: 'whether' },
     ],
     correctKey: 'D',
-    explanation: '「〜かどうか」という意味を持つのはwhetherです。「彼女がパーティーに来るかどうかわからない」という文ではwhetherが正解です。thatは事実を伝えるとき、whatやwhichは疑問詞です。',
+    explanation: '「彼女がパーティーに来るかどうかわからない」という意味なので、「〜かどうか」を表すwhetherが正解になる。whetherは名詞節を導く接続詞で、後ろには主語と動詞のそろった完全な文が続く。同じ意味でifも使える。thatは「〜ということ」と事実を伝えるときに使い、whatやwhichは後ろの文に要素が欠けているときに使う疑問詞である。\n\n【図解】名詞節を導く語\n　語｜意味｜後ろの形\n　whether｜〜かどうか｜完全な文\n　if｜〜かどうか｜完全な文\n　that｜〜ということ｜完全な文\n　what｜何を｜要素が欠ける\n　⇒ 来るかどうか不明なのでwhetherが正解\n　⚠ thatは事実を伝える語なので「かどうか」の意味にならない。文の意味で使い分けることが必要。',
     difficulty: 'advanced',
   },
   {
@@ -346,7 +346,7 @@ export const eikenQuestions4kyu2: EikenQuestion[] = [
       { key: 'D', text: 'stay' },
     ],
     correctKey: 'D',
-    explanation: '命令文はPlease + 動詞の原形で作ります。Pleaseの後は動詞の原形stayを使います。to stay（不定詞）、staying（現在分詞）、stayed（過去形）は命令文には使いません。',
+    explanation: 'Pleaseで始まる命令文なので、後ろには動詞の原形を置く。したがってstayが正解で、「飛行中は席に座っていてください」という意味になる。to stayは不定詞、stayingは動名詞や分詞、stayedは過去形で、いずれも命令文の動詞にはならない。命令文は主語を置かず動詞の原形で始めるという原則を押さえておけば確実に選べる。\n\n【図解】文の種類と動詞の形\n　文の種類｜動詞の形｜例\n　命令文｜原形｜Please stay here\n　平叙文｜主語 + 動詞｜You stay here\n　不定詞｜to + 原形｜to stay here\n　動名詞｜動詞のing形｜staying here\n　⇒ Pleaseの後ろは動詞の原形\n　⚠ Pleaseが付いても命令文であることに変わりはない。ていねいに見えてもto不定詞にはしない。',
     difficulty: 'basic',
   },
   {
@@ -361,7 +361,7 @@ export const eikenQuestions4kyu2: EikenQuestion[] = [
       { key: 'D', text: 'any' },
     ],
     correctKey: 'C',
-    explanation: 'Not many = 「あまり多くない」で、数えられる名詞（students）に使います。muchは数えられない名詞に使います。a lot ofはhow manyとほぼ同じ意味ですが、否定でNot a lot ofとするのは不自然です。',
+    explanation: 'not many 〜は「あまり多くの〜が…ない」という意味で、数えられる名詞に使う。ここではstudentsという複数形が続いているのでmanyが正解になる。muchは数えられない名詞に使う語なので、studentsとは組み合わせられない。a lot ofは肯定文で使うのが自然で、否定文ではあまり使われない。anyは否定文で「まったく〜ない」となり意味が強すぎる。\n\n【図解】数量を表す語と名詞\n　語｜結びつく名詞｜否定文での使い方\n　many｜数えられる名詞｜not many students\n　much｜数えられない名詞｜not much water\n　a lot of｜どちらも｜肯定文で使うのが自然\n　any｜どちらも｜まったく〜ない\n　⇒ studentsは可算名詞なのでmany\n　⚠ muchは不可算名詞専用。数えられるかどうかで語が決まるので、後ろの名詞を必ず確認する。',
     difficulty: 'standard',
   },
   {
@@ -376,7 +376,7 @@ export const eikenQuestions4kyu2: EikenQuestion[] = [
       { key: 'D', text: 'on' },
     ],
     correctKey: 'C',
-    explanation: '「〜が得意だ」はbe good atという表現です。good atの後には名詞や動名詞が来ます。in、for、onとは組み合わせません。',
+    explanation: 'be good at 〜は「〜が得意である」という意味の熟語で、前置詞はatで固定されている。atの後ろには名詞か動名詞が続くので、good at playing basketballという形になる。in・for・onに置きかえることはできない。be good for 〜は「〜によい」という別の意味になり、健康や効果について述べるときに使う表現である。\n\n【図解】形容詞と結びつく前置詞\n　表現｜前置詞｜意味\n　be good at 〜｜at｜〜が得意である\n　be interested in 〜｜in｜〜に興味がある\n　be famous for 〜｜for｜〜で有名である\n　be kind to 〜｜to｜〜に親切である\n　⇒ 得意なことを表すのでat\n　⚠ atの後ろは名詞か動名詞。be good at play basketballのように原形を置くのは誤りである。',
     difficulty: 'basic',
   },
   {
@@ -391,7 +391,7 @@ export const eikenQuestions4kyu2: EikenQuestion[] = [
       { key: 'D', text: 'who' },
     ],
     correctKey: 'B',
-    explanation: '「私が読書が好きかどうか聞いた」という間接疑問文です。「〜かどうか」はifを使います。thatは「〜ということ」、whatは「何を」、whoは「誰を」という意味です。',
+    explanation: 'ask + 人 + if 〜は「人に〜かどうかたずねる」という形なので、ifが正解になる。「彼女は私に読書が好きかどうかたずねた」という意味である。このifは「もし」ではなく「〜かどうか」を表し、whetherに置きかえられる。thatは「〜ということ」で、askの目的語にはならない。空所の後ろは要素のそろった完全な文なので、whatやwhoは入らない。\n\n【図解】動詞と後ろに続く語\n　表現｜意味｜後ろの形\n　ask 人 if 〜｜〜かどうかたずねる｜完全な文\n　ask 人 what 〜｜何を〜かたずねる｜要素が欠ける\n　tell 人 that 〜｜〜と伝える｜完全な文\n　know if 〜｜〜かどうか知っている｜完全な文\n　⇒ 後ろが完全な文でたずねる内容なのでif\n　⚠ ifを「もし」とだけ覚えていると意味が取れない。ここではwhetherと同じ用法である。',
     difficulty: 'standard',
   },
   {
@@ -406,7 +406,7 @@ export const eikenQuestions4kyu2: EikenQuestion[] = [
       { key: 'D', text: 'see' },
     ],
     correctKey: 'D',
-    explanation: 'shouldの後は動詞の原形を使います。「体調が悪ければ医者に診てもらうべき」= see a doctorです。seeing（現在分詞）、saw（過去形）、to see（不定詞）は助動詞の後には使えません。',
+    explanation: 'shouldは助動詞なので、後ろには必ず動詞の原形が来る。したがってseeが正解で、see a doctorは「医者に診てもらう」という決まった言い方になる。「体調が悪ければ医者に診てもらうべきだ」という意味である。seeingは分詞や動名詞、sawは過去形、to seeは不定詞で、いずれも助動詞の後ろには置けない。\n\n【図解】助動詞の後ろの形\n　助動詞｜後ろの形｜例\n　should｜動詞の原形｜should see\n　must｜動詞の原形｜must go\n　can｜動詞の原形｜can swim\n　want｜to不定詞｜want to see\n　⇒ 助動詞shouldの後ろなので原形see\n　⚠ see a doctorは「医者に会う」ではなく「診てもらう」。日本語と発想が違う定番の表現である。',
     difficulty: 'basic',
   },
   {
@@ -421,7 +421,7 @@ export const eikenQuestions4kyu2: EikenQuestion[] = [
       { key: 'D', text: 'the' },
     ],
     correctKey: 'D',
-    explanation: 'the same ...は「同じ〜」という決まった表現でtheを使います。sameの前は常にtheです。a、an、someは使いません。',
+    explanation: 'the same 〜は「同じ〜」という意味の決まった表現で、sameの前には必ずtheを置く。したがってtheが正解になる。「これは私が去年読んだのと同じ本だ」という意味である。a same bookやan same bookという形は成り立たず、someも意味が合わない。the same as 〜（〜と同じ）という形もあわせて覚えておきたい。\n\n【図解】冠詞が決まっている表現\n　表現｜冠詞｜意味\n　the same 〜｜the｜同じ〜\n　the first 〜｜the｜最初の〜\n　a different 〜｜a｜別の〜\n　another 〜｜冠詞なし｜もう一つの〜\n　⇒ sameの前は必ずthe\n　⚠ anotherはan + otherからできた語なので、theやaを重ねて付けることはできない点も合わせて覚える。',
     difficulty: 'standard',
   },
   {
@@ -436,7 +436,7 @@ export const eikenQuestions4kyu2: EikenQuestion[] = [
       { key: 'D', text: 'is offering' },
     ],
     correctKey: 'B',
-    explanation: 'this morning（今朝）は過去を表す時間表現なので動詞は過去形にします。offeredが正解です。offer（現在形）、offers（三単現）、is offering（現在進行形）は過去形ではありません。',
+    explanation: 'this morning（今朝）は、話している時点よりも前に過ぎた時間を指すので、動詞は過去形offeredになる。「父が今朝、学校まで車で送ろうと申し出てくれた」という意味である。offerは現在形で習慣、offersは3人称単数現在形、is offeringは現在進行形で今の動作を表すので、すでに終わった出来事には合わない。\n\n【図解】時を表す語句と時制\n　時を表す語句｜使う時制｜動詞の形\n　this morning（過ぎた朝）｜過去形｜offered\n　every morning｜現在形｜offers\n　now｜現在進行形｜is offering\n　tomorrow morning｜未来形｜will offer\n　⇒ すでに過ぎた朝の出来事なので過去形\n　⚠ this morningは今日のことだが過去の出来事。todayが付いていても現在形とは限らない。',
     difficulty: 'standard',
   },
   {
@@ -451,7 +451,7 @@ export const eikenQuestions4kyu2: EikenQuestion[] = [
       { key: 'D', text: 'any' },
     ],
     correctKey: 'D',
-    explanation: '否定文（isn\'t）の中では数えられないもの（milk）にはanyを使います。manyは数えられるものに使います。fewは数えられるものの「ほとんどない」、someは肯定文で使います。',
+    explanation: 'There is notという否定文の中なので、後ろの名詞に付けるのはanyになる。milkは数えられない名詞なので、manyやfewは使えない。someは肯定文で使うのが原則で、否定文ではanyに変わる。「冷蔵庫に牛乳が残っていない」という意味である。leftはleaveの過去分詞で「残された」という意味を表している。\n\n【図解】数量を表す語と使う文\n　語｜使う文｜結びつく名詞\n　any｜否定文と疑問文｜可算も不可算も\n　some｜肯定文｜可算も不可算も\n　many｜肯定も否定も｜数えられる名詞\n　few｜肯定も否定も｜数えられる名詞\n　⇒ 否定文で不可算名詞なのでany\n　⚠ milkは不可算名詞なのでmanyやfewは使えない。名詞が数えられるかどうかを必ず確認する。',
     difficulty: 'standard',
   },
 
@@ -468,7 +468,7 @@ export const eikenQuestions4kyu2: EikenQuestion[] = [
       { key: 'D', text: 'Yes, I go to school every day.' },
     ],
     correctKey: 'C',
-    explanation: 'How do you get to school?（どうやって学校に来ますか？）という交通手段を聞く質問には、手段（I ride my bike）を答えます。所要時間を加えるのも自然な会話の流れです。',
+    explanation: 'How do you get to school every day?（毎日どうやって学校へ行きますか）は交通手段をたずねる質問なので、答えも移動の手段になる。I ride my bike. It takes about ten minutes.が正解で、手段に加えて所要時間まで添えている自然な返答である。時刻を答える返答や、Yesで答える返答は、疑問詞Howに対応していない。\n\n【図解】疑問詞と答えの対応\n　質問｜たずねる内容｜答えの例\n　How do you get to school｜交通手段｜I ride my bike\n　When do you get to school｜時｜in the morning\n　What time does school start｜始業時刻｜at eight\n　Do you go to school｜はいかいいえ｜Yes, I do\n　⇒ 手段をたずねているので移動方法を答える\n　⚠ 疑問詞で始まる質問にYesやNoで答えることはできない。まず疑問詞を確認してから選ぶ。',
     difficulty: 'basic',
   },
   {
@@ -483,7 +483,7 @@ export const eikenQuestions4kyu2: EikenQuestion[] = [
       { key: 'D', text: 'You should come to school by bus.' },
     ],
     correctKey: 'C',
-    explanation: '謝罪に対してDon\'t worry about it.（気にしないで）と受け入れ、Please sit down.（座ってください）と促すのが自然な教師や友人の反応です。',
+    explanation: 'I am sorry I am late. The train was delayed.（遅れてすみません、電車が遅れました）という謝罪と理由の説明への返答。相手の非ではないので、気にしないでと受け入れる返答が自然になる。Do not worry about it. Please sit down.が正解である。駅の距離やバス通学をすすめる返答は、謝罪を受け入れる言葉になっていない。\n\n【図解】発言の性質と自然な応答\n　発言｜性質｜自然な応答\n　I am sorry I am late｜謝罪｜Do not worry about it\n　The train was delayed｜理由の説明｜受け入れる\n　Please sit down｜うながし｜着席をすすめる\n　You should come by bus｜助言｜謝罪への返事ではない\n　⇒ 謝罪には受け入れる言葉で応じる\n　⚠ 遅れた理由が電車の遅延なので本人の責任ではない。助言や注意よりも受け入れる返答が自然になる。',
     difficulty: 'basic',
   },
   {
@@ -498,7 +498,7 @@ export const eikenQuestions4kyu2: EikenQuestion[] = [
       { key: 'D', text: 'The subject is very interesting.' },
     ],
     correctKey: 'B',
-    explanation: 'What subject do you like best?（どの科目が一番好きですか？）にはMy favorite is ...（一番好きなのは〜です）と答えて理由も述べるのが自然な会話です。',
+    explanation: 'What subject do you like best?（どの教科がいちばん好きですか）は最上級を使って1つを選ばせる質問なので、答えも1つの教科を挙げる形になる。My favorite is science because I love experiments.が正解で、教科と理由の両方を述べている。教科の数を答える返答やYesで答える返答は、疑問詞の質問に対応していない。\n\n【図解】質問と答えの対応\n　質問｜たずねる内容｜答えの形\n　What subject do you like best｜いちばん好きな教科｜My favorite is science\n　How many subjects do you have｜教科の数｜three subjects\n　Do you study every day｜はいかいいえ｜Yes, I do\n　How is the subject｜感想｜It is interesting\n　⇒ 1つを選ばせる質問なので教科名を答える\n　⚠ bestは最上級で1つに絞る言葉。数を答えたりYesで答えたりする返答は質問に対応していない。',
     difficulty: 'basic',
   },
   {
@@ -513,7 +513,7 @@ export const eikenQuestions4kyu2: EikenQuestion[] = [
       { key: 'D', text: 'No, please go ahead.' },
     ],
     correctKey: 'D',
-    explanation: 'Is this seat taken?（この席は空いていますか？）という質問に対して、空いている場合はNo, please go ahead.（どうぞ、空いています）と答えます。Noは「取られていない（空いている）」という意味です。',
+    explanation: 'Is this seat taken?（この席はふさがっていますか）は空席かどうかを確かめる表現で、takenは「取られている」という意味の過去分詞である。空いている場合はNoで答えるので、No, please go ahead.（いいえ、どうぞ）が正解になる。日本語では「空いていますか」とたずねるので、答えのYesとNoが日本語の感覚と逆になる点に注意したい。\n\n【図解】席をたずねる表現と答え方\n　表現｜意味｜答え方\n　Is this seat taken｜ふさがっていますか｜空いていればNo\n　Is this seat free｜空いていますか｜空いていればYes\n　Please go ahead｜どうぞ｜すすめる\n　Someone is sitting here｜人がいます｜ことわる\n　⇒ 空席ならNoで答えてどうぞとすすめる\n　⚠ takenかfreeかで答えのYesとNoが入れかわる。質問の語をよく見てから答えを選ぶこと。',
     difficulty: 'standard',
   },
   {
