@@ -321,7 +321,7 @@ export const eikenQuestionsListening: EikenQuestion[] = [
       { key: 'D', text: "Take evening courses before changing careers." },
     ],
     correctKey: 'D',
-    explanation: '女性は"take a few evening courses first"（まず夜間の講座をいくつか受けてみたら）と提案し、仕事を辞めずに様子を見ることを勧めている。',
+    explanation: '女性はWhy do not you take a few evening courses first? That way you can test the waters without quitting your job.（まず夜間の講座をいくつか受けてみては。仕事をやめずに様子を見られます）と提案している。したがって転職の前に夜間講座を受けることをすすめていることになる。test the watersは「ためしてみる・様子を見る」という慣用表現である。\n\n【図解】会話の流れと設問の答え\n　発言｜内容｜設問との関係\n　thinking about switching careers｜転職を考えている｜男性の悩み\n　Why do not you take evening courses｜夜間講座の提案｜女性の助言\n　test the waters｜ためしてみる｜提案の意図\n　without quitting your job｜仕事をやめずに｜条件\n　⇒ Why do not you 〜?の後ろが提案の中身\n　⚠ test the watersは「様子を見る」という慣用表現。水そのものの話だと取ると意味を見失う。',
     difficulty: 'advanced',
   },
   {
@@ -337,7 +337,7 @@ export const eikenQuestionsListening: EikenQuestion[] = [
       { key: 'D', text: "The bus route has been shortened permanently." },
     ],
     correctKey: 'C',
-    explanation: 'アナウンスでは"the shuttle bus will be picking up passengers at the side gate"（側面の門で乗客を乗せる）と、乗車場所が変更されたことを伝えている。',
+    explanation: 'アナウンスではthe shuttle bus will be picking up passengers at the side gate for the rest of this week（今週いっぱい、シャトルバスは側門で乗客を乗せます）と述べている。したがって変わったのは乗車場所である。運休や運賃の値上げ、路線の恒久的な短縮といった内容はアナウンスにまったく含まれていない。\n\n【図解】アナウンスの要点整理\n　項目｜アナウンスの記述｜内容\n　変更点｜picking up at the side gate｜乗車場所\n　理由｜unexpected road construction｜道路工事\n　期間｜for the rest of this week｜今週いっぱい\n　注意｜allow a few extra minutes｜時間に余裕を\n　⇒ 変わったのは乗る場所である\n　⚠ 何が変わったのかを聞き分ける。時刻や運賃ではなく場所だという点が最大の要点になる。',
     difficulty: 'advanced',
   },
   {
@@ -353,7 +353,7 @@ export const eikenQuestionsListening: EikenQuestion[] = [
       { key: 'D', text: "The drop is not a serious long-term concern." },
     ],
     correctKey: 'D',
-    explanation: '男性は季節的な要因だと説明し、"our numbers are actually up compared to this time last year"（前年同期と比べれば実際は伸びている）と述べ、深刻な問題ではないと示唆している。',
+    explanation: '男性はthat is mostly because of the seasonal slowdown（それは主に季節的な落ち込みのためだ）と説明し、さらにOur numbers are actually up compared to this time last year（前年同期と比べれば実際は伸びている）と述べている。したがって売上の低下は長期的に深刻な問題ではないとほのめかしていることになる。\n\n【図解】会話の流れと示唆の読み取り\n　発言｜内容｜役割\n　sales figures dropped｜売上が下がった｜女性の指摘\n　because of the seasonal slowdown｜季節要因｜男性の説明\n　numbers are up compared to last year｜前年比では増加｜根拠\n　設問｜What does the man imply｜示唆を問う\n　⇒ 2つの根拠から深刻ではないと読み取る\n　⚠ implyは「ほのめかす」。直接述べていなくても、示された根拠から結論を導く問題である。',
     difficulty: 'advanced',
   },
   {
@@ -369,7 +369,7 @@ export const eikenQuestionsListening: EikenQuestion[] = [
       { key: 'D', text: "A scheduling error." },
     ],
     correctKey: 'A',
-    explanation: 'アナウンスでは"due to a mechanical inspection"（機械点検のため）と遅延理由を明言している。',
+    explanation: 'アナウンスではflight 205 to Chicago has been delayed by approximately forty minutes due to a mechanical inspection（機械点検のため、シカゴ行き205便が約40分遅れています）と述べている。したがって遅延の理由は機械点検である。悪天候や人手不足、日程の誤りといった内容はアナウンスに含まれていない。\n\n【図解】アナウンスの要点整理\n　項目｜アナウンスの記述｜内容\n　便名｜flight 205 to Chicago｜シカゴ行き205便\n　遅延時間｜approximately forty minutes｜約40分\n　理由｜due to a mechanical inspection｜機械点検\n　今後｜provide updates｜情報を追加\n　⇒ due to 〜の後ろが理由になる\n　⚠ due to 〜は理由を示す表現。空港のアナウンスでは頻出なので、この語句を目印に理由を拾う。',
     difficulty: 'advanced',
   },
   {
@@ -385,7 +385,7 @@ export const eikenQuestionsListening: EikenQuestion[] = [
       { key: 'D', text: "She has no vacation days left." },
     ],
     correctKey: 'C',
-    explanation: '女性は"hotel prices there have gotten so high lately"（最近ホテルの値段がとても高くなった）と理由を述べている。',
+    explanation: '女性はI was thinking about the coast, but hotel prices there have gotten so high lately.（海岸を考えていましたが、最近ホテルの値段がとても高くなりました）と述べている。したがって計画を考え直している理由はホテル代の高騰である。姉に招かれたからではなく、休暇が残っていないという話も出てこない。\n\n【図解】会話の流れと設問の答え\n　発言｜内容｜役割\n　where to go for your vacation｜行き先の質問｜男性\n　I was thinking about the coast｜海岸を考えていた｜当初の案\n　hotel prices have gotten so high｜値段が高い｜考え直す理由\n　visit my sister instead｜代わりに姉を訪ねる｜新しい案\n　⇒ butの後ろが考え直す理由になる\n　⚠ insteadは「その代わりに」。姉を訪ねるのは結果であって、理由は値段の高さである。',
     difficulty: 'advanced',
   },
   {
@@ -401,7 +401,7 @@ export const eikenQuestionsListening: EikenQuestion[] = [
       { key: 'D', text: "Flash photography." },
     ],
     correctKey: 'D',
-    explanation: 'アナウンスでは"flash photography is strictly prohibited in the ancient manuscripts room"（写本の部屋ではフラッシュ撮影が厳禁）と述べている。通常の写真撮影自体は禁止されていない点に注意。',
+    explanation: 'アナウンスではphotography is allowed in most galleries, but flash photography is strictly prohibited in the ancient manuscripts room（ほとんどの展示室で撮影は許可されているが、古文書の部屋ではフラッシュ撮影が厳禁）と述べている。したがって禁止されているのはフラッシュ撮影である。撮影そのものは禁止されていない。\n\n【図解】場所ごとの可否\n　行為｜アナウンスの記述｜可否\n　ふつうの撮影｜allowed in most galleries｜できる\n　フラッシュ撮影｜strictly prohibited｜できない\n　場所｜the ancient manuscripts room｜古文書の部屋\n　理由｜to protect the delicate documents｜資料の保護\n　⇒ 禁止されているのはフラッシュだけ\n　⚠ 撮影そのものが禁止という選択肢がひっかけ。butの前後で許可と禁止が分かれている点を聞き取る。',
     difficulty: 'advanced',
   },
   {
@@ -417,7 +417,7 @@ export const eikenQuestionsListening: EikenQuestion[] = [
       { key: 'D', text: "Indifferent to them." },
     ],
     correctKey: 'A',
-    explanation: '男性は"most employees seem relieved"（ほとんどの従業員は安心しているようだ）と述べている。',
+    explanation: '男性はmost employees seem relieved. The old system was causing a lot of confusion.（ほとんどの従業員は安心しているようです。以前の制度は多くの混乱を招いていました）と述べている。したがって従業員の気持ちはrelieved（安心している）である。confusionは以前の制度が引き起こしていたもので、今の気持ちではない。\n\n【図解】会話の流れと気持ちの読み取り\n　発言｜内容｜だれの気持ちか\n　the new manager is making changes｜変更の話題｜女性の指摘\n　most employees seem relieved｜安心している｜従業員\n　The old system was causing confusion｜以前は混乱｜過去の状況\n　設問｜How do employees feel｜今の気持ち\n　⇒ seem relievedが今の気持ちを表す\n　⚠ confusionは以前の制度が原因。会話に出てくる語でも、いつの状況かを区別して聞き取ること。',
     difficulty: 'advanced',
   },
   {
@@ -433,7 +433,7 @@ export const eikenQuestionsListening: EikenQuestion[] = [
       { key: 'D', text: "Adopting two dogs instead of one." },
     ],
     correctKey: 'C',
-    explanation: '女性は"Have you considered a smaller breed?"（小さい犬種を検討してみたら）と提案している。',
+    explanation: '女性はHave you considered a smaller breed?（小型の犬種を検討してみましたか）と提案している。したがって女性がすすめているのは小さい犬種を考えることである。Have you considered 〜?は提案を表す表現である。引っ越しをすすめる、あきらめるようすすめる、2匹飼うようすすめるといった内容は会話にない。\n\n【図解】会話の流れと提案の読み取り\n　発言｜内容｜役割\n　my apartment does not allow large pets｜大型犬は不可｜男性の問題\n　Have you considered a smaller breed｜小型犬の検討｜女性の提案\n　Some apartments make exceptions｜例外もある｜補足説明\n　設問｜What does the woman recommend｜提案の内容\n　⇒ Have you considered 〜?が提案を表す\n　⚠ 疑問文の形でも提案を表すことがある。Have you considered 〜?は助言の定番の言い方である。',
     difficulty: 'advanced',
   },
   {
@@ -449,7 +449,7 @@ export const eikenQuestionsListening: EikenQuestion[] = [
       { key: 'D', text: "Attendance was higher than expected." },
     ],
     correctKey: 'D',
-    explanation: 'アナウンスでは"due to higher than expected attendance"（予想以上の参加者数のため）と会場変更の理由を明示している。',
+    explanation: 'アナウンスではToday seminar on renewable energy has been moved from the main hall to Conference Room B due to higher than expected attendance.（予想以上の参加者数のため、セミナー会場が大ホールから会議室Bに変更されました）と述べている。したがって変更の理由は参加者が予想より多かったことである。\n\n【図解】アナウンスの要点整理\n　項目｜アナウンスの記述｜内容\n　変更前｜the main hall｜大ホール\n　変更後｜Conference Room B｜会議室B\n　理由｜higher than expected attendance｜参加者が多い\n　開始時刻｜nine o clock｜9時\n　⇒ due to 〜の後ろが理由になる\n　⚠ 修理や講演者の希望という記述はない。アナウンスで実際に述べられた理由だけを選ぶこと。',
     difficulty: 'advanced',
   },
   {
@@ -465,7 +465,7 @@ export const eikenQuestionsListening: EikenQuestion[] = [
       { key: 'D', text: "Opening more stores." },
     ],
     correctKey: 'A',
-    explanation: '男性は"Once the marketing campaign starts next month, I expect things to pick up"（来月マーケティングキャンペーンが始まれば状況は良くなるはずだ）と述べている。',
+    explanation: '男性はOnce the marketing campaign starts next month, I expect things to pick up.（来月マーケティングキャンペーンが始まれば、状況は上向くと思います）と述べている。したがって売上を改善すると考えているのは今後の販促活動である。pick upは「好転する・上向く」という意味の句動詞である。\n\n【図解】会話の流れと設問の答え\n　発言｜内容｜役割\n　Sales have been slower than projected｜売上が伸びない｜女性の指摘\n　we have not advertised it enough｜宣伝不足｜男性の分析\n　Once the marketing campaign starts｜来月から販促開始｜改善の見込み\n　I expect things to pick up｜好転を期待｜結論\n　⇒ Onceの後ろが改善の条件になる\n　⚠ pick upは「好転する」。値下げや設計変更は会話に出てこないので、選択肢にあっても選ばない。',
     difficulty: 'advanced',
   },
   // ── 4級：第1部形式（追加問題） ──
@@ -481,7 +481,7 @@ export const eikenQuestionsListening: EikenQuestion[] = [
       { key: 'C', text: "They're on the kitchen table." },
     ],
     correctKey: 'C',
-    explanation: '眼鏡がどこにあるか尋ねられているので、場所を答える応答が自然。「台所のテーブルの上にあるよ」と具体的に答える返答が適切。店の開店時間や眼鏡への感想についての返答は質問とかみ合わない。',
+    explanation: 'Do you know where my glasses are?（めがねがどこにあるか知っていますか）は場所をたずねる質問なので、答えも位置を示すものになる。They are on the kitchen table.（台所のテーブルの上にあります）が正解である。店の開店時刻やめがねへの感想を述べる返答は、場所をたずねる質問に対応していない。\n\n【図解】疑問詞と答えの対応\n　疑問詞｜たずねる内容｜答えの例\n　Where｜場所｜on the kitchen table\n　When｜時｜at ten\n　How｜方法や様子｜by bus\n　What｜物｜my glasses\n　⇒ 場所をたずねているので位置で答える\n　⚠ glassesは常に複数形で「めがね」。受ける代名詞もtheyになる点も合わせて確認しておく。',
     difficulty: 'basic',
   },
   {
@@ -496,7 +496,7 @@ export const eikenQuestionsListening: EikenQuestion[] = [
       { key: 'C', text: "The window is broken." },
     ],
     correctKey: 'A',
-    explanation: '窓を開けてほしいと頼まれているので、快く応じるAが自然。「Not at all（もちろんです）」と答えて窓を開けると続けている。Would you mind の依頼にはNoで答えて承諾するのが正しい。',
+    explanation: 'Would you mind opening the window?（窓を開けていただけますか）は「〜するのをいやだと思いますか」という形の依頼なので、承諾するときはNoやNot at allで答える。Not at all. I will open it now.が正解である。日本語の「はい、いいですよ」につられてYesと答えると、断る意味になってしまう。\n\n【図解】依頼の形と答え方\n　表現｜意味｜承諾するときの答え\n　Would you mind opening it｜開けてもらえますか｜Not at all\n　Would you mind if I opened it｜開けてもよいですか｜Of course not\n　Can you open the window｜開けてくれますか｜Sure\n　ことわるとき｜I am sorry, but 〜｜理由を添える\n　⇒ mindを使う依頼にはNot at all.で承諾する\n　⚠ Would you mind 〜?にYesと答えると断る意味になる。日本語の感覚と逆になる点が最大の注意点。',
     difficulty: 'basic',
   },
   {
@@ -511,7 +511,7 @@ export const eikenQuestionsListening: EikenQuestion[] = [
       { key: 'C', text: "The park is near my house." },
     ],
     correctKey: 'A',
-    explanation: '昨日のサッカーの試合について聞かれているので、試合結果を答えるAが自然。「3対1で勝った」と具体的に答えている。BとCは質問への直接の答えになっていない。',
+    explanation: 'How was your soccer game yesterday?（昨日のサッカーの試合はどうでしたか）は結果や感想をたずねる質問なので、答えも試合の内容になる。We won three to one.（3対1で勝ちました）が正解である。野球が好きだという話や公園の場所を述べる返答は、試合についての質問に対応していない。\n\n【図解】質問と答えの対応\n　質問｜たずねる内容｜答えの例\n　How was your soccer game｜結果や感想｜We won three to one\n　Do you like baseball｜好み｜Yes, I do\n　Where is the park｜場所｜near my house\n　When was the game｜時｜yesterday\n　⇒ 試合の結果を答える返答が正解\n　⚠ 得点はthree to oneのようにtoでつなぐ。How was 〜?には感想でも結果でも答えられる。',
     difficulty: 'basic',
   },
   {
@@ -526,7 +526,7 @@ export const eikenQuestionsListening: EikenQuestion[] = [
       { key: 'C', text: "The library closes at five." },
     ],
     correctKey: 'A',
-    explanation: '教科書が見つからないという発言に対して、探す場所を提案するAが自然な応答。「かばんの中を確認した？」という助言がこの状況に最も適している。',
+    explanation: 'I cannot find my textbook anywhere.（教科書がどこにも見つからない）という困っている発言なので、探す場所を提案する応答が自然である。Did you check your backpack?（かばんの中は確認しましたか）が正解になる。教科書を3冊持っているという自分の話や図書館の閉館時刻は、探す助けにならない。\n\n【図解】発言の性質と自然な応答\n　発言｜性質｜自然な応答\n　I cannot find my textbook｜困っている｜探す場所を提案する\n　Did you check your backpack｜提案｜助けになる\n　I have three textbooks｜自分の話｜助けにならない\n　The library closes at five｜関係のない情報｜助けにならない\n　⇒ 困っている相手には提案で応じる\n　⚠ anywhereは否定文で「どこにも」。探し物の場面だと読み取り、解決につながる返答を選ぶ。',
     difficulty: 'basic',
   },
   {
@@ -541,7 +541,7 @@ export const eikenQuestionsListening: EikenQuestion[] = [
       { key: 'C', text: "I already paid the bill." },
     ],
     correctKey: 'A',
-    explanation: 'デザートに何が食べたいか尋ねられているので、具体的なメニューを答えるAが自然。BとCはデザートを選ぶ質問への答えとして不適切。',
+    explanation: 'What would you like for dessert?（デザートは何になさいますか）は注文をたずねる質問なので、具体的な品を答える。I will have the chocolate cake, please.が正解になる。レストランが人気だという感想や、すでに支払ったという話は注文の答えになっていない。疑問詞の質問なのでYesでは答えられない。\n\n【図解】質問と答えの対応\n　質問｜場面｜答えの例\n　What would you like for dessert｜注文をとる｜the chocolate cake\n　How was the meal｜感想｜It was delicious\n　Did you pay the bill｜支払い｜I already paid\n　Is the restaurant popular｜評判｜Yes, it is\n　⇒ 注文をたずねられているので品名で答える\n　⚠ I will have 〜は注文の定番表現。haveを「持つ」の意味だけで覚えていると注文だと気づけない。',
     difficulty: 'basic',
   },
   {
@@ -556,7 +556,7 @@ export const eikenQuestionsListening: EikenQuestion[] = [
       { key: 'C', text: "The bus comes every ten minutes." },
     ],
     correctKey: 'A',
-    explanation: '席が空いているか尋ねられているので、空いていることを伝えて座るよう促すAが自然。BとCは質問とかみ合わない。',
+    explanation: 'Is this seat taken?（この席はふさがっていますか）はtaken（取られている）かどうかをたずねる表現なので、空いているときはNoで答える。No, please sit down.（いいえ、どうぞおすわりください）が正解になる。いすを買った時期やバスの間隔を述べる返答は、席をたずねる質問に対応していない。\n\n【図解】席をたずねる表現と答え方\n　質問｜意味｜空席のときの答え\n　Is this seat taken｜ふさがっていますか｜No, please sit down\n　Is this seat free｜空いていますか｜Yes, it is\n　May I sit here｜すわってよいですか｜Sure\n　Is anyone sitting here｜だれかいますか｜No, nobody is\n　⇒ takenの質問には空席ならNoで答える\n　⚠ 質問の語がtakenかfreeかで答えのYesとNoが入れかわる。日本語に引きずられないよう注意する。',
     difficulty: 'basic',
   },
   {
@@ -571,7 +571,7 @@ export const eikenQuestionsListening: EikenQuestion[] = [
       { key: 'C', text: "My favorite subject is art." },
     ],
     correctKey: 'A',
-    explanation: '鉛筆を貸してほしいと頼まれているので、快く貸すAが自然な応答。BとCは依頼に対する直接の返答になっていない。',
+    explanation: 'Can I use your pencil for a minute?（少しえんぴつを借りてもいいですか）は許可を求める依頼なので、貸すか断るかで答える。Sure, here you go.（いいですよ、はいどうぞ）が正解になる。Here you go.は物を手わたすときの決まり文句である。絵をかくのが好きだという話や好きな教科の話は返答になっていない。\n\n【図解】貸し借りの表現\n　表現｜意味｜言う人\n　Can I use your pencil｜借りてもよいか｜借りる側\n　Sure, here you go｜いいよ、はいどうぞ｜貸す側\n　I will give it back｜返します｜借りる側\n　Sorry, I am using it｜今使っています｜ことわる側\n　⇒ 依頼を引き受けて手わたす返答が正解\n　⚠ for a minuteは「少しの間」。依頼への返事は、貸すか断るかを示すものでなければならない。',
     difficulty: 'basic',
   },
   {
@@ -586,7 +586,7 @@ export const eikenQuestionsListening: EikenQuestion[] = [
       { key: 'C', text: "I visited the museum last year." },
     ],
     correctKey: 'A',
-    explanation: '博物館までの距離を尋ねられているので、具体的な所要時間を答えるAが自然。BとCは距離を尋ねる質問への答えとして不適切。',
+    explanation: 'How far is the museum from here?（ここから博物館までどのくらいの距離ですか）は距離をたずねる質問なので、答えも距離を示すものになる。It is about a fifteen-minute walk.（歩いて15分ほどです）が正解である。徒歩何分という言い方も距離の伝え方として自然である。展示物や訪問時期の話は答えにならない。\n\n【図解】疑問表現と答えの対応\n　疑問表現｜たずねる内容｜答えの例\n　How far｜距離｜about a fifteen-minute walk\n　How long does it take｜所要時間｜fifteen minutes\n　What is in the museum｜展示物｜many paintings\n　When did you go｜行った時期｜last year\n　⇒ 距離をたずねているので歩いて何分で答える\n　⚠ fifteen-minute walkのminuteは単数形。ハイフンでつないで形容詞のように使う形に注意する。',
     difficulty: 'basic',
   },
   {
@@ -601,7 +601,7 @@ export const eikenQuestionsListening: EikenQuestion[] = [
       { key: 'C', text: "I bought a new umbrella yesterday." },
     ],
     correctKey: 'A',
-    explanation: '電車に傘を忘れたという発言に対して、対処法を助言するAが自然な応答。「駅に電話した方がいいよ」という提案が状況に最も合う。',
+    explanation: 'I think I left my umbrella on the train.（電車にかさを忘れたと思う）という困っている発言なので、対処法を助言する応答が自然である。Oh no, you should call the station.（それは大変、駅に電話したほうがいいよ）が正解になる。天気の話や新しいかさを買ったという話は、忘れ物の解決につながらない。\n\n【図解】発言の性質と自然な応答\n　発言｜性質｜自然な応答\n　I left my umbrella on the train｜困っている｜対処を助言する\n　You should call the station｜助言｜助けになる\n　It is raining very hard｜天気の話｜助けにならない\n　I bought a new umbrella｜自分の話｜助けにならない\n　⇒ 忘れ物には連絡先を示す助言が自然\n　⚠ leaveは「去る」だけでなく「置き忘れる」の意味でも使う。場所を表す語句が続くと忘れ物の意味になる。',
     difficulty: 'basic',
   },
   {
@@ -616,7 +616,7 @@ export const eikenQuestionsListening: EikenQuestion[] = [
       { key: 'C', text: "The library has many books." },
     ],
     correctKey: 'A',
-    explanation: '明日図書館で一緒に勉強しようという誘いに対して、承諾して待ち合わせ時間を尋ねるAが自然な返答。BとCは誘いへの直接の応答になっていない。',
+    explanation: 'Do you want to study together at the library tomorrow?（明日、図書館で一緒に勉強しませんか）という誘いなので、応じるか断るかで答える。Sure, what time should we meet?（いいですね、何時に待ち合わせましょうか）が正解になる。承諾したうえで待ち合わせを確認する自然な流れである。\n\n【図解】誘いと応答の流れ\n　発言｜性質｜次に来る内容\n　Do you want to study together｜誘い｜応じるか断るか\n　Sure, what time should we meet｜承諾と確認｜待ち合わせ\n　I finished my homework already｜自分の話｜返事にならない\n　The library has many books｜場所の説明｜返事にならない\n　⇒ 誘いを受けて待ち合わせを確認する返答が自然\n　⚠ 誘いにはまず応じるか断るかで答える。宿題の話をしても、誘いへの返事にはならない。',
     difficulty: 'basic',
   },
 
@@ -633,7 +633,7 @@ export const eikenQuestionsListening: EikenQuestion[] = [
       { key: 'C', text: "Working during her vacation." },
     ],
     correctKey: 'A',
-    explanation: '女性は"I am thinking about visiting Okinawa"（沖縄を訪れることを考えている）と言っている。Aが正解。',
+    explanation: '女性はNot yet, but I am thinking about visiting Okinawa.（まだですが、沖縄に行こうかと考えています）と答えている。したがって検討しているのは休暇に沖縄を訪れることである。Not yetだけを聞くと何も決めていないように思えるが、butの後ろに検討中の案が示されている点を聞き取る必要がある。\n\n【図解】会話の流れと設問の答え\n　発言｜内容｜設問との関係\n　where to go for your vacation｜行き先の質問｜男性\n　Not yet｜まだ決めていない｜女性の状況\n　I am thinking about visiting Okinawa｜沖縄を検討中｜考えていること\n　設問｜What is she considering｜検討内容\n　⇒ butの後ろに検討している案が示される\n　⚠ Not yetだけを聞くと未定に見える。butの後ろまで聞き取ることが答えの決め手になる。',
     difficulty: 'standard',
   },
   {
@@ -648,7 +648,7 @@ export const eikenQuestionsListening: EikenQuestion[] = [
       { key: 'C', text: "He does not want to move the desk." },
     ],
     correctKey: 'B',
-    explanation: '男性は「弟の方が力が強いから、弟が帰ってくるまで待とう」と言っている。Bが正解。',
+    explanation: '男性はSure, but let us wait until my brother gets home. He is much stronger than me.（いいですよ、でも弟が帰ってくるまで待ちましょう。弟のほうがずっと力が強いので）と答えている。したがって待ちたい理由は、力の強い弟に手伝ってもらうためである。比較級strongerが理由を示している。\n\n【図解】会話の流れと設問の答え\n　発言｜内容｜待つ理由\n　Can you help me move this desk｜手伝いの依頼｜女性\n　Sure｜引き受ける｜男性の返事\n　let us wait until my brother gets home｜弟の帰宅を待つ｜提案\n　He is much stronger than me｜弟のほうが力が強い｜理由\n　⇒ 比較級の文が待つ理由を示す\n　⚠ Sureと言っているので断りではない。忙しいから待つのではなく、力の強い人を待つ点が要点。',
     difficulty: 'standard',
   },
   {
@@ -663,7 +663,7 @@ export const eikenQuestionsListening: EikenQuestion[] = [
       { key: 'C', text: "Because too few students signed up." },
     ],
     correctKey: 'A',
-    explanation: '女子生徒は「it is because of the typhoon（台風のせい）」と延期の理由を説明している。Aが正解。',
+    explanation: '女子生徒はYeah, it is because of the typhoon. It has been moved to next Friday.（ええ、台風のためです。次の金曜に変更されました）と答えている。したがって延期の理由は台風である。postponeは「延期する」という意味の動詞。体育館の修理や参加者不足といった内容は会話に出てこない。\n\n【図解】会話の流れと設問の答え\n　発言｜内容｜設問との関係\n　the school festival was postponed｜延期された｜男子の情報\n　it is because of the typhoon｜台風のため｜理由\n　moved to next Friday｜次の金曜に変更｜新しい日程\n　設問｜Why was it postponed｜理由を問う\n　⇒ because ofの後ろが理由になる\n　⚠ postponeは「延期する」で中止ではない。moved toの後ろに新しい日程が示されている点も押さえる。',
     difficulty: 'standard',
   },
   {
@@ -678,7 +678,7 @@ export const eikenQuestionsListening: EikenQuestion[] = [
       { key: 'C', text: "Ask another employee." },
     ],
     correctKey: 'B',
-    explanation: '男性は"you might want to check the sign outside"（外の看板を確認するといいかもしれない）と提案している。Bが正解。',
+    explanation: '男性はI believe it closes at eight, but you might want to check the sign outside.（8時に閉まると思いますが、外の看板を確認したほうがよいかもしれません）と答えている。したがって提案しているのは看板を確認することである。you might want to 〜はやわらかい提案を表す言い方である。\n\n【図解】会話の流れと提案の読み取り\n　発言｜内容｜役割\n　what time this store closes｜閉店時刻の質問｜女性\n　I believe it closes at eight｜たぶん8時｜あいまいな情報\n　you might want to check the sign｜看板を確認したら｜提案\n　設問｜What does he suggest｜提案の内容\n　⇒ you might want to 〜の後ろが提案になる\n　⚠ you might want to 〜は「〜したほうがよいかも」というやわらかい助言。願望の表現ではない。',
     difficulty: 'standard',
   },
   {
@@ -693,7 +693,7 @@ export const eikenQuestionsListening: EikenQuestion[] = [
       { key: 'C', text: "Nothing, she already finished." },
     ],
     correctKey: 'B',
-    explanation: 'Mikaは"I have about twenty pages left"（あと約20ページ残っている）と言っている。Bが正解。',
+    explanation: 'ミカはAlmost. I have about twenty pages left.（もう少しです。あと20ページほど残っています）と答えている。したがってまだ読む必要があるのは約20ページである。leftは「残っている」という意味で使われている。Almostだけを聞くと読み終えたと誤解しやすいので、後半まで聞き取る必要がある。\n\n【図解】会話の流れと設問の答え\n　発言｜内容｜残りの量\n　Did you finish reading the book｜読了の確認｜ケンの質問\n　Almost｜もう少しで終わる｜ミカの状況\n　I have about twenty pages left｜あと20ページ｜残り\n　設問｜How much does she need to read｜残りを問う\n　⇒ leftの前の数が残りのページ数になる\n　⚠ leftは「残っている」という意味の過去分詞。leaveの「去る」の意味だけでは読み取れない。',
     difficulty: 'standard',
   },
   {
@@ -708,7 +708,7 @@ export const eikenQuestionsListening: EikenQuestion[] = [
       { key: 'C', text: "It is full of shoes." },
     ],
     correctKey: 'B',
-    explanation: '女性は「Mostly books（ほとんど本）」と答えている。Bが正解。',
+    explanation: '女性はMostly books. I could not decide which ones to bring, so I brought them all.（ほとんど本です。どれを持っていくか決められなかったので全部持ってきました）と答えている。したがってスーツケースが重い理由は本が入っているからである。服やくつは会話にまったく出てこない。\n\n【図解】会話の流れと設問の答え\n　発言｜内容｜重い理由\n　This suitcase feels really heavy｜重いという指摘｜男性\n　Mostly books｜ほとんど本｜中身\n　I could not decide which ones to bring｜選べなかった｜経緯\n　so I brought them all｜全部持ってきた｜結果\n　⇒ 中身を答えた部分が理由になる\n　⚠ mostlyは「ほとんど」。会話に出てこない服やくつを選ばないよう、聞こえた語で判断する。',
     difficulty: 'standard',
   },
   {
@@ -723,7 +723,7 @@ export const eikenQuestionsListening: EikenQuestion[] = [
       { key: 'C', text: "He was not invited." },
     ],
     correctKey: 'B',
-    explanation: '男性は"I have a part-time job that day"（その日はアルバイトがある）と言っている。Bが正解。',
+    explanation: '男性はI want to, but I have a part-time job that day.（行きたいのですが、その日はアルバイトがあります）と答えている。したがってパーティーに行けないかもしれない理由はアルバイトである。I want to, but 〜は断りの前置きになる形で、butの後ろに本当の理由が続く点が聞き取りの要点になる。\n\n【図解】会話の流れと設問の答え\n　発言｜内容｜役割\n　Are you coming to the party｜参加の確認｜女性の質問\n　I want to｜行きたい｜前置き\n　but I have a part-time job｜アルバイトがある｜理由\n　that day｜その日は｜土曜を指す\n　⇒ butの後ろが行けない理由になる\n　⚠ I want toだけを聞くと参加すると誤解する。butの後ろに断りの理由が来る形を覚えておく。',
     difficulty: 'standard',
   },
   {
@@ -738,7 +738,7 @@ export const eikenQuestionsListening: EikenQuestion[] = [
       { key: 'C', text: "It snowed inside the classroom." },
     ],
     correctKey: 'B',
-    explanation: '女子生徒は「Someone left the window open all night（誰かが一晩中窓を開けっぱなしにしていた）」と推測している。Bが正解。',
+    explanation: '女子生徒はSomeone left the window open all night, I think.（だれかが一晩中窓を開けたままにしていたのだと思います）と答えている。したがって彼女が考えているのは、窓が開いたままだったということである。I thinkは推測を表す表現である。暖房の故障や教室内での降雪といった内容は会話にない。\n\n【図解】会話の流れと推測の読み取り\n　発言｜内容｜役割\n　Why is the classroom so cold｜寒い理由の質問｜男子\n　Someone left the window open｜窓が開いていた｜推測の内容\n　all night｜一晩中｜期間\n　I think｜だと思う｜推測を示す語\n　⇒ I thinkが付いた部分が女子生徒の考え\n　⚠ leaveは「置き忘れる・そのままにする」。leave 〜 openで「開けたままにする」という形になる。',
     difficulty: 'standard',
   },
   {
@@ -753,7 +753,7 @@ export const eikenQuestionsListening: EikenQuestion[] = [
       { key: 'C', text: "Tomorrow." },
     ],
     correctKey: 'A',
-    explanation: '男性は"I am starting next Monday"（来週の月曜日から始める）と言っている。Aが正解。',
+    explanation: '男性はThanks! I am starting next Monday at a design company downtown.（ありがとう。来週の月曜から街のデザイン会社で始めます）と答えている。したがって新しい仕事を始めるのは次の月曜日である。this Fridayやtomorrowという時期は会話に出てこないので、選択肢にあっても選べない。\n\n【図解】会話の流れと設問の答え\n　発言｜内容｜設問との関係\n　I heard you got a new job｜転職の話題｜女性\n　I am starting next Monday｜来週の月曜から｜開始時期\n　at a design company｜デザイン会社で｜勤務先\n　downtown｜街の中心部｜場所\n　設問｜When does he start｜開始時期を問う\n　⇒ 現在進行形が決まった予定を表している\n　⚠ 現在進行形は決まっている予定にも使う。I am startingは「始めることになっている」という意味。',
     difficulty: 'standard',
   },
   {
@@ -768,7 +768,7 @@ export const eikenQuestionsListening: EikenQuestion[] = [
       { key: 'C', text: "It just opened this week." },
     ],
     correctKey: 'A',
-    explanation: '女性は「it was just featured on a popular TV show（人気のテレビ番組で紹介された）」と理由を説明している。Aが正解。',
+    explanation: '女性はYeah, I heard it was just featured on a popular TV show.（ええ、人気のテレビ番組で紹介されたばかりだそうです）と答えている。したがって店が混んでいる理由はテレビ番組で取り上げられたことである。featureは「特集する・取り上げる」という意味の動詞。割引や新規開店の話は会話にない。\n\n【図解】会話の流れと設問の答え\n　発言｜内容｜混雑の理由\n　This restaurant is really crowded｜混んでいる｜男性の指摘\n　it was just featured on a TV show｜番組で紹介された｜理由\n　popular｜人気の｜番組の説明\n　設問｜Why is it crowded｜理由を問う\n　⇒ 受動態was featuredの部分が理由になる\n　⚠ featureは名詞では「特徴」、動詞では「特集する」。番組の話題では動詞の意味で使われる。',
     difficulty: 'standard',
   },
 
@@ -786,7 +786,7 @@ export const eikenQuestionsListening: EikenQuestion[] = [
       { key: 'D', text: "Take protein supplements instead." },
     ],
     correctKey: 'C',
-    explanation: '男性は"You could try adding more beans, lentils, and tofu to your meals"（豆やレンズ豆、豆腐を食事に加えてみたら）と提案している。',
+    explanation: '男性はYou could try adding more beans, lentils, and tofu to your meals. They are great sources of protein.（豆やレンズ豆、豆腐を食事に加えてみては。よいたんぱく源です）と提案している。したがってすすめているのはこれらの食品を食事に加えることである。医師への相談やサプリの話は出てこない。\n\n【図解】会話の流れと提案の読み取り\n　発言｜内容｜役割\n　switching to a plant-based diet｜植物中心の食事｜女性の検討\n　worried about getting enough protein｜たんぱく質の不安｜懸念\n　adding beans, lentils, and tofu｜豆や豆腐を加える｜提案\n　great sources of protein｜よいたんぱく源｜理由\n　⇒ You could try 〜の後ろが提案の中身\n　⚠ You could try 〜はやわらかい提案の形。可能性ではなく助言を述べているという点を押さえる。',
     difficulty: 'advanced',
   },
   {
@@ -802,7 +802,7 @@ export const eikenQuestionsListening: EikenQuestion[] = [
       { key: 'D', text: "The store will be open later on weekdays." },
     ],
     correctKey: 'D',
-    explanation: 'アナウンスでは"we will remain open until 10 p.m. on weekdays"（平日は午後10時まで営業する）と延長を告げている。',
+    explanation: 'アナウンスではour store will be extending its hours during the holiday season. Starting this Friday, we will remain open until 10 p.m. on weekdays.（年末年始の期間、営業時間を延長します。今週の金曜から平日は午後10時まで営業します）と述べている。したがって平日の営業が遅くまでになるという変更である。\n\n【図解】アナウンスの要点整理\n　項目｜アナウンスの記述｜内容\n　変更点｜extending its hours｜営業時間の延長\n　開始｜Starting this Friday｜今週の金曜から\n　閉店時刻｜until 10 p.m. on weekdays｜平日は午後10時\n　時期｜during the holiday season｜年末年始\n　⇒ 営業時間が長くなるという変更である\n　⚠ extendは「延長する」。早く閉める、休業するという選択肢は意味が正反対になる。',
     difficulty: 'advanced',
   },
   {
@@ -818,7 +818,7 @@ export const eikenQuestionsListening: EikenQuestion[] = [
       { key: 'D', text: "Whether he should quit his current job." },
     ],
     correctKey: 'B',
-    explanation: '女性は昇進による収入増加が家族と過ごす時間の減少に見合うかどうか考えるよう促している。"would the extra money be worth the time away from your family?"がこれに対応する。Bが正解。',
+    explanation: '女性はWell, would the extra money be worth the time away from your family?（増える収入は、家族と離れる時間に見合うでしょうか）と問いかけている。したがって考えるようすすめているのは、収入増が家族との時間の減少に見合うかどうかである。be worth 〜は「〜に見合う」という表現である。\n\n【図解】会話の流れと問いかけの意図\n　発言｜内容｜役割\n　whether to take the promotion｜昇進を受けるか｜男性の悩み\n　more responsibility and more travel｜責任と出張の増加｜条件\n　would the extra money be worth 〜｜見合うかどうか｜女性の問いかけ\n　the time away from your family｜家族と離れる時間｜比べる対象\n　⇒ 収入と家族の時間を比べるよう促している\n　⚠ be worth 〜は「〜の価値がある・見合う」。上司の承認や退職の話は会話に出てこない。',
     difficulty: 'advanced',
   },
   {
@@ -834,7 +834,7 @@ export const eikenQuestionsListening: EikenQuestion[] = [
       { key: 'D', text: "Severe weather conditions." },
     ],
     correctKey: 'A',
-    explanation: 'アナウンスでは"Due to a signal malfunction near Central Station"（中央駅付近の信号故障のため）と遅延理由を明示している。Aが正解。',
+    explanation: 'アナウンスではDue to a signal malfunction near Central Station, all trains on this line are currently operating with delays of up to twenty minutes.（中央駅付近の信号故障のため、この路線の全列車が最大20分の遅れで運行中です）と述べている。したがって遅延の理由は信号の故障である。\n\n【図解】アナウンスの要点整理\n　項目｜アナウンスの記述｜内容\n　遅延の理由｜a signal malfunction｜信号故障\n　場所｜near Central Station｜中央駅付近\n　遅れ｜up to twenty minutes｜最大20分\n　対象｜all trains on this line｜この路線の全列車\n　⇒ Due to 〜の後ろが理由になる\n　⚠ malfunctionは「故障・不具合」。混雑や天候や点検という記述はアナウンスに含まれていない。',
     difficulty: 'advanced',
   },
   {
@@ -850,7 +850,7 @@ export const eikenQuestionsListening: EikenQuestion[] = [
       { key: 'D', text: "Productivity will never return to previous levels." },
     ],
     correctKey: 'A',
-    explanation: '男性は「一時的な調整期間に過ぎず、数週間もすれば慣れるはず」と述べている。Aが正解。',
+    explanation: '男性はI think it is just a temporary adjustment period. Give it another few weeks and people should get used to it.（一時的な適応期間にすぎないと思います。あと数週間もすれば慣れるはずです）と述べている。したがって生産性の低下は、慣れれば改善すると考えていることになる。\n\n【図解】会話の流れと見方の読み取り\n　発言｜内容｜役割\n　productivity has dropped｜生産性が落ちた｜女性の指摘\n　just a temporary adjustment period｜一時的な適応期間｜男性の分析\n　Give it another few weeks｜あと数週間｜見通し\n　people should get used to it｜慣れるはず｜結論\n　⇒ 一時的だという判断が結論になる\n　⚠ get used to 〜は「〜に慣れる」。以前のソフトに戻すよう提案しているわけではない。',
     difficulty: 'advanced',
   },
   {
@@ -866,7 +866,7 @@ export const eikenQuestionsListening: EikenQuestion[] = [
       { key: 'D', text: "Collect their luggage from the overhead bins." },
     ],
     correctKey: 'B',
-    explanation: 'アナウンスでは"Please return your seats and tray tables to their upright position, and make sure your seatbelt is securely fastened"と指示している。Bが正解。',
+    explanation: 'アナウンスではPlease return your seats and tray tables to their upright position, and make sure your seatbelt is securely fastened.（座席とテーブルを元の位置に戻し、シートベルトをしっかり締めてください）と指示している。したがって乗客が求められているのは座席とテーブルを元に戻すことである。\n\n【図解】アナウンスの指示内容\n　項目｜アナウンスの記述｜乗客への指示\n　着陸まで｜approximately fifteen minutes｜約15分\n　指示1｜return your seats to upright｜座席を戻す\n　指示2｜tray tables to upright｜テーブルを戻す\n　指示3｜seatbelt securely fastened｜シートベルト着用\n　⇒ Please 〜の後ろが指示の内容になる\n　⚠ 電子機器や手荷物についての指示はこのアナウンスにない。述べられた内容だけを選ぶこと。',
     difficulty: 'advanced',
   },
   {
@@ -882,7 +882,7 @@ export const eikenQuestionsListening: EikenQuestion[] = [
       { key: 'D', text: "Her manager requested that she arrive earlier." },
     ],
     correctKey: 'B',
-    explanation: '女性は"I am trying to finish the quarterly report before the deadline on Friday"（金曜の締め切り前に四半期報告書を終わらせようとしている）と説明している。Bが正解。',
+    explanation: '女性はYeah, I am trying to finish the quarterly report before the deadline on Friday.（ええ、金曜の締め切り前に四半期報告書を仕上げようとしています）と答えている。したがって早く出社している理由は報告書を締め切りまでに終わらせるためである。渋滞回避や上司の指示という内容は会話にない。\n\n【図解】会話の流れと設問の答え\n　発言｜内容｜早く来る理由\n　coming in early every day｜毎日早く出社｜男性の指摘\n　finish the quarterly report｜報告書を仕上げる｜目的\n　before the deadline on Friday｜金曜の締め切り前｜期限\n　設問｜Why has she been arriving early｜理由を問う\n　⇒ trying to 〜の後ろが目的になる\n　⚠ quarterlyは「四半期の」。会話に出てこない理由が選択肢に並ぶので、聞こえた内容だけを選ぶ。',
     difficulty: 'advanced',
   },
   {
@@ -898,7 +898,7 @@ export const eikenQuestionsListening: EikenQuestion[] = [
       { key: 'D', text: "Payment for the checkup." },
     ],
     correctKey: 'B',
-    explanation: 'アナウンスでは"Please bring your insurance card"（保険証を持参してください）と指示している。Bが正解。',
+    explanation: 'アナウンスではPlease bring your insurance card and arrive on an empty stomach, as blood tests will be conducted.（保険証を持参し、血液検査があるので空腹で来てください）と述べている。したがって持参するよう求められているのは保険証である。空腹で来ることは指示だが持ち物ではない。\n\n【図解】アナウンスの要点整理\n　項目｜アナウンスの記述｜内容\n　行事｜the annual health checkup｜年1回の健康診断\n　日時｜next Wednesday｜次の水曜\n　場所｜Conference Room A｜会議室A\n　持ち物｜your insurance card｜保険証\n　⇒ bringの後ろが持ち物になる\n　⚠ 空腹で来るのは条件であって持ち物ではない。bringという動詞と結びつく物だけを選ぶ。',
     difficulty: 'advanced',
   },
   {
@@ -914,7 +914,7 @@ export const eikenQuestionsListening: EikenQuestion[] = [
       { key: 'D', text: "A decrease in the number of farms." },
     ],
     correctKey: 'C',
-    explanation: '男性は"it is because of the unusually dry summer affecting harvests nationwide"（異常に乾燥した夏が全国の収穫に影響したため）と説明している。Cが正解。',
+    explanation: '男性はApparently it is because of the unusually dry summer affecting harvests nationwide.（どうやら異常に乾燥した夏が全国の収穫に影響したためのようです）と説明している。したがって値上がりの原因は乾燥した夏である。輸送費の上昇や新しい税、農家の減少といった内容は会話に出てこない。\n\n【図解】会話の流れと原因の読み取り\n　発言｜内容｜役割\n　the price of vegetables has gone up｜野菜が値上がり｜女性の指摘\n　because of the unusually dry summer｜乾燥した夏｜原因\n　affecting harvests nationwide｜全国の収穫に影響｜結果\n　設問｜What caused the increase｜原因を問う\n　⇒ because ofの後ろが原因になる\n　⚠ apparentlyは「どうやら〜らしい」。伝聞や推測を示す語だが、示された原因は1つだけである。',
     difficulty: 'advanced',
   },
   {
@@ -930,7 +930,7 @@ export const eikenQuestionsListening: EikenQuestion[] = [
       { key: 'D', text: "The original room was double-booked." },
     ],
     correctKey: 'B',
-    explanation: 'アナウンスでは"due to the larger than expected number of attendees"（予想より多くの参加者があったため）と会場変更の理由を説明している。Bが正解。',
+    explanation: 'アナウンスではthe conference originally scheduled for Room 302 has been relocated to the auditorium on the first floor due to the larger than expected number of attendees.（参加者が予想より多かったため、会議は302号室から1階の講堂に変更されました）と述べている。したがって変更の理由は参加者の多さである。\n\n【図解】アナウンスの要点整理\n　項目｜アナウンスの記述｜内容\n　変更前｜Room 302｜302号室\n　変更後｜the auditorium on the first floor｜1階の講堂\n　理由｜larger than expected number of attendees｜参加者が予想以上\n　対象｜the conference｜会議\n　⇒ due to 〜の後ろが理由になる\n　⚠ 改装や設備、二重予約という記述はない。アナウンスで示された理由だけを根拠に選ぶこと。',
     difficulty: 'advanced',
   },
 ];

@@ -77,6 +77,20 @@ function loadQuestions(mod) {
 const rows = [];
 const total = { n: 0, choiceExpl: 0, diagram: 0, rich: 0 };
 const errors = [];
+const keyWarn = [];
+
+/**
+ * 選択肢の解説の書き出しから、その肢が「正しい」のか「誤り」なのかを読む。
+ * 「適当でない」は「適当」で始まるので、必ず否定形を先に判定すること。
+ */
+const NEG = /^(誤り|誤っ|不適当|不適切|不正確|適当でない|適切でない|妥当でない|正しくない)/;
+const POS = /^(正しい|適当|適切|妥当)/;
+function markOf(expl) {
+  const t = String(expl || '').trim();
+  if (NEG.test(t)) return 'x';
+  if (POS.test(t)) return 'o';
+  return null; // 書き出しから判定できないものは検査対象外
+}
 
 for (const [cert, mod] of Object.entries(MODS)) {
   let arr;
@@ -111,6 +125,24 @@ for (const [cert, mod] of Object.entries(MODS)) {
     // 図解を名乗るのに1行しかない＝改行が入っていない
     if (e.includes('【図解】') && !e.includes('\n')) {
       errors.push(`${cert} ${q.id}: 【図解】があるのに改行が1つもありません`);
+    }
+
+    // 正解キーと、選択肢解説が示す正誤が食い違っていないか。
+    // 「正解の肢が実は誤り」「正解が2つある」といった、設問として成立していない
+    // 状態を機械的に見つけるためのもの。
+    const Q = String(q.question || '');
+    const marks = q.choices.map(c => markOf(c.explanation));
+    const answer = q.choices.find(c => c.key === q.correctKey);
+    // 個数問題・組合せ問題は肢と正誤が1対1に対応しないため対象外
+    const countType = /いくつ|何個|組合せ|組み合わせ/.test(Q);
+    if (answer && !countType && !marks.includes(null)) {
+      const want = /誤っ|誤りな|不適当|不適切|適当でない|適切でない|妥当でない|正しくない/.test(Q) ? 'x' : 'o';
+      const others = q.choices.filter(c => c.key !== q.correctKey).map(c => markOf(c.explanation));
+      if (markOf(answer.explanation) !== want) {
+        keyWarn.push(`${cert} ${q.id}: 正解の肢の解説が設問の問い方と逆になっています`);
+      } else if (others.includes(want)) {
+        keyWarn.push(`${cert} ${q.id}: 正解以外の肢にも正解と同じ判定の解説があります（正解が2つ）`);
+      }
     }
   }
 
@@ -153,6 +185,15 @@ if (noChoice.length) {
   console.log('  → 「すべての問題に選択肢ごとの解説」とは書けない。対象資格を明記して書く。');
 } else {
   console.log('  → 「すべての問題に選択肢ごとの解説」と書いてよい。');
+}
+
+if (keyWarn.length) {
+  console.log(`\n■ 正解キーと選択肢解説の食い違い（${keyWarn.length}件）\n`);
+  console.log('  設問として成立していない可能性がある。1問ずつ4肢を読んで確認すること。');
+  console.log('  ※「誤り（適切な方法）」のように、肢の正誤ではなく“正解かどうか”を書いている');
+  console.log('    表記のゆれでもここに出る。その場合は書き出しを揃えれば足りる。\n');
+  for (const w of keyWarn.slice(0, 40)) console.log('  ' + w);
+  if (keyWarn.length > 40) console.log(`  …ほか${keyWarn.length - 40}件`);
 }
 
 if (errors.length) {
