@@ -15,7 +15,7 @@ export const eikenQuestions4kyu5: EikenQuestion[] = [
       { key: 'D', text: 'pocket' },
     ],
     correctKey: 'B',
-    explanation: '単語の意味を調べるものはdictionary（辞書）です。「look up a word in a dictionary（辞書で単語を調べる）」はよく使われる表現。lunch box（弁当箱）、blackboard（黒板）、pocket（ポケット）では意味を調べられません。',
+    explanation: '語の意味を調べるものはdictionary（辞書）なので、これが正解になる。look up 〜 in a dictionaryは「辞書で〜を調べる」という定番の表現である。lunch box（弁当箱）、blackboard（黒板）、pocket（ポケット）ではいずれも語の意味を調べることはできない。because以下の理由の文が、辞書を引いた場面だと示している。\n\n【図解】語の意味と使い道\n　語｜意味｜使い道\n　dictionary｜辞書｜語の意味を調べる\n　lunch box｜弁当箱｜食事を入れる\n　blackboard｜黒板｜文字を書く\n　pocket｜ポケット｜物を入れる\n　⇒ 意味を調べる道具はdictionary\n　⚠ look upは「調べる」、look forは「探す」。同じlookでも後ろの語で意味がまったく変わる。',
     difficulty: 'basic',
   },
   {
@@ -30,7 +30,7 @@ export const eikenQuestions4kyu5: EikenQuestion[] = [
       { key: 'D', text: 'pilot' },
     ],
     correctKey: 'D',
-    explanation: '飛行機を操縦する人はpilot（パイロット）です。nurse（看護師）は病院で働く人、singer（歌手）は歌う人、waiter（ウェイター）はレストランで給仕する人で、飛行機を飛ばす仕事ではありません。',
+    explanation: '2文目のHe flies airplanes all over the world.（世界中で飛行機を操縦している）が職業の説明になっているので、pilot（パイロット）が正解になる。flyは「飛ぶ」だけでなく「（飛行機を）操縦する」という意味でも使われる。nurse（看護師）、singer（歌手）、waiter（ウェイター）は飛行機を飛ばす仕事ではない。\n\n【図解】職業と仕事の内容\n　職業｜働く場所｜仕事の内容\n　pilot｜飛行機｜操縦する\n　nurse｜病院｜患者の世話をする\n　singer｜舞台｜歌う\n　waiter｜レストラン｜給仕する\n　⇒ 飛行機を操縦するのでpilot\n　⚠ flyは「飛ぶ」と「操縦する」の両方の意味をもつ。2文目の動詞が職業を決める根拠になる。',
     difficulty: 'basic',
   },
   {
@@ -45,7 +45,7 @@ export const eikenQuestions4kyu5: EikenQuestion[] = [
       { key: 'D', text: 'rest' },
     ],
     correctKey: 'A',
-    explanation: '「take a picture（写真をとる）」が正解です。お城の前で家族写真をとる場面です。take a shower（シャワーを浴びる）、take a walk（散歩する）、take a rest（休憩する）もtakeを使う表現ですが、「of our family（家族の）」と続くのはpictureだけです。',
+    explanation: 'take a pictureは「写真をとる」という決まった表現なので、pictureが正解になる。後ろにof our family（家族の）と続いている点も手がかりである。take a shower（シャワーを浴びる）、take a walk（散歩する）、take a rest（休憩する）もtakeを使う表現だが、ofで対象を続けられるのはpictureだけになる。\n\n【図解】take を使う表現\n　表現｜意味｜使う場面\n　take a picture｜写真をとる｜観光地\n　take a shower｜シャワーを浴びる｜帰宅後\n　take a walk｜散歩する｜公園\n　take a rest｜休憩する｜疲れたとき\n　⇒ of our familyが続くのでpicture\n　⚠ takeは後ろの名詞で意味が決まる。ofで対象を示せるかどうかも判断の手がかりになる。',
     difficulty: 'basic',
   },
   {
@@ -60,7 +60,7 @@ export const eikenQuestions4kyu5: EikenQuestion[] = [
       { key: 'D', text: 'windows' },
     ],
     correctKey: 'C',
-    explanation: '「親切でいつも笑顔」なのは人なので、workers（店員・働く人たち）が正解です。prices（値段）、walls（かべ）、windows（窓）は物なので、kind（親切な）やsmile（ほほえむ）の主語になりません。',
+    explanation: 'very kind and always smile（とても親切でいつもほほえむ）という説明にあてはまるのは人なので、workers（働く人たち・店員）が正解になる。prices（値段）、walls（かべ）、windows（窓）はいずれも物なので、kindという性格を表す形容詞やsmileという動作の主語にはなれない。\n\n【図解】主語が人か物かの判断\n　語｜意味｜kindやsmileの主語になるか\n　workers｜働く人たち｜なる\n　prices｜値段｜ならない\n　walls｜かべ｜ならない\n　windows｜窓｜ならない\n　⇒ 性格と動作の主語になるのは人\n　⚠ 形容詞や動詞が人にしか使えない場合がある。主語が人か物かをまず確認してから選ぶ。',
     difficulty: 'basic',
   },
   {
@@ -75,7 +75,7 @@ export const eikenQuestions4kyu5: EikenQuestion[] = [
       { key: 'D', text: 'rich' },
     ],
     correctKey: 'C',
-    explanation: '夜中まで勉強していたのだから、sleepy（眠い）が正解です。excited（わくわくした）、free（ひまな）、rich（お金持ちの）は夜ふかしの結果として不自然です。until midnight は「夜の12時まで」という意味です。',
+    explanation: 'because he studied until midnight last night（昨夜は真夜中まで勉強していたので）という理由があるので、sleepy（眠い）が正解になる。excited（わくわくした）、free（ひまな）、rich（お金持ちの）はいずれも夜ふかしの結果として不自然である。until midnightは「夜の12時まで」という意味である。\n\n【図解】形容詞と原因の対応\n　形容詞｜意味｜夜ふかしの結果になるか\n　sleepy｜眠い｜なる\n　excited｜わくわくした｜ならない\n　free｜ひまな｜ならない\n　rich｜お金持ちの｜ならない\n　⇒ 夜おそくまで勉強した結果はsleepy\n　⚠ becauseの後ろが理由。until midnightという語句から、睡眠不足の状況だと読み取ることが要点になる。',
     difficulty: 'basic',
   },
   {
@@ -90,7 +90,7 @@ export const eikenQuestions4kyu5: EikenQuestion[] = [
       { key: 'D', text: 'season' },
     ],
     correctKey: 'A',
-    explanation: 'May（5月）は1年の5番目のmonth（月）です。week（週）、day（日）、season（季節）では数が合いません。序数（first, second, third, fourth, fifth…）と月の名前をセットで覚えておきましょう。',
+    explanation: 'May（5月）は1年の5番目の月なので、month（月）が正解になる。fifthは「5番目の」という序数である。week（週）は1年に約52、day（日）は365あり、season（季節）は4つしかないので、fifthという序数とは合わない。月の名前と順番、序数の言い方をセットで覚えておくとよい。月の名前と順番、序数の言い方をセットで覚えておくと確実に答えられる。\n\n【図解】時の単位と1年あたりの数\n　単位｜1年あたりの数｜例\n　month｜12｜May is the fifth month\n　season｜4｜spring, summer, fall, winter\n　week｜約52｜1週間ごと\n　day｜365｜1日ごと\n　⇒ Mayは5番目なのでmonth\n　⚠ 序数はfirst, second, third, fourth, fifthと不規則な形が続く。月の順番と合わせて覚えること。',
     difficulty: 'basic',
   },
   {
@@ -105,7 +105,7 @@ export const eikenQuestions4kyu5: EikenQuestion[] = [
       { key: 'D', text: 'louder' },
     ],
     correctKey: 'D',
-    explanation: '「よく聞こえない」と言っているので、louder（もっと大きな声で）が正解です。quietly（静かに）だとさらに聞こえなくなり、slowly（ゆっくり）は聞こえないことの解決になりません。sadly（悲しそうに）は文脈に合いません。',
+    explanation: '2文目のI cannot hear you well.（よく聞こえない）が理由なので、louder（もっと大きな声で）が正解になる。loudの比較級がlouderで、speak louderは「もっと大きな声で話す」という意味である。quietly（静かに）ではさらに聞こえなくなり、slowly（ゆっくり）やsadly（悲しそうに）は聞こえない問題の解決にならない。\n\n【図解】副詞と問題の解決\n　副詞｜意味｜聞こえない問題の解決になるか\n　louder｜もっと大きな声で｜なる\n　quietly｜静かに｜ならない\n　slowly｜ゆっくりと｜ならない\n　sadly｜悲しそうに｜ならない\n　⇒ 聞こえないので大きな声を求める\n　⚠ loudの比較級がlouder。理由の文を読まずに選ぶと、slowlyも自然に見えてしまう。',
     difficulty: 'standard',
   },
   {
@@ -120,7 +120,7 @@ export const eikenQuestions4kyu5: EikenQuestion[] = [
       { key: 'D', text: 'close' },
     ],
     correctKey: 'B',
-    explanation: '「お金が足りない」と続くので、buy（買う）が正解です。sell（売る）ならお金は必要なく、wash（洗う）、close（閉じる）もお金が足りないこととは関係ありません。enough（十分な）も重要単語です。',
+    explanation: 'but I do not have enough money（でも十分なお金がない）という後半から、お金が必要な行為が入るとわかる。したがってbuy（買う）が正解になる。sell（売る）ならお金が入るので理由と矛盾し、wash（洗う）やclose（閉じる）はお金の有無とは関係がない。enoughは「十分な」という重要語である。\n\n【図解】動詞とお金の動き\n　動詞｜意味｜お金の動き\n　buy｜買う｜お金が出ていく\n　sell｜売る｜お金が入る\n　wash｜洗う｜お金と無関係\n　close｜閉じる｜お金と無関係\n　⇒ お金が足りないという理由に合うのはbuy\n　⚠ buyとsellは方向が正反対。butの後ろの理由と結びつくかどうかで動詞を選ぶ。',
     difficulty: 'basic',
   },
   {
@@ -135,7 +135,7 @@ export const eikenQuestions4kyu5: EikenQuestion[] = [
       { key: 'D', text: 'under' },
     ],
     correctKey: 'D',
-    explanation: '「ここから見えない」のだから、テーブルのunder（下に）いると考えるのが自然です。about（〜について）、of（〜の）、with（〜と一緒に）は場所を表す使い方としてこの文に合いません。on（上）、under（下）、by（そば）などの前置詞を整理しておきましょう。',
+    explanation: '後半のso we cannot see it from here（だからここからは見えない）という結果から、ねこはテーブルのunder（下に）いるとわかる。about（〜について）、of（〜の）、with（〜と一緒に）はいずれも場所を表す用法ではないので、この文には入らない。on（上に）やby（そばに）と合わせて位置の前置詞を整理しておきたい。\n\n【図解】位置を表す前置詞\n　前置詞｜意味｜見え方\n　under｜〜の下に｜見えにくい\n　on｜〜の上に｜よく見える\n　by｜〜のそばに｜横に見える\n　in｜〜の中に｜内側\n　⇒ 見えないという結果に合うのはunder\n　⚠ aboutやofは場所を表さない。結果の文から位置関係を読み取って前置詞を選ぶ。',
     difficulty: 'basic',
   },
   {
@@ -150,7 +150,7 @@ export const eikenQuestions4kyu5: EikenQuestion[] = [
       { key: 'D', text: 'letter' },
     ],
     correctKey: 'C',
-    explanation: '「take a walk（散歩する）」が正解です。公園で毎朝することとして自然です。homework（宿題）はdoと使い（do homework）、window（窓）やletter（手紙）はtake a 〜の形で「公園でする活動」になりません。',
+    explanation: 'take a walkは「散歩する」という決まった表現なので、walkが正解になる。公園で毎朝行うこととして自然である。homeworkはdo homeworkのようにdoと組み合わせる語で、window（窓）やletter（手紙）はtake a 〜の形で公園での活動を表さない。before breakfastは「朝食の前に」という表現である。\n\n【図解】名詞と組み合わせる動詞\n　表現｜意味｜使う動詞\n　take a walk｜散歩する｜take\n　do homework｜宿題をする｜do\n　write a letter｜手紙を書く｜write\n　open the window｜窓を開ける｜open\n　⇒ 公園での活動を表すのでtake a walk\n　⚠ homeworkはdoと組む。動詞と名詞の組み合わせは表現ごとに決まっているので丸ごと覚える。',
     difficulty: 'basic',
   },
   {
@@ -165,7 +165,7 @@ export const eikenQuestions4kyu5: EikenQuestion[] = [
       { key: 'D', text: 'garden' },
     ],
     correctKey: 'B',
-    explanation: '数学の問題に対して見つけるものはanswer（答え）です。weather（天気）、ticket（切符）、garden（庭）は問題を解く文脈に合いません。question（問題・質問）とanswer（答え）はセットで覚えましょう。',
+    explanation: '数学の問題に対して見つけるものはanswer（答え）なので、これが正解になる。questionやproblemと対になる語である。weather（天気）、ticket（切符）、garden（庭）はいずれも問題を解く場面には合わない。find the answerは「答えを見つける」、solve the problemは「問題を解く」という表現である。\n\n【図解】問題と答えに関する語\n　語｜意味｜結びつく語\n　answer｜答え｜question, problem\n　question｜問題・質問｜answer\n　problem｜問題｜solve\n　solution｜解決策｜find\n　⇒ 問題に対して見つけるのはanswer\n　⚠ questionは質問、problemは解くべき問題。どちらもanswerと対になるが場面が少し異なる。',
     difficulty: 'basic',
   },
   {
@@ -180,7 +180,7 @@ export const eikenQuestions4kyu5: EikenQuestion[] = [
       { key: 'D', text: 'roof' },
     ],
     correctKey: 'A',
-    explanation: 'バスを待つ場所は「bus stop（バス停）」です。bus chairやbus roofという言い方はなく、street（通り）はbus streetという形では使いません。train station（駅）、airport（空港）など乗り物と場所の組み合わせも覚えましょう。',
+    explanation: 'バスを待つ場所はbus stop（バス停）なので、stopが正解になる。bus stopは2語で1つの名詞として使われる表現である。bus chairやbus roofという言い方はなく、streetは通りそのものを指す語なのでbus streetという形では使わない。train station（駅）やairport（空港）も合わせて覚えておきたい。\n\n【図解】乗り物と待つ場所\n　乗り物｜待つ場所｜英語\n　バス｜バス停｜bus stop\n　電車｜駅｜train station\n　飛行機｜空港｜airport\n　船｜港｜port\n　⇒ バスを待つ場所はbus stop\n　⚠ bus stopは2語で1つの名詞。stopを「止まる」という動詞の意味だけで覚えていると選べない。',
     difficulty: 'basic',
   },
   {
@@ -195,7 +195,7 @@ export const eikenQuestions4kyu5: EikenQuestion[] = [
       { key: 'D', text: 'looked for' },
     ],
     correctKey: 'A',
-    explanation: '寒いので出かける前にコートを「put on（着る）」が正解です。turned off（消した）、threw away（捨てた）、looked for（探した）は「寒いから」という理由に合いません。特にthrow awayだと寒いのに捨てることになり逆です。',
+    explanation: 'It was cold outside（外は寒かった）という理由があるので、出かける前にコートをput on（着る）が正解になる。turned off（消した）、threw away（捨てた）、looked for（探した）はいずれも寒さへの対処にならない。特にthrow awayだと寒いのにコートを捨てることになり、理由と正反対になってしまう。\n\n【図解】句動詞と場面の対応\n　表現｜意味｜寒い日に合うか\n　put on｜着る｜合う\n　take off｜脱ぐ｜合わない\n　throw away｜捨てる｜合わない\n　look for｜探す｜合わない\n　⇒ 寒いので着る動作を選ぶ\n　⚠ put onは着る動作、wearは着ている状態。before going outという場面から動作を表す語を選ぶ。',
     difficulty: 'standard',
   },
   {
@@ -210,7 +210,7 @@ export const eikenQuestions4kyu5: EikenQuestion[] = [
       { key: 'D', text: 'fly' },
     ],
     correctKey: 'B',
-    explanation: '3歳の妹がまだできないこととして自然なのは、名前をwrite（書く）ことです。eat（食べる）、drink（飲む）はnameを目的語にとれず、fly（飛ぶ）も文脈に合いません。',
+    explanation: 'only three years old（まだ3歳）という説明があるので、まだできないこととして自然なのは名前をwrite（書く）ことである。eat（食べる）やdrink（飲む）はher nameを目的語にとれず、fly（飛ぶ）は自動詞なので目的語をとらない。yetは否定文で「まだ」を表す語で、cannot 〜 yetの形で使われている。\n\n【図解】動詞と目的語の相性\n　動詞｜意味｜nameを目的語にできるか\n　write｜書く｜できる\n　read｜読む｜できる\n　eat｜食べる｜できない\n　fly｜飛ぶ｜目的語をとらない\n　⇒ 3歳の子がまだできないのはwrite\n　⚠ yetは否定文で「まだ」。cannot 〜 yetの形で、これからできるようになることを表している。',
     difficulty: 'basic',
   },
   {
@@ -225,7 +225,7 @@ export const eikenQuestions4kyu5: EikenQuestion[] = [
       { key: 'D', text: 'wall' },
     ],
     correctKey: 'C',
-    explanation: '「on the third floor（3階に）」が正解です。建物の階はfloorで表します。window（窓）、door（ドア）、wall（かべ）は「the third 〜 of a building」の形で店の場所を表す言い方になりません。',
+    explanation: '建物の階を表すのはfloorなので、on the third floor（3階に）が正解になる。階を示すときの前置詞はonで、inではない点も重要である。window（窓）、door（ドア）、wall（かべ）はthe third 〜 of a buildingという形で店の場所を表す言い方にはならない。\n\n【図解】建物の部分と表現\n　部分｜英語｜使う前置詞\n　階｜floor｜on the third floor\n　窓｜window｜by the window\n　ドア｜door｜at the door\n　かべ｜wall｜on the wall\n　⇒ 階を表すのでfloorが正解\n　⚠ 階を示すときはonを使い、in the third floorとはしない。前置詞まで含めて覚えることが大切。',
     difficulty: 'basic',
   },
   {
@@ -240,7 +240,7 @@ export const eikenQuestions4kyu5: EikenQuestion[] = [
       { key: 'D', text: 'afraid' },
     ],
     correctKey: 'D',
-    explanation: '「be afraid of 〜（〜をこわがる）」が正解です。「その犬はとても人なつっこいから、こわがらないで」という文です。be proud of（〜を誇りに思う）、be full of（〜でいっぱい）、be kind to（〜に親切）はこの文脈に合いません。',
+    explanation: 'be afraid of 〜は「〜をこわがる」という熟語なので、afraidが正解になる。2文目のIt is very friendly.（その犬はとても人なつっこい）が、こわがる必要はないという内容の裏づけになる。be proud of（誇りに思う）、be full of（〜でいっぱい）も同じofをとる熟語だが、この文脈には合わない。\n\n【図解】be + 形容詞 + 前置詞 の熟語\n　表現｜意味｜前置詞\n　be afraid of 〜｜〜をこわがる｜of\n　be proud of 〜｜〜を誇りに思う｜of\n　be full of 〜｜〜でいっぱい｜of\n　be kind to 〜｜〜に親切である｜to\n　⇒ こわがらないでという意味なのでafraid\n　⚠ 同じofをとる熟語が複数あるので、前置詞ではなく意味で選ぶ。friendlyは「人なつっこい」。',
     difficulty: 'standard',
   },
   {
@@ -255,7 +255,7 @@ export const eikenQuestions4kyu5: EikenQuestion[] = [
       { key: 'D', text: 'foot' },
     ],
     correctKey: 'D',
-    explanation: '「on foot（歩いて・徒歩で）」が正解です。「ふだんは歩いて通学するが、今日は雨なのでバスに乗った」という文です。on time（時間どおりに）、on sale（セール中で）、on TV（テレビで）もonを使う表現ですが、通学手段を表すのはon footだけです。',
+    explanation: 'on footは「歩いて・徒歩で」という移動手段を表す表現なので、footが正解になる。「ふだんは歩いて通学するが、今日は雨なのでバスに乗った」という意味である。on time（時間どおりに）、on sale（特売中で）、on TV（テレビで）もonを使う表現だが、通学手段を表すのはon footだけである。\n\n【図解】on を使う表現\n　表現｜意味｜使う場面\n　on foot｜歩いて｜移動手段\n　on time｜時間どおりに｜到着\n　on sale｜特売中で｜買い物\n　on TV｜テレビで｜番組\n　⇒ 通学手段を表すのでon foot\n　⚠ 徒歩はon footで、by footとは言わない。乗り物ならby busやby trainとbyを使う点も区別する。',
     difficulty: 'standard',
   },
   {
@@ -270,7 +270,7 @@ export const eikenQuestions4kyu5: EikenQuestion[] = [
       { key: 'D', text: 'sings' },
     ],
     correctKey: 'A',
-    explanation: '「The sun rises in the east（太陽は東からのぼる）」が正解です。riseは「のぼる・上がる」という意味。sleep（眠る）、cook（料理する）、sing（歌う）は太陽の動きを表す動詞ではありません。反対のset（沈む）も覚えましょう。',
+    explanation: 'The sun rises in the east（太陽は東からのぼる）が正解で、riseは「のぼる・上がる」という意味の自動詞である。every morningという語句が毎日くり返される事実を表している。sleep（眠る）、cook（料理する）、sing（歌う）はいずれも太陽の動きを表す動詞ではない。反対の意味はset（沈む）になる。\n\n【図解】太陽の動きを表す動詞\n　動詞｜意味｜時間帯\n　rise｜のぼる｜朝\n　set｜沈む｜夕方\n　shine｜輝く｜日中\n　sing｜歌う｜太陽には使わない\n　⇒ 東からのぼるのでrises\n　⚠ riseは自動詞で「のぼる」、raiseは他動詞で「上げる」。つづりが似ているので必ず区別する。',
     difficulty: 'standard',
   },
   {
@@ -285,7 +285,7 @@ export const eikenQuestions4kyu5: EikenQuestion[] = [
       { key: 'D', text: 'out of' },
     ],
     correctKey: 'C',
-    explanation: '「sit next to each other（となり同士に座る）」が正解です。next to 〜は「〜のとなりに」という場所の表現。above（〜の上方に）、into（〜の中へ）、out of（〜の外へ）は教室で座る位置の説明として不自然です。',
+    explanation: 'sit next to each otherは「となり同士にすわる」という意味なので、next toが正解になる。next to 〜は「〜のとなりに」という位置を表す表現である。above（〜の上方に）、into（〜の中へ）、out of（〜の外へ）はいずれも教室での座席の位置を説明する語としては不自然になる。\n\n【図解】位置を表す表現\n　表現｜意味｜位置関係\n　next to 〜｜〜のとなりに｜横\n　in front of 〜｜〜の前に｜正面\n　behind 〜｜〜の後ろに｜背面\n　above 〜｜〜の上方に｜上\n　⇒ となり同士にすわるのでnext to\n　⚠ each otherは「おたがい」という代名詞。sit next to each otherでとなり合ってすわる意味になる。',
     difficulty: 'basic',
   },
   {
@@ -300,7 +300,7 @@ export const eikenQuestions4kyu5: EikenQuestion[] = [
       { key: 'D', text: 'drew' },
     ],
     correctKey: 'B',
-    explanation: '夕食にカレーをcooked（料理した）が正解です。drank（飲んだ）はカレーに使わず、read（読んだ）、drew（描いた）は食事を作る文脈に合いません。cook-cooked、drink-drankなど過去形もあわせて確認しましょう。',
+    explanation: '夕食にカレーを作ったという意味なので、cooked（料理した）が正解になる。cookは火を使って調理するときに使う動詞である。drank（飲んだ）は液体に使うのでカレーには合わず、read（読んだ）やdrew（かいた）は食事を用意する場面とは関係がない。for dinnerは「夕食に」という表現である。\n\n【図解】動詞と目的語の相性\n　動詞｜意味｜目的語の例\n　cook｜料理する｜curry, dinner\n　drink｜飲む｜water, tea\n　read｜読む｜books\n　draw｜かく｜pictures\n　⇒ カレーを用意するのでcooked\n　⚠ drinkは液体に使う動詞。カレーは食べ物なのでeatかcookを使い、drinkとは組み合わせない。',
     difficulty: 'basic',
   },
   {
@@ -315,7 +315,7 @@ export const eikenQuestions4kyu5: EikenQuestion[] = [
       { key: 'D', text: 'castle' },
     ],
     correctKey: 'B',
-    explanation: 'たくさんの種類の魚を見られる場所はaquarium（水族館）です。post office（郵便局）は手紙を送る場所、bookstore（本屋）は本を買う場所、castle（城）は昔の建物で、魚を見る場所ではありません。',
+    explanation: 'a place where you can see many kinds of fish（たくさんの種類の魚を見られる場所）という説明にあてはまるのはaquarium（水族館）である。post office（郵便局）は手紙を出す場所、bookstore（本屋）は本を買う場所、castle（城）は昔の建物で、いずれも魚を見る場所ではない。\n\n【図解】場所とそこで見られるもの\n　場所｜英語｜そこにあるもの\n　水族館｜aquarium｜魚やイルカ\n　動物園｜zoo｜陸の動物\n　郵便局｜post office｜手紙や切手\n　本屋｜bookstore｜本\n　⇒ 魚を見る場所はaquarium\n　⚠ a place where 〜は「〜する場所」。関係副詞whereが場所の説明を導く形になっている。',
     difficulty: 'basic',
   },
   {
@@ -330,7 +330,7 @@ export const eikenQuestions4kyu5: EikenQuestion[] = [
       { key: 'D', text: 'remember' },
     ],
     correctKey: 'D',
-    explanation: '「彼は私をremember（覚えている）していなかった」が自然です。会ったのに気づかなかった・覚えていなかったという文脈です。rain（雨が降る）、grow（育つ）、open（開ける）は「私を」という目的語に対して意味が通りません。',
+    explanation: 'butで逆接になっており、駅で会ったのに相手が反応しなかったという流れなので、remember（覚えている）が正解になる。「トムに会ったが、彼は私を覚えていなかった」という意味である。rain（雨が降る）やgrow（育つ）は人を目的語にとれず、open（開ける）も意味が通らない。rememberの反対はforgetで、どちらも人を目的語にとることができる。\n\n【図解】動詞と目的語の相性\n　動詞｜意味｜人を目的語にとれるか\n　remember｜覚えている｜とれる\n　forget｜忘れる｜とれる\n　rain｜雨が降る｜とれない\n　grow｜育つ｜とれない\n　⇒ 逆接の流れに合うのはremember\n　⚠ butは逆接の接続詞。前半と反対の内容が続くので、会ったのに気づかれなかったと読み取る。',
     difficulty: 'standard',
   },
   {
@@ -345,7 +345,7 @@ export const eikenQuestions4kyu5: EikenQuestion[] = [
       { key: 'D', text: 'birthday' },
     ],
     correctKey: 'A',
-    explanation: '土日が好きな理由は「school（学校）がないから」です。weekend（週末）は土日そのものなので理由になりません。holiday（休日）がない、birthday（誕生日）がないでは、土日を好きな理由として意味が通りません。',
+    explanation: '土日が好きな理由なので、school（学校）がないからという内容になる。weekendは土日そのものを指す語なので、土日に週末がないという意味になってしまい成り立たない。holiday（休日）がない、birthday（誕生日）がないという内容も、土日を好きな理由としては意味が通らない。favoriteは「いちばん好きな」という意味の形容詞である。\n\n【図解】語の意味と理由の成立\n　語｜意味｜土日が好きな理由になるか\n　school｜学校｜なる\n　weekend｜週末｜土日そのもの\n　holiday｜休日｜ならない\n　birthday｜誕生日｜ならない\n　⇒ 学校がないから好きという流れになる\n　⚠ have no 〜は「〜がない」。土日そのものを指す語を入れると、文が同じことをくり返してしまう。',
     difficulty: 'basic',
   },
   {
@@ -360,7 +360,7 @@ export const eikenQuestions4kyu5: EikenQuestion[] = [
       { key: 'D', text: 'high' },
     ],
     correctKey: 'C',
-    explanation: '天気が悪かった結果として自然なのは、1時間late（遅れて）到着したことです。early（早く）だと悪天候の結果として不自然で、fast（速く）は到着時刻ではなく速度を表し、high（高く）は文脈に合いません。',
+    explanation: 'The weather was bad（天気が悪かった）という理由があるので、飛行機は1時間late（遅れて）到着したことになる。early（早く）だと悪天候の結果として不自然になる。fastは速度を表す語で到着の遅れには使わず、highは高さを表す語なのでこの文脈には合わない。one hour lateは「1時間遅れて」。\n\n【図解】到着に関する語\n　語｜意味｜悪天候の結果になるか\n　late｜遅れて｜なる\n　early｜早く｜ならない\n　fast｜速く｜速度の話\n　high｜高く｜高さの話\n　⇒ 悪天候の結果は到着の遅れ\n　⚠ lateは時間の遅れ、fastは速度。日本語ではどちらも「おそい」と訳せるので混同しやすい。',
     difficulty: 'standard',
   },
   {
@@ -375,7 +375,7 @@ export const eikenQuestions4kyu5: EikenQuestion[] = [
       { key: 'D', text: 'eat' },
     ],
     correctKey: 'C',
-    explanation: '部屋が寒いので、窓をclose（閉める）が正解です。drink（飲む）、eat（食べる）は窓を目的語にとれず、answer（答える）は電話やドアには使いますが、寒さ対策として窓に使うのは不自然です。',
+    explanation: '2文目のIt is a little cold in here.（ここは少し寒い）が理由なので、窓をclose（閉める）が正解になる。drink（飲む）やeat（食べる）は窓を目的語にとれない。answerは「答える」という意味で、answer the doorのように玄関に出る意味では使うが、窓に対して寒さ対策として使うことはない。\n\n【図解】窓に対する動作と理由\n　動詞｜意味｜寒さへの対処になるか\n　close｜閉める｜なる\n　open｜開ける｜ならない\n　drink｜飲む｜窓には使えない\n　answer｜答える｜窓には使えない\n　⇒ 寒いので窓を閉める\n　⚠ answer the doorは「玄関に出る」という表現。同じanswerでも窓には使わないので注意する。',
     difficulty: 'basic',
   },
   {
@@ -405,7 +405,7 @@ export const eikenQuestions4kyu5: EikenQuestion[] = [
       { key: 'D', text: 'days' },
     ],
     correctKey: 'D',
-    explanation: '1週間には7つのdays（日）があります。months（月）は1年に12、hours（時間）は1日に24なので数が合いません。基本的な時間の単位（second, minute, hour, day, week, month, year）を整理しておきましょう。',
+    explanation: '1週間は7日なので、days（日）が正解になる。sevenという数が決め手である。months（月）は1年に12、hours（時間）は1日に24、weeks（週）は1年に約52あるので、いずれもsevenという数とは合わない。時間の単位はsecond、minute、hour、day、week、month、yearの順で大きくなる。\n\n【図解】時の単位と数の関係\n　単位｜数｜関係\n　days｜7｜1週間あたり\n　months｜12｜1年あたり\n　hours｜24｜1日あたり\n　weeks｜約52｜1年あたり\n　⇒ 1週間は7日なのでdays\n　⚠ sevenという数が判断の決め手になる。単位ごとの数を覚えておけばすぐに答えを選べる。',
     difficulty: 'basic',
   },
   {
@@ -420,7 +420,7 @@ export const eikenQuestions4kyu5: EikenQuestion[] = [
       { key: 'D', text: 'clean' },
     ],
     correctKey: 'B',
-    explanation: '1人で運べない理由はheavy（重い）だからです。light（軽い）なら運べるはずで意味が逆。soft（やわらかい）、clean（きれいな）は運べない理由になりません。by myself（自分1人で）も重要表現です。',
+    explanation: '2文目のI cannot carry it by myself.（自分ひとりでは運べない）が結果なので、箱はheavy（重い）ことになる。light（軽い）なら運べるはずで意味が逆になる。soft（やわらかい）やclean（きれいな）は運べない理由にならない。too 〜は「〜すぎる」、by myselfは「自分ひとりで」という重要表現である。\n\n【図解】形容詞と結果の対応\n　形容詞｜意味｜運べない理由になるか\n　heavy｜重い｜なる\n　light｜軽い｜ならない\n　soft｜やわらかい｜ならない\n　clean｜きれいな｜ならない\n　⇒ ひとりで運べない理由はheavy\n　⚠ lightは「軽い」と「明るい」の両方の意味をもつ。重さの話ではheavyの反対語として使われる。',
     difficulty: 'basic',
   },
   {
@@ -435,7 +435,7 @@ export const eikenQuestions4kyu5: EikenQuestion[] = [
       { key: 'D', text: 'have' },
     ],
     correctKey: 'D',
-    explanation: '「have a festival（祭りを開く・行う）」が正解です。haveには「（行事を）開催する」という意味があります。break（こわす）、lose（失う）は文脈に合わず、cry（泣く）は目的語をとれません。',
+    explanation: 'have a festivalは「祭りを開く・行事を催す」という意味なので、haveが正解になる。haveには「持っている」のほかに「（行事を）開催する」という用法があり、have a partyやhave a meetingのようにも使う。break（こわす）やlose（失う）は文脈に合わず、cry（泣く）は目的語をとらない自動詞である。\n\n【図解】have を使う表現\n　表現｜意味｜使う場面\n　have a festival｜祭りを開く｜学校行事\n　have a party｜パーティーを開く｜お祝い\n　have a meeting｜会議を開く｜仕事\n　have a good time｜楽しく過ごす｜感想\n　⇒ 行事を開催するのでhave\n　⚠ haveは「持つ」だけでなく「催す」の意味もある。目的語が行事を表す語なら開催の意味になる。',
     difficulty: 'standard',
   },
   {
@@ -450,7 +450,7 @@ export const eikenQuestions4kyu5: EikenQuestion[] = [
       { key: 'D', text: 'ride' },
     ],
     correctKey: 'C',
-    explanation: 'thirsty（のどがかわいた）ので、something to drink（何か飲むもの）が正解です。read（読む）、wear（着る）、ride（乗る）はのどのかわきを解決できません。hungry（空腹）ならsomething to eatになります。',
+    explanation: 'Mike is thirsty（マイクはのどがかわいている）という前提があるので、something to drink（何か飲むもの）が正解になる。read（読む）、wear（着る）、ride（乗る）ではのどのかわきは解決しない。空腹ならsomething to eatになるので、状態と必要なものを対応させて覚えておくとよい。\n\n【図解】状態と必要なもの\n　状態｜必要なもの｜英語\n　のどがかわいた｜飲み物｜something to drink\n　空腹｜食べ物｜something to eat\n　寒い｜上着｜something to wear\n　退屈｜読み物｜something to read\n　⇒ thirstyなのでsomething to drink\n　⚠ 形容詞が付くときはsomething cold to drinkの語順になる。形容詞が先、不定詞が後である。',
     difficulty: 'basic',
   },
 
@@ -467,7 +467,7 @@ export const eikenQuestions4kyu5: EikenQuestion[] = [
       { key: 'D', text: 'be' },
     ],
     correctKey: 'B',
-    explanation: '主語は「Ken and I（ケンと私）」で複数、last year（去年）があるので過去形のwereが正解です。amとisは現在形かつ単数用、beは原形なのでそのままでは述語になりません。',
+    explanation: '主語のKen and I（ケンと私）は2人なので複数あつかいになり、文末のlast year（去年）が過去を表すので、be動詞は過去形のwereが正解になる。amとisはどちらも現在形で単数に使う形なので合わない。beは原形なので、そのままでは文の動詞にならない。主語の数と時制の両方を確認する必要がある。\n\n【図解】主語と be動詞の対応\n　主語｜数｜過去のbe動詞\n　Ken and I｜複数｜were\n　Ken｜単数｜was\n　I｜1人称単数｜was\n　They｜複数｜were\n　⇒ 複数で過去の話なのでwere\n　⚠ Ken and Iは2人なので複数あつかい。Iが含まれていてもwasにはならない点に注意する。',
     difficulty: 'basic',
   },
   {
@@ -482,7 +482,7 @@ export const eikenQuestions4kyu5: EikenQuestion[] = [
       { key: 'D', text: 'Washed' },
     ],
     correctKey: 'A',
-    explanation: '「手を洗いなさい」という命令文は動詞の原形で始めます。Washes（3人称単数形）、Washing（ing形）、Washed（過去形）は命令文の先頭に置けません。命令文には主語をつけないこともポイントです。',
+    explanation: '「昼食を食べる前に手を洗いなさい」という命令文なので、動詞の原形Washで文を始める。命令文は主語を置かず動詞の原形で始めるという原則にしたがう。Washes（3人称単数現在形）、Washing（分詞）、Washed（過去形）はいずれも命令文の先頭には置けない。before you eat lunchは時を表す節である。\n\n【図解】文の種類と動詞の形\n　文の種類｜動詞の形｜例\n　命令文｜原形｜Wash your hands\n　平叙文｜主語 + 動詞｜You wash your hands\n　3人称単数現在｜washes｜He washes his hands\n　過去形｜washed｜He washed his hands\n　⇒ 命令文なので原形Washが正解\n　⚠ 命令文には主語を置かない。You washのように主語を付けると、ふつうの平叙文になってしまう。',
     difficulty: 'basic',
   },
   {
@@ -497,7 +497,7 @@ export const eikenQuestions4kyu5: EikenQuestion[] = [
       { key: 'D', text: 'not' },
     ],
     correctKey: 'A',
-    explanation: '一般動詞drinkの否定文で、主語My fatherは3人称単数なのでdoesn\'tが正解です。don\'tはI・you・複数主語用、isn\'tはbe動詞の否定なので一般動詞と一緒に使えず、notだけでは否定文を作れません。',
+    explanation: '一般動詞drinkの否定文で、主語のMy fatherは3人称単数なので、doesの否定形を使う。したがってこれが正解になる。doの否定形はIやyouや複数の主語に使う形なので合わない。be動詞の否定形は一般動詞と一緒に使えず、notだけでは否定文をつくれない。否定形の後ろは動詞の原形になる。instead は「その代わりに」という副詞で、紅茶を飲むという対比を示している。\n\n【図解】否定文の作り方\n　主語｜一般動詞の否定｜be動詞の否定\n　My father（3人称単数）｜doesの否定形｜isの否定形\n　I / you / 複数｜doの否定形｜areの否定形\n　過去の話｜didの否定形｜wasの否定形\n　否定形の後ろ｜動詞の原形｜形容詞や名詞\n　⇒ 3人称単数の一般動詞なのでdoesの否定形\n　⚠ 一般動詞の否定にbe動詞は使えない。否定形の後ろは必ず原形で、drinksとはならない点にも注意。',
     difficulty: 'basic',
   },
   {
@@ -512,7 +512,7 @@ export const eikenQuestions4kyu5: EikenQuestion[] = [
       { key: 'D', text: 'often' },
     ],
     correctKey: 'B',
-    explanation: '答えが「500円です」と値段なので、How much（いくら）が正解です。How manyは数、How oldは年齢、How oftenは頻度をたずねます。値段をたずねるHow muchは買い物の場面で必ず出る表現です。',
+    explanation: '答えのIt is five hundred yen.（500円です）が値段を示しているので、How much（いくら）が正解になる。How muchは値段や量をたずねる表現である。How manyは数、How oldは年齢、How oftenは頻度をたずねる表現なので、金額を答えるこの会話には合わない。買い物の場面で必ず出る重要表現である。\n\n【図解】How で始まる疑問表現\n　疑問表現｜たずねる内容｜答えの例\n　How much｜値段や量｜five hundred yen\n　How many｜数｜three caps\n　How old｜年齢｜twelve years old\n　How often｜頻度｜twice a week\n　⇒ 答えが金額なのでHow much\n　⚠ How muchは数えられない名詞の量にも使う。How manyとは結びつく名詞の種類が違う点も押さえる。',
     difficulty: 'basic',
   },
   {
