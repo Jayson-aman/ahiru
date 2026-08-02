@@ -100,11 +100,27 @@ grep -A2 "CERTS_COMING_SOON" services/subscription.ts
 npx tsc --noEmit                    # 型エラー0
 python3 scripts/check_diagrams.py   # 図解の崩れ0
 node scripts/check_all.js           # 整合性チェック [OK]
+node scripts/check_content.js       # 掲載文の数字が事実か
 npx expo export --platform web      # ビルドが通るか
 node scripts/serve.js & node scripts/smoke.js   # 全画面が描画されるか
 ```
 
-5つすべてがエラーなしになってから提出すること。
+6つすべてがエラーなしになってから提出すること。
+
+### ⚠️ E-1 掲載文の宣伝が事実と合っているか（ガイドライン 2.3）
+
+`node scripts/check_content.js` の最後に「ストア掲載文に書いてよい表現」が出る。
+**その指示に反する文言を `docs/STORE_LISTING.md` に書かないこと。**
+
+事実と異なる宣伝文は、**ガイドライン 2.3（正確なメタデータ）**でリジェクトされる。
+過去に危なかった例：
+
+| 書いてしまった文言 | 実際 | 正しい書き方 |
+|---|---|---|
+| サブタイトル「**全問**図解つき解説」 | 図解つきは29,150問中20,519問＝約70% | 「図解つき解説で合格へ最短ルート」 |
+| 「**すべての問題に**選択肢ごとの解説」 | 英検5,160問には選択肢ごとの解説が無い | 「英検を除くすべての資格で〜」 |
+
+資格や問題を追加したら割合が変わるので、**提出のたびに実行して数字を取り直すこと。**
 
 ---
 
