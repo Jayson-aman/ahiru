@@ -65,10 +65,13 @@ const ROUTES = [
     }
     const bad = errors.filter(e => !/Download the React DevTools|favicon|shadow\*|pointerEvents|props\.pointerEvents/i.test(e));
     const isEmpty = text.length < 20;
-    const isBuilding = /準備中|作成中/.test(text);
+    // 「問題を準備中」「テキスト作成中」＝データ未収録の空画面（本物の不具合）。
+    // 「この資格は準備中です」＝課金商品が未登録のときに出すペイウォールの案内で、
+    // 学習コンテンツ自体は表示されている（CERTS_COMING_SOON による意図的な表示）。
+    const isEmptyState = /問題を準備中|テキスト作成中|現在作成中です/.test(text);
     if (bad.length) { console.log('  [NG] ' + r + ' : ' + bad[0]); ng++; }
     else if (isEmpty) { console.log('  [NG] ' + r + ' : 画面が空（' + text.length + '文字）'); ng++; }
-    else if (isBuilding) { console.log('  [NG] ' + r + ' : 「準備中／作成中」が表示されている'); ng++; }
+    else if (isEmptyState) { console.log('  [NG] ' + r + ' : データ未収録の空画面'); ng++; }
     else console.log('  [ok] ' + r.padEnd(34) + ' ' + text.split('\n').filter(l => l.trim())[1]?.slice(0, 30));
   }
 
