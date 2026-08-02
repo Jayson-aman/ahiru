@@ -625,7 +625,7 @@ export const eikenQuestionsListening2: EikenQuestion[] = [
       { key: 'D', text: "Take the course next spring instead." },
     ],
     correctKey: 'A',
-    explanation: '男性は"make sure you can manage the workload with your job"（仕事と両立できるか確かめるように）と助言している。時間的な余裕を検討するよう勧めるAが正解。退職や開講時期の変更は提案していない。',
+    explanation: '男性はThat sounds goodと賛成しつつ、butの後にmake sure you can manage the workload with your jobと続けている。make sure (that) SVは「〜であることを必ず確かめる」という助言の定型表現で、workloadは「仕事量」、manage Aは「Aをうまくこなす」の意味である。つまり仕事と講座の両方をこなせる余裕があるか確認せよという助言であり、時間的な余裕を検討するよう促すConsider whether she has enough time for the courseが正解となる。butの直後に話し手の本当に言いたいことが来るという定石を押さえたい。退職や開講時期の変更には触れていない。\n\n【図解】助言・提案を表す表現\n　表現｜意味｜使う場面\n　make sure you can 〜｜〜できるか必ず確かめて｜相手に注意を促すとき\n　You should 〜｜〜したほうがよい｜直接的に勧めるとき\n　How about 〜ing｜〜してはどうか｜提案を持ちかけるとき\n　That sounds good, but 〜｜よさそうだが〜｜賛成しつつ条件をつけるとき\n　⇒ butの後ろが助言の中身なので、そこを聞き取る\n　⚠ Quit her jobは仕事を辞めること。仕事を続けたまま両立せよという助言とは正反対である。',
     difficulty: 'advanced',
   },
   {
@@ -641,7 +641,7 @@ export const eikenQuestionsListening2: EikenQuestion[] = [
       { key: 'D', text: "The menu is too expensive." },
     ],
     correctKey: 'B',
-    explanation: '女性が「予約しておくべきだった。40分ほど待たなければならないと店員が言っている」と話している。長時間待つ必要があることが問題なのでBが正解。閉店・財布・値段の話は出てきていない。',
+    explanation: '女性のWe should have made a reservationは「予約しておけばよかった」という後悔を表す助動詞＋完了形である。続けてwe will have to wait about forty minutesと店員の話を伝えており、40分待ちが目下の問題だとわかる。What is the problem?型の設問では、話し手が実際に困っている事実を1つに絞ればよい。ここではテーブルが空くまで長時間待つことなので、They have to wait a long time for a tableが正解である。店は混雑しているだけで閉店してはおらず、財布や値段の話も出てこない。\n\n【図解】後悔・推量を表す助動詞＋完了形\n　表現｜意味｜使う場面\n　should have made｜〜しておけばよかった｜自分の判断を悔やむとき\n　must have been｜〜だったにちがいない｜過去を確信して推量するとき\n　could have gone｜〜できたのに｜実現しなかった可能性を言うとき\n　need not have paid｜払う必要はなかったのに｜無駄だったと言うとき\n　⇒ should have 過去分詞は後悔を表し、問題発生の合図になる\n　⚠ crowdedは「混雑した」であって「閉店した」ではない。closedと取り違えない。',
     difficulty: 'advanced',
   },
   {
@@ -657,7 +657,7 @@ export const eikenQuestionsListening2: EikenQuestion[] = [
       { key: 'D', text: "Snow boots." },
     ],
     correctKey: 'C',
-    explanation: 'アナウンスでは"Meal coupons are available at the service counter next to Gate 12"（12番ゲート横のサービスカウンターで食事券を配布している）と案内している。Cが正解。搭乗券やホテルの話は出てきていない。',
+    explanation: 'アナウンスはDue to heavy snow, departure will be delayed by approximately two hoursと遅延を伝えたうえで、Meal coupons are available at the service counter next to Gate 12と案内している。availableは「入手できる、利用できる」の意味で、配布や提供を表す定番語である。設問はサービスカウンターで何が得られるかを問うているので、Meal couponsが正解となる。due toは理由を表す前置詞句でbecause ofと同義である。空港のアナウンスでは、遅延の理由・受けられる補償・その場所という3点が問われやすい。\n\n【図解】空港アナウンス頻出の表現\n　表現｜意味｜使う場面\n　due to 〜｜〜が原因で｜遅延や中止の理由を述べる\n　be available at 〜｜〜で入手できる｜配布物や補償を案内する\n　be delayed by 〜｜〜だけ遅れる｜遅延の幅を示す\n　next to 〜｜〜のとなりに｜場所を案内する\n　⇒ availableの直前の名詞がもらえる物にあたる\n　⚠ delayed by two hoursのbyは差を表す。2時間後という時刻の意味ではない。',
     difficulty: 'advanced',
   },
   {
@@ -673,7 +673,7 @@ export const eikenQuestionsListening2: EikenQuestion[] = [
       { key: 'D', text: "Cycling on the main road is dangerous." },
     ],
     correctKey: 'D',
-    explanation: '男性は"I\'m glad because riding on the main road is dangerous"（幹線道路を走るのは危険だからうれしい）と理由を述べている。Dが正解。自転車店の経営や自宅の場所については話していない。',
+    explanation: '男性はYesと賛成したうえでI am glad because riding on the main road is dangerousと述べている。設問はWhyで理由を問うものだから、because以下がそのまま答えになり、Cycling on the main road is dangerousが正解である。会話のridingが選択肢ではcyclingに言い換えられている点に注意したい。リスニングでは、正解の選択肢ほど本文と同じ語を使わず同義語に置き換えられることが多く、逆に本文の語をそのまま含む選択肢がひっかけになりやすい。自転車店の経営や自宅の位置については一切触れていない。\n\n【図解】理由の表現と選択肢の言い換え\n　表現｜意味｜使う場面\n　because 〜｜〜だから｜理由を直接述べる\n　That is why 〜｜だから〜なのだ｜結果のほうを導く\n　riding a bicycle｜自転車に乗ること｜会話での言い方\n　cycling｜自転車に乗ること｜選択肢での言い換え\n　⇒ Whyの問いにはbecause以下の内容が答えになる\n　⚠ 正解は本文と同じ語を使わないことが多い。ridingとcyclingを結び付ける。',
     difficulty: 'advanced',
   },
   {
@@ -689,7 +689,7 @@ export const eikenQuestionsListening2: EikenQuestion[] = [
       { key: 'D', text: "A new computer." },
     ],
     correctKey: 'B',
-    explanation: '女性は「あとは大阪支社の数字を加えるだけで、1時間以内に届くはず」と話している。待っているのは大阪支社からのデータなのでBが正解。会議は2時に始まる予定だが、彼女が「待っている」ものとして述べたのは数字の方。',
+    explanation: '女性はAlmostと答えて作業がほぼ終わっていることを示したうえで、I just need to add the figures from the Osaka branch, which should arrive within the hourと述べている。I just need to 〜は「あとは〜するだけだ」という残作業の言い方で、figuresは「数字、データ」を指す。到着を待っているのは大阪支社の数字なので、Figures from the Osaka branchが正解である。会議が2時に始まるのは事実だが、それは待っている対象ではない。within the hourは「1時間以内に」を表す。\n\n【図解】仕事の進捗を伝える表現\n　表現｜意味｜使う場面\n　Almost.｜あと少しで終わる｜進捗をたずねられたとき\n　I just need to 〜｜あとは〜するだけ｜残作業を伝えるとき\n　figures｜数字、データ｜売上や集計を指すとき\n　within the hour｜1時間以内に｜到着の見込みを言うとき\n　⇒ 待っている物はneed to addの目的語にあたる\n　⚠ 会議の開始時刻も聞こえるが待っている対象ではない。図形のfigureとも混同しない。',
     difficulty: 'advanced',
   },
   {
@@ -705,7 +705,7 @@ export const eikenQuestionsListening2: EikenQuestion[] = [
       { key: 'D', text: "Use the elevator to the roof." },
     ],
     correctKey: 'A',
-    explanation: 'アナウンスでは「地下駐車場は清掃のため今夜9時に閉鎖されるので、それまでに車を移動してください」と案内している。Aが正解。30%はコートの割引率であり駐車料金の話ではない。コート売り場は2階なのでBも誤り。',
+    explanation: 'アナウンスは2つの情報を伝えている。1つは2階の冬物コートが本日限り30%引きであること、もう1つは地下駐車場が清掃のため今夜9時に閉まるので、それまでに車を移動してほしいということである。設問は地下に駐車した客がすべきことを問うているので、9時前に車を移動するというAが正解となる。Today onlyは「本日限り」、thirty percent offは「30%引き」、close at nineは「9時に閉まる」を表す。数字と場所を入れ替えたひっかけが並ぶので、どの情報が誰に向けたものかを整理しながら聞く必要がある。\n\n【図解】館内アナウンスの情報整理\n　情報｜内容｜対応する行動\n　セール｜2階の冬物コートが30%引き｜買いたい客が2階へ行く\n　閉鎖時刻｜地下駐車場が今夜9時に閉まる｜9時前に車を移動する\n　理由｜清掃のため｜当日限りの措置である\n　⇒ 設問が問う対象者を確かめてから該当情報を選ぶ\n　⚠ 30%は割引率で駐車料金ではない。コート売り場も1階ではなく2階である。',
     difficulty: 'advanced',
   },
   {
@@ -721,7 +721,7 @@ export const eikenQuestionsListening2: EikenQuestion[] = [
       { key: 'D', text: "His laptop with the slides is broken." },
     ],
     correctKey: 'D',
-    explanation: '男性は「ノートパソコンが突然動かなくなり、スライドは全部その中にある」と話している。スライドの入ったパソコンの故障が問題なのでDが正解。プレゼンを忘れたわけでも、パソコンを置き忘れたわけでもない。',
+    explanation: '男性はMy presentation is tomorrow, but my laptop suddenly stopped working, and all my slides are on itと述べている。stop workingは機械が「動かなくなる、故障する」という意味の定型表現で、選択肢ではbrokenに言い換えられている。したがってHis laptop with the slides is brokenが正解である。プレゼンを忘れたのでも、電車に置き忘れたのでもない。You look worried. Is something wrong?という切り出しの後に相手の問題が語られる、という会話の型を知っておくと、答えにあたる部分を構えて聞くことができる。\n\n【図解】不調・故障を表す表現\n　表現｜意味｜使う場面\n　stop working｜動かなくなる｜機械が急に故障したとき\n　be broken｜壊れている｜状態として述べるとき\n　be out of order｜故障中である｜公共の機器の掲示など\n　break down｜故障する｜車や大型機器が止まるとき\n　⇒ stopped workingとbrokenは同じ状況の言い換えである\n　⚠ leave a laptop on the trainは置き忘れであり、故障とは別の事態である。',
     difficulty: 'advanced',
   },
   {
@@ -737,7 +737,7 @@ export const eikenQuestionsListening2: EikenQuestion[] = [
       { key: 'D', text: "The building will be painted." },
     ],
     correctKey: 'C',
-    explanation: 'アナウンスでは"while new air conditioners are installed"（新しいエアコンの設置工事の間）と閉館の理由を説明している。Cが正解。返却期限が月・火の本は金曜まで延滞料なしで返せるという救済措置も案内されている。',
+    explanation: 'アナウンスはThe school library will be closed next Monday and Tuesday while new air conditioners are installedと述べている。設問はWhyで閉館の理由を問うものだから、whileの節がそのまま答えとなり、Air conditioners will be installedが正解である。ここでのwhileは「〜している間」で工事の期間を示す。続くBooks due on those days can be returned by Friday without a fineでは、dueが「期限が来ている」、fineが「延滞料」の意味で使われており、fineを形容詞の「元気な」と取ると文意が通らなくなる。\n\n【図解】学校アナウンスの頻出語\n　語句｜意味｜使う場面\n　be installed｜設置される｜工事や機器更新の説明\n　due｜期限が来ている｜返却日や提出期限\n　without a fine｜延滞料なしで｜救済措置の案内\n　while 〜｜〜している間｜期間を示す\n　⇒ Whyの問いにはwhile節の工事内容が答えになる\n　⚠ fineは形容詞なら「元気な」だが、ここでは名詞で「延滞料」である。',
     difficulty: 'advanced',
   },
   {
@@ -753,7 +753,7 @@ export const eikenQuestionsListening2: EikenQuestion[] = [
       { key: 'D', text: "It has a beautiful garden." },
     ],
     correctKey: 'B',
-    explanation: '女性は「部屋は広くなり職場にも近いが、家賃は前より少し高い」と説明している。Bが正解。A・Cは内容が逆で、庭の話は出てきていない。長所と短所の両方を聞き取るのがポイント。',
+    explanation: '女性はThe rooms are bigger, and it is closer to my office, but the rent is a little higher than beforeと述べ、長所を2つ、短所を1つ並べている。bigger・closer・higherという比較級はいずれも以前の住まいとの比較である。したがってIt is larger and closer to work, but costs moreが正解となる。Aのsmaller but cheaperやCのfar from her officeは内容が逆で、庭の話は出ていない。butの前後をどちらも取りこぼさずに聞くことが、長所と短所を並べる型の設問を解く鍵になる。\n\n【図解】長所と短所を並べる表現\n　表現｜意味｜使う場面\n　A, but B｜Aだが一方でB｜利点と難点を並べるとき\n　bigger than before｜以前より広い｜比較級で変化を示す\n　a little higher｜少し高い｜差が小さいことを添える\n　rent｜家賃｜住居の費用を言うとき\n　⇒ butの前が長所、後ろが短所という構図になる\n　⚠ closer to my officeは職場に近いこと。far fromとは正反対である。',
     difficulty: 'advanced',
   },
   {
@@ -769,7 +769,7 @@ export const eikenQuestionsListening2: EikenQuestion[] = [
       { key: 'D', text: "Call the emergency number." },
     ],
     correctKey: 'D',
-    explanation: '留守番電話では"If you have severe pain, please call the emergency line"（激しい痛みがある場合は緊急ダイヤルに電話してください）と案内している。Dが正解。診療所は本日休みなのでAは誤り。予約は平日の診療時間内にかけ直す必要がある。',
+    explanation: '留守番電話の音声はOur office is closed todayと伝えたうえで、If you have severe pain, please call the emergency line at 555-0199と案内している。severeは痛みなどが「激しい」、emergency lineは「緊急連絡先」の意味である。したがってCall the emergency numberが正解となる。本日休診なのでAの即時来院はできず、予約は月曜から金曜の9時から5時という診療時間内にかけ直す必要がある。条件を表すIfの節が案内の対象者を示すので、その部分を必ず聞き取ることが重要である。\n\n【図解】電話案内の頻出表現\n　表現｜意味｜使う場面\n　If you have 〜｜〜の場合は｜対象者を限定するとき\n　call back｜かけ直す｜営業時間外の案内\n　during office hours｜営業時間内に｜受付時間を示すとき\n　Monday through Friday｜月曜から金曜まで｜期間を示すとき\n　⇒ Ifの節が条件、続く命令文が取るべき行動である\n　⚠ 予約の場合と緊急の場合とで案内先が違う。設問がどちらかを確認する。',
     difficulty: 'advanced',
   },
   {
@@ -785,7 +785,7 @@ export const eikenQuestionsListening2: EikenQuestion[] = [
       { key: 'D', text: "Coming back tomorrow morning." },
     ],
     correctKey: 'A',
-    explanation: '男性は美術館が月末まで改装休館中だと伝えたうえで、「公園近くの市立ギャラリーで特別展をやっている」と代わりの行き先を示唆している。Aが正解。バスの乗り換えや翌日の再訪は提案していない。',
+    explanation: '男性はバスが美術館へ行くことを認めたうえで、the museum is closed for renovation until the end of the monthと伝え、The city gallery near the park has a special exhibition, thoughと続けている。文末のthoughは「でもね、ただし」と前言に補足を加える副詞で、ここでは代案を示す働きをしている。したがってVisiting the city gallery insteadが正解である。別のバスに乗れとも翌朝出直せとも言っていない。renovationは「改装」の意味で、施設の一時休業の理由としてよく登場する。\n\n【図解】代案を示す表現\n　表現｜意味｜使う場面\n　〜, though｜でもね、ただし｜文末で補足や代案を添える\n　instead｜その代わりに｜別の選択肢を示す\n　closed for renovation｜改装のため閉館中｜施設の休業理由\n　How about 〜ing｜〜してはどうか｜提案するとき\n　⇒ 文末のthoughの直前に代案の中身が置かれる\n　⚠ 文末のthoughは副詞。接続詞のalthoughと混同しない。',
     difficulty: 'advanced',
   },
   {
@@ -801,7 +801,7 @@ export const eikenQuestionsListening2: EikenQuestion[] = [
       { key: 'D', text: "At ten this morning." },
     ],
     correctKey: 'C',
-    explanation: 'アナウンスでは「今日午後3時に予定されていた避難訓練は、強風のため明日午前10時に変更された」と伝えている。Cが正解。変更前の時刻（今日3時）と混同しないことがポイント。避難時は最寄りの階段を使い東駐車場に集合する。',
+    explanation: 'アナウンスは、今日の午後3時に予定されていた避難訓練が、強風のため明日の午前10時に変更されたと伝えている。be moved to 〜は予定が「〜へ移される」という意味で、変更後の時刻は必ずtoの後ろに来る。したがってAt ten tomorrow morningが正解である。変更前の時刻をそのまま選ばせるのがこの型の定番のひっかけになる。あわせてleave the building by the nearest stairwayという避難経路、gather in the east parking lotという集合場所も述べられており、変更後の時刻・経路・集合場所の3点が問われやすい。\n\n【図解】予定変更のアナウンス\n　表現｜意味｜使う場面\n　be scheduled for 〜｜〜に予定されている｜変更前の予定を示す\n　be moved to 〜｜〜に変更される｜変更後の時刻を示す\n　be postponed until 〜｜〜まで延期される｜先送りを伝える\n　be called off｜中止される｜取りやめを伝える\n　⇒ 変更後の時刻はmoved toの後ろにある\n　⚠ 変更前の時刻をそのまま選ぶのが定番の誤り。fromとtoを聞き分ける。',
     difficulty: 'advanced',
   },
   {
@@ -817,7 +817,7 @@ export const eikenQuestionsListening2: EikenQuestion[] = [
       { key: 'D', text: "She has to work until eight." },
     ],
     correctKey: 'D',
-    explanation: '女性は"my shift ends at eight, so I\'ll be about an hour late"（シフトが8時に終わるので1時間ほど遅れる）と説明している。仕事が8時まであることが遅刻の理由なのでDが正解。通院・招待状・電車の遅延の話は出てきていない。',
+    explanation: '女性はI want to, but my shift ends at eight, so I will be about an hour lateと述べている。shiftは「勤務時間、交代制の勤務」の意味で、仕事が8時まであることが遅刻の理由である。したがってShe has to work until eightが正解となる。I want to, butという言い方は、参加の意思はあるが支障があるという構図を作るので、butの後ろに理由が置かれる。通院・招待状の紛失・電車の遅延はいずれも述べられていない。soの後ろは理由ではなく結果である点も押さえておきたい。\n\n【図解】理由と支障を伝える表現\n　表現｜意味｜使う場面\n　I want to, but 〜｜行きたいが〜｜意思はあるが支障があるとき\n　my shift ends at 〜｜勤務が〜時に終わる｜勤務時間を伝えるとき\n　so I will be late｜だから遅れる｜結果を述べるとき\n　farewell party｜送別会｜別れを惜しむ集まり\n　⇒ butとsoに挟まれた部分が遅刻の理由になる\n　⚠ 8時は勤務の終了時刻であって、パーティーの開始時刻ではない。',
     difficulty: 'advanced',
   },
   {
@@ -833,7 +833,7 @@ export const eikenQuestionsListening2: EikenQuestion[] = [
       { key: 'D', text: "A veterinarian will give a talk." },
     ],
     correctKey: 'B',
-    explanation: 'アナウンスでは「代わりに3時30分からペンギンプールで特別な餌やりイベントを行う」と案内している。Bが正解。3時のイルカショーは中止されており、Aは誤り。閉館や獣医の講演の話は出てきていない。',
+    explanation: 'アナウンスは、イルカが治療中のため3時のイルカショーは中止であると伝えたうえで、Instead, a special feeding event will be held at the penguin pool at three thirtyと案内している。insteadは「その代わりに」で、直前に述べた中止の代替を示す語である。設問は3時30分に何が行われるかを問うので、A feeding event will be held at the penguin poolが正解となる。中止になったショーの3時と代替イベントの3時30分という2つの時刻が出てくるため、どちらを問われているかの確認が欠かせない。\n\n【図解】中止と代替の案内\n　表現｜意味｜使う場面\n　be canceled｜中止される｜予定の取りやめを伝える\n　instead｜その代わりに｜代替の催しを示す\n　be held at 〜｜〜で開催される｜場所や時刻を示す\n　receive medical care｜治療を受ける｜中止の理由を述べる\n　⇒ insteadの後ろが代わりに行われる催しである\n　⚠ 3時と3時30分の2つの時刻が出る。設問がどちらを問うかを確認する。',
     difficulty: 'advanced',
   },
   {
@@ -849,7 +849,7 @@ export const eikenQuestionsListening2: EikenQuestion[] = [
       { key: 'D', text: "He doesn't like planning tours." },
     ],
     correctKey: 'A',
-    explanation: '男性は「ツアーの企画は楽しいが、ほとんどの週末に働かなければならず、最近友人になかなか会えない」と話している。週末勤務が難点なのでAが正解。給料や通勤距離の話はなく、企画の仕事自体は楽しんでいるのでDは誤り。',
+    explanation: '男性はI enjoy planning tours, but I have to work most weekends, so I hardly see my friends these daysと述べている。設問はdisadvantage（難点）を問うものだから、butの後ろの内容が答えとなり、He has to work on most weekendsが正解である。hardlyは「ほとんど〜ない」を表す準否定語で、notと同様に否定の意味を持つ点に注意したい。ツアーの企画そのものは楽しんでいるのでDは誤りであり、給料や通勤距離についての言及もない。\n\n【図解】準否定語と長所短所の対比\n　表現｜意味｜使う場面\n　hardly 〜｜ほとんど〜ない｜頻度が非常に低いとき\n　rarely 〜｜めったに〜ない｜同じく準否定を表す\n　I enjoy 〜, but …｜〜は楽しいが…｜長所の後に難点を述べる\n　most weekends｜ほとんどの週末｜高い頻度を示す\n　⇒ 難点を問う設問ではbutの後ろを聞き取る\n　⚠ hardlyは「一生懸命」ではない。副詞のhardと混同しない。',
     difficulty: 'advanced',
   },
   {
@@ -865,7 +865,7 @@ export const eikenQuestionsListening2: EikenQuestion[] = [
       { key: 'D', text: "Ask questions during the lecture." },
     ],
     correctKey: 'C',
-    explanation: 'アナウンスでは"you may take photos of the slides after the talk"（講演後にスライドの写真撮影は可能）と案内している。Cが正解。録音は禁止、携帯電話は電源を切るよう求められているのでA・Bは誤り。質問についての言及はない。',
+    explanation: '案内はplease make sure your mobile phones are switched offと携帯電話の電源を切るよう求めたうえで、Recording the lecture is not allowed, but you may take photos of the slides after the talkと続けている。mayは許可を表す助動詞なので、許されている行為はスライドの撮影である。したがってPhotograph the slides after the talkが正解となる。録音は禁止、電話は電源を切るよう指示されているのでAとBは誤りで、質疑については言及がない。禁止と許可が並ぶ案内では、not allowedとmayの位置関係を聞き分けることが決め手になる。\n\n【図解】許可と禁止を表す表現\n　表現｜意味｜使う場面\n　you may 〜｜〜してもよい｜許可を与えるとき\n　be not allowed｜許可されていない｜禁止を伝えるとき\n　make sure 〜 is switched off｜必ず電源を切る｜注意事項を伝えるとき\n　after the talk｜講演の後で｜許可の条件を示す\n　⇒ mayの後ろに置かれた行為だけが許可されている\n　⚠ 許可には条件がつく。after the talkを聞き落とすと誤答になる。',
     difficulty: 'advanced',
   },
   {
@@ -881,7 +881,7 @@ export const eikenQuestionsListening2: EikenQuestion[] = [
       { key: 'D', text: "He rarely drives now that he works from home." },
     ],
     correctKey: 'D',
-    explanation: '男性は"I hardly ever drive since I started working from home"（在宅勤務を始めてからほとんど運転しない）と売却の理由を説明している。Dが正解。家の購入資金・車の old さ・駐車料金の話は出てきていない。',
+    explanation: '男性はI am planning to sell my car. I hardly ever drive since I started working from homeと売却の理由を述べている。hardly everは「めったに〜しない」を表し、選択肢ではrarelyに言い換えられている。またsinceはここでは「〜して以来」の意味で、在宅勤務の開始が変化の起点であることを示す。したがってHe rarely drives now that he works from homeが正解となる。女性のYou could rent one when you really need itは代案の提示にすぎず、家の購入資金や駐車料金の話は出ていない。\n\n【図解】頻度と起点を表す表現\n　表現｜意味｜使う場面\n　hardly ever｜めったに〜しない｜低い頻度を表す\n　rarely｜めったに〜しない｜同義の言い換え\n　since 〜｜〜して以来｜変化の起点を示す\n　now that 〜｜今や〜なので｜現状を理由として述べる\n　⇒ hardly everとrarelyは同じ頻度を表す言い換えである\n　⚠ sinceは理由の「〜なので」にもなる。ここでは起点を表している。',
     difficulty: 'advanced',
   },
   {
@@ -897,7 +897,7 @@ export const eikenQuestionsListening2: EikenQuestion[] = [
       { key: 'D', text: "Taking a different trail." },
     ],
     correctKey: 'A',
-    explanation: '男性は"Let\'s take a break at the next rest area"（次の休憩所で休もう）と提案している。Aが正解。下山や別ルートの提案はしておらず、頂上まではまだ2時間あると述べているだけである。',
+    explanation: '男性のLet us take a break at the next rest areaは相手を誘う提案の表現で、take a breakは「ひと休みする」の意味である。設問は男性が何を提案しているかを問うので、Resting at the next rest areaが正解となる。続くWe still have two hours to the topは頂上まであと2時間かかるという情報の補足にすぎず、下山や別ルートの提案ではない。Let usで始まる文や動詞の原形で始まる文は提案・勧誘の合図になるので、その直後の動詞句をそのまま答えとして拾えばよい。\n\n【図解】提案・勧誘を表す表現\n　表現｜意味｜使う場面\n　Let us 〜｜〜しよう｜一緒の行動を提案する\n　Shall we 〜｜〜しましょうか｜相手の意向をたずねる\n　take a break｜ひと休みする｜休憩を提案する\n　still have two hours｜まだ2時間ある｜残りを伝える補足\n　⇒ 提案の中身はLet usの直後の動詞句にある\n　⚠ 頂上まで2時間という発言は補足情報。提案そのものではない。',
     difficulty: 'advanced',
   },
   {
@@ -913,7 +913,7 @@ export const eikenQuestionsListening2: EikenQuestion[] = [
       { key: 'D', text: "Wait by the main entrance until closing." },
     ],
     correctKey: 'C',
-    explanation: 'アナウンスでは「持ち主は身分証明書を持って正面入口横のインフォメーションデスクまでお越しください」と案内している。Cが正解。果物売り場は財布が見つかった場所であり、行くべき場所ではない。',
+    explanation: 'アナウンスは、1階の果物売り場付近で黒い財布が見つかったと伝えたうえで、The owner is asked to come to the information desk by the main entrance with some identificationと呼びかけている。be asked to 〜は「〜するよう求められている」という丁寧な指示の表現で、identificationは「身分証明書」の意味である。したがってCome to the information desk with identificationが正解となる。果物売り場は財布が見つかった場所であって、持ち主が向かうべき場所ではない。\n\n【図解】場所と指示を表す表現\n　表現｜意味｜使う場面\n　be asked to 〜｜〜するよう求められる｜丁寧に指示するとき\n　by the main entrance｜正面入口のそばに｜位置を示すとき\n　identification｜身分証明書｜本人確認を求めるとき\n　near the fruit section｜果物売り場の近くで｜発見場所を示すとき\n　⇒ 発見場所と受け取り場所は別であることに注意する\n　⚠ byは期限の「〜までに」にもなるが、ここでは位置の「〜のそばに」である。',
     difficulty: 'advanced',
   },
   {
@@ -929,7 +929,7 @@ export const eikenQuestionsListening2: EikenQuestion[] = [
       { key: 'D', text: "Give extensions to only a few students." },
     ],
     correctKey: 'B',
-    explanation: '教授は"I\'ll move it from Friday to next Tuesday, but no further extensions"（金曜から来週の火曜に延ばすが、それ以上の延長はしない）と決めている。Bが正解。課題の中止や試験を易しくするという話はしていない。',
+    explanation: '学生の依頼に対し、教授はI understandと受けたうえで、I will move it from Friday to next Tuesday, but no further extensionsと述べている。move it from A to Bは期限をAからBへ移すことを表すので、新しい締切は来週の火曜である。したがってExtend the deadline to next Tuesdayが正解となる。no further extensionsは「これ以上の延長はしない」という意味であり、延長そのものは認めている点を取り違えてはならない。課題の中止や試験の難易度については何も述べていない。\n\n【図解】期限の変更に関する表現\n　表現｜意味｜使う場面\n　extend the deadline｜締切を延ばす｜猶予を求める、与える\n　move it from A to B｜AからBへ移す｜変更前後を示す\n　no further extensions｜これ以上の延長はなし｜条件をつけるとき\n　cancel the assignment｜課題を取りやめる｜課題自体をなくす\n　⇒ 変更後の期限はtoの後ろに置かれる\n　⚠ no further extensionsは中止ではない。延長は1回だけ認められている。',
     difficulty: 'advanced',
   },
 ];
