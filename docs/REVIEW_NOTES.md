@@ -88,6 +88,9 @@ of past official exam questions (transcribed for study purposes with detailed
 explanations, not for redistribution). Also unlocks the full study text of 300
 sections across the four subject areas, with diagrams, comparison tables and
 frequently-tested figures.
+
+Terms of Use (EULA): https://jayson-aman.github.io/ahiru/legal/terms.html
+Privacy Policy: https://jayson-aman.github.io/ahiru/legal/privacy.html
 ```
 
 ### FP（`pro_fp`）
@@ -217,6 +220,9 @@ extinguishing theory, and the properties, fire prevention and extinguishing
 methods for Class 4 substances. Also unlocks a mock exam reproducing the real
 35-question format and a study text of 300 sections with diagrams and
 comparison tables.
+
+Terms of Use (EULA): https://jayson-aman.github.io/ahiru/legal/terms.html
+Privacy Policy: https://jayson-aman.github.io/ahiru/legal/privacy.html
 ```
 
 ### コンクリート技士・診断士（`pro_concrete`）
@@ -235,6 +241,9 @@ control, construction practice, special concretes, and deterioration
 diagnosis, repair and strengthening. Also unlocks a 40-question mock exam and
 a study text of 300 sections with diagrams, JIS reference values and worked
 calculation examples.
+
+Terms of Use (EULA): https://jayson-aman.github.io/ahiru/legal/terms.html
+Privacy Policy: https://jayson-aman.github.io/ahiru/legal/privacy.html
 ```
 
 ### 1級電気通信工事施工管理技士（`pro_tsushin`）
@@ -254,6 +263,9 @@ and disaster-prevention systems), construction management methods, and
 related law including the Construction Business Act, the Telecommunications
 Business Act and the Radio Act. Also unlocks a 60-question mock exam and a
 study text of 300 sections with diagrams and worked calculation examples.
+
+Terms of Use (EULA): https://jayson-aman.github.io/ahiru/legal/terms.html
+Privacy Policy: https://jayson-aman.github.io/ahiru/legal/privacy.html
 ```
 
 ### 二級建築士（`pro_nikkyu`）
@@ -271,6 +283,9 @@ codes and regulations, structural engineering and materials, and construction
 practice. Also unlocks a 100-question mock exam reproducing the real written
 format, a study text of 300 sections with diagrams and worked calculations,
 and a 28-section guide for the second-stage design drawing examination.
+
+Terms of Use (EULA): https://jayson-aman.github.io/ahiru/legal/terms.html
+Privacy Policy: https://jayson-aman.github.io/ahiru/legal/privacy.html
 ```
 
 ### 第二種電気工事士（`pro_denki2`）
@@ -289,6 +304,9 @@ materials and tools, and law with wiring diagrams. Also unlocks a 50-question
 mock exam reproducing the real written format and a study text of 300 sections
 including a step-by-step method for drawing the two-line wiring diagrams
 required in both the written and practical examinations.
+
+Terms of Use (EULA): https://jayson-aman.github.io/ahiru/legal/terms.html
+Privacy Policy: https://jayson-aman.github.io/ahiru/legal/privacy.html
 ```
 
 ### ~~中学受験対策（`pro_juken`）~~ ※現在は提供なし
