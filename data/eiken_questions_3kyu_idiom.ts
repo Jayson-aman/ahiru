@@ -12,7 +12,7 @@ export const eikenQuestions3kyuIdiom: EikenQuestion[] = [
       { key: 'D', text: 'over' },
     ],
     correctKey: 'D',
-    explanation: '"get over 〜"（〜から回復する、〜を乗り越える）が正解。病気やつらい経験から立ち直る場面で使う。',
+    explanation: '"get over 〜"（〜から回復する、〜を乗り越える）が正解。病気やつらい経験から立ち直る場面で使う。\n\nget over の over は「〜を越えて向こう側へ」というイメージで、病気やショックという山を越えて元の状態に戻ることを表す。目的語には cold、flu、shock、the loss などが来る。It took me a long time to 〜（〜するのに長くかかった）という前半が、回復に時間を要したことを示している。\n\n【図解】get ＋ 副詞の使い分け\n　表現｜意味｜使う場面\n　get over｜回復する, 乗り越える｜病気, ショック\n　get along｜仲良くやる, うまくいく｜人間関係\n　get through｜やり遂げる, 通じる｜仕事, 電話\n　⇒ 風邪から立ち直るなら get over\n　⚠ get off は「降りる, 出発する」で回復の意味はない。over と off を取り違えない。',
     difficulty: 'standard',
   },
   {
@@ -25,7 +25,7 @@ export const eikenQuestions3kyuIdiom: EikenQuestion[] = [
       { key: 'D', text: 'into' },
     ],
     correctKey: 'D',
-    explanation: '"run into 〜"（〜に偶然出会う）が正解。"run across" も同様の意味で使われるが、3級レベルでは "run into" がより頻出。',
+    explanation: '"run into 〜"（〜に偶然出会う）が正解。"run across" も同様の意味で使われるが、3級レベルでは "run into" がより頻出。\n\nrun into 〜 は「〜にばったり出会う」で、予定していなかった再会を表す。into には「中へ突っ込む」イメージがあり、そこから「思いがけずぶつかる＝偶然会う」の意味になった。人だけでなく trouble を目的語にすると「困難にぶつかる」の意味にもなる。\n\n【図解】偶然の出会いを表す表現\n　表現｜意味｜出会う相手\n　run into｜ばったり会う｜人\n　bump into｜偶然出会う｜人\n　come across｜偶然見つける, 出くわす｜人, 物, 情報\n　⇒ スーパーでの偶然の再会なら run into\n　⚠ run over は「車でひく」という危険な意味。into と over を取り違えない。',
     difficulty: 'standard',
   },
   {
@@ -38,7 +38,7 @@ export const eikenQuestions3kyuIdiom: EikenQuestion[] = [
       { key: 'D', text: 'on' },
     ],
     correctKey: 'C',
-    explanation: '"keep in touch with 〜"（〜と連絡を取り合う）が正解。別れの場面でよく使う定番表現。',
+    explanation: '"keep in touch with 〜"（〜と連絡を取り合う）が正解。別れの場面でよく使う定番表現。\n\nkeep in touch with 〜 は「〜と連絡を取り合う」で、touch は「接触」の意味。引っ越しや卒業など、離れる場面での定番のあいさつ表現として頻出する。連絡を取り始めるときは get in touch with、連絡が途絶えるときは lose touch with となる。\n\n【図解】touch を使う連絡表現\n　表現｜意味｜段階\n　get in touch with｜連絡を取る｜開始\n　keep in touch with｜連絡を取り合う｜継続\n　lose touch with｜連絡が途絶える｜断絶\n　⇒ 引っ越し後も連絡してねなら keep in touch\n　⚠ lose のときだけ in が消えて lose touch with になる。in の有無が出題される。',
     difficulty: 'standard',
   },
   {
@@ -51,7 +51,7 @@ export const eikenQuestions3kyuIdiom: EikenQuestion[] = [
       { key: 'D', text: 'up' },
     ],
     correctKey: 'D',
-    explanation: '"make up one\'s mind"（決心する）が正解。決断力があることを表す表現。',
+    explanation: '"make up one\'s mind"（決心する）が正解。決断力があることを表す表現。\n\nmake up one’s mind は「心を決める、決心する」で、mind（心）を組み立て上げる（make up）というイメージ。決める内容は to 不定詞や about で示す。主語に合わせて one’s の部分が my / her / his と変わる点に注意する。\n\n【図解】mind を使う表現\n　表現｜意味｜使う場面\n　make up ones mind｜決心する｜進路, 買い物\n　change ones mind｜気が変わる｜決定の撤回\n　keep in mind｜心にとどめる｜注意事項\n　⇒ すばやく決断できるなら make up her mind\n　⚠ make out は「理解する, 判読する」で決心の意味はない。up と out を混同しない。',
     difficulty: 'standard',
   },
   {
@@ -64,7 +64,7 @@ export const eikenQuestions3kyuIdiom: EikenQuestion[] = [
       { key: 'D', text: 'up' },
     ],
     correctKey: 'D',
-    explanation: '"come up with 〜"（〜を思いつく）が正解。アイデアや解決策を生み出す場面での必修表現。',
+    explanation: '"come up with 〜"（〜を思いつく）が正解。アイデアや解決策を生み出す場面での必修表現。\n\ncome up with 〜 は「（考えを）思いつく」で、頭の中からアイデアが浮かび上がってくる（come up）イメージ。目的語には idea、plan、solution、answer が来る。3語で1つの他動詞のように働くので、with を落とさないことが重要。\n\n【図解】アイデアに関する表現\n　表現｜意味｜典型目的語\n　come up with｜思いつく｜idea, plan, solution\n　think of｜思いつく, 考える｜idea, name\n　work out｜考え出して解決する｜problem, answer\n　⇒ a great idea が続くなら come up with\n　⚠ come across は「偶然出くわす」で、自分で考え出す意味はない。up with が揃って初めて発案の意味になる。',
     difficulty: 'standard',
   },
   {
@@ -77,7 +77,7 @@ export const eikenQuestions3kyuIdiom: EikenQuestion[] = [
       { key: 'D', text: 'off' },
     ],
     correctKey: 'D',
-    explanation: '"put off 〜ing"（〜するのを延期する、先延ばしにする）が正解。宿題を後回しにしないよう忠告する文脈。',
+    explanation: '"put off 〜ing"（〜するのを延期する、先延ばしにする）が正解。宿題を後回しにしないよう忠告する文脈。\n\nput off 〜ing は「〜するのを先延ばしにする」で、後ろには必ず動名詞が来る。off には「離す、ずらす」のイメージがあり、予定の時点を後ろへずらす動作を表す。postpone とほぼ同じ意味で使える。\n\n【図解】put ＋ 副詞の使い分け\n　表現｜意味｜後ろに来る形\n　put off｜延期する｜動名詞 doing\n　put on｜身につける｜衣服, 化粧\n　put away｜片づける｜toys, dishes\n　⇒ 宿題を後回しにするなら put off doing\n　⚠ put off の後ろに to do は置けない。動名詞しか続かない点が最頻出のひっかけ。',
     difficulty: 'standard',
   },
   {
@@ -90,7 +90,7 @@ export const eikenQuestions3kyuIdiom: EikenQuestion[] = [
       { key: 'D', text: 'out' },
     ],
     correctKey: 'C',
-    explanation: '"check in"（（空港・ホテルで）チェックインする、手続きをする）が正解。check out は「チェックアウトする」で逆の意味になる。',
+    explanation: '"check in"（（空港・ホテルで）チェックインする、手続きをする）が正解。check out は「チェックアウトする」で逆の意味になる。\n\ncheck in は「（空港やホテルで）搭乗手続き・宿泊手続きをする」で、荷物を預ける動作も含む。空港の窓口は check-in counter と表記される。反対に手続きを終えて出るのが check out で、ホテルの精算や図書の貸出にも使う。\n\n【図解】check の句動詞\n　表現｜意味｜場面\n　check in｜搭乗, 宿泊手続きをする｜空港, ホテル\n　check out｜精算して出る, 借りる｜ホテル, 図書館\n　check on｜様子を確認する｜人, 状況\n　⇒ 荷物を預け直すなら check in\n　⚠ check out を「荷物を預ける」と誤解しない。in と out で手続きの方向が逆になる。',
     difficulty: 'standard',
   },
   {
@@ -103,7 +103,7 @@ export const eikenQuestions3kyuIdiom: EikenQuestion[] = [
       { key: 'D', text: 'out' },
     ],
     correctKey: 'D',
-    explanation: '"figure out 〜"（〜を理解する、解明する）が正解。難しい問題や使い方を考えて理解する場面で使う。',
+    explanation: '"figure out 〜"（〜を理解する、解明する）が正解。難しい問題や使い方を考えて理解する場面で使う。\n\nfigure out 〜 は「（考えて）理解する、解明する」で、figure には「数字を割り出す」という原義がある。そこから筋道を立てて答えにたどり着く意味になった。後ろには how to do や why 節のような疑問詞のかたまりがよく続く。\n\n【図解】理解を表す表現\n　表現｜意味｜ニュアンス\n　figure out｜考えて理解する｜思考の過程あり\n　understand｜理解している｜状態\n　find out｜調べて知る｜情報を得る\n　⇒ how to use が続くなら figure out\n　⚠ figure in という句動詞は「含める」で理解とは無関係。out 以外を選ばせる出題に注意。',
     difficulty: 'standard',
   },
   {
@@ -116,7 +116,7 @@ export const eikenQuestions3kyuIdiom: EikenQuestion[] = [
       { key: 'D', text: 'down' },
     ],
     correctKey: 'D',
-    explanation: '"tear down"（（建物を）取り壊す）が正解。古い建物が解体される受動態の文。',
+    explanation: '"tear down"（（建物を）取り壊す）が正解。古い建物が解体される受動態の文。\n\ntear down は「（建物を）取り壊す」で、tear は「引き裂く」、down は「下へ」。両方合わさって解体のイメージになる。tear の変化は tear - tore - torn で、本問は was torn down という受動態になっている。\n\n【図解】建物に関する句動詞\n　表現｜意味｜対象\n　tear down｜取り壊す｜old building, wall\n　put up｜建てる, 掲げる｜building, poster\n　build up｜築き上げる｜confidence, business\n　⇒ 古い建物の解体なら tear down\n　⚠ tear は「涙」なら名詞で発音も異なる。動詞の tear（引き裂く）と混同しない。',
     difficulty: 'advanced',
   },
   {
@@ -129,7 +129,7 @@ export const eikenQuestions3kyuIdiom: EikenQuestion[] = [
       { key: 'D', text: 'up' },
     ],
     correctKey: 'B',
-    explanation: '"take after 〜"（（家族に）似ている）が正解。外見や性格が親に似ていることを表す表現。',
+    explanation: '"take after 〜"（（家族に）似ている）が正解。外見や性格が親に似ていることを表す表現。\n\ntake after 〜 は「（家族に）似ている」で、血のつながった年上の親族に対してだけ使う。生まれつき受け継いだ外見や性格を指すのが特徴で、後天的に似てきた場合や他人に対しては look like や resemble を使う。\n\n【図解】「似ている」の使い分け\n　表現｜意味｜相手\n　take after｜（生まれつき）似ている｜親, 祖父母など血縁\n　look like｜見た目が似ている｜誰にでも使える\n　be similar to｜類似している｜物, 考えにも使える\n　⇒ 母親の笑顔に似ているなら take after\n　⚠ take over は「引き継ぐ」で似ている意味はない。after と over を取り違えない。',
     difficulty: 'advanced',
   },
   {
@@ -142,7 +142,7 @@ export const eikenQuestions3kyuIdiom: EikenQuestion[] = [
       { key: 'D', text: 'up' },
     ],
     correctKey: 'C',
-    explanation: '"break down"（（機械などが）故障する）が正解。車が動かなくなった状況を表す基本表現。',
+    explanation: '"break down"（（機械などが）故障する）が正解。車が動かなくなった状況を表す基本表現。\n\nbreak down は「（機械が）故障する」で、車・エレベーター・コピー機などが動かなくなる場面で使う。話し合いが主語なら「決裂する」、人が主語なら「泣き崩れる」の意味にもなる多義の句動詞である。\n\n【図解】break ＋ 副詞の使い分け\n　表現｜意味｜主語\n　break down｜故障する, 決裂する｜car, machine, talks\n　break out｜突然起こる｜fire, war\n　break into｜押し入る｜thief\n　⇒ 高速道路で車が動かなくなったなら break down\n　⚠ break up は「解散する, 別れる」。機械の故障には down を使う。',
     difficulty: 'standard',
   },
   {
@@ -155,7 +155,7 @@ export const eikenQuestions3kyuIdiom: EikenQuestion[] = [
       { key: 'D', text: 'forward' },
     ],
     correctKey: 'B',
-    explanation: '"look for 〜"（〜を探す）が正解。アルバイトを探しているという文脈に合う。"look forward to" は「楽しみにする」で意味が異なる。',
+    explanation: '"look for 〜"（〜を探す）が正解。アルバイトを探しているという文脈に合う。"look forward to" は「楽しみにする」で意味が異なる。\n\nlook for 〜 は「〜を探す」で、まだ見つかっていないものを求めて探す行為を表す。look forward to 〜 と形が似ているが、後者は「〜を楽しみに待つ」で意味がまったく異なり、to の後ろは名詞か動名詞になる。\n\n【図解】look 句動詞の見分け方\n　表現｜意味｜後ろに来る形\n　look for｜探す｜名詞\n　look forward to｜楽しみにする｜名詞, 動名詞\n　look after｜世話をする｜人, 動物\n　⇒ アルバイトを探しているなら look for\n　⚠ look forward to の to は前置詞なので動詞の原形は続かない。for との混同が最頻出。',
     difficulty: 'standard',
   },
   {
@@ -168,7 +168,7 @@ export const eikenQuestions3kyuIdiom: EikenQuestion[] = [
       { key: 'D', text: 'time' },
     ],
     correctKey: 'C',
-    explanation: '"take part in 〜"（〜に参加する）が正解。take place は「（出来事が）起こる」という別の意味の熟語。',
+    explanation: '"take part in 〜"（〜に参加する）が正解。take place は「（出来事が）起こる」という別の意味の熟語。\n\ntake part in 〜 は「〜に参加する」で、participate in の言い換え。part は「役割・分担」の意味で、催しの中で自分の役目を担うイメージ。よく似た take place（開催される）とは主語も意味も異なるので、セットで区別して覚えたい。\n\n【図解】take ＋ 名詞の慣用句\n　表現｜意味｜主語\n　take part in｜〜に参加する｜人\n　take place｜行われる, 起こる｜出来事\n　take care of｜世話をする｜人\n　⇒ 生徒がボランティアに参加したなら take part in\n　⚠ take place は人を主語にできない。part と place の入れ替えが定番のひっかけ。',
     difficulty: 'standard',
   },
   {
@@ -181,7 +181,7 @@ export const eikenQuestions3kyuIdiom: EikenQuestion[] = [
       { key: 'D', text: 'time' },
     ],
     correctKey: 'B',
-    explanation: '"take place"（（出来事が）開催される、起こる）が正解。イベントの開催について述べる際の基本表現。',
+    explanation: '"take place"（（出来事が）開催される、起こる）が正解。イベントの開催について述べる際の基本表現。\n\ntake place は「（催しや出来事が）行われる、起こる」で、主語は festival、meeting、accident のような出来事。happen より計画された催しに使われることが多い。受動態にはできず、be taken place とは言わない。\n\n【図解】開催と参加の表現\n　表現｜主語｜意味\n　take place｜出来事｜開催される, 起こる\n　take part in｜人｜〜に参加する\n　hold｜主催者｜〜を開催する（他動詞）\n　⇒ 祭りが土曜に行われるなら take place\n　⚠ take place は受動態にしない。The festival will be taken place は誤り。',
     difficulty: 'standard',
   },
   {
@@ -194,7 +194,7 @@ export const eikenQuestions3kyuIdiom: EikenQuestion[] = [
       { key: 'D', text: 'on' },
     ],
     correctKey: 'C',
-    explanation: '"hurry up"（急ぐ）が正解。誰かを急かす場面での基本表現。',
+    explanation: '"hurry up"（急ぐ）が正解。誰かを急かす場面での基本表現。\n\nhurry up は「急ぐ」で、相手をせかす命令文として使われることが多い。up は動作を完了へ向かわせる働きをする副詞。or we will miss the train のように、命令文 ＋ or 〜（さもないと〜）の形と一緒に出題されることが多い。\n\n【図解】命令文と接続詞の組み合わせ\n　形｜意味｜例\n　命令文 ＋ or｜さもないと｜Hurry up, or we will miss it\n　命令文 ＋ and｜そうすれば｜Hurry up, and we will make it\n　Why dont you 〜｜〜したらどう｜提案\n　⇒ 電車に乗り遅れる警告なら or\n　⚠ and と or で意味が正反対になる。接続詞の取り違えが定番の出題ポイント。',
     difficulty: 'basic',
   },
   {
@@ -207,7 +207,7 @@ export const eikenQuestions3kyuIdiom: EikenQuestion[] = [
       { key: 'D', text: 'up' },
     ],
     correctKey: 'D',
-    explanation: '"put up with 〜"（〜を我慢する）が正解。不快な状況をしばらく耐えるよう頼む文脈。',
+    explanation: '"put up with 〜"（〜を我慢する）が正解。不快な状況をしばらく耐えるよう頼む文脈。\n\nput up with 〜 は「〜を我慢する」で、3語でひとまとまりの他動詞として働く。騒音・暑さ・態度など不快なものを目的語にとり、tolerate や stand の言い換えになる。for a little longer（もう少しの間）という副詞句と相性がよい。\n\n【図解】put の句動詞\n　表現｜意味｜典型目的語\n　put up with｜我慢する｜noise, heat, behavior\n　put off｜延期する｜meeting, homework\n　put out｜（火を）消す｜fire, cigarette\n　⇒ 工事の騒音に耐えるなら put up with\n　⚠ put up 単独は「泊める, 掲げる」。with が付いて初めて我慢の意味になる。',
     difficulty: 'advanced',
   },
   {
@@ -220,7 +220,7 @@ export const eikenQuestions3kyuIdiom: EikenQuestion[] = [
       { key: 'D', text: 'up' },
     ],
     correctKey: 'D',
-    explanation: '"look up 〜"（（辞書などで）調べる）が正解。look for は「探す」で対象を探し出す前段階の意味になり、辞書で調べる場合には使わない。',
+    explanation: '"look up 〜"（（辞書などで）調べる）が正解。look for は「探す」で対象を探し出す前段階の意味になり、辞書で調べる場合には使わない。\n\nlook up 〜 は「（辞書やネットで）調べる」で、目的語には word、number、information が来る。目的語が代名詞なら look it up の語順になる点が重要。look for（探す）は物を探し回る行為で、調べる行為とは区別される。\n\n【図解】look 句動詞と語順\n　表現｜意味｜代名詞の位置\n　look up｜辞書で調べる｜look it up\n　look for｜探す｜look for it\n　look into｜調査する｜look into it\n　⇒ 辞書で単語を調べるなら look up\n　⚠ look up it とは言えない。分離できる句動詞は代名詞を間に挟む点が頻出。',
     difficulty: 'standard',
   },
   {
@@ -233,7 +233,7 @@ export const eikenQuestions3kyuIdiom: EikenQuestion[] = [
       { key: 'D', text: 'over' },
     ],
     correctKey: 'B',
-    explanation: '"hand in"（提出する）が正解。hand out は「配布する」で逆方向の動作。',
+    explanation: '"hand in"（提出する）が正解。hand out は「配布する」で逆方向の動作。\n\nhand in 〜 は「（課題や書類を）提出する」で、submit の日常的な言い換え。in は「中へ」の意味で、先生や窓口へ差し出す動作を表す。反対に配る動作は hand out で、プリントを全員に渡す場面で使う。\n\n【図解】hand の句動詞\n　表現｜意味｜方向\n　hand in｜提出する｜自分から相手へ集める側\n　hand out｜配布する｜相手へ配る\n　hand over｜引き渡す｜権限, 物の移譲\n　⇒ 週末までにレポートを出すなら hand in\n　⚠ hand out は配る動作で提出ではない。in と out で方向が逆になる。',
     difficulty: 'standard',
   },
   {
@@ -246,7 +246,7 @@ export const eikenQuestions3kyuIdiom: EikenQuestion[] = [
       { key: 'D', text: 'in' },
     ],
     correctKey: 'C',
-    explanation: '"give up 〜ing"（〜をやめる）が正解。習慣をやめる場合の基本表現。',
+    explanation: '"give up 〜ing"（〜をやめる）が正解。習慣をやめる場合の基本表現。\n\ngive up 〜ing は「〜するのをやめる」で、続けてきた習慣を断つ場面で使う。後ろは必ず動名詞になり、to 不定詞は続かない。for my health のような目的を表す語句と組み合わせて出題されやすい。\n\n【図解】give ＋ 副詞の使い分け\n　表現｜意味｜後ろに来る形\n　give up｜やめる, あきらめる｜動名詞 doing\n　give in｜屈する, 折れる｜（自動詞）\n　give away｜ただであげる｜物\n　⇒ 健康のために禁煙するなら give up smoking\n　⚠ give up to smoke とは言えない。up の後ろは動名詞のみ。',
     difficulty: 'standard',
   },
   {
@@ -259,7 +259,7 @@ export const eikenQuestions3kyuIdiom: EikenQuestion[] = [
       { key: 'D', text: 'to' },
     ],
     correctKey: 'D',
-    explanation: '"be used to 〜ing"（〜することに慣れている）が正解。to の後は動名詞が続く点に注意（"used to 動詞原形" の「かつて〜した」との混同に注意）。',
+    explanation: '"be used to 〜ing"（〜することに慣れている）が正解。to の後は動名詞が続く点に注意（"used to 動詞原形" の「かつて〜した」との混同に注意）。\n\nbe used to 〜ing は「〜することに慣れている」で、この to は前置詞なので後ろは名詞か動名詞になる。一方 used to ＋ 動詞の原形 は「かつては〜した」という過去の習慣を表す別表現で、be 動詞の有無と後続の形で見分ける。\n\n【図解】used to の3つの形\n　形｜意味｜後ろに来る語\n　be used to｜〜に慣れている｜名詞, 動名詞\n　used to｜かつて〜した｜動詞の原形\n　be used to do｜〜するために使われる｜受動態 ＋ 不定詞\n　⇒ 早起きに慣れているなら be used to getting\n　⚠ be used to get up とすると意味が「起きるために使われる」に変わる。動名詞か原形かで判断する。',
     difficulty: 'advanced',
   },
   {
@@ -272,7 +272,7 @@ export const eikenQuestions3kyuIdiom: EikenQuestion[] = [
       { key: 'D', text: 'down' },
     ],
     correctKey: 'C',
-    explanation: '"turn up"（（音量を）上げる）が正解。ほとんど聞こえないという文脈から音量を上げてほしいとわかる。',
+    explanation: '"turn up"（（音量を）上げる）が正解。ほとんど聞こえないという文脈から音量を上げてほしいとわかる。\n\nturn up は「（音量を）上げる」で、つまみを回して上げる動作に由来する。I can hardly hear it（ほとんど聞こえない）という理由が示されているので、音を大きくする方向が正しい。turn up には「現れる」という別の意味もある。\n\n【図解】turn ＋ 副詞の使い分け\n　表現｜意味｜目的語\n　turn up｜音量を上げる, 現れる｜radio, volume\n　turn down｜音量を下げる, 断る｜TV, offer\n　turn off｜電源を切る｜light, computer\n　⇒ 聞こえないから大きくするなら turn up\n　⚠ hardly は「ほとんど〜ない」という否定語。hard（一生懸命）と読み違えると答えが逆になる。',
     difficulty: 'standard',
   },
   {
@@ -285,7 +285,7 @@ export const eikenQuestions3kyuIdiom: EikenQuestion[] = [
       { key: 'D', text: 'to' },
     ],
     correctKey: 'B',
-    explanation: '"divide A into B"（AをBに分ける）が正解。全体をいくつかの部分に分ける場合の決まった前置詞。',
+    explanation: '"divide A into B"（AをBに分ける）が正解。全体をいくつかの部分に分ける場合の決まった前置詞。\n\ndivide A into B は「AをBに分ける」で、全体をいくつかの部分に切り分けるときの決まった前置詞が into。受動態では be divided into 〜 となり、本問もその形。似た形の separate A from B（AをBから引き離す）とは前置詞が異なる。\n\n【図解】分ける動詞と前置詞\n　表現｜意味｜前置詞\n　divide A into B｜AをBに分割する｜into\n　separate A from B｜AをBから離す｜from\n　be made up of｜〜から成る｜of\n　⇒ クラスを4班に分けるなら divided into\n　⚠ divide in four groups とはしない。into が必須で、in では分割の意味にならない。',
     difficulty: 'standard',
   },
   {
@@ -298,7 +298,7 @@ export const eikenQuestions3kyuIdiom: EikenQuestion[] = [
       { key: 'D', text: 'for' },
     ],
     correctKey: 'C',
-    explanation: '"be proud of 〜"（〜を誇りに思う）が正解。感情を表す形容詞と前置詞のセットとして覚える。',
+    explanation: '"be proud of 〜"（〜を誇りに思う）が正解。感情を表す形容詞と前置詞のセットとして覚える。\n\nbe proud of 〜 は「〜を誇りに思う」で、感情を表す形容詞と前置詞のセット。of の後ろには名詞か動名詞が来るため、winning という動名詞が使われている。同じ内容は He is proud that he won 〜 と that 節でも表せる。\n\n【図解】感情形容詞と前置詞\n　表現｜意味｜前置詞\n　be proud of｜誇りに思う｜of\n　be afraid of｜恐れる｜of\n　be interested in｜興味がある｜in\n　⇒ 優勝を誇るなら be proud of winning\n　⚠ be proud to do も可能だが、その場合は動詞の原形が続く。of の後ろに原形は置けない。',
     difficulty: 'standard',
   },
   {
@@ -311,7 +311,7 @@ export const eikenQuestions3kyuIdiom: EikenQuestion[] = [
       { key: 'D', text: 'of' },
     ],
     correctKey: 'D',
-    explanation: '"be afraid of 〜ing"（〜することを恐れる）が正解。恐怖の対象を示す前置詞は of を使う。',
+    explanation: '"be afraid of 〜ing"（〜することを恐れる）が正解。恐怖の対象を示す前置詞は of を使う。\n\nbe afraid of 〜ing は「〜するのを怖がる」で、恐怖の対象を示す前置詞は of。前置詞の後ろなので動詞は動名詞になる。なお I am afraid that 〜 は「残念ながら〜だと思う」という別の使い方で、丁寧に悪い知らせを伝える定型表現。\n\n【図解】afraid の使い分け\n　形｜意味｜後ろに来る形\n　be afraid of doing｜〜するのが怖い｜動名詞\n　be afraid to do｜怖くて〜できない｜不定詞\n　I am afraid that｜残念ながら〜だ｜節\n　⇒ 人前で話すのが怖いなら afraid of speaking\n　⚠ of の後ろに動詞の原形は置けない。to 不定詞との使い分けが出題される。',
     difficulty: 'standard',
   },
   {
@@ -324,7 +324,7 @@ export const eikenQuestions3kyuIdiom: EikenQuestion[] = [
       { key: 'D', text: 'forward' },
     ],
     correctKey: 'D',
-    explanation: '"look forward to 〜"（〜を楽しみにする）が正解。夏休みを楽しみにしているという典型的な文脈。',
+    explanation: '"look forward to 〜"（〜を楽しみにする）が正解。夏休みを楽しみにしているという典型的な文脈。\n\nlook forward to 〜 は「〜を楽しみに待つ」で、to は前置詞なので後ろは名詞か動名詞になる。進行形 be looking forward to で使うと期待の気持ちがより強く伝わる。手紙やメールの結びの定型表現としても頻出する。\n\n【図解】to の後ろの形に注意する表現\n　表現｜意味｜to の後ろ\n　look forward to｜楽しみにする｜名詞, 動名詞\n　be used to｜慣れている｜名詞, 動名詞\n　want to｜〜したい｜動詞の原形\n　⇒ 夏休みが待ち遠しいなら look forward to\n　⚠ look forward to go とはしない。going にする必要がある点が最頻出の誤り。',
     difficulty: 'standard',
   },
   {
@@ -337,7 +337,7 @@ export const eikenQuestions3kyuIdiom: EikenQuestion[] = [
       { key: 'D', text: 'up' },
     ],
     correctKey: 'C',
-    explanation: '"go home"（家に帰る）が正解。基本的な移動を表す表現で、楽しくて帰りたくない気持ちを表す文脈。',
+    explanation: '"go home"（家に帰る）が正解。基本的な移動を表す表現で、楽しくて帰りたくない気持ちを表す文脈。\n\ngo home は「家に帰る」で、home はここでは副詞なので前置詞 to を付けない。go to school の school は名詞なので to が必要だが、home、there、abroad は副詞で to を伴わない点が対照的である。\n\n【図解】to の要否\n　表現｜品詞｜to の有無\n　go home｜副詞｜不要\n　go abroad｜副詞｜不要\n　go to school｜名詞｜必要\n　⇒ 帰宅を表すなら go home\n　⚠ go to home は誤り。home が副詞であることを忘れて to を付ける誤答が定番。',
     difficulty: 'basic',
   },
   {
@@ -350,7 +350,7 @@ export const eikenQuestions3kyuIdiom: EikenQuestion[] = [
       { key: 'D', text: 'over' },
     ],
     correctKey: 'B',
-    explanation: '"turn down"（音量を下げる）が正解。電話の声が聞こえないのでテレビの音を小さくしてほしいという文脈。',
+    explanation: '"turn down"（音量を下げる）が正解。電話の声が聞こえないのでテレビの音を小さくしてほしいという文脈。\n\nturn down は「（音量を）下げる」で、電話の声が聞こえないという理由から、テレビの音を小さくしてほしいと頼む文脈になる。turn down には「（申し出を）断る」というまったく別の意味もあり、目的語で判断する。\n\n【図解】turn down の2つの意味\n　目的語｜意味｜例\n　TV, radio, volume｜音量を下げる｜Turn down the TV\n　offer, request, job｜断る｜turn down the offer\n　heat, air conditioner｜設定を弱める｜turn down the heat\n　⇒ 目的語が TV なら音量を下げる\n　⚠ turn up は音量を上げる正反対の動作。理由の文をよく読んでから選ぶ。',
     difficulty: 'basic',
   },
   {
@@ -363,7 +363,7 @@ export const eikenQuestions3kyuIdiom: EikenQuestion[] = [
       { key: 'D', text: 'up' },
     ],
     correctKey: 'C',
-    explanation: '"drop by"（ちょっと立ち寄る）が正解。家に帰る前に郵便局に少し立ち寄るという文脈。',
+    explanation: '"drop by"（ちょっと立ち寄る）が正解。家に帰る前に郵便局に少し立ち寄るという文脈。\n\ndrop by は「ちょっと立ち寄る」で、予定していなかった短時間の訪問を表す。by には「そばを通る」イメージがあり、通りがかりに寄る感じが出る。場所を続けるときは drop by the post office のように前置詞なしでつなげられる。\n\n【図解】立ち寄りを表す表現\n　表現｜意味｜後ろの形\n　drop by｜ふらりと寄る｜場所を直接続けられる\n　drop in at｜立ち寄る｜場所には at\n　stop by｜立ち寄る｜drop by とほぼ同義\n　⇒ 帰宅前に郵便局へ寄るなら drop by\n　⚠ drop off は「（人や物を）降ろす, 届ける」という別の意味。by と off を取り違えない。',
     difficulty: 'standard',
   },
   {
@@ -376,7 +376,7 @@ export const eikenQuestions3kyuIdiom: EikenQuestion[] = [
       { key: 'D', text: 'in' },
     ],
     correctKey: 'B',
-    explanation: '"take after 〜"（〜に似ている）が正解。祖母に似ている、特に笑い方が似ているという家族の類似を表す表現。',
+    explanation: '"take after 〜"（〜に似ている）が正解。祖母に似ている、特に笑い方が似ているという家族の類似を表す表現。\n\ntake after 〜 は「（血縁者に）似ている」で、especially in the way she laughs のように、似ている点を具体的に添えて使われることが多い。生まれつきの類似を指すため、対象は親や祖父母など血のつながった年長者に限られる。\n\n【図解】家族の類似を表す表現\n　表現｜意味｜対象\n　take after｜生まれつき似ている｜祖母, 父母\n　look like｜見た目が似ている｜誰でも\n　run in the family｜家系に受け継がれる｜特徴, 才能\n　⇒ 祖母の笑い方に似ているなら take after\n　⚠ take in は「取り入れる, だます」で類似とは無関係。after 以外を選ばせる出題に注意。',
     difficulty: 'standard',
   },
   {
@@ -389,7 +389,7 @@ export const eikenQuestions3kyuIdiom: EikenQuestion[] = [
       { key: 'D', text: 'in' },
     ],
     correctKey: 'A',
-    explanation: '"set off"（出発する）が正解。朝の渋滞を避けるために早く出発しようという文脈。',
+    explanation: '"set off"（出発する）が正解。朝の渋滞を避けるために早く出発しようという文脈。\n\nset off は「出発する」で、旅や外出の開始を表す。start out や leave の言い換えとして使え、to avoid the morning traffic のような目的表現とともに出題されやすい。set off には「（花火や警報を）作動させる」という他動詞用法もある。\n\n【図解】set ＋ 副詞の使い分け\n　表現｜意味｜使う場面\n　set off｜出発する, 作動させる｜旅行, 警報\n　set up｜設立する, 準備する｜会社, 機材\n　set aside｜取っておく｜お金, 時間\n　⇒ 渋滞を避けて早く出るなら set off\n　⚠ set up は準備や設立で出発ではない。off と up を取り違えない。',
     difficulty: 'standard',
   },
   {
@@ -402,7 +402,7 @@ export const eikenQuestions3kyuIdiom: EikenQuestion[] = [
       { key: 'D', text: 'away' },
     ],
     correctKey: 'B',
-    explanation: '"take off"（離陸する）が正解。あと10分で飛行機が離陸するのでシートベルトを締めてくださいという文脈。',
+    explanation: '"take off"（離陸する）が正解。あと10分で飛行機が離陸するのでシートベルトを締めてくださいという文脈。\n\ntake off は「（飛行機が）離陸する」で、地面から離れる（off）イメージ。機内アナウンスの定番表現で、fasten your seatbelt とセットで出題される。他動詞では「（衣類を）脱ぐ」の意味になり、着るのは put on。\n\n【図解】take off の意味と対義語\n　用法｜意味｜対になる表現\n　自動詞｜離陸する｜land（着陸する）\n　他動詞｜脱ぐ｜put on（着る）\n　名詞 takeoff｜離陸｜landing（着陸）\n　⇒ 飛行機が10分後に飛び立つなら take off\n　⚠ take away は「持ち去る」で離陸の意味はない。空港の文脈でも off 以外は選ばない。',
     difficulty: 'basic',
   },
   {
@@ -415,7 +415,7 @@ export const eikenQuestions3kyuIdiom: EikenQuestion[] = [
       { key: 'D', text: 'by' },
     ],
     correctKey: 'A',
-    explanation: '"pass away"（亡くなる）が正解。dieの婉曲的な表現として使われる。',
+    explanation: '"pass away"（亡くなる）が正解。dieの婉曲的な表現として使われる。\n\npass away は「亡くなる」で、die を直接使うのを避けた婉曲表現。訃報を伝えるときの丁寧な言い方として使われる。peacefully（安らかに）や at the age of 〜（〜歳で）といった語句と一緒に出題されやすい。\n\n【図解】pass の句動詞\n　表現｜意味｜使う場面\n　pass away｜亡くなる｜訃報, 婉曲表現\n　pass out｜気を失う｜暑さ, 疲労\n　pass by｜通り過ぎる｜人, 時間\n　⇒ 安らかに息を引き取ったなら pass away\n　⚠ pass out は「気絶する」で死亡ではない。away と out で意味の重さがまったく違う。',
     difficulty: 'standard',
   },
   {
@@ -428,7 +428,7 @@ export const eikenQuestions3kyuIdiom: EikenQuestion[] = [
       { key: 'D', text: 'arm' },
     ],
     correctKey: 'C',
-    explanation: '"keep an eye on 〜"（〜に気を配る、見張る）が正解。トイレに行く間、荷物を見ていてほしいと頼む文脈。',
+    explanation: '"keep an eye on 〜"（〜に気を配る、見張る）が正解。トイレに行く間、荷物を見ていてほしいと頼む文脈。\n\nkeep an eye on 〜 は「〜を見ていてもらう、気を配る」で、短時間の見守りを頼む場面で使う。eye は必ず単数で冠詞 an が付く点が特徴。似た keep in touch with とは形も意味も異なるので、冠詞まで含めて覚えたい。\n\n【図解】体の部位を使う慣用句\n　表現｜意味｜数の形\n　keep an eye on｜見張る, 気を配る｜an ＋ 単数\n　give a hand｜手を貸す｜a ＋ 単数\n　keep tabs on｜継続的に監視する｜複数形 tabs\n　⇒ 荷物を見ていてほしいなら keep an eye on\n　⚠ keep eyes on や keep an ear on とはしない。an eye で固定された形。',
     difficulty: 'standard',
   },
   {
@@ -441,7 +441,7 @@ export const eikenQuestions3kyuIdiom: EikenQuestion[] = [
       { key: 'D', text: 'out' },
     ],
     correctKey: 'B',
-    explanation: '"catch up"（近況を語り合う）が正解。久しぶりに会った友人同士が近況報告をする場面での定番表現。',
+    explanation: '"catch up"（近況を語り合う）が正解。久しぶりに会った友人同士が近況報告をする場面での定番表現。\n\ncatch up は「（会えなかった間の）近況を語り合う」で、友人同士が久しぶりに会う場面の定番。over coffee は「コーヒーを飲みながら」で、over は行為に伴う飲食物を示す。人に追いつく意味では catch up with 〜 の形になる。\n\n【図解】catch up の使い分け\n　形｜意味｜例\n　catch up｜近況を語り合う｜catch up over coffee\n　catch up with 人｜〜に追いつく｜catch up with the class\n　catch up on 物事｜遅れを取り戻す｜catch up on sleep, work\n　⇒ 久々に会って話し込むなら catch up\n　⚠ with と on で意味が変わる。人には with、たまった用事には on を使う。',
     difficulty: 'standard',
   },
   {
@@ -454,7 +454,7 @@ export const eikenQuestions3kyuIdiom: EikenQuestion[] = [
       { key: 'D', text: 'over' },
     ],
     correctKey: 'A',
-    explanation: '"clean up"（片付ける）が正解。夕食前に部屋を片付けるよう言われたという文脈。',
+    explanation: '"clean up"（片付ける）が正解。夕食前に部屋を片付けるよう言われたという文脈。\n\nclean up は「片づける、きれいにする」で、up は動作の完了を強める副詞。部屋・机・散らかった場所を目的語にとる。目的語が代名詞なら clean it up の語順になる分離可能な句動詞である点も押さえておきたい。\n\n【図解】掃除と片づけの表現\n　表現｜意味｜対象\n　clean up｜片づける, きれいにする｜room, mess\n　tidy up｜整頓する｜desk, shelf\n　put away｜元の場所にしまう｜toys, clothes\n　⇒ 夕食前に部屋を片づけるなら clean up\n　⚠ clean out は「中身を全部出して掃除する」で意味が強すぎる。日常の片づけは clean up。',
     difficulty: 'basic',
   },
   {
@@ -467,7 +467,7 @@ export const eikenQuestions3kyuIdiom: EikenQuestion[] = [
       { key: 'D', text: 'up' },
     ],
     correctKey: 'B',
-    explanation: '"think over 〜"（〜をじっくり考える）が正解。答える前に慎重に検討したいという文脈。',
+    explanation: '"think over 〜"（〜をじっくり考える）が正解。答える前に慎重に検討したいという文脈。\n\nthink over 〜 は「〜をじっくり考える、熟考する」で、over には「全体を見渡す」イメージがある。答える前に時間をかけて検討する場面で使い、consider の言い換えになる。think about より慎重に検討する含みが強い。\n\n【図解】think ＋ 前置詞の使い分け\n　表現｜意味｜ニュアンス\n　think over｜熟考する｜結論を出すための検討\n　think about｜〜について考える｜一般的\n　think of｜思いつく, 思い浮かべる｜発想, 想起\n　⇒ 決断を慎重に検討するなら think over\n　⚠ think of は「思いつく」で熟考ではない。carefully という副詞があれば over が自然。',
     difficulty: 'standard',
   },
   {
@@ -480,7 +480,7 @@ export const eikenQuestions3kyuIdiom: EikenQuestion[] = [
       { key: 'D', text: 'out' },
     ],
     correctKey: 'C',
-    explanation: '"call off"（中止する）が正解。大雨のためサッカーの試合が中止になったという文脈。',
+    explanation: '"call off"（中止する）が正解。大雨のためサッカーの試合が中止になったという文脈。\n\ncall off は「（予定されていたものを）中止する」で、cancel の言い換え。試合・イベント・捜索などを目的語にとり、悪天候や事故が理由になることが多い。受動態 be called off の形で出題されることが非常に多い。\n\n【図解】call ＋ 副詞の使い分け\n　表現｜意味｜典型目的語\n　call off｜中止する｜game, event, search\n　call back｜折り返し電話する｜人\n　call on｜訪問する, 呼びかける｜人\n　⇒ 大雨で試合が中止なら called off\n　⚠ call up は「電話をかける」で中止の意味はない。off と up を取り違えない。',
     difficulty: 'standard',
   },
   {
@@ -493,7 +493,7 @@ export const eikenQuestions3kyuIdiom: EikenQuestion[] = [
       { key: 'D', text: 'off' },
     ],
     correctKey: 'A',
-    explanation: '"speak up"（はっきりと意見を言う）が正解。仕事で意見が違うときにはっきり発言する性格を表す。',
+    explanation: '"speak up"（はっきりと意見を言う）が正解。仕事で意見が違うときにはっきり発言する性格を表す。\n\nspeak up は「はっきり大きな声で言う、意見を述べる」で、遠慮せず発言する態度を表す。声を大きくしてほしいと頼むときにも使う。反対に黙っているのは keep quiet や say nothing。\n\n【図解】発言に関する句動詞\n　表現｜意味｜場面\n　speak up｜はっきり意見を言う｜会議, 反対意見\n　speak out｜公然と主張する｜社会問題への批判\n　speak to｜話しかける｜個人的な会話\n　⇒ 職場で意見を述べる性格なら speak up\n　⚠ speak off という句動詞はない。up 以外の副詞を選ばせるひっかけに注意。',
     difficulty: 'standard',
   },
   {
@@ -506,7 +506,7 @@ export const eikenQuestions3kyuIdiom: EikenQuestion[] = [
       { key: 'D', text: 'in' },
     ],
     correctKey: 'A',
-    explanation: '"take up 〜"（〜を始める、〜に取り組み始める）が正解。テレビで見た試合をきっかけにテニスを始めることにしたという文脈。',
+    explanation: '"take up 〜"（〜を始める、〜に取り組み始める）が正解。テレビで見た試合をきっかけにテニスを始めることにしたという文脈。\n\ntake up 〜 は「（趣味や習い事を）始める」で、新しく取り組み始めることを表す。tennis、golf、painting、a new job などが目的語になる。テレビで試合を見たことがきっかけという文脈と自然につながる。\n\n【図解】take ＋ 副詞の使い分け\n　表現｜意味｜典型目的語\n　take up｜新たに始める｜lessons, hobby, sport\n　take over｜引き継ぐ｜business, job\n　take off｜離陸する, 脱ぐ｜plane, coat\n　⇒ テニス教室に通い始めるなら take up\n　⚠ take in は「取り入れる, だます」で開始の意味はない。up 以外を選ばない。',
     difficulty: 'standard',
   },
   {
@@ -519,7 +519,7 @@ export const eikenQuestions3kyuIdiom: EikenQuestion[] = [
       { key: 'D', text: 'to do' },
     ],
     correctKey: 'A',
-    explanation: '"have a sale"（セールを開催する）が正解。店がセールをするという文脈で最も自然な動詞の組み合わせ。',
+    explanation: '"have a sale"（セールを開催する）が正解。店がセールをするという文脈で最も自然な動詞の組み合わせ。\n\nhave a sale は「セールを行う」で、店を主語にした最も自然な言い方。sale は「特売」を表す可算名詞で冠詞 a が付く。be on sale（特売中である、発売中である）や for sale（売り物の）と形が似ているので区別して覚えたい。\n\n【図解】sale を使う表現\n　表現｜意味｜主語や場面\n　have a sale｜セールを開催する｜店\n　on sale｜特売中, 発売中｜商品\n　for sale｜売り物である｜商品, 家\n　⇒ 週末に店がセールをするなら have a sale\n　⚠ for sale と on sale は意味が異なる。for は売り出し中、on は値引き中や発売中。',
     difficulty: 'standard',
   },
   {
@@ -532,7 +532,7 @@ export const eikenQuestions3kyuIdiom: EikenQuestion[] = [
       { key: 'D', text: 'good' },
     ],
     correctKey: 'A',
-    explanation: '"make the most of 〜"（〜を最大限に活用する）が正解。若いうちに時間を有効活用しなさいという助言の定番表現。',
+    explanation: '"make the most of 〜"（〜を最大限に活用する）が正解。若いうちに時間を有効活用しなさいという助言の定番表現。\n\nmake the most of 〜 は「〜を最大限に活用する」で、限られた時間や機会を生かしきることを表す。the が必要な固定表現である。条件が悪い中で精一杯やりくりする場合は make the best of 〜 となり、前提が異なる。\n\n【図解】most と best の使い分け\n　表現｜意味｜前提の条件\n　make the most of｜最大限に生かす｜条件は良い\n　make the best of｜精一杯やりくりする｜条件は悪い\n　take advantage of｜利用する｜機会, 制度\n　⇒ 若い時間を有効に使えなら make the most of\n　⚠ the を落として make most of とはしない。定冠詞まで含めて固定の形。',
     difficulty: 'advanced',
   },
   {
@@ -545,7 +545,7 @@ export const eikenQuestions3kyuIdiom: EikenQuestion[] = [
       { key: 'D', text: 'at' },
     ],
     correctKey: 'A',
-    explanation: '"keep up with 〜"（〜についていく）が正解。新しく入った社員が大量の情報についていくのに苦労しているという文脈。',
+    explanation: '"keep up with 〜"（〜についていく）が正解。新しく入った社員が大量の情報についていくのに苦労しているという文脈。\n\nkeep up with 〜 は「〜に遅れずについていく」で、変化のスピードや量に対応し続けることを表す。新人が大量の情報に追いつけないという文脈にぴったり合う。今は遅れている状態から追いつくのは catch up with。\n\n【図解】up with 系の使い分け\n　表現｜意味｜前提\n　keep up with｜遅れずについていく｜並走している\n　catch up with｜追いつく｜遅れている\n　put up with｜我慢する｜不快な状況\n　⇒ 大量の情報についていくなら keep up with\n　⚠ put up with は「我慢する」でまったく別の意味。keep と put の入れ替えに注意。',
     difficulty: 'standard',
   },
   {
@@ -558,7 +558,7 @@ export const eikenQuestions3kyuIdiom: EikenQuestion[] = [
       { key: 'D', text: 'through' },
     ],
     correctKey: 'A',
-    explanation: '"go ahead with 〜"（〜を進める、実行する）が正解。全員がそろったので会議を始めようという文脈。',
+    explanation: '"go ahead with 〜"（〜を進める、実行する）が正解。全員がそろったので会議を始めようという文脈。\n\ngo ahead with 〜 は「〜を予定どおり進める、実行に移す」で、計画・会議・工事などを目的語にとる。Go ahead. だけなら「どうぞ」と許可を与える表現になる。since everyone is here という理由が、開始を後押ししている。\n\n【図解】ahead を使う表現\n　表現｜意味｜使う場面\n　go ahead with｜予定どおり進める｜会議, 計画\n　go ahead｜どうぞ｜許可を与える\n　ahead of schedule｜予定より早く｜進捗\n　⇒ 全員そろったので始めるなら go ahead with\n　⚠ go along with は「（意見に）同調する」という別の意味。ahead と along を取り違えない。',
     difficulty: 'standard',
   },
   {
@@ -571,7 +571,7 @@ export const eikenQuestions3kyuIdiom: EikenQuestion[] = [
       { key: 'D', text: 'at' },
     ],
     correctKey: 'B',
-    explanation: '"wait for 〜"（〜を待つ）が正解。バスが満員だったので次のバスを待たなければならなかったという文脈。',
+    explanation: '"wait for 〜"（〜を待つ）が正解。バスが満員だったので次のバスを待たなければならなかったという文脈。\n\nwait for 〜 は「〜を待つ」で、待つ対象を示す前置詞は for。日本語の「〜を」につられて wait 〜 と直接目的語を置く誤りが多いので注意する。人を待たせる場合は keep 人 waiting となる。\n\n【図解】前置詞が必要な動詞\n　表現｜意味｜前置詞\n　wait for｜〜を待つ｜for\n　listen to｜〜を聞く｜to\n　look at｜〜を見る｜at\n　⇒ 次のバスを待つなら wait for\n　⚠ wait the next bus とは言えない。for を落とす誤りが最頻出。',
     difficulty: 'basic',
   },
   {
@@ -584,7 +584,7 @@ export const eikenQuestions3kyuIdiom: EikenQuestion[] = [
       { key: 'D', text: 'up' },
     ],
     correctKey: 'A',
-    explanation: '"cut down on 〜"（〜を減らす）が正解。健康のために糖分の摂取を減らそうとしているという文脈。',
+    explanation: '"cut down on 〜"（〜を減らす）が正解。健康のために糖分の摂取を減らそうとしているという文脈。\n\ncut down on 〜 は「〜の量を減らす」で、砂糖・塩・喫煙・出費などを対象にとる。健康や節約の話題で頻出する。対象を明示するときは前置詞 on が必要で、reduce の口語的な言い換えとして使える。\n\n【図解】cut の句動詞\n　表現｜意味｜典型目的語\n　cut down on｜量を減らす｜sugar, coffee, spending\n　cut off｜切断する, 止める｜water, power\n　cut out｜切り抜く, 完全にやめる｜picture, snacks\n　⇒ 砂糖の摂取を控えるなら cut down on\n　⚠ cut out は完全に断つこと。少しずつ減らす場合は cut down on を使う。',
     difficulty: 'standard',
   },
   {
@@ -597,7 +597,7 @@ export const eikenQuestions3kyuIdiom: EikenQuestion[] = [
       { key: 'D', text: 'out' },
     ],
     correctKey: 'A',
-    explanation: '"go over 〜"（〜を復習する、見直す）が正解。テスト前に答えをもう一度確認したという文脈。',
+    explanation: '"go over 〜"（〜を復習する、見直す）が正解。テスト前に答えをもう一度確認したという文脈。\n\ngo over 〜 は「〜を見直す、復習する」で、テスト前に答えを確認する場面にぴったり合う。over には「全体をひととおり」というイメージがある。review や check の言い換えとして使える。\n\n【図解】go ＋ 前置詞の使い分け\n　表現｜意味｜典型目的語\n　go over｜見直す, 復習する｜answers, notes\n　go through｜経験する, 通す｜difficulty, list\n　go on｜続ける, 起こる｜talking, what\n　⇒ 答えをもう一度確認するなら go over\n　⚠ go out は「外出する」で復習とは無関係。over 以外を選ばせる出題に注意。',
     difficulty: 'standard',
   },
   {
@@ -610,7 +610,7 @@ export const eikenQuestions3kyuIdiom: EikenQuestion[] = [
       { key: 'D', text: 'through' },
     ],
     correctKey: 'B',
-    explanation: '"run out of 〜"（〜がなくなる）が正解。高速道路でガソリンがなくなり助けを呼んだという文脈。',
+    explanation: '"run out of 〜"（〜がなくなる）が正解。高速道路でガソリンがなくなり助けを呼んだという文脈。\n\nrun out of 〜 は「〜を切らす、使い果たす」で、of の後ろに尽きたものが来る。ガソリン・時間・お金・アイデアなどが典型。物を主語にすると The gas ran out. のように of を使わない自動詞の形になる。\n\n【図解】run out の2つの形\n　形｜主語｜例\n　run out of ＋ 物｜人, 車｜We ran out of gas\n　run out｜物そのもの｜The gas ran out\n　be out of ＋ 物｜人｜We are out of gas\n　⇒ of が続くなら run out of\n　⚠ run off は「走り去る, 印刷する」で在庫切れとは無関係。out と off を取り違えない。',
     difficulty: 'standard',
   },
   {
@@ -623,7 +623,7 @@ export const eikenQuestions3kyuIdiom: EikenQuestion[] = [
       { key: 'D', text: 'back' },
     ],
     correctKey: 'B',
-    explanation: '"look forward to 〜"（〜を楽しみにする）が正解。休暇中に家族を訪ねるのを楽しみにしているという文脈。',
+    explanation: '"look forward to 〜"（〜を楽しみにする）が正解。休暇中に家族を訪ねるのを楽しみにしているという文脈。\n\nlook forward to 〜 は「〜を楽しみに待つ」で、to は前置詞なので後ろは動名詞 visiting になる。この形は英検3級で最頻出の文法ポイントの一つ。進行形にすると期待の気持ちがより強調される。\n\n【図解】look ＋ 副詞の使い分け\n　表現｜意味｜後ろに来る形\n　look forward to｜楽しみにする｜名詞, 動名詞\n　look back on｜振り返る｜過去の出来事\n　look up｜辞書で調べる, 見上げる｜単語\n　⇒ 休暇の帰省が待ち遠しいなら look forward to\n　⚠ to の後ろに動詞の原形は置けない。visit ではなく visiting が正しい。',
     difficulty: 'basic',
   },
   {
@@ -636,7 +636,7 @@ export const eikenQuestions3kyuIdiom: EikenQuestion[] = [
       { key: 'D', text: 'up' },
     ],
     correctKey: 'A',
-    explanation: '"head back"（引き返す、帰る）が正解。遅くなってきたのでそろそろ帰ろうという文脈。',
+    explanation: '"head back"（引き返す、帰る）が正解。遅くなってきたのでそろそろ帰ろうという文脈。\n\nhead back は「引き返す、帰路につく」で、head は「（ある方向へ）向かう」という動詞。back が付くことで元の場所へ戻る方向を示す。It is getting late.（遅くなってきた）という理由と自然につながる。\n\n【図解】head を使う表現\n　表現｜意味｜方向\n　head back｜引き返す, 帰る｜元の場所へ\n　head for｜〜へ向かう｜目的地へ\n　head out｜出かける｜外へ\n　⇒ 遅いのでそろそろ帰ろうなら head back\n　⚠ head off は「先回りして阻む」という別の意味。back と off を取り違えない。',
     difficulty: 'basic',
   },
   {
@@ -649,7 +649,7 @@ export const eikenQuestions3kyuIdiom: EikenQuestion[] = [
       { key: 'D', text: 'off' },
     ],
     correctKey: 'A',
-    explanation: '"show up"（姿を現す、現れる）が正解。会議に時間通りに来るようにという指示を表す表現。',
+    explanation: '"show up"（姿を現す、現れる）が正解。会議に時間通りに来るようにという指示を表す表現。\n\nshow up は「姿を見せる、来る」で、約束や会議に現れることを表す。turn up や appear の言い換えになる。on time（時間どおりに）と組み合わせて、遅刻せず出席するよう求める指示の文で頻出する。\n\n【図解】時間に関する表現\n　表現｜意味｜使う場面\n　show up｜姿を現す｜会議, 約束\n　on time｜時間どおりに｜定刻ちょうど\n　in time｜間に合って｜締切や開始に遅れず\n　⇒ 会議に時間どおり来るなら show up on time\n　⚠ on time と in time は意味が異なる。定刻ぴったりが on time、余裕をもって間に合うのが in time。',
     difficulty: 'standard',
   },
 ];

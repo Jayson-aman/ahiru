@@ -12,7 +12,7 @@ export const eikenQuestions2kyuIdiom: EikenQuestion[] = [
       { key: 'D', text: 'with' },
     ],
     correctKey: 'D',
-    explanation: '"come up with 〜"（〜を考え出す、思いつく）が正解。政策や解決策を編み出す文脈で頻出。',
+    explanation: '"come up with 〜"（〜を考え出す、思いつく）が正解。政策や解決策を編み出す文脈で頻出。\n\ncome up with は「動詞＋副詞＋前置詞」で1つの意味をなす3語句動詞で、idea・solution・plan など「新しく生み出すもの」を目的語にとる。同じ come up でも後ろの前置詞が against に変わると「困難にぶつかる」という正反対の方向のイメージになる。ここは住宅不足への解決策を編み出す文脈なので with が唯一適切。\n\n【図解】come up 系の使い分け\n　表現｜意味｜典型的な目的語\n　come up with｜考え出す｜idea, solution, plan\n　come up against｜困難に直面する｜problem, opposition\n　come up to｜〜に達する｜expectations, standard\n　⇒ 後ろに solution など「作り出すもの」が来たら with で確定\n　⚠ against を「思いつく」と取り違えない。against は障害にぶつかる方向を表す。',
     difficulty: 'advanced',
   },
   {
@@ -25,7 +25,7 @@ export const eikenQuestions2kyuIdiom: EikenQuestion[] = [
       { key: 'D', text: 'ends' },
     ],
     correctKey: 'B',
-    explanation: '"come to terms with 〜"（〜を受け入れる、折り合いをつける）が正解。つらい現実を精神的に受け入れる際の慣用表現。',
+    explanation: '"come to terms with 〜"（〜を受け入れる、折り合いをつける）が正解。つらい現実を精神的に受け入れる際の慣用表現。\n\ncome to terms with の terms は「条件・折り合い」の意味で、相手（ここでは死別という現実）と条件面で妥協点に達する、つまり心の整理をつけるというイメージ。時間をかけて受け入れる過程を表すため、It took her years to のような時間表現と非常に相性がよい。\n\n【図解】come to 名詞 with の識別\n　表現｜意味｜使う場面\n　come to terms with｜受け入れる｜死別, 失敗, 現実\n　come to grips with｜取り組み始める｜問題, 課題\n　make peace with｜和解する｜人間関係, 過去\n　⇒ 感情面で折り合いをつけるなら terms\n　⚠ grips は「問題に取りかかる」で、心の受容ではない。peace は前置詞が with でも動詞が make。',
     difficulty: 'advanced',
   },
   {
@@ -38,7 +38,7 @@ export const eikenQuestions2kyuIdiom: EikenQuestion[] = [
       { key: 'D', text: 'terms' },
     ],
     correctKey: 'C',
-    explanation: '"make ends meet"（収支を合わせる、家計をやりくりする）が正解。経済的に苦しい中で何とかやっていく状況を表す。',
+    explanation: '"make ends meet"（収支を合わせる、家計をやりくりする）が正解。経済的に苦しい中で何とかやっていく状況を表す。\n\nmake ends meet は家計簿の収入の端（end）と支出の端（end）をようやく突き合わせる比喩で、「なんとか収支を合わせる」の意味。ぎりぎりで赤字を出さない状態を指すので、struggle to や barely と一緒に使われることが極めて多い。ends は必ず複数形。\n\n【図解】お金に関する定型表現\n　表現｜意味｜使う場面\n　make ends meet｜収支を合わせる｜家計, 零細企業\n　make a profit｜利益を出す｜企業業績\n　make money｜金を稼ぐ｜一般的な収入\n　⇒ 「やりくりして赤字を出さない」なら ends\n　⚠ make money や make profits に置き換えると「儲ける」になり、struggle to（苦労する）の含意と噛み合わない。',
     difficulty: 'advanced',
   },
   {
@@ -51,7 +51,7 @@ export const eikenQuestions2kyuIdiom: EikenQuestion[] = [
       { key: 'D', text: 'hang' },
     ],
     correctKey: 'D',
-    explanation: '"get the hang of 〜"（〜のコツをつかむ）が正解。新しいスキルや操作に慣れていく過程を表す表現。',
+    explanation: '"get the hang of 〜"（〜のコツをつかむ）が正解。新しいスキルや操作に慣れていく過程を表す表現。\n\nget the hang of は「勘所・要領をつかむ」で、練習や試行錯誤を経て操作に慣れる過程を表す。It took me a while to のような「時間がかかった」表現とセットで頻出する。hang は名詞で「こつ」を意味する固定語なので、他の語に置き換えられない。\n\n【図解】「慣れる・つかむ」系の表現\n　表現｜意味｜使う場面\n　get the hang of｜こつをつかむ｜新しい機器, 技能\n　get a grip on｜把握する, 自制する｜状況, 感情\n　get a feel for｜感覚をつかむ｜雰囲気, 市場\n　⇒ 操作の要領なら the hang of で固定\n　⚠ grip は「事態を掌握する」で、機器の操作習得には使わない。冠詞も the hang / a grip と異なる。',
     difficulty: 'advanced',
   },
   {
@@ -64,7 +64,7 @@ export const eikenQuestions2kyuIdiom: EikenQuestion[] = [
       { key: 'D', text: 'towel' },
     ],
     correctKey: 'D',
-    explanation: '"throw in the towel"（あきらめる、白旗を上げる）が正解。ボクシングでタオルを投げ入れて棄権を示すことに由来する慣用句。',
+    explanation: '"throw in the towel"（あきらめる、白旗を上げる）が正解。ボクシングでタオルを投げ入れて棄権を示すことに由来する慣用句。\n\nthrow in the towel はボクシングでセコンドがタオルをリングに投げ入れて棄権を告げる動作に由来し、「敗北を認めてあきらめる」を表す。3連敗という敗北の積み重ねの後という文脈にぴったり合う。towel 以外の語（sponge も英国では使われるが towel が標準）は本試験では不正解。\n\n【図解】「あきらめる」の表現\n　表現｜意味｜語源・場面\n　throw in the towel｜降参する｜ボクシングの棄権\n　give up｜やめる, 断念する｜一般的な口語\n　back down｜主張を引っ込める｜議論, 対立\n　⇒ 勝負に負け続けた末の断念なら towel\n　⚠ raise the white flag（白旗）と混ぜて throw the flag としない。flag は動詞 wave/raise と結ぶ。',
     difficulty: 'advanced',
   },
   {
@@ -77,7 +77,7 @@ export const eikenQuestions2kyuIdiom: EikenQuestion[] = [
       { key: 'D', text: 'instant' },
     ],
     correctKey: 'B',
-    explanation: '"on the spur of the moment"（衝動的に、その場の思いつきで）が正解。よく考えずに突発的に行動することを表す。',
+    explanation: '"on the spur of the moment"（衝動的に、その場の思いつきで）が正解。よく考えずに突発的に行動することを表す。\n\non the spur of the moment の spur は馬に付ける拍車のこと。拍車を当てられた馬が突然走り出すイメージから「その場の勢いで、衝動的に」を表す。without really thinking it through（よく考えずに）という後半が、計画性のなさを裏づけている。冠詞と語順まで含めて丸暗記する固定表現。\n\n【図解】「即座に・衝動的に」の対比\n　表現｜意味｜ニュアンス\n　on the spur of the moment｜衝動的に｜計画なし, 後悔含み\n　at the moment｜今のところ｜現在の状況\n　in a moment｜すぐに｜これからの短時間\n　⇒ 「よく考えずに」が続けば spur of the moment\n　⚠ instant や second に差し替えない。この慣用句では moment 以外は使えない。',
     difficulty: 'advanced',
   },
   {
@@ -90,7 +90,7 @@ export const eikenQuestions2kyuIdiom: EikenQuestion[] = [
       { key: 'D', text: 'notes' },
     ],
     correctKey: 'C',
-    explanation: '"keep tabs on 〜"（〜を注意深く監視する）が正解。進捗などを細かくチェックする様子を表す口語的表現。',
+    explanation: '"keep tabs on 〜"（〜を注意深く監視する）が正解。進捗などを細かくチェックする様子を表す口語的表現。\n\nkeep tabs on の tab は「勘定書・記録」の意味で、相手の動きを逐一記録に付けるイメージから「（人・物事を）継続的に監視する」を表す。進捗管理や動向のチェックといった文脈で使われる口語寄りの表現で、tabs は必ず複数形になる。\n\n【図解】「見張る・注視する」の使い分け\n　表現｜意味｜使う場面\n　keep tabs on｜継続的に監視する｜進捗, 支出, 人の動向\n　keep an eye on｜ちょっと見ておく｜留守番, 子ども\n　keep track of｜記録を追い続ける｜数量, 日程\n　⇒ 定期的にチェックし続けるなら tabs\n　⚠ eye は必ず単数（an eye）、tabs は必ず複数。数を入れ替える出題が定番。',
     difficulty: 'advanced',
   },
   {
@@ -103,7 +103,7 @@ export const eikenQuestions2kyuIdiom: EikenQuestion[] = [
       { key: 'D', text: 'about' },
     ],
     correctKey: 'D',
-    explanation: '"bring about 〜"（〜を引き起こす、もたらす）が正解。ある行動や政策が結果として変化を生じさせる場合に使う。',
+    explanation: '"bring about 〜"（〜を引き起こす、もたらす）が正解。ある行動や政策が結果として変化を生じさせる場合に使う。\n\nbring about は「（変化・結果を）引き起こす」で、政策・技術・出来事などが主語になり、change・reform・improvement のような結果を目的語にとる。cause と近いが、bring about は望ましい変化にも使える中立的な語である点が特徴。\n\n【図解】bring ＋ 副詞の句動詞\n　表現｜意味｜典型目的語\n　bring about｜引き起こす｜change, reform\n　bring up｜育てる, 話題に出す｜child, topic\n　bring out｜世に出す, 引き出す｜product, potential\n　⇒ changes が目的語なら about\n　⚠ bring up を「もたらす」と誤読しない。up は「養育する／議題に上げる」で結果の産出ではない。',
     difficulty: 'advanced',
   },
   {
@@ -116,7 +116,7 @@ export const eikenQuestions2kyuIdiom: EikenQuestion[] = [
       { key: 'D', text: 'run' },
     ],
     correctKey: 'D',
-    explanation: '"in the long run"（長期的に見れば）が正解。短期的な視点ではなく、時間が経ったあとの結果に焦点を当てる表現。',
+    explanation: '"in the long run"（長期的に見れば）が正解。短期的な視点ではなく、時間が経ったあとの結果に焦点を当てる表現。\n\nin the long run は「長い目で見れば」で、短期的には損に見えても最終的には報われる、という対比の文脈で使われる。反対語は in the short run / in the short term。pay off（報われる）と組み合わせるのが定番のコロケーション。\n\n【図解】期間を表す副詞句\n　表現｜意味｜使う場面\n　in the long run｜長期的には｜投資, 教育の効果\n　in the short run｜短期的には｜目先の損得\n　for the time being｜当面は｜暫定的な措置\n　⇒ pays off と結ぶなら long run\n　⚠ in the long term も正しい英語だが、run と term を混ぜて in the long time とはしない。',
     difficulty: 'advanced',
   },
   {
@@ -129,7 +129,7 @@ export const eikenQuestions2kyuIdiom: EikenQuestion[] = [
       { key: 'D', text: 'assumed' },
     ],
     correctKey: 'B',
-    explanation: '"take 〜 for granted"（〜を当然のことと思う）が正解。ありがたみを忘れて当たり前だと考えてしまうことへの警告。',
+    explanation: '"take 〜 for granted"（〜を当然のことと思う）が正解。ありがたみを忘れて当たり前だと考えてしまうことへの警告。\n\ntake 〜 for granted は「〜を当然のものとみなす」で、恵まれた状況のありがたみを忘れる、という批判的な含みで使われる。granted は grant（与える）の過去分詞で「すでに与えられたもの」の意味。目的語が長い場合は take it for granted that 節 の形になる。\n\n【図解】take を使う定型表現\n　表現｜意味｜使う場面\n　take for granted｜当然と思う｜きれいな水, 家族の支え\n　take into account｜考慮に入れる｜条件, 事情\n　take advantage of｜利用する｜機会, 制度\n　⇒ ありがたみを忘れる文脈なら for granted\n　⚠ granted を accepted や given に置き換えない。この形では granted 以外は不可。',
     difficulty: 'advanced',
   },
   {
@@ -142,7 +142,7 @@ export const eikenQuestions2kyuIdiom: EikenQuestion[] = [
       { key: 'D', text: 'off' },
     ],
     correctKey: 'C',
-    explanation: '"break down"（（交渉などが）決裂する）が正解。話し合いが不調に終わったことを表す表現。break off も「（関係を）断つ」の意味で使われるが、ここでは合意に至らず「決裂した」ことを表す break down が最も適切。',
+    explanation: '"break down"（（交渉などが）決裂する）が正解。話し合いが不調に終わったことを表す表現。break off も「（関係を）断つ」の意味で使われるが、ここでは合意に至らず「決裂した」ことを表す break down が最も適切。\n\nbreak down は自動詞で「（機械が）故障する」「（交渉・関係が）決裂する」、他動詞で「分解する」の意味を持つ多義句動詞。ここは fail to reach an agreement という結果が示されているので、話し合いそのものが崩れた＝決裂したという読みになる。\n\n【図解】break ＋ 副詞の使い分け\n　表現｜意味｜使う場面\n　break down｜決裂する, 故障する｜交渉, 機械\n　break off｜途中で打ち切る｜関係, 会談\n　break out｜突発する｜戦争, 火災\n　⇒ 合意に至らず崩壊したなら down\n　⚠ break off は「一方が意図的に打ち切る」動作。ここは双方が合意できず自然に崩れたので down が適切。',
     difficulty: 'advanced',
   },
   {
@@ -155,7 +155,7 @@ export const eikenQuestions2kyuIdiom: EikenQuestion[] = [
       { key: 'D', text: 'up' },
     ],
     correctKey: 'D',
-    explanation: '"weigh up 〜"（〜を比較検討する）が正解。物事の長所と短所を慎重に比べる場面で使う表現。',
+    explanation: '"weigh up 〜"（〜を比較検討する）が正解。物事の長所と短所を慎重に比べる場面で使う表現。\n\nweigh up は天秤に載せて重さを比べる比喩から「（長所と短所を）比較検討する」を表す。pros and cons（賛否・長短）や options を目的語にとるのが定番。同じ weigh でも in が付くと「議論に加わる」、on が付くと「重荷になる」と意味がまるで変わる。\n\n【図解】weigh の句動詞\n　表現｜意味｜典型目的語\n　weigh up｜比較検討する｜pros and cons, options\n　weigh in on｜議論に加わる｜debate, issue\n　weigh on｜重荷となる｜mind, conscience\n　⇒ pros and cons が続けば up\n　⚠ weigh in は「意見を述べる」で検討ではない。前置詞1つで意味が反転する典型例。',
     difficulty: 'advanced',
   },
   {
@@ -168,7 +168,7 @@ export const eikenQuestions2kyuIdiom: EikenQuestion[] = [
       { key: 'D', text: 'to' },
     ],
     correctKey: 'D',
-    explanation: '"stick to 〜"（〜を貫く、固守する）が正解。自分の意見や計画を変えずに守り通す様子を表す。',
+    explanation: '"stick to 〜"（〜を貫く、固守する）が正解。自分の意見や計画を変えずに守り通す様子を表す。\n\nstick to は「〜から離れない」＝「（意見・計画・規則を）守り通す」。even when everyone else disagrees という譲歩節が、周囲に流されず一貫していることを示している。stick with も近いが、stick to は方針・原則、stick with は人や選択肢に寄り添う場合に使われやすい。\n\n【図解】stick の句動詞\n　表現｜意味｜典型目的語\n　stick to｜貫く, 守る｜opinion, plan, rules\n　stick with｜付き合い続ける｜person, method\n　stick out｜目立つ, 突き出る｜feature, hand\n　⇒ opinion や plan を貫くなら to\n　⚠ stick on は「貼り付ける」という物理的な意味。抽象的な「固執」には使えない。',
     difficulty: 'advanced',
   },
   {
@@ -181,7 +181,7 @@ export const eikenQuestions2kyuIdiom: EikenQuestion[] = [
       { key: 'D', text: 'over' },
     ],
     correctKey: 'B',
-    explanation: '"pick up"（（経済・状況などが）好転する、回復する）が正解。景気動向を述べるニュース記事などで頻出。',
+    explanation: '"pick up"（（経済・状況などが）好転する、回復する）が正解。景気動向を述べるニュース記事などで頻出。\n\npick up は「拾う」の基本義から広がり、自動詞で「（景気・売上・風が）勢いを取り戻す」を表す。経済ニュースの定番表現で、improve や recover の言い換えとして頻出する。The economy is expected to pick up のように未来の回復予測でよく使われる。\n\n【図解】pick の句動詞と景気表現\n　表現｜意味｜使う場面\n　pick up｜回復する, 好転する｜景気, 売上, 風\n　pick out｜選び出す｜商品, 人物\n　slow down｜減速する｜経済成長\n　⇒ economy が主語で好転なら pick up\n　⚠ pick out は「選ぶ」で回復の意味はない。自動詞の up と他動詞の out を混同しない。',
     difficulty: 'advanced',
   },
   {
@@ -194,7 +194,7 @@ export const eikenQuestions2kyuIdiom: EikenQuestion[] = [
       { key: 'D', text: 'up' },
     ],
     correctKey: 'C',
-    explanation: '"figure out 〜"（〜を解明する）が正解。複雑な仕組みや原因を理解しようとする文脈。',
+    explanation: '"figure out 〜"（〜を解明する）が正解。複雑な仕組みや原因を理解しようとする文脈。\n\nfigure out は「考えて答えを出す」＝理解する・解明する。科学的な調査のように、仕組みや原因を筋道立てて突き止める文脈で使う。目的語には how / why で始まる名詞節がよく続き、ここも how the disease spreads という間接疑問文が続いている。\n\n【図解】figure と類義の句動詞\n　表現｜意味｜後ろに来る形\n　figure out｜解明する, 理解する｜how節, why節, 名詞\n　work out｜算出する, 解決する｜problem, amount\n　find out｜（情報を）知る｜fact, truth\n　⇒ how節が続く「仕組みの解明」なら figure out\n　⚠ find out は事実を知る行為で、思考して導く含みが薄い。推論の過程を強調したいときは figure out。',
     difficulty: 'standard',
   },
   {
@@ -207,7 +207,7 @@ export const eikenQuestions2kyuIdiom: EikenQuestion[] = [
       { key: 'D', text: 'in' },
     ],
     correctKey: 'D',
-    explanation: '"fill in for 〜"（〜の代わりを務める）が正解。休んでいる同僚の仕事を一時的に引き受ける場面。',
+    explanation: '"fill in for 〜"（〜の代わりを務める）が正解。休んでいる同僚の仕事を一時的に引き受ける場面。\n\nfill in for は「（一時的に）〜の代わりを務める」。病欠の同僚の穴を埋める、という文脈にぴったり合う。同じ fill でも fill in（記入する）、fill out（用紙に記入する）、fill up（満たす）と意味が分かれ、代役の意味になるのは for が付いたときだけ。\n\n【図解】fill の句動詞\n　表現｜意味｜使う場面\n　fill in for｜代役を務める｜病欠, 出張中の同僚\n　fill in｜記入する｜form, blank\n　fill up｜いっぱいにする｜tank, glass\n　⇒ 後ろに人が来て「代わり」なら fill in for\n　⚠ fill out は書類に記入する意味。人を目的語にとって代役の意味にはならない。',
     difficulty: 'advanced',
   },
   {
@@ -220,7 +220,7 @@ export const eikenQuestions2kyuIdiom: EikenQuestion[] = [
       { key: 'D', text: 'out' },
     ],
     correctKey: 'C',
-    explanation: '"do away with 〜"（〜を廃止する）が正解。制度や習慣をなくす場合のややフォーマルな表現。',
+    explanation: '"do away with 〜"（〜を廃止する）が正解。制度や習慣をなくす場合のややフォーマルな表現。\n\ndo away with は「〜を取り除く、廃止する」で、制度・規則・慣行を対象にとるややフォーマルな表現。abolish や eliminate の言い換えとして頻出する。3語で1つの他動詞として働くため、必ず with の後ろに目的語が必要。\n\n【図解】「廃止する」の言い換え\n　表現｜意味｜使う場面\n　do away with｜廃止する｜制度, 規則, 手続き\n　abolish｜廃止する（硬い）｜法律, 制度\n　put an end to｜終止符を打つ｜争い, うわさ\n　⇒ 制度をなくす文脈なら do away with\n　⚠ do without は「〜なしで済ませる」で廃止ではない。away の有無で意味が変わる典型的なひっかけ。',
     difficulty: 'advanced',
   },
   {
@@ -233,7 +233,7 @@ export const eikenQuestions2kyuIdiom: EikenQuestion[] = [
       { key: 'D', text: 'off' },
     ],
     correctKey: 'B',
-    explanation: '"branch out"（（事業などを）多角化する、新分野に進出する）が正解。木の枝が伸びるイメージから派生した表現。',
+    explanation: '"branch out"（（事業などを）多角化する、新分野に進出する）が正解。木の枝が伸びるイメージから派生した表現。\n\nbranch out は木が枝を伸ばす様子から「新しい分野に進出する、活動範囲を広げる」を表す。企業が新市場や新事業へ乗り出す文脈で頻出し、branch out into new markets という形で使われる。into と結ぶことが多いのも手がかりになる。\n\n【図解】事業拡大に関する句動詞\n　表現｜意味｜使う場面\n　branch out｜新分野に進出する｜海外市場, 新事業\n　expand into｜拡大進出する｜地域, 業界\n　take over｜買収する, 引き継ぐ｜企業, 業務\n　⇒ into new markets が続くなら branch out\n　⚠ branch off は「（道が）枝分かれする」で、事業展開の意味はない。out と off を取り違えない。',
     difficulty: 'advanced',
   },
   {
@@ -246,7 +246,7 @@ export const eikenQuestions2kyuIdiom: EikenQuestion[] = [
       { key: 'D', text: 'up' },
     ],
     correctKey: 'C',
-    explanation: '"iron out 〜"（（問題点などを）解決する、調整する）が正解。細かい問題点を解消して合意に至る場面。',
+    explanation: '"iron out 〜"（（問題点などを）解決する、調整する）が正解。細かい問題点を解消して合意に至る場面。\n\niron out はアイロンでしわを伸ばす比喩から「（細かな問題点や食い違いを）解消する、詰める」を表す。契約締結の直前に残った細部を調整する、という文脈にぴったり合う。目的語には details・differences・problems が来る。\n\n【図解】問題解決系の句動詞\n　表現｜意味｜典型目的語\n　iron out｜細部を詰める｜details, differences\n　sort out｜整理して片づける｜mess, schedule\n　hammer out｜難交渉でまとめる｜agreement, deal\n　⇒ a few details が続けば iron out\n　⚠ hammer out は大きな合意を打ち出す作業。残りわずかな細部の調整には iron out を使う。',
     difficulty: 'advanced',
   },
   {
@@ -259,7 +259,7 @@ export const eikenQuestions2kyuIdiom: EikenQuestion[] = [
       { key: 'D', text: 'through' },
     ],
     correctKey: 'D',
-    explanation: '"fall through"（（計画などが）失敗に終わる、実現しない）が正解。予定していたことが土壇場でだめになる状況。',
+    explanation: '"fall through"（（計画などが）失敗に終わる、実現しない）が正解。予定していたことが土壇場でだめになる状況。\n\nfall through は「（計画・取引が）だめになる、流れる」。床が抜けて落ちるイメージから、進んでいた話が実現せずに終わることを表す。at the last minute（土壇場で）や because of a lack of funding のような原因表現と組み合わせて使われる。\n\n【図解】計画が失敗する表現\n　表現｜意味｜主語になるもの\n　fall through｜流れる, 実現しない｜plan, deal, trip\n　fall apart｜ばらばらに崩れる｜relationship, system\n　fall behind｜遅れをとる｜schedule, payment\n　⇒ plan が主語で「実現しなかった」なら through\n　⚠ fall apart は徐々に崩壊する内部崩壊。契約や計画が一気に流れる場合は fall through。',
     difficulty: 'advanced',
   },
   {
@@ -272,7 +272,7 @@ export const eikenQuestions2kyuIdiom: EikenQuestion[] = [
       { key: 'D', text: 'on' },
     ],
     correctKey: 'D',
-    explanation: '"touch on 〜"（〜に軽く触れる）が正解。テーマを深く扱うのではなく、簡単に言及する場合の表現。',
+    explanation: '"touch on 〜"（〜に軽く触れる）が正解。テーマを深く扱うのではなく、簡単に言及する場合の表現。\n\ntouch on は「〜に軽く触れる、簡単に言及する」。深く論じるのではなく話の中でちらりと取り上げる場合に使う。記事や講演の内容を説明する文脈で頻出し、briefly touch on の形もよく見られる。deal with（本格的に扱う）との対比で覚えるとよい。\n\n【図解】言及の深さの違い\n　表現｜意味｜扱いの深さ\n　touch on｜軽く触れる｜浅い\n　refer to｜言及する｜中程度\n　deal with｜本格的に扱う｜深い\n　⇒ several issues に軽く言及するなら touch on\n　⚠ touch at は船が寄港する意味の海事用語。話題への言及には on を使う。',
     difficulty: 'advanced',
   },
   {
@@ -285,7 +285,7 @@ export const eikenQuestions2kyuIdiom: EikenQuestion[] = [
       { key: 'D', text: 'off' },
     ],
     correctKey: 'B',
-    explanation: '"put 〜 down to ..."（〜を…のせいにする、〜の原因を…に帰する）が正解。成功や失敗の理由を説明する際に使う。',
+    explanation: '"put 〜 down to ..."（〜を…のせいにする、〜の原因を…に帰する）が正解。成功や失敗の理由を説明する際に使う。\n\nput 〜 down to ... は「〜の原因を…に帰する、〜を…のおかげ（せい）だと考える」。attribute A to B のくだけた言い換えで、成功にも失敗にも使える。ここでは受動態 can be put down to の形で、成功の要因が長年の努力にあると説明している。\n\n【図解】原因を述べる表現\n　表現｜意味｜使う場面\n　put A down to B｜AをBのおかげとする｜成功, 失敗の要因\n　attribute A to B｜Aの原因をBとする｜論文, 報道\n　result from｜〜から生じる｜結果を主語にする\n　⇒ 受動態 be put down to なら原因説明\n　⚠ put off（延期する）や put up with（我慢する）と混同しない。down to まで揃って初めてこの意味になる。',
     difficulty: 'advanced',
   },
   {
@@ -298,7 +298,7 @@ export const eikenQuestions2kyuIdiom: EikenQuestion[] = [
       { key: 'D', text: 'up to' },
     ],
     correctKey: 'C',
-    explanation: '"hold on to 〜"（〜にしがみつく、〜を保持し続ける）が正解。地位や物を手放さずに維持する様子を表す。',
+    explanation: '"hold on to 〜"（〜にしがみつく、〜を保持し続ける）が正解。地位や物を手放さずに維持する様子を表す。\n\nhold on to は「〜を手放さずにつかんでおく」で、物理的にしがみつく場合にも、地位・信念・希望を維持する比喩にも使う。ここではスキャンダル後もCEOの座を保ち続けた、という文脈。3語で1つのまとまりなので、to の後ろに必ず目的語が来る。\n\n【図解】hold の句動詞\n　表現｜意味｜典型目的語\n　hold on to｜手放さず保つ｜position, hope, belief\n　hold off｜先延ばしにする, 控える｜decision, rain\n　hold up｜支える, 遅らせる｜traffic, argument\n　⇒ 地位を維持し続けるなら hold on to\n　⚠ hold up to は「〜に耐える」。on と up で意味が別物になるので前置詞まで確認する。',
     difficulty: 'advanced',
   },
   {
@@ -311,7 +311,7 @@ export const eikenQuestions2kyuIdiom: EikenQuestion[] = [
       { key: 'D', text: 'into' },
     ],
     correctKey: 'D',
-    explanation: '"call 〜 into question"（〜に疑問を投げかける）が正解。学術的な議論で、ある説の正しさが疑われる場合に使う表現。',
+    explanation: '"call 〜 into question"（〜に疑問を投げかける）が正解。学術的な議論で、ある説の正しさが疑われる場合に使う表現。\n\ncall 〜 into question は「〜の妥当性に疑いを投げかける」で、学説・信頼性・正当性を対象にとる。名詞 question の前に冠詞を付けないのがこの慣用句の形。受動態 be called into question で使われることが非常に多く、本問もその形。\n\n【図解】疑義を表す表現\n　表現｜意味｜使う場面\n　call into question｜妥当性を疑う｜理論, 信頼性\n　cast doubt on｜疑念を投げかける｜証言, 説明\n　in question｜問題の, 当該の｜名詞の後ろに置く\n　⇒ 学説の正しさが揺らぐなら call into question\n　⚠ call in question は古い英国用法。現代の試験では into を選ぶ。前置詞 in だけでは不十分。',
     difficulty: 'advanced',
   },
   {
@@ -324,7 +324,7 @@ export const eikenQuestions2kyuIdiom: EikenQuestion[] = [
       { key: 'D', text: 'sides' },
     ],
     correctKey: 'B',
-    explanation: '"join forces"（力を合わせる、協力する）が正解。複数の組織や人が共通の目標のために協力するときの慣用表現。',
+    explanation: '"join forces"（力を合わせる、協力する）が正解。複数の組織や人が共通の目標のために協力するときの慣用表現。\n\njoin forces は軍隊が兵力（forces）を合流させる比喩から「力を合わせる、提携する」を表す。企業や研究機関が共同で事業に当たる場面で頻出し、join forces with 〜 to do ... の形をとる。forces は必ず複数形になる。\n\n【図解】協力を表す表現\n　表現｜意味｜使う場面\n　join forces｜力を合わせる｜企業提携, 共同開発\n　join hands｜手を取り合う｜やや文語, 象徴的\n　team up｜組む, 提携する｜口語的で幅広い\n　⇒ 企業同士の本格的な提携なら join forces\n　⚠ go separate ways（別々の道を行く）と ways を混ぜない。ここで ways を選ぶと意味が真逆になる。',
     difficulty: 'advanced',
   },
   {
@@ -337,7 +337,7 @@ export const eikenQuestions2kyuIdiom: EikenQuestion[] = [
       { key: 'D', text: 'off' },
     ],
     correctKey: 'C',
-    explanation: '"team up"（協力する、手を組む）が正解。競合する企業同士が共同研究のために協力する場面で使う表現。',
+    explanation: '"team up"（協力する、手を組む）が正解。競合する企業同士が共同研究のために協力する場面で使う表現。\n\nteam up は「チームを組む、協力する」で、team up with 〜 / team up on 〜 の形をとる。ライバル企業同士が特定の案件で手を組むというニュース的文脈にふさわしい口語表現。join forces よりカジュアルで、個人同士にも使える。\n\n【図解】提携表現の使い分け\n　表現｜意味｜結ぶ前置詞\n　team up｜協力する, 組む｜with 人, on 案件\n　join forces｜力を結集する｜with 相手\n　cooperate｜協力する（硬い）｜with 相手\n　⇒ on the joint project が続くなら team up\n　⚠ team off という句動詞は存在しない。up 以外の副詞を選ばせるひっかけに注意。',
     difficulty: 'advanced',
   },
   {
@@ -350,7 +350,7 @@ export const eikenQuestions2kyuIdiom: EikenQuestion[] = [
       { key: 'D', text: 'for' },
     ],
     correctKey: 'B',
-    explanation: '"be met with 〜"（〜に直面する、〜という反応を受ける）が正解。提案などが特定の反応を引き起こした場合に使う定番表現。',
+    explanation: '"be met with 〜"（〜に直面する、〜という反応を受ける）が正解。提案などが特定の反応を引き起こした場合に使う定番表現。\n\nbe met with 〜 は「〜という反応・扱いを受ける」で、提案や発表が反対・称賛・沈黙などに迎えられた場合に使う。主語は反応を受ける側、with の後ろが反応の内容。be met by は人や集団に出迎えられる物理的な意味になりやすい点で区別される。\n\n【図解】反応を表す受動表現\n　表現｜意味｜with の後ろ\n　be met with｜〜の反応を受ける｜opposition, praise, silence\n　be greeted with｜〜で迎えられる｜applause, cheers\n　come under fire｜批判を浴びる｜（前置詞不要）\n　⇒ opposition が続くなら met with\n　⚠ be met by は「人に出迎えられる」。抽象的な反応には with を使う。前置詞1つで意味が変わる。',
     difficulty: 'advanced',
   },
   {
@@ -363,7 +363,7 @@ export const eikenQuestions2kyuIdiom: EikenQuestion[] = [
       { key: 'D', text: 'out' },
     ],
     correctKey: 'D',
-    explanation: '"work out 〜"（〜を解決する、うまく処理する）が正解。対立や問題を話し合いによって解消することを表す。',
+    explanation: '"work out 〜"（〜を解決する、うまく処理する）が正解。対立や問題を話し合いによって解消することを表す。\n\nwork out は多義だが、ここでは「（対立や問題を）話し合って解決する」の他動詞用法。differences（意見の相違）を目的語にとるのが定番のコロケーションで、合併後に部署間の食い違いを解消したという文脈に合う。自動詞では「うまくいく」「運動する」の意味にもなる。\n\n【図解】work out の意味の広がり\n　用法｜意味｜典型目的語や主語\n　他動詞｜解決する, 算出する｜differences, problem, cost\n　自動詞｜うまくいく｜things, plan\n　自動詞｜運動する｜at the gym\n　⇒ differences が目的語なら「解決する」\n　⚠ work over は「入念に調べる／痛めつける」で解決の意味はない。out 以外を選ばせる出題に注意。',
     difficulty: 'advanced',
   },
   {
@@ -376,7 +376,7 @@ export const eikenQuestions2kyuIdiom: EikenQuestion[] = [
       { key: 'D', text: 'in' },
     ],
     correctKey: 'B',
-    explanation: '"crack down on 〜"（〜を厳しく取り締まる）が正解。規則違反や不正行為に対して厳しい措置をとることを表す表現。',
+    explanation: '"crack down on 〜"（〜を厳しく取り締まる）が正解。規則違反や不正行為に対して厳しい措置をとることを表す表現。\n\ncrack down on は「〜を厳しく取り締まる」で、当局や管理職が違反行為に強い措置をとる場合に使う。目的語には crime・speeding・tax evasion のような違反行為や違反者が来る。名詞形は crackdown で1語になる点も押さえておきたい。\n\n【図解】crack の句動詞\n　表現｜意味｜典型目的語\n　crack down on｜厳しく取り締まる｜遅刻, 不正, 犯罪\n　crack up｜大笑いする, 精神的に参る｜人\n　crack open｜こじ開ける｜箱, ボトル\n　⇒ 違反者への厳しい措置なら crack down on\n　⚠ crack up は笑いや破綻の意味で取り締まりではない。down と up で全く別の意味になる。',
     difficulty: 'advanced',
   },
   {
@@ -389,7 +389,7 @@ export const eikenQuestions2kyuIdiom: EikenQuestion[] = [
       { key: 'D', text: 'up' },
     ],
     correctKey: 'A',
-    explanation: '"come to light"（明るみに出る、発覚する）が正解。隠されていた事実が公になる場合に使う定番表現。',
+    explanation: '"come to light"（明るみに出る、発覚する）が正解。隠されていた事実が公になる場合に使う定番表現。\n\ncome to light は「（隠されていた事実が）明るみに出る、発覚する」で、不正・欠陥・証拠などが主語になる。光のもとに出てくるという比喩で、内部告発や調査の結果として使われることが多い。bring 〜 to light（明るみに出す）が他動詞版。\n\n【図解】発覚を表す表現\n　表現｜意味｜主語または目的語\n　come to light｜明るみに出る｜scandal, defect, evidence\n　bring to light｜明るみに出す｜（他動詞）真実\n　come out｜公になる, 発売される｜news, product\n　⇒ scandal が主語で発覚なら come to light\n　⚠ come into light とはしない。to が正しく、into を選ばせるひっかけが定番。',
     difficulty: 'advanced',
   },
   {
@@ -402,7 +402,7 @@ export const eikenQuestions2kyuIdiom: EikenQuestion[] = [
       { key: 'D', text: 'in' },
     ],
     correctKey: 'A',
-    explanation: '"sign off on 〜"（〜を正式に承認する）が正解。リスクの高い投資案件への正式な承認をためらったという文脈。',
+    explanation: '"sign off on 〜"（〜を正式に承認する）が正解。リスクの高い投資案件への正式な承認をためらったという文脈。\n\nsign off on 〜 は「〜を正式に承認する、決裁する」で、書類にサインして手続きを終える動作に由来する。上司や役員が投資案件や予算を承認する文脈で頻出するビジネス表現。単なる sign off は「（放送や手紙を）締めくくる」の意味になる。\n\n【図解】sign の句動詞\n　表現｜意味｜使う場面\n　sign off on｜正式に承認する｜投資, 予算, 設計\n　sign up for｜申し込む｜講座, 会員\n　sign in｜署名して入る, ログインする｜受付, システム\n　⇒ 承認をためらう文脈なら sign off on\n　⚠ sign up は自分が参加登録する側の行為。承認する側の行為ではないので混同しない。',
     difficulty: 'advanced',
   },
   {
@@ -415,7 +415,7 @@ export const eikenQuestions2kyuIdiom: EikenQuestion[] = [
       { key: 'D', text: 'over' },
     ],
     correctKey: 'B',
-    explanation: '"stand by 〜"（〜を支持し続ける、〜に固執する）が正解。批判を受けても自分の決定を変えなかったという文脈に合う。',
+    explanation: '"stand by 〜"（〜を支持し続ける、〜に固執する）が正解。批判を受けても自分の決定を変えなかったという文脈に合う。\n\nstand by 〜 は「（人・決定を）支持し続ける、〜に忠実であり続ける」。Despite the criticism という譲歩表現が、批判を受けても立場を変えなかったことを示している。stand by には「待機する」の意味もあり、その場合は自動詞で目的語をとらない。\n\n【図解】stand の句動詞\n　表現｜意味｜典型目的語\n　stand by｜支持し続ける｜decision, promise, 人\n　stand up for｜擁護して主張する｜rights, 弱者\n　stand for｜表す, 象徴する｜略語, 理念\n　⇒ 自分の決定を貫くなら stand by\n　⚠ stand up for は他者や権利を守るために声を上げる行為。自分の決定の堅持には stand by。',
     difficulty: 'advanced',
   },
   {
@@ -428,7 +428,7 @@ export const eikenQuestions2kyuIdiom: EikenQuestion[] = [
       { key: 'D', text: 'up' },
     ],
     correctKey: 'A',
-    explanation: '"hold off from 〜ing"（〜するのを控える、見合わせる）が正解。調査が終わるまで公の発言を控えるよう助言する文脈。',
+    explanation: '"hold off from 〜ing"（〜するのを控える、見合わせる）が正解。調査が終わるまで公の発言を控えるよう助言する文脈。\n\nhold off は「先延ばしにする、控える」で、hold off from doing / hold off on doing の形で「〜するのを差し控える」を表す。調査が終わるまで公式コメントを控えるよう助言する、という法務的文脈で自然に使われる。天候について「雨が降らずにもつ」の意味もある。\n\n【図解】hold off の使い方\n　形｜意味｜例\n　hold off from doing｜〜するのを控える｜making statements\n　hold off on 名詞｜〜を保留する｜a decision, the launch\n　hold off 自動詞｜（雨などが）降らずにいる｜The rain held off\n　⇒ from making statements なら hold off\n　⚠ hold on は「待つ・持ちこたえる」で自制の意味はない。off と on を取り違えない。',
     difficulty: 'advanced',
   },
   {
@@ -441,7 +441,7 @@ export const eikenQuestions2kyuIdiom: EikenQuestion[] = [
       { key: 'D', text: 'by' },
     ],
     correctKey: 'C',
-    explanation: '"be in line with 〜"（〜と一致している）が正解。委員会の提言が専門家の予測とおおむね一致していたことを表す。',
+    explanation: '"be in line with 〜"（〜と一致している）が正解。委員会の提言が専門家の予測とおおむね一致していたことを表す。\n\nbe in line with 〜 は「〜と一致している、〜に沿っている」で、方針・予測・基準との整合性を述べるときに使う。反対は be out of line with（〜とずれている）。bring 〜 into line with なら「〜に合わせる」という動作を表す。\n\n【図解】line を使う定型表現\n　表現｜意味｜使う場面\n　in line with｜〜と一致して｜予測, 方針, 基準\n　out of line with｜〜とずれて｜実態との乖離\n　in line for｜〜の候補で｜昇進, 受賞\n　⇒ 予測と一致なら in line with\n　⚠ on line（オンライン）や in line（列に並んで）と混同しない。with が続くかどうかで判別する。',
     difficulty: 'advanced',
   },
   {
@@ -454,7 +454,7 @@ export const eikenQuestions2kyuIdiom: EikenQuestion[] = [
       { key: 'D', text: 'over' },
     ],
     correctKey: 'B',
-    explanation: '"hammer out 〜"（（合意などを）苦労して作り上げる）が正解。長い交渉を経て詳細な合意にこぎつけたという文脈。',
+    explanation: '"hammer out 〜"（（合意などを）苦労して作り上げる）が正解。長い交渉を経て詳細な合意にこぎつけたという文脈。\n\nhammer out は金属を槌で打って形にする比喩から「（合意・計画を）苦労してまとめ上げる」を表す。several months という長期間の交渉を経て最終条件に到達したという文脈と完全に一致する。目的語は agreement・deal・compromise・terms。\n\n【図解】合意形成の段階\n　表現｜意味｜段階\n　hammer out｜難交渉でまとめる｜合意の形成\n　iron out｜細部の食い違いを消す｜最終調整\n　call off｜中止する｜破談\n　⇒ 数か月かけて最終条件をまとめたなら hammer out\n　⚠ hammer in は「（釘や考えを）打ち込む」。out と in で作用の方向が逆になる。',
     difficulty: 'advanced',
   },
   {
@@ -467,7 +467,7 @@ export const eikenQuestions2kyuIdiom: EikenQuestion[] = [
       { key: 'D', text: 'out' },
     ],
     correctKey: 'A',
-    explanation: '"do away with 〜"（〜を廃止する）が正解。時代遅れになった承認プロセスを完全になくすという文脈。',
+    explanation: '"do away with 〜"（〜を廃止する）が正解。時代遅れになった承認プロセスを完全になくすという文脈。\n\ndo away with 〜 は「〜を廃止する、なくす」で、制度・規則・手続きといった仕組みを対象にとる。altogether（完全に）という副詞が、部分的な修正ではなく撤廃であることを裏づけている。abolish のくだけた言い換えとして頻出する。\n\n【図解】制度をなくす表現\n　表現｜意味｜対象\n　do away with｜廃止する｜承認手続き, 旧制度\n　phase out｜段階的に廃止する｜製品, 補助金\n　do without｜〜なしで済ませる｜物, 道具\n　⇒ 時代遅れの手続きを完全撤廃なら do away with\n　⚠ do without は「なくても済ませる」だけで、制度そのものを消す意味はない。away の有無で判別する。',
     difficulty: 'advanced',
   },
   {
@@ -480,7 +480,7 @@ export const eikenQuestions2kyuIdiom: EikenQuestion[] = [
       { key: 'D', text: 'in' },
     ],
     correctKey: 'A',
-    explanation: '"turn out to be 〜"（結局〜であることが判明する）が正解。うわさが根拠のないものだったと最終的に判明したという文脈。',
+    explanation: '"turn out to be 〜"（結局〜であることが判明する）が正解。うわさが根拠のないものだったと最終的に判明したという文脈。\n\nturn out to be 〜 は「結局〜であると判明する」で、調査や時間の経過を経た最終的な事実の判明を表す。It turned out that 節 の形にも書き換えられる。うわさが根拠のないものだったと分かった、という文脈にぴたりと合う。\n\n【図解】判明を表す表現\n　表現｜意味｜使う場面\n　turn out to be｜結局〜と判明する｜うわさ, 予想の結末\n　prove to be｜〜だと分かる｜検証を経た結論\n　come out｜公になる｜情報の公開\n　⇒ rumors が主語で最終判明なら turn out\n　⚠ turn up は「現れる, 見つかる」で判明の意味は薄い。out と up を混同しない。',
     difficulty: 'advanced',
   },
   {
@@ -493,7 +493,7 @@ export const eikenQuestions2kyuIdiom: EikenQuestion[] = [
       { key: 'D', text: 'for' },
     ],
     correctKey: 'C',
-    explanation: '"an authority on 〜"（〜の権威、専門家）が正解。特定の分野における第一人者を表す定型表現。',
+    explanation: '"an authority on 〜"（〜の権威、専門家）が正解。特定の分野における第一人者を表す定型表現。\n\nan authority on 〜 は「〜の権威、第一人者」で、専門分野を示す前置詞は必ず on。expert も同様に an expert on / in をとるが、authority は on が標準。be regarded as an authority on の形で、学術的評価を述べる定型として押さえておきたい。\n\n【図解】専門性を表す名詞と前置詞\n　表現｜意味｜前置詞\n　an authority on｜〜の権威｜on\n　an expert on または in｜〜の専門家｜on, in\n　a specialist in｜〜の専門医, 専門家｜in\n　⇒ authority の後ろは on で固定\n　⚠ authority of は「〜の権限」という別の意味になる。on と of で意味が変わる典型的なひっかけ。',
     difficulty: 'advanced',
   },
   {
@@ -506,7 +506,7 @@ export const eikenQuestions2kyuIdiom: EikenQuestion[] = [
       { key: 'D', text: 'off' },
     ],
     correctKey: 'A',
-    explanation: '"set 〜 apart from ..."（〜を…と区別する、際立たせる）が正解。競合他社との差別化に成功したことを表す表現。',
+    explanation: '"set 〜 apart from ..."（〜を…と区別する、際立たせる）が正解。競合他社との差別化に成功したことを表す表現。\n\nset 〜 apart from ... は「〜を…と区別する、際立たせる」で、差別化要因を述べるときに使う。ここでは革新的な製品が競合から自社を際立たせたという文脈。apart は「離して」の意味の副詞で、from と組んで「…から引き離す」というイメージを作る。\n\n【図解】set の句動詞\n　表現｜意味｜使う場面\n　set apart from｜際立たせる, 区別する｜差別化要因\n　set aside｜脇に置く, 取っておく｜money, time\n　set off｜出発する, 引き起こす｜journey, alarm\n　⇒ from が続いて「差別化」なら apart\n　⚠ set aside は「取り分ける」で、他との比較で目立たせる意味はない。apart と aside を取り違えない。',
     difficulty: 'advanced',
   },
   {
@@ -519,7 +519,7 @@ export const eikenQuestions2kyuIdiom: EikenQuestion[] = [
       { key: 'D', text: 'over' },
     ],
     correctKey: 'A',
-    explanation: '"divert attention from 〜"（〜から注意をそらす）が正解。捜査から人々の関心をそらそうとしたという文脈に合う。',
+    explanation: '"divert attention from 〜"（〜から注意をそらす）が正解。捜査から人々の関心をそらそうとしたという文脈に合う。\n\ndivert attention from 〜 は「〜から注意をそらす」で、divert（進路を変える）が attention を別方向へ向けるイメージ。不都合な話題から目をそらさせる政治的文脈で頻出する。distract 人 from 〜 も同義の言い換えとして覚えておくとよい。\n\n【図解】注意をそらす表現\n　表現｜意味｜構文\n　divert attention from｜注意をそらす｜divert A from B\n　distract 人 from｜気を散らす｜distract 人 from B\n　draw attention to｜注目を集める｜（逆方向）\n　⇒ 捜査から関心をそらすなら from\n　⚠ draw attention to は注意を向けさせる正反対の表現。from と to で方向が反転する。',
     difficulty: 'advanced',
   },
   {
@@ -532,7 +532,7 @@ export const eikenQuestions2kyuIdiom: EikenQuestion[] = [
       { key: 'D', text: 'for' },
     ],
     correctKey: 'C',
-    explanation: '"have a bearing on 〜"（〜に影響を及ぼす、関係がある）が正解。調査結果が今後の政策決定に影響を与えるという文脈。',
+    explanation: '"have a bearing on 〜"（〜に影響を及ぼす、関係がある）が正解。調査結果が今後の政策決定に影響を与えるという文脈。\n\nhave a bearing on 〜 は「〜に影響を与える、〜と関係がある」で、bearing は「関連・影響」を意味する名詞。調査結果が今後の政策判断に関わってくる、という文脈で使われるやや硬い表現。have no bearing on なら「〜とは無関係だ」となる。\n\n【図解】影響を表す表現\n　表現｜意味｜前置詞\n　have a bearing on｜〜に影響する｜on\n　have an effect on｜〜に効果を及ぼす｜on\n　be relevant to｜〜に関連する｜to\n　⇒ bearing の後ろは on で固定\n　⚠ have a bearing to とはしない。relevant は to、bearing と effect は on と、前置詞を混ぜない。',
     difficulty: 'advanced',
   },
   {
@@ -545,7 +545,7 @@ export const eikenQuestions2kyuIdiom: EikenQuestion[] = [
       { key: 'D', text: 'over' },
     ],
     correctKey: 'A',
-    explanation: '"cast doubt on 〜"（〜に疑問を投げかける）が正解。新たな証拠が公式の説明の信憑性を揺るがしたという文脈。',
+    explanation: '"cast doubt on 〜"（〜に疑問を投げかける）が正解。新たな証拠が公式の説明の信憑性を揺るがしたという文脈。\n\ncast doubt on 〜 は「〜に疑念を投げかける」で、cast（投げる）＋ doubt（疑い）という比喩。新証拠が公式説明の信憑性を揺るがした、という文脈で使われる。強めたいときは cast serious doubt on のように形容詞を挟むのが定型。\n\n【図解】疑いを投じる表現\n　表現｜意味｜前置詞\n　cast doubt on｜疑念を投げかける｜on\n　call into question｜妥当性を疑う｜（into が必要）\n　throw light on｜解明の手がかりを与える｜on\n　⇒ doubt の後ろは on で固定\n　⚠ cast doubt over や in とはしない。doubt about は名詞句としては可だが、cast と組む動詞句では on。',
     difficulty: 'advanced',
   },
   {
@@ -558,7 +558,7 @@ export const eikenQuestions2kyuIdiom: EikenQuestion[] = [
       { key: 'D', text: 'through' },
     ],
     correctKey: 'A',
-    explanation: '"go out of one\'s way to do 〜"（わざわざ〜する、特別な努力をして〜する）が正解。通常以上の努力を払ったことを表す表現。',
+    explanation: '"go out of one\'s way to do 〜"（わざわざ〜する、特別な努力をして〜する）が正解。通常以上の努力を払ったことを表す表現。\n\ngo out of one’s way to do 〜 は「わざわざ〜する、労を惜しまず〜する」で、通常の道筋（way）から外れてまで行動するという比喩。親切や熱意を示す文脈で使われ、教授が全員の理解を確認するために特別な努力をした様子を表す。\n\n【図解】努力の程度を表す表現\n　表現｜意味｜ニュアンス\n　go out of ones way to do｜わざわざする｜通常以上の労力\n　make an effort to do｜努力する｜標準的\n　bother to do｜わざわざする（否定文中心）｜面倒がる含み\n　⇒ 特別な骨折りを強調するなら go out of ones way\n　⚠ go through は「経験する, 通過する」で努力の意味はない。out of が揃って初めてこの熟語になる。',
     difficulty: 'advanced',
   },
   {
@@ -571,7 +571,7 @@ export const eikenQuestions2kyuIdiom: EikenQuestion[] = [
       { key: 'D', text: 'equal' },
     ],
     correctKey: 'A',
-    explanation: '"have 〜 in common"（〜という共通点がある）が正解。異なる案でもいくつかの共通する要素があることを表す。',
+    explanation: '"have 〜 in common"（〜という共通点がある）が正解。異なる案でもいくつかの共通する要素があることを表す。\n\nhave 〜 in common は「〜という共通点を持つ」で、in common が「共通して」を表す副詞句。a few things・a lot・nothing などの数量表現を挟む形が定番。差異を述べる differ markedly と対比させる本問のような構成で頻出する。\n\n【図解】共通点と相違点の表現\n　表現｜意味｜使い方\n　have 〜 in common｜共通点がある｜a lot, nothing を挟む\n　in common with｜〜と同様に｜文頭の副詞句\n　differ from｜〜と異なる｜相違点を述べる\n　⇒ things in common で「共通点」\n　⚠ in general（一般に）と混同しない。common を general に替えると意味が通らなくなる。',
     difficulty: 'standard',
   },
   {
@@ -584,7 +584,7 @@ export const eikenQuestions2kyuIdiom: EikenQuestion[] = [
       { key: 'D', text: 'through' },
     ],
     correctKey: 'B',
-    explanation: '"fall short of 〜"（〜に及ばない、期待外れに終わる）が正解。掲げた目標を達成できなかったことを表す表現。',
+    explanation: '"fall short of 〜"（〜に及ばない、期待外れに終わる）が正解。掲げた目標を達成できなかったことを表す表現。\n\nfall short of 〜 は「〜に達しない、期待を下回る」で、目標・期待・基準に届かなかったことを表す。ここでは宣伝の大げさな約束に実態が及ばなかったという文脈。fall short of expectations は最頻出のコロケーション。\n\n【図解】未達を表す表現\n　表現｜意味｜of の後ろ\n　fall short of｜期待や基準に届かない｜expectations, target\n　fall behind｜遅れをとる｜（前置詞は不要か in）\n　live up to｜期待に応える｜（肯定的な逆表現）\n　⇒ of its promises が続くなら short\n　⚠ fall through は「計画が流れる」で未達とは別。short と through を取り違えない。',
     difficulty: 'advanced',
   },
   {
@@ -597,7 +597,7 @@ export const eikenQuestions2kyuIdiom: EikenQuestion[] = [
       { key: 'D', text: 'view' },
     ],
     correctKey: 'C',
-    explanation: '"come to light"（明らかになる、発覚する）が正解。隠れていた欠陥が判明したためリコールに至ったという文脈。',
+    explanation: '"come to light"（明らかになる、発覚する）が正解。隠れていた欠陥が判明したためリコールに至ったという文脈。\n\ncome to light は「（隠れていた事実が）明るみに出る」で、欠陥が発覚した結果として大規模リコールに至ったという因果の流れを作っている。after a defect came to light のように、時を表す接続詞と組み合わせて出来事の順序を示す用法が頻出。\n\n【図解】light を使う定型表現\n　表現｜意味｜使う場面\n　come to light｜発覚する｜欠陥, 不正\n　bring to light｜明るみに出す｜調査, 報道が主語\n　in the light of｜〜を踏まえて｜新事実, 状況\n　⇒ defect が主語で発覚なら come to light\n　⚠ come into view（視界に入る）や come in sight と混ぜない。この熟語は to light で固定。',
     difficulty: 'advanced',
   },
   {
@@ -610,7 +610,7 @@ export const eikenQuestions2kyuIdiom: EikenQuestion[] = [
       { key: 'D', text: 'view' },
     ],
     correctKey: 'A',
-    explanation: '"lose sight of 〜"（〜を見失う）が正解。細部にとらわれて全体像を見失わないようにという助言の文脈。',
+    explanation: '"lose sight of 〜"（〜を見失う）が正解。細部にとらわれて全体像を見失わないようにという助言の文脈。\n\nlose sight of 〜 は「〜を見失う」で、物理的に視界から失う意味に加え、「（目的や全体像を）意識から失う」という比喩でも使う。the bigger picture（全体像）と組み合わせるのが典型で、細部にとらわれる危険を戒める助言の定型表現。\n\n【図解】sight と track の使い分け\n　表現｜意味｜使う場面\n　lose sight of｜見失う｜目的, 全体像\n　lose track of｜把握できなくなる｜時間, 数, 消息\n　keep sight of｜見据え続ける｜目標\n　⇒ the bigger picture が続くなら sight\n　⚠ lose track of time は「時間を忘れる」。全体像には sight、経過や数量には track と使い分ける。',
     difficulty: 'advanced',
   },
   {
@@ -623,7 +623,7 @@ export const eikenQuestions2kyuIdiom: EikenQuestion[] = [
       { key: 'D', text: 'flag' },
     ],
     correctKey: 'B',
-    explanation: '"bury the hatchet"（争いをやめる、和解する）が正解。長年の敵対関係を終わらせて和解することを表す慣用句。',
+    explanation: '"bury the hatchet"（争いをやめる、和解する）が正解。長年の敵対関係を終わらせて和解することを表す慣用句。\n\nbury the hatchet は先住民が和平の証に戦斧（hatchet）を土に埋めたという故事に由来し、「争いをやめて和解する」を表す。after decades of hostility という長年の敵対関係を終わらせる文脈にぴったり合う。定冠詞 the が必要な固定表現。\n\n【図解】和解と対立の表現\n　表現｜意味｜由来や場面\n　bury the hatchet｜和解する｜先住民の和平儀礼\n　make peace with｜和睦する｜国家, 個人\n　be at odds with｜対立している｜（逆の意味）\n　⇒ 長年の敵対を終える和解なら bury the hatchet\n　⚠ sword や weapon に置き換えない。この慣用句では hatchet 以外は使えない。',
     difficulty: 'advanced',
   },
   {
@@ -636,7 +636,7 @@ export const eikenQuestions2kyuIdiom: EikenQuestion[] = [
       { key: 'D', text: 'a halt' },
     ],
     correctKey: 'A',
-    explanation: '"put an end to 〜"（〜に終止符を打つ）が正解。長期間続いていたうわさを新たな証拠が完全に払拭したという文脈。',
+    explanation: '"put an end to 〜"（〜に終止符を打つ）が正解。長期間続いていたうわさを新たな証拠が完全に払拭したという文脈。\n\nput an end to 〜 は「〜に終止符を打つ、〜を終わらせる」で、争い・うわさ・慣行などを対象にとる。end は可算名詞なので冠詞 an が必要。同義の bring 〜 to an end は目的語の位置が異なるので、語順の違いも合わせて覚えておきたい。\n\n【図解】終わらせる表現の語順\n　表現｜語順｜意味\n　put an end to A｜end が前, A が後｜Aを終わらせる\n　bring A to an end｜A が前, end が後｜Aを終わらせる\n　come to an end｜自動詞｜Aが終わる\n　⇒ put の後ろは an end to で固定\n　⚠ put a stop to も英語としては可だが、うわさを完全に消す本問では定型の an end to が正解。',
     difficulty: 'advanced',
   },
   {
@@ -649,7 +649,7 @@ export const eikenQuestions2kyuIdiom: EikenQuestion[] = [
       { key: 'D', text: 'model' },
     ],
     correctKey: 'A',
-    explanation: '"set a precedent"（前例を作る）が正解。今後の同様の案件の判断基準となる先例を作るという法律・行政分野の定番表現。',
+    explanation: '"set a precedent"（前例を作る）が正解。今後の同様の案件の判断基準となる先例を作るという法律・行政分野の定番表現。\n\nset a precedent は「前例をつくる」で、その判断が今後の同種案件の判断基準になることを意味する法律・行政分野の定番表現。動詞は set が標準で、create a precedent も使われる。反対に前例に従うのは follow a precedent。\n\n【図解】precedent 関連の表現\n　表現｜意味｜使う場面\n　set a precedent｜前例をつくる｜判決, 委員会決定\n　follow a precedent｜前例に従う｜先例の踏襲\n　set a standard｜基準を定める｜品質, 性能\n　⇒ 今後の判断の先例になるなら precedent\n　⚠ standard や example は「模範・水準」で、後続案件を拘束する法的先例の含意がない。',
     difficulty: 'advanced',
   },
 ];

@@ -1140,7 +1140,7 @@ export const eikenQuestions4kyuGrammarX2: EikenQuestion[] = [
       { key: 'D', text: 'mine' },
     ],
     correctKey: 'C',
-    explanation: '動詞 love の目的語なので目的格 me。\n【図解】I の目的格\n★ルール:I の目的格は me（私を／に）\n○正解:love me\n×誤り:love I / love my\n→動詞の後は me。',
+    explanation: '動詞loveの直後に置かれて「〜を」にあたる働きをするのは目的格なので、Iの目的格であるmeが正解。「両親は私をとても愛している」という意味になる。人称代名詞は文の中での働きによって形が変わり、主語になるときは主格I、動詞や前置詞の後ろでは目的格me、名詞の前に置いて「私の」を表すときは所有格my、そして「私のもの」を1語で表すときは所有代名詞mineを使う。動詞の後ろにIやmyを置くことはできない。\n\n【図解】I の変化と働き\n　格｜形｜働きと例\n　主格｜I｜主語になる（I love them）\n　目的格｜me｜動詞や前置詞の後ろ（love me）\n　所有格｜my｜名詞の前（my parents）\n　所有代名詞｜mine｜私のもの（This is mine）\n　⇒ loveの目的語の位置なので目的格meが入る\n　⚠ myは単独では使えず必ず名詞が続く。love myのように名詞なしで置くのが定番の誤りで、mineとの区別も要注意。',
     difficulty: 'basic',
   },
   {

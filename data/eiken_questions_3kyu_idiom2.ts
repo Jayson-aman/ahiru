@@ -12,7 +12,7 @@ export const eikenQuestions3kyuIdiom2: EikenQuestion[] = [
       { key: 'D', text: 'time' },
     ],
     correctKey: 'B',
-    explanation: '"at once"（すぐに・直ちに）が正解。「医者は彼にすぐ禁煙するように言った」という文です。soon・quicklyはatと組み合わせず、at timeという表現はありません（on timeなら「時間どおりに」）。',
+    explanation: '"at once"（すぐに・直ちに）が正解。「医者は彼にすぐ禁煙するように言った」という文です。soon・quicklyはatと組み合わせず、at timeという表現はありません（on timeなら「時間どおりに」）。\n\nat once は immediately と同じ「今すぐ」の意味で、命令や指示の場面で使われる。at once にはもう一つ「同時に」の意味もあり、Do not speak all at once. のような文では「一斉に」と訳す。at ＋ 名詞の慣用句は前置詞と名詞の組み合わせが固定なので、丸ごと覚えるのが近道。\n\n【図解】at ＋ 名詞の慣用句\n　表現｜意味｜使う場面\n　at once｜すぐに, 同時に｜指示, 緊急\n　at last｜ついに｜待った末の実現\n　at least｜少なくとも｜最低限の数量\n　⇒ 医者の指示ですぐに、なら at once\n　⚠ on time（時間どおりに）と at time を混同しない。at time という形は存在しない。',
     difficulty: 'standard',
   },
   {
@@ -25,7 +25,7 @@ export const eikenQuestions3kyuIdiom2: EikenQuestion[] = [
       { key: 'D', text: 'least' },
     ],
     correctKey: 'D',
-    explanation: '"at least"（少なくとも）が正解。「毎晩少なくとも7時間は眠るべきだ」という文です。at few・at less・at manyという表現はありません。leastはlittleの最上級です。',
+    explanation: '"at least"（少なくとも）が正解。「毎晩少なくとも7時間は眠るべきだ」という文です。at few・at less・at manyという表現はありません。leastはlittleの最上級です。\n\nat least は「少なくとも」で、数量の下限を示す。least は little の最上級で、反対に上限を示すのは at most（多くても）。睡眠時間や年齢など、数字の前に置いて最低ラインを表す使い方が頻出する。\n\n【図解】数量の上限と下限\n　表現｜意味｜示すもの\n　at least｜少なくとも｜下限\n　at most｜多くても｜上限\n　no more than｜たった〜しか｜少なさの強調\n　⇒ 7時間は眠るべきなら at least\n　⚠ at last（ついに）と at least（少なくとも）はつづりが1文字違い。意味はまったく別なので取り違えない。',
     difficulty: 'standard',
   },
   {
@@ -38,7 +38,7 @@ export const eikenQuestions3kyuIdiom2: EikenQuestion[] = [
       { key: 'D', text: 'point' },
     ],
     correctKey: 'A',
-    explanation: '"in fact"（実際は・実は）が正解。見た目と実際の違いを述べるときに使います。true・realは形容詞なのでinの後ろに置けず、in pointという表現はこの意味になりません。',
+    explanation: '"in fact"（実際は・実は）が正解。見た目と実際の違いを述べるときに使います。true・realは形容詞なのでinの後ろに置けず、in pointという表現はこの意味になりません。\n\nin fact は「実際は」で、前の文の印象と食い違う事実を示すときに使う。ここでは looks difficult（難しそう）に対して、実際は簡単だという対比になっている。actually とほぼ同じ働きをする副詞句である。\n\n【図解】対比を示す副詞句\n　表現｜意味｜働き\n　in fact｜実際は｜前言との対比や補足\n　however｜しかしながら｜逆接\n　on the other hand｜他方では｜二つの側面の比較\n　⇒ 見た目と実際が違うなら in fact\n　⚠ true や real は形容詞なので in の後ろには置けない。in truth は可能だが 3級では in fact を選ぶ。',
     difficulty: 'standard',
   },
   {
@@ -51,7 +51,7 @@ export const eikenQuestions3kyuIdiom2: EikenQuestion[] = [
       { key: 'D', text: 'much' },
     ],
     correctKey: 'C',
-    explanation: '"for a while"（しばらくの間）が正解。「歩き続ける前にここでしばらく休もう」という文です。long・soon・muchは「a 〜」の形でこの意味の熟語を作れません（for a long timeなら正しい形です）。',
+    explanation: '"for a while"（しばらくの間）が正解。「歩き続ける前にここでしばらく休もう」という文です。long・soon・muchは「a 〜」の形でこの意味の熟語を作れません（for a long timeなら正しい形です）。\n\nfor a while は「しばらくの間」で、はっきりしない短めの期間を表す。while は名詞で「時間・間」の意味。長い期間なら for a long time、久しぶりなら after a while や in a while と、a ＋ 名詞の形で覚えると整理しやすい。\n\n【図解】期間を表す for の表現\n　表現｜意味｜長さ\n　for a while｜しばらくの間｜短めで不定\n　for a long time｜長い間｜長い\n　for a moment｜ちょっとの間｜ごく短い\n　⇒ 少し休もうという文脈なら for a while\n　⚠ for a long とは言わない。long は形容詞なので time が必要になる。',
     difficulty: 'standard',
   },
   {
@@ -64,7 +64,7 @@ export const eikenQuestions3kyuIdiom2: EikenQuestion[] = [
       { key: 'D', text: 'fault' },
     ],
     correctKey: 'C',
-    explanation: '"by mistake"（まちがえて）が正解。「今朝まちがえて姉[妹]のかさを持って行ってしまった」という文です。by wrong・by miss・by faultという表現はありません。',
+    explanation: '"by mistake"（まちがえて）が正解。「今朝まちがえて姉[妹]のかさを持って行ってしまった」という文です。by wrong・by miss・by faultという表現はありません。\n\nby mistake は「間違えて、うっかり」で、意図せずやってしまった行為を表す。mistake は無冠詞で使う固定形。反対に意図的な行為は on purpose で表し、前置詞も名詞も異なるのでセットで覚えたい。\n\n【図解】意図の有無を表す表現\n　表現｜意味｜意図\n　by mistake｜間違えて｜なし\n　by accident｜偶然に｜なし\n　on purpose｜わざと｜あり\n　⇒ 姉の傘を取り違えたなら by mistake\n　⚠ by mistake は冠詞を付けない。by a mistake とすると慣用句として不自然になる。',
     difficulty: 'standard',
   },
   {
@@ -77,7 +77,7 @@ export const eikenQuestions3kyuIdiom2: EikenQuestion[] = [
       { key: 'D', text: 'finish' },
     ],
     correctKey: 'A',
-    explanation: '"in the end"（最後には・結局）が正解。「難しい試合だったが、最後にはうちのチームが勝った」という文です。at lastも同じ意味ですが、in the lastとは言いません。goal・finishもこの熟語では使いません。',
+    explanation: '"in the end"（最後には・結局）が正解。「難しい試合だったが、最後にはうちのチームが勝った」という文です。at lastも同じ意味ですが、in the lastとは言いません。goal・finishもこの熟語では使いません。\n\nin the end は「最後には、結局」で、いろいろあった末の結末を述べるときに使う。at last も似ているが、こちらは待ち望んだことがようやく実現した喜びを含む。finally は経過の最終段階を示す中立的な副詞。\n\n【図解】「最後に」の使い分け\n　表現｜意味｜含み\n　in the end｜結局｜紆余曲折の末\n　at last｜ついに｜待望の実現\n　in the beginning｜初めは｜対になる表現\n　⇒ 苦戦の末に勝ったなら in the end\n　⚠ in the last とは言わない。last を使うなら at last と前置詞が変わる。',
     difficulty: 'standard',
   },
   {
@@ -90,7 +90,7 @@ export const eikenQuestions3kyuIdiom2: EikenQuestion[] = [
       { key: 'D', text: 'instead' },
     ],
     correctKey: 'D',
-    explanation: '"instead of 〜"（〜の代わりに）が正解。「夜おそかったのでコーヒーの代わりにお茶を飲んだ」という文です。inside（内側）、outside（外側）、ahead of（〜より先に）は「代わりに」という意味を表せません。',
+    explanation: '"instead of 〜"（〜の代わりに）が正解。「夜おそかったのでコーヒーの代わりにお茶を飲んだ」という文です。inside（内側）、outside（外側）、ahead of（〜より先に）は「代わりに」という意味を表せません。\n\ninstead of 〜 は「〜の代わりに」で、of の後ろには名詞か動名詞が来る。instead だけを単独で使うと「その代わりに」という副詞になり、of は不要。この違いが出題されやすい。\n\n【図解】instead の2つの使い方\n　形｜品詞｜例\n　instead of ＋ 名詞｜前置詞句｜tea instead of coffee\n　instead 単独｜副詞｜He drank tea instead\n　in place of ＋ 名詞｜前置詞句｜同義の言い換え\n　⇒ コーヒーの代わりにお茶なら instead of\n　⚠ instead of の後ろに動詞の原形は置けない。動名詞にする必要がある。',
     difficulty: 'standard',
   },
   {
@@ -103,7 +103,7 @@ export const eikenQuestions3kyuIdiom2: EikenQuestion[] = [
       { key: 'D', text: 'Take' },
     ],
     correctKey: 'B',
-    explanation: '"thanks to 〜"（〜のおかげで）が正解。「あなたの助けのおかげで時間どおりにレポートを終えられた」という文です。becauseを使うならbecause of yourとofが必要です。give・takeではこの表現を作れません。',
+    explanation: '"thanks to 〜"（〜のおかげで）が正解。「あなたの助けのおかげで時間どおりにレポートを終えられた」という文です。becauseを使うならbecause of yourとofが必要です。give・takeではこの表現を作れません。\n\nthanks to 〜 は「〜のおかげで」で、良い結果の原因を示す。前置詞の to の後ろには名詞が来る。同じく理由を表す because of との違いは、thanks to が原則としてプラスの結果に使われる点である。\n\n【図解】理由を表す前置詞句\n　表現｜意味｜結果の良し悪し\n　thanks to｜〜のおかげで｜主にプラス\n　because of｜〜のせいで, 〜のため｜中立\n　due to｜〜が原因で｜中立からマイナス\n　⇒ 助けてもらって間に合ったなら thanks to\n　⚠ because は接続詞なので後ろに文が必要。名詞を続けるなら because of と of が要る。',
     difficulty: 'standard',
   },
   {
@@ -116,7 +116,7 @@ export const eikenQuestions3kyuIdiom2: EikenQuestion[] = [
       { key: 'D', text: 'look' },
     ],
     correctKey: 'D',
-    explanation: '"take a look at 〜"（〜をちょっと見る）が正解。発表や説明で「このグラフをご覧ください」と言うときの定番表現です。watch・see・viewは「take a 〜 at」の形でこの意味の熟語になりません。',
+    explanation: '"take a look at 〜"（〜をちょっと見る）が正解。発表や説明で「このグラフをご覧ください」と言うときの定番表現です。watch・see・viewは「take a 〜 at」の形でこの意味の熟語になりません。\n\ntake a look at 〜 は「〜をちょっと見る」で、have a look at とも言う。発表や説明で相手の注意を向けさせる定番表現。動詞 look は自動詞なので、対象を示すには前置詞 at が必要になる点も確認しておきたい。\n\n【図解】見るを表す動詞の使い分け\n　表現｜意味｜前置詞\n　take a look at｜ちょっと見る｜at\n　look at｜視線を向ける｜at\n　watch｜動くものを見続ける｜不要\n　⇒ グラフに注目させるなら take a look at\n　⚠ see は「自然に目に入る」で意識的に見る動作ではない。take a see とは言えない。',
     difficulty: 'standard',
   },
   {
@@ -129,7 +129,7 @@ export const eikenQuestions3kyuIdiom2: EikenQuestion[] = [
       { key: 'D', text: 'yours' },
     ],
     correctKey: 'C',
-    explanation: '"help yourself to 〜"（〜を自由に取って食べる・飲む）が正解。お客さんに食べ物をすすめるときの決まり文句です。再帰代名詞yourselfを使う点がポイントで、you・your・yoursではこの表現になりません。',
+    explanation: '"help yourself to 〜"（〜を自由に取って食べる・飲む）が正解。お客さんに食べ物をすすめるときの決まり文句です。再帰代名詞yourselfを使う点がポイントで、you・your・yoursではこの表現になりません。\n\nhelp yourself to 〜 は「〜を自由に取って召し上がる」で、食べ物や飲み物をすすめる決まり文句。主語に応じて myself、himself などに変わる再帰代名詞を使う点が最大のポイント。to の後ろには食べ物を表す名詞が来る。\n\n【図解】再帰代名詞を使う慣用句\n　表現｜意味｜使う場面\n　help yourself to｜自由に取って食べる｜もてなし\n　enjoy yourself｜楽しむ｜パーティー\n　by yourself｜ひとりで, 独力で｜作業\n　⇒ クッキーをすすめるなら help yourself to\n　⚠ help you とすると「あなたを助ける」になる。再帰代名詞を落とすと意味が変わる。',
     difficulty: 'advanced',
   },
   {
@@ -142,7 +142,7 @@ export const eikenQuestions3kyuIdiom2: EikenQuestion[] = [
       { key: 'D', text: 'tell' },
     ],
     correctKey: 'B',
-    explanation: '"make a speech"（スピーチをする）が正解。give a speechとも言います。talk・speak・tellはどれも「話す」系の動詞ですが、a speechを目的語にとってこの意味の熟語を作るのはmakeです。',
+    explanation: '"make a speech"（スピーチをする）が正解。give a speechとも言います。talk・speak・tellはどれも「話す」系の動詞ですが、a speechを目的語にとってこの意味の熟語を作るのはmakeです。\n\nmake a speech は「スピーチをする」で、give a speech とも言う。日本語の「する」につられて do を使わないよう注意したい。同じように make を使う表現には make a mistake、make a decision、make friends などがある。\n\n【図解】make を使う定型表現\n　表現｜意味｜使う場面\n　make a speech｜演説する｜コンテスト, 式典\n　make a mistake｜間違える｜作業, 計算\n　make friends with｜〜と友達になる｜人間関係\n　⇒ コンテストで英語のスピーチをするなら make\n　⚠ speak は自動詞的に使う動詞で a speech を目的語にとらない。talk や tell も同様。',
     difficulty: 'standard',
   },
   {
@@ -155,7 +155,7 @@ export const eikenQuestions3kyuIdiom2: EikenQuestion[] = [
       { key: 'D', text: 'loss' },
     ],
     correctKey: 'A',
-    explanation: '"get lost"（道に迷う）が正解。「地図がなかったので大都市で道に迷った」という文です。get + 過去分詞の形でlostを使います。lose（動詞の原形）、losing、loss（名詞）はこの熟語の形になりません。',
+    explanation: '"get lost"（道に迷う）が正解。「地図がなかったので大都市で道に迷った」という文です。get + 過去分詞の形でlostを使います。lose（動詞の原形）、losing、loss（名詞）はこの熟語の形になりません。\n\nget lost は「道に迷う」で、get ＋ 過去分詞で状態の変化を表す形。lost は lose の過去分詞で「迷った状態」を示す。同じ形の get married、get tired、get excited とまとめて覚えると理解しやすい。\n\n【図解】get ＋ 過去分詞の表現\n　表現｜意味｜変化する状態\n　get lost｜道に迷う｜迷った状態へ\n　get married｜結婚する｜既婚の状態へ\n　get tired｜疲れる｜疲れた状態へ\n　⇒ 地図がなくて迷ったなら got lost\n　⚠ lose は他動詞で目的語が必要。I lost. だけでは道に迷った意味にならない。',
     difficulty: 'standard',
   },
   {
@@ -168,7 +168,7 @@ export const eikenQuestions3kyuIdiom2: EikenQuestion[] = [
       { key: 'D', text: 'quick' },
     ],
     correctKey: 'A',
-    explanation: '"right away"（すぐに・直ちに）が正解。「電話のあと救急車はすぐに来た」という文です。right soon・right fast・right quickという言い方はありません。at once・immediatelyも同じ意味です。',
+    explanation: '"right away"（すぐに・直ちに）が正解。「電話のあと救急車はすぐに来た」という文です。right soon・right fast・right quickという言い方はありません。at once・immediatelyも同じ意味です。\n\nright away は「すぐに、ただちに」で、right は「まさに」と away を強める副詞。immediately や at once と同じ意味で、口語で非常によく使われる。同じ right を使う right now（今すぐ）も合わせて覚えたい。\n\n【図解】「すぐに」の言い換え\n　表現｜意味｜語調\n　right away｜すぐに｜口語で頻出\n　at once｜ただちに｜やや強い指示\n　immediately｜即座に｜硬い, 書き言葉\n　⇒ 救急車がすぐ来たなら right away\n　⚠ right soon や right fast という形はない。right が強められるのは away と now。',
     difficulty: 'standard',
   },
   {
@@ -181,7 +181,7 @@ export const eikenQuestions3kyuIdiom2: EikenQuestion[] = [
       { key: 'D', text: 'at' },
     ],
     correctKey: 'B',
-    explanation: '"all over the world"（世界中で）が正解。「その歌手は世界中で知られている」という文です。all in・all on・all atはthe worldと組み合わせて「世界中で」という意味の熟語になりません。',
+    explanation: '"all over the world"（世界中で）が正解。「その歌手は世界中で知られている」という文です。all in・all on・all atはthe worldと組み合わせて「世界中で」という意味の熟語になりません。\n\nall over the world は「世界中で」で、over には「一面に広がって」というイメージがある。all over ＋ 場所 の形で「〜のいたるところで」を表し、all over Japan のようにも使える。around the world も同じ意味で使える。\n\n【図解】over を使う範囲の表現\n　表現｜意味｜範囲\n　all over the world｜世界中で｜地球全体\n　all over Japan｜日本中で｜国全体\n　all over the place｜そこらじゅうに｜散らかった様子\n　⇒ 世界的に有名なら all over the world\n　⚠ all in the world とは言わない。範囲の広がりを表すのは over。',
     difficulty: 'basic',
   },
   {
@@ -207,7 +207,7 @@ export const eikenQuestions3kyuIdiom2: EikenQuestion[] = [
       { key: 'D', text: 'about' },
     ],
     correctKey: 'D',
-    explanation: '"be worried about 〜"（〜を心配している）が正解。「私がよく朝食をぬくので母は健康を心配している」という文です。worriedとセットになる前置詞はaboutです。skip（ぬかす・とばす）も重要単語です。',
+    explanation: '"be worried about 〜"（〜を心配している）が正解。「私がよく朝食をぬくので母は健康を心配している」という文です。worriedとセットになる前置詞はaboutです。skip（ぬかす・とばす）も重要単語です。\n\nbe worried about 〜 は「〜を心配している」で、worried とセットになる前置詞は about。動詞 worry を使って worry about とも言える。similar に be interested in、be surprised at のように、感情の形容詞ごとに前置詞が決まっている。\n\n【図解】感情を表す形容詞と前置詞\n　表現｜意味｜前置詞\n　be worried about｜心配している｜about\n　be interested in｜興味がある｜in\n　be surprised at｜驚いている｜at\n　⇒ 健康を案じているなら worried about\n　⚠ worried for も使われるが 3級では about が標準。on や to は結びつかない。',
     difficulty: 'basic',
   },
   {
@@ -220,7 +220,7 @@ export const eikenQuestions3kyuIdiom2: EikenQuestion[] = [
       { key: 'D', text: 'end' },
     ],
     correctKey: 'D',
-    explanation: '"at the end of 〜"（〜の終わりに）が正解。「今月の終わりに大きなテストがある」という文です。last・goal・finishは「at the 〜 of」の形でこの意味を表しません。反対のat the beginning of（〜の初めに）も覚えましょう。',
+    explanation: '"at the end of 〜"（〜の終わりに）が正解。「今月の終わりに大きなテストがある」という文です。last・goal・finishは「at the 〜 of」の形でこの意味を表しません。反対のat the beginning of（〜の初めに）も覚えましょう。\n\nat the end of 〜 は「〜の終わりに」で、期間や場所の終点を示す。反対は at the beginning of（〜の初めに）。in the end（結局）とは形も意味も異なるので、of が続くかどうかで見分けるとよい。\n\n【図解】end を使う表現の区別\n　表現｜意味｜後ろの形\n　at the end of｜〜の終わりに｜of ＋ 名詞\n　in the end｜結局｜of は続かない\n　by the end of｜〜の終わりまでに｜期限\n　⇒ 今月末のテストなら at the end of\n　⚠ at the end of と in the end を混同しない。of が続けば「終わりに」の意味になる。',
     difficulty: 'basic',
   },
   {
@@ -233,7 +233,7 @@ export const eikenQuestions3kyuIdiom2: EikenQuestion[] = [
       { key: 'D', text: 'Most' },
     ],
     correctKey: 'A',
-    explanation: '"more and more 〜"（ますます多くの〜）が正解。「最近、ますます多くの人がオンラインで買い物をしている」という文です。「比較級 + and + 比較級」で変化が進むことを表します。much・many・mostではこの形を作れません。',
+    explanation: '"more and more 〜"（ますます多くの〜）が正解。「最近、ますます多くの人がオンラインで買い物をしている」という文です。「比較級 + and + 比較級」で変化が進むことを表します。much・many・mostではこの形を作れません。\n\nmore and more 〜 は「ますます多くの〜」で、比較級 ＋ and ＋ 比較級 の形が変化の進行を表す。longer and longer（どんどん長く）、more and more difficult（ますます難しく）のように、長い語では more を重ねる。\n\n【図解】比較級を重ねる形\n　形｜意味｜例\n　比較級 and 比較級｜ますます〜｜bigger and bigger\n　more and more ＋ 名詞｜ますます多くの〜｜more and more people\n　the 比較級, the 比較級｜〜すればするほど…｜The more, the better\n　⇒ ネット通販の利用者増なら more and more\n　⚠ much や many の原級を重ねる形はない。必ず比較級にする。',
     difficulty: 'standard',
   },
   {
@@ -246,7 +246,7 @@ export const eikenQuestions3kyuIdiom2: EikenQuestion[] = [
       { key: 'D', text: 'daily' },
     ],
     correctKey: 'C',
-    explanation: '"as usual"（いつものように）が正解。「父はいつものように5時に起きてジョギングに行った」という文です。as oftenはas 〜 asの形が必要で、as every・as dailyという表現はありません。',
+    explanation: '"as usual"（いつものように）が正解。「父はいつものように5時に起きてジョギングに行った」という文です。as oftenはas 〜 asの形が必要で、as every・as dailyという表現はありません。\n\nas usual は「いつものように」で、普段どおりの行動を述べるときに使う。usual は「いつもの」という形容詞だが、この慣用句では as と結んで副詞句を作る。文頭・文末どちらにも置ける。\n\n【図解】as を使う副詞句\n　表現｜意味｜使う場面\n　as usual｜いつものように｜習慣どおりの行動\n　as always｜相変わらず｜同義の言い換え\n　as a rule｜概して｜一般的な傾向\n　⇒ 父がいつもどおり5時に起きたなら as usual\n　⚠ as often は as often as のように比較の形が必要。単独では慣用句にならない。',
     difficulty: 'standard',
   },
   {
@@ -259,7 +259,7 @@ export const eikenQuestions3kyuIdiom2: EikenQuestion[] = [
       { key: 'D', text: 'able' },
     ],
     correctKey: 'B',
-    explanation: '"as soon as possible"（できるだけ早く）が正解。メールなどではASAPと略されることもあります。as soon as you canなら正しい形ですが、canだけでは使えません。fast・ableもこの熟語の形になりません。',
+    explanation: '"as soon as possible"（できるだけ早く）が正解。メールなどではASAPと略されることもあります。as soon as you canなら正しい形ですが、canだけでは使えません。fast・ableもこの熟語の形になりません。\n\nas soon as possible は「できるだけ早く」で、as ＋ 原級 ＋ as possible の形。possible の代わりに you can を使って as soon as you can とも言える。メールでは ASAP と略される。\n\n【図解】as 〜 as possible の形\n　形｜意味｜例\n　as soon as possible｜できるだけ早く｜連絡, 返信\n　as much as possible｜できるだけ多く｜量\n　as 原級 as 主語 can｜できるだけ〜｜as soon as you can\n　⇒ 折り返しの連絡を急ぐなら as soon as possible\n　⚠ as soon as can とは言えない。can を使うなら主語が必要になる。',
     difficulty: 'standard',
   },
   {
@@ -272,7 +272,7 @@ export const eikenQuestions3kyuIdiom2: EikenQuestion[] = [
       { key: 'D', text: 'by' },
     ],
     correctKey: 'B',
-    explanation: '"for free"（無料で）が正解。「6歳未満の子どもは無料で博物館に入れる」という文です。at free・in free・by freeという表現はありません。free of charge（無料で）という言い方もあります。',
+    explanation: '"for free"（無料で）が正解。「6歳未満の子どもは無料で博物館に入れる」という文です。at free・in free・by freeという表現はありません。free of charge（無料で）という言い方もあります。\n\nfor free は「無料で」で、free of charge とも言う。free は「自由な」のほかに「無料の」という意味を持つ形容詞で、この慣用句では前置詞 for と結ぶ。入場料や送料の説明で頻出する。\n\n【図解】料金に関する表現\n　表現｜意味｜使う場面\n　for free｜無料で｜入場, 配布\n　free of charge｜無料で（やや硬い）｜案内, 掲示\n　at a discount｜割引価格で｜値引き\n　⇒ 6歳未満は無料なら for free\n　⚠ free には「〜がない」の意味もあり、sugar-free は砂糖不使用。無料の意味とは異なる。',
     difficulty: 'standard',
   },
   {
@@ -298,7 +298,7 @@ export const eikenQuestions3kyuIdiom2: EikenQuestion[] = [
       { key: 'D', text: 'wide' },
     ],
     correctKey: 'A',
-    explanation: '"far away"（遠くへ・遠く離れて）が正解。「親友は遠く離れた別の国へ引っ越した」という文です。long away・distant away・wide awayという表現はありません。',
+    explanation: '"far away"（遠くへ・遠く離れて）が正解。「親友は遠く離れた別の国へ引っ越した」という文です。long away・distant away・wide awayという表現はありません。\n\nfar away は「遠く離れて」で、far は距離を表す副詞、away は「離れて」。両方合わせて距離の遠さを強調する。far from 〜 なら「〜から遠い」、how far なら「どのくらい遠いか」と、far は距離を尋ねる疑問文でも使う。\n\n【図解】far を使う表現\n　表現｜意味｜使う場面\n　far away｜遠く離れて｜引っ越し, 距離\n　far from｜〜から遠い, 決して〜でない｜距離, 否定の強調\n　How far｜どのくらい遠いか｜距離を尋ねる\n　⇒ 別の国へ遠く引っ越したなら far away\n　⚠ long は時間の長さに使う語。距離には far を使うのが原則。',
     difficulty: 'basic',
   },
   {
@@ -311,7 +311,7 @@ export const eikenQuestions3kyuIdiom2: EikenQuestion[] = [
       { key: 'D', text: 'marrying' },
     ],
     correctKey: 'C',
-    explanation: '"get married to 〜"（〜と結婚する）が正解。「いとこは来年の春、医者と結婚する」という文です。get + 過去分詞の形でmarriedを使います。marry（動詞の原形）を使うならmarry a doctorと直接目的語をとります。',
+    explanation: '"get married to 〜"（〜と結婚する）が正解。「いとこは来年の春、医者と結婚する」という文です。get + 過去分詞の形でmarriedを使います。marry（動詞の原形）を使うならmarry a doctorと直接目的語をとります。\n\nget married to 〜 は「〜と結婚する」で、get ＋ 過去分詞の形。相手を示す前置詞は to になる。動詞 marry を使う場合は marry a doctor と前置詞なしで目的語を直接置くため、形が異なる点に注意する。\n\n【図解】結婚を表す表現の形\n　表現｜相手の示し方｜例\n　get married to｜to ＋ 人｜get married to a doctor\n　marry｜前置詞なし｜marry a doctor\n　be married｜状態を表す｜She is married\n　⇒ get の後ろなら過去分詞 married\n　⚠ get marry とは言えない。get の後ろは形容詞か過去分詞になる。',
     difficulty: 'standard',
   },
   {
@@ -324,7 +324,7 @@ export const eikenQuestions3kyuIdiom2: EikenQuestion[] = [
       { key: 'D', text: 'lie' },
     ],
     correctKey: 'C',
-    explanation: '"slow down"（速度を落とす）が正解。「標識には、運転者は学校の近くで速度を落とさなければならないと書いてある」という文です。fall down（転ぶ）、sit down（座る）、lie down（横になる）は運転の場面に合いません。',
+    explanation: '"slow down"（速度を落とす）が正解。「標識には、運転者は学校の近くで速度を落とさなければならないと書いてある」という文です。fall down（転ぶ）、sit down（座る）、lie down（横になる）は運転の場面に合いません。\n\nslow down は「速度を落とす」で、車の運転や作業のペースを緩める場面で使う。標識や注意書きでよく見かける表現。反対に速度を上げるのは speed up で、up と down の対比で覚えると整理しやすい。\n\n【図解】down を使う句動詞\n　表現｜意味｜場面\n　slow down｜速度を落とす｜運転, 作業\n　speed up｜速度を上げる｜反対の動作\n　calm down｜落ち着く｜感情\n　⇒ 学校の近くで減速するなら slow down\n　⚠ fall down（転ぶ）や sit down（座る）は身体の動き。運転の減速には slow を使う。',
     difficulty: 'standard',
   },
   {
@@ -337,7 +337,7 @@ export const eikenQuestions3kyuIdiom2: EikenQuestion[] = [
       { key: 'D', text: 'sounded' },
     ],
     correctKey: 'A',
-    explanation: '"hear from 〜"（〜から連絡がある）が正解。「ジュディがロンドンに引っ越してから連絡がない」という文です。listen・talk・soundはfromと組み合わせて「連絡をもらう」という意味になりません。手紙やメールの定番表現です。',
+    explanation: '"hear from 〜"（〜から連絡がある）が正解。「ジュディがロンドンに引っ越してから連絡がない」という文です。listen・talk・soundはfromと組み合わせて「連絡をもらう」という意味になりません。手紙やメールの定番表現です。\n\nhear from 〜 は「〜から便りがある、連絡をもらう」で、手紙・メール・電話による連絡を指す。hear about や hear of は「〜について耳にする」で、うわさや情報を指すため意味が異なる。\n\n【図解】hear の使い分け\n　表現｜意味｜対象\n　hear from｜〜から連絡がある｜人からの便り\n　hear about｜〜について聞く｜出来事の情報\n　hear of｜〜の存在を耳にする｜名前, うわさ\n　⇒ 引っ越した友人から連絡がないなら hear from\n　⚠ listen to は意識して耳を傾ける動作。連絡をもらう意味では使えない。',
     difficulty: 'standard',
   },
   {
@@ -350,7 +350,7 @@ export const eikenQuestions3kyuIdiom2: EikenQuestion[] = [
       { key: 'D', text: 'back' },
     ],
     correctKey: 'D',
-    explanation: '"write back"（返事を書く）が正解。「先週トムにメールを送り、昨日返事が来た」という文です。write down（書きとめる）、write upは意味が異なり、write atという表現はありません。call back（電話をかけ直す）と同じbackの使い方です。',
+    explanation: '"write back"（返事を書く）が正解。「先週トムにメールを送り、昨日返事が来た」という文です。write down（書きとめる）、write upは意味が異なり、write atという表現はありません。call back（電話をかけ直す）と同じbackの使い方です。\n\nwrite back は「返事を書く」で、back には「返す、戻す」の方向のイメージがある。同じ back を使う call back（折り返し電話する）、give back（返す）、come back（戻る）とまとめて覚えると理解しやすい。\n\n【図解】back を使う句動詞\n　表現｜意味｜返す対象\n　write back｜返事を書く｜手紙, メール\n　call back｜折り返し電話する｜電話\n　give back｜返す｜借りた物\n　⇒ メールへの返信なら write back\n　⚠ write down は「書きとめる」でメモを取る動作。返信の意味はない。',
     difficulty: 'basic',
   },
   {
@@ -363,7 +363,7 @@ export const eikenQuestions3kyuIdiom2: EikenQuestion[] = [
       { key: 'D', text: 'For' },
     ],
     correctKey: 'B',
-    explanation: '"at first"（最初は）が正解。「最初は納豆が好きではなかったが、今は毎日食べている」という、あとで変化があったことを表す文です。in first・on first・for firstという表現はありません。',
+    explanation: '"at first"（最初は）が正解。「最初は納豆が好きではなかったが、今は毎日食べている」という、あとで変化があったことを表す文です。in first・on first・for firstという表現はありません。\n\nat first は「最初は」で、後で状況が変わったことを示唆する表現。but や now と一緒に使われるのが典型的なパターン。first of all（まず第一に）は順序を示す別の表現で、意味が異なる。\n\n【図解】first を使う表現\n　表現｜意味｜含み\n　at first｜最初は｜後で変化がある\n　first of all｜まず第一に｜手順の最初\n　for the first time｜初めて｜初回の経験\n　⇒ 昔は嫌いだが今は好きなら at first\n　⚠ at first と first of all は用法が違う。変化の対比を示すのは at first。',
     difficulty: 'basic',
   },
   {
@@ -376,7 +376,7 @@ export const eikenQuestions3kyuIdiom2: EikenQuestion[] = [
       { key: 'D', text: 'on' },
     ],
     correctKey: 'D',
-    explanation: '"go on"（続く）が正解。「会議は3時間続いた」という文です。go up（上がる）は会議の継続を表せず、go at・go ofという表現はこの意味になりません。continueと同じ意味です。',
+    explanation: '"go on"（続く）が正解。「会議は3時間続いた」という文です。go up（上がる）は会議の継続を表せず、go at・go ofという表現はこの意味になりません。continueと同じ意味です。\n\ngo on は「続く、続ける」で、continue の言い換え。会議・雨・話などが主語になる。go on doing なら「〜し続ける」、go on to do なら「次に〜する」と、後ろの形で意味が変わる点も重要。\n\n【図解】go on の使い方\n　形｜意味｜例\n　go on｜続く｜The meeting went on\n　go on doing｜〜し続ける｜go on talking\n　go on to do｜次に〜する｜go on to explain\n　⇒ 会議が3時間続いたなら went on\n　⚠ go on doing と go on to do は意味が異なる。同じ行為の継続は doing。',
     difficulty: 'standard',
   },
   {
@@ -389,7 +389,7 @@ export const eikenQuestions3kyuIdiom2: EikenQuestion[] = [
       { key: 'D', text: 'down' },
     ],
     correctKey: 'C',
-    explanation: '"get together"（集まる）が正解。「私たちの家族は毎年お正月に祖母の家に集まる」という文です。get along（仲良くやる）、get off（降りる）、get down（降りる・かがむ）は「集合する」という意味を表せません。',
+    explanation: '"get together"（集まる）が正解。「私たちの家族は毎年お正月に祖母の家に集まる」という文です。get along（仲良くやる）、get off（降りる）、get down（降りる・かがむ）は「集合する」という意味を表せません。\n\nget together は「集まる」で、家族や友人が親睦のために集合することを表す。名詞形は get-together で「親睦会」の意味。gather や meet の口語的な言い換えとして使われる。\n\n【図解】get ＋ 副詞の使い分け\n　表現｜意味｜場面\n　get together｜集まる｜家族, 友人の集合\n　get along with｜仲良くやる｜人間関係\n　get off｜降りる｜バス, 電車\n　⇒ 正月に祖母の家に集まるなら get together\n　⚠ get along は「仲良くする」で集合の意味はない。together と along を取り違えない。',
     difficulty: 'standard',
   },
   {
@@ -402,7 +402,7 @@ export const eikenQuestions3kyuIdiom2: EikenQuestion[] = [
       { key: 'D', text: 'Three thousands' },
     ],
     correctKey: 'B',
-    explanation: '"thousands of 〜"（何千もの〜）が正解。はっきりした数ではなく「非常に多くの」という意味を表すときは、thousandsと複数形にしてofを続けます。具体的な数字を言うときはthree thousand touristsのようにsをつけません。',
+    explanation: '"thousands of 〜"（何千もの〜）が正解。はっきりした数ではなく「非常に多くの」という意味を表すときは、thousandsと複数形にしてofを続けます。具体的な数字を言うときはthree thousand touristsのようにsをつけません。\n\nthousands of 〜 は「何千もの〜」で、漠然と多い数を表すときは thousand を複数形にして of を続ける。具体的な数を言うときは two thousand people のように s を付けず of も使わない、という区別が最重要ポイント。\n\n【図解】数詞の複数形の使い分け\n　形｜意味｜例\n　thousands of｜何千もの｜thousands of tourists\n　two thousand ＋ 名詞｜2000の｜two thousand tourists\n　hundreds of｜何百もの｜hundreds of years\n　⇒ 漠然と多いなら s ＋ of\n　⚠ three thousands のように数詞の後ろに s は付けない。s が付くのは of と組むときだけ。',
     difficulty: 'standard',
   },
   {
@@ -415,7 +415,7 @@ export const eikenQuestions3kyuIdiom2: EikenQuestion[] = [
       { key: 'D', text: 'so' },
     ],
     correctKey: 'A',
-    explanation: '"such as 〜"（たとえば〜のような）が正解。「スキーやスケートのようなウィンタースポーツが好きだ」という文です。likeも「〜のような」を表せますがasとは組み合わせず、same・soではこの表現を作れません。',
+    explanation: '"such as 〜"（たとえば〜のような）が正解。「スキーやスケートのようなウィンタースポーツが好きだ」という文です。likeも「〜のような」を表せますがasとは組み合わせず、same・soではこの表現を作れません。\n\nsuch as 〜 は「たとえば〜のような」で、具体例を挙げるときに使う。名詞の後ろに置いて例示するのが基本の形。like も同じ働きをするが、such と組み合わせて such like とは言わない。\n\n【図解】例示の表現\n　表現｜意味｜使い方\n　such as｜たとえば〜のような｜名詞の後ろ\n　like｜〜のような｜名詞の後ろ, 単独\n　for example｜たとえば｜文全体に対して\n　⇒ スキーやスケートを例に挙げるなら such as\n　⚠ such as と like は同義だが併用しない。such like as のような形は誤り。',
     difficulty: 'standard',
   },
   {
@@ -428,7 +428,7 @@ export const eikenQuestions3kyuIdiom2: EikenQuestion[] = [
       { key: 'D', text: 'To' },
     ],
     correctKey: 'A',
-    explanation: '"for example"（たとえば）が正解。具体例を挙げるときの定番表現です。in example・at example・to exampleという表現はありません。英作文でも便利な表現なので必ず覚えましょう。',
+    explanation: '"for example"（たとえば）が正解。具体例を挙げるときの定番表現です。in example・at example・to exampleという表現はありません。英作文でも便利な表現なので必ず覚えましょう。\n\nfor example は「たとえば」で、直前の内容に具体例を添えるときに使う副詞句。for instance も同じ意味。文頭に置いてコンマで区切るのが一般的な形で、英作文でも使いやすい表現である。\n\n【図解】例示と補足の副詞句\n　表現｜意味｜位置\n　for example｜たとえば｜文頭, 文中\n　in other words｜言いかえれば｜文頭\n　that is｜つまり｜言い換えの前\n　⇒ 京都と奈良を例に挙げるなら For example\n　⚠ such as は名詞の直後に置く。文頭で例を挙げるときは for example を使う。',
     difficulty: 'basic',
   },
   {
@@ -441,7 +441,7 @@ export const eikenQuestions3kyuIdiom2: EikenQuestion[] = [
       { key: 'D', text: 'At' },
     ],
     correctKey: 'B',
-    explanation: '"by the way"（ところで）が正解。話題を変えるときに使う表現です。on the way（とちゅうで）、in the way（じゃまになって）は意味が異なるので注意しましょう。',
+    explanation: '"by the way"（ところで）が正解。話題を変えるときに使う表現です。on the way（とちゅうで）、in the way（じゃまになって）は意味が異なるので注意しましょう。\n\nby the way は「ところで」で、話題を切り替えるときに使うつなぎ表現。会話の途中で別の話に移る合図になる。同じ the way を使う on the way（途中で）、in the way（じゃまで）とは意味がまったく異なる。\n\n【図解】the way を使う表現\n　表現｜意味｜使う場面\n　by the way｜ところで｜話題転換\n　on the way｜途中で｜移動中\n　in the way｜じゃまになって｜障害物\n　⇒ 映画の話から昼食の話に移るなら by the way\n　⚠ 前置詞1つで意味が変わる。in the way を「途中で」と訳さない。',
     difficulty: 'basic',
   },
   {
@@ -454,7 +454,7 @@ export const eikenQuestions3kyuIdiom2: EikenQuestion[] = [
       { key: 'D', text: 'That' },
     ],
     correctKey: 'C',
-    explanation: '"these days"（最近・このごろ）が正解。現在の傾向を表すときに使います。daysが複数形なのでthis・thatは使えず、those daysは「（過去の）当時」を表す表現なので現在の話には合いません。',
+    explanation: '"these days"（最近・このごろ）が正解。現在の傾向を表すときに使います。daysが複数形なのでthis・thatは使えず、those daysは「（過去の）当時」を表す表現なので現在の話には合いません。\n\nthese days は「最近、このごろ」で、現在の傾向を述べるときに使う。days が複数形なので指示語も these になる。過去の一時期を指す those days（当時）とは時制も意味も異なるので対比して覚えたい。\n\n【図解】時を表す指示表現\n　表現｜意味｜時制\n　these days｜最近は｜現在形\n　in those days｜当時は｜過去形\n　nowadays｜近ごろ｜現在形\n　⇒ 今の学生の傾向を述べるなら these days\n　⚠ those days には in が付くのが普通。these days は前置詞なしで使う点も違う。',
     difficulty: 'standard',
   },
   {
@@ -467,7 +467,7 @@ export const eikenQuestions3kyuIdiom2: EikenQuestion[] = [
       { key: 'D', text: 'time' },
     ],
     correctKey: 'D',
-    explanation: '"at that time"（当時・そのとき）が正解。「当時、私は5歳だった」という文です。dayならon that day、yearならin that yearと前置詞が変わるため、atと組み合わせられるのはtimeです。',
+    explanation: '"at that time"（当時・そのとき）が正解。「当時、私は5歳だった」という文です。dayならon that day、yearならin that yearと前置詞が変わるため、atと組み合わせられるのはtimeです。\n\nat that time は「当時、そのとき」で、過去のある時点を指す。時の単位によって前置詞が変わり、日には on、月や年には in、時刻や時点には at を使うという原則が背景にある。\n\n【図解】時を表す前置詞の使い分け\n　単位｜前置詞｜例\n　時刻, 時点｜at｜at that time, at five\n　日, 曜日｜on｜on that day, on Monday\n　月, 年, 季節｜in｜in that year, in May\n　⇒ 当時5歳だったなら at that time\n　⚠ 前置詞は名詞の単位で決まる。at that day や on that time とはしない。',
     difficulty: 'standard',
   },
   {
@@ -480,7 +480,7 @@ export const eikenQuestions3kyuIdiom2: EikenQuestion[] = [
       { key: 'D', text: 'all' },
     ],
     correctKey: 'D',
-    explanation: '"not 〜 at all"（まったく〜ない）が正解。「長い散歩の後でもまったく疲れていなかった」という文です。at last（ついに）、at least（少なくとも）、at once（すぐに）はどれも別の意味の熟語です。',
+    explanation: '"not 〜 at all"（まったく〜ない）が正解。「長い散歩の後でもまったく疲れていなかった」という文です。at last（ついに）、at least（少なくとも）、at once（すぐに）はどれも別の意味の熟語です。\n\nnot 〜 at all は「まったく〜ない」で、否定を強める表現。at all は否定文で使うのが基本。Not at all. だけなら「どういたしまして」という返答にもなる。at ＋ 名詞の慣用句は意味がそれぞれ違うので整理が必要。\n\n【図解】at ＋ 名詞の慣用句の区別\n　表現｜意味｜使う場面\n　not 〜 at all｜まったく〜ない｜強い否定\n　at last｜ついに｜待望の実現\n　at least｜少なくとも｜下限の数量\n　⇒ 全然疲れていないなら not tired at all\n　⚠ at all は肯定文では通常使わない。否定文か疑問文で使うのが原則。',
     difficulty: 'basic',
   },
   {
@@ -493,7 +493,7 @@ export const eikenQuestions3kyuIdiom2: EikenQuestion[] = [
       { key: 'D', text: 'turn' },
     ],
     correctKey: 'A',
-    explanation: '"take a trip to 〜"（〜へ旅行する）が正解。「この冬、北海道へ旅行する予定だ」という文です。play・put・turnはa tripと組み合わせて「旅行する」という意味になりません。go on a tripも同じ意味です。',
+    explanation: '"take a trip to 〜"（〜へ旅行する）が正解。「この冬、北海道へ旅行する予定だ」という文です。play・put・turnはa tripと組み合わせて「旅行する」という意味になりません。go on a tripも同じ意味です。\n\ntake a trip to 〜 は「〜へ旅行する」で、go on a trip to 〜 とも言う。trip は「（短めの）旅行」を表す可算名詞で冠詞 a が付く。動詞 take は「行動を取る」意味で、take a walk、take a rest なども同じ発想。\n\n【図解】take ＋ a ＋ 名詞の表現\n　表現｜意味｜使う場面\n　take a trip｜旅行する｜観光, 出張\n　take a walk｜散歩する｜運動\n　take a rest｜休憩する｜休息\n　⇒ 冬に北海道へ旅行するなら take a trip to\n　⚠ travel は不可算名詞で a travel とは言わない。数えられる旅行は trip を使う。',
     difficulty: 'basic',
   },
   {
@@ -506,7 +506,7 @@ export const eikenQuestions3kyuIdiom2: EikenQuestion[] = [
       { key: 'D', text: 'in' },
     ],
     correctKey: 'C',
-    explanation: '"hold on"（電話を切らずに待つ）が正解。「少々お待ちください」という電話の決まり文句です。hold up（持ち上げる・遅らせる）、hold inはこの場面の表現ではありません。Just a moment, please.も同じ意味で使えます。',
+    explanation: '"hold on"（電話を切らずに待つ）が正解。「少々お待ちください」という電話の決まり文句です。hold up（持ち上げる・遅らせる）、hold inはこの場面の表現ではありません。Just a moment, please.も同じ意味で使えます。\n\nhold on は「電話を切らずに待つ」で、電話応対の決まり文句。Hold on a moment, please. の形で使う。on には「続けて」というイメージがあり、つながった状態を保つ動作を表している。\n\n【図解】電話の定型表現\n　表現｜意味｜場面\n　hold on｜切らずに待つ｜取り次ぎ\n　May I speak to｜〜さんをお願いします｜取り次ぎ依頼\n　call back｜かけ直す｜不在時\n　⇒ 少々お待ちくださいなら hold on\n　⚠ hold up は「遅らせる, 持ち上げる」。電話を待たせる意味では on を使う。',
     difficulty: 'standard',
   },
   {
@@ -519,7 +519,7 @@ export const eikenQuestions3kyuIdiom2: EikenQuestion[] = [
       { key: 'D', text: 'gets' },
     ],
     correctKey: 'B',
-    explanation: '"belong to 〜"（〜のものである）が正解。「このラケットは兄[弟]のものだから、ていねいにあつかって」という文です。own（所有する）を使うならMy brother owns this racket.という語順になります。has・getsはtoと組み合わせてこの意味を表せません。',
+    explanation: '"belong to 〜"（〜のものである）が正解。「このラケットは兄[弟]のものだから、ていねいにあつかって」という文です。own（所有する）を使うならMy brother owns this racket.という語順になります。has・getsはtoと組み合わせてこの意味を表せません。\n\nbelong to 〜 は「〜のものである、〜に所属する」で、所有者やクラブを示すときに使う。状態を表す動詞なので進行形にはしない。同じ内容は所有者を主語にして own を使っても表せるが、語順が変わる。\n\n【図解】所有を表す表現の語順\n　表現｜主語｜例\n　belong to｜物｜This racket belongs to my brother\n　own｜人｜My brother owns this racket\n　have｜人｜My brother has this racket\n　⇒ 物を主語にするなら belong to\n　⚠ belong は進行形にしない。is belonging to は誤り。',
     difficulty: 'standard',
   },
   {
@@ -532,7 +532,7 @@ export const eikenQuestions3kyuIdiom2: EikenQuestion[] = [
       { key: 'D', text: 'say' },
     ],
     correctKey: 'B',
-    explanation: '"agree with 〜"（〜に賛成する）が正解。「あなたの考えに賛成だ。先生に伝えよう」という文です。know・think・sayはwithと組み合わせて「賛成する」という意味になりません。反対はdisagree with（〜に反対する）です。',
+    explanation: '"agree with 〜"（〜に賛成する）が正解。「あなたの考えに賛成だ。先生に伝えよう」という文です。know・think・sayはwithと組み合わせて「賛成する」という意味になりません。反対はdisagree with（〜に反対する）です。\n\nagree with 〜 は「〜に賛成する」で、人や意見に同意する場合に使う。提案には agree to、条件や計画には agree on と、対象によって前置詞が変わるのが重要なポイント。反対は disagree with。\n\n【図解】agree の前置詞の使い分け\n　表現｜対象｜例\n　agree with｜人, 意見｜agree with you, with the idea\n　agree to｜提案, 条件｜agree to the plan\n　agree on｜取り決め｜agree on a date\n　⇒ 相手の考えに賛成なら agree with\n　⚠ agree with と agree to は対象が違う。人には with、提案には to を使う。',
     difficulty: 'basic',
   },
   {
@@ -545,7 +545,7 @@ export const eikenQuestions3kyuIdiom2: EikenQuestion[] = [
       { key: 'D', text: 'out' },
     ],
     correctKey: 'D',
-    explanation: '"be sold out"（売り切れる）が正解。「コンサートのチケットは1時間で売り切れた」という文です。sell away・sell up・sell downは「売り切れる」という意味の熟語ではありません。店の表示のSOLD OUTでもおなじみです。',
+    explanation: '"be sold out"（売り切れる）が正解。「コンサートのチケットは1時間で売り切れた」という文です。sell away・sell up・sell downは「売り切れる」という意味の熟語ではありません。店の表示のSOLD OUTでもおなじみです。\n\nbe sold out は「売り切れる」で、out には「尽きて、なくなって」というイメージがある。チケット・商品・部屋などが主語になる。同じ発想の run out（尽きる）や give out（尽きる）と合わせて覚えるとよい。\n\n【図解】out が「尽きる」を表す表現\n　表現｜意味｜主語\n　be sold out｜売り切れる｜チケット, 商品\n　run out of｜使い果たす｜人\n　give out｜尽きる, 故障する｜体力, 機械\n　⇒ 1時間で完売なら sold out\n　⚠ sell up や sell away に「売り切れる」の意味はない。out 以外を選ばない。',
     difficulty: 'basic',
   },
   {
@@ -558,7 +558,7 @@ export const eikenQuestions3kyuIdiom2: EikenQuestion[] = [
       { key: 'D', text: 'read' },
     ],
     correctKey: 'A',
-    explanation: '"do the dishes"（皿洗いをする）が正解。「母を手伝うために夕食後いつも皿洗いをする」という文です。do the laundry（洗濯をする）、do one\'s homework（宿題をする）など、家事や作業にはdoを使います。make the dishesとは言いません。',
+    explanation: '"do the dishes"（皿洗いをする）が正解。「母を手伝うために夕食後いつも皿洗いをする」という文です。do the laundry（洗濯をする）、do one\'s homework（宿題をする）など、家事や作業にはdoを使います。make the dishesとは言いません。\n\ndo the dishes は「皿洗いをする」で、家事や決まった作業には do を使うのが英語の原則。the が付くのは「食後に出た食器一式」という特定のものを指すため。make は何かを作り出す動詞なので、洗う作業には使えない。\n\n【図解】do を使う家事の表現\n　表現｜意味｜場面\n　do the dishes｜皿洗いをする｜食後\n　do the laundry｜洗濯をする｜家事\n　do ones homework｜宿題をする｜勉強\n　⇒ 夕食後の皿洗いなら do the dishes\n　⚠ make the dishes は「料理を作る」と誤解されうる。作業には do を使う。',
     difficulty: 'standard',
   },
   {
@@ -571,7 +571,7 @@ export const eikenQuestions3kyuIdiom2: EikenQuestion[] = [
       { key: 'D', text: 'shout' },
     ],
     correctKey: 'C',
-    explanation: '"make noise"（さわぐ・音を立てる）が正解。「病院でさわいではいけません。病気の人が休んでいます」という文です。make a soundなら冠詞が必要で、voice・shoutはmakeと組み合わせてこの意味の熟語になりません。',
+    explanation: '"make noise"（さわぐ・音を立てる）が正解。「病院でさわいではいけません。病気の人が休んでいます」という文です。make a soundなら冠詞が必要で、voice・shoutはmakeと組み合わせてこの意味の熟語になりません。\n\nmake noise は「音を立てる、騒ぐ」で、うるさい音を出す行為を表す。noise は不可算名詞として使われるため、この形では冠詞が付かない。一方 sound は可算にも不可算にもなり、make a sound なら「物音を立てる」となる。\n\n【図解】音を表す名詞の使い分け\n　名詞｜意味｜冠詞\n　noise｜騒音, 雑音｜無冠詞で使える\n　sound｜音一般｜a sound の形が多い\n　voice｜声｜a voice, ones voice\n　⇒ 病院で騒ぐなという注意なら make noise\n　⚠ noise は不快な音、sound は中立的な音。意味の違いも押さえておく。',
     difficulty: 'basic',
   },
   {
@@ -584,7 +584,7 @@ export const eikenQuestions3kyuIdiom2: EikenQuestion[] = [
       { key: 'D', text: 'put' },
     ],
     correctKey: 'C',
-    explanation: '"take medicine"（薬を飲む）が正解。英語では薬はeatやdrinkではなくtakeを使います。日本語の「飲む」につられてdrinkとしないように注意しましょう。three times a day（1日3回）、after meals（食後に）も薬の説明の定番表現です。',
+    explanation: '"take medicine"（薬を飲む）が正解。英語では薬はeatやdrinkではなくtakeを使います。日本語の「飲む」につられてdrinkとしないように注意しましょう。three times a day（1日3回）、after meals（食後に）も薬の説明の定番表現です。\n\ntake medicine は「薬を飲む」で、英語では薬を eat でも drink でもなく take で表す。日本語の「飲む」に引きずられないことが重要。服用の回数や時期を表す three times a day、after meals も薬の説明の定番表現である。\n\n【図解】take を使う日常表現\n　表現｜意味｜日本語との違い\n　take medicine｜薬を飲む｜drink とは言わない\n　take a bath｜入浴する｜enter とは言わない\n　take a picture｜写真を撮る｜shoot とは言わない\n　⇒ 1日3回食後に服用なら take\n　⚠ drink medicine は不自然な英語。日本語の直訳が誤答になる典型例。',
     difficulty: 'standard',
   },
   {
@@ -597,7 +597,7 @@ export const eikenQuestions3kyuIdiom2: EikenQuestion[] = [
       { key: 'D', text: 'go' },
     ],
     correctKey: 'A',
-    explanation: '"leave for 〜"（〜へ向けて出発する）が正解。「父は月曜日に仕事でロンドンへ出発する」という文です。arriveはarrive in/at（到着する）、reachは前置詞なしで使います。on business（仕事で）も重要表現です。',
+    explanation: '"leave for 〜"（〜へ向けて出発する）が正解。「父は月曜日に仕事でロンドンへ出発する」という文です。arriveはarrive in/at（到着する）、reachは前置詞なしで使います。on business（仕事で）も重要表現です。\n\nleave for 〜 は「〜へ向けて出発する」で、for が向かう先を示す。leave Tokyo なら「東京を出発する」と出発地を目的語にとるので、前置詞の有無で意味が変わる点が重要。到着を表す arrive や reach とは形が異なる。\n\n【図解】出発と到着の表現\n　表現｜意味｜前置詞\n　leave for｜〜へ向け出発する｜for ＋ 目的地\n　arrive at または in｜到着する｜at 狭い場所, in 広い場所\n　reach｜到着する｜前置詞不要\n　⇒ ロンドンへ出発するなら leave for\n　⚠ leave for London と leave London は意味が逆。for の有無で目的地か出発地かが決まる。',
     difficulty: 'advanced',
   },
   {
@@ -610,7 +610,7 @@ export const eikenQuestions3kyuIdiom2: EikenQuestion[] = [
       { key: 'D', text: 'throw' },
     ],
     correctKey: 'D',
-    explanation: '"throw away 〜"（〜を捨てる）が正解。「古い服を捨てないで。必要な人にあげられるよ」という文です。turn away（追い返す）、call away、write awayはこの文脈で「捨てる」という意味になりません。',
+    explanation: '"throw away 〜"（〜を捨てる）が正解。「古い服を捨てないで。必要な人にあげられるよ」という文です。turn away（追い返す）、call away、write awayはこの文脈で「捨てる」という意味になりません。\n\nthrow away 〜 は「〜を捨てる」で、away には「離れたところへ」というイメージがある。目的語が代名詞なら throw it away の語順になる分離可能な句動詞。不要品の処分について話す場面で頻出する。\n\n【図解】away を使う句動詞\n　表現｜意味｜対象\n　throw away｜捨てる｜old clothes, trash\n　put away｜片づける｜toys, books\n　give away｜ただであげる｜clothes, tickets\n　⇒ 古着を捨てるなら throw away\n　⚠ throw away it とは言えない。代名詞は throw と away の間に置く。',
     difficulty: 'basic',
   },
   {
@@ -623,7 +623,7 @@ export const eikenQuestions3kyuIdiom2: EikenQuestion[] = [
       { key: 'D', text: 'fine' },
     ],
     correctKey: 'B',
-    explanation: '"get better"（（体調が）良くなる）が正解。「早く良くなりますように。お大事に」というお見舞いの表現です。get wellも同じ意味ですが、good・nice・fineはgetと組み合わせて回復を表す定番表現にはなりません。',
+    explanation: '"get better"（（体調が）良くなる）が正解。「早く良くなりますように。お大事に」というお見舞いの表現です。get wellも同じ意味ですが、good・nice・fineはgetと組み合わせて回復を表す定番表現にはなりません。\n\nget better は「（体調が）よくなる」で、get ＋ 形容詞の比較級で変化を表す形。good の比較級 better を使う点がポイント。get well も同義で、お見舞いの Get well soon. は定番のフレーズである。\n\n【図解】お見舞いの表現\n　表現｜意味｜使う場面\n　get better｜よくなる｜回復を願う\n　get well soon｜早く元気になって｜カード, メール\n　take care of yourself｜お大事に｜別れ際\n　⇒ 回復を願う言葉なら get better\n　⚠ get good とは言わない。体調の回復には better か well を使う。',
     difficulty: 'basic',
   },
   {
@@ -636,7 +636,7 @@ export const eikenQuestions3kyuIdiom2: EikenQuestion[] = [
       { key: 'D', text: 'seat' },
     ],
     correctKey: 'D',
-    explanation: '"have a seat"（おかけください）が正解。「おかけになって医師をお待ちください」というていねいな表現です。sitは動詞なのでhave aの後ろに置けません（Please sit down.なら正しい形）。stand・deskもこの表現には使いません。',
+    explanation: '"have a seat"（おかけください）が正解。「おかけになって医師をお待ちください」というていねいな表現です。sitは動詞なのでhave aの後ろに置けません（Please sit down.なら正しい形）。stand・deskもこの表現には使いません。\n\nhave a seat は「おかけください」で、Please have a seat. の形で丁寧に着席を促す表現。seat は「座席」を表す名詞なので a が付く。動詞 sit を使う場合は Please sit down. と形が変わる。\n\n【図解】着席を促す表現\n　表現｜品詞の違い｜丁寧さ\n　have a seat｜seat は名詞｜丁寧\n　take a seat｜seat は名詞｜丁寧\n　sit down｜sit は動詞｜ふつう\n　⇒ 病院の待合で促すなら have a seat\n　⚠ have a sit とは言えない。sit は動詞なので a の後ろには置けない。',
     difficulty: 'standard',
   },
   {
@@ -649,7 +649,7 @@ export const eikenQuestions3kyuIdiom2: EikenQuestion[] = [
       { key: 'D', text: 'speaks' },
     ],
     correctKey: 'C',
-    explanation: '"keep one\'s promise"（約束を守る）が正解。「いつも約束を守りなさい。人から信頼されるよ」という文です。keep one\'s wordという表現もありますが、その場合wordは単数形で使うためwordsは誤りです。talks・speaksはこの熟語に使いません。',
+    explanation: '"keep one\'s promise"（約束を守る）が正解。「いつも約束を守りなさい。人から信頼されるよ」という文です。keep one\'s wordという表現もありますが、その場合wordは単数形で使うためwordsは誤りです。talks・speaksはこの熟語に使いません。\n\nkeep one’s promise は「約束を守る」で、promise は可算名詞なので複数形にもできる。同じ意味の keep one’s word では word を単数形で使うのが決まりで、words と複数にすると「言葉」の意味になってしまう。\n\n【図解】約束に関する表現\n　表現｜名詞の形｜意味\n　keep ones promise｜promise または promises｜約束を守る\n　keep ones word｜word は単数のみ｜約束を守る\n　break ones promise｜promise｜約束を破る\n　⇒ 信頼されるために守るなら promises\n　⚠ keep ones words とは言わない。word はこの慣用句では必ず単数形。',
     difficulty: 'standard',
   },
 ];

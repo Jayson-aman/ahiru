@@ -14,7 +14,7 @@ export const eikenQuestions2kyu2: EikenQuestion[] = [
       { key: 'D', text: 'combination' },
     ],
     correctKey: 'A',
-    explanation: '"correlation between A and B"はAとBの間の相関関係を示す学術的用語。coincidence（偶然の一致）は研究結果を示さない。consequence（結果・影響）は「相関」ではなく因果を示す。combination（組み合わせ）は全く意味が異なる。',
+    explanation: '"correlation between A and B"はAとBの間の相関関係を示す学術的用語。coincidence（偶然の一致）は研究結果を示さない。consequence（結果・影響）は「相関」ではなく因果を示す。combination（組み合わせ）は全く意味が異なる。\n\ncorrelation は「相関関係」で、二つの変数が一緒に変動する傾向を指す統計用語。between A and B の形で使うのが定型。相関があっても因果関係があるとは限らないという点が、学術英語を読むうえでの重要な前提になる。\n\n【図解】研究で使う関係の用語\n　語｜意味｜含む主張\n　correlation｜相関関係｜同時に変動する\n　causation｜因果関係｜一方が他方を引き起こす\n　coincidence｜偶然の一致｜法則性なし\n　⇒ between A and B と続くなら correlation\n　⚠ consequence は「結果」で因果を含む語。相関を因果と取り違えないのが読解の基本。',
     difficulty: 'advanced',
   },
   {
@@ -29,7 +29,7 @@ export const eikenQuestions2kyu2: EikenQuestion[] = [
       { key: 'D', text: 'subsidy' },
     ],
     correctKey: 'D',
-    explanation: 'subsidyは「補助金」の意味で、政府が特定の行動を奨励するために支給する経済的支援を指す。deficit（赤字）、revenue（歳入・収益）、expenditure（支出）はいずれも文脈に合わない。',
+    explanation: 'subsidyは「補助金」の意味で、政府が特定の行動を奨励するために支給する経済的支援を指す。deficit（赤字）、revenue（歳入・収益）、expenditure（支出）はいずれも文脈に合わない。\n\nsubsidy は「補助金」で、政府が特定の行動を促すために支給する資金を指す。動詞は subsidize、形容詞は subsidized。環境配慮型の農業を奨励するという文脈は、この語の典型的な使われ方である。\n\n【図解】財政に関する名詞\n　語｜意味｜資金の流れ\n　subsidy｜補助金｜政府から民間へ\n　revenue｜歳入, 収益｜民間から政府へ\n　expenditure｜支出｜政府が使う\n　⇒ 農家への奨励金なら subsidy\n　⚠ deficit は「赤字」で収支の差額。資金の種類ではなく状態を表す語。',
     difficulty: 'advanced',
   },
   {
@@ -44,7 +44,7 @@ export const eikenQuestions2kyu2: EikenQuestion[] = [
       { key: 'D', text: 'biodiversity' },
     ],
     correctKey: 'D',
-    explanation: 'biodiversityは「生物多様性」の意味で、多種多様な生物が存在する状態を指す学術・環境用語。infrastructure（インフラ）、emission（排出量）、demographic（人口統計の）はいずれも文脈に合わない。',
+    explanation: 'biodiversityは「生物多様性」の意味で、多種多様な生物が存在する状態を指す学術・環境用語。infrastructure（インフラ）、emission（排出量）、demographic（人口統計の）はいずれも文脈に合わない。\n\nbiodiversity は bio（生命）＋ diversity（多様性）で「生物多様性」。ある地域に生息する動植物の種類の豊かさを指す環境用語で、hundreds of plant and animal species という説明がそのまま定義になっている。\n\n【図解】環境と社会の専門用語\n　語｜意味｜分野\n　biodiversity｜生物多様性｜生態系保全\n　infrastructure｜社会基盤｜道路, 電力\n　demographic｜人口統計上の集団｜社会統計\n　⇒ 固有種の多さを言うなら biodiversity\n　⚠ emission は「排出（量）」で多様性とは無関係。環境用語をひとまとめにしない。',
     difficulty: 'standard',
   },
   {
@@ -59,7 +59,7 @@ export const eikenQuestions2kyu2: EikenQuestion[] = [
       { key: 'D', text: 'empirical' },
     ],
     correctKey: 'D',
-    explanation: 'empiricalは「実証的な・経験に基づく」という学術用語で、実験や観察によって得られたデータを指す。ambiguous（曖昧な）、peripheral（周辺的な）、obsolete（時代遅れの）はいずれも不適切。',
+    explanation: 'empiricalは「実証的な・経験に基づく」という学術用語で、実験や観察によって得られたデータを指す。ambiguous（曖昧な）、peripheral（周辺的な）、obsolete（時代遅れの）はいずれも不適切。\n\nempirical は「実証的な、経験に基づく」で、理論だけでなく観察や実験によって得られた事実を指す。empirical evidence、empirical study、empirical data という形で学術文脈に頻出し、theoretical と対比される。\n\n【図解】証拠の性質を表す形容詞\n　語｜意味｜対比される語\n　empirical｜実証的な｜theoretical\n　anecdotal｜逸話的な, 体験談による｜systematic\n　ambiguous｜あいまいな｜clear\n　⇒ 統制実験で得た証拠なら empirical\n　⚠ obsolete は「時代遅れの」で証拠の性質ではない。学術語の意味を混同しない。',
     difficulty: 'advanced',
   },
   {
@@ -74,7 +74,7 @@ export const eikenQuestions2kyu2: EikenQuestion[] = [
       { key: 'D', text: 'inclusive' },
     ],
     correctKey: 'D',
-    explanation: 'inclusiveは「包括的な・すべての人を含む」という意味で、多様な背景を持つ人々を公平に扱うという文脈に適切。monetary（金融的な）、fiscal（財政的な）、peripheral（周辺的な）は不適切。',
+    explanation: 'inclusiveは「包括的な・すべての人を含む」という意味で、多様な背景を持つ人々を公平に扱うという文脈に適切。monetary（金融的な）、fiscal（財政的な）、peripheral（周辺的な）は不適切。\n\ninclusive は「すべての人を包み込む、排除しない」で、多様な背景を持つ人を公平に扱う方針を表す。名詞形は inclusion、対義語は exclusive（排他的な）。企業の人事方針を述べる文脈で頻出する。\n\n【図解】包摂と排除の語\n　語｜意味｜方向\n　inclusive｜包摂的な｜含める\n　exclusive｜排他的な｜締め出す\n　peripheral｜周辺的な｜中心から外れる\n　⇒ 出身を問わず公平に扱う方針なら inclusive\n　⚠ monetary や fiscal はお金に関する語。人事方針の説明には使えない。',
     difficulty: 'standard',
   },
   {
@@ -89,7 +89,7 @@ export const eikenQuestions2kyu2: EikenQuestion[] = [
       { key: 'D', text: 'emissions' },
     ],
     correctKey: 'D',
-    explanation: 'carbon emissionsは「炭素排出量」という環境問題の基本用語。地球温暖化を抑制するために削減が求められるのはemissions（排出量）。subsidies（補助金）、revenues（収益）、variables（変数）はいずれも不適切。',
+    explanation: 'carbon emissionsは「炭素排出量」という環境問題の基本用語。地球温暖化を抑制するために削減が求められるのはemissions（排出量）。subsidies（補助金）、revenues（収益）、variables（変数）はいずれも不適切。\n\ncarbon emissions は「炭素排出量」で、emission は動詞 emit（放出する）の名詞形。地球温暖化対策の文脈では必ず複数形で使われる。reduce emissions、cut emissions が定番のコロケーションである。\n\n【図解】温暖化対策の基本語\n　語｜意味｜結びつく動詞\n　emissions｜排出量｜reduce, cut, curb\n　subsidies｜補助金｜provide, receive\n　revenues｜収益｜generate, decline\n　⇒ 温暖化を抑えるため減らすものなら emissions\n　⚠ variable は「変数」で統計用語。分野の異なる名詞を並べる出題形式に注意する。',
     difficulty: 'standard',
   },
   {
@@ -104,7 +104,7 @@ export const eikenQuestions2kyu2: EikenQuestion[] = [
       { key: 'D', text: 'empower' },
     ],
     correctKey: 'D',
-    explanation: 'empowerは「力を与える・権限を付与する」の意味で、教育や職業訓練を通じてコミュニティを支援する文脈に適切。marginalizeは「疎外する」で逆の意味。subordinate（従属させる）、segregate（分離する）も不適切。',
+    explanation: 'empowerは「力を与える・権限を付与する」の意味で、教育や職業訓練を通じてコミュニティを支援する文脈に適切。marginalizeは「疎外する」で逆の意味。subordinate（従属させる）、segregate（分離する）も不適切。\n\nempower は em-（〜にする）＋ power（力）で「力をつけさせる、自立を後押しする」。教育や職業訓練を通じて地域を支援するという文脈にぴったり合う。名詞形は empowerment。\n\n【図解】集団への働きかけを表す動詞\n　語｜意味｜方向\n　empower｜力をつけさせる｜押し上げる\n　marginalize｜周縁に追いやる｜締め出す\n　segregate｜分離する｜引き離す\n　⇒ 教育で自立を支えるなら empower\n　⚠ marginalize は正反対の意味。支援と排除を取り違えると文意が逆になる。',
     difficulty: 'standard',
   },
   {
@@ -119,7 +119,7 @@ export const eikenQuestions2kyu2: EikenQuestion[] = [
       { key: 'D', text: 'fiscal' },
     ],
     correctKey: 'C',
-    explanation: 'confounding factorsは「交絡因子」という研究方法論の専門用語で、結果を歪める可能性のある外部要因を指す。sustainable（持続可能な）、advocating（提唱する）、fiscal（財政的な）は文脈に合わない。',
+    explanation: 'confounding factorsは「交絡因子」という研究方法論の専門用語で、結果を歪める可能性のある外部要因を指す。sustainable（持続可能な）、advocating（提唱する）、fiscal（財政的な）は文脈に合わない。\n\nconfounding factor は「交絡因子」で、調べたい関係とは別に結果を歪める第三の要因を指す研究方法論の用語。control for confounding factors（交絡因子を統制する）という形で使われる。\n\n【図解】研究デザインの用語\n　語｜意味｜役割\n　confounding factor｜交絡因子｜結果を歪める\n　control group｜対照群｜比較の基準\n　variable｜変数｜測定する要素\n　⇒ 結果を歪めうる要因なら confounding\n　⚠ confusing（混乱させる）と confounding を混同しない。専門用語としての意味を覚える。',
     difficulty: 'advanced',
   },
   {
@@ -134,7 +134,7 @@ export const eikenQuestions2kyu2: EikenQuestion[] = [
       { key: 'D', text: 'monetary' },
     ],
     correctKey: 'D',
-    explanation: 'monetary policyは「金融政策」という経済学の基本用語で、中央銀行が金利や通貨供給量を管理する政策を指す。ecological（生態学的な）、demographic（人口統計的な）、empirical（実証的な）はいずれも不適切。',
+    explanation: 'monetary policyは「金融政策」という経済学の基本用語で、中央銀行が金利や通貨供給量を管理する政策を指す。ecological（生態学的な）、demographic（人口統計的な）、empirical（実証的な）はいずれも不適切。\n\nmonetary policy は「金融政策」で、中央銀行が金利や通貨供給量を操作して物価と景気を調整する政策を指す。政府が税と歳出を通じて行う fiscal policy（財政政策）と対になる用語である。\n\n【図解】二つの経済政策\n　用語｜担い手｜手段\n　monetary policy｜中央銀行｜金利, 通貨供給量\n　fiscal policy｜政府｜税, 歳出\n　trade policy｜政府｜関税, 通商協定\n　⇒ 中央銀行が決めるなら monetary\n　⚠ monetary と fiscal の取り違えが最頻出。担い手が中央銀行か政府かで判断する。',
     difficulty: 'standard',
   },
   {
@@ -149,7 +149,7 @@ export const eikenQuestions2kyu2: EikenQuestion[] = [
       { key: 'D', text: 'marginalizing' },
     ],
     correctKey: 'C',
-    explanation: 'advocate for～は「～を擁護する・支持する」の意味で、規制強化を訴える活動家グループの行動として適切。integrating（統合する）、subsidizing（補助金を出す）、marginalizing（疎外する）はいずれも不適切。',
+    explanation: 'advocate for～は「～を擁護する・支持する」の意味で、規制強化を訴える活動家グループの行動として適切。integrating（統合する）、subsidizing（補助金を出す）、marginalizing（疎外する）はいずれも不適切。\n\nadvocate for 〜 は「〜を主張する、支持を訴える」で、規制強化や制度改革を求める活動を表す。名詞では「擁護者、支持者」の意味になり、an advocate for human rights のように使う。\n\n【図解】社会運動に関する動詞\n　語｜意味｜活動の方向\n　advocate for｜訴える, 擁護する｜支持を広げる\n　lobby｜働きかける｜立法者に直接\n　marginalize｜周縁に追いやる｜排除する\n　⇒ 議会に働きかけて規制強化を訴えるなら advocating\n　⚠ integrate は「統合する」で主張活動ではない。行動の内容で語を選び分ける。',
     difficulty: 'standard',
   },
   {
@@ -164,7 +164,7 @@ export const eikenQuestions2kyu2: EikenQuestion[] = [
       { key: 'D', text: 'variable' },
     ],
     correctKey: 'C',
-    explanation: 'demographicは「人口（統計上の集団）」の意味で、aging demographic（高齢化する人口）という表現は社会・経済問題でよく使われる。methodology（方法論）、hypothesis（仮説）、variable（変数）は学術的文脈での意味が異なる。',
+    explanation: 'demographicは「人口（統計上の集団）」の意味で、aging demographic（高齢化する人口）という表現は社会・経済問題でよく使われる。methodology（方法論）、hypothesis（仮説）、variable（変数）は学術的文脈での意味が異なる。\n\ndemographic は名詞で「人口統計上の集団」、形容詞で「人口統計の」。aging demographic は高齢化する人口層を指し、年金や医療制度への負担増を論じる文脈で頻出する。名詞形の demography は「人口統計学」。\n\n【図解】社会統計と研究の用語\n　語｜意味｜分野\n　demographic｜人口統計上の集団｜社会, 経済\n　hypothesis｜仮説｜研究の出発点\n　methodology｜方法論｜研究手続き\n　⇒ 高齢化する人口層なら demographic\n　⚠ variable は「変数」で人口そのものは指さない。同じ学術語でも指す対象が違う。',
     difficulty: 'advanced',
   },
   {
@@ -179,7 +179,7 @@ export const eikenQuestions2kyu2: EikenQuestion[] = [
       { key: 'D', text: 'initiative' },
     ],
     correctKey: 'D',
-    explanation: 'initiativeは「取り組み・施策」の意味で、社会問題に対処するための具体的なプログラムや計画を指す。deficit（赤字）、expenditure（支出）は財政用語、correlation（相関関係）は統計用語で不適切。',
+    explanation: 'initiativeは「取り組み・施策」の意味で、社会問題に対処するための具体的なプログラムや計画を指す。deficit（赤字）、expenditure（支出）は財政用語、correlation（相関関係）は統計用語で不適切。\n\ninitiative は「新たな取り組み、率先した施策」で、launch an initiative、take the initiative の形で使う。社会問題に対処する具体的な計画を指す語として、行政や企業の発表で頻出する。\n\n【図解】施策を表す名詞\n　語｜意味｜性質\n　initiative｜取り組み, 施策｜新たに始める計画\n　expenditure｜支出｜使ったお金\n　deficit｜赤字｜収支の不足\n　⇒ 住宅建設で問題に対処する計画なら initiative\n　⚠ correlation は統計用語で施策ではない。分野の違う語を並べる出題に注意する。',
     difficulty: 'standard',
   },
   {
@@ -194,7 +194,7 @@ export const eikenQuestions2kyu2: EikenQuestion[] = [
       { key: 'D', text: 'empirical' },
     ],
     correctKey: 'C',
-    explanation: 'fiscal budgetは「財政予算」という経済用語。fiscalは「財政上の・会計の」という意味で、政府の歳入・歳出に関する文脈に適切。sustainable（持続可能な）、ecological（生態学的な）、empirical（実証的な）はいずれも不適切。',
+    explanation: 'fiscal budgetは「財政予算」という経済用語。fiscalは「財政上の・会計の」という意味で、政府の歳入・歳出に関する文脈に適切。sustainable（持続可能な）、ecological（生態学的な）、empirical（実証的な）はいずれも不適切。\n\nfiscal は「財政上の、会計の」で、政府の歳入と歳出に関わる語。fiscal budget、fiscal year、fiscal deficit のように使う。歳出と税収の差が広がったという記述が、財政の話であることを示している。\n\n【図解】fiscal と類語の守備範囲\n　語｜意味｜対象\n　fiscal｜財政上の｜政府の予算, 税\n　monetary｜金融上の｜金利, 通貨供給\n　financial｜金融, 財務全般｜企業, 個人にも使う\n　⇒ 政府の予算と税収の話なら fiscal\n　⚠ ecological や empirical は分野が異なる。予算の文脈では財政語彙に絞る。',
     difficulty: 'standard',
   },
   {
@@ -209,7 +209,7 @@ export const eikenQuestions2kyu2: EikenQuestion[] = [
       { key: 'D', text: 'hypothesis' },
     ],
     correctKey: 'D',
-    explanation: 'hypothesisは「仮説」という学術用語で、検証される前の理論的な主張を指す。「通説に異を唱える新たな仮説を提唱した」という文脈に適切。subsidy（補助金）、initiative（取り組み）、emission（排出量）は不適切。',
+    explanation: 'hypothesisは「仮説」という学術用語で、検証される前の理論的な主張を指す。「通説に異を唱える新たな仮説を提唱した」という文脈に適切。subsidy（補助金）、initiative（取り組み）、emission（排出量）は不適切。\n\nhypothesis は「仮説」で、検証される前の理論的な主張を指す。複数形は hypotheses と綴りが変わる点も要注意。propose a hypothesis、test a hypothesis が定番のコロケーションである。\n\n【図解】研究の流れと用語\n　段階｜用語｜内容\n　問いを立てる｜hypothesis｜仮説の提示\n　手続きを決める｜methodology｜方法論\n　結果を示す｜findings｜知見\n　⇒ 通説に異を唱える新説なら hypothesis\n　⚠ 複数形は hypothesises ではなく hypotheses。語形変化も出題対象になる。',
     difficulty: 'standard',
   },
   {
@@ -224,7 +224,7 @@ export const eikenQuestions2kyu2: EikenQuestion[] = [
       { key: 'D', text: 'integrate' },
     ],
     correctKey: 'D',
-    explanation: 'integrateは「溶け込む・統合される」の意味で、新しいコミュニティに適応しようとする難民の状況を適切に表す。marginalizeは「疎外する」で逆の意味。subsidize（補助金を出す）、advocate（擁護する）も文脈に合わない。',
+    explanation: 'integrateは「溶け込む・統合される」の意味で、新しいコミュニティに適応しようとする難民の状況を適切に表す。marginalizeは「疎外する」で逆の意味。subsidize（補助金を出す）、advocate（擁護する）も文脈に合わない。\n\nintegrate は「溶け込む、統合される」で、into と結んで新しい社会や組織になじむことを表す。難民が言語や文化の壁に直面しながら適応しようとする文脈にぴったり合う。名詞形は integration。\n\n【図解】社会への適応を表す動詞\n　語｜意味｜結果\n　integrate into｜溶け込む｜受け入れられる\n　assimilate｜同化する｜元の文化を失う含み\n　marginalize｜周縁に追いやる｜排除される\n　⇒ 新しい地域社会になじむなら integrate\n　⚠ marginalize は正反対の意味。struggle to の後ろに続く語の方向を読み違えない。',
     difficulty: 'standard',
   },
   {
@@ -239,7 +239,7 @@ export const eikenQuestions2kyu2: EikenQuestion[] = [
       { key: 'D', text: 'demographic' },
     ],
     correctKey: 'C',
-    explanation: 'ecologicalは「生態学的な・生態系に関する」の意味で、生息地の破壊や水路の汚染といった環境被害を表す文脈に適切。monetary（金融的な）、fiscal（財政的な）、demographic（人口統計的な）はいずれも不適切。',
+    explanation: 'ecologicalは「生態学的な・生態系に関する」の意味で、生息地の破壊や水路の汚染といった環境被害を表す文脈に適切。monetary（金融的な）、fiscal（財政的な）、demographic（人口統計的な）はいずれも不適切。\n\necological は「生態系の、生態学的な」で、生息地の破壊や水質汚染といった自然環境への被害を表す。名詞は ecology、関連語に ecosystem（生態系）がある。鉱山開発が周辺環境に与えた損害という文脈に合う。\n\n【図解】分野を示す形容詞\n　語｜分野｜例\n　ecological｜生態系｜habitat, damage\n　fiscal｜財政｜budget, policy\n　demographic｜人口統計｜shift, change\n　⇒ 生息地の破壊と水質汚染なら ecological\n　⚠ economic（経済の）と ecological はつづりが似ているが分野が違う。文脈で判断する。',
     difficulty: 'standard',
   },
   {
@@ -254,7 +254,7 @@ export const eikenQuestions2kyu2: EikenQuestion[] = [
       { key: 'D', text: 'methodology' },
     ],
     correctKey: 'C',
-    explanation: 'revenueは「歳入・収入」という経済用語で、政府の税収を表す。景気後退中に企業由来の税収が減少したという文脈に適切。variable（変数）、hypothesis（仮説）、methodology（方法論）は学術的文脈の語で不適切。',
+    explanation: 'revenueは「歳入・収入」という経済用語で、政府の税収を表す。景気後退中に企業由来の税収が減少したという文脈に適切。variable（変数）、hypothesis（仮説）、methodology（方法論）は学術的文脈の語で不適切。\n\nrevenue は「歳入、収益」で、政府なら税収、企業なら売上高を指す。tax revenue、annual revenue の形で頻出する。景気後退で法人税収が急減したという文脈は典型的な使われ方である。\n\n【図解】収入と支出の対応\n　語｜意味｜立場\n　revenue｜歳入, 収益｜入ってくる\n　expenditure｜支出｜出ていく\n　deficit｜赤字｜収入より支出が多い\n　⇒ 税収の減少なら revenue\n　⚠ profit は収益から費用を引いた「利益」。revenue は費用を引く前の総額である点が異なる。',
     difficulty: 'advanced',
   },
   {
@@ -269,7 +269,7 @@ export const eikenQuestions2kyu2: EikenQuestion[] = [
       { key: 'D', text: 'sustainable' },
     ],
     correctKey: 'D',
-    explanation: 'sustainableは「持続可能な」の意味で、現在のニーズを満たしながら将来世代の可能性を損なわないエネルギー開発という概念に最も適切。fiscal（財政的な）、confounding（交絡する）、empirical（実証的な）はいずれも不適切。',
+    explanation: 'sustainableは「持続可能な」の意味で、現在のニーズを満たしながら将来世代の可能性を損なわないエネルギー開発という概念に最も適切。fiscal（財政的な）、confounding（交絡する）、empirical（実証的な）はいずれも不適切。\n\nsustainable は「持続可能な」で、現在の必要を満たしつつ将来世代の可能性を損なわない、という国連の定義に基づく語。sustainable development、sustainable energy の形で環境政策の中心概念として使われる。\n\n【図解】sustainable の定義\n　要素｜内容｜キーワード\n　現在の必要｜present needs｜今の生活を支える\n　将来世代｜future generations｜可能性を損なわない\n　適用分野｜energy, development, agriculture｜幅広い\n　⇒ 将来世代への配慮を含むなら sustainable\n　⚠ renewable（再生可能な）は資源の性質を指す語。概念の広さが異なる。',
     difficulty: 'standard',
   },
   {
@@ -284,7 +284,7 @@ export const eikenQuestions2kyu2: EikenQuestion[] = [
       { key: 'D', text: 'subsidize' },
     ],
     correctKey: 'C',
-    explanation: 'marginalizeは「疎外する・周縁化する」の意味で、特定の集団を経済的・政治的な参加から組織的に排除することを指す。integrate（統合する）、empower（力を与える）は逆の意味。subsidize（補助金を出す）は不適切。',
+    explanation: 'marginalizeは「疎外する・周縁化する」の意味で、特定の集団を経済的・政治的な参加から組織的に排除することを指す。integrate（統合する）、empower（力を与える）は逆の意味。subsidize（補助金を出す）は不適切。\n\nmarginalize は margin（周縁）から派生し、「社会の中心から締め出す、周縁化する」を意味する。経済的政治的な参加から組織的に排除する、という説明がそのままこの語の定義になっている。\n\n【図解】社会的排除に関する語\n　語｜意味｜方向\n　marginalize｜周縁に追いやる｜排除\n　exclude｜締め出す｜排除\n　empower｜力をつけさせる｜包摂\n　⇒ 参加から組織的に排除するなら marginalize\n　⚠ integrate と empower は逆方向の語。貧困の作用を述べる文脈で取り違えない。',
     difficulty: 'advanced',
   },
   {
@@ -299,7 +299,7 @@ export const eikenQuestions2kyu2: EikenQuestion[] = [
       { key: 'D', text: 'methodology' },
     ],
     correctKey: 'D',
-    explanation: 'methodologyは「研究方法論・手法」という学術用語で、二重盲検試験や大規模サンプルなどの研究手続きの総称を指す。subsidy（補助金）、initiative（取り組み）、deficit（赤字）はいずれも不適切。',
+    explanation: 'methodologyは「研究方法論・手法」という学術用語で、二重盲検試験や大規模サンプルなどの研究手続きの総称を指す。subsidy（補助金）、initiative（取り組み）、deficit（赤字）はいずれも不適切。\n\nmethodology は「研究方法論」で、二重盲検試験や大規模標本といった具体的な手続きの総体を指す。method（個々の方法）より体系的で理論的な枠組みを含む語である点が特徴。\n\n【図解】研究方法に関する語\n　語｜指す範囲｜例\n　methodology｜手続きの体系｜二重盲検, 標本設計\n　method｜個々の手法｜アンケート, 面接\n　findings｜結果｜得られた知見\n　⇒ 厳密な手続き全体を指すなら methodology\n　⚠ methodology と method の混同に注意。体系か個別かで使い分ける。',
     difficulty: 'advanced',
   },
 
@@ -316,7 +316,7 @@ export const eikenQuestions2kyu2: EikenQuestion[] = [
       { key: 'D', text: 'It was' },
     ],
     correctKey: 'D',
-    explanation: '"It was ... who ..."は分裂文（cleft sentence）で、特定の要素を強調する構文。「最終的に合併を承認したのは会長だった」という意味でIt wasが正解。There was、That was、What wasではこの構文が成立しない。',
+    explanation: '"It was ... who ..."は分裂文（cleft sentence）で、特定の要素を強調する構文。「最終的に合併を承認したのは会長だった」という意味でIt wasが正解。There was、That was、What wasではこの構文が成立しない。\n\nIt is 〜 who ... は分裂文（強調構文）で、強調したい要素を It is と who または that の間に挟む。ここでは the chairman を強調し、not the board of directors という否定で対比を明確にしている。\n\n【図解】強調構文の作り方\n　強調する要素｜つなぐ語｜例\n　人｜who, that｜It was he who approved\n　物, 事｜which, that｜It was the plan that failed\n　副詞句｜that｜It was in 2020 that\n　⇒ 人を強調するなら It was ＋ 人 ＋ who\n　⚠ There was では存在文になり強調構文にならない。文型そのものが変わる点に注意。',
     difficulty: 'standard',
   },
   {
@@ -331,7 +331,7 @@ export const eikenQuestions2kyu2: EikenQuestion[] = [
       { key: 'D', text: 'What' },
     ],
     correctKey: 'D',
-    explanation: '"What I need is ..."は名詞節を主語とする分裂文（pseudo-cleft）で、「私が必要なのは…だ」と焦点を当てる構文。WhatはI needの目的語を先行詞なしで受ける関係代名詞として機能する。That、Which、Itでは不適切。',
+    explanation: '"What I need is ..."は名詞節を主語とする分裂文（pseudo-cleft）で、「私が必要なのは…だ」と焦点を当てる構文。WhatはI needの目的語を先行詞なしで受ける関係代名詞として機能する。That、Which、Itでは不適切。\n\nWhat I need is 〜 は疑似分裂文と呼ばれる強調構文で、what が先行詞を含む関係代名詞として「〜するもの」を表す。名詞節が主語になり、is の後ろに焦点となる要素を置く。\n\n【図解】what と that の違い\n　語｜先行詞｜作る節\n　what｜含む（不要）｜名詞節\n　that｜必要｜関係詞節\n　which｜必要｜関係詞節\n　⇒ 先行詞がなく文頭に立つなら what\n　⚠ that を選ぶと先行詞が必要になる。文頭に名詞がないことが what の決め手。',
     difficulty: 'standard',
   },
   {
@@ -346,7 +346,7 @@ export const eikenQuestions2kyu2: EikenQuestion[] = [
       { key: 'D', text: 'Had it' },
     ],
     correctKey: 'D',
-    explanation: '"Had it not been for ..."は"If it had not been for ..."の倒置形で、「～がなければ（過去の事実に反する仮定）」を表す仮定法過去完了の構文。主節のwould have beenと一致する。Were it（現在の仮定）、Should it（未来の可能性）は時制が合わない。',
+    explanation: '"Had it not been for ..."は"If it had not been for ..."の倒置形で、「～がなければ（過去の事実に反する仮定）」を表す仮定法過去完了の構文。主節のwould have beenと一致する。Were it（現在の仮定）、Should it（未来の可能性）は時制が合わない。\n\nHad it not been for 〜 は If it had not been for 〜 の if を省略した倒置形で、「〜がなかったら」という過去の事実に反する仮定を表す。主節が would have been と過去完了の帰結形になっている点が一致の手がかり。\n\n【図解】「〜がなければ」の3つの形\n　形｜表す時｜帰結節\n　If it were not for｜現在｜would ＋ 原形\n　If it had not been for｜過去｜would have ＋ 過去分詞\n　But for ＋ 名詞｜両方に使える｜文脈による\n　⇒ 主節が would have been なら Had it not been for\n　⚠ Were it not for は現在の仮定。主節の時制と必ず対応させる。',
     difficulty: 'advanced',
   },
   {
@@ -361,7 +361,7 @@ export const eikenQuestions2kyu2: EikenQuestion[] = [
       { key: 'D', text: 'Did it' },
     ],
     correctKey: 'C',
-    explanation: '"Were it to ..."は"If it were to ..."の倒置形で、現在または未来の低確率な仮定を表す。「もし本社を海外に移転するとすれば」という仮定法現在完了の意味。Had it（過去完了の仮定）、Should it（可能性を示すが慣用的でない）よりWere it toが適切。',
+    explanation: '"Were it to ..."は"If it were to ..."の倒置形で、現在または未来の低確率な仮定を表す。「もし本社を海外に移転するとすれば」という仮定法現在完了の意味。Had it（過去完了の仮定）、Should it（可能性を示すが慣用的でない）よりWere it toが適切。\n\nWere it to 〜 は If it were to 〜 の倒置形で、実現の可能性が低い将来の仮定を表す。主節が would face と現在の仮定の形になっているため、条件節も現在または将来の仮定形にそろえる必要がある。\n\n【図解】倒置による if の省略\n　元の形｜倒置形｜表す時\n　If it were to do｜Were it to do｜将来の低い可能性\n　If it had done｜Had it done｜過去の反実仮想\n　If it should do｜Should it do｜万一の可能性\n　⇒ 主節が would face なら Were it to\n　⚠ Had it を選ぶと過去の仮定になり、主節の would face と時制が食い違う。',
     difficulty: 'advanced',
   },
   {
@@ -376,7 +376,7 @@ export const eikenQuestions2kyu2: EikenQuestion[] = [
       { key: 'D', text: 'To complete' },
     ],
     correctKey: 'C',
-    explanation: '"Having + 過去分詞"の完了分詞構文は、主節の動作より前に完了した動作を表す。「年次報告書を完成させてから、財務部長は予算案を提示した」という意味でHaving completedが正解。Being completed（受動）、To complete（目的・意図）は不適切。',
+    explanation: '"Having + 過去分詞"の完了分詞構文は、主節の動作より前に完了した動作を表す。「年次報告書を完成させてから、財務部長は予算案を提示した」という意味でHaving completedが正解。Being completed（受動）、To complete（目的・意図）は不適切。\n\nHaving ＋ 過去分詞 の完了分詞構文は、主節の動作よりも前に完了した動作を表す。年次報告書を仕上げてから予算案を提示した、という時間の前後関係を一語で示せるのがこの形の利点である。\n\n【図解】分詞構文の形と意味\n　形｜時間関係｜態\n　doing｜主節と同時｜能動\n　having done｜主節より前｜能動\n　done または being done｜主節と同時｜受動\n　⇒ 報告書を仕上げた後なら Having completed\n　⚠ Being completed は受動で「完成させられて」になる。動作の主体が誰かを確認する。',
     difficulty: 'standard',
   },
   {
@@ -391,7 +391,7 @@ export const eikenQuestions2kyu2: EikenQuestion[] = [
       { key: 'D', text: 'serviced' },
     ],
     correctKey: 'D',
-    explanation: '"have + 目的語 + 過去分詞"は使役構文で「（人に頼んで）～させる・～してもらう」の意味。機械が点検される（受動）関係なので過去分詞のservicedが正解。to service（能動の不定詞）、servicing（能動の分詞）は不適切。',
+    explanation: '"have + 目的語 + 過去分詞"は使役構文で「（人に頼んで）～させる・～してもらう」の意味。機械が点検される（受動）関係なので過去分詞のservicedが正解。to service（能動の不定詞）、servicing（能動の分詞）は不適切。\n\nhave ＋ 目的語 ＋ 過去分詞 は「（人に頼んで）〜してもらう」という使役の形。目的語 the machinery と service の関係が受動なので過去分詞 serviced を使う。目的語が自分で動作するなら原形不定詞になる。\n\n【図解】have の使役構文\n　形｜目的語との関係｜例\n　have ＋ 目的語 ＋ 過去分詞｜受動｜have the car repaired\n　have ＋ 人 ＋ 原形｜能動｜have him check it\n　have ＋ 目的語 ＋ doing｜進行中｜have the engine running\n　⇒ 機械が点検される側なら serviced\n　⚠ being serviced は進行中の受動で、依頼の意味にならない。関係と形を対応させる。',
     difficulty: 'standard',
   },
   {
@@ -406,7 +406,7 @@ export const eikenQuestions2kyu2: EikenQuestion[] = [
       { key: 'D', text: 'choose' },
     ],
     correctKey: 'D',
-    explanation: '"let + 目的語 + 動詞の原形"は使役構文。letの後の目的語には原形不定詞（to なし）が続く。「生徒に自分でテーマを選ばせた」という意味でchooseが正解。to choose（toが不要）、chosen（過去分詞）、choosing（現在分詞）は不適切。',
+    explanation: '"let + 目的語 + 動詞の原形"は使役構文。letの後の目的語には原形不定詞（to なし）が続く。「生徒に自分でテーマを選ばせた」という意味でchooseが正解。to choose（toが不要）、chosen（過去分詞）、choosing（現在分詞）は不適切。\n\nlet は使役動詞の中でも「許可して〜させる」を表し、目的語の後ろに原形不定詞が続く。make、have、let は原形をとり、allow や permit は to 不定詞をとる、という区別が最重要のポイント。\n\n【図解】使役動詞と後続の形\n　動詞｜意味｜後続の形\n　let, make, have｜〜させる｜原形不定詞\n　allow, permit｜〜を許す｜to 不定詞\n　get｜〜してもらう｜to 不定詞\n　⇒ let の後ろは原形 choose\n　⚠ get だけは to 不定詞をとる。使役の仲間でも形が異なる点に注意する。',
     difficulty: 'standard',
   },
   {
@@ -421,7 +421,7 @@ export const eikenQuestions2kyu2: EikenQuestion[] = [
       { key: 'D', text: 'reviewed' },
     ],
     correctKey: 'D',
-    explanation: '"get + 目的語 + 過去分詞"は使役構文で「（人に頼んで）～させる・～してもらう」の意味。契約書が法律の専門家によって審査される（受動）のでreviewed（過去分詞）が正解。to review（能動の不定詞）は不適切。',
+    explanation: '"get + 目的語 + 過去分詞"は使役構文で「（人に頼んで）～させる・～してもらう」の意味。契約書が法律の専門家によって審査される（受動）のでreviewed（過去分詞）が正解。to review（能動の不定詞）は不適切。\n\nget ＋ 目的語 ＋ 過去分詞 は「〜してもらう」という使役の形で、have と同じ働きをする。契約書は専門家に審査される側なので過去分詞 reviewed を使う。get ＋ 人 ＋ to do なら能動の依頼になる。\n\n【図解】get の使役構文\n　形｜目的語との関係｜例\n　get ＋ 目的語 ＋ 過去分詞｜受動｜get the contract reviewed\n　get ＋ 人 ＋ to do｜能動｜get a lawyer to review it\n　have ＋ 目的語 ＋ 過去分詞｜受動｜同義の言い換え\n　⇒ 契約書が審査される側なら reviewed\n　⚠ to review を選ぶと目的語が自ら審査する意味になる。能動と受動を取り違えない。',
     difficulty: 'advanced',
   },
   {
@@ -436,7 +436,7 @@ export const eikenQuestions2kyu2: EikenQuestion[] = [
       { key: 'D', text: 'being' },
     ],
     correctKey: 'C',
-    explanation: '"It is essential that + 主語 + 動詞の原形"は仮定法現在（subjunctive mood）の構文。essential、necessary、importantなどの形容詞に続くthat節では動詞は原形（be）を使う。is（直説法）、was（過去形）、being（分詞）はいずれも不適切。',
+    explanation: '"It is essential that + 主語 + 動詞の原形"は仮定法現在（subjunctive mood）の構文。essential、necessary、importantなどの形容詞に続くthat節では動詞は原形（be）を使う。is（直説法）、was（過去形）、being（分詞）はいずれも不適切。\n\n【図解】仮定法現在をとる形容詞\n　形容詞｜意味｜that 節の動詞\n　essential｜不可欠な｜原形\n　necessary｜必要な｜原形\n　important｜重要な｜原形\n　⇒ 受動の原形なら be informed\n　⚠ is informed と直説法にしない。この構文では時制も数も一致させない。',
     difficulty: 'advanced',
   },
   {
@@ -451,7 +451,7 @@ export const eikenQuestions2kyu2: EikenQuestion[] = [
       { key: 'D', text: 'is' },
     ],
     correctKey: 'C',
-    explanation: '"recommend that + 主語 + 動詞の原形"は仮定法現在の構文。recommend、suggest、propose、insistなどの動詞に続くthat節では動詞は原形を使う。受動態の原形はbe + 過去分詞なので"be resubmitted"が正解。will be、would be、isはいずれも不適切。',
+    explanation: '"recommend that + 主語 + 動詞の原形"は仮定法現在の構文。recommend、suggest、propose、insistなどの動詞に続くthat節では動詞は原形を使う。受動態の原形はbe + 過去分詞なので"be resubmitted"が正解。will be、would be、isはいずれも不適切。\n\n【図解】仮定法現在をとる動詞\n　動詞｜意味｜that 節の動詞\n　recommend｜勧める｜原形\n　suggest｜提案する｜原形\n　insist｜要求する｜原形\n　⇒ 受動の原形なら be resubmitted\n　⚠ suggest でも「〜だと示唆する」の意味なら直説法になる。動詞の意味で見分ける。',
     difficulty: 'advanced',
   },
   {
@@ -466,7 +466,7 @@ export const eikenQuestions2kyu2: EikenQuestion[] = [
       { key: 'D', text: 'must' },
     ],
     correctKey: 'C',
-    explanation: '"I do understand"の"do"は強調の助動詞（emphatic do）で、「本当に・確かに理解する」という話し手の強い確信や共感を示す。このdoは発音上も強調される。am、have、mustではこの強調の用法にならない。',
+    explanation: '"I do understand"の"do"は強調の助動詞（emphatic do）で、「本当に・確かに理解する」という話し手の強い確信や共感を示す。このdoは発音上も強調される。am、have、mustではこの強調の用法にならない。\n\n強調の do は肯定文の内容を強めるために動詞の前に置く助動詞で、後ろの動詞は必ず原形になる。I do understand は「本当に分かっている」と共感を強調する言い方で、会話でよく使われる。\n\n【図解】強調の do の使い方\n　主語と時制｜形｜例\n　I, you, we, they の現在｜do ＋ 原形｜I do understand\n　三人称単数の現在｜does ＋ 原形｜He does know\n　過去｜did ＋ 原形｜She did come\n　⇒ 共感を強めるなら I do understand\n　⚠ am や have では強調構文にならない。後ろが動詞の原形かどうかで判断する。',
     difficulty: 'standard',
   },
   {
@@ -481,7 +481,7 @@ export const eikenQuestions2kyu2: EikenQuestion[] = [
       { key: 'D', text: 'have' },
     ],
     correctKey: 'C',
-    explanation: '"I do warn you"の"do"は強調の助動詞で、警告の深刻さや話し手の誠実さを強調する。「確かに、本当に忠告する」という意味。must warnでは義務・必要性を表すが、強調のニュアンスはdoが最も適切。',
+    explanation: '"I do warn you"の"do"は強調の助動詞で、警告の深刻さや話し手の誠実さを強調する。「確かに、本当に忠告する」という意味。must warnでは義務・必要性を表すが、強調のニュアンスはdoが最も適切。\n\nI do warn you は「本当に忠告しておく」と、警告の真剣さを強める強調の do。must warn なら義務や必要性を述べることになり、話し手の誠実さを強調するニュアンスは出ない。\n\n【図解】do と must の違い\n　形｜意味｜含み\n　do warn｜本当に忠告する｜強調, 誠実さ\n　must warn｜忠告しなければならない｜義務, 必要\n　will warn｜忠告するつもりだ｜意志\n　⇒ 警告の真剣さを伝えるなら do warn\n　⚠ must は義務の助動詞で強調ではない。文脈が強調か義務かを見極める。',
     difficulty: 'standard',
   },
   {
@@ -496,7 +496,7 @@ export const eikenQuestions2kyu2: EikenQuestion[] = [
       { key: 'D', text: 'Researching' },
     ],
     correctKey: 'A',
-    explanation: '"Having + 過去分詞"の完了分詞構文は、主節の動作より前に完了した動作を表す。「3年間調査を行った後、記者は報告書を発表した」という意味でHaving researchedが正解。主語（記者）が能動的に調査したのでBeing researched（受動）は不適切。',
+    explanation: '"Having + 過去分詞"の完了分詞構文は、主節の動作より前に完了した動作を表す。「3年間調査を行った後、記者は報告書を発表した」という意味でHaving researchedが正解。主語（記者）が能動的に調査したのでBeing researched（受動）は不適切。\n\nHaving ＋ 過去分詞 の完了分詞構文は、主節より前に終わった動作を表す。3年間の調査を終えてから報告書を発表した、という順序を示している。主語の記者が自ら調査したので能動形を使う。\n\n【図解】分詞構文の選択基準\n　条件｜使う形｜例\n　主節より前, 能動｜having done｜Having researched\n　主節より前, 受動｜having been done｜Having been told\n　同時, 受動｜done｜Written in 1900\n　⇒ 記者が自ら調査したので能動の Having researched\n　⚠ Being researched は「調査されて」で主語が調査対象になる。動作主を確認する。',
     difficulty: 'standard',
   },
   {
@@ -511,7 +511,7 @@ export const eikenQuestions2kyu2: EikenQuestion[] = [
       { key: 'D', text: 'To create' },
     ],
     correctKey: 'C',
-    explanation: '過去分詞で始まる分詞構文は受動の意味を表す。絵画は「作られた」（受動）ので"Created in the 17th century"が正解。Having created（能動・完了）は絵画が自ら作った意味になり不適切。Creating（能動・進行）、To create（目的）も不適切。',
+    explanation: '過去分詞で始まる分詞構文は受動の意味を表す。絵画は「作られた」（受動）ので"Created in the 17th century"が正解。Having created（能動・完了）は絵画が自ら作った意味になり不適切。Creating（能動・進行）、To create（目的）も不適切。\n\n過去分詞で始まる分詞構文は受動の意味を表す。絵画は「描かれた」側なので Created in the 17th century となる。この形は Having been created の having been が省略されたものと考えるとわかりやすい。\n\n【図解】分詞構文の態の見分け方\n　主語との関係｜使う形｜例\n　主語が動作する｜doing｜Walking down the street\n　主語が動作を受ける｜done｜Created in 1650\n　主語より前に完了｜having done｜Having finished\n　⇒ 絵は描かれる側なので Created\n　⚠ Having created は絵が自ら創作した意味になる。主語と動詞の関係を必ず確認する。',
     difficulty: 'standard',
   },
   {
@@ -526,7 +526,7 @@ export const eikenQuestions2kyu2: EikenQuestion[] = [
       { key: 'D', text: 'completed' },
     ],
     correctKey: 'A',
-    explanation: '"make + 目的語 + 動詞の原形"は使役構文で「（強制的に）～させる」の意味。makeの後の目的語には原形不定詞（to なし）が続く。「全従業員に研修を受けさせる」という意味でcompleteが正解。completing（分詞）、to complete（toが不要）、completed（過去分詞）は不適切。',
+    explanation: '"make + 目的語 + 動詞の原形"は使役構文で「（強制的に）～させる」の意味。makeの後の目的語には原形不定詞（to なし）が続く。「全従業員に研修を受けさせる」という意味でcompleteが正解。completing（分詞）、to complete（toが不要）、completed（過去分詞）は不適切。\n\n【図解】make の使役構文\n　形｜意味｜後続の形\n　make ＋ 目的語 ＋ 原形｜強制的にさせる｜原形\n　be made to do｜受動態｜to 不定詞\n　force ＋ 目的語 ＋ to do｜強制する｜to 不定詞\n　⇒ 能動なら原形 complete\n　⚠ 受動態にすると to が必要になる。能動と受動で形が変わる点が最頻出。',
     difficulty: 'standard',
   },
 
@@ -543,7 +543,7 @@ export const eikenQuestions2kyu2: EikenQuestion[] = [
       { key: 'D', text: 'They prevent marine animals from absorbing essential nutrients.' },
     ],
     correctKey: 'C',
-    explanation: '本文に"researchers are increasingly concerned that long-term exposure may disrupt hormonal systems and cause inflammation"とあり、長期被曝がホルモン系を乱す可能性がCの正解を支持する。A・B・Dは本文に記載されていない。',
+    explanation: '本文に"researchers are increasingly concerned that long-term exposure may disrupt hormonal systems and cause inflammation"とあり、長期被曝がホルモン系を乱す可能性がCの正解を支持する。A・B・Dは本文に記載されていない。\n\n【図解】マイクロプラスチックへの懸念\n　懸念の内容｜本文の記述｜段階\n　長期的な曝露｜long-term exposure｜前提\n　ホルモン系の攪乱｜disrupt hormonal systems｜懸念1\n　炎症の誘発｜cause inflammation｜懸念2\n　⇒ 健康への影響がある可能性が主眼\n　⚠ 「すでに不可逆的な損害が生じた」と断定する選択肢は本文と食い違う。may の含みを読む。',
     difficulty: 'standard',
   },
   {
@@ -558,7 +558,7 @@ export const eikenQuestions2kyu2: EikenQuestion[] = [
       { key: 'D', text: 'Agricultural pesticides that break down in soil' },
     ],
     correctKey: 'C',
-    explanation: '本文に"They enter the environment through the breakdown of larger plastic items, the washing of synthetic fabrics, and the wear of vehicle tires"と明記されており、合成繊維の洗濯がマイクロプラスチックの発生源の一つとして挙げられている。A・B・Dは本文に言及されていない。',
+    explanation: '本文に"They enter the environment through the breakdown of larger plastic items, the washing of synthetic fabrics, and the wear of vehicle tires"と明記されており、合成繊維の洗濯がマイクロプラスチックの発生源の一つとして挙げられている。A・B・Dは本文に言及されていない。\n\n【図解】本文が挙げる発生源\n　発生源｜本文の記述｜例\n　大きなプラスチックの分解｜breakdown of larger items｜容器, 袋\n　合成繊維の洗濯｜washing of synthetic fabrics｜衣類\n　タイヤの摩耗｜wear of vehicle tires｜自動車\n　⇒ 本文に列挙された3つ以外は選ばない\n　⚠ 農薬や化石燃料は本文に登場しない。もっともらしい選択肢でも本文照合を怠らない。',
     difficulty: 'basic',
   },
   {
@@ -573,7 +573,7 @@ export const eikenQuestions2kyu2: EikenQuestion[] = [
       { key: 'D', text: 'Increasing conflict between nations over agricultural land' },
     ],
     correctKey: 'B',
-    explanation: '本文に"approximately one-third of all food produced worldwide is wasted before it reaches consumers"とあり、食料廃棄がシステムへの大きな課題として明示されている。Bがこれを正確に反映している。A・C・Dは本文に記載されていない。',
+    explanation: '本文に"approximately one-third of all food produced worldwide is wasted before it reaches consumers"とあり、食料廃棄がシステムへの大きな課題として明示されている。Bがこれを正確に反映している。A・C・Dは本文に記載されていない。\n\n【図解】食料システムの課題\n　課題｜本文の数値｜段階\n　食料の廃棄｜生産量の約3分の1｜消費者に届く前\n　影響｜資源の浪費｜水, 土地, 労力\n　対策｜収穫後損失の削減｜多角的な取り組み\n　⇒ 消費者に届く前の廃棄が主要な課題\n　⚠ 農業研究への投資不足や後継者難は本文にない。数値の根拠がある選択肢を選ぶ。',
     difficulty: 'standard',
   },
   {
@@ -588,7 +588,7 @@ export const eikenQuestions2kyu2: EikenQuestion[] = [
       { key: 'D', text: 'Converting all agricultural land to organic farming methods' },
     ],
     correctKey: 'A',
-    explanation: '本文に"Addressing food insecurity requires a multi-pronged approach"（複数の戦略）とあり、精密農業・収穫後損失の削減・消費パターンの変化などが列挙されている。Aがこれを正確に要約している。B・C・Dは本文の主張と一致しない。',
+    explanation: '本文に"Addressing food insecurity requires a multi-pronged approach"（複数の戦略）とあり、精密農業・収穫後損失の削減・消費パターンの変化などが列挙されている。Aがこれを正確に要約している。B・C・Dは本文の主張と一致しない。\n\n設問は食料不安への対処に何が必要かを問うている。本文が multi-pronged approach（多角的な取り組み）と述べ、精密農業、収穫後損失の削減、消費行動の変化を列挙している点から、技術と行動の両面を含む複数の施策が必要だと読み取れる。\n\n【図解】必要とされる取り組み\n　分野｜本文の例｜性質\n　技術｜精密農業｜生産の効率化\n　流通｜収穫後損失の削減｜供給網の改善\n　消費｜消費パターンの変化｜行動の変容\n　⇒ 複数分野の連携が必要という要旨\n　⚠ 単一の組織や単一戦略で足りるとする選択肢は multi-pronged と矛盾する。',
     difficulty: 'standard',
   },
   {
@@ -603,7 +603,7 @@ export const eikenQuestions2kyu2: EikenQuestion[] = [
       { key: 'D', text: 'Grit is only relevant in competitive professional environments.' },
     ],
     correctKey: 'C',
-    explanation: '本文に"an overemphasis on grit may place undue responsibility on individuals while ignoring structural barriers"とあり、個人責任の過度な強調が構造的障壁を無視するという批判をCが正確に反映している。A・B・Dは本文の内容と一致しない。',
+    explanation: '本文に"an overemphasis on grit may place undue responsibility on individuals while ignoring structural barriers"とあり、個人責任の過度な強調が構造的障壁を無視するという批判をCが正確に反映している。A・B・Dは本文の内容と一致しない。\n\n【図解】grit 概念への批判\n　論点｜本文の記述｜含意\n　個人への責任集中｜undue responsibility on individuals｜自己責任論\n　構造的障壁の軽視｜ignoring structural barriers｜環境要因の無視\n　文脈の軽視｜context を考慮しない｜一般化の危うさ\n　⇒ 構造的要因を見落とす点が批判の核心\n　⚠ 「効果がまったくない」と全否定する選択肢は言い過ぎ。批判の射程を正確に読む。',
     difficulty: 'advanced',
   },
   {
@@ -618,7 +618,7 @@ export const eikenQuestions2kyu2: EikenQuestion[] = [
       { key: 'D', text: 'The level of effort put into short-term tasks' },
     ],
     correctKey: 'B',
-    explanation: '本文に"grit predicts achievement more reliably than raw intelligence or innate talent"と明記されており、生まれつきの知能や才能よりも確実に成功を予測するという主張をBが正確に反映している。A・C・Dは本文に記載されていない。',
+    explanation: '本文に"grit predicts achievement more reliably than raw intelligence or innate talent"と明記されており、生まれつきの知能や才能よりも確実に成功を予測するという主張をBが正確に反映している。A・C・Dは本文に記載されていない。\n\n【図解】grit が上回るとされるもの\n　比較対象｜本文の記述｜評価\n　生まれつきの知能｜raw intelligence｜grit のほうが予測力が高い\n　生来の才能｜innate talent｜grit のほうが予測力が高い\n　社会経済的背景｜言及なし｜比較の対象外\n　⇒ 知能や才能との比較が本文の主張\n　⚠ 教育機関の質や家庭環境との比較は本文にない。比較の相手を取り違えない。',
     difficulty: 'basic',
   },
   {
@@ -633,7 +633,7 @@ export const eikenQuestions2kyu2: EikenQuestion[] = [
       { key: 'D', text: 'Errors could be passed to future generations with irreversible consequences.' },
     ],
     correctKey: 'D',
-    explanation: '本文に"changes that would be inherited by future generations... as errors could have irreversible consequences"とあり、将来世代に引き継がれる可能性のある不可逆的な誤りがDの正解を支持する。A・B・Cは本文に記載されていない。',
+    explanation: '本文に"changes that would be inherited by future generations... as errors could have irreversible consequences"とあり、将来世代に引き継がれる可能性のある不可逆的な誤りがDの正解を支持する。A・B・Cは本文に記載されていない。\n\n【図解】germline editing が問題視される理由\n　特徴｜本文の記述｜帰結\n　遺伝する｜inherited by future generations｜子孫に伝わる\n　誤りの影響｜irreversible consequences｜取り返しがつかない\n　体細胞編集との違い｜本人限りで完結｜影響範囲が限定\n　⇒ 将来世代への不可逆な影響が争点\n　⚠ 費用の高さや臨床での事故は本文にない。倫理上の争点を費用の問題にすり替えない。',
     difficulty: 'advanced',
   },
   {
@@ -648,7 +648,7 @@ export const eikenQuestions2kyu2: EikenQuestion[] = [
       { key: 'D', text: 'Reducing the cost of food production by half within a decade' },
     ],
     correctKey: 'C',
-    explanation: '本文に"develop crops that are more resistant to drought, disease, and pests"と明記されており、農業分野でのCRISPRの利点としてCが正確に反映されている。A・B・Dは本文に記載されていない内容や誇張された主張を含む。',
+    explanation: '本文に"develop crops that are more resistant to drought, disease, and pests"と明記されており、農業分野でのCRISPRの利点としてCが正確に反映されている。A・B・Dは本文に記載されていない内容や誇張された主張を含む。\n\n【図解】CRISPR の農業応用\n　目的｜本文の記述｜対象\n　干ばつ耐性｜resistant to drought｜乾燥地\n　病害耐性｜resistant to disease｜病原体\n　害虫耐性｜resistant to pests｜昆虫\n　⇒ 3つの耐性強化が本文の記述\n　⚠ 「農薬が全く不要になる」「灌漑なしでどこでも育つ」は誇張。本文の範囲を超えない。',
     difficulty: 'basic',
   },
   {
@@ -663,7 +663,7 @@ export const eikenQuestions2kyu2: EikenQuestion[] = [
       { key: 'D', text: 'The difficulty of distributing payments fairly across different regions' },
     ],
     correctKey: 'B',
-    explanation: '本文に"concerns about the cost of funding such a program"と"question whether unconditional payments would reduce the incentive to work"という二つの批判が挙げられており、Bがこれらを正確にまとめている。A・C・Dは本文に記載されていない。',
+    explanation: '本文に"concerns about the cost of funding such a program"と"question whether unconditional payments would reduce the incentive to work"という二つの批判が挙げられており、Bがこれらを正確にまとめている。A・C・Dは本文に記載されていない。\n\n【図解】UBI への主な批判\n　批判点｜本文の記述｜性質\n　財源の問題｜cost of funding｜経済的\n　勤労意欲｜reduce the incentive to work｜行動面\n　両者の関係｜並列で提示｜どちらも主要な懸念\n　⇒ 財源と勤労意欲の2点が批判の中心\n　⚠ インフレや分配の公平性は本文にない。批判の内容を勝手に補わない。',
     difficulty: 'standard',
   },
   {
@@ -678,7 +678,7 @@ export const eikenQuestions2kyu2: EikenQuestion[] = [
       { key: 'D', text: 'UBI reduces poverty without the complexity of means-tested eligibility systems.' },
     ],
     correctKey: 'D',
-    explanation: '本文に"reduce poverty without the bureaucratic complexity of means-tested welfare programs"とあり、資力審査の複雑さを排除できる点がUBIの利点として述べられている。Dがこれを正確に反映している。A・B・Cは本文に記載されていない、または誇張された主張を含む。',
+    explanation: '本文に"reduce poverty without the bureaucratic complexity of means-tested welfare programs"とあり、資力審査の複雑さを排除できる点がUBIの利点として述べられている。Dがこれを正確に反映している。A・B・Cは本文に記載されていない、または誇張された主張を含む。\n\n【図解】UBI と従来型福祉の比較\n　項目｜従来型福祉｜UBI\n　受給要件｜資力審査が必要｜無条件\n　事務負担｜複雑で大きい｜簡素\n　本文の評価｜bureaucratic complexity｜これを回避できる\n　⇒ 資力審査の複雑さを避けられる点が利点\n　⚠ 「行政が一切不要」「貧困を最速で解消」は誇張。利点の範囲を正確に読む。',
     difficulty: 'standard',
   },
   {
@@ -693,7 +693,7 @@ export const eikenQuestions2kyu2: EikenQuestion[] = [
       { key: 'D', text: 'They have become the dominant form of higher education globally.' },
     ],
     correctKey: 'C',
-    explanation: '本文に"Completion rates for massive open online courses (MOOCs) remain stubbornly low, frequently below ten percent"と明記されており、CがMOOCの修了率の低さを正確に反映している。A・B・Dは本文に記載されていない。',
+    explanation: '本文に"Completion rates for massive open online courses (MOOCs) remain stubbornly low, frequently below ten percent"と明記されており、CがMOOCの修了率の低さを正確に反映している。A・B・Dは本文に記載されていない。\n\n【図解】MOOC の現状\n　指標｜本文の記述｜評価\n　修了率｜frequently below ten percent｜きわめて低い\n　傾向｜stubbornly low｜改善が進まない\n　含意｜受講開始は容易だが継続が難しい｜構造的な課題\n　⇒ 修了率の低さが本文の指摘\n　⚠ 「従来型より学習成果が高い」とは書かれていない。数値の記述に忠実に読む。',
     difficulty: 'standard',
   },
   {
@@ -708,7 +708,7 @@ export const eikenQuestions2kyu2: EikenQuestion[] = [
       { key: 'D', text: 'Online learning will eventually replace all forms of classroom instruction.' },
     ],
     correctKey: 'B',
-    explanation: '本文の最終文"the quality of teaching and the design of learning experiences matter far more than the delivery medium alone"がBの内容に直接対応している。教授の質と学習体験のデザインが媒体よりも重要だという結論。A・C・Dは本文の主張と一致しない。',
+    explanation: '本文の最終文"the quality of teaching and the design of learning experiences matter far more than the delivery medium alone"がBの内容に直接対応している。教授の質と学習体験のデザインが媒体よりも重要だという結論。A・C・Dは本文の主張と一致しない。\n\n【図解】学習効果を決める要因\n　要素｜本文の評価｜重要度\n　教授の質｜quality of teaching｜高い\n　学習体験の設計｜design of learning experiences｜高い\n　配信手段｜delivery medium｜相対的に低い\n　⇒ 手段より中身が重要という結論\n　⚠ オンラインが対面を置き換えるとは述べていない。結論の射程を広げすぎない。',
     difficulty: 'advanced',
   },
   {
@@ -723,7 +723,7 @@ export const eikenQuestions2kyu2: EikenQuestion[] = [
       { key: 'D', text: 'The increase in human activity in the Arctic following the retreat of sea ice' },
     ],
     correctKey: 'B',
-    explanation: '本文の冒頭に"The Arctic is warming at nearly four times the global average rate, a phenomenon scientists refer to as Arctic amplification"と明記されており、北極が地球平均の約4倍の速さで温暖化している現象を指すとBが正確に反映している。A・C・Dは本文に記載されていない内容。',
+    explanation: '本文の冒頭に"The Arctic is warming at nearly four times the global average rate, a phenomenon scientists refer to as Arctic amplification"と明記されており、北極が地球平均の約4倍の速さで温暖化している現象を指すとBが正確に反映している。A・C・Dは本文に記載されていない内容。\n\n【図解】Arctic amplification の定義\n　要素｜本文の記述｜数値\n　対象地域｜the Arctic｜北極域\n　温暖化の速度｜nearly four times｜地球平均の約4倍\n　呼称｜Arctic amplification｜現象名\n　⇒ 地球平均より格段に速い温暖化を指す\n　⚠ amplification を電波の増幅と字義どおりに取らない。気候用語としての定義を押さえる。',
     difficulty: 'basic',
   },
   {
@@ -738,7 +738,7 @@ export const eikenQuestions2kyu2: EikenQuestion[] = [
       { key: 'D', text: 'The loss of reflective ice means darker ocean water absorbs more heat, accelerating warming.' },
     ],
     correctKey: 'D',
-    explanation: '本文に"The loss of this reflective surface means that darker ocean water absorbs more heat, further driving temperature increases in a self-reinforcing cycle known as a feedback loop"とあり、反射面の消失により海洋が熱を吸収して温暖化が加速するメカニズムをDが正確に説明している。A・B・Cは本文の記述と一致しない。',
+    explanation: '本文に"The loss of this reflective surface means that darker ocean water absorbs more heat, further driving temperature increases in a self-reinforcing cycle known as a feedback loop"とあり、反射面の消失により海洋が熱を吸収して温暖化が加速するメカニズムをDが正確に説明している。A・B・Cは本文の記述と一致しない。\n\n【図解】正のフィードバックの仕組み\n　段階｜本文の記述｜作用\n　1｜海氷が融ける｜反射面が失われる\n　2｜暗い海面が広がる｜熱の吸収が増える\n　3｜さらに気温が上がる｜融解が加速する\n　⇒ 自己強化的な循環が feedback loop\n　⚠ メタン放出による冷却など、逆向きの作用を述べる選択肢は本文と矛盾する。',
     difficulty: 'advanced',
   },
   {
@@ -753,7 +753,7 @@ export const eikenQuestions2kyu2: EikenQuestion[] = [
       { key: 'D', text: 'It may be contributing to more frequent and severe weather events at lower latitudes.' },
     ],
     correctKey: 'D',
-    explanation: '本文に"Shifts in Arctic conditions are also altering atmospheric circulation patterns, which some scientists link to more frequent and severe weather events at lower latitudes, including prolonged droughts, intense cold spells, and heavy flooding"とあり、低緯度地域での異常気象の増加という世界的影響をDが正確に反映している。A・B・Cは本文に記載されていない。',
+    explanation: '本文に"Shifts in Arctic conditions are also altering atmospheric circulation patterns, which some scientists link to more frequent and severe weather events at lower latitudes, including prolonged droughts, intense cold spells, and heavy flooding"とあり、低緯度地域での異常気象の増加という世界的影響をDが正確に反映している。A・B・Cは本文に記載されていない。\n\n【図解】北極温暖化の地球規模の影響\n　経路｜本文の記述｜結果\n　大気循環の変化｜altering circulation patterns｜偏西風の蛇行など\n　低緯度への波及｜lower latitudes｜異常気象の増加\n　具体例｜干ばつ, 寒波, 洪水｜広範囲\n　⇒ 低緯度での異常気象の頻発と激化が答え\n　⚠ 南極の氷床融解や熱帯の大量絶滅は本文にない。影響の範囲を本文で確認する。',
     difficulty: 'advanced',
   },
   // --- VOCABULARY (20 questions: 051-070) ---
@@ -769,7 +769,7 @@ export const eikenQuestions2kyu2: EikenQuestion[] = [
       { key: 'D', text: 'frustration' },
     ],
     correctKey: 'D',
-    explanation: 'frustrationは「苛立ち・不満」の意味で、遠方から来たのに投票が延期されたことへの否定的な反応を表す。gratitude（感謝）、admiration（称賛）は肯定的すぎ、indifference（無関心）は文脈の「widespread」という強い反応と矛盾する。',
+    explanation: 'frustrationは「苛立ち・不満」の意味で、遠方から来たのに投票が延期されたことへの否定的な反応を表す。gratitude（感謝）、admiration（称賛）は肯定的すぎ、indifference（無関心）は文脈の「widespread」という強い反応と矛盾する。\n\nfrustration は「思いどおりにならないことへの苛立ち」で、動詞 frustrate の名詞形。widespread frustration は「広範な不満」を表す定型で、遠路来た人々が投票延期に直面したという状況にふさわしい否定的な感情語である。\n\n【図解】反応を表す名詞\n　語｜感情の方向｜使う場面\n　frustration｜否定的な苛立ち｜期待が裏切られた\n　gratitude｜肯定的な感謝｜恩を受けた\n　indifference｜無関心｜どうでもよい\n　⇒ 遠方から来たのに延期なら frustration\n　⚠ widespread は強い反応を示す語。indifference（無関心）とは論理的に噛み合わない。',
     difficulty: 'standard',
   },
   {
@@ -784,7 +784,7 @@ export const eikenQuestions2kyu2: EikenQuestion[] = [
       { key: 'D', text: 'resemblance' },
     ],
     correctKey: 'A',
-    explanation: 'reputationは「評判・世評」の意味で、スキャンダルによって政治家の評判が傷ついたという文脈に適切。residence（住居）、resistance（抵抗）、resemblance（類似）はいずれも文脈に合わない。',
+    explanation: 'reputationは「評判・世評」の意味で、スキャンダルによって政治家の評判が傷ついたという文脈に適切。residence（住居）、resistance（抵抗）、resemblance（類似）はいずれも文脈に合わない。\n\nreputation は「評判、世評」で、public reputation、damage a reputation、build a reputation の形で使う。スキャンダルで支持率が回復しなかったという記述が、評判の失墜を指していることを示す。\n\n【図解】re で始まる紛らわしい名詞\n　語｜意味｜使う場面\n　reputation｜評判｜政治家, 企業\n　resistance｜抵抗｜圧力, 病原体\n　resemblance｜類似｜外見, 特徴\n　⇒ 支持率と結びつくなら reputation\n　⚠ residence は「住居」でつづりが近いだけ。語頭の共通性に惑わされない。',
     difficulty: 'standard',
   },
   {
@@ -799,7 +799,7 @@ export const eikenQuestions2kyu2: EikenQuestion[] = [
       { key: 'D', text: 'deadlock' },
     ],
     correctKey: 'D',
-    explanation: 'deadlockは「行き詰まり・膠着状態」の意味で、双方が譲歩を拒んで交渉が進まなくなった状況を表す。deadline（締め切り）、dialect（方言）、discount（割引）はいずれも不適切。',
+    explanation: 'deadlockは「行き詰まり・膠着状態」の意味で、双方が譲歩を拒んで交渉が進まなくなった状況を表す。deadline（締め切り）、dialect（方言）、discount（割引）はいずれも不適切。\n\ndeadlock は「行き詰まり、膠着状態」で、交渉や議論が双方の譲歩拒否によって進まなくなった状態を指す。reach a deadlock、break a deadlock が定番のコロケーションである。\n\n【図解】dead で始まる名詞\n　語｜意味｜使う場面\n　deadlock｜膠着状態｜交渉, 議会\n　deadline｜締め切り｜提出, 納期\n　deadweight｜重荷｜負担\n　⇒ 双方が譲らず進まないなら deadlock\n　⚠ deadline と deadlock は語形が近いが意味が全く違う。時間の話か状態の話かで判断する。',
     difficulty: 'advanced',
   },
   {
@@ -814,7 +814,7 @@ export const eikenQuestions2kyu2: EikenQuestion[] = [
       { key: 'D', text: 'confiscated' },
     ],
     correctKey: 'C',
-    explanation: 'corroborateは「（証拠が）裏付ける・確証する」の意味。新しい証拠が科学者の主張を裏付けたという肯定的な文脈に適切。contradict（矛盾する）、discredit（信用を落とす）は逆の意味、confiscate（没収する）は無関係。',
+    explanation: 'corroborateは「（証拠が）裏付ける・確証する」の意味。新しい証拠が科学者の主張を裏付けたという肯定的な文脈に適切。contradict（矛盾する）、discredit（信用を落とす）は逆の意味、confiscate（没収する）は無関係。\n\ncorroborate は「（証拠が別の証拠や証言を）裏づける」で、evidence corroborates a claim の形で使う法律や学術寄りの語。最初は退けられた説が新証拠で支持されたという流れに合う。\n\n【図解】証拠と主張の関係を表す動詞\n　語｜作用｜方向\n　corroborate｜裏づける｜支持\n　contradict｜矛盾する｜否定\n　discredit｜信用を失わせる｜否定\n　⇒ 新証拠が主張を支えるなら corroborated\n　⚠ contradict と corroborate は語頭が同じ co で紛らわしい。支持か否定かで区別する。',
     difficulty: 'advanced',
   },
   {
@@ -829,7 +829,7 @@ export const eikenQuestions2kyu2: EikenQuestion[] = [
       { key: 'D', text: 'export' },
     ],
     correctKey: 'A',
-    explanation: 'exempt A from Bは「AをBから免除する」の意味の固定表現。新しい法律が中小企業を税負担から免除するという文脈に適切。expose（さらす）、expand（拡大する）、export（輸出する）はいずれも不適切。',
+    explanation: 'exempt A from Bは「AをBから免除する」の意味の固定表現。新しい法律が中小企業を税負担から免除するという文脈に適切。expose（さらす）、expand（拡大する）、export（輸出する）はいずれも不適切。\n\nexempt A from B は「AをBから免除する」で、税や義務の免除を表す。形容詞としても be exempt from taxes の形で使える。新法が中小企業を地方税から免除する、という文脈にぴったり合う。\n\n【図解】ex で始まる動詞\n　語｜意味｜構文\n　exempt｜免除する｜exempt A from B\n　expose｜さらす｜expose A to B\n　expand｜拡大する｜（自動詞, 他動詞）\n　⇒ 税負担を免れさせるなら exempt from\n　⚠ exempt の前置詞は from。to をとる expose と取り違えない。',
     difficulty: 'standard',
   },
   {
@@ -844,7 +844,7 @@ export const eikenQuestions2kyu2: EikenQuestion[] = [
       { key: 'D', text: 'reassure' },
     ],
     correctKey: 'B',
-    explanation: 'ensure that ...は「〜ということを確実にする」という意味。患者が確実に理解するようにしたという文脈に適切。assure（人に断言する）、insure（保険をかける）、reassure（安心させる）はいずれも文脈に合わない。',
+    explanation: 'ensure that ...は「〜ということを確実にする」という意味。患者が確実に理解するようにしたという文脈に適切。assure（人に断言する）、insure（保険をかける）、reassure（安心させる）はいずれも文脈に合わない。\n\nensure は「〜ということを確実にする」で、ensure that 節の形をとる。よく似た assure は人を目的語にとって「〜だと請け合う」、insure は「保険をかける」で、目的語と意味がそれぞれ異なる。\n\n【図解】sure 系動詞の使い分け\n　語｜意味｜目的語\n　ensure｜確実にする｜that 節, 事柄\n　assure｜請け合う｜人 ＋ that 節\n　insure｜保険をかける｜物, 人\n　⇒ that 節が続くなら ensure\n　⚠ reassure は「安心させる」で人を目的語にとる。事柄の確実性には ensure を使う。',
     difficulty: 'advanced',
   },
   {
@@ -859,7 +859,7 @@ export const eikenQuestions2kyu2: EikenQuestion[] = [
       { key: 'D', text: 'climbed' },
     ],
     correctKey: 'D',
-    explanation: 'climbは「（数値などが）着実に上昇する」の意味。海外市場の拡大によって利益が増加したという肯定的な文脈に適切。diminish（減少する）、stagnate（停滞する）、plummet（急落する）はいずれも逆または不適切な意味。',
+    explanation: 'climbは「（数値などが）着実に上昇する」の意味。海外市場の拡大によって利益が増加したという肯定的な文脈に適切。diminish（減少する）、stagnate（停滞する）、plummet（急落する）はいずれも逆または不適切な意味。\n\nclimb は「（数値が）着実に上昇する」で、profits、prices、temperatures が主語になる。steadily（着実に）という副詞と、海外市場の拡大という理由が、上昇方向であることを示している。\n\n【図解】数値の増減を表す動詞\n　語｜方向｜変化の速さ\n　climb｜上昇｜着実\n　plummet｜下降｜急激\n　stagnate｜横ばい｜変化なし\n　⇒ 5年かけて着実に増えたなら climbed\n　⚠ diminish は「減少する」で方向が逆。thanks to という肯定的な理由と噛み合わない。',
     difficulty: 'standard',
   },
   {
@@ -874,7 +874,7 @@ export const eikenQuestions2kyu2: EikenQuestion[] = [
       { key: 'D', text: 'enforced' },
     ],
     correctKey: 'A',
-    explanation: 'be entrusted with a taskは「任務を託される」という意味の固定表現。委員会が審査業務を任されたという文脈に適切。enclose（同封する）、enroll（登録する）、enforce（施行する）はいずれも不適切。',
+    explanation: 'be entrusted with a taskは「任務を託される」という意味の固定表現。委員会が審査業務を任されたという文脈に適切。enclose（同封する）、enroll（登録する）、enforce（施行する）はいずれも不適切。\n\nbe entrusted with 〜 は「〜を任される」で、trust（信頼する）に en- が付いた形。task、responsibility、mission を with の後ろにとる。信頼して委ねるという含みがある改まった表現である。\n\n【図解】en で始まる動詞\n　語｜意味｜結ぶ前置詞\n　entrust｜委ねる｜with ＋ 任務\n　enclose｜同封する｜in ＋ 封筒\n　enroll｜登録する｜in ＋ 講座\n　⇒ 審査業務を任されたなら entrusted with\n　⚠ enforce は「（法を）施行する」で任務の委託ではない。前置詞との相性でも見分けられる。',
     difficulty: 'advanced',
   },
   {
@@ -889,7 +889,7 @@ export const eikenQuestions2kyu2: EikenQuestion[] = [
       { key: 'D', text: 'preserve' },
     ],
     correctKey: 'A',
-    explanation: 'permeateは「（影響などが）浸透する、隅々まで及ぶ」の意味。トラウマが日常生活のあらゆる面に影響を与え続けたという文脈に適切。penetrate（貫通する）はやや物理的、persuade（説得する）、preserve（保存する）は不適切。',
+    explanation: 'permeateは「（影響などが）浸透する、隅々まで及ぶ」の意味。トラウマが日常生活のあらゆる面に影響を与え続けたという文脈に適切。penetrate（貫通する）はやや物理的、persuade（説得する）、preserve（保存する）は不適切。\n\npermeate は「（影響や感情が）隅々まで行き渡る」で、抽象的な広がりを表す。トラウマが日常生活のあらゆる場面に及び続けたという文脈に合う。物理的に貫く場合は penetrate を使う。\n\n【図解】広がりを表す動詞\n　語｜広がり方｜対象\n　permeate｜すみずみに行き渡る｜影響, 雰囲気\n　penetrate｜突き抜ける｜壁, 市場\n　pervade｜全体に満ちる｜permeate の類義\n　⇒ 生活全体に影響が及ぶなら permeate\n　⚠ penetrate は物理的な貫通が中心。心理的な浸透には permeate が自然。',
     difficulty: 'advanced',
   },
   {
@@ -904,7 +904,7 @@ export const eikenQuestions2kyu2: EikenQuestion[] = [
       { key: 'D', text: 'convert' },
     ],
     correctKey: 'A',
-    explanation: 'condenseは「（文章などを）凝縮する、簡潔にする」の意味。字数制限に合わせて長い記事を短縮するという文脈に適切。contradict（矛盾する）、contribute（貢献する）、convert（転換する）はいずれも不適切。',
+    explanation: 'condenseは「（文章などを）凝縮する、簡潔にする」の意味。字数制限に合わせて長い記事を短縮するという文脈に適切。contradict（矛盾する）、contribute（貢献する）、convert（転換する）はいずれも不適切。\n\ncondense は「（文章や情報を）凝縮して短くする」で、字数制限に収めるという文脈にぴったり合う。物理では「凝結する」の意味にもなる。名詞形は condensation。\n\n【図解】文章に対する操作の動詞\n　語｜操作｜結果\n　condense｜凝縮する｜短くなる\n　expand｜膨らませる｜長くなる\n　revise｜修正する｜内容が変わる\n　⇒ 字数制限に合わせるなら condense\n　⚠ convert は「変換する」で長さの調整ではない。操作の種類を取り違えない。',
     difficulty: 'standard',
   },
   {
@@ -919,7 +919,7 @@ export const eikenQuestions2kyu2: EikenQuestion[] = [
       { key: 'D', text: 'submit' },
     ],
     correctKey: 'A',
-    explanation: 'suspend productionは「生産を一時停止する」という意味の固定表現。安全違反が発見されたために操業を止めたという文脈に適切。sustain（維持する）、summarize（要約する）、submit（提出する）はいずれも不適切。',
+    explanation: 'suspend productionは「生産を一時停止する」という意味の固定表現。安全違反が発見されたために操業を止めたという文脈に適切。sustain（維持する）、summarize（要約する）、submit（提出する）はいずれも不適切。\n\nsuspend production は「生産を一時停止する」で、suspend は再開の可能性を含む一時的な停止を表す。安全違反の発覚により操業を止めたという文脈に合う。完全終了なら terminate や halt を使う。\n\n【図解】停止を表す動詞\n　語｜停止の性質｜再開\n　suspend｜一時停止｜あり得る\n　terminate｜終了する｜なし\n　sustain｜維持する｜（逆の意味）\n　⇒ 検査で違反が見つかり止めたなら suspend\n　⚠ sustain は「維持する」で意味が正反対。語形が近いので意味で確実に区別する。',
     difficulty: 'standard',
   },
   {
@@ -934,7 +934,7 @@ export const eikenQuestions2kyu2: EikenQuestion[] = [
       { key: 'D', text: 'neglected' },
     ],
     correctKey: 'B',
-    explanation: 'itemizeは「項目ごとに詳細に示す」の意味。寄付金の使途を一つ一つ明示したという文脈に適切。obscure（不明瞭にする）、exaggerate（誇張する）、neglect（無視する）はいずれも逆または不適切な意味。',
+    explanation: 'itemizeは「項目ごとに詳細に示す」の意味。寄付金の使途を一つ一つ明示したという文脈に適切。obscure（不明瞭にする）、exaggerate（誇張する）、neglect（無視する）はいずれも逆または不適切な意味。\n\nitemize は item（項目）から派生し、「項目ごとに列挙して明示する」を意味する。寄付金の使途を一つ残らず示したという文脈に合う。会計や請求書の文脈で頻出する語である。\n\n【図解】情報の示し方を表す動詞\n　語｜示し方｜透明性\n　itemize｜項目別に明示する｜高い\n　obscure｜あいまいにする｜低い\n　exaggerate｜誇張する｜ゆがむ\n　⇒ 使途を1ドル単位まで示すなら itemized\n　⚠ obscure は「不明瞭にする」で正反対。exactly という副詞が明示の方向を示している。',
     difficulty: 'advanced',
   },
   {
@@ -949,7 +949,7 @@ export const eikenQuestions2kyu2: EikenQuestion[] = [
       { key: 'D', text: 'ledge' },
     ],
     correctKey: 'B',
-    explanation: 'logは「（航海・探検などの）記録、日誌」の意味。探検の日々の記録をつけたという文脈に適切。ledger（会計帳簿）は金銭記録、lease（賃貸契約）、ledge（棚状の岩場）はいずれも文脈に合わない。',
+    explanation: 'logは「（航海・探検などの）記録、日誌」の意味。探検の日々の記録をつけたという文脈に適切。ledger（会計帳簿）は金銭記録、lease（賃貸契約）、ledge（棚状の岩場）はいずれも文脈に合わない。\n\nlog は「（航海や探検の）記録、日誌」で、天候や地形を日々書き留める記録を指す。動詞では「記録する」の意味になり、log in（ログインする）も同じ語源に由来する。\n\n【図解】記録を表す名詞\n　語｜記録の内容｜分野\n　log｜日々の経過｜航海, 探検, 機器\n　ledger｜金銭の出入り｜会計\n　journal｜日記, 学術誌｜個人, 研究\n　⇒ 天候や地形の日々の記録なら log\n　⚠ ledger は会計帳簿に限られる。記録の中身が金銭かどうかで選び分ける。',
     difficulty: 'standard',
   },
   {
@@ -964,7 +964,7 @@ export const eikenQuestions2kyu2: EikenQuestion[] = [
       { key: 'D', text: 'complexity' },
     ],
     correctKey: 'A',
-    explanation: 'compromiseは「妥協、譲歩案」の意味。双方が完全には満足しないが交渉を進められる合意点という文脈に適切。complaint（苦情）、component（構成要素）、complexity（複雑さ）はいずれも不適切。',
+    explanation: 'compromiseは「妥協、譲歩案」の意味。双方が完全には満足しないが交渉を進められる合意点という文脈に適切。complaint（苦情）、component（構成要素）、complexity（複雑さ）はいずれも不適切。\n\ncompromise は「妥協、譲歩による合意」で、reach a compromise の形で使う。双方が完全には満足しないが交渉が前進した、という記述がこの語の性質をそのまま説明している。動詞では「妥協する、損なう」の意味になる。\n\n【図解】com で始まる名詞\n　語｜意味｜使う場面\n　compromise｜妥協案｜交渉\n　complaint｜苦情｜サービス, 製品\n　component｜構成要素｜機械, 制度\n　⇒ 双方が譲って前進したなら compromise\n　⚠ compromise には「（信用を）損なう」という動詞の意味もある。品詞と文脈で判断する。',
     difficulty: 'standard',
   },
   {
@@ -979,7 +979,7 @@ export const eikenQuestions2kyu2: EikenQuestion[] = [
       { key: 'D', text: 'luxurious' },
     ],
     correctKey: 'A',
-    explanation: 'lucidは「明快な、分かりやすい」の意味。専門知識のない学生でも理解できたという文脈に適切。lethal（致命的な）、lucrative（利益の多い）、luxurious（豪華な）はいずれも文脈に合わない。',
+    explanation: 'lucidは「明快な、分かりやすい」の意味。専門知識のない学生でも理解できたという文脈に適切。lethal（致命的な）、lucrative（利益の多い）、luxurious（豪華な）はいずれも文脈に合わない。\n\nlucid は「明快な、わかりやすい」で、explanation、lecture、writing を修飾する。ラテン語の lux（光）に由来し、光が差すように明晰であるというイメージを持つ語である。\n\n【図解】lu で始まる形容詞\n　語｜意味｜使う場面\n　lucid｜明快な｜講義, 説明\n　lucrative｜もうかる｜事業, 契約\n　lethal｜致命的な｜毒, 兵器\n　⇒ 予備知識のない学生も追えたなら lucid\n　⚠ lucrative は「利益の多い」で明快さとは無関係。語頭が同じ語をまとめて整理する。',
     difficulty: 'advanced',
   },
   {
@@ -994,7 +994,7 @@ export const eikenQuestions2kyu2: EikenQuestion[] = [
       { key: 'D', text: 'simplified' },
     ],
     correctKey: 'A',
-    explanation: 'sparkは「（議論・怒りなどを）引き起こす」の意味。新しい提案が激しい議論を巻き起こしたという文脈に適切。settle（解決する）、silence（沈黙させる）、simplify（単純化する）はいずれも逆または不適切な意味。',
+    explanation: 'sparkは「（議論・怒りなどを）引き起こす」の意味。新しい提案が激しい議論を巻き起こしたという文脈に適切。settle（解決する）、silence（沈黙させる）、simplify（単純化する）はいずれも逆または不適切な意味。\n\nspark は「火花」の名詞から転じて、「（議論や騒動を）引き起こす」を意味する動詞。debate、controversy、outrage、interest を目的語にとる。提案が激しい議論を巻き起こしたという文脈に合う。\n\n【図解】議論を表す動詞の方向\n　語｜作用｜結果\n　spark｜引き起こす｜議論が始まる\n　settle｜収める｜議論が終わる\n　silence｜黙らせる｜議論が消える\n　⇒ 議員が二分される議論を招いたなら sparked\n　⚠ settle は正反対の方向。deeply divided という結果と噛み合うのは spark。',
     difficulty: 'standard',
   },
   {
@@ -1009,7 +1009,7 @@ export const eikenQuestions2kyu2: EikenQuestion[] = [
       { key: 'D', text: 'sustainable' },
     ],
     correctKey: 'A',
-    explanation: 'superficialは「表面的な、浅薄な」の意味。具体的な実行計画のない曖昧な提言だったという批判の文脈に適切。systematic（体系的な）、substantial（実質的な）、sustainable（持続可能な）はいずれも文脈に合わない。',
+    explanation: 'superficialは「表面的な、浅薄な」の意味。具体的な実行計画のない曖昧な提言だったという批判の文脈に適切。systematic（体系的な）、substantial（実質的な）、sustainable（持続可能な）はいずれも文脈に合わない。\n\nsuperficial は「表面的な、深みのない」で、分析や提言の浅さを批判するときに使う。vague recommendations without any concrete plan という説明が、この語の中身をそのまま示している。\n\n【図解】評価を表す形容詞の対比\n　語｜評価｜含み\n　superficial｜表面的な｜否定的\n　substantial｜実質的な｜肯定的\n　systematic｜体系的な｜肯定的\n　⇒ 具体策のない曖昧な提言なら superficial\n　⚠ substantial は「相当な, 実質的な」で正反対の評価。criticized for という否定の枠組みを見落とさない。',
     difficulty: 'advanced',
   },
   {
@@ -1024,7 +1024,7 @@ export const eikenQuestions2kyu2: EikenQuestion[] = [
       { key: 'D', text: 'habitual' },
     ],
     correctKey: 'A',
-    explanation: 'hazardousは「危険な」の意味。突然の嵐や凍った道など冬場の登山道の危険性を表す文脈に適切。hospitable（もてなしの良い）、harmonious（調和のとれた）、habitual（習慣的な）はいずれも文脈に合わない。',
+    explanation: 'hazardousは「危険な」の意味。突然の嵐や凍った道など冬場の登山道の危険性を表す文脈に適切。hospitable（もてなしの良い）、harmonious（調和のとれた）、habitual（習慣的な）はいずれも文脈に合わない。\n\nhazardous は「危険な」で、hazard（危険要因）の形容詞形。突然の嵐や凍結した道といった具体的な危険がある状況を表す。hazardous materials（危険物）という定型表現でも使われる。\n\n【図解】h で始まる形容詞\n　語｜意味｜評価\n　hazardous｜危険な｜否定的\n　hospitable｜もてなしのよい, 過ごしやすい｜肯定的\n　harmonious｜調和のとれた｜肯定的\n　⇒ 冬山の嵐と凍結なら hazardous\n　⚠ habitual は「習慣的な」で危険度とは無関係。語頭の h でまとめて整理しておく。',
     difficulty: 'standard',
   },
   {
@@ -1039,7 +1039,7 @@ export const eikenQuestions2kyu2: EikenQuestion[] = [
       { key: 'D', text: 'reversible' },
     ],
     correctKey: 'C',
-    explanation: 'relentlessは「執拗な、粘り強い」の意味。長年隠されてきた汚職を暴いた記者の粘り強い取材姿勢を表す文脈に適切。reluctant（気が進まない）、redundant（余分な）、reversible（可逆的な）はいずれも文脈に合わない。',
+    explanation: 'relentlessは「執拗な、粘り強い」の意味。長年隠されてきた汚職を暴いた記者の粘り強い取材姿勢を表す文脈に適切。reluctant（気が進まない）、redundant（余分な）、reversible（可逆的な）はいずれも文脈に合わない。\n\nrelentless は「執拗な、容赦なくやめない」で、reporting、pursuit、pressure を修飾する。長年隠されてきた汚職を暴いたという成果が、記者の粘り強さを裏づけている。\n\n【図解】re で始まる形容詞\n　語｜意味｜評価\n　relentless｜執拗な, 粘り強い｜文脈により肯定\n　reluctant｜気が進まない｜消極的\n　redundant｜余分な, 冗長な｜否定的\n　⇒ 汚職を暴いた粘り強い取材なら relentless\n　⚠ reluctant は正反対の消極性を表す。praised for という肯定的な枠組みに合わない。',
     difficulty: 'advanced',
   },
   {
@@ -1054,7 +1054,7 @@ export const eikenQuestions2kyu2: EikenQuestion[] = [
       { key: 'D', text: 'compact' },
     ],
     correctKey: 'A',
-    explanation: 'comparableは「同程度の、匹敵する」の意味。二つの提案が優劣つけがたいほど似ていたという文脈に適切。compatible（両立できる）、compulsory（義務的な）、compact（コンパクトな）はいずれも文脈に合わない。',
+    explanation: 'comparableは「同程度の、匹敵する」の意味。二つの提案が優劣つけがたいほど似ていたという文脈に適切。compatible（両立できる）、compulsory（義務的な）、compact（コンパクトな）はいずれも文脈に合わない。\n\ncomparable は「同程度の、比較に値する」で、二案の優劣がつけがたいことを表す。comparable to 〜、comparable in quality のように使う。名詞形は comparability、動詞は compare。\n\n【図解】com で始まる形容詞\n　語｜意味｜使う場面\n　comparable｜同程度の｜比較, 評価\n　compatible｜両立できる｜機器, 価値観\n　compulsory｜義務的な｜教育, 保険\n　⇒ 甲乙つけがたい2案なら comparable\n　⚠ compatible は「相性がよい」で優劣の話ではない。比較か両立かで区別する。',
     difficulty: 'advanced',
   },
 
@@ -1071,7 +1071,7 @@ export const eikenQuestions2kyu2: EikenQuestion[] = [
       { key: 'D', text: 'Except' },
     ],
     correctKey: 'B',
-    explanation: '"Barring + 名詞"は「〜がなければ」という意味の前置詞用法で、フォーマルな文書でよく使われる。「異議がなければ、提案は採択される」という意味でBarringが正解。Unless there isは節を導くため後に名詞句だけを続けられない。Without haveは文法的に誤り。',
+    explanation: '"Barring + 名詞"は「〜がなければ」という意味の前置詞用法で、フォーマルな文書でよく使われる。「異議がなければ、提案は採択される」という意味でBarringが正解。Unless there isは節を導くため後に名詞句だけを続けられない。Without haveは文法的に誤り。\n\nBarring は「〜がなければ」を表す前置詞で、後ろに名詞句を直接続けられる。Barring any objections、Barring unforeseen circumstances のように、条件を簡潔に示す改まった言い方である。\n\n【図解】条件を示す語の品詞\n　語｜品詞｜後ろに来るもの\n　barring｜前置詞｜名詞句\n　unless｜接続詞｜主語 ＋ 動詞\n　without｜前置詞｜名詞句\n　⇒ 直後が名詞句なら barring\n　⚠ Unless there is なら節になるので語順が変わる。空所の後ろの形で品詞を判断する。',
     difficulty: 'advanced',
   },
   {
@@ -1086,7 +1086,7 @@ export const eikenQuestions2kyu2: EikenQuestion[] = [
       { key: 'D', text: 'being' },
     ],
     correctKey: 'C',
-    explanation: '"insist that + 主語 + 動詞の原形"は仮定法現在の構文。insistが要求・命令の意味を持つ場合、that節の動詞は原形になる。areは直説法現在、wereは過去形、beingは分詞でいずれも不適切。',
+    explanation: '"insist that + 主語 + 動詞の原形"は仮定法現在の構文。insistが要求・命令の意味を持つ場合、that節の動詞は原形になる。areは直説法現在、wereは過去形、beingは分詞でいずれも不適切。\n\ninsist が「要求する」の意味で that 節をとるとき、節内の動詞は原形になる仮定法現在の形をとる。ここでは be present と原形の be を使う。insist が「〜だと主張する」の意味なら直説法になる点に注意。\n\n【図解】insist の2つの意味\n　意味｜that 節の動詞｜例\n　要求する｜原形｜insists that he be present\n　主張する｜直説法｜insists that he is innocent\n　命令, 提案の動詞｜原形｜demand, suggest, propose\n　⇒ 全員の出席を求めるなら be\n　⚠ are を選ぶと「実際にそうだ」という主張になる。要求か主張かで動詞の形が変わる。',
     difficulty: 'advanced',
   },
   {
@@ -1101,7 +1101,7 @@ export const eikenQuestions2kyu2: EikenQuestion[] = [
       { key: 'D', text: 'Notwithstanding that' },
     ],
     correctKey: 'A',
-    explanation: '"regardless of + 名詞/wh節"は「〜にかかわらず」という意味の定型表現で、how節を直接続けることができる。In spiteはin spite ofの形が必要、Despite ofは誤り（despiteに前置詞ofは不要）、Notwithstanding thatは文法的に不自然。',
+    explanation: '"regardless of + 名詞/wh節"は「〜にかかわらず」という意味の定型表現で、how節を直接続けることができる。In spiteはin spite ofの形が必要、Despite ofは誤り（despiteに前置詞ofは不要）、Notwithstanding thatは文法的に不自然。\n\n【図解】「〜にかかわらず」の形\n　表現｜品詞｜後ろに来るもの\n　regardless of｜前置詞句｜名詞, wh 節\n　in spite of｜前置詞句｜名詞, 動名詞\n　despite｜前置詞｜名詞, 動名詞\n　⇒ how 節を続けるなら regardless of\n　⚠ despite of は誤り。despite には of を付けず、in spite には of が必要。',
     difficulty: 'advanced',
   },
   {
@@ -1116,7 +1116,7 @@ export const eikenQuestions2kyu2: EikenQuestion[] = [
       { key: 'D', text: 'who' },
     ],
     correctKey: 'C',
-    explanation: '先行詞the report（物）の所有格として関係代名詞whoseを使う。"whose findings"（その報告書の調査結果）という所有関係を表す。which・thatは所有格として使えず、whoは人を指す関係代名詞のため不適切。',
+    explanation: '先行詞the report（物）の所有格として関係代名詞whoseを使う。"whose findings"（その報告書の調査結果）という所有関係を表す。which・thatは所有格として使えず、whoは人を指す関係代名詞のため不適切。\n\nwhose は所有格の関係代名詞で、先行詞が人でも物でも使える。whose findings は the report の findings（その報告書の調査結果）を指す。関係詞の直後に無冠詞の名詞が続いているかが見分けの決め手になる。\n\n【図解】関係代名詞の選び方\n　直後に続くもの｜使う関係詞｜例\n　名詞（無冠詞）｜whose｜whose findings\n　動詞｜who, which, that｜which was praised\n　主語 ＋ 動詞｜which, that, whom｜which they wrote\n　⇒ findings という名詞が続くので whose\n　⚠ 先行詞が物でも所有格は whose。which の所有格と誤解して除外しない。',
     difficulty: 'advanced',
   },
   {
@@ -1131,7 +1131,7 @@ export const eikenQuestions2kyu2: EikenQuestion[] = [
       { key: 'D', text: 'is' },
     ],
     correctKey: 'A',
-    explanation: '"Hardly + be動詞 + 主語 + 過去分詞 + when ..."は倒置構文で「〜するかしないうちに…した」を表す。受動態の過去形なのでwasが正しい。has・did・isはこの受動態の倒置構文には合わない。',
+    explanation: '"Hardly + be動詞 + 主語 + 過去分詞 + when ..."は倒置構文で「〜するかしないうちに…した」を表す。受動態の過去形なのでwasが正しい。has・did・isはこの受動態の倒置構文には合わない。\n\nHardly 〜 when ... は「〜するかしないうちに…した」を表す慣用表現。Hardly が文頭に来るため倒置が起こり、受動態の過去形なので was が主語の前に出る。同義表現に No sooner 〜 than がある。\n\n【図解】「〜するやいなや」の構文\n　構文｜前半の形｜後半の接続詞\n　Hardly 〜 when｜過去完了または過去の受動｜when\n　No sooner 〜 than｜過去完了｜than\n　As soon as 〜｜過去形, 倒置なし｜（接続詞が先頭）\n　⇒ 受動態の過去なら was announced\n　⚠ Hardly 〜 than とはしない。when と than の組み合わせを取り違えない。',
     difficulty: 'advanced',
   },
   {
@@ -1146,7 +1146,7 @@ export const eikenQuestions2kyu2: EikenQuestion[] = [
       { key: 'D', text: 'the most' },
     ],
     correctKey: 'A',
-    explanation: '"The + 比較級 ..., the + 比較級 ..."は「〜すればするほど、ますます…」という比例構文。「監査人が徹底的に調べれば調べるほど、より多くの矛盾を発見した」という意味でthe moreが正しい。more・much more・the mostはこの構文の後半に使えない。',
+    explanation: '"The + 比較級 ..., the + 比較級 ..."は「〜すればするほど、ますます…」という比例構文。「監査人が徹底的に調べれば調べるほど、より多くの矛盾を発見した」という意味でthe moreが正しい。more・much more・the mostはこの構文の後半に使えない。\n\nThe ＋ 比較級 〜, the ＋ 比較級 ... は「〜すればするほど…」という比例を表す構文。後半にも the が必要で、the more discrepancies のように the ＋ 比較級 ＋ 名詞 の語順になる。\n\n【図解】比例の構文の形\n　位置｜形｜例\n　前半｜The ＋ 比較級 ＋ 主語 ＋ 動詞｜The more thoroughly they examined\n　後半｜the ＋ 比較級 ＋ 主語 ＋ 動詞｜the more discrepancies they found\n　省略形｜The sooner, the better｜動詞の省略も可\n　⇒ 後半にも the が必要\n　⚠ the を落とした more だけでは比例構文にならない。両方に the を置く。',
     difficulty: 'standard',
   },
   {
@@ -1161,7 +1161,7 @@ export const eikenQuestions2kyu2: EikenQuestion[] = [
       { key: 'D', text: 'will be removed' },
     ],
     correctKey: 'C',
-    explanation: '"demand that + 主語 + 動詞の原形"は仮定法現在の構文。受動態の原形はbe + 過去分詞なので"be removed"が正解。is removed、will be removedは直説法、removedは動詞形として不完全で不適切。',
+    explanation: '"demand that + 主語 + 動詞の原形"は仮定法現在の構文。受動態の原形はbe + 過去分詞なので"be removed"が正解。is removed、will be removedは直説法、removedは動詞形として不完全で不適切。\n\ndemand が that 節をとると節内の動詞は原形になる。受動態にする場合は be ＋ 過去分詞 の形をとるため be removed が正解。要求や命令を表す動詞に共通するルールである。\n\n【図解】仮定法現在をとる動詞群\n　動詞｜意味｜that 節の動詞\n　demand, require｜要求する｜原形\n　suggest, propose｜提案する｜原形\n　order, insist｜命じる, 要求する｜原形\n　⇒ 受動の原形なら be removed\n　⚠ is removed と直説法にしない。時制の一致を受けない点がこの構文の特徴。',
     difficulty: 'advanced',
   },
   {
@@ -1176,7 +1176,7 @@ export const eikenQuestions2kyu2: EikenQuestion[] = [
       { key: 'D', text: 'Had' },
     ],
     correctKey: 'C',
-    explanation: '"Were + 主語 + to不定詞 ..."はif を省略した仮定法の倒置形で、「もし〜するとしたら」という現在・未来の仮定を表す。"Were she to accept" = "If she were to accept"となる。Was・Did・Hadはこの倒置構文には使えない。',
+    explanation: '"Were + 主語 + to不定詞 ..."はif を省略した仮定法の倒置形で、「もし〜するとしたら」という現在・未来の仮定を表す。"Were she to accept" = "If she were to accept"となる。Was・Did・Hadはこの倒置構文には使えない。\n\nWere ＋ 主語 ＋ to do は If ＋ 主語 ＋ were to do の倒置形で、現在または将来の仮定を表す。主節が would have to relocate と仮定法過去の帰結形になっているため、条件節も現在の仮定形にそろえる。\n\n【図解】倒置形と元の形の対応\n　倒置形｜元の形｜表す時\n　Were she to accept｜If she were to accept｜現在, 将来\n　Had she accepted｜If she had accepted｜過去\n　Should she accept｜If she should accept｜万一\n　⇒ 主節が would なら Were she to\n　⚠ Was は仮定法では使わない。仮定法の be 動詞は主語にかかわらず were を用いる。',
     difficulty: 'advanced',
   },
   {
@@ -1191,7 +1191,7 @@ export const eikenQuestions2kyu2: EikenQuestion[] = [
       { key: 'D', text: 'to reorganize' },
     ],
     correctKey: 'B',
-    explanation: '"have + 目的語 + 過去分詞"は使役構文で「〜させる・〜してもらう」の意味。倉庫が再編成される（受動）関係なので過去分詞reorganizedが正解。reorganize（原形）、reorganizing（現在分詞）、to reorganize（不定詞）は能動の意味になり不適切。',
+    explanation: '"have + 目的語 + 過去分詞"は使役構文で「〜させる・〜してもらう」の意味。倉庫が再編成される（受動）関係なので過去分詞reorganizedが正解。reorganize（原形）、reorganizing（現在分詞）、to reorganize（不定詞）は能動の意味になり不適切。\n\nhave ＋ 目的語 ＋ 過去分詞 の使役構文では、目的語と動詞の関係が受動なら過去分詞を使う。倉庫は再編成される側なので reorganized が正しい。目的語が自ら動作するなら原形不定詞になる。\n\n【図解】have の後ろの形の決め方\n　目的語との関係｜形｜例\n　受動｜過去分詞｜have the room cleaned\n　能動（人）｜原形｜have him clean the room\n　進行中｜doing｜have the water running\n　⇒ 倉庫は整理される側なので reorganized\n　⚠ to reorganize は have の使役構文では使わない。get なら to 不定詞をとる点と区別する。',
     difficulty: 'standard',
   },
   {
@@ -1206,7 +1206,7 @@ export const eikenQuestions2kyu2: EikenQuestion[] = [
       { key: 'D', text: 'Been' },
     ],
     correctKey: 'B',
-    explanation: '"Having + 過去分詞"の完了分詞構文は、主節の動作より前に完了した動作を表す。「記録的な速さでマラソンを完走した後、ランナーは疲労で倒れた」という意味でHaving completedが正解。Have（原形）、To have（不定詞）、Been（受動）は文法的に不適切。',
+    explanation: '"Having + 過去分詞"の完了分詞構文は、主節の動作より前に完了した動作を表す。「記録的な速さでマラソンを完走した後、ランナーは疲労で倒れた」という意味でHaving completedが正解。Have（原形）、To have（不定詞）、Been（受動）は文法的に不適切。\n\nHaving ＋ 過去分詞 の完了分詞構文は、主節より前に完了した動作を表す。完走してから倒れた、という時間の前後関係を示している。単に Completing とすると同時性が強くなり、意味がずれる。\n\n【図解】分詞構文の形の選択\n　時間関係｜形｜例\n　主節より前｜having done｜Having completed\n　主節と同時｜doing｜Running fast\n　受動｜done, having been done｜Built in 1900\n　⇒ 完走の後に倒れたなら Having completed\n　⚠ Have や To have では分詞構文にならない。ing 形であることが構文成立の条件。',
     difficulty: 'standard',
   },
   {
@@ -1221,7 +1221,7 @@ export const eikenQuestions2kyu2: EikenQuestion[] = [
       { key: 'D', text: 'has' },
     ],
     correctKey: 'A',
-    explanation: '"So + 形容詞 + be動詞 + 主語 + that ..."は倒置構文で、「非常に〜だったので…」という結果を強調する。主語the decision（単数、過去の出来事）に対応する過去形のbe動詞wasが正しい。did・is・hasはこの倒置構文の形に合わない。',
+    explanation: '"So + 形容詞 + be動詞 + 主語 + that ..."は倒置構文で、「非常に〜だったので…」という結果を強調する。主語the decision（単数、過去の出来事）に対応する過去形のbe動詞wasが正しい。did・is・hasはこの倒置構文の形に合わない。\n\nSo ＋ 形容詞 ＋ be 動詞 ＋ 主語 ＋ that ... は結果を強調する倒置構文。主語 the decision は単数で、出来事は過去なので was を使う。通常の語順に戻すと The decision was so controversial that 〜 となる。\n\n【図解】強調の倒置構文\n　構文｜文頭に出るもの｜動詞の形\n　So ＋ 形容詞｜形容詞｜be 動詞をそのまま前へ\n　Such ＋ be ＋ 主語｜such｜be 動詞をそのまま前へ\n　Only ＋ 副詞句｜副詞句｜be または do 系\n　⇒ 主語が単数の過去なら was\n　⚠ 補語が形容詞のときに did は使えない。be 動詞の倒置に助動詞 do を混ぜない。',
     difficulty: 'advanced',
   },
   {
@@ -1236,7 +1236,7 @@ export const eikenQuestions2kyu2: EikenQuestion[] = [
       { key: 'D', text: 'demonstrated' },
     ],
     correctKey: 'B',
-    explanation: '"whichever candidate"は単数の複合関係代名詞で、後に続く関係節の動詞は三人称単数形demonstratesが正しい。demonstrate（原形）は主語との一致がとれず、demonstrating（分詞）、demonstrated（過去形/過去分詞）は関係節の定動詞として不適切。',
+    explanation: '"whichever candidate"は単数の複合関係代名詞で、後に続く関係節の動詞は三人称単数形demonstratesが正しい。demonstrate（原形）は主語との一致がとれず、demonstrating（分詞）、demonstrated（過去形/過去分詞）は関係節の定動詞として不適切。\n\nwhichever candidate は「どの候補者であれ」を表す複合関係形容詞の用法で、単数扱いになる。したがって続く動詞は三人称単数現在の demonstrates となる。時制も主節の will select に合わせて現在形にする。\n\n【図解】複合関係詞の数と形\n　表現｜意味｜数の扱い\n　whichever ＋ 名詞｜どの〜であれ｜名詞の数に従う\n　whoever｜〜する人は誰でも｜単数扱い\n　whatever｜〜するものは何でも｜文脈による\n　⇒ candidate は単数なので demonstrates\n　⚠ 時や条件の副詞節ではないので未来を will で表す必要はない。ここは主語との一致が論点。',
     difficulty: 'advanced',
   },
   {
@@ -1251,7 +1251,7 @@ export const eikenQuestions2kyu2: EikenQuestion[] = [
       { key: 'D', text: 'so limited' },
     ],
     correctKey: 'A',
-    explanation: '"Given how + 形容詞 + 名詞 ..."は「〜がどれほど…であったかを考えると」という譲歩を表す。"how limited resources"（資源がいかに限られていたか）という間接疑問的な構造が正しい。how limit（原形の誤用）、as limited、so limitedはこの構文に合わない。',
+    explanation: '"Given how + 形容詞 + 名詞 ..."は「〜がどれほど…であったかを考えると」という譲歩を表す。"how limited resources"（資源がいかに限られていたか）という間接疑問的な構造が正しい。how limit（原形の誤用）、as limited、so limitedはこの構文に合わない。\n\n【図解】Given の後ろに続く形\n　形｜意味｜例\n　Given ＋ 名詞｜〜を考えると｜Given the situation\n　Given how ＋ 形容詞｜いかに〜かを考えると｜Given how limited\n　Given that ＋ 節｜〜であることを考えると｜Given that time is short\n　⇒ 形容詞 limited が続くなら how limited\n　⚠ how の後ろは形容詞または副詞。動詞の原形 limit は置けない。',
     difficulty: 'advanced',
   },
   {
@@ -1266,7 +1266,7 @@ export const eikenQuestions2kyu2: EikenQuestion[] = [
       { key: 'D', text: 'end' },
     ],
     correctKey: 'A',
-    explanation: '現在分詞endingは結果を表す分詞構文で、「その結果、何年もの議論に終止符を打った」という意味を表す。主節の主語the city councilが能動的に議論を終わらせた結果なのでendingが正しい。ended、to end、endは分詞構文としてこの位置に合わない。',
+    explanation: '現在分詞endingは結果を表す分詞構文で、「その結果、何年もの議論に終止符を打った」という意味を表す。主節の主語the city councilが能動的に議論を終わらせた結果なのでendingが正しい。ended、to end、endは分詞構文としてこの位置に合わない。\n\n分詞構文には結果を表す用法があり、主節の動作の帰結を ing 形で示す。ここでは可決したことが議論に終止符を打った、という結果関係を ending が表している。and ended 〜 と書き換えられる。\n\n【図解】分詞構文の意味の種類\n　意味｜例｜書き換え\n　結果｜ending years of debate｜and ended\n　理由｜Being tired, he left｜Because he was tired\n　同時｜Smiling, she nodded｜while smiling\n　⇒ 可決の帰結を示すなら ending\n　⚠ ended と過去形にすると接続詞が必要になる。分詞構文には接続詞を使わない。',
     difficulty: 'standard',
   },
   {
@@ -1281,7 +1281,7 @@ export const eikenQuestions2kyu2: EikenQuestion[] = [
       { key: 'D', text: 'did she face' },
     ],
     correctKey: 'B',
-    explanation: '"Never" が文頭に置かれると倒置が生じる。現在完了形の文脈なので"Never has + 主語 + 過去分詞"となり、has she facedが正しい。she has faced（倒置なし）、she faced（時制不一致）、did she face（過去形で現在完了の意味に合わない）はいずれも不適切。',
+    explanation: '"Never" が文頭に置かれると倒置が生じる。現在完了形の文脈なので"Never has + 主語 + 過去分詞"となり、has she facedが正しい。she has faced（倒置なし）、she faced（時制不一致）、did she face（過去形で現在完了の意味に合わない）はいずれも不適切。\n\n【図解】Never の倒置と時制\n　時制｜倒置の形｜例\n　現在完了｜has ＋ 主語 ＋ 過去分詞｜has she faced\n　過去｜did ＋ 主語 ＋ 原形｜did she face\n　助動詞つき｜助動詞 ＋ 主語 ＋ 原形｜could she imagine\n　⇒ 現在も続く経験なら has she faced\n　⚠ 語順を変えない she has faced は倒置になっていない。文頭が否定語なら必ず倒置する。',
     difficulty: 'advanced',
   },
 
@@ -1298,7 +1298,7 @@ export const eikenQuestions2kyu2: EikenQuestion[] = [
       { key: 'D', text: 'The studies were conducted exclusively on animals and never on humans.' },
     ],
     correctKey: 'A',
-    explanation: '本文に"most human trials have been relatively short in duration and involved small sample sizes"とあり、研究の期間の短さとサンプル数の少なさが懸念点として挙げられている。Aがこれに一致する。B・C・Dは本文の内容と矛盾する。',
+    explanation: '本文に"most human trials have been relatively short in duration and involved small sample sizes"とあり、研究の期間の短さとサンプル数の少なさが懸念点として挙げられている。Aがこれに一致する。B・C・Dは本文の内容と矛盾する。\n\n【図解】断続的断食の研究への懸念\n　観点｜本文の記述｜問題点\n　研究期間｜relatively short｜長期の影響が不明\n　参加者数｜small sample sizes｜一般化しにくい\n　結論｜さらなる検証が必要｜断定は避ける\n　⇒ 期間の短さと標本の小ささが要点\n　⚠ 「効果が一切示されていない」「動物実験のみ」は本文と矛盾。研究の限界と否定を区別する。',
     difficulty: 'standard',
   },
   {
@@ -1313,7 +1313,7 @@ export const eikenQuestions2kyu2: EikenQuestion[] = [
       { key: 'D', text: 'People who work in physically demanding jobs' },
     ],
     correctKey: 'B',
-    explanation: '本文に"individuals with a history of eating disorders, pregnant women, and people with certain medical conditions are generally advised against attempting it"と明記されている。Bがこれに一致する。A・C・Dは本文に記載がない。',
+    explanation: '本文に"individuals with a history of eating disorders, pregnant women, and people with certain medical conditions are generally advised against attempting it"と明記されている。Bがこれに一致する。A・C・Dは本文に記載がない。\n\n【図解】実践を勧められない人\n　対象｜本文の記述｜理由\n　摂食障害の既往がある人｜history of eating disorders｜再発の危険\n　妊娠中の女性｜pregnant women｜栄養の必要\n　特定の疾患がある人｜certain medical conditions｜健康リスク\n　⇒ 本文が列挙する3群に限定して読む\n　⚠ 年齢や職業による制限は本文にない。書かれていない条件を補って選ばない。',
     difficulty: 'basic',
   },
   {
@@ -1328,7 +1328,7 @@ export const eikenQuestions2kyu2: EikenQuestion[] = [
       { key: 'D', text: 'The benefits are the result of genetic factors unrelated to diet.' },
     ],
     correctKey: 'A',
-    explanation: '本文に"the benefits observed in studies may stem simply from reduced overall calorie intake rather than from the timing of meals itself"とある。Aがこれに一致する。B・C・Dは本文に記載がない。',
+    explanation: '本文に"the benefits observed in studies may stem simply from reduced overall calorie intake rather than from the timing of meals itself"とある。Aがこれに一致する。B・C・Dは本文に記載がない。\n\n【図解】効果の別解釈\n　説明｜本文の記述｜要因\n　断食の時間帯｜timing of meals｜研究者が想定した要因\n　総摂取カロリーの減少｜reduced overall calorie intake｜別の説明\n　結論｜どちらが効いたか未確定｜検証が必要\n　⇒ 摂取カロリーの減少で説明できる可能性が答え\n　⚠ 運動量や遺伝要因は本文にない。代替説明の中身を本文の語句で確認する。',
     difficulty: 'advanced',
   },
   {
@@ -1343,7 +1343,7 @@ export const eikenQuestions2kyu2: EikenQuestion[] = [
       { key: 'D', text: 'A type of renewable energy generated from plant materials' },
     ],
     correctKey: 'B',
-    explanation: '本文冒頭に"in which companies exaggerate or fabricate the environmental benefits of their products to appeal to environmentally conscious consumers"と定義されている。Bがこれに一致する。A・C・Dは本文に記載されていない。',
+    explanation: '本文冒頭に"in which companies exaggerate or fabricate the environmental benefits of their products to appeal to environmentally conscious consumers"と定義されている。Bがこれに一致する。A・C・Dは本文に記載されていない。\n\n【図解】greenwashing の定義\n　要素｜本文の記述｜内容\n　主体｜companies｜企業\n　行為｜exaggerate or fabricate｜誇張または捏造\n　対象｜environmental benefits｜環境面の利点\n　⇒ 環境性能を偽り消費者に訴える行為\n　⚠ リサイクル手法や政府の制度と混同しない。green という語感から意味を推測しない。',
     difficulty: 'basic',
   },
   {
@@ -1358,7 +1358,7 @@ export const eikenQuestions2kyu2: EikenQuestion[] = [
       { key: 'D', text: 'By requiring all products to be manufactured using only recycled materials' },
     ],
     correctKey: 'B',
-    explanation: '本文に"several countries have begun drafting stricter regulations requiring companies to substantiate environmental claims with independently verified data"とある。Bがこれに一致する。A・C・Dは本文に記載がない。',
+    explanation: '本文に"several countries have begun drafting stricter regulations requiring companies to substantiate environmental claims with independently verified data"とある。Bがこれに一致する。A・C・Dは本文に記載がない。\n\n【図解】各国政府の対応\n　施策｜本文の記述｜求められること\n　規制の整備｜drafting stricter regulations｜法制化\n　立証義務｜substantiate claims｜企業が根拠を示す\n　検証の方法｜independently verified data｜第三者による検証\n　⇒ 独立検証データによる裏づけを義務づける\n　⚠ 「環境配慮表示の全面禁止」は本文にない。規制の内容を過大に読み替えない。',
     difficulty: 'standard',
   },
   {
@@ -1373,7 +1373,7 @@ export const eikenQuestions2kyu2: EikenQuestion[] = [
       { key: 'D', text: 'Consumers refuse to buy any products labeled as environmentally friendly.' },
     ],
     correctKey: 'B',
-    explanation: '本文末尾に"greenwashing not only misleads well-intentioned buyers but also undermines genuinely sustainable businesses that must compete against rivals making unsubstantiated claims"とある。Bがこれに一致する。A・C・Dは本文に記載がない。',
+    explanation: '本文末尾に"greenwashing not only misleads well-intentioned buyers but also undermines genuinely sustainable businesses that must compete against rivals making unsubstantiated claims"とある。Bがこれに一致する。A・C・Dは本文に記載がない。\n\n【図解】誠実な企業が受ける不利益\n　構図｜本文の記述｜結果\n　偽りの主張をする企業｜unsubstantiated claims｜低コストで好印象\n　誠実な企業｜genuinely sustainable｜高コストで同じ土俵\n　帰結｜undermines｜正直者が損をする\n　⇒ 根拠なき主張と競わされる点が問題\n　⚠ 税負担や広告禁止といった制度上の話は本文にない。競争条件の不公平が論点。',
     difficulty: 'advanced',
   },
   {
@@ -1388,7 +1388,7 @@ export const eikenQuestions2kyu2: EikenQuestion[] = [
       { key: 'D', text: 'That smartphones should be banned entirely for all age groups.' },
     ],
     correctKey: 'B',
-    explanation: '本文に"framing the issue as a matter of individual discipline places too much responsibility on users, while ignoring the role that technology companies play"とある。Bがこれに一致する。A・C・Dは本文の内容と矛盾するか記載がない。',
+    explanation: '本文に"framing the issue as a matter of individual discipline places too much responsibility on users, while ignoring the role that technology companies play"とある。Bがこれに一致する。A・C・Dは本文の内容と矛盾するか記載がない。\n\n【図解】デジタルミニマリズムへの批判\n　論点｜本文の記述｜含意\n　責任の所在｜too much responsibility on users｜利用者に偏る\n　見落とし｜role that technology companies play｜企業側の設計\n　結論｜個人の自制だけでは不十分｜構造への視点が必要\n　⇒ 利用者に責任を負わせすぎる点が批判\n　⚠ 「効果がないと科学的に証明された」は本文にない。批判の中身を強め過ぎない。',
     difficulty: 'advanced',
   },
   {
@@ -1403,7 +1403,7 @@ export const eikenQuestions2kyu2: EikenQuestion[] = [
       { key: 'D', text: 'The studies were funded entirely by technology companies.' },
     ],
     correctKey: 'B',
-    explanation: '本文に"most studies have relied on self-reported data, which can be less reliable than objective behavioral measurements"とある。Bがこれに一致する。A・C・Dは本文に記載がない。',
+    explanation: '本文に"most studies have relied on self-reported data, which can be less reliable than objective behavioral measurements"とある。Bがこれに一致する。A・C・Dは本文に記載がない。\n\n【図解】初期研究の限界\n　項目｜本文の記述｜問題\n　データの取り方｜self-reported data｜自己申告\n　信頼性｜less reliable｜客観性に欠ける\n　望ましい方法｜objective behavioral measurements｜行動の客観測定\n　⇒ 自己申告に依存した点が限界\n　⚠ 資金提供元や対象年齢の問題は本文にない。限界の種類を取り違えない。',
     difficulty: 'standard',
   },
   {
@@ -1418,7 +1418,7 @@ export const eikenQuestions2kyu2: EikenQuestion[] = [
       { key: 'D', text: 'Allowing technology companies to regulate their own products without oversight.' },
     ],
     correctKey: 'B',
-    explanation: '本文に"individuals should identify which digital tools genuinely support their values and goals, and eliminate or strictly limit the rest"とある。Bがこれに一致する。A・C・Dは本文の主張と矛盾する。',
+    explanation: '本文に"individuals should identify which digital tools genuinely support their values and goals, and eliminate or strictly limit the rest"とある。Bがこれに一致する。A・C・Dは本文の主張と矛盾する。\n\n【図解】デジタルミニマリズムの実践\n　段階｜本文の記述｜行動\n　見極める｜identify which tools support values｜価値に資する道具を選ぶ\n　残す｜genuinely support goals｜必要なものは使う\n　絞る｜eliminate or strictly limit the rest｜それ以外は制限\n　⇒ 全面拒否ではなく選択的に使う\n　⚠ 「すべての技術を拒否する」は本文の主張と異なる。選択的という語を見落とさない。',
     difficulty: 'standard',
   },
   {
@@ -1433,7 +1433,7 @@ export const eikenQuestions2kyu2: EikenQuestion[] = [
       { key: 'D', text: 'It has been completely banned by international regulations.' },
     ],
     correctKey: 'B',
-    explanation: '本文に"it still emits considerable carbon dioxide and requires specialized refueling infrastructure that does not yet exist in most ports"とある。Bがこれに一致する。A・C・Dは本文の内容と矛盾する。',
+    explanation: '本文に"it still emits considerable carbon dioxide and requires specialized refueling infrastructure that does not yet exist in most ports"とある。Bがこれに一致する。A・C・Dは本文の内容と矛盾する。\n\n【図解】LNG を船舶燃料にする際の課題\n　項目｜本文の記述｜評価\n　二酸化炭素｜considerable な排出は残る｜完全な解決ではない\n　補給設備｜specialized refueling infrastructure｜多くの港で未整備\n　現状｜普及の障壁｜導入が進みにくい\n　⇒ 補給インフラの未整備が課題\n　⚠ 重油より二酸化炭素が多いとは書かれていない。比較の方向を読み違えない。',
     difficulty: 'standard',
   },
   {
@@ -1448,7 +1448,7 @@ export const eikenQuestions2kyu2: EikenQuestion[] = [
       { key: 'D', text: 'Shipping companies are not interested in reducing emissions.' },
     ],
     correctKey: 'B',
-    explanation: '本文末尾に"given the enormous capital investment required to retrofit or replace the global fleet of cargo ships"とある。Bがこれに一致する。A・C・Dは本文の内容と矛盾する。',
+    explanation: '本文末尾に"given the enormous capital investment required to retrofit or replace the global fleet of cargo ships"とある。Bがこれに一致する。A・C・Dは本文の内容と矛盾する。\n\n【図解】移行に時間がかかる理由\n　要素｜本文の記述｜規模\n　船隊の改修｜retrofit｜既存船の大改造\n　船隊の更新｜replace the global fleet｜世界規模\n　必要な資金｜enormous capital investment｜巨額\n　⇒ 巨額の設備投資が必要な点が理由\n　⚠ 「代替燃料が技術的に存在しない」は本文と矛盾。障壁が技術か資金かを区別する。',
     difficulty: 'advanced',
   },
   {
@@ -1463,7 +1463,7 @@ export const eikenQuestions2kyu2: EikenQuestion[] = [
       { key: 'D', text: 'They are illegal to use in most countries.' },
     ],
     correctKey: 'B',
-    explanation: '本文に"current production costs remain prohibitively high for widespread adoption"とある。Bがこれに一致する。A・C・Dは本文に記載がない。',
+    explanation: '本文に"current production costs remain prohibitively high for widespread adoption"とある。Bがこれに一致する。A・C・Dは本文に記載がない。\n\n【図解】アンモニアとメタノールの課題\n　項目｜本文の記述｜評価\n　排出面｜有望｜利点\n　生産コスト｜prohibitively high｜普及の障壁\n　現状｜広範な採用は困難｜実用化に時間\n　⇒ 生産コストの高さが最大の課題\n　⚠ 「輸送が危険」「法的に禁止」は本文にない。課題の種類を本文の語句で確認する。',
     difficulty: 'standard',
   },
   {
@@ -1478,7 +1478,7 @@ export const eikenQuestions2kyu2: EikenQuestion[] = [
       { key: 'D', text: 'A method used by companies to reduce their own financial losses.' },
     ],
     correctKey: 'A',
-    explanation: '本文に"the tendency for people to feel the pain of a loss roughly twice as intensely as the pleasure of an equivalent gain"と定義されている。Aがこれに一致する。B・C・Dは本文の定義と異なる。',
+    explanation: '本文に"the tendency for people to feel the pain of a loss roughly twice as intensely as the pleasure of an equivalent gain"と定義されている。Aがこれに一致する。B・C・Dは本文の定義と異なる。\n\n【図解】loss aversion の定義\n　要素｜本文の記述｜数値\n　比較の対象｜損失と同額の利益｜equivalent gain\n　感じ方の差｜損失は約2倍強く感じる｜roughly twice\n　帰結｜損失回避的な意思決定｜行動経済学の基礎概念\n　⇒ 同額でも損のほうを強く感じる傾向\n　⚠ 「あらゆるリスクを避けるべきだという信念」ではない。傾向の記述と規範を混同しない。',
     difficulty: 'standard',
   },
   {
@@ -1493,7 +1493,7 @@ export const eikenQuestions2kyu2: EikenQuestion[] = [
       { key: 'D', text: 'The process of enrolling employees in retirement savings programs automatically.' },
     ],
     correctKey: 'B',
-    explanation: '本文に"how an initial piece of information, even if arbitrary or irrelevant, can disproportionately influence subsequent judgments and estimates"とある。Bがこれに一致する。A・C・Dは本文の定義と異なる。',
+    explanation: '本文に"how an initial piece of information, even if arbitrary or irrelevant, can disproportionately influence subsequent judgments and estimates"とある。Bがこれに一致する。A・C・Dは本文の定義と異なる。\n\n【図解】anchoring effect の仕組み\n　段階｜本文の記述｜作用\n　最初の情報｜initial piece of information｜基準になる\n　情報の性質｜arbitrary or irrelevant でもよい｜無関係でも効く\n　結果｜subsequent judgments に影響｜判断が引きずられる\n　⇒ 最初の数値が後の判断を左右する現象\n　⚠ 情報が正確かどうかは無関係。無意味な数値でも効く点がこの効果の核心。',
     difficulty: 'advanced',
   },
   {
@@ -1508,7 +1508,7 @@ export const eikenQuestions2kyu2: EikenQuestion[] = [
       { key: 'D', text: 'Reducing the salaries of employees who do not save enough money.' },
     ],
     correctKey: 'B',
-    explanation: '本文末尾に"automatically enrolling employees in retirement savings plans while still allowing them to opt out"という例が挙げられている。Bがこれに一致する。A・C・Dは本文に記載がない、または矛盾する。',
+    explanation: '本文末尾に"automatically enrolling employees in retirement savings plans while still allowing them to opt out"という例が挙げられている。Bがこれに一致する。A・C・Dは本文に記載がない、または矛盾する。\n\n【図解】nudge の具体例\n　仕組み｜本文の記述｜性質\n　初期設定｜automatically enrolling｜自動加入\n　離脱の自由｜allowing them to opt out｜強制ではない\n　効果｜加入率が上がる｜選択の自由を保ったまま誘導\n　⇒ 自動加入かつ離脱可能が nudge の典型\n　⚠ 離脱を禁じる制度は nudge ではなく強制。選択の自由が残るかが判定の分かれ目。',
     difficulty: 'standard',
   },
 ];

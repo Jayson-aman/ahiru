@@ -12,7 +12,7 @@ export const eikenQuestions4kyuIdiom2: EikenQuestion[] = [
       { key: 'D', text: 'in' },
     ],
     correctKey: 'B',
-    explanation: '"come from 〜"（〜の出身である）が正解。be from 〜も同じ意味。at・of・inはcomeと組み合わせて出身地を表す言い方になりません。',
+    explanation: 'come from 〜は「〜の出身である」という意味の熟語で、be from 〜とほぼ同じ内容を表す。ここでは「私の大好きな歌手はオーストラリア出身だ」という意味になる。出身地を表すときの前置詞はfromで固定されており、atやofやinに置きかえることはできない。comeを「来る」とだけ覚えていると、現在形で出身を表すこの用法に気づきにくいので注意したい。\n\n【図解】出身と移動を表す表現\n　表現｜意味｜例\n　come from 〜｜〜の出身である｜come from Australia\n　be from 〜｜〜の出身である｜be from Australia\n　come to 〜｜〜へ来る｜come to Japan\n　go to 〜｜〜へ行く｜go to Australia\n　⇒ 出身地を表すのでfromが正解\n　⚠ 出身をたずねる定番はWhere are you from?。comeを移動の意味だけで覚えていると現在形の用法を見落とす。',
     difficulty: 'basic',
   },
   {
@@ -25,7 +25,7 @@ export const eikenQuestions4kyuIdiom2: EikenQuestion[] = [
       { key: 'D', text: 'listen' },
     ],
     correctKey: 'D',
-    explanation: '"listen to 〜"（〜を聞く）が正解。音楽やラジオを注意して聞くときはlisten toを使います。seeとwatchは「見る」でtoと組み合わせてこの意味にならず、soundは「〜に聞こえる」という意味です。',
+    explanation: 'listen to 〜は「〜を（注意して）聞く」という意味の熟語で、電車の中で毎朝音楽を聞くという文脈に合う。listenは自動詞なので、聞く対象を示すときには前置詞toが必要になる。一方hearは他動詞で「自然に聞こえる」という意味を表し、前置詞をとらない。seeとwatchはどちらも「見る」で、toと組み合わせても音楽を聞く意味にはならない。soundは「〜に聞こえる」である。\n\n【図解】聞く 見る を表す動詞\n　動詞｜意味｜前置詞\n　listen to 〜｜注意して聞く｜to が必要\n　hear 〜｜自然に聞こえる｜前置詞なし\n　watch 〜｜じっと見る｜前置詞なし\n　see 〜｜自然に目に入る｜前置詞なし\n　⇒ 空所の後ろにtoがあるのでlistenが正解\n　⚠ listenは自動詞、hearは他動詞。listen musicやhear to musicのように前置詞を取りちがえるのが定番の誤り。',
     difficulty: 'basic',
   },
   {
@@ -38,7 +38,7 @@ export const eikenQuestions4kyuIdiom2: EikenQuestion[] = [
       { key: 'D', text: 'under' },
     ],
     correctKey: 'A',
-    explanation: '"look at 〜"（〜を見る）が正解。絵や写真に視線を向けるときの表現です。look into（調査する）は絵を見せる場面に合わず、fromやunderでは「見る」対象を表せません。',
+    explanation: 'look at 〜は「〜に目を向ける・〜を見る」という意味の熟語で、絵を見てほしいという場面に合う。lookは自動詞なので、見る対象を示すときには前置詞atが必要になる。lookは後ろに置く前置詞によって意味が大きく変わり、look forは「探す」、look intoは「調査する」、look afterは「世話をする」となる。fromやunderでは見る対象を示せない。\n\n【図解】look を使う表現\n　表現｜意味｜使う場面\n　look at 〜｜〜に目を向ける｜絵や写真\n　look for 〜｜〜を探す｜なくし物\n　look into 〜｜調査する｜事件や原因\n　look after 〜｜世話をする｜子どもや動物\n　⇒ 絵に視線を向けるのでlook at\n　⚠ lookは前置詞ごとに意味が変わる。look intoを「中を見る」とだけ覚えていると、調査の意味で使われたときに読み違える。',
     difficulty: 'basic',
   },
   {
@@ -51,7 +51,7 @@ export const eikenQuestions4kyuIdiom2: EikenQuestion[] = [
       { key: 'D', text: 'for shop' },
     ],
     correctKey: 'C',
-    explanation: '"go shopping"（買い物に行く）が正解。「go + 動詞のing形」で「〜しに行く」を表します。go to shoppingとtoを入れるのは誤り。go swimming（泳ぎに行く）、go fishing（釣りに行く）も同じ形です。',
+    explanation: 'go shoppingは「買い物に行く」という意味の表現で、go + 動詞のing形で「〜しに行く」を表す形である。toを入れてgo to shoppingとするのは誤りで、これが最も多いミスになる。同じ形の表現にgo swimming（泳ぎに行く）、go fishing（釣りに行く）、go camping（キャンプに行く）があり、いずれも遊びやスポーツに出かけるときに使われる。場所を示すときはgo to the mallとtoが必要になる。\n\n【図解】go の後ろの形\n　表現｜意味｜形\n　go shopping｜買い物に行く｜go + 動名詞\n　go swimming｜泳ぎに行く｜go + 動名詞\n　go fishing｜釣りに行く｜go + 動名詞\n　go to school｜学校へ行く｜go to + 場所\n　⇒ 活動を表すのでgo shoppingが正解\n　⚠ go to shoppingのようにtoを入れるのは誤り。場所ならgo to、活動ならgo 〜ingと使い分ける。',
     difficulty: 'basic',
   },
   {
@@ -64,7 +64,7 @@ export const eikenQuestions4kyuIdiom2: EikenQuestion[] = [
       { key: 'D', text: 'play' },
     ],
     correctKey: 'C',
-    explanation: '"take a bath"（ふろに入る）が正解。do・go・playはbathと組み合わせて「入浴する」という意味を作れません。take a shower（シャワーを浴びる）も同じtakeを使います。',
+    explanation: 'take a bathは「ふろに入る」という意味の表現で、動詞はtakeを使う。「私はいつも夕食の前にふろに入る」という意味になる。doやgoやplayをbathと組み合わせて入浴を表すことはできない。同じくtakeを使う表現にtake a shower（シャワーを浴びる）やtake a walk（散歩する）がある。イギリス英語ではhave a bathとも言うが、英検ではtakeを使う形が定番である。\n\n【図解】動詞と名詞の決まった組み合わせ\n　表現｜意味｜使う動詞\n　take a bath｜ふろに入る｜take\n　take a shower｜シャワーを浴びる｜take\n　take a walk｜散歩する｜take\n　have breakfast｜朝食をとる｜have\n　⇒ bathと組む動詞はtake\n　⚠ do a bathやplay a bathとは言わない。動詞と名詞の組み合わせは表現ごとに決まっているので丸ごと覚える。',
     difficulty: 'basic',
   },
   {
@@ -77,7 +77,7 @@ export const eikenQuestions4kyuIdiom2: EikenQuestion[] = [
       { key: 'D', text: 'visit' },
     ],
     correctKey: 'A',
-    explanation: '"get to 〜"（〜に着く・たどり着く）が正解。道をたずねる定番表現です。arriveはarrive at、reachは前置詞なしでreach the museumと使うため、toとは組み合わせません。visitも前置詞不要の動詞です。',
+    explanation: 'get to 〜は「〜に着く・たどり着く」という意味の表現で、How can I get to 〜?は道をたずねるときの定番の言い方である。空所の直後にtoがあることが最大の手がかりになる。arriveはarrive at the museumのようにatをとり、reachとvisitはどちらも他動詞なので前置詞を置かずに場所を続ける。したがってtoと組み合わせられるのはgetだけである。\n\n【図解】到着を表す動詞と前置詞\n　動詞｜必要な前置詞｜例\n　get｜to｜get to the museum\n　arrive｜at / in｜arrive at the station\n　reach｜前置詞なし｜reach the museum\n　visit｜前置詞なし｜visit the museum\n　⇒ 空所の後ろがtoなのでgetが正解\n　⚠ reachやvisitは他動詞なので前置詞不要。reach to the museumのようにtoを付けるのは誤りである。',
     difficulty: 'standard',
   },
   {
@@ -90,7 +90,7 @@ export const eikenQuestions4kyuIdiom2: EikenQuestion[] = [
       { key: 'D', text: 'get' },
     ],
     correctKey: 'D',
-    explanation: '"get off 〜"（〜から降りる）が正解。電車やバスから降りるときに使います。take off（ぬぐ・離陸する）、put off（延期する）、turn off（消す）はどれも意味が異なります。反対のget on（乗る）も覚えましょう。',
+    explanation: 'get off 〜は「（電車やバスから）降りる」という意味の句動詞で、次の駅で電車を降りるという文脈に合う。反対はget on（乗る）である。take offは「脱ぐ・離陸する」、put offは「延期する」、turn offは「電源を切る」で、いずれも意味が異なる。乗り物によって前置詞が変わり、電車やバスはon / off、車やタクシーはget in / get out ofを使う点も押さえておきたい。\n\n【図解】乗り降りの表現\n　表現｜意味｜対象の乗り物\n　get off 〜｜降りる｜電車・バス\n　get on 〜｜乗る｜電車・バス\n　get in 〜｜乗りこむ｜車・タクシー\n　get out of 〜｜降りる｜車・タクシー\n　⇒ 電車から降りるのでget off\n　⚠ 電車はon / off、車はin / out ofと前置詞が変わる。take offやturn offと形が似ているので動詞から確認する。',
     difficulty: 'basic',
   },
   {
@@ -103,7 +103,7 @@ export const eikenQuestions4kyuIdiom2: EikenQuestion[] = [
       { key: 'D', text: 'look' },
     ],
     correctKey: 'B',
-    explanation: '"come back"（帰ってくる・もどってくる）が正解。出張から明日帰ってくるという文です。take back（返す）、put back（もどして置く）、look back（ふり返る）は人が帰宅する意味になりません。',
+    explanation: 'come backは「帰ってくる・もどってくる」という意味の句動詞で、父が明日出張から帰ってくるという文脈に合う。backには「元の場所へ」というイメージがある。take backは「返す・取りもどす」、put backは「元にもどして置く」、look backは「ふり返る」で、いずれも人が帰宅する意味にはならない。話し手のいる場所へもどるならcome back、離れた場所へもどるならgo backを使う。\n\n【図解】back を使う句動詞\n　表現｜意味｜動くもの\n　come back｜帰ってくる｜人（話し手の方へ）\n　go back｜もどっていく｜人（話し手から離れて）\n　take back｜返す・取りもどす｜物\n　bring back｜持ち帰る｜物\n　⇒ 家に帰ってくるのでcome back\n　⚠ comeとgoは方向で使い分ける。話し手のいる場所へ向かうならcome、離れていくならgoになる。',
     difficulty: 'basic',
   },
   {
@@ -116,7 +116,7 @@ export const eikenQuestions4kyuIdiom2: EikenQuestion[] = [
       { key: 'D', text: 'hello' },
     ],
     correctKey: 'D',
-    explanation: '"say hello to 〜"（〜によろしく伝える）が正解。別れぎわのあいさつとしてよく使われます。nice・good・happyはsayの目的語としてこの決まり文句を作れません。',
+    explanation: 'say hello to 〜は「〜によろしくと伝える」という意味の決まった表現で、別れぎわに家族や友人への伝言としてよく使われる。文末のfor meは「私に代わって」を意味し、この語句があることで伝言だとはっきりわかる。nice・good・happyはsayの目的語としてこの決まり文句をつくれない。もう少していねいに言うならgive my best to 〜という表現もある。\n\n【図解】あいさつと伝言の表現\n　表現｜意味｜使う場面\n　say hello to 〜｜〜によろしく伝える｜別れぎわ\n　say goodbye to 〜｜〜に別れを告げる｜別れ\n　give my best to 〜｜〜によろしく｜ていねいな言い方\n　thank 人 for 〜｜〜のことで礼を言う｜お礼\n　⇒ for meがあるので伝言の表現が入る\n　⚠ for meは「私に代わって」。この語句を見落とすと、単なるあいさつと取りちがえて意味がずれる。',
     difficulty: 'standard',
   },
   {
@@ -129,7 +129,7 @@ export const eikenQuestions4kyuIdiom2: EikenQuestion[] = [
       { key: 'D', text: 'well' },
     ],
     correctKey: 'C',
-    explanation: '"do one\'s best"（全力をつくす・がんばる）が正解。「明日の試合でベストをつくします」という意味です。do my goodやdo my wellという言い方はなく、betterではこの決まり文句になりません。',
+    explanation: 'do my bestは「全力をつくす・ベストをつくす」という意味の決まった表現で、明日の試合でがんばりますという文脈に合う。bestの前には所有格を置き、主語に合わせてdo your bestやdo his bestのように変える。bestは最上級だがtheは付けない点も重要である。do my goodやdo my wellという言い方はなく、betterではこの決まり文句にならない。try my bestもほぼ同じ意味で使える。\n\n【図解】do を使う決まった表現\n　表現｜意味｜形の注意\n　do my best｜全力をつくす｜所有格を入れる\n　try my best｜全力でやってみる｜同じ意味\n　do well｜うまくやる｜副詞wellを使う\n　do my homework｜宿題をする｜目的語は名詞\n　⇒ 全力をつくすという意味なのでbestが正解\n　⚠ bestは最上級だがtheを付けず所有格を使う。do the bestではなくdo my bestが正しい形になる。',
     difficulty: 'basic',
   },
   {
@@ -142,7 +142,7 @@ export const eikenQuestions4kyuIdiom2: EikenQuestion[] = [
       { key: 'D', text: 'made' },
     ],
     correctKey: 'B',
-    explanation: '"have a good time"（楽しい時間を過ごす）が正解で、過去形はhad。took・went・madeはa good timeと組み合わせて「楽しく過ごす」という意味を作れません。Have a good time!（楽しんできてね）というあいさつでも使います。',
+    explanation: 'have a good timeは「楽しい時間を過ごす」という意味の表現で、ここでは過去形のhadになる。「私たちは昨日の学園祭で楽しく過ごした」という意味である。組み合わせる動詞はhaveで、tookやwentやmadeでは同じ意味をつくれない。別れぎわのHave a good time!（楽しんできてね）というあいさつでも使われる。have funもほぼ同じ意味の表現である。\n\n【図解】決まった動詞と名詞の組み合わせ\n　表現｜意味｜使う動詞\n　have a good time｜楽しく過ごす｜have\n　have fun｜楽しむ｜have\n　take a picture｜写真をとる｜take\n　make friends｜友達になる｜make\n　⇒ a good timeと組む動詞はhave\n　⚠ 動詞と名詞の相性は表現ごとに決まっている。日本語で「時間をとる」と考えてtakeを選ぶのが定番の誤り。',
     difficulty: 'basic',
   },
   {
@@ -155,7 +155,7 @@ export const eikenQuestions4kyuIdiom2: EikenQuestion[] = [
       { key: 'D', text: 'few' },
     ],
     correctKey: 'A',
-    explanation: '"a lot of 〜"（たくさんの〜）が正解。数えられる名詞にも数えられない名詞にも使える便利な表現です。many・much・fewは「a 〜 of」の形では使いません。',
+    explanation: 'a lot of 〜は「たくさんの〜」という意味の表現で、数えられる名詞にも数えられない名詞にも使える便利な言い方である。空所の前にaがあるので、a 〜 ofの形になる語しか入らず、lotが正解になる。manyは数えられる名詞、muchは数えられない名詞に付ける形容詞で、a many ofやa much ofという形はない。a few 〜も同様に、a few ofの形ではこの文に入らない。\n\n【図解】数量を表す表現の使い分け\n　表現｜結びつく名詞｜例\n　a lot of 〜｜可算・不可算のどちらも｜a lot of books\n　many 〜｜数えられる名詞｜many books\n　much 〜｜数えられない名詞｜much water\n　a few 〜｜数えられる名詞｜a few books\n　⇒ 空所の前にaがあるのでlotが入る\n　⚠ manyやmuchはa 〜 ofの形をとらない。空所の前後にある冠詞や前置詞から入る語を絞りこむ。',
     difficulty: 'basic',
   },
   {
@@ -168,7 +168,7 @@ export const eikenQuestions4kyuIdiom2: EikenQuestion[] = [
       { key: 'D', text: 'For' },
     ],
     correctKey: 'A',
-    explanation: '"Of course."（もちろんです）が正解。相手のお願いを快く受け入れるときの決まり文句です。On・In・Forではこの表現を作れません。Go ahead.（どうぞ）とセットでよく使われます。',
+    explanation: 'Of course.は「もちろんです」という意味の決まった表現で、相手の頼みを快く受け入れるときに使う。ここではすわってもいいかという問いに対する快諾になっている。ofの部分を他の前置詞に変えることはできず、On courseやIn courseという表現は存在しない。続くGo ahead.は「どうぞ」と行動をうながす表現で、Of course.とセットでよく使われる。\n\n【図解】快諾を表す表現\n　表現｜意味｜使う場面\n　Of course｜もちろんです｜快く応じる\n　Sure｜いいですよ｜気軽に応じる\n　No problem｜問題ありません｜応じる\n　Go ahead｜どうぞ｜行動をうながす\n　⇒ 依頼を受け入れる返事なのでOf course\n　⚠ Of courseのofは決まった形で置きかえられない。断るときはI am sorry, but 〜と別の言い方になる。',
     difficulty: 'basic',
   },
   {
@@ -181,7 +181,7 @@ export const eikenQuestions4kyuIdiom2: EikenQuestion[] = [
       { key: 'D', text: 'in' },
     ],
     correctKey: 'B',
-    explanation: '"for the first time"（初めて）が正解。「去年の冬、初めてスキーに行った」という文です。at・on・inはthe first timeと組み合わせて「初めて」という意味の熟語になりません。',
+    explanation: 'for the first timeは「初めて」という意味の熟語で、去年の冬に初めてスキーに行ったという文脈に合う。前置詞はforで固定されており、atやonやinには置きかえられない。よく似たat firstは「最初は」という意味で、後で状況が変わることを含む表現なので意味が異なる。first of allは「まず第一に」と順序を示す表現である。前置詞ひとつで意味が変わる典型例である。\n\n【図解】first を使う表現\n　表現｜意味｜使う場面\n　for the first time｜初めて｜初めての経験\n　at first｜最初は｜後で変化する\n　first of all｜まず第一に｜順序を示す\n　at the same time｜同時に｜同時進行\n　⇒ 初めての経験を表すのでfor the first time\n　⚠ for the first timeとat firstの取りちがえが定番。前者は経験の回数、後者は時間の経過を表す。',
     difficulty: 'standard',
   },
   {
@@ -194,7 +194,7 @@ export const eikenQuestions4kyuIdiom2: EikenQuestion[] = [
       { key: 'D', text: 'very' },
     ],
     correctKey: 'C',
-    explanation: '"right now"（今すぐ）が正解。「暗くなってきたから今すぐ帰ってきなさい」という文です。just now は「たった今（過去）」の意味で命令文には合わず、only nowやvery nowという言い方はありません。',
+    explanation: 'right nowは「今すぐ」という意味の熟語で、暗くなってきたからすぐ帰ってきなさいという命令文に合う。rightには「ちょうど・すぐに」と強調する副詞の用法があり、right hereやright thereのようにも使う。just nowは「たった今」という意味で少し前の過去を指すため、これからの行動をうながす命令文には使えない。only nowやvery nowという言い方は存在しない。\n\n【図解】now を使う表現\n　表現｜意味｜指す時点\n　right now｜今すぐ｜これからの行動\n　just now｜たった今｜少し前の過去\n　right away｜すぐに｜これからの行動\n　for now｜今のところ｜当面\n　⇒ 命令文で急がせるのでright now\n　⚠ just nowは過去のことを指すので命令文には使えない。同じ「今」でも指す時点が違う点が最大の注意点。',
     difficulty: 'standard',
   },
   {
@@ -207,7 +207,7 @@ export const eikenQuestions4kyuIdiom2: EikenQuestion[] = [
       { key: 'D', text: 'at' },
     ],
     correctKey: 'D',
-    explanation: '"at night"（夜に）が正解。夜はat nightと決まった言い方をします。in the morning／in the afternoon／in the eveningはinを使うのに、nightだけatを使う点に注意しましょう。',
+    explanation: 'at nightは「夜に」という意味の決まった言い方で、前置詞はatを使う。朝・午後・夕方はin the morning、in the afternoon、in the eveningとinを使うのに、夜だけatになるという点が最大の注意点である。同じくatを使う時の表現にat noon（正午に）やat midnight（真夜中に）がある。all dayは「一日中」で、ねこが昼は寝て夜に遊ぶという対比になっている。\n\n【図解】時を表す語と前置詞\n　時を表す語｜前置詞｜例\n　night｜at｜at night\n　morning｜in｜in the morning\n　afternoon｜in｜in the afternoon\n　noon｜at｜at noon\n　⇒ 夜を表すのでat nightが正解\n　⚠ 夜だけatになる点が定番のひっかけ。in the nightという形もあるが、特定の夜の出来事を指す別の言い方である。',
     difficulty: 'basic',
   },
   {
@@ -220,7 +220,7 @@ export const eikenQuestions4kyuIdiom2: EikenQuestion[] = [
       { key: 'D', text: 'after' },
     ],
     correctKey: 'D',
-    explanation: '"after school"（放課後に）が正解。「今日の放課後にバスケットボールの練習をしよう」という文です。on・under・alongはschoolと組み合わせて「放課後」という意味になりません。before school（始業前に）も覚えましょう。',
+    explanation: 'after schoolは「放課後に」という意味の決まった表現で、今日の放課後にバスケットボールを練習しようという文脈に合う。このschoolには冠詞を付けないのが原則で、本来の目的で使う場所を表すときは無冠詞になるという規則にしたがっている。on・under・alongをschoolと組み合わせて放課後の意味を表すことはできない。反対にbefore schoolなら「始業前に」となる。\n\n【図解】school を使う表現と冠詞\n　表現｜意味｜冠詞\n　after school｜放課後に｜付けない\n　before school｜始業前に｜付けない\n　at school｜学校で｜付けない\n　after the class｜その授業の後で｜付ける\n　⇒ 放課後を表すのでafter school\n　⚠ after the schoolとtheを付けると建物としての学校を指す。無冠詞のschoolは活動としての学校を表す。',
     difficulty: 'basic',
   },
   {
@@ -233,7 +233,7 @@ export const eikenQuestions4kyuIdiom2: EikenQuestion[] = [
       { key: 'D', text: 'head' },
     ],
     correctKey: 'A',
-    explanation: '"in front of 〜"（〜の前に）が正解。場所を表す重要な熟語です。forward（前方へ）、face（顔）、head（頭）は「in 〜 of」の形でこの意味を作れません。反対のbehind（〜の後ろに）とセットで覚えましょう。',
+    explanation: 'in front of 〜は「〜の前に」という意味の熟語で、3語でひとつの前置詞のように働く。背の高い男性がドアの前に立っていたという意味になる。frontをforwardやfaceやheadに置きかえることはできない。反対の意味はbehind（〜の後ろに）で、こちらは1語の前置詞である。位置を表す表現としてbeside（〜のそばに）やbetween A and B（AとBの間に）も合わせて覚えたい。\n\n【図解】位置を表す表現\n　表現｜意味｜位置関係\n　in front of 〜｜〜の前に｜正面\n　behind 〜｜〜の後ろに｜背面\n　beside 〜｜〜のそばに｜横\n　between A and B｜AとBの間に｜2つのものの間\n　⇒ ドアの正面に立っているのでin front of\n　⚠ frontを形の似たforwardやfaceに置きかえることはできない。3語でひとまとまりの熟語として覚える。',
     difficulty: 'basic',
   },
   {
@@ -246,7 +246,7 @@ export const eikenQuestions4kyuIdiom2: EikenQuestion[] = [
       { key: 'D', text: 'on' },
     ],
     correctKey: 'C',
-    explanation: '"over there"（あそこに・向こうに）が正解。少しはなれた場所を指すときの表現です。above there・up there・on thereは「あそこに」という決まった言い方として使いません（up thereは「あの上に」と高い場所を指す別の表現です）。',
+    explanation: 'over thereは「あそこに・向こうに」という意味の表現で、少し離れた場所を指すときに使う。あの大きな木が見えますかという文脈に合う。above thereやon thereという言い方はない。up thereは「あの上に」という意味で高い場所を指す別の表現なので、水平方向に離れた木を指すこの文には合わない。反対に手元を指すときはright hereと言う。\n\n【図解】場所を指す表現\n　表現｜意味｜指す方向\n　over there｜あそこに｜水平方向に離れた所\n　right here｜すぐここに｜手元\n　up there｜あの上に｜高い所\n　down there｜あの下に｜低い所\n　⇒ 少し離れた木を指すのでover there\n　⚠ up thereは高さを指す表現。離れた場所を指すover thereと混同すると、位置関係を取りちがえる。',
     difficulty: 'basic',
   },
   {
@@ -259,7 +259,7 @@ export const eikenQuestions4kyuIdiom2: EikenQuestion[] = [
       { key: 'D', text: 'one each' },
     ],
     correctKey: 'B',
-    explanation: '"each other"（おたがい）が正解。「エミとリサはよくおたがいの宿題を手伝い合う」という文です。every other（1つおきの）、each one（それぞれ）、one eachは「おたがいを」という目的語になりません。',
+    explanation: 'each otherは「おたがい」という意味の代名詞で、動詞や前置詞の目的語として使う。「エミとリサはよくおたがいの宿題を手伝い合う」という意味になる。every otherは「1つおきの」という形容詞、each oneは「それぞれ1つ」という表現で、おたがいという意味にはならない。one anotherもeach otherとほぼ同じ意味で使え、3人以上のときによく用いられる。\n\n【図解】each と other を使う表現\n　表現｜意味｜働き\n　each other｜おたがいを｜目的語になる代名詞\n　one another｜おたがいを｜each otherと同義\n　every other｜1つおきの｜形容詞\n　each one｜それぞれ1つ｜主語や目的語\n　⇒ 助け合う相手を表すのでeach other\n　⚠ each otherは代名詞なので主語にはならない。Each other help 〜という語順は誤りである。',
     difficulty: 'standard',
   },
   {
@@ -272,7 +272,7 @@ export const eikenQuestions4kyuIdiom2: EikenQuestion[] = [
       { key: 'D', text: 'about' },
     ],
     correctKey: 'B',
-    explanation: '"help + 人 + with 〜"（人の〜を手伝う）が正解。「理科の宿題を手伝ってくれる？」という文です。of・at・aboutはhelpと組み合わせて「〜を手伝う」という形を作れません。',
+    explanation: 'help + 人 + with 〜は「人の〜を手伝う」という形で、前置詞はwithを使う。「理科の宿題を手伝ってくれる」という意味になる。helpの直後に来るのは手伝う相手すなわち人で、手伝う内容はwithの後ろに置く。help my homeworkのように物を直接続けるのは誤りである。help 人 doという形もあり、こちらは手伝う行為を動詞の原形で示す。\n\n【図解】help の後ろの形\n　表現｜意味｜後ろの形\n　help 人 with 〜｜人の〜を手伝う｜名詞\n　help 人 do｜人が〜するのを手伝う｜動詞の原形\n　help 人 to do｜人が〜するのを手伝う｜to不定詞\n　help yourself｜自由に取って食べる｜再帰代名詞\n　⇒ 手伝う内容を示すのでwithが正解\n　⚠ helpの直後は人。help my homeworkのように物を置くのが定番の誤りで、内容はwithの後ろに置く。',
     difficulty: 'basic',
   },
   {
@@ -285,7 +285,7 @@ export const eikenQuestions4kyuIdiom2: EikenQuestion[] = [
       { key: 'D', text: 'to' },
     ],
     correctKey: 'D',
-    explanation: '"be kind to 〜"（〜に親切にする）が正解。「電車ではお年寄りに親切にすべきだ」という文です。kindの後ろに人を続けるときはtoを使います。at・with・forは「〜に対して親切」という意味を表せません。',
+    explanation: 'be kind to 〜は「〜に親切にする」という意味の熟語で、電車ではお年寄りに親切にすべきだという文脈に合う。kindの後ろに親切にする相手を続けるときは前置詞toを使う。atやwithやforに置きかえることはできない。同じくtoをとる表現にbe nice to 〜がある。なお、It is kind of you to help me.のように人の性質を評価する構文ではofを使うので、形を区別しておきたい。\n\n【図解】形容詞と結びつく前置詞\n　表現｜前置詞｜意味\n　be kind to 〜｜to｜〜に親切にする\n　be nice to 〜｜to｜〜に優しくする\n　be angry with 〜｜with｜〜に腹を立てる\n　be good at 〜｜at｜〜が得意である\n　⇒ 親切にする相手を示すのでto\n　⚠ It is kind of you 〜のofは別の構文。相手を示すtoと、人の性質を評価するofを混同しないこと。',
     difficulty: 'basic',
   },
   {
@@ -298,7 +298,7 @@ export const eikenQuestions4kyuIdiom2: EikenQuestion[] = [
       { key: 'D', text: 'by' },
     ],
     correctKey: 'A',
-    explanation: '"be famous for 〜"（〜で有名だ）が正解。「京都は古いお寺で有名です」という文です。有名である理由・名物はforで表します。with・to・byはこの意味の熟語を作れません。',
+    explanation: 'be famous for 〜は「〜で有名である」という意味の熟語で、有名である理由や名物を示すときに使う。京都は古い寺で有名だという意味になる。前置詞はforで固定されており、withやtoやbyには置きかえられない。よく似たbe famous as 〜は「〜として有名である」という意味で、肩書や資格を示すときに使うので、forとasの使い分けが重要になる。\n\n【図解】有名 に関する表現\n　表現｜前置詞｜示す内容\n　be famous for 〜｜for｜名物や理由\n　be famous as 〜｜as｜肩書や資格\n　be known to 〜｜to｜知っている人々\n　be proud of 〜｜of｜誇りに思う対象\n　⇒ 寺という名物を示すのでfor\n　⚠ forは名物や理由、asは肩書。He is famous as a singer.とHe is famous for his songs.は意味が異なる。',
     difficulty: 'standard',
   },
   {
@@ -311,7 +311,7 @@ export const eikenQuestions4kyuIdiom2: EikenQuestion[] = [
       { key: 'D', text: 'for' },
     ],
     correctKey: 'C',
-    explanation: '"be different from 〜"（〜と違う）が正解。「私の考えはあなたのと違っていた」という文です。differentとセットになる前置詞はfromです。同じ意味の表現the same as 〜（〜と同じ）も覚えましょう。',
+    explanation: 'be different from 〜は「〜と違う」という意味の熟語で、前置詞はfromで固定されている。「私の考えはあなたのと違っていた」という意味になる。日本語では「〜と違う」と言うため、withやtoを選びたくなるが、英語ではfromを使う。反対の意味を表すのはbe the same as 〜（〜と同じ）で、こちらはasをとる。yoursはyour ideaの代わりに使われている所有代名詞である。\n\n【図解】比べる表現と前置詞\n　表現｜意味｜前置詞\n　be different from 〜｜〜と違う｜from\n　be the same as 〜｜〜と同じ｜as\n　be similar to 〜｜〜に似ている｜to\n　differ from 〜｜〜と異なる｜from\n　⇒ 違いを表すのでfromが正解\n　⚠ 日本語の「〜と」につられてwithやtoを選ぶのが定番の誤り。differentはfromで固定と覚える。',
     difficulty: 'standard',
   },
   {
@@ -324,7 +324,7 @@ export const eikenQuestions4kyuIdiom2: EikenQuestion[] = [
       { key: 'D', text: 'much' },
     ],
     correctKey: 'C',
-    explanation: '"be full of 〜"（〜でいっぱいだ）が正解。「箱は古いおもちゃでいっぱいだった」という文です。filledを使う場合はbe filled with 〜とwithが必要なので、ofとは組み合わせられません。many・muchは形容詞の位置に置けません。',
+    explanation: 'be full of 〜は「〜でいっぱいである」という意味の熟語で、箱が古いおもちゃでいっぱいだったという意味になる。fullは形容詞なのでbe動詞の後ろに置き、中身を示す前置詞はofになる。よく似たbe filled with 〜も「〜で満たされている」という意味だが、こちらは前置詞がwithになるので、ofと組み合わせることはできない。manyやmuchは形容詞なのでこの位置には置けない。\n\n【図解】いっぱい を表す表現と前置詞\n　表現｜前置詞｜意味\n　be full of 〜｜of｜〜でいっぱいである\n　be filled with 〜｜with｜〜で満たされている\n　be covered with 〜｜with｜〜でおおわれている\n　be made of 〜｜of｜〜でできている\n　⇒ 空所の後ろがofなのでfullが正解\n　⚠ fullはof、filledはwithと前置詞が変わる。同じ「いっぱい」の意味でも組み合わせを取りちがえない。',
     difficulty: 'standard',
   },
   {
@@ -337,7 +337,7 @@ export const eikenQuestions4kyuIdiom2: EikenQuestion[] = [
       { key: 'D', text: 'inside' },
     ],
     correctKey: 'A',
-    explanation: '"between A and B"（AとBの間に）が正解。「銀行は本屋とカフェの間にあります」という文です。amongは3つ以上のものの間に使い、duringは時間、insideは「〜の中に」でA and Bの形と合いません。',
+    explanation: 'between A and Bは「AとBの間に」という意味の表現で、2つのものにはさまれた位置を表す。「銀行は本屋とカフェの間にあります」という意味になる。amongは3つ以上のものの間を表すので、A and Bという形とは組み合わせられない。duringは「〜の間じゅう」と時間の幅を表す前置詞、insideは「〜の中に」という空間の内側を表す語で、いずれもこの文には合わない。\n\n【図解】間 を表す語の使い分け\n　語｜意味｜対象の数や種類\n　between A and B｜AとBの間に｜2つのもの\n　among 〜｜〜の間に｜3つ以上の集団\n　during 〜｜〜の間じゅう｜時間の幅\n　inside 〜｜〜の中に｜空間の内側\n　⇒ A and Bの形があるのでbetweenが正解\n　⚠ betweenとamongは数で使い分ける。and で2つ並んでいる形が見えたら必ずbetweenを選ぶ。',
     difficulty: 'basic',
   },
   {
@@ -350,7 +350,7 @@ export const eikenQuestions4kyuIdiom2: EikenQuestion[] = [
       { key: 'D', text: 'far' },
     ],
     correctKey: 'D',
-    explanation: '"far from 〜"（〜から遠い）が正解。not far from 〜で「〜から遠くない」となります。nearは「〜の近くに」でfromと組み合わせず、long（長い）、high（高い）は距離を表すこの形では使いません。',
+    explanation: 'far from 〜は「〜から遠い」という意味の表現で、not far from 〜とすると「〜から遠くない」となる。歩いて行けるという後半の内容とも合う。nearはそれ自体が前置詞なのでnear from 〜とは言えず、near the stationの形で使う。longは長さ、highは高さを表す形容詞なので、駅からの距離を表すこの形には入らない。\n\n【図解】距離を表す表現\n　表現｜意味｜前置詞\n　far from 〜｜〜から遠い｜from が必要\n　near 〜｜〜の近くに｜前置詞なし\n　close to 〜｜〜に近い｜to が必要\n　next to 〜｜〜のとなりに｜to が必要\n　⇒ 空所の後ろがfromなのでfarが正解\n　⚠ nearは前置詞そのものなのでnear from 〜とは言えない。closeは形容詞なのでtoが必要と、形で区別する。',
     difficulty: 'basic',
   },
   {
@@ -363,7 +363,7 @@ export const eikenQuestions4kyuIdiom2: EikenQuestion[] = [
       { key: 'D', text: 'Why' },
     ],
     correctKey: 'B',
-    explanation: '"How about you?"（あなたはどう？）が正解。自分のことを言ったあとに相手にも同じ質問を返す表現です。Who・Where・Whyはaboutと組み合わせてこの決まり文句を作れません。',
+    explanation: 'How about you?は「あなたはどうですか」という意味の決まった表現で、自分のことを述べた後に同じ質問を相手に返すときに使う。ここでは土曜日はひまだと言ったうえで、相手の予定をたずねている。WhoやWhereやWhyをaboutと組み合わせてこの決まり文句をつくることはできない。How about 〜ingとすれば「〜しませんか」という提案の表現になる。\n\n【図解】How about を使う表現\n　表現｜意味｜使う場面\n　How about you｜あなたはどう｜同じ質問を返す\n　How about 〜ing｜〜しませんか｜提案\n　What about 〜｜〜はどう｜ほぼ同義\n　Why not｜そうしよう｜提案への賛成\n　⇒ 相手に聞き返す場面なのでHow about you\n　⚠ aboutは前置詞なので後ろは名詞か動名詞。How about go?のように原形を置くのは誤りである。',
     difficulty: 'basic',
   },
   {
@@ -376,7 +376,7 @@ export const eikenQuestions4kyuIdiom2: EikenQuestion[] = [
       { key: 'D', text: 'would' },
     ],
     correctKey: 'D',
-    explanation: '"would like to 〜"（〜したいのですが）が正解。want toよりていねいな言い方です。will like to・am like to・do like toという形は使いません。短縮形I\'d like to 〜もよく使われます。',
+    explanation: 'would like to 〜は「〜したいのですが」という意味の表現で、want toよりもていねいな言い方になる。ここではテニス部に入りたいという希望をひかえめに伝えている。willやamやdoをlikeの前に置いてこの意味をつくることはできない。会話ではI would like toを短縮した形もよく使われる。相手を誘うときはWould you like to 〜?という形になる。\n\n【図解】希望を伝える表現\n　表現｜意味｜ていねいさ\n　would like to do｜〜したいのですが｜ていねい\n　want to do｜〜したい｜ふつう\n　would like 名詞｜〜がほしいのですが｜ていねい\n　Would you like to do｜〜しませんか｜勧誘\n　⇒ ていねいな希望を表すのでwould\n　⚠ will like toやam like toという形は存在しない。likeの前に置けるのは助動詞wouldだけである。',
     difficulty: 'standard',
   },
   {
@@ -389,7 +389,7 @@ export const eikenQuestions4kyuIdiom2: EikenQuestion[] = [
       { key: 'D', text: 'turn' },
     ],
     correctKey: 'C',
-    explanation: '"give up"（あきらめる）が正解。「あきらめないで！きみならできる！」というはげましの文です。take up（始める）、put up（掲げる）、turn up（現れる・音量を上げる）は意味が異なります。',
+    explanation: 'give up は「あきらめる」という意味の句動詞で、Do not give up!（あきらめないで）は励ましの定番表現である。後ろのYou can do it!（きみならできる）ともつながる。take upは「（趣味などを）始める」、put upは「掲げる」、turn upは「現れる・音量を上げる」で、同じupが付いていても動詞が変わると意味はまったく別になる。\n\n【図解】up が付く句動詞\n　表現｜意味｜使う場面\n　give up｜あきらめる｜困難なとき\n　take up｜始める｜趣味や仕事\n　put up｜掲げる｜旗やポスター\n　turn up｜現れる・音量を上げる｜人や音\n　⇒ はげましの場面なのでgive up\n　⚠ upの意味だけで選ぶと必ずまちがえる。動詞との組み合わせで意味が決まるので、熟語ごとに覚える。',
     difficulty: 'basic',
   },
   {
@@ -402,7 +402,7 @@ export const eikenQuestions4kyuIdiom2: EikenQuestion[] = [
       { key: 'D', text: 'cut' },
     ],
     correctKey: 'B',
-    explanation: '"pick up 〜"（〜を拾い上げる）が正解。落としたペンを拾ってもらう場面です。put up（掲げる）、turn up（音量を上げる）、cut up（細かく切る）は「拾う」という意味になりません。',
+    explanation: 'pick up 〜は「〜を拾い上げる」という意味の句動詞で、落としたペンを拾ってほしいという場面に合う。put upは「掲げる」、turn upは「音量を上げる」、cut upは「細かく切る」で、いずれも拾う意味にはならない。pick upには「（車で）人を迎えに行く」という重要な意味もあり、目的語が物か人かで意味が変わる点も押さえておきたい。\n\n【図解】up が付く句動詞の意味\n　表現｜意味｜目的語の例\n　pick up 〜｜拾い上げる｜落とし物\n　pick up 人｜車で迎えに行く｜家族や友人\n　put up 〜｜掲げる｜ポスターや旗\n　cut up 〜｜細かく切る｜野菜\n　⇒ 落としたペンを拾うのでpick up\n　⚠ pick upは目的語が人になると「迎えに行く」の意味に変わる。物か人かで訳が変わるので文脈を確認する。',
     difficulty: 'basic',
   },
   {
@@ -415,7 +415,7 @@ export const eikenQuestions4kyuIdiom2: EikenQuestion[] = [
       { key: 'D', text: 'Soon' },
     ],
     correctKey: 'A',
-    explanation: '"Hurry up!"（急いで！）が正解。「急がないと電車に乗り遅れるよ」という文です。fast・quickは形容詞・副詞で命令文の動詞になれず、soonも動詞ではないのでupと組み合わせられません。',
+    explanation: 'Hurry up!は「急いで」という意味の命令文で、電車に乗り遅れるという理由とともに使われている。命令文は動詞の原形で始めるので、動詞であるhurryだけが空所に入る。fastは形容詞や副詞、quickは形容詞、soonは副詞で、いずれも動詞ではないため命令文の先頭に置くことはできない。命令文 + orは「〜しなさい、さもないと…」を表す形である。\n\n【図解】語の品詞と命令文\n　語｜品詞｜命令文の先頭に置けるか\n　hurry｜動詞｜置ける\n　fast｜形容詞・副詞｜置けない\n　quick｜形容詞｜置けない\n　soon｜副詞｜置けない\n　⇒ 命令文なので動詞のHurryが正解\n　⚠ Quick!のように単独で叫ぶ言い方はあるが、upと組み合わせる形はない。品詞から判断するのが確実。',
     difficulty: 'basic',
   },
   {
@@ -428,7 +428,7 @@ export const eikenQuestions4kyuIdiom2: EikenQuestion[] = [
       { key: 'D', text: 'at' },
     ],
     correctKey: 'A',
-    explanation: '"Come in."（お入りください）が正解。ノックされたときに中に入るよう伝える決まり文句です。to・of・atはcomeと組み合わせて「入る」という意味を作れません。',
+    explanation: 'Come in.は「お入りください」という意味の決まった表現で、ドアをノックされたときに中に入るよううながす言い方である。toやofやatをcomeと組み合わせてこの意味をつくることはできない。日本語では「入ってきて」と言うが、英語では話し手のいる場所へ向かう動きにcomeを使うので、相手の移動でもcomeになる点が日本語との違いになる。\n\n【図解】come を使う短い表現\n　表現｜意味｜使う場面\n　Come in｜お入りください｜ノックされたとき\n　Come on｜さあ、早く｜うながすとき\n　Come here｜こっちに来て｜呼ぶとき\n　Come back｜もどってきて｜引き止めるとき\n　⇒ 入室をうながすのでCome in\n　⚠ comeは話し手のいる場所へ向かう動き。相手が移動する場合でもgoではなくcomeを使う点が日本語と違う。',
     difficulty: 'basic',
   },
   {
@@ -441,7 +441,7 @@ export const eikenQuestions4kyuIdiom2: EikenQuestion[] = [
       { key: 'D', text: 'take' },
     ],
     correctKey: 'B',
-    explanation: '"stand up"（立ち上がる）が正解。先生が教室に入ってきたら立ちましょう、という文です。go up（上がる）、put up（掲げる）、take up（始める）は「起立する」という意味になりません。sit down（座る）とセットで覚えましょう。',
+    explanation: 'stand upは「立ち上がる・起立する」という意味の句動詞で、先生が教室に入ってきたら立ちましょうという文脈に合う。反対はsit down（すわる）である。go upは「上がる」、put upは「掲げる」、take upは「始める」で、いずれも起立の意味にはならない。同じupが付いていても、組み合わせる動詞によって意味がまったく変わる点が要点である。\n\n【図解】上下の動きを表す句動詞\n　表現｜意味｜対になる表現\n　stand up｜立ち上がる｜sit down\n　sit down｜すわる｜stand up\n　go up｜上がる｜go down\n　take up｜始める｜give up\n　⇒ 起立を表すのはstand up\n　⚠ upだけを見て選ぶとまちがえる。起立の意味になるのはstandと組み合わせたときだけである。',
     difficulty: 'basic',
   },
   {
@@ -454,7 +454,7 @@ export const eikenQuestions4kyuIdiom2: EikenQuestion[] = [
       { key: 'D', text: 'off' },
     ],
     correctKey: 'C',
-    explanation: '"go out"（外に出る・出かける）が正解。「雨がやんだから外に出て遊ぼう」という文です。go down（下がる）、go off（鳴る・爆発する）は意味が異なり、go underという表現もこの場面に合いません。',
+    explanation: 'go outは「外に出る・出かける」という意味の句動詞で、雨がやんだから外に出て遊ぼうという文脈に合う。go downは「下がる」で値段や気温に使い、go offは「（目覚ましが）鳴る・爆発する」という意味になる。go underという句動詞はこの場面には合わない。It stopped raining.は「雨がやんだ」で、stopの後ろが動名詞になっている点も確認したい。\n\n【図解】go を使う句動詞\n　表現｜意味｜使う場面\n　go out｜外に出る・出かける｜遊びや食事\n　go down｜下がる｜値段や気温\n　go off｜鳴る・爆発する｜目覚まし時計\n　go back｜もどる｜帰るとき\n　⇒ 外で遊ぶという流れなのでgo out\n　⚠ outとoffは1字違いだが意味がまったく違う。go offは目覚ましが鳴る意味で英検にもよく出る。',
     difficulty: 'basic',
   },
   {
@@ -467,7 +467,7 @@ export const eikenQuestions4kyuIdiom2: EikenQuestion[] = [
       { key: 'D', text: 'out' },
     ],
     correctKey: 'D',
-    explanation: '"eat out"（外食する）が正解。「今夜は疲れて料理できないから外で食べよう」という文です。eat up（食べつくす）は家で料理したものに使う表現なので文脈に合わず、eat ofやeat awayもこの意味になりません。',
+    explanation: 'eat outは「外食する」という意味の句動詞で、疲れて料理できないから外で食べようという文脈にぴったり合う。outには「外へ」というイメージがある。eat upは「残さず食べつくす」という意味で、料理を作った後に使う表現なので、料理しないというこの文脈には合わない。eat ofやeat awayという言い方はこの意味では使われない。\n\n【図解】食事に関する表現\n　表現｜意味｜食べる場所\n　eat out｜外食する｜レストラン\n　eat up｜食べつくす｜場所を問わない\n　cook at home｜家で料理する｜家\n　order takeout｜持ち帰りを注文する｜店から家へ\n　⇒ 料理をしないので外食のeat out\n　⚠ eat upは残さず食べること。upとoutで意味が全く変わるので、理由の文から場面を判断する。',
     difficulty: 'standard',
   },
   {
@@ -480,7 +480,7 @@ export const eikenQuestions4kyuIdiom2: EikenQuestion[] = [
       { key: 'D', text: 'on' },
     ],
     correctKey: 'D',
-    explanation: '"go on a picnic"（ピクニックに行く）が正解。go on a trip（旅行に行く）と同じく、onを使います。in・at・withはpicnicと組み合わせて「〜に出かける」という意味を作れません。',
+    explanation: 'go on a picnicは「ピクニックに行く」という意味の表現で、前置詞はonを使う。go on a trip（旅行に行く）も同じ形である。in・at・withをpicnicと組み合わせてこの意味をつくることはできない。一方、散歩ならgo for a walk、泳ぎに行くならgo swimmingと、名詞や動詞によって前置詞や形が変わるので、表現ごとに覚える必要がある。\n\n【図解】go の後ろの前置詞\n　表現｜前置詞｜意味\n　go on a picnic｜on｜ピクニックに行く\n　go on a trip｜on｜旅行に行く\n　go for a walk｜for｜散歩に行く\n　go to the park｜to｜公園へ行く\n　⇒ ピクニックはonをとるのでon a picnic\n　⚠ ピクニックや旅行はon、散歩やドライブはfor。名詞ごとに前置詞が決まっているので丸ごと覚える。',
     difficulty: 'standard',
   },
   {
@@ -493,7 +493,7 @@ export const eikenQuestions4kyuIdiom2: EikenQuestion[] = [
       { key: 'D', text: 'for' },
     ],
     correctKey: 'A',
-    explanation: '"stay at home"（家にいる）が正解。「昨日は一日中家にいて本を読んだ」という文です。homeの前に置く前置詞はatです（stay homeとatを省く言い方もあります）。on・in・forはhomeとこの形で使いません。',
+    explanation: 'stay at homeは「家にいる」という意味の表現で、homeの前に置く前置詞はatである。「昨日は一日中家にいて本を読んだ」という意味になる。homeは副詞としても使えるので、atを省いてstay homeと言うこともできる。onやinやforをhomeと組み合わせてこの意味を表すことはできない。go homeの場合はtoを付けずgo homeとする点も合わせて確認したい。\n\n【図解】home の使い方\n　表現｜前置詞｜意味\n　stay at home｜at｜家にいる\n　stay home｜なし｜家にいる\n　go home｜なし｜家に帰る\n　be at school｜at｜学校にいる\n　⇒ 家にいることを表すのでat home\n　⚠ homeは副詞にもなるのでgo to homeは誤り。stay at homeのatは省略できるが、toは付けられない。',
     difficulty: 'basic',
   },
   {
@@ -506,7 +506,7 @@ export const eikenQuestions4kyuIdiom2: EikenQuestion[] = [
       { key: 'D', text: 'did' },
     ],
     correctKey: 'C',
-    explanation: '"make friends with 〜"（〜と友だちになる）が正解で、過去形はmade。「ボブは初日にたくさんの生徒と友だちになった」という文です。take・get・doはfriendsと組み合わせてこの意味の熟語を作れません。',
+    explanation: 'make friends with 〜は「〜と友だちになる」という意味の表現で、ここでは過去形madeが入る。「ボブは学校初日に多くの生徒と友だちになった」という意味である。友だちは相手がいて初めて成立するので、friendsは必ず複数形にする点が重要である。takeやgetやdoをfriendsと組み合わせてこの熟語をつくることはできない。\n\n【図解】make を使う表現と形\n　表現｜意味｜形の注意\n　make friends with 〜｜〜と友だちになる｜friendsは複数形\n　be friends with 〜｜〜と友だちである｜状態を表す\n　make a mistake｜まちがえる｜aが付く\n　make a speech｜スピーチをする｜aが付く\n　⇒ 友だちになる動作を表すのでmade friends\n　⚠ make a friend withという形にはしない。相手が必要な関係なので必ずfriendsと複数形にする。',
     difficulty: 'standard',
   },
   {
@@ -519,7 +519,7 @@ export const eikenQuestions4kyuIdiom2: EikenQuestion[] = [
       { key: 'D', text: 'put' },
     ],
     correctKey: 'B',
-    explanation: '"shake hands"（握手する）が正解。「多くの国では、人は会ったときに握手をします」という文です。take・catch・putはhandsと組み合わせて「握手する」という意味になりません。handsと複数形になる点にも注意しましょう。',
+    explanation: 'shake handsは「握手する」という意味の表現で、多くの国で人が会ったときに握手をするという文になる。おたがいが手を出し合うのでhandsは必ず複数形になる点が重要である。takeやcatchやputをhandsと組み合わせて握手の意味をつくることはできない。shakeは同じ動詞でも、shake his headとすれば「首を横にふる」という別の動作を表す。\n\n【図解】手や頭を使う動作の表現\n　表現｜意味｜形の注意\n　shake hands｜握手する｜handsは複数形\n　shake his head｜首を横にふる｜headは単数\n　wave his hand｜手をふる｜あいさつ\n　hold hands｜手をつなぐ｜複数形\n　⇒ 握手を表すのでshake hands\n　⚠ shake a handとは言わない。両者が手を出し合う動作なので、必ずhandsと複数形にする。',
     difficulty: 'standard',
   },
   {
@@ -532,7 +532,7 @@ export const eikenQuestions4kyuIdiom2: EikenQuestion[] = [
       { key: 'D', text: 'most' },
     ],
     correctKey: 'B',
-    explanation: '"all day"（一日中）が正解。「昨日は一日中雨だったので家の中にいた」という文です。every day（毎日）はyesterday（昨日1日）の話と合わず、each day・most dayもこの形では「一日中」を表せません。',
+    explanation: 'all dayは「一日中」という意味の表現で、昨日は一日中雨だったので家の中にいたという文脈に合う。yesterdayという特定の1日の話なので、その日の始めから終わりまでを表すall dayが正解になる。every dayは「毎日」というくり返しを表す表現なので、昨日1日の話とは合わない。each dayやmost dayではこの意味の熟語をつくれない。\n\n【図解】day を使う表現\n　表現｜意味｜指す範囲\n　all day｜一日中｜その日ずっと\n　every day｜毎日｜くり返し\n　each day｜それぞれの日｜1日ごと\n　all the time｜いつも｜常に\n　⇒ 昨日1日の話なのでall day\n　⚠ all dayとevery dayの取りちがえが定番。1日の中の継続か、日をまたぐくり返しかで判断する。',
     difficulty: 'basic',
   },
   {
@@ -545,7 +545,7 @@ export const eikenQuestions4kyuIdiom2: EikenQuestion[] = [
       { key: 'D', text: 'on' },
     ],
     correctKey: 'D',
-    explanation: '"on vacation"（休暇で）が正解。「家族は来月、休暇で沖縄に行きます」という文です。in・at・toはvacationと組み合わせて「休暇で」という意味の熟語になりません。',
+    explanation: 'on vacationは「休暇で」という意味の表現で、家族が来月休暇で沖縄に行くという文脈に合う。この onは目的や状態を表す用法で、on business（仕事で）やon a trip（旅行で）も同じ仲間である。in・at・toをvacationと組み合わせてこの意味を表すことはできない。go to Okinawaのように場所にはtoを使うので、目的と場所で前置詞が異なる点に注意したい。\n\n【図解】目的を表す on の用法\n　表現｜前置詞｜意味\n　on vacation｜on｜休暇で\n　on business｜on｜仕事で\n　on a trip｜on｜旅行で\n　in time｜in｜間に合って\n　⇒ 休暇という目的を表すのでon vacation\n　⚠ in vacationやat vacationという言い方はない。目的や状態を表すonの用法として覚える。',
     difficulty: 'standard',
   },
   {
@@ -558,7 +558,7 @@ export const eikenQuestions4kyuIdiom2: EikenQuestion[] = [
       { key: 'D', text: 'near' },
     ],
     correctKey: 'A',
-    explanation: '"look like 〜"（〜のように見える）が正解。「あの雲は大きな白いウサギみたいに見える」という文です。look asやlook sameという形はなく、nearは「近くに」で見た目のたとえを表せません。',
+    explanation: 'look like 〜は「〜のように見える」という意味の表現で、後ろに名詞を続けるときにlikeが必要になる。「あの雲は大きな白いウサギのように見える」という意味である。後ろが形容詞のときはlikeを付けずlook happyのように言う。asをlookと組み合わせてこの意味は表せず、look sameという形もない。nearは「近くに」で見た目のたとえを表せない。\n\n【図解】感覚動詞の後ろの形\n　表現｜後ろの形｜意味\n　look like 名詞｜名詞｜〜のように見える\n　look 形容詞｜形容詞｜〜に見える\n　sound like 名詞｜名詞｜〜のように聞こえる\n　feel like 名詞｜名詞｜〜のような感じがする\n　⇒ 後ろが名詞なのでlikeが必要\n　⚠ 後ろが名詞ならlike、形容詞ならlikeは不要。look like happyやlook a rabbitはどちらも誤りである。',
     difficulty: 'basic',
   },
   {
@@ -571,7 +571,7 @@ export const eikenQuestions4kyuIdiom2: EikenQuestion[] = [
       { key: 'D', text: 'sure' },
     ],
     correctKey: 'C',
-    explanation: '"come true"（実現する・かなう）が正解。「練習を続ければ、いつか夢はかなうよ」という文です。dreamとセットで使われる決まった表現で、come real・come right・come sureとは言いません。',
+    explanation: 'come trueは「（夢や願いが）実現する・かなう」という意味の決まった表現で、dreamやwishとセットで使われる。「練習を続ければ、いつか夢はかなう」という意味になる。come realやcome rightやcome sureという言い方はない。命令文 + andは「〜しなさい、そうすれば…」を表す形で、前半のKeep practicingがその条件になっている。\n\n【図解】come を使う表現\n　表現｜意味｜結びつく主語や語\n　come true｜実現する｜dream, wish\n　come back｜もどる｜人\n　come from 〜｜〜の出身である｜人\n　come in｜入る｜人\n　⇒ dreamと結びつくのはcome true\n　⚠ trueをrealやrightに置きかえることはできない。dream come trueで一つのまとまりとして覚える。',
     difficulty: 'standard',
   },
   {
@@ -584,7 +584,7 @@ export const eikenQuestions4kyuIdiom2: EikenQuestion[] = [
       { key: 'D', text: 'for' },
     ],
     correctKey: 'C',
-    explanation: '"from A to B"（AからBまで）が正解。「その店は9時から6時まで開いています」という文です。後ろのto sixとセットになるのはfromです。at・since・forはtoと組み合わせてこの範囲の意味を作れません。',
+    explanation: 'from A to Bは「AからBまで」という意味で範囲を表す表現である。空所の後ろにto sixがあるので、対になるfromが正解になる。「その店は9時から6時まで開いている」という意味である。sinceは「〜以来」で現在完了とともに使う語、forは期間の長さを表す語なので、to 〜と対になって範囲を示すことはできない。atは時刻の一点を指す前置詞である。\n\n【図解】範囲を表す表現の組み合わせ\n　表現｜意味｜対になる語\n　from A to B｜AからBまで｜fromとto\n　between A and B｜AとBの間｜betweenとand\n　since 〜｜〜以来ずっと｜単独で使う\n　until 〜｜〜までずっと｜単独で使う\n　⇒ 後ろにtoがあるのでfromが対になる\n　⚠ 前置詞は対になるものが決まっている。from A and Bやbetween A to Bのような組み合わせは誤り。',
     difficulty: 'basic',
   },
   {
@@ -597,7 +597,7 @@ export const eikenQuestions4kyuIdiom2: EikenQuestion[] = [
       { key: 'D', text: 'soon' },
     ],
     correctKey: 'A',
-    explanation: '"be ready for 〜"（〜の準備ができている）が正解。「明日のテストの準備はできてる？」という文です。right・busyはforと組み合わせてこの意味にならず、soonは副詞なのでbe動詞の補語になれません。',
+    explanation: 'be ready for 〜は「〜の準備ができている」という意味の熟語で、明日のテストの準備はできているかとたずねる文になる。readyは形容詞なのでbe動詞の後ろに置き、準備の対象は前置詞forで示す。rightやbusyをforと組み合わせてこの意味を表すことはできない。soonは副詞なのでbe動詞の補語にはならない。be ready to doという不定詞の形もある。\n\n【図解】for をとる be + 形容詞 の表現\n　表現｜前置詞｜意味\n　be ready for 〜｜for｜〜の準備ができている\n　be ready to do｜不定詞｜〜する用意がある\n　be late for 〜｜for｜〜に遅刻する\n　be good for 〜｜for｜〜によい\n　⇒ 準備を表す形容詞はready\n　⚠ soonは副詞なのでbe動詞の後ろに置けない。空所に入るのが形容詞かどうかをまず確認する。',
     difficulty: 'basic',
   },
   {
@@ -610,7 +610,7 @@ export const eikenQuestions4kyuIdiom2: EikenQuestion[] = [
       { key: 'D', text: 'for' },
     ],
     correctKey: 'D',
-    explanation: '"go for a walk"（散歩に行く）が正解。「犬と私は毎晩散歩に行きます」という文です。to・in・atはa walkと組み合わせて「散歩に出かける」という意味の熟語になりません。take a walkも同じ意味です。',
+    explanation: 'go for a walkは「散歩に行く」という意味の表現で、前置詞はforを使う。「犬と私は毎晩散歩に行きます」という意味である。a walkが名詞なのでforが必要になり、to・in・atでは「散歩に出かける」という意味の熟語をつくれない。同じ内容はtake a walkとも言え、こちらは前置詞が不要になる。go for a driveも同じ形の表現である。\n\n【図解】散歩に関する表現\n　表現｜前置詞｜意味\n　go for a walk｜for｜散歩に行く\n　take a walk｜なし｜散歩する\n　go for a drive｜for｜ドライブに行く\n　go swimming｜なし｜泳ぎに行く\n　⇒ a walkという名詞が続くのでforが必要\n　⚠ go to a walkという形は使わない。名詞が続くならfor、動名詞が続くなら前置詞なしと形で区別する。',
     difficulty: 'basic',
   },
   {
@@ -623,7 +623,7 @@ export const eikenQuestions4kyuIdiom2: EikenQuestion[] = [
       { key: 'D', text: 'walk' },
     ],
     correctKey: 'B',
-    explanation: '"on one\'s way home"（家に帰るとちゅうで）が正解。「帰り道にジュースを買った」という文です。road・streetは実際の道路を指す名詞でこの熟語には使えず、on my walk homeという言い方も定番表現ではありません。',
+    explanation: 'on my way homeは「家に帰るとちゅうで」という意味の表現で、帰り道にジュースを買ったという文になる。wayは「道のり・とちゅう」を表す語で、on my way to school（学校へ行くとちゅうで）のようにも使える。roadやstreetは実際の道路を指す名詞なので、この熟語には使えない。homeは副詞なのでtoを付けずにon my way homeとする点も重要である。\n\n【図解】道 に関する語の使い分け\n　表現｜意味｜表すもの\n　on my way home｜家に帰るとちゅうで｜道のり\n　on my way to school｜学校へ行くとちゅうで｜道のり\n　on the road｜道路の上で｜実際の道路\n　in the street｜通りで｜実際の通り\n　⇒ とちゅうという意味を表すのはway\n　⚠ wayは抽象的な道のり、roadやstreetは実際の道路。日本語ではどちらも「道」なので混同しやすい。',
     difficulty: 'standard',
   },
   {
@@ -636,7 +636,7 @@ export const eikenQuestions4kyuIdiom2: EikenQuestion[] = [
       { key: 'D', text: 'care' },
     ],
     correctKey: 'D',
-    explanation: '"take care of 〜"（〜の世話をする）が正解。「留守の間、ねこの世話をお願いします」という文です。take part in（参加する）はofではなくin、take placeは「行われる」でofと組み合わせず、turnもこの熟語を作れません。',
+    explanation: 'take care of 〜は「〜の世話をする」という意味の熟語で、留守の間ねこの世話をお願いしますという文脈に合う。空所の後ろがofなので、ofと組み合わせられるcareだけが入る。take part inは「参加する」で前置詞がin、take placeは「行われる」で前置詞をとらない。takeは後ろの名詞と前置詞の組み合わせで意味が決まる動詞である。\n\n【図解】take を使う熟語と前置詞\n　表現｜前置詞｜意味\n　take care of 〜｜of｜〜の世話をする\n　take part in 〜｜in｜〜に参加する\n　take place｜なし｜行われる\n　take a look at 〜｜at｜〜を見る\n　⇒ 空所の後ろがofなのでcareが正解\n　⚠ take part inのinをofにする誤りが定番。空所の後ろの前置詞を見て、組み合わせられる名詞を選ぶ。',
     difficulty: 'basic',
   },
   {
@@ -649,7 +649,7 @@ export const eikenQuestions4kyuIdiom2: EikenQuestion[] = [
       { key: 'D', text: 'house' },
     ],
     correctKey: 'C',
-    explanation: '"be sick in bed"（病気で寝ている）が正解。「トムは病気で寝ていたので学校に来なかった」という文です。in bedで「ベッドで寝ている状態」を表します。room・sleep・houseはこの決まった表現に使いません。',
+    explanation: 'be sick in bedは「病気で寝ている」という意味の表現で、トムは病気で寝ていたので学校に来なかったという文になる。in bedは冠詞を付けずに「就寝している状態」を表す決まった言い方である。roomやsleepやhouseをこの形に入れることはできない。go to bedのbedも同じく無冠詞で、本来の目的で使う場所は冠詞を付けないという原則にしたがっている。\n\n【図解】無冠詞で使う場所の表現\n　表現｜意味｜冠詞\n　be sick in bed｜病気で寝ている｜付けない\n　go to bed｜寝る｜付けない\n　at home｜家で｜付けない\n　in the room｜部屋の中で｜theが必要\n　⇒ 寝ている状態を表すのでin bed\n　⚠ in the bedとtheを付けると、単に寝台の上にいるという意味になる。冠詞の有無で表す内容が変わる。',
     difficulty: 'standard',
   },
 ];
