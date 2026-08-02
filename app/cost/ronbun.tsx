@@ -390,6 +390,7 @@ export default function CostRonbunScreen() {
         totalQuestions={SECTIONS.length}
         freeLimit={FREE_TEXT_LIMIT}
         unitLabel="セクション"
+        proFeatures={['全問題アンロック・図解入り詳細解説', '要点テキスト・模擬試験、論文試験対策も収録', '動く図解で初心者もわかりやすい', 'iPhone・iPadでいつでも学習']}
       >
         {(hasAccess: boolean) => {
           const visibleSections = hasAccess ? SECTIONS : SECTIONS.slice(0, FREE_TEXT_LIMIT);
