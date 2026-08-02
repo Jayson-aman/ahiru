@@ -1039,7 +1039,7 @@ export const eikenQuestions4kyu6: EikenQuestion[] = [
       { key: 'D', text: 'The blue one is mine.' },
     ],
     correctKey: 'D',
-    explanation: '「赤いのと青いの、どちらがあなたのかさ？」という質問には、どちらかを選んで「青いのが私のです」と答えるDが正解です。Which A or B?の質問にYes/Noでは答えられません。昨日の天気や手の数も答えになりません。',
+    explanation: 'Which is your umbrella, the red one or the blue one?（赤いのと青いの、どちらがあなたのかさですか）はAかBかを選ばせる選択疑問文なので、どちらかを選んで答える。The blue one is mine.が正解になる。この形の質問にYesやNoで答えることはできない。昨日の天気や手の数を答える返答も質問に対応していない。\n\n【図解】質問の形と答え方\n　質問｜形｜答え方\n　Which is yours, A or B｜選択疑問文｜The blue one is mine\n　Is this your umbrella｜be動詞の疑問文｜Yes, it is\n　How was the weather｜天気｜It was rainy\n　How many hands do you have｜数｜Two\n　⇒ AかBかを選んで答えるのが正しい形\n　⚠ 選択疑問文にはYesやNoで答えられない。oneはumbrellaの代わりに使われる代名詞である。',
     difficulty: 'basic',
   },
   {
@@ -1054,7 +1054,7 @@ export const eikenQuestions4kyu6: EikenQuestion[] = [
       { key: 'D', text: 'You are welcome.' },
     ],
     correctKey: 'C',
-    explanation: '「明日遊園地に行ける？」というお願いに、「いいよ、今日宿題を終わらせたらね」と条件つきで許可するCが自然です。Aは過去の感想で明日の話に合わず、宿題の好き嫌いやYou are welcome（どういたしまして）も返事になりません。',
+    explanation: 'Dad, can we go to the amusement park tomorrow?（お父さん、明日遊園地に行ける）という許可を求める質問なので、許可するか断るかで答える。Sure, if you finish your homework today.（いいよ、今日宿題を終わらせたらね）が正解になる。過去の感想を述べる返答は、明日の話という時制と合わない。\n\n【図解】返答の性質と会話の流れ\n　返答の内容｜性質｜明日の話と合うか\n　Sure, if you finish your homework｜条件つきの許可｜合う\n　Yes, it was fun｜過去の感想｜合わない\n　I do not like homework｜好みの話｜合わない\n　You are welcome｜お礼への返事｜合わない\n　⇒ 条件を付けて許可する返答が自然\n　⚠ tomorrowという語があるので未来の話。過去形で答えると時制が食いちがってしまう。',
     difficulty: 'standard',
   },
   {
@@ -1069,7 +1069,7 @@ export const eikenQuestions4kyu6: EikenQuestion[] = [
       { key: 'D', text: 'For my mother.' },
     ],
     correctKey: 'B',
-    explanation: '「日曜の朝はいつも何をするの？」という習慣の質問に、「公園で犬を散歩させるよ」と答えるBが正解です。walk my dogは「犬を散歩させる」。Aは過去の感想、By trainは手段、For my motherは目的の答えで、習慣の質問に合いません。',
+    explanation: 'What do you usually do on Sunday mornings?（日曜の朝はふだん何をしますか）は習慣をたずねる質問なので、答えも現在形で日課を述べる形になる。I walk my dog in the park.が正解である。walk my dogは「犬を散歩させる」という表現。過去の感想や手段や目的を答える返答は質問に対応していない。\n\n【図解】質問と答えの対応\n　質問｜たずねる内容｜答えの例\n　What do you usually do｜習慣｜I walk my dog\n　How was last Sunday｜感想｜It was fun\n　How do you go｜手段｜By train\n　Who is it for｜だれのため｜For my mother\n　⇒ 習慣をたずねているので現在形で答える\n　⚠ walkは「歩く」だけでなく「（犬を）散歩させる」という他動詞の用法もある点を押さえる。',
     difficulty: 'basic',
   },
   {
@@ -1084,7 +1084,7 @@ export const eikenQuestions4kyu6: EikenQuestion[] = [
       { key: 'D', text: 'You swim well.' },
     ],
     correctKey: 'A',
-    explanation: '「お水をいただけますか」というお願いに、「もちろん。はい、どうぞ」と渡すAが正解です。Bは自分ののどの話で相手のお願いに答えておらず、曜日や水泳の話も場面に合いません。',
+    explanation: 'May I have some water, please?（お水をいただけますか）は許可を求める依頼なので、応じて手わたす返答が自然である。Of course. Here you are.が正解になる。I am not thirsty.は自分ののどの状態を述べているだけで、相手の依頼に答えていない。曜日や水泳の話も場面に合わない。\n\n【図解】依頼と応答の表現\n　表現｜意味｜言う人\n　May I have some water｜水をいただけますか｜頼む人\n　Of course. Here you are｜もちろん、どうぞ｜わたす人\n　I am not thirsty｜のどはかわいていない｜自分の話\n　No, thank you｜けっこうです｜すすめを断る\n　⇒ 依頼に応じて手わたす返答が正解\n　⚠ 相手の依頼への返事なので、自分ののどの状態を述べても答えにならない点に注意する。',
     difficulty: 'basic',
   },
   {
@@ -1099,7 +1099,7 @@ export const eikenQuestions4kyu6: EikenQuestion[] = [
       { key: 'D', text: 'Turn left at the corner.' },
     ],
     correctKey: 'A',
-    explanation: '「聞いた？うちのチームが試合に勝ったよ！」といううれしい知らせに、「本当？すごいニュースだね！」と喜ぶAが自然です。遅刻のおわび、値段、道案内は知らせへの反応として合いません。',
+    explanation: 'Did you hear? Our team won the game!（聞いた、うちのチームが試合に勝ったよ）というよい知らせなので、喜ぶ返答が自然である。Really? That is great news!が正解になる。遅刻のおわびや値段の話、道案内はいずれも知らせへの反応として場面が合わない。\n\n【図解】知らせの種類と応答\n　知らせの種類｜適切な応答｜例\n　よい知らせ｜喜ぶ｜That is great news\n　悪い知らせ｜同情する｜I am sorry to hear that\n　謝罪｜受け入れる｜That is all right\n　道をたずねられる｜案内する｜Turn left\n　⇒ 勝利の報告には喜ぶ返答が入る\n　⚠ Did you hear?は「聞いた」と話題を切り出す表現。知らせの中身に合う反応を選ぶことが要点。',
     difficulty: 'basic',
   },
   {
@@ -1114,7 +1114,7 @@ export const eikenQuestions4kyu6: EikenQuestion[] = [
       { key: 'D', text: 'Yes, I do.' },
     ],
     correctKey: 'B',
-    explanation: '好きな教科を聞かれているので、「音楽です。歌うことが大好きなんです」と教科名を答えるBが正解です。先生の名前や通学手段は質問の答えではなく、What 〜?の質問にYes, I doでは答えられません。',
+    explanation: 'What is your favorite subject, Lily?（リリー、いちばん好きな教科は何ですか）は教科名をたずねる質問なので、答えも科目になる。Music. I like singing very much.が正解である。先生の名前や通学手段を答える返答は質問に対応せず、疑問詞の質問にYes, I do.で答えることもできない。\n\n【図解】質問と答えの対応\n　質問｜たずねる内容｜答えの例\n　What is your favorite subject｜好きな教科｜Music\n　Who is your teacher｜先生の名前｜Mr. Hill\n　How do you go to school｜通学手段｜by bus\n　Do you like music｜はいかいいえ｜Yes, I do\n　⇒ 教科をたずねているので科目名で答える\n　⚠ 疑問詞で始まる質問にYes, I do.では答えられない。まず疑問詞を確認して答えの形を決める。',
     difficulty: 'basic',
   },
   {
@@ -1129,7 +1129,7 @@ export const eikenQuestions4kyu6: EikenQuestion[] = [
       { key: 'D', text: 'Speak louder, please.' },
     ],
     correctKey: 'C',
-    explanation: '「電話が鳴ってる。出てくれる？」というお願いに、「わかった、出るよ」と答えるCが自然です。I\'ll get it.は「私が出ます」という決まり文句。昨日の電話の話、電話機の感想、「大きな声で話して」は場面に合いません。',
+    explanation: 'The phone is ringing. Can you answer it?（電話が鳴っている、出てくれる）という依頼なので、引き受ける返答が自然である。OK, I will get it.（わかった、出るよ）が正解になる。I will get it.は「私が出ます」という電話の決まり文句である。昨日の電話の話や電話機の感想は場面に合わない。\n\n【図解】電話に関する表現\n　表現｜意味｜使う場面\n　Can you answer it｜出てくれますか｜電話が鳴る\n　I will get it｜私が出ます｜電話に出る\n　Speak louder, please｜大きな声で話して｜聞こえないとき\n　Hold on, please｜少々お待ちください｜取りつぐとき\n　⇒ 依頼を引き受ける返答が正解\n　⚠ answerは「電話に出る」の意味でも使う。answer the doorなら「玄関に出る」という意味になる。',
     difficulty: 'standard',
   },
   {
@@ -1144,7 +1144,7 @@ export const eikenQuestions4kyu6: EikenQuestion[] = [
       { key: 'D', text: 'It was delicious. Can I have some more?' },
     ],
     correctKey: 'D',
-    explanation: '「私が作ったカレー、どうだった？」という感想の質問に、「おいしかったよ。おかわりしてもいい？」と答えるDが自然です。How did you like 〜?は感想をたずねる表現。料理ができない話、カレーの起源、手洗いの話は感想になっていません。',
+    explanation: 'How did you like the curry I made?（私が作ったカレーはどうでしたか）は感想をたずねる表現なので、答えも感想になる。It was delicious. Can I have some more?（おいしかった、おかわりしてもいい）が正解である。料理ができないという話やカレーの起源、手洗いの話は感想になっていない。\n\n【図解】質問と答えの対応\n　質問｜たずねる内容｜答えの例\n　How did you like the curry｜感想｜It was delicious\n　Can you cook｜料理ができるか｜I do not know how\n　Where is curry from｜起源｜from India\n　What should I do｜助言｜You should wash your hands\n　⇒ 感想をたずねているので味の評価で答える\n　⚠ How did you like 〜?は感想をたずねる形。likeを「好き」とだけ訳すと質問の意図がずれてしまう。',
     difficulty: 'standard',
   },
   {
@@ -1159,7 +1159,7 @@ export const eikenQuestions4kyu6: EikenQuestion[] = [
       { key: 'D', text: 'OK. See you then.' },
     ],
     correctKey: 'D',
-    explanation: '「明日10時に駅で会おう」という約束の提案に、「わかった。じゃあそのときに」と答えるDが自然です。See you then.の thenは「そのとき（=明日の10時）」を指します。昨日の話、駅の古さ、No, I wasn\'tは約束の返事になりません。',
+    explanation: 'Let us meet at the station at ten tomorrow.（明日10時に駅で会おう）という約束の提案なので、受け入れる返答が自然である。OK. See you then.（わかった、じゃあそのときに）が正解になる。thenは「そのとき」で、明日の10時を指している。昨日の話や駅の感想は約束の返事にならない。\n\n【図解】約束の場面で使う表現\n　表現｜意味｜使う場面\n　Let us meet at ten｜10時に会おう｜提案する\n　OK. See you then｜わかった、そのときに｜受け入れる\n　Sorry, I cannot｜ごめん、無理｜ことわる\n　What time shall we meet｜何時に会おうか｜時刻の相談\n　⇒ 約束を受け入れる返答が正解\n　⚠ thenは「そのとき」を指す語。約束の時刻を受けているので、別の日時を答えると合わなくなる。',
     difficulty: 'basic',
   },
   {
@@ -1174,7 +1174,7 @@ export const eikenQuestions4kyu6: EikenQuestion[] = [
       { key: 'D', text: "To the teachers' room." },
     ],
     correctKey: 'A',
-    explanation: 'Why（なぜ）と理由を聞かれているので、「バスに乗り遅れたからです」とBecauseで理由を答えるAが正解です。時刻、交通手段、行き先の答えは理由の質問とかみ合いません。miss the bus（バスに乗り遅れる）も重要表現です。',
+    explanation: 'Why were you late for school this morning?（今朝はなぜ学校に遅刻したのですか）は理由をたずねる質問なので、Becauseで理由を答えるのが自然である。Because I missed the bus.が正解になる。miss the busは「バスに乗り遅れる」という表現である。時刻や手段や行き先の答えは理由に対応していない。\n\n【図解】疑問詞と答えの対応\n　疑問詞｜たずねる内容｜答えの例\n　Why｜理由｜Because I missed the bus\n　What time｜時刻｜At eight fifteen\n　How｜手段｜By bicycle\n　Where｜場所｜To the teachers room\n　⇒ 理由をたずねているのでBecauseで答える\n　⚠ be late for 〜は「〜に遅刻する」。前置詞forまで含めて熟語として覚えておくとよい。',
     difficulty: 'basic',
   },
   {
@@ -1189,7 +1189,7 @@ export const eikenQuestions4kyu6: EikenQuestion[] = [
       { key: 'D', text: "You're late again." },
     ],
     correctKey: 'C',
-    explanation: 'プレゼントを渡された祖母の返事として、「まあ、ありがとう！なんてやさしいの」と喜ぶCが自然です。How sweet of you.は「あなたはなんて優しいの」という感謝の表現。かさの話、値段の話、遅刻を責める言葉は場面に合いません。',
+    explanation: 'This is a present for you, Grandma.（おばあちゃん、これはあなたへのプレゼントです）とプレゼントを渡された場面なので、お礼を言う返答が自然である。Oh, thank you! How sweet of you.が正解になる。How sweet of you.は「なんてやさしいの」という感謝の表現である。値段の話や遅刻を責める言葉は場面に合わない。\n\n【図解】場面と適切な言葉\n　場面｜適切な言葉｜例\n　プレゼントをもらう｜お礼を言う｜Thank you\n　相手のやさしさに感謝｜ほめる｜How sweet of you\n　値段の話｜感想｜It was cheap\n　遅刻を注意する｜指摘｜You are late again\n　⇒ プレゼントをもらったのでお礼を言う\n　⚠ How sweet of you.は感謝の定番表現。もらった物の値段にふれるのは礼儀として避ける。',
     difficulty: 'standard',
   },
   {
@@ -1204,7 +1204,7 @@ export const eikenQuestions4kyu6: EikenQuestion[] = [
       { key: 'D', text: 'The game was exciting.' },
     ],
     correctKey: 'B',
-    explanation: '「映画を見る？それともゲームをする？」という2択の質問には、どちらかを選んで「映画を見ようよ」と答えるBが正解です。A or B?の形の質問にはYes/Noではなく、選んだほうを答えます。昨日の話や過去の感想も答えになりません。',
+    explanation: 'Do you want to watch a movie or play video games?（映画を見たい、それともゲームをしたい）はAかBかを選ばせる選択疑問文なので、どちらかを選んで答える。Let us watch a movie.が正解になる。この形の質問にはYesやNoで答えられない。昨日の話や過去の感想も答えになっていない。\n\n【図解】質問の形と答え方\n　質問｜形｜答え方\n　watch a movie or play games｜選択疑問文｜Let us watch a movie\n　Do you want to watch a movie｜一般動詞の疑問文｜Yes, I do\n　What did you do yesterday｜過去の行動｜I watched TV\n　How was the game｜感想｜It was exciting\n　⇒ AかBかを選んで答えるのが正しい形\n　⚠ A or B?の形にはYes, please.のような返事はできない。選んだほうを言うのが答え方になる。',
     difficulty: 'basic',
   },
 
@@ -1221,7 +1221,7 @@ export const eikenQuestions4kyu6: EikenQuestion[] = [
       { key: 'D', text: 'They eat in their own rooms.' },
     ],
     correctKey: 'B',
-    explanation: '本文に「Everyone puts their phones in a box during dinner（夕食の間、みんなが電話を箱に入れる）」とあります。rule（ルール・きまり）の内容を正しく読み取りましょう。テレビやゲームの話は本文にありません。',
+    explanation: '本文にEveryone puts their phones in a box during dinner.（みんなが夕食の間、電話を箱に入れる）とあり、これが家族の新しいきまりである。ruleは「きまり・規則」という意味の語である。テレビを見る、ゲームをする、自分の部屋で食べるといった内容は本文にまったく書かれていない。\n\n【図解】本文の情報整理\n　項目｜本文の記述｜内容\n　新しいきまり｜put their phones in a box｜電話を箱に入れる\n　いつ｜during dinner｜夕食の間\n　最初の気持ち｜did not like the rule｜気に入らなかった\n　今の気持ち｜enjoys talking with his family｜会話を楽しむ\n　⇒ ruleの内容がそのまま答えになる\n　⚠ At firstとbut nowで気持ちが変化している。設問がどの時点を問うているかも確認して読む。',
     difficulty: 'standard',
   },
   {
@@ -1236,7 +1236,7 @@ export const eikenQuestions4kyu6: EikenQuestion[] = [
       { key: 'D', text: 'It is quiet and has many picture books.' },
     ],
     correctKey: 'D',
-    explanation: '本文に「because it is quiet and has many picture books（静かで絵本がたくさんあるから）」とあります。Whyの質問はbecauseの後ろを探すのが基本です。教室からの近さやコンピューターの話は理由として書かれていません。',
+    explanation: '本文にAnna likes the library the best because it is quiet and has many picture books.（静かで絵本がたくさんあるので図書室がいちばん好き）とあり、becauseの後ろが理由になる。教室から近い、コンピューターが使える、先生がやさしいといった理由は本文にまったく書かれていない。\n\n【図解】本文の情報整理\n　項目｜本文の記述｜内容\n　学校の施設｜music room, computer room, library｜3つ\n　いちばん好きな場所｜the library｜図書室\n　その理由｜quiet and many picture books｜静かで絵本が多い\n　設問の形｜Why｜理由をたずねる\n　⇒ Whyの設問はbecauseの直後を読む\n　⚠ コンピューター室は別の施設として書かれているだけ。好きな理由として選ばないよう注意する。',
     difficulty: 'basic',
   },
   {
@@ -1251,7 +1251,7 @@ export const eikenQuestions4kyu6: EikenQuestion[] = [
       { key: 'D', text: 'They watched a movie.' },
     ],
     correctKey: 'A',
-    explanation: '本文に「They did their homework together first(まず一緒に宿題をした)」とあります。カードゲームはその後（Then）にしたことです。first（まず）、then（それから）という順番を表す言葉に注目しましょう。',
+    explanation: '本文にThey did their homework together first.（まず一緒に宿題をした）とあり、最初にしたのは宿題である。カードゲームはThen（それから）と続く後の行動なので、順番を表す語に注目して読み分ける必要がある。夕食を作った、映画を見たという内容は本文にまったく書かれていない。\n\n【図解】行動の順序\n　順序｜本文の記述｜したこと\n　まず｜did their homework first｜宿題\n　それから｜played a card game｜カードゲーム\n　帰宅｜went home at five｜5時に帰った\n　いつ｜on Sunday｜日曜日\n　⇒ firstという語が最初の行動を示す\n　⚠ firstとthenが順番を示す語。設問がfirstなのかthenなのかで、選ぶ行動が入れかわる。',
     difficulty: 'basic',
   },
   {
@@ -1266,7 +1266,7 @@ export const eikenQuestions4kyu6: EikenQuestion[] = [
       { key: 'D', text: 'She teaches driving.' },
     ],
     correctKey: 'C',
-    explanation: '本文に「On her days off, she enjoys mountain climbing（休みの日には山登りを楽しむ）」とあります。days off（休みの日）は重要表現。バスの運転は月〜金の仕事なので、休みの日の過ごし方としては誤りです。',
+    explanation: '本文にOn her days off, she enjoys mountain climbing with her friends.（休みの日には友人と山登りを楽しむ）とあり、これが休日の過ごし方になる。days offは「休みの日」という表現である。バスの運転は月曜から金曜までの仕事なので、休みの日の行動としては合わない。\n\n【図解】時期ごとの行動\n　時期｜本文の記述｜すること\n　月曜から金曜｜drives the city bus｜バスの運転\n　休みの日｜enjoys mountain climbing｜山登り\n　だれと｜with her friends｜友人と\n　職業｜a bus driver｜バス運転手\n　⇒ 設問がdays offなので休日の行動を選ぶ\n　⚠ days offは「休みの日」。仕事の日と休みの日で行動が変わるので、時期ごとに整理して読む。',
     difficulty: 'standard',
   },
   {
@@ -1281,7 +1281,7 @@ export const eikenQuestions4kyu6: EikenQuestion[] = [
       { key: 'D', text: "On their mother's birthday." },
     ],
     correctKey: 'C',
-    explanation: '本文に「They will go to the department store on Saturday（土曜日にデパートに行く）」とあります。母の誕生日は来週で、買い物に行く日とは別です。When（いつ）の質問では、行動と日付の組み合わせを正確に読み取りましょう。',
+    explanation: '本文にThey will go to the department store on Saturday to buy it.（土曜日にそれを買いにデパートへ行く）とあり、買い物に行くのは土曜日である。母の誕生日は来週なので、買い物の日とは別になる。Whenの設問では、どの行動の日を聞かれているかを確かめてから答える必要がある。\n\n【図解】時と出来事の対応\n　時｜本文の記述｜出来事\n　来週｜mother birthday｜母の誕生日\n　土曜日｜go to the department store｜買い物に行く\n　買う物｜a scarf｜スカーフ\n　だれと｜her brother｜兄と\n　⇒ 買い物の日を問われているので土曜日\n　⚠ 誕生日と買い物の日は別。設問がどの行動の日を聞いているかを先に確認してから選ぶ。',
     difficulty: 'basic',
   },
   {
@@ -1296,7 +1296,7 @@ export const eikenQuestions4kyu6: EikenQuestion[] = [
       { key: 'D', text: 'At six.' },
     ],
     correctKey: 'A',
-    explanation: '本文に「The program starts at six fifteen（番組は6時15分に始まる）」とあります。fifteen minutes long（15分間）は番組の長さであって、開始時刻ではありません。時刻と長さの数字を混同しないようにしましょう。',
+    explanation: '本文にThe program starts at six fifteen every morning.（番組は毎朝6時15分に始まる）とあり、これが開始時刻になる。次の文のIt is fifteen minutes long.は番組の長さを表しており、開始時刻ではない。15という数字が2回出てくるので、それぞれが何を表すかを整理して読む必要がある。\n\n【図解】数字とその意味\n　数字｜本文の記述｜何を表すか\n　six fifteen｜starts at six fifteen｜開始時刻\n　fifteen minutes｜fifteen minutes long｜番組の長さ\n　時間帯｜every morning｜毎朝\n　その前｜before breakfast｜朝食前\n　⇒ startsと結びつく数字が開始時刻\n　⚠ 同じ15という数でも時刻と長さで意味が違う。動詞との結びつきを見て役割を判断する。',
     difficulty: 'standard',
   },
   {
@@ -1311,7 +1311,7 @@ export const eikenQuestions4kyu6: EikenQuestion[] = [
       { key: 'D', text: "Because of her father's job." },
     ],
     correctKey: 'D',
-    explanation: '本文に「moved from Tokyo to Fukuoka because of her father\'s job（父の仕事のために東京から福岡へ引っ越した）」とあります。because of 〜（〜のために）の後ろが理由です。祖母や気候の話は本文にありません。',
+    explanation: '本文にmoved from Tokyo to Fukuoka because of her father job（父の仕事のために東京から福岡へ引っ越した）とあり、because ofの後ろが理由になる。because ofは後ろに名詞句をとって理由を示す表現である。ベスが友達をほしがった、祖母が住んでいる、東京が寒すぎたといった内容は本文にない。\n\n【図解】本文の情報整理\n　項目｜本文の記述｜内容\n　引っ越し先｜from Tokyo to Fukuoka｜東京から福岡\n　時期｜Last month｜先月\n　理由｜because of her father job｜父の仕事\n　その後｜made new friends quickly｜すぐ友達ができた\n　⇒ Whyの設問はbecause ofの直後を読む\n　⚠ because ofの後ろは名詞句、becauseの後ろは文。形が違うので理由を探すときは両方を見る。',
     difficulty: 'basic',
   },
   {
@@ -1326,7 +1326,7 @@ export const eikenQuestions4kyu6: EikenQuestion[] = [
       { key: 'D', text: 'On weekends.' },
     ],
     correctKey: 'B',
-    explanation: '本文の最後に「The pool is free for elementary school students on Mondays（月曜日は小学生は無料）」とあります。free（無料の）は英検頻出の単語。プールが開くのは7月と8月で、6月ではありません。',
+    explanation: '本文の最後にThe pool is free for elementary school students on Mondays.（月曜日は小学生は無料）とあり、これが無料になる日である。freeは「無料の」という重要語である。プールが開いているのは7月と8月なので6月ではなく、毎日や週末が無料という記述もない。\n\n【図解】プールの情報整理\n　項目｜本文の記述｜内容\n　開いている期間｜July and August｜7月と8月\n　無料の日｜on Mondays｜月曜日\n　対象｜elementary school students｜小学生\n　タロウの回数｜ten times｜10回\n　⇒ 無料の条件は最後の文に書かれている\n　⚠ 開いている月と無料の曜日は別の情報。設問がどちらを問うているかを確認して選ぶ。',
     difficulty: 'basic',
   },
   {
@@ -1341,7 +1341,7 @@ export const eikenQuestions4kyu6: EikenQuestion[] = [
       { key: 'D', text: 'A vet.' },
     ],
     correctKey: 'D',
-    explanation: '本文の最初に「Miki wants to be a vet（ミキは獣医になりたい）」とあります。vetはveterinarian（獣医）の短い言い方で、animal doctorとも言います。本を読むのは獣医になるためで、作家になりたいわけではありません。',
+    explanation: '本文の1文目にMiki wants to be a vet in the future（ミキは将来獣医になりたい）とあり、これが将来の夢になる。vetはveterinarian（獣医）の短い言い方で、animal doctorとも言う。動物についての本を読むのは獣医を目指しているからであって、作家になりたいわけではない。\n\n【図解】本文の情報整理\n　項目｜本文の記述｜内容\n　将来の夢｜a vet｜獣医\n　その理由｜she loves animals｜動物が好き\n　読む本｜about animal doctors｜獣医についての本\n　先週｜took her hamster to the animal hospital｜動物病院へ\n　⇒ wants to beの後ろが夢の内容になる\n　⚠ vetはveterinarianの略で「獣医」。本を読む行動から作家志望と読みちがえないよう注意する。',
     difficulty: 'basic',
   },
   {
@@ -1356,7 +1356,7 @@ export const eikenQuestions4kyu6: EikenQuestion[] = [
       { key: 'D', text: 'He cleans the classroom.' },
     ],
     correctKey: 'C',
-    explanation: '本文に「Every Friday, he plays basketball with his students after school（毎週金曜日の放課後、生徒とバスケットボールをする）」とあります。英語を教えるのは授業中の仕事で、金曜の放課後の活動はバスケットボールです。',
+    explanation: '本文にEvery Friday, he plays basketball with his students after school.（毎週金曜の放課後、生徒たちとバスケットボールをする）とあり、これが金曜の放課後の活動になる。英語を教えるのは授業中の仕事なので、放課後の行動としては合わない。早く帰る、教室をそうじするという記述もない。\n\n【図解】時と行動の対応\n　時｜本文の記述｜すること\n　授業中｜teaches English｜英語を教える\n　毎週金曜の放課後｜plays basketball｜バスケットボール\n　来日｜last year｜昨年\n　呼び名｜Coach D｜コーチD\n　⇒ 設問が金曜の放課後なのでバスケットボール\n　⚠ 仕事の内容と放課後の活動は別。設問の時を表す語句に合う行動を本文から探して選ぶ。',
     difficulty: 'basic',
   },
   {
@@ -1371,7 +1371,7 @@ export const eikenQuestions4kyu6: EikenQuestion[] = [
       { key: 'D', text: 'They can play soccer outside.' },
     ],
     correctKey: 'B',
-    explanation: '本文に「the school opened the gym for them during lunch time（学校は昼休みに体育館を開放した）」とあります。雨の日は外で遊べないのでDは誤り。プールや早帰りの話は本文にありません。',
+    explanation: '本文にthe school opened the gym for them during lunch time（学校は昼休みに体育館を開放した）とあり、これが雨の日にできることになる。雨の日は外で遊べないと書かれているので、外でサッカーをするという選択肢は本文と矛盾する。プールや早帰りについては本文にまったく記述がない。\n\n【図解】条件とできること\n　条件｜本文の記述｜できること\n　雨の日｜cannot play outside｜外で遊べない\n　その対応｜opened the gym｜体育館を開放\n　時間帯｜during lunch time｜昼休み\n　現在｜many students play there｜多くの生徒が遊ぶ\n　⇒ 雨の日は体育館で遊べる\n　⚠ 1文目に外で遊べないと書かれている。外での活動を選ぶと本文と正面から矛盾してしまう。',
     difficulty: 'standard',
   },
   {
@@ -1386,7 +1386,7 @@ export const eikenQuestions4kyu6: EikenQuestion[] = [
       { key: 'D', text: 'He plants flowers.' },
     ],
     correctKey: 'A',
-    explanation: '本文に「In fall, Ken helps his father cut the rice（秋にケンは父の稲刈りを手伝う）」とあります。おにぎりを作るのは母なのでBは誤り。「help + 人 + 動詞の原形（人が〜するのを手伝う）」の形も覚えましょう。',
+    explanation: '本文にIn fall, Ken helps his father cut the rice.（秋にケンは父の稲刈りを手伝う）とあり、これが秋の行動になる。おにぎりを作るのは母なので、ケンの行動ではない。米を売る、花を植えるという内容も本文にはない。help + 人 + 動詞の原形は「人が〜するのを手伝う」という形である。\n\n【図解】だれが何をするか\n　だれ｜すること｜本文の記述\n　Ken father｜米を作る｜grows rice\n　Ken｜稲刈りを手伝う｜helps his father cut\n　Ken mother｜おにぎりを作る｜makes rice balls\n　ケンの感想｜世界一の食べ物｜the best food\n　⇒ 設問がKenなので手伝いの内容を選ぶ\n　⚠ help 人 do は「人が〜するのを手伝う」。toを付けない形で使われる点も合わせて押さえる。',
     difficulty: 'standard',
   },
   {
@@ -1401,7 +1401,7 @@ export const eikenQuestions4kyu6: EikenQuestion[] = [
       { key: 'D', text: 'She will meet her teacher.' },
     ],
     correctKey: 'A',
-    explanation: '本文の最後に「She will go to bed early tonight（今夜は早く寝る）」とあります。宿題はもう終わっている（finished）のでBは誤り。先生に会うのは明日学校でのことです。',
+    explanation: '本文の最後にShe will go to bed early tonight.（今夜は早く寝る）とあり、これが今夜の予定になる。宿題はすでにfinished（終えた）と書かれているので、これから始めるという選択肢は合わない。旅行に行くのは過ぎたこと、先生に会うのは明日学校でのことになる。明日が夏休み明けの初日だという状況も読み取っておきたい。\n\n【図解】時と予定の対応\n　時｜本文の記述｜すること\n　今夜｜will go to bed early｜早く寝る\n　明日｜the first day of school｜始業の日\n　すでに｜finished all her homework｜宿題は終了\n　明日したいこと｜show her trip diary｜日記を見せる\n　⇒ tonightと結びつく行動が答えになる\n　⚠ finishedという過去形が完了を示す。これから宿題を始めるという選択肢は本文と矛盾する。',
     difficulty: 'basic',
   },
   {
@@ -1416,7 +1416,7 @@ export const eikenQuestions4kyu6: EikenQuestion[] = [
       { key: 'D', text: 'Twice a year.' },
     ],
     correctKey: 'B',
-    explanation: '本文に「They write letters in English to each other once a month（月に1回英語で手紙を書き合う）」とあります。once a month（月に1回）が正解です。pen friend（文通友だち）、each other（おたがい）も重要表現です。',
+    explanation: '本文にThey write letters in English to each other once a month.（月に1回、英語で手紙を書き合う）とあり、これが頻度になる。once a monthは「月に1回」という表現である。週に1回、毎日、年に2回という記述は本文にない。pen friend（文通友達）やeach other（おたがい）も重要表現である。\n\n【図解】本文の情報整理\n　項目｜本文の記述｜内容\n　文通相手｜a pen friend in Germany｜ドイツのルーカス\n　頻度｜once a month｜月に1回\n　使う言語｜in English｜英語\n　ルーカスの希望｜visit Japan to see sumo｜すもうを見に来日\n　⇒ How oftenの設問は頻度の表現を探す\n　⚠ once a monthとonce a weekは形が似ている。単位まで正確に読み取って選ぶことが大切になる。',
     difficulty: 'basic',
   },
   {
@@ -1431,7 +1431,7 @@ export const eikenQuestions4kyu6: EikenQuestion[] = [
       { key: 'D', text: 'They can take an elephant home.' },
     ],
     correctKey: 'C',
-    explanation: '本文に「Visitors can give food to the elephants（来園者はゾウにえさをあげられる）」とあります。乗る・洗う・連れて帰るという内容は本文にありません。event（イベント・行事）、visitor（訪問者）も覚えましょう。',
+    explanation: '本文にVisitors can give food to the elephants at eleven o clock.（来園者は11時にゾウにえさをあげられる）とあり、これがイベントでできることになる。ゾウに乗る、洗う、連れて帰るといった内容は本文にまったく書かれていない。canの後ろの動詞を確認すれば、できることが特定できる。\n\n【図解】イベントの情報整理\n　項目｜本文の記述｜内容\n　できること｜give food to the elephants｜えさをあげる\n　時刻｜at eleven o clock｜11時\n　必要な物｜tickets｜チケット\n　販売｜at the gate from nine｜門で9時から\n　⇒ canの後ろの動詞が答えになる\n　⚠ 動物園で思いつく活動でも本文にない内容は選ばない。書かれている動詞だけを根拠にする。',
     difficulty: 'basic',
   },
   {
@@ -1446,7 +1446,7 @@ export const eikenQuestions4kyu6: EikenQuestion[] = [
       { key: 'D', text: 'An apple pie.' },
     ],
     correctKey: 'D',
-    explanation: '本文に「she made an apple pie for the first time（初めてアップルパイを作った）」とあります。for the first time（初めて）は頻出表現。少し焦げたけれど家族は「おいしい」と言ってくれた、という流れも読み取りましょう。',
+    explanation: '本文にshe made an apple pie for the first time（初めてアップルパイを作った）とあり、これが先週の日曜に作った物になる。for the first timeは「初めて」という頻出表現である。チョコレートケーキ、クッキー、ピザはいずれも本文に出てこないので、選択肢にあっても選べない。\n\n【図解】本文の情報整理\n　項目｜本文の記述｜内容\n　作った物｜an apple pie｜アップルパイ\n　いつ｜Last Sunday｜先週の日曜\n　初めてかどうか｜for the first time｜初めて\n　できばえ｜a little burned｜少し焦げた\n　⇒ madeの目的語がそのまま答えになる\n　⚠ お菓子の名前が選択肢に並ぶが、本文に出てくるのは1つだけ。語をそのまま照合して選ぶ。',
     difficulty: 'basic',
   },
   {
@@ -1461,7 +1461,7 @@ export const eikenQuestions4kyu6: EikenQuestion[] = [
       { key: 'D', text: 'Run in the city marathon.' },
     ],
     correctKey: 'D',
-    explanation: '本文に「He is going to run in the city marathon in December（12月に市民マラソンを走る予定）」とあります。be going to 〜は未来の予定を表します。くつを買う話や走るのをやめる話は本文にありません。',
+    explanation: '本文にHe is going to run in the city marathon in December.（12月に市民マラソンを走る予定だ）とあり、これが12月の予定になる。be going to 〜は未来の予定を表す形である。走るくつを買う、毎朝走るのをやめる、学校で走り方を教えるといった内容は本文にまったく書かれていない。\n\n【図解】時と予定の対応\n　時｜本文の記述｜すること\n　毎朝｜runs two kilometers｜2キロ走る\n　12月｜run in the city marathon｜市民マラソン\n　目標｜finish the ten-kilometer race｜10キロ完走\n　時間帯｜before breakfast｜朝食前\n　⇒ in Decemberと結びつく予定が答えになる\n　⚠ 2キロは毎朝の練習、10キロは大会の距離。数字が2つ出るので役割を分けて読むこと。',
     difficulty: 'basic',
   },
   {
@@ -1476,7 +1476,7 @@ export const eikenQuestions4kyu6: EikenQuestion[] = [
       { key: 'D', text: 'At the city hall.' },
     ],
     correctKey: 'A',
-    explanation: '本文に「The posters are now on the wall near the school entrance（ポスターは今、学校の入り口近くのかべにはってある）」とあります。entrance（入り口）は場所の問題でよく出る単語です。図書館・体育館・市役所は本文にありません。',
+    explanation: '本文にThe posters are now on the wall near the school entrance.（ポスターは今、学校の入り口近くのかべにはってある）とあり、これが現在の掲示場所になる。entrance（入り口）は場所を問う問題でよく出る語である。図書室、体育館、市役所についてはいずれも本文に記述がない。\n\n【図解】本文の情報整理\n　項目｜本文の記述｜内容\n　作った物｜posters about saving water｜節水のポスター\n　カナの絵｜a big blue water drop｜青い水のしずく\n　今ある場所｜on the wall near the entrance｜入り口近くのかべ\n　生徒の反応｜stop and look at them｜立ち止まって見る\n　⇒ nowという語が現在の場所を示す\n　⚠ entranceは「入り口」。場所を問う設問では、前置詞onやnearを含む語句を本文から探す。',
     difficulty: 'basic',
   },
   {
@@ -1491,7 +1491,7 @@ export const eikenQuestions4kyu6: EikenQuestion[] = [
       { key: 'D', text: 'Three times a week.' },
     ],
     correctKey: 'C',
-    explanation: '本文に「He swims at the sports center twice a week（週に2回スポーツセンターで泳ぐ）」とあります。毎日するのは庭仕事のほうなので、Aと混同しないように注意しましょう。twice a week（週2回）は頻度の重要表現です。',
+    explanation: '本文にHe swims at the sports center twice a week（週に2回スポーツセンターで泳ぐ）とあり、これが水泳の頻度になる。毎日行うのは庭仕事のほうなので、活動ごとに頻度を分けて読む必要がある。月に1回、週に3回という記述は本文にない。twice a weekは「週に2回」という頻度の重要表現である。\n\n【図解】活動ごとの頻度\n　活動｜本文の記述｜頻度\n　水泳｜swims at the sports center｜週に2回\n　庭仕事｜works in his garden｜毎日\n　年齢｜seventy years old｜70歳\n　考え｜Moving your body is important｜体を動かすことが大切\n　⇒ 設問が水泳なので週2回が答えになる\n　⚠ 2つの活動で頻度が違う。設問がどちらの活動を問うているかを確認してから数を選ぶ。',
     difficulty: 'standard',
   },
   {
@@ -1506,7 +1506,7 @@ export const eikenQuestions4kyu6: EikenQuestion[] = [
       { key: 'D', text: 'Kuro.' },
     ],
     correctKey: 'B',
-    explanation: '本文の最後に「Hina named it Mochi（ヒナはその猫をモチと名づけた）」とあります。「name + A + B（AをBと名づける）」の形です。milkは猫にあげた飲み物で、名前ではありません。',
+    explanation: '本文の最後にHina named it Mochi.（ヒナはそれをモチと名づけた）とあり、これがねこの名前になる。name + A + Bは「AをBと名づける」という形である。milkはねこにあげた飲み物であって名前ではないので、取りちがえないよう読む必要がある。MomoやKuroは本文に出てこない語である。\n\n【図解】本文の情報整理\n　項目｜本文の記述｜内容\n　見つけた場所｜in the park｜公園\n　いつ｜last night｜昨夜\n　あげた物｜milk｜牛乳\n　名前｜Mochi｜モチ\n　⇒ namedの後ろの語が名前になる\n　⚠ name A Bは「AをBと名づける」形。milkは与えた飲み物なので、名前と取りちがえないこと。',
     difficulty: 'basic',
   },
 ];
