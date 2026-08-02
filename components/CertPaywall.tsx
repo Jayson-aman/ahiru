@@ -261,7 +261,7 @@ export default function CertPaywall({
                 price={proMonthlyLabel ?? PRICING.proMonthly}
                 yearPrice={proYearlyLabel ?? PRICING.proYearly}
                 yearSavings={proYearlySavingsLabel ?? PRICING.proYearlySavings}
-                features={proFeatures ?? ['全問題アンロック・図解入り詳細解説', 'テキスト・模擬試験・二次試験対策', '動く図解＋音声解説で初心者もわかりやすい', 'iPhone・iPad・Webでいつでも学習']}
+                features={proFeatures ?? ['全問題アンロック・図解入り詳細解説', '要点テキスト・模擬試験にも対応', '動く図解で初心者もわかりやすい', 'iPhone・iPadでいつでも学習']}
                 color={accentColor}
                 onPress={() => runPurchase(certPkg, `${certName} Pro`)}
                 loading={purchasing}
