@@ -15,7 +15,7 @@ export const eikenQuestions4kyu4: EikenQuestion[] = [
       { key: 'D', text: 'door' },
     ],
     correctKey: 'B',
-    explanation: '「play the + 楽器名」で「（楽器）を演奏する」。バンドで演奏できるのは楽器のflute（フルート）だけです。window（窓）、lunch（昼食）、door（ドア）は楽器ではないので演奏できません。',
+    explanation: 'play the + 楽器名で「（楽器）を演奏する」という意味になるので、選択肢の中で楽器を表すflute（フルート）が正解になる。「姉は学校のバンドでフルートを演奏する」という意味である。window（窓）、lunch（昼食）、door（ドア）はいずれも楽器ではないので演奏できない。楽器名の前にはtheを付けるという決まりも重要である。\n\n【図解】語の意味と楽器かどうか\n　語｜意味｜楽器か\n　flute｜フルート｜楽器\n　window｜窓｜楽器ではない\n　lunch｜昼食｜楽器ではない\n　door｜ドア｜楽器ではない\n　⇒ バンドで演奏できるのはfluteだけ\n　⚠ 楽器名の前にはtheを付け、スポーツ名には付けない。play the pianoとplay soccerの違いを押さえる。',
     difficulty: 'basic',
   },
   {
@@ -30,7 +30,7 @@ export const eikenQuestions4kyu4: EikenQuestion[] = [
       { key: 'D', text: 'lunch' },
     ],
     correctKey: 'D',
-    explanation: '「おなかがすいた」と言っているので、「have lunch（昼食をとる）」が自然です。have homework（宿題がある）はレストランの文脈に合わず、music（音楽）やrain（雨）は「食べる」対象になりません。',
+    explanation: '1文目のI am hungry.（おなかがすいた）が理由なので、have lunch（昼食をとる）が正解になる。haveは「持っている」だけでなく「食べる・飲む」の意味でも使われる重要動詞である。homeworkはhave homeworkで「宿題がある」となるが、レストランの文脈には合わない。musicやrainは食べる対象にならない。\n\n【図解】have を使う表現\n　表現｜意味｜使う場面\n　have lunch｜昼食をとる｜おなかがすいたとき\n　have breakfast｜朝食をとる｜朝\n　have homework｜宿題がある｜学校\n　have a good time｜楽しく過ごす｜行事\n　⇒ 空腹という理由に合うのはhave lunch\n　⚠ haveは「食べる」の意味でも使う。eatに言いかえられる場面かどうかで意味を判断する。',
     difficulty: 'basic',
   },
   {
@@ -45,7 +45,7 @@ export const eikenQuestions4kyu4: EikenQuestion[] = [
       { key: 'D', text: 'dictionary' },
     ],
     correctKey: 'A',
-    explanation: '部屋が暑いときに開けるものはwindow（窓）です。pencil（えんぴつ）、salad（サラダ）、dictionary（辞書）は「開けて部屋を涼しくする」という文脈に合いません。',
+    explanation: '2文目のIt is very hot in this room.（この部屋はとても暑い）が理由なので、開けるのはwindow（窓）になる。窓を開ければ風が入って涼しくなるという流れである。pencil（えんぴつ）、salad（サラダ）、dictionary（辞書）はいずれも開けても部屋の暑さとは関係がない。理由の文と結びつく物を選ぶことが要点になる。\n\n【図解】開ける物と目的\n　物｜英語｜開けたときの効果\n　窓｜window｜風が入る\n　ドア｜door｜出入りできる\n　辞書｜dictionary｜語を調べる\n　箱｜box｜中身が見える\n　⇒ 暑さを和らげるので窓を開ける\n　⚠ 理由を述べた2文目を読まずに選ぶと、開けられる物ならどれでも入るように見えてしまう。',
     difficulty: 'basic',
   },
   {
@@ -60,7 +60,7 @@ export const eikenQuestions4kyu4: EikenQuestion[] = [
       { key: 'D', text: 'opens' },
     ],
     correctKey: 'C',
-    explanation: '「brush one\'s teeth」で「歯をみがく」という決まった表現です。eat（食べる）やopen（開ける）はteethと組み合わせて使う習慣表現ではなく、sleep（眠る）は目的語をとれません。',
+    explanation: 'brush your teethは「歯をみがく」という決まった表現なので、brushesが正解になる。主語のKenは3人称単数なので、動詞の語尾にesを付けてbrushesとする点も重要である。eatやopenはteethと組み合わせて習慣を表す表現にならず、sleepは目的語をとれない自動詞なのでhis teethを続けられない。\n\n【図解】体の部位と動詞の組み合わせ\n　表現｜意味｜対象\n　brush your teeth｜歯をみがく｜歯\n　wash your hands｜手を洗う｜手\n　wash your face｜顔を洗う｜顔\n　comb your hair｜髪をとかす｜髪\n　⇒ 歯に使う動詞はbrush\n　⚠ 主語が3人称単数なのでbrushesとesを付ける。sh で終わる語はsではなくesを付ける点にも注意。',
     difficulty: 'basic',
   },
   {
@@ -75,7 +75,7 @@ export const eikenQuestions4kyu4: EikenQuestion[] = [
       { key: 'D', text: 'umbrella' },
     ],
     correctKey: 'C',
-    explanation: '「a soccer game（サッカーの試合）」をテレビで見た、という文です。kitchen（台所）、shower（シャワー）、umbrella（かさ）はsoccerと組み合わせて「テレビで見るもの」になりません。',
+    explanation: 'テレビで見たものなので、a soccer game（サッカーの試合）が正解になる。gameは「試合」を表す語で、matchと言いかえることもできる。kitchen（台所）、shower（シャワー）、umbrella（かさ）はいずれもsoccerと組み合わせてテレビで見るものにならない。watchは動くものをじっと見るときに使う動詞である。\n\n【図解】語句の意味とテレビとの関係\n　語句｜意味｜テレビで見るか\n　a soccer game｜サッカーの試合｜見る\n　a kitchen｜台所｜見ない\n　a shower｜シャワー｜見ない\n　an umbrella｜かさ｜見ない\n　⇒ テレビで見るのはgame\n　⚠ 試合を見るのはwatch、するのはplay。動詞によってgameとの関わり方が変わる点も押さえる。',
     difficulty: 'basic',
   },
   {
@@ -90,7 +90,7 @@ export const eikenQuestions4kyu4: EikenQuestion[] = [
       { key: 'D', text: 'eraser' },
     ],
     correctKey: 'A',
-    explanation: '「live in a small village（小さな村に住む）」が自然です。subject（教科）、hobby（趣味）、eraser（消しゴム）は人が住む場所ではありません。',
+    explanation: 'live in a small village（小さな村に住む）が自然な組み合わせなので、villageが正解になる。near the sea（海の近くに）という説明も、人が住む場所を表していることの裏づけになる。subject（教科）、hobby（趣味）、eraser（消しゴム）はいずれも人が住む場所ではないので、live inの後ろには置けない。\n\n【図解】語の意味と住める場所か\n　語｜意味｜住めるか\n　village｜村｜住める\n　town｜町｜住める\n　subject｜教科｜住めない\n　hobby｜趣味｜住めない\n　⇒ live inの後ろは場所を表す語\n　⚠ villageは町より小さい集落。smallという形容詞と合わせて、規模の小さい場所だと読み取れる。',
     difficulty: 'basic',
   },
   {
@@ -105,7 +105,7 @@ export const eikenQuestions4kyu4: EikenQuestion[] = [
       { key: 'D', text: 'umbrella' },
     ],
     correctKey: 'D',
-    explanation: '雨が降っているときに持っていくものはumbrella（かさ）です。notebook（ノート）、wallet（さいふ）、racket（ラケット）は雨と直接関係がありません。',
+    explanation: '1文目のIt is raining.（雨が降っている）が理由なので、持っていくのはumbrella（かさ）になる。notebook（ノート）、wallet（さいふ）、racket（ラケット）はいずれも雨と直接関係のない物である。forget to doは「〜し忘れる」という形で、Do not forget to 〜は「忘れずに〜してね」という注意をうながす表現になる。\n\n【図解】天候と持ち物の対応\n　天候｜持っていく物｜理由\n　雨｜umbrella｜ぬれないため\n　強い日ざし｜hat｜日光をよける\n　寒い日｜coat｜寒さを防ぐ\n　旅行｜wallet｜買い物のため\n　⇒ 雨の日に必要なのはumbrella\n　⚠ Do not forget to 〜は「忘れずに〜して」。否定の命令文だが、実際には行動をうながす表現である。',
     difficulty: 'basic',
   },
   {
@@ -120,7 +120,7 @@ export const eikenQuestions4kyu4: EikenQuestion[] = [
       { key: 'D', text: 'driver' },
     ],
     correctKey: 'B',
-    explanation: '2文目に「She swims very fast（彼女は速く泳ぐ）」とあるので、swimmer（泳ぐ人・水泳選手）が正解です。singer（歌手）、writer（作家）、driver（運転手）は泳ぎとは関係ありません。「動詞 + er = 〜する人」の形も覚えておきましょう。',
+    explanation: '2文目のShe swims very fast.（彼女はとても速く泳ぐ）が説明になっているので、swimmer（泳ぐ人・水泳選手）が正解になる。動詞に-erを付けると「〜する人」を表す名詞になるという語の作り方も重要である。singer（歌手）、writer（作家）、driver（運転手）はいずれも泳ぎとは関係のない職業や役割である。\n\n【図解】動詞から人を表す語をつくる\n　動詞｜-erを付けた語｜意味\n　swim｜swimmer｜泳ぐ人\n　sing｜singer｜歌手\n　write｜writer｜作家\n　drive｜driver｜運転手\n　⇒ 泳ぐ人を表すのでswimmer\n　⚠ swimはmを重ねてswimmerとする。writeはeを取ってwriterとするなど、つづりの変化にも注意する。',
     difficulty: 'basic',
   },
   {
@@ -135,7 +135,7 @@ export const eikenQuestions4kyu4: EikenQuestion[] = [
       { key: 'D', text: 'tired' },
     ],
     correctKey: 'D',
-    explanation: '長い散歩のあとで早く寝た理由として自然なのはtired（疲れた）です。busy（いそがしい）、famous（有名な）は理由として不自然で、sunny（晴れた）は天気を表す形容詞なので人には使えません。',
+    explanation: 'after the long walk（長い散歩の後で）とso I went to bed early（だから早く寝た）という前後関係から、tired（疲れた）が正解になる。busy（いそがしい）やfamous（有名な）は早く寝る理由にならず、sunny（晴れた）は天気を表す形容詞なので人を主語にすることができない。soは結果を導く接続詞である。\n\n【図解】形容詞と早く寝る理由\n　形容詞｜意味｜早く寝る理由になるか\n　tired｜疲れた｜なる\n　busy｜いそがしい｜ならない\n　famous｜有名な｜ならない\n　sunny｜晴れた｜人には使わない\n　⇒ 長い散歩の後の状態はtired\n　⚠ sunnyやcloudyは天気を表す語で人を主語にできない。主語が人か天気かをまず確認する。',
     difficulty: 'basic',
   },
   {
@@ -150,7 +150,7 @@ export const eikenQuestions4kyu4: EikenQuestion[] = [
       { key: 'D', text: 'sunny' },
     ],
     correctKey: 'C',
-    explanation: '「答えられない」と続くので、difficult（難しい）が正解です。easy（簡単な）だと意味が逆になり、happy（うれしい）やsunny（晴れた）は問題の性質を表す言葉として合いません。',
+    explanation: '2文目のI cannot answer it.（答えられない）が根拠なので、difficult（難しい）が正解になる。easyは「やさしい」で意味が正反対になり、答えられないという内容と矛盾する。happy（うれしい）は人の気持ち、sunny（晴れた）は天気を表す語なので、問題の性質を表す形容詞としては合わない。\n\n【図解】形容詞と後ろの文の対応\n　形容詞｜意味｜答えられない理由になるか\n　difficult｜難しい｜なる\n　easy｜やさしい｜ならない\n　happy｜うれしい｜ならない\n　sunny｜晴れた｜ならない\n　⇒ 答えられないので難しいと判断する\n　⚠ 2文目が根拠になる問題では、後ろの文まで読んでから選ぶ。easyを選ぶと意味が正反対になる。',
     difficulty: 'basic',
   },
   {
@@ -165,7 +165,7 @@ export const eikenQuestions4kyu4: EikenQuestion[] = [
       { key: 'D', text: 'doors' },
     ],
     correctKey: 'B',
-    explanation: '学校で教えるものは教科なので、science（理科）が正解です。hospitals（病院）、dishes（皿）、doors（ドア）は教科ではありません。math（数学）、English（英語）、history（歴史）などの教科名もあわせて覚えましょう。',
+    explanation: '中学校で教えるものは教科なので、science（理科）が正解になる。teachの目的語には教科や技能が来るという点が判断の手がかりである。hospitals（病院）、dishes（皿）、doors（ドア）はいずれも教える内容にならない。math（数学）、English（英語）、history（歴史）などの教科名もまとめて覚えておきたい。\n\n【図解】teach の目的語になる語\n　分類｜例｜teachの目的語になるか\n　教科｜science, math, English｜なる\n　技能｜cooking, swimming｜なる\n　建物｜hospital｜ならない\n　食器｜dish｜ならない\n　⇒ 学校で教える内容なのでscience\n　⚠ teach 人 物という語順もある。teach us Englishのように、人と教える内容の両方をとることができる。',
     difficulty: 'basic',
   },
   {
@@ -195,7 +195,7 @@ export const eikenQuestions4kyu4: EikenQuestion[] = [
       { key: 'D', text: 'station' },
     ],
     correctKey: 'A',
-    explanation: 'パンダやライオンを見に行く場所はzoo（動物園）です。library（図書館）は本を読む場所、bank（銀行）はお金をあつかう場所、station（駅）は電車に乗る場所です。',
+    explanation: 'パンダやライオンを見に行く場所はzoo（動物園）なので、これが正解になる。library（図書館）は本を読む場所、bank（銀行）はお金をあつかう場所、station（駅）は電車に乗る場所で、いずれも動物を見る場所ではない。魚や海の生き物を見るならaquarium（水族館）という語を使う点も合わせて覚えておきたい。\n\n【図解】場所とそこにあるもの\n　場所｜英語｜そこで見られるもの\n　動物園｜zoo｜パンダやライオン\n　水族館｜aquarium｜魚やイルカ\n　図書館｜library｜本\n　駅｜station｜電車\n　⇒ 陸の動物を見る場所はzoo\n　⚠ 動物を見る場所でも、水中の生き物ならaquariumになる。何を見るかで施設名が変わる点に注意する。',
     difficulty: 'basic',
   },
   {
@@ -210,7 +210,7 @@ export const eikenQuestions4kyu4: EikenQuestion[] = [
       { key: 'D', text: 'bath' },
     ],
     correctKey: 'B',
-    explanation: 'read（読む）の目的語として自然なのはnewspaper（新聞）です。radio（ラジオ）は「listen to（聞く）」もの、piano（ピアノ）は「play（演奏する）」もの、bath（ふろ）は「take（入る）」ものです。動詞と名詞の組み合わせに注意しましょう。',
+    explanation: 'readの目的語として自然なのはnewspaper（新聞）なので、これが正解になる。radioはlisten to the radio（ラジオを聞く）、pianoはplay the piano（ピアノを弾く）、bathはtake a bath（ふろに入る）と、名詞ごとに組み合わせる動詞が決まっている。動詞と名詞の相性で判断するのがこの種の問題の解き方である。\n\n【図解】名詞と結びつく動詞\n　名詞｜結びつく動詞｜例\n　newspaper｜read｜read the newspaper\n　radio｜listen to｜listen to the radio\n　piano｜play｜play the piano\n　bath｜take｜take a bath\n　⇒ readの目的語になるのはnewspaper\n　⚠ 日本語で「見る」と言うものでも、新聞は英語ではread。名詞ごとの組み合わせを覚えておく。',
     difficulty: 'basic',
   },
   {
@@ -225,7 +225,7 @@ export const eikenQuestions4kyu4: EikenQuestion[] = [
       { key: 'D', text: 'door' },
     ],
     correctKey: 'C',
-    explanation: 'テスト用紙の上に書くものはname（名前）です。house（家）、foot（足）、door（ドア）は「書く」対象として不自然です。「write your name」はテストや書類でよく使われる表現です。',
+    explanation: 'テスト用紙のいちばん上に書くものはname（名前）なので、これが正解になる。write your nameは書類やテストの指示で頻出の表現である。house（家）、foot（足）、door（ドア）はいずれも紙に書く対象として不自然である。at the topは「いちばん上に」という位置を表す表現になる。\n\n【図解】場面と書くもの\n　場面｜書くもの｜英語\n　テスト用紙｜名前｜write your name\n　申込用紙｜住所｜write your address\n　黒板｜答え｜write the answer\n　授業中｜メモ｜take notes\n　⇒ テスト用紙の上部に書くのは名前\n　⚠ at the topは「上のほうに」。位置を表す語句を読み取ると、何を書くのかが判断しやすくなる。',
     difficulty: 'basic',
   },
   {
@@ -240,7 +240,7 @@ export const eikenQuestions4kyu4: EikenQuestion[] = [
       { key: 'D', text: 'sent' },
     ],
     correctKey: 'D',
-    explanation: '「send a letter to 〜（〜に手紙を送る）」が正解で、sentはsendの過去形です。closed（閉じた）は手紙を送る文脈に合わず、rained（雨が降った）は天気の動詞、slept（眠った）は目的語をとれません。',
+    explanation: 'send a letter to 〜は「〜に手紙を送る」という表現で、sentはsendの過去形である。「ユミは先週カナダの友人に手紙を送った」という意味になる。closed（閉じた）は手紙を送る文脈に合わず、rained（雨が降った）は主語がitになる天気の動詞、slept（眠った）は目的語をとれない自動詞である。\n\n【図解】動詞と目的語の組み合わせ\n　表現｜意味｜語順\n　send a letter to 人｜手紙を送る｜物 + to 人\n　send 人 a letter｜人に手紙を送る｜人 + 物\n　close the door｜ドアを閉める｜物のみ\n　rain｜雨が降る｜主語はit\n　⇒ 手紙を送るのでsentが正解\n　⚠ sendの変化はsend - sent - sentで過去形と過去分詞が同じ。sendedという形は存在しない。',
     difficulty: 'basic',
   },
   {
@@ -255,7 +255,7 @@ export const eikenQuestions4kyu4: EikenQuestion[] = [
       { key: 'D', text: 'funny' },
     ],
     correctKey: 'D',
-    explanation: 'みんなが大笑いした理由なので、funny（おかしい・こっけいな）が正解です。sad（悲しい）なら泣くはずで、dangerous（危険な）やheavy（重い）は笑う理由になりません。',
+    explanation: 'so 〜 that …（とても〜なので…）の構文で、everyone laughed a lot（みんながたくさん笑った）という結果があるので、funny（おかしい・こっけいな）が正解になる。sadなら泣くはずで結果と合わず、dangerous（危険な）やheavy（重い）は笑う理由にならない。結果から前の形容詞を逆算するのが解き方である。\n\n【図解】形容詞と観客の反応\n　形容詞｜意味｜観客の反応\n　funny｜おかしい｜笑う\n　sad｜悲しい｜泣く\n　dangerous｜危険な｜こわがる\n　exciting｜わくわくする｜興奮する\n　⇒ 笑ったという結果に合うのはfunny\n　⚠ so 〜 that …は原因と結果を結ぶ構文。thatの後ろの結果を読んでから形容詞を選ぶのが確実である。',
     difficulty: 'basic',
   },
   {
@@ -270,7 +270,7 @@ export const eikenQuestions4kyu4: EikenQuestion[] = [
       { key: 'D', text: 'hats' },
     ],
     correctKey: 'A',
-    explanation: '紙を切る道具はscissors（はさみ）です。はさみは刃が2枚あるのでいつも複数形で使い、these scissorsのように指し示します。shoes（くつ）、gloves（手ぶくろ）、hats（ぼうし）では紙を切れません。',
+    explanation: '紙を切る道具はscissors（はさみ）なので、これが正解になる。はさみは刃が2枚で1組になっているため常に複数形で使い、these scissorsのように指し示す。shoes（くつ）、gloves（手ぶくろ）、hats（ぼうし）では紙を切ることができない。1つを数えるときはa pair of scissorsという言い方になる。\n\n【図解】道具と数の形\n　道具｜英語｜数の形\n　はさみ｜scissors｜常に複数形\n　くつ｜shoes｜1組で複数形\n　手ぶくろ｜gloves｜1組で複数形\n　ぼうし｜hat｜単数でも使う\n　⇒ 紙を切る道具はscissors\n　⚠ scissorsは1つでも複数形。数えるときはa pair of scissorsとし、a scissorとは言わない。',
     difficulty: 'standard',
   },
   {
@@ -285,7 +285,7 @@ export const eikenQuestions4kyu4: EikenQuestion[] = [
       { key: 'D', text: 'bakery' },
     ],
     correctKey: 'C',
-    explanation: '「病気の人を助ける」場所はhospital（病院）です。museum（博物館）、airport（空港）、bakery（パン屋）では病気の人の世話はしません。2文目がヒントになる問題では、後ろの文までしっかり読みましょう。',
+    explanation: '2文目のShe helps sick people.（彼女は病気の人を助ける）が説明になっているので、hospital（病院）が正解になる。museum（博物館）、airport（空港）、bakery（パン屋）ではいずれも病気の人の世話をしない。work at 〜は「〜で働く」という表現である。後ろの文が答えの根拠になる典型的な問題である。\n\n【図解】場所とそこで行われること\n　場所｜英語｜そこで働く人\n　病院｜hospital｜医者や看護師\n　博物館｜museum｜学芸員\n　空港｜airport｜パイロットや係員\n　パン屋｜bakery｜パン職人\n　⇒ 病気の人を助ける場所はhospital\n　⚠ 2文目が根拠になる問題では後ろの文まで読む。1文目だけでは働く場所を特定できない。',
     difficulty: 'basic',
   },
   {
@@ -315,7 +315,7 @@ export const eikenQuestions4kyu4: EikenQuestion[] = [
       { key: 'D', text: 'dates' },
     ],
     correctKey: 'B',
-    explanation: '春・夏・秋・冬はseasons（季節）です。1年にweeks（週）は約52、hours（時間）は8,760あるので数が合わず、dates（日付）も文脈に合いません。',
+    explanation: 'spring, summer, fall, and winter（春・夏・秋・冬）という具体例が挙げられており、1年に4つあるものなのでseasons（季節）が正解になる。weeks（週）は1年に約52、hours（時間）は8760あるので数が合わず、dates（日付）も4つではない。fourという数と具体例の両方が判断の手がかりになる。\n\n【図解】時の単位と1年あたりの数\n　単位｜1年あたりの数｜例\n　seasons｜4つ｜spring, summer, fall, winter\n　months｜12｜January, February\n　weeks｜約52｜1週間ごと\n　hours｜8760｜1時間ごと\n　⇒ 1年に4つあるのはseasons\n　⚠ fourという数が決め手になる。コロンの後ろに並ぶ具体例も答えを決める重要な手がかりである。',
     difficulty: 'basic',
   },
   {
@@ -330,7 +330,7 @@ export const eikenQuestions4kyu4: EikenQuestion[] = [
       { key: 'D', text: 'sad' },
     ],
     correctKey: 'D',
-    explanation: '大好きなチームが負けたのだから、sad（悲しい）が正解です。glad（うれしい）は意味が逆で、hungry（空腹の）、sleepy（眠い）は試合の結果とは関係のない気持ちです。',
+    explanation: 'because his favorite team lost the game（大好きなチームが試合に負けたので）という理由があるので、sad（悲しい）が正解になる。gladは「うれしい」で意味が正反対、hungryは空腹、sleepyは眠いという意味で、試合の結果とは関係のない気持ちである。lostはloseの過去形で「負けた」を表す。\n\n【図解】気持ちを表す形容詞と出来事\n　形容詞｜意味｜合う出来事\n　sad｜悲しい｜好きなチームが負ける\n　glad｜うれしい｜チームが勝つ\n　hungry｜空腹の｜食事をぬく\n　sleepy｜眠い｜寝不足\n　⇒ 負けたという理由に合うのはsad\n　⚠ loseは「負ける」と「なくす」の両方の意味がある。the gameが目的語なら「負ける」になる。',
     difficulty: 'basic',
   },
   {
@@ -345,7 +345,7 @@ export const eikenQuestions4kyu4: EikenQuestion[] = [
       { key: 'D', text: 'farmer' },
     ],
     correctKey: 'A',
-    explanation: 'レストランで料理を作る人はchef（シェフ・料理人）です。pilot（パイロット）は飛行機を操縦する人、dentist（歯医者）は歯を治す人、farmer（農家）は作物を育てる人です。職業の単語はまとめて覚えましょう。',
+    explanation: 'works in a restaurant and cooks food（レストランで働き料理を作る）という説明にあてはまるのはchef（シェフ・料理長）なので、これが正解になる。pilotは飛行機を操縦する人、dentistは歯を治す人、farmerは作物を育てる人で、いずれもレストランで料理を作る職業ではない。cookも「料理人」の意味で使える。\n\n【図解】職業と働く場所\n　職業｜働く場所｜仕事の内容\n　chef｜レストラン｜料理を作る\n　pilot｜飛行機｜操縦する\n　dentist｜歯科医院｜歯を治す\n　farmer｜農場｜作物を育てる\n　⇒ 料理を作る職業はchef\n　⚠ cookは動詞で「料理する」、名詞で「料理人」。同じつづりで品詞が変わる語なので文中の位置で判断する。',
     difficulty: 'basic',
   },
   {
@@ -360,7 +360,7 @@ export const eikenQuestions4kyu4: EikenQuestion[] = [
       { key: 'D', text: 'quiet' },
     ],
     correctKey: 'C',
-    explanation: '多くの人が座れなかった理由はcrowded（混雑した）です。empty（空っぽの）なら誰でも座れるはずで、cheap（安い）、quiet（静かな）は座れない理由になりません。',
+    explanation: 'so many people could not sit down（だから多くの人がすわれなかった）という結果があるので、crowded（混雑した）が正解になる。emptyは「空いている」で意味が正反対になり、すわれない理由にならない。cheap（安い）やquiet（静かな）も、席にすわれない理由としては結びつかない。\n\n【図解】電車の状態と結果\n　形容詞｜意味｜すわれるか\n　crowded｜混雑した｜すわれない\n　empty｜空いている｜すわれる\n　cheap｜安い｜関係ない\n　quiet｜静かな｜関係ない\n　⇒ すわれなかった理由になるのはcrowded\n　⚠ soの前が理由、後ろが結果。結果の文を読んでから、それにつながる状態を表す語を選ぶ。',
     difficulty: 'standard',
   },
   {
@@ -375,7 +375,7 @@ export const eikenQuestions4kyu4: EikenQuestion[] = [
       { key: 'D', text: 'pair' },
     ],
     correctKey: 'C',
-    explanation: '水のような飲み物は「a glass of water（コップ1杯の水）」と数えます。a slice of（1枚の）はパンやチーズ、a sheet of（1枚の）は紙、a pair of（1組の）はくつなどに使います。',
+    explanation: '水のような飲み物はa glass of water（コップ1杯の水）と数えるので、glassが正解になる。1文目のI am thirsty.（のどがかわいた）が場面の手がかりである。a slice ofはパンやチーズなど薄く切ったもの、a sheet ofは紙、a pair ofはくつなど2つで1組のものに使う数え方である。\n\n【図解】数えられない名詞の数え方\n　表現｜使う物｜例\n　a glass of｜冷たい飲み物｜a glass of water\n　a cup of｜温かい飲み物｜a cup of tea\n　a slice of｜薄く切ったもの｜a slice of bread\n　a sheet of｜紙｜a sheet of paper\n　⇒ 水を数えるのでa glass of\n　⚠ 温かい飲み物はa cup of、冷たい飲み物はa glass of。中身によって容器の語が変わる点に注意する。',
     difficulty: 'standard',
   },
   {
@@ -390,7 +390,7 @@ export const eikenQuestions4kyu4: EikenQuestion[] = [
       { key: 'D', text: 'came' },
     ],
     correctKey: 'A',
-    explanation: '「get up（起きる）」の過去形got upが正解です。took up、made upも英語には存在しますが「7時に起きて朝食を食べた」という文脈に合うのはgot upだけです。came upは「近づいてきた・話題に上った」の意味です。',
+    explanation: 'get upは「起きる」という意味の句動詞で、その過去形got upが正解になる。at seven（7時に）という時刻とhad breakfast（朝食をとった）という後半から、朝の起床の場面だとわかる。take upは「（趣味などを）始める」、make upは「仲直りする」、come upは「近づく・話題に上る」で、いずれも起床の意味にはならない。\n\n【図解】up を使う句動詞\n　表現｜意味｜使う場面\n　get up｜起きる｜朝\n　take up｜始める｜趣味や仕事\n　make up｜仲直りする｜けんかの後\n　come up｜近づく・話題に上る｜会話\n　⇒ 朝の起床を表すのでgot up\n　⚠ 同じupが付く句動詞でも動詞が変われば意味が全く変わる。時刻と次の行動から場面を判断する。',
     difficulty: 'basic',
   },
   {
@@ -405,7 +405,7 @@ export const eikenQuestions4kyu4: EikenQuestion[] = [
       { key: 'D', text: 'team' },
     ],
     correctKey: 'D',
-    explanation: '「be on the tennis team（テニス部に入っている）」が正解です。部活動には「on the + スポーツ名 + team」を使います。class（授業）、room（部屋）、lesson（レッスン）は「on the tennis 〜」の形では使いません。',
+    explanation: 'be on the 〜 teamは「〜部に入っている」という表現なので、teamが正解になる。「兄は高校でテニス部に入っている」という意味である。部活動を表すときは前置詞にonを使う点が重要で、inにしないよう注意したい。class（授業）、room（部屋）、lesson（レッスン）はon the tennis 〜という形では使わない。\n\n【図解】所属を表す表現\n　表現｜意味｜使う場面\n　be on the tennis team｜テニス部に入っている｜部活動\n　be in the same class｜同じクラスにいる｜学級\n　join the club｜クラブに入る｜入部するとき\n　take a lesson｜レッスンを受ける｜習い事\n　⇒ 部活動への所属を表すのでteam\n　⚠ 部活動はon the 〜 teamで前置詞はon。in the teamとするのが定番の誤りなので注意する。',
     difficulty: 'standard',
   },
   {
@@ -420,7 +420,7 @@ export const eikenQuestions4kyu4: EikenQuestion[] = [
       { key: 'D', text: 'books' },
     ],
     correctKey: 'B',
-    explanation: '公園で歌う（さえずる）のはbirds（鳥）です。desks（机）、clouds（雲）、books（本）は歌いません。「Winter is over（冬が終わった）」という春らしい場面もヒントになります。',
+    explanation: '公園でさえずるのはbirds（鳥）なので、これが正解になる。Winter is over（冬が終わった）という前半も、春らしい情景を表す語が入ることの手がかりになる。desks（机）、clouds（雲）、books（本）はいずれも歌ったりさえずったりしない。singは人が歌うだけでなく、鳥のさえずりにも使う動詞である。\n\n【図解】主語と動作の相性\n　主語｜英語｜singと結びつくか\n　鳥｜birds｜さえずる\n　机｜desks｜結びつかない\n　雲｜clouds｜結びつかない\n　本｜books｜結びつかない\n　⇒ 公園でさえずるのはbirds\n　⚠ Winter is over.は「冬が終わった」。be overは「終わっている」という意味の重要表現である。',
     difficulty: 'basic',
   },
   {
@@ -435,7 +435,7 @@ export const eikenQuestions4kyu4: EikenQuestion[] = [
       { key: 'D', text: 'talk' },
     ],
     correctKey: 'D',
-    explanation: '図書館でしてはいけないのは「talk loudly（大声で話す）」ことです。sit（座る）、sleep（眠る）、study（勉強する）はloudly（大声で）という副詞と組み合わせるのが不自然です。',
+    explanation: '2文目のPeople are reading books.（人々が本を読んでいる）が理由なので、図書館でしてはいけないのはtalk loudly（大声で話す）ことになる。sit（すわる）、sleep（眠る）、study（勉強する）はloudlyという副詞と組み合わせるのが不自然で、しかも図書館で禁止される行為としても合わない。\n\n【図解】動作と loudly の相性\n　動作｜loudlyと組み合わせられるか｜図書館での可否\n　talk｜組み合わせられる｜してはいけない\n　sit｜組み合わせにくい｜してよい\n　study｜組み合わせにくい｜してよい\n　sleep｜組み合わせにくい｜すすめられない\n　⇒ 大声でしてはいけないのはtalk\n　⚠ 副詞との相性も手がかりになる。sit loudlyのような組み合わせは英語として成立しない。',
     difficulty: 'basic',
   },
   {
@@ -450,7 +450,7 @@ export const eikenQuestions4kyu4: EikenQuestion[] = [
       { key: 'D', text: 'tall' },
     ],
     correctKey: 'C',
-    explanation: '「もっと大きいものはありますか」と聞いているので、このセーターはsmall（小さい）すぎるとわかります。old（古い）やnew（新しい）は大きさと関係がなく、tall（背が高い）は人や建物に使う形容詞です。',
+    explanation: '2文目のDo you have a bigger one?（もっと大きいものはありますか）が根拠なので、このセーターはsmall（小さい）すぎることになる。old（古い）やnew（新しい）は大きさとは無関係で、tall（背が高い）は人や建物に使う形容詞なので衣類には使わない。too 〜は「〜すぎる」という程度を表す。\n\n【図解】形容詞と次の発言の対応\n　形容詞｜意味｜もっと大きい物を求める理由になるか\n　small｜小さい｜なる\n　old｜古い｜ならない\n　new｜新しい｜ならない\n　tall｜背が高い｜服には使わない\n　⇒ 大きいものを求めるので小さすぎたとわかる\n　⚠ 服の大きさにtallは使わない。人や建物の高さに使う語なので、修飾する相手を確認する。',
     difficulty: 'basic',
   },
 
@@ -467,7 +467,7 @@ export const eikenQuestions4kyu4: EikenQuestion[] = [
       { key: 'D', text: 'be' },
     ],
     correctKey: 'B',
-    explanation: '「There is/are 〜」の文では、後ろの名詞に合わせてbe動詞を選びます。a lot of children（たくさんの子どもたち）は複数で、yesterday（昨日）があるので過去形のwereが正解です。wasは単数の過去、isは現在形なので不適切です。',
+    explanation: 'There is / are 〜の文では、be動詞を後ろの名詞に合わせる。a lot of children（たくさんの子どもたち）は複数で、文末にyesterday（昨日）があるので過去形になり、wereが正解である。wasは単数の過去形、isは現在形なので合わない。beは原形なので、そのままでは文の動詞にならない。\n\n【図解】There 構文の名詞と be動詞\n　後ろの名詞｜数｜時制とbe動詞\n　a lot of children｜複数｜過去はwere\n　a lot of children｜複数｜現在はare\n　a child｜単数｜過去はwas\n　a child｜単数｜現在はis\n　⇒ 複数で過去の話なのでwere\n　⚠ 数と時制の両方をそろえる。yesterdayという語を見落とすと、現在形のareを選んでしまう。',
     difficulty: 'standard',
   },
   {
@@ -482,7 +482,7 @@ export const eikenQuestions4kyu4: EikenQuestion[] = [
       { key: 'D', text: 'running' },
     ],
     correctKey: 'A',
-    explanation: '助動詞canの後ろは必ず動詞の原形です。runs（3人称単数）、ran（過去形）、running（〜ing形）はcanの後ろには置けません。「can + 動詞の原形」のルールは英検4級で最重要ポイントの1つです。',
+    explanation: 'canは助動詞なので、後ろには必ず動詞の原形が来る。したがってrunが正解である。「マイクはとても速く走れる。彼はクラスでいちばん足が速い」という意味になる。runsは3人称単数現在形、ranは過去形、runningは分詞で、いずれも助動詞の後ろには置けない。助動詞 + 原形は英検4級の最重要ルールである。\n\n【図解】助動詞の後ろの形\n　助動詞｜後ろの形｜例\n　can｜動詞の原形｜can run\n　will｜動詞の原形｜will go\n　must｜動詞の原形｜must study\n　should｜動詞の原形｜should take\n　⇒ canの後ろなので原形runが正解\n　⚠ 助動詞の後ろには三単現のsを付けない。主語がHeでもcan runsとはならない点が要注意である。',
     difficulty: 'basic',
   },
   {
@@ -512,7 +512,7 @@ export const eikenQuestions4kyu4: EikenQuestion[] = [
       { key: 'D', text: 'yourself' },
     ],
     correctKey: 'B',
-    explanation: '「私のかばんはあなたのもの（=あなたのかばん）より古い」なので、所有代名詞yours（あなたのもの）が正解です。yourは後ろに名詞が必要（your bag）、youでは「あなたより古い」と人と比べることになり不自然、yourselfは「あなた自身」で比較の対象に合いません。',
+    explanation: 'My bag is older than 〜という文では、比べているのはかばんどうしなので、「あなたのもの（あなたのかばん）」を表す所有代名詞yoursが正解になる。yourは所有格なので後ろに名詞が必要で、単独では使えない。than youとすると自分のかばんと相手という人を比べることになり不自然である。yourselfは再帰代名詞である。\n\n【図解】you の変化と働き\n　格｜形｜働き\n　主格｜you｜主語になる\n　目的格｜you｜動詞や前置詞の後ろ\n　所有格｜your｜後ろに名詞が続く\n　所有代名詞｜yours｜あなたのもの\n　⇒ かばんどうしを比べるのでyours\n　⚠ than youとすると人と物を比べることになる。比べる対象をそろえるのが比較の文の原則である。',
     difficulty: 'standard',
   },
   {

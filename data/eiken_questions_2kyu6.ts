@@ -502,7 +502,7 @@ export const eikenQuestions2kyu6: EikenQuestion[] = [
       { key: 'D', text: "jealous" },
     ],
     correctKey: 'B',
-    explanation: '「be typical of 〜（〜に典型的である）」が正解。6月の大雨は日本のこの地方の気候に典型的なものだという文意です。guiltyは「有罪の」、absentは「欠席の」、jealousは「嫉妬した」。名詞type（型）から派生した語で、副詞typically（典型的に・普通は）も頻出です。\n\n【図解】typical の使い方\n　形｜意味｜前置詞\n　be typical of｜〜に典型的である｜of\n　a typical example｜典型例｜形容詞用法\n　typically｜典型的に, 普通は｜副詞\n　⇒ この地方の気候に典型的なら typical of\n　⚠ 前置詞は of。for や to ではこのコロケーションにならない。',
+    explanation: '「be typical of 〜（〜に典型的である）」が正解。6月の大雨は日本のこの地方の気候に典型的なものだという文意です。guiltyは「有罪の」、absentは「欠席の」、jealousは「嫉妬した」。名詞type（型）から派生した語で、副詞typically（典型的に・普通は）も頻出です。気候や地域の特徴を説明する文脈で頻出する形容詞でもある。\n\n【図解】typical の使い方\n　形｜意味｜前置詞\n　be typical of｜〜に典型的である｜of\n　a typical example｜典型例｜形容詞用法\n　typically｜典型的に, 普通は｜副詞\n　⇒ この地方の気候に典型的なら typical of\n　⚠ 前置詞は of。for や to ではこのコロケーションにならない。',
     difficulty: 'standard',
   },
   {
@@ -699,7 +699,7 @@ export const eikenQuestions2kyu6: EikenQuestion[] = [
       { key: 'D', text: "Growing" },
     ],
     correctKey: 'D',
-    explanation: '動名詞Growingが文の主語になる形が正解。「自分の庭で野菜を育てることは節約になるし、味も良い」の意味で、動名詞句全体が単数扱いなのでsavesと呼応します。原形Growでは主語になれず、過去分詞Grownも不可。To growなら正しい形ですが、To growingという形は存在しません。\n\n【図解】主語になれる形\n　形｜主語になれるか｜例\n　動名詞 doing｜なれる｜Growing vegetables saves\n　to 不定詞｜なれる｜To grow vegetables saves\n　動詞の原形｜なれない｜Grow は不可\n　⇒ 動名詞が主語なら単数扱いで saves\n　⚠ To growing という形は存在しない。to の後ろは原形になる。',
+    explanation: '動名詞Growingが文の主語になる形が正解。「自分の庭で野菜を育てることは節約になるし、味も良い」の意味で、動名詞句全体が単数扱いなのでsavesと呼応します。原形Growでは主語になれず、過去分詞Grownも不可。To growなら正しい形ですが、To growingという形は存在しません。主語が長くなるときは動名詞句のまとまりを見極めることが読解の助けになる。\n\n【図解】主語になれる形\n　形｜主語になれるか｜例\n　動名詞 doing｜なれる｜Growing vegetables saves\n　to 不定詞｜なれる｜To grow vegetables saves\n　動詞の原形｜なれない｜Grow は不可\n　⇒ 動名詞が主語なら単数扱いで saves\n　⚠ To growing という形は存在しない。to の後ろは原形になる。',
     difficulty: 'basic',
   },
   {

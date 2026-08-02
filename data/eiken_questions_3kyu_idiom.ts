@@ -142,7 +142,7 @@ export const eikenQuestions3kyuIdiom: EikenQuestion[] = [
       { key: 'D', text: 'up' },
     ],
     correctKey: 'C',
-    explanation: '"break down"（（機械などが）故障する）が正解。車が動かなくなった状況を表す基本表現。\n\nbreak down は「（機械が）故障する」で、車・エレベーター・コピー機などが動かなくなる場面で使う。話し合いが主語なら「決裂する」、人が主語なら「泣き崩れる」の意味にもなる多義の句動詞である。\n\n【図解】break ＋ 副詞の使い分け\n　表現｜意味｜主語\n　break down｜故障する, 決裂する｜car, machine, talks\n　break out｜突然起こる｜fire, war\n　break into｜押し入る｜thief\n　⇒ 高速道路で車が動かなくなったなら break down\n　⚠ break up は「解散する, 別れる」。機械の故障には down を使う。',
+    explanation: '"break down"（（機械などが）故障する）が正解。車が動かなくなった状況を表す基本表現。\n\nbreak down は「（機械が）故障する」で、車・エレベーター・コピー機などが動かなくなる場面で使う。話し合いが主語なら「決裂する」、人が主語なら「泣き崩れる」の意味にもなる多義の句動詞である。故障の連絡や修理依頼の場面でもよく使われる基本表現です。\n\n【図解】break ＋ 副詞の使い分け\n　表現｜意味｜主語\n　break down｜故障する, 決裂する｜car, machine, talks\n　break out｜突然起こる｜fire, war\n　break into｜押し入る｜thief\n　⇒ 高速道路で車が動かなくなったなら break down\n　⚠ break up は「解散する, 別れる」。機械の故障には down を使う。',
     difficulty: 'standard',
   },
   {
@@ -246,7 +246,7 @@ export const eikenQuestions3kyuIdiom: EikenQuestion[] = [
       { key: 'D', text: 'in' },
     ],
     correctKey: 'C',
-    explanation: '"give up 〜ing"（〜をやめる）が正解。習慣をやめる場合の基本表現。\n\ngive up 〜ing は「〜するのをやめる」で、続けてきた習慣を断つ場面で使う。後ろは必ず動名詞になり、to 不定詞は続かない。for my health のような目的を表す語句と組み合わせて出題されやすい。\n\n【図解】give ＋ 副詞の使い分け\n　表現｜意味｜後ろに来る形\n　give up｜やめる, あきらめる｜動名詞 doing\n　give in｜屈する, 折れる｜（自動詞）\n　give away｜ただであげる｜物\n　⇒ 健康のために禁煙するなら give up smoking\n　⚠ give up to smoke とは言えない。up の後ろは動名詞のみ。',
+    explanation: '"give up 〜ing"（〜をやめる）が正解。習慣をやめる場合の基本表現。\n\ngive up 〜ing は「〜するのをやめる」で、続けてきた習慣を断つ場面で使う。後ろは必ず動名詞になり、to 不定詞は続かない。for my health のような目的を表す語句と組み合わせて出題されやすい。健康や生活習慣を話題にする問題で繰り返し出題される表現です。\n\n【図解】give ＋ 副詞の使い分け\n　表現｜意味｜後ろに来る形\n　give up｜やめる, あきらめる｜動名詞 doing\n　give in｜屈する, 折れる｜（自動詞）\n　give away｜ただであげる｜物\n　⇒ 健康のために禁煙するなら give up smoking\n　⚠ give up to smoke とは言えない。up の後ろは動名詞のみ。',
     difficulty: 'standard',
   },
   {

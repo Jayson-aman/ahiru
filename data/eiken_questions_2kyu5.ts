@@ -1071,7 +1071,7 @@ In the passage, the word "measures" most closely means:`,
       { key: 'D', text: "official actions taken to deal with a problem" },
     ],
     correctKey: 'D',
-    explanation: 'measureは複数形で「対策・措置」という意味になり、Dが正解。日帰り客への入場料、新規ホテルの制限、キャンペーンといった行政の対策が列挙されている文脈です。take measures（対策を講じる）は頻出コロケーション。動詞のmeasure（〜を測る）や名詞の「寸法」の意味と区別しましょう。\n\n【図解】measure の意味\n　形｜意味｜例\n　measures（複数）｜対策, 措置｜take measures\n　measure（動詞）｜測る｜measure the length\n　measure（名詞単数）｜寸法, 基準｜a measure of\n　⇒ 入場料や規制などの行政対応なら measures\n　⚠ 単数と複数で意味が変わる。複数形の measures は「対策」を指す。',
+    explanation: 'measureは複数形で「対策・措置」という意味になり、Dが正解。日帰り客への入場料、新規ホテルの制限、キャンペーンといった行政の対策が列挙されている文脈です。take measures（対策を講じる）は頻出コロケーション。動詞のmeasure（〜を測る）や名詞の「寸法」の意味と区別しましょう。行政の発表を扱う文章では、複数形の measures が施策の総称として使われることが多い。\n\n【図解】measure の意味\n　形｜意味｜例\n　measures（複数）｜対策, 措置｜take measures\n　measure（動詞）｜測る｜measure the length\n　measure（名詞単数）｜寸法, 基準｜a measure of\n　⇒ 入場料や規制などの行政対応なら measures\n　⚠ 単数と複数で意味が変わる。複数形の measures は「対策」を指す。',
     difficulty: 'standard',
   },
   {

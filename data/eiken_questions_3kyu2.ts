@@ -89,7 +89,7 @@ export const eikenQuestions3kyu2: EikenQuestion[] = [
       { key: 'D', text: 'semester' },
     ],
     correctKey: 'D',
-    explanation: 'semester（学期・年度）は学校教育の期間を表す単語。4月に始まり翌年3月に終わる「学年度」の文脈に合う。ceremonyは「式典」、scheduleは「スケジュール」、sessionは「授業・セッション」で、学校の年間単位にはsemesterが最も適切。\n\n【図解】学校に関する名詞\n　語｜意味｜期間\n　semester｜学期｜数か月\n　session｜授業, 会期｜1回分\n　ceremony｜式典｜行事\n　⇒ 4月から翌年3月までなら semester\n　⚠ 米国では前期後期の2学期制を指すことが多い。制度による意味の幅も押さえる。',
+    explanation: 'semester（学期・年度）は学校教育の期間を表す単語。4月に始まり翌年3月に終わる「学年度」の文脈に合う。ceremonyは「式典」、scheduleは「スケジュール」、sessionは「授業・セッション」で、学校の年間単位にはsemesterが最も適切。semester は学校の学期を表す語で、日本の学年度のように長い期間を指す場合にも使われる。行事や1回分の授業を指す語とは範囲が異なる。\n\n【図解】学校に関する名詞\n　語｜意味｜期間\n　semester｜学期｜数か月\n　session｜授業, 会期｜1回分\n　ceremony｜式典｜行事\n　⇒ 4月から翌年3月までなら semester\n　⚠ 米国では前期後期の2学期制を指すことが多い。制度による意味の幅も押さえる。',
     difficulty: 'standard',
   },
   {
@@ -104,7 +104,7 @@ export const eikenQuestions3kyu2: EikenQuestion[] = [
       { key: 'D', text: 'protection' },
     ],
     correctKey: 'B',
-    explanation: 'pollution（汚染）は有害なガスが引き起こす環境問題として正しい。air pollutionは「大気汚染」という重要なコロケーション。productionは「生産」、populationは「人口」、protectionは「保護」で、有害ガスによる問題にはpollutionが適切。\n\n【図解】p で始まる名詞\n　語｜意味｜分野\n　pollution｜汚染｜環境\n　population｜人口｜統計\n　production｜生産｜経済\n　⇒ 有害ガスによる問題なら air pollution\n　⚠ pollution と population はつづりが近い。汚染か人口かで確実に区別する。',
+    explanation: 'pollution（汚染）は有害なガスが引き起こす環境問題として正しい。air pollutionは「大気汚染」という重要なコロケーション。productionは「生産」、populationは「人口」、protectionは「保護」で、有害ガスによる問題にはpollutionが適切。pollution は環境が汚れた状態を指す名詞で、air pollution、water pollution、noise pollution のように対象を前に置いて使う。\n\n【図解】p で始まる名詞\n　語｜意味｜分野\n　pollution｜汚染｜環境\n　population｜人口｜統計\n　production｜生産｜経済\n　⇒ 有害ガスによる問題なら air pollution\n　⚠ pollution と population はつづりが近い。汚染か人口かで確実に区別する。',
     difficulty: 'basic',
   },
   {
@@ -134,7 +134,7 @@ export const eikenQuestions3kyu2: EikenQuestion[] = [
       { key: 'D', text: 'strategies' },
     ],
     correctKey: 'D',
-    explanation: 'strategies（戦略・方策）は海洋生態系を守るために開発するものとして最も適切。「新しい戦略を開発した」は環境保護の文脈で自然。disastersは「災害」、discoveriesは「発見」、difficultiesは「困難」で、保護のための取り組みにはstrategiesが正しい。\n\n【図解】s で始まる名詞\n　語｜意味｜性質\n　strategy｜戦略, 方策｜計画的な取り組み\n　difficulty｜困難｜障害\n　discovery｜発見｜新事実\n　⇒ 生態系保護のための取り組みなら strategies\n　⚠ disaster は「災害」で対策ではない。取り組みか問題かで語を選び分ける。',
+    explanation: 'strategies（戦略・方策）は海洋生態系を守るために開発するものとして最も適切。「新しい戦略を開発した」は環境保護の文脈で自然。disastersは「災害」、discoveriesは「発見」、difficultiesは「困難」で、保護のための取り組みにはstrategiesが正しい。strategy は目的を達成するための計画的な方策を指す語で、develop a strategy や adopt a strategy のように動詞と組み合わせて使う。\n\n【図解】s で始まる名詞\n　語｜意味｜性質\n　strategy｜戦略, 方策｜計画的な取り組み\n　difficulty｜困難｜障害\n　discovery｜発見｜新事実\n　⇒ 生態系保護のための取り組みなら strategies\n　⚠ disaster は「災害」で対策ではない。取り組みか問題かで語を選び分ける。',
     difficulty: 'advanced',
   },
   {
@@ -149,7 +149,7 @@ export const eikenQuestions3kyu2: EikenQuestion[] = [
       { key: 'D', text: 'install' },
     ],
     correctKey: 'D',
-    explanation: 'install（インストールする）はソフトウェアをコンピュータに入れる動作。「最新バージョンに入れ替える」という文脈に最も合う。inventは「発明する」、investは「投資する」、increaseは「増やす」で、ソフトウェアの操作にはinstallが正しい。\n\n【図解】in で始まる動詞\n　語｜意味｜対象\n　install｜導入する, 設置する｜software, air conditioner\n　invent｜発明する｜machine, method\n　invest｜投資する｜money, time\n　⇒ 最新版を入れ直すなら install\n　⚠ increase は「増やす」で導入とは別。動詞の意味を目的語との関係で確認する。',
+    explanation: 'install（インストールする）はソフトウェアをコンピュータに入れる動作。「最新バージョンに入れ替える」という文脈に最も合う。inventは「発明する」、investは「投資する」、increaseは「増やす」で、ソフトウェアの操作にはinstallが正しい。install はソフトウェアだけでなく、エアコンや機器の設置にも使える動詞である。名詞形は installation で、工事や取り付けを指す。\n\n【図解】in で始まる動詞\n　語｜意味｜対象\n　install｜導入する, 設置する｜software, air conditioner\n　invent｜発明する｜machine, method\n　invest｜投資する｜money, time\n　⇒ 最新版を入れ直すなら install\n　⚠ increase は「増やす」で導入とは別。動詞の意味を目的語との関係で確認する。',
     difficulty: 'standard',
   },
   {
@@ -164,7 +164,7 @@ export const eikenQuestions3kyu2: EikenQuestion[] = [
       { key: 'D', text: 'forget' },
     ],
     correctKey: 'C',
-    explanation: 'follow（理解する・ついていく）はプレゼンの内容を理解するという意味で使う。「明確で整理されていたので主要なポイントが理解できた」という文脈にはfollowが最適。overlookは「見落とす」、underlineは「下線を引く」、forgetは「忘れる」。\n\n【図解】follow の意味の広がり\n　用法｜意味｜例\n　理解する｜話についていく｜follow her points\n　ついて行く｜後を追う｜follow me\n　従う｜指示に従う｜follow the rules\n　⇒ 発表の要点を理解するなら follow\n　⚠ overlook は「見落とす」で正反対。文脈が肯定的か否定的かを確認する。',
+    explanation: 'follow（理解する・ついていく）はプレゼンの内容を理解するという意味で使う。「明確で整理されていたので主要なポイントが理解できた」という文脈にはfollowが最適。overlookは「見落とす」、underlineは「下線を引く」、forgetは「忘れる」。follow には「ついて行く」「従う」「理解する」という複数の意味があり、目的語や文脈によって訳し分ける必要がある語である。\n\n【図解】follow の意味の広がり\n　用法｜意味｜例\n　理解する｜話についていく｜follow her points\n　ついて行く｜後を追う｜follow me\n　従う｜指示に従う｜follow the rules\n　⇒ 発表の要点を理解するなら follow\n　⚠ overlook は「見落とす」で正反対。文脈が肯定的か否定的かを確認する。',
     difficulty: 'standard',
   },
   {
@@ -179,7 +179,7 @@ export const eikenQuestions3kyu2: EikenQuestion[] = [
       { key: 'D', text: 'prevention' },
     ],
     correctKey: 'D',
-    explanation: 'prevention（予防）は病気にかからないための手段を表す医療用語。「風邪をひかないための最善の予防策」という文脈に合う。permissionは「許可」、productionは「生産」、professionは「職業」で、健康管理の文脈にはpreventionが正しい。\n\n【図解】p で始まる名詞\n　語｜意味｜分野\n　prevention｜予防｜健康, 防災\n　permission｜許可｜手続き\n　profession｜職業｜仕事\n　⇒ 風邪を防ぐ手段なら prevention\n　⚠ production（生産）とつづりが近い。語幹 prevent から意味を確認する。',
+    explanation: 'prevention（予防）は病気にかからないための手段を表す医療用語。「風邪をひかないための最善の予防策」という文脈に合う。permissionは「許可」、productionは「生産」、professionは「職業」で、健康管理の文脈にはpreventionが正しい。prevention は動詞 prevent の名詞形で、病気や事故を未然に防ぐことを指す。医療や防災の文章で頻出する語である。\n\n【図解】p で始まる名詞\n　語｜意味｜分野\n　prevention｜予防｜健康, 防災\n　permission｜許可｜手続き\n　profession｜職業｜仕事\n　⇒ 風邪を防ぐ手段なら prevention\n　⚠ production（生産）とつづりが近い。語幹 prevent から意味を確認する。',
     difficulty: 'standard',
   },
   {
@@ -194,7 +194,7 @@ export const eikenQuestions3kyu2: EikenQuestion[] = [
       { key: 'D', text: 'network' },
     ],
     correctKey: 'D',
-    explanation: 'network（ネットワーク）はコンピュータが接続し合う仕組みを表す技術用語。「世界中のコンピュータをつなぐグローバルなネットワーク」はインターネットの説明として正確。notebookは「ノート」、newsfeedは「ニュースフィード」、neighborhoodは「近所」。\n\n【図解】n で始まる名詞\n　語｜意味｜分野\n　network｜つながりの仕組み｜通信, 人脈\n　neighborhood｜近所｜地域\n　newsfeed｜新着情報の一覧｜SNS\n　⇒ 世界中の機器をつなぐ仕組みなら network\n　⚠ network には「人脈」の意味もある。文脈で対象を判断する。',
+    explanation: 'network（ネットワーク）はコンピュータが接続し合う仕組みを表す技術用語。「世界中のコンピュータをつなぐグローバルなネットワーク」はインターネットの説明として正確。notebookは「ノート」、newsfeedは「ニュースフィード」、neighborhoodは「近所」。network は機器や人がつながり合う仕組みを指す語で、コンピュータのほかに交通網や人脈にも使われる。\n\n【図解】n で始まる名詞\n　語｜意味｜分野\n　network｜つながりの仕組み｜通信, 人脈\n　neighborhood｜近所｜地域\n　newsfeed｜新着情報の一覧｜SNS\n　⇒ 世界中の機器をつなぐ仕組みなら network\n　⚠ network には「人脈」の意味もある。文脈で対象を判断する。',
     difficulty: 'basic',
   },
   {
@@ -241,7 +241,7 @@ export const eikenQuestions3kyu2: EikenQuestion[] = [
       { key: 'D', text: 'has been' },
     ],
     correctKey: 'B',
-    explanation: '間接話法では、伝達動詞（said）が過去形のとき、従属節の動詞も過去形に変える（時制の一致）。「He said he was tired」のように、直接話法の"I am tired"はwasに変わる。isは現在形で時制の一致に反する。will beやhas beenも文脈に合わない。\n\n【図解】時制の一致\n　伝達動詞｜従属節の動詞｜例\n　said（過去）｜過去形｜he was tired\n　says（現在）｜そのまま｜he is tired\n　said ＋ will｜would｜he would come\n　⇒ said が過去なので was\n　⚠ 直接話法の I am tired をそのまま埋め込まない。伝達動詞の時制に合わせる。',
+    explanation: '間接話法では、伝達動詞（said）が過去形のとき、従属節の動詞も過去形に変える（時制の一致）。「He said he was tired」のように、直接話法の"I am tired"はwasに変わる。isは現在形で時制の一致に反する。will beやhas beenも文脈に合わない。間接話法では、伝達動詞が過去形のとき従属節の動詞も一段階過去にずらす。これを時制の一致と呼び、助動詞も同じ規則に従う。\n\n【図解】時制の一致\n　伝達動詞｜従属節の動詞｜例\n　said（過去）｜過去形｜he was tired\n　says（現在）｜そのまま｜he is tired\n　said ＋ will｜would｜he would come\n　⇒ said が過去なので was\n　⚠ 直接話法の I am tired をそのまま埋め込まない。伝達動詞の時制に合わせる。',
     difficulty: 'standard',
   },
   {
@@ -256,7 +256,7 @@ export const eikenQuestions3kyu2: EikenQuestion[] = [
       { key: 'D', text: 'waiting' },
     ],
     correctKey: 'D',
-    explanation: '現在完了進行形はhave/has been + 現在分詞（〜ing形）で表す。「30分間ずっとバスを待っている」という継続中の動作にはhave been waitingが正しい。waitは原形、waitedは過去形・過去分詞、waitsは三単現で、この構文には使えない。\n\n【図解】現在完了進行形の形\n　要素｜形｜例\n　助動詞｜have または has｜have\n　完了の be｜been｜been\n　動詞｜現在分詞｜waiting\n　⇒ have been waiting が正しい形\n　⚠ been の後ろは ing 形。過去分詞 waited を置かない。',
+    explanation: '現在完了進行形はhave/has been + 現在分詞（〜ing形）で表す。「30分間ずっとバスを待っている」という継続中の動作にはhave been waitingが正しい。waitは原形、waitedは過去形・過去分詞、waitsは三単現で、この構文には使えない。現在完了進行形は have または has と been と現在分詞を組み合わせ、過去に始まった動作が今も続いていることを表す。\n\n【図解】現在完了進行形の形\n　要素｜形｜例\n　助動詞｜have または has｜have\n　完了の be｜been｜been\n　動詞｜現在分詞｜waiting\n　⇒ have been waiting が正しい形\n　⚠ been の後ろは ing 形。過去分詞 waited を置かない。',
     difficulty: 'basic',
   },
   {
@@ -271,7 +271,7 @@ export const eikenQuestions3kyu2: EikenQuestion[] = [
       { key: 'D', text: 'was built' },
     ],
     correctKey: 'D',
-    explanation: '受動態の過去形はwas/were + 過去分詞。「この橋は約100年前に地元の作業員によって建てられた」という受動の意味にはwas builtが正しい。builtは過去形（能動態）で主語が橋なら不自然、has builtは現在完了能動態、is buildingは現在進行形で過去を表せない。\n\n【図解】受動態の時制\n　形｜時制｜目印\n　was または were 過去分詞｜過去｜100 years ago\n　is または are 過去分詞｜現在｜usually\n　has been 過去分詞｜現在完了｜since\n　⇒ ago があるので was built\n　⚠ 主語が橋なので受動態になる。動作主は by で示される点も確認する。',
+    explanation: '受動態の過去形はwas/were + 過去分詞。「この橋は約100年前に地元の作業員によって建てられた」という受動の意味にはwas builtが正しい。builtは過去形（能動態）で主語が橋なら不自然、has builtは現在完了能動態、is buildingは現在進行形で過去を表せない。受動態は be 動詞と過去分詞で作り、be 動詞の形が文全体の時制を決める。動作をした人を示すときは by を添える。\n\n【図解】受動態の時制\n　形｜時制｜目印\n　was または were 過去分詞｜過去｜100 years ago\n　is または are 過去分詞｜現在｜usually\n　has been 過去分詞｜現在完了｜since\n　⇒ ago があるので was built\n　⚠ 主語が橋なので受動態になる。動作主は by で示される点も確認する。',
     difficulty: 'basic',
   },
   {
@@ -286,7 +286,7 @@ export const eikenQuestions3kyu2: EikenQuestion[] = [
       { key: 'D', text: "haven't you" },
     ],
     correctKey: 'D',
-    explanation: '付加疑問文は、主文の助動詞と逆のものを使う。You\'ve met（現在完了形・have）に対してhaven\'t youが正しい付加疑問形。didn\'t youは過去形に対応、weren\'t youはwereに対応、don\'t youは現在形に対応するため、いずれも不正解。\n\n【図解】付加疑問の作り方\n　主節｜付加疑問｜例\n　現在完了の肯定｜haven’t ＋ 主語｜haven’t you\n　一般動詞の過去の肯定｜didn’t ＋ 主語｜didn’t you\n　be 動詞の過去の肯定｜wasn’t ＋ 主語｜wasn’t it\n　⇒ You have met なので haven’t you\n　⚠ 主節の助動詞をそのまま使う。have の文に did は使えない。',
+    explanation: '付加疑問文は、主文の助動詞と逆のものを使う。You\'ve met（現在完了形・have）に対してhaven\'t youが正しい付加疑問形。didn\'t youは過去形に対応、weren\'t youはwereに対応、don\'t youは現在形に対応するため、いずれも不正解。付加疑問文では、主節で使われている助動詞をそのまま利用して短い疑問形を作る。現在完了なら have や has を用いる。\n\n【図解】付加疑問の作り方\n　主節｜付加疑問｜例\n　現在完了の肯定｜haven’t ＋ 主語｜haven’t you\n　一般動詞の過去の肯定｜didn’t ＋ 主語｜didn’t you\n　be 動詞の過去の肯定｜wasn’t ＋ 主語｜wasn’t it\n　⇒ You have met なので haven’t you\n　⚠ 主節の助動詞をそのまま使う。have の文に did は使えない。',
     difficulty: 'standard',
   },
   {
@@ -301,7 +301,7 @@ export const eikenQuestions3kyu2: EikenQuestion[] = [
       { key: 'D', text: 'If' },
     ],
     correctKey: 'D',
-    explanation: 'If（もし〜なら）は条件を表す接続詞。「もし今日の午後雨が降ったら、体育祭を屋内に移す」という条件文にはIfが正しい。Althoughは「〜だけれど」（逆接）、Howeverも逆接（副詞）、Thereforeは「そのため」（結果）で、条件の文脈にはIfが唯一適切。\n\n【図解】接続詞の働き\n　語｜意味｜関係\n　if｜もし〜なら｜条件\n　although｜〜だけれど｜逆接\n　because｜なぜなら｜理由\n　⇒ 雨なら屋内に移すという条件なら If\n　⚠ however は副詞で節をつなげない。品詞でも選択肢を絞れる。',
+    explanation: 'If（もし〜なら）は条件を表す接続詞。「もし今日の午後雨が降ったら、体育祭を屋内に移す」という条件文にはIfが正しい。Althoughは「〜だけれど」（逆接）、Howeverも逆接（副詞）、Thereforeは「そのため」（結果）で、条件の文脈にはIfが唯一適切。接続詞は前後の節をどのような関係で結ぶかを示す語である。条件、理由、逆接のどれにあたるかを見極めて選ぶ必要がある。\n\n【図解】接続詞の働き\n　語｜意味｜関係\n　if｜もし〜なら｜条件\n　although｜〜だけれど｜逆接\n　because｜なぜなら｜理由\n　⇒ 雨なら屋内に移すという条件なら If\n　⚠ however は副詞で節をつなげない。品詞でも選択肢を絞れる。',
     difficulty: 'basic',
   },
   {
@@ -346,7 +346,7 @@ export const eikenQuestions3kyu2: EikenQuestion[] = [
       { key: 'D', text: 'was selling' },
     ],
     correctKey: 'C',
-    explanation: '現在完了受動態はhas/have been + 過去分詞。「昨年の発売以来30カ国以上で売られてきた」という継続を表すにはhas been soldが正しい。sellsは現在形能動態、soldは過去形能動態、was sellingは過去進行形能動態。since（〜以来）も現在完了を示すヒント。\n\n【図解】現在完了受動態\n　形｜意味｜目印\n　has been 過去分詞｜今までずっと〜されている｜since, for\n　was 過去分詞｜過去に〜された｜ago\n　is 過去分詞｜現在〜される｜usually\n　⇒ since があるので has been sold\n　⚠ 能動態の has sold にすると装置が売る側になる。主語との関係を確認する。',
+    explanation: '現在完了受動態はhas/have been + 過去分詞。「昨年の発売以来30カ国以上で売られてきた」という継続を表すにはhas been soldが正しい。sellsは現在形能動態、soldは過去形能動態、was sellingは過去進行形能動態。since（〜以来）も現在完了を示すヒント。現在完了の受動態は has または have と been と過去分詞を並べた形で、過去から現在まで続く受動の状態を表す。\n\n【図解】現在完了受動態\n　形｜意味｜目印\n　has been 過去分詞｜今までずっと〜されている｜since, for\n　was 過去分詞｜過去に〜された｜ago\n　is 過去分詞｜現在〜される｜usually\n　⇒ since があるので has been sold\n　⚠ 能動態の has sold にすると装置が売る側になる。主語との関係を確認する。',
     difficulty: 'advanced',
   },
   {
@@ -376,7 +376,7 @@ export const eikenQuestions3kyu2: EikenQuestion[] = [
       { key: 'D', text: 'if' },
     ],
     correctKey: 'D',
-    explanation: '間接疑問文で「〜かどうか」を表すにはif（またはwhether）を使う。「兄が私にどこかでスマートフォンを見たか尋ねた」はasked me if I had seen。thatは事実を伝える接続詞、whatは内容を尋ねる、whichは選択を問う疑問詞で、yes/no疑問の間接化にはifが正しい。\n\n【図解】間接疑問を導く語\n　語｜意味｜元の疑問文\n　if, whether｜〜かどうか｜yes か no で答える疑問\n　what｜何を〜か｜what で始まる疑問\n　which｜どちらを〜か｜which で始まる疑問\n　⇒ 見たかどうかを尋ねるので if\n　⚠ that は事実を導く接続詞。疑問の内容には使えない。',
+    explanation: '間接疑問文で「〜かどうか」を表すにはif（またはwhether）を使う。「兄が私にどこかでスマートフォンを見たか尋ねた」はasked me if I had seen。thatは事実を伝える接続詞、whatは内容を尋ねる、whichは選択を問う疑問詞で、yes/no疑問の間接化にはifが正しい。会話文や物語文の中で、登場人物のやり取りを説明する部分によく現れる形です。\n\n【図解】間接疑問を導く語\n　語｜意味｜元の疑問文\n　if, whether｜〜かどうか｜yes か no で答える疑問\n　what｜何を〜か｜what で始まる疑問\n　which｜どちらを〜か｜which で始まる疑問\n　⇒ 見たかどうかを尋ねるので if\n　⚠ that は事実を導く接続詞。疑問の内容には使えない。',
     difficulty: 'standard',
   },
   {
@@ -406,7 +406,7 @@ export const eikenQuestions3kyu2: EikenQuestion[] = [
       { key: 'D', text: 'has made' },
     ],
     correctKey: 'C',
-    explanation: '受動態の過去形はwas/were + 過去分詞。「アナウンスがスピーカーで流された」はアナウンスが「される」側なので受動態が必要。was madeが正しい。madeは過去形能動態、was makingは過去進行能動態、has madeは現在完了能動態。\n\n【図解】受動態にする理由\n　主語｜動詞との関係｜態\n　announcement｜される側｜受動態\n　人や組織｜する側｜能動態\n　時制｜過去｜was made\n　⇒ アナウンスは流される側なので was made\n　⚠ made と was made の違いは主語との関係。主語が動作するかどうかで決める。',
+    explanation: '受動態の過去形はwas/were + 過去分詞。「アナウンスがスピーカーで流された」はアナウンスが「される」側なので受動態が必要。was madeが正しい。madeは過去形能動態、was makingは過去進行能動態、has madeは現在完了能動態。受動態にするかどうかは、主語が動作をする側か受ける側かで決まる。ここではアナウンスが流される側なので受動態を使う。\n\n【図解】受動態にする理由\n　主語｜動詞との関係｜態\n　announcement｜される側｜受動態\n　人や組織｜する側｜能動態\n　時制｜過去｜was made\n　⇒ アナウンスは流される側なので was made\n　⚠ made と was made の違いは主語との関係。主語が動作するかどうかで決める。',
     difficulty: 'standard',
   },
   {
@@ -421,7 +421,7 @@ export const eikenQuestions3kyu2: EikenQuestion[] = [
       { key: 'D', text: 'However' },
     ],
     correctKey: 'D',
-    explanation: 'However（しかし）は前の内容と対照的な情報を加えるときに使う接続副詞。「素晴らしい博物館だ→しかし入館料がかなり高い」という逆接の流れにはHoweverが正しい。Thereforeは「そのため」（結果）、Becauseは「なぜなら」（理由）、Soは「だから」（結果）で逆接にはならない。\n\n【図解】前後の論理関係\n　語｜意味｜前後の関係\n　however｜しかし｜逆接\n　therefore｜そのため｜結果\n　because｜なぜなら｜理由\n　⇒ 良い評価の後に不満が続くなら However\n　⚠ so と therefore は結果を導く。評価が逆転しているかを確認する。',
+    explanation: 'However（しかし）は前の内容と対照的な情報を加えるときに使う接続副詞。「素晴らしい博物館だ→しかし入館料がかなり高い」という逆接の流れにはHoweverが正しい。Thereforeは「そのため」（結果）、Becauseは「なぜなら」（理由）、Soは「だから」（結果）で逆接にはならない。接続副詞は前後の文の論理関係を示す語で、逆接、結果、追加のどれにあたるかを文脈から判断して選ぶ必要がある。\n\n【図解】前後の論理関係\n　語｜意味｜前後の関係\n　however｜しかし｜逆接\n　therefore｜そのため｜結果\n　because｜なぜなら｜理由\n　⇒ 良い評価の後に不満が続くなら However\n　⚠ so と therefore は結果を導く。評価が逆転しているかを確認する。',
     difficulty: 'standard',
   },
   {
@@ -436,7 +436,7 @@ export const eikenQuestions3kyu2: EikenQuestion[] = [
       { key: 'D', text: 'would' },
     ],
     correctKey: 'D',
-    explanation: '間接話法で伝達動詞が過去形（said）の場合、willはwouldに変わる（時制の一致）。「次の週末に訪問すると言った」はshe said that she would visit。willは直接話法の形、canはcouldに変わるため不正解、mayはmightに変わるため不正解。\n\n【図解】助動詞の時制の一致\n　直接話法｜間接話法｜例\n　will｜would｜she would visit\n　can｜could｜he could swim\n　may｜might｜it might rain\n　⇒ said に合わせて would\n　⚠ 助動詞も過去形に変える。will のまま残さない。',
+    explanation: '間接話法で伝達動詞が過去形（said）の場合、willはwouldに変わる（時制の一致）。「次の週末に訪問すると言った」はshe said that she would visit。willは直接話法の形、canはcouldに変わるため不正解、mayはmightに変わるため不正解。間接話法では助動詞も時制の一致を受け、will は would、can は could、may は might と一段階過去の形に変わる。\n\n【図解】助動詞の時制の一致\n　直接話法｜間接話法｜例\n　will｜would｜she would visit\n　can｜could｜he could swim\n　may｜might｜it might rain\n　⇒ said に合わせて would\n　⚠ 助動詞も過去形に変える。will のまま残さない。',
     difficulty: 'advanced',
   },
   {
@@ -468,7 +468,7 @@ export const eikenQuestions3kyu2: EikenQuestion[] = [
       { key: 'D', text: 'When did they call you with the news?' },
     ],
     correctKey: 'A',
-    explanation: 'Bの返答「Three people, plus the manager（3人とマネージャー）」は人数を答えている。この返答が自然につながるのは「何人が面接したの?」と聞くA。場所（Where）・服装（What wore）・連絡の時期（When called）を聞いても、人数の返答は不自然。\n\n【図解】応答から質問を推測する\n　応答｜答えている内容｜対応する質問\n　Three people｜人数｜How many\n　In the office｜場所｜Where\n　Last Monday｜時期｜When\n　⇒ 人数を答えているので How many people\n　⚠ 応答の情報の種類で質問を特定する。空所の直後を必ず確認する。',
+    explanation: 'Bの返答「Three people, plus the manager（3人とマネージャー）」は人数を答えている。この返答が自然につながるのは「何人が面接したの?」と聞くA。場所（Where）・服装（What wore）・連絡の時期（When called）を聞いても、人数の返答は不自然。会話問題では、空所の直後にある応答の内容から質問を逆算するのが有効である。人数を答えているので、人数を尋ねる疑問文が入る。\n\n【図解】応答から質問を推測する\n　応答｜答えている内容｜対応する質問\n　Three people｜人数｜How many\n　In the office｜場所｜Where\n　Last Monday｜時期｜When\n　⇒ 人数を答えているので How many people\n　⚠ 応答の情報の種類で質問を特定する。空所の直後を必ず確認する。',
     difficulty: 'basic',
   },
   {
@@ -483,7 +483,7 @@ export const eikenQuestions3kyu2: EikenQuestion[] = [
       { key: 'D', text: "I'm using it right now." },
     ],
     correctKey: 'B',
-    explanation: 'Aが「ありがとう」と言って辞書を受け取っていることから、Bは貸し出しに同意したとわかる。Sure, here you go.（もちろん、どうぞ）が最も自然な返答。「持っていない」「古い」「今使っている」はいずれも貸し出しを断る方向で、Aの「ありがとう」と矛盾する。\n\n【図解】依頼への応答\n　応答｜意味｜方向\n　Sure, here you go｜どうぞ｜承諾\n　Sorry, I am using it｜今使っている｜断り\n　I do not have one｜持っていない｜断り\n　⇒ お礼が続くので承諾の応答\n　⚠ 断りの応答の後に Thank you so much は続かない。前後の感情をそろえる。',
+    explanation: 'Aが「ありがとう」と言って辞書を受け取っていることから、Bは貸し出しに同意したとわかる。Sure, here you go.（もちろん、どうぞ）が最も自然な返答。「持っていない」「古い」「今使っている」はいずれも貸し出しを断る方向で、Aの「ありがとう」と矛盾する。依頼に応じるときの定型表現として Sure、Of course、Here you go などがあり、その後に感謝の言葉が続くのが自然な流れになる。\n\n【図解】依頼への応答\n　応答｜意味｜方向\n　Sure, here you go｜どうぞ｜承諾\n　Sorry, I am using it｜今使っている｜断り\n　I do not have one｜持っていない｜断り\n　⇒ お礼が続くので承諾の応答\n　⚠ 断りの応答の後に Thank you so much は続かない。前後の感情をそろえる。',
     difficulty: 'basic',
   },
   {
@@ -498,7 +498,7 @@ export const eikenQuestions3kyu2: EikenQuestion[] = [
       { key: 'D', text: "I've been watching English TV shows every day." },
     ],
     correctKey: 'D',
-    explanation: 'Aが「それはいい考えだ、私もやってみるかも」と言っていることから、Bは具体的で真似できる学習法を答えたとわかる。毎日英語のテレビ番組を見ているというDが最適。勉強をやめた・難しい・何も変えていない、ではAが「いい考え」と言えない。\n\n【図解】会話の因果をたどる\n　発話｜内容｜含意\n　何か特別なことをしている｜質問｜方法を尋ねる\n　毎日英語番組を見ている｜具体的な方法｜真似できる\n　それはいい考えだ｜評価｜有効な方法\n　⇒ 具体的で真似できる方法が入る\n　⚠ 「何も変えていない」では相手が good idea と言えない。後続の反応から逆算する。',
+    explanation: 'Aが「それはいい考えだ、私もやってみるかも」と言っていることから、Bは具体的で真似できる学習法を答えたとわかる。毎日英語のテレビ番組を見ているというDが最適。勉強をやめた・難しい・何も変えていない、ではAが「いい考え」と言えない。会話問題では、後続の反応が空所の内容を評価している場合が多い。good idea という評価から、真似できる具体的な方法が入ると分かる。\n\n【図解】会話の因果をたどる\n　発話｜内容｜含意\n　何か特別なことをしている｜質問｜方法を尋ねる\n　毎日英語番組を見ている｜具体的な方法｜真似できる\n　それはいい考えだ｜評価｜有効な方法\n　⇒ 具体的で真似できる方法が入る\n　⚠ 「何も変えていない」では相手が good idea と言えない。後続の反応から逆算する。',
     difficulty: 'basic',
   },
   {
@@ -513,7 +513,7 @@ export const eikenQuestions3kyu2: EikenQuestion[] = [
       { key: 'D', text: "Printers are very expensive." },
     ],
     correctKey: 'C',
-    explanation: '「見てみよう」と続けていることから、BはAを助けようとしていることが示されている。I think I can help.（手伝えると思う）が前置きとして最も自然。「わからない」「新しいのを買って」「高い」ではLet me take a look.（見てみよう）が続かない。\n\n【図解】申し出の流れ\n　順序｜発話｜内容\n　1｜直し方を知っている｜質問\n　2｜手伝えると思う｜申し出\n　3｜見てみよう｜行動\n　⇒ 行動の前には助力の申し出が入る\n　⚠ 「分からない」では Let me take a look が続かない。発話の一貫性を確認する。',
+    explanation: '「見てみよう」と続けていることから、BはAを助けようとしていることが示されている。I think I can help.（手伝えると思う）が前置きとして最も自然。「わからない」「新しいのを買って」「高い」ではLet me take a look.（見てみよう）が続かない。Let me take a look は「ちょっと見てみよう」という行動の申し出で、その前には手助けの意思を示す発言が置かれるのが自然である。\n\n【図解】申し出の流れ\n　順序｜発話｜内容\n　1｜直し方を知っている｜質問\n　2｜手伝えると思う｜申し出\n　3｜見てみよう｜行動\n　⇒ 行動の前には助力の申し出が入る\n　⚠ 「分からない」では Let me take a look が続かない。発話の一貫性を確認する。',
     difficulty: 'standard',
   },
   {
@@ -528,7 +528,7 @@ export const eikenQuestions3kyu2: EikenQuestion[] = [
       { key: 'D', text: "I finished it last night." },
     ],
     correctKey: 'A',
-    explanation: '「まだ2枚スライドが残っている」という情報と、Aが「急いだほうがいい」と言う流れから、作業が途中である状況が必要。I\'m about halfway done.（だいたい半分終わった）が残り作業の自然な前置き。「今朝提出した」「簡単だった」「昨夜終えた」はNot yetと矛盾する。\n\n【図解】進捗を表す表現\n　表現｜意味｜状態\n　about halfway done｜半分ほど終わった｜途中\n　almost finished｜ほぼ終わった｜終盤\n　not started yet｜まだ始めていない｜未着手\n　⇒ 残り2枚という情報と合うのは半分程度\n　⚠ 「昨夜終えた」は Not yet と矛盾する。直前の発話との整合を確認する。',
+    explanation: '「まだ2枚スライドが残っている」という情報と、Aが「急いだほうがいい」と言う流れから、作業が途中である状況が必要。I\'m about halfway done.（だいたい半分終わった）が残り作業の自然な前置き。「今朝提出した」「簡単だった」「昨夜終えた」はNot yetと矛盾する。Not yet は「まだです」という未完了の応答で、その後に残っている作業量を説明する流れが自然につながる。\n\n【図解】進捗を表す表現\n　表現｜意味｜状態\n　about halfway done｜半分ほど終わった｜途中\n　almost finished｜ほぼ終わった｜終盤\n　not started yet｜まだ始めていない｜未着手\n　⇒ 残り2枚という情報と合うのは半分程度\n　⚠ 「昨夜終えた」は Not yet と矛盾する。直前の発話との整合を確認する。',
     difficulty: 'standard',
   },
   {
@@ -543,7 +543,7 @@ export const eikenQuestions3kyu2: EikenQuestion[] = [
       { key: 'D', text: "You should be more careful next time." },
     ],
     correctKey: 'B',
-    explanation: '「傘の説明をしてください」と続けているBの返答は、忘れ物を調べようとしている。Let me check our lost and found.（遺失物センターを確認します）の後に傘の特徴を聞くのが自然な流れ。「不注意」「次は気をつけて」は対応として不自然、「傘は隣の店で売っている」は的外れ。\n\n【図解】遺失物対応の流れ\n　順序｜発話｜内容\n　1｜電車に傘を忘れた｜申し出\n　2｜遺失物を確認します｜対応\n　3｜特徴を教えてください｜聞き取り\n　⇒ 特徴を尋ねる前には確認の申し出が入る\n　⚠ 注意を促すだけの応答では describe が続かない。業務の流れで判断する。',
+    explanation: '「傘の説明をしてください」と続けているBの返答は、忘れ物を調べようとしている。Let me check our lost and found.（遺失物センターを確認します）の後に傘の特徴を聞くのが自然な流れ。「不注意」「次は気をつけて」は対応として不自然、「傘は隣の店で売っている」は的外れ。遺失物の対応では、まず確認する意思を示し、次に持ち主に特徴を尋ねるという順序で会話が進むのが一般的である。\n\n【図解】遺失物対応の流れ\n　順序｜発話｜内容\n　1｜電車に傘を忘れた｜申し出\n　2｜遺失物を確認します｜対応\n　3｜特徴を教えてください｜聞き取り\n　⇒ 特徴を尋ねる前には確認の申し出が入る\n　⚠ 注意を促すだけの応答では describe が続かない。業務の流れで判断する。',
     difficulty: 'standard',
   },
   {
@@ -558,7 +558,7 @@ export const eikenQuestions3kyu2: EikenQuestion[] = [
       { key: 'D', text: "I felt great this morning." },
     ],
     correctKey: 'C',
-    explanation: 'Aが「休んで水をたくさん飲んで」と続けていることから、Bはすでに体の回復のための対処をしたと示している。薬を飲んで横になったというCが最自然。大きな昼食・長い運動・今朝は元気だったは「少しよくなった」と体の不調のつながりに合わない。\n\n【図解】体調に関する会話\n　順序｜発話｜内容\n　1｜顔色が悪かった｜心配\n　2｜薬を飲んで横になった｜対処\n　3｜休んで水を飲んで｜助言\n　⇒ 助言の前には自分の対処を述べる\n　⚠ 「今朝は元気だった」では A little という返答と矛盾する。前後の整合を確認する。',
+    explanation: 'Aが「休んで水をたくさん飲んで」と続けていることから、Bはすでに体の回復のための対処をしたと示している。薬を飲んで横になったというCが最自然。大きな昼食・長い運動・今朝は元気だったは「少しよくなった」と体の不調のつながりに合わない。体調に関する会話では、症状の説明、自分がとった対処、相手からの助言という順に話題が展開するのが自然な流れになる。\n\n【図解】体調に関する会話\n　順序｜発話｜内容\n　1｜顔色が悪かった｜心配\n　2｜薬を飲んで横になった｜対処\n　3｜休んで水を飲んで｜助言\n　⇒ 助言の前には自分の対処を述べる\n　⚠ 「今朝は元気だった」では A little という返答と矛盾する。前後の整合を確認する。',
     difficulty: 'standard',
   },
   {
@@ -573,7 +573,7 @@ export const eikenQuestions3kyu2: EikenQuestion[] = [
       { key: 'D', text: "You should ask someone else." },
     ],
     correctKey: 'A',
-    explanation: 'Aが「それはいい考え、お父さんは屋外で過ごすのが好き」と肯定的に反応していることから、BはAの父親に合ったプレゼントを提案したとわかる。ガーデニング道具の提案が「屋外好き」のヒントと一致する。他の選択肢は具体的なプレゼント提案にならない。\n\n【図解】提案と反応の対応\n　提案の内容｜相手の反応｜整合\n　園芸用品｜屋外好きに合う｜整合する\n　本｜屋外とは無関係｜手がかりと合わない\n　旅行券｜言及なし｜根拠がない\n　⇒ 屋外好きという情報と合う提案が入る\n　⚠ 反応の中の理由を手がかりにする。He loves the outdoors が判断の鍵。',
+    explanation: 'Aが「それはいい考え、お父さんは屋外で過ごすのが好き」と肯定的に反応していることから、BはAの父親に合ったプレゼントを提案したとわかる。ガーデニング道具の提案が「屋外好き」のヒントと一致する。他の選択肢は具体的なプレゼント提案にならない。提案の内容が適切かどうかは、相手の反応に含まれる理由から判断できる。屋外好きという情報が提案の妥当性を裏づけている。\n\n【図解】提案と反応の対応\n　提案の内容｜相手の反応｜整合\n　園芸用品｜屋外好きに合う｜整合する\n　本｜屋外とは無関係｜手がかりと合わない\n　旅行券｜言及なし｜根拠がない\n　⇒ 屋外好きという情報と合う提案が入る\n　⚠ 反応の中の理由を手がかりにする。He loves the outdoors が判断の鍵。',
     difficulty: 'basic',
   },
   {
@@ -635,7 +635,7 @@ export const eikenQuestions3kyu2: EikenQuestion[] = [
       { key: 'D', text: 'A registration form' },
     ],
     correctKey: 'C',
-    explanation: 'お知らせに「bring gloves（手袋を持参してください）」と書かれている。ゴミ袋は「提供されます（will be provided）」、軽食もイベント後に出されるとあるので持参不要。参加申し込み用紙については言及されていない。\n\n【図解】持ち物と提供品\n　項目｜扱い｜根拠\n　手袋｜持参する｜bring gloves\n　ごみ袋｜提供される｜will be provided\n　軽食｜提供される｜イベント後\n　⇒ 参加者が持参するのは手袋\n　⚠ 提供される物を持ち物と取り違えない。動詞 bring と provide で見分ける。',
+    explanation: 'お知らせに「bring gloves（手袋を持参してください）」と書かれている。ゴミ袋は「提供されます（will be provided）」、軽食もイベント後に出されるとあるので持参不要。参加申し込み用紙については言及されていない。案内文では、参加者が持参する物と主催者が用意する物が区別して書かれている。動詞の bring と provide がその手がかりになる。\n\n【図解】持ち物と提供品\n　項目｜扱い｜根拠\n　手袋｜持参する｜bring gloves\n　ごみ袋｜提供される｜will be provided\n　軽食｜提供される｜イベント後\n　⇒ 参加者が持参するのは手袋\n　⚠ 提供される物を持ち物と取り違えない。動詞 bring と provide で見分ける。',
     difficulty: 'basic',
   },
   {
@@ -665,7 +665,7 @@ export const eikenQuestions3kyu2: EikenQuestion[] = [
       { key: 'D', text: 'He needs to return books and collect an order.' },
     ],
     correctKey: 'D',
-    explanation: 'メールに「I need to return some books and pick up a book I ordered（本を返却して注文した本を受け取る必要がある）」と明記されている。図書館で勉強・モールが閉まっている・もとの予定を忘れたとは書かれていない。\n\n【図解】待ち合わせ場所を変える理由\n　用件｜本文の記述｜場所\n　本の返却｜return some books｜図書館\n　注文本の受け取り｜pick up a book｜図書館\n　結論｜図書館で会いたい｜変更の理由\n　⇒ 返却と受け取りの用事があるため\n　⚠ 勉強のためとは書かれていない。用件の中身を本文で確認する。',
+    explanation: 'メールに「I need to return some books and pick up a book I ordered（本を返却して注文した本を受け取る必要がある）」と明記されている。図書館で勉強・モールが閉まっている・もとの予定を忘れたとは書かれていない。メールの読み取りでは、依頼や提案の理由が need to や want to といった表現の後に述べられることが多い。\n\n【図解】待ち合わせ場所を変える理由\n　用件｜本文の記述｜場所\n　本の返却｜return some books｜図書館\n　注文本の受け取り｜pick up a book｜図書館\n　結論｜図書館で会いたい｜変更の理由\n　⇒ 返却と受け取りの用事があるため\n　⚠ 勉強のためとは書かれていない。用件の中身を本文で確認する。',
     difficulty: 'standard',
   },
   {
@@ -725,7 +725,7 @@ export const eikenQuestions3kyu2: EikenQuestion[] = [
       { key: 'D', text: 'AI is too expensive for most companies.' },
     ],
     correctKey: 'B',
-    explanation: 'パッセージに「some people worry that it could take over jobs that humans currently do（現在人間がしている仕事を奪う可能性を心配する人もいる）」と書かれている。翻訳能力・コンピュータの速度・コストについては書かれていない。\n\n【図解】AI への懸念\n　懸念｜本文の記述｜対象\n　雇用｜take over jobs｜人が担う仕事\n　範囲｜currently done by humans｜現在の職種\n　結論｜働き方への影響｜社会的な課題\n　⇒ 人の仕事が置き換わる可能性が懸念\n　⚠ 翻訳の精度や費用は本文にない。懸念の内容を本文で確認する。',
+    explanation: 'パッセージに「some people worry that it could take over jobs that humans currently do（現在人間がしている仕事を奪う可能性を心配する人もいる）」と書かれている。翻訳能力・コンピュータの速度・コストについては書かれていない。設問は本文が挙げる懸念の内容を問うており、技術の性能ではなく社会への影響が論点になっている点を押さえる必要がある。\n\n【図解】AI への懸念\n　懸念｜本文の記述｜対象\n　雇用｜take over jobs｜人が担う仕事\n　範囲｜currently done by humans｜現在の職種\n　結論｜働き方への影響｜社会的な課題\n　⇒ 人の仕事が置き換わる可能性が懸念\n　⚠ 翻訳の精度や費用は本文にない。懸念の内容を本文で確認する。',
     difficulty: 'advanced',
   },
   {
@@ -1225,7 +1225,7 @@ export const eikenQuestions3kyu2: EikenQuestion[] = [
       { key: 'D', text: 'I already speak three languages.' },
     ],
     correctKey: 'A',
-    explanation: 'Aが「スペイン料理が好き」と反応していることから、直前でスペイン語を提案されたと考えるのが自然。Aの選択肢「Why don\'t you try Spanish?」が最も自然に続く。他の選択肢は言語学習の提案として不適切。\n\n【図解】提案の表現と応答\n　表現｜意味｜応答\n　Why don’t you 〜｜〜してはどう｜That sounds like a good idea\n　How about doing｜〜はどう｜Sounds good\n　You should 〜｜〜すべきだ｜助言\n　⇒ 相手が料理に触れたので言語の提案が入る\n　⚠ 否定的な応答では That sounds like a great idea と続かない。反応から逆算する。',
+    explanation: 'Aが「スペイン料理が好き」と反応していることから、直前でスペイン語を提案されたと考えるのが自然。Aの選択肢「Why don\'t you try Spanish?」が最も自然に続く。他の選択肢は言語学習の提案として不適切。会話問題では、空所の後ろにある反応が答えを絞る手がかりになる。ここではスペイン料理が好きという発言が、提案された言語を示している。\n\n【図解】提案の表現と応答\n　表現｜意味｜応答\n　Why don’t you 〜｜〜してはどう｜That sounds like a good idea\n　How about doing｜〜はどう｜Sounds good\n　You should 〜｜〜すべきだ｜助言\n　⇒ 相手が料理に触れたので言語の提案が入る\n　⚠ 否定的な応答では That sounds like a great idea と続かない。反応から逆算する。',
     difficulty: 'standard',
   },
   {
@@ -1240,7 +1240,7 @@ export const eikenQuestions3kyu2: EikenQuestion[] = [
       { key: 'D', text: 'The tickets are quite expensive.' },
     ],
     correctKey: 'A',
-    explanation: '開館時間を尋ねられているので、具体的な時刻を答えるAが自然。「開館すぐに行きます」という返答とも一致する。距離やチケット価格、行ったことがないという返答は開館時間の質問に対する答えとして不適切。\n\n【図解】応答から質問を推測する\n　質問｜求める情報｜応答例\n　What time does it open｜時刻｜at nine\n　How far is it｜距離｜about a mile\n　How much｜料金｜ten dollars\n　⇒ 開館時刻を尋ねているので時刻を答える\n　⚠ 距離や料金の情報では質問に答えていない。問われた情報の種類を確認する。',
+    explanation: '開館時間を尋ねられているので、具体的な時刻を答えるAが自然。「開館すぐに行きます」という返答とも一致する。距離やチケット価格、行ったことがないという返答は開館時間の質問に対する答えとして不適切。質問の疑問詞と応答の情報の種類は対応する。開館時刻を尋ねているので、時刻を示す応答が入ると判断できる。観光案内や施設の利用に関する会話で頻出するやり取りでもあります。\n\n【図解】応答から質問を推測する\n　質問｜求める情報｜応答例\n　What time does it open｜時刻｜at nine\n　How far is it｜距離｜about a mile\n　How much｜料金｜ten dollars\n　⇒ 開館時刻を尋ねているので時刻を答える\n　⚠ 距離や料金の情報では質問に答えていない。問われた情報の種類を確認する。',
     difficulty: 'basic',
   },
   {
@@ -1255,7 +1255,7 @@ export const eikenQuestions3kyu2: EikenQuestion[] = [
       { key: 'D', text: 'I forgot to bring my umbrella today.' },
     ],
     correctKey: 'A',
-    explanation: '「Thanks, that really helps me feel calmer（ありがとう、それで落ち着けた）」という反応から、励ましの言葉が直前にあったとわかる。Aの選択肢が自然に不安を和らげる励ましになっている。\n\n【図解】励ましの表現\n　表現｜意味｜効果\n　Do not worry｜心配しないで｜安心させる\n　You have prepared well｜よく準備した｜自信を与える\n　Good luck｜がんばって｜応援\n　⇒ 落ち着いたという反応なら励ましの言葉\n　⚠ 否定的な発言では feel calmer につながらない。応答の感情に合わせる。',
+    explanation: '「Thanks, that really helps me feel calmer（ありがとう、それで落ち着けた）」という反応から、励ましの言葉が直前にあったとわかる。Aの選択肢が自然に不安を和らげる励ましになっている。励ましの表現は相手の不安を和らげる働きをする。感謝の言葉と落ち着いたという反応が、直前が励ましであったことを示している。\n\n【図解】励ましの表現\n　表現｜意味｜効果\n　Do not worry｜心配しないで｜安心させる\n　You have prepared well｜よく準備した｜自信を与える\n　Good luck｜がんばって｜応援\n　⇒ 落ち着いたという反応なら励ましの言葉\n　⚠ 否定的な発言では feel calmer につながらない。応答の感情に合わせる。',
     difficulty: 'basic',
   },
   {
@@ -1270,7 +1270,7 @@ export const eikenQuestions3kyu2: EikenQuestion[] = [
       { key: 'D', text: 'I already had lunch today.' },
     ],
     correctKey: 'A',
-    explanation: 'Aが「イタリア料理が大好き」と反応していることから、直前でイタリアンレストランが紹介されたと考えるのが自然。Aの選択肢が最も自然につながる。\n\n【図解】推薦の会話\n　順序｜発話｜内容\n　1｜おすすめの店は｜質問\n　2｜近くにイタリア料理店がある｜推薦\n　3｜イタリア料理が好き｜反応\n　⇒ 料理の種類に触れた推薦が入る\n　⚠ 「知らない」では I love Italian food と続かない。反応の中の手がかりを使う。',
+    explanation: 'Aが「イタリア料理が大好き」と反応していることから、直前でイタリアンレストランが紹介されたと考えるのが自然。Aの選択肢が最も自然につながる。推薦を求められた場面では、具体的な店名や料理の種類を挙げるのが自然である。相手の反応に含まれる語がその手がかりになる。飲食店や観光地の紹介は会話問題で繰り返し扱われる場面であり、相手の反応に含まれる語が答えを絞る手がかりになることを覚えておきたいところです。\n\n【図解】推薦の会話\n　順序｜発話｜内容\n　1｜おすすめの店は｜質問\n　2｜近くにイタリア料理店がある｜推薦\n　3｜イタリア料理が好き｜反応\n　⇒ 料理の種類に触れた推薦が入る\n　⚠ 「知らない」では I love Italian food と続かない。反応の中の手がかりを使う。',
     difficulty: 'basic',
   },
   {
@@ -1285,7 +1285,7 @@ export const eikenQuestions3kyu2: EikenQuestion[] = [
       { key: 'D', text: 'I don\'t like carrying heavy things either.' },
     ],
     correctKey: 'A',
-    explanation: '「Thanks a lot, I really appreciate it（ありがとう、助かる）」という感謝の返答から、助けを申し出た発言が直前にあったとわかる。Aの選択肢「運んであげるよ」が自然につながる。\n\n【図解】申し出の表現\n　表現｜意味｜応答\n　Let me carry it｜運ばせて｜Thanks a lot\n　Shall I help you｜手伝いましょうか｜Yes, please\n　Do you need help｜手伝いが要る｜Yes\n　⇒ 感謝が続くので手助けの申し出\n　⚠ 自分の事情を述べるだけでは感謝につながらない。応答から発話の役割を判断する。',
+    explanation: '「Thanks a lot, I really appreciate it（ありがとう、助かる）」という感謝の返答から、助けを申し出た発言が直前にあったとわかる。Aの選択肢「運んであげるよ」が自然につながる。重い荷物を前にした場面では、手助けを申し出る表現が入る。Let me や Shall I で始まる形が申し出の定型である。\n\n【図解】申し出の表現\n　表現｜意味｜応答\n　Let me carry it｜運ばせて｜Thanks a lot\n　Shall I help you｜手伝いましょうか｜Yes, please\n　Do you need help｜手伝いが要る｜Yes\n　⇒ 感謝が続くので手助けの申し出\n　⚠ 自分の事情を述べるだけでは感謝につながらない。応答から発話の役割を判断する。',
     difficulty: 'basic',
   },
   {
@@ -1300,7 +1300,7 @@ export const eikenQuestions3kyu2: EikenQuestion[] = [
       { key: 'D', text: 'I don\'t like traveling at all.' },
     ],
     correctKey: 'A',
-    explanation: '週末旅行の感想を聞かれているので、感想を述べるAが自然。「That sounds relaxing（それはリラックスできそうだね）」という反応とも一致する。他の選択肢は質問への直接の答えになっていない。\n\n【図解】感想を尋ねる会話\n　質問｜求める内容｜応答例\n　How was your trip｜感想｜It was wonderful\n　Where did you go｜場所｜to the countryside\n　When did you go｜時期｜last weekend\n　⇒ 感想を聞かれたので旅の様子を答える\n　⚠ 予定や費用の話は感想の答えにならない。質問の種類に対応させる。',
+    explanation: '週末旅行の感想を聞かれているので、感想を述べるAが自然。「That sounds relaxing（それはリラックスできそうだね）」という反応とも一致する。他の選択肢は質問への直接の答えになっていない。感想を尋ねる質問には、体験の様子や気持ちを述べる応答が対応する。相手の反応がその内容を評価している点も手がかりになる。\n\n【図解】感想を尋ねる会話\n　質問｜求める内容｜応答例\n　How was your trip｜感想｜It was wonderful\n　Where did you go｜場所｜to the countryside\n　When did you go｜時期｜last weekend\n　⇒ 感想を聞かれたので旅の様子を答える\n　⚠ 予定や費用の話は感想の答えにならない。質問の種類に対応させる。',
     difficulty: 'basic',
   },
   {
@@ -1315,7 +1315,7 @@ export const eikenQuestions3kyu2: EikenQuestion[] = [
       { key: 'D', text: 'The manager is very friendly.' },
     ],
     correctKey: 'A',
-    explanation: '営業日について尋ねられているので、具体的な営業日情報を答えるAが自然。「That\'s good to know（それは参考になる）」という返答とも一致する。他の選択肢は営業日についての質問に答えていない。\n\n【図解】営業日を尋ねる会話\n　質問｜求める情報｜応答例\n　Is it open on Sundays｜営業日｜open every day except Mondays\n　What time｜時刻｜at nine\n　Where｜場所｜near the station\n　⇒ 営業日を尋ねているので曜日で答える\n　⚠ 商品や店員の話では質問に答えていない。問われた情報を確認する。',
+    explanation: '営業日について尋ねられているので、具体的な営業日情報を答えるAが自然。「That\'s good to know（それは参考になる）」という返答とも一致する。他の選択肢は営業日についての質問に答えていない。営業日や営業時間を尋ねる質問には、曜日や時刻を示す応答が対応する。商品や店員の話は答えとして噛み合わない。\n\n【図解】営業日を尋ねる会話\n　質問｜求める情報｜応答例\n　Is it open on Sundays｜営業日｜open every day except Mondays\n　What time｜時刻｜at nine\n　Where｜場所｜near the station\n　⇒ 営業日を尋ねているので曜日で答える\n　⚠ 商品や店員の話では質問に答えていない。問われた情報を確認する。',
     difficulty: 'standard',
   },
   {
@@ -1330,7 +1330,7 @@ export const eikenQuestions3kyu2: EikenQuestion[] = [
       { key: 'D', text: 'The rent here is very cheap.' },
     ],
     correctKey: 'A',
-    explanation: '「That\'s exciting!（それは楽しみだね！）」という反応から、引っ越しについて肯定的な報告があったとわかる。Aの選択肢が新しい住まいについて自然に説明している。\n\n【図解】会話の流れ\n　順序｜発話｜内容\n　1｜引っ越すと聞いた｜確認\n　2｜公園の近くに良い所を見つけた｜肯定と補足\n　3｜それは楽しみだね｜反応\n　⇒ 肯定的な反応が続くので前向きな返答\n　⚠ 否定の返答では That is exciting と続かない。感情の方向をそろえる。',
+    explanation: '「That\'s exciting!（それは楽しみだね！）」という反応から、引っ越しについて肯定的な報告があったとわかる。Aの選択肢が新しい住まいについて自然に説明している。会話問題では、後続の反応が肯定的か否定的かで空所の内容が決まる。exciting という評価は前向きな報告を受けたことを示している。\n\n【図解】会話の流れ\n　順序｜発話｜内容\n　1｜引っ越すと聞いた｜確認\n　2｜公園の近くに良い所を見つけた｜肯定と補足\n　3｜それは楽しみだね｜反応\n　⇒ 肯定的な反応が続くので前向きな返答\n　⚠ 否定の返答では That is exciting と続かない。感情の方向をそろえる。',
     difficulty: 'standard',
   },
   {
@@ -1345,7 +1345,7 @@ export const eikenQuestions3kyu2: EikenQuestion[] = [
       { key: 'D', text: 'I don\'t eat fish.' },
     ],
     correctKey: 'A',
-    explanation: '「Sounds delicious. I\'ll have that then.（美味しそう、それにします）」という反応から、具体的な料理のおすすめがあったとわかる。Aの選択肢が自然につながる。\n\n【図解】注文時の会話\n　順序｜発話｜内容\n　1｜おすすめは｜質問\n　2｜サーモンが人気｜推薦\n　3｜それにします｜決定\n　⇒ 具体的な料理を挙げる推薦が入る\n　⚠ 「魚は食べない」では I will have that と矛盾する。後続の決定と整合させる。',
+    explanation: '「Sounds delicious. I\'ll have that then.（美味しそう、それにします）」という反応から、具体的な料理のおすすめがあったとわかる。Aの選択肢が自然につながる。おすすめを尋ねられた場面では、具体的な料理名を挙げる応答が自然である。直後の注文の発言もその内容を受けている。\n\n【図解】注文時の会話\n　順序｜発話｜内容\n　1｜おすすめは｜質問\n　2｜サーモンが人気｜推薦\n　3｜それにします｜決定\n　⇒ 具体的な料理を挙げる推薦が入る\n　⚠ 「魚は食べない」では I will have that と矛盾する。後続の決定と整合させる。',
     difficulty: 'basic',
   },
   {
@@ -1360,7 +1360,7 @@ export const eikenQuestions3kyu2: EikenQuestion[] = [
       { key: 'D', text: 'I don\'t know how to type.' },
     ],
     correctKey: 'A',
-    explanation: '「I already tried that（もうそれは試した）」という返答から、直前で何か対処法を提案されたとわかる。Aの選択肢「再起動してみた？」が最も自然につながる。\n\n【図解】不具合への対処の会話\n　順序｜発話｜内容\n　1｜動かなくなった｜問題の提示\n　2｜再起動してみた｜対処の提案\n　3｜もう試したがだめ｜結果の報告\n　⇒ 具体的な対処法の提案が入る\n　⚠ 「もう試した」に対応する提案でなければ流れが崩れる。直後の発話から逆算する。',
+    explanation: '「I already tried that（もうそれは試した）」という返答から、直前で何か対処法を提案されたとわかる。Aの選択肢「再起動してみた？」が最も自然につながる。不具合の相談では、原因の推測や対処法の提案が続くのが自然である。すでに試したという返答が、提案の内容を特定する手がかりになる。身近な機器の不具合を話題にした会話は、英検の会話問題で定番の場面です。\n\n【図解】不具合への対処の会話\n　順序｜発話｜内容\n　1｜動かなくなった｜問題の提示\n　2｜再起動してみた｜対処の提案\n　3｜もう試したがだめ｜結果の報告\n　⇒ 具体的な対処法の提案が入る\n　⚠ 「もう試した」に対応する提案でなければ流れが崩れる。直後の発話から逆算する。',
     difficulty: 'standard',
   },
 
@@ -1377,7 +1377,7 @@ export const eikenQuestions3kyu2: EikenQuestion[] = [
       { key: 'D', text: 'Wait for a staff member to call their name' },
     ],
     correctKey: 'B',
-    explanation: 'パッセージに「visitors are required to wash their bodies thoroughly at the shower area」とある。Bが正解。水着への着替え・追加料金・スタッフの呼び出しについては記載がない。\n\n【図解】温泉利用の手順\n　順序｜行動｜根拠\n　1｜洗い場で体を洗う｜wash their bodies thoroughly\n　2｜湯船に入る｜入浴\n　3｜景色を楽しむ｜露天風呂\n　⇒ 入浴前に体を洗うことが必須\n　⚠ 水着や追加料金は本文にない。必要な行動を本文の記述で確認する。',
+    explanation: 'パッセージに「visitors are required to wash their bodies thoroughly at the shower area」とある。Bが正解。水着への着替え・追加料金・スタッフの呼び出しについては記載がない。案内文の読み取りでは、must や be required to といった義務を表す表現が答えの根拠になることが多い。\n\n【図解】温泉利用の手順\n　順序｜行動｜根拠\n　1｜洗い場で体を洗う｜wash their bodies thoroughly\n　2｜湯船に入る｜入浴\n　3｜景色を楽しむ｜露天風呂\n　⇒ 入浴前に体を洗うことが必須\n　⚠ 水着や追加料金は本文にない。必要な行動を本文の記述で確認する。',
     difficulty: 'basic',
   },
   {
@@ -1392,7 +1392,7 @@ export const eikenQuestions3kyu2: EikenQuestion[] = [
       { key: 'D', text: 'A type of mineral found in onsen water' },
     ],
     correctKey: 'C',
-    explanation: 'パッセージに「outdoor baths, called rotenburo, where visitors can enjoy the scenery while soaking in the warm water」とある。Cが正解。\n\n【図解】rotenburo の定義\n　要素｜本文の記述｜内容\n　場所｜outdoor baths｜屋外の浴場\n　特徴｜enjoy the scenery｜景色を楽しめる\n　行為｜soaking in the warm water｜湯に浸かる\n　⇒ 景色を楽しめる屋外の風呂\n　⚠ 洗い場や宿泊プランとは別のもの。定義文の語句を根拠にする。',
+    explanation: 'パッセージに「outdoor baths, called rotenburo, where visitors can enjoy the scenery while soaking in the warm water」とある。Cが正解。本文中で用語が定義されている場合、その定義文をそのまま根拠にできる。called という語の直後に説明が続く形が典型である。\n\n【図解】rotenburo の定義\n　要素｜本文の記述｜内容\n　場所｜outdoor baths｜屋外の浴場\n　特徴｜enjoy the scenery｜景色を楽しめる\n　行為｜soaking in the warm water｜湯に浸かる\n　⇒ 景色を楽しめる屋外の風呂\n　⚠ 洗い場や宿泊プランとは別のもの。定義文の語句を根拠にする。',
     difficulty: 'basic',
   },
   {
@@ -1407,7 +1407,7 @@ export const eikenQuestions3kyu2: EikenQuestion[] = [
       { key: 'D', text: 'To replace all public buses in the city' },
     ],
     correctKey: 'B',
-    explanation: 'パッセージに「City officials hope that the program will encourage people to use bicycles instead of cars, reducing traffic and air pollution」とある。Bが正解。\n\n【図解】自転車共有制度の狙い\n　要素｜本文の記述｜効果\n　利用の転換｜bicycles instead of cars｜車から自転車へ\n　交通｜reducing traffic｜渋滞の緩和\n　環境｜air pollution｜大気汚染の軽減\n　⇒ 渋滞と大気汚染の削減が目的\n　⚠ バスの置き換えや無料住宅は本文にない。目的を本文の語句で確認する。',
+    explanation: 'パッセージに「City officials hope that the program will encourage people to use bicycles instead of cars, reducing traffic and air pollution」とある。Bが正解。制度の目的を問う設問では、hope や aim to といった意図を示す表現の後ろに答えが置かれることが多い。\n\n【図解】自転車共有制度の狙い\n　要素｜本文の記述｜効果\n　利用の転換｜bicycles instead of cars｜車から自転車へ\n　交通｜reducing traffic｜渋滞の緩和\n　環境｜air pollution｜大気汚染の軽減\n　⇒ 渋滞と大気汚染の削減が目的\n　⚠ バスの置き換えや無料住宅は本文にない。目的を本文の語句で確認する。',
     difficulty: 'standard',
   },
   {
@@ -1422,7 +1422,7 @@ export const eikenQuestions3kyu2: EikenQuestion[] = [
       { key: 'D', text: 'Bicycle repair shop owners' },
     ],
     correctKey: 'C',
-    explanation: 'パッセージに「the program has been especially popular among tourists who want to explore the city at their own pace」とある。Cが正解。\n\n【図解】利用者層\n　層｜本文の記述｜理由\n　観光客｜especially popular among tourists｜自分のペースで回れる\n　市の担当者｜制度の運営側｜利用者ではない\n　バス運転手｜言及なし｜対象外\n　⇒ 観光客に特に人気がある\n　⚠ 制度を運営する側と利用する側を取り違えない。主語を確認して読む。',
+    explanation: 'パッセージに「the program has been especially popular among tourists who want to explore the city at their own pace」とある。Cが正解。利用者層を問う設問では、especially popular among のように対象を限定する表現が答えの手がかりになる。\n\n【図解】利用者層\n　層｜本文の記述｜理由\n　観光客｜especially popular among tourists｜自分のペースで回れる\n　市の担当者｜制度の運営側｜利用者ではない\n　バス運転手｜言及なし｜対象外\n　⇒ 観光客に特に人気がある\n　⚠ 制度を運営する側と利用する側を取り違えない。主語を確認して読む。',
     difficulty: 'basic',
   },
   {
@@ -1437,7 +1437,7 @@ export const eikenQuestions3kyu2: EikenQuestion[] = [
       { key: 'D', text: 'Call Mark to cancel the invitation' },
     ],
     correctKey: 'B',
-    explanation: 'メールに「I need to check my work schedule first. I will let you know for sure by Wednesday」とある。Bが正解。プレゼント購入・スナック持参・招待のキャンセルについては記載がない。\n\n【図解】水曜までにすること\n　行動｜本文の記述｜理由\n　勤務予定の確認｜check my work schedule｜参加可否の判断\n　返答｜let you know by Wednesday｜期限\n　贈り物｜言及なし｜対象外\n　⇒ 勤務予定を確認することが必要\n　⚠ 贈り物や軽食の持参は本文にない。すべきことを本文で確認する。',
+    explanation: 'メールに「I need to check my work schedule first. I will let you know for sure by Wednesday」とある。Bが正解。プレゼント購入・スナック持参・招待のキャンセルについては記載がない。メールの読み取りでは、need to や have to が示す行動と、その期限を表す by の情報を組み合わせて答えを決める。\n\n【図解】水曜までにすること\n　行動｜本文の記述｜理由\n　勤務予定の確認｜check my work schedule｜参加可否の判断\n　返答｜let you know by Wednesday｜期限\n　贈り物｜言及なし｜対象外\n　⇒ 勤務予定を確認することが必要\n　⚠ 贈り物や軽食の持参は本文にない。すべきことを本文で確認する。',
     difficulty: 'standard',
   },
   {
@@ -1452,7 +1452,7 @@ export const eikenQuestions3kyu2: EikenQuestion[] = [
       { key: 'D', text: 'How many people are invited' },
     ],
     correctKey: 'B',
-    explanation: 'メールに「could you tell me if I should bring anything, like snacks or drinks?」とある。Bが正解。開始時間・場所・招待人数については記載がない。\n\n【図解】メールでの質問内容\n　質問｜本文の記述｜内容\n　持ち物｜if I should bring anything｜軽食や飲み物\n　時間｜言及なし｜対象外\n　場所｜言及なし｜対象外\n　⇒ 何か持って行くべきかを尋ねている\n　⚠ 尋ねていない事項を選ばない。疑問文の形をした部分を本文で探す。',
+    explanation: 'メールに「could you tell me if I should bring anything, like snacks or drinks?」とある。Bが正解。開始時間・場所・招待人数については記載がない。メールの中で相手に尋ねている内容は、could you tell me や do you know のような疑問の形をとる部分に現れる。\n\n【図解】メールでの質問内容\n　質問｜本文の記述｜内容\n　持ち物｜if I should bring anything｜軽食や飲み物\n　時間｜言及なし｜対象外\n　場所｜言及なし｜対象外\n　⇒ 何か持って行くべきかを尋ねている\n　⚠ 尋ねていない事項を選ばない。疑問文の形をした部分を本文で探す。',
     difficulty: 'basic',
   },
   {
@@ -1467,7 +1467,7 @@ export const eikenQuestions3kyu2: EikenQuestion[] = [
       { key: 'D', text: 'It reduces the number of meetings entirely.' },
     ],
     correctKey: 'A',
-    explanation: 'パッセージに「this change helps employees save time on commuting and gives them more flexibility」とある。Aが正解。給与増加・パソコン不要・会議の完全削減については記載がない。\n\n【図解】在宅勤務の利点\n　項目｜本文の記述｜効果\n　通勤｜save time on commuting｜時間の節約\n　働き方｜more flexibility｜柔軟性\n　給与｜言及なし｜対象外\n　⇒ 通勤時間の節約が利点\n　⚠ 給与や会議の削減は本文にない。利点の中身を本文の語句で確認する。',
+    explanation: 'パッセージに「this change helps employees save time on commuting and gives them more flexibility」とある。Aが正解。給与増加・パソコン不要・会議の完全削減については記載がない。設問は在宅勤務の利点を問うており、本文は通勤時間の節約と働き方の柔軟性という二点を挙げている。\n\n【図解】在宅勤務の利点\n　項目｜本文の記述｜効果\n　通勤｜save time on commuting｜時間の節約\n　働き方｜more flexibility｜柔軟性\n　給与｜言及なし｜対象外\n　⇒ 通勤時間の節約が利点\n　⚠ 給与や会議の削減は本文にない。利点の中身を本文の語句で確認する。',
     difficulty: 'basic',
   },
   {
@@ -1482,7 +1482,7 @@ export const eikenQuestions3kyu2: EikenQuestion[] = [
       { key: 'D', text: 'By canceling all team projects' },
     ],
     correctKey: 'B',
-    explanation: 'パッセージに「many companies now use online meeting tools to keep everyone connected during the workday」とある。Bが正解。\n\n【図解】連絡を保つ工夫\n　手段｜本文の記述｜目的\n　オンライン会議ツール｜online meeting tools｜つながりの維持\n　対象｜everyone｜全員\n　時間帯｜during the workday｜勤務時間中\n　⇒ オンライン会議ツールの活用が答え\n　⚠ 出社の義務化や人員削減は本文にない。手段を本文で確認する。',
+    explanation: 'パッセージに「many companies now use online meeting tools to keep everyone connected during the workday」とある。Bが正解。設問は離れて働く社員のつながりを保つ工夫を問うており、具体的な手段が答えの中心になる。在宅勤務や働き方をめぐる文章は、社会の変化を扱う読解問題で頻出のテーマです。\n\n【図解】連絡を保つ工夫\n　手段｜本文の記述｜目的\n　オンライン会議ツール｜online meeting tools｜つながりの維持\n　対象｜everyone｜全員\n　時間帯｜during the workday｜勤務時間中\n　⇒ オンライン会議ツールの活用が答え\n　⚠ 出社の義務化や人員削減は本文にない。手段を本文で確認する。',
     difficulty: 'standard',
   },
   {
@@ -1497,7 +1497,7 @@ export const eikenQuestions3kyu2: EikenQuestion[] = [
       { key: 'D', text: 'They donate the garden tools to another school.' },
     ],
     correctKey: 'C',
-    explanation: 'パッセージに「At the end of the semester, the class uses the vegetables to cook a meal together」とある。Cが正解。\n\n【図解】学期末の活動\n　時期｜本文の記述｜活動\n　学期の終わり｜At the end of the semester｜収穫後\n　行動｜cook a meal together｜一緒に料理する\n　材料｜育てた野菜｜自分たちの収穫物\n　⇒ 収穫した野菜で一緒に料理を作る\n　⚠ 販売や寄付は本文にない。活動の内容を本文の動詞で確認する。',
+    explanation: 'パッセージに「At the end of the semester, the class uses the vegetables to cook a meal together」とある。Cが正解。設問は学期末に行われる活動を問うており、時期を示す語句の直後に置かれた動詞が答えの根拠になる。学校での体験活動を扱う文章は、英検の読解問題で繰り返し取り上げられる題材です。\n\n【図解】学期末の活動\n　時期｜本文の記述｜活動\n　学期の終わり｜At the end of the semester｜収穫後\n　行動｜cook a meal together｜一緒に料理する\n　材料｜育てた野菜｜自分たちの収穫物\n　⇒ 収穫した野菜で一緒に料理を作る\n　⚠ 販売や寄付は本文にない。活動の内容を本文の動詞で確認する。',
     difficulty: 'basic',
   },
   {
@@ -1512,7 +1512,7 @@ export const eikenQuestions3kyu2: EikenQuestion[] = [
       { key: 'D', text: 'The history of Japanese agriculture' },
     ],
     correctKey: 'B',
-    explanation: 'パッセージに「Teachers say the program helps students learn about where food comes from and encourages healthy eating habits」とある。Bが正解。\n\n【図解】菜園活動で学ぶこと\n　項目｜本文の記述｜内容\n　食べ物の由来｜where food comes from｜生産の過程\n　食習慣｜healthy eating habits｜健康的な食生活\n　その他｜言及なし｜対象外\n　⇒ 食の由来と健康的な食習慣を学ぶ\n　⚠ 経営や農業史は本文にない。学びの内容を本文の語句で確認する。',
+    explanation: 'パッセージに「Teachers say the program helps students learn about where food comes from and encourages healthy eating habits」とある。Bが正解。設問はこの取り組みで生徒が学ぶ内容を問うており、教師の発言部分にその答えがまとめられている。\n\n【図解】菜園活動で学ぶこと\n　項目｜本文の記述｜内容\n　食べ物の由来｜where food comes from｜生産の過程\n　食習慣｜healthy eating habits｜健康的な食生活\n　その他｜言及なし｜対象外\n　⇒ 食の由来と健康的な食習慣を学ぶ\n　⚠ 経営や農業史は本文にない。学びの内容を本文の語句で確認する。',
     difficulty: 'standard',
   },
 ];

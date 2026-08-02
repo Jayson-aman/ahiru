@@ -259,7 +259,7 @@ export const eikenQuestions2kyuIdiom2: EikenQuestion[] = [
       { key: 'D', text: "around" },
     ],
     correctKey: 'C',
-    explanation: '"show up"（現れる・姿を見せる）が正解。30分待ったがガイドは現れなかったという文意です。appearやturn upの言い換えとして頻出します。show off（見せびらかす）、show in（招き入れる）、show around（案内して回る）とは意味が大きく異なるので注意しましょう。\n\n【図解】show ＋ 副詞の意味\n　表現｜意味｜使う場面\n　show up｜現れる｜約束, 集合\n　show off｜見せびらかす｜能力, 持ち物\n　show around｜案内して回る｜来客, 新人\n　⇒ ガイドが来なかったという文脈なら show up\n　⚠ turn up も「現れる」で同義。show off は自慢する行為で、出現の意味はない。',
+    explanation: '"show up"（現れる・姿を見せる）が正解。30分待ったがガイドは現れなかったという文意です。appearやturn upの言い換えとして頻出します。show off（見せびらかす）、show in（招き入れる）、show around（案内して回る）とは意味が大きく異なるので注意しましょう。急ぎの連絡を求めるビジネスメールでも定番の締めくくり表現である。\n\n【図解】show ＋ 副詞の意味\n　表現｜意味｜使う場面\n　show up｜現れる｜約束, 集合\n　show off｜見せびらかす｜能力, 持ち物\n　show around｜案内して回る｜来客, 新人\n　⇒ ガイドが来なかったという文脈なら show up\n　⚠ turn up も「現れる」で同義。show off は自慢する行為で、出現の意味はない。',
     difficulty: 'standard',
   },
   {

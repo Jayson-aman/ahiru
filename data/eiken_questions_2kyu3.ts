@@ -695,7 +695,7 @@ export const eikenQuestions2kyu3: EikenQuestion[] = [
       { key: 'D', text: 'The impact of globalization on food culture is complex and varies by context.' },
     ],
     correctKey: 'D' as const,
-    explanation: 'パッセージは「The situation is more complex than it first appears」と明言し、都市部では地元料理への関心が高まる一方、農村部では課題が続くという複雑な状況を描いています。Dが「文脈によって影響が異なる」という全体的な主張を最も正確に表しています。\n\n【図解】本文の全体的な主張\n　地域｜本文の記述｜傾向\n　都市部｜地元料理への関心が高まる｜肯定的な側面\n　農村部｜課題が続く｜否定的な側面\n　筆者の立場｜more complex than it appears｜一律には論じない\n　⇒ 影響は文脈によって異なるという主張\n　⚠ 「globalization は完全に有害」と一方に寄せる選択肢は誤り。両面の記述を確認する。',
+    explanation: 'パッセージは「The situation is more complex than it first appears」と明言し、都市部では地元料理への関心が高まる一方、農村部では課題が続くという複雑な状況を描いています。Dが「文脈によって影響が異なる」という全体的な主張を最も正確に表しています。本文全体の主張を問う設問では、断定的すぎる選択肢を避けるのが基本になる。\n\n【図解】本文の全体的な主張\n　地域｜本文の記述｜傾向\n　都市部｜地元料理への関心が高まる｜肯定的な側面\n　農村部｜課題が続く｜否定的な側面\n　筆者の立場｜more complex than it appears｜一律には論じない\n　⇒ 影響は文脈によって異なるという主張\n　⚠ 「globalization は完全に有害」と一方に寄せる選択肢は誤り。両面の記述を確認する。',
     difficulty: 'advanced' as const,
   },
 
