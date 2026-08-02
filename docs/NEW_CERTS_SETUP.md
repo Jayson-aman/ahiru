@@ -12,13 +12,11 @@ v1.2.0 で追加した5資格を販売可能にするための登録手順。
 | 危険物取扱者 乙種第4類 | `pro_kikenbutsu` | 300節・65.4万字 | 600問 |
 | コンクリート技士・診断士 | `pro_concrete` | 300節・69.2万字 | 600問 |
 | 1級電気通信工事施工管理技士 | `pro_tsushin` | 300節・63.4万字 | 600問 |
-| 二級建築士 | `pro_nikkyu` | 300節・68.9万字 | **問題は次バージョンで追加** |
-| 第二種電気工事士 | `pro_denki2` | 300節・64.6万字 | **問題は次バージョンで追加** |
+| 二級建築士 | `pro_nikkyu` | 300節・68.9万字 | 600問 ＋製図対策28節 |
+| 第二種電気工事士 | `pro_denki2` | 300節・64.6万字 | 600問 |
 
-> **二級建築士と第二種電気工事士は教科書のみ**の状態。
-> 問題データは未収録のため、科目別問題の画面は「準備中」と表示される。
-> この2つは**課金商品を作らず、`CERTS_COMING_SOON` に入れたまま**にしておくのが安全。
-> 問題を収録したバージョンで商品を作って販売開始する。
+**5資格すべて教科書300節・問題600問が揃っている。**
+全問に選択肢ごとの個別解説・総論300字以上・図解が入っている。
 
 ---
 
@@ -45,7 +43,7 @@ export const CERTS_COMING_SOON: CertKey[] = ['kikenbutsu', 'concrete', 'tsushin'
 「収益化」→「サブスクリプション」→ **資格ごとに新しいグループを作る**
 （同一グループ内の商品は同時購読できないため、資格ごとに分ける）
 
-### 作成する商品（3資格ぶん・6商品）
+### 作成する商品（5資格ぶん・10商品）
 
 | グループ名 | 商品ID | 期間 | 価格（日本） |
 |---|---|---|---|
@@ -55,8 +53,12 @@ export const CERTS_COMING_SOON: CertKey[] = ['kikenbutsu', 'concrete', 'tsushin'
 | Pro コンクリート技士 | `qualiz_pro_concrete_yearly` | 1年 | ¥18,000 |
 | Pro 電気通信施工 | `qualiz_pro_tsushin_monthly` | 1か月 | ¥1,800 |
 | Pro 電気通信施工 | `qualiz_pro_tsushin_yearly` | 1年 | ¥18,000 |
+| Pro 二級建築士 | `qualiz_pro_nikkyu_monthly` | 1か月 | ¥1,800 |
+| Pro 二級建築士 | `qualiz_pro_nikkyu_yearly` | 1年 | ¥18,000 |
+| Pro 第二種電気工事士 | `qualiz_pro_denki2_monthly` | 1か月 | ¥1,800 |
+| Pro 第二種電気工事士 | `qualiz_pro_denki2_yearly` | 1年 | ¥18,000 |
 
-**商品IDには必ず資格キー（`kikenbutsu` / `concrete` / `tsushin`）を含めること。**
+**商品IDには必ず資格キー（`kikenbutsu` / `concrete` / `tsushin` / `nikkyu` / `denki2`）を含めること。**
 アプリは `components/CertPaywall.tsx` の `findPackage` で、商品IDに資格キーが含まれるかを見て
 該当パッケージを探している。キーが無いと購入導線が動かない。
 
@@ -72,6 +74,10 @@ export const CERTS_COMING_SOON: CertKey[] = ['kikenbutsu', 'concrete', 'tsushin'
 | コンクリート 年額 | コンクリート技士 QualiZ Pro（年額） | 技士・診断士の全600問と教科書300節が1年間使い放題 |
 | 電気通信 月額 | 電気通信施工 QualiZ Pro（月額） | 電気通信施工の全600問と教科書300節が1か月使い放題 |
 | 電気通信 年額 | 電気通信施工 QualiZ Pro（年額） | 電気通信施工の全600問と教科書300節が1年間使い放題 |
+| 二級建築士 月額 | 二級建築士 QualiZ Pro（月額） | 学科600問と教科書300節・製図対策が1か月使い放題 |
+| 二級建築士 年額 | 二級建築士 QualiZ Pro（年額） | 学科600問と教科書300節・製図対策が1年間使い放題 |
+| 二種電工 月額 | 第二種電気工事士 QualiZ Pro（月額） | 筆記600問と教科書300節・複線図解説が1か月使い放題 |
+| 二種電工 年額 | 第二種電気工事士 QualiZ Pro（年額） | 筆記600問と教科書300節・複線図解説が1年間使い放題 |
 
 **② Review Notes**（英文）
 `docs/REVIEW_NOTES.md` の各資格の節をコピペする。
@@ -85,16 +91,18 @@ TestFlightのビルドで対象資格のペイウォールを開いて撮影す�
 ## STEP 2. RevenueCat に登録
 
 ### ① Products
-「Product catalog」→「Products」→「+ New」で6商品を追加。
+「Product catalog」→「Products」→「+ New」で10商品を追加。
 App: **QualiZ (App Store)**、商品IDは上表のとおり。
 
 ### ② Entitlements
-「Entitlements」→「+ New」で3つ作る（**識別子はアプリのコードと完全一致させること**）。
+「Entitlements」→「+ New」で5つ作る（**識別子はアプリのコードと完全一致させること**）。
 
 ```
 pro_kikenbutsu
 pro_concrete
 pro_tsushin
+pro_nikkyu
+pro_denki2
 ```
 
 作成後、各エンタイトルメントの「Associated products」に対応する月額・年額を **Attach**。
@@ -104,6 +112,8 @@ pro_tsushin
 | `pro_kikenbutsu` | `qualiz_pro_kikenbutsu_monthly` / `_yearly` |
 | `pro_concrete` | `qualiz_pro_concrete_monthly` / `_yearly` |
 | `pro_tsushin` | `qualiz_pro_tsushin_monthly` / `_yearly` |
+| `pro_nikkyu` | `qualiz_pro_nikkyu_monthly` / `_yearly` |
+| `pro_denki2` | `qualiz_pro_denki2_monthly` / `_yearly` |
 
 > `max` エンタイトルメントには紐付けなくてよい。
 > `services/subscription.ts` の `hasCertAccess` が
@@ -111,7 +121,7 @@ pro_tsushin
 > `max` が有効なら全資格が自動的に開く。
 
 ### ③ Offerings
-「Offerings」→ `default` →「Edit」で6パッケージを追加。
+「Offerings」→ `default` →「Edit」で10パッケージを追加。
 
 | パッケージ識別子 | 入れる商品 |
 |---|---|
@@ -121,6 +131,10 @@ pro_tsushin
 | `concrete_yearly` | `qualiz_pro_concrete_yearly` |
 | `tsushin_monthly` | `qualiz_pro_tsushin_monthly` |
 | `tsushin_yearly` | `qualiz_pro_tsushin_yearly` |
+| `nikkyu_monthly` | `qualiz_pro_nikkyu_monthly` |
+| `nikkyu_yearly` | `qualiz_pro_nikkyu_yearly` |
+| `denki2_monthly` | `qualiz_pro_denki2_monthly` |
+| `denki2_yearly` | `qualiz_pro_denki2_yearly` |
 
 **パッケージ識別子にも資格キーを含めること。**
 アプリは `パッケージ識別子 + 商品ID` の文字列に資格キーが含まれるかで判定している。
@@ -135,9 +149,11 @@ STEP 1〜2 が完了したら、`services/subscription.ts` を次のように変
 // 変更前
 export const CERTS_COMING_SOON: CertKey[] = ['kikenbutsu', 'concrete', 'tsushin', 'nikkyu', 'denki2'];
 
-// 変更後（商品を作った3つを外す）
-export const CERTS_COMING_SOON: CertKey[] = ['nikkyu', 'denki2'];
+// 変更後（5資格すべて登録し終えたら空にする）
+export const CERTS_COMING_SOON: CertKey[] = [];
 ```
+
+一部だけ登録した場合は、登録が済んだ資格だけを配列から取り除く。
 
 変更後に**必ずリビルドして新しいビルドを提出する**。
 
@@ -162,10 +178,13 @@ grep -c "cardTitle}>" "app/(tabs)/index.tsx"
 
 ## まとめ：今回やること・やらないこと
 
-| | 資格 | 商品を作る | `CERTS_COMING_SOON` |
-|---|---|---|---|
-| ✅ | 危険物取扱者 乙4 | 作る | 外す |
-| ✅ | コンクリート技士・診断士 | 作る | 外す |
-| ✅ | 1級電気通信工事施工管理技士 | 作る | 外す |
-| ⏸ | 二級建築士 | **作らない** | **残す**（問題が未収録） |
-| ⏸ | 第二種電気工事士 | **作らない** | **残す**（問題が未収録） |
+| 資格 | 商品を作る | `CERTS_COMING_SOON` |
+|---|---|---|
+| 危険物取扱者 乙4 | ✅ 作る | 外す |
+| コンクリート技士・診断士 | ✅ 作る | 外す |
+| 1級電気通信工事施工管理技士 | ✅ 作る | 外す |
+| 二級建築士 | ✅ 作る | 外す |
+| 第二種電気工事士 | ✅ 作る | 外す |
+
+**5資格すべて問題データまで揃っているので、全部まとめて販売開始できる。**
+登録が全部終わったら `CERTS_COMING_SOON` を `[]` にしてリビルドする。

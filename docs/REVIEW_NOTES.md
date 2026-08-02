@@ -12,17 +12,19 @@ Appleの審査担当は日本語話者とは限らないため、各サブスク
 App Store Connect → App Information → App Review Information の「Notes」欄に貼り付け：
 
 ```
-This app is a study/exam-prep app for 15 different Japanese professional
+This app is a study/exam-prep app for 20 different Japanese professional
 certification exams (real estate agent, financial planner, condo manager,
-building equipment engineer, 1st-class construction management engineers x5,
-construction cost manager, water supply installation engineer, fire protection
-equipment officer, electrical engineer grade 3, weather forecaster, and the
-English proficiency test (Eiken)).
+building equipment engineer, second-class registered architect, 1st-class
+construction management engineers x6 including telecommunications, construction
+cost manager, water supply installation engineer, fire protection equipment
+officer, hazardous materials engineer, concrete engineer, second-class
+electrician, electrical engineer grade 3, weather forecaster, and the English
+proficiency test (Eiken)).
 
 Each subject shows the first 10 questions for free. Unlocking the full
 question bank for a specific certification requires either:
   - a per-certification "Pro" subscription (unlocks that one certification), or
-  - the "Max" subscription (unlocks all 15 certifications at once)
+  - the "Max" subscription (unlocks all 20 certifications at once)
 
 To verify the paywall: open any certification from the home screen → select
 any subject → answer past question 10, or scroll down on the subject screen,
@@ -61,11 +63,11 @@ the App Description:
 ### 全資格 Max（`max`）
 
 - 価格：月額 ¥2,800 ／ 年額 ¥28,000
-- 内容：15資格すべての全問題・全模擬試験をアンロック
+- 内容：20資格すべての全問題・全模擬試験をアンロック
 
 ```
 Unlocks the full question bank (all subjects, all difficulty levels, and all
-mock exams) for all 15 certification exams offered in this app at once. This
+mock exams) for all 20 certification exams offered in this app at once. This
 is the top-tier "all access" plan; equivalent to purchasing every
 per-certification Pro plan individually, at a discounted bundle price.
 ```
@@ -254,6 +256,41 @@ Business Act and the Radio Act. Also unlocks a 60-question mock exam and a
 study text of 300 sections with diagrams and worked calculation examples.
 ```
 
+### 二級建築士（`pro_nikkyu`）
+
+- 商品ID：`qualiz_pro_nikkyu_monthly` / `_yearly`
+- 価格：月額 ¥1,800 ／ 年額 ¥18,000
+- 内容：計画・法規・構造・施工の全4科目（600問）＋ 学科模擬試験
+  ＋ 要点テキスト300セクション（68.9万字）＋ 設計製図対策ガイド28セクション
+
+```
+Unlocks the full question bank (600 questions) for the Japanese Second-Class
+Registered Architect examination (二級建築士), covering the four written
+subjects: architectural planning and environmental engineering, building
+codes and regulations, structural engineering and materials, and construction
+practice. Also unlocks a 100-question mock exam reproducing the real written
+format, a study text of 300 sections with diagrams and worked calculations,
+and a 28-section guide for the second-stage design drawing examination.
+```
+
+### 第二種電気工事士（`pro_denki2`）
+
+- 商品ID：`qualiz_pro_denki2_monthly` / `_yearly`
+- 価格：月額 ¥1,800 ／ 年額 ¥18,000
+- 内容：基礎理論・配電理論と配線設計・機器材料工具・法令配線図の全4科目（600問）
+  ＋ 学科模擬試験 ＋ 要点テキスト300セクション（64.6万字・複線図の描き方を含む）
+
+```
+Unlocks the full question bank (600 questions) for the Japanese Second-Class
+Electrician certification (第二種電気工事士), which authorises electrical work
+on residential and small commercial premises at 600V or below. Covers basic
+electrical theory, power distribution theory and wiring design, equipment,
+materials and tools, and law with wiring diagrams. Also unlocks a 50-question
+mock exam reproducing the real written format and a study text of 300 sections
+including a step-by-step method for drawing the two-line wiring diagrams
+required in both the written and practical examinations.
+```
+
 ### ~~中学受験対策（`pro_juken`）~~ ※現在は提供なし
 
 > **審査提出時はこの節を含めないこと。** 受験対策（中学受験）はホーム画面から
@@ -331,7 +368,7 @@ second-stage written exam.
 | 想定される質問 | 回答 |
 |---|---|
 | 「本試験問題」は著作権的に問題ないか | 本アプリの模擬試験・オリジナル問題はすべて出題傾向を分析して独自作成したものであり、実際の試験問題の転載ではない旨をReview Notesに明記済み。宅建・マンション管理士の「本試験問題」は過去問を教育目的で使用しているが、著作権法上の引用・学習目的の利用範囲内としている（心配な場合は該当ファイルの扱いを個別に確認可能）。 |
-| 15資格分の課金がなぜ別々に必要か | 各資格は独立した学習コンテンツであり、受験生は通常1〜2資格しか必要としないため、資格ごとの個別課金（Pro）と、複数資格を学ぶユーザー向けの全資格課金（Max）の2階建てにしている。 |
+| 20資格分の課金がなぜ別々に必要か | 各資格は独立した学習コンテンツであり、受験生は通常1〜2資格しか必要としないため、資格ごとの個別課金（Pro）と、複数資格を学ぶユーザー向けの全資格課金（Max）の2階建てにしている。 |
 | 無料で試せる範囲 | 各科目最初の10問は無料（`FREE_QUESTION_LIMIT`）。購入前に内容を確認できる。 |
 | サブスクリプションの復元 | 各Paywall画面に「購入を復元する」ボタンを実装済み。 |
 
