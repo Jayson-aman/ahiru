@@ -358,7 +358,7 @@ export const eikenQuestions2kyu: EikenQuestion[] = [
     ],
     correctKey: 'D',
     explanation:
-      '"Not until ..." で始まる否定の副詞節が文頭に置かれると、主節に倒置が生じる（否定倒置）。"Not until ... did + 主語 + 動詞原形" が正しい構造。主語 the team に対して did を使い、"did the team realize" となる。\n\n【図解】否定の副詞句と倒置\n　文頭の要素｜主節の語順｜例\n　Not until 〜｜did ＋ 主語 ＋ 原形｜did the team realize\n　Rarely｜does または did ＋ 主語 ＋ 原形｜does it occur\n　No sooner｜had ＋ 主語 ＋ 過去分詞｜had he left\n　⇒ 否定語が文頭なら疑問文と同じ語順にする\n　⚠ that を入れて Not until 〜 that とするのは強調構文 It was not until 〜 that の形。文頭が Not until だけなら倒置。',
+      '"Not until ..." で始まる否定の副詞節が文頭に置かれると、主節に倒置が生じる（否定倒置）。"Not until ... did + 主語 + 動詞原形" が正しい構造。主語 the team に対して did を使い、"did the team realize" となる。否定語が文頭に出ると疑問文と同じ語順になるという原則は、Not until、Rarely、Never、Little などに共通して働く。\n\n【図解】否定の副詞句と倒置\n　文頭の要素｜主節の語順｜例\n　Not until 〜｜did ＋ 主語 ＋ 原形｜did the team realize\n　Rarely｜does または did ＋ 主語 ＋ 原形｜does it occur\n　No sooner｜had ＋ 主語 ＋ 過去分詞｜had he left\n　⇒ 否定語が文頭なら疑問文と同じ語順にする\n　⚠ that を入れて Not until 〜 that とするのは強調構文 It was not until 〜 that の形。文頭が Not until だけなら倒置。',
     difficulty: 'advanced',
   },
   {
@@ -651,7 +651,7 @@ In the passage, the phrase "falls short of" most closely means:`,
     ],
     correctKey: 'C',
     explanation:
-      '"falls short of" は「〜に達しない、〜を十分に果たしていない」という意味の慣用表現。批評家たちは規制が根本的な解決（過剰なプラスチック生産の抑制）に「及んでいない」と主張しているので、A「完全には達成できていない」が正しい。「完全に無視している」（B）は言い過ぎ。\n\n【図解】fall short of の言い換え\n　表現｜意味｜強さ\n　fall short of｜十分に達していない｜部分的な不足\n　fail to fully achieve｜完全には達成できない｜同義の言い換え\n　completely ignore｜まったく無視する｜言い過ぎ\n　⇒ 規制が根本解決に届いていないなら fails to fully achieve\n　⚠ 部分的な不足を「完全な無視」と読み替えない。程度を強めすぎる選択肢は誤り。',
+      '"falls short of" は「〜に達しない、〜を十分に果たしていない」という意味の慣用表現。批評家たちは規制が根本的な解決（過剰なプラスチック生産の抑制）に「及んでいない」と主張しているので、A「完全には達成できていない」が正しい。「完全に無視している」（B）は言い過ぎ。設問は本文中の表現を別の語句に言い換えたものを選ぶ形式で、程度を強めすぎた選択肢や弱めすぎた選択肢が誤答として並ぶ。\n\n【図解】fall short of の言い換え\n　表現｜意味｜強さ\n　fall short of｜十分に達していない｜部分的な不足\n　fail to fully achieve｜完全には達成できない｜同義の言い換え\n　completely ignore｜まったく無視する｜言い過ぎ\n　⇒ 規制が根本解決に届いていないなら fails to fully achieve\n　⚠ 部分的な不足を「完全な無視」と読み替えない。程度を強めすぎる選択肢は誤り。',
     difficulty: 'standard',
   },
   {

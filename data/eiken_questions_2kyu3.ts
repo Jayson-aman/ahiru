@@ -358,7 +358,7 @@ export const eikenQuestions2kyu3: EikenQuestion[] = [
       { key: 'D', text: 'which' },
     ],
     correctKey: 'B' as const,
-    explanation: 'コンマで区切られた非制限的関係代名詞節で、先行詞はDr. Nakamura（人）。後続する"research"は名詞なので、所有を示す関係代名詞"whose"（〜の）が必要です。"who"の後には動詞が続きます。"that"は非制限的節では使えません。\n\n【図解】関係代名詞の選択\n　直後に続くもの｜使う関係詞｜例\n　名詞（無冠詞）｜whose｜whose research\n　動詞｜who, which｜who delivered\n　主語 ＋ 動詞｜whom, which｜whom we invited\n　⇒ research という名詞が続くので whose\n　⚠ 非制限用法では that を使えない。コンマの有無も選択肢を絞る手がかりになる。',
+    explanation: 'コンマで区切られた非制限的関係代名詞節で、先行詞はDr. Nakamura（人）。後続する"research"は名詞なので、所有を示す関係代名詞"whose"（〜の）が必要です。"who"の後には動詞が続きます。"that"は非制限的節では使えません。非制限用法は先行詞を限定せず補足情報を加える働きをするため、コンマの有無が関係詞を選ぶ最初の手がかりになる。\n\n【図解】関係代名詞の選択\n　直後に続くもの｜使う関係詞｜例\n　名詞（無冠詞）｜whose｜whose research\n　動詞｜who, which｜who delivered\n　主語 ＋ 動詞｜whom, which｜whom we invited\n　⇒ research という名詞が続くので whose\n　⚠ 非制限用法では that を使えない。コンマの有無も選択肢を絞る手がかりになる。',
     difficulty: 'standard' as const,
   },
 
@@ -375,7 +375,7 @@ export const eikenQuestions2kyu3: EikenQuestion[] = [
       { key: 'D', text: 'has she reached' },
     ],
     correctKey: 'A' as const,
-    explanation: '"Hardly"が文頭に出ると倒置が起こります。"Hardly had + 主語 + 過去分詞 + when ..."で「〜するかしないうちに…した」という意味です。過去完了形を使い、助動詞hadが主語の前に出ます。"she had reached"では倒置がなく非文法的です。\n\n【図解】Hardly の倒置構文\n　構文｜語順｜接続詞\n　Hardly had 主語 過去分詞｜had が前｜when\n　No sooner had 主語 過去分詞｜had が前｜than\n　Scarcely had 主語 過去分詞｜had が前｜when\n　⇒ Hardly の直後は had she reached\n　⚠ she had reached では倒置になっていない。文頭が否定的副詞なら必ず語順を入れ替える。',
+    explanation: '"Hardly"が文頭に出ると倒置が起こります。"Hardly had + 主語 + 過去分詞 + when ..."で「〜するかしないうちに…した」という意味です。過去完了形を使い、助動詞hadが主語の前に出ます。"she had reached"では倒置がなく非文法的です。Hardly が文頭に出ると倒置が起こり、過去完了の助動詞 had が主語の前に出る。同義表現の No sooner とは呼応する接続詞が異なる。\n\n【図解】Hardly の倒置構文\n　構文｜語順｜接続詞\n　Hardly had 主語 過去分詞｜had が前｜when\n　No sooner had 主語 過去分詞｜had が前｜than\n　Scarcely had 主語 過去分詞｜had が前｜when\n　⇒ Hardly の直後は had she reached\n　⚠ she had reached では倒置になっていない。文頭が否定的副詞なら必ず語順を入れ替える。',
     difficulty: 'advanced' as const,
   },
 
@@ -426,7 +426,7 @@ export const eikenQuestions2kyu3: EikenQuestion[] = [
       { key: 'D', text: 'the minister finished' },
     ],
     correctKey: 'A' as const,
-    explanation: '"Scarcely"が文頭に来る場合も"Hardly"と同様に倒置が起こります。"Scarcely had + 主語 + 過去分詞 + when ..."という形で「〜するかしないうちに…した」を表します。過去完了形と倒置（had + 主語）の両方が必要です。\n\n【図解】Scarcely の倒置構文\n　文頭の語｜語順｜後半の接続詞\n　Scarcely｜had ＋ 主語 ＋ 過去分詞｜when\n　Hardly｜had ＋ 主語 ＋ 過去分詞｜when\n　No sooner｜had ＋ 主語 ＋ 過去分詞｜than\n　⇒ Scarcely の直後は had the minister finished\n　⚠ Scarcely 〜 than とはしない。when と than の対応を取り違えない。',
+    explanation: '"Scarcely"が文頭に来る場合も"Hardly"と同様に倒置が起こります。"Scarcely had + 主語 + 過去分詞 + when ..."という形で「〜するかしないうちに…した」を表します。過去完了形と倒置（had + 主語）の両方が必要です。Scarcely も Hardly と同じく否定的な意味を持つ副詞で、文頭に置かれると主節が倒置される。呼応するのは when である。\n\n【図解】Scarcely の倒置構文\n　文頭の語｜語順｜後半の接続詞\n　Scarcely｜had ＋ 主語 ＋ 過去分詞｜when\n　Hardly｜had ＋ 主語 ＋ 過去分詞｜when\n　No sooner｜had ＋ 主語 ＋ 過去分詞｜than\n　⇒ Scarcely の直後は had the minister finished\n　⚠ Scarcely 〜 than とはしない。when と than の対応を取り違えない。',
     difficulty: 'advanced' as const,
   },
 
@@ -477,7 +477,7 @@ export const eikenQuestions2kyu3: EikenQuestion[] = [
       { key: 'D', text: 'that' },
     ],
     correctKey: 'D' as const,
-    explanation: 'コンマなしの制限的関係代名詞節で、「昨年導入されたその政策」と特定するために"that"を使います。コンマなしの制限的用法では"that"か"which"が使えますが、"that"の方が制限的節では慣用的です。"that"はコンマを伴う非制限的節では使えないため、コンマ付きの選択肢は除外されます。\n\n【図解】関係代名詞とコンマ\n　用法｜コンマ｜使える関係詞\n　制限用法｜なし｜that, which\n　非制限用法｜あり｜which のみ\n　先行詞なし｜（不要）｜what\n　⇒ どの政策かを特定する制限用法なら that\n　⚠ that はコンマとともに使えない。コンマ付きの選択肢は自動的に除外できる。',
+    explanation: 'コンマなしの制限的関係代名詞節で、「昨年導入されたその政策」と特定するために"that"を使います。コンマなしの制限的用法では"that"か"which"が使えますが、"that"の方が制限的節では慣用的です。"that"はコンマを伴う非制限的節では使えないため、コンマ付きの選択肢は除外されます。コンマの有無で使える関係詞が変わるため、選択肢に句読点が含まれている場合はまずそこを確認するのが解法の近道になる。\n\n【図解】関係代名詞とコンマ\n　用法｜コンマ｜使える関係詞\n　制限用法｜なし｜that, which\n　非制限用法｜あり｜which のみ\n　先行詞なし｜（不要）｜what\n　⇒ どの政策かを特定する制限用法なら that\n　⚠ that はコンマとともに使えない。コンマ付きの選択肢は自動的に除外できる。',
     difficulty: 'standard' as const,
   },
 
@@ -494,7 +494,7 @@ export const eikenQuestions2kyu3: EikenQuestion[] = [
       { key: 'D', text: 'be implemented' },
     ],
     correctKey: 'D' as const,
-    explanation: '"recommend that ..."の後のthat節では仮定法現在（動詞の原形）を使います。受動態の場合は"be + 過去分詞"の形になります。三単現の"s"はつけません。"is implemented"は直説法現在で、"recommend"などの提案動詞の後では使いません。\n\n【図解】仮定法現在の受動態\n　動詞｜that 節の形｜例\n　recommend｜be ＋ 過去分詞｜be implemented\n　require｜be ＋ 過去分詞｜be completed\n　insist｜be ＋ 過去分詞｜be informed\n　⇒ 受動の原形なら be implemented\n　⚠ is implemented は直説法。提案や要求の that 節では時制の一致が起こらない。',
+    explanation: '"recommend that ..."の後のthat節では仮定法現在（動詞の原形）を使います。受動態の場合は"be + 過去分詞"の形になります。三単現の"s"はつけません。"is implemented"は直説法現在で、"recommend"などの提案動詞の後では使いません。recommend、suggest、insist などが提案や要求の意味で that 節をとると、節内の動詞は主語の人称や数に関係なく原形になる。\n\n【図解】仮定法現在の受動態\n　動詞｜that 節の形｜例\n　recommend｜be ＋ 過去分詞｜be implemented\n　require｜be ＋ 過去分詞｜be completed\n　insist｜be ＋ 過去分詞｜be informed\n　⇒ 受動の原形なら be implemented\n　⚠ is implemented は直説法。提案や要求の that 節では時制の一致が起こらない。',
     difficulty: 'advanced' as const,
   },
 
@@ -528,7 +528,7 @@ export const eikenQuestions2kyu3: EikenQuestion[] = [
       { key: 'D', text: 'had she entered' },
     ],
     correctKey: 'D' as const,
-    explanation: '"No sooner"が文頭に来ると倒置が起こります。"No sooner had + 主語 + 過去分詞 + than ..."で「〜するやいなや…した」の意味です。過去完了の助動詞"had"が主語の前に出ます。"she had entered"では倒置がなく非文法的です。\n\n【図解】No sooner の倒置\n　構文｜前半｜後半\n　No sooner had 主語 過去分詞｜倒置あり｜than ＋ 過去形\n　Hardly had 主語 過去分詞｜倒置あり｜when ＋ 過去形\n　As soon as 主語 過去形｜倒置なし｜（接続詞が先頭）\n　⇒ No sooner の直後は had she entered\n　⚠ than の前は過去完了、後ろは過去形。時制の組み合わせも確認する。',
+    explanation: '"No sooner"が文頭に来ると倒置が起こります。"No sooner had + 主語 + 過去分詞 + than ..."で「〜するやいなや…した」の意味です。過去完了の助動詞"had"が主語の前に出ます。"she had entered"では倒置がなく非文法的です。No sooner から than までの構文は前半に過去完了、後半に過去形を置き、二つの出来事の時間差がごく小さいことを表す。\n\n【図解】No sooner の倒置\n　構文｜前半｜後半\n　No sooner had 主語 過去分詞｜倒置あり｜than ＋ 過去形\n　Hardly had 主語 過去分詞｜倒置あり｜when ＋ 過去形\n　As soon as 主語 過去形｜倒置なし｜（接続詞が先頭）\n　⇒ No sooner の直後は had she entered\n　⚠ than の前は過去完了、後ろは過去形。時制の組み合わせも確認する。',
     difficulty: 'advanced' as const,
   },
 
@@ -562,7 +562,7 @@ export const eikenQuestions2kyu3: EikenQuestion[] = [
       { key: 'D', text: 'have arrived' },
     ],
     correctKey: 'C' as const,
-    explanation: '仮定法過去完了の条件節です。"If + 主語 + had + 過去分詞"で過去の事実に反する仮定を表します。主節では"might have found"（〜できたかもしれない）が使われています。"would arrive"は仮定法過去で現在・未来の仮定に使います。\n\n【図解】仮定法過去完了\n　条件節｜主節｜表す内容\n　If had 過去分詞｜would have 過去分詞｜過去の反実仮想\n　If had 過去分詞｜might have 過去分詞｜過去の可能性\n　If 過去形｜would ＋ 原形｜現在の仮定\n　⇒ 主節が might have found なら had arrived\n　⚠ would arrive は現在の仮定形。主節の時制と必ず対応させる。',
+    explanation: '仮定法過去完了の条件節です。"If + 主語 + had + 過去分詞"で過去の事実に反する仮定を表します。主節では"might have found"（〜できたかもしれない）が使われています。"would arrive"は仮定法過去で現在・未来の仮定に使います。仮定法過去完了は過去の事実に反する仮定を表し、条件節に had と過去分詞、帰結節に would や might と have と過去分詞を用いる。\n\n【図解】仮定法過去完了\n　条件節｜主節｜表す内容\n　If had 過去分詞｜would have 過去分詞｜過去の反実仮想\n　If had 過去分詞｜might have 過去分詞｜過去の可能性\n　If 過去形｜would ＋ 原形｜現在の仮定\n　⇒ 主節が might have found なら had arrived\n　⚠ would arrive は現在の仮定形。主節の時制と必ず対応させる。',
     difficulty: 'standard' as const,
   },
 
@@ -630,7 +630,7 @@ export const eikenQuestions2kyu3: EikenQuestion[] = [
       { key: 'D', text: 'replaces entirely' },
     ],
     correctKey: 'A' as const,
-    explanation: '"rivals"は「匹敵する・張り合う」の意味です。「経験豊富な専門家の精度に匹敵し、場合によってはそれを上回る」という文脈から、"competes with"（〜と肩を並べる）が最も近い意味です。"falls short of"は「及ばない」で反対の意味になります。\n\n【図解】rivals の意味の取り方\n　語｜品詞｜意味\n　rival｜動詞｜匹敵する, 肩を並べる\n　rival｜名詞｜競争相手\n　fall short of｜句動詞｜及ばない\n　⇒ 専門家の精度に匹敵するなら competes with\n　⚠ falls short of は正反対の意味。sometimes exceeds という続きが上回る場合もあることを示す。',
+    explanation: '"rivals"は「匹敵する・張り合う」の意味です。「経験豊富な専門家の精度に匹敵し、場合によってはそれを上回る」という文脈から、"competes with"（〜と肩を並べる）が最も近い意味です。"falls short of"は「及ばない」で反対の意味になります。語彙の言い換え問題では、前後の文が示す方向、つまり肯定的か否定的かを確認してから選択肢を絞ると誤答を避けやすい。\n\n【図解】rivals の意味の取り方\n　語｜品詞｜意味\n　rival｜動詞｜匹敵する, 肩を並べる\n　rival｜名詞｜競争相手\n　fall short of｜句動詞｜及ばない\n　⇒ 専門家の精度に匹敵するなら competes with\n　⚠ falls short of は正反対の意味。sometimes exceeds という続きが上回る場合もあることを示す。',
     difficulty: 'standard' as const,
   },
 
@@ -826,7 +826,7 @@ export const eikenQuestions2kyu3: EikenQuestion[] = [
       { key: 'D', text: 'Because life requires many more chemicals beyond just oxygen and methane.' },
     ],
     correctKey: 'B' as const,
-    explanation: '"geological and chemical processes can also produce them"という記述から、酸素やメタンは生物活動以外の地質学的・化学的プロセスによっても生成されるため、それらの存在だけでは生命の確認にならないとわかります。Bが正解です。\n\n【図解】バイオシグネチャーの限界\n　気体｜生物由来｜非生物由来\n　酸素｜光合成｜地質, 化学過程\n　メタン｜微生物の活動｜地質, 化学過程\n　結論｜検出だけでは断定できない｜追加の証拠が必要\n　⇒ 非生物的な過程でも生成されうる点が理由\n　⚠ 「望遠鏡の性能不足」は別の論点。検出可能性と解釈可能性を混同しない。',
+    explanation: '"geological and chemical processes can also produce them"という記述から、酸素やメタンは生物活動以外の地質学的・化学的プロセスによっても生成されるため、それらの存在だけでは生命の確認にならないとわかります。Bが正解です。設問はバイオシグネチャーの限界を問うており、検出できるかどうかではなく、検出結果をどう解釈できるかが論点になっている。\n\n【図解】バイオシグネチャーの限界\n　気体｜生物由来｜非生物由来\n　酸素｜光合成｜地質, 化学過程\n　メタン｜微生物の活動｜地質, 化学過程\n　結論｜検出だけでは断定できない｜追加の証拠が必要\n　⇒ 非生物的な過程でも生成されうる点が理由\n　⚠ 「望遠鏡の性能不足」は別の論点。検出可能性と解釈可能性を混同しない。',
     difficulty: 'standard' as const,
   },
 
@@ -1219,7 +1219,7 @@ export const eikenQuestions2kyu3: EikenQuestion[] = [
       { key: 'D', text: 'will remain' },
     ],
     correctKey: 'A' as const,
-    explanation: '"It is vital that + 主語 + 動詞の原形"は仮定法現在の構文です。vital、essential、necessaryなどの形容詞に続くthat節では動詞は原形を使います。remainsは三単現、remainedは過去形、will remainは未来形でいずれも不適切です。\n\n【図解】仮定法現在をとる形容詞\n　形容詞｜意味｜that 節の動詞\n　vital｜きわめて重要な｜原形\n　essential｜不可欠な｜原形\n　necessary｜必要な｜原形\n　⇒ 主語が複数でも動詞は原形 remain\n　⚠ remains と三単現にしない。この構文では数の一致も時制の一致も起こらない。',
+    explanation: '"It is vital that + 主語 + 動詞の原形"は仮定法現在の構文です。vital、essential、necessaryなどの形容詞に続くthat節では動詞は原形を使います。remainsは三単現、remainedは過去形、will remainは未来形でいずれも不適切です。vital、essential、necessary、important などの形容詞が導く that 節でも、require や demand と同じく動詞は原形になる。\n\n【図解】仮定法現在をとる形容詞\n　形容詞｜意味｜that 節の動詞\n　vital｜きわめて重要な｜原形\n　essential｜不可欠な｜原形\n　necessary｜必要な｜原形\n　⇒ 主語が複数でも動詞は原形 remain\n　⚠ remains と三単現にしない。この構文では数の一致も時制の一致も起こらない。',
     difficulty: 'advanced' as const,
   },
 
@@ -1253,7 +1253,7 @@ export const eikenQuestions2kyu3: EikenQuestion[] = [
       { key: 'D', text: 'too' },
     ],
     correctKey: 'A' as const,
-    explanation: '比較級を強調する副詞にはmuch、far、a lotなどを使います。"much more difficult"で「はるかに困難」という意味になります。veryは原級を強調する副詞で比較級には使えません。so・tooも比較級を直接強調する形では使いません。\n\n【図解】比較級を強める副詞\n　副詞｜修飾する形｜例\n　much, far, a lot｜比較級｜much more difficult\n　very, quite｜原級｜very difficult\n　by far｜最上級｜by far the best\n　⇒ 比較級 more difficult を強めるなら much\n　⚠ very は原級専用。比較級を very で強めることはできない。',
+    explanation: '比較級を強調する副詞にはmuch、far、a lotなどを使います。"much more difficult"で「はるかに困難」という意味になります。veryは原級を強調する副詞で比較級には使えません。so・tooも比較級を直接強調する形では使いません。比較級を強める副詞と原級を強める副詞は使い分けが決まっており、空所の直後が比較級かどうかで判断できる。\n\n【図解】比較級を強める副詞\n　副詞｜修飾する形｜例\n　much, far, a lot｜比較級｜much more difficult\n　very, quite｜原級｜very difficult\n　by far｜最上級｜by far the best\n　⇒ 比較級 more difficult を強めるなら much\n　⚠ very は原級専用。比較級を very で強めることはできない。',
     difficulty: 'standard' as const,
   },
 
@@ -1287,7 +1287,7 @@ export const eikenQuestions2kyu3: EikenQuestion[] = [
       { key: 'D', text: 'signed' },
     ],
     correctKey: 'C' as const,
-    explanation: '"get + 目的語 + to不定詞"は「（人を説得して）〜させる」という意味の使役的表現です。makeやletと異なり、getは不定詞にtoが必要です。sign（原形）、signing（現在分詞）はこの構文に合わず、signed（過去分詞）は受動の意味になり不適切です。\n\n【図解】使役表現と不定詞の to\n　動詞｜形｜to の有無\n　get｜get ＋ 人 ＋ to do｜必要\n　make, have, let｜＋ 人 ＋ 原形｜不要\n　persuade｜persuade ＋ 人 ＋ to do｜必要\n　⇒ get の後ろなので to sign\n　⚠ make と同じ感覚で原形を選ばない。get だけが to 不定詞をとる点が出題される。',
+    explanation: '"get + 目的語 + to不定詞"は「（人を説得して）〜させる」という意味の使役的表現です。makeやletと異なり、getは不定詞にtoが必要です。sign（原形）、signing（現在分詞）はこの構文に合わず、signed（過去分詞）は受動の意味になり不適切です。使役や依頼を表す動詞は続く形が動詞ごとに決まっており、make と let は原形、get と persuade は to 不定詞をとる。\n\n【図解】使役表現と不定詞の to\n　動詞｜形｜to の有無\n　get｜get ＋ 人 ＋ to do｜必要\n　make, have, let｜＋ 人 ＋ 原形｜不要\n　persuade｜persuade ＋ 人 ＋ to do｜必要\n　⇒ get の後ろなので to sign\n　⚠ make と同じ感覚で原形を選ばない。get だけが to 不定詞をとる点が出題される。',
     difficulty: 'standard' as const,
   },
 
@@ -1338,7 +1338,7 @@ export const eikenQuestions2kyu3: EikenQuestion[] = [
       { key: 'D', text: 'repaired' },
     ],
     correctKey: 'D' as const,
-    explanation: '"have + 目的語 + 過去分詞"は使役構文で「（人に頼んで）〜させる、してもらう」という意味です。屋根が修理される（受動）関係なので過去分詞repairedが正解です。repair（原形）、repairing（現在分詞）、to repair（不定詞）は能動の意味になり不適切です。\n\n【図解】have の使役構文\n　目的語との関係｜形｜例\n　受動｜過去分詞｜have the roof repaired\n　能動（人）｜原形｜have a worker repair it\n　進行｜doing｜have the engine running\n　⇒ 屋根は修理される側なので repaired\n　⚠ to repair は have の使役構文では使わない。get なら to 不定詞をとる点と区別する。',
+    explanation: '"have + 目的語 + 過去分詞"は使役構文で「（人に頼んで）〜させる、してもらう」という意味です。屋根が修理される（受動）関係なので過去分詞repairedが正解です。repair（原形）、repairing（現在分詞）、to repair（不定詞）は能動の意味になり不適切です。使役構文では目的語と動詞の関係が能動か受動かで形が変わるため、まず目的語が動作をする側かされる側かを見極める。\n\n【図解】have の使役構文\n　目的語との関係｜形｜例\n　受動｜過去分詞｜have the roof repaired\n　能動（人）｜原形｜have a worker repair it\n　進行｜doing｜have the engine running\n　⇒ 屋根は修理される側なので repaired\n　⚠ to repair は have の使役構文では使わない。get なら to 不定詞をとる点と区別する。',
     difficulty: 'standard' as const,
   },
 
@@ -1406,7 +1406,7 @@ export const eikenQuestions2kyu3: EikenQuestion[] = [
       { key: 'D', text: 'did the company' },
     ],
     correctKey: 'B' as const,
-    explanation: '"In no way"のような否定の意味を持つ副詞句が文頭に来ると倒置が起こります。be動詞wasの倒置は"was the company"となります。was the company respondibleという語順が正しく、did the companyはbe動詞の文には使いません。\n\n【図解】否定の副詞句と倒置\n　文頭の要素｜述語の種類｜倒置の形\n　In no way｜be 動詞｜was ＋ 主語\n　In no way｜一般動詞｜did ＋ 主語 ＋ 原形\n　Under no circumstances｜助動詞｜助動詞 ＋ 主語\n　⇒ 補語が形容詞なので was the company\n　⚠ be 動詞の文に did は使えない。述語の種類で倒置の形が決まる。',
+    explanation: '"In no way"のような否定の意味を持つ副詞句が文頭に来ると倒置が起こります。be動詞wasの倒置は"was the company"となります。was the company respondibleという語順が正しく、did the companyはbe動詞の文には使いません。否定の意味を持つ副詞句が文頭に出ると主節が倒置され、述語が be 動詞か一般動詞かで倒置の形が変わる。\n\n【図解】否定の副詞句と倒置\n　文頭の要素｜述語の種類｜倒置の形\n　In no way｜be 動詞｜was ＋ 主語\n　In no way｜一般動詞｜did ＋ 主語 ＋ 原形\n　Under no circumstances｜助動詞｜助動詞 ＋ 主語\n　⇒ 補語が形容詞なので was the company\n　⚠ be 動詞の文に did は使えない。述語の種類で倒置の形が決まる。',
     difficulty: 'advanced' as const,
   },
 
@@ -1535,7 +1535,7 @@ export const eikenQuestions2kyu3: EikenQuestion[] = [
       { key: 'D', text: 'They require the invention of an entirely new alphabet for each language.' },
     ],
     correctKey: 'B' as const,
-    explanation: '「such efforts frequently struggle against the same economic pressures that caused the decline in the first place」という記述からBが正解とわかります。\n\n【図解】言語復興の課題\n　要素｜本文の記述｜含意\n　取り組み｜revitalization efforts｜教育, 記録\n　直面する壁｜same economic pressures｜衰退を招いた要因\n　結果｜struggle against｜苦戦が続く\n　⇒ 衰退の原因となった経済的圧力が残る点が課題\n　⚠ 「すべての事例で完全に成功」は本文と逆。struggle という語の含意を読む。',
+    explanation: '「such efforts frequently struggle against the same economic pressures that caused the decline in the first place」という記述からBが正解とわかります。設問は言語復興の取り組みが直面する困難を問うており、取り組みの存在自体は認めたうえでの限界として読む必要がある。\n\n【図解】言語復興の課題\n　要素｜本文の記述｜含意\n　取り組み｜revitalization efforts｜教育, 記録\n　直面する壁｜same economic pressures｜衰退を招いた要因\n　結果｜struggle against｜苦戦が続く\n　⇒ 衰退の原因となった経済的圧力が残る点が課題\n　⚠ 「すべての事例で完全に成功」は本文と逆。struggle という語の含意を読む。',
     difficulty: 'standard' as const,
   },
 
@@ -1582,7 +1582,7 @@ export const eikenQuestions2kyu3: EikenQuestion[] = [
       { key: 'D', text: 'They compare Gutenberg\'s achievements to those of Martin Luther as a religious leader.' },
     ],
     correctKey: 'B' as const,
-    explanation: '「a dynamic some historians compare to the way social media has accelerated the spread of ideas in the modern era」という記述からBが正解とわかります。\n\n【図解】歴史家が用いる比喩\n　比較対象｜本文の記述｜共通点\n　活版印刷｜思想の急速な拡散｜情報伝達の加速\n　ソーシャルメディア｜accelerated the spread of ideas｜同じ働き\n　時代｜15世紀と現代｜技術は違うが機能は類似\n　⇒ 思想拡散の加速という点での類比\n　⚠ 電話や出版コストとの比較は本文にない。比喩の対象を正確に押さえる。',
+    explanation: '「a dynamic some historians compare to the way social media has accelerated the spread of ideas in the modern era」という記述からBが正解とわかります。設問は本文中で用いられた比喩の対象を問うもので、技術そのものではなく果たした役割の共通点に注目して読む。\n\n【図解】歴史家が用いる比喩\n　比較対象｜本文の記述｜共通点\n　活版印刷｜思想の急速な拡散｜情報伝達の加速\n　ソーシャルメディア｜accelerated the spread of ideas｜同じ働き\n　時代｜15世紀と現代｜技術は違うが機能は類似\n　⇒ 思想拡散の加速という点での類比\n　⚠ 電話や出版コストとの比較は本文にない。比喩の対象を正確に押さえる。',
     difficulty: 'advanced' as const,
   },
 
@@ -1599,7 +1599,7 @@ export const eikenQuestions2kyu3: EikenQuestion[] = [
       { key: 'D', text: 'It reduces the total number of hours employees are allowed to sleep.' },
     ],
     correctKey: 'B' as const,
-    explanation: '「it forces the body\'s internal circadian clock into persistent conflict with its external environment」という記述からBが正解とわかります。\n\n【図解】夜勤が健康を害する理由\n　要素｜本文の記述｜作用\n　体内時計｜internal circadian clock｜約24時間周期\n　外部環境｜明暗のサイクル｜昼夜が逆転\n　状態｜persistent conflict｜恒常的な不一致\n　⇒ 体内時計と外部環境のずれが原因\n　⚠ 食事内容や労働量は本文にない。原因が生体リズムの不一致である点を読む。',
+    explanation: '「it forces the body\'s internal circadian clock into persistent conflict with its external environment」という記述からBが正解とわかります。設問は夜勤が健康に及ぼす影響の仕組みを問うており、労働時間の長さではなく体内時計と環境のずれが核心である。\n\n【図解】夜勤が健康を害する理由\n　要素｜本文の記述｜作用\n　体内時計｜internal circadian clock｜約24時間周期\n　外部環境｜明暗のサイクル｜昼夜が逆転\n　状態｜persistent conflict｜恒常的な不一致\n　⇒ 体内時計と外部環境のずれが原因\n　⚠ 食事内容や労働量は本文にない。原因が生体リズムの不一致である点を読む。',
     difficulty: 'standard' as const,
   },
   {
@@ -1646,7 +1646,7 @@ export const eikenQuestions2kyu3: EikenQuestion[] = [
       { key: 'D', text: 'A type of software used exclusively by professional astronomers.' },
     ],
     correctKey: 'B' as const,
-    explanation: 'パッセージ冒頭で「members of the public collaborate with professional researchers by collecting or analyzing data」と定義されています。Bが正解です。\n\n【図解】citizen science の定義\n　要素｜本文の記述｜内容\n　参加者｜members of the public｜一般市民\n　協働相手｜professional researchers｜専門研究者\n　役割｜collecting or analyzing data｜データの収集と分析\n　⇒ 市民が研究者と協働してデータを扱う仕組み\n　⚠ 学位課程や特定のソフトウェアではない。定義文の語句を根拠にする。',
+    explanation: 'パッセージ冒頭で「members of the public collaborate with professional researchers by collecting or analyzing data」と定義されています。Bが正解です。設問は市民科学という語の定義を問うもので、本文冒頭の定義文をそのまま根拠にできる典型的な出題である。\n\n【図解】citizen science の定義\n　要素｜本文の記述｜内容\n　参加者｜members of the public｜一般市民\n　協働相手｜professional researchers｜専門研究者\n　役割｜collecting or analyzing data｜データの収集と分析\n　⇒ 市民が研究者と協働してデータを扱う仕組み\n　⚠ 学位課程や特定のソフトウェアではない。定義文の語句を根拠にする。',
     difficulty: 'basic' as const,
   },
   {

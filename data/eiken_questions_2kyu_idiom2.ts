@@ -25,7 +25,7 @@ export const eikenQuestions2kyuIdiom2: EikenQuestion[] = [
       { key: 'D', text: "on" },
     ],
     correctKey: 'D',
-    explanation: '"look down on 〜"（〜を見下す・軽蔑する）が正解。経験が浅いというだけで人を見下すべきではないという文意です。反対の意味のlook up to 〜（〜を尊敬する）とセットで覚えましょう。look at（〜を見る）、look for（〜を探す）と混同しないように注意が必要です。\n\n【図解】look 句動詞の対比\n　表現｜意味｜後続の前置詞\n　look down on｜見下す, 軽蔑する｜on\n　look up to｜尊敬する｜to\n　look for｜探す｜（前置詞込みで1語扱い）\n　⇒ 経験の浅さを理由に軽んじるなら down on\n　⚠ look down at は物理的に「下を見る」。軽蔑の意味になるのは on のときだけ。',
+    explanation: '"look down on 〜"（〜を見下す・軽蔑する）が正解。経験が浅いというだけで人を見下すべきではないという文意です。反対の意味のlook up to 〜（〜を尊敬する）とセットで覚えましょう。look at（〜を見る）、look for（〜を探す）と混同しないように注意が必要です。look 系の句動詞は視線の向きが感情の向きと重なるため、up と down の対比で一気に整理できます。\n\n【図解】look 句動詞の対比\n　表現｜意味｜後続の前置詞\n　look down on｜見下す, 軽蔑する｜on\n　look up to｜尊敬する｜to\n　look for｜探す｜（前置詞込みで1語扱い）\n　⇒ 経験の浅さを理由に軽んじるなら down on\n　⚠ look down at は物理的に「下を見る」。軽蔑の意味になるのは on のときだけ。',
     difficulty: 'standard',
   },
   {
@@ -545,7 +545,7 @@ export const eikenQuestions2kyuIdiom2: EikenQuestion[] = [
       { key: 'D', text: "role" },
     ],
     correctKey: 'D',
-    explanation: '"play a role in 〜"（〜で役割を果たす）が正解。洪水後の町の再建で地元ボランティアが重要な役割を果たしたという文意です。play a part in 〜も同じ意味です。roleは「役割・役」という意味の名詞で、seat・line・stepではこのコロケーションは成立しません。\n\n【図解】role を使うコロケーション\n　表現｜意味｜使う場面\n　play a role in｜〜で役割を果たす｜復興, 発展\n　play a part in｜〜に関与する｜同義の言い換え\n　take a role｜役を引き受ける｜演劇, 職務\n　⇒ 復興での貢献なら play a role in\n　⚠ 前置詞は in。play a role for や at とはしない。',
+    explanation: '"play a role in 〜"（〜で役割を果たす）が正解。洪水後の町の再建で地元ボランティアが重要な役割を果たしたという文意です。play a part in 〜も同じ意味です。roleは「役割・役」という意味の名詞で、seat・line・stepではこのコロケーションは成立しません。sell out は自動詞でも使え、The tickets sold out in an hour のように商品を主語にした能動の形もとります。\n\n【図解】role を使うコロケーション\n　表現｜意味｜使う場面\n　play a role in｜〜で役割を果たす｜復興, 発展\n　play a part in｜〜に関与する｜同義の言い換え\n　take a role｜役を引き受ける｜演劇, 職務\n　⇒ 復興での貢献なら play a role in\n　⚠ 前置詞は in。play a role for や at とはしない。',
     difficulty: 'standard',
   },
   {

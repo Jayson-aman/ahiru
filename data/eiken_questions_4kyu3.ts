@@ -16,7 +16,7 @@ export const eikenQuestions4kyu3: EikenQuestion[] = [
       { key: 'D', text: 'dress' },
     ],
     correctKey: 'D' as const,
-    explanation: 'デパートで買うものとして最も自然なのは「ドレス・服」= dressです。cloud（雲）、season（季節）、corner（角）はデパートで購入するものではありません。',
+    explanation: 'at the department store（デパートで）buyの目的語になる物を選ぶ問題なので、dress（ドレス・ワンピース）が正解になる。corner（角）、cloud（雲）、season（季節）は買うことのできないものなので、boughtの目的語にならない。動詞と目的語の相性を確かめるとき、その名詞が売り買いできる物かどうかを考えるのが手がかりになる。\n\n【図解】語の意味と買えるかどうか\n　語｜意味｜デパートで買えるか\n　dress｜ドレス・ワンピース｜買える\n　corner｜角｜買えない\n　cloud｜雲｜買えない\n　season｜季節｜買えない\n　⇒ boughtの目的語になれるのはdress\n　⚠ 目に見えるものでも売り買いできるとは限らない。動詞boughtと結びつく名詞かどうかで判断する。',
     difficulty: 'basic' as const,
   },
 
@@ -33,7 +33,7 @@ export const eikenQuestions4kyu3: EikenQuestion[] = [
       { key: 'D', text: 'narrow' },
     ],
     correctKey: 'B' as const,
-    explanation: '「すべての部屋が満室だった」という文脈から、ホテルが「人気だった」= popularが正解です。empty（空っぽ）は逆の意味です。',
+    explanation: '2文目のAll the rooms were full.（すべての部屋が満室だった）が理由なので、ホテルはpopular（人気がある）だったことになる。emptyは「空いている」で意味が正反対、boringは「たいくつな」で客が減る要因、narrowは「せまい」で広さの話になり、いずれも満室という状況を説明できない。fullは「いっぱいの」という意味である。\n\n【図解】形容詞と部屋の状況\n　形容詞｜意味｜部屋の状況\n　popular｜人気がある｜満室になる\n　empty｜空いている｜部屋が余る\n　boring｜たいくつな｜客が減る\n　narrow｜せまい｜広さの問題\n　⇒ 満室という結果に合うのはpopular\n　⚠ fullとemptyは正反対の語。2文目が1文目の理由になっている構成を読み取ることが要点である。',
     difficulty: 'standard' as const,
   },
 
@@ -50,7 +50,7 @@ export const eikenQuestions4kyu3: EikenQuestion[] = [
       { key: 'D', text: 'wave' },
     ],
     correctKey: 'C' as const,
-    explanation: '食事の前に手を「洗う」= wash your handsが正しい表現です。brushは歯を磨くときに使い、shake/waveは手を振るという意味です。',
+    explanation: 'before you eat（食べる前に）という場面なので、wash your hands（手を洗う）が正解になる。brushは歯をみがくときに使う動詞、shake handsは握手、wave your handは手をふるあいさつで、いずれも清潔にする行為ではない。同じ手を使う表現でも動詞によって意味がまったく変わるので、組み合わせで覚えることが大切である。\n\n【図解】手や体を使う表現\n　表現｜意味｜使う場面\n　wash your hands｜手を洗う｜食事の前\n　brush your teeth｜歯をみがく｜食後\n　shake hands｜握手する｜あいさつ\n　wave your hand｜手をふる｜別れぎわ\n　⇒ 食前の衛生行為なのでwash\n　⚠ 同じ手を使う表現でも動詞で意味が変わる。日本語の「みがく」からbrushを選ばないよう場面で判断する。',
     difficulty: 'basic' as const,
   },
 
@@ -67,7 +67,7 @@ export const eikenQuestions4kyu3: EikenQuestion[] = [
       { key: 'D', text: 'surprised' },
     ],
     correctKey: 'D' as const,
-    explanation: '宿題がないと聞いて「驚いた」= surprisedが最も自然な反応です。worried（心配）、angry（怒り）、bored（退屈）はよい知らせに対する反応として不自然です。',
+    explanation: '宿題がないと先生が言ったという予想外の知らせに対する反応なので、surprised（おどろいた）が正解になる。worriedは心配、angryは怒り、boredは退屈を表す語で、よい知らせに対する反応としては不自然である。感情を表す形容詞は、どのような出来事がきっかけになるかをセットで覚えておくと選びやすくなる。\n\n【図解】感情を表す形容詞ときっかけ\n　形容詞｜意味｜合うきっかけ\n　surprised｜おどろいた｜予想外の知らせ\n　worried｜心配した｜困った知らせ\n　angry｜怒った｜不当なあつかい\n　bored｜たいくつな｜長い話\n　⇒ 予想外のよい知らせに合うのはsurprised\n　⚠ 宿題がないのはよい知らせ。悪い出来事への反応を表す語を選ぶと、文脈と合わなくなる。',
     difficulty: 'standard' as const,
   },
 
@@ -84,7 +84,7 @@ export const eikenQuestions4kyu3: EikenQuestion[] = [
       { key: 'D', text: 'left' },
     ],
     correctKey: 'D' as const,
-    explanation: '「財布を電車に置き忘れる」はleft his walletと言います。「お金がなかった」という結果からも、置き忘れたことがわかります。foundは「見つけた」で逆の意味です。',
+    explanation: '後半のhad no money（お金がなかった）という結果から、財布を電車に置き忘れたことがわかる。したがってleftが正解である。leaveには「去る」のほかに「置き忘れる・置いてくる」という意味があり、場所を表す語句とともによく使われる。foundは「見つけた」で結果と矛盾し、openedやtookも手元にお金がない理由にならない。\n\n【図解】動詞と結果の対応\n　動詞｜意味｜手元の状態\n　leave｜置き忘れる｜手元にない\n　find｜見つける｜手元にもどる\n　take｜持っていく｜手元にある\n　open｜開ける｜中が見える\n　⇒ お金がなかったという結果に合うのはleft\n　⚠ leaveを「去る」の意味だけで覚えていると選べない。場所を表す語句が続くと「置き忘れる」になる。',
     difficulty: 'advanced' as const,
   },
 
@@ -101,7 +101,7 @@ export const eikenQuestions4kyu3: EikenQuestion[] = [
       { key: 'D', text: 'late' },
     ],
     correctKey: 'B' as const,
-    explanation: '「みんなが理解できる」という結果から、「明瞭に・はっきりと」= clearlyが正解です。loudly（大声で）も考えられますが、clearlyの方が理解できる理由として自然です。',
+    explanation: '2文目のEveryone can understand her.（みんなが彼女の英語を理解できる）が結果なので、はっきりと話しているという意味のclearly（明瞭に）が正解になる。loudは形容詞なので動詞speaksを修飾できず、副詞にするならloudlyだが、理解できる理由としてはclearlyのほうが自然である。slowlyは速さ、lateは時間の話になる。\n\n【図解】副詞の意味と結果への影響\n　副詞｜意味｜理解しやすさ\n　clearly｜はっきりと｜理解できる\n　loudly｜大声で｜音量の問題\n　slowly｜ゆっくりと｜速さの問題\n　late｜おそく｜時間の話\n　⇒ みんなが理解できる理由になるのはclearly\n　⚠ loudは形容詞なので動詞を修飾できない。品詞を確認したうえで、結果に合う意味の語を選ぶ。',
     difficulty: 'standard' as const,
   },
 
@@ -118,7 +118,7 @@ export const eikenQuestions4kyu3: EikenQuestion[] = [
       { key: 'D', text: 'give up' },
     ],
     correctKey: 'C' as const,
-    explanation: '日本の家に入るときは靴を「脱ぐ」= take offします。put on（履く）は逆の意味で、give up（諦める）、pick up（拾う）は文脈に合いません。',
+    explanation: '日本の家に入るときの習慣なので、take off（脱ぐ）が正解になる。at the doorという場所の表現も、玄関でくつを脱ぐという内容と合う。put onは「身につける」で意味が正反対、pick upは「拾い上げる」、give upは「あきらめる」で、いずれもこの場面には合わない。take offには「離陸する」という別の意味もある。\n\n【図解】身につける 脱ぐ の表現\n　表現｜意味｜使う場面\n　take off｜脱ぐ｜家に入るとき\n　put on｜身につける｜出かけるとき\n　pick up｜拾い上げる｜落とし物\n　give up｜あきらめる｜困難なとき\n　⇒ 日本の家に入る場面なのでtake off\n　⚠ take offは「離陸する」の意味でも頻出。主語が人か飛行機かで、どちらの意味かを判断する。',
     difficulty: 'advanced' as const,
   },
 
@@ -135,7 +135,7 @@ export const eikenQuestions4kyu3: EikenQuestion[] = [
       { key: 'D', text: 'narrow' },
     ],
     correctKey: 'D' as const,
-    explanation: '「注意して歩かなければならなかった」という文脈から、山道が「狭かった」= narrowが正解です。wide（広い）は逆の意味で、straight（まっすぐ）やclean（清潔）では危険な理由になりません。',
+    explanation: '後半のwe had to walk carefully（注意して歩かなければならなかった）が結果なので、山道はnarrow（せまい）だったことになる。wideは「広い」で意味が正反対になり、注意する必要がなくなる。straightは「まっすぐな」、cleanは「きれいな」で、慎重に歩く理由にはならない。narrowは道や川など細長いものの幅に使う語である。\n\n【図解】道を表す形容詞と歩き方\n　形容詞｜意味｜歩き方への影響\n　narrow｜せまい｜注意が必要\n　wide｜広い｜安心して歩ける\n　straight｜まっすぐな｜迷わない\n　clean｜きれいな｜安全とは無関係\n　⇒ 慎重に歩く理由になるのはnarrow\n　⚠ so 〜, …の形では前半が理由になる。結果の文から逆算して、理由にふさわしい語を選ぶ。',
     difficulty: 'standard' as const,
   },
 
@@ -152,7 +152,7 @@ export const eikenQuestions4kyu3: EikenQuestion[] = [
       { key: 'D', text: 'opens' },
     ],
     correctKey: 'D' as const,
-    explanation: '「〜時に開店する」はopensを使います。closes（閉店する）の対になる動詞はopensです。starts（始める）はやや不自然で、leaves（去る）、wakes（起きる）は意味が合いません。',
+    explanation: '後半のcloses at 10 p.m.（午後10時に閉まる）と対になるので、opens（開店する）が正解になる。openとcloseは対の関係にある動詞で、店の営業時間を表すときによく使われる。startsは行事や授業の開始に使う語でやや不自然、leavesは「去る」、wakesは「目を覚ます」で、店を主語にしてこの意味を表すことはできない。\n\n【図解】対になる動詞\n　動詞｜意味｜対になる語\n　open｜開店する｜close\n　close｜閉店する｜open\n　start｜始まる｜finish\n　arrive｜到着する｜leave\n　⇒ closesと対になるのはopens\n　⚠ openは動詞と形容詞の両方で使える。The shop opens at seven.とThe shop is open.の違いも確認する。',
     difficulty: 'basic' as const,
   },
 
@@ -169,7 +169,7 @@ export const eikenQuestions4kyu3: EikenQuestion[] = [
       { key: 'D', text: 'rainbow' },
     ],
     correctKey: 'B' as const,
-    explanation: '「音がとても怖い」という文脈から、大きな音がするもの「雷」= thunderが正解です。sunshine（太陽の光）、breeze（そよ風）、rainbow（虹）は音と関係がありません。',
+    explanation: 'because the noise is very scary to him（その音が彼にはとてもこわい）という理由があるので、大きな音がするthunder（雷鳴）が正解になる。sunshine（日光）、breeze（そよ風）、rainbow（虹）はいずれも音を出す現象ではない。thunderは音、lightningは光を指す語なので、noiseという語が判断の手がかりになる。\n\n【図解】自然現象と音の有無\n　現象｜英語｜音があるか\n　雷鳴｜thunder｜ある\n　いなずま｜lightning｜光る\n　そよ風｜breeze｜ほとんどない\n　虹｜rainbow｜ない\n　⇒ noiseという語があるのでthunder\n　⚠ thunderは音、lightningは光。日本語ではどちらも「かみなり」なので、英語では区別して覚える。',
     difficulty: 'advanced' as const,
   },
 
@@ -186,7 +186,7 @@ export const eikenQuestions4kyu3: EikenQuestion[] = [
       { key: 'D', text: 'reads' },
     ],
     correctKey: 'D' as const,
-    explanation: '新聞を「読む」はread a newspaperです。watches（テレビを見る）、hears（聞こえる）、sees（目に入る）は新聞に対して不自然な動詞です。',
+    explanation: '新聞に対して使う動詞はreadなので、readsが正解になる。「父は毎朝コーヒーを飲みながら新聞を読む」という意味である。watchesは動くものをじっと見るときに使い、テレビや試合に用いる。hearsは音が聞こえること、seesは自然に目に入ることを表すので、いずれも新聞の内容を読み取る行為にはならない。\n\n【図解】見る 読む を表す動詞\n　動詞｜意味｜おもな対象\n　read｜読む｜新聞や本\n　watch｜じっと見る｜テレビや試合\n　see｜自然に目に入る｜景色\n　hear｜自然に聞こえる｜音\n　⇒ 新聞に使う動詞はreads\n　⚠ watchは動くものを見るときの動詞。動かない文字を読むときはreadを使うと覚えておく。',
     difficulty: 'basic' as const,
   },
 
@@ -203,7 +203,7 @@ export const eikenQuestions4kyu3: EikenQuestion[] = [
       { key: 'D', text: 'glasses' },
     ],
     correctKey: 'D' as const,
-    explanation: '水を飲む容器として最も一般的なのは「コップ・グラス」= glassesです。cupsはコーヒーや紅茶に使います。piecesはパンや紙など、bowlsはスープなどに使います。',
+    explanation: '水を数えるときの容器はglassなので、複数形のglassesが正解になる。「長距離を走った後、彼は水を3杯飲んだ」という意味である。cupは取っ手のある温かい飲み物用の容器でコーヒーや紅茶に使い、bowlはスープや麺類、pieceはパンや紙のように切り分けられる物に使う。数えられない名詞は容器や単位で数える。\n\n【図解】数えられない名詞の数え方\n　容器や単位｜英語｜数える対象\n　グラス｜glass｜水や冷たい飲み物\n　カップ｜cup｜コーヒーや紅茶\n　ボウル｜bowl｜スープや麺\n　切れ｜piece｜パンや紙\n　⇒ 水を数えるのでglassesが正解\n　⚠ glassは「ガラス」と「コップ」の両方の意味をもつ。複数形glassesは「めがね」の意味にもなる。',
     difficulty: 'standard' as const,
   },
 
@@ -220,7 +220,7 @@ export const eikenQuestions4kyu3: EikenQuestion[] = [
       { key: 'D', text: 'shows' },
     ],
     correctKey: 'C' as const,
-    explanation: 'カードを「送る」= send a cardが正しい表現です。speaks（話す）、carries（運ぶ）、shows（見せる）はカードと自然に組み合わさりません。',
+    explanation: 'カードを郵便などで届けるときの動詞はsendなので、sendsが正解になる。send + 人 + 物という語順で「人に物を送る」を表す。speaksは「話す」で人を直接目的語にできず、carriesは「運ぶ」で手で持ち運ぶ意味、showsは「見せる」で目の前で示す意味になるため、いずれも毎年カードを届ける行為とは合わない。\n\n【図解】人と物をとる動詞の語順\n　表現｜意味｜語順\n　send 人 物｜人に物を送る｜sends me a card\n　show 人 物｜人に物を見せる｜shows me a card\n　give 人 物｜人に物をあげる｜gives me a card\n　speak to 人｜人に話しかける｜speaks to me\n　⇒ カードを届ける動詞はsends\n　⚠ speakは人を直接目的語にできない。speak meという形は誤りで、toが必要になる。',
     difficulty: 'basic' as const,
   },
 
@@ -237,7 +237,7 @@ export const eikenQuestions4kyu3: EikenQuestion[] = [
       { key: 'D', text: 'packed' },
     ],
     correctKey: 'D' as const,
-    explanation: 'ファンが応援しているという文脈から、スタジアムが「満員だった・人でいっぱいだった」= packedが正解です。silent（静か）、empty（空）、closed（閉まっている）は逆の状況を表します。',
+    explanation: 'with fans cheering for their teams（ファンがチームを応援している状態で）という説明があるので、スタジアムは人でいっぱいだったことになる。したがってpacked（すし詰めの・満員の）が正解である。emptyは「空の」、silentは「静かな」、closedは「閉まっている」で、いずれも応援の声がひびく状況とは正反対になる。\n\n【図解】場所の状態を表す形容詞\n　形容詞｜意味｜そのときの様子\n　packed｜すし詰めの｜観客でいっぱい\n　crowded｜混雑した｜人が多い\n　empty｜空の｜だれもいない\n　silent｜静かな｜物音がしない\n　⇒ 応援の声があるのでpacked\n　⚠ withの後ろの説明が状態の根拠になる。cheeringという語を見落とすと、静かな様子を選んでしまう。',
     difficulty: 'advanced' as const,
   },
 
@@ -254,7 +254,7 @@ export const eikenQuestions4kyu3: EikenQuestion[] = [
       { key: 'D', text: 'lock' },
     ],
     correctKey: 'B' as const,
-    explanation: 'レースの前に靴ひもを「結ぶ」= tie my shoesが正しい表現です。fix（修理する）、pull（引っ張る）、lock（鍵をかける）は靴と組み合わせて自然ではありません。',
+    explanation: 'レースの前にすることなので、tie my shoes（くつひもを結ぶ）が正解になる。tieは「結ぶ」という意味の動詞で、名詞では「ネクタイ」を指す。fixは「修理する」でこわれた物に使い、pullは「引く」、lockは「かぎをかける」で、いずれもくつと組み合わせて走る準備を表す表現にはならない。before 〜は「〜する前に」。\n\n【図解】動詞と対象の組み合わせ\n　表現｜意味｜対象\n　tie your shoes｜くつひもを結ぶ｜くつ\n　fix the bike｜修理する｜こわれた物\n　pull the rope｜引く｜ロープ\n　lock the door｜かぎをかける｜ドア\n　⇒ 走る前の準備なのでtie\n　⚠ tieは名詞なら「ネクタイ」、動詞なら「結ぶ」。品詞によって意味が変わる語として覚えておく。',
     difficulty: 'standard' as const,
   },
 
@@ -273,7 +273,7 @@ export const eikenQuestions4kyu3: EikenQuestion[] = [
       { key: 'D', text: 'have' },
     ],
     correctKey: 'D' as const,
-    explanation: '"have never been to ～"で「〜に行ったことがない」という現在完了の経験を表します。主語がIなのでhaveを使います。hadを使うと過去完了になり文脈が変わります。',
+    explanation: 'have never been to 〜は「今までに〜へ行ったことがない」という現在完了の経験用法で、主語がIなのでhaveが正解になる。neverが経験用法の目印である。amやwasはbe動詞なので、後ろにbeenを続けても完了形にはならない。hadを使うと過去完了になり、過去のある時点までの経験を表す別の意味になる。\n\n【図解】完了形の形と意味\n　形｜時制｜意味\n　have never been｜現在完了｜今までに行ったことがない\n　had never been｜過去完了｜そのときまでなかった\n　have been to 〜｜現在完了｜行ったことがある\n　have gone to 〜｜現在完了｜行ってしまった\n　⇒ 主語がIで経験を表すのでhave\n　⚠ have been toは「行ったことがある」、have gone toは「行ってしまって今いない」。意味が異なる。',
     difficulty: 'advanced' as const,
   },
 
@@ -290,7 +290,7 @@ export const eikenQuestions4kyu3: EikenQuestion[] = [
       { key: 'D', text: 'were eating' },
     ],
     correctKey: 'D' as const,
-    explanation: '「私が電話したとき」という過去の時点で進行中だった動作には過去進行形"were eating"を使います。ate（過去形）は動作が完了したことを表し、文脈に合いません。',
+    explanation: 'when I called them（私が電話したとき）という過去の一時点に、両親が食事をしている最中だったという意味なので、過去進行形were eatingが正解になる。主語のMy parentsは複数なのでbe動詞はwereになる。ateという過去形では動作が完了したことになり、are eatingは現在進行形なので時制が合わない。\n\n【図解】時制の形と表す内容\n　形｜表す内容｜例\n　過去進行形｜そのとき進行中｜were eating\n　過去形｜過去の出来事｜called\n　現在進行形｜今の動作｜are eating\n　現在形｜習慣｜eat\n　⇒ 電話した時点で進行中なので過去進行形\n　⚠ 主語が複数ならwere、単数ならwas。My parentsは複数なのでwasを選ぶと数が合わない。',
     difficulty: 'advanced' as const,
   },
 
@@ -307,7 +307,7 @@ export const eikenQuestions4kyu3: EikenQuestion[] = [
       { key: 'D', text: 'some' },
     ],
     correctKey: 'C' as const,
-    explanation: '"orange"は母音（o）で始まるので不定冠詞は"an"を使います。"a"は子音で始まる語の前に使います。"the"は特定のものを指す場合に使います。',
+    explanation: 'orangeは母音の音で始まる語なので、不定冠詞はanを使う。したがってanが正解である。aは子音の音で始まる語の前に置く形で、theはすでに話題に出た特定のものを指すときに使う。someは数えられない名詞や複数形に付ける語なので、単数のorangeには合わない。冠詞はつづりではなく発音で決まる点が重要である。\n\n【図解】冠詞の使い分け\n　次の語の音｜使う冠詞｜例\n　母音で始まる｜an｜an orange\n　子音で始まる｜a｜a book\n　特定のもの｜the｜the orange I bought\n　数えられない物｜some｜some water\n　⇒ orangeは母音で始まるのでan\n　⚠ 冠詞はつづりではなく発音で決まる。an hourのようにhで始まってもanになる語がある。',
     difficulty: 'basic' as const,
   },
 
@@ -324,7 +324,7 @@ export const eikenQuestions4kyu3: EikenQuestion[] = [
       { key: 'D', text: 'yourself' },
     ],
     correctKey: 'B' as const,
-    explanation: '文末に単独で使う所有代名詞は"yours"（あなたのもの）です。"your"は名詞の前に置く形、"you"は主語や目的語、"yourself"は再帰代名詞です。',
+    explanation: 'Are those books 〜?という文の補語の位置で「あなたのもの」と言うので、所有代名詞のyoursが正解になる。yourは所有格なので後ろに必ず名詞が続き、単独では使えない。youは主語や目的語に使う形、yourselfは再帰代名詞なので、この位置には入らない。所有代名詞は1語で「〜のもの」という名詞の働きをする。\n\n【図解】you の変化と働き\n　格｜形｜働き\n　主格｜you｜主語になる\n　目的格｜you｜動詞や前置詞の後ろ\n　所有格｜your｜後ろに名詞が続く\n　所有代名詞｜yours｜あなたのもの\n　⇒ 名詞が続かない位置なのでyours\n　⚠ yourは単独では使えない。文末で「あなたのもの」と言うときは必ずyoursになる。',
     difficulty: 'standard' as const,
   },
 
@@ -341,7 +341,7 @@ export const eikenQuestions4kyu3: EikenQuestion[] = [
       { key: 'D', text: 'for' },
     ],
     correctKey: 'D' as const,
-    explanation: '期間（ten years）の前には"for"を使います。"since"は時点（since 2010など）の前に使います。"ago"は過去形と使い、"during"は「〜の間中」で期間の名詞の前に使います。',
+    explanation: 'ten years（10年間）は期間の長さを表すので、前置詞はforを使う。現在完了のhas livedとともに「この街に10年間住んでいる」という継続の意味になる。sinceは起点となる時点を示す語なのでsince 2010のように使い、agoは過去形とともに使う。duringはduring the summerのように期間を表す名詞をとる。\n\n【図解】時を表す語と後ろの形\n　語｜後ろに来るもの｜例\n　for｜期間の長さ｜for ten years\n　since｜起点となる時点｜since 2010\n　ago｜過去形とともに｜ten years ago\n　during｜期間を表す名詞｜during the summer\n　⇒ 期間の長さなのでforが正解\n　⚠ since ten yearsという形は使わない。長さならfor、時点ならsinceと後ろの語で見分ける。',
     difficulty: 'advanced' as const,
   },
 
@@ -358,7 +358,7 @@ export const eikenQuestions4kyu3: EikenQuestion[] = [
       { key: 'D', text: 'had finished' },
     ],
     correctKey: 'D' as const,
-    explanation: '"by the time I arrived"（私が着いたときまでに）という過去の時点より前に完了していた動作には過去完了"had finished"を使います。',
+    explanation: 'by the time I arrived（私が着いたときまでには）という過去の基準時があり、それより前に食べ終えていたという意味なので、過去完了had finishedが正解になる。過去完了は過去のある時点よりさらに前に完了していたことを表す形である。has finishedは現在完了で基準が現在になり、finishedという単純な過去形では前後関係が示せない。\n\n【図解】完了の形と基準になる時\n　形｜基準となる時｜例\n　過去完了｜過去のある時点｜had finished\n　現在完了｜現在｜has finished\n　過去形｜過去の出来事｜arrived\n　現在形｜習慣｜finishes\n　⇒ 過去の時点より前なので過去完了\n　⚠ by the timeは基準となる時を示す表現。現在完了と過去完了は基準が違うので混同しないこと。',
     difficulty: 'advanced' as const,
   },
 
@@ -375,7 +375,7 @@ export const eikenQuestions4kyu3: EikenQuestion[] = [
       { key: 'D', text: 'most tall' },
     ],
     correctKey: 'C' as const,
-    explanation: '"in the family"（家族の中で）があるので最上級が必要です。"tall"の最上級は"the tallest"です。"taller"は比較級で"than"と使います。"most tall"は不正解です。',
+    explanation: 'in the family（家族の中で）という3人以上の範囲が示されているので、最上級the tallestが正解になる。2文目のHe is 185 cm tall.という具体的な身長も、いちばん背が高いという内容を裏づけている。tallerは比較級でthanを伴い、tallは原級、most tallという形は存在しない。tallは短い語なので-estを付ける。\n\n【図解】比較の級と範囲の示し方\n　形｜級｜使う場面\n　the tallest｜最上級｜in the family\n　taller｜比較級｜than my brother\n　as tall as｜原級｜同じくらい\n　most tall｜誤った形｜使わない\n　⇒ 家族という範囲があるので最上級\n　⚠ tallは短い語なのでmost tallとはしない。範囲が集団ならin、複数名詞ならofを使う点も押さえる。',
     difficulty: 'standard' as const,
   },
 
@@ -392,7 +392,7 @@ export const eikenQuestions4kyu3: EikenQuestion[] = [
       { key: 'D', text: 'takes' },
     ],
     correctKey: 'B' as const,
-    explanation: '"should"などの助動詞の後には動詞の原形が来ます。"should take"が正しい形です。taking（ing形）、took（過去形）、takes（三単現）は助動詞の後に来ません。',
+    explanation: 'shouldは助動詞なので、後ろには必ず動詞の原形が来る。したがってtakeが正解で、「かさを持っていったほうがいい」という意味になる。2文目のIt looks like rain.（雨が降りそうだ）が助言の理由である。takingは分詞や動名詞、tookは過去形、takesは3人称単数現在形で、いずれも助動詞の後ろには置けない。\n\n【図解】助動詞の後ろの形\n　助動詞｜後ろの形｜例\n　should｜動詞の原形｜should take\n　must｜動詞の原形｜must go\n　will｜動詞の原形｜will rain\n　have to｜動詞の原形｜have to take\n　⇒ 助動詞shouldの後ろなので原形take\n　⚠ 助動詞の後ろには三単現のsも付けない。should takesという形は誤りなので、必ず原形にする。',
     difficulty: 'basic' as const,
   },
 
@@ -409,7 +409,7 @@ export const eikenQuestions4kyu3: EikenQuestion[] = [
       { key: 'D', text: 'in' },
     ],
     correctKey: 'D' as const,
-    explanation: '季節の前には前置詞"in"を使います。"in winter"（冬に）が正しい表現です。"on"は曜日・日付の前、"at"は時刻の前に使います。',
+    explanation: '季節を表す語の前に置く前置詞はinなので、in winterが正解になる。「冬に生まれたので雪が大好きだ」という意味である。時を表す前置詞は単位の大きさで決まり、季節や月や年にはin、曜日や日付にはon、時刻にはatを使う。atは時の一点、onは日、inは幅のある期間というイメージで整理すると覚えやすい。\n\n【図解】時を表す前置詞の使い分け\n　時の単位｜前置詞｜例\n　季節｜in｜in winter\n　月や年｜in｜in April\n　曜日や日付｜on｜on Monday\n　時刻｜at｜at seven\n　⇒ 季節を表すのでinが正解\n　⚠ 前置詞は時の単位の大きさで決まる。大きい単位ほどin、細かい一点になるほどatを使う。',
     difficulty: 'basic' as const,
   },
 
@@ -426,7 +426,7 @@ export const eikenQuestions4kyu3: EikenQuestion[] = [
       { key: 'D', text: 'this' },
     ],
     correctKey: 'C' as const,
-    explanation: '"clouds"（複数形）を指示するので複数形の指示代名詞"those"を使います。"a"/"an"は単数、"this"は単数で手元のものを指します。空の雲は遠くにあるので"those"が適切です。',
+    explanation: 'cloudsは複数形で、しかも空にある遠いものを指しているので、複数の遠いものを指すthoseが正解になる。thisとthatは単数のものを指す語なので、複数形のcloudsには使えない。theseは複数だが近くのものを指す語である。aやanは冠詞なので、複数形の名詞には付けられない。指示語は数と距離の両方で使い分ける。\n\n【図解】指示語の使い分け\n　語｜数｜距離\n　this｜単数｜近い\n　that｜単数｜遠い\n　these｜複数｜近い\n　those｜複数｜遠い\n　⇒ 空の雲は複数で遠いのでthose\n　⚠ 数と距離の両方を確認する。複数形の名詞にaやanを付けることはできない点も合わせて覚える。',
     difficulty: 'standard' as const,
   },
 
@@ -443,7 +443,7 @@ export const eikenQuestions4kyu3: EikenQuestion[] = [
       { key: 'D', text: 'listened' },
     ],
     correctKey: 'C' as const,
-    explanation: '"enjoy"の後には動名詞（-ing形）が来ます。"enjoy listening"が正しい形です。"enjoy to listen"は誤りで、enjoy+不定詞は使いません。',
+    explanation: 'enjoyは後ろに動名詞をとる動詞なので、listeningが正解になる。「勉強しながら音楽を聞くのを楽しむ」という意味である。enjoy to listenという形は使わない。listen to 〜は「〜を聞く」という熟語で、toが必要になる点も確認しておきたい。動名詞をとる動詞にはfinishやstopやkeepなどがある。\n\n【図解】動名詞をとる動詞と不定詞をとる動詞\n　動詞｜後ろの形｜例\n　enjoy｜動名詞｜enjoy listening\n　finish｜動名詞｜finish eating\n　want｜不定詞｜want to listen\n　decide｜不定詞｜decide to go\n　⇒ enjoyの後ろは動名詞なのでlistening\n　⚠ enjoy to listenという形は使わない。動名詞をとるか不定詞をとるかは動詞ごとに決まっている。',
     difficulty: 'standard' as const,
   },
 
@@ -460,7 +460,7 @@ export const eikenQuestions4kyu3: EikenQuestion[] = [
       { key: 'D', text: 'Does' },
     ],
     correctKey: 'D' as const,
-    explanation: '"your sister"は三人称単数なので、一般動詞"like"の疑問文には"Does"を使います。"Do"は一・二人称と複数の場合、"Is"はbe動詞の疑問文です。',
+    explanation: 'your sisterは3人称単数なので、一般動詞likeの疑問文にはDoesを使う。したがってDoesが正解になる。Doは主語がIやYouや複数のときに使い、Isはbe動詞の疑問文をつくる語なので一般動詞のある文には使えない。Hasを使うと現在完了になり、後ろに過去分詞が必要になるため形が合わない。\n\n【図解】疑問文の作り方\n　主語｜一般動詞の疑問文｜be動詞の疑問文\n　your sister（3人称単数）｜Does｜Is\n　I / you / 複数｜Do｜Are\n　過去の話｜Did｜Was / Were\n　現在完了｜Has / Have｜過去分詞が続く\n　⇒ 3人称単数で一般動詞なのでDoes\n　⚠ Doesを使うと動詞は原形likeになる。Does she likes 〜?のようにsを重ねるのは定番の誤り。',
     difficulty: 'basic' as const,
   },
 
@@ -477,7 +477,7 @@ export const eikenQuestions4kyu3: EikenQuestion[] = [
       { key: 'D', text: 'much' },
     ],
     correctKey: 'B' as const,
-    explanation: '時間の長さを尋ねるには"How long"を使います。「駅まで（時間が）どのくらいかかりますか」という質問です。"How far"は距離、"How many"は数、"How much"は値段を尋ねます。',
+    explanation: 'How long does it take 〜?は「どのくらい時間がかかりますか」と所要時間をたずねる決まった表現なので、longが正解になる。takeは「（時間が）かかる」という意味で、How longとセットで使われる。How farは距離、How manyは数、How muchは値段や量をたずねる表現なので、時間の質問には合わない。\n\n【図解】How で始まる疑問表現\n　疑問表現｜たずねる内容｜答えの例\n　How long｜時間の長さ｜about ten minutes\n　How far｜距離｜about two kilometers\n　How many｜数｜three books\n　How much｜値段や量｜five hundred yen\n　⇒ takeとセットになるのはHow long\n　⚠ 距離をたずねるならHow far is it 〜?となり動詞も変わる。takeがあれば時間の質問だと判断する。',
     difficulty: 'standard' as const,
   },
 
@@ -494,7 +494,7 @@ export const eikenQuestions4kyu3: EikenQuestion[] = [
       { key: 'D', text: 'look' },
     ],
     correctKey: 'D' as const,
-    explanation: '"The apples"は複数形なので、動詞も複数形に対応する形にします。"look"は主語が複数の場合、"looks"は三人称単数の場合に使います。「〜に見える」= look + 形容詞。',
+    explanation: '主語のThe applesは複数形なので、動詞もそれに合わせてlookになる。「そのリンゴは新鮮に見える」という意味である。looksは主語が3人称単数のときの形なので、複数の主語には合わない。amは主語がIのときのbe動詞、isは単数のbe動詞なので、この文には入らない。look + 形容詞で「〜に見える」を表す。\n\n【図解】主語と動詞の一致\n　主語｜動詞の形｜例\n　The apples（複数）｜look｜look fresh\n　The apple（単数）｜looks｜looks fresh\n　I｜look｜look tired\n　It｜looks｜looks good\n　⇒ 主語が複数なので原形のlook\n　⚠ lookの後ろには形容詞を置く。look freshlyのように副詞にするのは誤りなので形も確認する。',
     difficulty: 'standard' as const,
   },
 
@@ -511,7 +511,7 @@ export const eikenQuestions4kyu3: EikenQuestion[] = [
       { key: 'D', text: 'which' },
     ],
     correctKey: 'C' as const,
-    explanation: '「博物館への行き方がわからない」は"don\'t know how to get to ～"と表現します。"how to ～"で「〜の仕方・方法」を表します。',
+    explanation: 'how to 〜は「〜のしかた・方法」を表す疑問詞 + 不定詞の形なので、howが正解になる。how to get to the museumで「博物館への行き方」という意味になる。get toは「〜に着く」という表現である。whatは「何を」、whoは「だれを」、whichは「どれを」を表すので、行き方をたずねる意味にはならない。\n\n【図解】疑問詞 + to不定詞\n　形｜意味｜例\n　how to get｜行き方・方法｜how to get there\n　what to do｜何をすべきか｜what to do next\n　where to go｜どこへ行くべきか｜where to go\n　which to choose｜どれを選ぶべきか｜which to buy\n　⇒ 方法をたずねているのでhowが正解\n　⚠ get toは「〜に着く」。to getのtoと、get toのtoが並ぶ形になるので語順を確認しておく。',
     difficulty: 'advanced' as const,
   },
 
@@ -530,7 +530,7 @@ export const eikenQuestions4kyu3: EikenQuestion[] = [
       { key: 'D', text: 'I\'ll have the pasta, please.' },
     ],
     correctKey: 'D' as const,
-    explanation: 'レストランでの注文を聞かれたとき、「〜をください」= I\'ll have ～, please.が最も自然な返答です。「注文してもいいですか」に対してYes, I ordered it.は時制が合いません。',
+    explanation: 'May I take your order?（ご注文をうかがってもよろしいですか）は店員が注文を聞くときの表現なので、注文する品を答えるのが自然である。I will have the pasta, please.が正解になる。この have は「食べる・注文する」の意味である。Yes, I ordered it.は時制が合わず、パスタの感想を述べる返答も注文になっていない。\n\n【図解】レストランで使う表現\n　表現｜意味｜言う人\n　May I take your order｜ご注文をうかがいます｜店員\n　I will have the pasta, please｜パスタをください｜客\n　Anything else｜ほかにご注文は｜店員\n　Here you are｜どうぞ｜店員\n　⇒ 注文の品を伝える返答が正解\n　⚠ May I 〜?は許可を求める形だが、店員が使うと申し出になる。Yesだけで答えると会話が続かない。',
     difficulty: 'basic' as const,
   },
 
@@ -547,7 +547,7 @@ export const eikenQuestions4kyu3: EikenQuestion[] = [
       { key: 'D', text: 'It\'s autumn.' },
     ],
     correctKey: 'C' as const,
-    explanation: '「雪だるまを作るのが大好き」という後の文から、雪がある「冬」= winterが好きだとわかります。',
+    explanation: '空所の後のI love building snowmen.（雪だるまを作るのが大好き）が手がかりで、雪が降る季節である冬が好きだとわかる。したがってIt is winter.が正解になる。spring（春）、summer（夏）、autumn（秋）はいずれも雪だるまを作れる季節ではない。答えの根拠が直後の文にある典型的な問題である。\n\n【図解】季節とできること\n　季節｜英語｜できること\n　冬｜winter｜雪だるまを作る\n　春｜spring｜花見をする\n　夏｜summer｜海で泳ぐ\n　秋｜autumn｜紅葉を見る\n　⇒ 雪だるまが作れる季節はwinter\n　⚠ 空所の直後の文が答えの根拠になる。building snowmenという語句から季節を逆算するのが解き方。',
     difficulty: 'basic' as const,
   },
 
@@ -564,7 +564,7 @@ export const eikenQuestions4kyu3: EikenQuestion[] = [
       { key: 'D', text: 'Sorry, I don\'t have a box.' },
     ],
     correctKey: 'B' as const,
-    explanation: '助けを求められたとき、"Sure! I\'ll help you."（もちろん、手伝います）が最も自然で親切な返答です。No, I can\'t lift boxes.（箱を持てない）は理由として不自然です。',
+    explanation: 'Can you help me with this box? It is very heavy.（この箱を運ぶのを手伝ってくれますか、とても重いのです）という依頼なので、引き受けるか断るかで答える。Sure! I will help you.が正解である。箱が大きいという感想は依頼に答えておらず、箱を持てないという返答も理由として不自然である。\n\n【図解】依頼と応答の表現\n　依頼の表現｜引き受ける返事｜ことわる返事\n　Can you help me｜Sure! I will help you｜Sorry, I cannot\n　Could you give me a hand｜Of course｜I am busy now\n　Will you help me｜All right｜Not right now\n　May I help you｜Yes, please｜No, thank you\n　⇒ 依頼を引き受ける返答が自然\n　⚠ Yes, it is a big box.は依頼に答えていない。Yesで始まっていても、応じるかどうかを示さなければ返答にならない。',
     difficulty: 'basic' as const,
   },
 
@@ -581,7 +581,7 @@ export const eikenQuestions4kyu3: EikenQuestion[] = [
       { key: 'D', text: 'Yes, I ate tomorrow.' },
     ],
     correctKey: 'C' as const,
-    explanation: '「毎月家族と食べる」という後の文から、寿司を食べたことがあるのは明らかです。"Yes, of course!"が自然な返答です。"Yes, I ate tomorrow."は文法的に間違いです。',
+    explanation: '空所の後のI eat it with my family every month.（毎月家族と食べます）から、すしを食べた経験があることがわかる。したがってYes, of course!が正解になる。Noで答える選択肢は後ろの文と矛盾する。Yes, I ate tomorrow.は過去形atedとtomorrowという未来の語が同じ文にあり、文法的に成り立たない。\n\n【図解】返答と直後の文の整合\n　返答の内容｜経験｜次の文と合うか\n　Yes, of course｜ある｜合う\n　No, I have not｜ない｜合わない\n　No, I do not like fish｜ない｜合わない\n　Yes, I ate tomorrow｜文法的に誤り｜合わない\n　⇒ 毎月食べているので経験があると答える\n　⚠ 過去形と未来を表す語は同じ文で使えない。時制と語句の組み合わせが正しいかも確認する。',
     difficulty: 'standard' as const,
   },
 

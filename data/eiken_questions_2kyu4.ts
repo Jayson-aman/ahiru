@@ -555,7 +555,7 @@ export const eikenQuestions2kyu4: EikenQuestion[] = [
       { key: 'D', text: "know" },
     ],
     correctKey: 'B',
-    explanation: '仮定法過去完了の文です。主節がwould have takenなので、if節は過去完了形had knownになります。「渋滞のことを知っていたら電車で行ったのに」と過去の事実と反対の仮定を表します。knewは仮定法過去（現在の仮定）、have known・knowは仮定法の形として不適切です。\n\n【図解】仮定法の時制対応\n　条件節｜主節｜表す時\n　had 過去分詞｜would have 過去分詞｜過去の反実仮想\n　過去形｜would ＋ 原形｜現在の仮定\n　現在形｜will ＋ 原形｜現実的な条件\n　⇒ 主節が would have taken なら had known\n　⚠ knew は現在の仮定形。主節の形から条件節の時制を決める。',
+    explanation: '仮定法過去完了の文です。主節がwould have takenなので、if節は過去完了形had knownになります。「渋滞のことを知っていたら電車で行ったのに」と過去の事実と反対の仮定を表します。knewは仮定法過去（現在の仮定）、have known・knowは仮定法の形として不適切です。仮定法では条件節と帰結節の時制が対応するため、片方の形が分かればもう片方も自動的に決まる。\n\n【図解】仮定法の時制対応\n　条件節｜主節｜表す時\n　had 過去分詞｜would have 過去分詞｜過去の反実仮想\n　過去形｜would ＋ 原形｜現在の仮定\n　現在形｜will ＋ 原形｜現実的な条件\n　⇒ 主節が would have taken なら had known\n　⚠ knew は現在の仮定形。主節の形から条件節の時制を決める。',
     difficulty: 'standard',
   },
   {
@@ -594,7 +594,7 @@ export const eikenQuestions2kyu4: EikenQuestion[] = [
       { key: 'D', text: "stolen" },
     ],
     correctKey: 'D',
-    explanation: 'have + 目的語 + 過去分詞で「〜される（被害）」を表します。財布は「盗まれる」側なので過去分詞stolenが正解。「佐藤さんは混んだ電車で財布を盗まれた」という被害の表現です。have + 目的語 + 原形は「人に〜させる・してもらう」で、目的語が動作をする場合に使います。\n\n【図解】have ＋ 目的語 ＋ 過去分詞の2用法\n　意味｜例｜含み\n　被害｜have my wallet stolen｜望まない出来事\n　依頼｜have my hair cut｜自分が頼んだ\n　完了｜have the work done｜やり終える\n　⇒ 財布は盗まれる側なので stolen\n　⚠ 被害と依頼は同じ形をとる。どちらかは文脈で判断する。',
+    explanation: 'have + 目的語 + 過去分詞で「〜される（被害）」を表します。財布は「盗まれる」側なので過去分詞stolenが正解。「佐藤さんは混んだ電車で財布を盗まれた」という被害の表現です。have + 目的語 + 原形は「人に〜させる・してもらう」で、目的語が動作をする場合に使います。have と目的語と過去分詞の形は被害と依頼の両方を表すため、文脈から望まない出来事か自分が頼んだことかを判断する。\n\n【図解】have ＋ 目的語 ＋ 過去分詞の2用法\n　意味｜例｜含み\n　被害｜have my wallet stolen｜望まない出来事\n　依頼｜have my hair cut｜自分が頼んだ\n　完了｜have the work done｜やり終える\n　⇒ 財布は盗まれる側なので stolen\n　⚠ 被害と依頼は同じ形をとる。どちらかは文脈で判断する。',
     difficulty: 'standard',
   },
   {
@@ -620,7 +620,7 @@ export const eikenQuestions2kyu4: EikenQuestion[] = [
       { key: 'D', text: "have started" },
     ],
     correctKey: 'B',
-    explanation: 'It is (about) time + 主語 + 過去形で「もう〜してもよい頃だ」を表す仮定法の慣用表現です。形は過去形ですが現在のことを述べています。「そろそろ将来のことを真剣に考え始めてもいい頃だ」の意味でstartedが正解。原形や未来形は使えない点に注意しましょう。\n\n【図解】It is time の構文\n　形｜意味｜動詞の形\n　It is time 主語 過去形｜そろそろ〜する時だ｜過去形\n　It is high time 主語 過去形｜とっくに〜すべき時だ｜過去形\n　It is time to do｜〜する時間だ｜不定詞\n　⇒ 主語が続くなら過去形 started\n　⚠ 形は過去でも内容は現在。仮定法の慣用表現として形ごと覚える。',
+    explanation: 'It is (about) time + 主語 + 過去形で「もう〜してもよい頃だ」を表す仮定法の慣用表現です。形は過去形ですが現在のことを述べています。「そろそろ将来のことを真剣に考え始めてもいい頃だ」の意味でstartedが正解。原形や未来形は使えない点に注意しましょう。It is time の後ろの節では、形の上では過去形を使いながら内容は現在のことを指すという仮定法特有のずれが生じる。\n\n【図解】It is time の構文\n　形｜意味｜動詞の形\n　It is time 主語 過去形｜そろそろ〜する時だ｜過去形\n　It is high time 主語 過去形｜とっくに〜すべき時だ｜過去形\n　It is time to do｜〜する時間だ｜不定詞\n　⇒ 主語が続くなら過去形 started\n　⚠ 形は過去でも内容は現在。仮定法の慣用表現として形ごと覚える。',
     difficulty: 'advanced',
   },
   {

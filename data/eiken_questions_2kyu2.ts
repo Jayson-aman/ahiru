@@ -648,7 +648,7 @@ export const eikenQuestions2kyu2: EikenQuestion[] = [
       { key: 'D', text: 'Reducing the cost of food production by half within a decade' },
     ],
     correctKey: 'C',
-    explanation: '本文に"develop crops that are more resistant to drought, disease, and pests"と明記されており、農業分野でのCRISPRの利点としてCが正確に反映されている。A・B・Dは本文に記載されていない内容や誇張された主張を含む。\n\n【図解】CRISPR の農業応用\n　目的｜本文の記述｜対象\n　干ばつ耐性｜resistant to drought｜乾燥地\n　病害耐性｜resistant to disease｜病原体\n　害虫耐性｜resistant to pests｜昆虫\n　⇒ 3つの耐性強化が本文の記述\n　⚠ 「農薬が全く不要になる」「灌漑なしでどこでも育つ」は誇張。本文の範囲を超えない。',
+    explanation: '本文に"develop crops that are more resistant to drought, disease, and pests"と明記されており、農業分野でのCRISPRの利点としてCが正確に反映されている。A・B・Dは本文に記載されていない内容や誇張された主張を含む。設問は本文中の一文が何を意味するかを問うもので、語の一般的な意味に加えて、直前の Despite が作る譲歩の構図まで踏まえて読む必要がある。\n\n【図解】CRISPR の農業応用\n　目的｜本文の記述｜対象\n　干ばつ耐性｜resistant to drought｜乾燥地\n　病害耐性｜resistant to disease｜病原体\n　害虫耐性｜resistant to pests｜昆虫\n　⇒ 3つの耐性強化が本文の記述\n　⚠ 「農薬が全く不要になる」「灌漑なしでどこでも育つ」は誇張。本文の範囲を超えない。',
     difficulty: 'basic',
   },
   {
@@ -1101,7 +1101,7 @@ export const eikenQuestions2kyu2: EikenQuestion[] = [
       { key: 'D', text: 'Notwithstanding that' },
     ],
     correctKey: 'A',
-    explanation: '"regardless of + 名詞/wh節"は「〜にかかわらず」という意味の定型表現で、how節を直接続けることができる。In spiteはin spite ofの形が必要、Despite ofは誤り（despiteに前置詞ofは不要）、Notwithstanding thatは文法的に不自然。\n\n【図解】「〜にかかわらず」の形\n　表現｜品詞｜後ろに来るもの\n　regardless of｜前置詞句｜名詞, wh 節\n　in spite of｜前置詞句｜名詞, 動名詞\n　despite｜前置詞｜名詞, 動名詞\n　⇒ how 節を続けるなら regardless of\n　⚠ despite of は誤り。despite には of を付けず、in spite には of が必要。',
+    explanation: '"regardless of + 名詞/wh節"は「〜にかかわらず」という意味の定型表現で、how節を直接続けることができる。In spiteはin spite ofの形が必要、Despite ofは誤り（despiteに前置詞ofは不要）、Notwithstanding thatは文法的に不自然。regardless of は後ろに wh 節を直接続けられる数少ない前置詞句で、regardless of what happens のような形でも頻出する。\n\n【図解】「〜にかかわらず」の形\n　表現｜品詞｜後ろに来るもの\n　regardless of｜前置詞句｜名詞, wh 節\n　in spite of｜前置詞句｜名詞, 動名詞\n　despite｜前置詞｜名詞, 動名詞\n　⇒ how 節を続けるなら regardless of\n　⚠ despite of は誤り。despite には of を付けず、in spite には of が必要。',
     difficulty: 'advanced',
   },
   {
@@ -1403,7 +1403,7 @@ export const eikenQuestions2kyu2: EikenQuestion[] = [
       { key: 'D', text: 'The studies were funded entirely by technology companies.' },
     ],
     correctKey: 'B',
-    explanation: '本文に"most studies have relied on self-reported data, which can be less reliable than objective behavioral measurements"とある。Bがこれに一致する。A・C・Dは本文に記載がない。\n\n【図解】初期研究の限界\n　項目｜本文の記述｜問題\n　データの取り方｜self-reported data｜自己申告\n　信頼性｜less reliable｜客観性に欠ける\n　望ましい方法｜objective behavioral measurements｜行動の客観測定\n　⇒ 自己申告に依存した点が限界\n　⚠ 資金提供元や対象年齢の問題は本文にない。限界の種類を取り違えない。',
+    explanation: '本文に"most studies have relied on self-reported data, which can be less reliable than objective behavioral measurements"とある。Bがこれに一致する。A・C・Dは本文に記載がない。設問は初期研究の弱点を問うもので、方法論上の限界と結論の否定とは別物である点を切り分けて読む必要がある。\n\n【図解】初期研究の限界\n　項目｜本文の記述｜問題\n　データの取り方｜self-reported data｜自己申告\n　信頼性｜less reliable｜客観性に欠ける\n　望ましい方法｜objective behavioral measurements｜行動の客観測定\n　⇒ 自己申告に依存した点が限界\n　⚠ 資金提供元や対象年齢の問題は本文にない。限界の種類を取り違えない。',
     difficulty: 'standard',
   },
   {
@@ -1448,7 +1448,7 @@ export const eikenQuestions2kyu2: EikenQuestion[] = [
       { key: 'D', text: 'Shipping companies are not interested in reducing emissions.' },
     ],
     correctKey: 'B',
-    explanation: '本文末尾に"given the enormous capital investment required to retrofit or replace the global fleet of cargo ships"とある。Bがこれに一致する。A・C・Dは本文の内容と矛盾する。\n\n【図解】移行に時間がかかる理由\n　要素｜本文の記述｜規模\n　船隊の改修｜retrofit｜既存船の大改造\n　船隊の更新｜replace the global fleet｜世界規模\n　必要な資金｜enormous capital investment｜巨額\n　⇒ 巨額の設備投資が必要な点が理由\n　⚠ 「代替燃料が技術的に存在しない」は本文と矛盾。障壁が技術か資金かを区別する。',
+    explanation: '本文末尾に"given the enormous capital investment required to retrofit or replace the global fleet of cargo ships"とある。Bがこれに一致する。A・C・Dは本文の内容と矛盾する。設問は移行に時間がかかる理由を問うており、技術的な障壁ではなく資金面の制約が答えの中心になっている点を読み取る。\n\n【図解】移行に時間がかかる理由\n　要素｜本文の記述｜規模\n　船隊の改修｜retrofit｜既存船の大改造\n　船隊の更新｜replace the global fleet｜世界規模\n　必要な資金｜enormous capital investment｜巨額\n　⇒ 巨額の設備投資が必要な点が理由\n　⚠ 「代替燃料が技術的に存在しない」は本文と矛盾。障壁が技術か資金かを区別する。',
     difficulty: 'advanced',
   },
   {
@@ -1463,7 +1463,7 @@ export const eikenQuestions2kyu2: EikenQuestion[] = [
       { key: 'D', text: 'They are illegal to use in most countries.' },
     ],
     correctKey: 'B',
-    explanation: '本文に"current production costs remain prohibitively high for widespread adoption"とある。Bがこれに一致する。A・C・Dは本文に記載がない。\n\n【図解】アンモニアとメタノールの課題\n　項目｜本文の記述｜評価\n　排出面｜有望｜利点\n　生産コスト｜prohibitively high｜普及の障壁\n　現状｜広範な採用は困難｜実用化に時間\n　⇒ 生産コストの高さが最大の課題\n　⚠ 「輸送が危険」「法的に禁止」は本文にない。課題の種類を本文の語句で確認する。',
+    explanation: '本文に"current production costs remain prohibitively high for widespread adoption"とある。Bがこれに一致する。A・C・Dは本文に記載がない。設問はアンモニアとメタノールという代替燃料の弱点を問うている。本文は排出面では有望としつつ、現時点の生産費が高すぎて広く採用できないと述べており、技術ではなく経済性が障壁になっていることを押さえる。\n\n【図解】アンモニアとメタノールの課題\n　項目｜本文の記述｜評価\n　排出面｜有望｜利点\n　生産コスト｜prohibitively high｜普及の障壁\n　現状｜広範な採用は困難｜実用化に時間\n　⇒ 生産コストの高さが最大の課題\n　⚠ 「輸送が危険」「法的に禁止」は本文にない。課題の種類を本文の語句で確認する。',
     difficulty: 'standard',
   },
   {
