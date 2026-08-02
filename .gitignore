@@ -42,3 +42,6 @@ yarn-error.*
 
 # Claude Code internal
 .claude/
+.worklist.js
+.mkpkg.js
+.peek2.js
