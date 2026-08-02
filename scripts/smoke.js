@@ -25,6 +25,11 @@ const ROUTES = [
   '/kyusui', '/kyusui/kozo', '/kyusui/text', '/kyusui/text/kozo', '/kyusui/mogi',
   '/shobo', '/shobo/horei_kyotsu', '/shobo/text', '/shobo/text/horei_kyotsu', '/shobo/mogi',
   '/cost', '/cost/gairon', '/cost/text', '/cost/text/gairon', '/cost/mogi', '/cost/ronbun',
+  '/kikenbutsu', '/kikenbutsu/horei', '/kikenbutsu/text', '/kikenbutsu/text/horei', '/kikenbutsu/mogi',
+  '/concrete', '/concrete/zairyo', '/concrete/text', '/concrete/text/zairyo', '/concrete/mogi',
+  '/tsushin', '/tsushin/kogaku', '/tsushin/text', '/tsushin/text/kogaku', '/tsushin/mogi',
+  '/nikkyu', '/nikkyu/keikaku', '/nikkyu/text', '/nikkyu/text/keikaku', '/nikkyu/mogi', '/nikkyu/seizu',
+  '/denki2', '/denki2/riron', '/denki2/text', '/denki2/text/riron', '/denki2/mogi',
   '/legal/tokushoho', '/legal/privacy', '/legal/terms',
   // /juken（中学受験）と /kouko（高校受験）はホームから意図的にリンクしていない
   // 未公開画面なので、到達不能であることが正しい。ここでは踏まない。
