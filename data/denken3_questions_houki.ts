@@ -100,7 +100,7 @@ export const denken3Houki: Denken3Question[] = [
       '電気事業法に定める「事業用電気工作物」に含まれないものはどれか。',
     choices: [
       { key: 'A', text: '発電所の発電設備', explanation: '誤りです。発電所の発電設備は事業用電気工作物に含まれます。' },
-      { key: 'B', text: '一般家庭の屋内配線（受電電圧600 V以下）', explanation: '正しい選択です。一般家庭の屋内配線は「一般用電気工作物」であり、事業用電気工作物ではありません。' },
+      { key: 'B', text: '一般家庭の屋内配線（受電電圧600 V以下）', explanation: '正しい（本問の正解）。一般家庭の屋内配線は「一般用電気工作物」であり、事業用電気工作物ではありません。' },
       { key: 'C', text: '最大電力500 kWの自家用変電設備', explanation: '誤りです。最大電力500 kW以上の需要設備は事業用電気工作物（自家用電気工作物）です。' },
       { key: 'D', text: '送電線路', explanation: '誤りです。送電線路は事業用電気工作物です。' },
     ],
@@ -497,10 +497,10 @@ export const denken3Houki: Denken3Question[] = [
     question:
       '電気設備技術基準の解釈において、高圧受電設備の主遮断装置として使用できないものはどれか。',
     choices: [
-      { key: 'A', text: '真空遮断器（VCB）と過電流継電器（OCR）の組み合わせ', explanation: '正しい組み合わせです。VCB+OCRは高圧受電設備の主遮断装置として一般的に使用されます。' },
-      { key: 'B', text: 'パワーヒューズ（PF）と負荷開閉器（LBS）の組み合わせ', explanation: '正しい組み合わせです。PF+LBSはPF-S形受電設備に使用されます。' },
-      { key: 'C', text: '低圧用配線用遮断器（MCCB）単体', explanation: '正しい選択です。MCCBは低圧回路用であり、高圧受電の主遮断装置には使用できません。' },
-      { key: 'D', text: '高圧交流負荷開閉器（UAS）と高圧限流ヒューズ（PF）の組み合わせ', explanation: '正しい組み合わせです。これもPF-S形の変形として使用されます。' },
+      { key: 'A', text: '真空遮断器（VCB）と過電流継電器（OCR）の組み合わせ', explanation: '主遮断装置として使用できる。VCB+OCRは高圧受電設備の主遮断装置として一般的に使用されます。' },
+      { key: 'B', text: 'パワーヒューズ（PF）と負荷開閉器（LBS）の組み合わせ', explanation: '主遮断装置として使用できる。PF+LBSはPF-S形受電設備に使用されます。' },
+      { key: 'C', text: '低圧用配線用遮断器（MCCB）単体', explanation: '正しい（本問の正解）。MCCBは低圧回路用であり、高圧受電の主遮断装置には使用できません。' },
+      { key: 'D', text: '高圧交流負荷開閉器（UAS）と高圧限流ヒューズ（PF）の組み合わせ', explanation: '主遮断装置として使用できる。これもPF-S形の変形として使用されます。' },
     ],
     correctKey: 'C',
     explanation:

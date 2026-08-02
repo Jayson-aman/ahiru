@@ -136,7 +136,12 @@ for (const [cert, mod] of Object.entries(MODS)) {
     // 個数問題・組合せ問題は肢と正誤が1対1に対応しないため対象外
     const countType = /いくつ|何個|組合せ|組み合わせ/.test(Q);
     if (answer && !countType && !marks.includes(null)) {
-      const want = /誤っ|誤りな|不適当|不適切|適当でない|適切でない|妥当でない|正しくない/.test(Q) ? 'x' : 'o';
+      // 出題形式は「〜ものはどれか」の直前だけを見て判断する。
+      //  - 設問文全体を見ると「適当でない場所」のような本文中の語を拾ってしまう
+      //  - 末尾だけを見ると「〜はどれか。ただし〜とする。」の但し書きで見失う
+      const k = Q.lastIndexOf('どれか');
+      const phrase = k >= 0 ? Q.slice(Math.max(0, k - 20), k) : Q;
+      const want = /誤っ|誤りな|不適当|不適切|適当でない|適切でない|妥当でない|正しくない/.test(phrase) ? 'x' : 'o';
       const others = q.choices.filter(c => c.key !== q.correctKey).map(c => markOf(c.explanation));
       if (markOf(answer.explanation) !== want) {
         keyWarn.push(`${cert} ${q.id}: 正解の肢の解説が設問の問い方と逆になっています`);
