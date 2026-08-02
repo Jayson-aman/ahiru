@@ -16,7 +16,7 @@ export const eikenQuestionsListening: EikenQuestion[] = [
       { key: 'C', text: "Sure, it's just around the corner." },
     ],
     correctKey: 'C',
-    explanation: '道を尋ねられているので、案内する応答が自然。「すぐそこの角です」と道順を教える返答が適切。体調を聞かれた時の返答や、質問の内容とかみ合わない返答は不自然。',
+    explanation: 'Could you tell me the way to the station?（駅へ行く道を教えていただけますか）は道をたずねるていねいな依頼表現なので、道順を示す応答が自然になる。Sure, it is just around the corner.（すぐそこの角を曲がったところです）が正解である。I am fine, thank you.はHow are you?への返事、電車の旅が好きだという返答は質問に答えていない。\n\n【図解】道をたずねる場面の表現\n　表現｜意味｜使う場面\n　Could you tell me the way to 〜｜道を教えてください｜たずねる\n　It is just around the corner｜すぐそこの角です｜道案内\n　Go straight for two blocks｜2ブロックまっすぐ｜道案内\n　I am fine, thank you｜元気です｜体調への返事\n　⇒ 道をたずねられたので道順を答える\n　⚠ Could you 〜?はていねいな依頼。How are you?への返事と取りちがえないよう、質問の中身を聞き取る。',
     difficulty: 'basic',
   },
   {
@@ -31,7 +31,7 @@ export const eikenQuestionsListening: EikenQuestion[] = [
       { key: 'C', text: "No, thanks. I've had enough." },
     ],
     correctKey: 'C',
-    explanation: 'コーヒーのおかわりを勧められているので、断るか受けるかの返答が自然。「もう十分いただきました」と丁寧に断る返答が適切。天気や待ち合わせ時間についての返答は話の内容と無関係。',
+    explanation: 'Would you like some more coffee?（コーヒーをもう少しいかがですか）は物をすすめる表現なので、受けるか断るかで答える。No, thanks. I have had enough.（もう十分いただきました）が正解になる。have hadは現在完了で、すでに十分飲んだことを表している。天気や待ち合わせ時刻の話は場面に合わない。\n\n【図解】すすめる表現と答え方\n　表現｜意味｜使う場面\n　Would you like some more｜おかわりはいかが｜すすめる\n　No, thanks. I have had enough｜もう十分です｜ことわる\n　Yes, please｜お願いします｜受ける\n　It is raining outside｜外は雨です｜天気の話\n　⇒ すすめられているので受けるか断るかで答える\n　⚠ 断るときはNo, thanks.に理由を添えると自然。すすめる疑問文ではanyではなくsomeを使う点も押さえる。',
     difficulty: 'basic',
   },
   {
@@ -46,7 +46,7 @@ export const eikenQuestionsListening: EikenQuestion[] = [
       { key: 'C', text: "Yes, I did it right after dinner." },
     ],
     correctKey: 'C',
-    explanation: '宿題を終えたか尋ねられているので、Yes/Noで答える返答が自然。「夕食の後すぐにやりました」と具体的に答える返答が適切。好きな教科や兄弟の人数についての返答は質問への直接の答えになっていない。',
+    explanation: 'Did you finish your homework last night?（昨夜、宿題を終えましたか）は一般動詞の過去形の疑問文なので、YesかNoで答えたうえで内容を添えるのが自然である。Yes, I did it right after dinner.（夕食のすぐ後にやりました）が正解になる。好きな教科や兄弟の人数を答える返答は質問に対応していない。\n\n【図解】質問の形と答え方\n　質問｜形｜答え方\n　Did you finish your homework｜過去形の疑問文｜Yes, I did\n　What is your favorite subject｜疑問詞の質問｜It is math\n　How many brothers do you have｜数｜I have two\n　When did you do it｜時｜right after dinner\n　⇒ Didの疑問文なのでYesと内容で答える\n　⚠ right afterは「〜のすぐ後で」。rightは「正しい」だけでなく強調の副詞としても使われる。',
     difficulty: 'basic',
   },
   {
@@ -61,7 +61,7 @@ export const eikenQuestionsListening: EikenQuestion[] = [
       { key: 'C', text: "I saw it last week." },
     ],
     correctKey: 'B',
-    explanation: '「映画は何時に始まりますか」という時刻を尋ねる質問には、時刻で答えるBが正解。Aは上映時間の長さ、Cは過去に見たという話で、質問とかみ合わない。',
+    explanation: 'What time does the movie start?（映画は何時に始まりますか）は開始時刻をたずねる質問なので、答えも時刻になる。It starts at seven thirty.（7時半に始まります）が正解である。about two hours longは上映時間の長さ、I saw it last week.は過去に見たという話で、いずれも時刻をたずねる質問に対応していない。\n\n【図解】疑問表現と答えの対応\n　疑問表現｜たずねる内容｜答えの例\n　What time does it start｜開始時刻｜at seven thirty\n　How long is it｜上映時間の長さ｜about two hours\n　When did you see it｜見た時期｜last week\n　Where is the theater｜場所｜near the station\n　⇒ 時刻をたずねているのでat + 時刻で答える\n　⚠ 数字が入っていても内容が違えば答えにならない。時刻か長さかを聞き分けることが要点になる。',
     difficulty: 'basic',
   },
   {
@@ -76,7 +76,7 @@ export const eikenQuestionsListening: EikenQuestion[] = [
       { key: 'C', text: "That's all right. The meeting hasn't started yet." },
     ],
     correctKey: 'C',
-    explanation: '遅刻を謝られているので、それを許す・気にしないと伝える応答が自然。「大丈夫、会議はまだ始まっていません」と相手を安心させる返答が適切。お礼を言われた時の返答はこの場面には合わない。',
+    explanation: 'I am sorry I am late. The bus did not come on time.（遅れてすみません、バスが時間どおりに来なかったのです）という謝罪と理由の説明なので、受け入れる応答が自然である。That is all right. The meeting has not started yet.が正解になる。You are welcome.はお礼への返事なので場面が合わない。\n\n【図解】発言の性質と自然な応答\n　発言｜性質｜自然な応答\n　I am sorry I am late｜謝罪｜That is all right\n　The bus did not come on time｜理由の説明｜受け入れる\n　You are welcome｜お礼への返事｜場面が違う\n　I do not like buses｜好みの話｜答えになっていない\n　⇒ 謝罪には受け入れる言葉で応じる\n　⚠ on timeは「時間どおりに」。謝罪への返事はThat is all right.やNo problem.が定番になる。',
     difficulty: 'basic',
   },
   {
@@ -91,7 +91,7 @@ export const eikenQuestionsListening: EikenQuestion[] = [
       { key: 'C', text: "The fitting room is over there." },
     ],
     correctKey: 'C',
-    explanation: '「このジャケットを試着してもいいですか」という店員への質問には、試着室の場所を案内する応答が自然。店員と客のやり取りとして最も自然な流れになる。',
+    explanation: 'Can I try on this jacket?（このジャケットを試着してもいいですか）は店で客が使う表現なので、店員が試着室を案内する応答が自然である。The fitting room is over there.が正解になる。try onは服やくつを試着すること、fitting roomは「試着室」という買い物の重要表現である。買った時期や天気の話は場面に合わない。\n\n【図解】買い物の場面で使う表現\n　表現｜意味｜言う人\n　Can I try on this jacket｜試着してもよいか｜客\n　The fitting room is over there｜試着室はあちら｜店員\n　I will take it｜これを買います｜客\n　How much is it｜いくらですか｜客\n　⇒ 試着の許可を求められたので場所を案内する\n　⚠ try onは服やくつ限定の表現。機械などを試すときはtry outになるので、対象で使い分ける。',
     difficulty: 'basic',
   },
   {
@@ -106,7 +106,7 @@ export const eikenQuestionsListening: EikenQuestion[] = [
       { key: 'C', text: "It was really relaxing. We hiked every day." },
     ],
     correctKey: 'C',
-    explanation: '週末の山への旅行の感想を聞かれているので、感想を述べる応答が自然。「とてもリラックスできた、毎日ハイキングをした」と具体的に答える返答が適切。',
+    explanation: 'How was your weekend trip to the mountains?（週末の山への旅行はどうでしたか）は感想をたずねる質問なので、答えも感想になる。It was really relaxing. We hiked every day.（とてものんびりできました、毎日ハイキングをしました）が正解である。電車の時刻やかばんが必要だという返答は質問に対応していない。\n\n【図解】質問と答えの対応\n　質問｜たずねる内容｜答えの例\n　How was your trip｜感想｜It was really relaxing\n　When does the train leave｜時刻｜at nine\n　What do you need｜必要な物｜a new bag\n　Where did you go｜行き先｜to the mountains\n　⇒ 感想をたずねているのでIt wasで答える\n　⚠ How was 〜?はbe動詞が過去形。答えもwasやhikedと過去形にそろえると自然になる。',
     difficulty: 'basic',
   },
   {
@@ -121,7 +121,7 @@ export const eikenQuestionsListening: EikenQuestion[] = [
       { key: 'C', text: "I like blue better than red." },
     ],
     correctKey: 'B',
-    explanation: '「これは誰の傘ですか」という所有者を尋ねる質問には、持ち主の名前を答えるBが正解。「Emmaのだと思う」と具体的に答えている。AとCは質問の答えになっていない。',
+    explanation: 'Whose umbrella is this?（これはだれのかさですか）は持ち主をたずねる質問なので、答えも人名などの所有者になる。I think it is Emma.（エマのだと思います）が正解である。明日雨が降るという天気の話や、青が赤より好きだという色の好みは、持ち主をたずねる質問に対応していない。\n\n【図解】疑問詞と答えの対応\n　疑問詞｜たずねる内容｜答えの例\n　Whose｜持ち主｜It is Emma\n　What color｜色｜It is blue\n　When｜時｜tomorrow\n　Which｜どちらか｜the blue one\n　⇒ 持ち主をたずねているので所有者で答える\n　⚠ WhoseとWhoは形が似ている。Whoseは持ち主、Whoは人そのものをたずねる語である。',
     difficulty: 'basic',
   },
   {
@@ -136,7 +136,7 @@ export const eikenQuestionsListening: EikenQuestion[] = [
       { key: 'C', text: "Sure, what time should I meet you?" },
     ],
     correctKey: 'C',
-    explanation: '土曜日の野球観戦に誘われているので、承諾して待ち合わせ時間を尋ねる応答が自然。ペットの話や前日の試合についての返答は誘いへの返事として的外れ。',
+    explanation: 'Do you want to come to the baseball game with us on Saturday?（土曜日に一緒に野球を見に行きませんか）という誘いなので、応じるか断るかで答える。Sure, what time should I meet you?（いいですね、何時に待ち合わせますか）が正解になる。承諾したうえで待ち合わせを確認する自然な流れである。\n\n【図解】誘いと応答の流れ\n　発言｜性質｜次に来る内容\n　Do you want to come with us｜誘い｜応じるか断るか\n　Sure, what time should I meet you｜承諾と確認｜待ち合わせ\n　Sorry, I cannot｜ことわり｜理由を添える\n　It was a nice game yesterday｜過去の感想｜返事にならない\n　⇒ 誘いを受けて待ち合わせを確認する返答が自然\n　⚠ 誘いにはまず応じるか断るかで答える。過去の感想を述べても、これからの予定の返事にはならない。',
     difficulty: 'basic',
   },
   {
@@ -151,7 +151,7 @@ export const eikenQuestionsListening: EikenQuestion[] = [
       { key: 'C', text: "Yes, maybe we should add some water." },
     ],
     correctKey: 'C',
-    explanation: 'スープが少し塩辛いという意見に同意し、対処法を提案する応答が自然。「そうだね、水を足した方がいいかも」と会話がかみ合う返答が適切。',
+    explanation: 'This soup tastes a little salty, do you not think?（このスープは少し塩からいと思いませんか）は同意を求める言い方なので、同意して対処法を提案する応答が自然である。Yes, maybe we should add some water.（そうですね、水を足したほうがいいかもしれません）が正解になる。作った時刻や場所の話は場面に合わない。\n\n【図解】発言の性質と自然な応答\n　発言｜性質｜自然な応答\n　This soup tastes a little salty｜同意を求める｜同意して提案する\n　Yes, maybe we should add water｜同意と提案｜合う\n　I made it this morning｜作った時期｜答えになっていない\n　It is on the second floor｜場所｜合わない\n　⇒ 同意したうえで対処を提案する返答が正解\n　⚠ taste + 形容詞は「〜な味がする」。saltyは「塩からい」で、味を表す形容詞をまとめて覚える。',
     difficulty: 'basic',
   },
 
@@ -168,7 +168,7 @@ export const eikenQuestionsListening: EikenQuestion[] = [
       { key: 'C', text: "She already saw the concert." },
     ],
     correctKey: 'B',
-    explanation: 'Lisaは"I have to study for my science test tomorrow."（明日の理科のテストの勉強をしなければならない）と言っており、これがコンサートに行けない理由。Bが正解。',
+    explanation: 'リサはI wish I could, but I have to study for my science test tomorrow.（行けたらいいのだけれど、明日の理科のテストの勉強をしなければならない）と答えている。したがってコンサートに行けない理由はテスト勉強である。I wish I couldは「できたらいいのに」という残念な気持ちを表す前置きで、butの後ろに本当の理由が続く。\n\n【図解】会話の流れと設問の答え\n　発言｜内容｜設問との関係\n　are you going to the concert｜誘い｜話のきっかけ\n　I wish I could｜行けたらいいのに｜断りの前置き\n　I have to study for my test｜勉強しなければならない｜行けない理由\n　tomorrow｜明日｜テストの日\n　⇒ butの後ろが行けない理由になる\n　⚠ I wish I couldだけを聞くと理由が分からない。butの後ろまで聞き取ることが答えの決め手になる。',
     difficulty: 'standard',
   },
   {
@@ -183,7 +183,7 @@ export const eikenQuestionsListening: EikenQuestion[] = [
       { key: 'C', text: "Take a different bus." },
     ],
     correctKey: 'C',
-    explanation: '男性は"you need to take the number 12 bus across the street"（道の向かいの12番のバスに乗る必要がある）と別のバスに乗るよう勧めている。Cが正解。',
+    explanation: '男性はNo, you need to take the number 12 bus across the street.（いいえ、道の向かいで12番のバスに乗る必要があります）と答えている。したがって別のバスに乗るよう助言していることになる。need to 〜は「〜する必要がある」という表現である。同じバスを待つ、歩いて行くという内容は会話に出てこない。\n\n【図解】会話の流れと設問の答え\n　発言｜内容｜設問との関係\n　does this bus go to City Hall｜行き先の確認｜女性の質問\n　No, you need to take the number 12 bus｜別のバスに乗る｜男性の助言\n　across the street｜道の向かい｜乗り場の説明\n　設問｜What does the man suggest｜助言の内容\n　⇒ need toの後ろが助言の中身になる\n　⚠ Noの後ろに代わりの案が続く。否定だけを聞いて終わらず、その後の情報まで聞き取ること。',
     difficulty: 'standard',
   },
   {
@@ -198,7 +198,7 @@ export const eikenQuestionsListening: EikenQuestion[] = [
       { key: 'C', text: "It is too expensive." },
     ],
     correctKey: 'B',
-    explanation: 'Saraは「it is a bit far from my office now」（今は職場から少し遠い）と述べており、これが新しいアパートの問題点。Bが正解。',
+    explanation: 'サラはIt is great, but it is a bit far from my office now.（すばらしいけれど、今は職場から少し遠い）と答えている。したがって新しいアパートの問題点は職場から遠いことである。butの後ろに問題点が来るので、前半のgreatだけを聞くと答えを取りちがえてしまう。せますぎる、高すぎるという内容は会話にない。\n\n【図解】会話の流れと設問の答え\n　発言｜内容｜評価\n　I heard you moved｜引っ越しの話題｜きっかけ\n　It is great｜すばらしい｜よい点\n　but it is a bit far from my office｜職場から遠い｜問題点\n　設問｜What is one problem｜問題点を問う\n　⇒ butの後ろが問題点になる\n　⚠ 前半のgreatだけを聞くと答えを取りちがえる。butの後ろに本当に伝えたい内容が来る。',
     difficulty: 'standard',
   },
   {
@@ -213,7 +213,7 @@ export const eikenQuestionsListening: EikenQuestion[] = [
       { key: 'C', text: "Drive the car." },
     ],
     correctKey: 'B',
-    explanation: '女性は"let me finish this email first"（まずこのメールを終わらせたい）と言っており、箱を運ぶ前にメールを終える予定。Bが正解。',
+    explanation: '女性はSure, but let me finish this email first.（いいですよ、でもまずこのメールを終わらせてください）と答えている。したがって最初にするのはメールを終えることである。firstは「まず先に」という順番を示す語である。手伝いを引き受けてはいるが、設問は順番を問うている点に注意が必要になる。\n\n【図解】会話の流れと行動の順番\n　発言｜内容｜順番\n　Could you help me carry these boxes｜手伝いの依頼｜男性の発言\n　Sure｜引き受ける｜女性の返事\n　let me finish this email first｜メールを終える｜先にすること\n　箱を運ぶ｜手伝う｜後ですること\n　⇒ firstという語が最初の行動を示す\n　⚠ 依頼を引き受けているので運ぶこと自体は行う。設問が順番を問うている点を読み取ることが要点。',
     difficulty: 'standard',
   },
   {
@@ -228,7 +228,7 @@ export const eikenQuestionsListening: EikenQuestion[] = [
       { key: 'C', text: "Stay home and rest." },
     ],
     correctKey: 'B',
-    explanation: 'Jackは"I already promised to help my dad in the garden"（庭仕事で父を手伝うと約束している）と言っている。Bが正解。',
+    explanation: 'ジャックはSorry, I already promised to help my dad in the garden.（ごめん、もう庭で父を手伝うと約束してしまった）と答えている。したがって土曜日の予定は父の手伝いである。promise to 〜は「〜すると約束する」という表現である。エミリーの買い物の誘いは断っているので、一緒に買い物には行かない。\n\n【図解】会話の流れと設問の答え\n　発言｜内容｜土曜の予定\n　Are you free this Saturday｜予定の確認｜エミリーの質問\n　Sorry｜断り｜ジャックの返事\n　I promised to help my dad｜父の手伝いを約束｜土曜の予定\n　in the garden｜庭で｜場所\n　⇒ Sorryの後ろに予定の内容が続く\n　⚠ 誘いを断っているので買い物には行かない。断りの言葉の後ろに理由が来る形を押さえる。',
     difficulty: 'standard',
   },
   {
@@ -243,7 +243,7 @@ export const eikenQuestionsListening: EikenQuestion[] = [
       { key: 'C', text: "Called for a repair man." },
     ],
     correctKey: 'C',
-    explanation: '男性は"I already called the repair man"（すでに修理業者に電話した）と言っている。Cが正解。',
+    explanation: '男性はI already called the repair man. He will come this afternoon.（もう修理業者に電話しました。午後に来ます）と答えている。したがってすでにしたことは修理業者への電話である。alreadyは「すでに」という完了を表す語である。自分で直した、新しいプリンターを買ったという内容は会話に出てこない。\n\n【図解】会話の流れと時の区別\n　発言｜内容｜いつのことか\n　The printer is not working｜故障の報告｜現在\n　I already called the repair man｜業者に電話した｜すでに完了\n　He will come this afternoon｜午後に来る｜これから\n　設問｜What has he already done｜完了したこと\n　⇒ alreadyの後ろがすでにしたことになる\n　⚠ すでにしたことと、これから起こることを区別する。will comeは未来なので答えにはならない。',
     difficulty: 'standard',
   },
   {
@@ -258,7 +258,7 @@ export const eikenQuestionsListening: EikenQuestion[] = [
       { key: 'C', text: "Clean his room." },
     ],
     correctKey: 'B',
-    explanation: '母親は"Only if you finish your math homework first"（先に数学の宿題を終えたらね）と条件を出している。テレビを見る前に宿題を終える必要がある。Bが正解。',
+    explanation: '母親はOnly if you finish your math homework first.（先に数学の宿題を終えたらね）と条件を出している。したがってテレビを見る前に必要なのは宿題を終えることである。Only if 〜は「〜する場合に限り」という条件を示す表現である。夕食は前提として話に出ているだけで、条件ではない。\n\n【図解】会話の流れと条件\n　発言｜内容｜条件かどうか\n　can I watch TV after dinner｜許可を求める｜男の子の質問\n　Only if you finish your homework｜宿題が条件｜条件\n　after dinner｜夕食の後｜前提\n　設問｜What does he need to do｜必要なこと\n　⇒ Only if 〜の後ろが条件になる\n　⚠ 会話に出てくる語でも条件とは限らない。ifの後ろに続く部分だけを条件として拾うこと。',
     difficulty: 'standard',
   },
   {
@@ -273,7 +273,7 @@ export const eikenQuestionsListening: EikenQuestion[] = [
       { key: 'C', text: "Waiting for a friend." },
     ],
     correctKey: 'C',
-    explanation: '女性は「I am just waiting for my friend」（友達を待っているだけ）と言っている。',
+    explanation: '女性はNo, please go ahead. I am just waiting for my friend.（いいえ、どうぞ。友達を待っているだけです）と答えている。したがって女性がしているのは友達を待つことである。Is this seat taken?はtaken（ふさがっている）かどうかをたずねる表現で、空いているときはNoで答える点も重要である。\n\n【図解】会話の流れと設問の答え\n　発言｜内容｜設問との関係\n　Is this seat taken｜空席の確認｜男性の質問\n　No, please go ahead｜どうぞ｜空いている\n　I am just waiting for my friend｜友達を待っている｜今の行動\n　設問｜What is the woman doing｜行動を問う\n　⇒ 進行形で述べられた行動が答えになる\n　⚠ takenは「ふさがっている」。空いているときはNoで答えるので、日本語の感覚と逆になる。',
     difficulty: 'standard',
   },
   {
@@ -288,7 +288,7 @@ export const eikenQuestionsListening: EikenQuestion[] = [
       { key: 'C', text: "Go home to get his umbrella." },
     ],
     correctKey: 'B',
-    explanation: 'Paulは「Let us share yours」（あなたの傘を一緒に使おう）と提案している。Bが正解。',
+    explanation: 'ポールはNo, I forgot mine at home. Let us share yours.（いや、家に忘れた。きみのを一緒に使おう）と言っている。したがってポールがしたいのはケイトのかさを一緒に使うことである。shareは「共有する・分け合う」という意味の動詞である。新しく買う、取りに帰るという内容は会話に出てこない。\n\n【図解】会話の流れと設問の答え\n　発言｜内容｜設問との関係\n　Did you bring an umbrella｜かさの確認｜ケイトの質問\n　No, I forgot mine at home｜家に忘れた｜ポールの状況\n　Let us share yours｜一緒に使おう｜ポールの提案\n　設問｜What does Paul want to do｜希望を問う\n　⇒ Let us 〜の後ろが希望の内容になる\n　⚠ mineはmy umbrella、yoursはyour umbrellaを指す。所有代名詞が何を指すかを聞き取る。',
     difficulty: 'standard',
   },
   {
@@ -303,7 +303,7 @@ export const eikenQuestionsListening: EikenQuestion[] = [
       { key: 'C', text: "There is a lot of it." },
     ],
     correctKey: 'C',
-    explanation: '男性は「there is a lot of traffic today」（今日は交通量が多い）と述べている。',
+    explanation: '男性はUsually about thirty minutes, but there is a lot of traffic today.（ふだんは30分ほどですが、今日は交通量が多いです）と答えている。したがって今日の交通量については多いと述べていることになる。usuallyとtodayが対比されており、ふだんの時間だけを聞くと今日の状況を答えられない。\n\n【図解】会話の流れと対比\n　発言｜内容｜いつのことか\n　How long does it take｜所要時間の質問｜女性\n　Usually about thirty minutes｜ふだんは30分｜通常\n　but there is a lot of traffic today｜交通量が多い｜今日\n　設問｜today traffic｜今日の状況\n　⇒ butの後ろが今日の状況を示す\n　⚠ usuallyとtodayの対比を聞き分ける。ふだんの情報だけでは、今日についての設問に答えられない。',
     difficulty: 'standard',
   },
 
