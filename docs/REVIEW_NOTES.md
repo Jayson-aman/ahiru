@@ -46,8 +46,8 @@ the App Description:
 ```
 
 > **⚠️ この Review Notes を編集するときの注意**
-> 資格を追加したら、冒頭の「15 different Japanese professional certification exams」の
-> 数字と、「unlocks all 15 certifications at once」の数字を必ず更新すること。
+> 資格を追加したら、冒頭の「20 different Japanese professional certification exams」の
+> 数字と、「unlocks all 20 certifications at once」の数字を必ず更新すること。
 > 実際の資格数は `grep -c "cardTitle}>" "app/(tabs)/index.tsx"` で数えられる。
 >
 > また、末尾の利用規約・プライバシーポリシーのURLは**削除しないこと**。
