@@ -153,6 +153,30 @@ export default function HomeScreen() {
           </LinearGradient>
         </TouchableOpacity>
 
+        <TouchableOpacity style={styles.card} onPress={() => router.push('/lpgas' as any)} activeOpacity={0.85}>
+          <LinearGradient colors={['#F57F17', '#E65100']} style={styles.cardGradient}>
+            <Text style={styles.cardEmoji}>🔥</Text>
+            <View style={styles.cardBody}>
+              <Text style={styles.cardTitle}>液化石油ガス設備士</Text>
+              <Text style={styles.cardSubtitle}>基礎・燃焼工学・供給設備・消費設備・法令</Text>
+              <Text style={styles.cardMeta}>国家資格 ／ テキスト・科目別問題・模擬試験・全問図解つき解説</Text>
+            </View>
+            <Text style={styles.cardArrow}>›</Text>
+          </LinearGradient>
+        </TouchableOpacity>
+
+        <TouchableOpacity style={styles.card} onPress={() => router.push('/koatsu' as any)} activeOpacity={0.85}>
+          <LinearGradient colors={['#37474F', '#1B2631']} style={styles.cardGradient}>
+            <Text style={styles.cardEmoji}>⚙️</Text>
+            <View style={styles.cardBody}>
+              <Text style={styles.cardTitle}>高圧ガス製造保安責任者</Text>
+              <Text style={styles.cardSubtitle}>保安管理技術・法令・学識（化学／機械）</Text>
+              <Text style={styles.cardMeta}>国家資格（甲種・乙種・丙種） ／ テキスト・科目別問題・模擬試験・全問図解つき解説</Text>
+            </View>
+            <Text style={styles.cardArrow}>›</Text>
+          </LinearGradient>
+        </TouchableOpacity>
+
         {/* 施工管理系 */}
         <Text style={[styles.sectionLabel, { marginTop: 24 }]}>🏗️ 施工管理系</Text>
 
