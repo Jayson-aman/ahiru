@@ -14,17 +14,27 @@ export type LpgasQuestion = {
 import { balanceAnswerKeys } from './_balance';
 
 import { lpgasKiso } from './lpgas_questions_kiso';
+import { lpgasKiso2 } from './lpgas_questions_kiso_2';
 import { lpgasNensho } from './lpgas_questions_nensho';
+import { lpgasNensho2 } from './lpgas_questions_nensho_2';
 import { lpgasKyokyu } from './lpgas_questions_kyokyu';
+import { lpgasKyokyu2 } from './lpgas_questions_kyokyu_2';
 import { lpgasShohi } from './lpgas_questions_shohi';
+import { lpgasShohi2 } from './lpgas_questions_shohi_2';
 import { lpgasHorei } from './lpgas_questions_horei';
+import { lpgasHorei2 } from './lpgas_questions_horei_2';
 
 const rawLpgasQuestions: LpgasQuestion[] = [
   ...lpgasKiso,
+  ...lpgasKiso2,
   ...lpgasNensho,
+  ...lpgasNensho2,
   ...lpgasKyokyu,
+  ...lpgasKyokyu2,
   ...lpgasShohi,
+  ...lpgasShohi2,
   ...lpgasHorei,
+  ...lpgasHorei2,
 ];
 
 // 正解キーが偏ると「Dを選ぶだけ」で点が取れてしまうため、決定的に分散させる

@@ -14,15 +14,23 @@ export type KoatsuQuestion = {
 import { balanceAnswerKeys } from './_balance';
 
 import { koatsuHoan } from './koatsu_questions_hoan';
+import { koatsuHoan2 } from './koatsu_questions_hoan_2';
 import { koatsuHorei } from './koatsu_questions_horei';
+import { koatsuHorei2 } from './koatsu_questions_horei_2';
 import { koatsuGakushikiKa } from './koatsu_questions_gakushiki_ka';
+import { koatsuGakushikiKa2 } from './koatsu_questions_gakushiki_ka_2';
 import { koatsuGakushikiKi } from './koatsu_questions_gakushiki_ki';
+import { koatsuGakushikiKi2 } from './koatsu_questions_gakushiki_ki_2';
 
 const rawKoatsuQuestions: KoatsuQuestion[] = [
   ...koatsuHoan,
+  ...koatsuHoan2,
   ...koatsuHorei,
+  ...koatsuHorei2,
   ...koatsuGakushikiKa,
+  ...koatsuGakushikiKa2,
   ...koatsuGakushikiKi,
+  ...koatsuGakushikiKi2,
 ];
 
 // 正解キーが偏ると「Dを選ぶだけ」で点が取れてしまうため、決定的に分散させる

@@ -19,17 +19,27 @@ export type LpgasTextChapter = {
 };
 
 import { lpgasTextKiso } from './lpgas_text_kiso';
+import { lpgasTextKiso2 } from './lpgas_text_kiso_2';
 import { lpgasTextNensho } from './lpgas_text_nensho';
+import { lpgasTextNensho2 } from './lpgas_text_nensho_2';
 import { lpgasTextKyokyu } from './lpgas_text_kyokyu';
+import { lpgasTextKyokyu2 } from './lpgas_text_kyokyu_2';
 import { lpgasTextShohi } from './lpgas_text_shohi';
+import { lpgasTextShohi2 } from './lpgas_text_shohi_2';
 import { lpgasTextHorei } from './lpgas_text_horei';
+import { lpgasTextHorei2 } from './lpgas_text_horei_2';
 
 export const lpgasTextbook: LpgasTextChapter[] = [
   ...lpgasTextKiso,
+  ...lpgasTextKiso2,
   ...lpgasTextNensho,
+  ...lpgasTextNensho2,
   ...lpgasTextKyokyu,
+  ...lpgasTextKyokyu2,
   ...lpgasTextShohi,
+  ...lpgasTextShohi2,
   ...lpgasTextHorei,
+  ...lpgasTextHorei2,
 ];
 
 export function getLpgasText(subject: string): LpgasTextSection[] {
