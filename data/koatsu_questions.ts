@@ -17,36 +17,44 @@ import { koatsuHoan } from './koatsu_questions_hoan';
 import { koatsuHoan2 } from './koatsu_questions_hoan_2';
 import { koatsuHoan3 } from './koatsu_questions_hoan_3';
 import { koatsuHoan4 } from './koatsu_questions_hoan_4';
+import { koatsuHoan5 } from './koatsu_questions_hoan_5';
 import { koatsuHorei } from './koatsu_questions_horei';
 import { koatsuHorei2 } from './koatsu_questions_horei_2';
 import { koatsuHorei3 } from './koatsu_questions_horei_3';
 import { koatsuHorei4 } from './koatsu_questions_horei_4';
+import { koatsuHorei5 } from './koatsu_questions_horei_5';
 import { koatsuGakushikiKa } from './koatsu_questions_gakushiki_ka';
 import { koatsuGakushikiKa2 } from './koatsu_questions_gakushiki_ka_2';
 import { koatsuGakushikiKa3 } from './koatsu_questions_gakushiki_ka_3';
 import { koatsuGakushikiKa4 } from './koatsu_questions_gakushiki_ka_4';
+import { koatsuGakushikiKa5 } from './koatsu_questions_gakushiki_ka_5';
 import { koatsuGakushikiKi } from './koatsu_questions_gakushiki_ki';
 import { koatsuGakushikiKi2 } from './koatsu_questions_gakushiki_ki_2';
 import { koatsuGakushikiKi3 } from './koatsu_questions_gakushiki_ki_3';
 import { koatsuGakushikiKi4 } from './koatsu_questions_gakushiki_ki_4';
+import { koatsuGakushikiKi5 } from './koatsu_questions_gakushiki_ki_5';
 
 const rawKoatsuQuestions: KoatsuQuestion[] = [
   ...koatsuHoan,
   ...koatsuHoan2,
   ...koatsuHoan3,
   ...koatsuHoan4,
+  ...koatsuHoan5,
   ...koatsuHorei,
   ...koatsuHorei2,
   ...koatsuHorei3,
   ...koatsuHorei4,
+  ...koatsuHorei5,
   ...koatsuGakushikiKa,
   ...koatsuGakushikiKa2,
   ...koatsuGakushikiKa3,
   ...koatsuGakushikiKa4,
+  ...koatsuGakushikiKa5,
   ...koatsuGakushikiKi,
   ...koatsuGakushikiKi2,
   ...koatsuGakushikiKi3,
   ...koatsuGakushikiKi4,
+  ...koatsuGakushikiKi5,
 ];
 
 // 正解キーが偏ると「Dを選ぶだけ」で点が取れてしまうため、決定的に分散させる
