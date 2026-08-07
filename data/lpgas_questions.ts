@@ -16,9 +16,11 @@ import { balanceAnswerKeys } from './_balance';
 import { lpgasKiso } from './lpgas_questions_kiso';
 import { lpgasKiso2 } from './lpgas_questions_kiso_2';
 import { lpgasKiso3 } from './lpgas_questions_kiso_3';
+import { lpgasKiso4 } from './lpgas_questions_kiso_4';
 import { lpgasNensho } from './lpgas_questions_nensho';
 import { lpgasNensho2 } from './lpgas_questions_nensho_2';
 import { lpgasNensho3 } from './lpgas_questions_nensho_3';
+import { lpgasNensho4 } from './lpgas_questions_nensho_4';
 import { lpgasKyokyu } from './lpgas_questions_kyokyu';
 import { lpgasKyokyu2 } from './lpgas_questions_kyokyu_2';
 import { lpgasKyokyu3 } from './lpgas_questions_kyokyu_3';
@@ -33,9 +35,11 @@ const rawLpgasQuestions: LpgasQuestion[] = [
   ...lpgasKiso,
   ...lpgasKiso2,
   ...lpgasKiso3,
+  ...lpgasKiso4,
   ...lpgasNensho,
   ...lpgasNensho2,
   ...lpgasNensho3,
+  ...lpgasNensho4,
   ...lpgasKyokyu,
   ...lpgasKyokyu2,
   ...lpgasKyokyu3,
