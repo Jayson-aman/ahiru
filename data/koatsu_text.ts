@@ -20,29 +20,37 @@ export type KoatsuTextChapter = {
 import { koatsuTextHoan } from './koatsu_text_hoan';
 import { koatsuTextHoan2 } from './koatsu_text_hoan_2';
 import { koatsuTextHoan3 } from './koatsu_text_hoan_3';
+import { koatsuTextHoan4 } from './koatsu_text_hoan_4';
 import { koatsuTextHorei } from './koatsu_text_horei';
 import { koatsuTextHorei2 } from './koatsu_text_horei_2';
 import { koatsuTextHorei3 } from './koatsu_text_horei_3';
+import { koatsuTextHorei4 } from './koatsu_text_horei_4';
 import { koatsuTextGakushikiKa } from './koatsu_text_gakushiki_ka';
 import { koatsuTextGakushikiKa2 } from './koatsu_text_gakushiki_ka_2';
 import { koatsuTextGakushikiKa3 } from './koatsu_text_gakushiki_ka_3';
+import { koatsuTextGakushikiKa4 } from './koatsu_text_gakushiki_ka_4';
 import { koatsuTextGakushikiKi } from './koatsu_text_gakushiki_ki';
 import { koatsuTextGakushikiKi2 } from './koatsu_text_gakushiki_ki_2';
 import { koatsuTextGakushikiKi3 } from './koatsu_text_gakushiki_ki_3';
+import { koatsuTextGakushikiKi4 } from './koatsu_text_gakushiki_ki_4';
 
 export const koatsuTextbook: KoatsuTextChapter[] = [
   ...koatsuTextHoan,
   ...koatsuTextHoan2,
   ...koatsuTextHoan3,
+  ...koatsuTextHoan4,
   ...koatsuTextHorei,
   ...koatsuTextHorei2,
   ...koatsuTextHorei3,
+  ...koatsuTextHorei4,
   ...koatsuTextGakushikiKa,
   ...koatsuTextGakushikiKa2,
   ...koatsuTextGakushikiKa3,
+  ...koatsuTextGakushikiKa4,
   ...koatsuTextGakushikiKi,
   ...koatsuTextGakushikiKi2,
   ...koatsuTextGakushikiKi3,
+  ...koatsuTextGakushikiKi4,
 ];
 
 export function getKoatsuText(subject: string): KoatsuTextSection[] {
