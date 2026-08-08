@@ -24,6 +24,7 @@ import { koatsuTextHoan4 } from './koatsu_text_hoan_4';
 import { koatsuTextHoan5 } from './koatsu_text_hoan_5';
 import { koatsuTextHoan6 } from './koatsu_text_hoan_6';
 import { koatsuTextHoan7 } from './koatsu_text_hoan_7';
+import { koatsuTextHoan8 } from './koatsu_text_hoan_8';
 import { koatsuTextHorei } from './koatsu_text_horei';
 import { koatsuTextHorei2 } from './koatsu_text_horei_2';
 import { koatsuTextHorei3 } from './koatsu_text_horei_3';
@@ -31,6 +32,7 @@ import { koatsuTextHorei4 } from './koatsu_text_horei_4';
 import { koatsuTextHorei5 } from './koatsu_text_horei_5';
 import { koatsuTextHorei6 } from './koatsu_text_horei_6';
 import { koatsuTextHorei7 } from './koatsu_text_horei_7';
+import { koatsuTextHorei8 } from './koatsu_text_horei_8';
 import { koatsuTextGakushikiKa } from './koatsu_text_gakushiki_ka';
 import { koatsuTextGakushikiKa2 } from './koatsu_text_gakushiki_ka_2';
 import { koatsuTextGakushikiKa3 } from './koatsu_text_gakushiki_ka_3';
@@ -38,6 +40,7 @@ import { koatsuTextGakushikiKa4 } from './koatsu_text_gakushiki_ka_4';
 import { koatsuTextGakushikiKa5 } from './koatsu_text_gakushiki_ka_5';
 import { koatsuTextGakushikiKa6 } from './koatsu_text_gakushiki_ka_6';
 import { koatsuTextGakushikiKa7 } from './koatsu_text_gakushiki_ka_7';
+import { koatsuTextGakushikiKa8 } from './koatsu_text_gakushiki_ka_8';
 import { koatsuTextGakushikiKi } from './koatsu_text_gakushiki_ki';
 import { koatsuTextGakushikiKi2 } from './koatsu_text_gakushiki_ki_2';
 import { koatsuTextGakushikiKi3 } from './koatsu_text_gakushiki_ki_3';
@@ -45,6 +48,7 @@ import { koatsuTextGakushikiKi4 } from './koatsu_text_gakushiki_ki_4';
 import { koatsuTextGakushikiKi5 } from './koatsu_text_gakushiki_ki_5';
 import { koatsuTextGakushikiKi6 } from './koatsu_text_gakushiki_ki_6';
 import { koatsuTextGakushikiKi7 } from './koatsu_text_gakushiki_ki_7';
+import { koatsuTextGakushikiKi8 } from './koatsu_text_gakushiki_ki_8';
 
 export const koatsuTextbook: KoatsuTextChapter[] = [
   ...koatsuTextHoan,
@@ -54,6 +58,7 @@ export const koatsuTextbook: KoatsuTextChapter[] = [
   ...koatsuTextHoan5,
   ...koatsuTextHoan6,
   ...koatsuTextHoan7,
+  ...koatsuTextHoan8,
   ...koatsuTextHorei,
   ...koatsuTextHorei2,
   ...koatsuTextHorei3,
@@ -61,6 +66,7 @@ export const koatsuTextbook: KoatsuTextChapter[] = [
   ...koatsuTextHorei5,
   ...koatsuTextHorei6,
   ...koatsuTextHorei7,
+  ...koatsuTextHorei8,
   ...koatsuTextGakushikiKa,
   ...koatsuTextGakushikiKa2,
   ...koatsuTextGakushikiKa3,
@@ -68,6 +74,7 @@ export const koatsuTextbook: KoatsuTextChapter[] = [
   ...koatsuTextGakushikiKa5,
   ...koatsuTextGakushikiKa6,
   ...koatsuTextGakushikiKa7,
+  ...koatsuTextGakushikiKa8,
   ...koatsuTextGakushikiKi,
   ...koatsuTextGakushikiKi2,
   ...koatsuTextGakushikiKi3,
@@ -75,6 +82,7 @@ export const koatsuTextbook: KoatsuTextChapter[] = [
   ...koatsuTextGakushikiKi5,
   ...koatsuTextGakushikiKi6,
   ...koatsuTextGakushikiKi7,
+  ...koatsuTextGakushikiKi8,
 ];
 
 export function getKoatsuText(subject: string): KoatsuTextSection[] {

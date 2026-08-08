@@ -25,6 +25,7 @@ import { lpgasTextKiso4 } from './lpgas_text_kiso_4';
 import { lpgasTextKiso5 } from './lpgas_text_kiso_5';
 import { lpgasTextKiso6 } from './lpgas_text_kiso_6';
 import { lpgasTextKiso7 } from './lpgas_text_kiso_7';
+import { lpgasTextKiso8 } from './lpgas_text_kiso_8';
 import { lpgasTextNensho } from './lpgas_text_nensho';
 import { lpgasTextNensho2 } from './lpgas_text_nensho_2';
 import { lpgasTextNensho3 } from './lpgas_text_nensho_3';
@@ -32,6 +33,7 @@ import { lpgasTextNensho4 } from './lpgas_text_nensho_4';
 import { lpgasTextNensho5 } from './lpgas_text_nensho_5';
 import { lpgasTextNensho6 } from './lpgas_text_nensho_6';
 import { lpgasTextNensho7 } from './lpgas_text_nensho_7';
+import { lpgasTextNensho8 } from './lpgas_text_nensho_8';
 import { lpgasTextKyokyu } from './lpgas_text_kyokyu';
 import { lpgasTextKyokyu2 } from './lpgas_text_kyokyu_2';
 import { lpgasTextKyokyu3 } from './lpgas_text_kyokyu_3';
@@ -39,6 +41,7 @@ import { lpgasTextKyokyu4 } from './lpgas_text_kyokyu_4';
 import { lpgasTextKyokyu5 } from './lpgas_text_kyokyu_5';
 import { lpgasTextKyokyu6 } from './lpgas_text_kyokyu_6';
 import { lpgasTextKyokyu7 } from './lpgas_text_kyokyu_7';
+import { lpgasTextKyokyu8 } from './lpgas_text_kyokyu_8';
 import { lpgasTextShohi } from './lpgas_text_shohi';
 import { lpgasTextShohi2 } from './lpgas_text_shohi_2';
 import { lpgasTextShohi3 } from './lpgas_text_shohi_3';
@@ -46,6 +49,7 @@ import { lpgasTextShohi4 } from './lpgas_text_shohi_4';
 import { lpgasTextShohi5 } from './lpgas_text_shohi_5';
 import { lpgasTextShohi6 } from './lpgas_text_shohi_6';
 import { lpgasTextShohi7 } from './lpgas_text_shohi_7';
+import { lpgasTextShohi8 } from './lpgas_text_shohi_8';
 import { lpgasTextHorei } from './lpgas_text_horei';
 import { lpgasTextHorei2 } from './lpgas_text_horei_2';
 import { lpgasTextHorei3 } from './lpgas_text_horei_3';
@@ -53,6 +57,7 @@ import { lpgasTextHorei4 } from './lpgas_text_horei_4';
 import { lpgasTextHorei5 } from './lpgas_text_horei_5';
 import { lpgasTextHorei6 } from './lpgas_text_horei_6';
 import { lpgasTextHorei7 } from './lpgas_text_horei_7';
+import { lpgasTextHorei8 } from './lpgas_text_horei_8';
 
 export const lpgasTextbook: LpgasTextChapter[] = [
   ...lpgasTextKiso,
@@ -62,6 +67,7 @@ export const lpgasTextbook: LpgasTextChapter[] = [
   ...lpgasTextKiso5,
   ...lpgasTextKiso6,
   ...lpgasTextKiso7,
+  ...lpgasTextKiso8,
   ...lpgasTextNensho,
   ...lpgasTextNensho2,
   ...lpgasTextNensho3,
@@ -69,6 +75,7 @@ export const lpgasTextbook: LpgasTextChapter[] = [
   ...lpgasTextNensho5,
   ...lpgasTextNensho6,
   ...lpgasTextNensho7,
+  ...lpgasTextNensho8,
   ...lpgasTextKyokyu,
   ...lpgasTextKyokyu2,
   ...lpgasTextKyokyu3,
@@ -76,6 +83,7 @@ export const lpgasTextbook: LpgasTextChapter[] = [
   ...lpgasTextKyokyu5,
   ...lpgasTextKyokyu6,
   ...lpgasTextKyokyu7,
+  ...lpgasTextKyokyu8,
   ...lpgasTextShohi,
   ...lpgasTextShohi2,
   ...lpgasTextShohi3,
@@ -83,6 +91,7 @@ export const lpgasTextbook: LpgasTextChapter[] = [
   ...lpgasTextShohi5,
   ...lpgasTextShohi6,
   ...lpgasTextShohi7,
+  ...lpgasTextShohi8,
   ...lpgasTextHorei,
   ...lpgasTextHorei2,
   ...lpgasTextHorei3,
@@ -90,6 +99,7 @@ export const lpgasTextbook: LpgasTextChapter[] = [
   ...lpgasTextHorei5,
   ...lpgasTextHorei6,
   ...lpgasTextHorei7,
+  ...lpgasTextHorei8,
 ];
 
 export function getLpgasText(subject: string): LpgasTextSection[] {
