@@ -111,6 +111,15 @@ App Store Connect → 「契約 / 税金 / 口座情報」→ **Paid Application
 > アプリ側は商品IDに資格キー（`takkei`）が含まれるかで判定しているため
 > （`components/CertPaywall.tsx` の `findPackage`）、`takkei` を残せばコード変更もリビルドも不要です。
 > エンタイトルメント識別子は `pro_takkei` のまま変更しないでください。
+>
+> **⚠ RevenueCatのパッケージ種別に注意**: `findPackage` は期間を
+> 「①パッケージ種別（ANNUAL/MONTHLY）→ ②商品IDの末尾」の順で判定します。
+> 宅建の `_m2` / `_y2` は他資格の `_monthly` / `_yearly` と命名が違うため、
+> 以前は②で拾えず、Offeringに **Custom パッケージ**として登録すると
+> 宅建だけ「ただいま購入できません」になる不具合がありました。
+> 現在は②が `_y2` / `_m2` 形式も読めるよう修正済みですが、
+> **Offering への追加時は必ず Monthly / Annual のパッケージ種別を選んでください**
+> （Custom にしないこと）。これが最も確実です。
 
 | Pro FP | `qualiz_pro_fp_monthly` / `_yearly` | ¥1,800 / ¥18,000 |
 | Pro マンション管理士 | `qualiz_pro_mansion_monthly` / `_yearly` | 同上 |

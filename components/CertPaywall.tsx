@@ -98,12 +98,20 @@ export default function CertPaywall({
    *  ・月払い/年払いの切替が購入内容に反映されない
    * という課金事故が起き得た。フォールバックは廃止し、一致しなければ購入させない。
    *
-   * 照合はパッケージ識別子と商品ID（例 qualiz_pro_takkei_yearly）の両方で行う。
+   * 照合はパッケージ識別子と商品ID（例 qualiz_pro_takkei_y2）の両方で行う。
    * RevenueCat既定の識別子（$rc_annual 等）でも商品ID側で確実に一致させるため。
+   *
+   * 期間の判定は「packageType」→「商品IDの末尾」の順に見る。
+   * 末尾の照合で `year`/`month` だけを見ていると、宅建のように旧IDが再利用できず
+   * 末尾を変えた商品（qualiz_pro_takkei_m2 / _y2）を取りこぼし、RevenueCat側で
+   * パッケージ種別がANNUAL/MONTHLYになっていない場合に「ただいま購入できません」
+   * となる。`_y2` / `_m2` 形式も期間として読めるようにしてある。
    */
   const findPackage = useCallback((key: string, want: BillingPeriod): PurchasesPackage | null => {
+    const idOf = (p: PurchasesPackage) =>
+      `${p.identifier} ${p.product?.identifier ?? ''}`.toLowerCase();
     const belongs = (p: PurchasesPackage) => {
-      const id = `${p.identifier} ${p.product?.identifier ?? ''}`.toLowerCase();
+      const id = idOf(p);
       const k = key.toLowerCase();
       // maxは他の資格キーを含む商品を拾わないよう、単語として判定する
       return key === 'max' ? /(^|[^a-z])max([^a-z]|$)/.test(id) : id.includes(k);
@@ -111,9 +119,15 @@ export default function CertPaywall({
     const pool = packages.filter(belongs);
     if (pool.length === 0) return null;
     const wantType = want === 'yearly' ? 'ANNUAL' : 'MONTHLY';
+    // 年: year / annual / 末尾 _y・_y2 …  月: month / 末尾 _m・_m2 …
+    // 末尾形式は `_y` の直後が数字か文字列末尾のときだけ拾い、
+    // `_monthly` を年側が誤って拾うようなことがないようにしている。
+    const periodRe = want === 'yearly'
+      ? /(year|annual|_y\d*(?![a-z0-9]))/
+      : /(month|_m\d*(?![a-z0-9]))/;
     return (
       pool.find(p => p.packageType === wantType) ??
-      pool.find(p => (p.product?.identifier ?? '').toLowerCase().includes(want === 'yearly' ? 'year' : 'month')) ??
+      pool.find(p => periodRe.test(idOf(p))) ??
       null
     );
   }, [packages]);
