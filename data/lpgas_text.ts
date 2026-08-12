@@ -69,6 +69,7 @@ import { lpgasTextKyokyu14 } from './lpgas_text_kyokyu_14';
 import { lpgasTextKyokyu15 } from './lpgas_text_kyokyu_15';
 import { lpgasTextKyokyu16 } from './lpgas_text_kyokyu_16';
 import { lpgasTextKyokyu17 } from './lpgas_text_kyokyu_17';
+import { lpgasTextKyokyu18 } from './lpgas_text_kyokyu_18';
 import { lpgasTextShohi } from './lpgas_text_shohi';
 import { lpgasTextShohi2 } from './lpgas_text_shohi_2';
 import { lpgasTextShohi3 } from './lpgas_text_shohi_3';
@@ -86,6 +87,7 @@ import { lpgasTextShohi14 } from './lpgas_text_shohi_14';
 import { lpgasTextShohi15 } from './lpgas_text_shohi_15';
 import { lpgasTextShohi16 } from './lpgas_text_shohi_16';
 import { lpgasTextShohi17 } from './lpgas_text_shohi_17';
+import { lpgasTextShohi18 } from './lpgas_text_shohi_18';
 import { lpgasTextHorei } from './lpgas_text_horei';
 import { lpgasTextHorei2 } from './lpgas_text_horei_2';
 import { lpgasTextHorei3 } from './lpgas_text_horei_3';
@@ -156,6 +158,7 @@ export const lpgasTextbook: LpgasTextChapter[] = [
   ...lpgasTextKyokyu15,
   ...lpgasTextKyokyu16,
   ...lpgasTextKyokyu17,
+  ...lpgasTextKyokyu18,
   ...lpgasTextShohi,
   ...lpgasTextShohi2,
   ...lpgasTextShohi3,
@@ -173,6 +176,7 @@ export const lpgasTextbook: LpgasTextChapter[] = [
   ...lpgasTextShohi15,
   ...lpgasTextShohi16,
   ...lpgasTextShohi17,
+  ...lpgasTextShohi18,
   ...lpgasTextHorei,
   ...lpgasTextHorei2,
   ...lpgasTextHorei3,
