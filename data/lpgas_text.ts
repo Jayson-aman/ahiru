@@ -35,6 +35,7 @@ import { lpgasTextKiso14 } from './lpgas_text_kiso_14';
 import { lpgasTextKiso15 } from './lpgas_text_kiso_15';
 import { lpgasTextKiso16 } from './lpgas_text_kiso_16';
 import { lpgasTextKiso17 } from './lpgas_text_kiso_17';
+import { lpgasTextKiso18 } from './lpgas_text_kiso_18';
 import { lpgasTextNensho } from './lpgas_text_nensho';
 import { lpgasTextNensho2 } from './lpgas_text_nensho_2';
 import { lpgasTextNensho3 } from './lpgas_text_nensho_3';
@@ -52,6 +53,7 @@ import { lpgasTextNensho14 } from './lpgas_text_nensho_14';
 import { lpgasTextNensho15 } from './lpgas_text_nensho_15';
 import { lpgasTextNensho16 } from './lpgas_text_nensho_16';
 import { lpgasTextNensho17 } from './lpgas_text_nensho_17';
+import { lpgasTextNensho18 } from './lpgas_text_nensho_18';
 import { lpgasTextKyokyu } from './lpgas_text_kyokyu';
 import { lpgasTextKyokyu2 } from './lpgas_text_kyokyu_2';
 import { lpgasTextKyokyu3 } from './lpgas_text_kyokyu_3';
@@ -105,6 +107,7 @@ import { lpgasTextHorei14 } from './lpgas_text_horei_14';
 import { lpgasTextHorei15 } from './lpgas_text_horei_15';
 import { lpgasTextHorei16 } from './lpgas_text_horei_16';
 import { lpgasTextHorei17 } from './lpgas_text_horei_17';
+import { lpgasTextHorei18 } from './lpgas_text_horei_18';
 
 export const lpgasTextbook: LpgasTextChapter[] = [
   ...lpgasTextKiso,
@@ -124,6 +127,7 @@ export const lpgasTextbook: LpgasTextChapter[] = [
   ...lpgasTextKiso15,
   ...lpgasTextKiso16,
   ...lpgasTextKiso17,
+  ...lpgasTextKiso18,
   ...lpgasTextNensho,
   ...lpgasTextNensho2,
   ...lpgasTextNensho3,
@@ -141,6 +145,7 @@ export const lpgasTextbook: LpgasTextChapter[] = [
   ...lpgasTextNensho15,
   ...lpgasTextNensho16,
   ...lpgasTextNensho17,
+  ...lpgasTextNensho18,
   ...lpgasTextKyokyu,
   ...lpgasTextKyokyu2,
   ...lpgasTextKyokyu3,
@@ -194,6 +199,7 @@ export const lpgasTextbook: LpgasTextChapter[] = [
   ...lpgasTextHorei15,
   ...lpgasTextHorei16,
   ...lpgasTextHorei17,
+  ...lpgasTextHorei18,
 ];
 
 export function getLpgasText(subject: string): LpgasTextSection[] {
