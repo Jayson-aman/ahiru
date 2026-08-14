@@ -28,6 +28,7 @@ import { lpgasKiso12 } from './lpgas_questions_kiso_12';
 import { lpgasKiso13 } from './lpgas_questions_kiso_13';
 import { lpgasKiso14 } from './lpgas_questions_kiso_14';
 import { lpgasKiso15 } from './lpgas_questions_kiso_15';
+import { lpgasKiso16 } from './lpgas_questions_kiso_16';
 import { lpgasNensho } from './lpgas_questions_nensho';
 import { lpgasNensho2 } from './lpgas_questions_nensho_2';
 import { lpgasNensho3 } from './lpgas_questions_nensho_3';
@@ -43,6 +44,7 @@ import { lpgasNensho12 } from './lpgas_questions_nensho_12';
 import { lpgasNensho13 } from './lpgas_questions_nensho_13';
 import { lpgasNensho14 } from './lpgas_questions_nensho_14';
 import { lpgasNensho15 } from './lpgas_questions_nensho_15';
+import { lpgasNensho16 } from './lpgas_questions_nensho_16';
 import { lpgasKyokyu } from './lpgas_questions_kyokyu';
 import { lpgasKyokyu2 } from './lpgas_questions_kyokyu_2';
 import { lpgasKyokyu3 } from './lpgas_questions_kyokyu_3';
@@ -58,6 +60,7 @@ import { lpgasKyokyu12 } from './lpgas_questions_kyokyu_12';
 import { lpgasKyokyu13 } from './lpgas_questions_kyokyu_13';
 import { lpgasKyokyu14 } from './lpgas_questions_kyokyu_14';
 import { lpgasKyokyu15 } from './lpgas_questions_kyokyu_15';
+import { lpgasKyokyu16 } from './lpgas_questions_kyokyu_16';
 import { lpgasShohi } from './lpgas_questions_shohi';
 import { lpgasShohi2 } from './lpgas_questions_shohi_2';
 import { lpgasShohi3 } from './lpgas_questions_shohi_3';
@@ -73,6 +76,7 @@ import { lpgasShohi12 } from './lpgas_questions_shohi_12';
 import { lpgasShohi13 } from './lpgas_questions_shohi_13';
 import { lpgasShohi14 } from './lpgas_questions_shohi_14';
 import { lpgasShohi15 } from './lpgas_questions_shohi_15';
+import { lpgasShohi16 } from './lpgas_questions_shohi_16';
 import { lpgasHorei } from './lpgas_questions_horei';
 import { lpgasHorei2 } from './lpgas_questions_horei_2';
 import { lpgasHorei3 } from './lpgas_questions_horei_3';
@@ -88,6 +92,7 @@ import { lpgasHorei12 } from './lpgas_questions_horei_12';
 import { lpgasHorei13 } from './lpgas_questions_horei_13';
 import { lpgasHorei14 } from './lpgas_questions_horei_14';
 import { lpgasHorei15 } from './lpgas_questions_horei_15';
+import { lpgasHorei16 } from './lpgas_questions_horei_16';
 
 const rawLpgasQuestions: LpgasQuestion[] = [
   ...lpgasKiso,
@@ -105,6 +110,7 @@ const rawLpgasQuestions: LpgasQuestion[] = [
   ...lpgasKiso13,
   ...lpgasKiso14,
   ...lpgasKiso15,
+  ...lpgasKiso16,
   ...lpgasNensho,
   ...lpgasNensho2,
   ...lpgasNensho3,
@@ -120,6 +126,7 @@ const rawLpgasQuestions: LpgasQuestion[] = [
   ...lpgasNensho13,
   ...lpgasNensho14,
   ...lpgasNensho15,
+  ...lpgasNensho16,
   ...lpgasKyokyu,
   ...lpgasKyokyu2,
   ...lpgasKyokyu3,
@@ -135,6 +142,7 @@ const rawLpgasQuestions: LpgasQuestion[] = [
   ...lpgasKyokyu13,
   ...lpgasKyokyu14,
   ...lpgasKyokyu15,
+  ...lpgasKyokyu16,
   ...lpgasShohi,
   ...lpgasShohi2,
   ...lpgasShohi3,
@@ -150,6 +158,7 @@ const rawLpgasQuestions: LpgasQuestion[] = [
   ...lpgasShohi13,
   ...lpgasShohi14,
   ...lpgasShohi15,
+  ...lpgasShohi16,
   ...lpgasHorei,
   ...lpgasHorei2,
   ...lpgasHorei3,
@@ -165,6 +174,7 @@ const rawLpgasQuestions: LpgasQuestion[] = [
   ...lpgasHorei13,
   ...lpgasHorei14,
   ...lpgasHorei15,
+  ...lpgasHorei16,
 ];
 
 // 正解キーが偏ると「Dを選ぶだけ」で点が取れてしまうため、決定的に分散させる
