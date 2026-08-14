@@ -31,6 +31,7 @@ import { koatsuHoan15 } from './koatsu_questions_hoan_15';
 import { koatsuHoan16 } from './koatsu_questions_hoan_16';
 import { koatsuHoan17 } from './koatsu_questions_hoan_17';
 import { koatsuHoan18 } from './koatsu_questions_hoan_18';
+import { koatsuHoan19 } from './koatsu_questions_hoan_19';
 import { koatsuHorei } from './koatsu_questions_horei';
 import { koatsuHorei2 } from './koatsu_questions_horei_2';
 import { koatsuHorei3 } from './koatsu_questions_horei_3';
@@ -49,6 +50,7 @@ import { koatsuHorei15 } from './koatsu_questions_horei_15';
 import { koatsuHorei16 } from './koatsu_questions_horei_16';
 import { koatsuHorei17 } from './koatsu_questions_horei_17';
 import { koatsuHorei18 } from './koatsu_questions_horei_18';
+import { koatsuHorei19 } from './koatsu_questions_horei_19';
 import { koatsuGakushikiKa } from './koatsu_questions_gakushiki_ka';
 import { koatsuGakushikiKa2 } from './koatsu_questions_gakushiki_ka_2';
 import { koatsuGakushikiKa3 } from './koatsu_questions_gakushiki_ka_3';
@@ -67,6 +69,7 @@ import { koatsuGakushikiKa15 } from './koatsu_questions_gakushiki_ka_15';
 import { koatsuGakushikiKa16 } from './koatsu_questions_gakushiki_ka_16';
 import { koatsuGakushikiKa17 } from './koatsu_questions_gakushiki_ka_17';
 import { koatsuGakushikiKa18 } from './koatsu_questions_gakushiki_ka_18';
+import { koatsuGakushikiKa19 } from './koatsu_questions_gakushiki_ka_19';
 import { koatsuGakushikiKi } from './koatsu_questions_gakushiki_ki';
 import { koatsuGakushikiKi2 } from './koatsu_questions_gakushiki_ki_2';
 import { koatsuGakushikiKi3 } from './koatsu_questions_gakushiki_ki_3';
@@ -85,6 +88,7 @@ import { koatsuGakushikiKi15 } from './koatsu_questions_gakushiki_ki_15';
 import { koatsuGakushikiKi16 } from './koatsu_questions_gakushiki_ki_16';
 import { koatsuGakushikiKi17 } from './koatsu_questions_gakushiki_ki_17';
 import { koatsuGakushikiKi18 } from './koatsu_questions_gakushiki_ki_18';
+import { koatsuGakushikiKi19 } from './koatsu_questions_gakushiki_ki_19';
 
 const rawKoatsuQuestions: KoatsuQuestion[] = [
   ...koatsuHoan,
@@ -105,6 +109,7 @@ const rawKoatsuQuestions: KoatsuQuestion[] = [
   ...koatsuHoan16,
   ...koatsuHoan17,
   ...koatsuHoan18,
+  ...koatsuHoan19,
   ...koatsuHorei,
   ...koatsuHorei2,
   ...koatsuHorei3,
@@ -123,6 +128,7 @@ const rawKoatsuQuestions: KoatsuQuestion[] = [
   ...koatsuHorei16,
   ...koatsuHorei17,
   ...koatsuHorei18,
+  ...koatsuHorei19,
   ...koatsuGakushikiKa,
   ...koatsuGakushikiKa2,
   ...koatsuGakushikiKa3,
@@ -141,6 +147,7 @@ const rawKoatsuQuestions: KoatsuQuestion[] = [
   ...koatsuGakushikiKa16,
   ...koatsuGakushikiKa17,
   ...koatsuGakushikiKa18,
+  ...koatsuGakushikiKa19,
   ...koatsuGakushikiKi,
   ...koatsuGakushikiKi2,
   ...koatsuGakushikiKi3,
@@ -159,6 +166,7 @@ const rawKoatsuQuestions: KoatsuQuestion[] = [
   ...koatsuGakushikiKi16,
   ...koatsuGakushikiKi17,
   ...koatsuGakushikiKi18,
+  ...koatsuGakushikiKi19,
 ];
 
 // 正解キーが偏ると「Dを選ぶだけ」で点が取れてしまうため、決定的に分散させる
