@@ -215,6 +215,81 @@ eas env:create --name EXPO_PUBLIC_RC_API_KEY_ANDROID --value goog_xxxx --environ
 
 ---
 
+## STEP 3-3. 手元の環境から EAS を操作できるようにする（EXPO_TOKEN）
+
+`eas login` は対話式なので、CIやリモート環境では使えない。
+アクセストークンを環境変数に入れておくと、ログインなしで
+`eas env:list` や `eas build` が実行できる。
+
+### トークンの発行
+
+1. https://expo.dev にログイン
+2. 右上のアカウント → **Account settings** → **Access tokens**
+3. **Create token** → 名前を付けて発行
+4. 表示された値をコピー（**この画面を閉じると二度と表示されない**）
+
+### 環境変数に設定する
+
+トークンは**チャットやコミットに貼らない**。環境変数として渡すこと。
+
+- Claude Code on the web で作業する場合
+  環境設定の Environment variables に `EXPO_TOKEN` を追加する
+  （参照: https://code.claude.com/docs/en/claude-code-on-the-web ）
+- 手元のPCで作業する場合
+  ```bash
+  export EXPO_TOKEN=xxxxxxxx
+  eas whoami        # ユーザー名が出れば成功
+  ```
+
+### 設定できたら最初にやること
+
+**RevenueCat のキーが本番環境に入っているかの確認**。
+これが無いままビルドすると、見た目は正常なのに課金が一切
+動かないバイナリができる（`services/subscription.ts:107` で
+プレースホルダのまま無音で free モードに落ちる）。
+
+```bash
+eas env:list --environment production
+#  EXPO_PUBLIC_RC_API_KEY_IOS が一覧にあることを確認する
+#  無ければ STEP 3-2 の eas env:create を実行する
+```
+
+---
+
+## STEP 3-4. eas.json に提出先を書いておく（任意）
+
+`eas submit` は対話式でも動くが、毎回3つの値を聞かれる。
+`eas.json` に書いておくと非対話で通る。
+
+### 3つの値の調べ方
+
+| キー | 何の値か | どこで見るか |
+|---|---|---|
+| `appleId` | Apple Developer のログイン用メールアドレス | ご自身のアカウント |
+| `ascAppId` | App Store Connect のアプリ固有の数字ID | App Store Connect → 対象アプリ → **App情報** → 一般情報 → 「Apple ID」欄の数字（例: 6478123456） |
+| `appleTeamId` | 開発チームの10桁ID | https://developer.apple.com/account → **Membership details** → Team ID（例: A1B2C3D4E5） |
+
+いずれも秘密情報ではないのでコミットして問題ない
+（パスワードやトークンではない）。
+
+### 書き方
+
+```json
+"submit": {
+  "production": {
+    "ios": {
+      "appleId": "you@example.com",
+      "ascAppId": "6478123456",
+      "appleTeamId": "A1B2C3D4E5"
+    }
+  }
+}
+```
+
+書かない場合は `eas submit --platform ios --latest` を対話で実行すればよい。
+
+---
+
 ## STEP 4. EAS でビルドして TestFlight へ
 
 ```bash
