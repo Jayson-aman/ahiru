@@ -153,6 +153,10 @@ import { koatsuHoan35 } from './koatsu_questions_hoan_35';
 import { koatsuHorei35 } from './koatsu_questions_horei_35';
 import { koatsuGakushikiKa35 } from './koatsu_questions_gakushiki_ka_35';
 import { koatsuGakushikiKi35 } from './koatsu_questions_gakushiki_ki_35';
+import { koatsuHoan36 } from './koatsu_questions_hoan_36';
+import { koatsuHorei36 } from './koatsu_questions_horei_36';
+import { koatsuGakushikiKa36 } from './koatsu_questions_gakushiki_ka_36';
+import { koatsuGakushikiKi36 } from './koatsu_questions_gakushiki_ki_36';
 
 const rawKoatsuQuestions: KoatsuQuestion[] = [
   ...koatsuHoan,
@@ -295,6 +299,10 @@ const rawKoatsuQuestions: KoatsuQuestion[] = [
   ...koatsuHorei35,
   ...koatsuGakushikiKa35,
   ...koatsuGakushikiKi35,
+  ...koatsuHoan36,
+  ...koatsuHorei36,
+  ...koatsuGakushikiKa36,
+  ...koatsuGakushikiKi36,
 ];
 
 // 正解キーが偏ると「Dを選ぶだけ」で点が取れてしまうため、決定的に分散させる
