@@ -487,6 +487,239 @@ export function TrendCurve({
   );
 }
 
+/** ガス漏れ警報器の設置位置（比重で上下が変わる） */
+export function AlarmPlacement({ title }: { title?: string }) {
+  const ceil = 34, floor = 148;
+  return (
+    <Wrap ratio={1.66} title={title}>
+      <Svg viewBox="0 0 300 181" width="100%" height="100%">
+        <Rect x={26} y={ceil} width={248} height={floor - ceil} fill="#FAFCFE" stroke={C.dark} strokeWidth={2} />
+        <Line x1={26} y1={ceil} x2={274} y2={ceil} stroke={C.dark} strokeWidth={3} />
+        <Line x1={26} y1={floor} x2={274} y2={floor} stroke={C.dark} strokeWidth={3} />
+        <SvgText x={30} y={ceil - 6} fontSize={9} fill={C.gray}>天井</SvgText>
+        <SvgText x={30} y={floor + 12} fontSize={9} fill={C.gray}>床面</SvgText>
+
+        {/* 燃焼器 */}
+        <Rect x={132} y={floor - 30} width={38} height={30} fill="#ECEFF1" stroke={C.dark} strokeWidth={1.6} rx={3} />
+        <SvgText x={151} y={floor - 12} fontSize={9} fill={C.dark} textAnchor="middle">燃焼器</SvgText>
+
+        {/* 都市ガス（軽い）＝天井側 */}
+        <Rect x={210} y={ceil + 5} width={46} height={19} fill="#E3F2FD" stroke={C.blue} strokeWidth={2} rx={3} />
+        <SvgText x={233} y={ceil + 18} fontSize={9} fill={C.blue} textAnchor="middle" fontWeight="bold">警報器</SvgText>
+        <Line x1={210} y1={ceil + 24} x2={210} y2={ceil + 30} stroke={C.blue} strokeWidth={1.2} strokeDasharray="3 2" />
+        <SvgText x={204} y={ceil + 40} fontSize={8.5} fill={C.blue} textAnchor="end">天井から30cm以内</SvgText>
+        <SvgText x={262} y={ceil - 6} fontSize={9.5} fill={C.blue} textAnchor="end" fontWeight="bold">都市ガス（軽い）</SvgText>
+        <Arrow x1={100} y1={100} x2={100} y2={ceil + 12} color={C.blue} w={1.8} />
+
+        {/* LPガス（重い）＝床側 */}
+        <Rect x={44} y={floor - 26} width={46} height={19} fill="#FDECEA" stroke={C.red} strokeWidth={2} rx={3} />
+        <SvgText x={67} y={floor - 13} fontSize={9} fill={C.red} textAnchor="middle" fontWeight="bold">警報器</SvgText>
+        <SvgText x={44} y={floor + 24} fontSize={8.5} fill={C.red}>床面から30cm以内</SvgText>
+        <Arrow x1={196} y1={84} x2={196} y2={floor - 8} color={C.red} w={1.8} />
+        <SvgText x={204} y={78} fontSize={9.5} fill={C.red} fontWeight="bold">LPガス（重い）</SvgText>
+        <SvgText x={204} y={90} fontSize={8.5} fill={C.red}>比重 約1.5 → 下に滞留</SvgText>
+
+        <SvgText x={150} y={176} fontSize={10} fill={C.orange} textAnchor="middle" fontWeight="bold">
+          ⚠ 比重を誤ると警報器が全く働かない
+        </SvgText>
+      </Svg>
+    </Wrap>
+  );
+}
+
+/** リスクアセスメント・マトリクス（頻度×影響度） */
+export function RiskMatrix({ title }: { title?: string }) {
+  const cols = ['小', '中', '大'];
+  const rows = ['高', '中', '低'];
+  const level = [
+    [1, 2, 2],
+    [0, 1, 2],
+    [0, 0, 1],
+  ];
+  const fills = ['#E8F5E9', '#FFF8E1', '#FDECEA'];
+  const strokes = [C.green, C.orange, C.red];
+  const names = ['許容', '要低減', '直ちに対策'];
+  const x0 = 62, y0 = 30, cw = 58, ch = 32;
+  return (
+    <Wrap ratio={1.64} title={title}>
+      <Svg viewBox="0 0 300 183" width="100%" height="100%">
+        {cols.map((c, j) => (
+          <SvgText key={c} x={x0 + cw * j + cw / 2} y={y0 - 7} fontSize={10} fill={C.dark} textAnchor="middle" fontWeight="bold">{c}</SvgText>
+        ))}
+        <SvgText x={x0 + (cw * 3) / 2} y={y0 + ch * 3 + 18} fontSize={10} fill={C.dark} textAnchor="middle">影響度（被害の大きさ）→</SvgText>
+        {rows.map((r, i) => (
+          <SvgText key={r} x={x0 - 8} y={y0 + ch * i + ch / 2 + 4} fontSize={10} fill={C.dark} textAnchor="end" fontWeight="bold">{r}</SvgText>
+        ))}
+        <SvgText x={16} y={y0 + ch * 1.5} fontSize={10} fill={C.dark} textAnchor="middle" transform={`rotate(-90 16 ${y0 + ch * 1.5})`}>発生頻度</SvgText>
+        {level.map((row, i) =>
+          row.map((lv, j) => (
+            <G key={`${i}-${j}`}>
+              <Rect x={x0 + cw * j} y={y0 + ch * i} width={cw - 3} height={ch - 3} fill={fills[lv]} stroke={strokes[lv]} strokeWidth={1.6} rx={3} />
+              <SvgText x={x0 + cw * j + (cw - 3) / 2} y={y0 + ch * i + ch / 2 + 3} fontSize={9} fill={strokes[lv]} textAnchor="middle" fontWeight="bold">{names[lv]}</SvgText>
+            </G>
+          ))
+        )}
+        <SvgText x={150} y={178} fontSize={10} fill={C.orange} textAnchor="middle" fontWeight="bold">
+          ⚠ 頻度×影響度で対策の優先順位を決める
+        </SvgText>
+      </Svg>
+    </Wrap>
+  );
+}
+
+/** 腐食電池（電気化学的な腐食メカニズム） */
+export function CorrosionCell({ title }: { title?: string }) {
+  return (
+    <Wrap ratio={1.8} title={title}>
+      <Svg viewBox="0 0 300 167" width="100%" height="100%">
+        <Path d="M 40 54 L 260 54 L 250 132 L 50 132 Z" fill="#E1F5FE" stroke={C.blue} strokeWidth={1.6} />
+        <SvgText x={150} y={126} fontSize={9} fill={C.blue} textAnchor="middle">電解質（水分・湿分）</SvgText>
+        <Rect x={78} y={34} width={26} height={72} fill="#B0BEC5" stroke={C.dark} strokeWidth={1.8} rx={2} />
+        <Rect x={196} y={34} width={26} height={72} fill="#CFD8DC" stroke={C.dark} strokeWidth={1.8} rx={2} />
+        <SvgText x={91} y={26} fontSize={10} fill={C.red} textAnchor="middle" fontWeight="bold">アノード</SvgText>
+        <SvgText x={91} y={122} fontSize={9} fill={C.red} textAnchor="middle">溶け出す（腐食）</SvgText>
+        <SvgText x={209} y={26} fontSize={10} fill={C.green} textAnchor="middle" fontWeight="bold">カソード</SvgText>
+        <SvgText x={209} y={122} fontSize={9} fill={C.green} textAnchor="middle">保護される</SvgText>
+        <Line x1={91} y1={34} x2={91} y2={14} stroke={C.dark} strokeWidth={2} />
+        <Line x1={209} y1={34} x2={209} y2={14} stroke={C.dark} strokeWidth={2} />
+        <Line x1={91} y1={14} x2={209} y2={14} stroke={C.dark} strokeWidth={2} />
+        <Arrow x1={175} y1={14} x2={125} y2={14} color={C.orange} w={2} />
+        <SvgText x={150} y={9} fontSize={9.5} fill={C.orange} textAnchor="middle" fontWeight="bold">電子 e⁻ の流れ</SvgText>
+        <SvgText x={112} y={66} fontSize={9} fill={C.red} fontWeight="bold">Fe → Fe²⁺ + 2e⁻</SvgText>
+        <Arrow x1={110} y1={76} x2={140} y2={82} color={C.red} w={1.5} />
+        <Circle cx={150} cy={86} r={4} fill={C.red} opacity={0.6} />
+        <Circle cx={163} cy={92} r={3} fill={C.red} opacity={0.45} />
+        <SvgText x={150} y={162} fontSize={10} fill={C.orange} textAnchor="middle" fontWeight="bold">
+          ⚠ 湿分の除去・耐食材料・電気防食が対策の柱
+        </SvgText>
+      </Svg>
+    </Wrap>
+  );
+}
+
+/** 蒸気圧曲線（温度と飽和蒸気圧の関係） */
+export function VaporPressureCurve({ title }: { title?: string }) {
+  return (
+    <Wrap ratio={1.72} title={title}>
+      <Svg viewBox="0 0 300 175" width="100%" height="100%">
+        <Line x1={44} y1={132} x2={286} y2={132} stroke={C.dark} strokeWidth={1.8} />
+        <Line x1={44} y1={132} x2={44} y2={18} stroke={C.dark} strokeWidth={1.8} />
+        <SvgText x={168} y={150} fontSize={10} fill={C.dark} textAnchor="middle">温度 →</SvgText>
+        <SvgText x={8} y={72} fontSize={10} fill={C.dark}>飽和</SvgText>
+        <SvgText x={8} y={84} fontSize={10} fill={C.dark}>蒸気圧</SvgText>
+        {[-40, -20, 0, 20, 40].map((t, i) => (
+          <SvgText key={t} x={44 + i * 58} y={144} fontSize={8.5} fill={C.gray} textAnchor="middle">{t}℃</SvgText>
+        ))}
+        <Path d="M 46 128 Q 110 122 160 100 Q 215 72 282 22" stroke={C.red} strokeWidth={2.8} fill="none" />
+        <Path d="M 104 130 Q 160 126 210 112 Q 250 100 282 80" stroke={C.orange} strokeWidth={2.8} fill="none" />
+        <SvgText x={244} y={38} fontSize={10} fill={C.red} fontWeight="bold">プロパン</SvgText>
+        <SvgText x={238} y={96} fontSize={10} fill={C.orange} fontWeight="bold">ブタン</SvgText>
+        <Line x1={44} y1={130} x2={286} y2={130} stroke={C.gray} strokeWidth={1} strokeDasharray="4 3" />
+        <SvgText x={50} y={126} fontSize={8} fill={C.gray}>大気圧</SvgText>
+        <SvgText x={150} y={166} fontSize={10} fill={C.orange} textAnchor="middle" fontWeight="bold">
+          ⚠ 温度が上がると蒸気圧は急激に上昇する
+        </SvgText>
+      </Svg>
+    </Wrap>
+  );
+}
+
+/** 保安距離（平面図） */
+export function SafetyDistance({ title }: { title?: string }) {
+  return (
+    <Wrap ratio={1.82} title={title}>
+      <Svg viewBox="0 0 300 165" width="100%" height="100%">
+        <Circle cx={104} cy={78} r={66} fill="#FFF8E1" stroke={C.orange} strokeWidth={1.6} strokeDasharray="6 4" />
+        <Rect x={80} y={58} width={48} height={40} fill="#E3F2FD" stroke={C.blue} strokeWidth={2} rx={4} />
+        <SvgText x={104} y={74} fontSize={9.5} fill={C.blue} textAnchor="middle" fontWeight="bold">高圧ガス</SvgText>
+        <SvgText x={104} y={87} fontSize={9.5} fill={C.blue} textAnchor="middle" fontWeight="bold">製造施設</SvgText>
+        <Rect x={218} y={44} width={62} height={30} fill="#E8F5E9" stroke={C.green} strokeWidth={1.8} rx={4} />
+        <SvgText x={249} y={63} fontSize={9.5} fill={C.green} textAnchor="middle" fontWeight="bold">住宅・学校</SvgText>
+        <Rect x={218} y={92} width={62} height={30} fill="#E8F5E9" stroke={C.green} strokeWidth={1.8} rx={4} />
+        <SvgText x={249} y={111} fontSize={9.5} fill={C.green} textAnchor="middle" fontWeight="bold">病院など</SvgText>
+        <SvgText x={249} y={36} fontSize={9} fill={C.green} textAnchor="middle">保安物件</SvgText>
+        <Arrow x1={128} y1={78} x2={214} y2={78} color={C.red} w={2} />
+        <SvgText x={171} y={72} fontSize={10} fill={C.red} textAnchor="middle" fontWeight="bold">保安距離</SvgText>
+        <SvgText x={171} y={94} fontSize={8.5} fill={C.gray} textAnchor="middle">ガスの種類・数量で決まる</SvgText>
+        <SvgText x={104} y={158} fontSize={8.5} fill={C.orange} textAnchor="middle">事故時の影響が及ばない緩衝地帯</SvgText>
+        <SvgText x={150} y={14} fontSize={10} fill={C.dark} textAnchor="middle" fontWeight="bold">
+          ⚠ 発生確率ではなく「被害範囲」を抑える規制
+        </SvgText>
+      </Svg>
+    </Wrap>
+  );
+}
+
+/** 二段減圧方式の圧力段階 */
+export function TwoStageRegulator({ title }: { title?: string }) {
+  const stages = [
+    { x: 12, w: 62, label: '容器内', val: '約0.7～\n1.5MPa', col: C.red, h: 74 },
+    { x: 118, w: 62, label: '中間圧', val: '約0.1MPa', col: C.orange, h: 44 },
+    { x: 224, w: 62, label: '燃焼器', val: '2.8kPa', col: C.green, h: 20 },
+  ];
+  const base = 108;
+  return (
+    <Wrap ratio={1.9} title={title}>
+      <Svg viewBox="0 0 300 158" width="100%" height="100%">
+        <Line x1={6} y1={base} x2={294} y2={base} stroke={C.dark} strokeWidth={1.8} />
+        {stages.map(st => (
+          <G key={st.label}>
+            <Rect x={st.x} y={base - st.h} width={st.w} height={st.h} fill={st.col} opacity={0.24} stroke={st.col} strokeWidth={1.8} rx={3} />
+            <SvgText x={st.x + st.w / 2} y={base - st.h - 6} fontSize={9.5} fill={st.col} textAnchor="middle" fontWeight="bold">{st.label}</SvgText>
+            <SvgText x={st.x + st.w / 2} y={base + 13} fontSize={9} fill={st.col} textAnchor="middle" fontWeight="bold">
+              {st.val.replace('\n', '')}
+            </SvgText>
+          </G>
+        ))}
+        <Rect x={82} y={base - 34} width={30} height={26} fill="#FFFFFF" stroke={C.blue} strokeWidth={1.8} rx={3} />
+        <SvgText x={97} y={base - 23} fontSize={8} fill={C.blue} textAnchor="middle" fontWeight="bold">一段</SvgText>
+        <SvgText x={97} y={base - 14} fontSize={8} fill={C.blue} textAnchor="middle" fontWeight="bold">調整器</SvgText>
+        <Rect x={188} y={base - 34} width={30} height={26} fill="#FFFFFF" stroke={C.blue} strokeWidth={1.8} rx={3} />
+        <SvgText x={203} y={base - 23} fontSize={8} fill={C.blue} textAnchor="middle" fontWeight="bold">二段</SvgText>
+        <SvgText x={203} y={base - 14} fontSize={8} fill={C.blue} textAnchor="middle" fontWeight="bold">調整器</SvgText>
+        <SvgText x={150} y={28} fontSize={10} fill={C.dark} textAnchor="middle" fontWeight="bold">段階的に減圧して安定した供給圧を得る</SvgText>
+        <SvgText x={150} y={152} fontSize={10} fill={C.orange} textAnchor="middle" fontWeight="bold">
+          ⚠ 一段目で大きく落とし、二段目で精密に整える
+        </SvgText>
+      </Svg>
+    </Wrap>
+  );
+}
+
+/** 多重防護（層状の防護壁） */
+export function DefenseLayers({
+  layers = [
+    { name: '設計・材料', desc: 'そもそも壊れない', color: C.blue },
+    { name: '制御・監視', desc: '異常を早期に検知', color: C.green },
+    { name: '安全装置', desc: '自動で止める', color: C.orange },
+    { name: '緊急対応', desc: '被害を最小化', color: C.red },
+  ],
+  title,
+}: { layers?: { name: string; desc: string; color: string }[]; title?: string }) {
+  const H = 40 + layers.length * 31;
+  return (
+    <Wrap ratio={300 / H} title={title}>
+      <Svg viewBox={`0 0 300 ${H}`} width="100%" height="100%">
+        {layers.map((lv, i) => {
+          const y = 8 + i * 31;
+          return (
+            <G key={lv.name}>
+              <Rect x={22} y={y} width={256} height={26} fill={lv.color} opacity={0.16} stroke={lv.color} strokeWidth={1.7} rx={4} />
+              <Rect x={22} y={y} width={7} height={26} fill={lv.color} rx={2} />
+              <SvgText x={38} y={y + 12} fontSize={10} fill={lv.color} fontWeight="bold">第{i + 1}層　{lv.name}</SvgText>
+              <SvgText x={38} y={y + 23} fontSize={9} fill={C.gray}>{lv.desc}</SvgText>
+            </G>
+          );
+        })}
+        <Arrow x1={10} y1={8} x2={10} y2={H - 34} color={C.gray} w={1.6} />
+        <SvgText x={150} y={H - 8} fontSize={10} fill={C.orange} textAnchor="middle" fontWeight="bold">
+          ⚠ 1層が破られても次の層が止める＝多重防護
+        </SvgText>
+      </Svg>
+    </Wrap>
+  );
+}
+
 const s = StyleSheet.create({
   wrap: {
     backgroundColor: '#FFFFFF', borderRadius: 12, padding: 10, marginTop: 8,

@@ -13,6 +13,8 @@ import {
   CombustionRangeBar, GasCylinder, CombustionCompare, HeinrichPyramid,
   StressConcentration, MultiStageCompressor, DBTTCurve, PDCACycle,
   LegalHierarchy, SafetyCultureLadder, FlowSteps, ComparePanel, TrendCurve,
+  AlarmPlacement, RiskMatrix, CorrosionCell, VaporPressureCurve,
+  SafetyDistance, TwoStageRegulator, DefenseLayers,
 } from './GasSvg';
 
 const GasSteps = Steps;
@@ -754,6 +756,62 @@ const REGISTRY: Record<string, () => React.ReactNode> = {
         { x: 180, w: 108, color: '#2E7D32', label: '疲労限度に漸近' },
       ]}
       note="⚠ 繰り返し荷重の累積が疲労破壊を招く"
+    />
+  )),
+
+  // ===== 追加分 =====
+  ...gasEntry(['lp-q-sh-001', 'lp-q-sh-022', 'lp-q-sh-055', 'lp-q-ki-041'], () => (
+    <AlarmPlacement title="ガス漏れ警報器の設置位置" />
+  )),
+  ...gasEntry(['ka-q-ho-105', 'ka-q-ho-119', 'ka-q-ho-126'], () => (
+    <RiskMatrix title="リスクアセスメント・マトリクス" />
+  )),
+  ...gasEntry(['ka-q-gk-002', 'ka-q-gk-022', 'ka-q-gk-031', 'ka-q-gk-118', 'ka-q-ho-016'], () => (
+    <CorrosionCell title="腐食電池（電気化学的な腐食）" />
+  )),
+  ...gasEntry(['lp-q-ki-013', 'lp-q-ki-032', 'lp-q-ki-040', 'lp-q-ki-044'], () => (
+    <VaporPressureCurve title="蒸気圧曲線（温度と飽和蒸気圧）" />
+  )),
+  ...gasEntry(['lp-q-ky-096', 'ka-q-ho-022', 'ka-q-ho-030', 'ka-q-ho-r122'], () => (
+    <SafetyDistance title="保安距離の考え方" />
+  )),
+  ...gasEntry(['lp-q-ky-001', 'lp-q-ky-020', 'lp-q-ky-049', 'lp-q-ky-078'], () => (
+    <TwoStageRegulator title="二段減圧方式の圧力段階" />
+  )),
+  ...gasEntry(['lp-q-sh-074', 'ka-q-ho-013', 'ka-q-ho-135', 'ka-q-gk-068'], () => (
+    <DefenseLayers title="多重防護の考え方" />
+  )),
+  ...gasEntry(['ka-q-gm-027', 'ka-q-gm-038', 'ka-q-gm-123'], () => (
+    <ComparePanel
+      title="非破壊検査手法の使い分け"
+      left={{ head: '内部の欠陥', items: ['RT：放射線透過試験', 'UT：超音波探傷試験', '空洞・介在物を検出', '溶接部の内部品質確認'] }}
+      right={{ head: '表面の欠陥', items: ['PT：浸透探傷試験', 'MT：磁粉探傷試験', 'き裂・ピンホールを検出', 'MTは磁性材料のみ'] }}
+      note="⚠ 欠陥の位置に応じて手法を選ぶ"
+    />
+  )),
+  ...gasEntry(['ka-q-ho-046', 'ka-q-ho-133'], () => (
+    <FlowSteps
+      title="作業許可制度（パーミット）の流れ"
+      steps={[
+        { label: '作業申請', sub: '内容を明記' },
+        { label: 'リスク評価', sub: '危険源の特定' },
+        { label: '事前確認', sub: 'ガス濃度測定' },
+        { label: '許可発行', sub: '責任者承認' },
+        { label: '作業開始', sub: '監視下で実施' },
+      ]}
+      note="⚠ 許可なき着手が重大事故を招く"
+    />
+  )),
+  ...gasEntry(['lp-q-ky-003', 'lp-q-ky-025'], () => (
+    <FlowSteps
+      title="気化装置（ベーパライザー）の役割"
+      steps={[
+        { label: '容器', sub: '液相LPガス' },
+        { label: '気化器', sub: '加温して気化' },
+        { label: '調整器', sub: '減圧' },
+        { label: '燃焼器', sub: '安定供給' },
+      ]}
+      note="⚠ 冬期・大量消費時の気化能力不足を補う"
     />
   )),
 };
