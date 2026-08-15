@@ -178,6 +178,7 @@ import { lpgasKiso33 } from './lpgas_questions_kiso_33';
 import { lpgasNensho33 } from './lpgas_questions_nensho_33';
 import { lpgasKyokyu33 } from './lpgas_questions_kyokyu_33';
 import { lpgasShohi33 } from './lpgas_questions_shohi_33';
+import { lpgasHorei34 } from './lpgas_questions_horei_34';
 
 const rawLpgasQuestions: LpgasQuestion[] = [
   ...lpgasKiso,
@@ -345,6 +346,7 @@ const rawLpgasQuestions: LpgasQuestion[] = [
   ...lpgasNensho33,
   ...lpgasKyokyu33,
   ...lpgasShohi33,
+  ...lpgasHorei34,
 ];
 
 // 正解キーが偏ると「Dを選ぶだけ」で点が取れてしまうため、決定的に分散させる
