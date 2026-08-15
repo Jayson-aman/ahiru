@@ -15,6 +15,13 @@ import {
   LegalHierarchy, SafetyCultureLadder, FlowSteps, ComparePanel, TrendCurve,
   AlarmPlacement, RiskMatrix, CorrosionCell, VaporPressureCurve,
   SafetyDistance, TwoStageRegulator, DefenseLayers,
+  SupplyConsumerBoundary, InspectionTimeline, ResponsibilityChart,
+  ClearanceDistance, PressureScale, TemperaturePoints, HeatValueBar,
+  VentilationTypes, PipeSupportSpan, HeatExchangerU,
+  ProducerCategory, SafetyOrgChart, InspectionMatrix, ContainerMarking,
+  PenaltyLadder, StorageCategory, GasLaws, LeChatelier, CatalystEnergy,
+  HenryLaw, PHScale, AdiabaticPV, ConcentrationUnits,
+  AirRatio, CombustionTypes, FlameAnomaly, FlueGasComposition, ProtectiveGear,
 } from './GasSvg';
 
 const GasSteps = Steps;
@@ -812,6 +819,182 @@ const REGISTRY: Record<string, () => React.ReactNode> = {
         { label: '燃焼器', sub: '安定供給' },
       ]}
       note="⚠ 冬期・大量消費時の気化能力不足を補う"
+    />
+  )),
+
+  // ===== 第3次拡充：法令・消費分野の強化 =====
+  ...gasEntry(['lp-q-ho-028', 'lp-q-ky-050', 'lp-q-ky-012', 'lp-q-ky-027', 'lp-q-ky-154'], () => (
+    <SupplyConsumerBoundary title="供給設備と消費設備の区分" />
+  )),
+  ...gasEntry(
+    ['lp-q-ho-083', 'lp-q-ky-055', 'lp-q-ky-097', 'lp-q-sh-010', 'lp-q-sh-034',
+     'lp-q-sh-057', 'lp-q-sh-059', 'lp-q-sh-082', 'lp-q-ne-043'],
+    () => <InspectionTimeline title="点検・交換の周期" />
+  ),
+  ...gasEntry(
+    ['lp-q-ho-002', 'lp-q-ho-026', 'lp-q-ho-029', 'lp-q-ho-035', 'lp-q-ho-051',
+     'lp-q-ho-058', 'lp-q-ho-061', 'lp-q-ho-072', 'lp-q-ky-016'],
+    () => <ResponsibilityChart title="保安体制の役割分担" />
+  ),
+  ...gasEntry(['lp-q-sh-026', 'lp-q-sh-041', 'lp-q-sh-060', 'lp-q-ky-023', 'lp-q-ky-031'], () => (
+    <ClearanceDistance title="燃焼器具の離隔距離" />
+  )),
+  ...gasEntry(['lp-q-ki-058', 'lp-q-ki-068'], () => (
+    <PressureScale title="圧力単位のスケールと換算" />
+  )),
+  ...gasEntry(['lp-q-ki-026', 'lp-q-ki-066', 'lp-q-ki-089', 'lp-q-ne-007'], () => (
+    <TemperaturePoints title="引火点と発火点の違い" />
+  )),
+  ...gasEntry(['lp-q-ki-004', 'lp-q-ki-055', 'lp-q-ki-090', 'lp-q-ki-097', 'lp-q-ne-060'], () => (
+    <HeatValueBar title="高発熱量と低発熱量" />
+  )),
+  ...gasEntry(['lp-q-sh-011', 'lp-q-sh-017', 'lp-q-sh-023', 'lp-q-sh-028', 'lp-q-sh-046', 'lp-q-ne-082'], () => (
+    <VentilationTypes title="燃焼器具の給排気方式" />
+  )),
+  ...gasEntry(['ka-q-gm-051', 'ka-q-gm-131'], () => (
+    <PipeSupportSpan title="配管の支持間隔とたわみ" />
+  )),
+  ...gasEntry(
+    ['ka-q-gm-010', 'ka-q-gm-046', 'ka-q-gm-084', 'ka-q-gm-089',
+     'ka-q-gm-093', 'ka-q-gm-098', 'ka-q-gm-104', 'ka-q-gm-108'],
+    () => <HeatExchangerU title="熱交換器（U字管型）の構造" />
+  ),
+
+  // 既存コンポーネントの再利用
+  ...gasEntry(['lp-q-ki-036'], () => (
+    <ComparePanel
+      title="LPガスと都市ガスの違い"
+      left={{ head: 'LPガス', items: ['プロパン主体', '空気より重い（約1.5）', '容器で個別配送', '発熱量が大きい'] }}
+      right={{ head: '都市ガス', items: ['メタン主体', '空気より軽い（約0.55）', '導管で供給', '発熱量は約半分'] }}
+      note="⚠ 比重の違いが警報器の設置位置を分ける"
+    />
+  )),
+  ...gasEntry(['lp-q-ky-018', 'lp-q-ky-022', 'lp-q-ky-098', 'lp-q-sh-003'], () => (
+    <ComparePanel
+      title="鋼管とポリエチレン管（PE管）"
+      left={{ head: '鋼管', items: ['強度が高い', '腐食対策が必要', 'ねじ・溶接で接合', '露出配管に適する'] }}
+      right={{ head: 'PE管', items: ['腐食しない', '可とう性があり耐震的', '融着で接合', '埋設配管に適する'] }}
+      note="⚠ 埋設部の腐食対策が材料選定の分かれ目"
+    />
+  )),
+  ...gasEntry(['lp-q-ki-092'], () => (
+    <ComparePanel
+      title="容器安全弁の型式"
+      left={{ head: '溶栓式', items: ['金属が溶けて開放', '一度作動すると戻らない', '主に温度で作動', '全量を放出'] }}
+      right={{ head: 'ばね式', items: ['ばね力に打ち勝って開く', '圧力低下で再閉止', '主に圧力で作動', '過圧分だけ放出'] }}
+      note="⚠ 作動要因（温度か圧力か）で区別する"
+    />
+  )),
+  ...gasEntry(['lp-q-ky-032', 'lp-q-ky-060'], () => (
+    <FlowSteps
+      title="容器交換作業の手順"
+      steps={[
+        { label: '閉栓', sub: '容器バルブを閉' },
+        { label: '取外し', sub: '残ガス確認' },
+        { label: '新容器', sub: '設置・固定' },
+        { label: '接続', sub: '調整器を締結' },
+        { label: '漏れ検査', sub: '開栓して確認' },
+      ]}
+      note="⚠ 最後の漏えい検査を省略しない"
+    />
+  )),
+  ...gasEntry(['lp-q-ho-108', 'lp-q-sh-061', 'ka-q-ho-015', 'ka-q-ho-052'], () => (
+    <FlowSteps
+      title="ガス漏えい時の初動対応"
+      steps={[
+        { label: '火気厳禁', sub: '電気操作も不可' },
+        { label: '元栓閉止', sub: '供給を止める' },
+        { label: '換気', sub: '窓を開ける' },
+        { label: '退避', sub: '安全な場所へ' },
+        { label: '通報', sub: '販売店・消防' },
+      ]}
+      note="⚠ 換気扇のスイッチは着火源になる"
+    />
+  )),
+  ...gasEntry(['ka-q-hr-038'], () => <SafetyDistance title="製造施設の位置に関する基準" />),
+  ...gasEntry(['ka-q-gm-076'], () => <StressConcentration title="ノズル配置と応力集中" />),
+
+  // ===== 第4次拡充：高圧ガス 法令・学識(化学)の底上げ =====
+  ...gasEntry(
+    ['ka-q-hr-004', 'ka-q-hr-019', 'ka-q-hr-033', 'ka-q-hr-046', 'ka-q-hr-050',
+     'ka-q-hr-055', 'ka-q-hr-090', 'ka-q-ho-r133'],
+    () => <ProducerCategory title="第一種製造者と第二種製造者" />
+  ),
+  ...gasEntry(
+    ['ka-q-hr-049', 'ka-q-hr-051', 'ka-q-hr-076', 'ka-q-hr-086', 'ka-q-hr-097', 'ka-q-hr-101'],
+    () => <SafetyOrgChart title="保安組織の階層と選任" />
+  ),
+  ...gasEntry(
+    ['ka-q-hr-013', 'ka-q-hr-020', 'ka-q-hr-029', 'ka-q-hr-030',
+     'ka-q-hr-042', 'ka-q-hr-074', 'ka-q-ho-r154'],
+    () => <InspectionMatrix title="検査制度の種類と位置づけ" />
+  ),
+  ...gasEntry(['ka-q-hr-024', 'ka-q-hr-044', 'ka-q-hr-085', 'ka-q-ho-r153'], () => (
+    <ContainerMarking title="容器の塗色と刻印" />
+  )),
+  ...gasEntry(['ka-q-hr-014', 'ka-q-hr-041', 'ka-q-hr-107', 'ka-q-hr-113', 'ka-q-ho-r138'], () => (
+    <PenaltyLadder title="行政処分と罰則の段階" />
+  )),
+  ...gasEntry(['ka-q-hr-006', 'ka-q-hr-023', 'ka-q-hr-032', 'ka-q-hr-047', 'ka-q-hr-089'], () => (
+    <StorageCategory title="貯蔵所の区分と移動の規制" />
+  )),
+  ...gasEntry(['ka-q-gk-001', 'ka-q-gk-004', 'ka-q-gk-025'], () => (
+    <GasLaws title="ボイル・シャルルの法則と状態方程式" />
+  )),
+  ...gasEntry(['ka-q-gk-020', 'ka-q-gk-061', 'ka-q-gk-095'], () => (
+    <LeChatelier title="ルシャトリエの原理" />
+  )),
+  ...gasEntry(['ka-q-gk-018', 'ka-q-gk-021', 'ka-q-gk-066'], () => (
+    <CatalystEnergy title="触媒と活性化エネルギー" />
+  )),
+  ...gasEntry(['ka-q-gk-012', 'ka-q-gk-047', 'ka-q-gk-120'], () => (
+    <HenryLaw title="ヘンリーの法則（溶解度と圧力）" />
+  )),
+  ...gasEntry(['ka-q-gk-009', 'ka-q-gk-079', 'ka-q-gk-091'], () => (
+    <PHScale title="pHスケールと酸・アルカリ" />
+  )),
+  ...gasEntry(['ka-q-gk-060', 'ka-q-gk-116', 'ka-q-gk-123'], () => (
+    <AdiabaticPV title="断熱変化のP-V線図" />
+  )),
+  ...gasEntry(['ka-q-gk-052', 'ka-q-gk-076'], () => (
+    <ConcentrationUnits title="濃度の表し方" />
+  )),
+
+  // ===== 第5次拡充：燃焼分野と保安管理の仕上げ =====
+  ...gasEntry(
+    ['lp-q-ne-002', 'lp-q-ne-018', 'lp-q-ne-021', 'lp-q-ne-024',
+     'lp-q-ne-091', 'lp-q-ne-104', 'lp-q-ne-156'],
+    () => <AirRatio title="理論空気量と空気比" />
+  ),
+  ...gasEntry(['lp-q-ne-004', 'lp-q-ne-015', 'lp-q-ne-031', 'lp-q-ne-076'], () => (
+    <CombustionTypes title="予混合燃焼と拡散燃焼" />
+  )),
+  ...gasEntry(['lp-q-ne-022', 'lp-q-ne-026', 'lp-q-ne-046', 'lp-q-ne-089'], () => (
+    <FlameAnomaly title="炎の異常（逆火・リフティング・イエローチップ）" />
+  )),
+  ...gasEntry(
+    ['lp-q-ne-010', 'lp-q-ne-019', 'lp-q-ne-028', 'lp-q-ne-050', 'lp-q-ne-054'],
+    () => <FlueGasComposition title="排ガス成分と燃焼状態" />
+  ),
+  ...gasEntry(
+    ['ka-q-ho-011', 'ka-q-ho-047', 'ka-q-ho-099', 'ka-q-ho-129'],
+    () => <ProtectiveGear title="保護具の選定" />
+  ),
+  ...gasEntry(['ka-q-ho-008', 'ka-q-ho-024', 'ka-q-ho-031', 'ka-q-ho-130'], () => (
+    <DefenseLayers
+      title="緊急遮断装置とインターロック"
+      layers={[
+        { name: '常時監視', desc: '圧力・温度・流量を計測', color: '#1E5FBE' },
+        { name: '警報', desc: 'しきい値超過を知らせる', color: '#2E7D32' },
+        { name: 'インターロック', desc: '危険な操作を機械的に禁止', color: '#E65100' },
+        { name: '緊急遮断弁', desc: '流れを止める最終手段', color: '#D32F2F' },
+      ]}
+    />
+  )),
+  ...gasEntry(['ka-q-ho-049', 'ka-q-ho-071', 'ka-q-ho-081', 'ka-q-ho-122', 'ka-q-ho-137'], () => (
+    <PDCACycle
+      title="教育訓練の計画と改善"
+      labels={['計画 立案', '訓練 実施', '効果 測定', '内容 改善']}
     />
   )),
 };
