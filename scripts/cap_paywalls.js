@@ -17,7 +17,7 @@
 //   撮影後は両ファイルを git checkout で元に戻し、再度 web export して dist/ も戻すこと。
 //
 // 使い方: node scripts/cap_paywalls.js
-const { chromium } = require('/tmp/claude-0/-home-user-ahiru/0a1d4a1a-8051-5eac-90f8-411da7f29a9f/scratchpad/node_modules/playwright-core');
+const { chromium } = require('./_playwright');
 const fs = require('fs');
 
 const BASE = 'http://127.0.0.1:8899';

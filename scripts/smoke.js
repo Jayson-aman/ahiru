@@ -4,7 +4,7 @@
  *
  * 使い方: node scripts/serve.js &   →   node scripts/smoke.js
  */
-const { chromium } = require('/tmp/claude-0/-home-user-ahiru/0a1d4a1a-8051-5eac-90f8-411da7f29a9f/scratchpad/node_modules/playwright-core');
+const { chromium } = require('./_playwright');
 
 const BASE = 'http://127.0.0.1:8899';
 
@@ -30,6 +30,8 @@ const ROUTES = [
   '/tsushin', '/tsushin/kogaku', '/tsushin/text', '/tsushin/text/kogaku', '/tsushin/mogi',
   '/nikkyu', '/nikkyu/keikaku', '/nikkyu/text', '/nikkyu/text/keikaku', '/nikkyu/mogi', '/nikkyu/seizu',
   '/denki2', '/denki2/riron', '/denki2/text', '/denki2/text/riron', '/denki2/mogi',
+  '/lpgas', '/lpgas/kiso', '/lpgas/text', '/lpgas/text/kiso', '/lpgas/mogi',
+  '/koatsu', '/koatsu/hoan', '/koatsu/text', '/koatsu/text/hoan', '/koatsu/mogi',
   '/legal/tokushoho', '/legal/privacy', '/legal/terms',
   // /juken（中学受験）と /kouko（高校受験）はホームから意図的にリンクしていない
   // 未公開画面なので、到達不能であることが正しい。ここでは踏まない。

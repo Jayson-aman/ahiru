@@ -2,7 +2,7 @@
 // 内容は cap_v3.js と同じ10枚構成（ホーム画面3枚＋問題・図解・教科書・模試）。
 // 使い方: node cap_ipad.js            → 全10枚
 //         node cap_ipad.js 03 07      → 指定した番号だけ撮り直す
-const { chromium } = require('/tmp/claude-0/-home-user-ahiru/0a1d4a1a-8051-5eac-90f8-411da7f29a9f/scratchpad/node_modules/playwright-core');
+const { chromium } = require('./_playwright');
 const fs = require('fs');
 
 const BASE = 'http://127.0.0.1:8899';

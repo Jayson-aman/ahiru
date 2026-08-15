@@ -75,7 +75,7 @@ export const lpgasTextKiso14: LpgasTextChapter[] = [
 　⚠ シャルルの法則等の計算には絶対温度を用いる`,
       },
       {
-        id: 'lp-ki-23', title: 'LPガスの発熱量', emoji: '🔥',
+        id: 'lp-ki-23', title: 'LPガスの発熱量（計算と実務）', emoji: '🔥',
         body: `▼ゼロから：どれだけの熱が取り出せるか
 　燃料としてのLPガスの価値を示す、発熱量という指標を学ぶ。
 

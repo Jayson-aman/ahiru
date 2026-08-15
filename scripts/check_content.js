@@ -52,6 +52,8 @@ const MODS = {
   tsushin: 'tsushin_questions',
   nikkyu: 'nikkyu_questions',
   denki2: 'denki2_questions',
+  lpgas: 'lpgas_questions',
+  koatsu: 'koatsu_questions',
 };
 
 const DATA = path.join(__dirname, '..', 'data');

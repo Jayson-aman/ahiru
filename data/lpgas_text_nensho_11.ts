@@ -5,7 +5,7 @@ export const lpgasTextNensho11: LpgasTextChapter[] = [
     subject: 'nensho',
     sections: [
       {
-        id: 'lp-ne-18', title: '理論空気量と過剰空気', emoji: '🌬️',
+        id: 'lp-ne-18', title: '理論空気量と過剰空気（応用）', emoji: '🌬️',
         body: `▼ゼロから：ちょうどの量では足りない
 　完全燃焼に理論上必要な空気量と、実際に供給される空気量にはなぜ差があるのかを理解する。
 

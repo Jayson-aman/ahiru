@@ -2,7 +2,7 @@
 // ホーム画面の資格タイル（20資格ぶん）・問題・教科書・図解が伝わるよう10枚構成。
 // 使い方: node cap_v2.js            → 全10枚
 //         node cap_v2.js 03 07      → 指定した番号だけ撮り直す
-const { chromium } = require('/tmp/claude-0/-home-user-ahiru/0a1d4a1a-8051-5eac-90f8-411da7f29a9f/scratchpad/node_modules/playwright-core');
+const { chromium } = require('./_playwright');
 const fs = require('fs');
 
 const BASE = 'http://127.0.0.1:8899';

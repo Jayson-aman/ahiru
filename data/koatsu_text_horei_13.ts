@@ -5,7 +5,7 @@ export const koatsuTextHorei13: KoatsuTextChapter[] = [
     subject: 'horei',
     sections: [
       {
-        id: 'ka-hr-19', title: '高圧ガス保安協会（KHK）の役割', emoji: '🏛️',
+        id: 'ka-hr-19', title: '高圧ガス保安協会（KHK）の業務範囲', emoji: '🏛️',
         body: `▼ゼロから：行政と事業者をつなぐ専門機関
 　法令の条文には現れにくいが、保安確保を支える組織の存在を学ぶ。
 

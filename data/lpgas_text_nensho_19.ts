@@ -5,7 +5,7 @@ export const lpgasTextNensho19: LpgasTextChapter[] = [
     subject: 'nensho',
     sections: [
       {
-        id: 'lp-ne-52', title: '理論燃焼温度', emoji: '🌡️',
+        id: 'lp-ne-52', title: '理論燃焼温度（詳細）', emoji: '🌡️',
         body: `▼ゼロから：理屈の上での最高温度
 　燃焼で到達しうる温度の考え方を学ぶ。
 

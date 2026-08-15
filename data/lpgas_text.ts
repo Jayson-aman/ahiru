@@ -115,7 +115,6 @@ import { lpgasTextHorei14 } from './lpgas_text_horei_14';
 import { lpgasTextHorei15 } from './lpgas_text_horei_15';
 import { lpgasTextHorei16 } from './lpgas_text_horei_16';
 import { lpgasTextHorei17 } from './lpgas_text_horei_17';
-import { lpgasTextHorei18 } from './lpgas_text_horei_18';
 import { lpgasTextHorei19 } from './lpgas_text_horei_19';
 import { lpgasTextHorei20 } from './lpgas_text_horei_20';
 
@@ -217,7 +216,6 @@ export const lpgasTextbook: LpgasTextChapter[] = [
   ...lpgasTextHorei15,
   ...lpgasTextHorei16,
   ...lpgasTextHorei17,
-  ...lpgasTextHorei18,
   ...lpgasTextHorei19,
   ...lpgasTextHorei20,
 ];

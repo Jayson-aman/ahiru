@@ -51,7 +51,7 @@ export const koatsuTextHorei21: KoatsuTextChapter[] = [
 　⚠ 一般的な基準に上乗せした保安体制が求められる`,
       },
       {
-        id: 'ka-hr-65', title: '免状の書換え・再交付', emoji: '🔄',
+        id: 'ka-hr-65', title: '免状の書換え・再交付（手続きの流れ）', emoji: '🔄',
         body: `▼ゼロから：紛失・変更にも手続きがある
 　既習の製造保安責任者免状に関する、事務手続きを補う。
 

@@ -2,7 +2,7 @@
 // iPhone 16 Pro Max 相当（430x932 CSS px, DPR3 = 1290x2796）
 // 使い方: node cap.js            → 全10枚
 //         node cap.js 04 08      → 指定した番号だけ撮り直す
-const { chromium } = require('/tmp/claude-0/-home-user-ahiru/0a1d4a1a-8051-5eac-90f8-411da7f29a9f/scratchpad/node_modules/playwright-core');
+const { chromium } = require('./_playwright');
 const fs = require('fs');
 
 const BASE = 'http://127.0.0.1:8899';
