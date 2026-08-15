@@ -9,6 +9,18 @@ import {
   Cantilever, CantileverLoads, BeamQMDiagram, SupportTypes,
   Steps as KozoSteps,
 } from './KozoSvg';
+import {
+  CombustionRangeBar, GasCylinder, CombustionCompare, HeinrichPyramid,
+  StressConcentration, MultiStageCompressor, DBTTCurve, PDCACycle,
+  LegalHierarchy, SafetyCultureLadder, FlowSteps, ComparePanel, TrendCurve,
+} from './GasSvg';
+
+const GasSteps = Steps;
+
+/** 同じ図解を複数の問題IDに割り当てる。 */
+function gasEntry(ids: string[], render: () => React.ReactNode): Record<string, () => React.ReactNode> {
+  return Object.fromEntries(ids.map(id => [id, render]));
+}
 
 /**
  * 問題ID → SVG図解＋導出ステップのレジストリ。
@@ -636,6 +648,114 @@ const REGISTRY: Record<string, () => React.ReactNode> = {
       ]} />
     </View>
   ),
+
+  // ===== LPガス =====
+  ...gasEntry(
+    ['lp-q-ne-013', 'lp-q-ne-117', 'lp-q-ne-153', 'ka-q-ho-001', 'ka-q-gk-084'],
+    () => (
+      <CombustionRangeBar
+        title="燃焼範囲（爆発範囲）"
+        gases={[
+          { name: 'プロパン', lower: 2.1, upper: 9.5, color: '#D32F2F' },
+          { name: 'ブタン', lower: 1.9, upper: 8.4, color: '#E65100' },
+          { name: '水素（参考）', lower: 4.0, upper: 75, color: '#1E5FBE' },
+        ]}
+      />
+    )
+  ),
+  ...gasEntry(['ka-q-gk-040'], () => (
+    <View>
+      <CombustionRangeBar
+        title="燃焼範囲は温度で変化する"
+        gases={[
+          { name: '常温', lower: 2.1, upper: 9.5, color: '#1E5FBE' },
+          { name: '高温', lower: 1.6, upper: 11.5, color: '#D32F2F' },
+        ]}
+      />
+      <GasSteps title="温度依存性のポイント" steps={[
+        '温度が上がると分子運動が活発になり反応性が高まる',
+        '下限界は下がり、上限界は上がる → 範囲が広がる',
+        '高温環境では常温データより広い濃度域を危険とみなす★',
+      ]} />
+    </View>
+  )),
+  ...gasEntry(['lp-q-ho-025', 'lp-q-ki-117', 'lp-q-ky-015'], () => (
+    <GasCylinder fillPct={85} title="LPガス容器の充填率と安全弁" />
+  )),
+  ...gasEntry(
+    ['lp-q-ne-001', 'lp-q-ne-056', 'lp-q-ne-116', 'lp-q-ne-023', 'lp-q-ne-154', 'lp-q-ne-005', 'lp-q-ne-158', 'lp-q-sh-047'],
+    () => <CombustionCompare title="完全燃焼と不完全燃焼" />
+  ),
+  ...gasEntry(['lp-q-ki-005', 'lp-q-ki-023', 'lp-q-ki-119'], () => (
+    <ComparePanel
+      title="プロパンとブタンの物性比較"
+      left={{ head: 'プロパン C₃H₈', items: ['沸点 −42℃', '低温でも気化しやすい', '冬期・寒冷地に適する', '同温度で蒸気圧が高い'] }}
+      right={{ head: 'ブタン C₄H₁₀', items: ['沸点 −0.5℃', '低温では気化しにくい', '夏期・温暖地向き', '同温度で蒸気圧が低い'] }}
+      note="⚠ 日本のLPガスがプロパン主体なのは冬期の気化確保のため"
+    />
+  )),
+  ...gasEntry(['lp-q-ky-151'], () => (
+    <FlowSteps
+      title="LPガス供給の全体フロー"
+      steps={[
+        { label: '輸入・製造', sub: '一次基地' },
+        { label: '二次基地', sub: '貯蔵' },
+        { label: '充填所', sub: '容器充填' },
+        { label: '販売店', sub: '配送' },
+        { label: '消費者', sub: '使用' },
+      ]}
+      note="⚠ 各段階に保安責任があり、全体で安全が確保される"
+    />
+  )),
+  ...gasEntry(['lp-q-ho-056', 'lp-q-ho-120', 'ka-q-hr-039', 'ka-q-hr-067', 'ka-q-ho-r116', 'ka-q-ho-r124', 'ka-q-ho-r142'], () => (
+    <LegalHierarchy title="保安法令の階層構造" />
+  )),
+
+  // ===== 高圧ガス =====
+  ...gasEntry(['ka-q-ho-029', 'ka-q-ho-121'], () => (
+    <HeinrichPyramid title="ハインリッヒの法則（1:29:300）" />
+  )),
+  ...gasEntry(['ka-q-gk-048', 'ka-q-gk-101', 'ka-q-gm-109', 'ka-q-gm-115'], () => (
+    <StressConcentration title="開口部まわりの応力集中" />
+  )),
+  ...gasEntry(['ka-q-gm-058', 'ka-q-gm-061', 'ka-q-gm-140'], () => (
+    <MultiStageCompressor stages={3} title="多段圧縮と中間冷却" />
+  )),
+  ...gasEntry(['ka-q-gm-014', 'ka-q-gm-023', 'ka-q-gm-119', 'ka-q-gk-062'], () => (
+    <DBTTCurve title="延性脆性遷移温度（低温脆性）" />
+  )),
+  ...gasEntry(['ka-q-ho-132', 'ka-q-ho-152'], () => (
+    <PDCACycle title="PDCAサイクルによる継続的改善" />
+  )),
+  ...gasEntry(['ka-q-ho-063', 'ka-q-ho-120'], () => (
+    <SafetyCultureLadder title="安全文化の成熟度段階" />
+  )),
+  ...gasEntry(['ka-q-gk-115'], () => (
+    <TrendCurve
+      title="圧縮率因子 Z と実在気体のずれ"
+      xLabel="圧力 P →"
+      yLabel="Z"
+      path="M 46 74 Q 90 92 130 88 Q 190 82 280 34"
+      zones={[
+        { x: 40, w: 96, color: '#2E7D32', label: '低圧：Z≒1' },
+        { x: 176, w: 112, color: '#D32F2F', label: '高圧：Zが1から乖離' },
+      ]}
+      note="⚠ 高圧設計では理想気体の式をそのまま使えない"
+    />
+  )),
+  ...gasEntry(['ka-q-gm-116'], () => (
+    <TrendCurve
+      title="S-N曲線（疲労寿命）"
+      xLabel="繰り返し回数 N →"
+      yLabel="応力振幅"
+      path="M 46 34 Q 110 52 160 82 Q 210 108 282 112"
+      zones={[
+        { x: 40, w: 100, color: '#D32F2F', label: '高応力：短寿命' },
+        { x: 180, w: 108, color: '#2E7D32', label: '疲労限度に漸近' },
+      ]}
+      note="⚠ 繰り返し荷重の累積が疲労破壊を招く"
+    />
+  )),
 };
 
 export function getDiagram(questionId: string): React.ReactNode | null {
