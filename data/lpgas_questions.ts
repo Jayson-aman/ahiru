@@ -168,6 +168,11 @@ import { lpgasNensho31 } from './lpgas_questions_nensho_31';
 import { lpgasKyokyu31 } from './lpgas_questions_kyokyu_31';
 import { lpgasShohi31 } from './lpgas_questions_shohi_31';
 import { lpgasHorei31 } from './lpgas_questions_horei_31';
+import { lpgasKiso32 } from './lpgas_questions_kiso_32';
+import { lpgasNensho32 } from './lpgas_questions_nensho_32';
+import { lpgasKyokyu32 } from './lpgas_questions_kyokyu_32';
+import { lpgasShohi32 } from './lpgas_questions_shohi_32';
+import { lpgasHorei32 } from './lpgas_questions_horei_32';
 
 const rawLpgasQuestions: LpgasQuestion[] = [
   ...lpgasKiso,
@@ -325,6 +330,11 @@ const rawLpgasQuestions: LpgasQuestion[] = [
   ...lpgasKyokyu31,
   ...lpgasShohi31,
   ...lpgasHorei31,
+  ...lpgasKiso32,
+  ...lpgasNensho32,
+  ...lpgasKyokyu32,
+  ...lpgasShohi32,
+  ...lpgasHorei32,
 ];
 
 // 正解キーが偏ると「Dを選ぶだけ」で点が取れてしまうため、決定的に分散させる
