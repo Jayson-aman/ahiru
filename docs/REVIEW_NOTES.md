@@ -24,7 +24,7 @@ proficiency test (Eiken)).
 Each subject shows the first 10 questions for free. Unlocking the full
 question bank for a specific certification requires either:
   - a per-certification "Pro" subscription (unlocks that one certification), or
-  - the "Max" subscription (unlocks all 20 certifications at once)
+  - the "Max" subscription (unlocks all 22 certifications at once)
 
 To verify the paywall: open any certification from the home screen → select
 any subject → answer past question 10, or scroll down on the subject screen,
@@ -47,7 +47,7 @@ the App Description:
 
 > **⚠️ この Review Notes を編集するときの注意**
 > 資格を追加したら、冒頭の「20 different Japanese professional certification exams」の
-> 数字と、「unlocks all 20 certifications at once」の数字を必ず更新すること。
+> 数字と、「unlocks all 22 certifications at once」の数字を必ず更新すること。
 > 実際の資格数は `grep -c "cardTitle}>" "app/(tabs)/index.tsx"` で数えられる。
 >
 > また、末尾の利用規約・プライバシーポリシーのURLは**削除しないこと**。
@@ -63,11 +63,11 @@ the App Description:
 ### 全資格 Max（`max`）
 
 - 価格：月額 ¥2,800 ／ 年額 ¥28,000
-- 内容：20資格すべての全問題・全模擬試験をアンロック
+- 内容：22資格すべての全問題・全模擬試験をアンロック
 
 ```
 Unlocks the full question bank (all subjects, all difficulty levels, and all
-mock exams) for all 20 certification exams offered in this app at once. This
+mock exams) for all 22 certification exams offered in this app at once. This
 is the top-tier "all access" plan; equivalent to purchasing every
 per-certification Pro plan individually, at a discounted bundle price.
 ```
@@ -379,18 +379,48 @@ methods, and civil-engineering-related law, plus a guide for the
 second-stage written exam.
 ```
 
+### 液化石油ガス設備士（`pro_lpgas`）
+
+- 商品ID：`qualiz_pro_lpgas_monthly` / `qualiz_pro_lpgas_yearly`
+- 価格：月額 ¥1,800 ／ 年額 ¥18,000
+- 内容：基礎・燃焼・供給設備・消費設備・法令の全600問 ＋ 要点テキスト312セクション
+
+```
+Unlocks the full question bank (600 practice questions, each with a diagram
+and per-choice explanations) and the full 312-section study text for the
+Japanese Liquefied Petroleum Gas Equipment Installer (液化石油ガス設備士)
+national certification, covering physical and chemical properties of LP gas,
+combustion engineering, supply equipment, consumption equipment, and the
+related law.
+```
+
+### 高圧ガス製造保安責任者（`pro_koatsu`）
+
+- 商品ID：`qualiz_pro_koatsu_monthly` / `qualiz_pro_koatsu_yearly`
+- 価格：月額 ¥1,800 ／ 年額 ¥18,000
+- 内容：保安管理技術・法令・学識（化学）・学識（機械）の全600問 ＋ 要点テキスト320セクション
+
+```
+Unlocks the full question bank (600 practice questions, each with a diagram
+and per-choice explanations) and the full 320-section study text for the
+Japanese High Pressure Gas Production Safety Supervisor
+(高圧ガス製造保安責任者) national certification, covering safety management
+technology, the High Pressure Gas Safety Act, and the academic subjects in
+both the chemistry and mechanical tracks.
+```
+
 ---
 
 ## 2b. サブスクリプションごとの Review Notes（日本語・簡潔版）
 
 英語版（上記2章）の代わりに、実際に提出時はこちらの日本語の簡潔な文面を
-20資格＋Max全21件で使い回している。英検だけ価格が異なるため2種類ある。
+22資格＋Max全23件で使い回している。英検だけ価格が異なるため2種類ある。
 
 > 英語版と違い資格ごとの内容説明は含まない簡潔版。Appleの審査担当は
 > 日本語話者とは限らないため本来は英語が無難だが、内容の的確さを優先し
 > 日本語版を採用した。
 
-### 英検（`pro_eiken`）以外の20件（19資格＋Max）に貼る文面
+### 英検（`pro_eiken`）以外の22件（21資格＋Max）に貼る文面
 
 ```
 ・本アプリは資格試験学習アプリです。各科目10問まで無料、全問題の利用はサブスクリプション（Pro/Max）が必要です。
@@ -422,7 +452,7 @@ second-stage written exam.
 特定商取引法に基づく表記: https://jayson-aman.github.io/ahiru/legal/tokushoho.html
 ```
 
-> ⚠️ **英検だけ価格の行が違う。** 他の20件（19資格＋Max）にこの英検版を
+> ⚠️ **英検だけ価格の行が違う。** 他の22件（21資格＋Max）にこの英検版を
 > 誤って貼らないこと。価格がペイウォール画面（¥800/¥8,000）と食い違うと
 > 審査担当者が確認時に不審に思う可能性がある。
 
@@ -433,7 +463,7 @@ second-stage written exam.
 | 想定される質問 | 回答 |
 |---|---|
 | 「本試験問題」は著作権的に問題ないか | 本アプリの模擬試験・オリジナル問題はすべて出題傾向を分析して独自作成したものであり、実際の試験問題の転載ではない旨をReview Notesに明記済み。宅建・マンション管理士の「本試験問題」は過去問を教育目的で使用しているが、著作権法上の引用・学習目的の利用範囲内としている（心配な場合は該当ファイルの扱いを個別に確認可能）。 |
-| 20資格分の課金がなぜ別々に必要か | 各資格は独立した学習コンテンツであり、受験生は通常1〜2資格しか必要としないため、資格ごとの個別課金（Pro）と、複数資格を学ぶユーザー向けの全資格課金（Max）の2階建てにしている。 |
+| 22資格分の課金がなぜ別々に必要か | 各資格は独立した学習コンテンツであり、受験生は通常1〜2資格しか必要としないため、資格ごとの個別課金（Pro）と、複数資格を学ぶユーザー向けの全資格課金（Max）の2階建てにしている。 |
 | 無料で試せる範囲 | 各科目最初の10問は無料（`FREE_QUESTION_LIMIT`）。購入前に内容を確認できる。 |
 | サブスクリプションの復元 | 各Paywall画面に「購入を復元する」ボタンを実装済み。 |
 
