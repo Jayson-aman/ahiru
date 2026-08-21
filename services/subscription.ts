@@ -83,9 +83,10 @@ export const ENTITLEMENT_MAX = 'max';
  * ★商品を登録して Offering に入れたら、必ずこの配列から外すこと。
  *   外し忘れると、商品があるのに永久に「準備中」のまま売れなくなる。
  */
-export const CERTS_COMING_SOON: CertKey[] = ['lpgas', 'koatsu'];
-// ★ 2026-08-03: 新規追加の液化石油ガス設備士・高圧ガス製造保安責任者はまだ未登録のため追加。
-//   ASC/RevenueCatに商品登録が終わったらこの配列から外すこと（手順は docs/NEW_CERTS_SETUP.md 参照）。
+export const CERTS_COMING_SOON: CertKey[] = [];
+// ★ 2026-08-21: 液化石油ガス設備士・高圧ガス製造保安責任者の商品登録（ASC・RevenueCat）が
+//   完了したため空にした。v1.3.2 でアプリ本体と同時に審査へ提出する。
+//   商品未登録の資格を追加するときは、必ずここへ入れてから提出すること。
 
 export function isComingSoon(cert: CertKey): boolean {
   return CERTS_COMING_SOON.includes(cert);
