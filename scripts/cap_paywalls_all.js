@@ -52,6 +52,8 @@ const TARGETS = [
   { name: 'denkisekou',  path: '/denkisekou/riron',   label: '電気工事施工管理技士' },
   { name: 'kikaisekou',  path: '/kikaisekou/doboku',  label: '建設機械施工管理技士' },
   { name: 'dobokusekou', path: '/dobokusekou/doboku', label: '一級土木施工管理技士' },
+  { name: 'lpgas',       path: '/lpgas/kiso',         label: '液化石油ガス設備士' },
+  { name: 'koatsu',      path: '/koatsu/hoan',        label: '高圧ガス製造保安責任者' },
   { name: 'max',         path: '/takkei/kenri',       label: '全資格 Max（Maxカードを上に出す）', scrollToMax: true },
 ];
 
