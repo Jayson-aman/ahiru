@@ -12,14 +12,15 @@ Appleの審査担当は日本語話者とは限らないため、各サブスク
 App Store Connect → App Information → App Review Information の「Notes」欄に貼り付け：
 
 ```
-This app is a study/exam-prep app for 20 different Japanese professional
+This app is a study/exam-prep app for 22 different Japanese professional
 certification exams (real estate agent, financial planner, condo manager,
 building equipment engineer, second-class registered architect, 1st-class
 construction management engineers x6 including telecommunications, construction
 cost manager, water supply installation engineer, fire protection equipment
 officer, hazardous materials engineer, concrete engineer, second-class
-electrician, electrical engineer grade 3, weather forecaster, and the English
-proficiency test (Eiken)).
+electrician, electrical engineer grade 3, weather forecaster, liquefied
+petroleum (LP) gas equipment installer, high-pressure gas production safety
+manager, and the English proficiency test (Eiken)).
 
 Each subject shows the first 10 questions for free. Unlocking the full
 question bank for a specific certification requires either:
@@ -46,7 +47,7 @@ the App Description:
 ```
 
 > **⚠️ この Review Notes を編集するときの注意**
-> 資格を追加したら、冒頭の「20 different Japanese professional certification exams」の
+> 資格を追加したら、冒頭の「22 different Japanese professional certification exams」の
 > 数字と、「unlocks all 22 certifications at once」の数字を必ず更新すること。
 > 実際の資格数は `grep -c "cardTitle}>" "app/(tabs)/index.tsx"` で数えられる。
 >
