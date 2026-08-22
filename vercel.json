@@ -2,14 +2,17 @@
   "buildCommand": "npx expo export --platform web",
   "outputDirectory": "dist",
   "framework": null,
-  "rewrites": [{ "source": "/(.*)", "destination": "/index.html" }],
+  "rewrites": [
+    { "source": "/", "destination": "/landing.html" },
+    { "source": "/(.*)", "destination": "/index.html" }
+  ],
   "headers": [
     {
       "source": "/(.*)",
       "headers": [
         {
           "key": "Content-Security-Policy",
-          "value": "default-src 'self'; base-uri 'self'; object-src 'none'; frame-ancestors 'none'; img-src 'self' data: blob:; font-src 'self' data:; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline'; connect-src 'self'; form-action 'self'; manifest-src 'self'; worker-src 'self' blob:; upgrade-insecure-requests"
+          "value": "default-src 'self'; base-uri 'self'; object-src 'none'; frame-ancestors 'none'; img-src 'self' data: blob:; font-src 'self' data: https://fonts.gstatic.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; script-src 'self' 'unsafe-inline'; connect-src 'self'; form-action 'self'; manifest-src 'self'; worker-src 'self' blob:; upgrade-insecure-requests"
         },
         {
           "key": "Strict-Transport-Security",

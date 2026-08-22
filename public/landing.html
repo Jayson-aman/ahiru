@@ -1,0 +1,531 @@
+<title>QualiZ 資格の羅針盤</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;700;800&family=Noto+Sans+JP:wght@400;500;700&display=swap">
+
+<style>
+:root{
+  --ground:#F7F3E9;
+  --panel:#FFFDF7;
+  --ink:#2B2118;
+  --brown:#5A4A32;
+  --accent:#B5561B;
+  --accent-soft:#E8DCC6;
+  --rule:#D9CFB8;
+  --slate:#6B6255;
+  --sky-far:#DCD3BE;
+  --sky-near:#5A4A32;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --ground:#1C1610;
+    --panel:#251E16;
+    --ink:#F2EADC;
+    --brown:#C9B896;
+    --accent:#E0803F;
+    --accent-soft:#3A2E20;
+    --rule:#3E3327;
+    --slate:#A79C89;
+    --sky-far:#2E2519;
+    --sky-near:#0E0B07;
+  }
+}
+:root[data-theme="dark"]{
+  --ground:#1C1610;
+  --panel:#251E16;
+  --ink:#F2EADC;
+  --brown:#C9B896;
+  --accent:#E0803F;
+  --accent-soft:#3A2E20;
+  --rule:#3E3327;
+  --slate:#A79C89;
+  --sky-far:#2E2519;
+  --sky-near:#0E0B07;
+}
+
+*{box-sizing:border-box}
+body{
+  margin:0;
+  background:var(--ground);
+  color:var(--ink);
+  font-family:"Noto Sans JP",-apple-system,BlinkMacSystemFont,"Hiragino Sans",sans-serif;
+  font-size:16px;
+  line-height:1.9;
+  -webkit-font-smoothing:antialiased;
+}
+h1,h2,h3{
+  font-family:"Shippori Mincho","Hiragino Mincho ProN",serif;
+  font-weight:700;
+  text-wrap:balance;
+  line-height:1.5;
+  margin:0;
+}
+p{margin:0}
+a{color:var(--accent)}
+
+.wrap{max-width:1000px;margin:0 auto;padding:0 24px}
+
+/* ── ヘッダー ── */
+.masthead{
+  border-bottom:1px solid var(--rule);
+  background:var(--panel);
+}
+.masthead .wrap{
+  display:flex;align-items:center;justify-content:space-between;
+  gap:20px;padding-top:16px;padding-bottom:16px;flex-wrap:wrap;
+}
+.brand{display:flex;align-items:baseline;gap:12px}
+.brand .mark{
+  font-family:"Shippori Mincho",serif;font-weight:800;font-size:26px;
+  letter-spacing:.06em;color:var(--ink);
+}
+.brand .sub{font-size:12px;color:var(--slate);letter-spacing:.14em}
+.masthead nav{display:flex;gap:22px;font-size:13px}
+.masthead nav a{color:var(--slate);text-decoration:none;padding-bottom:2px;border-bottom:1px solid transparent}
+.masthead nav a:hover,.masthead nav a:focus-visible{color:var(--accent);border-bottom-color:var(--accent)}
+.navcta{
+  color:var(--panel)!important;background:var(--accent);padding:8px 16px;
+  border-bottom:0!important;font-weight:700;
+}
+.navcta:hover,.navcta:focus-visible{color:var(--panel)!important;opacity:.88}
+
+/* ── ヒーロー ── */
+.hero{position:relative;border-bottom:1px solid var(--rule);overflow:hidden}
+#sky{display:block;width:100%;height:420px}
+.hero-copy{
+  position:absolute;inset:0;
+  display:flex;flex-direction:column;justify-content:center;
+  pointer-events:none;
+}
+.hero-copy .wrap{width:100%}
+.eyebrow{
+  display:inline-block;font-size:12px;letter-spacing:.2em;
+  color:var(--accent);border-bottom:2px solid var(--accent);
+  padding-bottom:4px;margin-bottom:20px;
+}
+.hero h1{font-size:clamp(28px,4.6vw,46px);letter-spacing:.02em;max-width:20em}
+.hero .lede{
+  margin-top:18px;max-width:34em;font-size:15px;color:var(--slate);
+  background:color-mix(in srgb,var(--ground) 78%,transparent);
+  display:inline-block;padding:2px 0;
+}
+.herocta{
+  display:inline-block;margin-top:26px;padding:14px 26px;
+  background:var(--ink);color:var(--ground);font-weight:700;font-size:14px;
+  text-decoration:none;pointer-events:auto;
+}
+.herocta:hover,.herocta:focus-visible{background:var(--accent);color:var(--panel)}
+
+/* ── 数字の帯 ── */
+.figures{border-bottom:1px solid var(--rule);background:var(--panel)}
+.figures .wrap{
+  display:grid;grid-template-columns:repeat(4,1fr);
+  padding-top:28px;padding-bottom:28px;
+}
+.fig{padding:0 18px;border-left:1px solid var(--rule)}
+.fig:first-child{border-left:0;padding-left:0}
+.fig .n{
+  font-family:"Shippori Mincho",serif;font-size:32px;font-weight:800;
+  line-height:1.2;font-variant-numeric:tabular-nums;letter-spacing:.01em;
+}
+.fig .n small{font-size:15px;font-weight:500;margin-left:2px}
+.fig .l{font-size:12px;color:var(--slate);margin-top:6px;line-height:1.6}
+
+/* ── 節 ── */
+section{padding:64px 0;border-bottom:1px solid var(--rule)}
+.shead{display:flex;align-items:baseline;gap:16px;margin-bottom:32px}
+.shead h2{font-size:24px;letter-spacing:.04em;white-space:nowrap}
+.shead .rule{flex:1;height:1px;background:var(--rule)}
+.shead .note{font-size:12px;color:var(--slate);white-space:nowrap}
+
+/* ── 背景の説明 ── */
+.why{display:grid;grid-template-columns:1.15fr .85fr;gap:44px;align-items:start}
+.why p+p{margin-top:18px}
+.why .strong{font-weight:700}
+.datacard{
+  background:var(--panel);border:1px solid var(--rule);padding:24px;
+}
+.datacard h3{font-size:14px;letter-spacing:.08em;color:var(--slate);margin-bottom:18px}
+.drow{display:flex;justify-content:space-between;align-items:baseline;gap:12px;padding:11px 0;border-top:1px solid var(--rule)}
+.drow:first-of-type{border-top:0;padding-top:0}
+.drow .k{font-size:13px;color:var(--slate);line-height:1.5}
+.drow .v{
+  font-family:"Shippori Mincho",serif;font-weight:700;font-size:20px;
+  font-variant-numeric:tabular-nums;white-space:nowrap;
+}
+.datacard .src{font-size:11px;color:var(--slate);margin-top:16px;line-height:1.7}
+
+/* ── 資格一覧 ── */
+.certs{display:grid;grid-template-columns:repeat(2,1fr);gap:0 44px}
+.cgroup{border-top:2px solid var(--brown);padding-top:14px;margin-bottom:30px;break-inside:avoid}
+.cgroup h3{font-size:13px;letter-spacing:.1em;color:var(--brown);margin-bottom:6px}
+.cgroup ul{list-style:none;margin:0;padding:0}
+.cgroup li{padding:10px 0;border-bottom:1px dotted var(--rule)}
+.cgroup .nm{font-size:14px;font-weight:700;line-height:1.5;display:block}
+.cgroup .ds{font-size:12.5px;color:var(--slate);line-height:1.75;display:block;margin-top:3px}
+.cgroup li.new .nm::after{
+  content:"新";font-size:10px;color:#FFFDF7;background:var(--accent);
+  padding:1px 5px;margin-left:8px;vertical-align:2px;letter-spacing:.05em;font-weight:500;
+}
+
+/* ── 特長 ── */
+.feats{display:grid;grid-template-columns:repeat(3,1fr);gap:32px}
+.feat h3{font-size:17px;margin-bottom:12px;line-height:1.6}
+.feat p{font-size:14px;color:var(--slate)}
+.feat .tag{
+  font-size:11px;letter-spacing:.12em;color:var(--accent);
+  display:block;margin-bottom:10px;
+}
+
+/* ── 料金 ── */
+.plans{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.plan{border:1px solid var(--rule);background:var(--panel);padding:26px 24px;display:flex;flex-direction:column}
+.plan.lead{border:2px solid var(--brown)}
+.plan h3{font-size:18px;margin-bottom:4px}
+.plan .who{font-size:12px;color:var(--slate);min-height:3.2em;line-height:1.6}
+.price{margin-top:18px;padding-top:18px;border-top:1px solid var(--rule)}
+.price .m{font-family:"Shippori Mincho",serif;font-size:30px;font-weight:800;font-variant-numeric:tabular-nums;line-height:1.2}
+.price .m span{font-size:14px;font-weight:500}
+.price .y{font-size:13px;color:var(--slate);margin-top:6px}
+.price .y b{color:var(--accent);font-weight:700}
+.freebar{
+  margin-top:44px;padding:18px 24px;border:1px solid var(--rule);
+  background:var(--accent-soft);font-size:14px;
+}
+.freebar b{font-family:"Shippori Mincho",serif}
+
+/* ── 締め ── */
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:32px}
+.step{border-top:1px solid var(--rule);padding-top:18px}
+.sn{
+  font-family:"Shippori Mincho",serif;font-size:13px;font-weight:800;
+  color:#FFFDF7;background:var(--accent);width:24px;height:24px;
+  display:inline-flex;align-items:center;justify-content:center;margin-bottom:12px;
+}
+.step h3{font-size:16px;margin-bottom:10px;line-height:1.6}
+.step p{font-size:13.5px;color:var(--slate)}
+.step p b{color:var(--ink)}
+.availrow{display:flex;gap:12px;flex-wrap:wrap;margin-top:24px}
+.closing{text-align:center;padding:72px 0}
+.closing h2{font-size:26px;margin-bottom:16px}
+.closing p{font-size:15px;color:var(--slate);max-width:34em;margin:0 auto}
+.avail{
+  display:inline-block;padding:12px 22px;
+  border:1px solid var(--rule);background:var(--panel);font-size:13px;color:var(--slate);
+}
+
+/* ── フッター ── */
+footer{background:var(--brown);color:var(--ground);padding:44px 0 32px;border:0}
+:root[data-theme="dark"] footer,
+:root:not([data-theme="light"]) footer{color:var(--ground)}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]) footer{background:#100C08;color:#E8DFCE}
+}
+:root[data-theme="dark"] footer{background:#100C08;color:#E8DFCE}
+footer .cols{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:32px;padding-bottom:28px}
+footer h4{font-family:"Shippori Mincho",serif;font-size:15px;margin:0 0 12px;letter-spacing:.06em}
+footer a{color:inherit;text-decoration:none;border-bottom:1px solid rgba(255,255,255,.28);font-size:13px}
+footer a:hover,footer a:focus-visible{border-bottom-color:currentColor}
+footer ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:9px}
+footer .about{font-size:13px;opacity:.85;line-height:1.9}
+.legalbar{border-top:1px solid rgba(255,255,255,.18);padding-top:18px;font-size:11px;opacity:.75;line-height:1.9}
+
+@media (max-width:860px){
+  .why,.certs,.feats,.plans,footer .cols{grid-template-columns:1fr;gap:28px}
+  .figures .wrap{grid-template-columns:repeat(2,1fr);gap:22px 0}
+  .fig{padding-left:18px}
+  .fig:nth-child(odd){border-left:0;padding-left:0}
+  #sky{height:340px}
+  .certs{gap:0}
+  .steps{grid-template-columns:1fr}
+}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+
+<header class="masthead">
+  <div class="wrap">
+    <div class="brand">
+      <span class="mark">QualiZ</span>
+      <span class="sub">クオリズ</span>
+    </div>
+    <nav>
+      <a href="#why">いま資格を取る理由</a>
+      <a href="#certs">対応資格</a>
+      <a href="#feats">特長</a>
+      <a href="#price">料金</a>
+      <a href="#try">無料で試す</a>
+      <a href="/home" class="navcta">アプリを開く</a>
+    </nav>
+  </div>
+</header>
+
+<div class="hero">
+  <canvas id="sky" aria-hidden="true"></canvas>
+  <div class="hero-copy">
+    <div class="wrap">
+      <span class="eyebrow">国家資格・検定試験対策</span>
+      <h1>この街を保つ人が、<br>足りなくなっていく。</h1>
+      <p class="lede">建設・設備・保安の現場は、法律が「この資格を持つ人を置きなさい」と定めています。有資格者がいなければ、工事は受注できず、点検も実施できません。QualiZは、その担い手になるための21資格を収録した学習アプリです。</p>
+      <a href="/home" class="herocta">まず十問、無料で試す →</a>
+    </div>
+  </div>
+</div>
+
+<div class="figures">
+  <div class="wrap">
+    <div class="fig"><div class="n">21<small>資格</small></div><div class="l">建設・設備・保安を中心に収録</div></div>
+    <div class="fig"><div class="n">25,190<small>問</small></div><div class="l">全問に選択肢ごとの解説</div></div>
+    <div class="fig"><div class="n">100<small>%</small></div><div class="l">全問に図解つき</div></div>
+    <div class="fig"><div class="n">6,577<small>節</small></div><div class="l">要点テキスト 約1,255万字</div></div>
+  </div>
+</div>
+
+<section id="why">
+  <div class="wrap">
+    <div class="shead"><h2>いま資格を取る理由</h2><span class="rule"></span><span class="note">数字は公表統計にもとづく</span></div>
+    <div class="why">
+      <div>
+        <p>2026年8月、経済産業省は全国のLPガス販売事業者に対し、商業施設や病院など大型施設のガス設備を点検するよう要請しました。7月に熊本で起きた爆発事故を受けたものです。</p>
+        <p><span class="strong">行政が「点検してください」と言ったとき、その点検を実施できるのは有資格者だけです。</span>LPガス設備の調査・点検は液化石油ガス法で有資格者の業務と定められ、高圧ガスを扱う事業所には保安統括者などの選任義務があります。人手が足りないからといって、無資格者に代わってもらう逃げ道がありません。</p>
+        <p>同じ構造が建設業全体にあります。施工管理技士は建設業法上の監理技術者・専任技術者になれる資格で、一定規模以上の工事には配置が義務づけられています。つまり<span class="strong">有資格者の人数が、会社が受注できる工事の上限を決めている</span>ということです。</p>
+        <p>そして担い手は減り続けています。いま現場を支える団塊ジュニア世代は、10年後に62〜65歳。次に引き継ぐ人を今から育てなければ間に合いません。人手不足は工事費に、やがて物価に返ってきます。</p>
+      </div>
+      <aside class="datacard">
+        <h3>建設業の担い手</h3>
+        <div class="drow"><span class="k">就業者のうち55歳以上<br><span style="opacity:.7">全産業は32.4%</span></span><span class="v">36.7%</span></div>
+        <div class="drow"><span class="k">就業者のうち29歳以下<br><span style="opacity:.7">全産業は16.9%</span></span><span class="v">11.7%</span></div>
+        <div class="drow"><span class="k">就業者数<br><span style="opacity:.7">1997年 685万人から</span></span><span class="v">483万人</span></div>
+        <div class="drow"><span class="k">南海トラフ地震<br><span style="opacity:.7">30年以内の発生確率</span></span><span class="v">20〜90%</span></div>
+        <p class="src">出典：国土交通省 不動産・建設経済局建設業課の公表資料（2024年時点／就業者数は2023年）、政府 地震調査委員会「南海トラフの地震活動の長期評価」（2025年9月改訂。算出方法の見直しにより60〜90%程度以上と20〜50%を併記）</p>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<section id="certs">
+  <div class="wrap">
+    <div class="shead"><h2>対応資格</h2><span class="rule"></span><span class="note">このほか英検（2級・3級・4級）にも対応</span></div>
+    <div class="certs">
+      <div>
+        <div class="cgroup">
+          <h3>施工管理</h3>
+          <ul>
+            <li><span class="nm">1級建築施工管理技士</span><span class="ds">ビル・マンションなどの建築工事で、監理技術者として工程・品質・安全を統括します。一定規模以上の工事には配置が義務づけられています。</span></li>
+            <li><span class="nm">1級土木施工管理技士</span><span class="ds">道路・橋梁・トンネル・河川などの土木工事を統括します。公共工事の入札で会社が受ける評価にも直結します。</span></li>
+            <li><span class="nm">1級管工事施工管理技士</span><span class="ds">空調・換気・給排水・ガス配管の工事を統括します。改修需要が続くため、新築が減っても仕事がなくなりません。</span></li>
+            <li><span class="nm">1級電気工事施工管理技士</span><span class="ds">受変電設備・幹線・照明・動力の電気工事を統括します。EV充電設備や太陽光の普及で対象が広がっています。</span></li>
+            <li><span class="nm">1級建設機械施工管理技士</span><span class="ds">重機を使う土工事・造成・解体で、機械の選定と配置を計画します。ICT施工の広まりで役割が変わりつつあります。</span></li>
+            <li><span class="nm">1級電気通信工事施工管理技士</span><span class="ds">通信設備・光ファイバ・基地局・構内配線の工事を統括します。2019年に新設された資格で、有資格者がまだ少ない分野です。</span></li>
+          </ul>
+        </div>
+        <div class="cgroup">
+          <h3>建築・設計・コスト</h3>
+          <ul>
+            <li><span class="nm">二級建築士</span><span class="ds">一定の規模・用途の範囲で、設計と工事監理を自分の名前で行えます。住宅設計を主戦場にするなら十分に実用的な資格です。</span></li>
+            <li><span class="nm">建築設備士</span><span class="ds">空調・給排水・電気を横断して、建築設備の設計に助言できる立場です。実務経験を積むと一級建築士の受験資格にもつながります。</span></li>
+            <li><span class="nm">建築コスト管理士</span><span class="ds">図面から数量を拾い、単価を当て、契約条件を読んで工事費を算出します。見積りの精度が会社の利益をほぼ決めます。</span></li>
+            <li><span class="nm">コンクリート技士・診断士</span><span class="ds">コンクリートの配合設計と品質管理、そして既存構造物のひび割れから劣化の原因を特定する診断を担います。</span></li>
+          </ul>
+        </div>
+      </div>
+      <div>
+        <div class="cgroup">
+          <h3>ガス・保安</h3>
+          <ul>
+            <li class="new"><span class="nm">液化石油ガス設備士</span><span class="ds">LPガスの配管接続・気密試験など、法律で有資格者にしかできないと定められた作業を担います。都市ガスの無い地域では生活インフラそのものです。</span></li>
+            <li class="new"><span class="nm">高圧ガス製造保安責任者</span><span class="ds">高圧ガスを製造する事業所に、法律で選任が義務づけられている保安の責任者です。化学プラント・充填所・冷凍倉庫などが対象になります。</span></li>
+            <li><span class="nm">危険物取扱者（乙種第4類）</span><span class="ds">ガソリン・灯油・軽油など引火性液体を扱います。給油所や化学工場で保安監督者になるための、もっとも使われている国家資格です。</span></li>
+            <li><span class="nm">消防設備士（甲種）</span><span class="ds">スプリンクラーや自動火災報知設備の工事・整備・点検を独占的に行えます。消防法が建物所有者に定期点検を義務づけています。</span></li>
+          </ul>
+        </div>
+        <div class="cgroup">
+          <h3>電気・水道</h3>
+          <ul>
+            <li><span class="nm">第二種電気工事士</span><span class="ds">住宅や小規模店舗の電気工事ができます。受験資格に制限がなく、未経験から電気の仕事に入る標準ルートです。</span></li>
+            <li><span class="nm">電験三種（第三種電気主任技術者）</span><span class="ds">高圧受電をしている工場・ビル・商業施設に、法律で選任が義務づけられた電気主任技術者になれます。慢性的に不足しています。</span></li>
+            <li><span class="nm">給水装置工事主任技術者</span><span class="ds">水道工事を請け負う会社が指定を受けるために、事業所ごとの選任が必須です。老朽管の更新需要が長く続きます。</span></li>
+          </ul>
+        </div>
+        <div class="cgroup">
+          <h3>不動産・金融・気象</h3>
+          <ul>
+            <li><span class="nm">宅地建物取引士</span><span class="ds">重要事項説明は宅建士でなければ行えません。事務所の従業者5人に1人という設置義務が需要を支えています。</span></li>
+            <li><span class="nm">マンション管理士</span><span class="ds">築40年を超える物件が増えるなか、大規模修繕や建替えの合意形成を支援します。管理業務主任者と範囲が大きく重なります。</span></li>
+            <li><span class="nm">ファイナンシャルプランナー（2級・3級）</span><span class="ds">年金・保険・投資・税金・不動産・相続を横断して家計を設計します。学んだ内容がそのまま自分の生活にも使えます。</span></li>
+            <li><span class="nm">気象予報士</span><span class="ds">予報業務を行う事業所に選任義務があります。近年は放送よりも、建設現場やインフラ企業の防災判断での需要が増えています。</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="feats">
+  <div class="wrap">
+    <div class="shead"><h2>三つの特長</h2><span class="rule"></span></div>
+    <div class="feats">
+      <div class="feat">
+        <span class="tag">解説</span>
+        <h3>なぜ他の選択肢が誤りなのかまで書く</h3>
+        <p>収録している25,190問すべてに、正解の理由だけでなく、残る選択肢が誤りである理由を一つずつ添えています。誤答の理由まで押さえると、少し形を変えた問題への対応力が変わります。</p>
+      </div>
+      <div class="feat">
+        <span class="tag">図解</span>
+        <h3>文章で説明されても分からないものがある</h3>
+        <p>ネットワーク工程表のクリティカルパス、湿り空気線図の状態変化、ガスの供給経路、断熱膨張。参考書が紙面の制約で文章に押し込めている内容を、全問に図解として添えました。</p>
+      </div>
+      <div class="feat">
+        <span class="tag">教科書</span>
+        <h3>一資格あたり300節以上を、同じ順序で</h3>
+        <p>総計6,577節・約1,255万字。各節は「ゼロからの導入 → 要点整理 → 図解 → 頻出ひっかけ → ここだけ暗記」の順で構成しているので、予備知識がなくても最初の頁から読み進められます。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="price">
+  <div class="wrap">
+    <div class="shead"><h2>料金</h2><span class="rule"></span><span class="note">自動更新サブスクリプション・税込</span></div>
+    <div class="plans">
+      <div class="plan">
+        <h3>資格別 Pro</h3>
+        <p class="who">一つの資格の全問題・全教科書・模擬試験が使えます。</p>
+        <div class="price">
+          <div class="m">1,800<span> 円/月</span></div>
+          <div class="y">年額 18,000円 <b>2か月分お得</b></div>
+        </div>
+      </div>
+      <div class="plan lead">
+        <h3>全資格 Max</h3>
+        <p class="who">21資格すべてを追加料金なしで。複数を狙う方、後から別の資格に移る方に。</p>
+        <div class="price">
+          <div class="m">2,800<span> 円/月</span></div>
+          <div class="y">年額 28,000円 <b>2か月分お得</b></div>
+        </div>
+      </div>
+      <div class="plan">
+        <h3>英検</h3>
+        <p class="who">英検2級・3級・4級の全問題が使えます。</p>
+        <div class="price">
+          <div class="m">800<span> 円/月</span></div>
+          <div class="y">年額 8,000円 <b>17%お得</b></div>
+        </div>
+      </div>
+    </div>
+    <p class="freebar"><b>まず無料でお試しください。</b>各科目10問、要点テキストは各科目2節まで、登録なしでご利用いただけます。問題と解説の質を確かめてから判断してください。</p>
+  </div>
+</section>
+
+<section id="try">
+  <div class="wrap">
+    <div class="shead"><h2>まず、十問だけ解いてみてください</h2><span class="rule"></span><span class="note">登録不要・無料</span></div>
+    <div class="steps">
+      <div class="step">
+        <span class="sn">1</span>
+        <h3>資格を選ぶ</h3>
+        <p>ホーム画面から、気になる資格を選びます。その場で科目の一覧が開きます。</p>
+      </div>
+      <div class="step">
+        <span class="sn">2</span>
+        <h3>科目を開くと、すぐ問題が始まります</h3>
+        <p>各科目<b>10問まで無料</b>です。全問に図解と、選択肢ごとの解説がついています。要点テキストも各科目2節まで読めます。</p>
+      </div>
+      <div class="step">
+        <span class="sn">3</span>
+        <h3>続けたくなったら</h3>
+        <p>画面下部に出る帯から購入画面を開けます。押すまで購入は始まりません。まず問題の質を確かめてから決めてください。</p>
+      </div>
+    </div>
+    <p class="freebar"><b>登録も、メールアドレスの入力も要りません。</b>学習の記録は端末の中だけに保存され、こちらのサーバーには送られません。通勤中に三節読む、昼休みに十問解く。その積み重ねのための道具です。</p>
+    <div class="availrow"><span class="avail">iPhone・iPad対応</span><span class="avail">ご購入はiOSアプリ内から</span></div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="cols">
+      <div>
+        <h4>QualiZ（クオリズ）</h4>
+        <p class="about">国家資格・検定試験の学習アプリ。建設・設備・保安を中心に21資格を収録しています。収録問題は出題傾向を分析して作成したオリジナルの再現問題であり、実際の試験問題の転載ではありません。</p>
+      </div>
+      <div>
+        <h4>規約・方針</h4>
+        <ul>
+          <li><a href="https://jayson-aman.github.io/ahiru/legal/terms.html">利用規約（EULA）</a></li>
+          <li><a href="https://jayson-aman.github.io/ahiru/legal/privacy.html">プライバシーポリシー</a></li>
+          <li><a href="https://jayson-aman.github.io/ahiru/legal/tokushoho.html">特定商取引法に基づく表記</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>お問い合わせ</h4>
+        <ul>
+          <li><a href="https://jayson-aman.github.io/ahiru/legal/support.html">サポート</a></li>
+          <li><a href="mailto:info@zaibase.group">info@zaibase.group</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="legalbar">
+      本アプリは試験の合格を保証するものではありません。受験の際は各試験実施団体の最新の試験案内を必ずご確認ください。<br>
+      Apple、App Store、iPhone、iPad は Apple Inc. の商標です。英検は公益財団法人 日本英語検定協会の登録商標であり、本アプリは同協会とは関係のない独立した教材です。
+    </p>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var c=document.getElementById('sky'),x=c.getContext('2d');
+  function css(n){return getComputedStyle(document.documentElement).getPropertyValue(n).trim()}
+  // 距離に応じて色を混ぜる。遠景ほど地の色に溶け、近景ほど濃くなる（浮世絵の遠近）。
+  function hex(h){h=h.replace('#','');if(h.length===3)h=h[0]+h[0]+h[1]+h[1]+h[2]+h[2];
+    return[parseInt(h.slice(0,2),16),parseInt(h.slice(2,4),16),parseInt(h.slice(4,6),16)]}
+  function mix(a,b,t){var A=hex(a),B=hex(b);
+    return'rgb('+Math.round(A[0]+(B[0]-A[0])*t)+','+Math.round(A[1]+(B[1]-A[1])*t)+','+Math.round(A[2]+(B[2]-A[2])*t)+')'}
+
+  // 決め打ちの擬似乱数。再読み込みでスカイラインが変わらないようにする。
+  var seed=20260821;
+  function rnd(){seed=(seed*1103515245+12345)&0x7fffffff;return seed/0x7fffffff}
+
+  function draw(){
+    var w=c.clientWidth,h=c.clientHeight,dpr=Math.min(window.devicePixelRatio||1,2);
+    c.width=w*dpr;c.height=h*dpr;x.setTransform(dpr,0,0,dpr,0,0);
+    var far=css('--sky-far'),near=css('--sky-near'),ground=css('--ground');
+    var g=x.createLinearGradient(0,0,0,h);
+    g.addColorStop(0,ground);g.addColorStop(1,mix(ground,far,.55));
+    x.fillStyle=g;x.fillRect(0,0,w,h);
+
+    seed=20260821;
+    var layers=5;
+    for(var L=0;L<layers;L++){
+      var t=(L+1)/layers;                    // 手前ほど1に近い
+      var base=h-(h*0.10)+(L*h*0.028);       // 手前の層ほど下から生える
+      var maxH=h*(0.20+t*0.42);
+      x.fillStyle=mix(far,near,Math.pow(t,1.25));
+      var px=-20;
+      while(px<w+20){
+        var bw=18+rnd()*(46+t*38);
+        var bh=maxH*(0.34+rnd()*0.66);
+        x.fillRect(px,base-bh,bw,bh+40);
+        // 屋上の設備・塔屋
+        if(rnd()>0.72){var tw=Math.max(3,bw*0.16);x.fillRect(px+bw*0.5-tw/2,base-bh-14-rnd()*16,tw,18)}
+        px+=bw+(3+rnd()*9);
+      }
+      // 東京タワーに見立てた鉄塔を、手前から2層目に一本だけ立てる
+      if(L===layers-2){
+        var tx=w*0.72,ty=base-maxH*1.16,tb=base;
+        x.beginPath();
+        x.moveTo(tx-1.6,ty);x.lineTo(tx+1.6,ty);
+        x.lineTo(tx+(tb-ty)*0.13,tb);x.lineTo(tx-(tb-ty)*0.13,tb);
+        x.closePath();x.fill();
+        x.fillRect(tx-(tb-ty)*0.055,ty+(tb-ty)*0.42,(tb-ty)*0.11,5);
+        x.fillRect(tx-1,ty-16,2,16);
+      }
+    }
+  }
+  draw();
+  var to;window.addEventListener('resize',function(){clearTimeout(to);to=setTimeout(draw,120)});
+  if(window.matchMedia){
+    var mq=window.matchMedia('(prefers-color-scheme: dark)');
+    (mq.addEventListener?mq.addEventListener.bind(mq,'change'):mq.addListener.bind(mq))(draw);
+  }
+})();
+</script>
