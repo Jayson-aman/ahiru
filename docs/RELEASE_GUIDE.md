@@ -124,14 +124,14 @@ App Store Connect → 「契約 / 税金 / 口座情報」→ **Paid Application
 | Pro FP | `qualiz_pro_fp_monthly` / `_yearly` | ¥1,800 / ¥18,000 |
 | Pro マンション管理士 | `qualiz_pro_mansion_monthly` / `_yearly` | 同上 |
 | Pro 建築設備士 | `qualiz_pro_kenchiku_monthly` / `_yearly` | 同上 |
-| Pro 一級建築施工管理技士 | `qualiz_pro_sekokan_monthly` / `_yearly` | 同上 |
+| Pro 1級建築施工管理技士 | `qualiz_pro_sekokan_monthly` / `_yearly` | 同上 |
 | Pro 電験三種 | `qualiz_pro_denken3_monthly` / `_yearly` | 同上 |
 | Pro 気象予報士 | `qualiz_pro_kisho_monthly` / `_yearly` | ¥1,800 / ¥18,000 |
 | Pro 管工事施工管理技士 | `qualiz_pro_kankoji_monthly` / `_yearly` | ¥1,800 / ¥18,000 |
 | Pro 電気工事施工管理技士 | `qualiz_pro_denkisekou_monthly` / `_yearly` | 同上 |
 | Pro 建設機械施工管理技士 | `qualiz_pro_kikaisekou_monthly` / `_yearly` | 同上 |
-| Pro 一級土木施工管理技士 | `qualiz_pro_dobokusekou_monthly` / `_yearly` | 同上 |
-| Pro 建設コスト管理士 | `qualiz_pro_cost_monthly` / `_yearly` | ¥1,800 / ¥18,000 |
+| Pro 1級土木施工管理技士 | `qualiz_pro_dobokusekou_monthly` / `_yearly` | 同上 |
+| Pro 建築コスト管理士 | `qualiz_pro_cost_monthly` / `_yearly` | ¥1,800 / ¥18,000 |
 | Pro 給水装置工事主任技術者 | `qualiz_pro_kyusui_monthly` / `_yearly` | ¥1,800 / ¥18,000 |
 | Pro 消防設備士甲種 | `qualiz_pro_shobo_monthly` / `_yearly` | ¥1,800 / ¥18,000 |
 | Pro 危険物取扱者乙4 | `qualiz_pro_kikenbutsu_monthly` / `_yearly` | ¥1,800 / ¥18,000 |

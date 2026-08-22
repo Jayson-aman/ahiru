@@ -184,7 +184,7 @@ export default function HomeScreen() {
           <LinearGradient colors={['#BF360C', '#7F2408']} style={styles.cardGradient}>
             <Text style={styles.cardEmoji}>🏗️</Text>
             <View style={styles.cardBody}>
-              <Text style={styles.cardTitle}>一級建築施工管理技士</Text>
+              <Text style={styles.cardTitle}>1級建築施工管理技士</Text>
               <Text style={styles.cardSubtitle}>建築学・施工・施工管理法・法規</Text>
               <Text style={styles.cardMeta}>国家資格 ／ テキスト・基礎/応用・模擬試験・二次対策</Text>
             </View>
@@ -196,7 +196,7 @@ export default function HomeScreen() {
           <LinearGradient colors={['#00695C', '#004D40']} style={styles.cardGradient}>
             <Text style={styles.cardEmoji}>🚿</Text>
             <View style={styles.cardBody}>
-              <Text style={styles.cardTitle}>一級管工事施工管理技士</Text>
+              <Text style={styles.cardTitle}>1級管工事施工管理技士</Text>
               <Text style={styles.cardSubtitle}>原論・空調・給排水衛生・施工管理・法規</Text>
               <Text style={styles.cardMeta}>国家資格 ／ テキスト・科目別問題・全問図解つき解説</Text>
             </View>
@@ -208,7 +208,7 @@ export default function HomeScreen() {
           <LinearGradient colors={['#EF6C00', '#B34700']} style={styles.cardGradient}>
             <Text style={styles.cardEmoji}>💡</Text>
             <View style={styles.cardBody}>
-              <Text style={styles.cardTitle}>一級電気工事施工管理技士</Text>
+              <Text style={styles.cardTitle}>1級電気工事施工管理技士</Text>
               <Text style={styles.cardSubtitle}>電気工学・電気設備・施工管理・法規</Text>
               <Text style={styles.cardMeta}>国家資格 ／ テキスト・科目別問題・全問図解つき解説</Text>
             </View>
@@ -220,7 +220,7 @@ export default function HomeScreen() {
           <LinearGradient colors={['#546E7A', '#263238']} style={styles.cardGradient}>
             <Text style={styles.cardEmoji}>🚜</Text>
             <View style={styles.cardBody}>
-              <Text style={styles.cardTitle}>一級建設機械施工管理技士</Text>
+              <Text style={styles.cardTitle}>1級建設機械施工管理技士</Text>
               <Text style={styles.cardSubtitle}>土木工学・建設機械・施工管理・法規</Text>
               <Text style={styles.cardMeta}>国家資格 ／ テキスト・科目別問題・全問図解つき解説</Text>
             </View>
@@ -232,7 +232,7 @@ export default function HomeScreen() {
           <LinearGradient colors={['#00838F', '#005662']} style={styles.cardGradient}>
             <Text style={styles.cardEmoji}>🌊</Text>
             <View style={styles.cardBody}>
-              <Text style={styles.cardTitle}>一級土木施工管理技士</Text>
+              <Text style={styles.cardTitle}>1級土木施工管理技士</Text>
               <Text style={styles.cardSubtitle}>土木一般・専門土木・施工管理法・法規</Text>
               <Text style={styles.cardMeta}>国家資格 ／ テキスト・科目別問題・全問図解つき解説</Text>
             </View>
@@ -244,7 +244,7 @@ export default function HomeScreen() {
           <LinearGradient colors={['#1565C0', '#0A3D91']} style={styles.cardGradient}>
             <Text style={styles.cardEmoji}>📡</Text>
             <View style={styles.cardBody}>
-              <Text style={styles.cardTitle}>一級電気通信工事施工管理技士</Text>
+              <Text style={styles.cardTitle}>1級電気通信工事施工管理技士</Text>
               <Text style={styles.cardSubtitle}>電気通信工学・設備・施工管理・法規</Text>
               <Text style={styles.cardMeta}>国家資格 ／ テキスト・科目別問題・模擬試験・全問図解つき解説</Text>
             </View>
@@ -259,7 +259,7 @@ export default function HomeScreen() {
           <LinearGradient colors={['#4527A0', '#2A1465']} style={styles.cardGradient}>
             <Text style={styles.cardEmoji}>💰</Text>
             <View style={styles.cardBody}>
-              <Text style={styles.cardTitle}>建設コスト管理士</Text>
+              <Text style={styles.cardTitle}>建築コスト管理士</Text>
               <Text style={styles.cardSubtitle}>コスト管理概論・積算・契約法規・経済調査</Text>
               <Text style={styles.cardMeta}>建設物価調査会 ／ テキスト・科目別問題・模擬試験・全問図解つき解説</Text>
             </View>

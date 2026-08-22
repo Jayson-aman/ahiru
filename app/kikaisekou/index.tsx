@@ -35,7 +35,7 @@ export default function KikaisekouScreen() {
         <TouchableOpacity onPress={() => router.back()} style={styles.backBtn}>
           <Text style={styles.backBtnText}>← 戻る</Text>
         </TouchableOpacity>
-        <Text style={styles.headerTitle}>🚜 一級建設機械施工管理技士</Text>
+        <Text style={styles.headerTitle}>🚜 1級建設機械施工管理技士</Text>
         <Text style={styles.headerSub}>国家資格 ／ 建設機械と土工のスペシャリスト</Text>
         <View style={styles.examInfoRow}>
           <View style={styles.examInfoBadge}><Text style={styles.examInfoText}>一次検定 択一式</Text></View>
@@ -85,7 +85,7 @@ export default function KikaisekouScreen() {
         ))}
 
         <View style={styles.infoCard}>
-          <Text style={styles.infoTitle}>📖 一級建設機械施工管理技士試験について</Text>
+          <Text style={styles.infoTitle}>📖 1級建設機械施工管理技士試験について</Text>
           <Text style={styles.infoText}>・一次検定：択一式／二次検定:記述＋実技（機械操作）</Text>
           <Text style={styles.infoText}>・土木・とび土工・舗装工事業等の主任/監理技術者資格</Text>
           <Text style={styles.infoText}>・機械化施工の計画・管理能力を証明する国家資格</Text>

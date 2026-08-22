@@ -13,7 +13,7 @@ const SECTIONS: GuideSection[] = [
     id: 'overview',
     emoji: '🗺️',
     title: '第二次検定の全体像',
-    body: `一級土木施工管理技士の第二次検定は、土木工事の施工管理の実務能力を「記述式」で問う試験です。第一次検定合格者（技士補）等が受験できます。
+    body: `1級土木施工管理技士の第二次検定は、土木工事の施工管理の実務能力を「記述式」で問う試験です。第一次検定合格者（技士補）等が受験できます。
 
 ━━━━━━━━━━━━━━━━━━━━━━
 📋 試験の基本情報
@@ -175,7 +175,7 @@ export default function DobokusekouNijiScreen() {
     <SafeAreaView style={styles.safe}>
       <CertPaywall
         certKey="dobokusekou"
-        certName="一級土木施工管理技士 二次試験対策"
+        certName="1級土木施工管理技士 二次試験対策"
         certEmoji="✍️"
         accentColor={ACCENT}
         totalQuestions={SECTIONS.length}

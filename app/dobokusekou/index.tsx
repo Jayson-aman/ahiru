@@ -48,7 +48,7 @@ export default function DobokusekouScreen() {
         <TouchableOpacity onPress={() => router.back()} style={styles.backBtn}>
           <Text style={styles.backBtnText}>← 戻る</Text>
         </TouchableOpacity>
-        <Text style={styles.headerTitle}>🚜 一級土木施工管理技士</Text>
+        <Text style={styles.headerTitle}>🚜 1級土木施工管理技士</Text>
         <Text style={styles.headerSub}>国家資格 ／ 土木構造物と施工管理のスペシャリスト</Text>
         <View style={styles.examInfoRow}>
           <View style={styles.examInfoBadge}><Text style={styles.examInfoText}>一次検定 択一式</Text></View>
@@ -143,7 +143,7 @@ export default function DobokusekouScreen() {
         ))}
 
         <View style={styles.infoCard}>
-          <Text style={styles.infoTitle}>📖 一級土木施工管理技士試験について</Text>
+          <Text style={styles.infoTitle}>📖 1級土木施工管理技士試験について</Text>
           <Text style={styles.infoText}>・一次検定：四肢択一式／二次検定：記述式（施工経験記述含む）</Text>
           <Text style={styles.infoText}>・土木一式工事業等の主任技術者・監理技術者資格</Text>
           <Text style={styles.infoText}>・河川・道路・トンネル等、あらゆる土木工事の施工管理能力を証明</Text>

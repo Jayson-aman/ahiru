@@ -12,7 +12,7 @@ export default function SekokanMogiScreen() {
     <SafeAreaView style={styles.safe}>
       <CertPaywall
         certKey="sekokan"
-        certName="一級建築施工管理技士 模擬試験"
+        certName="1級建築施工管理技士 模擬試験"
         certEmoji="📝"
         accentColor="#BF360C"
         totalQuestions={sekokanMogi.length}
@@ -28,7 +28,7 @@ export default function SekokanMogiScreen() {
             timeLimitMinutes={150}
             passingScore={30}
             accentColor="#BF360C"
-            title="一級建築施工管理技士 模擬試験"
+            title="1級建築施工管理技士 模擬試験"
             onBack={() => router.back()}
           />
         )}

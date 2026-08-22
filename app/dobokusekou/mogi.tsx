@@ -12,7 +12,7 @@ export default function DobokusekouMogiScreen() {
     <SafeAreaView style={styles.safe}>
       <CertPaywall
         certKey="dobokusekou"
-        certName="一級土木施工管理技士 模擬試験"
+        certName="1級土木施工管理技士 模擬試験"
         certEmoji="📝"
         accentColor="#00695C"
         totalQuestions={dobokusekouMogi.length}
@@ -28,7 +28,7 @@ export default function DobokusekouMogiScreen() {
             timeLimitMinutes={150}
             passingScore={30}
             accentColor="#00695C"
-            title="一級土木施工管理技士 模擬試験"
+            title="1級土木施工管理技士 模擬試験"
             onBack={() => router.back()}
           />
         )}

@@ -36,7 +36,7 @@ export default function KankojiScreen() {
         <TouchableOpacity onPress={() => router.back()} style={styles.backBtn}>
           <Text style={styles.backBtnText}>← 戻る</Text>
         </TouchableOpacity>
-        <Text style={styles.headerTitle}>🚿 一級管工事施工管理技士</Text>
+        <Text style={styles.headerTitle}>🚿 1級管工事施工管理技士</Text>
         <Text style={styles.headerSub}>国家資格 ／ 空調・衛生設備工事のスペシャリスト</Text>
         <View style={styles.examInfoRow}>
           <View style={styles.examInfoBadge}><Text style={styles.examInfoText}>一次検定 四肢択一</Text></View>
@@ -86,7 +86,7 @@ export default function KankojiScreen() {
         ))}
 
         <View style={styles.infoCard}>
-          <Text style={styles.infoTitle}>📖 一級管工事施工管理技士試験について</Text>
+          <Text style={styles.infoTitle}>📖 1級管工事施工管理技士試験について</Text>
           <Text style={styles.infoText}>・一次検定：四肢択一（学科）／二次検定：施工経験記述等</Text>
           <Text style={styles.infoText}>・受検資格：令和6年度から19歳以上で一次受検可</Text>
           <Text style={styles.infoText}>・空調・給排水衛生の施工管理のプロを証明する国家資格</Text>

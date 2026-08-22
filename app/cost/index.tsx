@@ -90,7 +90,7 @@ export default function CostScreen() {
         <TouchableOpacity onPress={() => router.back()} style={styles.backBtn}>
           <Text style={styles.backBtnText}>← 戻る</Text>
         </TouchableOpacity>
-        <Text style={styles.headerTitle}>💰 建設コスト管理士</Text>
+        <Text style={styles.headerTitle}>💰 建築コスト管理士</Text>
         <Text style={styles.headerSub}>建設コストマネジメントの専門資格</Text>
         <View style={styles.examInfoRow}>
           <View style={styles.examInfoBadge}>
@@ -148,7 +148,7 @@ export default function CostScreen() {
         ))}
 
         <View style={styles.infoCard}>
-          <Text style={styles.infoTitle}>📖 建設コスト管理士について</Text>
+          <Text style={styles.infoTitle}>📖 建築コスト管理士について</Text>
           <Text style={styles.infoText}>・一般財団法人 建設物価調査会が実施する資格</Text>
           <Text style={styles.infoText}>・建設工事の積算・コストマネジメントの専門知識を証明</Text>
           <Text style={styles.infoText}>・発注者支援・設計事務所・ゼネコン・積算事務所で評価される</Text>

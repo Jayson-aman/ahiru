@@ -54,7 +54,7 @@ export default function CostQuizScreen() {
     <SafeAreaView style={styles.safeArea}>
       <CertPaywall
         certKey="cost"
-        certName={`建設コスト管理士 ${info.name}`}
+        certName={`建築コスト管理士 ${info.name}`}
         certEmoji={info.emoji}
         accentColor={info.color}
         totalQuestions={allQuestions.length}

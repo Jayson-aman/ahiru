@@ -66,7 +66,7 @@ export default function SekokanScreen() {
         <TouchableOpacity onPress={() => router.back()} style={styles.backBtn}>
           <Text style={styles.backBtnText}>← 戻る</Text>
         </TouchableOpacity>
-        <Text style={styles.headerTitle}>🏗️ 一級建築施工管理技士</Text>
+        <Text style={styles.headerTitle}>🏗️ 1級建築施工管理技士</Text>
         <Text style={styles.headerSub}>国家資格 ／ 建築工事の施工管理のスペシャリスト</Text>
         <View style={styles.examInfoRow}>
           <View style={styles.examInfoBadge}><Text style={styles.examInfoText}>一次検定 72問中60問解答</Text></View>
@@ -161,10 +161,10 @@ export default function SekokanScreen() {
         ))}
 
         <View style={styles.infoCard}>
-          <Text style={styles.infoTitle}>📖 一級建築施工管理技士について</Text>
+          <Text style={styles.infoTitle}>📖 1級建築施工管理技士について</Text>
           <Text style={styles.infoText}>・一次検定：四肢一択等 72問中60問解答（マークシート）</Text>
           <Text style={styles.infoText}>・二次検定：経験記述＋記述式問題</Text>
-          <Text style={styles.infoText}>・一次合格で「一級建築施工管理技士補」の資格が得られる</Text>
+          <Text style={styles.infoText}>・一次合格で「1級建築施工管理技士補」の資格が得られる</Text>
           <Text style={styles.infoText}>・監理技術者（建築一式等）になれる国家資格</Text>
           <Text style={styles.infoText}>・合格基準：一次は総得点の60%程度（施工管理法の足切りあり）</Text>
         </View>

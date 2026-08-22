@@ -59,7 +59,7 @@ export default function SekokanQuizScreen() {
     <SafeAreaView style={styles.safeArea}>
       <CertPaywall
         certKey="sekokan"
-        certName={`一級建築施工管理技士 ${info.name}`}
+        certName={`1級建築施工管理技士 ${info.name}`}
         certEmoji={info.emoji}
         accentColor={info.color}
         totalQuestions={allQuestions.length}

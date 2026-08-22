@@ -384,7 +384,7 @@ export default function CostRonbunScreen() {
     <SafeAreaView style={styles.safeArea}>
       <CertPaywall
         certKey="cost"
-        certName="建設コスト管理士 論文対策"
+        certName="建築コスト管理士 論文対策"
         certEmoji="✍️"
         accentColor={ACCENT}
         totalQuestions={SECTIONS.length}
@@ -401,7 +401,7 @@ export default function CostRonbunScreen() {
                   <Text style={styles.back}>← 戻る</Text>
                 </TouchableOpacity>
                 <Text style={styles.title}>✍️ 論文（記述式）対策</Text>
-                <Text style={styles.subTitle}>建設コスト管理士 ／ 頻出4テーマの骨格と答案作成術</Text>
+                <Text style={styles.subTitle}>建築コスト管理士 ／ 頻出4テーマの骨格と答案作成術</Text>
               </View>
 
               <ScrollView contentContainerStyle={styles.content}>

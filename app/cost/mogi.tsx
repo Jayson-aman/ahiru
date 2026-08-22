@@ -61,7 +61,7 @@ export default function CostMogiScreen() {
     <SafeAreaView style={styles.safe}>
       <CertPaywall
         certKey="cost"
-        certName="建設コスト管理士 模擬試験"
+        certName="建築コスト管理士 模擬試験"
         certEmoji="📝"
         accentColor="#4527A0"
         totalQuestions={questions.length}
@@ -77,7 +77,7 @@ export default function CostMogiScreen() {
             timeLimitMinutes={120}
             passingScore={24}
             accentColor="#4527A0"
-            title="建設コスト管理士 模擬試験"
+            title="建築コスト管理士 模擬試験"
             onBack={() => router.back()}
           />
         )}

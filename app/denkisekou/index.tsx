@@ -35,7 +35,7 @@ export default function DenkisekouScreen() {
         <TouchableOpacity onPress={() => router.back()} style={styles.backBtn}>
           <Text style={styles.backBtnText}>← 戻る</Text>
         </TouchableOpacity>
-        <Text style={styles.headerTitle}>💡 一級電気工事施工管理技士</Text>
+        <Text style={styles.headerTitle}>💡 1級電気工事施工管理技士</Text>
         <Text style={styles.headerSub}>国家資格 ／ 電気設備工事のスペシャリスト</Text>
         <View style={styles.examInfoRow}>
           <View style={styles.examInfoBadge}><Text style={styles.examInfoText}>一次検定 四肢択一</Text></View>
@@ -85,7 +85,7 @@ export default function DenkisekouScreen() {
         ))}
 
         <View style={styles.infoCard}>
-          <Text style={styles.infoTitle}>📖 一級電気工事施工管理技士試験について</Text>
+          <Text style={styles.infoTitle}>📖 1級電気工事施工管理技士試験について</Text>
           <Text style={styles.infoText}>・一次検定：四肢択一（学科）／二次検定：施工経験記述等</Text>
           <Text style={styles.infoText}>・電気＝指定建設業：監理技術者は1級資格者</Text>
           <Text style={styles.infoText}>・受変電から幹線・動力・照明まで電気設備工事を統括</Text>

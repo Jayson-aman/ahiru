@@ -16,7 +16,7 @@ export default function CostTextIndexScreen() {
     <SafeAreaView style={styles.safe}>
       <View style={styles.header}>
         <TouchableOpacity onPress={() => router.back()}><Text style={styles.back}>← 戻る</Text></TouchableOpacity>
-        <Text style={styles.title}>📖 建設コスト管理士テキスト</Text>
+        <Text style={styles.title}>📖 建築コスト管理士テキスト</Text>
         <Text style={styles.sub}>本試験レベルの要点整理 ／ 図解・比較表つき</Text>
       </View>
       <ScrollView contentContainerStyle={styles.content}>

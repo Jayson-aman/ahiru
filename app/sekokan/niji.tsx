@@ -13,7 +13,7 @@ const SECTIONS: GuideSection[] = [
     id: 'overview',
     emoji: '🗺️',
     title: '第二次検定の全体像',
-    body: `一級建築施工管理技士の第二次検定は、施工管理の実務能力を「記述式」で問う試験です。第一次検定合格者（技士補）等が受験できます。
+    body: `1級建築施工管理技士の第二次検定は、施工管理の実務能力を「記述式」で問う試験です。第一次検定合格者（技士補）等が受験できます。
 
 ━━━━━━━━━━━━━━━━━━━━━━
 📋 試験の基本情報
@@ -184,7 +184,7 @@ export default function SekokanNijiScreen() {
     <SafeAreaView style={styles.safe}>
       <CertPaywall
         certKey="sekokan"
-        certName="一級建築施工管理技士 二次試験対策"
+        certName="1級建築施工管理技士 二次試験対策"
         certEmoji="✍️"
         accentColor={ACCENT}
         totalQuestions={SECTIONS.length}

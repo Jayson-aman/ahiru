@@ -129,7 +129,7 @@ building equipment engineering, plus a guide for the second-stage design
 exam (製図試験).
 ```
 
-### 一級建築施工管理技士（`pro_sekokan`）
+### 1級建築施工管理技士（`pro_sekokan`）
 
 - 価格：月額 ¥1,800 ／ 年額 ¥18,000
 - 内容：建築学等・躯体施工・仕上施工・施工管理法・法規（全825問：学習775問＋模擬50問）＋ 第二次検定対策ガイド
@@ -165,14 +165,14 @@ Unlocks the full question bank for the Japanese Weather Forecaster
 specialized knowledge, and practical forecasting skills.
 ```
 
-### 建設コスト管理士（`pro_cost`）
+### 建築コスト管理士（`pro_cost`）
 
 - 価格：月額 ¥1,800 ／ 年額 ¥18,000
 - 内容：概論・積算・契約・経済 全科目（1,220問）＋ 模擬試験・論文対策
 
 ```
 Unlocks the full question bank (1,220 questions) for the Japanese Construction
-Cost Manager (建設コスト管理士) certification, covering cost management
+Cost Manager (建築コスト管理士) certification, covering cost management
 principles, quantity surveying and estimating, construction contracts, and
 construction economics, together with a mock exam and essay-writing guidance.
 ```
@@ -365,7 +365,7 @@ Unlocks the full question bank for the Japanese Construction Machinery
 Management Engineer (建設機械施工管理技士) certification.
 ```
 
-### 一級土木施工管理技士（`pro_dobokusekou`）
+### 1級土木施工管理技士（`pro_dobokusekou`）
 
 - 価格：月額 ¥1,800 ／ 年額 ¥18,000
 - 内容：土木一般・専門土木・施工管理法・土木法規（全760問：学習710問＋模擬50問）＋ 基礎/応用モード・第二次検定対策ガイド
