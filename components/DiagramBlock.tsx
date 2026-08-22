@@ -1,5 +1,5 @@
-import React from 'react';
-import { View, Text, StyleSheet, Platform, ScrollView, TextStyle, StyleProp } from 'react-native';
+import React, { useEffect, useRef } from 'react';
+import { View, Text, StyleSheet, Platform, ScrollView, TextStyle, StyleProp, Animated } from 'react-native';
 
 /**
  * 【図解】ブロックの本文を描画する共通レンダラー。
@@ -146,11 +146,15 @@ function TableView({ rows, accent }: { rows: string[][]; accent: string }) {
   );
 }
 
+/** ┌ や │ が使われている行が過半なら「枠」とみなす（枠は1ステップとしてまとめて表示） */
+function isFrameLines(lines: string[]): boolean {
+  const boxed = lines.filter(l => /[┌┐└┘│┃║╔╗╚╝]/.test(l)).length;
+  return boxed >= 2 && boxed >= lines.filter(l => l.trim()).length * 0.5;
+}
+
 /** 枠線文字で囲まれた行のかたまりを、枠付きViewに変換して描画 */
 function LinesView({ lines, accent }: { lines: string[]; accent: string }) {
-  // ┌ や │ が使われている行が過半なら「枠」とみなして枠線Viewにする
-  const boxed = lines.filter(l => /[┌┐└┘│┃║╔╗╚╝]/.test(l)).length;
-  const isFrame = boxed >= 2 && boxed >= lines.filter(l => l.trim()).length * 0.5;
+  const isFrame = isFrameLines(lines);
 
   const body = lines.map((ln, i) => {
     const shown = isFrame ? ln.replace(BOX_CHARS, '').replace(/\s+$/, '') : ln;
@@ -168,20 +172,74 @@ function LinesView({ lines, accent }: { lines: string[]; accent: string }) {
   return <>{body}</>;
 }
 
+/** 表・枠は1ブロックで1ステップ、通常行は1行ずつ独立したステップに分解する */
+function buildSteps(groups: Row[], accent: string): React.ReactNode[] {
+  const steps: React.ReactNode[] = [];
+  groups.forEach((g, gi) => {
+    if (g.kind === 'table') {
+      steps.push(<TableView key={`t${gi}`} rows={g.rows} accent={accent} />);
+      return;
+    }
+    if (isFrameLines(g.lines)) {
+      steps.push(<LinesView key={`f${gi}`} lines={g.lines} accent={accent} />);
+      return;
+    }
+    g.lines.forEach((ln, li) => {
+      if (!ln.trim()) return; // 空行はステップにしない
+      steps.push(<LinesView key={`l${gi}-${li}`} lines={[ln]} accent={accent} />);
+    });
+  });
+  return steps;
+}
+
+const STEP_DELAY_MS = 200;
+const STEP_DELAY_CAP_MS = 1200;
+
+/** 図解の各ステップに手順番号バッジを重ね、アニメーションの進行に合わせて順番に出現させる */
+function StepReveal({ index, accent, children }: { index: number; accent: string; children: React.ReactNode }) {
+  const opacity = useRef(new Animated.Value(0)).current;
+  const translateY = useRef(new Animated.Value(10)).current;
+  useEffect(() => {
+    const delay = Math.min(index * STEP_DELAY_MS, STEP_DELAY_CAP_MS);
+    Animated.parallel([
+      Animated.timing(opacity, { toValue: 1, duration: 320, delay, useNativeDriver: true }),
+      Animated.timing(translateY, { toValue: 0, duration: 320, delay, useNativeDriver: true }),
+    ]).start();
+  }, []);
+  return (
+    <Animated.View style={{ opacity, transform: [{ translateY }] }}>
+      <View style={s.stepGroup}>
+        <View style={[s.stepBadge, { backgroundColor: accent }]}>
+          <Text style={s.stepBadgeText}>{index + 1}</Text>
+        </View>
+        {children}
+      </View>
+    </Animated.View>
+  );
+}
+
 export default function DiagramBlock({ lines, accent }: { lines: string[]; accent: string }) {
   const groups = group(lines);
+  const steps = buildSteps(groups, accent);
   return (
     <>
-      {groups.map((g, i) =>
-        g.kind === 'table'
-          ? <TableView key={i} rows={g.rows} accent={accent} />
-          : <LinesView key={i} lines={g.lines} accent={accent} />
-      )}
+      {steps.map((node, i) => (
+        <StepReveal key={i} index={i} accent={accent}>{node}</StepReveal>
+      ))}
     </>
   );
 }
 
 const s = StyleSheet.create({
+  // 手順番号バッジを重ねるステップ単位のラッパー
+  stepGroup: { position: 'relative', marginBottom: 4, paddingLeft: 6 },
+  stepBadge: {
+    position: 'absolute', top: -8, left: -8, width: 20, height: 20, borderRadius: 10,
+    alignItems: 'center', justifyContent: 'center', zIndex: 2,
+    borderWidth: 1.5, borderColor: '#FFFFFF',
+  },
+  stepBadgeText: { fontSize: 10.5, fontWeight: '900', color: '#FFFFFF' },
+
   line: { fontFamily: MONO as string, fontSize: 12.5, lineHeight: 20, color: '#1A2A44' },
   hot: { backgroundColor: '#FFF3E0', color: '#B34700', fontWeight: '700' },
   good: { color: '#1B5E20' },
