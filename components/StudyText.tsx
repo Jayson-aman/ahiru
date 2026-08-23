@@ -56,7 +56,7 @@ export default function StudyText({ text, accent = '#1565C0' }: Props) {
                   </View>
                   {b.title ? <Text style={[s.figTitle, { color: shade(accent) }]}>{b.title}</Text> : null}
                 </View>
-                <DiagramBlock lines={b.lines} accent={accent} />
+                <DiagramBlock lines={b.lines} accent={accent} startDelay={delay} />
               </View>
             </AnimatedFig>
           );

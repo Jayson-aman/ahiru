@@ -153,9 +153,7 @@ function isFrameLines(lines: string[]): boolean {
 }
 
 /** 枠線文字で囲まれた行のかたまりを、枠付きViewに変換して描画 */
-function LinesView({ lines, accent }: { lines: string[]; accent: string }) {
-  const isFrame = isFrameLines(lines);
-
+function LinesView({ lines, accent, isFrame }: { lines: string[]; accent: string; isFrame: boolean }) {
   const body = lines.map((ln, i) => {
     const shown = isFrame ? ln.replace(BOX_CHARS, '').replace(/\s+$/, '') : ln;
     if (!shown.trim()) return <View key={i} style={{ height: 4 }} />;
@@ -172,21 +170,27 @@ function LinesView({ lines, accent }: { lines: string[]; accent: string }) {
   return <>{body}</>;
 }
 
+type Step = { node: React.ReactNode; gapBefore?: boolean };
+
 /** 表・枠は1ブロックで1ステップ、通常行は1行ずつ独立したステップに分解する */
-function buildSteps(groups: Row[], accent: string): React.ReactNode[] {
-  const steps: React.ReactNode[] = [];
+function buildSteps(groups: Row[], accent: string): Step[] {
+  const steps: Step[] = [];
   groups.forEach((g, gi) => {
     if (g.kind === 'table') {
-      steps.push(<TableView key={`t${gi}`} rows={g.rows} accent={accent} />);
+      steps.push({ node: <TableView key={`t${gi}`} rows={g.rows} accent={accent} /> });
       return;
     }
-    if (isFrameLines(g.lines)) {
-      steps.push(<LinesView key={`f${gi}`} lines={g.lines} accent={accent} />);
+    const frame = isFrameLines(g.lines);
+    if (frame) {
+      steps.push({ node: <LinesView key={`f${gi}`} lines={g.lines} accent={accent} isFrame /> });
       return;
     }
+    // 空行は独立したステップにはしないが、直後のステップに余白として引き継ぐ（段落の区切りを保持）
+    let gapPending = false;
     g.lines.forEach((ln, li) => {
-      if (!ln.trim()) return; // 空行はステップにしない
-      steps.push(<LinesView key={`l${gi}-${li}`} lines={[ln]} accent={accent} />);
+      if (!ln.trim()) { gapPending = steps.length > 0; return; }
+      steps.push({ node: <LinesView key={`l${gi}-${li}`} lines={[ln]} accent={accent} isFrame={false} />, gapBefore: gapPending });
+      gapPending = false;
     });
   });
   return steps;
@@ -196,11 +200,11 @@ const STEP_DELAY_MS = 200;
 const STEP_DELAY_CAP_MS = 1200;
 
 /** 図解の各ステップに手順番号バッジを重ね、アニメーションの進行に合わせて順番に出現させる */
-function StepReveal({ index, accent, children }: { index: number; accent: string; children: React.ReactNode }) {
+function StepReveal({ index, accent, startDelay, gapBefore, children }: { index: number; accent: string; startDelay: number; gapBefore?: boolean; children: React.ReactNode }) {
   const opacity = useRef(new Animated.Value(0)).current;
   const translateY = useRef(new Animated.Value(10)).current;
   useEffect(() => {
-    const delay = Math.min(index * STEP_DELAY_MS, STEP_DELAY_CAP_MS);
+    const delay = startDelay + Math.min(index * STEP_DELAY_MS, STEP_DELAY_CAP_MS);
     Animated.parallel([
       Animated.timing(opacity, { toValue: 1, duration: 320, delay, useNativeDriver: true }),
       Animated.timing(translateY, { toValue: 0, duration: 320, delay, useNativeDriver: true }),
@@ -208,7 +212,7 @@ function StepReveal({ index, accent, children }: { index: number; accent: string
   }, []);
   return (
     <Animated.View style={{ opacity, transform: [{ translateY }] }}>
-      <View style={s.stepGroup}>
+      <View style={[s.stepGroup, gapBefore && s.stepGroupGap]}>
         <View style={[s.stepBadge, { backgroundColor: accent }]}>
           <Text style={s.stepBadgeText}>{index + 1}</Text>
         </View>
@@ -218,13 +222,13 @@ function StepReveal({ index, accent, children }: { index: number; accent: string
   );
 }
 
-export default function DiagramBlock({ lines, accent }: { lines: string[]; accent: string }) {
+export default function DiagramBlock({ lines, accent, startDelay = 0 }: { lines: string[]; accent: string; startDelay?: number }) {
   const groups = group(lines);
   const steps = buildSteps(groups, accent);
   return (
     <>
-      {steps.map((node, i) => (
-        <StepReveal key={i} index={i} accent={accent}>{node}</StepReveal>
+      {steps.map((step, i) => (
+        <StepReveal key={i} index={i} accent={accent} startDelay={startDelay} gapBefore={step.gapBefore}>{step.node}</StepReveal>
       ))}
     </>
   );
@@ -233,6 +237,7 @@ export default function DiagramBlock({ lines, accent }: { lines: string[]; accen
 const s = StyleSheet.create({
   // 手順番号バッジを重ねるステップ単位のラッパー
   stepGroup: { position: 'relative', marginBottom: 4, paddingLeft: 6 },
+  stepGroupGap: { marginTop: 8 },
   stepBadge: {
     position: 'absolute', top: -8, left: -8, width: 20, height: 20, borderRadius: 10,
     alignItems: 'center', justifyContent: 'center', zIndex: 2,
