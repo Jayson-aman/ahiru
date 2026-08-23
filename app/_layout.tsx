@@ -6,6 +6,7 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 import { initRevenueCat } from '../services/subscription';
 import { LAST_FATAL_ERROR_KEY } from '../services/crashCapture';
 import { configureAudioSession } from '../services/audioSession';
+import UpdateBanner from '../components/UpdateBanner';
 
 export default function RootLayout() {
   useEffect(() => {
@@ -106,6 +107,7 @@ export default function RootLayout() {
         <Stack.Screen name="kisho/text/index" options={{ headerShown: false, presentation: 'card' }} />
         <Stack.Screen name="kisho/text/[subject]" options={{ headerShown: false, presentation: 'card' }} />
       </Stack>
+      <UpdateBanner />
     </>
   );
 }
