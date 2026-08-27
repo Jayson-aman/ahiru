@@ -161,7 +161,9 @@ section{padding:64px 0;border-bottom:1px solid var(--rule)}
 .cgroup h3{font-size:13px;letter-spacing:.1em;color:var(--brown);margin-bottom:6px}
 .cgroup ul{list-style:none;margin:0;padding:0}
 .cgroup li{padding:10px 0;border-bottom:1px dotted var(--rule)}
-.cgroup .nm{font-size:14px;font-weight:700;line-height:1.5;display:block}
+.cgroup .nm{font-size:14px;font-weight:700;line-height:1.5;display:block;color:inherit;text-decoration:none}
+.cgroup a.nm:hover,.cgroup a.nm:focus-visible{color:var(--accent)}
+.cgroup a.nm::after{content:" →";color:var(--accent);font-weight:700}
 .cgroup .ds{font-size:12.5px;color:var(--slate);line-height:1.75;display:block;margin-top:3px}
 .cgroup li.new .nm::after{
   content:"新";font-size:10px;color:#FFFDF7;background:var(--accent);
@@ -188,6 +190,15 @@ section{padding:64px 0;border-bottom:1px solid var(--rule)}
 .price .m span{font-size:14px;font-weight:500}
 .price .y{font-size:13px;color:var(--slate);margin-top:6px}
 .price .y b{color:var(--accent);font-weight:700}
+.planbtn{
+  margin-top:20px;display:block;text-align:center;padding:11px 14px;
+  border:1px solid var(--ink);color:var(--ink);text-decoration:none;
+  font-size:13px;font-weight:700;transition:opacity .15s ease;
+}
+.planbtn:hover,.planbtn:focus-visible{opacity:.7}
+.planbtn-lead{background:var(--accent);border-color:var(--accent);color:var(--panel)}
+.platformnote{margin-top:16px;font-size:12.5px;color:var(--slate);text-align:center}
+.platformnote a{color:var(--accent);font-weight:700;text-decoration:none;border-bottom:1px solid var(--accent)}
 .freebar{
   margin-top:44px;padding:18px 24px;border:1px solid var(--rule);
   background:var(--accent-soft);font-size:14px;
@@ -310,21 +321,21 @@ footer .about{font-size:13px;opacity:.85;line-height:1.9}
         <div class="cgroup">
           <h3>施工管理</h3>
           <ul>
-            <li><span class="nm">1級建築施工管理技士</span><span class="ds">ビル・マンションなどの建築工事で、監理技術者として工程・品質・安全を統括します。一定規模以上の工事には配置が義務づけられています。</span></li>
-            <li><span class="nm">1級土木施工管理技士</span><span class="ds">道路・橋梁・トンネル・河川などの土木工事を統括します。公共工事の入札で会社が受ける評価にも直結します。</span></li>
-            <li><span class="nm">1級管工事施工管理技士</span><span class="ds">空調・換気・給排水・ガス配管の工事を統括します。改修需要が続くため、新築が減っても仕事がなくなりません。</span></li>
-            <li><span class="nm">1級電気工事施工管理技士</span><span class="ds">受変電設備・幹線・照明・動力の電気工事を統括します。EV充電設備や太陽光の普及で対象が広がっています。</span></li>
-            <li><span class="nm">1級建設機械施工管理技士</span><span class="ds">重機を使う土工事・造成・解体で、機械の選定と配置を計画します。ICT施工の広まりで役割が変わりつつあります。</span></li>
-            <li><span class="nm">1級電気通信工事施工管理技士</span><span class="ds">通信設備・光ファイバ・基地局・構内配線の工事を統括します。2019年に新設された資格で、有資格者がまだ少ない分野です。</span></li>
+            <li><a class="nm" href="/sekokan?buy=1&period=yearly">1級建築施工管理技士</a><span class="ds">ビル・マンションなどの建築工事で、監理技術者として工程・品質・安全を統括します。一定規模以上の工事には配置が義務づけられています。</span></li>
+            <li><a class="nm" href="/dobokusekou?buy=1&period=yearly">1級土木施工管理技士</a><span class="ds">道路・橋梁・トンネル・河川などの土木工事を統括します。公共工事の入札で会社が受ける評価にも直結します。</span></li>
+            <li><a class="nm" href="/kankoji?buy=1&period=yearly">1級管工事施工管理技士</a><span class="ds">空調・換気・給排水・ガス配管の工事を統括します。改修需要が続くため、新築が減っても仕事がなくなりません。</span></li>
+            <li><a class="nm" href="/denkisekou?buy=1&period=yearly">1級電気工事施工管理技士</a><span class="ds">受変電設備・幹線・照明・動力の電気工事を統括します。EV充電設備や太陽光の普及で対象が広がっています。</span></li>
+            <li><a class="nm" href="/kikaisekou?buy=1&period=yearly">1級建設機械施工管理技士</a><span class="ds">重機を使う土工事・造成・解体で、機械の選定と配置を計画します。ICT施工の広まりで役割が変わりつつあります。</span></li>
+            <li><a class="nm" href="/tsushin?buy=1&period=yearly">1級電気通信工事施工管理技士</a><span class="ds">通信設備・光ファイバ・基地局・構内配線の工事を統括します。2019年に新設された資格で、有資格者がまだ少ない分野です。</span></li>
           </ul>
         </div>
         <div class="cgroup">
           <h3>建築・設計・コスト</h3>
           <ul>
-            <li><span class="nm">二級建築士</span><span class="ds">一定の規模・用途の範囲で、設計と工事監理を自分の名前で行えます。住宅設計を主戦場にするなら十分に実用的な資格です。</span></li>
-            <li><span class="nm">建築設備士</span><span class="ds">空調・給排水・電気を横断して、建築設備の設計に助言できる立場です。実務経験を積むと一級建築士の受験資格にもつながります。</span></li>
-            <li><span class="nm">建築コスト管理士</span><span class="ds">図面から数量を拾い、単価を当て、契約条件を読んで工事費を算出します。見積りの精度が会社の利益をほぼ決めます。</span></li>
-            <li><span class="nm">コンクリート技士・診断士</span><span class="ds">コンクリートの配合設計と品質管理、そして既存構造物のひび割れから劣化の原因を特定する診断を担います。</span></li>
+            <li><a class="nm" href="/nikkyu?buy=1&period=yearly">二級建築士</a><span class="ds">一定の規模・用途の範囲で、設計と工事監理を自分の名前で行えます。住宅設計を主戦場にするなら十分に実用的な資格です。</span></li>
+            <li><a class="nm" href="/kenchiku?buy=1&period=yearly">建築設備士</a><span class="ds">空調・給排水・電気を横断して、建築設備の設計に助言できる立場です。実務経験を積むと一級建築士の受験資格にもつながります。</span></li>
+            <li><a class="nm" href="/cost?buy=1&period=yearly">建築コスト管理士</a><span class="ds">図面から数量を拾い、単価を当て、契約条件を読んで工事費を算出します。見積りの精度が会社の利益をほぼ決めます。</span></li>
+            <li><a class="nm" href="/concrete?buy=1&period=yearly">コンクリート技士・診断士</a><span class="ds">コンクリートの配合設計と品質管理、そして既存構造物のひび割れから劣化の原因を特定する診断を担います。</span></li>
           </ul>
         </div>
       </div>
@@ -332,27 +343,27 @@ footer .about{font-size:13px;opacity:.85;line-height:1.9}
         <div class="cgroup">
           <h3>ガス・保安</h3>
           <ul>
-            <li class="new"><span class="nm">液化石油ガス設備士</span><span class="ds">LPガスの配管接続・気密試験など、法律で有資格者にしかできないと定められた作業を担います。都市ガスの無い地域では生活インフラそのものです。</span></li>
-            <li class="new"><span class="nm">高圧ガス製造保安責任者</span><span class="ds">高圧ガスを製造する事業所に、法律で選任が義務づけられている保安の責任者です。化学プラント・充填所・冷凍倉庫などが対象になります。</span></li>
-            <li><span class="nm">危険物取扱者（乙種第4類）</span><span class="ds">ガソリン・灯油・軽油など引火性液体を扱います。給油所や化学工場で保安監督者になるための、もっとも使われている国家資格です。</span></li>
-            <li><span class="nm">消防設備士（甲種）</span><span class="ds">スプリンクラーや自動火災報知設備の工事・整備・点検を独占的に行えます。消防法が建物所有者に定期点検を義務づけています。</span></li>
+            <li class="new"><a class="nm" href="/lpgas?buy=1&period=yearly">液化石油ガス設備士</a><span class="ds">LPガスの配管接続・気密試験など、法律で有資格者にしかできないと定められた作業を担います。都市ガスの無い地域では生活インフラそのものです。</span></li>
+            <li class="new"><a class="nm" href="/koatsu?buy=1&period=yearly">高圧ガス製造保安責任者</a><span class="ds">高圧ガスを製造する事業所に、法律で選任が義務づけられている保安の責任者です。化学プラント・充填所・冷凍倉庫などが対象になります。</span></li>
+            <li><a class="nm" href="/kikenbutsu?buy=1&period=yearly">危険物取扱者（乙種第4類）</a><span class="ds">ガソリン・灯油・軽油など引火性液体を扱います。給油所や化学工場で保安監督者になるための、もっとも使われている国家資格です。</span></li>
+            <li><a class="nm" href="/shobo?buy=1&period=yearly">消防設備士（甲種）</a><span class="ds">スプリンクラーや自動火災報知設備の工事・整備・点検を独占的に行えます。消防法が建物所有者に定期点検を義務づけています。</span></li>
           </ul>
         </div>
         <div class="cgroup">
           <h3>電気・水道</h3>
           <ul>
-            <li><span class="nm">第二種電気工事士</span><span class="ds">住宅や小規模店舗の電気工事ができます。受験資格に制限がなく、未経験から電気の仕事に入る標準ルートです。</span></li>
-            <li><span class="nm">電験三種（第三種電気主任技術者）</span><span class="ds">高圧受電をしている工場・ビル・商業施設に、法律で選任が義務づけられた電気主任技術者になれます。慢性的に不足しています。</span></li>
-            <li><span class="nm">給水装置工事主任技術者</span><span class="ds">水道工事を請け負う会社が指定を受けるために、事業所ごとの選任が必須です。老朽管の更新需要が長く続きます。</span></li>
+            <li><a class="nm" href="/denki2?buy=1&period=yearly">第二種電気工事士</a><span class="ds">住宅や小規模店舗の電気工事ができます。受験資格に制限がなく、未経験から電気の仕事に入る標準ルートです。</span></li>
+            <li><a class="nm" href="/denken3?buy=1&period=yearly">電験三種（第三種電気主任技術者）</a><span class="ds">高圧受電をしている工場・ビル・商業施設に、法律で選任が義務づけられた電気主任技術者になれます。慢性的に不足しています。</span></li>
+            <li><a class="nm" href="/kyusui?buy=1&period=yearly">給水装置工事主任技術者</a><span class="ds">水道工事を請け負う会社が指定を受けるために、事業所ごとの選任が必須です。老朽管の更新需要が長く続きます。</span></li>
           </ul>
         </div>
         <div class="cgroup">
           <h3>不動産・金融・気象</h3>
           <ul>
-            <li><span class="nm">宅地建物取引士</span><span class="ds">重要事項説明は宅建士でなければ行えません。事務所の従業者5人に1人という設置義務が需要を支えています。</span></li>
-            <li><span class="nm">マンション管理士</span><span class="ds">築40年を超える物件が増えるなか、大規模修繕や建替えの合意形成を支援します。管理業務主任者と範囲が大きく重なります。</span></li>
-            <li><span class="nm">ファイナンシャルプランナー（2級・3級）</span><span class="ds">年金・保険・投資・税金・不動産・相続を横断して家計を設計します。学んだ内容がそのまま自分の生活にも使えます。</span></li>
-            <li><span class="nm">気象予報士</span><span class="ds">予報業務を行う事業所に選任義務があります。近年は放送よりも、建設現場やインフラ企業の防災判断での需要が増えています。</span></li>
+            <li><a class="nm" href="/takkei?buy=1&period=yearly">宅地建物取引士</a><span class="ds">重要事項説明は宅建士でなければ行えません。事務所の従業者5人に1人という設置義務が需要を支えています。</span></li>
+            <li><a class="nm" href="/mansion?buy=1&period=yearly">マンション管理士</a><span class="ds">築40年を超える物件が増えるなか、大規模修繕や建替えの合意形成を支援します。管理業務主任者と範囲が大きく重なります。</span></li>
+            <li><a class="nm" href="/fp?buy=1&period=yearly">ファイナンシャルプランナー（2級・3級）</a><span class="ds">年金・保険・投資・税金・不動産・相続を横断して家計を設計します。学んだ内容がそのまま自分の生活にも使えます。</span></li>
+            <li><a class="nm" href="/kisho?buy=1&period=yearly">気象予報士</a><span class="ds">予報業務を行う事業所に選任義務があります。近年は放送よりも、建設現場やインフラ企業の防災判断での需要が増えています。</span></li>
           </ul>
         </div>
       </div>
@@ -394,6 +405,7 @@ footer .about{font-size:13px;opacity:.85;line-height:1.9}
           <div class="m">1,800<span> 円/月</span></div>
           <div class="y">年額 18,000円 <b>2か月分お得</b></div>
         </div>
+        <a href="#certs" class="planbtn">資格を選んで購入 →</a>
       </div>
       <div class="plan lead">
         <h3>全資格 Max</h3>
@@ -402,6 +414,7 @@ footer .about{font-size:13px;opacity:.85;line-height:1.9}
           <div class="m">2,800<span> 円/月</span></div>
           <div class="y">年額 28,000円 <b>2か月分お得</b></div>
         </div>
+        <a href="/eiken?buy=1&period=yearly" class="planbtn planbtn-lead">購入する →</a>
       </div>
       <div class="plan">
         <h3>英検</h3>
@@ -410,8 +423,10 @@ footer .about{font-size:13px;opacity:.85;line-height:1.9}
           <div class="m">800<span> 円/月</span></div>
           <div class="y">年額 8,000円 <b>17%お得</b></div>
         </div>
+        <a href="/eiken?buy=1&period=yearly" class="planbtn">購入する →</a>
       </div>
     </div>
+    <p class="platformnote">Webブラウザからそのまま購入できます。iPhone・iPadをお使いの方は <a href="https://apps.apple.com/us/app/%E5%BB%BA%E7%AF%89-%E5%9C%9F%E6%9C%A8-%E8%A8%AD%E5%82%99-%E9%9B%BB%E6%B0%97%E7%B3%BB-%E5%9B%BD%E5%AE%B6%E8%B3%87%E6%A0%BC-qualiz-%E3%82%AF%E3%82%AA%E3%83%AA%E3%82%BA/id6789186637">App Store版</a> もご利用いただけます。</p>
     <p class="freebar"><b>まず無料でお試しください。</b>各科目10問、要点テキストは各科目2節まで、登録なしでご利用いただけます。問題と解説の質を確かめてから判断してください。</p>
   </div>
 </section>

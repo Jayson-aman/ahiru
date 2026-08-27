@@ -3,7 +3,7 @@ import {
   View, Text, StyleSheet, TouchableOpacity, ActivityIndicator, Alert, ScrollView, Modal,
 } from 'react-native';
 import { LinearGradient } from 'expo-linear-gradient';
-import { useRouter } from 'expo-router';
+import { useRouter, useLocalSearchParams } from 'expo-router';
 import {
   CertKey,
   FREE_QUESTION_LIMIT,
@@ -59,13 +59,14 @@ export default function CertPaywall({
 }: Props) {
   const unit = unitLabel ?? '問';
   const router = useRouter();
+  const params = useLocalSearchParams<{ buy?: string; period?: string }>();
   const [info, setInfo] = useState<CustomerInfo | null>(null);
   const [loading, setLoading] = useState(true);
   const [purchasing, setPurchasing] = useState(false);
   /** オファリング内の全パッケージ。購入時に「資格キー×期間」で選び直す */
   const [packages, setPackages] = useState<PurchasesPackage[]>([]);
-  const [period, setPeriod] = useState<BillingPeriod>('yearly');
-  const [showPlans, setShowPlans] = useState(false);
+  const [period, setPeriod] = useState<BillingPeriod>(params.period === 'monthly' ? 'monthly' : 'yearly');
+  const [showPlans, setShowPlans] = useState(!!params.buy);
   const limit = freeLimit ?? FREE_QUESTION_LIMIT;
   const hasAccess = hasCertAccess(info, certKey);
   const comingSoon = isComingSoon(certKey);
