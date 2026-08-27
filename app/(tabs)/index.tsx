@@ -1,313 +1,249 @@
 import React from 'react';
 import { View, Text, StyleSheet, SafeAreaView, TouchableOpacity, ScrollView, Image } from 'react-native';
 import { useRouter } from 'expo-router';
-import { LinearGradient } from 'expo-linear-gradient';
+
+type Cert = {
+  emoji: string;
+  title: string;
+  subtitle: string;
+  meta: string;
+  route: string;
+};
+
+function CertCard({ cert, onPress }: { cert: Cert; onPress: () => void }) {
+  return (
+    <TouchableOpacity style={styles.card} onPress={onPress} activeOpacity={0.85}>
+      <View style={styles.cardIconChip}>
+        <Text style={styles.cardEmoji}>{cert.emoji}</Text>
+      </View>
+      <View style={styles.cardBody}>
+        <Text style={styles.cardTitle}>{cert.title}</Text>
+        <Text style={styles.cardSubtitle}>{cert.subtitle}</Text>
+        <Text style={styles.cardMeta}>{cert.meta}</Text>
+      </View>
+      <Text style={styles.cardArrow}>›</Text>
+    </TouchableOpacity>
+  );
+}
 
 export default function HomeScreen() {
   const router = useRouter();
+  const go = (route: string) => () => router.push(route as any);
 
   return (
     <SafeAreaView style={styles.container}>
-      <LinearGradient colors={['#1B2A5C', '#0D3D8A']} style={styles.header}>
+      <View style={styles.header}>
         <Image source={require('../../assets/icon.png')} style={styles.appLogo} />
         <View>
           <Text style={styles.appTitle}>QualiZ</Text>
           <Text style={styles.appSubtitle}>国家資格・検定の合格ナビ</Text>
         </View>
-      </LinearGradient>
+      </View>
 
       <ScrollView style={styles.scroll} contentContainerStyle={styles.content} showsVerticalScrollIndicator={false}>
 
         {/* 語学 */}
         <Text style={styles.sectionLabel}>🇬🇧 語学・英語</Text>
 
-        <TouchableOpacity style={styles.card} onPress={() => router.push('/eiken')} activeOpacity={0.85}>
-          <LinearGradient colors={['#7B1FA2', '#4A0072']} style={styles.cardGradient}>
-            <Text style={styles.cardEmoji}>🇬🇧</Text>
-            <View style={styles.cardBody}>
-              <Text style={styles.cardTitle}>英検対策</Text>
-              <Text style={styles.cardSubtitle}>2級・3級・4級 ネイティブ品質問題</Text>
-              <Text style={styles.cardMeta}>語彙・熟語・文法・読解・対話・リスニングを網羅</Text>
-            </View>
-            <Text style={styles.cardArrow}>›</Text>
-          </LinearGradient>
-        </TouchableOpacity>
+        <CertCard
+          onPress={go('/eiken')}
+          cert={{
+            emoji: '🇬🇧', title: '英検対策', subtitle: '2級・3級・4級 ネイティブ品質問題',
+            meta: '語彙・熟語・文法・読解・対話・リスニングを網羅', route: '/eiken',
+          }}
+        />
 
         {/* 資格試験：不動産系 */}
         <Text style={[styles.sectionLabel, { marginTop: 24 }]}>🏠 不動産・法律系</Text>
 
-        <TouchableOpacity style={styles.card} onPress={() => router.push('/takkei')} activeOpacity={0.85}>
-          <LinearGradient colors={['#6B3210', '#4A2208']} style={styles.cardGradient}>
-            <Text style={styles.cardEmoji}>🏠</Text>
-            <View style={styles.cardBody}>
-              <Text style={styles.cardTitle}>宅建試験</Text>
-              <Text style={styles.cardSubtitle}>権利関係・宅建業法・法令制限・税</Text>
-              <Text style={styles.cardMeta}>国家資格 ／ 本試験形式模試5回分収録</Text>
-            </View>
-            <Text style={styles.cardArrow}>›</Text>
-          </LinearGradient>
-        </TouchableOpacity>
+        <CertCard
+          onPress={go('/takkei')}
+          cert={{
+            emoji: '🏠', title: '宅建試験', subtitle: '権利関係・宅建業法・法令制限・税',
+            meta: '国家資格 ／ 本試験形式模試5回分収録', route: '/takkei',
+          }}
+        />
 
-        <TouchableOpacity style={styles.card} onPress={() => router.push('/mansion')} activeOpacity={0.85}>
-          <LinearGradient colors={['#7B1FA2', '#4A0072']} style={styles.cardGradient}>
-            <Text style={styles.cardEmoji}>🏢</Text>
-            <View style={styles.cardBody}>
-              <Text style={styles.cardTitle}>マンション管理士</Text>
-              <Text style={styles.cardSubtitle}>管理組合・区分所有法・設備管理</Text>
-              <Text style={styles.cardMeta}>国家資格 ／ 分野別問題・本試験形式模試（2年分）収録</Text>
-            </View>
-            <Text style={styles.cardArrow}>›</Text>
-          </LinearGradient>
-        </TouchableOpacity>
+        <CertCard
+          onPress={go('/mansion')}
+          cert={{
+            emoji: '🏢', title: 'マンション管理士', subtitle: '管理組合・区分所有法・設備管理',
+            meta: '国家資格 ／ 分野別問題・本試験形式模試（2年分）収録', route: '/mansion',
+          }}
+        />
 
         {/* 資格試験：金融・税務系 */}
         <Text style={[styles.sectionLabel, { marginTop: 24 }]}>💴 金融・税務系</Text>
 
-        <TouchableOpacity style={styles.card} onPress={() => router.push('/fp')} activeOpacity={0.85}>
-          <LinearGradient colors={['#0D7C3D', '#085C2D']} style={styles.cardGradient}>
-            <Text style={styles.cardEmoji}>💴</Text>
-            <View style={styles.cardBody}>
-              <Text style={styles.cardTitle}>FP試験</Text>
-              <Text style={styles.cardSubtitle}>ファイナンシャルプランナー 2・3級</Text>
-              <Text style={styles.cardMeta}>国家資格 ／ 6分野・詳細解説付き</Text>
-            </View>
-            <Text style={styles.cardArrow}>›</Text>
-          </LinearGradient>
-        </TouchableOpacity>
+        <CertCard
+          onPress={go('/fp')}
+          cert={{
+            emoji: '💴', title: 'FP試験', subtitle: 'ファイナンシャルプランナー 2・3級',
+            meta: '国家資格 ／ 6分野・詳細解説付き', route: '/fp',
+          }}
+        />
 
         {/* 資格試験：建築・設備系 */}
         <Text style={[styles.sectionLabel, { marginTop: 24 }]}>🏛️ 建築・設備系</Text>
 
-        <TouchableOpacity style={styles.card} onPress={() => router.push('/nikkyu' as any)} activeOpacity={0.85}>
-          <LinearGradient colors={['#00695C', '#003D33']} style={styles.cardGradient}>
-            <Text style={styles.cardEmoji}>📐</Text>
-            <View style={styles.cardBody}>
-              <Text style={styles.cardTitle}>二級建築士</Text>
-              <Text style={styles.cardSubtitle}>建築計画・法規・構造・施工</Text>
-              <Text style={styles.cardMeta}>国家資格 ／ テキスト・科目別問題・学科模試・製図対策</Text>
-            </View>
-            <Text style={styles.cardArrow}>›</Text>
-          </LinearGradient>
-        </TouchableOpacity>
+        <CertCard
+          onPress={go('/nikkyu')}
+          cert={{
+            emoji: '📐', title: '二級建築士', subtitle: '建築計画・法規・構造・施工',
+            meta: '国家資格 ／ テキスト・科目別問題・学科模試・製図対策', route: '/nikkyu',
+          }}
+        />
 
-        <TouchableOpacity style={styles.card} onPress={() => router.push('/kenchiku')} activeOpacity={0.85}>
-          <LinearGradient colors={['#37474F', '#1C2B33']} style={styles.cardGradient}>
-            <Text style={styles.cardEmoji}>🏛️</Text>
-            <View style={styles.cardBody}>
-              <Text style={styles.cardTitle}>建築設備士</Text>
-              <Text style={styles.cardSubtitle}>空調・給排水・電気・法規・構造</Text>
-              <Text style={styles.cardMeta}>国家資格 ／ テキスト・基礎/応用・模擬試験・製図ガイド</Text>
-            </View>
-            <Text style={styles.cardArrow}>›</Text>
-          </LinearGradient>
-        </TouchableOpacity>
+        <CertCard
+          onPress={go('/kenchiku')}
+          cert={{
+            emoji: '🏛️', title: '建築設備士', subtitle: '空調・給排水・電気・法規・構造',
+            meta: '国家資格 ／ テキスト・基礎/応用・模擬試験・製図ガイド', route: '/kenchiku',
+          }}
+        />
 
-        <TouchableOpacity style={styles.card} onPress={() => router.push('/kyusui' as any)} activeOpacity={0.85}>
-          <LinearGradient colors={['#0288D1', '#01579B']} style={styles.cardGradient}>
-            <Text style={styles.cardEmoji}>💧</Text>
-            <View style={styles.cardBody}>
-              <Text style={styles.cardTitle}>給水装置工事主任技術者</Text>
-              <Text style={styles.cardSubtitle}>水道行政・工事法・構造性能・計画論ほか8科目</Text>
-              <Text style={styles.cardMeta}>国家資格 ／ テキスト・科目別問題・模擬試験・全問図解つき解説</Text>
-            </View>
-            <Text style={styles.cardArrow}>›</Text>
-          </LinearGradient>
-        </TouchableOpacity>
+        <CertCard
+          onPress={go('/kyusui')}
+          cert={{
+            emoji: '💧', title: '給水装置工事主任技術者', subtitle: '水道行政・工事法・構造性能・計画論ほか8科目',
+            meta: '国家資格 ／ テキスト・科目別問題・模擬試験・全問図解つき解説', route: '/kyusui',
+          }}
+        />
 
-        <TouchableOpacity style={styles.card} onPress={() => router.push('/shobo' as any)} activeOpacity={0.85}>
-          <LinearGradient colors={['#D32F2F', '#8E0000']} style={styles.cardGradient}>
-            <Text style={styles.cardEmoji}>🧯</Text>
-            <View style={styles.cardBody}>
-              <Text style={styles.cardTitle}>消防設備士 甲種</Text>
-              <Text style={styles.cardSubtitle}>消防法令・基礎的知識・構造機能・規格・実技</Text>
-              <Text style={styles.cardMeta}>国家資格 ／ テキスト・科目別問題・模擬試験・全問図解つき解説</Text>
-            </View>
-            <Text style={styles.cardArrow}>›</Text>
-          </LinearGradient>
-        </TouchableOpacity>
+        <CertCard
+          onPress={go('/shobo')}
+          cert={{
+            emoji: '🧯', title: '消防設備士 甲種', subtitle: '消防法令・基礎的知識・構造機能・規格・実技',
+            meta: '国家資格 ／ テキスト・科目別問題・模擬試験・全問図解つき解説', route: '/shobo',
+          }}
+        />
 
-        <TouchableOpacity style={styles.card} onPress={() => router.push('/concrete' as any)} activeOpacity={0.85}>
-          <LinearGradient colors={['#6D4C41', '#3E2723']} style={styles.cardGradient}>
-            <Text style={styles.cardEmoji}>🧱</Text>
-            <View style={styles.cardBody}>
-              <Text style={styles.cardTitle}>コンクリート技士・診断士</Text>
-              <Text style={styles.cardSubtitle}>材料・配合・製造・施工・各種・劣化診断</Text>
-              <Text style={styles.cardMeta}>日本コンクリート工学会 ／ テキスト・科目別問題・模擬試験・全問図解つき解説</Text>
-            </View>
-            <Text style={styles.cardArrow}>›</Text>
-          </LinearGradient>
-        </TouchableOpacity>
+        <CertCard
+          onPress={go('/concrete')}
+          cert={{
+            emoji: '🧱', title: 'コンクリート技士・診断士', subtitle: '材料・配合・製造・施工・各種・劣化診断',
+            meta: '日本コンクリート工学会 ／ テキスト・科目別問題・模擬試験・全問図解つき解説', route: '/concrete',
+          }}
+        />
 
         {/* 危険物・保安系 */}
         <Text style={[styles.sectionLabel, { marginTop: 24 }]}>🛢️ 危険物・保安系</Text>
 
-        <TouchableOpacity style={styles.card} onPress={() => router.push('/kikenbutsu' as any)} activeOpacity={0.85}>
-          <LinearGradient colors={['#C62828', '#7F1010']} style={styles.cardGradient}>
-            <Text style={styles.cardEmoji}>🛢️</Text>
-            <View style={styles.cardBody}>
-              <Text style={styles.cardTitle}>危険物取扱者 乙種第4類</Text>
-              <Text style={styles.cardSubtitle}>法令・物理化学・性質と消火</Text>
-              <Text style={styles.cardMeta}>国家資格 ／ テキスト・科目別問題・模擬試験・全問図解つき解説</Text>
-            </View>
-            <Text style={styles.cardArrow}>›</Text>
-          </LinearGradient>
-        </TouchableOpacity>
+        <CertCard
+          onPress={go('/kikenbutsu')}
+          cert={{
+            emoji: '🛢️', title: '危険物取扱者 乙種第4類', subtitle: '法令・物理化学・性質と消火',
+            meta: '国家資格 ／ テキスト・科目別問題・模擬試験・全問図解つき解説', route: '/kikenbutsu',
+          }}
+        />
 
-        <TouchableOpacity style={styles.card} onPress={() => router.push('/lpgas' as any)} activeOpacity={0.85}>
-          <LinearGradient colors={['#F57F17', '#E65100']} style={styles.cardGradient}>
-            <Text style={styles.cardEmoji}>🔥</Text>
-            <View style={styles.cardBody}>
-              <Text style={styles.cardTitle}>液化石油ガス設備士</Text>
-              <Text style={styles.cardSubtitle}>基礎・燃焼工学・供給設備・消費設備・法令</Text>
-              <Text style={styles.cardMeta}>国家資格 ／ テキスト・科目別問題・模擬試験・全問図解つき解説</Text>
-            </View>
-            <Text style={styles.cardArrow}>›</Text>
-          </LinearGradient>
-        </TouchableOpacity>
+        <CertCard
+          onPress={go('/lpgas')}
+          cert={{
+            emoji: '🔥', title: '液化石油ガス設備士', subtitle: '基礎・燃焼工学・供給設備・消費設備・法令',
+            meta: '国家資格 ／ テキスト・科目別問題・模擬試験・全問図解つき解説', route: '/lpgas',
+          }}
+        />
 
-        <TouchableOpacity style={styles.card} onPress={() => router.push('/koatsu' as any)} activeOpacity={0.85}>
-          <LinearGradient colors={['#37474F', '#1B2631']} style={styles.cardGradient}>
-            <Text style={styles.cardEmoji}>⚙️</Text>
-            <View style={styles.cardBody}>
-              <Text style={styles.cardTitle}>高圧ガス製造保安責任者</Text>
-              <Text style={styles.cardSubtitle}>保安管理技術・法令・学識（化学／機械）</Text>
-              <Text style={styles.cardMeta}>国家資格（甲種・乙種・丙種） ／ テキスト・科目別問題・模擬試験・全問図解つき解説</Text>
-            </View>
-            <Text style={styles.cardArrow}>›</Text>
-          </LinearGradient>
-        </TouchableOpacity>
+        <CertCard
+          onPress={go('/koatsu')}
+          cert={{
+            emoji: '⚙️', title: '高圧ガス製造保安責任者', subtitle: '保安管理技術・法令・学識（化学／機械）',
+            meta: '国家資格（甲種・乙種・丙種） ／ テキスト・科目別問題・模擬試験・全問図解つき解説', route: '/koatsu',
+          }}
+        />
 
         {/* 施工管理系 */}
         <Text style={[styles.sectionLabel, { marginTop: 24 }]}>🏗️ 施工管理系</Text>
 
-        <TouchableOpacity style={styles.card} onPress={() => router.push('/sekokan')} activeOpacity={0.85}>
-          <LinearGradient colors={['#BF360C', '#7F2408']} style={styles.cardGradient}>
-            <Text style={styles.cardEmoji}>🏗️</Text>
-            <View style={styles.cardBody}>
-              <Text style={styles.cardTitle}>1級建築施工管理技士</Text>
-              <Text style={styles.cardSubtitle}>建築学・施工・施工管理法・法規</Text>
-              <Text style={styles.cardMeta}>国家資格 ／ テキスト・基礎/応用・模擬試験・二次対策</Text>
-            </View>
-            <Text style={styles.cardArrow}>›</Text>
-          </LinearGradient>
-        </TouchableOpacity>
+        <CertCard
+          onPress={go('/sekokan')}
+          cert={{
+            emoji: '🏗️', title: '1級建築施工管理技士', subtitle: '建築学・施工・施工管理法・法規',
+            meta: '国家資格 ／ テキスト・基礎/応用・模擬試験・二次対策', route: '/sekokan',
+          }}
+        />
 
-        <TouchableOpacity style={styles.card} onPress={() => router.push('/kankoji' as any)} activeOpacity={0.85}>
-          <LinearGradient colors={['#00695C', '#004D40']} style={styles.cardGradient}>
-            <Text style={styles.cardEmoji}>🚿</Text>
-            <View style={styles.cardBody}>
-              <Text style={styles.cardTitle}>1級管工事施工管理技士</Text>
-              <Text style={styles.cardSubtitle}>原論・空調・給排水衛生・施工管理・法規</Text>
-              <Text style={styles.cardMeta}>国家資格 ／ テキスト・科目別問題・全問図解つき解説</Text>
-            </View>
-            <Text style={styles.cardArrow}>›</Text>
-          </LinearGradient>
-        </TouchableOpacity>
+        <CertCard
+          onPress={go('/kankoji')}
+          cert={{
+            emoji: '🚿', title: '1級管工事施工管理技士', subtitle: '原論・空調・給排水衛生・施工管理・法規',
+            meta: '国家資格 ／ テキスト・科目別問題・全問図解つき解説', route: '/kankoji',
+          }}
+        />
 
-        <TouchableOpacity style={styles.card} onPress={() => router.push('/denkisekou' as any)} activeOpacity={0.85}>
-          <LinearGradient colors={['#EF6C00', '#B34700']} style={styles.cardGradient}>
-            <Text style={styles.cardEmoji}>💡</Text>
-            <View style={styles.cardBody}>
-              <Text style={styles.cardTitle}>1級電気工事施工管理技士</Text>
-              <Text style={styles.cardSubtitle}>電気工学・電気設備・施工管理・法規</Text>
-              <Text style={styles.cardMeta}>国家資格 ／ テキスト・科目別問題・全問図解つき解説</Text>
-            </View>
-            <Text style={styles.cardArrow}>›</Text>
-          </LinearGradient>
-        </TouchableOpacity>
+        <CertCard
+          onPress={go('/denkisekou')}
+          cert={{
+            emoji: '💡', title: '1級電気工事施工管理技士', subtitle: '電気工学・電気設備・施工管理・法規',
+            meta: '国家資格 ／ テキスト・科目別問題・全問図解つき解説', route: '/denkisekou',
+          }}
+        />
 
-        <TouchableOpacity style={styles.card} onPress={() => router.push('/kikaisekou' as any)} activeOpacity={0.85}>
-          <LinearGradient colors={['#546E7A', '#263238']} style={styles.cardGradient}>
-            <Text style={styles.cardEmoji}>🚜</Text>
-            <View style={styles.cardBody}>
-              <Text style={styles.cardTitle}>1級建設機械施工管理技士</Text>
-              <Text style={styles.cardSubtitle}>土木工学・建設機械・施工管理・法規</Text>
-              <Text style={styles.cardMeta}>国家資格 ／ テキスト・科目別問題・全問図解つき解説</Text>
-            </View>
-            <Text style={styles.cardArrow}>›</Text>
-          </LinearGradient>
-        </TouchableOpacity>
+        <CertCard
+          onPress={go('/kikaisekou')}
+          cert={{
+            emoji: '🚜', title: '1級建設機械施工管理技士', subtitle: '土木工学・建設機械・施工管理・法規',
+            meta: '国家資格 ／ テキスト・科目別問題・全問図解つき解説', route: '/kikaisekou',
+          }}
+        />
 
-        <TouchableOpacity style={styles.card} onPress={() => router.push('/dobokusekou' as any)} activeOpacity={0.85}>
-          <LinearGradient colors={['#00838F', '#005662']} style={styles.cardGradient}>
-            <Text style={styles.cardEmoji}>🌊</Text>
-            <View style={styles.cardBody}>
-              <Text style={styles.cardTitle}>1級土木施工管理技士</Text>
-              <Text style={styles.cardSubtitle}>土木一般・専門土木・施工管理法・法規</Text>
-              <Text style={styles.cardMeta}>国家資格 ／ テキスト・科目別問題・全問図解つき解説</Text>
-            </View>
-            <Text style={styles.cardArrow}>›</Text>
-          </LinearGradient>
-        </TouchableOpacity>
+        <CertCard
+          onPress={go('/dobokusekou')}
+          cert={{
+            emoji: '🌊', title: '1級土木施工管理技士', subtitle: '土木一般・専門土木・施工管理法・法規',
+            meta: '国家資格 ／ テキスト・科目別問題・全問図解つき解説', route: '/dobokusekou',
+          }}
+        />
 
-        <TouchableOpacity style={styles.card} onPress={() => router.push('/tsushin' as any)} activeOpacity={0.85}>
-          <LinearGradient colors={['#1565C0', '#0A3D91']} style={styles.cardGradient}>
-            <Text style={styles.cardEmoji}>📡</Text>
-            <View style={styles.cardBody}>
-              <Text style={styles.cardTitle}>1級電気通信工事施工管理技士</Text>
-              <Text style={styles.cardSubtitle}>電気通信工学・設備・施工管理・法規</Text>
-              <Text style={styles.cardMeta}>国家資格 ／ テキスト・科目別問題・模擬試験・全問図解つき解説</Text>
-            </View>
-            <Text style={styles.cardArrow}>›</Text>
-          </LinearGradient>
-        </TouchableOpacity>
+        <CertCard
+          onPress={go('/tsushin')}
+          cert={{
+            emoji: '📡', title: '1級電気通信工事施工管理技士', subtitle: '電気通信工学・設備・施工管理・法規',
+            meta: '国家資格 ／ テキスト・科目別問題・模擬試験・全問図解つき解説', route: '/tsushin',
+          }}
+        />
 
         {/* 資格試験：積算・コスト管理系 */}
         <Text style={[styles.sectionLabel, { marginTop: 24 }]}>💰 積算・コスト管理系</Text>
 
-        <TouchableOpacity style={styles.card} onPress={() => router.push('/cost' as any)} activeOpacity={0.85}>
-          <LinearGradient colors={['#4527A0', '#2A1465']} style={styles.cardGradient}>
-            <Text style={styles.cardEmoji}>💰</Text>
-            <View style={styles.cardBody}>
-              <Text style={styles.cardTitle}>建築コスト管理士</Text>
-              <Text style={styles.cardSubtitle}>コスト管理概論・積算・契約法規・経済調査</Text>
-              <Text style={styles.cardMeta}>建設物価調査会 ／ テキスト・科目別問題・模擬試験・全問図解つき解説</Text>
-            </View>
-            <Text style={styles.cardArrow}>›</Text>
-          </LinearGradient>
-        </TouchableOpacity>
+        <CertCard
+          onPress={go('/cost')}
+          cert={{
+            emoji: '💰', title: '建築コスト管理士', subtitle: 'コスト管理概論・積算・契約法規・経済調査',
+            meta: '建設物価調査会 ／ テキスト・科目別問題・模擬試験・全問図解つき解説', route: '/cost',
+          }}
+        />
 
         {/* 資格試験：電気・理工系 */}
         <Text style={[styles.sectionLabel, { marginTop: 24 }]}>⚡ 電気・理工系</Text>
 
-        <TouchableOpacity style={styles.card} onPress={() => router.push('/denki2' as any)} activeOpacity={0.85}>
-          <LinearGradient colors={['#E65100', '#9E3800']} style={styles.cardGradient}>
-            <Text style={styles.cardEmoji}>⚡</Text>
-            <View style={styles.cardBody}>
-              <Text style={styles.cardTitle}>第二種電気工事士</Text>
-              <Text style={styles.cardSubtitle}>基礎理論・配線設計・機器材料・法令複線図</Text>
-              <Text style={styles.cardMeta}>国家資格 ／ テキスト・科目別問題・学科模試・複線図の描き方</Text>
-            </View>
-            <Text style={styles.cardArrow}>›</Text>
-          </LinearGradient>
-        </TouchableOpacity>
+        <CertCard
+          onPress={go('/denki2')}
+          cert={{
+            emoji: '⚡', title: '第二種電気工事士', subtitle: '基礎理論・配線設計・機器材料・法令複線図',
+            meta: '国家資格 ／ テキスト・科目別問題・学科模試・複線図の描き方', route: '/denki2',
+          }}
+        />
 
-        <TouchableOpacity style={styles.card} onPress={() => router.push('/denken3')} activeOpacity={0.85}>
-          <LinearGradient colors={['#E65100', '#BF360C']} style={styles.cardGradient}>
-            <Text style={styles.cardEmoji}>⚡</Text>
-            <View style={styles.cardBody}>
-              <Text style={styles.cardTitle}>電験三種</Text>
-              <Text style={styles.cardSubtitle}>理論・電力・機械・法規</Text>
-              <Text style={styles.cardMeta}>国家資格 ／ 4科目・詳細解説付き</Text>
-            </View>
-            <Text style={styles.cardArrow}>›</Text>
-          </LinearGradient>
-        </TouchableOpacity>
+        <CertCard
+          onPress={go('/denken3')}
+          cert={{
+            emoji: '⚡', title: '電験三種', subtitle: '理論・電力・機械・法規',
+            meta: '国家資格 ／ 4科目・詳細解説付き', route: '/denken3',
+          }}
+        />
 
         {/* 資格試験：気象・防災系 */}
         <Text style={[styles.sectionLabel, { marginTop: 24 }]}>🌤 気象・防災系</Text>
 
-        <TouchableOpacity style={styles.card} onPress={() => router.push('/kisho')} activeOpacity={0.85}>
-          <LinearGradient colors={['#1565C0', '#0D47A1']} style={styles.cardGradient}>
-            <Text style={styles.cardEmoji}>🌤️</Text>
-            <View style={styles.cardBody}>
-              <Text style={styles.cardTitle}>気象予報士</Text>
-              <Text style={styles.cardSubtitle}>一般知識・専門知識・実技</Text>
-              <Text style={styles.cardMeta}>国家資格 ／ テキスト＋問題・詳細解説付き</Text>
-            </View>
-            <Text style={styles.cardArrow}>›</Text>
-          </LinearGradient>
-        </TouchableOpacity>
+        <CertCard
+          onPress={go('/kisho')}
+          cert={{
+            emoji: '🌤️', title: '気象予報士', subtitle: '一般知識・専門知識・実技',
+            meta: '国家資格 ／ テキスト＋問題・詳細解説付き', route: '/kisho',
+          }}
+        />
 
         <View style={styles.footerNote}>
           <Text style={styles.footerNoteText}>
@@ -340,34 +276,59 @@ export default function HomeScreen() {
   );
 }
 
+// 落ち着いたクリーム/ブラウン基調（Web版ランディングページと同じトーン）
+const PALETTE = {
+  ground: '#F7F3E9',
+  panel: '#FFFDF7',
+  ink: '#2B2118',
+  brown: '#5A4A32',
+  accent: '#B5561B',
+  accentSoft: '#E8DCC6',
+  rule: '#D9CFB8',
+  slate: '#6B6255',
+};
+
 const styles = StyleSheet.create({
-  container: { flex: 1, backgroundColor: '#F5F7FA' },
+  container: { flex: 1, backgroundColor: PALETTE.ground },
   header: {
-    paddingHorizontal: 24, paddingTop: 20, paddingBottom: 26,
+    backgroundColor: PALETTE.panel,
+    borderBottomWidth: 1,
+    borderBottomColor: PALETTE.rule,
+    paddingHorizontal: 24, paddingTop: 20, paddingBottom: 20,
     flexDirection: 'row', alignItems: 'center', justifyContent: 'center', gap: 16,
   },
-  appLogo: { width: 64, height: 64, borderRadius: 15 },
-  appTitle: { fontSize: 24, fontWeight: '900', color: '#FFFFFF', letterSpacing: 1.5, marginBottom: 3 },
-  appSubtitle: { fontSize: 13, color: 'rgba(255,255,255,0.75)', fontWeight: '600' },
+  appLogo: { width: 56, height: 56, borderRadius: 13 },
+  appTitle: { fontSize: 22, fontWeight: '900', color: PALETTE.ink, letterSpacing: 1, marginBottom: 3 },
+  appSubtitle: { fontSize: 13, color: PALETTE.slate, fontWeight: '600' },
   scroll: { flex: 1 },
   content: { paddingHorizontal: 20, paddingTop: 24, paddingBottom: 40 },
-  sectionLabel: { fontSize: 14, fontWeight: '800', color: '#1B2A5C', marginBottom: 12, letterSpacing: 0.5 },
-  card: { borderRadius: 18, marginBottom: 12, shadowColor: '#000', shadowOffset: { width: 0, height: 4 }, shadowOpacity: 0.15, shadowRadius: 10, elevation: 5 },
-  cardGradient: { borderRadius: 18, padding: 18, flexDirection: 'row', alignItems: 'center', gap: 14 },
-  cardEmoji: { fontSize: 36 },
+  sectionLabel: { fontSize: 14, fontWeight: '800', color: PALETTE.brown, marginBottom: 12, letterSpacing: 0.5 },
+  card: {
+    flexDirection: 'row', alignItems: 'center', gap: 14,
+    backgroundColor: PALETTE.panel,
+    borderRadius: 16, borderWidth: 1, borderColor: PALETTE.rule,
+    borderLeftWidth: 4, borderLeftColor: PALETTE.accent,
+    padding: 16, marginBottom: 12,
+    shadowColor: '#000', shadowOffset: { width: 0, height: 2 }, shadowOpacity: 0.05, shadowRadius: 6, elevation: 2,
+  },
+  cardIconChip: {
+    width: 44, height: 44, borderRadius: 12, backgroundColor: PALETTE.accentSoft,
+    alignItems: 'center', justifyContent: 'center',
+  },
+  cardEmoji: { fontSize: 22 },
   cardBody: { flex: 1 },
-  cardTitle: { fontSize: 18, fontWeight: '900', color: '#FFFFFF', marginBottom: 3 },
-  cardSubtitle: { fontSize: 12, color: 'rgba(255,255,255,0.85)', fontWeight: '600', marginBottom: 2 },
-  cardMeta: { fontSize: 11, color: 'rgba(255,255,255,0.6)', fontWeight: '500' },
-  cardArrow: { fontSize: 28, color: 'rgba(255,255,255,0.4)' },
-  footerNote: { backgroundColor: '#EEF4FF', borderRadius: 12, padding: 14, marginTop: 12 },
-  footerNoteText: { fontSize: 12, color: '#1E5FBE', fontWeight: '600', lineHeight: 18, textAlign: 'center' },
-  disclaimerBox: { backgroundColor: '#F0F0F0', borderRadius: 12, padding: 14, marginTop: 12 },
-  disclaimerText: { fontSize: 10, color: '#888', fontWeight: '500', lineHeight: 16, textAlign: 'center' },
+  cardTitle: { fontSize: 16, fontWeight: '800', color: PALETTE.ink, marginBottom: 3 },
+  cardSubtitle: { fontSize: 12, color: PALETTE.brown, fontWeight: '600', marginBottom: 2 },
+  cardMeta: { fontSize: 11, color: PALETTE.slate, fontWeight: '500' },
+  cardArrow: { fontSize: 24, color: PALETTE.accent },
+  footerNote: { backgroundColor: PALETTE.accentSoft, borderRadius: 12, padding: 14, marginTop: 12 },
+  footerNoteText: { fontSize: 12, color: PALETTE.brown, fontWeight: '600', lineHeight: 18, textAlign: 'center' },
+  disclaimerBox: { backgroundColor: PALETTE.panel, borderWidth: 1, borderColor: PALETTE.rule, borderRadius: 12, padding: 14, marginTop: 12 },
+  disclaimerText: { fontSize: 10, color: PALETTE.slate, fontWeight: '500', lineHeight: 16, textAlign: 'center' },
   legalLinks: {
     flexDirection: 'row', alignItems: 'center', justifyContent: 'center',
     flexWrap: 'wrap', marginTop: 16,
   },
-  legalLinkText: { fontSize: 11, color: '#1E5FBE', fontWeight: '600', paddingVertical: 4 },
-  legalLinkSep: { fontSize: 11, color: '#CCC' },
+  legalLinkText: { fontSize: 11, color: PALETTE.accent, fontWeight: '600', paddingVertical: 4 },
+  legalLinkSep: { fontSize: 11, color: PALETTE.rule },
 });
