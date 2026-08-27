@@ -97,7 +97,7 @@ async function answer(page, url, want = {}, maxTry = 40) {
   if (want('03')) {
     console.log('03 ホーム（電気通信施工・第二種電気工事士を含む下部）');
     await go('/');
-    await scrollToText(page, '一級電気通信工事施工管理技士', -40);
+    await scrollToText(page, '1級電気通信工事施工管理技士', -40);
     await shot(page, '03-home-bottom');
   }
 
