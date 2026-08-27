@@ -4,8 +4,11 @@
 import { ErrorCode, Purchases } from '@revenuecat/purchases-js';
 import type { CustomerInfo, PurchasesOffering, PurchasesPackage } from 'react-native-purchases';
 
-const RC_API_KEY_WEB =
-  process.env.EXPO_PUBLIC_RC_API_KEY_WEB ?? 'rcb_XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX';
+// Web Billingの公開APIキー。ブラウザに配信される前提の公開鍵で、これ単体では
+// 課金も顧客情報の取得もできない（Stripeの pk_live_ と同じ性質）。
+// RevenueCat → Web → QualiZ (Stripe) → Purchase tracking → Public API Key から取得する。
+// Stripe連携時に発行されるキーは strp_ で始まる。
+const RC_API_KEY_WEB = process.env.EXPO_PUBLIC_RC_API_KEY_WEB ?? '';
 
 // 匿名ユーザーIDをブラウザに保存し、再訪問時も同じ購入者として扱われるようにする
 const USER_ID_STORAGE_KEY = 'qualiz_rc_web_app_user_id';
@@ -15,7 +18,7 @@ let configurePromise: Promise<void> | null = null;
 function configure(): Promise<void> {
   if (!configurePromise) {
     configurePromise = (async () => {
-      if (RC_API_KEY_WEB.includes('XXXXXXXX')) {
+      if (!RC_API_KEY_WEB) {
         throw new Error('RevenueCat Web APIキーが未設定です');
       }
       if (Purchases.isConfigured()) return;
