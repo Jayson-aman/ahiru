@@ -5,6 +5,7 @@ import Purchases, {
   PurchasesPackage,
 } from 'react-native-purchases';
 import { Platform } from 'react-native';
+import { fetchCurrentOfferingWeb, getCustomerInfoWeb, initWeb, purchasePackageWeb } from './webBilling';
 
 const RC_API_KEY_IOS =
   process.env.EXPO_PUBLIC_RC_API_KEY_IOS ?? 'appl_XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX';
@@ -99,7 +100,10 @@ export const FREE_QUESTION_LIMIT = 10;
 export const FREE_TEXT_LIMIT = 2;
 
 export function initRevenueCat(): void {
-  if (Platform.OS === 'web') return;
+  if (Platform.OS === 'web') {
+    initWeb();
+    return;
+  }
   const apiKey =
     Platform.select({ ios: RC_API_KEY_IOS, android: RC_API_KEY_ANDROID }) ??
     RC_API_KEY_IOS;
@@ -128,23 +132,25 @@ export function hasCertAccess(info: CustomerInfo | null, cert: CertKey): boolean
 }
 
 export function getCustomerInfo(): Promise<CustomerInfo> {
-  if (Platform.OS === 'web') return Promise.reject(new Error('web'));
+  if (Platform.OS === 'web') return getCustomerInfoWeb();
   return Purchases.getCustomerInfo();
 }
 
 export async function fetchCurrentOffering(): Promise<PurchasesOffering | null> {
-  if (Platform.OS === 'web') return null;
+  if (Platform.OS === 'web') return fetchCurrentOfferingWeb();
   const offerings = await Purchases.getOfferings();
   return offerings.current;
 }
 
 export async function purchasePackage(pkg: PurchasesPackage): Promise<CustomerInfo> {
-  if (Platform.OS === 'web') return Promise.reject(new Error('web'));
+  if (Platform.OS === 'web') return purchasePackageWeb(pkg);
   const { customerInfo } = await Purchases.purchasePackage(pkg);
   return customerInfo;
 }
 
 export function restorePurchases(): Promise<CustomerInfo> {
-  if (Platform.OS === 'web') return Promise.reject(new Error('web'));
+  // Web Billingには端末に紐づく「復元」の概念がなく、appUserIdに紐づく購入情報を
+  // 再取得するだけで反映される（同じブラウザなら自動的に購入済み扱いになる）。
+  if (Platform.OS === 'web') return getCustomerInfoWeb();
   return Purchases.restorePurchases();
 }
