@@ -181,7 +181,43 @@ Stripeストアの商品を読むフィールドが型定義に存在しない
 - 同じ理由で、Offering の各パッケージは App Store と RevenueCat Billing
   にだけ商品を割り当て、**Stripe の行は空のままが正しい**。
 
-**要確認: 本番の `EXPO_PUBLIC_RC_API_KEY_WEB` が `rcb_` で始まっているか。**
+**確認結果（2026-09-16）: `strp_` だった。誤り。**
+
+`QualiZ (RevenueCat Billing)` の公開キー（`rcb_`）に差し替える必要がある。
+差し替え先は Vercel のプロジェクト環境変数（`.env.example` も `0a03b86` 以降
+`rcb_` の案内に訂正済み）。
+
+RevenueCat Billing 側の商品は既に42件作成され全パッケージと Entitlement に
+紐付いているので、**キーを差し替えるだけで揃う。** Stripe ストアを使う道を
+選ぶ場合は、RC に Stripe 商品を42件作って全パッケージに割り当てた上で、
+purchases-js が Stripe ストアの購入フローを持たないため**独自の Stripe
+Checkout を実装する必要がある**。キーの差し替えの方が圧倒的に安い。
+
+## 4c. 🔴 CSP が RevenueCat / Stripe への通信を遮断していた
+
+`vercel.json` の Content-Security-Policy が `connect-src 'self'` /
+`script-src 'self' 'unsafe-inline'` だったため、APIキーを直しても
+Web課金は動かない状態だった。
+
+SDKバンドルから抽出した必要な通信先:
+
+- `https://api.revenuecat.com`
+- `https://js.stripe.com`（Stripe.js を動的ロードする）
+
+Stripe の公開ドキュメントが求めるディレクティブと合わせて以下に変更した:
+
+```
+img-src     ... https://*.stripe.com
+script-src  ... https://js.stripe.com
+connect-src 'self' https://api.revenuecat.com https://api.stripe.com
+frame-src   https://js.stripe.com https://hooks.stripe.com https://m.stripe.network
+```
+
+**未検証。** Web未公開のため実際のチェックアウトで確認できていない。
+RevenueCat Billing が自前のホスト型チェックアウトへ遷移する方式
+（`Package.webCheckoutURL`）を使う場合は `form-action` など別の
+ディレクティブも必要になりうる。**公開後に必ずブラウザのコンソールで
+CSP違反が出ていないか確認すること。**
 
 ## 5. 消費税の自動計算（保留 2026-09-16）
 
