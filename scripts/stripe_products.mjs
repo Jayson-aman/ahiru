@@ -17,6 +17,15 @@
  * 価格は「金額＋請求間隔」が一致するものを既存として扱う。
  */
 
+if (!process.argv.includes('--yes-i-know-this-is-unused')) {
+  console.error('\nこのスクリプトは使わないこと。');
+  console.error('商品を作る場所は RevenueCat の Products タブで、Stripe ではありません。');
+  console.error('RevenueCat Billing が Stripe 側の商品を自分で管理するため、');
+  console.error('ここで作った商品はどこからも参照されません。');
+  console.error('詳細: docs/WEB_BILLING_PRODUCTS_SETUP.md\n');
+  process.exit(1);
+}
+
 const KEY = process.env.STRIPE_SECRET_KEY;
 const APPLY = process.argv.includes('--apply');
 

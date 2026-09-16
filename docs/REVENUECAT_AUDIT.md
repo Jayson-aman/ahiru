@@ -44,6 +44,52 @@ Entitlement 一覧の「4 products」は **iOS 2件 + Web 2件**。
 `pro_juken` / `pro_eiken` の「2 products」は想定どおり
 （中学受験・英検は Web課金の42件に含めていない）。
 
+## 3b. 宅建の月額商品に旧称が残っている
+
+`pro_takkei` の Associated products 4件のうち、1件だけ資格名が違う。
+
+| 商品 | 名前 | App | 作成日 |
+|---|---|---|---|
+| `qualiz_pro_takkei_m2` | 宅地建物取引**主任**士（月額） | App Store | Aug 1 |
+| `qualiz_pro_takkei_y2` | 宅地建物取引士（年額） | RevenueCat Billing | Aug 27 |
+| `qualiz_pro_takkei_y2` | 宅地建物取引士（年額） | App Store | Aug 27 |
+| `qualiz_pro_takkei_m2` | 宅地建物取引士（月額） | RevenueCat Billing | Aug 27 |
+
+**App Store Connect 側の表示名を確認すること。** ASCのサブスクリプションの
+表示名は購入シートで顧客に表示されるため、「宅地建物取引主任士」という
+存在しない資格名が入っているとガイドライン2.3に触れる。
+「建設コスト管理士」と同じ種類の問題。
+
+ASC → QualiZ → サブスクリプション → `qualiz_pro_takkei_m2` → 表示名。
+
+なお月額・年額の紐付け自体は正しい（App Store と RevenueCat Billing の
+両方に m2 / y2 が揃っている）。1. の危険物の問題は **Offering のパッケージ**の
+中身であって、この Entitlement の画面とは別。確認すべきはOfferingsの画面。
+
+## 3c. 🔴 Stripe に作った42商品は使われない
+
+`scripts/stripe_products.mjs` で Stripe API に作成した42件は、
+**どこからも参照されない**。作る場所が間違っていた。
+
+商品を作るのは `docs/WEB_BILLING_PRODUCTS_SETUP.md` の冒頭にあるとおり
+**RevenueCat の Products タブ**。RevenueCat Billing は Stripe 側の商品・価格を
+RevenueCat が自分で作って管理する。購入経路は
+
+    @revenuecat/purchases-js → RevenueCat → RevenueCatが作ったStripe商品
+
+裏付け: RevenueCat Billing の商品は 2026-08-27 に既に作られており
+Entitlement に紐付いている。またドキュメントの表の宅建の行は
+`qualiz_pro_takkei_monthly` / `_yearly` だが実際は `_m2` / `_y2` なので、
+スクリプトが付けた `lookup_key` はそもそも存在しないIDだった。
+
+- 課金は発生しない。未使用商品は無料で、顧客にも表示されない。
+- 放置すると Stripe の商品一覧に未使用の42件が残り、後で見た人が混乱する。
+- **対処はアーカイブ**（削除ではなくアーカイブなら元に戻せる）。
+- 確認方法: Webで1件テスト購入し、Stripe のどの商品に請求が乗るかを見る。
+  この42件でなければ未使用と確定する。
+
+スクリプトは `--yes-i-know-this-is-unused` なしでは実行できないようにした。
+
 ---
 
 ## 4. Entitlement / Offering の Display Name 修正一覧
