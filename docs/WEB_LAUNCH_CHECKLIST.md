@@ -173,6 +173,58 @@ Stripe 接続一覧 → ライブとサンドボックスの接続が並んで�
 次に Web / Billing の設定でどちらが選択されているか。
 なお **Stripe を接続できるのはプロジェクトのオーナーのみ。**
 
+#### 原因確定（2026-09-16・RevenueCatサポートが実設定を照会）
+
+| App | Type | Stripe account | 作成 |
+|---|---|---|---|
+| QualiZ (RevenueCat Billing) | `rc_billing` | `acct_…qQ6n4d0r` | 8/22 |
+| QualiZ (Stripe) | `stripe` | `acct_…PiPIYFnkuX` | 8/27 |
+
+**`acct_` が異なる = 別アカウント。** Stripe のサンドボックスは独立した
+アカウント（`acct_` を持つ）であり、test mode（同一アカウント内）とは違う。
+**Billing 設定はサンドボックスの Stripe アカウントに紐づいており、
+仕様上サンドボックスキーしか発行されない。**
+
+`…PiPIYFnkuX` がライブの Qualiz kensetu であることは、本セッションで
+Stripe アーカイブ時に出た403のエラー文（`on account
+'acct_1U7F9rPiPIYFnkuX'`）と一致しており、独立に裏付けられている。
+
+#### 42商品への影響（サポート回答）
+
+- **RevenueCat 側のカタログ構造は安全。** 商品・Entitlement の紐付け・
+  Offering のパッケージはいずれも RevenueCat の商品IDを参照しており、
+  Stripe アカウントを参照していない。接続を変えてもこれらのレコードは消えない。
+- **不確実なのは Stripe 側のオブジェクト。** RevenueCat Billing は接続先の
+  Stripe アカウントに対応する product/price を作る。今の42件はサンドボックス
+  アカウント側にあり、ライブ側には存在しない。接続を差し替えたときに
+  ライブ側へ自動再作成されるのか、作り直しが必要なのかはドキュメントに
+  明記されていない。
+- **RevenueCat の公式パターンはサンドボックスと本番で2つの Billing 設定を
+  持つ形**であり、これは「その場で接続を差し替える」のが想定された道では
+  ないことを示唆する。
+
+→ **サポートに確定回答を求めている段階（チケット起票を依頼済み）。**
+追加で確認している3点:
+
+1. 新しい本番 Billing 設定を作る場合、42商品の Entitlement 紐付けと
+   Offering のパッケージ登録をやり直す必要があるか
+2. 最終形はサンドボックスと本番の2設定を恒久的に併用する形か
+3. RevenueCat API (v2) に商品の一括作成・Entitlement紐付けのエンドポイントが
+   あるか（作り直しになるならスクリプト化したい）
+
+#### 2設定を併用する場合のコード側の影響
+
+`EXPO_PUBLIC_RC_API_KEY_WEB` は現在1つの値だが、**Vercel の環境変数は
+Production / Preview / Development で別の値を設定できる。**
+
+| 環境 | キー |
+|---|---|
+| Production | `rcb_...`（本番） |
+| Preview / Development | `rcb_sb_...`（サンドボックス） |
+
+これでプレビューは安全にテストでき、本番だけが実課金になる。
+**コード変更は不要で Vercel の設定だけで済む。**
+
 #### ⚠️ 切り替える前に必ず確認すること
 
 Billing 設定の Stripe 接続を切り替える／新しい Billing 設定を作り直す場合、
