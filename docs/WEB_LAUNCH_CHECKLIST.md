@@ -168,3 +168,65 @@ Zaibase の商品には触らない（対象0件で終わる）。
 2026-09-16 時点では `scripts/stripe_products.mjs` の実行にしか使われて
 いない。Vercel には `rcb_` が入っており、RevenueCat は Stripe アプリ
 （OAuth）経由で接続しているため、どちらもこのキーを使っていない。
+
+
+---
+
+# 付録: 未使用Stripe商品42件のアーカイブ 実行手順
+
+## A. Stripe で権限を設定する
+
+1. `dashboard.stripe.com` を開き、**左上が「Qualiz kensetu」**であることを確認
+2. 左メニュー下部の **開発者** → **APIキー** タブ
+3. 「制限付きのキー」の該当行 → 右端の **「…」** → **「キーを編集」**
+4. 権限を3つ設定する
+
+   | 「リソースを絞り込む」に打つ | 出てきた行の右端で押す |
+   |---|---|
+   | `Products` | 書き込み |
+   | `Prices` | 書き込み |
+   | `Subscriptions` | 読み取り |
+
+   1つ設定したら検索ボックスを空にして次の単語を打つ。似た名前の行
+   （`Subscription Schedules` 等）は「なし」のままにする。
+5. 下までスクロールして **保存**
+
+制限付きキーが無い場合は「+ 制限付きのキーを作成」→ 使用方法は
+**「構築した連携を強化」**（「AIエージェントのオーソリ」ではない）。
+
+## B. ターミナル（macOS の Xcode ライセンス）
+
+`git` が「You have not agreed to the Xcode and Apple SDKs license」で
+止まった場合:
+
+6. `q` を押してページャーを抜ける（抜けなければ `Control + C`）
+7. `sudo xcodebuild -license accept`（Macのパスワードを入力）
+
+## C. 実行
+
+8. ```bash
+   cd ~/ahiru
+   git pull origin claude/app-identification-k8js9v
+   ```
+9. `export STRIPE_SECRET_KEY=` の後ろに値をペースト
+   （**値は引数に書かない。チャットにも貼らない**）
+10. `node scripts/stripe_archive_unused.mjs` — 確認のみ。何も変更しない
+11. 出力を確認
+12. `node scripts/stripe_archive_unused.mjs --apply` — 本番実行
+
+A を飛ばしても安全。10 が403で止まるだけで商品には触らず、
+エラー文が必要な権限を表示する。
+
+## D. 後片付け
+
+13. Stripe で そのキーの「…」→ **「キーを期限切れにする」**
+    （制限付きキーは削除できる。標準キーはローテーションのみ）
+14. `unset STRIPE_SECRET_KEY`
+15. `~/.zsh_history` から `export STRIPE_SECRET_KEY=` の行を削除
+
+## キーの値が分からなくなったとき
+
+Stripe は作成時にしか値を表示しない。「…」→ **キーのローテーション** →
+有効期限 **「今すぐ」** で値を再発行できる。**権限設定は引き継がれる。**
+猶予期間を選ぶとその間は古い値も有効なままなので、漏洩対応では
+必ず「今すぐ」を選ぶ。
