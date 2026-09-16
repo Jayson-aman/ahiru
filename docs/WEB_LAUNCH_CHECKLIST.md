@@ -98,10 +98,48 @@ RevenueCat Web Billing の公開キーは2種類ある:
    （"You need to add domains in Stripe Live mode to allow production
    purchases on those domains."）
 
-#### 既知の落とし穴
+#### 🔴 現状: 本番キーが存在しない（2026-09-16 確認）
 
-ライブの Stripe に接続済みでも **本番キーが表示されない**ケースが報告されて
-いる（`rcb_sb_` しか見えない）。その場合は RevenueCat のサポートへ問い合わせる。
+Project settings → API keys に **`rcb_sb_` のサンドボックスキーしかなく、
+本番キーが無い。** 上記手順1が実行できない状態。
+つまり **RevenueCat 側の本番有効化が未完了**であり、キーの差し替えでは
+解決しない。ライブの Stripe に接続済みでも本番キーが出ないケースとして
+コミュニティに同じ症状の報告がある。
+
+**最有力の原因候補**: RevenueCat Billing のストアフロント情報（販売者情報）
+が未入力。決済画面に出る会社名・サポートメール・返金ポリシー・利用規約URL
+など。実際に金銭を扱うため、これらが揃うまで本番を許可しない作りである
+可能性が高い。→ 左メニュー **Web / Billing タブ**に未完了の設定や
+チェックリストが残っていないか確認する。
+
+**それでも出なければサポートへ問い合わせる**（ダッシュボード右上の ? →
+Support）。問い合わせ文の雛形:
+
+```
+Subject: Web Billing: only sandbox public API key (rcb_sb_) is available,
+no production key
+
+Our project has a RevenueCat Billing app set up, but under
+Project settings → API keys we only see a sandbox public key
+(rcb_sb_...). There is no production public key.
+
+Current state:
+- Stripe account is connected and fully verified (KYB complete,
+  live mode accessible)
+- 42 RevenueCat Billing products created, attached to entitlements
+- Offering "default" configured with App Store + RevenueCat Billing
+  products in each package
+- Checkout renders correctly with the sandbox key, but shows the
+  yellow SANDBOX banner, so no real payments are possible
+
+Could you tell us what is still required to enable production for
+RevenueCat Billing, and where the production public key will appear
+once it is enabled?
+```
+
+**急ぐ必要はない。** iOS は App Store 経由で稼働中（この作業で一切触っていない）。
+Web はサンドボックスのまま置いておけるため誤課金のリスクはゼロ。
+決済フォームの表示までは到達済みで、残るのは RevenueCat 側の有効化のみ。
 
 出典（この環境から revenuecat.com への直接アクセスはネットワークポリシーで
 ブロックされており、検索結果の要約に基づく。画面の実物と要確認）:
