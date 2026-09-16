@@ -17,7 +17,16 @@ iOS は稼働中（1.3.2 審査通過）。Android は未着手。ここは **We
 
 ## ❗ 残っている
 
-### A. 最新コミットを本番にデプロイ ← Stripe と無関係。今すぐできる
+### A. ✅ 本番デプロイ 完了（2026-09-16）
+
+`3920a34` を Promote to Production で昇格。`shikaku.zaibase.group` で
+**Web課金の決済フォームが表示されることを確認した。**
+CSP修正が効いており、`api.revenuecat.com` / `js.stripe.com` に到達できている。
+`rcb_` キーも正しく、RevenueCat Billing の商品と価格 ¥1,800 が読めている。
+
+以下は経緯の記録。
+
+
 
 本番（`shikaku.zaibase.group`）は **`64b0b25e`（2026-08-27）の再デプロイ**。
 本番に入っていない変更:
@@ -56,6 +65,31 @@ RevenueCat → Billing タブ。
 
 チェックアウト画面に表示される 会社名・サポートメール・返金ポリシー・
 規約URL。RevenueCat → Billing タブ。
+
+### ⚠️ 残: RevenueCat Billing がサンドボックスのまま
+
+決済画面の上部に黄色い **SANDBOX** バナーが出ている。テストモードなので
+**本物の課金はまだできない。**（逆に言えば、カードを入れても課金されないので
+自由に検証できる状態。）
+
+本番に切り替えるには RevenueCat → Billing タブ、または
+Project settings → API keys で sandbox / production のキーが
+分かれていないかを確認する。**公開前に必ず切り替える。**
+
+### 🟠 残: RevenueCat の商品名から「宅」が抜けている
+
+決済画面の表示が `地建物取引士 Pro（月額）` になっている
+（正しくは `宅地建物取引士 Pro（月額）`）。
+
+**リポジトリには「地建物取引士」という文字列は存在しない**ので、
+RevenueCat 側の商品名の入力ミス。決済画面で顧客に見えるため要修正。
+
+修正場所: RevenueCat → Product catalog → Products →
+`QualiZ (RevenueCat Billing)` の `qualiz_pro_takkei_m2` の名前。
+**他20資格も同じミスが無いか Products 一覧で一括確認する。**
+
+なおアプリ側の「宅建 権利関係 Pro」は正常
+（`app/takkei/[subject].tsx:57` が科目名を組み合わせている）。
 
 ### D. デプロイ後のテスト購入
 
