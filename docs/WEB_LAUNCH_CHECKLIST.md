@@ -39,11 +39,18 @@ services/webBilling.web.ts ← コメント修正（無害）
 手順: Vercel → zaibase-shikaku → Deployments → 最新コミット →
 「…」→ Promote to Production（ビルドキャッシュを使わない設定で）
 
-### B. RevenueCat Billing と Stripe の接続確認（未確認）
+### B. RevenueCat Billing と Stripe の接続確認（おそらく済み）
 
-RevenueCat Billing が実際にカードを切るには、RevenueCat 側で Stripe
-アカウントが接続され、その Stripe が有効化されている必要がある。
-**Stripe が本人確認未完了なので、ここが引っかかる可能性が高い。**
+**Stripe アカウントは認証済み（2026-09-16 確認）。** 設定ガイドの
+「アカウントを認証」の3項目（メールアドレス確認・法人情報の確認(KYB)・
+Stripe プロファイル作成）すべてにチェックが付いており、ライブモードにも
+入れている。当初「本人確認未完了」と記録したのは誤りだった。
+
+またダッシュボード右上に RevenueCat の Stripe アプリのアイコンが入って
+おり、**RevenueCat がこの Stripe アカウントに接続されている**ことを示す。
+
+確実に見るなら Stripe → アプリ → RevenueCat、または
+RevenueCat → Billing タブ。
 
 ### C. RevenueCat Billing のストアフロント設定（未確認）
 
@@ -63,7 +70,7 @@ RevenueCat Billing が実際にカードを切るには、RevenueCat 側で Stri
 | 項目 | 状態 | 詳細 |
 |---|---|---|
 | 消費税 | RevenueCat 側 OFF のままが正しい | `REVENUECAT_AUDIT.md` 5. |
-| Stripe 商品42件のアーカイブ | 本人確認後 | `scripts/stripe_archive_unused.mjs` |
+| Stripe 商品42件のアーカイブ | いつでも実行可 | `scripts/stripe_archive_unused.mjs` |
 | RevenueCat の表示名20件 | 内部表示のみ・次回 | `REVENUECAT_AUDIT.md` 4. |
 | ロゴ | 未選定 | — |
 
@@ -71,26 +78,26 @@ RevenueCat Billing が実際にカードを切るには、RevenueCat 側で Stri
 
 ## 作業順
 
+Stripe の認証は済んでいるため、**前提条件による待ちは無い。**
+
 ```
-1. Stripe の本人確認              ← B・C・アーカイブの前提
-   dashboard.stripe.com に自分でアクセスし、バナーから進める。
-   メールのリンクは踏まない（Stripeをかたるフィッシングの定番）。
-2. 最新コミットを本番デプロイ      ← A。1 を待たずにできる
-3. B と C を確認
-4. テスト購入（D）
-5. Stripe 商品42件をアーカイブ → キーを即失効
+1. 最新コミットを本番デプロイ      ← A。これが最優先
+2. B と C を確認（Billing タブ）
+3. テスト購入（D）
+4. Stripe 商品42件をアーカイブ → キーを即失効
 ```
+
+1 と 4 は互いに独立しているので、どちらから着手してもよい。
 
 ## Stripe シークレットキーの取り扱い
 
 ターミナルに入れたキーはシェル履歴（`~/.zsh_history`）に平文で残るため
-ローテーションする。ただし**いま失効させない**。順番:
+ローテーションする。順番:
 
-1. 本人確認が通る
-2. 古いキーを失効
-3. アーカイブ用に新しいキーを発行
-4. アーカイブを実行
-5. そのキーもすぐ失効
+1. アーカイブ用に新しいキーを発行
+2. アーカイブを実行
+3. そのキーをすぐ失効
+4. 古いキー（履歴に残っているもの）も失効
 
 新しいキーの寿命を数分に抑える。あわせて Mac 側で:
 
