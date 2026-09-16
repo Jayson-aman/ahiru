@@ -106,14 +106,23 @@ Project settings → API keys に **`rcb_sb_` のサンドボックスキーし�
 解決しない。ライブの Stripe に接続済みでも本番キーが出ないケースとして
 コミュニティに同じ症状の報告がある。
 
-**最有力の原因候補**: RevenueCat Billing のストアフロント情報（販売者情報）
-が未入力。決済画面に出る会社名・サポートメール・返金ポリシー・利用規約URL
-など。実際に金銭を扱うため、これらが揃うまで本番を許可しない作りである
-可能性が高い。→ 左メニュー **Web / Billing タブ**に未完了の設定や
-チェックリストが残っていないか確認する。
+**画面で確定（2026-09-16）**: Project settings → API keys は2セクションに
+分かれており、
 
-**それでも出なければサポートへ問い合わせる**（ダッシュボード右上の ? →
-Support）。問い合わせ文の雛形:
+- **Sandbox API keys**: QualiZ (RevenueCat Billing) / QualiZ (Stripe)
+- **SDK API keys**（本番の公開キー。*Public API keys are automatically
+  generated for each of your apps*）: Test Store / QualiZ (App Store) /
+  QualiZ (Stripe)
+
+**`QualiZ (RevenueCat Billing)` は SDK API keys 側に存在しない。**
+App Store と Stripe には本番キーが自動生成されているので仕組み自体は
+動いており、**RevenueCat Billing アプリだけが本番化されていない。**
+こちら側の設定ミスではなく、RevenueCat 側の有効化が必要と判断できる。
+
+**サポートへ問い合わせる。** Help center には AI アシスタント（Rico）と
+**Contact Support** タブがあり、**Rico に投げても人間のチケットは作られない**
+（My support tickets が空のまま）。アカウント側の操作が必要な案件なので、
+Rico で解決しなければ Contact Support から人間に送る。問い合わせ文の雛形:
 
 ```
 Subject: Web Billing: only sandbox public API key (rcb_sb_) is available,
