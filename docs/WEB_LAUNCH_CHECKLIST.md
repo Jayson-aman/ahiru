@@ -80,8 +80,9 @@ RevenueCat Web Billing の公開キーは2種類ある:
 | `rcb_sb_...` | サンドボックス（テスト） |
 | `rcb_...`（`_sb_` なし） | 本番 |
 
-**まず Vercel の `EXPO_PUBLIC_RC_API_KEY_WEB` の先頭を確認する。**
-`rcb_sb_` で始まっていればそれが SANDBOX バナーの原因。
+**確認済み（2026-09-16）: Vercel の `EXPO_PUBLIC_RC_API_KEY_WEB` は
+`rcb_sb_` で始まっていた。** これが SANDBOX バナーの原因で確定。
+アプリ側・CSP側は正常で、残るのはキーの差し替えのみ。
 
 #### 本番化の手順
 
@@ -110,7 +111,7 @@ RevenueCat Web Billing の公開キーは2種類ある:
 - https://www.revenuecat.com/docs/web/web-billing/web-purchase-links
 - https://community.revenuecat.com/general-questions-7/web-billing-config-linked-to-live-stripe-account-only-rcb-sb-key-visible-no-production-rcb-key-7686
 
-### 🟠 残: RevenueCat の Title に頭欠けがある
+### ✅ 済: RevenueCat の Title の頭欠け（2026-09-16 42件確認完了）
 
 **原因確定（2026-09-16）。** RevenueCat → Product catalog → Products →
 `qualiz_pro_takkei_m2` → **Customer-facing product details → Title** が
@@ -194,7 +195,7 @@ Products 一覧では `QualiZ Max Pro（月額/年額）` と正しく入って�
 
 | 項目 | 状態 | 詳細 |
 |---|---|---|
-| 消費税 | RevenueCat 側 OFF のままが正しい | `REVENUECAT_AUDIT.md` 5. |
+| 消費税 | RevenueCat 側 OFF のままが正しい。**公開の必須条件ではない** | `REVENUECAT_AUDIT.md` 5. |
 | ~~Stripe 商品42件のアーカイブ~~ | **✅ 完了 2026-09-16（42/42）** | `scripts/stripe_archive_unused.mjs` |
 | RevenueCat の表示名20件 | 内部表示のみ・次回 | `REVENUECAT_AUDIT.md` 4. |
 | ロゴ | 未選定 | — |
