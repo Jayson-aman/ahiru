@@ -146,6 +146,41 @@ RevenueCat Billing, and where the production public key will appear
 once it is enabled?
 ```
 
+#### RevenueCat サポート（Rico）の回答と、その裏付け（2026-09-16）
+
+本番公開キー（`rcb_`）は、**Billing 設定が紐づく Stripe 接続を RevenueCat が
+「ライブモードにアクセスできる」と認識したときに初めて出る。**
+
+> If your connected Stripe account doesn't have access to live mode, only
+> RevenueCat sandbox purchases can be made (only sandbox API keys and web
+> purchase links will be available).
+> — https://www.revenuecat.com/docs/web/connect-stripe-account
+
+原因の候補は2つ:
+
+1. **Billing 設定が Stripe のサンドボックス接続を指している**（最有力）。
+   Stripe のサンドボックスは完全に別アカウントなので、そこに RevenueCat の
+   Stripe アプリを入れた接続からはサンドボックスキーしか出ない。
+2. Test mode の接続で、RevenueCat がライブアクセスを検出できていない。
+
+**日付が原因1を裏付ける**: API keys の作成日は
+`QualiZ (RevenueCat Billing)` のサンドボックスキーが **8/22**、
+`QualiZ (Stripe)` が **8/27**。**Billing 設定は、ライブ Stripe を繋ぐ
+5日前に作られている。** 当時ライブ接続が存在しなかった可能性が高い。
+
+確認場所: RevenueCat → **Account settings**（プロジェクト設定ではない）の
+Stripe 接続一覧 → ライブとサンドボックスの接続が並んでいるか。
+次に Web / Billing の設定でどちらが選択されているか。
+なお **Stripe を接続できるのはプロジェクトのオーナーのみ。**
+
+#### ⚠️ 切り替える前に必ず確認すること
+
+Billing 設定の Stripe 接続を切り替える／新しい Billing 設定を作り直す場合、
+**すでに作成済みの42商品と Entitlement・Offering への紐付けがどうなるか**が
+不明。作り直しになるなら今日と同じ作業をもう一度やることになる。
+**サポートに確認してから動く。** 確認せずに切り替えると
+「42商品が消えて、しかも本番キーも出ない」状態になりうる。
+
 **急ぐ必要はない。** iOS は App Store 経由で稼働中（この作業で一切触っていない）。
 Web はサンドボックスのまま置いておけるため誤課金のリスクはゼロ。
 決済フォームの表示までは到達済みで、残るのは RevenueCat 側の有効化のみ。
