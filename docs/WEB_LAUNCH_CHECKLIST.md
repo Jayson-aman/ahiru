@@ -70,7 +70,7 @@ RevenueCat → Billing タブ。
 | 項目 | 状態 | 詳細 |
 |---|---|---|
 | 消費税 | RevenueCat 側 OFF のままが正しい | `REVENUECAT_AUDIT.md` 5. |
-| Stripe 商品42件のアーカイブ | いつでも実行可 | `scripts/stripe_archive_unused.mjs` |
+| ~~Stripe 商品42件のアーカイブ~~ | **✅ 完了 2026-09-16（42/42）** | `scripts/stripe_archive_unused.mjs` |
 | RevenueCat の表示名20件 | 内部表示のみ・次回 | `REVENUECAT_AUDIT.md` 4. |
 | ロゴ | 未選定 | — |
 
@@ -81,13 +81,11 @@ RevenueCat → Billing タブ。
 Stripe の認証は済んでいるため、**前提条件による待ちは無い。**
 
 ```
-1. 最新コミットを本番デプロイ      ← A。これが最優先
+1. 最新コミットを本番デプロイ      ← A。残っているのはこれだけ
 2. B と C を確認（Billing タブ）
 3. テスト購入（D）
-4. Stripe 商品42件をアーカイブ → キーを即失効
+4. ✅ Stripe 商品42件のアーカイブ（完了）
 ```
-
-1 と 4 は互いに独立しているので、どちらから着手してもよい。
 
 ## Stripe シークレットキーの取り扱い
 
