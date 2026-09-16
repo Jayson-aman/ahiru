@@ -28,6 +28,7 @@ import { takkeiKenri12 } from './takkei_questions_kenri_12';
 import { takkeiKenri13 } from './takkei_questions_kenri_13';
 import { takkeiKenri14 } from './takkei_questions_kenri_14';
 import { takkeiKenri15 } from './takkei_questions_kenri_15';
+import { takkeiKenri16 } from './takkei_questions_kenri_16';
 import { takkeiGyoho1 } from './takkei_questions_gyoho_1';
 import { takkeiGyoho2 } from './takkei_questions_gyoho_2';
 import { takkeiGyoho3 } from './takkei_questions_gyoho_3';
@@ -43,6 +44,7 @@ import { takkeiGyoho12 } from './takkei_questions_gyoho_12';
 import { takkeiGyoho13 } from './takkei_questions_gyoho_13';
 import { takkeiGyoho14 } from './takkei_questions_gyoho_14';
 import { takkeiGyoho15 } from './takkei_questions_gyoho_15';
+import { takkeiGyoho16 } from './takkei_questions_gyoho_16';
 import { takkeiHorei } from './takkei_questions_horei';
 import { takkeiHorei2 } from './takkei_questions_horei2';
 import { takkeiHorei3 } from './takkei_questions_horei3';
@@ -50,6 +52,7 @@ import { takkeiHorei4 } from './takkei_questions_horei4';
 import { takkeiHorei5 } from './takkei_questions_horei5';
 import { takkeiHorei6 } from './takkei_questions_horei6';
 import { takkeiHorei7 } from './takkei_questions_horei7';
+import { takkeiHorei8 } from './takkei_questions_horei8';
 import { takkeiZei } from './takkei_questions_zei';
 import { takkeiQuestionsZei2 } from './takkei_questions_zei2';
 import { takkeiZei3 } from './takkei_questions_zei3';
@@ -57,6 +60,7 @@ import { takkeiZei4 } from './takkei_questions_zei4';
 import { takkeiZei5 } from './takkei_questions_zei5';
 import { takkeiZei6 } from './takkei_questions_zei6';
 import { takkeiZei7 } from './takkei_questions_zei7';
+import { takkeiZei8 } from './takkei_questions_zei8';
 
 const rawTakkeiQuestions: TakkeiQuestion[] = [
   ...takkeiKosuToukei,
@@ -76,6 +80,7 @@ const rawTakkeiQuestions: TakkeiQuestion[] = [
   ...takkeiKenri13,
   ...takkeiKenri14,
   ...takkeiKenri15,
+  ...takkeiKenri16,
   ...takkeiGyoho1,
   ...takkeiGyoho2,
   ...takkeiGyoho3,
@@ -91,6 +96,7 @@ const rawTakkeiQuestions: TakkeiQuestion[] = [
   ...takkeiGyoho13,
   ...takkeiGyoho14,
   ...takkeiGyoho15,
+  ...takkeiGyoho16,
   ...takkeiHorei,
   ...takkeiHorei2,
   ...takkeiHorei3,
@@ -98,6 +104,7 @@ const rawTakkeiQuestions: TakkeiQuestion[] = [
   ...takkeiHorei5,
   ...takkeiHorei6,
   ...takkeiHorei7,
+  ...takkeiHorei8,
   ...takkeiZei,
   ...takkeiQuestionsZei2,
   ...takkeiZei3,
@@ -105,6 +112,7 @@ const rawTakkeiQuestions: TakkeiQuestion[] = [
   ...takkeiZei5,
   ...takkeiZei6,
   ...takkeiZei7,
+  ...takkeiZei8,
 ];
 
 // 正解キーがB寄りだったため、他資格と同じく決定的に分散させる
