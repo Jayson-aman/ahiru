@@ -9,14 +9,28 @@
 
 ---
 
+## 共通
+
+- ベースURL: `https://api.revenuecat.com/v2`
+- 認証: `Authorization: Bearer <v2シークレットキー>`
+  （**v2 のシークレットキー。`rcb_` や v1 の `sk_` ではない**）
+- `Content-Type: application/json`
+
 ## 1. 商品の作成
 
 `POST /projects/{project_id}/products`
 
-| フィールド | 型 |
-|---|---|
-| `title` | string \| null |
-| `subscription.duration` | enum `P1W` / `P1M` / `P2M` / `P3M` / `P6M` / `P1Y` |
+必須: `store_identifier`, `app_id`, `type`
+
+| フィールド | 型 | 補足 |
+|---|---|---|
+| `app_id` | string | 本番 RC Billing アプリのID（`app...`） |
+| `store_identifier` | string | **Stripe の商品ID（`prod_...`）。** RevenueCat がアクティブな対応デフォルト価格を自動選択する |
+| `price_identifier` | string \| null | 任意。特定の Stripe 価格ID（`price_...`）を強制指定する場合 |
+| `type` | enum | `subscription` / `one_time` / `consumable` / `non_consumable` / `non_renewing_subscription` |
+| `display_name` | string \| null | **ダッシュボード表示専用** |
+| `title` | string \| null | **チェックアウトに出る顧客向け名称** |
+| `subscription.duration` | enum `P1W`/`P1M`/`P2M`/`P3M`/`P6M`/`P1Y` | テストストアのみ有効。RC Billing では無視 |
 
 **冪等ではない。** 同じ identifier で再試行すると **409 conflict**。
 → スクリプト側で既存判定を持つ必要がある（`stripe_products.mjs` と同じ方式）。
@@ -111,6 +125,33 @@ API では商品作成時の **`title`** フィールドが対応する。
 - Entitlement 紐付けは冪等なので再実行に強い。
 - `--apply` を付けない限り書き込まない（既存スクリプトと同じ作法）。
 - 実行前に、ライブ Stripe 側に対応する商品・価格が存在することを確認する。
+
+## 移行用データ: `docs/revenuecat_migration_map.json`
+
+`store_identifier` は **Stripe の商品ID**なので、2026-09-16 のアーカイブ作業の
+出力から42件すべてのIDを回収して保存した。商品作成に必要な値が揃っている:
+
+```json
+{
+  "store_identifier": "prod_VGjWYqP7F8qtPM",
+  "title": "コンクリート技士 Pro（月額）",
+  "entitlement": "pro_concrete",
+  "qualiz_id": "qualiz_pro_concrete_monthly",
+  "amount": 1800,
+  "interval": "month"
+}
+```
+
+`amount` / `interval` は確認用（API では設定できない。Stripe 側の値）。
+
+**この42商品はライブ Stripe アカウントでアーカイブ済み。** 使う前に
+アーカイブ解除が必要（1クリックで戻せる）。**削除しないこと。**
+
+実行時に別途必要なもの:
+
+- `project_id`
+- 本番 RC Billing アプリの `app_id`（**まだ存在しない。本番化後に判明する**）
+- v2 シークレットキー
 
 ## 参考
 

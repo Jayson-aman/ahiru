@@ -1,0 +1,338 @@
+[
+  {
+    "store_identifier": "prod_VGjWYqP7F8qtPM",
+    "title": "コンクリート技士 Pro（月額）",
+    "entitlement": "pro_concrete",
+    "qualiz_id": "qualiz_pro_concrete_monthly",
+    "amount": 1800,
+    "interval": "month"
+  },
+  {
+    "store_identifier": "prod_VGjWxZaN9fouEy",
+    "title": "コンクリート技士 Pro（年額）",
+    "entitlement": "pro_concrete",
+    "qualiz_id": "qualiz_pro_concrete_yearly",
+    "amount": 18000,
+    "interval": "year"
+  },
+  {
+    "store_identifier": "prod_VGij8A2y8BCWPS",
+    "title": "建築コスト管理士 Pro（月額）",
+    "entitlement": "pro_cost",
+    "qualiz_id": "qualiz_pro_cost_monthly",
+    "amount": 1800,
+    "interval": "month"
+  },
+  {
+    "store_identifier": "prod_VGimyfEjHuNDm7",
+    "title": "建築コスト管理士 Pro（年額）",
+    "entitlement": "pro_cost",
+    "qualiz_id": "qualiz_pro_cost_yearly",
+    "amount": 18000,
+    "interval": "year"
+  },
+  {
+    "store_identifier": "prod_VGhwPCCgLWkwme",
+    "title": "電験三種 Pro（月額）",
+    "entitlement": "pro_denken3",
+    "qualiz_id": "qualiz_pro_denken3_monthly",
+    "amount": 1800,
+    "interval": "month"
+  },
+  {
+    "store_identifier": "prod_VGhwzCzFycE6Ux",
+    "title": "電験三種 Pro（年額）",
+    "entitlement": "pro_denken3",
+    "qualiz_id": "qualiz_pro_denken3_yearly",
+    "amount": 18000,
+    "interval": "year"
+  },
+  {
+    "store_identifier": "prod_VGjWQCMmyr1efK",
+    "title": "第二種電気工事士 Pro（月額）",
+    "entitlement": "pro_denki2",
+    "qualiz_id": "qualiz_pro_denki2_monthly",
+    "amount": 1800,
+    "interval": "month"
+  },
+  {
+    "store_identifier": "prod_VGjWexqr98G45r",
+    "title": "第二種電気工事士 Pro（年額）",
+    "entitlement": "pro_denki2",
+    "qualiz_id": "qualiz_pro_denki2_yearly",
+    "amount": 18000,
+    "interval": "year"
+  },
+  {
+    "store_identifier": "prod_VGiKcYJd2SsAFs",
+    "title": "1級電気工事施工管理技士 Pro（月額）",
+    "entitlement": "pro_denkisekou",
+    "qualiz_id": "qualiz_pro_denkisekou_monthly",
+    "amount": 1800,
+    "interval": "month"
+  },
+  {
+    "store_identifier": "prod_VGiKABmhf92crv",
+    "title": "1級電気工事施工管理技士 Pro（年額）",
+    "entitlement": "pro_denkisekou",
+    "qualiz_id": "qualiz_pro_denkisekou_yearly",
+    "amount": 18000,
+    "interval": "year"
+  },
+  {
+    "store_identifier": "prod_VGiesAigcGR6aP",
+    "title": "1級土木施工管理技士 Pro（月額）",
+    "entitlement": "pro_dobokusekou",
+    "qualiz_id": "qualiz_pro_dobokusekou_monthly",
+    "amount": 1800,
+    "interval": "month"
+  },
+  {
+    "store_identifier": "prod_VGige1R2T7e5i7",
+    "title": "1級土木施工管理技士 Pro（年額）",
+    "entitlement": "pro_dobokusekou",
+    "qualiz_id": "qualiz_pro_dobokusekou_yearly",
+    "amount": 18000,
+    "interval": "year"
+  },
+  {
+    "store_identifier": "prod_VGgsImObq5z7SH",
+    "title": "FP Pro（月額）",
+    "entitlement": "pro_fp",
+    "qualiz_id": "qualiz_pro_fp_monthly",
+    "amount": 1800,
+    "interval": "month"
+  },
+  {
+    "store_identifier": "prod_VGhCfhzkXYaHaN",
+    "title": "FP Pro（年額）",
+    "entitlement": "pro_fp",
+    "qualiz_id": "qualiz_pro_fp_yearly",
+    "amount": 18000,
+    "interval": "year"
+  },
+  {
+    "store_identifier": "prod_VGi9Jy9fmSm17K",
+    "title": "1級管工事施工管理技士 Pro（月額）",
+    "entitlement": "pro_kankoji",
+    "qualiz_id": "qualiz_pro_kankoji_monthly",
+    "amount": 1800,
+    "interval": "month"
+  },
+  {
+    "store_identifier": "prod_VGiCaAGexhrbnx",
+    "title": "1級管工事施工管理技士 Pro（年額）",
+    "entitlement": "pro_kankoji",
+    "qualiz_id": "qualiz_pro_kankoji_yearly",
+    "amount": 18000,
+    "interval": "year"
+  },
+  {
+    "store_identifier": "prod_VGhnUM3LaJsGiA",
+    "title": "建築設備士 Pro（月額）",
+    "entitlement": "pro_kenchiku",
+    "qualiz_id": "qualiz_pro_kenchiku_monthly",
+    "amount": 1800,
+    "interval": "month"
+  },
+  {
+    "store_identifier": "prod_VGhr9KwvXux67I",
+    "title": "建築設備士 Pro（年額）",
+    "entitlement": "pro_kenchiku",
+    "qualiz_id": "qualiz_pro_kenchiku_yearly",
+    "amount": 18000,
+    "interval": "year"
+  },
+  {
+    "store_identifier": "prod_VGiXpdIrKipwZs",
+    "title": "1級建設機械施工管理技士 Pro（月額）",
+    "entitlement": "pro_kikaisekou",
+    "qualiz_id": "qualiz_pro_kikaisekou_monthly",
+    "amount": 1800,
+    "interval": "month"
+  },
+  {
+    "store_identifier": "prod_VGibn4e5j5AnLW",
+    "title": "1級建設機械施工管理技士 Pro（年額）",
+    "entitlement": "pro_kikaisekou",
+    "qualiz_id": "qualiz_pro_kikaisekou_yearly",
+    "amount": 18000,
+    "interval": "year"
+  },
+  {
+    "store_identifier": "prod_VGjWZLOoXZFN70",
+    "title": "危険物取扱者乙4 Pro（月額）",
+    "entitlement": "pro_kikenbutsu",
+    "qualiz_id": "qualiz_pro_kikenbutsu_monthly",
+    "amount": 1800,
+    "interval": "month"
+  },
+  {
+    "store_identifier": "prod_VGjWYB9hHgpYWV",
+    "title": "危険物取扱者乙4 Pro（年額）",
+    "entitlement": "pro_kikenbutsu",
+    "qualiz_id": "qualiz_pro_kikenbutsu_yearly",
+    "amount": 18000,
+    "interval": "year"
+  },
+  {
+    "store_identifier": "prod_VGi1PpiOQK1ShJ",
+    "title": "気象予報士 Pro（月額）",
+    "entitlement": "pro_kisho",
+    "qualiz_id": "qualiz_pro_kisho_monthly",
+    "amount": 1800,
+    "interval": "month"
+  },
+  {
+    "store_identifier": "prod_VGi1o0SApirvHd",
+    "title": "気象予報士 Pro（年額）",
+    "entitlement": "pro_kisho",
+    "qualiz_id": "qualiz_pro_kisho_yearly",
+    "amount": 18000,
+    "interval": "year"
+  },
+  {
+    "store_identifier": "prod_VGjWcxwba8GVog",
+    "title": "高圧ガス製造保安責任者 Pro（月額）",
+    "entitlement": "pro_koatsu",
+    "qualiz_id": "qualiz_pro_koatsu_monthly",
+    "amount": 1800,
+    "interval": "month"
+  },
+  {
+    "store_identifier": "prod_VGjWjg91qfXGh8",
+    "title": "高圧ガス製造保安責任者 Pro（年額）",
+    "entitlement": "pro_koatsu",
+    "qualiz_id": "qualiz_pro_koatsu_yearly",
+    "amount": 18000,
+    "interval": "year"
+  },
+  {
+    "store_identifier": "prod_VGioTtAtQDqdRf",
+    "title": "給水装置工事主任技術者 Pro（月額）",
+    "entitlement": "pro_kyusui",
+    "qualiz_id": "qualiz_pro_kyusui_monthly",
+    "amount": 1800,
+    "interval": "month"
+  },
+  {
+    "store_identifier": "prod_VGiv4LJXTs4NZd",
+    "title": "給水装置工事主任技術者 Pro（年額）",
+    "entitlement": "pro_kyusui",
+    "qualiz_id": "qualiz_pro_kyusui_yearly",
+    "amount": 18000,
+    "interval": "year"
+  },
+  {
+    "store_identifier": "prod_VGjWB0SpjIdgdt",
+    "title": "液化石油ガス設備士 Pro（月額）",
+    "entitlement": "pro_lpgas",
+    "qualiz_id": "qualiz_pro_lpgas_monthly",
+    "amount": 1800,
+    "interval": "month"
+  },
+  {
+    "store_identifier": "prod_VGjWJhPpzHQbV1",
+    "title": "液化石油ガス設備士 Pro（年額）",
+    "entitlement": "pro_lpgas",
+    "qualiz_id": "qualiz_pro_lpgas_yearly",
+    "amount": 18000,
+    "interval": "year"
+  },
+  {
+    "store_identifier": "prod_VGhjreWfdUhW4M",
+    "title": "マンション管理士 Pro（月額）",
+    "entitlement": "pro_mansion",
+    "qualiz_id": "qualiz_pro_mansion_monthly",
+    "amount": 1800,
+    "interval": "month"
+  },
+  {
+    "store_identifier": "prod_VGhlbdrFnkqzem",
+    "title": "マンション管理士 Pro（年額）",
+    "entitlement": "pro_mansion",
+    "qualiz_id": "qualiz_pro_mansion_yearly",
+    "amount": 18000,
+    "interval": "year"
+  },
+  {
+    "store_identifier": "prod_VGjWl7NzzfE7OG",
+    "title": "二級建築士 Pro（月額）",
+    "entitlement": "pro_nikkyu",
+    "qualiz_id": "qualiz_pro_nikkyu_monthly",
+    "amount": 1800,
+    "interval": "month"
+  },
+  {
+    "store_identifier": "prod_VGjWsTQM7HqE92",
+    "title": "二級建築士 Pro（年額）",
+    "entitlement": "pro_nikkyu",
+    "qualiz_id": "qualiz_pro_nikkyu_yearly",
+    "amount": 18000,
+    "interval": "year"
+  },
+  {
+    "store_identifier": "prod_VGi6HlmQldH6h3",
+    "title": "1級建築施工管理技士 Pro（月額）",
+    "entitlement": "pro_sekokan",
+    "qualiz_id": "qualiz_pro_sekokan_monthly",
+    "amount": 1800,
+    "interval": "month"
+  },
+  {
+    "store_identifier": "prod_VGi8Hb0AyirGZM",
+    "title": "1級建築施工管理技士 Pro（年額）",
+    "entitlement": "pro_sekokan",
+    "qualiz_id": "qualiz_pro_sekokan_yearly",
+    "amount": 18000,
+    "interval": "year"
+  },
+  {
+    "store_identifier": "prod_VGjW4woy1PEK8D",
+    "title": "消防設備士 Pro（月額）",
+    "entitlement": "pro_shobo",
+    "qualiz_id": "qualiz_pro_shobo_monthly",
+    "amount": 1800,
+    "interval": "month"
+  },
+  {
+    "store_identifier": "prod_VGjWiTSRcCs4BQ",
+    "title": "消防設備士 Pro（年額）",
+    "entitlement": "pro_shobo",
+    "qualiz_id": "qualiz_pro_shobo_yearly",
+    "amount": 18000,
+    "interval": "year"
+  },
+  {
+    "store_identifier": "prod_VGgnvBasXkbTCw",
+    "title": "宅地建物取引士 Pro（月額）",
+    "entitlement": "pro_takkei",
+    "qualiz_id": "qualiz_pro_takkei_monthly",
+    "amount": 1800,
+    "interval": "month"
+  },
+  {
+    "store_identifier": "prod_VGgpN9hSgADw1B",
+    "title": "宅地建物取引士 Pro（年額）",
+    "entitlement": "pro_takkei",
+    "qualiz_id": "qualiz_pro_takkei_yearly",
+    "amount": 18000,
+    "interval": "year"
+  },
+  {
+    "store_identifier": "prod_VGjWnHjaAO8p3G",
+    "title": "1級電気通信工事施工管理技士 Pro（月額）",
+    "entitlement": "pro_tsushin",
+    "qualiz_id": "qualiz_pro_tsushin_monthly",
+    "amount": 1800,
+    "interval": "month"
+  },
+  {
+    "store_identifier": "prod_VGjW0xw3PCS9nE",
+    "title": "1級電気通信工事施工管理技士 Pro（年額）",
+    "entitlement": "pro_tsushin",
+    "qualiz_id": "qualiz_pro_tsushin_yearly",
+    "amount": 18000,
+    "interval": "year"
+  }
+]
