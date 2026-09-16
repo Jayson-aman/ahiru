@@ -76,20 +76,25 @@ RevenueCat → Billing タブ。
 Project settings → API keys で sandbox / production のキーが
 分かれていないかを確認する。**公開前に必ず切り替える。**
 
-### 🟠 残: RevenueCat の商品名から「宅」が抜けている
+### 🟠 残: 決済画面の商品名が途中から表示されている
 
 決済画面の表示が `地建物取引士 Pro（月額）` になっている
-（正しくは `宅地建物取引士 Pro（月額）`）。
+（頭の文字が欠けている）。
 
-**リポジトリには「地建物取引士」という文字列は存在しない**ので、
-RevenueCat 側の商品名の入力ミス。決済画面で顧客に見えるため要修正。
+**原因は入力ミスではない。** RevenueCat → Product catalog → Products の
+`QualiZ (RevenueCat Billing)` では `宅地建物取引士（月額）` /
+`qualiz_pro_takkei_m2` と正しく登録されている（2026-09-16 確認）。
+当初「宅が抜けている入力ミス」と記録したのは誤りだった。
 
-修正場所: RevenueCat → Product catalog → Products →
-`QualiZ (RevenueCat Billing)` の `qualiz_pro_takkei_m2` の名前。
-**他20資格も同じミスが無いか Products 一覧で一括確認する。**
+**手がかり**: 決済画面の文字列には `Pro` が入っているが、Products 一覧の
+商品名には `Pro` が無い。つまり決済画面は一覧とは**別の項目**を表示している。
+アーカイブした Stripe 商品の名前が `QualiZ 宅地建物取引士 Pro（月額）`
+だったので、その形式の文字列の頭7文字（`QualiZ 宅`）が切れていると
+見えている文字列と一致する。**表示の切れである可能性が高い。**
 
-なおアプリ側の「宅建 権利関係 Pro」は正常
-（`app/takkei/[subject].tsx:57` が科目名を組み合わせている）。
+**次の確認**: Products で `宅地建物取引士（月額）` を開き、一覧とは別の
+名前の項目（Title / Display name / Description 等）を確認する。
+長い名前が入っているなら、短くすれば表示が収まる。
 
 ### D. デプロイ後のテスト購入
 
