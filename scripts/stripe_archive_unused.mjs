@@ -2,9 +2,20 @@
 /**
  * QualiZ の未使用 Stripe 商品42件をアーカイブする。
  *
- *   export STRIPE_SECRET_KEY=sk_live_...   # 値は環境変数のみ。引数に書かない
+ *   export STRIPE_SECRET_KEY=rk_live_...   # 値は環境変数のみ。引数に書かない
  *   node scripts/stripe_archive_unused.mjs           # 確認のみ。何も変更しない
  *   node scripts/stripe_archive_unused.mjs --apply   # 実行
+ *
+ * キーは「制限付きキー」(rk_) を推奨する。必要な権限は3つだけ:
+ *
+ *   Products      書き込み
+ *   Prices        書き込み
+ *   Subscriptions 読み取り
+ *
+ * フルのシークレットキー (sk_) でも動くが、漏れたときの被害が大きい。
+ * Stripe → 開発者 → APIキー → 制限付きキーを作成 で発行し、
+ * 作業が終わったら失効させる。ライブの sk_ は作成時の一度しか表示
+ * されないが、失効に表示は不要。
  *
  * なぜアーカイブするのか:
  *   Web課金は RevenueCat Billing が担い、Stripe側の商品・価格は
@@ -73,16 +84,19 @@ const APPLY = process.argv.includes('--apply');
 
 if (!KEY) {
   console.error('\nSTRIPE_SECRET_KEY が未設定です。');
-  console.error('  export STRIPE_SECRET_KEY=sk_live_...');
+  console.error('  export STRIPE_SECRET_KEY=rk_live_...   # 制限付きキー推奨');
   console.error('値を引数に書かないこと（シェル履歴とプロセス一覧に残る）。\n');
   process.exit(1);
 }
-if (!/^sk_(test|live)_/.test(KEY)) {
-  console.error('\nSTRIPE_SECRET_KEY が sk_test_ / sk_live_ で始まっていません。');
-  console.error('公開キー(pk_)や制限キー(rk_)では商品を変更できません。\n');
+if (!/^(sk|rk)_(test|live)_/.test(KEY)) {
+  console.error('\nSTRIPE_SECRET_KEY が sk_ / rk_ で始まっていません。');
+  console.error('公開キー(pk_)では商品を変更できません。');
+  console.error('制限付きキー(rk_)に必要な権限: Products 書き込み /');
+  console.error('Prices 書き込み / Subscriptions 読み取り\n');
   process.exit(1);
 }
-const MODE = KEY.startsWith('sk_live_') ? 'LIVE（本番）' : 'TEST（テスト）';
+const MODE = /_live_/.test(KEY) ? 'LIVE（本番）' : 'TEST（テスト）';
+const KIND = KEY.startsWith('rk_') ? '制限付きキー' : 'シークレットキー';
 
 async function stripe(method, endpoint, body) {
   const headers = { Authorization: `Bearer ${KEY}`, 'Stripe-Version': '2024-06-20' };
@@ -93,7 +107,17 @@ async function stripe(method, endpoint, body) {
   }
   const res = await fetch(`https://api.stripe.com/v1/${endpoint}`, { method, headers, body: payload });
   const json = await res.json();
-  if (!res.ok) throw new Error(`${method} ${endpoint} → ${res.status}: ${json?.error?.message ?? JSON.stringify(json)}`);
+  if (!res.ok) {
+    const msg = json?.error?.message ?? JSON.stringify(json);
+    if (res.status === 403) {
+      throw new Error(
+        `${method} ${endpoint} → 403: ${msg}\n` +
+        '      制限付きキーの権限が足りません。Products 書き込み /\n' +
+        '      Prices 書き込み / Subscriptions 読み取り を許可してください。'
+      );
+    }
+    throw new Error(`${method} ${endpoint} → ${res.status}: ${msg}`);
+  }
   return json;
 }
 
@@ -114,7 +138,7 @@ async function listAll(endpoint, params = {}) {
 const LIVE_STATUSES = new Set(['active', 'trialing', 'past_due', 'unpaid', 'paused', 'incomplete']);
 
 async function main() {
-  console.log(`\nモード: ${MODE}`);
+  console.log(`\nモード: ${MODE}（${KIND}）`);
   console.log(`対象候補: 商品名が一致する ${TARGET_NAMES.size} 件\n`);
 
   console.log('Stripe上の商品を取得中…');
