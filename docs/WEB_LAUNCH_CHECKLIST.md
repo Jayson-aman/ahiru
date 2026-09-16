@@ -76,25 +76,77 @@ RevenueCat → Billing タブ。
 Project settings → API keys で sandbox / production のキーが
 分かれていないかを確認する。**公開前に必ず切り替える。**
 
-### 🟠 残: 決済画面の商品名が途中から表示されている
+### 🟠 残: RevenueCat の Title に頭欠けがある
 
-決済画面の表示が `地建物取引士 Pro（月額）` になっている
-（頭の文字が欠けている）。
+**原因確定（2026-09-16）。** RevenueCat → Product catalog → Products →
+`qualiz_pro_takkei_m2` → **Customer-facing product details → Title** が
 
-**原因は入力ミスではない。** RevenueCat → Product catalog → Products の
-`QualiZ (RevenueCat Billing)` では `宅地建物取引士（月額）` /
-`qualiz_pro_takkei_m2` と正しく登録されている（2026-09-16 確認）。
-当初「宅が抜けている入力ミス」と記録したのは誤りだった。
+```
+Title:       地建物取引士 Pro（月額）        ← 誤り（頭7文字が欠けている）
+Description: 宅地建物取引士の全問題・全教科書…  ← 正しい
+```
 
-**手がかり**: 決済画面の文字列には `Pro` が入っているが、Products 一覧の
-商品名には `Pro` が無い。つまり決済画面は一覧とは**別の項目**を表示している。
-アーカイブした Stripe 商品の名前が `QualiZ 宅地建物取引士 Pro（月額）`
-だったので、その形式の文字列の頭7文字（`QualiZ 宅`）が切れていると
-見えている文字列と一致する。**表示の切れである可能性が高い。**
+となっていた。**表示の切れではなく、入力値そのものが欠けている。**
+Products 一覧に出る商品名（`宅地建物取引士（月額）`）は正しいが、
+決済画面が表示するのはこの **Title** の方。
 
-**次の確認**: Products で `宅地建物取引士（月額）` を開き、一覧とは別の
-名前の項目（Title / Display name / Description 等）を確認する。
-長い名前が入っているなら、短くすれば表示が収まる。
+`QualiZ 宅地建物取引士 Pro（月額）` の頭7文字（`QualiZ 宅`）が欠けた形なので、
+2026-08-27 の入力時にコピペの選択範囲がずれたと見られる。
+**同じ原因で他の商品も欠けている可能性が高いため、42件すべて確認する。**
+
+修正は Customer-facing product details の **Edit** から。
+`QualiZ` の接頭辞は不要（決済画面の上部に既に QualiZ と表示されるため重複）。
+
+#### 正しい Title 一覧（42件）
+
+| 商品ID | Title（正しい値） |
+|---|---|
+| `qualiz_pro_concrete_monthly` | `コンクリート技士 Pro（月額）` |
+| `qualiz_pro_concrete_yearly` | `コンクリート技士 Pro（年額）` |
+| `qualiz_pro_cost_monthly` | `建築コスト管理士 Pro（月額）` |
+| `qualiz_pro_cost_yearly` | `建築コスト管理士 Pro（年額）` |
+| `qualiz_pro_denken3_monthly` | `電験三種 Pro（月額）` |
+| `qualiz_pro_denken3_yearly` | `電験三種 Pro（年額）` |
+| `qualiz_pro_denki2_monthly` | `第二種電気工事士 Pro（月額）` |
+| `qualiz_pro_denki2_yearly` | `第二種電気工事士 Pro（年額）` |
+| `qualiz_pro_denkisekou_monthly` | `1級電気工事施工管理技士 Pro（月額）` |
+| `qualiz_pro_denkisekou_yearly` | `1級電気工事施工管理技士 Pro（年額）` |
+| `qualiz_pro_dobokusekou_monthly` | `1級土木施工管理技士 Pro（月額）` |
+| `qualiz_pro_dobokusekou_yearly` | `1級土木施工管理技士 Pro（年額）` |
+| `qualiz_pro_fp_monthly` | `FP Pro（月額）` |
+| `qualiz_pro_fp_yearly` | `FP Pro（年額）` |
+| `qualiz_pro_kankoji_monthly` | `1級管工事施工管理技士 Pro（月額）` |
+| `qualiz_pro_kankoji_yearly` | `1級管工事施工管理技士 Pro（年額）` |
+| `qualiz_pro_kenchiku_monthly` | `建築設備士 Pro（月額）` |
+| `qualiz_pro_kenchiku_yearly` | `建築設備士 Pro（年額）` |
+| `qualiz_pro_kikaisekou_monthly` | `1級建設機械施工管理技士 Pro（月額）` |
+| `qualiz_pro_kikaisekou_yearly` | `1級建設機械施工管理技士 Pro（年額）` |
+| `qualiz_pro_kikenbutsu_monthly` | `危険物取扱者乙4 Pro（月額）` |
+| `qualiz_pro_kikenbutsu_yearly` | `危険物取扱者乙4 Pro（年額）` |
+| `qualiz_pro_kisho_monthly` | `気象予報士 Pro（月額）` |
+| `qualiz_pro_kisho_yearly` | `気象予報士 Pro（年額）` |
+| `qualiz_pro_koatsu_monthly` | `高圧ガス製造保安責任者 Pro（月額）` |
+| `qualiz_pro_koatsu_yearly` | `高圧ガス製造保安責任者 Pro（年額）` |
+| `qualiz_pro_kyusui_monthly` | `給水装置工事主任技術者 Pro（月額）` |
+| `qualiz_pro_kyusui_yearly` | `給水装置工事主任技術者 Pro（年額）` |
+| `qualiz_pro_lpgas_monthly` | `液化石油ガス設備士 Pro（月額）` |
+| `qualiz_pro_lpgas_yearly` | `液化石油ガス設備士 Pro（年額）` |
+| `qualiz_pro_mansion_monthly` | `マンション管理士 Pro（月額）` |
+| `qualiz_pro_mansion_yearly` | `マンション管理士 Pro（年額）` |
+| `qualiz_pro_nikkyu_monthly` | `二級建築士 Pro（月額）` |
+| `qualiz_pro_nikkyu_yearly` | `二級建築士 Pro（年額）` |
+| `qualiz_pro_sekokan_monthly` | `1級建築施工管理技士 Pro（月額）` |
+| `qualiz_pro_sekokan_yearly` | `1級建築施工管理技士 Pro（年額）` |
+| `qualiz_pro_shobo_monthly` | `消防設備士 Pro（月額）` |
+| `qualiz_pro_shobo_yearly` | `消防設備士 Pro（年額）` |
+| `qualiz_pro_takkei_monthly` | `宅地建物取引士 Pro（月額）` |
+| `qualiz_pro_takkei_yearly` | `宅地建物取引士 Pro（年額）` |
+| `qualiz_pro_tsushin_monthly` | `1級電気通信工事施工管理技士 Pro（月額）` |
+| `qualiz_pro_tsushin_yearly` | `1級電気通信工事施工管理技士 Pro（年額）` |
+
+`max` の2件は `qualiz_max_monthly` / `qualiz_max_yearly` で、
+Products 一覧では `QualiZ Max Pro（月額/年額）` と正しく入っていた
+（2026-09-16 の画面で確認）。Title 側も要確認。
 
 ### D. デプロイ後のテスト購入
 
