@@ -18,11 +18,13 @@
  */
 
 if (!process.argv.includes('--yes-i-know-this-is-unused')) {
-  console.error('\nこのスクリプトは使わないこと。');
-  console.error('商品を作る場所は RevenueCat の Products タブで、Stripe ではありません。');
-  console.error('RevenueCat Billing が Stripe 側の商品を自分で管理するため、');
-  console.error('ここで作った商品はどこからも参照されません。');
-  console.error('詳細: docs/WEB_BILLING_PRODUCTS_SETUP.md\n');
+  console.error('\n通常このスクリプトは不要です。');
+  console.error('RevenueCatの画面から商品を作る場合、Stripe側はRevenueCatが管理します。');
+  console.error('');
+  console.error('ただしRevenueCat API(v2)で商品を作る経路では、APIが価格を');
+  console.error('設定できないため、対応するStripe商品が先に必要になります。');
+  console.error('その場合はまず、2026-09-16にアーカイブした42件の復帰を検討してください。');
+  console.error('詳細: docs/WEB_LAUNCH_CHECKLIST.md\n');
   process.exit(1);
 }
 

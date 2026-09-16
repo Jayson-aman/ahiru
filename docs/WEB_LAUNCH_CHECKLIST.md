@@ -277,6 +277,60 @@ Production / Preview / Development で別の値を設定できる。**
 これでプレビューは安全にテストでき、本番だけが実課金になる。
 **コード変更は不要で Vercel の設定だけで済む。**
 
+#### RevenueCat API v2 の仕様（サポートから取得・2026-09-16）
+
+**完全版は `docs/REVENUECAT_API_V2_NOTES.md` に保存した。**
+この環境から revenuecat.com は読めないため、あれが唯一の一次資料。
+以下は要点のみ。
+
+```
+2. 商品をEntitlementに紐付け
+   POST /projects/{project_id}/entitlements/{entitlement_id}/products
+   { "product_ids": ["prod_abc", "prod_def"] }
+   冪等。detach で解除。アーカイブ済みだと 422。
+
+3. 既存Offering内にPackageを作成
+   POST /projects/{project_id}/offerings/{offering_id}/packages
+   { "lookup_key": "$rc_monthly", "display_name": "Monthly", "position": 1 }
+   lookup_key は $rc_monthly / $rc_annual / … / $rc_custom_*
+   ※ 既存の "default" Offering のパッケージは再利用できる可能性が高い
+
+4. 商品をPackageに紐付け（2とボディの形が違う）
+   POST /projects/{project_id}/packages/{package_id}/products
+   { "products": [ { "product_id": "prod_abc", "eligibility_criteria": "all" } ] }
+   Web Billing / App Store 商品は "all" を使う。追加式。
+```
+
+#### 🔴 決定的な制約: API では価格を設定できない
+
+**RC Billing の商品作成エンドポイントに価格フィールドが無い。**
+JPY 価格と請求サイクルは `store_identifier` が指す **Stripe 側の商品・価格**から
+取得される（価格設定エンドポイントは `test_store` 専用かつ非推奨）。
+
+→ **API 経路で移行するには、対応する Stripe の商品・価格が
+ライブアカウントに先に存在している必要がある。**
+
+#### ✅ その前提は、すでに満たされている
+
+2026-09-16 に `scripts/stripe_products.mjs` で作った42件は
+**ライブアカウント `acct_…PiPIYFnkuX` にあり**、金額（¥1,800 / ¥18,000）・
+請求間隔（月/年）・通貨（JPY）がすべて一致する。
+
+そして **削除ではなくアーカイブにしたため、Stripe の画面から1クリックで戻せる。**
+
+**🔴 この42件を削除しないこと。** 「未使用だから掃除する」と判断したが、
+API 経路を採る場合は必要になる。アーカイブのまま残す。
+
+#### Title（チェックアウトに出る名前）について
+
+チェックアウトに表示されるのは商品の **Name**（顧客向け商品名）で、
+API では商品作成時の `title` フィールドが対応する。ただし:
+
+- API の `title` → チェックアウトの Name への対応はドキュメント上未明記。
+  **まず1件作ってチェックアウト画面で確認してから42件をスクリプト化する。**
+- `title` は**作成時に設定する**もので、既存商品に後から PATCH できるかは未確認。
+  どのみち作り直すなら、作成時に正しい値を入れれば誤字問題は恒久的に解決する。
+
 #### ⚠️ 切り替える前に必ず確認すること
 
 Billing 設定の Stripe 接続を切り替える／新しい Billing 設定を作り直す場合、
