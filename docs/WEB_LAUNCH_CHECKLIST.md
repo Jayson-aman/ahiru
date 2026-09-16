@@ -66,15 +66,49 @@ RevenueCat → Billing タブ。
 チェックアウト画面に表示される 会社名・サポートメール・返金ポリシー・
 規約URL。RevenueCat → Billing タブ。
 
-### ⚠️ 残: RevenueCat Billing がサンドボックスのまま
+### ⚠️ 残: サンドボックスの解除（本番公開の必須項目）
 
 決済画面の上部に黄色い **SANDBOX** バナーが出ている。テストモードなので
-**本物の課金はまだできない。**（逆に言えば、カードを入れても課金されないので
+**本物の課金はできない。**（逆に言えば、カードを入れても課金されないので
 自由に検証できる状態。）
 
-本番に切り替えるには RevenueCat → Billing タブ、または
-Project settings → API keys で sandbox / production のキーが
-分かれていないかを確認する。**公開前に必ず切り替える。**
+**サンドボックスはモード切り替えではなく、どのキーを使うかで決まる。**
+RevenueCat Web Billing の公開キーは2種類ある:
+
+| キー | 用途 |
+|---|---|
+| `rcb_sb_...` | サンドボックス（テスト） |
+| `rcb_...`（`_sb_` なし） | 本番 |
+
+**まず Vercel の `EXPO_PUBLIC_RC_API_KEY_WEB` の先頭を確認する。**
+`rcb_sb_` で始まっていればそれが SANDBOX バナーの原因。
+
+#### 本番化の手順
+
+1. RevenueCat → Project settings → API keys → `QualiZ (RevenueCat Billing)`
+   の公開キーのうち **`_sb_` が入っていない方**をコピー
+2. Vercel → Settings → Environment Variables →
+   `EXPO_PUBLIC_RC_API_KEY_WEB` を差し替え
+3. **再デプロイ必須**（`EXPO_PUBLIC_*` はビルド時にバンドルへ焼き込まれるため、
+   環境変数の変更だけでは反映されない）。Promote to Production を実行する。
+4. **Stripe（ライブモード）→ 決済 → 決済方法のドメイン**に
+   `shikaku.zaibase.group` を登録する。
+   これをやらないと本番キーでも購入が通らない
+   （"You need to add domains in Stripe Live mode to allow production
+   purchases on those domains."）
+
+#### 既知の落とし穴
+
+ライブの Stripe に接続済みでも **本番キーが表示されない**ケースが報告されて
+いる（`rcb_sb_` しか見えない）。その場合は RevenueCat のサポートへ問い合わせる。
+
+出典（この環境から revenuecat.com への直接アクセスはネットワークポリシーで
+ブロックされており、検索結果の要約に基づく。画面の実物と要確認）:
+
+- https://www.revenuecat.com/docs/web/web-billing/testing
+- https://www.revenuecat.com/docs/web/connect-stripe-account
+- https://www.revenuecat.com/docs/web/web-billing/web-purchase-links
+- https://community.revenuecat.com/general-questions-7/web-billing-config-linked-to-live-stripe-account-only-rcb-sb-key-visible-no-production-rcb-key-7686
 
 ### 🟠 残: RevenueCat の Title に頭欠けがある
 
