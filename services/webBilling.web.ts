@@ -6,8 +6,20 @@ import type { CustomerInfo, PurchasesOffering, PurchasesPackage } from 'react-na
 
 // Web Billingの公開APIキー。ブラウザに配信される前提の公開鍵で、これ単体では
 // 課金も顧客情報の取得もできない（Stripeの pk_live_ と同じ性質）。
-// RevenueCat → Web → QualiZ (Stripe) → Purchase tracking → Public API Key から取得する。
-// Stripe連携時に発行されるキーは strp_ で始まる。
+//
+// ★必ず「RevenueCat Billing」アプリのキーを使うこと（先頭は rcb_）。
+//   RevenueCat → Project settings → API keys → QualiZ (RevenueCat Billing) の
+//   公開キー。
+//
+//   「QualiZ (Stripe)」アプリのキー（strp_）ではない。このSDKの Package が
+//   持つ商品は rcBillingProduct（非推奨）と webBillingProduct の2つだけで、
+//   Stripeストアの商品を読むフィールドが存在しないため（型定義:
+//   node_modules/@revenuecat/purchases-js/dist/Purchases.es.d.ts の Package）、
+//   strp_ キーを入れると全パッケージで商品が読めず、どの資格でも
+//   「ただいま購入できません」になる。
+//
+//   同じ理由で、Offering の各パッケージでは App Store と
+//   RevenueCat Billing にだけ商品を割り当て、Stripe の行は空のままにする。
 const RC_API_KEY_WEB = process.env.EXPO_PUBLIC_RC_API_KEY_WEB ?? '';
 
 // 匿名ユーザーIDをブラウザに保存し、再訪問時も同じ購入者として扱われるようにする
