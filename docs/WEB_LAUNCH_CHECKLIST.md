@@ -211,6 +211,36 @@ Stripe アーカイブ時に出た403のエラー文（`on account
 2. 最終形はサンドボックスと本番の2設定を恒久的に併用する形か
 3. RevenueCat API (v2) に商品の一括作成・Entitlement紐付けのエンドポイントが
    あるか（作り直しになるならスクリプト化したい）
+   → **自前で調査済み・答えは Yes（2026-09-16）**
+
+#### 最悪ケース（作り直し）の作業量は見積もり済み
+
+RevenueCat の REST API v2 は商品の作成と、Entitlement・Offering・Package への
+紐付けをプログラムから実行できる。
+
+> RevenueCat's new REST API allows you to programmatically create RevenueCat
+> products and attach your products to entitlements, offerings, and packages.
+> — https://www.revenuecat.com/blog/engineering/were-rebuilding-our-rest-apis/
+
+したがって「本番用 Billing 設定の下に42商品を作り直す」ことになっても、
+
+1. 42商品の作成
+2. Entitlement への紐付け
+3. default Offering のパッケージへの登録
+
+をスクリプトで一括実行できる（今日の `scripts/stripe_archive_unused.mjs` と
+同じ形）。**手入力42件には戻らない。**
+
+必要なもの: **RevenueCat の Secret API key（v2）**。
+これも `sk_` で始まるが **Stripe の `sk_` とは別物**なので混同しないこと。
+
+制約: この環境から revenuecat.com はネットワークポリシーでブロックされており
+（上記も検索結果の要約）、エンドポイントの正確な仕様を読めない。
+実装時はドキュメントのページを貼ってもらうのが確実。
+
+参考:
+- https://www.revenuecat.com/docs/api-v2
+- https://www.revenuecat.com/docs/offerings/overview
 
 #### 2設定を併用する場合のコード側の影響
 
