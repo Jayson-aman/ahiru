@@ -204,11 +204,28 @@ async function main() {
   let ok = 0;
   for (const x of plan) {
     try {
-      for (const pr of x.prices) {
-        await stripe('POST', `prices/${pr.id}`, { active: 'false' });
-      }
+      // 商品を先にアーカイブする。
+      // ダッシュボードで手動作成した商品には default_price が設定されており、
+      // その価格は「商品の既定価格だから」という理由で単体アーカイブできない
+      // （400: This price cannot be archived because it is the default price
+      // of its product）。商品が active=false になれば新規購入には使えなくなる
+      // ので、既定価格が active のまま残っても目的は達成される。
       await stripe('POST', `products/${x.product.id}`, { active: 'false' });
-      console.log(`  ✓ ${x.product.name}`);
+
+      let keptDefault = 0;
+      for (const pr of x.prices) {
+        try {
+          await stripe('POST', `prices/${pr.id}`, { active: 'false' });
+        } catch (e) {
+          if (/default price of its product/.test(e.message)) {
+            keptDefault++;
+            continue;
+          }
+          throw e;
+        }
+      }
+      const note = keptDefault ? `（既定価格${keptDefault}件は商品側のアーカイブで無効化）` : '';
+      console.log(`  ✓ ${x.product.name}${note}`);
       ok++;
     } catch (e) {
       console.log(`  ✗ ${x.product.name}\n      ${e.message}`);
