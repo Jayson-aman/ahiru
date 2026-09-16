@@ -65,9 +65,9 @@ Entitlement 一覧の「4 products」は **iOS 2件 + Web 2件**。
 RevenueCat ダッシュボード内でしか使われず顧客には表示されない。
 優先度は低い。
 
-残る確認: 参照名は Apple 側の内部名。顧客に表示されるのは各
-サブスクリプションの ローカリゼーション → 表示名 なので、レベル3の
-`qualiz_pro_takkei_m2` を開いてそちらも確認しておくと完全。
+**判断（2026-09-16）: 対応は次回リリースに繰り延べ。**
+顧客に見える箇所に誤りはなく、1.3.2 の審査も通過済み。RevenueCat側の
+表示名は 4. の20件とまとめて直す。
 
 ### サブスクリプションのレベル順（要検討・急ぎではない）
 
@@ -83,6 +83,8 @@ ASCのレベルは同一グループ内での乗り換え時に即時切替か�
 「各レベルには複数のサブスクリプションを追加できます」とある）。
 ただし21グループ分の手作業。**実施前にAppleのドキュメントで挙動を
 確認すること**（上記は未検証の記憶に基づく）。
+
+これも次回リリース以降で検討する。
 
 なお月額・年額の紐付け自体は正しい（App Store と RevenueCat Billing の
 両方に m2 / y2 が揃っている）。1. の危険物の問題は **Offering のパッケージ**の
@@ -159,6 +161,25 @@ Entitlement に紐付いている。またドキュメントの表の宅建の�
 
 ---
 
+## 4b. 🔴 Web課金のAPIキー取得先（要確認）
+
+`services/webBilling.web.ts` のコメントが「`QualiZ (Stripe)` の
+Public API Key（`strp_`）を使う」と指示していたが、これは誤り。
+`b819e81` でコメントを訂正済み。
+
+`@revenuecat/purchases-js` の `Package` が持つ商品は
+`rcBillingProduct`（非推奨）と `webBillingProduct` の2つだけで、
+Stripeストアの商品を読むフィールドが型定義に存在しない
+（`node_modules/@revenuecat/purchases-js/dist/Purchases.es.d.ts` の `Package`）。
+
+- 必要なのは **RevenueCat Billing** アプリの公開キー（`rcb_`）。
+- `strp_` を設定すると全パッケージで商品が読めず、どの資格でも
+  「ただいま購入できません」になる。
+- 同じ理由で、Offering の各パッケージは App Store と RevenueCat Billing
+  にだけ商品を割り当て、**Stripe の行は空のままが正しい**。
+
+**要確認: 本番の `EXPO_PUBLIC_RC_API_KEY_WEB` が `rcb_` で始まっているか。**
+
 ## 5. 消費税の自動計算（未着手）
 
 順序を守ること。1 が先でないと 2 が効かない。
@@ -171,6 +192,16 @@ Entitlement に紐付いている。またドキュメントの表の宅建の�
 
 税コードは**RevenueCat側で一括指定する**。Stripe の42商品それぞれに
 `tax_code` を設定する必要はない。
+
+**順序を逆にするとチェックアウトがエラー画面になる。**
+`@revenuecat/purchases-js` に以下のエラーが定義されている:
+
+- `StripeTaxNotActive` — RevenueCat側で税計算を有効にしたが Stripe Tax が未有効
+- `StripeInvalidTaxOriginAddress` — Stripe の所在地（事業所住所）が不正
+- `StripeMissingRequiredPermission`
+
+つまり Stripe Tax は任意の飾りではない。Stripe 側の税務登録と
+事業所住所を済ませてから RevenueCat を有効化すること。
 
 未確認事項: 日本の法人顧客が登録番号を提示した場合の免税扱い
 （B2B リバースチャージ）をどうするかは税務判断が必要。
