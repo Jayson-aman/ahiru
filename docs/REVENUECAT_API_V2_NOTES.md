@@ -151,7 +151,13 @@ API では商品作成時の **`title`** フィールドが対応する。
 
 - `project_id` = **`projd63a8ebf`**（2026-09-17 確認。
   Project settings → General → Project ID）
-- 本番 RC Billing アプリの `app_id`（**まだ存在しない。本番化後に判明する**）
+- RC Billing アプリの `app_id` = **`appa8c271a3d2`**（2026-09-17 確認。
+  左サイドバー Web → QualiZ (RevenueCat Billing)）
+  - これは**現在サンドボックスStripeに紐付いている設定**のID。
+    サポートが「接続の差し替え」を認めればこのIDがそのまま本番用になる。
+    「新設定を作れ」と言われた場合は別IDが発行される（`+ Add web provider`）
+  - 参考: QualiZ (Stripe) は `app234ab1e259`。**SDKから使えないので触らない**
+    （`services/webBilling.web.ts` の経緯参照）
 - v2 シークレットキー
 
 ## 参考
