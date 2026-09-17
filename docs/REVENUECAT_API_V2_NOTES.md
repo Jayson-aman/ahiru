@@ -149,7 +149,8 @@ API では商品作成時の **`title`** フィールドが対応する。
 
 実行時に別途必要なもの:
 
-- `project_id`
+- `project_id` = **`projd63a8ebf`**（2026-09-17 確認。
+  Project settings → General → Project ID）
 - 本番 RC Billing アプリの `app_id`（**まだ存在しない。本番化後に判明する**）
 - v2 シークレットキー
 
