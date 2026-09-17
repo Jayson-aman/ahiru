@@ -1,6 +1,7 @@
 import React, { useEffect, useState, useCallback } from 'react';
 import {
   View, Text, StyleSheet, TouchableOpacity, ActivityIndicator, Alert, ScrollView, Modal,
+  Platform,
 } from 'react-native';
 import { LinearGradient } from 'expo-linear-gradient';
 import { useRouter, useLocalSearchParams } from 'expo-router';
@@ -18,6 +19,15 @@ import {
 import type { CustomerInfo, PurchasesPackage } from 'react-native-purchases';
 
 type BillingPeriod = 'monthly' | 'yearly';
+
+/** 自動更新の説明。請求先と解約経路が購入経路ごとに違うため出し分ける。 */
+const SUBSCRIPTION_NOTE = Platform.OS === 'web'
+  ? 'サブスクリプションは自動更新されます。期間終了の24時間前までに解約しない限り自動的に更新され、'
+    + 'ご登録のクレジットカードに料金が請求されます。解約は購入完了時にお送りするメールに記載の'
+    + '管理用リンクから、または info@zaibase.group へのご連絡でいつでも行えます。価格は税込表示です。'
+  : 'サブスクリプションは自動更新されます。期間終了の24時間前までに解約しない限り自動的に更新され、'
+    + 'ご利用のApple ID / Googleアカウントに料金が請求されます。解約は各ストアのアカウント設定'
+    + '（サブスクリプション管理）からいつでも行えます。価格は税込表示です。';
 
 type Props = {
   certKey: CertKey;
@@ -290,11 +300,9 @@ export default function CertPaywall({
             )}
 
             {/* サブスクリプションに関する説明（ストア審査必須項目） */}
-            <Text style={styles.legalNote}>
-              サブスクリプションは自動更新されます。期間終了の24時間前までに解約しない限り自動的に更新され、
-              ご利用のApple ID / Googleアカウントに料金が請求されます。解約は各ストアのアカウント設定
-              （サブスクリプション管理）からいつでも行えます。価格は税込表示です。
-            </Text>
+            {/* Web はカード決済で、請求先も解約経路もストアとは別。経路を取り違えた
+                案内は特商法の表示義務に反するため、ここは必ず出し分ける。 */}
+            <Text style={styles.legalNote}>{SUBSCRIPTION_NOTE}</Text>
             <View style={styles.legalLinks}>
               <TouchableOpacity onPress={() => { setShowPlans(false); router.push('/legal/terms' as any); }}>
                 <Text style={styles.legalLinkText}>利用規約</Text>
