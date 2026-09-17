@@ -4,13 +4,31 @@ iOS は稼働中（1.3.2 審査通過）。Android は未着手。ここは **We
 
 ---
 
+## 🔴 現在の状態（最初に読む）
+
+**Web課金は本番化されていない。** 唯一のブロッカーは RevenueCat Billing が
+Stripe の**サンドボックス**アカウントに紐付いていること（下記「⚠️ 残」）。
+2026-09-16 に `support@revenuecat.com` へメールで問い合わせ済み、**返信待ち**。
+
+未着手であることの明示（誤解が生じたため記録）:
+
+- Stripe ライブ口座への42商品の作成は **していない**。
+  `scripts/stripe_products.mjs` は封印されたまま
+- API v2 による Entitlement / Offering の再紐付けも **していない**
+- 本番 `rcb_` キーでの動作確認は **していない**（キー自体が未発行）
+
+サポートの回答が来るまで **Billing 設定の Stripe 接続を差し替えないこと。**
+
+---
+
 ## ✅ 済んでいる
 
 - [x] **コード** — `services/webBilling.web.ts` / `components/CertPaywall.tsx`
 - [x] **RevenueCat Billing の商品42件** — 作成・全パッケージ割当・Entitlement 紐付け
       （危険物の月額パッケージに年額が入っていた問題も修正済み）
-- [x] **Vercel の環境変数** — `EXPO_PUBLIC_RC_API_KEY_WEB` を `rcb_` に変更
-- [x] **CSP の修正** — `87c3ac5`（※リポジトリ内のみ。本番未反映）
+- [x] **Vercel の環境変数** — `EXPO_PUBLIC_RC_API_KEY_WEB` を設定済み。
+      ただし値は **`rcb_sb_`（サンドボックス）**。本番キーはまだ存在しない → 下記「⚠️ 残」
+- [x] **CSP の修正** — `87c3ac5`（本番反映済み。下記 A 参照）
 - [x] **法定ページ4本** — 特商法・規約・プライバシー・サポートが
       `https://jayson-aman.github.io/ahiru/legal/` にあり、`public/landing.html` から
       リンク済み
