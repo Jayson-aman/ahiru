@@ -160,6 +160,36 @@ API では商品作成時の **`title`** フィールドが対応する。
     （`services/webBilling.web.ts` の経緯参照）
 - v2 シークレットキー
 
+## 実装: `scripts/revenuecat_migrate.mjs`
+
+上記4操作を実装済み。**42件の手入力は発生しない**（`title` も API で入る）。
+
+```bash
+read -s RC_V2_SECRET_KEY && export RC_V2_SECRET_KEY
+
+node scripts/revenuecat_migrate.mjs --discover              # 現状取得（読み取りのみ）
+node scripts/revenuecat_migrate.mjs --app-id=appXXXX        # 計画確認（読み取りのみ）
+node scripts/revenuecat_migrate.mjs --app-id=appXXXX --limit=1 --apply   # 1件だけ
+node scripts/revenuecat_migrate.mjs --app-id=appXXXX --apply             # 全件
+```
+
+設計上の要点:
+
+- `--discover` が `revenuecat_state.json` を書き、移行はそれを読む。
+  既存商品を `store_identifier` で引いて**作成済みを飛ばす**（作成は非冪等）
+- **パッケージの照合**: サンドボックス側商品の `store_identifier` から
+  そのパッケージを引き、同じパッケージへ本番商品を追加で貼る。
+  照合できなかった商品は最後に警告として列挙する（Entitlement には
+  紐付くが Offering に出ないため購入画面に現れない）
+- **1件目で失敗したら中断する。** 42件分の同じエラーを出しても意味がない
+- `appa8c271a3d2`（サンドボックス側）を `--app-id` に渡すと拒否する
+
+⚠ GET 系のパスは仕様メモに無く、v2 の慣例からの推測。404 ならパスが違うだけで
+何も壊れていない。`--discover` は読み取りのみ。
+
+⚠ 実行前に**ライブ Stripe 側42件のアーカイブ解除が必要。** RC Billing は価格を
+Stripe から取得し、API では設定できない。
+
 ## 参考
 
 - API v2 リファレンス: https://www.revenuecat.com/docs/api-v2

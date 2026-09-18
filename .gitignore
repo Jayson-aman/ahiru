@@ -46,3 +46,6 @@ yarn-error.*
 .worklist.js
 .mkpkg.js
 .peek2.js
+
+# revenuecat_migrate.mjs --discover の出力（実行環境ごとの一時データ）
+revenuecat_state.json
