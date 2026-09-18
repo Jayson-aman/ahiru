@@ -487,6 +487,42 @@ App Store の DEVELOPER は `MASAYA NANJO`、特商法ページの販売事業�
 求めるため、屋号のみで足りるかは要確認。**iOSは審査通過済みで、
 Web公開のブロッカーでもない。**
 
+### Stripe からの RevenueCat 権限再承認依頼（2026-09-16 受信 / 別件）
+
+`notifications@stripe.com` → 「RevenueCat の権限とアクセスをご確認ください」。
+対象は **`acct_1U7F9rPiPIYFnkuX` = Qualiz kensetu（ライブ）**。
+
+**これはブロッカーとは別件。** ライブ口座に繋がっている RevenueCat アプリは
+`QualiZ (Stripe)`（ストア連携）であり、サンドボックスに繋がっている
+`QualiZ (RevenueCat Billing)` とは別。承認してもサンドボックス問題は解決しない。
+
+RevenueCat からのチケット返信でもない（差出人が Stripe、参照IDが `em_` 形式。
+プラットフォーム側のアプリ更新に伴う一斉配信と読める）。
+
+**それでも承認しておく:** サポートが「RC Billing の接続をライブへ差し替えてよい」と
+回答した場合、ライブ接続の権限が古いとそこで詰まる。先に潰せる障害。
+
+**承認は「接続の差し替え」ではない。** 既存接続のスコープ更新であり、
+`rc_billing.stripe_account_id` を触らないという取り決めには抵触しない。
+
+手順（**メール内リンクは踏まない**）:
+
+1. `dashboard.stripe.com` に自分でログイン
+2. **左上が「Qualiz kensetu」であることを確認**（Zaibase入札ニュースなら即中止）
+3. 設定 → アプリ（`settings/apps`）→ RevenueCat
+4. **要求スコープを読んでから**承認。商品・価格・サブスクリプション・顧客・
+   チェックアウトの読み書きなら妥当。**入金・送金・アカウント設定の変更**が
+   含まれていたら承認せず内容を確認する
+
+#### 通知の宛先について
+
+この通知は `info@zaibase.group` ではなく **`masaya.happylife@gmail.com` に直送**
+された。Stripe アカウントの登録メールが Gmail 側であることを意味する。
+
+RevenueCat のサポートチケットは `info@zaibase.group` から送信済み。
+**返信が来ない場合、アカウント照合ができていない可能性がある。**
+数日音沙汰がなければ Gmail からも追送する。
+
 ### D. デプロイ後のテスト購入
 
 - [ ] ブラウザのコンソールに CSP 違反が出ていないか
