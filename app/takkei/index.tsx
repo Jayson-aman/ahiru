@@ -12,6 +12,14 @@ import { LinearGradient } from 'expo-linear-gradient';
 
 const EXAM_MODES = [
   {
+    key: 'chokuzen',
+    label: '直前問題集【無料】',
+    desc: '今日の難問50問・120分・毎日入れ替わり',
+    emoji: '🔥',
+    color: '#E65100',
+    route: '/takkei/chokuzen',
+  },
+  {
     key: 'mogi',
     label: '模擬試験',
     desc: '本番形式 50問・120分・合否判定',
