@@ -4,6 +4,7 @@ import { useLocalSearchParams, useRouter } from 'expo-router';
 import MCQQuiz from '../../components/MCQQuiz';
 import CertPaywall from '../../components/CertPaywall';
 import { takkeiQuestions } from '../../data/takkei_questions';
+import { takkeiFreeQuestionIds } from '../../data/takkei_free_ids';
 import { FREE_QUESTION_LIMIT, PRICING } from '../../services/subscription';
 
 const SUBJECT_INFO: Record<string, { name: string; emoji: string; color: string }> = {
@@ -28,6 +29,15 @@ export default function TakkeiQuizScreen() {
       explanation: q.explanation,
       difficulty: q.difficulty,
     }));
+
+  // 無料で解ける範囲。従来の先頭10問に加えて、無料開放した50問セットのうち
+  // この科目の分を足す。無料開放分を先に出す（新しい問題から解いてもらう）。
+  // useMemo を使わないのは、下に早期 return があり条件付きフックになるため。
+  const freeIds = allQuestions.filter(q => takkeiFreeQuestionIds.has(q.id));
+  const freeQuestions = [
+    ...freeIds,
+    ...allQuestions.filter(q => !takkeiFreeQuestionIds.has(q.id)).slice(0, FREE_QUESTION_LIMIT),
+  ];
 
   if (allQuestions.length === 0) {
     return (
@@ -58,7 +68,7 @@ export default function TakkeiQuizScreen() {
         certEmoji={info.emoji}
         accentColor={info.color}
         totalQuestions={allQuestions.length}
-        freeLimit={FREE_QUESTION_LIMIT}
+        freeLimit={freeQuestions.length}
         proMonthlyLabel={PRICING.proMonthly}
         proYearlyLabel={PRICING.proYearly}
         proYearlySavingsLabel={PRICING.proYearlySavings}
@@ -72,7 +82,7 @@ export default function TakkeiQuizScreen() {
           <Text style={styles.headerTitle}>{info.emoji} {info.name}</Text>
           <Text style={styles.headerSub}>{allQuestions.length}問収録</Text>
         </View>
-        <MCQQuiz questions={hasAccess ? allQuestions : allQuestions.slice(0, FREE_QUESTION_LIMIT)} accentColor={info.color} />
+        <MCQQuiz questions={hasAccess ? allQuestions : freeQuestions} accentColor={info.color} />
         </>
         )}
       </CertPaywall>
