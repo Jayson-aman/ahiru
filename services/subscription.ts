@@ -16,7 +16,7 @@ const RC_API_KEY_ANDROID =
 export type SubscriptionTier = 'free' | 'pro' | 'max';
 
 // Certification keys — used as entitlement IDs in RevenueCat dashboard
-export type CertKey = 'takkei' | 'fp' | 'mansion' | 'kenchiku' | 'denken3' | 'kisho' | 'juken' | 'eiken' | 'sekokan' | 'kankoji' | 'denkisekou' | 'kikaisekou' | 'dobokusekou' | 'cost' | 'kyusui' | 'shobo' | 'kikenbutsu' | 'concrete' | 'tsushin' | 'nikkyu' | 'denki2' | 'lpgas' | 'koatsu';
+export type CertKey = 'takkei' | 'fp' | 'mansion' | 'kenchiku' | 'denken3' | 'kisho' | 'juken' | 'eiken' | 'sekokan' | 'kankoji' | 'denkisekou' | 'kikaisekou' | 'dobokusekou' | 'cost' | 'kyusui' | 'shobo' | 'kikenbutsu' | 'concrete' | 'tsushin' | 'nikkyu' | 'denki2' | 'lpgas' | 'koatsu' | 'ikkyu1';
 
 // RevenueCat entitlement identifiers (must match dashboard exactly)
 export const ENTITLEMENTS: Record<CertKey, string> = {
@@ -43,6 +43,7 @@ export const ENTITLEMENTS: Record<CertKey, string> = {
   denki2:   'pro_denki2',
   lpgas:    'pro_lpgas',
   koatsu:   'pro_koatsu',
+  ikkyu1:   'pro_ikkyu1',
 };
 
 // Pricing constants (display only — real prices are set in RevenueCat/App Store)
@@ -84,10 +85,12 @@ export const ENTITLEMENT_MAX = 'max';
  * ★商品を登録して Offering に入れたら、必ずこの配列から外すこと。
  *   外し忘れると、商品があるのに永久に「準備中」のまま売れなくなる。
  */
-export const CERTS_COMING_SOON: CertKey[] = [];
+export const CERTS_COMING_SOON: CertKey[] = ['ikkyu1'];
 // ★ 2026-08-21: 液化石油ガス設備士・高圧ガス製造保安責任者の商品登録（ASC・RevenueCat）が
 //   完了したため空にした。v1.3.2 でアプリ本体と同時に審査へ提出する。
 //   商品未登録の資格を追加するときは、必ずここへ入れてから提出すること。
+// ★ 一級建築士（ikkyu1）はコンテンツ作成中かつ pro_ikkyu1 を ASC・RevenueCat に
+//   未登録のためここに入れている。商品登録が完了したら配列から外すこと。
 
 export function isComingSoon(cert: CertKey): boolean {
   return CERTS_COMING_SOON.includes(cert);

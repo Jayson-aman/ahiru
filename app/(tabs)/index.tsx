@@ -87,6 +87,14 @@ export default function HomeScreen() {
         <Text style={[styles.sectionLabel, { marginTop: 24 }]}>🏛️ 建築・設備系</Text>
 
         <CertCard
+          onPress={go('/ikkyu1')}
+          cert={{
+            emoji: '🏛️', title: '一級建築士', subtitle: '建築計画・環境設備・法規・構造・施工',
+            meta: '国家資格 ／ テキスト・科目別問題・学科模試(準備中)', route: '/ikkyu1',
+          }}
+        />
+
+        <CertCard
           onPress={go('/nikkyu')}
           cert={{
             emoji: '📐', title: '二級建築士', subtitle: '建築計画・法規・構造・施工',
