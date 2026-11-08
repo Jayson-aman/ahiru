@@ -4,8 +4,8 @@ export type KikenbutsuQuestion = {
   subject: 'horei' | 'butsuri' | 'seishitsu';
   subjectName: string;
   question: string;
-  choices: { key: 'A' | 'B' | 'C' | 'D'; text: string; explanation: string }[];
-  correctKey: 'A' | 'B' | 'C' | 'D';
+  choices: { key: 'A' | 'B' | 'C' | 'D' | 'E'; text: string; explanation: string }[];
+  correctKey: 'A' | 'B' | 'C' | 'D' | 'E';
   explanation: string;
   difficulty: 'basic' | 'standard' | 'advanced';
   examYear?: string;

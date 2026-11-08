@@ -11,12 +11,12 @@ import * as Speech from 'expo-speech';
 import ExplanationText from './ExplanationText';
 import { getDiagram } from './zukai/diagramRegistry';
 
-export type MCQChoice = { key: 'A' | 'B' | 'C' | 'D'; text: string; explanation?: string };
+export type MCQChoice = { key: string; text: string; explanation?: string };
 export type MCQQuestion = {
   id: string;
   question: string;
   choices: MCQChoice[];
-  correctKey: 'A' | 'B' | 'C' | 'D';
+  correctKey: string;
   explanation: string;
   difficulty?: 'basic' | 'standard' | 'advanced';
   category?: string;
@@ -29,8 +29,9 @@ type Props = {
   onComplete?: (correct: number, total: number) => void;
 };
 
-const CHOICE_KEYS: Array<'A' | 'B' | 'C' | 'D'> = ['A', 'B', 'C', 'D'];
-const CHOICE_COLORS = { A: '#1E5FBE', B: '#2E7D32', C: '#C62828', D: '#7B1FA2' };
+const CHOICE_COLORS: Record<string, string> = {
+  A: '#1E5FBE', B: '#2E7D32', C: '#C62828', D: '#7B1FA2', E: '#00897B',
+};
 
 function shuffle<T>(arr: T[]): T[] {
   const a = [...arr];
@@ -44,7 +45,7 @@ function shuffle<T>(arr: T[]): T[] {
 export default function MCQQuiz({ questions, accentColor = '#37474F', onComplete }: Props) {
   const shuffled = useMemo(() => shuffle(questions), [questions]);
   const [index, setIndex] = useState(0);
-  const [selected, setSelected] = useState<'A' | 'B' | 'C' | 'D' | null>(null);
+  const [selected, setSelected] = useState<string | null>(null);
   const [correctCount, setCorrectCount] = useState(0);
   const [finished, setFinished] = useState(false);
   const [wrongIds, setWrongIds] = useState<Set<string>>(new Set());
@@ -76,7 +77,7 @@ export default function MCQQuiz({ questions, accentColor = '#37474F', onComplete
     });
   }, [q, speaking]);
 
-  const handleSelect = useCallback((key: 'A' | 'B' | 'C' | 'D') => {
+  const handleSelect = useCallback((key: string) => {
     if (selected !== null) return;
     setSelected(key);
     if (key === q.correctKey) {
@@ -158,9 +159,8 @@ export default function MCQQuiz({ questions, accentColor = '#37474F', onComplete
 
       {/* Choices */}
       <View style={styles.choicesBox}>
-        {CHOICE_KEYS.map(key => {
-          const choice = q.choices.find(c => c.key === key);
-          if (!choice) return null;
+        {q.choices.map(choice => {
+          const key = choice.key;
           const isSelected = selected === key;
           const isCorrect = key === q.correctKey;
           const showResult = answered;

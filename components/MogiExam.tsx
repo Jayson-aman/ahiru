@@ -10,8 +10,8 @@ export type MogiQuestion = {
   subject: string;
   subjectName: string;
   question: string;
-  choices: { key: 'A' | 'B' | 'C' | 'D'; text: string; explanation?: string }[];
-  correctKey: 'A' | 'B' | 'C' | 'D';
+  choices: { key: string; text: string; explanation?: string }[];
+  correctKey: string;
   explanation: string;
   examYear?: string;
 };
@@ -26,7 +26,7 @@ type Props = {
 };
 
 const CHOICE_COLORS: Record<string, string> = {
-  A: '#1E5FBE', B: '#2E7D32', C: '#C62828', D: '#7B1FA2',
+  A: '#1E5FBE', B: '#2E7D32', C: '#C62828', D: '#7B1FA2', E: '#00897B',
 };
 
 function formatTime(secs: number): string {
@@ -54,7 +54,7 @@ export default function MogiExam({
 }: Props) {
   const [shuffled] = useState(() => shuffle(questions));
   const [index, setIndex] = useState(0);
-  const [answers, setAnswers] = useState<Record<number, 'A' | 'B' | 'C' | 'D'>>({});
+  const [answers, setAnswers] = useState<Record<number, string>>({});
   const [flagged, setFlagged] = useState<Set<number>>(new Set());
   const [timeLeft, setTimeLeft] = useState(timeLimitMinutes * 60);
   const [phase, setPhase] = useState<'exam' | 'review' | 'result'>('exam');
@@ -77,7 +77,7 @@ export default function MogiExam({
     return () => clearInterval(timerRef.current!);
   }, [phase]);
 
-  const handleAnswer = useCallback((key: 'A' | 'B' | 'C' | 'D') => {
+  const handleAnswer = useCallback((key: string) => {
     setAnswers(prev => ({ ...prev, [index]: key }));
   }, [index]);
 
@@ -201,9 +201,8 @@ export default function MogiExam({
           <Text style={styles.questionText}>{q.question}</Text>
         </View>
 
-        {(['A', 'B', 'C', 'D'] as const).map(key => {
-          const choice = q.choices.find(c => c.key === key);
-          if (!choice) return null;
+        {q.choices.map(choice => {
+          const key = choice.key;
           const isCorrectKey = key === q.correctKey;
           const isUserAnswer = key === userAnswer;
           let bg = '#FFF', border = '#E0E0E0';
@@ -296,9 +295,8 @@ export default function MogiExam({
         </View>
 
         {/* Choices */}
-        {(['A', 'B', 'C', 'D'] as const).map(key => {
-          const choice = q.choices.find(c => c.key === key);
-          if (!choice) return null;
+        {q.choices.map(choice => {
+          const key = choice.key;
           const isSelected = answered === key;
           return (
             <TouchableOpacity
